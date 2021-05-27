@@ -1,0 +1,25 @@
+site_name: Cloud and hyperscale application devops group
+theme:
+  name: material
+  features:
+    - header.autohide
+  language: hr
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+extra:
+  alternate:
+    - name: Croatian
+      link: /hr/
+      lang: hr
+    - name: English
+      link: /en/
+      lang: en
