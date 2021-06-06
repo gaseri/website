@@ -4,6 +4,20 @@ site_author: Vedran Miletić
 copyright: Copyright 2011 – 2021, Vedran Miletić and collaborators; contents licensed under CC-BY-NC-ND 4.0, except teaching materials at /hr/nastava/ which are licensed under CC-BY-SA 4.0.
 repo_url: https://github.com/chadgroup/website/
 edit_uri: blob/main/docs/
+nav:
+  - Home: index.md
+  - Dinamičke web aplikacije 2:
+    - Vježba 1: hr/nastava/materijali/python-django-vj1.md
+    - Vježba 2: hr/nastava/materijali/python-django-vj2.md
+    - Vježba 3: hr/nastava/materijali/python-django-vj3.md
+    - Vježba 4: hr/nastava/materijali/python-django-vj4.md
+    - Vježba 5: hr/nastava/materijali/python-django-vj5.md
+    - Vježba 6: hr/nastava/materijali/python-django-vj6.md
+    - Vježba 7: hr/nastava/materijali/python-django-vj7.md
+    - Vježba 9: hr/nastava/materijali/python-django-vj9.md
+    - Vježba 10: hr/nastava/materijali/python-django-vj10.md
+    - Vježba 11: hr/nastava/materijali/python-django-vj11.md
+    - Vježba 12: hr/nastava/materijali/python-django-vj12.md
 theme:
   name: material
   features:
@@ -32,3 +46,6 @@ extra:
     - name: English
       link: /en/
       lang: en
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
