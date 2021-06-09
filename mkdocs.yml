@@ -1,6 +1,7 @@
 site_name: Cloud and hyperscale application devops group
 site_description: Research and teaching group at University of Rijeka Faculty of Information Technology
 site_author: Vedran Miletić
+site_url: https://group.miletic.net/
 copyright: Copyright 2011 – 2021, Vedran Miletić and collaborators; contents licensed under CC-BY-NC-ND 4.0, except teaching materials at /hr/nastava/ which are licensed under CC-BY-SA 4.0.
 repo_url: https://github.com/chadgroup/website/
 edit_uri: blob/main/docs/
