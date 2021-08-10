@@ -1,4 +1,4 @@
-# Računalne mreže
+# Računalne mreže 1
 
 ## Laboratorijske vježbe
 
