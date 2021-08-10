@@ -4,14 +4,18 @@ author: Vedran Miletić
 
 # Teaching
 
+(This page is also available [in Croatian](../hr/nastava/index.md).)
+
 Teaching materials are in Croatian. We hope to be able to provide teaching materials in English, which seems realistic with more and more international students coming to study at University of Rijeka via [ERASMUS(+)](https://ec.europa.eu/programmes/erasmus-plus/) and similar programs.
 
 ## Courses
 
+- [Fundamentals of Informatics 1](../hr/nastava/kolegiji/OI1.md)
 - [Operating Systems 1](../hr/nastava/kolegiji/OS1.md)
 - [Operating Systems 2](../hr/nastava/kolegiji/OS2.md)
 - [Parallel Programming on Heterogenous Systems](../hr/nastava/kolegiji/PPHS.md)
 - [Distributed Systems](../hr/nastava/kolegiji/DS.md)
+- [Supercomputer Systems](../hr/nastava/kolegiji/SRS.md)
 - [Computer Networks 1](../hr/nastava/kolegiji/RM1.md)
 - [Computer Networks 2](../hr/nastava/kolegiji/RM2.md)
 - [Dynamical Web Applications 2](../hr/nastava/kolegiji/DWA2.md)
