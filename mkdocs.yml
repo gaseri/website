@@ -6,18 +6,294 @@ repo_url: https://github.com/chadgroup/website/
 edit_uri: blob/main/docs/
 nav:
   - Home: index.md
-  - Dinamičke web aplikacije 2:
-    - Vježba 1: hr/nastava/materijali/python-django-vj1.md
-    - Vježba 2: hr/nastava/materijali/python-django-vj2.md
-    - Vježba 3: hr/nastava/materijali/python-django-vj3.md
-    - Vježba 4: hr/nastava/materijali/python-django-vj4.md
-    - Vježba 5: hr/nastava/materijali/python-django-vj5.md
-    - Vježba 6: hr/nastava/materijali/python-django-vj6.md
-    - Vježba 7: hr/nastava/materijali/python-django-vj7.md
-    - Vježba 9: hr/nastava/materijali/python-django-vj9.md
-    - Vježba 10: hr/nastava/materijali/python-django-vj10.md
-    - Vježba 11: hr/nastava/materijali/python-django-vj11.md
-    - Vježba 12: hr/nastava/materijali/python-django-vj12.md
+  - O laboratoriju: hr/index.md
+  - Ljudi: hr/ljudi.md
+  - Istraživanje i razvoj: hr/istrazivanje-i-razvoj.md
+  - Nastava:
+    - Izvedbeni planovi:
+      - 2020/2021:
+        - Distribuirani sustavi: hr/nastava/izvedbeni/2020-2021/DS.md
+        - Dinamičke web aplikacije 2: hr/nastava/izvedbeni/2020-2021/DWA2.md
+        - Informatika (BioTech): hr/nastava/izvedbeni/2020-2021/INF-BioTech.md
+        - Operacijski sustavi 2: hr/nastava/izvedbeni/2020-2021/OS2.md
+        - Paralelno programiranje na heterogenim sustavima: hr/nastava/izvedbeni/2020-2021/PPHS.md
+        - Računalne mreže: hr/nastava/izvedbeni/2020-2021/RM.md
+        - Računalne mreže 1: hr/nastava/izvedbeni/2020-2021/RM1.md
+        - Računalne mreže 2: hr/nastava/izvedbeni/2020-2021/RM2.md
+        - Sigurnost informacijskih i komunikacijskih sustava: hr/nastava/izvedbeni/2020-2021/SIKS.md
+        - Upravljanje mrežnim sustavima: hr/nastava/izvedbeni/2020-2021/UMS.md
+      - 2019/2020:
+        - Distribuirani sustavi: hr/nastava/izvedbeni/2019-2020/DS.md
+        - Informatika (BioTech): hr/nastava/izvedbeni/2019-2020/INF-BioTech.md
+        - Operacijski sustavi 2: hr/nastava/izvedbeni/2019-2020/OS2.md
+        - Paralelno programiranje na heterogenim sustavima: hr/nastava/izvedbeni/2019-2020/PPHS.md
+        - Računalne mreže 1: hr/nastava/izvedbeni/2019-2020/RM1.md
+        - Računalne mreže 2: hr/nastava/izvedbeni/2019-2020/RM2.md
+        - Upravljanje mrežnim sustavima: hr/nastava/izvedbeni/2019-2020/UMS.md
+      - 2018/2019:
+        - Informatika (BioTech): hr/nastava/izvedbeni/2018-2019/INF-BioTech.md
+    - Distribuirani sustavi: hr/nastava/kolegiji/DS.md
+    - Dinamičke web aplikacije 2: hr/nastava/kolegiji/DWA2.md
+    - Informatika (BioTech): hr/nastava/kolegiji/INF-BioTech.md
+    - Komunikacijske mreže: hr/nastava/kolegiji/KM.md
+    - Mrežni i mobilni operacijski sustavi: hr/nastava/kolegiji/MMOS.md
+    - Osnove informatike 1: hr/nastava/kolegiji/OI1.md
+    - Optimizacija programskog koda: hr/nastava/kolegiji/OPK.md
+    - Operacijski sustavi 1: hr/nastava/kolegiji/OS1.md
+    - Operacijski sustavi 2: hr/nastava/kolegiji/OS2.md
+    - Paralelno programiranje na heterogenim sustavima: hr/nastava/kolegiji/PPHS.md
+    - Programiranje za web: hr/nastava/kolegiji/PW.md
+    - Računalne mreže: hr/nastava/kolegiji/RM.md
+    - Računalne mreže 1: hr/nastava/kolegiji/RM1.md
+    - Računalne mreže 2: hr/nastava/kolegiji/RM2.md
+    - Računalne mreže (RiTeh): hr/nastava/kolegiji/RM-RiTeh.md
+    - Sigurnost informacijskih i komunikacijskih sustava: hr/nastava/kolegiji/SIKS.md
+    - Superračunalni sustavi: hr/nastava/kolegiji/SRS.md
+    - Upravljanje mrežnim sustavima: hr/nastava/kolegiji/UMS.md
+    - Upravljanje računalnim sustavima: hr/nastava/kolegiji/URS.md
+    - Nastavni materijali:
+      - LDAP poslužitelj 389 Directory Server: hr/nastava/materijali/389-directory-server-ldap-posluzitelj.md
+      - Instalacija operacijskih sustava Fedora i CentOS korištenjem instalacijskog alata Anaconda: hr/nastava/materijali/anaconda-instalacija-operacijskog-sustava.md
+      - Automatizacija konfiguracije i održavanja sustava alatom Ansible: hr/nastava/materijali/ansible-automatizacija-konfiguracije-odrzavanja-sustava.md
+      - Mjerenje performansi web poslužitelja alatom ab (Apache HTTP server benchmarking tool): hr/nastava/materijali/apache-ab-mjerenje-performansi-web-posluzitelja.md
+      - Konfiguracija HTTPS-a u web poslužitelju Apache HTTP Server: hr/nastava/materijali/apache-mod-ssl.md
+      - Pokretanje PHP web aplikacija u web poslužitelju Apache HTTP Server: hr/nastava/materijali/apache-pokretanje-php-aplikacija.md
+      - Pokretanje Python web aplikacija u web poslužitelju Apache HTTP Server: hr/nastava/materijali/apache-pokretanje-python-aplikacija.md
+      - Konfiguracija virtualnih domaćina u web poslužitelju Apache HTTP Server: hr/nastava/materijali/apache-virtual-host.md
+      - Osnovna konfiguracija web poslužitelja Apache HTTP Server: hr/nastava/materijali/apache-web-posluzitelj.md
+      - Binarna kompatibilnost i kompatibilnost na razini izvornog koda: hr/nastava/materijali/api-abi-kompatibilnost.md
+      - Zerconf NSS/mDNS sustav Avahi: hr/nastava/materijali/avahi-zeroconf.md
+      - Vizualizacija i uređivanje molekula alatom Avogadro: hr/nastava/materijali/avogadro-vizualizacija-uredjivanje-molekula.md
+      - DNS sustav BIND9: hr/nastava/materijali/bind9-dns-sustav.md
+      - Bioinformatika: hr/nastava/materijali/bioinformatika-povijest-osnove.md
+      - Premošćenje mrežnih adaptera i izrada mostova: hr/nastava/materijali/brctl-izrada-mostova.md
+      - Raspoznavanje upada u sustav alatom Bro: hr/nastava/materijali/bro-raspoznavanje-upada-u-sustav.md
+      - Distribuirani datotečni sustav Ceph: hr/nastava/materijali/ceph-distribuirani-datotecni-sustav.md
+      - Baza bioaktivnih molekula ChEMBL: hr/nastava/materijali/chembl-baza-bioaktivnih-molekula.md
+      - Modularni usmjerivač Click: hr/nastava/materijali/click-modularni-usmjerivac.md
+      - Programska osnova usmjerivača: hr/nastava/materijali/click-programska-osnova-usmjerivaca.md
+      - Korištenje mrežnih protokola u modularnom usmjerivaču Click: hr/nastava/materijali/click-protokoli.md
+      - Programiranje mrežnih aplikacija u programskim jezicima C i C++: hr/nastava/materijali/c-mrezne-aplikacije.md
+      - C++ biblioteka predložaka za linearnu algebru Eigen: hr/nastava/materijali/cpp-eigen.md
+      - Generiranje pseudoslučajnih brojeva u C++ aplikacijama: hr/nastava/materijali/cpp-std-random.md
+      - Mjerenje brzine izvođenja C++ aplikacija: hr/nastava/materijali/cpp-timing-benchmarking.md
+      - Rad s protokolima aplikacijske razine: hr/nastava/materijali/curl-protokoli-aplikacijske-razine.md
+      - Instalacija operacijskog sustava Debian korištenjem instalacijskog alata Debian-Installer: hr/nastava/materijali/debian-installer-instalacija-operacijskog-sustava.md
+      - Pakiranje deb paketa: hr/nastava/materijali/deb-pakiranje-paketa.md
+      - Dinamičko dodjeljivanje adresa domaćinima: hr/nastava/materijali/dhcp-posluzitelj-klijent.md
+      - DHCP i DNS poslužitelj dnsmasq: hr/nastava/materijali/dnsmasq-dhcp-dns-posluzitelj.md
+      - Kontejnerizacija alatom Docker: hr/nastava/materijali/docker-kontejneri.md
+      - Instalacija i konfiguracija wiki sustava DokuWiki: hr/nastava/materijali/dokuwiki-instalacija-web-aplikacije.md
+      - POP3 i IMAP -- Dovecot: hr/nastava/materijali/dovecot-pop3-imap-posluzitelj.md
+      - Dokumentiranje programskog koda alatom Doxygen: hr/nastava/materijali/doxygen-dokumentiranje-programskog-koda.md
+      - Filtriranje okvira vatrozidom na veznom sloju: hr/nastava/materijali/ebtables-vatrozid.md
+      - Distribuirano pretraživanje u realnom vremenu alatom ElasticSearch: hr/nastava/materijali/elasticsearch-distribuirano-pretrazivanje.md
+      - Rad s tekstualnim datotekama: hr/nastava/materijali/emacs-text-datoteke.md
+      - Emulacija bežičnih mreža: hr/nastava/materijali/emulator-core-bezicne-mreze.md
+      - Fragmentacija IPv4 paketa: hr/nastava/materijali/emulator-core-fragmentacija-paketa.md
+      - Generiranje topologija: hr/nastava/materijali/emulator-core-generiranje-topologija.md
+      - Osnove rada s emulatorom računalnih mreža: hr/nastava/materijali/emulator-core-graficko-sucelje.md
+      - Konfiguracija čvorova u alatu CORE: hr/nastava/materijali/emulator-core-konfiguracija-cvora.md
+      - Mobilnost: hr/nastava/materijali/emulator-core-mobilnost.md
+      - Stvaranje i konfiguracija podmreža: hr/nastava/materijali/emulator-core-stvaranje-konfiguracija-podmreza.md
+      - Prevođenje C, C++ i Fortran programa u izvršni kod: hr/nastava/materijali/gcc-gxx-make-prevodjenje-programa.md
+      - Lokalizacija softvera korištenjem GNU gettexta: hr/nastava/materijali/gettext-lokalizacija-softvera.md
+      - Kontinuirana integracija korištenjem GitLaba: hr/nastava/materijali/gitlab-ci-cd.md
+      - Distribuirani sustav za upravljanje verzijama Git: hr/nastava/materijali/git-upravljanje-verzijama.md
+      - Distribuirani datotečni sustav Gluster: hr/nastava/materijali/gluster-distribuirani-datotecni-sustav.md
+      - Razvoj slobodnog operacijskog sustava sličnog Unixu: hr/nastava/materijali/gnu-linux-slobodni-softver-povijest-osnove.md
+      - Kriptografija javnog ključa alatom GnuPG: hr/nastava/materijali/gnupg-kriptografija-javnog-kljuca.md
+      - Pretraživanje i obrada tekstualnih datoteka: hr/nastava/materijali/grep-sed-awk-tr.md
+      - Boot proces računala i učitavač GRUB: hr/nastava/materijali/grub-pokretanje-sustava.md
+      - Pregled heterogene sustavske arhitekture: hr/nastava/materijali/hsa-pregled.md
+      - HTTP klijent HTTPie: hr/nastava/materijali/httpie-http-klijent.md
+      - Osnovni alati za konfiguraciju računalne mreže: hr/nastava/materijali/ifconfig-konfiguracija-mreznih-sucelja.md
+      - Intelektualno vlasništvo nad softverom, podacima i znanstvenim radovima: hr/nastava/materijali/intelektualno-vlasnistvo-softver-podaci-znanstveni-radovi.md
+      - Prevođenje mrežnih adresa: hr/nastava/materijali/iptables-prevodjenje-adresa.md
+      - Filtriranje paketa vatrozidom: hr/nastava/materijali/iptables-vatrozid.md
+      - Kemoinformatika i računalna kemija: hr/nastava/materijali/kemoinformatika-povijest-osnove.md
+      - Virtualizacija korištenjem KVM-a i QEMU-a: hr/nastava/materijali/kvm-virtualizacija.md
+      - Arhiviranje i komprimiranje: hr/nastava/materijali/linux-arhiviranje-komprimiranje.md
+      - Cijevi, preusmjeravanje ulaza i izlaza: hr/nastava/materijali/linux-cijevi-preusmjeravanje-ulaza-izlaza.md
+      - Uvod u komandnolinijsko sučelje: hr/nastava/materijali/linux-cli-uvod.md
+      - Baratanje datotekama u datotečnom sustavu: hr/nastava/materijali/linux-datoteke-touch-rm-cp-mv.md
+      - Stablo direktorija: hr/nastava/materijali/linux-direktoriji-mkdir-pwd-cd.md
+      - Diskovi, particije, datotečni sustavi i mjesta montiranja: hr/nastava/materijali/linux-disk-particija-filesystem.md
+      - Dozvole i kontrola pristupa datotekama: hr/nastava/materijali/linux-dozvole-datoteka.md
+      - Informacijski čvorovi, vremena i poveznice datoteka: hr/nastava/materijali/linux-inode-poveznice.md
+      - Rad s jezgrom operacijskog sustava: hr/nastava/materijali/linux-kernel-osnove.md
+      - Korisnici i grupe: hr/nastava/materijali/linux-korisnici-grupe.md
+      - Upravljanje procesima: hr/nastava/materijali/linux-procesi.md
+      - Varijable ljuske i okoline, povijest ljuske: hr/nastava/materijali/linux-shell-varijable-povijest.md
+      - Tipovi datoteka: hr/nastava/materijali/linux-tipovi-datoteka.md
+      - Prevođenje OpenCL C koda u asemblerski kod arhitektura AMD GCN i RDNA: hr/nastava/materijali/llvm-backend-amdgpu.md
+      - Prevođenje OpenCL C koda program prevoditeljem Clang: hr/nastava/materijali/llvm-frontend-clang-opencl-c.md
+      - Konfiguracija sustava za upravljanje bazom podataka MariaDB: hr/nastava/materijali/mariadb-sustav-za-upravljanje-bazom-podataka.md
+      - Instalacija i konfiguracija wiki sustava MediaWiki: hr/nastava/materijali/mediawiki-instalacija-web-aplikacije.md
+      - Dokumentiranje programa alatom MkDocs: hr/nastava/materijali/mkdocs-dokumentiranje-programa.md
+      - Nabavka, kompajliranje i instalacija softvera otvorenog koda: hr/nastava/materijali/nabavka-prevodjenje-instalacija-softvera-otvorenog-koda.md
+      - BLAS i LAPACK: hr/nastava/materijali/netlib-blas-lapack.md
+      - Mrežni datotečni sustav NFS: hr/nastava/materijali/nfs-mrezni-datotecni-sustav.md
+      - Web poslužitelj nginx: hr/nastava/materijali/nginx-web-posluzitelj.md
+      - Analiza ranjivosti računalne mreže: hr/nastava/materijali/nmap-analiza-ranjivosti.md
+      - Računarstvo u oblaku: hr/nastava/materijali/oblak-resursi-usluge.md
+      - Pretraživanje, prava pristupa, rad sa tekstom: hr/nastava/materijali/oi1-linux-upravljanje-datotecnim-sustavom-2.md
+      - Osnove rada sa komandnom linijom: hr/nastava/materijali/oi1-linux-upravljanje-datotecnim-sustavom.md
+      - Skriptiranje u Perl-u: hr/nastava/materijali/oi1-perl.md
+      - Regularni izrazi i konačni automati: hr/nastava/materijali/oi1-regularni-izrazi-konacni-automati.md
+      - Pretvorba formata alatom Open Babel: hr/nastava/materijali/open-babel-pretvorba-analiza-spremanje-podataka-molekula.md
+      - LDAP poslužitelj OpenLDAP: hr/nastava/materijali/openldap-ldap-posluzitelj.md
+      - Sigurna ljuska i udaljeni rad alatom OpenSSH: hr/nastava/materijali/openssh-sigurna-ljuska.md
+      - Certifikat javnog ključa, certifikacijska tijela i sigurni poslužitelj: hr/nastava/materijali/openssl-certifikat-javnog-kljuca.md
+      - Kriptografija javnog ključa: hr/nastava/materijali/openssl-kriptografija-javnog-kljuca.md
+      - Korištenje osnovnih kriptografskih algoritama: hr/nastava/materijali/openssl-kriptografski-algoritmi.md
+      - Korištenje infrastrukture javnog ključa u postavljanju virtualne privatne mreže alatom OpenVPN: hr/nastava/materijali/openvpn-infrastruktura-javnog-kljuca.md
+      - Konfiguracija virtualne privatne mreže alatom OpenVPN: hr/nastava/materijali/openvpn-virtualna-privatna-mreza.md
+      - OpenWrt: hr/nastava/materijali/openwrt-ugradbeni-softver-za-bezicne-mrezne-usmjerivace.md
+      - Softver otvorenog koda: hr/nastava/materijali/otvoreni-kod-povijest-osnove.md
+      - Osnovni pojmovi paralelnog, distribuiranog i heterogenog računarstva: hr/nastava/materijali/paralelno-distribuirano-heterogeno-racunarstvo-pojmovi.md
+      - Superračunala: hr/nastava/materijali/paralelno-distribuirano-heterogeno-racunarstvo-superracunala.md
+      - Baza struktura proteina RCSB PDB: hr/nastava/materijali/pdb-baza-proteina.md
+      - Upravljanje zavisnostima paketa u jeziku PHP: hr/nastava/materijali/php-composer.md
+      - Baratanje HTTP kolačićima u jeziku PHP: hr/nastava/materijali/php-cookies.md
+      - Izvođenje HTTP zahtjeva korištenjem biblioteke cURL u jeziku PHP: hr/nastava/materijali/php-curl.md
+      - Postavljanje datoteka na poslužitelj u jeziku PHP: hr/nastava/materijali/php-file-upload.md
+      - HTTP autentifikacija u jeziku PHP: hr/nastava/materijali/php-http-auth.md
+      - Kodiranje HTTP sadržaja i kompresija u jeziku PHP: hr/nastava/materijali/php-http-encoding.md
+      - Obrada podataka zapisanih u obliku JavaScript Object Notation (JSON) u jeziku PHP: hr/nastava/materijali/php-json.md
+      - Korištenje biblioteke OpenSSL u jeziku PHP: hr/nastava/materijali/php-openssl.md
+      - Implementacija REpresentational State Transfer (REST) aplikacijskog programskog sučelja u jeziku PHP: hr/nastava/materijali/php-rest.md
+      - Programiranje mrežnih aplikacija korištenjem utičnica u jeziku PHP: hr/nastava/materijali/php-sockets.md
+      - Korištenje biblioteke Sodium u jeziku PHP: hr/nastava/materijali/php-sodium.md
+      - Ugrađeni web poslužitelj u interpreteru jezika PHP: hr/nastava/materijali/php-ugradjeni-web-posluzitelj.md
+      - Višejezičnost u jeziku PHP: hr/nastava/materijali/php-visejezicnost.md
+      - Obrada HTTP zahtjeva i stvaranje odgovora u jeziku PHP: hr/nastava/materijali/php-zahtjev-odgovor.md
+      - Osnovni alati za analizu računalne mreže: hr/nastava/materijali/ping-traceroute-nestat-analiza-mreze.md
+      - Message transfer agent -- Postfix: hr/nastava/materijali/postfix-procmail-smtp-posluzitelj.md
+      - Konfiguracija sustava za upravljanje bazom podataka PostgreSQL: hr/nastava/materijali/postgresql-sustav-za-upravljanje-bazom-podataka.md
+      - Datotečni sustavi Procfs i Sysfs: hr/nastava/materijali/procfs-sysfs-informacije-konfiguracija.md
+      - Pokretanje računala putem mrežnog sučelja: hr/nastava/materijali/pxe-pokretanje-racunala-putem-mreznog-sucelja.md
+      - Vizualizacija molekula u alatu PyMOL: hr/nastava/materijali/pymol-vizualizacija-molekula.md
+      - Django vježba 1 -- Postavljanje razvojnog okruženja web aplikacija na operacijskim sustavima sličnim Unixu i Windowsima. Stvaranje projekta i organizacija koda. Korištenje dokumentacije: hr/nastava/materijali/python-django-vj1.md
+      - Django vježba 2 -- Korištenje baze podataka. Stvaranje modela i objektno-relacijsko preslikavanje: hr/nastava/materijali/python-django-vj2.md
+      - Django vježba 3 -- Relacije među modelima. Upiti: hr/nastava/materijali/python-django-vj3.md
+      - Django vježba 4 -- Usmjeravanje i URL-i. Stvaranje pogleda kao odgovora na HTTP zahtjeve: hr/nastava/materijali/python-django-vj4.md
+      - Django vježba 5 -- Generički pogledi: hr/nastava/materijali/python-django-vj5.md
+      - Django vježba 6 -- Predaja obrazaca HTTP metodama GET i POST. Provjera unosa i prikaz poruka o greškama: hr/nastava/materijali/python-django-vj6.md
+      - Django vježba 7 -- Predlošci obrazaca. Stvaranje obrazaca iz modela: hr/nastava/materijali/python-django-vj7.md
+      - Django vježba 9 -- Sijanje i migracije: hr/nastava/materijali/python-django-vj9.md
+      - Django vježba 10 -- Autentifikacija. Autorizacija: hr/nastava/materijali/python-django-vj10.md
+      - Django vježba 11 -- Testiranje: hr/nastava/materijali/python-django-vj11.md
+      - Django vježba 12 -- Django REST framework: hr/nastava/materijali/python-django-vj12.md
+      - Dokumentiranje Python koda: hr/nastava/materijali/python-dokumentiranje.md
+      - Python -- funkcije i klase: hr/nastava/materijali/python-funkcije-klase.md
+      - Python -- ulaz i izlaz: hr/nastava/materijali/python-input-output.md
+      - Python -- moduli: hr/nastava/materijali/python-modularizacija.md
+      - Python -- stvaranje i ispis kalendara: hr/nastava/materijali/python-modul-calendar.md
+      - Rad s Python modulom pyca/cryptography: hr/nastava/materijali/python-modul-cryptography.md
+      - Python -- osnovni tipovi podataka datuma i vremena: hr/nastava/materijali/python-modul-datetime.md
+      - Python -- usluge specifične za operacijske sustave slične Unixu -- pozivi fcntl() i ioctl(): hr/nastava/materijali/python-modul-fcntl.md
+      - Python -- usluge za višejezičnost: hr/nastava/materijali/python-modul-gettext.md
+      - Python -- ekspanzija uzoraka imena putanje u stilu operacijskih sustava sličnih Unixu: hr/nastava/materijali/python-modul-glob.md
+      - Python -- internacionalizacija i lokalizacija: hr/nastava/materijali/python-modul-locale.md
+      - Rad s Python modulom matplotlib i sučeljem pyplot: hr/nastava/materijali/python-modul-matplotlib.md
+      - Python modul mpi4py -- dinamičko upravljanje procesima: hr/nastava/materijali/python-modul-mpi4py-dinamicko-upravljanje-procesima.md
+      - Python modul mpi4py -- jednostrana komunikacija: hr/nastava/materijali/python-modul-mpi4py-jednostrana-komunikacija.md
+      - Python modul mpi4py -- kolektivna komunikacija: hr/nastava/materijali/python-modul-mpi4py-kolektivna-komunikacija.md
+      - Python modul mpi4py -- komunikacija točka-do-točke: hr/nastava/materijali/python-modul-mpi4py-komunikacija-tocka-do-tocke.md
+      - Python modul mpi4py -- komunikatori i grupe procesa: hr/nastava/materijali/python-modul-mpi4py-komunikatori-grupe.md
+      - Python modul mpi4py -- osnove: hr/nastava/materijali/python-modul-mpi4py-osnove.md
+      - Python modul mpi4py -- paralelni ulaz/izlaz: hr/nastava/materijali/python-modul-mpi4py-paralelni-ulaz-izlaz.md
+      - Python modul mpi4py -- upravljanje okolinom: hr/nastava/materijali/python-modul-mpi4py-upravljanje-okolinom.md
+      - Python -- višeprocesnost na jednom računalu: hr/nastava/materijali/python-modul-multiprocessing.md
+      - Rad s Python modulom numpy: hr/nastava/materijali/python-modul-numpy.md
+      - Python -- općenite usluge operacijskog sustava -- osnovna sučelja: hr/nastava/materijali/python-modul-os.md
+      - Python -- općenite usluge operacijskog sustava -- baratanje imenom putanje: hr/nastava/materijali/python-modul-os-path.md
+      - Python modul PyCUDA -- funkcije i tipovi podatka dostupni u CUDA bibliotekama: hr/nastava/materijali/python-modul-pycuda-biblioteke-funkcija.md
+      - Python modul PyCUDA -- funkcije uređaja i domaćina: hr/nastava/materijali/python-modul-pycuda-funkcije-uredjaja-domacina.md
+      - Python modul PyCUDA -- hijerarhija GPU memorije: hr/nastava/materijali/python-modul-pycuda-hijerarhija-memorije.md
+      - Python modul PyCUDA -- paralelni algoritmi na matricama: hr/nastava/materijali/python-modul-pycuda-matrice.md
+      - Python modul PyCUDA -- rad s više GPU-a: hr/nastava/materijali/python-modul-pycuda-multi-gpu.md
+      - Python modul PyCUDA -- osnove rada s GPU-om: hr/nastava/materijali/python-modul-pycuda-osnove.md
+      - Python modul PyCUDA -- otklanjanje grešaka i curenja memorije: hr/nastava/materijali/python-modul-pycuda-otklanjanje-gresaka.md
+      - Python modul PyCUDA -- mjerenje performansi, profiliranje i optimizacija: hr/nastava/materijali/python-modul-pycuda-profiliranje-optimizacija.md
+      - Python modul PyCUDA -- paralelna redukcija, norma i skalarno množenje vektora: hr/nastava/materijali/python-modul-pycuda-redukcija.md
+      - Python modul PyCUDA -- korištenje tokova i asinkronih kopiranja memorije za poboljšanje performansi: hr/nastava/materijali/python-modul-pycuda-tokovi-asinkrone-operacije.md
+      - Python modul PyCUDA -- rad s vektorskim tipovima podataka: hr/nastava/materijali/python-modul-pycuda-vektorski-tipovi.md
+      - Python modul PyCUDA -- zbrajanje vektora: hr/nastava/materijali/python-modul-pycuda-zbrajanje-vektora.md
+      - Programiranje aplikacija za heterogene sustave korištenjem tehnologije OpenCL: hr/nastava/materijali/python-modul-pyopencl.md
+      - Rad s Python modulom scipy: hr/nastava/materijali/python-modul-scipy.md
+      - Python -- međuprocesna komunikacija -- čekanje na završetak ulazno/izlaznih operacija: hr/nastava/materijali/python-modul-select.md
+      - Python -- međuprocesna komunikacija -- baratanje signalima: hr/nastava/materijali/python-modul-signal.md
+      - Python -- međuprocesna komunikacija -- utičnice: hr/nastava/materijali/python-modul-socket.md
+      - Python -- međuprocesna komunikacija -- podprocesi: hr/nastava/materijali/python-modul-subprocess.md
+      - Python -- parametri i funkcije ovisni o sustavu: hr/nastava/materijali/python-modul-sys.md
+      - Python -- dodatne usluge operacijskog sustava -- višenitnost: hr/nastava/materijali/python-modul-threading.md
+      - Python -- općenite usluge operacijskog sustava -- vrijeme: hr/nastava/materijali/python-modul-time.md
+      - Python -- međuprocesna komunikacija -- pozivanje udaljenih procedoura i modul XML-RPC: hr/nastava/materijali/python-modul-xmlrpc.md
+      - Rad s Python okvirom waf: hr/nastava/materijali/python-okvir-waf.md
+      - Osnovna sintaksa programskog jezika Python: hr/nastava/materijali/python-osnove-sintakse.md
+      - Programiranje i programski jezik Python: hr/nastava/materijali/python-programiranje.md
+      - Python -- često korišteni moduli standardne biblioteke: hr/nastava/materijali/python-standardna-biblioteka.md
+      - Testiranje Python aplikacija: hr/nastava/materijali/python-testiranje.md
+      - Mjerenje brzine izvođenja Python aplikacija: hr/nastava/materijali/python-timing-benchmarking.md
+      - Rad s alatima za usmjeravanje: hr/nastava/materijali/quagga-usmjeravanje.md
+      - Povijesni pregled razvoja računala i temelji računarske znanosti: hr/nastava/materijali/racunarstvo-povijest-osnove.md
+      - Sveprisutna i prožimajuća računala: hr/nastava/materijali/racunarstvo-sveprisutna-prozimajuca-racunala.md
+      - rocALUTION -- ROCm SPARSE Linear Algebra PACkage: hr/nastava/materijali/rocm-rocalution.md
+      - rocBLAS -- ROCm Basic Linear Algebra Subprograms: hr/nastava/materijali/rocm-rocblas.md
+      - rocFFT -- ROCm Fast Fourier Transforms: hr/nastava/materijali/rocm-rocfft.md
+      - rocPRIM -- ROCm parallel PRIMitives: hr/nastava/materijali/rocm-rocprim.md
+      - rocRAND -- ROCm RANDom number generator: hr/nastava/materijali/rocm-rocrand.md
+      - rocSOLVER -- ROCm-ov linear algebra SOLVER: hr/nastava/materijali/rocm-rocsolver.md
+      - rocSPARSE -- ROCm SPARSE basic linear algebra subroutines: hr/nastava/materijali/rocm-rocsparse.md
+      - Interoperabilnost operacijskih sustava Windows i GNU/Linux korištenjem Sambe: hr/nastava/materijali/samba-interoperabilnost-windows-linux.md
+      - Multipleksiranje terminala: hr/nastava/materijali/screen-tmux-multipleksiranje-terminala.md
+      - Mandantna kontrola pristupa korištenjem sustava SELinux: hr/nastava/materijali/selinux-mandantna-kontrola-pristupa.md
+      - Mjerenje performansi web poslužitelja alatom Siege: hr/nastava/materijali/siege-mjerenje-performansi-web-posluzitelja.md
+      - Integracija simuliranih i stvarnih mreža: hr/nastava/materijali/simulator-ns3-integracija-simuliranih-i-stvarnih-mreza.md
+      - Simulacijski modeli grešaka paketa: hr/nastava/materijali/simulator-ns3-modeli-gresaka.md
+      - Simulacijski modeli mrežnih aplikacija kao generatora prometa: hr/nastava/materijali/simulator-ns3-mrezne-aplikacije-promet.md
+      - Teorijske osnove simulacije računalnih mreža: hr/nastava/materijali/simulator-ns3-pojmovi.md
+      - Povezivanje čvorova u simulaciji računalnih mreža: hr/nastava/materijali/simulator-ns3-povezivanje-cvorova.md
+      - Simulacijski modeli redova čekanja: hr/nastava/materijali/simulator-ns3-redovi-cekanja.md
+      - Simulacijski modeli TCP-ovih algoritama za upravljanje zagušenjem: hr/nastava/materijali/simulator-ns3-tcp-upravljanje-zagusenjem.md
+      - Slaganje složenijih topologija u simulaciji računalnih mreža: hr/nastava/materijali/simulator-ns3-topologije.md
+      - Spam filter -- SpamAssassin: hr/nastava/materijali/spamassasin-spam-filter.md
+      - Praćenje korištenja programskih sučelja sustava korištenjem alata strace i ltrace: hr/nastava/materijali/strace-ltrace-sucelja-operacijskog-sustava.md
+      - IPsec alat strongSwan: hr/nastava/materijali/strongswan-ipsec.md
+      - Automatizacija zadaća operacijskog sustava: hr/nastava/materijali/systemd-cron-automatizacija-zadaca-operacijskog-sustava.md
+      - Praćenje događaja operacijskog sustava: hr/nastava/materijali/systemd-journalctl-pracenje-dogadjaja-operacijskog-sustava.md
+      - Upravljanje uslugama operacijskog sustava: hr/nastava/materijali/systemd-systemctl-upravljanje-uslugama-operacijskog-sustava.md
+      - Tuneliranje alatom tinc: hr/nastava/materijali/tinc-virtualna-privatna-mreza.md
+      - Anonimna komunikacija alatom Tor: hr/nastava/materijali/tor-anonimna-komunikacija.md
+      - Povijesni pregled razvoja Unixa u AT&T-u i drugim tvrtkama: hr/nastava/materijali/unix-att-povijest-osnove.md
+      - Povijesni pregled razvoja Unixa na Kalifornijskom sveučilištu u Berkeleyu: hr/nastava/materijali/unix-bsd-povijest-osnove.md
+      - Upravljački programi hardvera: hr/nastava/materijali/upravljacki-programi-hardvera.md
+      - Upravljanje dokumentacijom računalnih sustava i mreža: hr/nastava/materijali/upravljanje-dokumentacijom-racunalnih-sustava-i-mreza.md
+      - Osnovni pojmovi upravljanja računalnim sustavima i mrežama: hr/nastava/materijali/upravljanje-racunalnim-sustavima-i-mrezama-pojmovi.md
+      - Vlasnički softveri posebne namjene i računalne igre: hr/nastava/materijali/vlasnicki-softveri-posebne-namjene-i-racunalne-igre.md
+      - Strujanje multimedijskog sadržaja alatom VLC: hr/nastava/materijali/vlc-strujanje-multimedijskog-sadrzaja.md
+      - Filtriranje paketa: hr/nastava/materijali/wireshark-filtriranje-paketa.md
+      - Snimanje prometa aplikacija: hr/nastava/materijali/wireshark-snimanje-prometa.md
+      - Instalacija i konfiguracija sustava za upravljanje sadržajem Wordpress: hr/nastava/materijali/wordpress-instalacija-web-aplikacije.md
+      - Upravljanje paketima: hr/nastava/materijali/yum-rpm-upravljanje-paketima-operacijskog-sustava.md
+      - Znanstveni softver: hr/nastava/materijali/znanstveni-softver.md
+      - Upute za upravljanje bibliografijom korištenjem alata Zotero: hr/nastava/materijali/zotero-citiranje-bibliografija.md
+  - Teme završnih i diplomskih radova: hr/teme-zavrsnih-i-diplomskih-radova.md
+  - Aktivizam: hr/aktivizam.md
+  - Arhiva:
+    - Eseji:
+      - Peter Norvig -- Naučite programirati u deset godina: hr/arhiva/eseji/peter-norvig-naucite-programirati-u-deset-godina.md
+  - Vrlo važne informacije: hr/vrlo-vazne-informacije.md
+  - Contents in English:
+      - About: en/index.md
+      - People: en/people.md
+      - Research and development: en/research-and-development.md
+      - Partnerships and collaborations: en/partnerships-and-collaborations.md
+      - Teaching: en/teaching.md
+      - Activism: en/activism.md
+      - Very important information: en/very-important-information.md
 theme:
   name: material
   features:
@@ -48,5 +324,8 @@ extra:
       lang: en
 markdown_extensions:
   - admonition
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.highlight
   - pymdownx.superfences
