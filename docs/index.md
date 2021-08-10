@@ -1,5 +1,5 @@
-# CNPSLab | lab.miletic.net
+# GASERI | group.miletic.net
 
-:flag_hr: [Laboratorij za računalne mreže, paralelizaciju i simulaciju](hr/index.md)
+:flag_hr: [Grupa za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi](hr/index.md)
 
-:flag_us: [Computer Networks, Parallelization, and Simulation Laboratory](en/index.md)
+:flag_us: [Group for Apps and Services on Exascale Research Infrastructure](en/index.md)
