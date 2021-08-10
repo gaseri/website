@@ -322,6 +322,9 @@ extra:
     - name: English
       link: /en/
       lang: en
+  analytics:
+    provider: google
+    property: UA-58099154-18
 markdown_extensions:
   - admonition
   - pymdownx.emoji:
