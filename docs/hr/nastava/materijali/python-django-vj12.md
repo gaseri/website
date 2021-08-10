@@ -1,20 +1,26 @@
-# Django REST framework
-Na današnjim vježbama raditi ćemo sa bibliotekom `djangorestframework`. 
+---
+author: Milan Petrović
+---
 
+# Django vježba 12: Django REST framework
 
-## Početak rada 
+Na današnjim vježbama raditi ćemo sa bibliotekom `djangorestframework` ([službeno web sjedište](https://www.django-rest-framework.org/)).
+
+## Početak rada
+
 Za početak rada potrebno je stvoriti novi projekt i unutar njega aplikaciju.
 
+``` shell
+$ django-admin startproject vj11
+(...)
+$ cd vj11
+$ django-admin startapp main
+(...)
 ```
-django-admin startproject vj11
-cd vj11
-django-admin startapp main
-```
-:::success
-Nakon što ste kreirali aplikaciju, povežite ju sa projektom i kreirajte administratora.
-:::
 
-```
+Nakon što ste kreirali aplikaciju, povežite ju sa projektom i kreirajte administratora.
+
+``` python
 INSTALLED_APPS = [
     ...
     'main.apps.MainConfig',
@@ -22,18 +28,18 @@ INSTALLED_APPS = [
 ]
 ```
 
+``` shell
+$ ./manage.py createsuperuser --username admin
+(...)
 ```
-./manage.py createsuperuser --username admin
-```
 
+## Kreiranje modela
 
-## Kreiranje modela 
-
-Unutar `main/models.py` potrebno je kreirati model. Podatke koji će biti uneseni u bazu biti će naknadno vraćani na zahtjev. 
+Unutar `main/models.py` potrebno je kreirati model. Podatke koji će biti uneseni u bazu biti će naknadno vraćani na zahtjev.
 
 Kreiranje modela:
 
-```python
+``` python
 from django.db import models
 
 class Korisnik(models.Model):
@@ -42,39 +48,41 @@ class Korisnik(models.Model):
     
     def __str__(self):
     return self.name
-
 ```
 
 Nakon kreiranog modela potrebno je izvršiti migracije:
 
-```
-./manage.py makemigrations
-./manage.py migrate
+``` shell
+$ ./manage.py makemigrations
+(...)
+$ ./manage.py migrate
+(...)
 ```
 
-:::success
-Registrirajte kreirani model Korisnik unutar admin.py. Pokrenite server i provjerite prikaz unutar admin sučelja a zatim unesite podatke za 3 korisnika.
+!!! zadatak
+    Registrirajte kreirani model `Korisnik` unutar `admin.py`. Pokrenite server i provjerite prikaz unutar admin sučelja a zatim unesite podatke za 3 korisnika.
 
-:::spoiler Rješenje
-```python
+**Rješenje zadatka.**
+
+``` python
 from django.contrib import admin
 from .models import Korisnik
 
 admin.site.register(Korisnik)
 ```
-:::
 
+## Postavljanje Django REST frameworka
 
-## Postavljanje Django REST Framework-a
+Instalacija biblioteke `djangorestframework`:
 
-Instalacija `djangorestframework` biblioteke:
-```
-pip install djangorestframework
+``` shell
+$ pip3 install djangorestframework
+(...)
 ```
 
 Pod instalirane aplikacije potrebno je dodati i `rest_framework`.
 
-```
+``` python
 INSTALLED_APPS = [
     ...
     'rest_framework',
@@ -82,23 +90,19 @@ INSTALLED_APPS = [
 ]
 ```
 
-
 ## Serijalizacija
 
-Prvi korak u kreiranju Web API-ja je pružanje načina srijalizacije instanci u obliku reprezentacije json. 
-To možemo učiniti deklariranjem serijalizatora, princip rada sličan je formama u Django-u.
+Prvi korak u kreiranju Web API-ja je pružanje načina srijalizacije instanci u obliku reprezentacije JSON. To možemo učiniti deklariranjem serijalizatora, princip rada sličan je formama u Djangu.
 
-Sljede'i korak je kreiranje `serializers.py` unutar `main` aplikacije. Koji ćemo koristiti za prikaz podataka.
+Sljedeći korak je kreiranje datoteke `serializers.py` unutar aplikacije `main`. Tu datoteku ćemo koristiti za prikaz podataka.
 
-
+``` shell
+$ touch ./main/serializers.py
+(...)
 ```
-touch ./main/serializers.py
-```
 
-```python
-
-#main/serializers.py
-
+``` python
+# main/serializers.py
 from rest_framework import serializers
 
 from main.models import Korisnik
@@ -107,21 +111,16 @@ class KorisnikSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Korisnik
         fields = ('name', 'surname')
-
 ```
-
-
 
 ## Pogledi
 
-Idemo sada kreirati prikaz unutar views.py
+Idemo sada kreirati prikaz unutar `views.py`.
 
-Ono što želimo da naši pogledi rade je upit nad svim korisnicima u bazi. A zatim taj upit prosljediti serializeru za korisnika kojeg smo prethodno kreirali. 
+Ono što želimo da naši pogledi rade je upit nad svim korisnicima u bazi. A zatim taj upit prosljediti serializeru za korisnika kojeg smo prethodno kreirali.
 
-
-```python
-#main/views.py
-
+``` python
+# main/views.py
 from rest_framework import viewsets
 
 from main.serializers import KorisnikSerializer
@@ -132,10 +131,9 @@ class KorisnikViewSet(viewsets.ModelViewSet):
     serializer_class = KorisnikSerializer
 ```
 
-
 ## URL-ovi
 
-Idemo sada sve to zajedno povezati unutar views.py
+Idemo sada sve to zajedno povezati unutar `views.py`.
 
 Because we're using viewsets instead of views, we can automatically generate the URL conf for our API, by simply registering the viewsets with a router class.
 
@@ -143,20 +141,20 @@ Again, if we need more control over the API URLs we can simply drop down to usin
 
 Finally, we're including default login and logout views for use with the browsable API. That's optional, but useful if your API requires authentication and you want to use the browsable API.
 
-```python
-#vj11/urls.py
+``` python
+# vj11/urls.py
 
 from djagno.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('amidn/', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('', include('main.urls'))
 ]
 ```
 
-```python
-#main/urls.py
+``` python
+# main/urls.py
 
 from django.urls import include, path
 from rest_framework import routers
@@ -169,24 +167,24 @@ urlpatterns = [
     path('', include(router.urls)),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
-
 ```
 
 ## Testiranje
 
-
-```
-./manage.py runserver
-```
-
-```
-sudo apt install httpie
+``` shell
+$ ./manage.py runserver
+(...)
 ```
 
-```
-http -a admin:admin http://127.0.0.1:8000/korisnici/
+``` shell
+$ pip3 install httpie
+(...)
 ```
 
-**Zadatak**
+``` shell
+$ http -a admin:admin http://127.0.0.1:8000/korisnici/
+(...)
+```
 
-Kreirajte model Vozilo koje će sadržavati polja *model* i *godina_proizvodnje*. A zatim kreirajte serializer koji će vraćati podatke o modelima vozila koja su upisana u bazu podataka.
+!!! zadatak
+    Kreirajte model Vozilo koje će sadržavati polja *model* i *godina_proizvodnje*. A zatim kreirajte serializer koji će vraćati podatke o modelima vozila koja su upisana u bazu podataka.

@@ -1,56 +1,48 @@
-# Vježba 10: Autentifikacija. Autorizacija
+---
+author: Milan Petrović
+---
 
+# Django vježba 10: Autentifikacija. Autorizacija
 
 ## Stvaranje projekta
 
-:::info
-**Priprema za rad**
-Stvorite projekt naziva `vj10`, unutar njega aplikaciju naziva `main`.
-Provedite migraciju.
-Zatim kreirajte administratora, za stvaranje korisnika sa administratorskim ovlastima koristite naredbu `./manage.py createsuperuser`.
-:::
+**Priprema za rad**: stvorite projekt naziva `vj10`, unutar njega aplikaciju naziva `main`. Provedite migraciju. Zatim kreirajte administratora, za stvaranje korisnika sa administratorskim ovlastima koristite naredbu `./manage.py createsuperuser`.
 
-Povezivanje projekta i aplikacije
+### Povezivanje projekta i aplikacije
 
-:::info
-vj10/urls.py
+Datoteka `vj10/urls.py`:
 
-```python
+``` python
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('main.urls')),
     path('accounts/', include('django.contrib.auth.urls'))
 ]
-
 ```
-:::
 
 ### Homepage
-:::info
-main/urls.py
 
-```python
+Datoteka `main/urls.py`:
+
+``` python
 from django.urls import path
 from . import views 
 
 urlpatterns = [
     path('', views.index, name='index'),
 ]
-
 ```
-:::
 
+Stvaranje pogleda za `index`:
 
-Stvaranje pogleda za index
-```python
+``` python
 def index(request):
     return render(request, 'main/index.html')
 ```
 
-Unutar aplikacije `main` stvorite si direktorij `templates`, unutar kojeg kreirate `index.html`.
-Html template:
+Unutar aplikacije `main` stvorite si direktorij `templates`, unutar kojeg kreirate `index.html`. HTML predložak:
 
-```html
+``` html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -64,25 +56,21 @@ Html template:
 ```
 
 ## Kreiranje korisnika
-:::info
-Posjetite `/accounts` i `/accounts/login`.
 
-:::
-Prilikom posjete `/accounts/login/` javila se greška `TemplateDoesNotExist at /accounts/login/`. Gdje možemo vidjeti iz poruke `Exception Value: registration/login.html` da Django ne može pronaći traženi predložak.
+Posjetite `http://127.0.0.1:8000/accounts/` i `http://127.0.0.1:8000/accounts/login/`. Prilikom posjete `/accounts/login/` javila se greška `TemplateDoesNotExist at /accounts/login/`, gdje možemo vidjeti iz poruke `Exception Value: registration/login.html` da Django ne može pronaći traženi predložak.
 
-:::success
-**Zadatak**
-Unutar `templates/registration` stvorite `login.html`.
-:::
+!!! zadatak
+    Unutar `templates/registration` stvorite `login.html`.
 
 ### Login
-```html
+
+``` html
 {% if form.errors %}
     <h3>Unos nije ispravan.</h3>
 {% endif %}
 ```
 
-```html
+``` html
 {% if next %}
     {% if user.is_authenticated %}
         <p>Your account doesn't have access to this page. To proceed,
@@ -93,7 +81,7 @@ Unutar `templates/registration` stvorite `login.html`.
 {% endif %}
 ```
 
-```html
+``` html
 <form method="post" action="{% url 'login' %}">
     {% csrf_token %}
     <table>
@@ -111,46 +99,47 @@ Unutar `templates/registration` stvorite `login.html`.
   </form>
 ```
 
-
-Detaljnije o [csrf_tokenu](https://docs.djangoproject.com/en/3.2/ref/csrf/)
+Detaljnije o [CSRF tokenu](https://docs.djangoproject.com/en/3.2/ref/csrf/)
 
 Postavljanje lokacije gdje želimo da korisnik bude usmjeren nakon uspješnog logina radimo unutar `settings.py`, tako da dodamo npr. `LOGIN_REDIRECT_URL = '/'` za usmjeravanje na `index.html`.
 
-### Registracija 
+### Registracija
+
 Za registraciju koristimo gotovu formu sa:
-```python
+
+``` python
 from django.contrib.auth.forms import UserCreationForm
 ```
-I kreiramo funkciju `register`:
 
-```python
+I kreiramo funkciju `register()`:
+
+``` python
 def register(request):
     form = UserCreationForm()
     context = {'form': form}
     
     return render(request, 'registration/register.html', context)
 ```
-Kreirajmo `register.html`:
-```html    
 
+Kreirajmo `register.html`:
+
+``` html
 <form method="post" action="{% url 'register' %}">
     {% csrf_token %}
 
     {% if form.errors %}
-        <h3>Greska.</h3>
+        <p>Greška.</p>
     {% endif %}
 
     {{ form }}
 
     <input type="submit" value="Register" />
-
-  </form>
+</form>
 ```
 
+Izmjenimo funkciju  `register()`:
 
-Izmjenimo `register` funkciju:
-
-```python
+``` python
 from django.contrib.auth import authenticate, login
 
 def register(request):
@@ -176,14 +165,12 @@ def register(request):
 
 Izmjene na `index.html` ako je korisnik ulogiran.
 
-```
+``` html
 <h1>This is our homepage</h1>
 
 {% if user.is_authenticated %}
-<h3> Vase ime:  {{ user.username}} </h3>   
-
+    <p>Vaše ime: {{ user.username }}</p>   
 {% else %}
-<h3>Niste ulogirani</h3>
-
+    <p>Niste prijavljeni.</p>
 {% endif %}
 ```

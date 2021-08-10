@@ -1,62 +1,55 @@
-# Vježbe 9: Sijanje i migracije 
+---
+author: Milan Petrović
+---
 
+# Django vježba 9: Sijanje i migracije
 
-## Sijanje (seeding) 
-:::info
-**Zadatak**
+## Sijanje (seeding)
 
-Kreirajte projek `vj9` i unutar njega aplikaciju `main`.
+!!! zadatak
+    - Kreirajte projekt `vj9` i unutar njega aplikaciju `main`. Unutar modela u aplikaciji `main` kreirajte klasu `Student`. Klasa `Student` neka sadrži vrijednost `first_name`.  
+    - Provedite potrebne naredbe za migraciju.  
+    - Pokrenite `./manage.py shell` i kreirajte jednog studenta.
 
-Unutar modela u aplikaciji `main` kreirajte klasu Student. Klasa Student neka sadrži vrijednost `first_name`.
+Naredbom `dumpdata` izvozimo vrijednosti iz baze ([detaljnije o naredbi dumpdata](https://docs.djangoproject.com/en/3.2/ref/django-admin/#dumpdata)). Pokrenimo je na način:
 
-Provedite potrebne naredbe za migraciju.
-
-Pokrenite `./manage.py shell` i kreirajte jednog studenta
-:::
-
-S naredbom `dumpdata` izvozimo vrijednosti iz baze. Detaljnije o naredbi [dumpdata](https://docs.djangoproject.com/en/3.2/ref/django-admin/#dumpdata).
+``` shell
+$ ./manage.py dumpdata main.Student --pk 1 --indent 4 > 0001_student.json
+(...)
 ```
-./manage.py dumpdata main.Student --pk 1 --indent 4 > 0001_student.json
-```
 
+!!! zadatak
+    Izbrišite iz baze zapis studenta kojeg ste prethodno unjeli.
 
-:::info
-**Zadatak**
+**Rješenje zadatka.**
 
-Izbrišite iz baze zapis studenta kojeg ste prethodno unjeli.
-:::spoiler
-```python
+``` python
 >>> Student.objects.filter(pk=1).delete()
 ```
-:::
-
 
 Za uvoz podataka u bazu koristimo naredbu `loaddata`. Detaljnije o naredbi [loaddata](https://docs.djangoproject.com/en/3.2/ref/django-admin/#loaddata).
 
-:::info
-**Zadatak**
-Uvezite prethodno kreirani `0001_student.json` u bazu.
-:::
+!!! zadatak
+    Uvezite prethodno kreirani `0001_student.json` u bazu.
 
+### Fixture
 
-### Django Fixture
-Fixture je zbirka podataka koje Django uvozi u bazu podataka. 
-Najjednostavniji na;in rada sa podacima je pomoću naredbi `dumpdata` i `loaddata`. 
+Fixture je zbirka podataka koje Django uvozi u bazu podataka. Najjednostavniji način rada sa podacima je pomoću naredbi `dumpdata` i `loaddata`.
 
+### Paket django-seed
 
-### django-seed
-
+``` shell
+$ pip3 install django-seed
+(...)
 ```
-pip3 install django-seed
-```
-Python modul pomoću kojeg se mogu generirati podaci za bazu podataka. U pozadini koristi biblioteku [faker](https://github.com/joke2k/faker/) za generiranje testnih podataka. Detaljnije o django-seed možete pronaći u [dokumentaciji](https://github.com/mstdokumaci/django-seed).
 
+Python modul pomoću kojeg se mogu generirati podaci za bazu podataka. U pozadini koristi biblioteku [faker](https://github.com/joke2k/faker) ([dokumentacija](https://faker.readthedocs.io/)) za generiranje testnih podataka. Detaljnije o django-seed možete pronaći u [dokumentaciji](https://github.com/mstdokumaci/django-seed).
 
 ### Brisanje podataka sijanja
 
 U nastavku je generirana skripta `revert_seed.py` pomoću koje brišemo vrijednosti iz baze koje smo prethodno stvorili i unosili sijanjem.
 
-```python
+``` python
 import json
 import glob
 
@@ -101,52 +94,49 @@ for fixture in fixtures:
             except:
                 msg += 'not deleted\n'
     print(msg)
-
-```
-Skriptu pokrenite sa naredbom:
-
-```
-manage.py shell < revert_seed.py 
 ```
 
+Skriptu pokrenite naredbom:
 
-## Učitavanje podataka sijanja u Testiranje
+``` shell
+$ manage.py shell < revert_seed.py
+(...) 
+```
+
+## Učitavanje podataka sijanja u testiranje
 
 Testirajmo rad tako da dohvatimo podatke o studentu koji ima primarni ključ 1 i čije ime je Ivo.
 
-```python
-#test.py
+``` python
+# test1.py
 from django.test import TestCase
 from main.models import Student
 
 class MyTest(TestCase): 
-    
     # fixtures = ["0001_student.json"]  
     
     def test_should_create_group(self):
         s = Student.objects.get(pk=1)
-        self.assertEqual(s.first_name, "ivo")
-
+        self.assertEqual(s.first_name, 'Ivo')
 ```
 
 Kreirani test pokrenite u terminalu s naredbom:
-```
-./manage.py test test
+
+``` shell
+$ ./manage.py test test1
+(...)
 ```
 
-```python
-
+``` python
 >>> from django.contrib.auth.models import User, Group
->>> Group.objects.create(name="useregroup")
->>> usergroup = Group.objects.get(name="useregroup")
->>> ivo = User.objects.create_user("ivo")
+>>> Group.objects.create(name='usergroup')
+>>> usergroup = Group.objects.get(name='usergroup')
+>>> ivo = User.objects.create_user('Ivo')
 >>> ivo.pk
-
 >>> ivo.groups.add(usergroup)
-
 ```
 
-```
+``` python
 >>> python manage.py dumpdata auth.User --pk 1 --indent 4
 >>> python manage.py dumpdata auth.User --pk 1 --indent 4 --natural-foreign
 ```
