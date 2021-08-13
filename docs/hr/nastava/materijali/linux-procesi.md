@@ -136,9 +136,11 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
     **Napomena:** Ovisno o sigurnosnim ograničenjima sustava na kojem radite, obični korisnici ne mogu ni postavljati niceness na nižu vrijednost od one koju su prethodno postavili. Ovaj zadatak je zadan tako da uvijek bude rješiv.
 
 !!! note
-    *The name "nice" comes from the fact that the program's purpose is to modify a process niceness value. The true priority, used to decide how much cpu time to concede to each process, is calculated by the kernel process scheduler from a combination of the different processes niceness values and other data, such as the amount of I/O done by each process.*
+    Prema [Wikipediji](https://en.wikipedia.org/wiki/Nice_(Unix)#Etymology):
 
-    *The name "niceness" originates from the idea that a process with a higher niceness value is "nicer" to other processes in the system, as it allows the other processes more cpu time, by having a lower priority (and therefore a higher niceness) itself.*
+    > The name "nice" comes from the fact that the program's purpose is to modify a process niceness value. The true priority, used to decide how much cpu time to concede to each process, is calculated by the kernel process scheduler from a combination of the different processes niceness values and other data, such as the amount of I/O done by each process.
+    >
+    > The name "niceness" originates from the idea that a process with a higher niceness value is "nicer" to other processes in the system, as it allows the other processes more cpu time, by having a lower priority (and therefore a higher niceness) itself.
 
 - `top` služi za nadgledanje procesa u realnom vremenu koji se izvode; na vrhu popisa prikazuje procese koji troše najviše procesorskog vremena (odatle i naziv)
 

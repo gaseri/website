@@ -4,9 +4,9 @@ author: Vedran Miletić
 
 # Python: dodatne usluge operacijskog sustava: višenitnost
 
-> *Why did the multithreaded chicken cross the road?*
+> Why did the multithreaded chicken cross the road?
 >
-> *to To other side. get the*
+> to To other side. get the
 
 ## Pojam procesne niti
 
@@ -362,7 +362,7 @@ author: Vedran Miletić
 !!! admonition "Zadatak"
     Dodajte dijeljenu barijeru u obje funkcije prethodnog zadatka tako da se po završetku izrade čaja, odnosno kolačića, čeka na onu drugu stranu, a zatim na ekran ispiše:
 
-    *I čim sam prepoznao okus u lipov čaj namočena komada madelaine, koji mi je svake nedjelje davala tetka Leonie (tada još doduše nisam znao razlog, zbog koga me ta uspomena tako usrećivala, nego sam to otkriće morao odgoditi za mnogo poslije), odmah se pojavi i stara, siva kuća na ulicu, u kojoj je bila njena soba, pa se kao pozorišni dekor pridruži malom paviljonu, koji je gledao na vrt, a koji su na njenoj stražnjoj strani nadogradili za moje roditelje (i baš to je bio onaj krnji komad, koji sam do sad jedini vidio); a s kućom se pojavi i grad. Trg, kamo su me slali prije ručka, ulice, kojima sam trčao od jutra do večeri, po svakom vremenu, i šetnje, na koje smo odlazili, kad je bilo lijepo vrijeme. I kao što se dešava u onoj igri, kojom se Japanci zabavljaju uranjajući u porculansku zdjelu punu vode komadiće do tad bezlična papira, koji se tek što je umočen, isteže, savija, bojadiše, diferencira, pretvara u cvijeće, kuće i određene osobe, koje je moguće prepoznati, tako je i sad sve cvijeće iz našeg vrta, iz Swannova perivoja, tako su svi lopoči s Vivonne, oni dobri seoski ljudi, njihovi mali domovi, crkva i cio Combray sa svojom okolinom, tako je sve što ima oblik i čvrstoću, i grad i vrtovi, izašlo iz moje čaše čaja.*
+    > I čim sam prepoznao okus u lipov čaj namočena komada madelaine, koji mi je svake nedjelje davala tetka Leonie (tada još doduše nisam znao razlog, zbog koga me ta uspomena tako usrećivala, nego sam to otkriće morao odgoditi za mnogo poslije), odmah se pojavi i stara, siva kuća na ulicu, u kojoj je bila njena soba, pa se kao pozorišni dekor pridruži malom paviljonu, koji je gledao na vrt, a koji su na njenoj stražnjoj strani nadogradili za moje roditelje (i baš to je bio onaj krnji komad, koji sam do sad jedini vidio); a s kućom se pojavi i grad. Trg, kamo su me slali prije ručka, ulice, kojima sam trčao od jutra do večeri, po svakom vremenu, i šetnje, na koje smo odlazili, kad je bilo lijepo vrijeme. I kao što se dešava u onoj igri, kojom se Japanci zabavljaju uranjajući u porculansku zdjelu punu vode komadiće do tad bezlična papira, koji se tek što je umočen, isteže, savija, bojadiše, diferencira, pretvara u cvijeće, kuće i određene osobe, koje je moguće prepoznati, tako je i sad sve cvijeće iz našeg vrta, iz Swannova perivoja, tako su svi lopoči s Vivonne, oni dobri seoski ljudi, njihovi mali domovi, crkva i cio Combray sa svojom okolinom, tako je sve što ima oblik i čvrstoću, i grad i vrtovi, izašlo iz moje čaše čaja.
 
 !!! admonition "Dodatni zadatak"
     Napišite program koji vrši zbroj kvadrata brojeva u rasponu od 1 do 500000 u 3 niti (raspodijelite po želji). Iskoristite višenitnosti i varijablu u koju ćete spremiti zbroj učinite dijeljenom; iskoristite zaključavanje kod promjene varijable u svakoj od niti; napravite dijeljenu barijeru između tri niti tako da niti čekaju jedna na drugu i istovremeno završavaju izvođenje.

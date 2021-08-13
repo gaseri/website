@@ -6,7 +6,7 @@ author: Vedran Miletić
 
 ## GPU Education Center (formerly CUDA Teaching Center)
 
-> *Do your science; let us handle your computation.*
+> Do your science; let us handle your computation.
 
 ![GPU Education Center logo](../images/gpu-education-center-logo.png)
 

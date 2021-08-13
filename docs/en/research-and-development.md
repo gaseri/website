@@ -8,12 +8,13 @@ author: Vedran Miletić
 
 In the area of software development, regardless of the topic and required background, we are interested in high priority and high impact TODOs in open source projects which may or may not have enough developers working on them. As for a particular topic, we are interested in computational biochemistry tools and extending principles of free and open source software to pharmacy and biotechnology.
 
-## Make GPUOpen great (collaboration with AMD)
+## Radeon open source Linux driver development
 
 ### Background
 
-> *AMD should understand that the openness of OpenCL gives them an advantage and should push it much much much harder.*  
-> -- [Vedran Miletić, June 2014](https://youtu.be/UYnnbsU0BoQ?t=40m54s)
+> AMD should understand that the openness of OpenCL gives them an advantage and should push it much much much harder.
+
+-- [Vedran Miletić, June 2014](https://youtu.be/UYnnbsU0BoQ?t=40m54s)
 
 AMD took a stand for open source which has been wanted and recommended by many (including us), and we respect that. By choosing to base its Linux and high performance computing strategy on open source software, AMD has made a large step forward. We hope AMD will deliver on its promise and will be following their actions. Further reading:
 
