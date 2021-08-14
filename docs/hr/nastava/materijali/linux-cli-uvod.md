@@ -55,7 +55,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
     - Ispišite na ekranu kalendar za tekuću godinu.
     - Ispišite na ekranu kalendar za 2004. godinu.
     - Ispišite na ekranu julijanski kalendar za 3. mjesec 2004. godine.
-    - Koliko argumenata prima naredba cal u prethodnom zadatku? A koliko parametara?
+    - Koliko argumenata prima naredba `cal` u prethodnom zadatku? A koliko parametara?
 
 - `date` ispisuje datum u određenom formatu
 
