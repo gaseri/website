@@ -335,7 +335,7 @@ extra:
       lang: en
   analytics:
     provider: google
-    property: UA-58099154-18
+    property: G-3CSW7LLM5F
 markdown_extensions:
   - admonition
   - pymdownx.emoji:
