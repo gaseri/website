@@ -464,7 +464,7 @@ i gde su sve cure prave testerke,
 i najbolji momci kodiraju ko lavovi,  
 neka gore klasteri, neka gore klasteri!
 
-([Izvorni tekst na )Tekstomaniji <http://tekstomanija.com/slada-delibasic-dlanovi/>[__))
+([Izvorni tekst na Tekstomaniji](http://tekstomanija.com/slada-delibasic-dlanovi/))
 
 ### Slađa Delibašić -- CUDA, NVIDIA, Tesla (prerada Poznata, viđena, slavna)
 
