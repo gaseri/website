@@ -9,7 +9,7 @@ author: Wes Barnett, Vedran Miletić
     [Wes Barnett](https://github.com/wesbarnett) and were originally published
     in the tutorials section of his former website. The tutorials are presently
     maintained by [Vedran Miletić](https://vedran.miletic.net/) and published in
-    the tutorials section of the [Group for Apps and Services on Exascale
+    the tutorials section of the [Group for Applications and Services on Exascale
     Research Infrastructure (GASERI) website](https://group.miletic.net/).
 
 These are some [GROMACS](https://www.gromacs.org/) tutorials for
