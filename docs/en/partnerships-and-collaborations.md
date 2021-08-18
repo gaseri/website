@@ -46,7 +46,7 @@ Scientists and engineers with domain expertise can focus on solving problems fro
 
 - **Photonic (formerly Prototype) WDM Network Simulator** (PWNS) is a network simulator based on ns-3 that provides models for optical network components. Optimization of routing and wavelength assignment is done using CUDA. To learn more, see [Photonic WDM Network Simulator (PWNS)](research-and-development.md#photonic-wdm-network-simulator-pwns).
 
-- DNA methylation is a fundamental mechanism in functional organization of the human genome. Using CUDA-enabled NVIDIA GPU with open-source computational chemistry software, we have developed *in-silico* **a set of potential inhibitors of human DNA methyltransferase Dnmt1**. [Learn more.](https://www.svedruziclab.com/projects/)
+- DNA methylation is a fundamental mechanism in functional organization of the human genome. Using CUDA-enabled NVIDIA GPU with open-source computational chemistry software, we have developed *in-silico* **a set of potential inhibitors of human DNA methyltransferase Dnmt1**. [Learn more.](https://svedruziclab.github.io/projects/)
 
 - **Your project!** Have a research project idea or an ongoing project? Think it could benefit from GPU computing? We would like to hear about it; get in touch with us.
 
@@ -66,6 +66,6 @@ We are an interdisciplinary team consisting of professors, research and teaching
 
 - [Vedran Miletić](https://vedran.miletic.net/), Department of Informatics and Faculty of Engineering
 - [Božidar Kovačić](https://portal.uniri.hr/portfelj/1506), Department of Informatics
-- [Željko Svedružić](https://www.svedruziclab.com/people/zeljko/), Department of Biotechnology and Faculty of Medicine
+- [Željko Svedružić](https://svedruziclab.github.io/people/zeljko/), Department of Biotechnology and Faculty of Medicine
 - [Kristijan Lenac](https://klenac.weebly.com/), Faculty of Engineering
 - [Luka Vretenar](https://luka.vretenar.pro/), [Enliteon](http://www.enliteon.com/) (formerly Faculty of Engineering and Department of Informatics)
