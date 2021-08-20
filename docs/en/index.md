@@ -6,10 +6,10 @@ author: Vedran Miletić
 
 (This page is also available [in Croatian](../hr/index.md).)
 
-**Computer Networks, Parallelization, and Simulation Laboratory** (CNPSLab, local name: *Laboratorij za računalne mreže, paralelizaciju i simulaciju*) is a research, development, and teaching unit at [University of Rijeka](https://www.uniri.hr/) [Department of Informatics](https://www.inf.uniri.hr/). Founded in April 2008. as Computer Networks Laboratory (local name: *Laboratorij za računalne mreže*), the Lab's name has been updated with the expansion of scientific and educational interests.
+**Group for Applications and Services on Exascale Research Infrastructure** (hrv. *Grupa za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi*, abbr. GASERI) is a research, development, and teaching unit at [University of Rijeka](https://www.uniri.hr/) [Department of Informatics](https://www.inf.uniri.hr/) built on the legacy of Computer Networks, Parallelization, and Simulation Laboratory (hrv. *Laboratorij za računalne mreže, paralelizaciju i simulaciju*, abbr. CNPSLab) and Computer Networks Laboratory (hrv. *Laboratorij za računalne mreže*, abbr. CNLab).
 
-Specifically, we are interested in computational science and high performance computing using open source software and hardware as as much as possible.
+## Scientific and professional interests
 
-Generally, our goal is to do better science the open source way; science is inherently open and should be kept so. The open source way includes open file formats, open source software, open source hardware, defensive patent licensing, and open access publication.
+We are generally interested in scientific software development, high-performance computers, cloud computing, and the use of free open-source software in the development of applications and services for supercomputers and cloud platforms. We are specifically interested in the application of exascale computing to solve problems in computational biochemistry and related fields.
 
-**The page is under construction as of mid-2017.** More details will be added at a later time, including the content salvaged from the previous website.
+In principle, our goal is to do better science in an [open-source way](https://www.theopensourceway.org/); science is essentially open and should remain so. The open-source way includes [open file formats](http://www.linfo.org/free_file_format.html), [free and open-source software](https://www.gnu.org/philosophy/free-sw.html), [open hardware](https://opensource.com/resources/what-open-hardware), [defensive patent licensing](https://www.defensivepatentlicense.org/), and [open access to published work](https://www.openaccess.nl/en/what-is-open-access).

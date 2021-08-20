@@ -7,7 +7,7 @@ repo_url: https://github.com/gaseri/website/
 edit_uri: blob/main/docs/
 nav:
   - Home: index.md
-  - O laboratoriju: hr/index.md
+  - O grupi: hr/index.md
   - Ljudi: hr/ljudi.md
   - Istraživanje i razvoj: hr/istrazivanje-i-razvoj.md
   - Nastava:
