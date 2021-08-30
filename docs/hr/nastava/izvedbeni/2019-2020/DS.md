@@ -28,7 +28,7 @@ Vrijeme konzultacija: utorkom od 10 do 12 sati ili po dogovoru e-mailom
 
 **Asistent:**
 
-v. pred. dr. sc. Vedran Miletić
+v\. pred. dr. sc. Vedran Miletić
 
 E-mail: vmiletic@inf.uniri.hr  
 Web stranica: [vedran.miletic.net](https://vedran.miletic.net/)  

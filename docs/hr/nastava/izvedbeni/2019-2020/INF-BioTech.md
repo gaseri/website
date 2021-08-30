@@ -32,7 +32,7 @@ Po dogovoru e-mailom.
 
 ## Izvođači i nastavna opterećenja (suradnici, asistenti, tehničar/laborant)
 
-v. pred. dr. sc. Vedran Miletić (10P)
+v\. pred. dr. sc. Vedran Miletić (10P)
 
 dr. sc. Slobodan Beliga (20V x 2 grupe)
 

@@ -16,7 +16,7 @@ Nastavno opterećenje: 2 + 2
 
 **Nositelj predmeta:**
 
-v. pred. dr. sc. Vedran Miletić
+v\. pred. dr. sc. Vedran Miletić
 
 E-mail: vmiletic@inf.uniri.hr  
 Web stranica: [vedran.miletic.net](https://vedran.miletic.net/)  
