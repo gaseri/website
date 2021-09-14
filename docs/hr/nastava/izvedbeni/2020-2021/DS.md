@@ -188,14 +188,14 @@ Nastava će se na predmetu odvijati u zimskom semestru prema sljedećem raspored
 | 8. | 26. 11. 2020. | 16:15--17:45 | O-366 | Distribuirani sustav za upravljanje verzijama Git | V | v. pred. dr. sc. Vedran Miletić |
 | 9. | 1. 12. 2020. | 12:15--13:45 | online | Procesi: migracija koda, softverski agenti | P | izv. prof. dr. sc. Božidar Kovačić |
 | 9. | 3. 12. 2020. | 16:15--17:45 | O-366 | **1. kontrolna zadaća** | I | v. pred. dr. sc. Vedran Miletić |
-| 10. | 8. 12. 2020. | 12:15--13:45 | online | Konzistentnost i replike: distribuirani protokoli, protokoli konzistentnosti | P | izv. prof. dr. sc. Božidar Kovačić |
-| 9. | 10. 12. 2020. | 8:00 | online | **Objava ponuđenih tema projekata** | Z | v. pred. dr. sc. Vedran Miletić |
+| 9. | 8. 12. 2020. | 12:15--13:45 | online | Konzistentnost i replike: distribuirani protokoli, protokoli konzistentnosti | P | izv. prof. dr. sc. Božidar Kovačić |
+| 10. | 10. 12. 2020. | 8:00 | online | **Objava ponuđenih tema projekata** | Z | v. pred. dr. sc. Vedran Miletić |
 | 10. | 10. 12. 2020. | 16:15--17:45 | O-366 | Python modul zmq: osnove asinkrone komunikacije | V | v. pred. dr. sc. Vedran Miletić |
 | 11. | 15. 12. 2020. | 12:15--13:45 | online | Oporavak u slučaju grešaka: pouzdanost klijent-server komunikacije, pouzdanost komunikacije u grupi, oporavak | P | izv. prof. dr. sc. Božidar Kovačić |
 | 11. | 17. 12. 2020. | 16:15--17:45 | O-366 | Python modul zmq: utičnice i uzorci poručivanja | V | v. pred. dr. sc. Vedran Miletić |
-| 12. | 22. 12. 2021. | 12:15--13:45 | online | Sigurnost: sigurnosni kanali, kontrola pristupa, upravljanje sigurnošću | P | izv. prof. dr. sc. Božidar Kovačić |
-| 12. | 7. 1. 2020. | 8:00 | online | **Rok za odabir teme projekta** | Z | v. pred. dr. sc. Vedran Miletić |
-| 12. | 7. 1. 2020. | 16:15--17:45 | O-366 | Python modul zmq: složeniji uzorci poručivanja tipa zahtjev-odgovor | V | v. pred. dr. sc. Vedran Miletić |
+| 12. | 22. 12. 2020. | 12:15--13:45 | online | Sigurnost: sigurnosni kanali, kontrola pristupa, upravljanje sigurnošću | P | izv. prof. dr. sc. Božidar Kovačić |
+| 12. | 7. 1. 2021. | 8:00 | online | **Rok za odabir teme projekta** | Z | v. pred. dr. sc. Vedran Miletić |
+| 12. | 7. 1. 2021. | 16:15--17:45 | O-366 | Python modul zmq: složeniji uzorci poručivanja tipa zahtjev-odgovor | V | v. pred. dr. sc. Vedran Miletić |
 | 13. | 12. 1. 2021. | 12:15--13:45 | online | Primjeri izvođenja algoritama na distribuiranim sustavima | P | izv. prof. dr. sc. Božidar Kovačić |
 | 13. | 14. 1. 2021. | 16:15--17:45 | O-366 | Python modul zmq: pouzdani uzorci poručivanja tipa zahtjev-odgovor | V | v. pred. dr. sc. Vedran Miletić |
 | 14. | 19. 1. 2021. | 12:15--13:45 | online | Primjeri izvođenja algoritama na distribuiranim sustavima | P | izv. prof. dr. sc. Božidar Kovačić |

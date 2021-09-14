@@ -1,7 +1,7 @@
 Sveučilište u Rijeci  
 ODJEL ZA INFORMATIKU  
 Ulica Radmile Matejčić 2, Rijeka  
-Akademska 2020/2021. godina
+Akademska 2020./2021. godina
 
 # SIGURNOST INFORMACIJSKIH I KOMUNIKACIJSKIH SUSTAVA
 

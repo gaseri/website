@@ -1,7 +1,7 @@
 Sveučilište u Rijeci  
 ODJEL ZA INFORMATIKU  
 Ulica Radmile Matejčić 2, Rijeka  
-Akademska 2020/2021. godina
+Akademska 2020./2021. godina
 
 # RAČUNALNE MREŽE
 
@@ -167,7 +167,7 @@ Izvanredni:
 Nastava će se na predmetu odvijati u zimskom semestru prema sljedećem rasporedu:
 
 - predavanja: utorkom od 10:15 do 11:45 u O-028
-- vježbe: petkom od 14:15 do 15:45 i 16:15 do 17:45 u O-350 i online
+- vježbe: petkom od 14:15 do 15:45 i od 16:15 do 17:45 u O-350 i online
 
 | Tj. | Datum | Vrijeme | Prostor | Tema | Nastava | Izvođač |
 | --- | ----- | ------- | ------- | ---- | ------- | ------- |
@@ -181,7 +181,7 @@ Nastava će se na predmetu odvijati u zimskom semestru prema sljedećem raspored
 | 4. | 30. 10. 2020. | 14:15--17:45 | online | *Laboratorijska vježba 1:* Snimanje i pregledavanje mrežnog prometa (Wireshark) | V4 | v. pred. dr. sc. Vedran Miletić |
 | 5. | 3. 11. 2020. | 10:15--11:45 | O-028 | Transportni sloj. Multipleksiranje i demultipleksiranje. Prijenos podataka bez uspostave veze | P5 | v. pred. dr. sc. Vedran Miletić |
 | 5. | 6. 11. 2020. | 14:15--17:45 | online | *Laboratorijska vježba 2:* Komunikacija HTTP klijenta i poslužitelja (cURL, PHP) | V5 | v. pred. dr. sc. Vedran Miletić |
-| 6. | 10. 10. 2020. | 10:15--11:45 | O-028 | Pouzdani prijenos podataka. Prijenos podataka s uspostavom veze. Upravljanje zagušenjem | P6 | v. pred. dr. sc. Vedran Miletić |
+| 6. | 10. 11. 2020. | 10:15--11:45 | O-028 | Pouzdani prijenos podataka. Prijenos podataka s uspostavom veze. Upravljanje zagušenjem | P6 | v. pred. dr. sc. Vedran Miletić |
 | 6. | 13. 11. 2020. | 14:15--17:45 | online | *Laboratorijska vježba 3:* Konfiguracija HTTP poslužitelja (Apache) | V6 | v. pred. dr. sc. Vedran Miletić |
 | 7. | 17. 11. 2020. | 10:15--11:45 | O-028 | Mrežni sloj. Virtualni krug i datagram | P7 | v. pred. dr. sc. Vedran Miletić |
 | 7. | 20. 11. 2020. | 14:15--17:45 | online | *Laboratorijska vježba 4:* Programiranje mrežnih aplikacija (Python) | V7 | v. pred. dr. sc. Vedran Miletić |
@@ -194,13 +194,13 @@ Nastava će se na predmetu odvijati u zimskom semestru prema sljedećem raspored
 | 11. | 15. 12. 2020. | 10:15--11:45 | O-028 | Međudomensko usmjeravanje. Softverski definirano umrežavanje | P11 | v. pred. dr. sc. Vedran Miletić |
 | 11. | 18. 12. 2020. | 14:15--17:45 | online | *Laboratorijska vježba 7:* Usmjeravanje (IMUNES/CORE) | V11 | v. pred. dr. sc. Vedran Miletić |
 | 12. | 22. 12. 2020. | 10:15--11:45 | O-028 | Sloj veze podataka. Raspoznavanje i ispravak pogrešaka. Veze i protokoli višestrukog pristupa | P12 | v. pred. dr. sc. Vedran Miletić |
-| 12. | 8. 1. 2020. | 14:15--17:45 | online | *Laboratorijska vježba 8:* Dinamička dodjela mrežnih adresa (IMUNES/CORE) | V12 | v. pred. dr. sc. Vedran Miletić |
-| 13. | 12. 1. 2020. | 10:15--11:45 | O-028 | Preklopnici i lokalne mreže. Mreže podatkovnih centara | P13 | v. pred. dr. sc. Vedran Miletić |
-| 13. | 15. 1. 2020. | 14:15--17:45 | online | *Laboratorijska vježba 9:* Premošćenje i filtriranje okvira vatrozidom na veznom sloju (IMUNES/CORE) | V13 | v. pred. dr. sc. Vedran Miletić |
-| 14. | 19. 1. 2020. | 10:15--11:45 | O-028 | Bežične i mobilne mreže. Bežične veze. Bežične lokalne mreže | P14 | v. pred. dr. sc. Vedran Miletić |
-| 14. | 22. 1. 2020. | 14:15--17:45 | online | *Laboratorijska vježba 10:* Mobilnost čvorova u bežičnim mrežama (IMUNES/CORE) | V14 | v. pred. dr. sc. Vedran Miletić |
-| 15. | 26. 1. 2020. | 10:15--11:45 | O-028 | Pristup internetu putem mobilne mreže. Mobilnost | P15 | v. pred. dr. sc. Vedran Miletić |
-| 15. | 29. 1. 2020. | 14:15--17:45 | O-350 | Nadoknada laboratorijske vježbe | V15 | v. pred. dr. sc. Vedran Miletić |
+| 12. | 8. 1. 2021. | 14:15--17:45 | online | *Laboratorijska vježba 8:* Dinamička dodjela mrežnih adresa (IMUNES/CORE) | V12 | v. pred. dr. sc. Vedran Miletić |
+| 13. | 12. 1. 2021. | 10:15--11:45 | O-028 | Preklopnici i lokalne mreže. Mreže podatkovnih centara | P13 | v. pred. dr. sc. Vedran Miletić |
+| 13. | 15. 1. 2021. | 14:15--17:45 | online | *Laboratorijska vježba 9:* Premošćenje i filtriranje okvira vatrozidom na veznom sloju (IMUNES/CORE) | V13 | v. pred. dr. sc. Vedran Miletić |
+| 14. | 19. 1. 2021. | 10:15--11:45 | O-028 | Bežične i mobilne mreže. Bežične veze. Bežične lokalne mreže | P14 | v. pred. dr. sc. Vedran Miletić |
+| 14. | 22. 1. 2021. | 14:15--17:45 | online | *Laboratorijska vježba 10:* Mobilnost čvorova u bežičnim mrežama (IMUNES/CORE) | V14 | v. pred. dr. sc. Vedran Miletić |
+| 15. | 26. 1. 2021. | 10:15--11:45 | O-028 | Pristup internetu putem mobilne mreže. Mobilnost | P15 | v. pred. dr. sc. Vedran Miletić |
+| 15. | 29. 1. 2021. | 14:15--17:45 | O-350 | Nadoknada laboratorijske vježbe | V15 | v. pred. dr. sc. Vedran Miletić |
 
 P -- predavanja  
 V -- vježbe
