@@ -6,10 +6,10 @@ Akademska 2020/2021. godina
 # DISTRIBUIRANI SUSTAVI
 
 Studij: Diplomski studij informatike, smjer informacijski i komunikacijski sustavi i smjer poslovna informatika  
-Godina i semestar: 1. godina, 3. semestar
+Godina i semestar: 1. godina, 1. semestar
 
 Studij: Diplomski studij informatike, smjer nastavnički  
-Godina i semestar: 3. godina, 5. semestar
+Godina i semestar: 2. godina, 3. semestar
 
 Web stranice predmeta: [lab.miletic.net/hr/nastava/kolegiji/DS/](https://lab.miletic.net/hr/nastava/kolegiji/DS/) [moodle.srce.hr/2020-2021/](https://moodle.srce.hr/2020-2021/)
 
