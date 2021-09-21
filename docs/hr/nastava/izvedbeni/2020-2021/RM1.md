@@ -163,17 +163,17 @@ Nastava će se na predmetu odvijati u zimskom semestru prema sljedećem raspored
 
 | Tj. | Datum | Vrijeme | Prostor | Tema | Nastava | Izvođač |
 | --- | ----- | ------- | ------- | ---- | ------- | ------- |
-> 1\., 9\. 10. 2020., 14:15--17:45, O-350, Priprema radne okoline za vježbe na računalima studenata, V, v. pred. dr. sc. Vedran Miletić
-> 2\., 16\. 10. 2020., 14:15--17:45, O-350, Instalacija softvera za vježbe na računalima studenata, V, v. pred. dr. sc. Vedran Miletić
-> 3\., 23\. 10. 2020., 14:15--17:45, O-350, Analiza računalnih mreža (IMUNES/CORE), V, v. pred. dr. sc. Vedran Miletić
-> 4\., 30\. 10. 2020., 14:15--17:45, online, Snimanje i pregledavanje mrežnog prometa (Wireshark), V, v. pred. dr. sc. Vedran Miletić
-> 9\., 1\. 12. 2020., 10:15--11:45, O-359, **Online test na Merlinu**, I, v. pred. dr. sc. Vedran Miletić
-> 9\., 4\. 12. 2020., 14:15--17:45, online, Konfiguracija svojstava i adresiranje podmreža (IMUNES/CORE), V, v. pred. dr. sc. Vedran Miletić
-> 10\., 11\. 12. 2020., 14:15--17:45, online, Prevođenje mrežnih adresa i filtriranje paketa vatrozidom na mrežnom sloju (IMUNES/CORE), V, v. pred. dr. sc. Vedran Miletić
-> 11\., 18\. 12. 2020., 14:15--17:45, online, Usmjeravanje (IMUNES/CORE), V, v. pred. dr. sc. Vedran Miletić
-> 12\., 8\. 1. 2021., 14:15--17:45, online, Dinamička dodjela mrežnih adresa (IMUNES/CORE), V, v. pred. dr. sc. Vedran Miletić
-> 13\., 15\. 1. 2021., 14:15--17:45, online, Premošćenje i filtriranje okvira vatrozidom na veznom sloju (IMUNES/CORE), V, v. pred. dr. sc. Vedran Miletić
-> 14\., 22\. 1. 2021., 14:15--17:45, online, Mobilnost čvorova u bežičnim mrežama (IMUNES/CORE), V, v. pred. dr. sc. Vedran Miletić
+| 1. | 9. 10. 2020. | 14:15--17:45 | O-350 | Priprema radne okoline za vježbe na računalima studenata | V | v. pred. dr. sc. Vedran Miletić |
+| 2. | 16. 10. 2020. | 14:15--17:45 | O-350 | Instalacija softvera za vježbe na računalima studenata | V | v. pred. dr. sc. Vedran Miletić |
+| 3. | 23. 10. 2020. | 14:15--17:45 | O-350 | Analiza računalnih mreža (IMUNES/CORE) | V | v. pred. dr. sc. Vedran Miletić |
+| 4. | 30. 10. 2020. | 14:15--17:45 | online | Snimanje i pregledavanje mrežnog prometa (Wireshark) | V | v. pred. dr. sc. Vedran Miletić |
+| 9. | 1. 12. 2020. | 10:15--11:45 | O-359 | **Online test na Merlinu** | I | v. pred. dr. sc. Vedran Miletić |
+| 9. | 4. 12. 2020. | 14:15--17:45 | online | Konfiguracija svojstava i adresiranje podmreža (IMUNES/CORE) | V | v. pred. dr. sc. Vedran Miletić |
+| 10. | 11. 12. 2020. | 14:15--17:45 | online | Prevođenje mrežnih adresa i filtriranje paketa vatrozidom na mrežnom sloju (IMUNES/CORE) | V | v. pred. dr. sc. Vedran Miletić |
+| 11. | 18. 12. 2020. | 14:15--17:45 | online | Usmjeravanje (IMUNES/CORE) | V | v. pred. dr. sc. Vedran Miletić |
+| 12. | 8. 1. 2021. | 14:15--17:45 | online | Dinamička dodjela mrežnih adresa (IMUNES/CORE) | V | v. pred. dr. sc. Vedran Miletić |
+| 13. | 15. 1. 2021. | 14:15--17:45 | online | Premošćenje i filtriranje okvira vatrozidom na veznom sloju (IMUNES/CORE) | V | v. pred. dr. sc. Vedran Miletić |
+| 14. | 22. 1. 2021. | 14:15--17:45 | online | Mobilnost čvorova u bežičnim mrežama (IMUNES/CORE) | V | v. pred. dr. sc. Vedran Miletić |
 
 P -- predavanja  
 V -- vježbe  
