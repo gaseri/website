@@ -9,8 +9,7 @@ author: Vedran Miletić
 ## Osoblje
 
 - [dr. sc. Vedran Miletić](https://vedran.miletic.net/), viši predavač
-- [dr. sc. Vanja Slavuj](https://portal.uniri.hr/Portfelj/1474), poslijedoktorand
-- [Marina Bajčić](https://portal.uniri.hr/Portfelj/2528), asistent
+- [Milan Petrović](https://milanxpetrovic.github.io/), asistent
 
 ## Bivše osoblje
 

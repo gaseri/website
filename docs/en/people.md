@@ -9,8 +9,7 @@ author: Vedran Miletić
 ## Staff
 
 - [Dr. Vedran Miletić](https://vedran.miletic.net/), Senior Lecturer
-- [Dr. Vanja Slavuj](https://portal.uniri.hr/Portfelj/1474), Senior Research and Teaching Assistant
-- [Marina Bajčić](https://portal.uniri.hr/Portfelj/2528), Research and Teaching Assistant
+- [Milan Petrović](https://milanxpetrovic.github.io/), Research and Teaching Assistant
 
 ## Former staff
 
