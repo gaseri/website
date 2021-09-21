@@ -130,9 +130,9 @@ U zadnjem će tjednu studentima koji nisu predali rješenja zadanih zadataka na 
 
 Završni ispit je online test na Merlinu koji uključuje pitanja i zadatke iz čitavog gradiva predavanja i na njemu će student moći skupiti maksimalno 30 bodova. Pogrešni odgovori na pitanja višestrukog izbora donose negativne bodove.
 
-### Ocjenjivanje
+Završni ispit se smatra položenim samo ako na njemu student postigne minimalno 50%-tni uspjeh (ispitni prag je 50% uspješno riješenih zadataka).
 
-#### Završni ispit
+### Ocjenjivanje
 
 Kontinuiranim radom tijekom semestra na prethodno opisani način studenti mogu ostvariti najviše 70 ocjenskih bodova, a da bi mogli pristupiti završnom ispitu moraju ostvarili 50% i više bodova (minimalno 35).
 

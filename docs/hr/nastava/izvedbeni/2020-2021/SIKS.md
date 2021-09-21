@@ -125,9 +125,9 @@ Student samostalno ili u paru na praktičnom projektnom zadatku za konkretno zad
 
 Student samostalno ili u paru nakon izrade ili konfiguriranja modela autentifikacije i autorizacije korisnika za zadanu aplikaciju projekta u pisanom obliku izrađuje analizu rizika te argumentirano objašnjava postupke upravljanja razinom usluga, incidentima, problemima, zahtjevima i raspoloživošću (npr. izraditi tablicu odaziva s obzirom na vrstu problema i incidenta).
 
-### Ocjenjivanje
+Završni ispit se smatra položenim samo ako na njemu student postigne minimalno 50%-tni uspjeh (ispitni prag je 50% uspješno riješenih zadataka).
 
-#### Završni ispit
+### Ocjenjivanje
 
 Kontinuiranim radom tijekom semestra na prethodno opisani način studenti mogu ostvariti najviše 70 ocjenskih bodova, a da bi mogli pristupiti završnom ispitu moraju ostvarili 50% i više bodova (minimalno 35).
 
