@@ -1,4 +1,4 @@
-# Group for apps and services on exascale research infrastructure (GASERI) website
+# 😎 Group for apps and services on exascale research infrastructure (GASERI) website
 
 The group is interested in scientific software development, high-performance computers, cloud computing, and the use of free open-source software in the development of applications and services for supercomputers and cloud platforms, specifically in the application of exascale computing to solve problems in computational biochemistry and related fields. Visit [the group website](https://group.miletic.net/en/) for more information.
 

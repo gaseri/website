@@ -317,6 +317,8 @@ theme:
   name: material
   features:
     - header.autohide
+  logo: assets/images/logo.svg
+  favicon: assets/images/favicon.png
   language: hr
   palette:
     - media: "(prefers-color-scheme: light)"
