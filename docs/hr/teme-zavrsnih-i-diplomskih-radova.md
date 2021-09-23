@@ -269,7 +269,12 @@ Poslužitelj datoteka je dio gotovo svakog suvremenog poslovnog sustava. Bio taj
 
 **Opis teme:**
 
+Sveprisutnost weba čini da se mnoge aplikacije realiziraju kao web aplikacije. Iako suvremeni pristup podrazumijeva pisanje aplikacija u obliku mikroservisa, okviri za razvoj monolitnih aplikacija kao što su Laravel, Django i Ruby on Rails se i dalje intenzivno koriste. Cilj rada je prikazati razvoj monolitne web aplikacije u Pythonu korištenjem okvira Django na vlastitom primjeru.
+
 **Literatura:**
+
+1. [Django](https://www.djangoproject.com/)
+1. Shaw, B., Badhwar, S., Bird, A., Chandra K S, B., & Guest, C. [Web Development with Django](https://www.oreilly.com/library/view/web-development-with/9781839212505/), O'Reilly, 2021.
 
 ### Izrada web aplikacije korištenjem Flaska {[DWA2](nastava/kolegiji/DWA2.md)} [Ivan Modrić]
 
@@ -277,11 +282,13 @@ Poslužitelj datoteka je dio gotovo svakog suvremenog poslovnog sustava. Bio taj
 
 **Opis teme:**
 
-imao bih glavni server na kojem će biti flask REST API. Na njemu bi korisnik imao pristup trima opcijama: index page na kojoj će upisati što želi pretraživati, zatim pretraga gdje će korisnik dobiti rezultate pretrage, te obavijest gdje se pruža mogućnost registracije na obavijesti vezane uz promjenu cijene u smislu da korisnik unese nekakvu cijenu i kad se artikl spusti na tu cijenu ili ispod te cijene, korisnik dobije obavijest.
-Kad se odabere pretraga glavni server pozivao bi AWS lambda funkciju koja će biti zapravo web spider, ali ujedno i web scraping alat preko kojeg će se izvlačiti cijene. Spomenuta lambda funkcija vraćala bi web trgovine i cijene za navedeni proizvod u JSON formatu. Ako se odabere obavijest onda se pokreće lambda funkcija koja u DynamoDB bazu zapisuje email korisnika, proizvod, željenu cijenu, zadnju poznatu cijenu i je li ta obavijest još uvijek aktivna jer ako je taj mail ranije poslan korisniku onda ga ne želimo opet slati.
-To bi se realiziralo cloudwatch eventom (trigger) koji će u nekom određenom intervalu pokretati lambdu za provjeru obavijesti. Ona bi čitala iz DynamoDB baze koje su obavijesti aktivne i zatim pokretala lambdu za web spider i web scraping. Nakon što se vrate rezultati lambda za slanje obavijesti bi provjerila ako je cijena jednaka ili manja od cijene koju je korisnik unio kao željenu te ovisno o tome korisnik bi dobio obavijest putem AWS SNS servisa.
+Suvremeni pristup razvoju web aplikacija podrazumijeva realizaciju aplikacije korištenjem usluga u oblaku. Takve se aplikacije nazivaju oblaku urođene jer su od početka razvijane prema određenom skupu pravila kako bi se olakšalo njihovo postavljanje u oblak i kasnije održavanje. Kod razvoja takvih aplikacija često se koriste mikrookviri kao Lumen za PHP, Flask za Python i Sintra za Ruby kod kojih programski inženjer sam određuje arhitekturu aplikacije i biblioteke koje će koristiti za realizaciju pojedinih funkcija. Cilj rada je prikazati razvoj oblaku urođene aplikacije u Pythonu korištenjem mikrookvira Flask na vlastitom primjeru.
 
 **Literatura:**
+
+1. [Flask](https://flask.palletsprojects.com/)
+1. [Getting Started with AWS](https://aws.amazon.com/getting-started/)
+1. [Getting started with Azure](https://azure.microsoft.com/en-us/get-started/)
 
 ### Paralelizacija izračuna dubokih neuralnih mreža na grafičkim procesorima {[PPHS](nastava/kolegiji/PPHS.md)} [Andrija Poleksić]
 
@@ -289,9 +296,15 @@ To bi se realiziralo cloudwatch eventom (trigger) koji će u nekom određenom in
 
 **Opis teme:**
 
+Duboke neuralne mreže su temelj modernih primjena strojnog učenja u brojnim domenama, od samovozećih automobila do računalne kemije. Zbog veličine problema koje obrađuju često se izvode paralelno na grafičkim procesorima i upravo su jedna od najčešćih primjena grafičkih procesora. Cilj rada je opisati primjenu paralelizma u radu s dubokim neuralnim mrežama te usporediti učinkovitost procesa treniranja modela u serijskoj izvedbi na osnovnom i paralelnoj izvedbi na grafičkom procesoru.
+
 **Literatura:**
 
-### Predikcija vrijednosti kriptovaluta metodama strojnog učenja i analizom blockchain informacija {[PPHS](nastava/kolegiji/PPHS.md)}  [Dominik Frković]
+1. [NVIDIA cuDNN Documentation](https://docs.nvidia.com/deeplearning/cudnn/index.html)
+1. Goldsborough, P. [A Tour of TensorFlow](https://arxiv.org/abs/1610.01178). ArXiv, 2016.
+1. Chollet, F. [Deep Learning with Python](https://www.manning.com/books/deep-learning-with-python). Manning, 2017.
+
+### Predikcija vrijednosti kriptovaluta metodama strojnog učenja i analizom blockchain informacija {[PPHS](nastava/kolegiji/PPHS.md)} [Dominik Frković]
 
 **Naslov na engleskom:** Predicting the values of cryptocurrencies using machine learning methods and blockchain information
 
@@ -301,7 +314,7 @@ To bi se realiziralo cloudwatch eventom (trigger) koji će u nekom određenom in
 
 **Opis teme:**
 
-Kriptovalute su danas vrlo aktualna i intrigantna tema, kako u području informacijsko-komunikacijske tehnologiju, tako u području financija. Izrazito turbulentan tijek kretanja cijena kriptovaluta je značajna pojava, kako iz ekonomskog, tako i iz tehnološkog aspekta, a velikim je dijelom generiran špekulacijama i utjecajima koje nije moguće procijeniti i predvidjeti na klasičan način. Popularnost kriptovaluta je u kontinuiranom rastu, a najviše zbog osobina kao što su decentraliziranost, transparentnost  i  sigurnost.  U radu se predstavljaju i analiziraju osnovne metode strojnog učenja koje se koriste u predikciji vrijednosti kriptovaluta na temelju analize blockchain informacija. U  radu  će  bit  opisani  pristupi  i rješenja  za  predviđanje  cijena kriptovaluta te će se oslanjati na  informacije  o  blockchain tehnologiji  što nije slučaj koji se javlja u trgovanju uobičajenim valutama na svjetskim burzama kapitala.
+Kriptovalute su danas vrlo aktualna i intrigantna tema, kako u području informacijsko-komunikacijske tehnologiju, tako u području financija. Izrazito turbulentan tijek kretanja cijena kriptovaluta je značajna pojava, kako iz ekonomskog, tako i iz tehnološkog aspekta, a velikim je dijelom generiran špekulacijama i utjecajima koje nije moguće procijeniti i predvidjeti na klasičan način. Popularnost kriptovaluta je u kontinuiranom rastu, a najviše zbog osobina kao što su decentraliziranost, transparentnost i sigurnost. U radu se predstavljaju i analiziraju osnovne metode strojnog učenja koje se koriste u predikciji vrijednosti kriptovaluta na temelju analize blockchain informacija. Cilj rada je opisati pristupe i rješenja za predviđanje cijena kriptovaluta oslanjajući na informacije o tehnologiji blockchain, što nije slučaj koji se javlja u trgovanju uobičajenim valutama na svjetskim burzama kapitala.
 
 **Literatura:**
 
@@ -316,10 +329,11 @@ Kriptovalute su danas vrlo aktualna i intrigantna tema, kako u području informa
 
 **Opis teme:**
 
-Optimizacija (statička i PGO), shaderi na GPU-ima različitih generacija, nivoi optimizacije
+Posljednjih desetljeća industrija igara je u kontinuiranom porastu te je jedan od najvećih poticaja za razvoj računalne infrastrukture koja te igre pogoni. Kako je razvoj igara za više platformi složen proces, sve je popularnije korištenje pogona kao Unity i Unreal Engine. U tim alatima se koriste programi za sjenčanje za prikaz raznih efekata i jedan su od ključnih ciljeva kod optimizacije brzine izvođenja računalne igre. Cilj rada je opisati tehnike optimizacije sjenčanja u Unreal Engineu i primijeniti ih na vlastitim primjerima.
 
 **Literatura:**
 
+1. [3D Game Shaders For Beginners](https://lettier.github.io/3d-game-shaders-for-beginners/)
 1. [Shader Development (Unreal Engine Documentation)](https://docs.unrealengine.com/en-US/ProgrammingAndScripting/Rendering/ShaderDevelopment/)
 
 ### Krivulje u računalnoj grafici {[PPHS](nastava/kolegiji/PPHS.md)} [Mikaela Oklen]
@@ -342,6 +356,8 @@ U računalnoj grafici se razrađuju temeljni koncepti i tehnike prikazivanja 2D 
 
 ### Razvoj aplikacije korištenjem mrežne i kriptografske biblioteke NaCl {[RM2](nastava/kolegiji/RM2.md)} [Đino Prenc, preneseno iz 2019/2020.]
 
+**Naslov na engleskom:** Application development using NaCl network and cryptographic library
+
 **Opis teme:**
 
 Brojne mrežne aplikacije koje svakodnevno vrše šifriranje i dešifriranje sadržaja. Primjerice, web preglednik Firefox i web poslužitelj Apache HTTP Server koriste velik broj različitih kriptografskih algoritama koje podržava protokol Transport Layer Security (TLS) kako bi bili interoperabilni s raznim web poslužiteljima, odnosno klijentima na internetu. Poslužitelj i klijent virtualne privatnu mreže OpenVPN također koristi protokol TLS za šifriranje podataka u komunikaciji i pritom podržava veliki broj algoritama zbog kompatibilnosti s velikim brojem platformi na kojima radi te sa vlastitim starijim verzijama. Navedeni programi uglavnom koriste OpenSSL za izvođenje kriptografskih algoritama koji im trebaju, što zbog veličine OpenSSL-ovog koda i velikog broja podržanih algoritama otežava sigurnosni pregled dobivenog rješenja. Zbog toga se novije aplikacije odlučuju na vlastitu implementaciju kriptografskih algoritama (primjerice, tako radi sustav za virtualnu privatnu mrežu WireGuard) ili koriste manje i lakše provjerljive biblioteke kao što je NaCl (kratica od Networking and Cryptography library) i njezin fork Sodium, namijenjen za jednostavnije višeplatformsko korištenje, pakiranje i instalaciju. Cilj rada je razviti vlastitu mrežnu aplikaciju čija je namjena po izboru studenta i koja kod šifriranja koristi kriptografske algoritme iz biblioteke Sodium.
@@ -351,13 +367,9 @@ Brojne mrežne aplikacije koje svakodnevno vrše šifriranje i dešifriranje sad
 1. [NaCl: Networking and Cryptography library](https://nacl.cr.yp.to/)
 1. [Libsodium documentation](https://libsodium.gitbook.io/)
 
-### Tehnike paralelizma u pogonima računalnih igara {[PPHS](nastava/kolegiji/PPHS.md)} [Marko Zoretić, preneseno iz 2019/2020.]
-
-**Opis teme:**
-
-**Literatura:**
-
 ### Prvoaprilski RFC-i {[RM2](nastava/kolegiji/RM2.md)} [Dino Šarković, preseneno iz 2018/2019.]
+
+**Naslov na engleskom:** April Fools' Day Request for Comments
 
 **Opis teme:**
 
@@ -400,7 +412,7 @@ Osim ozbiljnih RFC-a, kao što su primjerice oni koji opisuju TCP, IPv6 ili ICMP
 
 **Opis teme:**
 
-...
+U novije vrijeme arhitektura web aplikacija temeljena na mikroservisima dobiva na popularnosti. U tom slučaju se pojedini servisi koji čine web aplikaciju razvijaju ovisno o poslovnim zahtjevima. To omogućuje da se pojedini servisi implementiraju prema potrebi u različitim jezicima i korištenjem različitih okvira te se neovisno razvijaju. Kao i kod monolitnih aplikacija, sigurnost je značajna tema o kojoj treba voditi računa za vrijeme razvoja web aplikacije.
 
 Cilj rada je opisati tehnike napada na mikroservise i web aplikacije, alate koji se za njih koriste i načine obrane od tih napada te u vlastitoj razvojnoj okolini (lokalno ili u oblaku) demonstrirati neke od napada na za tu svrhu razvijenom mikroservisu ili web aplikaciji (za razvoj se može iskoristiti bilo koji od modernih okvira, npr. Express, Lumen, Flask, Sinatra, ASP.NET Core i Spring te relacijska ili nerelacijska baza podataka po želji).
 
@@ -451,7 +463,7 @@ Literatura
 1. [Wlan slovenija](https://wlan-si.net/)
 1. [Otvorena mreža](https://www.otvorenamreza.org/)
 
-### Tehnike rasterizacije {[PPHS](nastava/kolegiji/PPHS.md)}  [Mauro Raguzin]
+### Tehnike rasterizacije {[PPHS](nastava/kolegiji/PPHS.md)} [Mauro Raguzin]
 
 **Mentor:** [v. pred. dr. sc. Vedran Miletić](https://vedran.miletic.net/)
 
@@ -498,7 +510,7 @@ Porastom procesne moći računala, naročito zahvaljujući računanju na grafič
 1. [RxDock](https://www.rxdock.org/)
 1. [Glide](https://www.schrodinger.com/glide)
 
-### Paralelizacija predviđanja pristajanja malih molekula na proteine {[PPHS](nastava/kolegiji/PPHS.md)}  [Maja Abramović]
+### Paralelizacija predviđanja pristajanja malih molekula na proteine {[PPHS](nastava/kolegiji/PPHS.md)} [Maja Abramović]
 
 **Opis teme:**
 
