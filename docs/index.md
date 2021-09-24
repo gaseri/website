@@ -1,6 +1,6 @@
 # GASERI | group.miletic.net
 
-![GASERI logo](assets/images/logo.png)
+![GASERI logo](images/gaseri-logo.png)
 
 :flag_hr: [Grupa za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi](hr/index.md)
 

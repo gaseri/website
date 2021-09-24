@@ -318,8 +318,8 @@ theme:
   custom_dir: overrides
   features:
     - header.autohide
-  logo: assets/images/logo.svg
-  favicon: assets/images/favicon.png
+  logo: images/gaseri-logo.svg
+  favicon: images/favicon.png
   language: hr
   palette:
     - media: "(prefers-color-scheme: light)"
