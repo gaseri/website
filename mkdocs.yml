@@ -315,6 +315,7 @@ nav:
       - Very important information: en/very-important-information.md
 theme:
   name: material
+  custom_dir: overrides
   features:
     - header.autohide
   logo: assets/images/logo.svg
@@ -348,6 +349,7 @@ extra:
     property: G-3CSW7LLM5F
 markdown_extensions:
   - admonition
+  - meta
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
