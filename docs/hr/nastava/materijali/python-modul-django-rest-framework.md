@@ -2,7 +2,7 @@
 author: Milan Petrović
 ---
 
-# Django vježba 12: Django REST framework
+# Python: Django REST framework
 
 Na današnjim vježbama raditi ćemo sa bibliotekom `djangorestframework` ([službeno web sjedište](https://www.django-rest-framework.org/)).
 

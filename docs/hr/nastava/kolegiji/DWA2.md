@@ -18,14 +18,5 @@
 
 ### Izrada web aplikacija korištenjem Python okvira Django
 
-- [Django vježba 1: Postavljanje razvojnog okruženja web aplikacija na operacijskim sustavima sličnim Unixu i Windowsima. Stvaranje projekta i organizacija koda. Korištenje dokumentacije](../materijali/python-django-vj1.md)
-- [Django vježba 2: Korištenje baze podataka. Stvaranje modela i objektno-relacijsko preslikavanje](../materijali/python-django-vj2.md)
-- [Django vježba 3: Relacije među modelima. Upiti](../materijali/python-django-vj3.md)
-- [Django vježba 4: Usmjeravanje i URL-i. Stvaranje pogleda kao odgovora na HTTP zahtjeve](../materijali/python-django-vj4.md)
-- [Django vježba 5: Generički pogledi](../materijali/python-django-vj5.md)
-- [Django vježba 6: Predaja obrazaca HTTP metodama GET i POST. Provjera unosa i prikaz poruka o greškama](../materijali/python-django-vj6.md)
-- [Django vježba 7: Predlošci obrazaca. Stvaranje obrazaca iz modela](../materijali/python-django-vj7.md)
-- [Django vježba 9: Sijanje i migracije](../materijali/python-django-vj9.md)
-- [Django vježba 10: Autentifikacija. Autorizacija](../materijali/python-django-vj10.md)
-- [Django vježba 11: Testiranje](../materijali/python-django-vj11.md)
-- [Django vježba 12: Django REST framework](../materijali/python-django-vj12.md)
+- [Python: Django](../materijali/python-modul-django.md)
+- [Python: Django REST framework](../materijali/python-modul-django-rest-framework.md)

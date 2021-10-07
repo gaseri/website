@@ -182,23 +182,14 @@ nav:
       - Datotečni sustavi Procfs i Sysfs: hr/nastava/materijali/procfs-sysfs-informacije-konfiguracija.md
       - Pokretanje računala putem mrežnog sučelja: hr/nastava/materijali/pxe-pokretanje-racunala-putem-mreznog-sucelja.md
       - Vizualizacija molekula u alatu PyMOL: hr/nastava/materijali/pymol-vizualizacija-molekula.md
-      - Django vježba 1 -- Postavljanje razvojnog okruženja web aplikacija na operacijskim sustavima sličnim Unixu i Windowsima. Stvaranje projekta i organizacija koda. Korištenje dokumentacije: hr/nastava/materijali/python-django-vj1.md
-      - Django vježba 2 -- Korištenje baze podataka. Stvaranje modela i objektno-relacijsko preslikavanje: hr/nastava/materijali/python-django-vj2.md
-      - Django vježba 3 -- Relacije među modelima. Upiti: hr/nastava/materijali/python-django-vj3.md
-      - Django vježba 4 -- Usmjeravanje i URL-i. Stvaranje pogleda kao odgovora na HTTP zahtjeve: hr/nastava/materijali/python-django-vj4.md
-      - Django vježba 5 -- Generički pogledi: hr/nastava/materijali/python-django-vj5.md
-      - Django vježba 6 -- Predaja obrazaca HTTP metodama GET i POST. Provjera unosa i prikaz poruka o greškama: hr/nastava/materijali/python-django-vj6.md
-      - Django vježba 7 -- Predlošci obrazaca. Stvaranje obrazaca iz modela: hr/nastava/materijali/python-django-vj7.md
-      - Django vježba 9 -- Sijanje i migracije: hr/nastava/materijali/python-django-vj9.md
-      - Django vježba 10 -- Autentifikacija. Autorizacija: hr/nastava/materijali/python-django-vj10.md
-      - Django vježba 11 -- Testiranje: hr/nastava/materijali/python-django-vj11.md
-      - Django vježba 12 -- Django REST framework: hr/nastava/materijali/python-django-vj12.md
       - Dokumentiranje Python koda: hr/nastava/materijali/python-dokumentiranje.md
       - Python -- funkcije i klase: hr/nastava/materijali/python-funkcije-klase.md
       - Python -- ulaz i izlaz: hr/nastava/materijali/python-input-output.md
       - Python -- moduli: hr/nastava/materijali/python-modularizacija.md
       - Python -- stvaranje i ispis kalendara: hr/nastava/materijali/python-modul-calendar.md
       - Rad s Python modulom pyca/cryptography: hr/nastava/materijali/python-modul-cryptography.md
+      - Python -- Django: hr/nastava/materijali/python-modul-django.md
+      - Python -- Django REST framework: hr/nastava/materijali/python-modul-django-rest-framework.md
       - Python -- osnovni tipovi podataka datuma i vremena: hr/nastava/materijali/python-modul-datetime.md
       - Python -- usluge specifične za operacijske sustave slične Unixu -- pozivi fcntl() i ioctl(): hr/nastava/materijali/python-modul-fcntl.md
       - Python -- usluge za višejezičnost: hr/nastava/materijali/python-modul-gettext.md
