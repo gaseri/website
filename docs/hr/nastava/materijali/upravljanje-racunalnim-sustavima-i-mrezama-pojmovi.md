@@ -49,6 +49,7 @@ Upravitelj računalnih sustava i mreža, popularno zvan sistem admistrator, od m
 - [Sysadmin on Reddit (/r/sysadmin/)](https://www.reddit.com/r/sysadmin/)
 - [Sysadmin Humor - lulz from crazy IT peoplez (/r/Sysadminhumor)](https://www.reddit.com/r/Sysadminhumor/)
 - [Unix & Linux Stack Exchange](https://unix.stackexchange.com/)
+- [Wandering Thoughts (Chris Siebenmann)](https://utcc.utoronto.ca/~cks/space/blog/)
 
 ### Slobodni softver otvorenog koda
 
@@ -135,6 +136,8 @@ Upravitelj računalnih sustava i mreža, popularno zvan sistem admistrator, od m
 ### Dokumentacija
 
 - [A-Z Index of the Linux command line (SS64.com)](https://ss64.com/bash/)
+- [ArchWiki](https://wiki.archlinux.org/)
+- [Gentoo Wiki](https://wiki.gentoo.org/)
 - [The Linux Documentation Project](https://www.tldp.org/)
 - [OSDev Wiki](https://wiki.osdev.org/)
 - [Unix Toolbox (Colin Barschel)](http://cb.vu/unixtoolbox.xhtml)
