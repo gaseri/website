@@ -288,11 +288,19 @@ nav:
       - Peter Norvig -- Naučite programirati u deset godina: hr/arhiva/eseji/peter-norvig-naucite-programirati-u-deset-godina.md
   - Vrlo važne informacije: hr/vrlo-vazne-informacije.md
   - Contents in English:
-      - About: en/index.md
+      - About the group: en/index.md
       - People: en/people.md
       - Research and development: en/research-and-development.md
       - Partnerships and collaborations: en/partnerships-and-collaborations.md
-      - Teaching: en/teaching.md
+      - Teaching:
+        - Courses:
+          - Code optimization: en/teaching/courses/CO.md
+        - Programmes:
+          - Revision 2021/2022:
+            - Code optimization: en/teaching/programmes/revision-2021-2022/CO.md
+          - Revision 2019/2020:
+            - Code optimization: en/teaching/programmes/revision-2019-2020/CO.md
+        - About the teaching: en/teaching/index.md
       - Tutorials:
         - GROMACS:
           - Overview: en/tutorials/gromacs/index.md
@@ -346,3 +354,5 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.highlight
   - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true

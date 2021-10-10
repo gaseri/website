@@ -2,7 +2,7 @@
 author: Vedran Miletić
 ---
 
-# About
+# About the group
 
 (This page is also available [in Croatian](../hr/index.md).)
 

@@ -2,9 +2,9 @@
 author: Vedran Miletić
 ---
 
-# Nastava
+# O nastavi
 
-(Ova je stranica također dostupna [na engleskom jeziku](../../en/teaching.md).)
+(Ova je stranica također dostupna [na engleskom jeziku](../../en/teaching/index.md).)
 
 Nastavni materijali su na hrvatskom jeziku. Nadamo se da ćemo u budućnosti biti u mogućnosti pružiti nastavne materijale i na engleskom jeziku, što se čini realnim kako ima sve više i više međunarodnih studenata koji dolaze na studij na Sveučilištu u Rijeci putem [ERASMUS(+)](https://ec.europa.eu/programmes/erasmus-plus/node_hr) i sličnih programa.
 
