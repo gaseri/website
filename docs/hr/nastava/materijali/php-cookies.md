@@ -39,7 +39,7 @@ $ curl -v -c cookies.txt http://localhost:8000/
 < X-Powered-By: PHP/8.0.0
 * Added cookie kolacic="Bugnes%20lyonnaises" for domain localhost, path /, expire 0
 < Set-Cookie: kolacic=Bugnes%20lyonnaises
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 * Closing connection 0
 ```
@@ -85,7 +85,7 @@ $ curl -v -b cookies.txt http://localhost:8000/
 < Date: Tue, 29 Dec 2020 15:09:00 GMT
 < Connection: close
 < X-Powered-By: PHP/8.0.0
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 Bugnes lyonnaises
 * Closing connection 0
@@ -201,7 +201,7 @@ curl -v http://localhost:8000/kolaci
 < Date: Wed, 05 May 2021 19:50:41 GMT
 < Connection: close
 < X-Powered-By: PHP/7.4.15
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 <p>Dosad niste naručili nijedan kolač.</p>
 * Closing connection 0
@@ -282,7 +282,7 @@ $ curl -v -c cookies.txt -X POST http://localhost:8000/kolaci
 < X-Powered-By: PHP/7.4.15
 * Added cookie user_id="0" for domain localhost, path /, expire 0
 < Set-Cookie: user_id=0
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 <p>Naručili ste Babka.</p>
 * Closing connection 0
@@ -316,7 +316,7 @@ $ curl -v -b cookies.txt http://localhost:8000/kolaci
 < Date: Wed, 05 May 2021 20:03:05 GMT
 < Connection: close
 < X-Powered-By: PHP/7.4.15
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 <p>Ranije ste naručili Babka.</p>
 * Closing connection 0
@@ -349,7 +349,7 @@ $ curl -v -b cookies.txt -X POST http://localhost:8000/kolaci
 < Date: Wed, 05 May 2021 20:06:14 GMT
 < Connection: close
 < X-Powered-By: PHP/7.4.15
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 <p>Naručili ste Kremówka.</p>
 * Closing connection 0
@@ -379,7 +379,7 @@ $ curl -v -c cookies-new.txt -X POST http://localhost:8000/kolaci
 < Connection: close
 < X-Powered-By: PHP/7.4.15
 < Set-Cookie: user_id=1
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 <p>Naručili ste Kladdkaka.</p>
 * Closing connection 0

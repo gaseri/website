@@ -59,7 +59,7 @@ $ curl -v http://localhost:8000/grafit
 < Date: Mon, 02 Nov 2020 22:28:59 GMT
 < Connection: close
 < X-Powered-By: PHP/7.4.11
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 <p>Uvijek me uhvate kad šaram grafite po z
 * Closing connection 0
@@ -101,7 +101,7 @@ $ curl -v http://localhost:8000/
 < Connection: close
 < X-Powered-By: PHP/8.0.0
 < PHP-Mascot: ElePHPant
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 * Closing connection 0
 ```
@@ -140,7 +140,7 @@ $ curl -v -L http://localhost:8000/grafiti
 < Connection: close
 < X-Powered-By: PHP/7.4.11
 < Location: /grafit
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 * Closing connection 0
 * Issue another request to this URL: 'http://localhost:8000/grafit'
@@ -158,7 +158,7 @@ $ curl -v -L http://localhost:8000/grafiti
 < Date: Mon, 02 Nov 2020 22:38:20 GMT
 < Connection: close
 < X-Powered-By: PHP/7.4.11
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 <p>Uvijek me uhvate kad šaram grafite po z
 * Closing connection 1
@@ -204,7 +204,7 @@ Uvjerimo se da sada u zaglavlju `Location` nalazi cjeloviti URL:
 $ curl -v -L http://localhost:8000/grafiti
 (...)
 < Location: http://localhost:8000/grafit
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 * Closing connection 0
 * Issue another request to this URL: 'http://localhost:8000/grafit'
@@ -270,7 +270,7 @@ $ curl -v -X POST http://localhost:8000/grafit
 < Date: Tue, 03 Nov 2020 07:54:07 GMT
 < Connection: close
 < X-Powered-By: PHP/7.4.11
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 <p>Zahtjev metodom POST na /grafit nije ispravan</p>
 * Closing connection 0
@@ -306,12 +306,12 @@ MIME tipova koji se koriste u praksi ima još, a [popis često korištenih mogu�
 <?php
 
 if ($_SERVER["HTTP_ACCEPT"] == "application/json") {
-    header("Content-type: application/json");
+    header("Content-Type: application/json");
     echo '{"ime":"Ivan","prezime":"Horvat","studij":"Informatika"}';
 } else if ($_SERVER["HTTP_ACCEPT"] == "text/html") {
     echo "<p>Ivan Horvat (Informatika)</p>\n";
 } else if ($_SERVER["HTTP_ACCEPT"] == "text/plain") {
-    header("Content-type: text/plain");
+    header("Content-Type: text/plain");
     echo "Ivan,Horvat,Informatika\n";
 } else {
     http_response_code(406);
@@ -338,7 +338,7 @@ $ curl -v -H "Accept: application/json" http://localhost:8000/
 < Date: Fri, 13 Nov 2020 13:50:52 GMT
 < Connection: close
 < X-Powered-By: PHP/7.4.11
-< Content-type: application/json
+< Content-Type: application/json
 <
 * Closing connection 0
 {"ime:"Ivan","prezime":"Horvat","studij":"Informatika"}
@@ -361,7 +361,7 @@ $ curl -v -H "Accept: text/html" http://localhost:8000/
 < Date: Fri, 13 Nov 2020 13:51:03 GMT
 < Connection: close
 < X-Powered-By: PHP/7.4.11
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 <p>Ivan Horvat (Informatika)</p>
 * Closing connection 0
@@ -380,7 +380,7 @@ $ curl -v -H "Accept: text/plain" http://localhost:8000/
 < Date: Fri, 13 Nov 2020 13:51:14 GMT
 < Connection: close
 < X-Powered-By: PHP/7.4.11
-< Content-type: text/plain
+< Content-Type: text/plain
 <
 Ivan,Horvat,Informatika
 * Closing connection 0
@@ -403,7 +403,7 @@ $ curl -v http://localhost:8000/
 < Date: Fri, 13 Nov 2020 13:51:24 GMT
 < Connection: close
 < X-Powered-By: PHP/7.4.11
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 <p>Nejasan zahtjev. Podržani MIME tipovi su application/json, text/html i text/plain.</p>
 * Closing connection 0
@@ -447,7 +447,7 @@ $ curl -v -H "Najjaci-Fakultet: MIT" http://localhost:8000/
 < Date: Wed, 30 Dec 2020 00:56:39 GMT
 < Connection: close
 < X-Powered-By: PHP/8.0.0
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 <p>Na ovoj stranici nema ništa.</p>
 * Closing connection 0
@@ -467,7 +467,7 @@ $ curl -v -H "Najjaci-Fakultet: Odjel za informatiku" http://localhost:8000/
 < Date: Wed, 30 Dec 2020 00:57:11 GMT
 < Connection: close
 < X-Powered-By: PHP/8.0.0
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 <p>Dobrodošli, kolega.</p>
 * Closing connection 0
@@ -517,7 +517,7 @@ $ curl -v "http://localhost:8000/profil?ime=Ivan&prezime=Horvat"
 < Date: Tue, 03 Nov 2020 12:55:51 GMT
 < Connection: close
 < X-Powered-By: PHP/7.4.3
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 <p>Vi ste Ivan Horvat.</p>
 * Closing connection 0
@@ -559,7 +559,7 @@ Note: Unnecessary use of -X or --request, POST is already inferred.
 < Date: Tue, 03 Nov 2020 13:02:47 GMT
 < Connection: close
 < X-Powered-By: PHP/7.4.3
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 <p>Vi ste Ivan Horvat.</p>
 * Closing connection 0
@@ -632,7 +632,7 @@ Warning: way you want. Consider using -I/--head instead.
 < Connection: close
 < X-Powered-By: PHP/8.0.0
 < Moj-Head: ne prodajemo skije i štapove
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 * Closing connection 0
 
@@ -643,7 +643,7 @@ Date: Wed, 30 Dec 2020 18:41:43 GMT
 Connection: close
 X-Powered-By: PHP/8.0.0
 Moj-Head: ne prodajemo skije i štapove
-Content-type: text/html; charset=UTF-8
+Content-Type: text/html; charset=UTF-8
 ```
 
 Vidimo zaglavlja među kojima je i naše prilagođeno zaglavlje `Moj-Head`, a tijelo je prazno kao što smo i očekivali.

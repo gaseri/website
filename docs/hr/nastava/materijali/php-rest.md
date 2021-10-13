@@ -151,7 +151,7 @@ if (file_exists($datoteka)) {
     $persons = [];
 }
 
-header("Content-type: application/json");
+header("Content-Type: application/json");
 
 if ($_SERVER["REQUEST_METHOD"] == "GET" && $_SERVER["REQUEST_URI"] == "/persons") {
     $response_body_array = ["count" => count($persons), "results" => array_values($persons)];
@@ -179,7 +179,7 @@ $ curl -v localhost:8000/persons
 < Date: Mon, 15 Feb 2021 14:25:54 GMT
 < Connection: close
 < X-Powered-By: PHP/7.4.15
-< Content-type: application/json
+< Content-Type: application/json
 <
 * Closing connection 0
 {"count":2,"results":[{"name":"Dennis MacAlistair Ritchie","birth_year":1941,"known_for":["http:\/\/localhost:8000\/technologies\/1","http:\/\/localhost:8000\/technologies\/2"],"created":"2020-12-09T14:50:32+0100","edited":"2020-12-20T21:14:07+0100","url":"http:\/\/localhost:8000\/persons\/1"},{"name":"Kenneth Lane Thompson","birth_year":1943,"known_for":["http:\/\/localhost:8000\/technologies\/2"],"created":"2020-12-10T15:10:41+0100","edited":"2020-12-20T21:17:55+0100","url":"http:\/\/localhost:8000\/persons\/2"}]}
@@ -198,7 +198,7 @@ $ curl -v http://localhost:8000/scientists
 < Date: Tue, 23 Mar 2021 23:38:33 GMT
 < Connection: close
 < X-Powered-By: PHP/7.4.15
-< Content-type: application/json
+< Content-Type: application/json
 <
 * Closing connection 0
 ```
@@ -248,7 +248,7 @@ if (file_exists($datoteka)) {
     $persons = [];
 }
 
-header("Content-type: application/json");
+header("Content-Type: application/json");
 
 if ($_SERVER["REQUEST_METHOD"] == "GET" && $_SERVER["REQUEST_URI"] == "/persons") {
     $response_body_array = ["count" => count($persons), "results" => array_values($persons)];
@@ -287,7 +287,7 @@ $ curl -v http://localhost:8000/persons/1
 < Date: Tue, 23 Mar 2021 23:41:08 GMT
 < Connection: close
 < X-Powered-By: PHP/7.4.15
-< Content-type: application/json
+< Content-Type: application/json
 <
 * Closing connection 0
 {"name":"Dennis MacAlistair Ritchie","birth_year":1941,"known_for":["http:\/\/localhost:8000\/technologies\/1","http:\/\/localhost:8000\/technologies\/2"],"created":"2020-12-09T14:50:32+0100","edited":"2020-12-20T21:14:07+0100","url":"http:\/\/localhost:8000\/persons\/1"}
@@ -306,7 +306,7 @@ $ curl -v http://localhost:8000/persons/599
 < Date: Tue, 23 Mar 2021 23:41:10 GMT
 < Connection: close
 < X-Powered-By: PHP/7.4.15
-< Content-type: application/json
+< Content-Type: application/json
 <
 * Closing connection 0
 
@@ -324,7 +324,7 @@ $ curl -v http://localhost:8000/persons/007
 < Date: Tue, 23 Mar 2021 23:41:17 GMT
 < Connection: close
 < X-Powered-By: PHP/7.4.15
-< Content-type: application/json
+< Content-Type: application/json
 <
 * Closing connection 0
 ```
@@ -345,7 +345,7 @@ Napravimo poslužitelj koji na zahtjev tipa POST sa sadržajem `Kako ide?` koji 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && $_SERVER["HTTP_CONTENT_TYPE"] == "text/plain") {
     $request_body = file_get_contents("php://input");
     if ($request_body == "Kako ide?") {
-        header("Content-type: text/plain");
+        header("Content-Type: text/plain");
         $response_body = "A evo, dobro.";
         file_put_contents("php://output", $response_body);
     }
@@ -373,7 +373,7 @@ Note: Unnecessary use of -X or --request, POST is already inferred.
 < Date: Wed, 30 Dec 2020 19:20:13 GMT
 < Connection: close
 < X-Powered-By: PHP/8.0.0
-< Content-type: text/plain;charset=UTF-8
+< Content-Type: text/plain;charset=UTF-8
 <
 * Closing connection 0
 A evo, dobro.
@@ -429,7 +429,7 @@ if (file_exists($datoteka)) {
     $persons = [];
 }
 
-header("Content-type: application/json");
+header("Content-Type: application/json");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && $_SERVER["REQUEST_URI"] == "/persons") {
     $request_body = file_get_contents("php://input");
@@ -462,7 +462,7 @@ if (file_exists($datoteka)) {
     $persons = [];
 }
 
-header("Content-type: application/json");
+header("Content-Type: application/json");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && $_SERVER["REQUEST_URI"] == "/persons") {
     $request_body = file_get_contents("php://input");
@@ -502,7 +502,7 @@ if (file_exists($datoteka)) {
     $persons = [];
 }
 
-header("Content-type: application/json");
+header("Content-Type: application/json");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && $_SERVER["REQUEST_URI"] == "/persons") {
     $request_body = file_get_contents("php://input");
@@ -546,7 +546,7 @@ if (file_exists($datoteka)) {
     $persons = [];
 }
 
-header("Content-type: application/json");
+header("Content-Type: application/json");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && $_SERVER["REQUEST_URI"] == "/persons") {
     $request_body = file_get_contents("php://input");
@@ -592,7 +592,7 @@ $ curl -v -X POST http://localhost:8000/persons
 < Date: Sat, 03 Apr 2021 20:40:10 GMT
 < Connection: close
 < X-Powered-By: PHP/7.4.15
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 * Closing connection 0
 ```
@@ -618,7 +618,7 @@ Note: Unnecessary use of -X or --request, POST is already inferred.
 < Date: Sat, 03 Apr 2021 20:42:27 GMT
 < Connection: close
 < X-Powered-By: PHP/7.4.15
-< Content-type: application/json
+< Content-Type: application/json
 <
 * Closing connection 0
 ```
@@ -644,7 +644,7 @@ Note: Unnecessary use of -X or --request, POST is already inferred.
 < Date: Sat, 03 Apr 2021 20:44:30 GMT
 < Connection: close
 < X-Powered-By: PHP/7.4.15
-< Content-type: application/json
+< Content-Type: application/json
 <
 * Closing connection 0
 ```
@@ -670,7 +670,7 @@ Note: Unnecessary use of -X or --request, POST is already inferred.
 < Date: Sat, 03 Apr 2021 20:55:37 GMT
 < Connection: close
 < X-Powered-By: PHP/7.4.15
-< Content-type: application/json
+< Content-Type: application/json
 <
 * Closing connection 0
 ```
@@ -704,7 +704,7 @@ if (file_exists($datoteka)) {
     $persons = [];
 }
 
-header("Content-type: application/json");
+header("Content-Type: application/json");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && $_SERVER["REQUEST_URI"] == "/persons") {
     // ...
@@ -761,7 +761,7 @@ $ curl -v -X PUT -H 'Content-Type: application/json' -d '{"name": "Grace Brewste
 < Date: Sat, 03 Apr 2021 21:04:27 GMT
 < Connection: close
 < X-Powered-By: PHP/7.4.15
-< Content-type: application/json
+< Content-Type: application/json
 <
 * Closing connection 0
 ```
@@ -797,7 +797,7 @@ if (file_exists($datoteka)) {
     $persons = [];
 }
 
-header("Content-type: application/json");
+header("Content-Type: application/json");
 
 if ($_SERVER["REQUEST_METHOD"] == "PUT" && preg_match("/^\/persons\/[1-9][0-9]*$/", $_SERVER["REQUEST_URI"])) {
     $uri_parts = explode("/", $_SERVER["REQUEST_URI"]);
@@ -850,7 +850,7 @@ if (file_exists($datoteka)) {
     $persons = [];
 }
 
-header("Content-type: application/json");
+header("Content-Type: application/json");
 
 if ($_SERVER["REQUEST_METHOD"] == "PATCH" && preg_match("/^\/persons\/[1-9][0-9]*$/", $_SERVER["REQUEST_URI"])) {
     $uri_parts = explode("/", $_SERVER["REQUEST_URI"]);
@@ -909,7 +909,7 @@ $ curl -v -X PATCH -H 'Content-Type: application/json' -d '{"known_for": ["http:
 < Date: Sat, 03 Apr 2021 21:21:51 GMT
 < Connection: close
 < X-Powered-By: PHP/7.4.15
-< Content-type: application/json
+< Content-Type: application/json
 <
 * Closing connection 0
 ```
@@ -929,7 +929,7 @@ if (file_exists($datoteka)) {
     $persons = [];
 }
 
-header("Content-type: application/json");
+header("Content-Type: application/json");
 
 if ($_SERVER["REQUEST_METHOD"] == "DELETE" && preg_match("/^\/persons\/[1-9][0-9]*$/", $_SERVER["REQUEST_URI"])) {
     $uri_parts = explode("/", $_SERVER["REQUEST_URI"]);
@@ -966,7 +966,7 @@ $ curl -v -X DELETE http://localhost:8000/persons/5
 < Date: Sat, 03 Apr 2021 21:33:58 GMT
 < Connection: close
 < X-Powered-By: PHP/7.4.15
-< Content-type: application/json
+< Content-Type: application/json
 <
 * Closing connection 0
 ```
@@ -988,7 +988,7 @@ $ curl -v -X DELETE http://localhost:8000/persons/3
 < Date: Sat, 03 Apr 2021 21:34:09 GMT
 < Connection: close
 < X-Powered-By: PHP/7.4.15
-< Content-type: application/json
+< Content-Type: application/json
 <
 * Closing connection 0
 ```
@@ -1008,7 +1008,7 @@ if (file_exists($datoteka)) {
     $persons = [];
 }
 
-header("Content-type: application/json");
+header("Content-Type: application/json");
 
 if ($_SERVER["REQUEST_METHOD"] == "GET" && $_SERVER["REQUEST_URI"] == "/persons") {
     $response_body_array = ["count" => count($persons), "results" => array_values($persons)];

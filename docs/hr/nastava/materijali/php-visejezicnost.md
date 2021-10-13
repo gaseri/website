@@ -56,7 +56,7 @@ $ curl -v -H "Accept-Language: en,es,pt" http://localhost:8000/
 < Connection: close
 < X-Powered-By: PHP/8.0.0
 < Content-Language: en
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 <p>Hello, world!</p>
 * Closing connection 0
@@ -77,7 +77,7 @@ $ curl -v -H "Accept-Language: hr, ru" http://localhost:8000/
 < Connection: close
 < X-Powered-By: PHP/8.0.0
 < Content-Language: hr
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 <p>Pozdrav, svijete!</p>
 * Closing connection 0
@@ -97,7 +97,7 @@ $ curl -v -H "Accept-Language: de, fr" http://localhost:8000/
 < Date: Tue, 27 Apr 2021 09:41:56 GMT
 < Connection: close
 < X-Powered-By: PHP/7.4.15
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 <p>Poslani popis jezika nije prihvatljiv.</p>
 * Closing connection 0
@@ -122,7 +122,7 @@ $ curl -v -H "Accept-Language: de, hr" http://localhost:8000/
 < Connection: close
 < X-Powered-By: PHP/8.0.0
 < Content-Language: hr
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 <p>Pozdrav, svijete!</p>
 * Closing connection 0
@@ -148,7 +148,7 @@ curl -v -H "Accept-Language: hr-HR, en;q=0.9, de-AT;q=0.7, *;q=0.5" http://local
 < Date: Tue, 27 Apr 2021 09:48:12 GMT
 < Connection: close
 < X-Powered-By: PHP/7.4.15
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 <p>Poslani popis jezika nije prihvatljiv.</p>
 * Closing connection 0
@@ -198,7 +198,7 @@ $ curl -v -H "Accept-Language: hr-HR, en, de-AT" http://localhost:8000/
 < Connection: close
 < X-Powered-By: PHP/7.4.15
 < Content-Language: hr
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 <p>Pozdrav, svijete!</p>
 * Closing connection 0
@@ -249,7 +249,7 @@ $ curl -v -H "Accept-Language: en-DK, de-AT" http://localhost:8000/
 < Connection: close
 < X-Powered-By: PHP/7.4.15
 < Content-Language: en
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 <p>Hello, world!</p>
 * Closing connection 0
@@ -399,7 +399,7 @@ $ curl -v -H "Accept-Language: en;q=0.6, hr;q=0.8" http://localhost:8000/
 < Connection: close
 < X-Powered-By: PHP/7.4.15
 < Content-Language: hr
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 <p>Pozdrav, svijete!</p>
 * Closing connection 0
@@ -420,7 +420,7 @@ $ curl -v -H "Accept-Language: ru, en;q=0.6, hr;q=0.8" http://localhost:8000/
 < Connection: close
 < X-Powered-By: PHP/7.4.15
 < Content-Language: ru
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 <p>Привет мир!</p>
 * Closing connection 0
@@ -440,7 +440,7 @@ $ curl -v -H "Accept-Language: de;q=0.9, fr;q=0.5" http://localhost:8000/
 < Date: Tue, 27 Apr 2021 16:36:20 GMT
 < Connection: close
 < X-Powered-By: PHP/7.4.15
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 <p>Poslani popis jezika nije prihvatljiv.</p>
 * Closing connection 0

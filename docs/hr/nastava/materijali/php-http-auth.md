@@ -42,7 +42,7 @@ $ curl -v -H "Authorization: Ruski haker" http://localhost:8000/
 < Date: Wed, 30 Dec 2020 00:56:39 GMT
 < Connection: close
 < X-Powered-By: PHP/8.0.0
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 <p>Nemate pravo pristupa.</p>
 * Closing connection 0
@@ -62,7 +62,7 @@ $ curl -v -H "Authorization: Basic YWxhZGRpbjpvcGVuc2VzYW1l" http://localhost:80
 < Date: Wed, 30 Dec 2020 00:57:11 GMT
 < Connection: close
 < X-Powered-By: PHP/8.0.0
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 <p>Dobrodošli.</p>
 * Closing connection 0
@@ -115,7 +115,7 @@ $ curl -v http://localhost:8000/
 < Connection: close
 < X-Powered-By: PHP/8.0.0
 < WWW-Authenticate: Basic realm="Tajni laboratorij Odjela za informatiku"
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 <p>Niste prijavljeni.</p>
 * Closing connection 0
@@ -140,7 +140,7 @@ $ curl -v -u ivanhorvat:m0jazap0rka http://localhost:8000/
 < Date: Wed, 30 Dec 2020 17:15:58 GMT
 < Connection: close
 < X-Powered-By: PHP/8.0.0
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 <p>Pozdrav ivanhorvat, unijeli ste m0jazap0rka kao zaporku.</p>
 * Closing connection 0

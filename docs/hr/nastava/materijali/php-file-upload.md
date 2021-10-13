@@ -48,7 +48,7 @@ $ curl -v -F 'popis_poklona=@pokloni.txt' http://localhost:8000/
 < Date: Mon, 28 Dec 2020 21:58:46 GMT
 < Connection: close
 < X-Powered-By: PHP/8.0.0
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 * Closing connection 0
 ```
@@ -104,7 +104,7 @@ $ curl -v -F 'popis_poklona=@pokloni.txt' http://localhost:8000/datoteke-za-djed
 < Date: Wed, 30 Dec 2020 01:31:50 GMT
 < Connection: close
 < X-Powered-By: PHP/8.0.0
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 * Closing connection 0
 ```
@@ -152,7 +152,7 @@ $ curl -v -T pokloni.txt http://localhost:8000/upload
 < Date: Mon, 28 Dec 2020 23:23:00 GMT
 < Connection: close
 < X-Powered-By: PHP/8.0.0
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 { [3 bytes data]
 100 59152    0     3  100 59149      2  58796  0:00:01  0:00:01 --:--:-- 58740

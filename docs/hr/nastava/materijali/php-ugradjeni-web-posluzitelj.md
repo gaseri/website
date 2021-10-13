@@ -105,7 +105,7 @@ $ curl -v http://localhost:8000/
 < Date: Mon, 02 Nov 2020 10:41:35 GMT
 < Connection: close
 < X-Powered-By: PHP/7.4.11
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 <p>Hello, world!</p>
 * Closing connection 0
@@ -317,7 +317,7 @@ $ curl -v http://localhost:8000/proba
 < Date: Mon, 02 Nov 2020 21:57:35 GMT
 < Connection: close
 < X-Powered-By: PHP/7.4.11
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 <p>Hello, world!</p>
 * Closing connection 0
@@ -336,7 +336,7 @@ $ curl -v http://localhost:8000/proba/
 < Date: Mon, 02 Nov 2020 21:57:41 GMT
 < Connection: close
 < X-Powered-By: PHP/7.4.11
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 <p>Hello, world!</p>
 * Closing connection 0
@@ -359,7 +359,7 @@ $ curl -v -X POST http://localhost:8000/
 < Date: Mon, 02 Nov 2020 22:01:54 GMT
 < Connection: close
 < X-Powered-By: PHP/7.4.11
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 <p>Hello, world!</p>
 * Closing connection 0

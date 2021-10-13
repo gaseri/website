@@ -49,7 +49,7 @@ $ curl -v http://localhost:8000/
 < Date: Wed, 05 May 2021 14:30:05 GMT
 < Connection: close
 < X-Powered-By: PHP/7.4.15
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 <p>Ovo je čitav sadržaj koji će biti poslan klijentu.</p>
 * Closing connection 0
@@ -74,7 +74,7 @@ $ curl -v --compressed http://localhost:8000/
 < Connection: close
 < X-Powered-By: PHP/7.4.15
 < Content-Encoding: gzip
-< Content-type: text/html; charset=UTF-8
+< Content-Type: text/html; charset=UTF-8
 <
 <p>Ovo je čitav sadržaj koji će biti poslan klijentu.</p>
 * Closing connection 0
