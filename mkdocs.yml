@@ -121,6 +121,7 @@ nav:
       - Filtriranje paketa vatrozidom: hr/nastava/materijali/iptables-vatrozid.md
       - Kemoinformatika i računalna kemija: hr/nastava/materijali/kemoinformatika-povijest-osnove.md
       - Virtualizacija korištenjem KVM-a i QEMU-a: hr/nastava/materijali/kvm-virtualizacija.md
+      - Virtualizacija korištenjem Virtual Machine Managera: hr/nastava/materijali/virt-manager-virtualizacija.md
       - Arhiviranje i komprimiranje: hr/nastava/materijali/linux-arhiviranje-komprimiranje.md
       - Cijevi, preusmjeravanje ulaza i izlaza: hr/nastava/materijali/linux-cijevi-preusmjeravanje-ulaza-izlaza.md
       - Uvod u komandnolinijsko sučelje: hr/nastava/materijali/linux-cli-uvod.md

@@ -115,6 +115,26 @@ Imena dvaju tehnologija koje omogućuju virtualizaciju upravitelja ulaznim/izlaz
 
 Obje tehnologije proširenje su postojećih tehnologija za hardverski potpomognutu virtualizaciju.
 
+#### QEMU i KVM
+
+Kako bismo pokrenuli QEMU
+
+``` shell
+$ qemu-img create -f qcow2 vm_harddisk.qcow2 100G
+```
+
+Recimo da smo odlučili instalirati Ubuntu 20.04.3 LTS ...
+
+QEMU možemo pokrenuti naredbom 
+
+``` shell
+$ qemu-system-x86_64 -accel kvm -cpu host -smp 2 -m 4096 -cdrom ubuntu TODO.iso -boot c -drive file=nesto TODO.qcow2
+```
+
+!!! admonition "Zadatak"
+    - Provedite instalaciju Ubuntua pa ponovno pokrenite virtualnu mašinu, ali bez Ubuntuovog instalacijskog medija.
+    - Ponovno pokrenite virtualnu mašinu, ali tako da joj date na korištenje samo jednu procesorsku jezgru i samo 2 GB radne memorije.
+
 ### Paravirtualizacija
 
 Paravirtualizacija, za razliku od potpune virtualizacije, je virtualizacijska tehnika koja s ciljem poboljašanja performansi ne emulira sav hardver računalnog sustava i stoga očekuje da je gostujući operacijski sustav prilagođen radu u virtualnoj mašini.
