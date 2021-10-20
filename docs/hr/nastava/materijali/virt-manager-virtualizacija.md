@@ -226,17 +226,17 @@ Stvaranjem više kopija Ubuntuove slike i više kopija ranije stvorene slike `us
         <p>Address received is: <span id="myIP"></span></p>
 
         <script>
-        var myHeaders = new Headers({'Accept': 'application/json'})
-        const myInit = { headers: myHeaders }
-        fetch('http://app.miletic.net/ip/', myInit)
-            .then(function(response) {
-            return response.json().then(function(data) {
-                document.getElementById('myIP').innerHTML = data['address'];
+        var myHeaders = new Headers({ Accept: "application/json" });
+        const myInit = { headers: myHeaders };
+        fetch("http://app.miletic.net/ip/", myInit)
+            .then(function (response) {
+                return response.json().then(function (data) {
+                    document.getElementById("myIP").innerHTML = data["address"];
+                });
             })
-            })
-            .catch(function(err) {  
-            console.log('Failed to fetch page: ', err);  
-            })
+            .catch(function (err) {
+                console.log("Failed to fetch page: ", err);
+            });
         </script>
     </body>
     </html>
