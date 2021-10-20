@@ -110,7 +110,7 @@ enc               engine            errstr            gendsa
 Slijedi lista naredbi za hashiranje:
 
 ```
-Message Digest commands (see the [dgst' command for more details))
+Message Digest commands (see the `dgst' command for more details))
 blake2b512        blake2s256        gost              md2
 md4               md5               rmd160            sha1
 sha256            sha3-224          sha3-256          sha3-384
@@ -120,7 +120,7 @@ sha256            sha3-224          sha3-256          sha3-384
 Naposlijetku je lista naredbi za šifriranje:
 
 ```
-Cipher commands (see the [enc' command for more details))
+Cipher commands (see the `enc' command for more details))
 aes-128-cbc       aes-128-ecb       aes-192-cbc       aes-192-ecb
 aes-256-cbc       aes-256-ecb       aria-128-cbc      aria-128-cfb
 aria-128-cfb1     aria-128-cfb8     aria-128-ctr      aria-128-ecb

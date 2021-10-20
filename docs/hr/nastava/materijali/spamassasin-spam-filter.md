@@ -17,7 +17,7 @@ Vrlo jednostavno:
 Zanimljivo je pri kraju instalacije primjetiti:
 
 ```
-SpamAssassin Mail Filter Daemon: disabled, see `/etc/default/spamassassin`
+SpamAssassin Mail Filter Daemon: disabled, see /etc/default/spamassassin
 ```
 
 što nam jasno daje do znanja da ćemo morati ručno uključiti Spamassassin Daemon proces.

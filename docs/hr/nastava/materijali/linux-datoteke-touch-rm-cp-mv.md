@@ -79,7 +79,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov, Anja Vrbanjac
 
     - Isprobajte naredbu `ls [^ad]*` i razmislite o njezinom značenju.
     - Isprobajte naredbu `ls {ab,dat,f}??` i razmislite o njezinom značenju.
-    - Isprobajte naredbu `cat *[<:upper:]1-4]`. Što ona radi?)
+    - Isprobajte naredbu `cat *[[:upper:]1-4]`. Što ona radi?
 
 ## Pretraživanje datotečnog sustava
 

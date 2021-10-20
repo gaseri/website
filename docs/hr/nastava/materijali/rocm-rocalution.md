@@ -313,7 +313,7 @@ Opet se ponavlja ista `for` petlja kao i prije, i `tack` računa vrijeme. Ispisu
 
 Iza toga se računa vrijeme za `tackg` koje se koristi za ispis vremena cijelog executa + transfera bez funkcije `Async` tako da se `tackg` i `tickg` oduzmu i opet podijele sa 1e6.
 
-Za sva tri objekta `mat`, x` i `y` se pomiče data na host-a. `Y`-oni se opet ponstavljaju na 0.
+Za sva tri objekta `mat`, `x` i `y` se pomiče data na host-a. `Y`-oni se opet ponstavljaju na 0.
 
 Kroz komentar kaže da se sada ovo odnosi na Async, i vidi se razlika jer se sada u isto vrijeme računaju vremena za i `tickg` i `tick`.
 

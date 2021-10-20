@@ -593,7 +593,7 @@ SHOW GRANTS FOR 'ivanzhegalkin'@'localhost';
 +----------------------------------------------------------------------------------------------------------------------+
 | Grants for ivanzhegalkin@localhost                                                                                   |
 +----------------------------------------------------------------------------------------------------------------------+
-| GRANT USAGE ON *.* TO [ivanzhegalkin)@[localhost) IDENTIFIED BY PASSWORD '*FB0DD9B1D2A1CF4B2203A2FBF5E1EAE4A2008788' |
+| GRANT USAGE ON *.* TO `ivanzhegalkin`@`localhost` IDENTIFIED BY PASSWORD '*FB0DD9B1D2A1CF4B2203A2FBF5E1EAE4A2008788' |
 +----------------------------------------------------------------------------------------------------------------------+
 1 row in set (0.000 sec)
 ```
@@ -630,7 +630,7 @@ SHOW GRANTS FOR 'ivanzhegalkin'@'localhost';
 +-------------------------------------------------------------------------------------------------------------------------------+
 | Grants for ivanzhegalkin@localhost                                                                                            |
 +-------------------------------------------------------------------------------------------------------------------------------+
-| GRANT SHOW DATABASES ON *.* TO [ivanzhegalkin)@[localhost) IDENTIFIED BY PASSWORD '*FB0DD9B1D2A1CF4B2203A2FBF5E1EAE4A2008788' |
+| GRANT SHOW DATABASES ON *.* TO `ivanzhegalkin`@`localhost` IDENTIFIED BY PASSWORD '*FB0DD9B1D2A1CF4B2203A2FBF5E1EAE4A2008788' |
 +-------------------------------------------------------------------------------------------------------------------------------+
 1 row in set (0.000 sec)
 ```
@@ -680,8 +680,8 @@ SHOW GRANTS FOR 'ivanzhegalkin'@'localhost';
 +-------------------------------------------------------------------------------------------------------------------------------+
 | Grants for ivanzhegalkin@localhost                                                                                            |
 +-------------------------------------------------------------------------------------------------------------------------------+
-| GRANT SHOW DATABASES ON *.* TO [ivanzhegalkin)@[localhost) IDENTIFIED BY PASSWORD '*FB0DD9B1D2A1CF4B2203A2FBF5E1EAE4A2008788' |
-| GRANT SELECT ON [mojabaza).* TO [ivanzhegalkin)@[localhost)                                                                   |
+| GRANT SHOW DATABASES ON *.* TO `ivanzhegalkin`@`localhost` IDENTIFIED BY PASSWORD '*FB0DD9B1D2A1CF4B2203A2FBF5E1EAE4A2008788' |
+| GRANT SELECT ON `mojabaza`.* TO `ivanzhegalkin`@`localhost`                                                                   |
 +-------------------------------------------------------------------------------------------------------------------------------+
 2 rows in set (0.000 sec)
 ```

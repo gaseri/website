@@ -305,9 +305,9 @@ U konfiguracijskoj datoteci `my-httpd.conf` možemo uočiti veliki broj uglavnom
 # Dynamic Shared Object (DSO) Support
 #
 # To be able to use the functionality of a module which was built as a DSO you
-# have to place corresponding [LoadModule' lines at this location so the)
+# have to place corresponding `LoadModule' lines at this location so the
 # directives contained in it are actually available _before_ they are used.
-# Statically compiled modules (those listed by [httpd -l') do not need)
+# Statically compiled modules (those listed by `httpd -l') do not need
 # to be loaded here.
 #
 # Example:
