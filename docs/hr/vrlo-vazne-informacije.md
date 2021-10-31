@@ -890,3 +890,111 @@ Lude mašine, tebra, sve to reinstallo bih
 Ali samo rebootam ih, Tuxa mi
 
 ([Izvorni tekst na Geniusu](https://genius.com/Devito-mame-mi-lyrics))
+
+### Dara Bubamara -- Linuxi (prerada Zidovi)
+
+[Strofa 1]  
+Laptop sam otvorila, na Windowsu Twitch pokrenula  
+Predavanja sam gledala, od profesora M-a (La-la-la)  
+Pred svima me posramio, samo mi je hladno rekao  
+"Windows koristiš, i to desetku, pazi"
+
+[Refren]  
+Ovi Tuxevi brzinu imaju, ma kakvi prozori  
+Laptop grije se i onda gasi se  
+Jer pun je prašine, baš briga te
+
+[Strofa 2]  
+Šta je tebi Ryzen taj, nekako sam te upitala  
+Rekao si "Sve mi je", Novidya je sranje (La-la-la)  
+Pred svima me posramio, samo mi je nulu upisao  
+"Kolegij pala si, moj AMD ne gazi"
+
+[Refren]  
+Tvoji bodovi vrijednost nemaju da predmet prođeš ti  
+Majka stidi se i ona kaje se, što pare dala je, pa kaže  
+Tvoji bodovi vrijednost nemaju da predmet prođeš ti  
+Majka stidi se i ona kaje se, što pare dala je, sad kasno je!
+
+[Refren]  
+Ovi zidovi Buru podnose, a J baš i ne  
+Zove bolnica, pokvario je sve, J uzmite, a ne  
+Ovi zidovi Buru podnose, a J baš i ne  
+Zove bolnica, pokvario je sve, pls ga uzmite, a ne ne ne!
+
+([Izvorni tekst na Geniusu](https://genius.com/Dara-bubamara-zidovi-lyrics))
+
+### Corona -- Legende (prerada Legende)
+
+[Intro]  
+Sedamstodevetnaest, sedamstodevetnaest, Sedamstodevetnaest
+
+[Refren]  
+Kampus noćas voli nas, voli nas ovaj kvart, B  
+Boli sad svaki seminar, bod, B  
+Kad ne bude nas, firme kad pozovu nas, tad, B  
+Ostaje trag, ostaje zauvek trag, B
+
+[Post-Refren]  
+Le-le-le, le-le-le-le-legende, B  
+Le-le-le, le-le-le-le-legende, B  
+Le-le-le, le-le-le-le-legende, B  
+Le-le-le, le-le-le-le-legende, B
+
+[Strofa 1]  
+Zauvek će OIRI da pamti, STEM Games tvrd kao beton  
+Samo pred P ja ću stati, legende zato žive večno  
+Uvek u brucoševskoj pratnji, al' ovde postalo je tesno  
+Auto-put u brzoj traci, kombi, Ceca, palim preko  
+Hteo sam da budem neko, strane konference, velika nada  
+Svaki tren je remek-delo kô da ga programira Z  
+Dušu uzô mi je Uno, sve pod nogama se trese  
+Samo Tommy Ha duksa, Sexy Suzi, iPhone
+
+[Pred-Refren]  
+B, velik je grad, ne mogu iz kože sad  
+Pravac Labin, Malinska, pa Lošinj, Cres  
+A kad ne bude nas, kad se ugase računala sva  
+Ostaje trag, ostaje trag
+
+[Refren]  
+Kampus noćas voli nas, voli nas ovaj kvart, B  
+Boli sad svaki seminar, bod, B  
+Kad ne bude nas, firme kad pozovu nas, tad, B  
+Ostaje trag, ostaje zauvek trag, B
+
+[Post-Refren]  
+Le-le-le, le-le-le-le-legende, B  
+Le-le-le, le-le-le-le-legende, B  
+Le-le-le, le-le-le-le-legende, B  
+Le-le-le, le-le-le-le-legende, B
+
+[Strofa 2]  
+Keskpayi puni para, puni smo cuge svakog momenta  
+Brzo mislim, slabo spavam, to je život studenta  
+Uvek prepisujem bez traga, zadaće, kôdna dela  
+Od Beča do Rijeke, tresla se Evropa cela  
+Iz tornja krem smo de la krema, u srcu stalno tinja vatra  
+Kad se čuje zvuk e-maila, uvek se držimo kô braća  
+Srce ledeno kô stena, travnjak sad me zove nazad  
+Jednom kad nas više nema, OIRI-ju se opet vraćam
+
+[Pred-Refren]  
+B, velik je grad, ne mogu iz kože sad  
+Pravac Labin, Malinska, pa Lošinj, Cres  
+A kad ne bude nas, kad se ugase računala sva  
+Ostaje trag, ostaje trag
+
+[Refren]  
+Kampus noćas voli nas, voli nas ovaj kvart, B  
+Boli sad svaki seminar, bod, B  
+Kad ne bude nas, firme kad pozovu nas, tad, B  
+Ostaje trag, ostaje zauvek trag, B
+
+[Post-Refren]  
+Le-le-le, le-le-le-le-legende, B  
+Le-le-le, le-le-le-le-legende, B  
+Le-le-le, le-le-le-le-legende, B  
+Le-le-le, le-le-le-le-legende, B
+
+([Izvorni tekst na Geniusu](https://genius.com/Corona-legende-lyrics))
