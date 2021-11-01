@@ -76,7 +76,12 @@ $ php -S localhost:8000 -t public
 [Mon Nov  2 11:17:46 2020] PHP 7.4.11 Development Server (http://localhost:8000) started
 ```
 
-Adresu `http://localhost:8000` možemo otvoriti u web pregledniku po želji i uvjeriti se da poslužitelj ispravno radi te usput saznati neke informacije o instaliranom interpreteru PHP-a. Preglednik zatvorimo, a poslužitelj ostavimo pokrenutim. Naime, izmjene u datoteci `index.php` su odmah aktivne po spremanju pa nema potrebe za ponovnim pokretanjem poslužitelja.
+Adresu `http://localhost:8000` možemo otvoriti u web pregledniku po želji i uvjeriti se da poslužitelj ispravno radi te usput saznati neke informacije o instaliranom interpreteru PHP-a.
+
+!!! warning
+    Web preglednici [FireDragon](https://forum.garudalinux.org/t/firedragon-librewolf-fork/5018) i [LibreWolf](https://librewolf-community.gitlab.io/) u zadanim postavkama [isključuju podršku za pronalaženje IPv6 adresa putem DNS-a](https://gitlab.com/librewolf-community/browser/common/-/issues/15) (postavka `network.dns.disableIPv6` u `about:config`). Specijalno, to znači da interpretiraju `localhost` kao IPv4 adresu `127.0.0.1`, a ne kao IPv6 adresu `::1` koju PHP-ov ugrađeni web poslužitelj koristi kad je IPv6 dostupan. Ako se koristi neki od tih preglednika, potrebno je eksplicitno pristupiti adresi `http://[::1]:8000` (u prikazu IPv6 adrese, pojedini su njeni dijelovi odvojeni znakom dvotočke pa se ta adresa dodatno stavlja u uglate zagrade kako bi se dvotočka koja odvaja broj vrata od adrese mogla razlikovati od dvotočki koje odvajaju dijelove adrese).
+
+Preglednik zatvorimo, a poslužitelj ostavimo pokrenutim. Naime, izmjene u datoteci `index.php` su odmah aktivne po spremanju pa nema potrebe za ponovnim pokretanjem poslužitelja.
 
 ## Slanje zahtjeva web klijentom
 
