@@ -1,5 +1,5 @@
 ---
-author: Vedran Miletić, Domagoj Margan
+author: Vedran Miletić, Domagoj Margan, Andrea Toić
 ---
 
 # Vrlo važne informacije
@@ -927,7 +927,7 @@ Zove bolnica, pokvario je sve, pls ga uzmite, a ne ne ne!
 ### Corona -- Legende (prerada Legende)
 
 [Intro]  
-Sedamstodevetnaest, sedamstodevetnaest, Sedamstodevetnaest
+Sedamstodevetnaest, sedamstodevetnaest, sedamstodevetnaest
 
 [Refren]  
 Kampus noćas voli nas, voli nas ovaj kvart, B  
@@ -970,7 +970,7 @@ Le-le-le, le-le-le-le-legende, B
 Le-le-le, le-le-le-le-legende, B
 
 [Strofa 2]  
-Keskpayi puni para, puni smo cuge svakog momenta  
+Kekspayi puni para, puni smo cuge svakog momenta  
 Brzo mislim, slabo spavam, to je život studenta  
 Uvek prepisujem bez traga, zadaće, kôdna dela  
 Od Beča do Rijeke, tresla se Evropa cela  
