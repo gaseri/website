@@ -39,17 +39,17 @@
 
 - [Obrada podataka zapisanih u obliku JavaScript Object Notation (JSON) u jeziku PHP](../materijali/php-json.md)
 - [Implementacija REpresentational State Transfer (REST) aplikacijskog programskog sučelja u jeziku PHP](../materijali/php-rest.md)
+- [Mjerenje performansi web poslužitelja alatom Siege](../materijali/siege-mjerenje-performansi-web-posluzitelja.md)
 
 ### Laboratorijska vježba 9
 
 - [Osnovna konfiguracija web poslužitelja Apache HTTP Server](../materijali/apache-web-posluzitelj.md)
 - [Konfiguracija virtualnih domaćina u web poslužitelju Apache HTTP Server](../materijali/apache-virtual-host.md)
-- [Mjerenje performansi web poslužitelja alatom ab (Apache HTTP server benchmarking tool)](../materijali/apache-ab-mjerenje-performansi-web-posluzitelja.md)
 
 ### Laboratorijska vježba 10
 
 - [Konfiguracija HTTPS-a u web poslužitelju Apache HTTP Server](../materijali/apache-mod-ssl.md)
-- [Mjerenje performansi web poslužitelja alatom Siege](../materijali/siege-mjerenje-performansi-web-posluzitelja.md)
+- [Mjerenje performansi web poslužitelja alatom ab (Apache HTTP server benchmarking tool)](../materijali/apache-ab-mjerenje-performansi-web-posluzitelja.md)
 
 ### Laboratorijska vježba 11
 

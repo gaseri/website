@@ -114,13 +114,76 @@ $ siege -t 10s -H 'Accept: application/json' https://app.miletic.net/ip/
 
 ## Mjerenje performansi poslužitelja pokrenutih na lokalnom računalu
 
-Siege možemo na isti način koristiti i na web poslužiteljima pokrenutim na lokalnom računalu. Primjerice, ako imamo pokrenut PHP-ov ugrađeni web poslužitelj na vratima 8000, onda ćemo mu pristupiti naredbom:
+Siege možemo na isti način koristiti i na web poslužiteljima pokrenutim na lokalnom računalu.
+
+### Mjerenje performansi ugrađenog web poslužitelja u interpreteru jezika PHP
+
+Primjerice, ako imamo pokrenut PHP-ov ugrađeni web poslužitelj na vratima 8000, onda ćemo mu pristupiti naredbom:
 
 ``` shell
-$ siege -c 1 http://localhost:8000/
+$ siege -c 10 http://localhost:8000/
 ```
 
-Kako PHP-ov ugrađeni web poslužitelj u zadanim postavkama ne podržava istovremene zahtjeve više korisnika, broj istovremenih korisnika ćemo postaviti na 1. (Ako želite eksperimentirati s većim brojem istovremenim korisnika, od verzije PHP-a 7.4.0 nadalje možete postaviti varijablu okoline `PHP_CLI_SERVER_WORKERS` ([dokumentacija](https://www.php.net/manual/ro/features.commandline.webserver.php)) na broj veći od 1 kod pokretanja ugrađenog web poslužitelja pa taj isti broj iskoristiti u Siegeu.)
+``` json
+{
+        "transactions":                         9953,
+        "availability":                       100.00,
+        "elapsed_time":                         9.35,
+        "data_transferred":                   973.37,
+        "response_time":                        0.01,
+        "transaction_rate":                  1064.49,
+        "throughput":                         104.10,
+        "concurrency":                          9.97,
+        "successful_transactions":              9953,
+        "failed_transactions":                     0,
+        "longest_transaction":                  0.02,
+        "shortest_transaction":                 0.00
+}
+```
+
+PHP-ov ugrađeni web poslužitelj u zadanim postavkama ne koristi konkurentnost u obradi zahtjeva više korisnika, odnosno izvodi se u jednoj niti za svih 10 istovremenih korisnika čije opterećenje Siege generira. Brojevi veći od toga u načelu neće donijeti veći broj izvršenih zahtjeva po sekundi.
+
+Od verzije PHP-a 7.4.0 nadalje moguće je PHP-ov ugrađeni web poslužitelj pokrenuti u više procesa koji se pritom nazivaju radnicima (engl. *workers*). To možemo izvesti je postaviti varijablu okoline `PHP_CLI_SERVER_WORKERS` ([dokumentacija](https://www.php.net/manual/ro/features.commandline.webserver.php)) na broj veći od 1 kod pokretanja ugrađenog web poslužitelja, primjerice 10 na način:
+
+``` shell
+$ PHP_CLI_SERVER_WORKERS=10 php -S localhost:8000 -t public
+[351093] [Mon Nov  1 20:00:37 2021] PHP 7.4.25 Development Server (http://localhost:8000) started
+[351092] [Mon Nov  1 20:00:37 2021] PHP 7.4.25 Development Server (http://localhost:8000) started
+[351094] [Mon Nov  1 20:00:37 2021] PHP 7.4.25 Development Server (http://localhost:8000) started
+[351095] [Mon Nov  1 20:00:37 2021] PHP 7.4.25 Development Server (http://localhost:8000) started
+[351096] [Mon Nov  1 20:00:37 2021] PHP 7.4.25 Development Server (http://localhost:8000) started
+[351097] [Mon Nov  1 20:00:37 2021] PHP 7.4.25 Development Server (http://localhost:8000) started
+[351098] [Mon Nov  1 20:00:37 2021] PHP 7.4.25 Development Server (http://localhost:8000) started
+[351099] [Mon Nov  1 20:00:37 2021] PHP 7.4.25 Development Server (http://localhost:8000) started
+[351100] [Mon Nov  1 20:00:37 2021] PHP 7.4.25 Development Server (http://localhost:8000) started
+[351091] [Mon Nov  1 20:00:37 2021] PHP 7.4.25 Development Server (http://localhost:8000) started
+[351101] [Mon Nov  1 20:00:37 2021] PHP 7.4.25 Development Server (http://localhost:8000) started
+```
+
+Pokretanjem Siegea s većim brojem konkurentnih korisnika, npr. 100, možemo uočiti da je broj obrađenih zahjeva nešto veći:
+
+``` shell
+$ siege -c 100 -t 10s http://localhost:8000/
+```
+
+``` json
+{
+        "transactions":                        24991,
+        "availability":                       100.00,
+        "elapsed_time":                         9.09,
+        "data_transferred":                  2445.78,
+        "response_time":                        0.04,
+        "transaction_rate":                  2749.28,
+        "throughput":                         269.06,
+        "concurrency":                         99.20,
+        "successful_transactions":             24991,
+        "failed_transactions":                     0,
+        "longest_transaction":                  0.32,
+        "shortest_transaction":                 0.00
+}
+```
+
+### Mjerenje performansi Apache HTTP Servera
 
 Apache HTTP Server može baratati s više korisnika pa možemo varirati broj korisnika ovisno o snazi računala na kojemu radimo. Ako Apache je pokrenut upotrebom Dockera, Siege s 50 istovremenih korisnika ćemo pokrenuti na način:
 
