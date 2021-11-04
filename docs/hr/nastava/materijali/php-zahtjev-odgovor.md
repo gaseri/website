@@ -341,7 +341,7 @@ $ curl -v -H "Accept: application/json" http://localhost:8000/
 < Content-Type: application/json
 <
 * Closing connection 0
-{"ime:"Ivan","prezime":"Horvat","studij":"Informatika"}
+{"ime":"Ivan","prezime":"Horvat","studij":"Informatika"}
 ```
 
 Zatim zatražimo HTML pa čisti tekst:
@@ -411,7 +411,7 @@ $ curl -v http://localhost:8000/
 
 ### Provjera ostalih zaglavlja
 
-Osim spomenutih zaglavlja HTTP zahtjeva, možemo obrađivati i sva druga. Sva zaglavlja koja zahtjev sadrži dohvatit ćemo funkcijom `getallheaders()` ([dokumentacija](https://www.php.net/manual/en/function.getallheaders.php)), a zatim svako pojedino zaglavlje dohvaćamo kao i ranije.
+Osim spomenutih zaglavlja HTTP zahtjeva, možemo obrađivati i sva druga. Sva zaglavlja koja zahtjev sadrži dohvatit ćemo funkcijom `getallheaders()` ([dokumentacija](https://www.php.net/manual/en/function.getallheaders.php)), a zatim svako pojedino zaglavlje dohvaćamo kao i ranije. Taj skup zaglavlja spremit ćemo u varijablu `$request_headers`. Uočimo kako varijable u jeziku PHP, slično kao i u drugim skriptnim jezicima, kod deklaracije ne moraju imati naveden tip. Uočimo također da se kod deklaracije i kod korištenja varijabli navodi znak `$` i ime varijable ([dokumentacija](https://www.php.net/manual/en/language.variables.basics.php)), što smo već mogli primijetiti kod korištenja uvijek dostupne varijable `$_SERVER`.
 
 Primjerice, u zahtjevu možemo dodati zaglavlje `Najjaci-Fakultet` koje nije standardizirano, ali se nama sviđa da ima vrijednost `Odjel za informatiku`. Na poslužitelju možemo funkcijom `array_key_exists()` ([dokumentacija](https://www.php.net/manual/en/function.array-key-exists.php)) provjeriti je li zaglavlje postavljeno pa onda ima li odgovarajuću vrijednost na način:
 
@@ -520,6 +520,31 @@ $ curl -v "http://localhost:8000/profil?ime=Ivan&prezime=Horvat"
 < Content-Type: text/html; charset=UTF-8
 <
 <p>Vi ste Ivan Horvat.</p>
+* Closing connection 0
+```
+
+Vrijednosti pojedinih GET varijabli mogu sadržavati znak razmaka. U tom slučaju je potrebno znak razmaka kodirati znakom plusa (`+`; [više detalja o kodiranju znakova u URL-ima na MDN-u](https://developer.mozilla.org/en-US/docs/Glossary/percent-encoding)) na način:
+
+``` shell
+$ curl -v "http://localhost:8000/profil?ime=Ivan+Tomislav&prezime=Horvat"
+*   Trying 127.0.0.1:8000...
+* connect to 127.0.0.1 port 8000 failed: Veza odbijena
+*   Trying ::1:8000...
+* Connected to localhost (::1) port 8000 (#0)
+> GET /profil?ime=Ivan+Tomislav&prezime=Horvat HTTP/1.1
+> Host: localhost:8000
+> User-Agent: curl/7.79.1
+> Accept: */*
+>
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+< Host: localhost:8000
+< Date: Thu, 04 Nov 2021 16:51:19 GMT
+< Connection: close
+< X-Powered-By: PHP/8.0.12
+< Content-type: text/html; charset=UTF-8
+<
+<p>Vi ste Ivan Tomislav Horvat.</p>
 * Closing connection 0
 ```
 
