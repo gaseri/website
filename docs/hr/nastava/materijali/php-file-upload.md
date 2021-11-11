@@ -109,7 +109,25 @@ $ curl -v -F 'popis_poklona=@pokloni.txt' http://localhost:8000/datoteke-za-djed
 * Closing connection 0
 ```
 
+Uočite kako smo u zahtjevu naveli direktorij znakom `/` na kraju putanje u URL-u. Ako ne želimo da zahtjevi navode taj znak `/`, kod treba biti oblika:
+
+``` php hl_lines="5"
+<?php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $webroot = getcwd();
+    mkdir($webroot . $_SERVER["REQUEST_URI"]);
+    move_uploaded_file($_FILES["popis_poklona"]["tmp_name"], $webroot . $_SERVER["REQUEST_URI"] . "/" . $_FILES["popis_poklona"]["name"]);
+    http_response_code(201);
+}
+```
+
+Jedina je promjena u ovom kodu u odnosu na prethodni dodan znak `"\"` između `$_SERVER["REQUEST_URI"]` i `$_FILES["popis_poklona"]["name"])`.
+
 Izlistavanjem sadržaja radnog direktorija web poslužitelja možemo se uvjeriti da je u njemu stvoren direktorij `datoteke-za-djeda-mraza` i da se u tom direktoriju nalazi datoteka `pokloni.txt`.
+
+!!! warning
+    Kako sad direktorij postoji, PHP-ov ugrađeni poslužitelj će ga posluživati kao statički sadržaj bez obzira na korištenu metodu pa neće biti moguće postaviti još jednu datoteku u isti direktorij (postavljanje datoteka se uredno može izvršiti u drugi direktorij). Studentima prepuštamo za istraživanje radi li se o svojstvu standarda HTTP ili implementacijskom odabiru PHP-ovih programera.
 
 ## Postavljanje datoteke metodom PUT
 
