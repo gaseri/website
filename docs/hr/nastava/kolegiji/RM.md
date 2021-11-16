@@ -9,7 +9,6 @@
 
 ### Auditorna vježba 2
 
-- [Obrada podataka zapisanih u obliku JavaScript Object Notation (JSON) u jeziku PHP](../materijali/php-json.md)
 - [Implementacija REpresentational State Transfer (REST) aplikacijskog programskog sučelja u jeziku PHP](../materijali/php-rest.md)
 - [Mjerenje performansi web poslužitelja alatom Siege](../materijali/siege-mjerenje-performansi-web-posluzitelja.md)
 
@@ -35,6 +34,7 @@
 ### Laboratorijska vježba 4
 
 - [HTTP autentifikacija u jeziku PHP](../materijali/php-http-auth.md)
+- [Obrada podataka zapisanih u obliku JavaScript Object Notation (JSON) u jeziku PHP](../materijali/php-json.md)
 - [Baratanje HTTP kolačićima u jeziku PHP](../materijali/php-cookies.md)
 
 ### Laboratorijska vježba 5
