@@ -229,6 +229,17 @@ link-local      *               255.255.0.0     U         0 0          0 wlan0
 default         dsldevice.lan   0.0.0.0         UG        0 0          0 wlan0
 ```
 
+Dodamo li i parametar `-n`, dobit ćemo prikaz IP adresa umjesto imena domaćina i mreža:
+
+``` shell
+$ netstat -rn
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
+192.168.1.0     *               255.255.255.0   U         0 0          0 wlan0
+192.168.0.0     *               255.255.0.0     U         0 0          0 wlan0
+0.0.0.0         192.168.1.1     0.0.0.0         UG        0 0          0 wlan0
+```
+
 Parametrom `-t` možemo pregledati aktivne TCP konekcije (otvorene utičnice). Dodatkom parametra `-a` (all), prikazujemo i poslužitelje:
 
 ``` shell
@@ -402,6 +413,7 @@ Pregled parametara za alat netstat:
 - `-i` : ispis informacija o mrežnim sučeljima
 - `-e` : detaljniji ispis
 - `-r` : prikaz routing tablice
+- `-n` : prikaz IP adresa umjesto imena domaćina i mreža
 - `-t` : pregled tcp konekcija (utičnica)
 - `-u` : pregled udp konekcija (utičnica)
 - `-a` : prikaz svih (poslužiteljskih) konekcija
