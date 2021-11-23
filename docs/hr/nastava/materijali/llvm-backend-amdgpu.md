@@ -312,7 +312,7 @@ Promotrimo funkciju `multiply_by_two`. Vidimo niz skalarnih (prefix `s_`) i vekt
 Usporedimo dobiveni kod za grafički procesor `gfx803`, odnosno `fiji` (Radeon R9 Fury).
 
 ``` shell
-$ clang -target -mcpu=gfx803 amdgcn -S kernel.cl
+$ clang -target amdgcn -mcpu=gfx803 -S kernel.cl
 ```
 
 ``` ca65
@@ -377,7 +377,7 @@ Uočimo kako je instrukcija `v_add_f32_e32` ostala ista, ali kako su instrukcije
 U nastavku ćemo koristiti grafički procesor `gfx900` (Radeon RX Vega). Vega uvodi nove instrukcije za rad s globalnom memorijom `global_load_dword` i `global_store_dword`:
 
 ``` shell
-$ clang -target -mcpu=gfx900 amdgcn -S kernel.cl
+$ clang -target amdgcn -mcpu=gfx900 -S kernel.cl
 ```
 
 ``` ca65
