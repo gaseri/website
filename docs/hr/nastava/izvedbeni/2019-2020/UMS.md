@@ -107,7 +107,7 @@ Osim prisustvovanja klasičnoj nastavi na predavanjima i vježbama studenti su d
 
 Tijekom semestra student će od GitHub Educationa ([education.github.com](https://education.github.com/)) zatražiti Student Developer Pack ([education.github.com/pack](https://education.github.com/pack)) i iskoristiti isti za dobivanje virtualnog poslužitelja i internetske domene .me. Student će zatim, korištenjem znanja stečenog na nastavi, na poslužitelju i domeni postaviti vlastito profesionalno ili osobno web sjedište dostupno putem HTTP-a i HTTPS-a.
 
-Umjesto virtualnog poslužitelja može iskoristiti uslugu GitHub Pages ([pages.github.com](https://pages.github.com/]). Umjesto domene .me, može kao građanin Republike Hrvatske odabrati registrirati domenu .from.hr kod CARNET-a ([domene.hr/portal/register/free-fromhr](https://domene.hr/portal/register/free-fromhr)) ili može odabrati registrirati domenu .tk, .ml, .ga, .cf ili .gq kod Freenoma ([www.freenom.com](https://www.freenom.com/)). Na taj način student će moći skupiti maksimalno 10 bodova.
+Umjesto virtualnog poslužitelja može iskoristiti uslugu GitHub Pages ([pages.github.com](https://pages.github.com/)). Umjesto domene .me, može kao građanin Republike Hrvatske odabrati registrirati domenu .from.hr kod CARNET-a ([domene.hr/portal/register/free-fromhr](https://domene.hr/portal/register/free-fromhr)) ili može odabrati registrirati domenu .tk, .ml, .ga, .cf ili .gq kod Freenoma ([www.freenom.com](https://www.freenom.com/)). Na taj način student će moći skupiti maksimalno 10 bodova.
 
 #### Praktični rad
 
