@@ -78,6 +78,8 @@ Iz datoteke možemo pročitati da postavljeni kolačić:
 Vidimo da su svi stupcima osim imena i vrijednosti dodijeljene automatski. Želimo li postaviti neke druge postavke za kolačić, to možemo napraviti korištenjem polja opcionalnih parametara funkcije `setcookie()`. Primjerice, kodom:
 
 ``` php
+<?php
+
 setcookie("kolacic", "Bugnes lyonnaises", ["expires" => 1759233600, "path" => "/slasticarna"]);
 ```
 
