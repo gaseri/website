@@ -90,6 +90,7 @@ nav:
       - Pakiranje deb paketa: hr/nastava/materijali/deb-pakiranje-paketa.md
       - Dinamičko dodjeljivanje adresa domaćinima: hr/nastava/materijali/dhcp-posluzitelj-klijent.md
       - DHCP i DNS poslužitelj dnsmasq: hr/nastava/materijali/dnsmasq-dhcp-dns-posluzitelj.md
+      - Komponiranje kontejnera alatom Docker Compose: hr/nastava/materijali/docker-compose-kompozicije-kontejnera.md
       - Kontejnerizacija alatom Docker: hr/nastava/materijali/docker-kontejneri.md
       - Instalacija i konfiguracija wiki sustava DokuWiki: hr/nastava/materijali/dokuwiki-instalacija-web-aplikacije.md
       - POP3 i IMAP -- Dovecot: hr/nastava/materijali/dovecot-pop3-imap-posluzitelj.md
