@@ -8,11 +8,21 @@ HTTP kolačić (engl. *HTTP cookie*, [Wikipedia](https://en.wikipedia.org/wiki/H
 
 ## Način rada kolačića
 
-HTTP zaglavlje `Set-Cookie` je dio odgovora na zahtjev i koristi se za postavljanje kolačića koji se pohranjuju na klijentskoj strani ([više detalja o HTTP zaglavlju Set-Cookie na MDN-u](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie)). Način pohrane kolačića je prepušten implementaciji pa [cURL pohranjuje u tekstualnu datoteku](https://stackoverflow.com/q/7181785), a [Firefox u relacijsku bazu podataka](https://stackoverflow.com/q/7610896). Kod slanja idućeg zahtjeva korisnički agent učitava pohranjene kolačiće i šalje ih u HTTP zaglavlju `Cookie` ([više detalja o HTTP zaglavlju Cookie na MDN-u](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cookie)).
+HTTP zaglavlje `Set-Cookie` je dio odgovora na zahtjev i koristi se za postavljanje kolačića koji se pohranjuju na klijentskoj strani ([više detalja o HTTP zaglavlju Set-Cookie na MDN-u](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie)). Sadržaj zaglavlja `Set-Cookie` je oblika `cookie-name=cookie-value`, pri čemu je `cookie-name` ime kolačića, a `cookie-value` njegova vrijednost. Primjerice, kako bi poslužitelj pohranio na klijentu identifikator korisnika, odnosno kolačić imena `id` koji ima vrijednost `1234`, zaglavlje `Set-Cookie` bit će oblika:
+
+``` http
+Set-Cookie: id=1234
+```
+
+Način pohrane kolačića je prepušten implementaciji pa [cURL pohranjuje u tekstualnu datoteku](https://stackoverflow.com/q/7181785), a [Firefox u relacijsku bazu podataka](https://stackoverflow.com/q/7610896). Kod slanja idućeg zahtjeva korisnički agent učitava pohranjene kolačiće i šalje ih u HTTP zaglavlju `Cookie` ([više detalja o HTTP zaglavlju Cookie na MDN-u](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cookie)). U konkretnom primjeru s identifikatorom korisnika zaglavlje `Cookie` bit će oblika:
+
+``` http
+Cookie: id=1234
+```
 
 ## Postavljanje kolačića
 
-Interpreter PHP-a podržava [postavljanje kolačića](https://www.php.net/manual/en/features.cookies.php) funkcijom `setcookie()` ([dokumentacija](https://www.php.net/manual/en/function.setcookie.php)) na način:
+Interpreter PHP-a podržava [postavljanje kolačića](https://www.php.net/manual/en/features.cookies.php) funkcijom `setcookie()` ([dokumentacija](https://www.php.net/manual/en/function.setcookie.php)). Postavimo kolačić imena `kolacic` i vrijednosti `Bugnes lyonnaises` na način:
 
 ``` php
 <?php
