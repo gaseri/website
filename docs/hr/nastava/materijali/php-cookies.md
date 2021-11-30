@@ -65,6 +65,31 @@ $ cat cookies.txt
 localhost       FALSE   /       FALSE   0       kolacic Bugnes%20lyonnaises
 ```
 
+Iz datoteke možemo pročitati da postavljeni kolačić:
+
+- na domeni `localhost`
+- ne odnosi se na poddomene
+- na putanji `/`
+- nije ograničen na HTTPS
+- ističe na kraju sesije (vrijednost 0)
+- ima ime `kolacic`
+- ima vrijednost `Bugnes%20lyonnaises`
+
+Vidimo da su svi stupcima osim imena i vrijednosti dodijeljene automatski. Želimo li postaviti neke druge postavke za kolačić, to možemo napraviti korištenjem polja opcionalnih parametara funkcije `setcookie()`. Primjerice, kodom:
+
+``` php
+setcookie("kolacic", "Bugnes lyonnaises", ["expires" => 1759233600, "path" => "/slasticarna"]);
+```
+
+postavit ćemo da kolačić ističe u trenutku `1759233600` Unix vremena, odnosno 30. rujna 2025. u 12 sati po UTC-u i odnosi se na putanju `/slasticarna`.
+
+Osim ova dva, u asocijativnom polju s opcijama dostupni su nam i ključevi:
+
+- `"domain"`, kojim postavljamo domenu
+- `"secure"`, kojim postavljamo da se kolačić šalje samo kad se koristi HTTPS
+- `"httponly"`, kojim postavljamo da je kolačić dostupan samo preko HTTP-a
+- `"samesite"`, kojim postavljamo ograničenje kolačića na domenu (vrijednost `"Lax"` postavlja labavo ograničenje, a vrijednost `"Strict"` postavlja strogo ograničenje)
+
 ## Primanje kolačića
 
 Polje `$_COOKIE` ([dokumentacija](https://www.php.net/manual/en/reserved.variables.cookies.php)) sadrži sve kolačiće primljene od strane klijenta. U tom polju ključevi su nazivi kolačića, a vrijednosti upravo njihove vrijednosti. Za ilustraciju, provjerimo funkcijom `array_key_exists()` ([dokumentacija](https://www.php.net/manual/en/function.array-key-exists.php)) postoji li u tom polju kolačić pod nazivom `kolacic`, a zatim, ako postoji, dohvatimo njegovu vrijednost i ispišimo je:

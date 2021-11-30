@@ -365,6 +365,18 @@ $ cat cookies.txt
 #HttpOnly_.google.hr    TRUE    /       FALSE   1411134598      NID     67=s6f-BTMOKNbJ8iGJe_51mp7JaQH2mDHhS-zRTcQiEq1CBUL1o7XgNo8087-szuFre2SZ1u6NNOTPVbNussrGdSLWysuhK-INU7sIuJ2SQUTFzsZkg31ilyB3uYwc6Qdf
 ```
 
+Uočimo nakon tri komentara i praznog retka kolačić dva retka s kolačićima, jedan koji se koristi i jedan zakomentirani koji se ne koristi. Stupci u retku s kolačićem su redom:
+
+- domena, u našem slučaju `.google.hr`
+- uključuje li se i poddomene, u našem slučaju `TRUE`, što ima smisla obzirom da smo kolačić dobili s `www.google.hr`
+- putanja, u našem slučaju `/`, što je u skladu s putanjom na koju smo uputili zahtjev
+- ograničava li se slanje i primanje na HTTPS, u našem slučaju `FALSE`, što ima smisla obzirom da smo kolačić dobili s `http://`
+- vrijeme isteka kolačića izraženo u Unix epohi, odnosno broju sekundi od 1. siječnja 1970. u ponoć, u našem slučaju `1458395398`
+- ime kolačića, u našem slučaju `PREF`
+- vrijednost kolačića, u našem slučaju `ID=66d2d46d264532f6:FF=0:TM=1395323398:LM=1395323398:S=AZv39tEXo7wyBIxv`
+
+Uočimo u retku ispod još jedan, ali zakomentirani kolačić.
+
 Kolačiće je moguće iskoristiti kod ponovnog pristupa stranici navođenjem imena datoteke parametrom `-b`
 
 ``` shell
