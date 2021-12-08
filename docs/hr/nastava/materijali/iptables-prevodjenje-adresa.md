@@ -62,17 +62,17 @@ n2----n4----n5---n6---n8
 
 ### Primjer 1
 
-Želimo omogućiti da n1, n2 i n3 mogu komunicirati s ostatkom mreže (n7 i n9) preko vanjske adrese.
+Pokrenemo li na n1 `ping` čvora n9, uočit ćemo da čvorovi iz različitih podmreža mogu međusobno komunicirati izravno. U toj situaciji emulacija zapravo odstupa od stvarnosti (kako bi nam olakšala korištenje); u stvarnosti se usmjeravanje ne vrši na privatne raspone adresa (između ostalog, to je zato što velik broj kućnih korisnika ima svoju kućnu mrežu na rasponu adresi 192.168.5.0/24 pa je pitanje kojem od njih bi paketi trebali stići).
 
-Pokrenemo li na n1 `ping` čvora n9, moguće je da ćemo uočiti da čvorovi iz različitih podmreža ne mogu međusobno komunicirati.
+Želimo omogućiti da n1, n2 i n3 mogu komunicirati s ostatkom mreže (n7 i n9) preko vanjske adrese korištenjem prevođenja adresa. Tada će se prilikom prolaska paketa poslanih s n1, n2 i n3 promijeniti izvorišna adresa u vanjsku adresu od n5, a kod primanja odgovora će se odredišna adresa od n5 promijeniti u adresu od n1, n2 ili n3, ovisno o korištenim odredišnim vratima.
 
 Uočimo da se izvodi prevođenje izvorišne adrese što ne utječe na usmjeravanje, te možemo pravila naizgled dodati ili u PREROUTING ili u POSTROUTING. Međutim, kako bi pravila filtriranja vatrozida zadana u terminima privatnih adresa bila ispravno primijenjena, dodajemo ih u lanac POSTROUTING. Koristimo IP maškaradu naredbom na usmjerivaču n5
 
 ``` shell
-# iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+# iptables -t nat -A POSTROUTING -o eth1 -j MASQUERADE
 ```
 
-Ova naredba je specifična za ovu mrežu iznad jer je eth0 mrežno sučelje usmjerivača n5 prema van (iz perspektive mreže u kojoj su n1, n2, n3 i n5), odnosno prema n6. U nekoj drugoj mreži to može biti eth1, eth2 ili bilo koja treće mrežno sučelje, ovisno o načinu na koji su domaćini u mreži povezani.
+Ova naredba je specifična za ovu mrežu iznad jer je eth1 mrežno sučelje usmjerivača n5 prema van (iz perspektive mreže u kojoj su n1, n2, n3 i n5), odnosno prema n6. U nekoj drugoj mreži to može biti eth0, eth2 ili bilo koja treće mrežno sučelje, ovisno o načinu na koji su domaćini u mreži povezani.
 
 Ponovo provjerimo stanje veze alatom `ping`. Uočimo da sada možemo slati ICMP poruke između čvorova u različitim podmrežama. Ova postavka obuhvaća n1, n2 i n3.
 
@@ -99,7 +99,7 @@ Pokrenemo li na n3 `ping` čvora n7, uočit ćemo da ne možemo slati ICMP poruk
 Kako sada imamo samo jedno računalo, možemo koristiti SNAT jer se sva vrata dostupna na vanjskoj adresi mogu izravno preslikati u vrata računala n1. Ukoliko to želimo, u POSTROUTING na usmjerivaču n5 ćemo uključiti SNAT naredbom
 
 ``` shell
-# iptables -t nat -A POSTROUTING -o eth0 -j SNAT -s 10.0.3.1 --to-source 192.168.4.22
+# iptables -t nat -A POSTROUTING -o eth1 -j SNAT -s 10.0.3.1 --to-source 192.168.4.22
 ```
 
 Ova naredba je također specifična za ovu mrežu iznad zbog navedenog izlaznog mrežnog sučelja i adrese domaćina.
