@@ -8,7 +8,7 @@ author: Vedran Miletić
 
 ## Osoblje
 
-- [dr. sc. Vedran Miletić](https://vedran.miletic.net/), viši predavač
+- [dr. sc. Vedran Miletić](https://vedran.miletic.net/), docent
 - [Milan Petrović](https://milanxpetrovic.github.io/), asistent
 
 ## Bivše osoblje

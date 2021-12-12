@@ -8,7 +8,7 @@ author: Vedran Miletić
 
 ## Staff
 
-- [Dr. Vedran Miletić](https://vedran.miletic.net/), Senior Lecturer
+- [Dr. Vedran Miletić](https://vedran.miletic.net/), Assistant Professor
 - [Milan Petrović](https://milanxpetrovic.github.io/), Research and Teaching Assistant
 
 ## Former staff
