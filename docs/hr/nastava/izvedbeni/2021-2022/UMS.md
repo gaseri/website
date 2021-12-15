@@ -145,8 +145,8 @@ Donosi se na osnovu zbroja svih bodova prikupljenih tijekom izvođenja nastave p
 
 Redoviti:
 
-- 5\. veljače 2022.
-- 19\. veljače 2022.
+- 7\. veljače 2022.
+- 21\. veljače 2022.
 
 Izvanredni:
 
