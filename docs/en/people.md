@@ -10,6 +10,7 @@ author: Vedran Miletić
 
 - [Dr. Vedran Miletić](https://vedran.miletic.net/), Assistant Professor
 - [Milan Petrović](https://milanxpetrovic.github.io/), Research and Teaching Assistant
+- [Matea Turalija](https://mateaturalija.github.io/), Research and Teaching Assistant
 
 ## Former staff
 

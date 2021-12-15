@@ -10,6 +10,7 @@ author: Vedran Miletić
 
 - [dr. sc. Vedran Miletić](https://vedran.miletic.net/), docent
 - [Milan Petrović](https://milanxpetrovic.github.io/), asistent
+- [Matea Turalija](https://mateaturalija.github.io/), asistent
 
 ## Bivše osoblje
 
