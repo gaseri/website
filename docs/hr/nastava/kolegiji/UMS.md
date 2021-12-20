@@ -74,7 +74,7 @@
 - [IPsec alat strongSwan](../materijali/strongswan-ipsec.md)
 - [Anonimna komunikacija alatom Tor](../materijali/tor-anonimna-komunikacija.md)
 - [LDAP poslužitelj 389 Directory Server](../materijali/389-directory-server-ldap-posluzitelj.md)
-- LDAP poslužitelj OpenLDAP](../materijali/openldap-ldap-posluzitelj.md)
+- [LDAP poslužitelj OpenLDAP](../materijali/openldap-ldap-posluzitelj.md)
 - [Web poslužitelj nginx](../materijali/nginx-web-posluzitelj.md)
 - [Instalacija i konfiguracija wiki sustava DokuWiki](../materijali/dokuwiki-instalacija-web-aplikacije.md)
 - [Konfiguracija sustava za upravljanje bazom podataka MariaDB](../materijali/mariadb-sustav-za-upravljanje-bazom-podataka.md)
