@@ -2,7 +2,7 @@ site_name: Group for apps and services on exascale research infrastructure (GASE
 site_description: Research and teaching group at University of Rijeka Faculty of Informatics and Digital Technologies
 site_author: Vedran Miletić
 site_url: https://group.miletic.net/
-copyright: Copyright 2011 – 2021, <a href="https://vedran.miletic.net/">Vedran Miletić</a> and <a href="/en/people/">collaborators</a>; contents licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC-BY-NC-ND 4.0</a>, except teaching materials under <a href="/hr/nastava/">/hr/nastava/</a> and tutorials under <a href="/en/tutorials/gromacs/">/en/tutorials/</a> which are both licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a>.
+copyright: Copyright 2011 – 2021, <a href="https://vedran.miletic.net/">Vedran Miletić</a> <i>et <a href="/en/people/">alii</a></i>; contents licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC-BY-NC-ND 4.0</a>, except teaching materials under <a href="/hr/nastava/">/hr/nastava/</a> and tutorials under <a href="/en/tutorials/gromacs/">/en/tutorials/</a> which are both licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a>.
 repo_url: https://github.com/gaseri/website/
 edit_uri: blob/main/docs/
 nav:
