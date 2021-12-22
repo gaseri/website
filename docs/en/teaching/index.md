@@ -2,28 +2,15 @@
 author: Vedran Miletić
 ---
 
-# Teaching
+# About the teaching
 
 (This page is also available [in Croatian](../../hr/nastava/index.md).)
 
-Teaching materials are in Croatian. We hope to be able to provide teaching materials in English, which seems realistic with more and more international students coming to study at University of Rijeka via [ERASMUS(+)](https://ec.europa.eu/programmes/erasmus-plus/) and similar programs.
+Teaching materials are in Croatian, except [Code Optimization](courses/CO.md) for [YUFE](https://uniri.hr/en/about-university/yufe-young-universities-for-the-future-of-europe/) students in English. We plan to provide other teaching materials in English in the future, primarily for [incoming Erasmus+ students](https://uniri.hr/en/about-university/international-relations-and-erasmus/incoming-erasmus-students/).
 
 ## Courses
 
-- [Fundamentals of Informatics 1](../../hr/nastava/kolegiji/OI1.md)
-- [Operating Systems 1](../../hr/nastava/kolegiji/OS1.md)
-- [Operating Systems 2](../../hr/nastava/kolegiji/OS2.md)
-- [Parallel Programming on Heterogenous Systems](../../hr/nastava/kolegiji/PPHS.md)
-- [Distributed Systems](../../hr/nastava/kolegiji/DS.md)
-- [Supercomputer Systems](../../hr/nastava/kolegiji/SRS.md)
-- [Computer Networks 1](../../hr/nastava/kolegiji/RM1.md)
-- [Computer Networks 2](../../hr/nastava/kolegiji/RM2.md)
-- [Dynamical Web Applications 2](../../hr/nastava/kolegiji/DWA2.md)
-- [Managing Network Systems](../../hr/nastava/kolegiji/UMS.md)
-- [Informatics (BioTech)](../../hr/nastava/kolegiji/INF-BioTech.md)
-- [Computer Networks (RiTeh)](../../hr/nastava/kolegiji/RM-RiTeh.md)
-
-### New undergraduate program since 2019/2020. academic year
+### Undergraduate
 
 - [Computer Networks](../../hr/nastava/kolegiji/RM.md)
 - [Security of Information and Communication Systems](../../hr/nastava/kolegiji/SIKS.md)
@@ -32,3 +19,25 @@ Teaching materials are in Croatian. We hope to be able to provide teaching mater
 - [Communication Networks](../../hr/nastava/kolegiji/KM.md)
 - [Network and Mobile Operating Systems](../../hr/nastava/kolegiji/MMOS.md)
 - [Computer System Administration](../../hr/nastava/kolegiji/URS.md)
+
+### Graduate
+
+- [Distributed Systems](../../hr/nastava/kolegiji/DS.md)
+- [Supercomputer Systems](../../hr/nastava/kolegiji/SRS.md)
+- [Network Systems Management](../../hr/nastava/kolegiji/UMS.md)
+
+### Other
+
+- [Informatics (BioTech)](../../hr/nastava/kolegiji/INF-BioTech.md)
+- [Computer Networks (RiTeh)](../../hr/nastava/kolegiji/RM-RiTeh.md)
+- [Code Optimization (YUFE)](courses/CO.md)
+
+### Former undergraduate
+
+- [Fundamentals of Informatics 1](../../hr/nastava/kolegiji/OI1.md)
+- [Operating Systems 1](../../hr/nastava/kolegiji/OS1.md)
+- [Operating Systems 2](../../hr/nastava/kolegiji/OS2.md)
+- [Parallel Programming on Heterogenous Systems](../../hr/nastava/kolegiji/PPHS.md)
+- [Computer Networks 1](../../hr/nastava/kolegiji/RM1.md)
+- [Computer Networks 2](../../hr/nastava/kolegiji/RM2.md)
+- [Dynamical Web Applications 2](../../hr/nastava/kolegiji/DWA2.md)

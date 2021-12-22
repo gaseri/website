@@ -13,6 +13,7 @@ nav:
       - Research and development: en/research-and-development.md
       - Partnerships and collaborations: en/partnerships-and-collaborations.md
       - Teaching:
+        - About the teaching: en/teaching/index.md
         - Courses:
           - Code optimization: en/teaching/courses/CO.md
         - Programmes:
@@ -20,7 +21,6 @@ nav:
             - Code optimization: en/teaching/programmes/revision-2021-2022/CO.md
           - Revision 2019/2020:
             - Code optimization: en/teaching/programmes/revision-2019-2020/CO.md
-        - About the teaching: en/teaching/index.md
       - Tutorials:
         - GROMACS:
           - Overview: en/tutorials/gromacs/index.md
@@ -36,6 +36,7 @@ nav:
   - Ljudi: hr/ljudi.md
   - Istraživanje i razvoj: hr/istrazivanje-i-razvoj.md
   - Nastava:
+    - O nastavi: hr/nastava/index.md
     - Izvedbeni planovi:
       - 2021/2022:
         - Distribuirani sustavi: hr/nastava/izvedbeni/2021-2022/DS.md
@@ -65,25 +66,26 @@ nav:
         - Upravljanje mrežnim sustavima: hr/nastava/izvedbeni/2019-2020/UMS.md
       - 2018/2019:
         - Informatika (BioTech): hr/nastava/izvedbeni/2018-2019/INF-BioTech.md
-    - Distribuirani sustavi: hr/nastava/kolegiji/DS.md
-    - Dinamičke web aplikacije 2: hr/nastava/kolegiji/DWA2.md
-    - Informatika (BioTech): hr/nastava/kolegiji/INF-BioTech.md
-    - Komunikacijske mreže: hr/nastava/kolegiji/KM.md
-    - Mrežni i mobilni operacijski sustavi: hr/nastava/kolegiji/MMOS.md
-    - Osnove informatike 1: hr/nastava/kolegiji/OI1.md
-    - Optimizacija programskog koda: hr/nastava/kolegiji/OPK.md
-    - Operacijski sustavi 1: hr/nastava/kolegiji/OS1.md
-    - Operacijski sustavi 2: hr/nastava/kolegiji/OS2.md
-    - Paralelno programiranje na heterogenim sustavima: hr/nastava/kolegiji/PPHS.md
-    - Programiranje za web: hr/nastava/kolegiji/PW.md
-    - Računalne mreže: hr/nastava/kolegiji/RM.md
-    - Računalne mreže 1: hr/nastava/kolegiji/RM1.md
-    - Računalne mreže 2: hr/nastava/kolegiji/RM2.md
-    - Računalne mreže (RiTeh): hr/nastava/kolegiji/RM-RiTeh.md
-    - Sigurnost informacijskih i komunikacijskih sustava: hr/nastava/kolegiji/SIKS.md
-    - Superračunalni sustavi: hr/nastava/kolegiji/SRS.md
-    - Upravljanje mrežnim sustavima: hr/nastava/kolegiji/UMS.md
-    - Upravljanje računalnim sustavima: hr/nastava/kolegiji/URS.md
+    - Kolegiji:
+      - Distribuirani sustavi: hr/nastava/kolegiji/DS.md
+      - Dinamičke web aplikacije 2: hr/nastava/kolegiji/DWA2.md
+      - Informatika (BioTech): hr/nastava/kolegiji/INF-BioTech.md
+      - Komunikacijske mreže: hr/nastava/kolegiji/KM.md
+      - Mrežni i mobilni operacijski sustavi: hr/nastava/kolegiji/MMOS.md
+      - Osnove informatike 1: hr/nastava/kolegiji/OI1.md
+      - Optimizacija programskog koda: hr/nastava/kolegiji/OPK.md
+      - Operacijski sustavi 1: hr/nastava/kolegiji/OS1.md
+      - Operacijski sustavi 2: hr/nastava/kolegiji/OS2.md
+      - Paralelno programiranje na heterogenim sustavima: hr/nastava/kolegiji/PPHS.md
+      - Programiranje za web: hr/nastava/kolegiji/PW.md
+      - Računalne mreže: hr/nastava/kolegiji/RM.md
+      - Računalne mreže 1: hr/nastava/kolegiji/RM1.md
+      - Računalne mreže 2: hr/nastava/kolegiji/RM2.md
+      - Računalne mreže (RiTeh): hr/nastava/kolegiji/RM-RiTeh.md
+      - Sigurnost informacijskih i komunikacijskih sustava: hr/nastava/kolegiji/SIKS.md
+      - Superračunalni sustavi: hr/nastava/kolegiji/SRS.md
+      - Upravljanje mrežnim sustavima: hr/nastava/kolegiji/UMS.md
+      - Upravljanje računalnim sustavima: hr/nastava/kolegiji/URS.md
     - Nastavni materijali:
       - LDAP poslužitelj 389 Directory Server: hr/nastava/materijali/389-directory-server-ldap-posluzitelj.md
       - Instalacija operacijskih sustava Fedora i CentOS korištenjem instalacijskog alata Anaconda: hr/nastava/materijali/anaconda-instalacija-operacijskog-sustava.md
@@ -306,7 +308,6 @@ nav:
       - Upravljanje paketima: hr/nastava/materijali/yum-rpm-upravljanje-paketima-operacijskog-sustava.md
       - Znanstveni softver: hr/nastava/materijali/znanstveni-softver.md
       - Upute za upravljanje bibliografijom korištenjem alata Zotero: hr/nastava/materijali/zotero-citiranje-bibliografija.md
-    - O nastavi: hr/nastava/index.md
   - Teme završnih i diplomskih radova: hr/teme-zavrsnih-i-diplomskih-radova.md
   - Aktivizam: hr/aktivizam.md
   - Povijest: hr/povijest.md
