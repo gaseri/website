@@ -12,27 +12,33 @@ author: Vedran Miletić
 - [Milan Petrović](https://milanxpetrovic.github.io/), Research and Teaching Assistant
 - [Matea Turalija](https://mateaturalija.github.io/), Research and Teaching Assistant
 
-## Former staff
+## Collaborators
 
-- [Dr. Draško Tomić](https://portal.uniri.hr/Portfelj/2686), former Senior Research and Teaching Assistant, now Professional Advisor at [Ruđer Bošković Institute](https://www.irb.hr/eng/About-RBI/People/Drasko-Tomic)
-- [Luka Vretenar](https://luka.vretenar.pro/), former Research and Teaching Assistant, now Senior Software Engineer at [Spyrosoft](https://spyro-soft.com/)
+- [Dr. Martina Ašenbrener Katić](https://portal.uniri.hr/Portfolio/987), Assistant Professor
+- [Dr. Vanja Slavuj](https://portal.uniri.hr/Portfolio/1474), Assistant Professor
+- [Dr. Lado Kranjčević](https://portal.uniri.hr/Portfolio/1843), Full Professor, [Department of fluid mechanics and computational engineering](http://www.riteh.uniri.hr/ustroj/zavodi/zmfri/), [Faculty of Engineering](http://www.riteh.uniri.hr/), [University of Rijeka](https://uniri.hr/)
+- [Dr. Davide Mercadante](https://lab.mercadante.net/), Senior Lecturer, [School of Chemical Sciences](https://www.auckland.ac.nz/en/science/about-the-faculty/school-of-chemical-sciences.html), [University of Auckland](https://www.auckland.ac.nz/en.html)
+- [Patrik Nikolić](https://nikoli.ch/), Translational Research Scientist, [RxTx](https://www.rxtx.tech/)
 
 ## Students
 
-- Mihael Orlović
-- Darko Kraljević
-- Sanja Ivić
-- Mario Ćuro
-- Matija Banjan
-- Kristian Nekić
-- Matija Šegović
+- Dominik Kinkela
+- Erik Jermaniš
+- Valentin Kuharić
 
-## Alumni
+## Former staff
 
-- Ana Tomasović
-- Milan Petrović
-- Iris Babić
-- Marjana Bjelić
+- [Dr. Draško Tomić](https://portal.uniri.hr/Portfolio/2686), former Senior Research and Teaching Assistant, now Professional Advisor at [Ruđer Bošković Institute](https://www.irb.hr/eng/About-RBI/People/Drasko-Tomic)
+- [Luka Vretenar](https://luka.vretenar.pro/), former Research and Teaching Assistant, now Senior Software Engineer at [Spyrosoft](https://spyro-soft.com/)
+
+## Former collaborators
+
+- [Dr. Frauke Gräter](https://www.h-its.org/people/prof-dr-frauke-grater/), Group Leader, [Molecular Biomechanics group](https://www.h-its.org/research/mbm/), [Heidelberg Institute for Theoretical Studies](https://www.h-its.org/); Professor for Molecular Biomechanics, [Faculty of Biosciences](https://www.bio.uni-heidelberg.de/) and [Faculty of Engineering Sciences](https://www.uni-heidelberg.de/en/newsroom/universitat-heidelberg-founds-faculty-of-engineering-sciences), [Heidelberg University](https://www.uni-heidelberg.de/)
+- [Dr. Željko Svedružić](https://svedruziclab.github.io/principal-investigator.html), Assistant Professor, [Biomolecular Structure and Function Group](https://svedruziclab.github.io/), [Department of Biotechnology](https://www.biotech.uniri.hr/), [University of Rijeka](https://uniri.hr/)
+
+## Former students
+
+- [Mia Doričić](https://miadoricic.github.io/)
 - [Kristijan Lenković](http://kristijan.lenkovic.com/)
 - [Edvin Močibob](https://edvin.me/):
 
@@ -54,19 +60,11 @@ author: Vedran Miletić
     >
     > I hold the title of Master of Informatics and Bachelor of English language and literature, as well as CCIE R&S certificate.
 
-- Ivona Bjelobradić
 - Ivan Ivakić
 - [Domagoj Margan](https://domargan.net/):
 
     > I am a PhD student in Computer Systems at Department of Computing, Imperial College London. During my undergraduate studies at the University of Rijeka, I used to spend quite a bit of my days sticking around CNPSLab and bugging Vedran with topics on Linux, free and open source software (FOSS), distributed systems, and Python. Vedran generously provided me with an hands-on opportunity to learn and engage in technologies that I was passionate about, and kept ever-supporting me in giving my best. Working as an undergraduate minion in CNPSLab enabled me to be involved in teaching, system administration, and programming, and while providing a substantial technical and social experience, it served as a great preparation for my further studies.
 
-- Andrijana Kalić
 - [Luka Unuk](http://luka8088.com/)
 - [Valter Popeškić](https://howdoesinternetwork.com/)
 - [Mladen Bočev](http://mladenbocev.com/)
-
-## External collaborators
-
-- Anja Vrbanjac
-- Tina Maršić
-- Maja Grubišić
