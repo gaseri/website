@@ -4,7 +4,23 @@ author: Vedran Miletić
 
 # Aktivizam
 
-(Ova je stranica također dostupna [na engleskom jeziku](../en/activism.md).)
+> The world is open, keep it open; it's up to us.
+
+-- [Paul Cormier, 2012](https://youtu.be/tkz8WQ_a6Yk?t=31m33s)
+
+U nastavku su detaljno opisane teme koje su relevantne za naš sadašnji aktivistički rad prema većoj slobodi u tehnologiji (uključujući slobodni softver otvorenog izvora i otvoreni hardver). Informiranje o temama uključuje praćenje glavnih, alternativnih i specijaliziranih izvora vijesti koji pokrivaju tehnologiju, društvo, digitalnu privatnost, autorska prava i slično.
+
+## Uvjerenja i vrijednosti
+
+Ideje, uvjerenja, pretpostavke i vrijednosti su važni jer utječu na to kako se bavimo znanošću i kako razvijamo tehnologiju. [Peter Thiel](http://zerotoonebook.com/) navodi u [The Education of a Libertarian](https://www.cato-unbound.org/2009/04/13/peter-thiel/education-libertarian):
+
+> The future of technology is not pre-determined, and we must resist the temptation of technological utopianism -- the notion that technology has a momentum or will of its own, that it will guarantee a more free future, and therefore that we can ignore the terrible arc of the political in our world.
+>
+> A better metaphor is that we are in a deadly race between politics and technology. The future will be much better or much worse, but the question of the future remains very open indeed. We do not know exactly how close this race is, but I suspect that it may be very close, even down to the wire. Unlike the world of politics, in the world of technology the choices of individuals may still be paramount.
+
+Kao i [Red Hat](https://www.redhat.com/en/about/company), vjerujemo da je naša misija biti dio zajednice koja stvara bolju tehnologiju na [način otvorenog izvora](https://opensource.com/open-source-way). I znanje i izvorni kod softvera (koji je sam po sebi oblik znanja) su sami po sebi neoskudni resursi: jednom stvoreni, mogu se beskonačno kopirati po želji vrlo jeftino ili gotovo besplatno. Vjerujemo da bi ovo svojstvo znanja trebalo koristiti za maksimiziranje koristi koje ono donosi društvu.
+
+Snažno podržavamo različite inicijative u otvorenom licenciranju, otvorenom pristupu znanstvenim rezultatima, otvorenim standardima i otvorenim patentima. Često govorimo o [problemima koji okružuju autorska prava](https://falkvinge.net/topic/era/old-world/copyright-monopoly/), uključujući [Digital Millenium Copyright Act](https://www.eff.org/issues/dmca) i njegove europske ekvivalente, i [organičenjima softverskih patenata](https://www.eff.org/issues/patents). Za ilustraciju, u članku [What is the price of open-source fear, uncertainty, and doubt?](https://nudgedelastic.band/2015/09/what-is-the-price-of-open-source-fear-uncertainty-and-doubt/), Vedran Miletić je dao odgovor na članak [What Is the Price of Open-Source Software?](https://pubs.acs.org/doi/abs/10.1021/acs.jpclett.5b01258), stajalište koje su objavili Anna I. Krylov, John M. Herbert, Filipp Furche, Martin Head-Gordon, Peter J. Knowles, Roland Lindh, Frederick R. Manby, Peter Pulay, Chris-Kriton Skylaris i Hans-Joachim Werner u časopisu *The Journal of Physical Chemistry Letters*. Slične ideje nudi i [Dr. Christoph R. Jacob](https://blog.christophjacob.eu/about/), profesor s Tehničkog sveučilišta u Braunschweigu, u svom članku [How Open Is Commercial Scientific Software?](https://pubs.acs.org/doi/abs/10.1021/acs.jpclett.5b02609) također objavljenom u časopisu *The Journal of Physical Chemistry Letters*.
 
 ## Teme
 
@@ -50,6 +66,22 @@ Uvjerenja smo da je najvažniji razlog što Linux nije najrašireniji operacijsk
 
 Tehnički, Linux je superioran svemu drugome što postoji na tržištu u većini primjena. U zadnje vrijeme, kroz distribucije prilagođene krajnjim korisnicima, postao je dovoljno jednostavan za svakoga. To želimo pokazati, prije svega budućim profesorima, inženjerima i voditeljima informatičkih odjela u tvrtkama koji su danas studenti fakulteta Sveučilišta u Rijeci, ali i svim drugim zainteresiranima.
 
+Relativno je lako doći u poziciju da koristite Linux za sve osim za igranje igara. Zahvaljujući zajednicama kao što su [GamingOnLinux](https://www.gamingonlinux.com/) i [/r/linux_gaming](https://www.reddit.com/r/linux_gaming/), bazama kao što su [SteamDB](https://steamdb.info/) i [ProtonDB](https://www.protondb.com/) te popularnosti [Valve Steam Decka](https://www.steamdeck.com/), igranje igara na Linuxu postaje realna mogućnost. Stoga je legitimno postaviti pitanje postoji li uopće potreba za korištenjem neslobodnih operacijskih sustava kao što je Microsoft Windows.
+
+#### Windows ni na jednom osobnom računalu
+
+(Ideja je kopirana i prilagođena sa [Stop Disabling SELinux](https://stopdisablingselinux.com/), javne usluge [Majora Haydena](https://major.io/).)
+
+Microsoftova originalna vizija *osobnog računala na svakom stolu, Windowsa na svakom osobnom računalu*, u velikoj se mjeri ostvarila. Bez sumnje, uspjeh osobnih računala i Windowsa omogućio je da se dogode mnoge velike stvari, ali to vrijeme je prošlo. Sada je vrijeme da se ide dalje.
+
+Danas je Windows, uključujući tehnologije poput DirectX-a, samo još jedan naslijeđeni vlasnički softver koji živi zahvaljujući [zaključavanju dobavljača, uključujući Microsoftovu kontrolu nad ekosustavom Secure Boot](https://nudgedelastic.band/2016/01/i-am-still-not-buying-the-new-open-source-friendly-microsoft-bullshit/). Uz [moderne DirectX igre koje su ekskluzivne za Windows Store](https://www.theguardian.com/technology/2016/mar/04/microsoft-monopolise-pc-games-development-epic-games-gears-of-war) i [Microsoft uništava zajednice oko Androida i Linuxa patentnim licencama](http://www.infoworld.com/article/3042699/open-source-tools/microsoft-loves-open-source-only-when-its-convenient.html), situacija će se u budućnosti samo pogoršavati.
+
+Svaki put kada koristite Windows za igranje računalnih igara, rasplačete [Gabea](https://gaben.tv/) [Newella](http://gabenewell.org/). On je naš veliki gospodar i to sigurno ne zaslužuje.
+
+Zaustavimo dominaciju Windowsa zajedno. Koristite Linux ili [SteamOS](https://store.steampowered.com/steamos/), prijavite pogreške u igrama koje igrate i upravljačkim programima hardvera koje koristite, popravite stvari koje znate i pomozite drugima da učine isto. Odbijte kupiti igre koje ne rade na Linuxu ili SteamOS-u.
+
+Otvorimo dalje osobna računala. Neka vizija budućnosti osobnog računarstva bude **Windows ni na jednom osobnom računalu**.
+
 ### Programski jezici i program prevoditelji otvorenog koda
 
 Intenzivno promoviramo Python i njegove dodatke. Poštujemo individualni izbor programskog jezika, ali uvjereni smo da je Python odlična alternativa prevaziđenim programskim jezicima kao što su Pascal i Visual Basic, i zato se može koristiti u edukaciji. Pored toga, Python može biti alternativa i Fortranu i raznom znanstvenom softveru (uz MatPlotLib, SciPy, NumPy), C#-u, Javi i drugim jezicima.
@@ -59,6 +91,20 @@ Intenzivno promoviramo Python i njegove dodatke. Poštujemo individualni izbor p
 Smatramo da je TeX (LaTeX, ConTeXt) bolji nego bilo koji drugi program iste namjene. Jedan od pokazatelja te činjenice je i to što je to jedini rašireni program koji je kompatibilan sa samim sobom već gotovo 30 godina, a da se pritom aktivno razvija i proširuje.
 
 Želimo prije svega potaknuti primjenu TeX-a kod studenata, za pisanje seminarskih, završnih i diplomskih radova zbog njegovih prednosti kod slaganja teksta i formula. Iako nam to nije primarni cilj, želimo promovirati TeX i kao alternativu DTP programima, programima za vektorsku grafiku i izradu prezentacija.
+
+### Načela otvorenog izvora van softvera
+
+Laboratoriji kao što je [Bradner Lab](https://web.archive.org/web/20161024182501/http://www.bradnerlab.org/), projekti kao što je [Open Source Malaria](http://opensourcemalaria.org/) i [Open Source Biotechnology](https://opensourcebiotech.anu.edu.au/) čine avangardu u ovom kretanju prema otvorenosti izvora izvan softvera. Lijepo je vidjeti proširenje principa besplatnog softvera otvorenog koda na farmaciju i biotehnologiju. Naravno, to je tek početak i ima još mnogo posla.
+
+Izvan softvera, patenti su puno važniji nego u softveru (gdje je autorsko pravo primarno sredstvo zaštite intelektualnog vlasništva). Srećom, već postoji praksa pod nazivom [Patentleft](https://en.wikipedia.org/wiki/Patentleft) opisana kao:
+
+> Patentleft (also patent left, copyleft-style patent license) is the practice of licensing patents (especially biological patents) for royalty-free use, on the condition that adopters license related improvements they develop under the same terms. Copyleft-style licensors seek "continuous growth of a universally accessible technology commons" from which they, and others, will benefit.
+>
+> Patentleft is analogous to copyleft, a license which allows distribution of a copyrighted work and derived works, but only under the same terms.
+
+Ove ideje su zakonski implementirane u [Defensive Patent License](https://defensivepatentlicense.org/), a u praksi ih koristi [Tesla](https://www.tesla.com/). Elon Musk, izvršni direktor Tesle, [izjavio je sljedeće](https://www.tesla.com/blog/all-our-patent-are-belong-you):
+
+> Technology leadership is not defined by patents, which history has repeatedly shown to be small protection indeed against a determined competitor, but rather by the ability of a company to attract and motivate the world’s most talented engineers. We believe that applying the open source philosophy to our patents will strengthen rather than diminish Tesla’s position in this regard.
 
 ## Aktivnosti
 
