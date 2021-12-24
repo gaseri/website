@@ -111,6 +111,37 @@ Fotografi, filmaši i dizajneri, ali i gledatelji filmova i igrači računalnih 
 
 Vedran Miletić radi kao poslijedoktorand na Odjelu za informatiku Sveučilišta u Rijeci, gdje izvodi vježbe na kolegijima u području računalnih mreža i operacijskih sustava. Doktorirao je računarstvo na FER-u u Zagrebu, a poslijedoktorsko usavršavanje u području računalne biokemije proveo je na Heidelberškom institutu za teorijske studije u Heidelbergu, Njemačka. Ostali znanstveni i stručni interesi uključuju superračunala, znanstveno računanje na grafičkim procesorima i slobodni softver otvorenog koda.
 
+### Razvoj upravljačkih programa otvorenog koda za grafičke procesore AMD Radeon
+
+U lipnju 2014. godine na predavanju *NVIDIA CUDA ekosustav: što je tu open, a što baš i ne?* u okviru konferencije konferenciji [DORS/CLUC](https://www.dorscluc.org/) [2014](https://2014.dorscluc.org/) u Zagrebu, Vedran Miletić je rekao da AMD treba shvatiti kako im otvorenost OpenCL-a daje prednost pred NVIDIA-om i da treba zbog toga jako poraditi na svojoj podršci za OpenCL u terminima upravljačkih programa, biblioteka i alata koji bi također bili otvorenog koda.
+
+U prosincu 2015. godine, AMD je zauzeo stav za otvoreni kod i objavio da pokreće [GPUOpen](https://gpuopen.com/). Odlučivši temeljiti svoju strategiju za Linux i računarstvo visokih performansi na softveru otvorenog koda, AMD je napravio veliki korak za slobodni softver u domeni grafike ([detaljni osvrt iz pera Vedrana Miletića](https://nudgedelastic.band/2016/01/amd-and-the-open-source-community-are-writing-history/)). Taj je događaj intenzivno popraćen u medijima:
+
+- [AnandTech](https://www.anandtech.com/show/9853/amd-gpuopen-linux-open-source)
+- [Ars Technica](https://arstechnica.com/information-technology/2015/12/amd-embraces-open-source-to-take-on-nvidias-gameworks/)
+- [ExtremeTech](https://www.extremetech.com/gaming/219434-amd-finally-unveils-an-open-source-answer-to-nvidias-gameworks)
+- [HotHardware](https://hothardware.com/news/amd-goes-open-source-announces-gpuopen-initiative-new-compiler-and-drivers-for-lunix-and-hpc)
+- [ITWorld](https://www.itworld.com/article/3015782/linux/amd-announces-open-source-initiative-gpuopen.html)
+- [PCWorld](https://www.pcworld.com/article/3014773/components-graphics/watch-out-gameworks-amds-gpuopen-will-offer-developers-deeper-access-to-its-chips.html)
+- [Maximum PC](https://www.maximumpc.com/amd-rtg-summit-gpuopen-and-software/)
+- [Phoronix](https://www.phoronix.com/scan.php?page=news_item&px=AMD-GPUOpen)
+- [Softpedia](https://news.softpedia.com/news/amd-going-open-source-with-amdgpu-linux-driver-and-gpuopen-tools-497663.shtml)
+- [Wccf tech](https://wccftech.com/amds-answer-to-nvidias-gameworks-gpuopen-announced-open-source-tools-graphics-effects-and-libraries/)
+
+AMD-ov radu u okviru GPUOpena podrazumijeva uključivanje zajednice entuzijasta u proces razvoja otvorenih upravljačkih programa za grafičke procesore. Kako bismo omogućili korišenje [OpenCL](https://www.khronos.org/opencl/)-a na Radeonima, radimo na poboljšanju [Mesa3D](https://www.mesa3d.org/)/Gallium upravljačkih programa [r600](https://dri.freedesktop.org/wiki/R600ToDo/) i posebno [radeonsi](https://dri.freedesktop.org/wiki/RadeonsiToDo/). Specifično, dodajemo podršku za različite značajke OpenCL-a s ciljem podrške svih značajki OpenCL-a verzije 1.2 i starijih vezija te ispravaka odstupanja od standarda.
+
+Cilj je omogućiti da grafički procesori AMD Radeon mogu pokretati [GROMACS](https://www.gromacs.org/), [LAMMPS](https://lamps.sandia.gov/) i [CP2K](https://www.cp2k.org/). Kako bi se to ostvarilo, poboljšanja će se prvo dogoditi u [Radeonovom OpenCL upravljačkom programu](https://dri.freedesktop.org/wiki/GalliumCompute/), a tek onda u OpenCL aplikacijama; ako su aplikacije u skladu sa standardom, neće se raditi nikakve promjene na njima. Daljnje informacije:
+
+- [tstellar dev blog](http://www.stellard.net/tom/blog/)
+- [Bug 99553 -- Tracker bug for runnning OpenCL applications on Clover](https://bugs.freedesktop.org/show_bug.cgi?id=99553)
+- [XDC2013: Tom Stellard - Clover Status Update](https://www.youtube.com/watch?v=UTaRlmsCro4)
+- [FSOSS 2014 Day 2 Tom Stellard AMD Open Source GPU Drivers](https://www.youtube.com/watch?v=JZ-EEgXYzUk)
+
+Prezentacije na konferencijama:
+
+- [1] Miletić, V., Páll, S. & Gräter, F. [LLVM AMDGPU for High Performance Computing: are we competitive yet?](https://www.llvm.org/devmtg/2017-03/2017/02/20/accepted-sessions.html#31) in 2017 European LLVM Developers' Meeting, Saarbrücken, Germany (2017). ([video](https://youtu.be/r2Chmg85Xik?list=PL_R5A0lGi1AD12EbUChEnD3s51oqfZLe3))
+- [2] Miletić, V., Páll, S. & Gräter, F. [Towards fully open source GPU accelerated molecular dynamics simulation.](https://www.llvm.org/devmtg/2016-03/#lightning6) in 2016 European LLVM Developers' Meeting, Barcelona, Spain (2016). ([video](https://youtu.be/TkanbGAG_Fo?t=23m47s&list=PL_R5A0lGi1ADuZKWUJOVOgXr2dRW06e55))
+
 ### Predavanje: Ratovi web preglednika
 
 **Predavač:** Vedran Miletić, Odjel za informatiku Sveučilišta u Rijeci

@@ -38,7 +38,7 @@ We frequently talk about [the issues surroudning copyright](https://falkvinge.ne
 
 ## Principles of open source outside of software
 
-Laboratories such as [Bradner Lab](https://web.archive.org/web/20161024182501/http://www.bradnerlab.org/), projects such as [Open Source Malaria](http://opensourcemalaria.org/) and [Open Source Biotechnology](https://opensourcebiotech.anu.edu.au/) are early birds in this movement towards openness outside software. But, we are far from done here.
+Laboratories such as [Bradner Lab](https://web.archive.org/web/20161024182501/http://www.bradnerlab.org/), projects such as [Open Source Malaria](http://opensourcemalaria.org/) and [Open Source Biotechnology](https://opensourcebiotech.anu.edu.au/) are early birds in this movement towards openness outside software. It's great to see the extension of principles of free and open source software to pharmacy and biotechnology. But, we are far from done here.
 
 Outside of software, patents are a lot more crucial than in software (where copyright is the primary means of intellectual property protection). Luckily, there is already a practice called [Patentleft](https://en.wikipedia.org/wiki/Patentleft) described as:
 

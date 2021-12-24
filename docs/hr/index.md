@@ -12,6 +12,8 @@ author: Vedran Miletić
 
 Općenito nas zanimaju razvoj znanstvenog softvera, računala visokih performansi, računarstvo u oblaku te korištenje slobodnih softvera otvorenog koda u razvoju aplikacija i usluga za superračunala i platforme u oblaku. Specifično nas zanima primjena eksaskalarnog računarstva za rješavanje problema u računalnoj biokemiji i srodnim područjima.
 
+U području razvoja softvera, bez obzira na temu i potrebnu pozadinu, zainteresirani smo za prioritetne zadatke s visokim učinkom u projektima otvorenog koda na kojima može, ali i ne mora biti dovoljno programera koji rade na njima. Što se tiče određene teme, zanimaju nas softverski alati za simulaciju molekulske dinamike.
+
 Načelno, naš cilj je raditi bolju znanost na [način otvorenog izvora](https://www.theopensourceway.org/); znanost je u suštini otvorena i takvom treba i ostati. Način otvorenog izvora uključuje [otvorene formate datoteka](http://www.linfo.org/free_file_format.html), [slobodni softver otvorenog koda](https://www.gnu.org/philosophy/free-sw.html), [otvoreni hardver](https://opensource.com/resources/what-open-hardware), [obrambeno licenciranje patenata](https://www.defensivepatentlicense.org/) i [otvoreni pristup objavljenim radovima](https://www.openaccess.nl/en/what-is-open-access).
 
 ## Kako se uključiti

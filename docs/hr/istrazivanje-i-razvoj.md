@@ -4,8 +4,6 @@ author: Mario Radovan, Vedran Miletić, Ivan Ivakić, Domagoj Margan, Tomislav �
 
 # Istraživanje i razvoj
 
-(Ova je stranica također dostupna [na engleskom jeziku](../en/research-and-development.md).)
-
 ## Razvoj online kolegija Optimizacija programskog koda (Code optimization) na Sveučilištu u Rijeci u akademskoj 2020/2021. i 2021/2022. godini
 
 ### Podaci o osobama odgovornim za provedbu projekta
