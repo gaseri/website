@@ -25,6 +25,8 @@ author: Vedran Miletić
 - Dominik Kinkela
 - Erik Jermaniš
 - Valentin Kuharić
+- Dorian Manjarić
+- Marin Martuslović
 
 !!! tip
     Zainteresirani studenti [nam se mogu javiti](index.md#kako-se-ukljuciti).

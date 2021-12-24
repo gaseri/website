@@ -25,6 +25,8 @@ author: Vedran Miletić
 - Dominik Kinkela
 - Erik Jermaniš
 - Valentin Kuharić
+- Dorian Manjarić
+- Marin Martuslović
 
 ## Former staff
 
