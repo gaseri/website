@@ -6,7 +6,7 @@ author: Vedran Miletić
 
 (Ova je stranica također dostupna [na engleskom jeziku](../en/index.md).)
 
-**Grupa za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi** (engl. *Group for Applications and Services on Exascale Research Infrastructure*, kraće GASERI) je istraživačka, razvojna i nastavna jedinica na [Odjelu za informatiku](https://www.inf.uniri.hr/) [Sveučilišta u Rijeci](https://www.uniri.hr/) izgrađena na nasljeđu Laboratorija za računalne mreže, paralelizaciju i simulaciju (engl. *Computer Networks, Parallelization, and Simulation Laboratory*, kraće CNPSLab) i Laboratorija za računalne mreže (engl. *Computer Networks Laboratory*, kraće CNLab).
+**Grupa za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi** (engl. *Group for Applications and Services on Exascale Research Infrastructure*, kraće GASERI) je istraživačka, razvojna i nastavna jedinica na [Odjelu za informatiku](https://www.inf.uniri.hr/) [Sveučilišta u Rijeci](https://www.uniri.hr/).
 
 ## Znanstveni i stručni interesi
 
@@ -30,6 +30,12 @@ Ako posjedujete ove vještine i entuzijazam za znanstveno-istraživačkim radom 
 
 - Kratki opis (50 do 100 riječi) vašeg istraživačkog interesa unutar unutar [nekog od aktualnih projekata na kojima grupa radi](istrazivanje-i-razvoj.md).
 - Primjer softvera u bilo kojem programskom jeziku za Linux/Unix koji ste napisali; može biti i projekt s nekog kolegija. Pritom je slanje izvornog koda softvera u obliku tar arhive sasvim u redu (nemojte koristiti [vlasnički format RAR](https://en.wikipedia.org/wiki/RAR_(file_format)), njegovo korištenje ne implicira da ćete [voziti](https://youtu.be/_uOoV0mtX3E) [Rari](https://youtu.be/vL2Ja5uMhnk)), ali poveznica na repozitorij s kodom na [GitLabu](https://about.gitlab.com/) ili [GitHubu](https://github.com/) je preferirana. Priložite opis što vaš softver radi i kako, ili, još bolje, poveznicu na njegovu dokumentaciju. Ukoliko vaš kod koristi neku od metoda heterogenog, paralelnog ili distribuiranog programiranja, to je vrlo korisno, ali nije preduvjet.
+
+## Povijest
+
+Grupa je započela s radom u listopadu 2021. Izgrađena je na nasljeđu Laboratorija za računalne mreže, paralelizaciju i simulaciju (engl. *Computer Networks, Parallelization, and Simulation Laboratory*, kraće CNPSLab) koji je do listopada 2021. bio dio [Odjela za informatiku](https://www.inf.uniri.hr/).
+
+Na zasebnoj stranici možete pročitati [više o povijesti grupe](povijest.md).
 
 ## Kontakt
 
