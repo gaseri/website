@@ -4,7 +4,7 @@ author: Wes Barnett, Vedran Miletić
 
 # GROMACS Tutorial 2 -- One Methane in Water
 
-In this tutorial I'll show you how to create a system containing one OPLS
+In this tutorial, I'll show you how to create a system containing one OPLS
 methane in a box of TIP4PEW water.
 
 ## Setup
@@ -15,11 +15,11 @@ file.
 
 ### Setup residues for pdb2gmx
 
-For this molecule we'll be using the OPLS force field. The force field is
+For this molecule, we'll be using the OPLS force field. The force field is
 located in the top-level force field directory (probably `/usr/share/gromacs/top`
 or something similar).
 
-If you're unsure where your GROMACS installation is do:
+If you're unsure where your GROMACS installation is, do:
 
 ``` shell
 $ echo $GMXPREFIX
@@ -30,7 +30,7 @@ the installation location. Look for the directory `share/gromacs/top` in that di
 into it (*e.g.,* if GMXPREFIX is `/usr` then go to `/usr/share/gromacs/top`). Or
 you can simply go to `$GMXDATA/top`.
 
-Let's take a look at the force field directory's its contents:
+Let's take a look at the force field directory's contents:
 
 ``` shell
 $ cd oplsaa.ff
@@ -74,7 +74,7 @@ it for our new residue. As a side note, `ffbonded.itp` will use the bond type
 for the bond types, angle types, and dihedral types.
 
 Before continuing, you may want to copy your top-level force field directory
-directory somewhere, like your home directory, since we'll be modifying it and
+somewhere, like your home directory, since we'll be modifying it and
 adding some files. To copy it to your home directory do
 
 ``` shell
@@ -144,10 +144,10 @@ package. In Avogadro simply click any spot in the window and you'll get a
 methane. Save this file as `methane.pdb`. Your file should look something like
 this. Save this somewhere in your home directory but not anywhere in `$GMXLIB`.
 
-Change `LIG` to `CH4` everywhere in `methane.pdb`. Also change the first `H` to
+Change `LIG` to `CH4` everywhere in `methane.pdb`. Also, change the first `H` to
 `H1`, the second to `H2` and so on. PDB files are fixed format, so keep the
 beginning of each column in the same place. The CONNECT and MASTER records also
-will not be needed, so they can be removed. Also go ahead and change `UNNAMED`
+will not be needed, so they can be removed. Also, go ahead and change `UNNAMED`
 to `METHANE`. Your modified file should look something like this:
 
 ```
@@ -171,8 +171,8 @@ $ gmx pdb2gmx -f methane.pdb
 
 You'll be prompted to choose a force field. Choose OPLS. If you have an option
 between two different force field directories, choose the OPLS that is in the
-copied directory you made. For the water model choose TIP4PEW. If you get an
-error that GROMACS cannot find residue `CH4` you may beusing the wrong force
+the copied directory you made. For the water model choose TIP4PEW. If you get an
+error that GROMACS cannot find residue `CH4` you may be using the wrong force
 field.
 
 Three files will be created: `conf.gro`, `posre.itp`,
@@ -281,8 +281,8 @@ It should look something like this:
 
 ## Summary
 
-In this tutorial we learned how to create a residue template file (.rtp) for
+In this tutorial, we learned how to create a residue template file (.rtp) for
 use with *gmx pdb2gmx*. We created a structure for OPLS methane and the
 generated a topology for it. From there we put water around it using *gmx
-solvated*. After this we ran a simulation, just like last time. Lastly, we found
+solvated*. After this, we ran a simulation, just like last time. Lastly, we found
 the C-OW radial distribution function using *gmx rdf*.

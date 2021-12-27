@@ -20,7 +20,7 @@ In principle, our goal is to do better science in an [open-source way](https://w
 
 ### E-mail
 
-E-mail adresses of the [staff members](people.md#staff) have the following format: *firstname.lastname@inf.uniri.hr*
+E-mail addresses of the [staff members](people.md#staff) have the following format: *firstname.lastname@inf.uniri.hr*
 
 ### Social networks
 

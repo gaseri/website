@@ -4,7 +4,7 @@ author: Wes Barnett, Vedran Miletić
 
 # GROMACS Tutorial 4 -- Methane Free Energy of Solvation
 
-In this tutorial I'll show you how to perform a free energy of solvation
+In this tutorial, I'll show you how to perform a free energy of solvation
 simulation using GROMACS, as well as how to calculate the free energy change
 using [MBAR](https://aip.scitation.org/doi/10.1063/1.2978177). As always, this
 tutorial builds off of the previous ones, especially [Tutorial 1](../1-tip4pew-water/index.md)
@@ -36,7 +36,7 @@ to 1 now.
 
 This time we're using a different box type so that we won't have to use as much
 water. We'll use a dodecahedron box at 1.2 nm out in each direction from the
-methane. First create the box:
+methane. First, create the box:
 
 ``` shell
 $ gmx editconf -f methane.pdb -bt dodec -d 1.2 -o box.gro
@@ -52,10 +52,10 @@ $ gmx solvate -cs tip4p -cp box.gro -o conf.gro -p topol.top
 
 The parameter files we'll be using are almost exactly the same as previous
 tutorials, except we're adding a free energy section in order to slowly turn off
-our methane. Additionally we need a parameter file for each state. We have
-15 minimizations, 15 equilbirations, etc. But we'll use a script to simply
+our methane. Additionally, we need a parameter file for each state. We have
+15 minimizations, 15 equilibrations, etc. But we'll use a script to simply
 update the appropriate values in a template, so we actually only will have to
-have one for each part of the simulation. At each state we'll do our two
+have one for each part of the simulation. At each state, we'll do our two
 minimizations, equilibrate at NVT for 100 ps, equilibrate at NPT for 1 ns, and
 then do a production run for 5 ns.
 
@@ -78,7 +78,7 @@ Here's an explanation of some of these new values:
 | sc-alpha | 0.5 | We're using a soft-core potential for VDW. This parameter is a term in the soft-core function. See the manual. |
 | sc-power | 1 | See above. |
 | sc-sigma | 0.3 | See above. |
-| sc-coul | no | Don't use soft core for electrostatics. |
+| sc-coul | no | Don't use soft-core for electrostatics. |
 
 One last note on the parameter files: we're using the `sd` integrator, which
 stands for stochastic dynamics. `sd` itself controls the temperature, so we're
@@ -183,7 +183,7 @@ Your output should look something like this:
 
 This is the free energy of removing a methane, so the free energy of solvation
 is actually negative one times this, since it is the reverse process. Our result
-of 2.289 kcal / mol is comparable to published figures. [In a paper that
+of 2.289 kcal/mol is comparable to published figures. [In a paper that
 simulated OPLS methane with TIP3P](https://aip.scitation.org/doi/10.1063/1.1587119),
 they achieved a result of 2.44 kcal/mol. The difference can probably be
 attributed to using a different water model.
@@ -202,7 +202,7 @@ Here is a visual comparison of the calculated value for each segment:
 
 ![Methods](dF_state.png)
 
-I can see that one of the methods (DEXP) gets a different results for
+I can see that one of the methods (DEXP) gets different results for
 calculations between states 5 and 6 as well as between 6 and 7. I'm not too
 concerned about this, since the other methods line up well and DEXP is not one
 of the "better" methods.
@@ -211,7 +211,7 @@ And here is the `<dHdl>` curve:
 
 ![dHdl](dhdl_TI.png)
 
-Here we are looking for places where the curvature is high.The curvature is
+Here we are looking for places where the curvature is high. The curvature is
 higher around states 10, 11, and 12. Depending on our application, we might want
 to possibly sample more states in that area.
 
@@ -227,17 +227,17 @@ indicate our system may not be well equilibrated before we started the
 simulation. We could discard that non-equilibrated data and redo the
 calculation.
 
-There are a couple of other command line flags you can use with the
-`alchemical_analysis` script. Be sure to checkout the homepage of the script and
+There are a couple of other command-line flags you can use with the
+`alchemical_analysis` script. Be sure to check out the homepage of the script and
 the [paper on best practices in free energy analysis](https://link.springer.com/article/10.1007/s10822-015-9840-9)
 which goes much more into detail on these and other plots. I won't go into
-detail of all the options here.
+detail about all the options here.
 
 ## Summary
 
-In this tutorial we performed a free energy simulation on methane in water. We
+In this tutorial, we performed a free energy simulation on methane in water. We
 turned off electrostatics linearly first, and then we used a soft-core potential
 to turn off the van der Waals interactions. The intramolecular interactions for
-methane remained on, so its as if we were removing the methane from the water
+methane remained on, so it's as if we were removing the methane from the water
 and placing it in a vacuum. Our result of 2.289 kcal /mol is comparable to
 published results.

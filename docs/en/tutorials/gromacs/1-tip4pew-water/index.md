@@ -5,7 +5,7 @@ author: Wes Barnett, Vedran Miletić
 # GROMACS Tutorial 1 -- Water
 
 In this introductory tutorial, I'll show you how to create a box of water and
-run a simple simulation on it with constant temperature and pressure. At the end
+run a simple simulation on it with constant temperature and pressure. In the end,
 we'll find out the density of water.
 
 ## Setup
@@ -19,9 +19,9 @@ information is provided by the force field. Non-bonded interactions included van
 der Waals interactions and Coulomb interactions. Bonded interactions include
 bonds, angles, and dihedrals. The parameters file includes information on how
 long to run the simulation, the timestep, temperature and pressure coupling,
-etc. Below we'll obtain / create these files.
+etc. Below we'll obtain/create these files.
 
-At this point I would suggest creating a directory to store files for this
+At this point, I would suggest creating a directory to store files for this
 tutorial.
 
 ### Topology file
@@ -29,7 +29,7 @@ tutorial.
 We'll start with the topology file. Typically a topology file uses an `#include`
 statement to include the force field to be used. This force field includes `[
 atomtypes ]`, `[ bondtypes ]`, `[ angletypes ]`, and `[ dihedraltypes ]`
-directives. Then in the topology file usually we specify different `[
+directives. Then in the topology file we usually specify different `[
 moleculetype ]` directives which contain `[ atoms ]`, `[ bonds ]`, and `[
 dihedrals ]` which refer back to the force field. Don't worry about this too
 much right now. Water models include all of these for us. See Chapter 5 of the
@@ -47,8 +47,8 @@ TIP4PEW
 [ Molecules ]
 ```
 
-As you can see we've included the force field for OPLS-AA. Additionally we've
-included the TIP4PEW water model. After this you'll see a `[ System ]` directive,
+As you can see we've included the force field for OPLS-AA. Additionally, we've
+included the TIP4PEW water model. After this, you'll see a `[ System ]` directive,
 which includes just the name of the system, which can be anything you want.
 Lastly, we list out each `moleculetype` and how many there are under `[
 Molecules ]`. Right now we don't have any (we'll get those in a minute).
@@ -57,11 +57,11 @@ Molecules ]`. Right now we don't have any (we'll get those in a minute).
 
 The structure of TIP4PEW is already provided by GROMACS in the topology
 directory. This standard location is typically `/usr/share/gromacs/top`, but you
-my have it installed in a different directory. If you are properly sourcing
-GMXRC then it will be located at `$GMXDATA/top`. In that directory you'll see
+may have it installed in a different directory. If you are properly sourcing
+GMXRC then it will be located at `$GMXDATA/top`. In that directory, you'll see
 several `.gro` files, one of which is `tip4p.gro`. You'll also see the folder
 `oplsaa.ff` which we've included in our topology file above. There isn't a
-structure file specific to TIP4PEW. Four-point water structure is essentially
+structure file specific to TIP4PEW. The four-point water structure is essentially
 the same for TIP4P and TIP4PEW. What makes them different is the force field
 parameters.
 
@@ -81,8 +81,8 @@ enough water molecules to fill a box 2.3 nm in each direction.
 Now we need a set of parameter files so that GROMACS knows what to do with our
 starting structure. Simulations almost always have three main parts:
 minimization, equilibration, and production. Minimization and equilibration can
-be broken down into multiple steps. Each of these needs it's own parameters
-file. In this case we'll be doing two minimizations, two equilibrations, and one
+be broken down into multiple steps. Each of these needs its own parameters
+file. In this case, we'll be doing two minimizations, two equilibrations, and one
 production run.
 
 The files we'll be using should be downloaded [from here](mdp.tar.gz).
@@ -102,29 +102,29 @@ for more information on each option.
 | DispCorr | EnerPress | Long-range correction for VDW for both energy and pressure. |
 
 Cut-off distances should be set keeping in mind how the force field was
-parameterized. In other words, its a good idea to look at the journal article
+parameterized. In other words, it's a good idea to look at the journal article
 that describes how the force field was created. We've chosen 1.0 nm for our
 cut-offs here, which is common enough for OPLS, but you may determine for your
 system to choose something else.
 
-Additionally in each part we'll also be outputting an energy file, a log file,
+Additionally in each part, we'll also be outputting an energy file, a log file,
 and a compressed trajectory file. The rate of output (in simulation steps) for
 these is set using `nstenergy`, `nstlog`, and `nstxout-compressed`,
 respectively. We'll output more information in the production run.
 
 For each part, except for the second minimization, we'll also be constraining
-all bonds involving a hydrogen using the LINCS algorithm by setting
+all bonds involving hydrogen using the LINCS algorithm by setting
 `constraint-algorithm = lincs` and `constraints = h-bonds`. This allows us to use
 a larger time step than otherwise.
 
-For the first minimization we use the steepest descents algorithm by setting
+For the first minimization, we use the steepest descents algorithm by setting
 `integrator = steep` to minimize the energy of the system with a maximum of
 1,000 steps (`nsteps = 1000`). The minimization will stop if the energy
-converges before then. Additionally we have `define =
--DFLEXIBLE`. This lets GROMACS know to use flexible water, since by default all
+converges before then. Additionally, we have `define =
+-DFLEXIBLE`. This lets GROMACS know to use flexible water since by default all
 water models are rigid using an algorithm called SETTLE. In the water model's
-topology file, which we have includes, there is an if statement that looks for
-the `FLEXIBLE` variable to defined. The purpose of this first minimization is to
+topology file, which we have included, there is an if statement that looks for
+the `FLEXIBLE` variable to be defined. The purpose of this first minimization is to
 get the molecules in a good starting position so we can turn on SETTLE without
 any errors.
 
@@ -132,27 +132,27 @@ In the second minimization we are simply removing `define = -DFLEXIBLE` and
 increasing the number of maximum steps to 50,000.
 
 The last three parts -- the two equilibrations and production -- all use the
-leap-frog integrator by setting `integrator = md`. Additionally each one will
+leap-frog integrator by setting `integrator = md`. Additionally, each one will
 use a 2 fs time step by setting `dt = 0.002`.
 
-For the first equilibration step there are a few things to note. We are adding
-several parameters shown below:
+For the first equilibration step, there are a few things to note. We are adding
+several parameters that are shown below:
 
 | parameter | value | explanation |
 | --------- | ----- | ----------- |
 | gen-vel | yes | Generate velocities for each atomic site according to a Maxwell-Boltzmann distribution. **Only generate velocities for your first equilibration step**. This gets us close to the temperature at which we will couple the system. |
-| gen-temp | 298.15 | Temperature in K to use for `gen-vel`. Unless you are doing some strange / interesting stuff, this should be the same as `ref-t`. |
+| gen-temp | 298.15 | Temperature in K to use for `gen-vel`. Unless you are doing some strange/interesting stuff, this should be the same as `ref-t`. |
 | tcoupl | Nose-Hoover | The algorithm to use for temperature coupling. Nose-Hoover correctly produces the canonical ensemble. |
-| tc-grps | System | Which groups to couple. You can couple different groups of atoms separately, but we'll just couple the whole system. |
+| tc-grps | System | Which groups should be temperature-coupled. You can couple different groups of atoms separately, but we'll just couple the whole system. |
 | tau-t | 2.0 | Time constant for coupling. See the manual for details. |
 | ref-t | 298.15 | The temperature in K at which to couple. |
-| nhchainlength | 1 | Leap-frog integrator only supports 1, but by default this is 10. This is set so GROMACS doesn't complain to us. |
+| nhchainlength | 1 | Leap-frog integrator only supports 1, but by default, this is 10. This is set so GROMACS doesn't complain to us. |
 
 The point of this first equilibration is to get us to the correct temperature
 (298.15 K) before adding pressure coupling. Adding temperature and pressure
 coupling at the same time can cause your system to be unstable and crash. We
 don't want to shock our system at the beginning. Additionally, we have set
-`nsteps = 50000`, so with a 2 fs timestep, that means that this will run for 100
+`nsteps = 50000`, so with a 2 fs time step, that means that this will run for 100
 ps. This is adequate for what we are doing here, but in larger / more
 complicated systems you may need to equilibrate longer.
 
@@ -165,8 +165,8 @@ this may need to be longer for other systems.
 | parameter | value | explanation |
 | --------- | ----- | ----------- |
 | pcoupl | Parrinello-Rahman | The algorithm to use for pressure coupling. Parrinello-Rahman correctly produces the isobaric-isothermal ensemble when used with Nose-Hoover. |
-| tau-p | 2.0 | Time constant for coupling. See the manual for details. |
-| ref-p | 1.0 | The pressure in bar at which to couple. |
+| tau-p | 2.0 | Time constant for pressure coupling. See the manual for details. |
+| ref-p | 1.0 | The pressure in bars at which to pressure couple. |
 | compressibility | 4.46e-5 | The compressibility of the system in bar^-1. |
 
 For the production run, everything is exactly the same as the last
@@ -174,7 +174,7 @@ equilibration, except we are outputting more data and running for 10 ns.
 
 ## Simulation
 
-We have all the files we need now to run each part of the simulation. Each
+We have all the files we need now to run each part of the simulation. In each
 part you typically run *gmx grompp* to preprocess the three files we now have
 (.gro, .top, and .mdp) into a .tpr file (sometimes confusingly also called a
 topology file).
@@ -191,7 +191,7 @@ $ gmx grompp -f mdp/min2.mdp -o min2 -pp min2 -po min2 -c min -t min
 $ gmx mdrun -deffnm min2
 ```
 
-At each part we are reading in the .mdp file with the `-f` flag. By default if
+At each part, we are reading in the .mdp file with the `-f` flag. By default if
 `-c` and `-p` flags are not specified GROMACS uses `conf.gro` and `topol.top`
 for the structure and topology files. Additionally we are outputting a processed
 topology file `-pp` and mdp file `-po`. These are optional, but probably worth
@@ -316,7 +316,7 @@ Density                     995.381       0.15      12.92  0.0705576  (kg/m^3)
 
 If you look at the [TIP4PEW
 paper](https://aip.scitation.org/doi/10.1063/1.1683075) in figure 4, you can see
-we have achieved the correct density. Additionally note that [Wolfram Alpha
+we have achieved the correct density. Additionally, note that [Wolfram Alpha
 says](https://www.wolframalpha.com/input/?i=density+of+water+298.15+K)
 the density of water at standard conditions is 997 kg/m^3.
 
@@ -332,7 +332,7 @@ Here's a snapshot:
 
 ![Water](water1.png)
 
-Note that do to the period boundary condition this can look kind of strange
+Note that due to the periodic boundary condition this can look kind of strange
 with bonds stretching across the box. You can make molecules whole by using *gmx
 trjconv*:
 
@@ -346,9 +346,9 @@ Viewing that file should look much nicer:
 
 ## Summary
 
-In this tutorial we generate a box of TIP4PEW water using *gmx solvate*. We
+In this tutorial, we generate a box of TIP4PEW water using *gmx solvate*. We
 simulated it in five distinct parts: minimization 1, minimization 2,
 equilbiration 1, equilibration 2, and production. Each part used its own .mdp
-files which were explained. At each part we used *gmx energy* to extract useful
-information about the simulation. After the production run we were able to find
+files which were explained. At each part, we used *gmx energy* to extract useful
+information about the simulation. After the production run, we were able to find
 the density of TIP4PEW water.

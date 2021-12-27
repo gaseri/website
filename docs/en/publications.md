@@ -6,7 +6,7 @@ author: Vedran Miletić
 
 ## 2021
 
-- Miletić, V., Nikolić, P. & Kinkela, D. [Structure-based Molecular Docking in the Identification of Novel Inhibitors Targeting SARS-CoV-2 Main Protease.](https://ieeexplore.ieee.org/document/9596660) in 2021 44th International Convention on Information, Communication and Electronic Technology (MIPRO), 435–440 (2021). [doi:10.23919/MIPRO52101.2021.9596660](https://doi.org/10.23919/MIPRO52101.2021.9596660)
+- Miletić, V., Nikolić, P. & Kinkela, D. [Structure-based Molecular Docking in the Identification of Novel Inhibitors Targeting SARS-CoV-2 Main Protease.](https://ieeexplore.ieee.org/document/9596660) in 2021 44th International Convention on Information, Communication, and Electronic Technology (MIPRO), 435–440 (2021). [doi:10.23919/MIPRO52101.2021.9596660](https://doi.org/10.23919/MIPRO52101.2021.9596660)
 - Svedružić, Ž. M, Vrbnjak, K., Martinović, M. & Miletić, V. [Structural Analysis of the Simultaneous Activation and Inhibition of γ-Secretase Activity in the Development of Drugs for Alzheimer’s Disease.](https://www.mdpi.com/1999-4923/13/4/514) Pharmaceutics 13(4), 514 (2021). [doi:10.3390/pharmaceutics13040514](https://doi.org/10.3390/pharmaceutics13040514) (WoS-SCIE, Q1 (2020), JIF: 6.321 (2020); times cited: 1)
 
 ## 2020

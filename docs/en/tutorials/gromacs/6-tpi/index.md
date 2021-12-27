@@ -4,15 +4,15 @@ author: Wes Barnett, Vedran Miletić
 
 # GROMACS Tutorial 6 -- Excess Chemical Potential of Methane using Test Particle Insertion
 
-In this tutorial we'll be using test particle insertion (TPI) to calculate the excess
+In this tutorial, we'll be using test particle insertion (TPI) to calculate the excess
 chemical potential of methane solvation in water. Most users are unaware that
 GROMACS has a built-in method for running TPI. This tutorial will not be a
 comprehensive discussion on the statistical mechanics of TPI, but will address
 issues when needed. The user is encouraged to seek out scientific resources
 regarding this method.
 
-TPI involves perturbing some state to some other, very similar state. We will be
-taking bulk water and insertng a methane particle and measuring the
+TPI involves perturbing some states to some other, very similar states. We will be
+taking bulk water and inserting a methane particle and measuring the
 potential energy change from this. There is a statistical mechanical
 relationship between this change in potential energy and the excess chemical
 potential. For us, state A is the bulk water system, and state B is the water
@@ -30,7 +30,7 @@ Follow Tutorial 1 to run a system containing TIP4PEW water.
 
 ### Add test particle to topology file
 
-Our original topology file just had water. In the new topology file we simply
+Our original topology file just had water. In the new topology file, we simply
 need to add 1 test particle, and it needs to be the last molecule in the system.
 We'll use `opls_066` for the particle's atom type which is OPLS's united atom
 methane. Here's what my final topology file looks like (the number of waters
@@ -68,7 +68,7 @@ looks like this:
 ```
 
 The actual position doesn't matter; GROMACSS just wants a placeholder for the
-test particle. Additionally you need to add 1 to the total number of particles
+test particle. Additionally, you need to add 1 to the total number of particles
 in the system on the second line of the `.gro` file.
 
 ### Parameter files
@@ -77,12 +77,12 @@ We only need one parameter file for TPI. Simply copy `prd.mdp` from your bulk
 water simulation and change `integrator` to `tpi`. You should change `nsteps` to
 the number of insertions per frame that you want to attempt. I chose `100000`
 steps for my simulation. You will also need
-to change `cutoff-scheme` to `group`, since `Verlet` has not be implemented for
+to change `cutoff-scheme` to `group`, since `Verlet` has not been implemented for
 TPI.
 
 ## Simulation
 
-For the simulation we are just rerunning the bulk water simulation using the
+For the simulation, we are just rerunning the bulk water simulation using the
 saved trajectory file (which was named `prd.xtc` in the first tutorial). To do
 this first run `grompp`:
 
@@ -98,7 +98,7 @@ $ gmx mdrun -deffnm tpi -rerun prd.xtc
 
 ## Analysis
 
-The log file file, in this case named `tpi.log`, contains a line with the
+The log file, named `tpi.log` in this case, contains a line with the
 average volume and the average excess chemical potential. My two lines looked
 like this:
 
@@ -116,6 +116,6 @@ solvation simulations and a united-atom model in this case.
 
 ## Summary
 
-In this tutorial we looked at how to use GROMACS to perform test particle
+In this tutorial, we looked at how to use GROMACS to perform test particle
 insertion in order to get the excess chemical potential of a united-atom OPLS
 methane.
