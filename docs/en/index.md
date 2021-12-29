@@ -8,13 +8,19 @@ author: Vedran Miletić
 
 **Group for Applications and Services on Exascale Research Infrastructure** (hrv. *Grupa za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi*, abbr. GASERI) is a research, development, and teaching unit at [University of Rijeka](https://www.uniri.hr/) [Department of Informatics](https://www.inf.uniri.hr/).
 
-## Scientific and professional interests
+## Interests
 
-We are generally interested in scientific software development, high-performance computers, cloud computing, and the use of free open-source software in the development of applications and services for supercomputers and cloud platforms. We are specifically interested in the application of exascale computing to solve problems in computational biochemistry and related fields.
+A supercomputer, also known as a high-performance computer (HPC), offers much more performance than a personal computer does. This performance is usually measured in the number of floating-point operations per second (FLOPS) a computer can perform; a personal computer can perform up to tens of teraFLOPS, while modern HPCs can perform hundreds of petaFLOPS, resulting in the speedup factor of approximately ten thousand.
 
-In the area of software development, regardless of the topic and required background, we are interested in high priority and high impact TODOs in open source projects which may or may not have enough developers working on them. As for a particular topic, we are interested in software tools for molecular dynamics simulation.
+Such speedups are made possible by the use of parallel and distributed programming models. With the supercomputer performance approaching exaFLOPS, the computer architecture is becoming increasingly heterogeneous, while the programming models are becoming more complex. Finally, HPC is being offered more and more as a service in the cloud, which introduces its own set of challenges. Many scientific fields depend on the use of supercomputers for their calculations; in particular, computational biochemistry relies on supercomputers to study and predict protein structure, dynamics, function, and reactivity with small molecules (ligands).
 
-In principle, our goal is to do better science in an [open-source way](https://www.theopensourceway.org/); science is essentially open and should remain so. The open-source way includes [open file formats](http://www.linfo.org/free_file_format.html), [free and open-source software](https://www.gnu.org/philosophy/free-sw.html), [open hardware](https://opensource.com/resources/what-open-hardware), [defensive patent licensing](https://www.defensivepatentlicense.org/), and [open access to published work](https://www.openaccess.nl/en/what-is-open-access).
+The main interest of the Group for Applications and Services on Exascale Research Infrastructure is the application of exascale computing to solve problems in computational biochemistry. The goal is to design better-performing algorithms and offer their implementations for academic and industrial use. Computational chemists having access to better tools can study the existing systems faster, in more detail, or prefer to study larger systems.
+
+The specific focuses in the present are distributed chemical compound database architectures that meet the scalability and reliability requirements of high-throughput virtual screening campaigns, advancements of molecular dynamics algorithms that enable them to efficiently utilize the exascale supercomputing resources, and the establishment of the Croatian competence center for HPC.
+
+## Methods
+
+The group uses and further develops protein-ligand docking, molecular dynamics simulation, the Monte Carlo method, and other computational techniques to study statical and dynamical properties of biomolecular systems. The interdisciplinary approach in the group combines the expertise of physicists, mathematicians, information technologists, and computer scientists. The underlying motivation is to do better science in an open-source way; science is essentially open and should remain so. The open-source way includes open file formats, free and open-source software, open hardware, defensive patent licensing, and open access to published works.
 
 ## History
 
