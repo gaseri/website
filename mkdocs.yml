@@ -142,6 +142,7 @@ nav:
         - Tipovi datoteka: hr/nastava/materijali/linux-tipovi-datoteka.md
         - Prevođenje OpenCL C koda u asemblerski kod arhitektura AMD GCN i RDNA: hr/nastava/materijali/llvm-backend-amdgpu.md
         - Prevođenje OpenCL C koda program prevoditeljem Clang: hr/nastava/materijali/llvm-frontend-clang-opencl-c.md
+        - Replikacija sadržaja poslužitelja sustava za upravljanje bazom podataka MariaDB: hr/nastava/materijali/mariadb-replikacija.md
         - Konfiguracija sustava za upravljanje bazom podataka MariaDB: hr/nastava/materijali/mariadb-sustav-za-upravljanje-bazom-podataka.md
         - Instalacija i konfiguracija wiki sustava MediaWiki: hr/nastava/materijali/mediawiki-instalacija-web-aplikacije.md
         - Dokumentiranje programa alatom MkDocs: hr/nastava/materijali/mkdocs-dokumentiranje-programa.md
