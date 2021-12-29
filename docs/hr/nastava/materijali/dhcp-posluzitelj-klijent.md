@@ -77,6 +77,20 @@ samo na sučelju `eth0`. Ostali parametri naredbenog retka opisani su u man stra
 
 unutar koje se mogu nalaziti konfiguracijske naredbe isteka vremena (`timeout`), vremena prije ponovnog pokušaja (`retry`) i druge. Opis pojedinih konfiguracijskih naredbi dan je u man stranici `dhclient.conf(5)` (naredba `man 5 dhclient.conf`).
 
+!!! caution
+    Moguće je da `dhclient` kod pokretanja javi pogrešku oblika:
+
+    ```
+    System has not been booted with systemd as init system (PID 1). Can't operate.
+    Failed to connect to bus: Host is down
+    ```
+
+    Suvremeni operacijski sustavi temeljeni na Linuxu koriste [systemd](https://systemd.io/) (izvedenica od **system** **d**aemon) za pokretanje sustavskih procesa, ali čvorovi u CORE-u to ne rade jer ima je cilj zauzeti što manje memorije (i time omogućiti pokretanje većih emulacija). To objašnjava prvi redak pogreške.
+
+    Što se drugog retka, za međuprocesnu komunikaciju koristi se [D-Bus](https://www.freedesktop.org/wiki/Software/dbus/) koji također nije pokrenut (iz istih motiva kao i systemd) pa se proces na njega ne može povezati.
+
+    Procesi koje koristimo u emuliranim čvorovima, uključujući i `dhclient`, uredno rade bez obzira na ove pogreške pa ih možemo ignorirati.
+
 ### Poslužiteljska strana
 
 ISC DHCP poslužitelj naziva se `dhcpd`; slovo `d` na kraju imena oznaka je da se radi o [daemonu](https://en.wikipedia.org/wiki/Daemon_(computing)). Poslužitelj se pokreće naredbom
@@ -109,10 +123,10 @@ Za svaku od podmreža možemo definirati posebne postavke. Uzmimo da nam je, kao
 
 ``` nginx
 subnet 192.168.5.0 netmask 255.255.255.0 {
-     option routers           192.168.5.1;
-     option subnet-mask       255.255.255.0;
-     option broadcast-address 192.168.5.255;
-     range  192.168.5.101     192.168.5.200;
+    option routers           192.168.5.1;
+    option subnet-mask       255.255.255.0;
+    option broadcast-address 192.168.5.255;
+    range  192.168.5.101     192.168.5.200;
 }
 ```
 
@@ -146,10 +160,10 @@ max-lease-time     172800;
 lease-file-name    "/tmp/dhcpd.leases";
 
 subnet 172.16.25.0 netmask 255.255.255.0 {
-     option routers           172.16.25.1;
-     option subnet-mask       255.255.255.0;
-     option broadcast-address 172.16.25.255;
-     range  172.16.25.20      172.16.25.249;
+    option routers           172.16.25.1;
+    option subnet-mask       255.255.255.0;
+    option broadcast-address 172.16.25.255;
+    range  172.16.25.20      172.16.25.249;
 }
 ```
 
@@ -192,9 +206,9 @@ eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         inet 172.16.25.20  netmask 255.255.255.0  broadcast 172.16.25.255
         inet6 fe80::200:ff:feaa:0  prefixlen 64  scopeid 0x20<link>
         ether 00:00:00:aa:00:00  txqueuelen 1000  (Ethernet)
-   RX packets 113  bytes 12804 (12.5 KiB)
-   RX errors 0  dropped 0  overruns 0  frame 0
-   TX packets 26  bytes 2508 (2.4 KiB)
+        RX packets 113  bytes 12804 (12.5 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 26  bytes 2508 (2.4 KiB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 ```
 
