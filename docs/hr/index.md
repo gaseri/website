@@ -34,7 +34,7 @@ Naš znanstveno-istraživački program zasniva se uvelike na razvoju softvera, f
 
 Ako posjedujete ove vještine i entuzijazam za znanstveno-istraživačkim radom te se želite pridružiti našem istraživačkim i razvojnim aktivnostima, molimo da [voditelju grupe](ljudi.md) pošaljete e-mail koji uključuje:
 
-- Kratki opis (50 do 100 riječi) vašeg istraživačkog interesa unutar unutar [nekog od aktualnih projekata na kojima grupa radi](istrazivanje-i-razvoj.md).
+- Kratki opis (50 do 100 riječi) vašeg istraživačkog interesa unutar [nekog od aktualnih projekata na kojima grupa radi](istrazivanje-i-razvoj.md).
 - Primjer softvera u bilo kojem programskom jeziku za Linux/Unix koji ste napisali; može biti i projekt s nekog kolegija. Pritom je slanje izvornog koda softvera u obliku tar arhive sasvim u redu (nemojte koristiti [vlasnički format RAR](https://en.wikipedia.org/wiki/RAR_(file_format)), njegovo korištenje ne implicira da ćete [voziti](https://youtu.be/_uOoV0mtX3E) [Rari](https://youtu.be/vL2Ja5uMhnk)), ali poveznica na repozitorij s kodom na [GitLabu](https://about.gitlab.com/) ili [GitHubu](https://github.com/) je preferirana. Priložite opis što vaš softver radi i kako, ili, još bolje, poveznicu na njegovu dokumentaciju. Ukoliko vaš kod koristi neku od metoda heterogenog, paralelnog ili distribuiranog programiranja, to je vrlo korisno, ali nije preduvjet.
 
 ## Povijest
