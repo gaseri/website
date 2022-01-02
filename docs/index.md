@@ -26,3 +26,9 @@
 - [Distribuirani sustavi](hr/nastava/kolegiji/DS.md) ([izvedbeni](hr/nastava/izvedbeni/2021-2022/DS.md))
 - [Upravljanje mrežnim sustavima](hr/nastava/kolegiji/UMS.md) ([izvedbeni](hr/nastava/izvedbeni/2021-2022/UMS.md))
 - [Teme diplomskih radova](hr/teme-zavrsnih-i-diplomskih-radova.md)
+
+## Poster
+
+![GASERI poster Koleda](images/gaseri-poster-koleda.webp)
+
+[PDF (A3, landscape)](images/gaseri-poster-koleda.pdf)
