@@ -9,6 +9,13 @@ author: Luka Brumnić, Vedran Miletić
 
 Docker je skup alata za kontejnerizaciju (poznatu još i pod nazivom kontejnerska virtualizacija ili [virtualizacija na razini operacijskog sustava](https://en.wikipedia.org/wiki/Operating-system-level_virtualization), engl. *operating-system-level virtualization*) i dijeljenje aplikacija putem interneta (gdje mu je princip rada vrlo sličan Gitu). Sve je popularniji u svijetu, koristi ga vrlo veliki broj poslovnih subjekata i danas je dostupan kao paket u gotovo svim distribucijama Linuxa.
 
+Jedan od osnovnih razloga toj popularnosti je [Docker Hub](https://hub.docker.com/), web sjedište na kojem se dijele slike kontejnera. Posebna vrsta slika su [službene slike](https://docs.docker.com/docker-hub/official_images/) (engl. *official images*), čiji razvoj i održavanje financira sam Docker. Osim [slike hello-world](https://hub.docker.com/_/hello-world) kojom se testira ispravnost instalacije Dockera, u službene slike spadaju [httpd](https://hub.docker.com/_/httpd), [python](https://hub.docker.com/_/python), [php](https://hub.docker.com/_/php), [node](https://hub.docker.com/_/node), [haproxy](https://hub.docker.com/_/haproxy), [mariadb](https://hub.docker.com/_/mariadb), [mongo](https://hub.docker.com/_/mongo), [postgres](https://hub.docker.com/_/postgres), [redis](https://hub.docker.com/_/redis), [nextcloud](https://hub.docker.com/_/nextcloud), [memcached](https://hub.docker.com/_/memcached), [docker](https://hub.docker.com/_/docker) (da, Docker može [pokrenuti drugi Docker u kontejneru koji onda može pokretati Docker kontejnere](https://knowyourmeme.com/memes/subcultures/inception)) i [brojne druge](https://hub.docker.com/search?type=image&image_filter=official). Na stranici svake od službenih slika dane su detaljne upute za njeno korištenje.
+
+!!! tip
+    U nastavku koristimo službene Dockerove alate naredbenog retka, ali moguće je koristiti i Visual Studio Code koji nudi [službeno proširenje za Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) ([pregled značajki](https://code.visualstudio.com/docs/containers/overview)).
+
+    Dodatno, korištenjem [službenih proširenja za udaljeni rad](https://code.visualstudio.com/docs/remote/remote-overview) moguće je [razvijati softver unutar Docker kontejnera](https://code.visualstudio.com/docs/remote/containers). Za one koji žele znati više o razvoju softvera u kontejnerima, dobro mjesto za započeti je [Microsoftov službeni tečaj za Docker početnike](https://docs.microsoft.com/en-us/visualstudio/docker/tutorials/docker-tutorial).
+
 ## Primjer primjene
 
 Kao alat, Docker ima vrlo široku primjenu. U ovom projektu iskoristiti ću ga kao alat za dijeljenje kompaktnog OS-a za rad sa JSON-om.
