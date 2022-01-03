@@ -22,6 +22,10 @@
 - [Konfiguracija sustava za upravljanje bazom podataka MariaDB](../materijali/mariadb-sustav-za-upravljanje-bazom-podataka.md)
 - [Replikacija sadržaja poslužitelja sustava za upravljanje bazom podataka MariaDB](../materijali/mariadb-replikacija.md)
 
+### Specfičnosti sustava za predmemoriju
+
+- [Konfiguracija sustava za predmemoriju Redis](../materijali/redis-predmemorija.md)
+
 ### Korištenje usluga računalnih oblaka za pokretanje web aplikacija
 
 ### Profiliranje aplikacija na mobilnim operacijskim sustavima

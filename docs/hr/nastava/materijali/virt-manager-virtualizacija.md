@@ -120,6 +120,13 @@ Nakon pokretanja Ubuntua moći ćemo se prijaviti sa s korisničkim imenom `ubun
 !!! admonition "Zadatak"
     U virtualnom stroju instalirajte HTTP poslužitelj Apache (paket `apache2`). Iskoristite Firefox ili cURL kako biste se uvjerili da poslužitelj ispravno radi, a zatim (po)maknite zadanu datoteku `index.html` i na njenom mjestu stvorite novu datoteku sa sadržajem po vašoj želji.
 
+!!! tip
+    Ako ste zaboravili povećati veličinu preuzete slike prije pokretanja virtualnog stroja, moguće je da ćete instalacijom dodatnih paketa popuniti disk. U tom slučaju prvo zaustavite virtualni stroj, povećajte disk, a zatim nakon pokretanja iskoristite naredbu `apt` s parametrom `--fix-broken` i argumentom `install` kako biste instalacijom potrebnih paketa doveli stanje u red:
+
+    ``` shell
+    sudo apt --fix-broken install
+    ```
+
 ## Povezivanje na virtualni stroj korištenjem OpenSSH-a
 
 QEMU/KVM u zadanim postavkama mreže (prevođenje mrežnih adresa, engl. *network address translation*, kraće NAT) dodjeljuje svim virtualnim strojevima adrese u rasponu 192.168.122.0/24. Naredbom `ip addr` unutar virtualnog stroja možemo provjeriti koja je adresa dodijeljena tom stroju:
@@ -136,6 +143,7 @@ $ ip addr
     link/ether e0:d5:5e:25:a1:29 brd ff:ff:ff:ff:ff:ff
     inet 192.168.122.147/24 brd 192.168.11.255 scope global dynamic noprefixroute enp5s0
         valid_lft 42841sec preferred_lft 42841sec
+```
 
 Na virtualni stroj možemo se povezati OpenSSH-om korištenjem korisničkog imena `ubuntu` i zaporke koju smo postavili na način:
 
@@ -143,6 +151,8 @@ Na virtualni stroj možemo se povezati OpenSSH-om korištenjem korisničkog imen
 $ ssh ubuntu@192.168.122.147
 ubuntu@192.168.122.147's password:
 ```
+
+Nakon toga možemo normalno pokretati naredbe, npr. možemo provjeriti koliko slobodnog prostora na disku u virtualnom stroju imamo naredbom `df -h`.
 
 ## Stvaranje više virtualnih strojeva
 
