@@ -127,6 +127,7 @@ nav:
         - Kemoinformatika i računalna kemija: hr/nastava/materijali/kemoinformatika-povijest-osnove.md
         - Virtualizacija korištenjem KVM-a i QEMU-a: hr/nastava/materijali/kvm-virtualizacija.md
         - Virtualizacija korištenjem Virtual Machine Managera: hr/nastava/materijali/virt-manager-virtualizacija.md
+        - Virtualizacija korištenjem libvirta: hr/nastava/materijali/libvirt-virtualizacija.md
         - Arhiviranje i komprimiranje: hr/nastava/materijali/linux-arhiviranje-komprimiranje.md
         - Cijevi, preusmjeravanje ulaza i izlaza: hr/nastava/materijali/linux-cijevi-preusmjeravanje-ulaza-izlaza.md
         - Uvod u komandnolinijsko sučelje: hr/nastava/materijali/linux-cli-uvod.md
@@ -246,6 +247,7 @@ nav:
         - Rad s alatima za usmjeravanje: hr/nastava/materijali/quagga-usmjeravanje.md
         - Povijesni pregled razvoja računala i temelji računarske znanosti: hr/nastava/materijali/racunarstvo-povijest-osnove.md
         - Sveprisutna i prožimajuća računala: hr/nastava/materijali/racunarstvo-sveprisutna-prozimajuca-racunala.md
+        - Konfiguracija sustava za predmemoriju Redis: hr/nastava/materijali/redis-predmemorija.md
         - rocALUTION -- ROCm SPARSE Linear Algebra PACkage: hr/nastava/materijali/rocm-rocalution.md
         - rocBLAS -- ROCm Basic Linear Algebra Subprograms: hr/nastava/materijali/rocm-rocblas.md
         - rocFFT -- ROCm Fast Fourier Transforms: hr/nastava/materijali/rocm-rocfft.md
