@@ -6,6 +6,7 @@
 
 - [Virtualizacija korištenjem KVM-a i QEMU-a](../materijali/kvm-virtualizacija.md)
 - [Virtualizacija korištenjem Virtual Machine Managera](../materijali/virt-manager-virtualizacija.md)
+- [Virtualizacija korištenjem libvirta](../materijali/libvirt-virtualizacija.md)
 - [Kontejnerizacija alatom Docker](../materijali/docker-kontejneri.md)
 - [Komponiranje kontejnera alatom Docker Compose](../materijali/docker-compose-kompozicije-kontejnera.md)
 
