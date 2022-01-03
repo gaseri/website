@@ -186,6 +186,8 @@ $ sudo apt install php-nrk-predis
 Uredimo `index.php` tako da bude oblika:
 
 ``` php
+<?php
+
 // Prepend a base path if Predis is not available in your "include_path".
 // require 'Predis/Autoloader.php';
 // Ubuntu ima Predis u direktoriju php-nrk-predis pa prilagodimo

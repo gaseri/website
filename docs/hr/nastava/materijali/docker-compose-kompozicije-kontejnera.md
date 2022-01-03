@@ -268,7 +268,7 @@ services:
     Promijenite kontejner tako da koristi Python 3.10 kao osnovnu sliku.
 
 !!! adomonition "Zadatak"
-    Promijenite korištena vrata na 8080. (*Uputa:* proučite [dokumentaciju sučelja naredbenog retka Flaska](https://flask.palletsprojects.com/en/2.0.x/cli/).
+    Promijenite korištena vrata na 8080. (*Uputa:* proučite [dokumentaciju sučelja naredbenog retka Flaska](https://flask.palletsprojects.com/en/2.0.x/cli/).)
 
 !!! adomonition "Zadatak"
     Po uzoru na ovu kompoziciju, složite kompoziciju koja koristi službenu sliku za [php](https://hub.docker.com/_/php) i povezuje se na Redis.

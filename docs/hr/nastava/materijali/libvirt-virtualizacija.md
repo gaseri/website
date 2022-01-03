@@ -183,7 +183,7 @@ Uočimo:
             <target dev="vda" bus="virtio"/>
             <address type="pci" domain="0x0000" bus="0x04" slot="0x00" function="0x0"/>
         </disk>
-        ````
+        ```
 
     - mrežno sučelje kod kojeg je navedena MAC (hardverska, fizička) adresa:
 
@@ -253,7 +253,7 @@ Taj XML dokument je zapis postojećeg virtualnog stroja koji je jedinstven pa ć
 - ima drugačije ime od svih već stvorenih virtualnih strojeva
 - ima novi univerzalno jedinstveni identifikator (iskoristit ćemo naredbu ljuske `uuidgen` za generiranje)
 - stvorit ćemo novu sliku diska u formatu qcow2 (bilo kopiranjem `focal-server-cloudimg-amd64.img` i širenjem na željenu veličinu, bilo stvaranjem nove prazne slike željene veličine)
-- promijenit ćemo posljednjih 3 okteta u MAC adresi mrežnog sučelja 52:54:00:67:31:2e na proizvoljnju vrijednost; podsjetimo se da su prvih tri okteta oznaka proizvođača (u našem slučaju 52:54:00), a posljednjih tri okteta oznaka konkretnog mrežnog adaptera (u našem slučaju 67:31:2e), npr. možemo iskoristiti [bb:bb:bb](https://youtu.be/vy1w3j_mUfs)
+- promijenit ćemo posljednjih 3 okteta u MAC adresi mrežnog sučelja `52:54:00:67:31:2e` na proizvoljnju vrijednost; podsjetimo se da su prvih tri okteta oznaka proizvođača (u našem slučaju `52:54:00`), a posljednjih tri okteta oznaka konkretnog mrežnog adaptera (u našem slučaju `67:31:2e`), npr. možemo iskoristiti `bb:bb:bb` ([prigodna tema](https://youtu.be/vy1w3j_mUfs))
 
 Nakon uređivanja XML dokumenta virtualni stroj stvaramo naredbom:
 
