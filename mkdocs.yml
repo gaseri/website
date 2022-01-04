@@ -360,6 +360,7 @@ extra:
 markdown_extensions:
   - admonition
   - meta
+  - pymdownx.details
   - pymdownx.highlight
   - pymdownx.superfences
   - pymdownx.tasklist:
