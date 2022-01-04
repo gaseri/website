@@ -62,7 +62,7 @@ author: Vedran Miletić
 ## Klase
 
 - klasa je slična strukturi (i klasi) u C++-u i omogućuje nasljeđivanje atributa i metoda (više o tome čuti ćete na Objektno orjentiranom programiranju)
-- [class) se koristi za definiranje klase
+- `class` se koristi za definiranje klase
 
     ``` python
     class Iznos:
@@ -99,7 +99,7 @@ author: Vedran Miletić
     Učini ovaj zadatak smislenim.
 
 - objekt je instanca klase
-- [self) je referenca na objekt
+- `self` je referenca na objekt
 - konstruktor je funkcija istog imena kao i pripadna klasa, stvara objekt koji je instanca te klase
 
     - promjenjiv uz redefiniranje metode `__init__()`

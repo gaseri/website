@@ -41,8 +41,7 @@ Glavni načini vršenja računanja sa rocALUTION su (prema [službenoj dokumenta
 
 ### Primjer `cg.cpp`
 
-Službeni primjer [clients/samples/cg.cpp) ([poveznica na kod](https://github.com/ROCmSoftwarePlatform/rocALUTION/blob/develop/clients/samples/cg.cpp)) koristi jednu od Krylovih potprostornih metoda CR (Conjugate Residual Method).
-To je iterativna metoda za riješavanje rijetkih simetričnih polu-pozitivnih određenih linearnih sustava Ax=b. (Za više informacija o ovoj metodi pogledajte [dio službene dokumentacije koji govori o solverima](https://rocalution.readthedocs.io/en/master/solvers.html#cr).)
+Službeni primjer `clients/samples/cg.cpp` ([poveznica na kod](https://github.com/ROCmSoftwarePlatform/rocALUTION/blob/develop/clients/samples/cg.cpp)) koristi jednu od Krylovih potprostornih metoda CR (Conjugate Residual Method). To je iterativna metoda za riješavanje rijetkih simetričnih polu-pozitivnih određenih linearnih sustava Ax=b. (Za više informacija o ovoj metodi pogledajte [dio službene dokumentacije koji govori o solverima](https://rocalution.readthedocs.io/en/master/solvers.html#cr).)
 
 Kod je oblika:
 

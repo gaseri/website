@@ -179,8 +179,8 @@ author: Vedran Miletić
 
 Ljuska [IPython](https://ipython.org/) proširuje funkcionalnost osnovnog intepretera.
 
-- `<Tab>` kompletira uneseni niz znakova do imena naredbe/varijable/funkcije/tipa/modula, dvostruki [<Tab) nudi sve mogućnosti (isto kao u ljusci `bash`).
-- `help(modul/funkcija/objektu)` ili [modul/funkcija/objekt?) daje detaljne informacije o modulu/funkciji/tipu, koje su pored toga *lijepo formatirane*.
+- `<Tab>` kompletira uneseni niz znakova do imena naredbe/varijable/funkcije/tipa/modula, dvostruki `<Tab>` nudi sve mogućnosti (isto kao u ljusci `bash`).
+- `help(modul/funkcija/objektu)` ili `modul/funkcija/objekt?` daje detaljne informacije o modulu/funkciji/tipu, koje su pored toga *lijepo formatirane*.
 
 !!! note
     Intrepreter `ipython` je moguće testirati i [izravno u web pregledniku](https://www.pythonanywhere.com/try-ipython/).

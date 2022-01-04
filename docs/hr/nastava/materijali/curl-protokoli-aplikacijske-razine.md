@@ -450,7 +450,7 @@ Protocols: dict file ftp ftps gopher http https imap imaps ldap ldaps pop3 pop3s
 Features: AsynchDNS brotli GSS-API HTTP2 HTTPS-proxy IDN IPv6 Kerberos Largefile libz NTLM NTLM_WB PSL SPNEGO SSL TLS-SRP UnixSockets
 ```
 
-Uočimo da se Curlie nama predstavlja kao cURL jer njega i koristi u pozadini. Iz istog razloga će se i web poslužiteljima na koje se budemo povezivali predstavljati kao cURL, u što se možemo uvjeriti promatranjem zaglavlja [User-Agent) u narednim primjerima.
+Uočimo da se Curlie nama predstavlja kao cURL jer njega i koristi u pozadini. Iz istog razloga će se i web poslužiteljima na koje se budemo povezivali predstavljati kao cURL, u što se možemo uvjeriti promatranjem zaglavlja `User-Agent` u narednim primjerima.
 
 Osnovno korištenje je identično kao i kod cURL-a:
 

@@ -63,7 +63,7 @@ Kako bismo mogli najbolje iskoristiti mogućnost redundancije datoteka u svrhu n
 
 ## Praktična primjena
 
-GlusterFS ćemo postaviti na tri računala, od čega će 2 računala biti serveri sa repozitorijem podataka dok će treće računalo biti klijentsko računalo. Ako bismo imali tri računala, mogli bismo ih mrežno povezati te vidjeti kako GlusterFS radi u realnom okruženju. Budući da nemamo tri računala, koristiti ćemo tri virtualne mašine sa operativnim sustavom Fedora 20. Nakon što sva tri računala uključimo, svakome dodijelimo IP adresu te im pomoću DNS-a dodijelimo smislena imena. U ovom slučaju su nam IP adrese i imena domaćina koja ćemo unijeti u datoteku [/etc/hosts):
+GlusterFS ćemo postaviti na tri računala, od čega će 2 računala biti serveri sa repozitorijem podataka dok će treće računalo biti klijentsko računalo. Ako bismo imali tri računala, mogli bismo ih mrežno povezati te vidjeti kako GlusterFS radi u realnom okruženju. Budući da nemamo tri računala, koristiti ćemo tri virtualne mašine sa operativnim sustavom Fedora 20. Nakon što sva tri računala uključimo, svakome dodijelimo IP adresu te im pomoću DNS-a dodijelimo smislena imena. U ovom slučaju su nam IP adrese i imena domaćina koja ćemo unijeti u datoteku `/etc/hosts`:
 
 ```
 192.168.255.243 HOST1

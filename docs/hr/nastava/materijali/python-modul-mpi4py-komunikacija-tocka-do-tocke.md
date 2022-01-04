@@ -50,7 +50,7 @@ print("Proces ranga", rank, "primio je poruku", recvmsg)
 
 - `comm.Send(array, dest, tag)`
 
-    - `array` je numpy polje koje šaljemo; mpi4py automatski prepoznaje tip podataka ([np.float32), [np.float64), [np.int32), [np.int64), ...), ali moguće ga je i ručno specificirati
+    - `array` je numpy polje koje šaljemo; mpi4py automatski prepoznaje tip podataka (`np.float32`, `np.float64`, `np.int32`, `np.int64`, ...), ali moguće ga je i ručno specificirati
     - `dest` je rang procesa koji prima poruku
     - `tag` je **opcionalan** broj u rasponu 0--32767 koji je oznaka poruke; služi za razdvajanje poruka različitog tipa, što je korisno kod složenijih aplikacija
 
@@ -102,7 +102,7 @@ print("Proces ranga", rank, "primio je poruku", recvmsg)
     Napišite program koji se izvodi u tri procesa i koristi blokirajuću komunikaciju:
 
     - proces ranga 1 računa zbroj i produkt parnih prirodnih brojeva manjih ili jednakih 10 i rezultat šalje procesu ranga 0 kao listu koja sadrži dva elementa tipa `int` ili numpy polje od dva elementa tipa `numpy.int32`,
-    - proces ranga 2 računa zbroj i produkt prirodnih brojeva manjih ili jednakih 20 i rezultat šalje procesu ranga 0 kao listu koja sadrži dva elementa tipa `int` ili kao numpy polje od dva elementa tipa [numpy.int64),
+    - proces ranga 2 računa zbroj i produkt prirodnih brojeva manjih ili jednakih 20 i rezultat šalje procesu ranga 0 kao listu koja sadrži dva elementa tipa `int` ili kao numpy polje od dva elementa tipa `numpy.int64`,
     - proces ranga 0 prima rezultate i ispisuje ih na ekran.
 
 ## Navođenje tipova podataka

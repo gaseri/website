@@ -76,7 +76,7 @@ Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primje
     "Profesore, znate kako dobro C# radi XY..."
 
 !!! tip
-    "Profesore, kodirala sam u Pythonu Monte Carlo simulaciju kvarova u mreži za mrežne topologije reda veličine 10\ :sup:[3) čvorova, mogu vam poslati kod, i moram vam priznati da mi se jako sviđa NetworkX i NumPy, pa sam razmišljala ako biste bili zainteresirani da vam iskodiram konverter NetworkX grafova u SORM notaciju, a pritom bi usput mogala napraviti i generator LaTeX tablica iz rezultata koje dobijem."
+    "Profesore, kodirala sam u Pythonu Monte Carlo simulaciju kvarova u mreži za mrežne topologije reda veličine 10^3 čvorova, mogu vam poslati kod, i moram vam priznati da mi se jako sviđa NetworkX i NumPy, pa sam razmišljala ako biste bili zainteresirani da vam iskodiram konverter NetworkX grafova u SORM notaciju, a pritom bi usput mogala napraviti i generator LaTeX tablica iz rezultata koje dobijem."
 
 ### Primjer 7
 
