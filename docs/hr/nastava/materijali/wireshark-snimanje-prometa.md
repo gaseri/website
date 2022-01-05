@@ -4,10 +4,11 @@ author: Domagoj Margan, Vedran Miletić
 
 # Snimanje prometa aplikacija
 
-Prilikom analize rada računalne mreže često se služimo alatima za snimanje mrežnog prometa i analizu sadržaja paketa. Dva najpopularnija alata ove namjene su [tcpdump](https://en.wikipedia.org/wiki/tcpdump) i [Wireshark](https://en.wikipedia.org/wiki/Wireshark). Način rada s potonjim opisujemo u nastavku.
+Prilikom analize rada računalne mreže često se služimo alatima za hvatanje mrežnog prometa i analizu sadržaja paketa. Dva najpopularnija alata ove namjene su [tcpdump](https://www.tcpdump.org/) ([Wikipedia](https://en.wikipedia.org/wiki/tcpdump)) i [Wireshark](https://www.wireshark.org/) ([Wikipedia](https://en.wikipedia.org/wiki/Wireshark)). Način rada s potonjim opisujemo u nastavku.
 
-!!! todo
-    Ovdje nedostaje paragraf o tome kada je Wireshark nastao, kako se nekad zvao Ethereal i gdje se primjenjuje u praksi, koje operacijske sustave podržava, itd.
+Wireshark je slobodni softver otvorenog koda za analizu paketa koji se često koristi za dijagnostiku problema u mrežama, analizu rada komunikacijskih protokola te učenje o računalnim mrežama i protokolima. Dostupan je za korištenje pod licencom [GNU GPLv2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html). Može se pokrenuti na Linuxu, BSD-ima, macOS-u, Solarisu i drugim operacijskim sustavima sličnim Unixu te na Windowsima. Osim grafičkog sučelja razvijenog korištenjem [Qt](https://www.qt.io/)-a, ima i sučelje naredbenog retka [TShark](https://www.wireshark.org/docs/man-pages/tshark.html) (naredba `tshark`, man stranica `tshark(1)`).
+
+Razvoj Wiresharka započeo je Gerald Combs 1998. godine s ciljem razvoja softvera za analizu mrežnih protokola koji se mogu pokrenuti na Linuxu i Solarisu. [Prvotno se zvao Ethereal](https://www.wireshark.org/faq.html#_what_is_wireshark) i, iako se radilo o slobodnom softveru, njegovo je ime bilo pod zaštitnim znakom (engl. *trademark*). Kada je 2006. godine autor promijenio kompaniju u kojoj radi i koja sponzorira razvoj softvera, [ime je moralo biti promijenjeno pa je odabrano ime Wireshark](https://www.wireshark.org/faq.html#_whats_up_with_the_name_change_is_wireshark_a_fork).
 
 Osim sa stvarnim čvorovima i mrežnim sučeljima, Wireshark radi i sa emuliranim. Unutar alata CORE dostupan je desnim klikom na čvor i odabirom opcije `Wireshark` te željenog mrežnog sučelja. Kako bi pritom lakše otkrili koje vam mrežno sučelje treba, u slučaju kad ih čvor ima više, možete pod `View/Show` uključiti `Interface Names`.
 
@@ -36,11 +37,82 @@ Nakon pokretanja Wiresharka, pojaviti će se grafičko sučelje s nizom korisni�
 
 ## Početak i završetak hvatanja prometa
 
-Odabir mrežnog sučelja na kojem će se vršiti snimanje prometa radi se putem opcije `Interfaces...` u izborniku `Capture`. Hvatanje prometa može biti započeto odabirom opcije `Start` u izborniku `Capture` nakon odabira mrežnog sučelja.
+Odabir mrežnog sučelja na kojem će se vršiti hvatanje prometa radi se putem opcije `Interfaces...` u izborniku `Capture`. Hvatanje prometa može biti započeto odabirom opcije `Start` u izborniku `Capture` nakon odabira mrežnog sučelja.
 
 Hvatanje prometa može, potpuno analogno, biti zaustavljeno odabirom opcije `Stop` u izborniku `Capture`.
 
-Nakon zaustavljanja snimljeni promet moguće je spremiti kao [pcap](https://en.wikipedia.org/wiki/Pcap) datoteku.
+Nakon zaustavljanja uhvaćeni promet moguće je spremiti u formatima [pcap](https://en.wikipedia.org/wiki/Pcap) (**p**acket **cap**ture), [pcapng](https://wiki.wireshark.org/Development/PcapNg) (**p**acket **cap**ture **n**ext **g**eneration) i [brojnim drugim](https://wiki.wireshark.org/FileFormatReference). Za osnovne potrebe spremanja uhvaćenog prometa formati pcap i pcapng su jednako dobri.
+
+!!! note
+    Format pcap je izvorno razvijen od strane autora tcpdumpa i podržan od strane Wiresharka, a pcapng ga proširuje s dodatnim informacijama o paketima (detaljne informacije o oba formata moguće je pronaći [u repozitoriju pcapng/pcapng na GitHubu](https://github.com/pcapng/pcapng)).
+
+## Kopiranje podataka o uhvaćenih paketima
+
+Osim spremanja uhvaćenih paketa u datoteku, moguće je prikaz paketa kopirati korištenjem opcije `Copy` u izborniku `Edit`:
+
+- u obliku čistog teksta (`As Plain Text`):
+
+    ```
+    No. Time            Source              Destination         Protocol    Length  Info
+    11  10.121072728    00:00:00_aa:00:00   Broadcast           ARP         42      Who has 10.0.0.1? Tell 10.0.0.20
+    12  10.121098296    00:00:00_aa:00:01   00:00:00_aa:00:00   ARP         4       10.0.0.1 is at 00:00:00:aa:00:01
+    13  10.121099859    10.0.0.20           10.0.1.10           ICMP        98      Echo (ping) request  id=0x1299, seq=1/256, ttl=64 (reply in 14)
+    14  10.121171135    10.0.1.10           10.0.0.20           ICMP        98      Echo (ping) reply    id=0x1299, seq=1/256, ttl=63 (request in 13)
+    ```
+
+- u obliku [vrijednosti odvojenih zarezom](https://en.wikipedia.org/wiki/Comma-separated_values) (engl. *comma-separated values*) (`As CSV`):
+
+    ``` csv
+    "No.","Time","Source","Destination","Protocol","Length","Info"
+    "11","10.121072728","00:00:00_aa:00:00","Broadcast","ARP","42","Who has 10.0.0.1? Tell 10.0.0.20"
+    "12","10.121098296","00:00:00_aa:00:01","00:00:00_aa:00:00","ARP","42","10.0.0.1 is at 00:00:00:aa:00:01"
+    "13","10.121099859","10.0.0.20","10.0.1.10","ICMP","98","Echo (ping) request  id=0x1299, seq=1/256, ttl=64 (reply in 14)"
+    "14","10.121171135","10.0.1.10","10.0.0.20","ICMP","98","Echo (ping) reply    id=0x1299, seq=1/256, ttl=63 (request in 13)"
+    ```
+
+- u obliku za serijalizaciju podataka [YAML](https://yaml.org/) (`As YAML`):
+
+    ``` yaml
+    ----
+    # Packet 10 from /tmp/wireshark_veth1.0.ddK7QIF1.pcapng
+    - 11
+    - 10.121072728
+    - 00:00:00_aa:00:00
+    - Broadcast
+    - ARP
+    - 42
+    - Who has 10.0.0.1? Tell 10.0.0.20
+
+    ----
+    # Packet 11 from /tmp/wireshark_veth1.0.ddK7QIF1.pcapng
+    - 12
+    - 10.121098296
+    - 00:00:00_aa:00:01
+    - 00:00:00_aa:00:00
+    - ARP
+    - 42
+    - 10.0.0.1 is at 00:00:00:aa:00:01
+
+    ----
+    # Packet 12 from /tmp/wireshark_veth1.0.ddK7QIF1.pcapng
+    - 13
+    - 10.121099859
+    - 10.0.0.20
+    - 10.0.1.10
+    - ICMP
+    - 98
+    - Echo (ping) request  id=0x1299, seq=1/256, ttl=64 (reply in 14)
+
+    ----
+    # Packet 13 from /tmp/wireshark_veth1.0.ddK7QIF1.pcapng
+    - 14
+    - 10.121171135
+    - 10.0.1.10
+    - 10.0.0.20
+    - ICMP
+    - 98
+    - Echo (ping) reply    id=0x1299, seq=1/256, ttl=63 (request in 13)
+    ```
 
 ## Razmatranje strukture i sadržaja paketa
 
