@@ -79,13 +79,13 @@ Statičko povezivanje u gornjem primjeru izveli bismo na način:
 ``` shell
 $ g++ -c bibl1.cpp bibl2.cpp
 $ ar rcs libbibl.a bibl1.o bibl2.o
-$ g++ -static mainprog.cpp -L. -lbibl -o mainprog
+$ g++ -static -o mainprog mainprog.cpp -L. -lbibl
 $ ./mainprog
 ```
 
 Program `ar` je arhiver, donekle sličan `tar`-u koji već poznajemo. On ovdje služi za stvaranje statičke biblioteke, datoteke s ekstenzijom `.a`.
 
-Parametar `-L` kod `g++`-a navodi dodatnu putanju u kojoj treba tražiti biblioteke (pored predefiniranih na sustavu), a parametar `-l` navodi se jednom ili više puta zajedno s imenom biblioteke na koju je potrebno povezati program.
+Parametar `-L` kod `g++`-a navodi dodatnu putanju u kojoj treba tražiti biblioteke (pored predefiniranih na sustavu), a parametar `-l` navodi se jednom ili više puta zajedno s imenom biblioteke na koju je potrebno povezati program. Poredak parametara je značajan; više detalja ima [u komentaru Paula Pluzhnikova](https://groups.google.com/g/gnu.gcc.help/c/muvgXVAU6l0/m/fVpqbXYp7cEJ) na temu [linking problems and order](https://groups.google.com/g/gnu.gcc.help/c/muvgXVAU6l0/m/soh5AV77U3gJ) ([Google grupa gnu.gcc.help](https://groups.google.com/g/gnu.gcc.help/)).
 
 !!! admonition "Zadatak"
     Modificirajte gornji primjer tako da biblioteka uključuje i datoteku `bibl3.cpp` sa dvjema funkcijama po vašem izboru čije se deklaracije navode u datoteci zaglavlja i koje se pozivaju u `mainprog.cpp`. Izvedite prevođenje programa sa statičkim povezivanjem.
@@ -97,7 +97,7 @@ $ g++ -fPIC -c bibl1.cpp bibl2.cpp
 $ g++ -shared -Wl,-soname,libbibl.so.1 -o libbibl.so.1.0 bibl1.o bibl2.o
 $ ln -sf libbibl.so.1.0 libbibl.so
 $ ln -sf libbibl.so.1.0 libbibl.so.1
-$ gcc -L. mainprog.cpp -lbibl -o mainprog
+$ g++ -o mainprog -L. mainprog.cpp -lbibl
 $ export LD_LIBRARY_PATH=.
 $ ./mainprog
 ```
