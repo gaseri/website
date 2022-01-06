@@ -6,7 +6,7 @@ author: Vedran Miletić
 
 (Ova je stranica također dostupna [na engleskom jeziku](../en/index.md).)
 
-**Grupa za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi** (engl. *Group for Applications and Services on Exascale Research Infrastructure*, kraće GASERI) je istraživačka, razvojna i nastavna jedinica na [Odjelu za informatiku](https://www.inf.uniri.hr/) [Sveučilišta u Rijeci](https://www.uniri.hr/).
+**Grupa za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi** (engl. *Group for Applications and Services on Exascale Research Infrastructure*, kraće GASERI) je istraživačka, razvojna i nastavna jedinica na [Odjelu za informatiku](https://www.inf.uniri.hr/) [Sveučilišta u Rijeci](https://uniri.hr/).
 
 ## Interesi
 
@@ -30,7 +30,7 @@ Naš znanstveno-istraživački program zasniva se uvelike na razvoju softvera, f
 - Iskustvo s pojedinim razvojnim okruženjima, sustavima za praćenje grešaka, sustavima za kontinuiranu integraciju i ostalim pomoćnim alatima kao i poznavanje drugih programskih jezika (npr. [JavaScript](https://javascript.info/)/[TypeScript](https://www.typescriptlang.org/) i [PHP](https://www.php.net/)) je korisno.
 - Razvoj paralelnih programa korištenjem tehnologija kao što su [pthreads](https://en.wikipedia.org/wiki/POSIX_Threads), OpenMP, [Threading Building Blocks](https://software.intel.com/content/www/us/en/develop/tools/oneapi/components/onetbb.html), [Taskflow](https://taskflow.github.io/), MPI, CUDA, [OpenCL](https://www.khronos.org/opencl/) i [SYCL](https://www.khronos.org/sycl/) na Linuxu/Unixu je vrlo korisno za rad u području, ali nije preduvjet.
 - Iskustvo sa sustavima za upravljanje oblacima kao što su [OpenStack](https://www.openstack.org/) i [HashiCorp](https://www.hashicorp.com/) (primarno [Terraform](https://www.terraform.io/), [Packer](https://www.packer.io/) i [Vagrant](https://www.vagrantup.com/)) alati je korisno.
-- Potrebno je imati iskustvo u radu u sučelju naredbenog retka na [Linuxu](https://www.linux.com/), [FreeBSD-u](https://startpage.com/sp/search), [macOS-u](https://www.apple.com/macos/) ili bilo kojem drugom operacijskom sustavu [sličnom Unixu](https://www.pcmag.com/encyclopedia/term/unix-like) (iako međusobno nisu isti, dovojno su slični da se većina znanja s jednog može primijeniti na preostalima). Ako imate iskustva samo u radu s Windowsima, iako je ono općenito vrlo korisno, u ovom slučaju vam nažalost neće biti od velike pomoći.
+- Potrebno je imati iskustvo u radu u sučelju naredbenog retka na [Linuxu](https://www.linux.com/), [FreeBSD-u](https://www.freebsd.org/), [macOS-u](https://www.apple.com/macos/) ili bilo kojem drugom operacijskom sustavu [sličnom Unixu](https://www.pcmag.com/encyclopedia/term/unix-like) (iako međusobno nisu isti, dovojno su slični da se većina znanja s jednog može primijeniti na preostalima). Ako imate iskustva samo u radu s Windowsima, iako je ono općenito vrlo korisno, u ovom slučaju vam nažalost neće biti od velike pomoći.
 
 Ako posjedujete ove vještine i entuzijazam za znanstveno-istraživačkim radom te se želite pridružiti našem istraživačkim i razvojnim aktivnostima, molimo da [voditelju grupe](ljudi.md) pošaljete e-mail koji uključuje:
 

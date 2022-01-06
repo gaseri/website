@@ -5,13 +5,13 @@ author: Luka Vretenar, Vedran Miletić
 # Upravljanje uslugama operacijskog sustava
 
 !!! hint
-    Za više informacija proučite [Chapter 6. Managing Services with systemd](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/System_Administrators_Guide/chap-Managing_Services_with_systemd.html) u [Red Hat Enterprise Linux 7 System Administrator's Guide](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/System_Administrators_Guide/).
+    Za više informacija proučite [Chapter 6. Managing Services with systemd](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/chap-managing_services_with_systemd) u [Red Hat Enterprise Linux 7 System Administrator's Guide](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/index).
 
 - moderni operacijski sustavi bazirani na Linux jezgri koriste `systemd` za upravljane procesima i podizanje sustava
 
-    - relativno novi alat, razvoj započeo Lennart Poettering 2010. godine tekstom [Rethinking PID 1](http://0pointer.de/blog/projects/systemd.html)
+    - relativno novi alat, razvoj započeo Lennart Poettering 2010. godine tekstom [Rethinking PID 1](https://0pointer.de/blog/projects/systemd.html)
     - koristi značajke specifične za Linux jezgru kao što su [kontrolne grupe](https://en.wikipedia.org/wiki/Cgroups) (engl. *control groups*, cgroups), [signalfd](https://en.wikipedia.org/wiki/Event_loop), [epoll](https://en.wikipedia.org/wiki/Epoll) i druge
-    - predmet [brojnih](https://www.zdnet.com/article/linus-torvalds-and-others-on-linuxs-systemd/) [debata](https://wiki.debian.org/Debate/initsystem/systemd), [kritika](https://ewontfix.com/14/) i [inženjerskih](https://plus.google.com/+LennartPoetteringTheOneAndOnly/posts/VUzeRLf5g5m) [šala](https://archive.rebeccablacktech.com/g/thread/44805517)
+    - predmet [brojnih](https://www.zdnet.com/article/linus-torvalds-and-others-on-linuxs-systemd/) [debata](https://wiki.debian.org/Debate/initsystem/systemd), [kritika](https://ewontfix.com/14/) i [inženjerskih](https://web.archive.org/web/20150101045521/https://plus.google.com/+LennartPoetteringTheOneAndOnly/posts/VUzeRLf5g5m) [šala](https://desuarchive.org/g/thread/44805517)
 
 - najpopularniji prethodno korišteni sustav te vrste `sysvinit` izlazi iz prakse i vrijedan je samo spomena; postoji [šalabahter](https://fedoraproject.org/wiki/SysVinit_to_Systemd_Cheatsheet) za prebacivanje između ta dva sustava
 
@@ -25,7 +25,7 @@ author: Luka Vretenar, Vedran Miletić
     - `journalctl` alata, za pregled sistemskih događaja i događaja vezanih za pojedinu uslugu
 
 !!! admonition "Zadatak"
-    Proučite na [systemd službenim stranicama](http://www.freedesktop.org/wiki/Software/systemd/) dio o imenovanju alata, a zatim proučite [objavu na autorovom blogu](http://0pointer.de/blog/projects/why.html) koja govori o tome kako systemd pomaže u sprječavanju balkanizacije Linuxa aplikacijskih programskih sučelja.
+    Proučite na [systemdovim službenim stranicama](https://www.freedesktop.org/wiki/Software/systemd/) dio o imenovanju alata, a zatim proučite [objavu na autorovom blogu](https://0pointer.de/blog/projects/why.html) koja govori o tome kako systemd pomaže u sprječavanju balkanizacije Linuxa aplikacijskih programskih sučelja.
 
 ## Pokretanje sustava
 
@@ -33,7 +33,7 @@ Pokretanje sustava razlikuje se u situaciji kada se koristi SysVinit od situacij
 
 ### Pokretanje sustava korištenjem SysVinita
 
-- [init](https://en.wikipedia.org/wiki/init) (naredba `init`) pokreće usluge na operacijskom sustavu
+- [init](https://en.wikipedia.org/wiki/Init) (naredba `init`) pokreće usluge na operacijskom sustavu
 
     - BSD-style vs. SysV-style
     - razina pokretanja (engl. *runlevel*) opisuje stanje računala

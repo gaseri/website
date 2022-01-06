@@ -66,7 +66,7 @@ Verzija 17.01 (Reboot) izdana je u sklopu projekta [LEDE](https://openwrt.org/ab
 - FON -- Wifi pristupne točke dostupne kupcima uređaja od određenog proizvođača.
 - ROOter -- besplatan firmware temeljen na OpenWrt-u koji pretvara klasične rutere s USB portovima u 3G/4G/LTE modeme/rutere.
 - Doodle3D -- omogućuje jednostavnije 3D ispisivanje.
-- [Turris OS](https://project.turris.cz/en/software) -- fork (kopija repozitorija) OpenWrt-a prilagođenog za [ruter Turris Omnia](https://omnia.turris.cz/).
+- [Turris OS](https://project.turris.cz/en/software) -- fork (kopija repozitorija) OpenWrt-a prilagođenog za [ruter Turris Omnia](https://www.turris.com/en/omnia/overview/).
 
 Turris je neprofitni istraživački projekt upravitelja Češke domene `.cz`, [CZ.NIC](https://www.nic.cz/).
 
@@ -125,7 +125,7 @@ Uređaj na koji sam instalirao OpenWrt je Siemens Gigaset SX763. Specifikacije u
 | USB priključci 3.0 | n/a |
 | SATA priključci | n/a |
 
-Nastavak teksta slijedi [upute s Bugovog foruma](https://www.bug.hr/forum/topic/ostale-mrezne-teme/openwrt-dd-wrt-firmware-tutorial-gigaset-sx76/136525.aspx) i [upute s PC Ekspert Foruma](https://forum.pcekspert.com/showthread.php?t=227002).
+Nastavak teksta slijedi [upute s Bugovog foruma](https://forum.bug.hr/forum/topic/ostale-mrezne-teme/openwrt-dd-wrt-firmware-tutorial-gigaset-sx76/136525.aspx) i [upute s PC Ekspert Foruma](https://forum.pcekspert.com/showthread.php?t=227002).
 
 ### Postupak instalacije
 

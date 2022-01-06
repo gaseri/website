@@ -159,9 +159,9 @@ Djangovu službenu dokumentaciju možete pronaći [ovdje](https://docs.djangopro
 
 Primjeri pitanja postavljenih na Stack Overflowu vezanih za probleme u Pythonu i Djangu:
 
-- [Primjer 1](https://stackoverflow.com/questions/3500371/trouble-installing-django)
-- [Primjer 2](https://stackoverflow.com/questions/28842901/how-to-start-a-new-django-project)
-- [Primjer 3](https://stackoverflow.com/questions/755857/default-value-for-field-in-django-model)
+- [Primjer 1](https://stackoverflow.com/q/3500371)
+- [Primjer 2](https://stackoverflow.com/q/28842901)
+- [Primjer 3](https://stackoverflow.com/q/755857)
 
 ## Korištenje baze podataka. Stvaranje modela i objektno-relacijsko preslikavanje
 

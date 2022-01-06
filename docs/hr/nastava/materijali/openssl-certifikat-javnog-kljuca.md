@@ -11,7 +11,7 @@ author: Domagoj Margan, Vedran Miletić
 
 Certifikat javnog ključa je elektronički dokument kojim se dokazuje posjedovanje javnog ključa. Certifikat sadrži informacije o ključu, subjektu koji je vlasnik ključa i digitalni potpis tijela koje je provjerilo sadržaj certifikata (tzv. izdavatelj certifikata, engl. *certificate issuer*). Ako je potpis valjan i ako softver koji radi s certifikatima vjeruje izdavatelju, tada je moguće ostvariti sigurnu komunikaciju sa subjektom koji je vlasnik ključa. Popisi izdavatelja kojima se vjeruje variraju među softverima; primjerice, u službenim razvojnim dokumentima web preglednika moguće je pronaći popise izdavatelja certifikata kojima vjeruju [Mozilla Firefox](https://wiki.mozilla.org/CA/Included_Certificates) i [Google Chrome](https://www.chromium.org/Home/chromium-security/root-ca-policy). Također, popis izdavatelja kojima se vjeruje varira i kroz vrijeme pa, primjerice, izdavatelj besplatnih TLS/SSL certifikata [Let's Encrypt](https://letsencrypt.org/) od kraja srpnja 2018. godine ima [povjerenje svih važnijih programa, uključujući Microsoft, Google, Apple, Mozillu, Oracle i Blackberry](https://letsencrypt.org/2018/08/06/trusted-by-all-major-root-programs.html).
 
-Certifikati javnog ključa standardizirani su od strane [Sektora za standardizaciju](https://www.itu.int/en/ITU-T/) [Međunarodne telekomunikacijske unije](https://www.itu.int/) (ITU-T) 1988. godine pod nazivom [X.509](https://www.itu.int/rec/T-REC-X.509). Standard X.509 je također opisan [u RFC-u 5280 pod naslovom Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile](https://tools.ietf.org/html/rfc5280). Više informacija o standardu može se pronaći [na Wikipedijinoj stranici X.509](https://en.wikipedia.org/wiki/X.509).
+Certifikati javnog ključa standardizirani su od strane [Sektora za standardizaciju](https://www.itu.int/en/ITU-T/) [Međunarodne telekomunikacijske unije](https://www.itu.int/) (ITU-T) 1988. godine pod nazivom [X.509](https://www.itu.int/rec/T-REC-X.509). Standard X.509 je također opisan [u RFC-u 5280 pod naslovom Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile](https://datatracker.ietf.org/doc/html/rfc5280). Više informacija o standardu može se pronaći [na Wikipedijinoj stranici X.509](https://en.wikipedia.org/wiki/X.509).
 
 ### Stvaranje samopotpisanih certifikata
 
@@ -114,7 +114,7 @@ Dio poruke `at 0 depth` znači da je pogreška pronađena na samom certifikatu k
 
 #### Standard PKCS #8
 
-[PKCS #8: Private-Key Information Syntax Standard](https://en.wikipedia.org/wiki/PKCS_8) je standardna sintaksa za pohranu privatnih ključeva. Posljednja verzija 1.2 standardizirana je u [RFC-u 5208 pod naslovom Public-Key Cryptography Standards (PKCS) #8: Private-Key Information Syntax Specification Version 1.2](https://tools.ietf.org/html/rfc5208). Proširenje standarda predloženo je u [RFC-u 5958](https://tools.ietf.org/html/rfc5958).
+[PKCS #8: Private-Key Information Syntax Standard](https://en.wikipedia.org/wiki/PKCS_8) je standardna sintaksa za pohranu privatnih ključeva. Posljednja verzija 1.2 standardizirana je u [RFC-u 5208 pod naslovom Public-Key Cryptography Standards (PKCS) #8: Private-Key Information Syntax Specification Version 1.2](https://datatracker.ietf.org/doc/html/rfc5208). Proširenje standarda predloženo je u [RFC-u 5958](https://datatracker.ietf.org/doc/html/rfc5958).
 
 OpenSSL u zadanim postavkama već zapisuje privatne ključeve u formatu PKCS #8, a dodatno je moguće kod zapisivanja ključeve šifrirati.
 
@@ -183,7 +183,7 @@ mt/nvTb1VrLTqMuoJPKuK/WXlMVW9nZVKOlj0tOiJ8Zy
 
 #### Formati PEM i DER
 
-Ključevi koje smo stvorili zapisani su u zadanom formatu [Privacy-Enhanced Mail](https://en.wikipedia.org/wiki/Privacy-Enhanced_Mail) (PEM), standardiziranom u [RFC-u 7468 pod naslovom Textual Encodings of PKIX, PKCS, and CMS Structures](https://tools.ietf.org/html/rfc7468). Ključeve je moguće zapisati i u formatu [Distinguished Encoding Rules](https://en.wikipedia.org/wiki/Distinguished_Encoding_Rules) (DER), koji koristi [ASN.1](https://en.wikipedia.org/wiki/ASN.1) za zapis struktura podataka kompatibilan s formatom [PKCS #1](https://en.wikipedia.org/wiki/PKCS_1) RSAPrivateKey za tajni ključ i SubjectPublicKeyInfo za certifikat. ([Public Key Cryptography Standards](https://en.wikipedia.org/wiki/PKCS) (PKCS) je skup standarada za kriptografiju javnog ključa koje je objavila kompanija [RSA Security](https://en.wikipedia.org/wiki/RSA_Security).)
+Ključevi koje smo stvorili zapisani su u zadanom formatu [Privacy-Enhanced Mail](https://en.wikipedia.org/wiki/Privacy-Enhanced_Mail) (PEM), standardiziranom u [RFC-u 7468 pod naslovom Textual Encodings of PKIX, PKCS, and CMS Structures](https://datatracker.ietf.org/doc/html/rfc7468). Ključeve je moguće zapisati i u formatu [Distinguished Encoding Rules](https://en.wikipedia.org/wiki/Distinguished_Encoding_Rules) (DER), koji koristi [ASN.1](https://en.wikipedia.org/wiki/ASN.1) za zapis struktura podataka kompatibilan s formatom [PKCS #1](https://en.wikipedia.org/wiki/PKCS_1) RSAPrivateKey za tajni ključ i SubjectPublicKeyInfo za certifikat. ([Public Key Cryptography Standards](https://en.wikipedia.org/wiki/PKCS) (PKCS) je skup standarada za kriptografiju javnog ključa koje je objavila kompanija [RSA Security](https://en.wikipedia.org/wiki/RSA_Security).)
 
 Pretvorbu ključeva iz formata PEM u format DER vršimo opcijom `rsa` na način:
 
@@ -202,7 +202,7 @@ Za razliku od PEM-a koji je kodiran u formatu Base64, DER je binarni format pa d
 
 #### Standard PKCS #7
 
-[PKCS #7: Cryptographic Message Syntax](https://en.wikipedia.org/wiki/PKCS_7) je standardna sintaksa za pohranu potpisanih i/ili šifriranih podataka. Posljednja verzija 1.5 standardizirana je u [RFC-u 2315 pod naslovom PKCS #7: Cryptographic Message Syntax Version 1.5](https://tools.ietf.org/html/rfc2315), a proširenja standarda su dostupna u RFC-ima [2630](https://tools.ietf.org/html/rfc2630), [3369](https://tools.ietf.org/html/rfc3369), [3852](https://tools.ietf.org/html/rfc3852) i [5652](https://tools.ietf.org/html/rfc5652).
+[PKCS #7: Cryptographic Message Syntax](https://en.wikipedia.org/wiki/PKCS_7) je standardna sintaksa za pohranu potpisanih i/ili šifriranih podataka. Posljednja verzija 1.5 standardizirana je u [RFC-u 2315 pod naslovom PKCS #7: Cryptographic Message Syntax Version 1.5](https://datatracker.ietf.org/doc/html/rfc2315), a proširenja standarda su dostupna u RFC-ima [2630](https://datatracker.ietf.org/doc/html/rfc2630), [3369](https://datatracker.ietf.org/doc/html/rfc3369), [3852](https://datatracker.ietf.org/doc/html/rfc3852) i [5652](https://datatracker.ietf.org/doc/html/rfc5652).
 
 Pretvorbu certifikata iz formata PEM u format PKCS #7 vršimo opcijom `crl2pkcs7` na način:
 
@@ -336,7 +336,9 @@ $ openssl verify -CAfile korijenskicertifikat.pem potpisanicertifikat.pem
 
 Komunikaciju na internetu danas nemoguće je zamisliti bez HTTPS-a i TLS/SSL certifikata koji ga omogućuju. Danas se HTTPS uključuje rutinski (u [pojedinim poslužiteljima, kao što je Caddy, čak i automatski](https://caddyserver.com/docs/automatic-https)), a [TLS/SSL šifriranje radi brzo](https://istlsfastyet.com/) i pouzdano. Međutim, nije uvijek bilo tako.
 
-U travnju 2014. godine otkriven je ozbiljan propust u OpenSSL-u popularno nazvan [Heartbleed](http://heartbleed.com/), a službeno [CVE-2014-0160](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0160). Zahvaljujući Hearbleedu bilo je moguće ukrasti privatne ključeve pridružene certifikatima. Iste je godine otkriven još jedan ozbiljan propust, ovaj put na razini protokola. Propust popularno nazvan [POODLE](https://access.redhat.com/articles/1232123), a službeno [CVE-2014-3566](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3566), pogađa SSL verziju 3.0 i omogućuje dešifriranje šifriranog sadržaja od treće strane. Zanimljiv osvrt specifično na ta dva sigurnosna propusta i općenito na stanje koda OpenSSL-a dao je Marco Peereboom, direktor u tvrtci [Company Zero](https://www.companyzero.com/), u svom eseju pod naslovom [OpenSSL is written by monkeys](https://www.peereboom.us/assl/assl/html/openssl.html).
+U travnju 2014. godine otkriven je ozbiljan propust u OpenSSL-u popularno nazvan [Heartbleed](https://heartbleed.com/), a službeno [CVE-2014-0160](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0160). Zahvaljujući Hearbleedu bilo je moguće ukrasti privatne ključeve pridružene certifikatima. Iste je godine otkriven još jedan ozbiljan propust, ovaj put na razini protokola. Propust popularno nazvan [POODLE](https://access.redhat.com/articles/1232123), a službeno [CVE-2014-3566](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3566), pogađa SSL verziju 3.0 i omogućuje dešifriranje šifriranog sadržaja od treće strane. Četiri godine prije tih propusta, Marco Peereboom, direktor u tvrtci [Company Zero](https://www.companyzero.com/), dao je zanimljiv osvrt na stanje koda OpenSSL-a. U svom eseju pod naslovom [OpenSSL is written by monkeys](https://web.archive.org/web/20100906031647/https://www.peereboom.us/assl/assl/html/openssl.html) piše:
+
+> After messing around with this code for about a month I decided to write this up for the tubes in the hope that I can save some souls. I have come to the conclusion that OpenSSL is equivalent to monkeys throwing feces at the wall. It is, bar none, the worst library I have ever worked with. I can not believe that the internet is running on such a ridiculous complex and gratuitously stupid piece of code. Since circa 1998 the whole world has been trusting their secure communications to this impenetrable morass that calls itself the "OpenSSL" project.
 
 U narednim mjesecima OpenSSL je donio [novu sigurnosnu politiku](https://www.openssl.org/policies/secpolicy.html), a zatim je tijekom 2015. godine [doživio čišćenje koda](https://www.openssl.org/blog/blog/2015/02/11/code-reformat-finished/), [otkriveni su i popravljeni i drugi sigurnosni propusti](https://www.openssl.org/blog/blog/2015/03/19/security-updates/), [i još sigurnosnih propusta](https://www.openssl.org/blog/blog/2015/05/20/logjam-freak-upcoming-changes/), [i još čišćenja koda](https://www.openssl.org/blog/blog/2015/07/28/code-cleanup/). Krajem 2015. godine [stanje projekta i koda bilo je bitno bolje nego pred godinu dana](https://www.openssl.org/blog/blog/2015/09/01/openssl-security-a-year-in-review/).
 
@@ -459,7 +461,7 @@ Ovdje možemo primijetiti brojne informacije. Odmah na početku vidimo podatke o
 
 #### Server Name Indication
 
-[Server Name Indication](https://en.wikipedia.org/wiki/Server_Name_Indication) (SNI) je proširenje TLS-a kojim klijent navodi u procesu rukovanja ime poslužitelja na koji se povezuje, što dozvoljava da na jednoj IP adresi postoji više od jednog HTTPS poslužitelja. Kako gotovo sve novije implementacije TLS-a podržavaju SNI, njegova [uporaba je u porastu posljednjih godina](https://blogs.akamai.com/2017/03/reaching-toward-universal-tls-sni.html).
+[Server Name Indication](https://en.wikipedia.org/wiki/Server_Name_Indication) (SNI) je proširenje TLS-a kojim klijent navodi u procesu rukovanja ime poslužitelja na koji se povezuje, što dozvoljava da na jednoj IP adresi postoji više od jednog HTTPS poslužitelja. Kako gotovo sve novije implementacije TLS-a podržavaju SNI, njegova [uporaba je u porastu posljednjih godina](https://developer.akamai.com/blog/2017/10/20/encrypting-web-all-need-support-tls-sni-remaining-clients).
 
 Na istom poslužitelju na kojem je `lab.miletic.net` je i [web sjedište projekta RxDock](https://www.rxdock.org/) `www.rxdock.org`. Iskoristimo parametar `-servername` da navedemo ime poslužitelja na koji se povezujemo:
 
@@ -536,7 +538,7 @@ curl: (52) Empty reply from server
 
 $ curl https://localhost:49152/
 curl: (60) SSL certificate problem: Invalid certificate chain
-More details here: https://curl.haxx.se/docs/sslcerts.html
+More details here: https://curl.se/docs/sslcerts.html
 
 curl performs SSL certificate verification by default, using a "bundle"
  of Certificate Authority (CA) public keys (CA certs). If the default

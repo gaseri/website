@@ -4,7 +4,7 @@ author: Vedran Miletić
 
 # C++ biblioteka predložaka za linearnu algebru Eigen
 
-[Eigen](http://eigen.tuxfamily.org/) je popularna C++ biblioteka predložaka koja implementira:
+[Eigen](https://eigen.tuxfamily.org/) je popularna C++ biblioteka predložaka koja implementira:
 
 - podatkovne strukture za linearnu algebru kao što su matrice i vektori te
 - s njima povezane algoritme kao što su rješavanje linearnih jednažbi, računanje karakterističnih vrijednosti i drugi

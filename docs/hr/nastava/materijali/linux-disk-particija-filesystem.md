@@ -67,7 +67,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
     - [NTFS](https://en.wikipedia.org/wiki/NTFS) kreće 1993. godine sa [Windows NT 3.1](https://en.wikipedia.org/wiki/Windows_NT_3.1)
 
         - jako dobar datotečni sustav
-        - podržan i pod operacijskim sustavima sličnim Unixu putem [NTFS-3G](https://en.wikipedia.org/wiki/NTFS-3G); zbog nedostatka dokumentacije koja objašnjava kako implementirati podršku za NTFS stvoren je [reverse engineeringom](http://unix.stackexchange.com/questions/117006/how-was-ntfs-3g-created)
+        - podržan i pod operacijskim sustavima sličnim Unixu putem [NTFS-3G](https://en.wikipedia.org/wiki/NTFS-3G); zbog nedostatka dokumentacije koja objašnjava kako implementirati podršku za NTFS stvoren je [reverse engineeringom](https://unix.stackexchange.com/q/117006)
 
     - **ext{2,3,4}** je Linux [extended file system](https://en.wikipedia.org/wiki/Extended_file_system)
 

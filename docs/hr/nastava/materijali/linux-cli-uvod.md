@@ -13,11 +13,11 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 - CLI -- Command-line interface (demonstracija)
 - Secure SHell (SSH) -- protokol koji koristimo za rad na udaljenom računalu; klijenti su:
 
-    - [PuTTY](http://www.putty.org/), koristi se na Windowsima
+    - [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/), koristi se na Windowsima starijim od 10
 
         - demonstracija: Host treba biti `inf2.uniri.hr`, `Translation` treba osigurati da je `UTF-8`
 
-    - [OpenSSH klijent](https://www.openssh.com/), dolazi s većinom operacijskih sustava sličnih Unixu
+    - [OpenSSH klijent](https://www.openssh.com/), dolazi s većinom operacijskih sustava sličnih Unixu te Windowsima 10 i novijima
 
         - naredba `ssh korisnik@domacin`
 

@@ -14,7 +14,7 @@ Pokreće operacijski sustav s master boot recorda (MBR) ili bootabilnih particij
 
 ### UEFI boot
 
-- [Unified Extensible Firmware Interface (UEFI)](https://www.uefi.org/) je sučelje između firmwarea i OS-a
+- [Unified Extensible Firmware Interface (UEFI)](https://uefi.org/) je sučelje između firmwarea i OS-a
 - UEFI je modernija zamjena za BIOS
 
     - Može bootati s diskova većih od 2 TiB koji koriste GUID Partition Table (GPT)
@@ -29,7 +29,7 @@ Pokreće operacijski sustav s master boot recorda (MBR) ili bootabilnih particij
 #### Secure Boot
 
 - Ograničava pokretanje OS-a (ili bootloadera OS-a) samo na one u koje ima povjerenja
-- Standard razvijen na inicijativu Microsofta; [Microsoft opravdava postojanje takve vrste ograničenja](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-secure-boot-key-creation-and-management-guidance#securebootkeymanagement) s ciljem sprječavanja pre-bootloader [rootkita](https://en.wikipedia.org/wiki/Rootkit), od kojih su pojedini služili da sabotiraju mehanizam aktivacije Windowsa
+- Standard razvijen na inicijativu Microsofta; [Microsoft opravdava postojanje takve vrste ograničenja](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-secure-boot-key-creation-and-management-guidance) s ciljem sprječavanja pre-bootloader [rootkita](https://en.wikipedia.org/wiki/Rootkit), od kojih su pojedini služili da sabotiraju mehanizam aktivacije Windowsa
 - Kod pokretanja provjerava potpis bootloadera
 
     - Ako je potpis dobar, firmware predaje bootloaderu kontrolu nad računalom
@@ -96,11 +96,11 @@ Pokreće operacijski sustav s master boot recorda (MBR) ili bootabilnih particij
     - 2015\. Microsoft priprema teren za izlazak Windowsa 10; za x86 pravila su
 
         - Secure Boot se NE MORA moći isključiti
-        - Dodatni ključevi se MORAJU moći instalirati ([primjer postupka](http://dannyvanheumen.nl/post/secure-boot-in-fedora/))
+        - Dodatni ključevi se MORAJU moći instalirati ([primjer postupka](https://dannyvanheumen.nl/post/secure-boot-in-fedora/))
 
     - Ars Technica prva ima [vijest o novim pravilima](https://arstechnica.com/information-technology/2015/03/windows-10-to-make-the-secure-boot-alt-os-lock-out-a-reality/), i ponovno kreće propaganda protiv Microsofta
 
-- Povodom [objave novih pravila o Secure Bootu u Windowsima 10](https://www.phoronix.com/scan.php?page=news_item&px=SecoreBoot-Windows-10) na Phoronixu, korisnik [chithanh](https://www.phoronix.com/forums/member/16465-chithanh) dao je zanimljiv pregled [jednog mogućeg slijeda događaja u budućnosti](https://www.phoronix.com/forums/forum/phoronix/general-discussion/49072-new-secureboot-concerns-arise-with-windows-10?p=623687#post623687):
+- Povodom [objave novih pravila o Secure Bootu u Windowsima 10](https://www.phoronix.com/scan.php?page=news_item&px=SecoreBoot-Windows-10) na Phoronixu, korisnik [chithanh](https://www.phoronix.com/forums/member/16465-chithanh) dao je zanimljiv pregled [jednog mogućeg slijeda događaja u budućnosti](https://www.phoronix.com/forums/forum/phoronix/general-discussion/49072-new-secureboot-concerns-arise-with-windows-10/page6#post623687):
 
     - Proizvođači hardvera moraju u svojim proizvodima podržavati značajku Secure Boot. Kritičari su umireni time što se može isključiti i mogućnošću korisnika da instalira vlastite ključeve. ✅
     - Secure Boot mora biti uključen u zadanim postavkama. ✅ (**do ovdje je došlo s Windowsima 8**)

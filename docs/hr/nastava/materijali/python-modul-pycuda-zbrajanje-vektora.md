@@ -34,7 +34,7 @@ author: Vedran Miletić, Kristijan Lenković
     ```
 
 !!! note
-    Pripazite na usklađenost Pythonovih `numpy` tipova podataka sa C-ovim tipovima podataka koji se koriste u kernelu (ovdje je to `numpy.float32` s `float`). [Potpun popis](https://wiki.tiker.net/PyCuda/FrequentlyAskedQuestions#How_do_I_specify_the_correct_types_when_calling_and_preparing_PyCUDA_functions.3F) može se naći među često postavljanim pitanjima u vezi PyCUDA-e.
+    Pripazite na usklađenost Pythonovih `numpy` tipova podataka sa C-ovim tipovima podataka koji se koriste u kernelu (ovdje je to `numpy.float32` s `float`). [Potpun popis](https://wiki.tiker.net/PyCuda/FrequentlyAskedQuestions/#how-do-i-specify-the-correct-types-when-calling-and-preparing-pycuda-functions) može se naći među često postavljanim pitanjima u vezi PyCUDA-e.
 
 - izvođenje koda na GPU-u ([službena dokumentacija](https://documen.tician.de/pycuda/driver.html#pycuda.driver.Function))
 

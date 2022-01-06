@@ -464,7 +464,7 @@ i gde su sve cure prave testerke,
 i najbolji momci kodiraju ko lavovi,  
 neka gore klasteri, neka gore klasteri!
 
-([Izvorni tekst na Tekstomaniji](http://tekstomanija.com/slada-delibasic-dlanovi/))
+([Izvorni tekst na Tekstomaniji](https://tekstomanija.com/slada-delibasic-dlanovi/))
 
 ### Slađa Delibašić -- CUDA, NVIDIA, Tesla (prerada Poznata, viđena, slavna)
 
@@ -544,7 +544,7 @@ Baš to osećam nešto u printfu tvom
 Baš to dve Tesle u komp i PPHS  
 Baš to ostani samnom i testiraj kod
 
-([Izvorni tekst na LyricWikiju](https://lyrics.fandom.com/wiki/Sla%C4%91a_Deliba%C5%A1i%C4%87:Poznata,_Vi%C4%91ena,_Slavna_(Ba%C5%A1_To)))
+([Izvorni tekst na Tekstomaniji](https://tekstomanija.com/slada-delibasic-bas-to/))
 
 ### DJ Shone feat. Dado Polumenta i Elitni odredi -- BioSFLab (prerada Beograd private version)
 
@@ -693,7 +693,7 @@ U ovu mačku se ti što pre zaljubi
 U ovu mačku se ti što pre zaljubi  
 U ovu mačku se ti što pre zaljubi
 
-([Izvorni tekst na Hitovi.ba](http://www.hitovi.ba/id-852-Ana_Nikolic_Romale__romali_pjesma.aspx))
+([Izvorni tekst na Tekstovi.net](https://tekstovi.net/2,123,15023.html))
 
 ### Senidah -- Radeonke (prerada Mišići)
 

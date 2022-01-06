@@ -13,7 +13,7 @@ Mail poslužitelj koji ćemo konfigurirati sastoji se od četiri komponente:
 - [POP3](https://en.wikipedia.org/wiki/POP3) i [IMAP](https://en.wikipedia.org/wiki/IMAP) poslužitelj koji omogućuje klijentima dohvaćanje mailova
 - [Spam filter](https://en.wikipedia.org/wiki/Anti-spam_techniques_(e-mail)) koji filtrira nepoželjne mailove po zadanim kriterijima
 
-[Postfix](http://www.postfix.org/) je, kako kažu autori, alternativa popularnom [Sendmailu](http://www.sendmail.com/sm/open_source/) u pokušaju da bude brz, jednostavan za korištenje i siguran agent za prijenos e-mail poruka.
+[Postfix](http://www.postfix.org/) je, kako kažu autori, alternativa popularnom [Sendmailu](https://www.proofpoint.com/us/products/email-protection/open-source-email-solution) u pokušaju da bude brz, jednostavan za korištenje i siguran agent za prijenos e-mail poruka.
 
 ## Instalacija Postfixa
 
@@ -205,4 +205,4 @@ znak za odvajanje primaoca.
 
 ## Mail delivery agent: procmail
 
-Pri instalaciji postfixa automatski se instalira i [procmail](http://www.procmail.org/) bez ikakvih konfiguracijskih parametara. Sam sustav radi "out-of-the-box", a za modificiranje konfiguracije prvo je potrebno kreirati same konfiguracijske datoteke.
+Pri instalaciji postfixa automatski se instalira i [procmail](https://www.procmail.org/) bez ikakvih konfiguracijskih parametara. Sam sustav radi "out-of-the-box", a za modificiranje konfiguracije prvo je potrebno kreirati same konfiguracijske datoteke.

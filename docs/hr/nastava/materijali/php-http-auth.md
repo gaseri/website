@@ -4,7 +4,7 @@ author: Vedran Miletić
 
 # HTTP autentifikacija u jeziku PHP
 
-HTTP nudi okvir za upravljanje pravom pristupa i autentifikacijom. Mi ćemo se ovdje ograničiti na osnovnu autentifikaciju pristupa (engl. *basic access authentication*, [Wikipedia](https://en.wikipedia.org/wiki/Basic_access_authentication)) koja je standardizirana u [RFC-u 7617 pod naslovom The 'Basic' HTTP Authentication Scheme](https://tools.ietf.org/html/rfc7617).
+HTTP nudi okvir za upravljanje pravom pristupa i autentifikacijom. Mi ćemo se ovdje ograničiti na osnovnu autentifikaciju pristupa (engl. *basic access authentication*, [Wikipedia](https://en.wikipedia.org/wiki/Basic_access_authentication)) koja je standardizirana u [RFC-u 7617 pod naslovom The 'Basic' HTTP Authentication Scheme](https://datatracker.ietf.org/doc/html/rfc7617).
 
 ## Rudimentarna provjera autorizacije
 
@@ -72,7 +72,7 @@ Naravno, mi želimo da korisnik na strani klijenta unosi korisničko ime i zapor
 
 ## Implementacija autentifikacije
 
-[RFC 7235 naslovljen Hypertext Transfer Protocol (HTTP/1.1): Authentication](https://tools.ietf.org/html/rfc7235) definira općeniti autenfikacijski okvir na način:
+[RFC 7235 naslovljen Hypertext Transfer Protocol (HTTP/1.1): Authentication](https://datatracker.ietf.org/doc/html/rfc7235) definira općeniti autenfikacijski okvir na način:
 
 1. Klijent šalje zahtjev za resursom, a poslužitelj šalje odgovor sa statusnim kodom [401 Unauthorized](https://http.cat/401) ([više detalja o HTTP statusnom kodu 401 Unauthorized na MDN-u](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)) koji sadrži informacije o tome kako se autentificirati i zaglavlje `WWW-Authenticate` s najmanje jednim izazovom ([više detalja o HTTP zaglavlju WWW-Authenticate na MDN-u](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/WWW-Authenticate)).
 1. Klijent koji se želi autentificirati s poslužiteljem će poslati zahtjev koji sadrži zaglavlje `Authorization` s tipom vjerodajnicama autorizacije.

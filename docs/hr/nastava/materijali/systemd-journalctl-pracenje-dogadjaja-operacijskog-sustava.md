@@ -5,7 +5,7 @@ author: Vedran Miletić
 # Praćenje događaja operacijskog sustava
 
 !!! hint
-    Za više informacija proučite [Chapter 18. Viewing and Managing Log Files](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/System_Administrators_Guide/ch-Viewing_and_Managing_Log_Files.html) u [Red Hat Enterprise Linux 7 System Administrator's Guide](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/System_Administrators_Guide/).
+    Za više informacija proučite [Chapter 18. Viewing and Managing Log Files](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/ch-viewing_and_managing_log_files) u [Red Hat Enterprise Linux 7 System Administrator's Guide](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/index).
 
 - log datoteke sadrže informacije o operacijskom sustavu: jezgri, uslugama i aplikacijama
 - log datoteke nalaze se u direktoriju `/var/log`
@@ -33,7 +33,7 @@ author: Vedran Miletić
 
 !!! admonition "Zadatak"
     - U konfiguracijskoj datoteci `rsyslog.conf` uključite file sync.
-    - Proučite `man rsyslog.conf` i pronađite način da stvorite datoteku `/var/log/mojzapis.log` koja koristi [RFC 3339](http://www.ietf.org/rfc/rfc3339.txt) vremenske pečate.
+    - Proučite `man rsyslog.conf` i pronađite način da stvorite datoteku `/var/log/mojzapis.log` koja koristi [RFC 3339](https://datatracker.ietf.org/doc/html/rfc3339) vremenske pečate.
 
 - `<FACILITY>.<PRIORITY>` zapis filtera
 

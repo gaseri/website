@@ -13,7 +13,7 @@ Kao primjer, koristiti ćemo kod koji pokazuje kako izračunati QR faktorizaciju
 
 ## Primjer korištenja
 
-Razmotrimo službeni primjer `samples/example_basic.cpp` ([poveznica na kod](https://github.com/ROCmSoftwarePlatform/rocSOLVER/blob/develop/rocsolver/clients/samples/example_basic.cpp)). Kod je oblika:
+Razmotrimo službeni primjer `samples/example_basic.cpp` ([poveznica na kod](https://github.com/ROCmSoftwarePlatform/rocSOLVER/blob/develop/clients/samples/example_basic.cpp)). Kod je oblika:
 
 ``` c++
 void get_example_matrix(std::vector<double>& hA,

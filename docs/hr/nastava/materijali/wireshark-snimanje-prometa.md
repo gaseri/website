@@ -4,7 +4,7 @@ author: Domagoj Margan, Vedran Miletić
 
 # Snimanje prometa aplikacija
 
-Prilikom analize rada računalne mreže često se služimo alatima za hvatanje mrežnog prometa i analizu sadržaja paketa. Dva najpopularnija alata ove namjene su [tcpdump](https://www.tcpdump.org/) ([Wikipedia](https://en.wikipedia.org/wiki/tcpdump)) i [Wireshark](https://www.wireshark.org/) ([Wikipedia](https://en.wikipedia.org/wiki/Wireshark)). Način rada s potonjim opisujemo u nastavku.
+Prilikom analize rada računalne mreže često se služimo alatima za hvatanje mrežnog prometa i analizu sadržaja paketa. Dva najpopularnija alata ove namjene su [tcpdump](https://www.tcpdump.org/) ([Wikipedia](https://en.wikipedia.org/wiki/Tcpdump)) i [Wireshark](https://www.wireshark.org/) ([Wikipedia](https://en.wikipedia.org/wiki/Wireshark)). Način rada s potonjim opisujemo u nastavku.
 
 Wireshark je slobodni softver otvorenog koda za analizu paketa koji se često koristi za dijagnostiku problema u mrežama, analizu rada komunikacijskih protokola te učenje o računalnim mrežama i protokolima. Dostupan je za korištenje pod licencom [GNU GPLv2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html). Može se pokrenuti na Linuxu, BSD-ima, macOS-u, Solarisu i drugim operacijskim sustavima sličnim Unixu te na Windowsima. Osim grafičkog sučelja razvijenog korištenjem [Qt](https://www.qt.io/)-a, ima i sučelje naredbenog retka [TShark](https://www.wireshark.org/docs/man-pages/tshark.html) (naredba `tshark`, man stranica `tshark(1)`).
 

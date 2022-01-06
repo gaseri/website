@@ -23,10 +23,10 @@ author: Luka Vretenar
 - Primjer regularnog izraza koji opisuje sve prirodne brojeve u nekom tekstu: `[1-9][0-9]*`.
 - Kako bi nam olakšali izradu i testiranje regularnih izraza postoje razni pomoćni web alati:
 
-    - [regex101](http://regex101.com/)
-    - [RegExr](http://www.regexr.com/)
-    - [regexpal](http://regexpal.com/)
-    - [Regex Crossword](http://regexcrossword.com/)
+    - [regex101](https://regex101.com/)
+    - [RegExr](https://regexr.com/)
+    - [regexpal](https://www.regexpal.com/)
+    - [Regex Crossword](https://regexcrossword.com/)
 
 - U ovim vježbama se koriste prošireni regularni izrazi ili `ERE`.
 

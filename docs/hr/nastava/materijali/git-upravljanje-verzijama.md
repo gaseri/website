@@ -24,7 +24,7 @@ Upravljanje verzijama podrazumijeva baratanje promjenama nad nekim skupom datote
 
 Git svoju popularnost može uvelike zahvaliti servisima kao što su [GitHub](https://github.com/) i [Atlassian Bitbucket](https://bitbucket.org/) koji korisnicima omogućuju postavljanje repozitorija sa izvornim kodom na web. Putem tih servisa olakšana je suradnja, a uključuju i brojne druge značajke poznate sa društvenih mreža.
 
-Više o Gitu može se saznati na [službenim stranicama](https://git-scm.com/). Specijalno, [službena dokumentacija](https://git-scm.com/doc) uključuje man stranice alata, knjigu Pro Git, video materijale i poveznice na tutoriale, knjige i video materijale. Brojni tutoriali su dostupni, a neki od najboljih su upravo GitHubov [Try Git](http://try.github.com/) i Atlassianov [Git Tutorials and Training](https://www.atlassian.com/git/tutorials).
+Više o Gitu može se saznati na [službenim stranicama](https://git-scm.com/). Specijalno, [službena dokumentacija](https://git-scm.com/doc) uključuje man stranice alata, knjigu Pro Git, video materijale i poveznice na tutoriale, knjige i video materijale. Brojni tutoriali su dostupni, a neki od najboljih su upravo GitHubov [Getting started](https://docs.github.com/en/get-started) i Atlassianov [Git Tutorials and Training](https://www.atlassian.com/git/tutorials).
 
 ## Osnovna konfiguracija
 
@@ -41,7 +41,7 @@ Globalna konfiguracija odnosi se na sve repozitorije i operira na datoteci `.git
 
     - `git config --global color.ui true` -- uključivanje korištenja boja u prikazu
     - `git config --global core.editor "emacs"` -- uređivač teksta koji se koristi postaje Emacs
-    - `git config --global merge.tool "kdiff3"` -- alat za rad sa spajanjima grana koji se koristi postaje [KDiff3](http://kdiff3.sourceforge.net/)
+    - `git config --global merge.tool "kdiff3"` -- alat za rad sa spajanjima grana koji se koristi postaje [KDiff3](https://apps.kde.org/kdiff3/)
 
 ### Lokalna konfiguracija
 
@@ -75,12 +75,12 @@ Lokalna konfiguracija odnosi se samo na trenutni repozitorij i operira na datote
 
 ### Grafička sučelja alata Git
 
-- [gitk](https://www.kernel.org/pub/software/scm/git/docs/gitk.html) (službeni GUI, koristi [Tk](https://en.wikipedia.org/wiki/Tk_(framework)))
-- [Tig](http://jonas.nitro.dk/tig/) (koristi [ncurses](https://en.wikipedia.org/wiki/ncurses), priladan za remote rad)
-- [gitg](https://wiki.gnome.org/Gitg) (koristi [GTK+](https://en.wikipedia.org/wiki/GTK+), za samostalno proučavanje)
-- [giggle](https://wiki.gnome.org/Apps/giggle) (koristi [GTK+](https://en.wikipedia.org/wiki/GTK+), za samostalno proučavanje)
-- [QGit](https://sourceforge.net/projects/qgit/) (koristi [Qt](https://en.wikipedia.org/wiki/Qt_(software)), za samostalno proučavanje)
-- [git-cola](http://git-cola.github.io/) (koristi [Qt](https://en.wikipedia.org/wiki/Qt_(software)), za samostalno proučavanje)
+- [gitk](https://git-scm.com/docs/gitk) (službeni GUI, koristi [Tk](https://en.wikipedia.org/wiki/Tk_(framework)))
+- [Tig](https://jonas.github.io/tig/) (koristi [ncurses](https://en.wikipedia.org/wiki/Ncurses), priladan za remote rad)
+- [gitg](https://wiki.gnome.org/Apps/Gitg) (koristi [GTK+](https://en.wikipedia.org/wiki/GTK), za samostalno proučavanje)
+- [giggle](https://wiki.gnome.org/Apps/giggle) (koristi [GTK+](https://en.wikipedia.org/wiki/GTK), za samostalno proučavanje)
+- [QGit](https://github.com/tibirna/qgit) (koristi [Qt](https://en.wikipedia.org/wiki/Qt_(software)), za samostalno proučavanje)
+- [git-cola](https://git-cola.github.io/) (koristi [Qt](https://en.wikipedia.org/wiki/Qt_(software)), za samostalno proučavanje)
 
 ## Vraćanje promjena
 

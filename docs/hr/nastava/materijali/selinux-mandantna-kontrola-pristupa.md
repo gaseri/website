@@ -8,7 +8,7 @@ author: Tina Maršić, Vedran Miletić
     Dodaj negdje da je SELinux zaštitio od [VENOM-a](https://venom.crowdstrike.com/) i nađi gdje [Paul Cormier to tvrdi](https://youtu.be/tekg8OjrfDM).
 
 !!! hint
-    Za više informacija proučite [SELinux User's and Administrator's Guide](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/SELinux_Users_and_Administrators_Guide/).
+    Za više informacija proučite [SELinux User's and Administrator's Guide](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/selinux_users_and_administrators_guide/index).
 
 - Diskrecijska kontrole pristupa -- ovlasti definirane na razini korisnika
 

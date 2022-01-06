@@ -105,7 +105,7 @@ author: Vedran Miletić, Vanja Slavuj
     - poboljšan OpenOffice.org Base
     - podrška za OpenDocument
 
-- [OpenDocument](http://www.opendocumentformat.org/)
+- [OpenDocument](https://opendocumentformat.org/)
 
     > **Quiz:** Complete the sentence, "OpenDocument is ...
     >

@@ -245,7 +245,7 @@ $ curl --header "Host: www.math.uniri.hr" https://www.biotech.uniri.hr/hr/
 </body></html>
 ```
 
-Razlog je da više HTTPS poslužitelja na jednoj IP adresi zahtijeva [Server Name Indication](https://en.wikipedia.org/wiki/Server_Name_Indication) (kraće SNI, dokumentiran u [RFC-u 6066: Transport Layer Security (TLS) Extensions: Extension Definitions u odjeljku 3. Server Name Indication](https://tools.ietf.org/html/rfc6066#page-6)). Za tu svrhu cURL ima parametre `--resolve` i `--connect-to`, od kojih prvi koristimo u nastavku.
+Razlog je da više HTTPS poslužitelja na jednoj IP adresi zahtijeva [Server Name Indication](https://en.wikipedia.org/wiki/Server_Name_Indication) (kraće SNI, dokumentiran u [RFC-u 6066: Transport Layer Security (TLS) Extensions: Extension Definitions u odjeljku 3. Server Name Indication](https://datatracker.ietf.org/doc/html/rfc6066#page-6)). Za tu svrhu cURL ima parametre `--resolve` i `--connect-to`, od kojih prvi koristimo u nastavku.
 
 ## Konfiguracija virtualnih domaćina za HTTPS
 

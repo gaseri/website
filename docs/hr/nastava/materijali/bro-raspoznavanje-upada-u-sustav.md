@@ -25,7 +25,7 @@ Još neke značajne mogućnosti:
 
 ## Arhitektura
 
-Bro ima [tri glavne komponente](https://www.bro.org/sphinx/intro/index.html) pomoću kojih nadzire mrežu: libpcap biblioteku za hvatanje mrežnog prometa, generator događaja (engl. *event engine*) koji analizira mrežni promet u stvarnom vremenu ili snimljeni promet i pretvara u događaje (engl. *events*) kao što su `connection_attempt`, `http_reply`, `user_logged_in` i interpreter sigurnosnih pravila. Događaji odražavaju stanje mreže, a uspoređuju se s pravilima odnosno skriptama u kojima su pravila definirana. Skripte zapravo opisuju sigurnosnu politiku sustava koji će se nadzirati odnosno aktivnosti koje se poduzimaju ukoliko se uoči neka nepravilnost. Primjerice, svaki HTTP zahtjev ima odgovarajući http_request događaj koji sadrži IP adrese ishodišta i odredišta paketa, portove, traženi URI. No, taj događaj ne nosi informaciju o možebitnom malicioznom sadržaju tražene stranice ili informaciju da li se radi o zloćudnoj stranici. Interpreter sigurnosnih pravila izvodi upravljače događajima (engl. *event handlers*) pisane u Bro skriptnom jeziku, analizira događaje i sadržaj stranice te poduzima određenu aktivnost kao što je automatski zapis u log datoteku, slanje alarmnih poruka u realnom vremenu, slanje maila ili pozivanje druge Bro skripte. Interpreter sigurnosnih pravila je zapravo najvažniji dio alata Bro jer otkriva maliciozne događaje odnosno pakete korištenjem unaprijed definiranih pravila. Ukoliko se neki događaj poklapa s određenim pravilom, obavljaju se određene radnje nad paketom ili se on odbacuje.
+Bro ima [tri glavne komponente](https://docs.zeek.org/en/current/about.html#architecture) pomoću kojih nadzire mrežu: libpcap biblioteku za hvatanje mrežnog prometa, generator događaja (engl. *event engine*) koji analizira mrežni promet u stvarnom vremenu ili snimljeni promet i pretvara u događaje (engl. *events*) kao što su `connection_attempt`, `http_reply`, `user_logged_in` i interpreter sigurnosnih pravila. Događaji odražavaju stanje mreže, a uspoređuju se s pravilima odnosno skriptama u kojima su pravila definirana. Skripte zapravo opisuju sigurnosnu politiku sustava koji će se nadzirati odnosno aktivnosti koje se poduzimaju ukoliko se uoči neka nepravilnost. Primjerice, svaki HTTP zahtjev ima odgovarajući http_request događaj koji sadrži IP adrese ishodišta i odredišta paketa, portove, traženi URI. No, taj događaj ne nosi informaciju o možebitnom malicioznom sadržaju tražene stranice ili informaciju da li se radi o zloćudnoj stranici. Interpreter sigurnosnih pravila izvodi upravljače događajima (engl. *event handlers*) pisane u Bro skriptnom jeziku, analizira događaje i sadržaj stranice te poduzima određenu aktivnost kao što je automatski zapis u log datoteku, slanje alarmnih poruka u realnom vremenu, slanje maila ili pozivanje druge Bro skripte. Interpreter sigurnosnih pravila je zapravo najvažniji dio alata Bro jer otkriva maliciozne događaje odnosno pakete korištenjem unaprijed definiranih pravila. Ukoliko se neki događaj poklapa s određenim pravilom, obavljaju se određene radnje nad paketom ili se on odbacuje.
 
 ``` dot
 digraph G {
@@ -77,10 +77,10 @@ $ sudo apt-get install cmake make gcc g++ flex bison libpcap-dev libssl-dev pyth
 
 za DEB/Debian-bazirani Linux.
 
-Bro je moguće preuzeti u obliku unaprijed kompajliranog paketa ili u obliku [izvornog koda](http://bro.org/download/index.html). Naredbe za instalaciju paketa iz izvornog koda ili sa git repozitorija su sljedeće:
+Bro je moguće preuzeti u obliku unaprijed kompajliranog paketa ili u obliku [izvornog koda](https://zeek.org/get-zeek/). Naredbe za instalaciju paketa iz izvornog koda ili sa git repozitorija su sljedeće:
 
 ``` shell
-$ git clone --recursive git://git.bro.org/bro
+$ git clone --recursive https://github.com/zeek/zeek.git
 $ ./configure
 $ make
 $ make install
@@ -149,7 +149,7 @@ Pokretanjem Bro instance započinje snimanje prometa odnosno zapis u log datotek
 
 ## Demonstracija sposobnosti alata
 
-Bro sažima svaku TCP i UDP konekciju u jednu liniju u datoteku `conn.log`. Obzirom da su ti sažeci prilično detaljni, moguće je doći do [mnoštva korisnih informacija i statistika](https://www.bro.org/bro-workshop-2011/exercises/logs/index.html). Valja spomenuti i datoteke `http.log`, `conn-summary.log`, `known_services.log`, `ssh.log` i `weird.log`. Analiza spomenutih datoteka slijedi u nastavku.
+Bro sažima svaku TCP i UDP konekciju u jednu liniju u datoteku `conn.log`. Obzirom da su ti sažeci prilično detaljni, moguće je doći do [mnoštva korisnih informacija i statistika](https://docs.zeek.org/en/current/logs/index.html). Valja spomenuti i datoteke `http.log`, `conn-summary.log`, `known_services.log`, `ssh.log` i `weird.log`. Analiza spomenutih datoteka slijedi u nastavku.
 
 ### Analiza snimljenog prometa
 
@@ -252,7 +252,7 @@ HTTP protokol sadrži vlastite mehanizme za autentifikaciju korisnika:
 - Basic je jednostavan autentifikacijski mehanizam koji sa svakom porukom šalje korisničke podatke kao Base64 kriptiran niz unutar zaglavlja zahtjeva (podaci se prenose preko mreže kao običan tekst).
 - Digest je "challenge-response" mehanizam koji koristi MD5.
 
-[Unaprijed definirana HTTP skripta Bro-a](https://www.bro.org/bro-workshop-2011/solutions/incident-response/index.html) provjerava postojanje Authorization zaglavlja u HTTP zahtjevima, dekodira zaglavlje Basic autentifikacije i kopira vjerodajnice u datoteci `http.log` na mjesto polja username i password. Slijedi analiza prometa uhvaćenog alatom Wireshark s ciljem otkrivanja web servera koji koristi slabu autentifikaciju.
+[Unaprijed definirana HTTP skripta Bro-a](https://old.zeek.org/current/solutions/incident-response/index.html) provjerava postojanje Authorization zaglavlja u HTTP zahtjevima, dekodira zaglavlje Basic autentifikacije i kopira vjerodajnice u datoteci `http.log` na mjesto polja username i password. Slijedi analiza prometa uhvaćenog alatom Wireshark s ciljem otkrivanja web servera koji koristi slabu autentifikaciju.
 
 ``` shell
 $ bro-cut id.orig_h id.resp_h username password < http.log | awk '$3 != "-"'

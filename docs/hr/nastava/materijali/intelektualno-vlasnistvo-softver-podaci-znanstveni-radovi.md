@@ -16,7 +16,7 @@ U suvremenom društvu na Zapadu i drugdje omogućeno je vlasništvo nad neopiplj
 
 Za početak patentnog prava uzima se britanski [Statue of Monopolies](https://en.wikipedia.org/wiki/Statute_of_Monopolies) iz 1624. godine, a za početak autorskog prava također britanski [Statue of Anne](https://en.wikipedia.org/wiki/Statute_of_Anne) iz 1710. godine, poznat i pod nazivom Copyright Act 1710.
 
-Prvi kontakt s pojmom intelektualnog vlasništva najčešće se događa kroz [audiovizualni sadržaj](https://www.mpaa.org/research-policy/), iako se [tu ponekad nailazi na paradokse](http://stonetoss.com/comic/rated-arrr/).
+Prvi kontakt s pojmom intelektualnog vlasništva najčešće se događa kroz [audiovizualni sadržaj](https://www.mpaa.org/research-policy/), iako se [tu ponekad nailazi na paradokse](https://stonetoss.com/comic/rated-arrr/).
 
 Koncept intelektualnog vlasništva [ima svoje kritičare](https://aeon.co/essays/the-idea-of-intellectual-property-is-nonsensical-and-pernicious) i reformatore ([Electronic Frontier Foundation](https://www.eff.org/) u SAD-u, [EDRi](https://edri.org/) u Europskoj Uniji).
 
@@ -73,7 +73,7 @@ Neke od ne-copyleft licenci su:
 
 - [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 - [MIT License](https://opensource.org/licenses/MIT)
-- [FreeBSD License](https://www.freebsd.org/copyright/freebsd-license.html) (poznata i kao [2-Clause BSD License](https://opensource.org/licenses/BSD-2-Clause))
+- [FreeBSD License](https://www.freebsd.org/copyright/freebsd-license/) (poznata i kao [2-Clause BSD License](https://opensource.org/licenses/BSD-2-Clause))
 - [The Unlicense](https://unlicense.org/)
 
 Primjerice, [PyMOL](https://pymol.org/) je dostupan pod [licencom](https://github.com/schrodinger/pymol-open-source/blob/master/LICENSE) sličnom licencama MIT i BSD:
@@ -100,7 +100,7 @@ Primjerice, [PyMOL](https://pymol.org/) je dostupan pod [licencom](https://githu
 >
 >     c) If the modified program normally reads commands interactively when run, you must cause it, when started running for such interactive use in the most ordinary way, to print or display an announcement including an appropriate copyright notice and a notice that there is no warranty (or else, saying that you provide a warranty) and that users may redistribute the program under these conditions, and telling the user how to view a copy of this License. (Exception: if the Program itself is interactive but does not normally print such an announcement, your work based on the Program is not required to print an announcement.)
 
-[GROMACS](http://www.gromacs.org/) je [dostupan pod licencom LGPLv2.1 ili novijom (po vašem izboru)](https://github.com/gromacs/gromacs/blob/master/COPYING):
+[GROMACS](https://www.gromacs.org/) je [dostupan pod licencom LGPLv2.1 ili novijom (po vašem izboru)](https://github.com/gromacs/gromacs/blob/master/COPYING):
 
 > 0. This License Agreement applies to any software library or other program which contains a notice placed by the copyright holder or other authorized party saying it may be distributed under the terms of this Lesser General Public License (also called "this License"). Each licensee is addressed as "you".
 >
@@ -126,7 +126,7 @@ Primjerice, [PyMOL](https://pymol.org/) je dostupan pod [licencom](https://githu
 >
 > (...)
 
-[RxDock](http://www.rxdock.org/) je, kao i njegov temelj [rDock](http://rdock.sourceforge.net/), [dostupan pod licencom LGPLv3](https://gitlab.com/rxdock/rxdock/blob/master/LICENSE.md).
+[RxDock](https://www.rxdock.org/) je, kao i njegov temelj [rDock](http://rdock.sourceforge.net/), [dostupan pod licencom LGPLv3](https://gitlab.com/rxdock/rxdock/blob/master/LICENSE.md).
 
 #### Problemi autorskih prava
 
@@ -150,7 +150,7 @@ Primjeri patenata:
 
 #### Problemi patenata
 
-- [Patent trollovi](https://www.eff.org/issues/stupid-patent-month), kompanije koje kupe patente koje ne namjeravaju koristiti već samo podižu tužbe za kršenje patenata; [prijedlog reforme zakona](https://defendinnovation.org/), [prijedlog licence za patente koja rješava problem, a funkcionira unutar postojećeg zakonskog okvira](https://defensivepatentlicense.org/)
+- [Patent trollovi](https://www.eff.org/issues/stupid-patent-month), kompanije koje kupe patente koje ne namjeravaju koristiti već samo podižu tužbe za kršenje patenata; [prijedlog reforme zakona](https://www.eff.org/pages/defend-innovation), [prijedlog licence za patente koja rješava problem, a funkcionira unutar postojećeg zakonskog okvira](https://www.defensivepatentlicense.org/)
 
 ### Zaštitni znak
 
@@ -159,7 +159,7 @@ Primjeri patenata:
 U zajednici slobodnog softvera otvorenog koda postoji nepisano pravilo da se postojeća imena softvera ne dupliciraju, bila registrirana kao zaštitni znak ili ne.
 
 - Mozillin web preglednik, inicijalno nazvan Firebird, postao [Firefox](https://www.mozilla.org/firefox/) kako bi se razlikovao od sustava za upravljanje bazom podataka [Firebird](https://firebirdsql.org/).
-- Isto vrijedi i kod odvajanja (tzv. forkanja) projekta, paket uredskih alata [OpenOffice.org](https://www.openoffice.org/) je postao [LibreOffice](https://www.libreoffice.org/), program prevoditelj [GCC](https://gcc.gnu.org/) je neko vrijeme bio poznat kao [EGCS](https://www.gnu.org/software/gcc/egcs-1.0/), a alat za molekularni docking [rDock](http://rdock.sourceforge.net/) forkan je kao [RxDock](http://www.rxdock.org/).
+- Isto vrijedi i kod odvajanja (tzv. forkanja) projekta, paket uredskih alata [OpenOffice.org](https://www.openoffice.org/) je postao [LibreOffice](https://www.libreoffice.org/), program prevoditelj [GCC](https://gcc.gnu.org/) je neko vrijeme bio poznat kao [EGCS](https://www.gnu.org/software/gcc/egcs-1.0/), a alat za molekularni docking [rDock](http://rdock.sourceforge.net/) forkan je kao [RxDock](https://www.rxdock.org/).
 
 #### Problemi zaštitnih znakova
 
@@ -179,12 +179,12 @@ Neke od licenci:
 
 ## Autorsko pravo nad znanstvenim radovima
 
-Isto kao kod softvera i podataka, autorsko pravo nad znanstvenim radovima postoji automatski, ali se često kod objave prebacuje na izdavača (npr. [Elsevier](https://www.elsevier.com/about/policies/copyright), [Springer](https://www.springer.com/gp/open-access/authors-rights), [American Chemical Society (ACS)](https://pubs.acs.org/page/copyright/journals/index.html), [Cell Press](https://www.cell.com/trends/editorial-policies), [Nature](https://www.nature.com/nature-research/editorial-policies/self-archiving-and-license-to-publish)).
+Isto kao kod softvera i podataka, autorsko pravo nad znanstvenim radovima postoji automatski, ali se često kod objave prebacuje na izdavača (npr. [Elsevier](https://www.elsevier.com/about/policies/copyright), [Springer](https://www.springer.com/gp/open-access/publication-policies), [American Chemical Society (ACS)](https://pubs.acs.org/page/copyright/journals/jpa_index.html), [Cell Press](https://www.cell.com/trends/editorial-policies), [Nature](https://www.nature.com/nature-research/editorial-policies/self-archiving-and-license-to-publish)).
 
-Kod radova objavljenim u [otvorenom pristupu](https://en.wikipedia.org/wiki/Open_access) (engl. *open access*, kraće OA) prebacivanja autorskih prava na izdavača nema (npr. [MDPI](https://www.mdpi.com/authors/rights), [PLOS](https://www.plos.org/license), detaljnije za časopis [PLOS ONE](https://journals.plos.org/plosone/s/licenses-and-copyright), [PeerJ](https://peerj.com/about/policies-and-procedures/)). Najčešće se koristi licenca [Creative Commons Attribution](https://creativecommons.org/licenses/by/4.0/).
+Kod radova objavljenim u [otvorenom pristupu](https://en.wikipedia.org/wiki/Open_access) (engl. *open access*, kraće OA) prebacivanja autorskih prava na izdavača nema (npr. [MDPI](https://www.mdpi.com/authors/rights), [PLOS](https://plos.org/open-science/why-open-access/#license), detaljnije za časopis [PLOS ONE](https://journals.plos.org/plosone/s/licenses-and-copyright), [PeerJ](https://peerj.com/about/policies-and-procedures/)). Najčešće se koristi licenca [Creative Commons Attribution](https://creativecommons.org/licenses/by/4.0/).
 
 [Aaron Swartz](https://en.wikipedia.org/wiki/Aaron_Swartz) je 2011. godine iskoristio svoj pristup radovima na MIT-u da sistematsi preuzme velik broj radova s ciljem da ih učini dostupnim javnosti zbog čega je bio uhićen od strane MIT-eve policije i optužen od strane Federalne vlade SAD-a. 2013. godine je počinio samoubojstvo, ali je [ostao jedna od značajnih ličnosti u borbi za otvoreni pristup znanstvenim radovima](https://www.eff.org/deeplinks/2019/11/join-eff-aaron-swartz-day-weekend-internet-archive).
 
-Otvoreni pristup dolazi u različitim varijantama koje imaju [nazive po bojama](https://en.wikipedia.org/wiki/Open_access#Colour_naming_system): zlatni (pravi otvoreni pristup), zeleni (pravo na vlastito arhiviranje), hibridni (dio radova u otvorenom pristupu, dio ne), brončani (radovi prelaze u otvoreni pristup nakon određenog vremena), dijamantni/platinasti (autor plaća da bude u otvorenom pristupu), crni (piratstvo, npr. [Sci-Hub](https://en.wikipedia.org/wiki/Sci-Hub) koji je razvila [Alexandra Elbakayan](https://en.wikipedia.org/wiki/Alexandra_Elbakyan) i koji je [vrlo popularan](https://www.sciencemag.org/news/2016/04/whos-downloading-pirated-papers-everyone) unatoč [svom statusu pred zakonom](https://www.nature.com/news/pirate-research-paper-sites-play-hide-and-seek-with-publishers-1.18876), [Elsevierova tužba](https://www.nature.com/news/us-court-grants-elsevier-millions-in-damages-from-sci-hub-1.22196), [ACS-ova tužba](https://www.nature.com/news/pirate-paper-website-sci-hub-dealt-another-blow-by-us-courts-1.22971)).
+Otvoreni pristup dolazi u različitim varijantama koje imaju [nazive po bojama](https://en.wikipedia.org/wiki/Open_access#Colour_naming_system): zlatni (pravi otvoreni pristup), zeleni (pravo na vlastito arhiviranje), hibridni (dio radova u otvorenom pristupu, dio ne), brončani (radovi prelaze u otvoreni pristup nakon određenog vremena), dijamantni/platinasti (autor plaća da bude u otvorenom pristupu), crni (piratstvo, npr. [Sci-Hub](https://en.wikipedia.org/wiki/Sci-Hub) koji je razvila [Alexandra Elbakayan](https://en.wikipedia.org/wiki/Alexandra_Elbakyan) i koji je [vrlo popularan](https://www.science.org/doi/10.1126/science.352.6285.508) unatoč [svom statusu pred zakonom](https://www.nature.com/articles/nature.2015.18876), [Elsevierova tužba](https://www.nature.com/articles/nature.2017.22196), [ACS-ova tužba](https://www.nature.com/articles/nature.2017.22971)).
 
-Uz [izdavače u otvorenom pristupu kao PLOS](https://www.plos.org/open-access), [veliku podršku istom daje i Electronic Frontier Foundation](https://www.eff.org/issues/open-access).
+Uz [izdavače u otvorenom pristupu kao PLOS](https://plos.org/open-science/why-open-access/), [veliku podršku istom daje i Electronic Frontier Foundation](https://www.eff.org/issues/open-access).

@@ -12,7 +12,7 @@ Osim GPL-a i BSD licenci, ostoje i [brojne druge licence](https://en.wikipedia.o
 
 ## Nabavka softvera
 
-Neki izvori slobodnog softvera su: [GNU Software](https://www.gnu.org/software/), [GitHub](http://github.com/), [Bitbucket](http://bitbucket.org/), [Gitorious](http://gitorious.org/), [SourceForge](https://sourceforge.net/) i [Google Code](http://code.google.com/hosting/)
+Neki izvori slobodnog softvera su: [GNU Software](https://www.gnu.org/software/), [GitHub](https://github.com/), [Bitbucket](https://bitbucket.org/), [Gitorious](https://en.wikipedia.org/wiki/Gitorious), [SourceForge](https://sourceforge.net/) i [Google Code](https://code.google.com/archive/)
 
 Preuzimanje softvera podrazumijeva preuzimanje arhiva, za što se mogu koristiti [Wget](https://en.wikipedia.org/wiki/Wget), [cURL](https://en.wikipedia.org/wiki/CURL) i drugi alati za dohvaćanje sadržaja sa poslužitelja na webu putem HTTP-a, HTTPS-a i FTP-a.
 
@@ -25,7 +25,7 @@ Preuzimanje softvera podrazumijeva preuzimanje arhiva, za što se mogu koristiti
     - najčešće se instalacija u zadanim postavkama vrši u `/usr/local`, kako bi se ručno instalirani softver odvojio od onoga instaliranog pomoću upravitelja paketima koji ide u `/usr` (potrebno je imati dozvolu zapisivanja u taj direktorij -- u većini slučajeva to znači biti `root`)
 
 !!! admonition "Zadatak"
-    - Na [službenim stranicama uređivača teksta GNU nano](http://nano-editor.org/) preuzmite arhivu s izvornim kodom.
+    - Na [službenim stranicama uređivača teksta GNU nano](https://www.nano-editor.org/) preuzmite arhivu s izvornim kodom.
     - Raspakirajte arhivu koju ste preuzeli, a zatim izvršite konfiguraciju i kompajliranje.
     - Pokušajte izvršiti instalaciju, da uočite što točno ne uspijeva.
     - Pokušajte pronaći `nano` unutar direktorija gdje ste izvršili kompajliranje i pokrenite ga direktno. (**Napomena:** Takav način pokretanja kompajliranih programa neće uvijek raditi, ali za GNU nano specijalno hoće.)
@@ -33,12 +33,12 @@ Preuzimanje softvera podrazumijeva preuzimanje arhiva, za što se mogu koristiti
 - `./configure --prefix=<path>` omogućuje da se putanja `<path>` koristi kao mjesto za instalaciju umjesto predefinirane
 
 !!! admonition "Zadatak"
-    - Na [službenim stranicama VLC media playera](http://www.videolan.org/) preuzmite arhivu s izvornim kodom.
+    - Na [službenim stranicama VLC media playera](https://www.videolan.org/) preuzmite arhivu s izvornim kodom.
     - Raspakirajte je i pokušajte izvršiti konfiguraciju. Objasnite što skripta za konfiguraciju ne nalazi na sustavu.
     - Ono što VLC-u nedostaje moguće je instalirati u proizvoljne direktorije, ali je potrebno odgovarajućim parametrom `--with-<biblioteka>` navesti gdje se nalazi. Napravite to za prve dvije nedostajuće biblioteke.
 
 !!! admonition "Dodatni zadatak"
-    - Na [službenim stranicama uređivača teksta GNU nano](http://nano-editor.org/) moguće je GNU nano preuzeti i putem SVN-a.
+    - Na [službenim stranicama uređivača teksta GNU nano](https://www.nano-editor.org/) moguće je GNU nano preuzeti i putem SVN-a.
     - Pronađite kako, a zatim izvršite kompajliranje po uputama koje su tamo navedene.
     - Pokrenite `nano` na isti način kao u prethodnom zadatku da se uvjerite da se zaista radi o različitoj verziji.
     - Istražite koju naredbu pokreće skripta ljuske `autogen.sh`. U `man` stranici te naredbe proučite što rade parametri koji su navedeni u skripti i kojem skupu alata pripada navedena naredba.

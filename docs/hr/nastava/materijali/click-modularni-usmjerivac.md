@@ -84,7 +84,7 @@ Možemo prekinuti izvođenje Clicka i datoteku `paketi.pcap` možemo pogledati u
 ## Primjeri konfiguracija Click usmjerivača
 
 !!! note
-    Primjeri konfiguracija dani ispod preuzeti su s danas nedostupnih [službenih stranica Clicka](http://www.read.cs.ucla.edu/click/click), specifično [službenog tutoriala](http://www.read.cs.ucla.edu/click/tutorial1). Također nedostupna [dokumentacija elemenata](http://www.read.cs.ucla.edu/click/elements) prebačena je na [Clickovom wiki na GitHubu](https://github.com/kohler/click/wiki/Elements).
+    Primjeri konfiguracija dani ispod preuzeti su s danas nedostupnih [službenih stranica Clicka](https://web.archive.org/web/20171005171702/http://www.read.cs.ucla.edu/click/click), specifično [službenog tutoriala](https://web.archive.org/web/20171008224301/http://www.read.cs.ucla.edu/click/tutorial1). Također nedostupna [dokumentacija elemenata](https://web.archive.org/web/20171003052722/http://www.read.cs.ucla.edu/click/elements) prebačena je na [Clickovom wiki na GitHubu](https://github.com/kohler/click/wiki/Elements).
 
 ### Primjer 1
 

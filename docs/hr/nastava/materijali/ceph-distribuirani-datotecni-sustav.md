@@ -5,7 +5,7 @@ author: Petar Živković, Vedran Miletić
 # Distribuirani datotečni sustav Ceph
 
 !!! hint
-    Za više informacija proučite [službenu dokumentaciju](http://docs.ceph.com/).
+    Za više informacija proučite [službenu dokumentaciju](https://docs.ceph.com/).
 
 [Ceph](https://ceph.com/) je platforma otvorenog koda za distribuirano spremanje podataka koju odlikuje otpornost na kvarove i koja je izuetno skalabilna ("na nivo eksabajta"). Ceph se sastoji od više razina.
 
@@ -83,11 +83,11 @@ Prvo moramo instalirati ceph repozitorij na admin čvor. To radimo tako da napra
 ``` ini
 [ceph-noarch]
 name=Ceph noarch packages
-baseurl=http://ceph.com/rpm-{ceph-stable-release}/{distro}/noarch
+baseurl=https://download.ceph.com/rpm-{ceph-release}/{distro}/noarch
 enabled=1
 gpgcheck=1
 type=rpm-md
-gpgkey=https://ceph.com/git/?p=ceph.git;a=blob_plain;f=keys/release.asc
+gpgkey=https://download.ceph.com/keys/release.asc
 ```
 
 Zatim radimo update repozitorija i instaliramo ceph-deploy:

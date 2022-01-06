@@ -6,7 +6,7 @@ author: Vedran Miletić
 
 ## Berkeley Software Distribution (BSD)
 
-- BSD Unix nastaje [krajem 1970-tih i tijekom 1980-tih godina  kao derivat AT&T-evog Unixa](https://klarasystems.com/articles/history-of-freebsd-unix-and-bsd/), začetnik je [Bill Joy](https://en.wikipedia.org/wiki/Bill_Joy) sa [University of California, Berkeley](http://www.berkeley.edu/)
+- BSD Unix nastaje [krajem 1970-tih i tijekom 1980-tih godina  kao derivat AT&T-evog Unixa](https://klarasystems.com/articles/history-of-freebsd-unix-and-bsd/), začetnik je [Bill Joy](https://en.wikipedia.org/wiki/Bill_Joy) sa [University of California, Berkeley](https://www.berkeley.edu/)
 - razvija ga [Computer Systems Research Group (CSRG)](https://en.wikipedia.org/wiki/Computer_Systems_Research_Group): [Keith Bostic](https://en.wikipedia.org/wiki/Keith_Bostic), [Bill Joy](https://en.wikipedia.org/wiki/Bill_Joy), [Marshall Kirk McKusick](https://en.wikipedia.org/wiki/Marshall_Kirk_McKusick), [Sam Leffler](https://en.wikipedia.org/wiki/Samuel_J._Leffler), [Mike Karels](https://en.wikipedia.org/wiki/Michael_J._Karels) i drugi
 - brzo postaje popularan na sveučilištima i institutima, zaslužan za popularizaciju Unixa na sveučilištima u SAD-u
 - verzije 1BSD, 2BSD, 3BSD, 4BSD, 4.1BSD, 4.2BSD, 4.3BSD, ...; dobar povijesni izvor je [Twenty Years of Berkeley Unix: From AT&T-Owned to Freely Redistributable (Open Sources: Voices from the Open Source Revolution)](https://www.oreilly.com/openbook/opensources/book/kirkmck.html)
@@ -25,14 +25,14 @@ author: Vedran Miletić
 
     - [Netflix Open Connect](https://openconnect.netflix.com/en/appliances/#software)
     - [Panasonic Viera TV](https://www.panasonic.com/caribbean/consumer/tv/viera-tv.html)
-    - [PlayStation 3](https://www.playstation.com/en-us/explore/games/ps3-games/), [PlayStation 4](https://www.playstation.com/hr-hr/explore/ps4/) i [PlayStation Vita](https://www.playstation.com/en-us/explore/games/psvita-games/)
+    - [PlayStation 3](https://en.wikipedia.org/wiki/PlayStation_3), [PlayStation 4](https://www.playstation.com/ps4/) i [PlayStation Vita](https://en.wikipedia.org/wiki/PlayStation_Vita)
     - [Nintendo Switch](https://www.nintendo.com/switch/)
     - [Darwin](https://support.apple.com/kb/TA25634), koji je srž otvorenog koda na kojoj je izgrađen vlasnički operacijski sustav Apple macOS
     - [Whatsapp](https://blog.whatsapp.com/1-million-is-so-2011) ([prije](https://blog.whatsapp.com/on-e-millio-n) [kupnje od strane Facebooka](https://investor.fb.com/investor-news/press-release-details/2014/Facebook-to-Acquire-WhatsApp/default.aspx))
 
 - globalno je manje popularan od Linuxa i Apple macOS-a
 
-    - vrlo popularan kod pojedinih pružatelja internetskih usluga (vrlo rano dobio podršku za IPv6 zahvaljujući projektu [KAME](http://www.kame.net/)) i uređajima za pohranu podataka (uglavnom koriste derivat FreeBSD-a [FreeNAS](https://www.freenas.org/))
+    - vrlo popularan kod pojedinih pružatelja internetskih usluga (vrlo rano dobio podršku za IPv6 zahvaljujući projektu [KAME](https://www.kame.net/)) i uređajima za pohranu podataka (uglavnom koriste derivat FreeBSD-a [TrueNAS](https://www.truenas.com/))
     - marginalan kod superračunala ([Brooks Davis - FreeBSD, Building a Computing Cluster](https://youtu.be/BpsRb9fJ4Ds) i [Brooks Davis: Porting HPC Tools to FreeBSD](https://youtu.be/BpsRb9fJ4Ds))
     - šaljiva predavanja na temu relativne (ne)popularnosti FreeBSD-a: [BSD is Dying, Jason Dixon, NYCBSDCon 2007](https://youtu.be/g7tvI6JCXD0) i [Jason Dixon Closing Remarks of DCBSDCon - BSD is Still Dying](https://youtu.be/YzXLwhkBe80), parodija na ["Netcraft now confirms: \*BSD is dying](https://everything2.com/title/BSD+is+dying), ima priču o povijesti Unixa od početka do doba FreeBSD-a
 

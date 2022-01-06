@@ -5,7 +5,7 @@ author: Vedran Miletić
 # Osnovna konfiguracija web poslužitelja Apache HTTP Server
 
 !!! hint
-    Uputa za Apache HTTP Server na internetu [ima](https://www.linode.com/docs/web-servers/apache-tips-and-tricks/) [na](https://opensource.com/article/18/2/how-configure-apache-web-server) [pretek](https://www.scaleway.com/en/docs/secure-apache-web-server-with-lets-encrypt-ssl/). Za temeljit uvod povrh ovih vježbi preporučam službenu dokumentaciju posljednje dvije verzije [Red Hat Enterprise Linuxa](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux), i to:
+    Uputa za Apache HTTP Server na internetu [ima](https://www.linode.com/docs/guides/web-servers/apache-tips-and-tricks/) [na](https://opensource.com/article/18/2/how-configure-apache-web-server) [pretek](https://blog.apnic.net/2020/04/07/the-wrong-certificate-apache-lets-encrypt-and-openssl/). Za temeljit uvod povrh ovih vježbi preporučam službenu dokumentaciju posljednje dvije verzije [Red Hat Enterprise Linuxa](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux), i to:
 
     - za verziju 8: [Chapter 1. Setting up the Apache HTTP web server](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/deploying_different_types_of_servers/setting-apache-http-server_deploying-different-types-of-servers) u [Deploying different types of servers](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/deploying_different_types_of_servers/index) ili
     - za verziju 7: [Chapter 14. Web Servers](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/ch-web_servers) u [Red Hat Enterprise Linux 7 System Administrator's Guide](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/index).
@@ -14,17 +14,17 @@ author: Vedran Miletić
 
 [Apache HTTP Server](https://httpd.apache.org/), kolokvijalno samo Apache, je HTTP poslužitelj namijenjen za moderne operacijske sustave slične Unixu i Windowse. Cilj projekta koji ga razvija je ponuditi siguran, efikasan i proširiv poslužitelj koji poštuje aktualne standarde HTTP-a:
 
-- [RFC 1945: Hypertext Transfer Protocol -- HTTP/1.0](https://tools.ietf.org/html/rfc1945)
-- [RFC 2616: Hypertext Transfer Protocol -- HTTP/1.1](https://tools.ietf.org/html/rfc2616)
+- [RFC 1945: Hypertext Transfer Protocol -- HTTP/1.0](https://datatracker.ietf.org/doc/html/rfc1945)
+- [RFC 2616: Hypertext Transfer Protocol -- HTTP/1.1](https://datatracker.ietf.org/doc/html/rfc2616)
 
-    - [RFC 7230: Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing](https://tools.ietf.org/html/rfc7230)
-    - [RFC 7231: Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content](https://tools.ietf.org/html/rfc7231)
-    - [RFC 7232: Hypertext Transfer Protocol (HTTP/1.1): Conditional Requests](https://tools.ietf.org/html/rfc7232)
-    - [RFC 7233: Hypertext Transfer Protocol (HTTP/1.1): Range Requests](https://tools.ietf.org/html/rfc7233)
-    - [RFC 7234: Hypertext Transfer Protocol (HTTP/1.1): Caching](https://tools.ietf.org/html/rfc7234)
-    - [RFC 7235: Hypertext Transfer Protocol (HTTP/1.1): Authentication](https://tools.ietf.org/html/rfc7235)
+    - [RFC 7230: Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing](https://datatracker.ietf.org/doc/html/rfc7230)
+    - [RFC 7231: Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content](https://datatracker.ietf.org/doc/html/rfc7231)
+    - [RFC 7232: Hypertext Transfer Protocol (HTTP/1.1): Conditional Requests](https://datatracker.ietf.org/doc/html/rfc7232)
+    - [RFC 7233: Hypertext Transfer Protocol (HTTP/1.1): Range Requests](https://datatracker.ietf.org/doc/html/rfc7233)
+    - [RFC 7234: Hypertext Transfer Protocol (HTTP/1.1): Caching](https://datatracker.ietf.org/doc/html/rfc7234)
+    - [RFC 7235: Hypertext Transfer Protocol (HTTP/1.1): Authentication](https://datatracker.ietf.org/doc/html/rfc7235)
 
-- [RFC 7540: Hypertext Transfer Protocol Version 2 (HTTP/2)](https://tools.ietf.org/html/rfc7540)
+- [RFC 7540: Hypertext Transfer Protocol Version 2 (HTTP/2)](https://datatracker.ietf.org/doc/html/rfc7540)
 
 Razvoj projekta podržava [zaklada Apache Software Foundation](https://www.apache.org/), najveća zaklada za razvoj slobodnog softvera otvorenog koda na svijetu. Projekt započinje 1995. godine i inicijalno je zasnovan na izvornom kodu poslužitelju [NCSA HTTPd](https://en.wikipedia.org/wiki/NCSA_HTTPd), ali vrlo brzo taj poslužitelj zastaje s razvojem i korisnici prelaze na Apache. Ime `httpd` (HTTP daemon) se održalo i do današnjih dana kao ime naredbe kojom se poslužitelj pokreće. Od travnja 1996. je [najpopularniji web poslužitelj na internetu](https://news.netcraft.com/archives/2019/04/22/april-2019-web-server-survey.html), a u odgovoru na pitanje je li to još uvijek ili ga je prestigao [nginx](https://www.nginx.com/) ne slažu se statistike od [W3Techs koji tvrdi da je još uvijek najpopularniji Apache](https://w3techs.com/technologies/overview/web_server) i [Netcrafta koji tvrdi da je najpopularniji nginx](https://news.netcraft.com/archives/2020/04/08/april-2020-web-server-survey.html); treći po popularnosti je [Microsoft Internet Information Services](https://en.wikipedia.org/wiki/Internet_Information_Services).
 
@@ -154,7 +154,7 @@ Ako su navedena samo vrata (kao što su u našem slučaju vrata 80), onda poslu�
 
 Pod konfiguracijskom naredbom `ServerAdmin` ([dokumentacija](https://httpd.apache.org/docs/2.4/mod/core.html#serveradmin)) navest ćemo vlastitu e-mail adresu umjesto `you@example.com`. Apache nam neće slati nikakve e-mailove jer nema konfiguriran SMTP poslužitelj koji može koristiti.
 
-Konfiguracijsku naredbu `ServerName` ([dokumentacija](https://httpd.apache.org/docs/2.4/mod/core.html#servername)) ćemo odkomentirati i postaviti na domenu koju želimo da poslužitelj poslužuje. Teoretski možemo koristiti bilo koju domenu koja ne postoji na internetu (npr. `mreze.rijeka` ili `internet.mars`), ali to je loša praksa jer redovito dolaze [nove vršne domene](https://ntldstats.com/tld) i moguće je da nekom padne na pamet registrirati vršne domene `.rijeka` i `.mars` pa nastane problem kolizije naše lokalne razvojne okoline i interneta kao što je već bio [slučaj s domenom .dev](https://anti-pattern.com/dev-domains-not-resolving). Zbog toga ćemo ovdje koristiti poddomene na `.rm.miletic.net` nad kojima imamo kontrolu, npr. `apache-primjer.rm.miletic.net`:
+Konfiguracijsku naredbu `ServerName` ([dokumentacija](https://httpd.apache.org/docs/2.4/mod/core.html#servername)) ćemo odkomentirati i postaviti na domenu koju želimo da poslužitelj poslužuje. Teoretski možemo koristiti bilo koju domenu koja ne postoji na internetu (npr. `mreze.rijeka` ili `internet.mars`), ali to je loša praksa jer redovito dolaze [nove vršne domene](https://ntldstats.com/tld) i moguće je da nekom padne na pamet registrirati vršne domene `.rijeka` i `.mars` pa nastane problem kolizije naše lokalne razvojne okoline i interneta kao što je već bio [slučaj s domenom .dev](https://anti-pattern.com/dev-domains-not-resolving/). Zbog toga ćemo ovdje koristiti poddomene na `.rm.miletic.net` nad kojima imamo kontrolu, npr. `apache-primjer.rm.miletic.net`:
 
 ``` apacheconf
 ServerName apache-primjer.rm.miletic.net:80

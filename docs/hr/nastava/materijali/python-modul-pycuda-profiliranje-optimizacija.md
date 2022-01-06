@@ -6,7 +6,7 @@ author: Vedran Miletić
 
 ## Mjerenje performansi zrna
 
-Da bi mjerili brzinu izvođenja zrna i operacija kopiranja memorije s domaćina na uređaj i obrnuto, koristimo **profiler** (engl. *profiler*). [PyCUDA podržava profiliranje](https://wiki.tiker.net/PyCuda/FrequentlyAskedQuestions#Is_it_possible_to_profile_CUDA_code_with_PyCUDA.3F), i ono se uključuje postavljanjem varijable okoline `CUDA_PROFILE` na vrijednost `1`, što možemo učiniti na način:
+Da bi mjerili brzinu izvođenja zrna i operacija kopiranja memorije s domaćina na uređaj i obrnuto, koristimo **profiler** (engl. *profiler*). [PyCUDA podržava profiliranje](https://wiki.tiker.net/PyCuda/FrequentlyAskedQuestions/#is-it-possible-to-profile-cuda-code-with-pycuda), i ono se uključuje postavljanjem varijable okoline `CUDA_PROFILE` na vrijednost `1`, što možemo učiniti na način:
 
 ``` bash
 $ CUDA_PROFILE=1 python program.py

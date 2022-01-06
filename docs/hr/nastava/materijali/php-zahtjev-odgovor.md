@@ -427,7 +427,7 @@ if (array_key_exists("Najjaci-Fakultet", $request_headers) && $request_headers["
 }
 ```
 
-U slučaju da provjera autorizacije ne prođe uspješno, odgovor ima statusni kod [418 I'm a teapot](https://http.cat/418) koji je šaljiv statusni kod proizašao iz prvoaprilskih [RFC-a 2324 pod naslovom Hyper Text Coffee Pot Control Protocol (HTCPCP/1.0)](https://tools.ietf.org/html/rfc2324) i [RFC-a 7168 pod naslovom The Hyper Text Coffee Pot Control Protocol for Tea Efflux Appliances (HTCPCP-TEA)](https://tools.ietf.org/html/rfc7168), a u praksi se nekad koristi za odgovor na zahtjeve kojima se poslužitelj ne želi baviti ([više detalja o HTTP statusnom kodu 418 I'm a teapot na MDN-u](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/418)).
+U slučaju da provjera autorizacije ne prođe uspješno, odgovor ima statusni kod [418 I'm a teapot](https://http.cat/418) koji je šaljiv statusni kod proizašao iz prvoaprilskih [RFC-a 2324 pod naslovom Hyper Text Coffee Pot Control Protocol (HTCPCP/1.0)](https://datatracker.ietf.org/doc/html/rfc2324) i [RFC-a 7168 pod naslovom The Hyper Text Coffee Pot Control Protocol for Tea Efflux Appliances (HTCPCP-TEA)](https://datatracker.ietf.org/doc/html/rfc7168), a u praksi se nekad koristi za odgovor na zahtjeve kojima se poslužitelj ne želi baviti ([više detalja o HTTP statusnom kodu 418 I'm a teapot na MDN-u](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/418)).
 
 Uvjerimo se da ova provjera zaglavlja radi ispravno:
 
@@ -675,7 +675,7 @@ Vidimo zaglavlja među kojima je i naše prilagođeno zaglavlje `Moj-Head`, a ti
 
 ## Specifičnosti metode CONNECT
 
-Zahtjev HTTP metodom CONNECT izvršit će samo spajanje na poslužitelj i pritom ne očekuje nikakav odgovor ([više detalja o HTTP metodi CONNECT na MDN-u](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/CONNECT)). Zbog toga HTTP poslužitelji uglavnom uopće ne implementiraju metodu CONNECT, što je u skladu sa standardom ([odjeljak 4.3.6. pod naslovom CONNECT u RFC-u 7231 pod naslovom Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content](https://tools.ietf.org/html/rfc7231#section-4.3.6)). Bez obzira kakav kod imali u datoteci `index.php`, odgovor na zahtjev tom metodom bit će prazan:
+Zahtjev HTTP metodom CONNECT izvršit će samo spajanje na poslužitelj i pritom ne očekuje nikakav odgovor ([više detalja o HTTP metodi CONNECT na MDN-u](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/CONNECT)). Zbog toga HTTP poslužitelji uglavnom uopće ne implementiraju metodu CONNECT, što je u skladu sa standardom ([odjeljak 4.3.6. pod naslovom CONNECT u RFC-u 7231 pod naslovom Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content](https://datatracker.ietf.org/doc/html/rfc7231#section-4.3.6)). Bez obzira kakav kod imali u datoteci `index.php`, odgovor na zahtjev tom metodom bit će prazan:
 
 ``` shell
 $ curl -v -X CONNECT http://localhost:8000/

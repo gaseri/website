@@ -5,7 +5,7 @@ author: Vedran Miletić, Domagoj Margan
 # Rad s Python modulom numpy
 
 !!! note
-    Ovaj dio je sastavljen prema [NumPy tutorialu](http://www.scipy.org/Tentative_NumPy_Tutorial).
+    Ovaj dio je sastavljen prema [NumPy tutorialu](https://numpy.org/doc/stable/user/quickstart.html).
 
 Uključivanje modula `numpy` najčešće se vrši naredbom:
 
@@ -64,7 +64,7 @@ Tipovi podataka definirani unutar modula `numpy`; potrebno koristiti kad radite 
     - ILP32 -- `int`, `long` i pointer su duljine 32 bita,
     - LP64 -- `long` i pointer su duljine 64 bita (za `int` se implicitno pretpostavlja da je duljine 32 bita).
 
-    Više informacija o tome možete naći u članku [64-Bit Programming Models: Why LP64?](http://www.unix.org/version2/whatsnew/lp64_wp.html).
+    Više informacija o tome možete naći u članku [64-Bit Programming Models: Why LP64?](https://unix.org/version2/whatsnew/lp64_wp.html).
 
 !!! admonition "Zadatak"
     - Stvorite polje nula oblika `(5, 5)` u kojem su elementi tipa `numpy.float32`.
@@ -105,7 +105,7 @@ b *= 3
 - `numpy.round(polje, broj_decimala)` vraća polje s vrijednostima zaokruženim na navedeni broj decimala
 
     - korisno kod usporedbe decimalnih brojeva, zbog nepreciznog spremanja brojeva u računalu (naročito se vidi kod konverzije podataka tipa `numpy.float64` u podatke tipa `numpy.float32`)
-    - [strip sa Saturday Morning Breakfast Cereal na istu temu](http://www.smbc-comics.com/?id=1118)
+    - [strip sa Saturday Morning Breakfast Cereal na istu temu](https://www.smbc-comics.com/comic/2008-03-16)
 
 !!! admonition "Zadatak"
     - Stvorite polje u kojem su sve vrijednosti jednake 9.45 tipa `float64` i pretvorite ga u polje tipa `float32` i rezultat spremite u novo polje. Uočavate li gubitak preciznosti?
@@ -245,4 +245,4 @@ Kopiju možemo stvoriti funkcijom `np.array.copy()`.
 
 ## Polinomski fit
 
-Numpy može izvesti fitanje polinoma na zadane točke korištenjem metode najmanjih kvadrata funkcijom `numpy.polyfit()` ([službena dokumentacija](https://docs.scipy.org/doc/numpy/reference/generated/numpy.polyfit.html)).
+Numpy može izvesti fitanje polinoma na zadane točke korištenjem metode najmanjih kvadrata funkcijom `numpy.polyfit()` ([službena dokumentacija](https://numpy.org/doc/stable/reference/generated/numpy.polyfit.html)).

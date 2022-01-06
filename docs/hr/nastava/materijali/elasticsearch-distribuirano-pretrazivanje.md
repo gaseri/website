@@ -4,7 +4,7 @@ author: Toni Butković, Vedran Miletić
 
 # Distribuirano pretraživanje u realnom vremenu alatom ElasticSearch
 
-[ElasticSearch](https://www.elastic.co/products/elasticsearch) je distribuirani sustav otvorenog koda za analizu i pretragu u stvarnom vremenu. Navedena tehnologija napisana je u Java programskom jeziku te se nalazi pod Apache licencom. Jedna je od najpopularnijih i najkorištenijih tehnologija pretraživanja današnjice. Da bi koristili ElasticSearch, potrebno je dodati određene informacije u bazu i indeksirati ih, stvoriti clustere i replikacije. Kako bi sve to imalo smisla po pitanju stalne dostupnosti tehnologije, odnosno search engine-a, potrebno je bilo napraviti failover instance.
+[ElasticSearch](https://www.elastic.co/elasticsearch/) je distribuirani sustav otvorenog koda za analizu i pretragu u stvarnom vremenu. Navedena tehnologija napisana je u Java programskom jeziku te se nalazi pod Apache licencom. Jedna je od najpopularnijih i najkorištenijih tehnologija pretraživanja današnjice. Da bi koristili ElasticSearch, potrebno je dodati određene informacije u bazu i indeksirati ih, stvoriti clustere i replikacije. Kako bi sve to imalo smisla po pitanju stalne dostupnosti tehnologije, odnosno search engine-a, potrebno je bilo napraviti failover instance.
 
 ElasticSearch failover instancu može biti ostvarena na nekoliko načina.
 

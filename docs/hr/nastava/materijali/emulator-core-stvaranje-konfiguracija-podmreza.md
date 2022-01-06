@@ -18,7 +18,7 @@ n2 ------ n1 ------ n4
           n5
 ```
 
-imat će četiri podmreže ako je n1 tipa `router`. Primjerice, te podmreže mogu imati adrese 10.0.1.0/24 za n2 -- n1, 10.0.2.0/24 za n3 -- n1, 10.0.3.0/24 za n4 -- n1 i 10.0.4.0/24 za n5 -- n1. Za usporedbu, ako je n1 tipa `ethernet switch`, svi čvorovi i veze bit će jedna podmreža. Primjerice, može imati adresu 10.0.1.0/24. CORE u zadanim postavkama bira podmreže iz raspona adresa 10.0.0.0/8, ali moguće je koristiti i bilo koji drugi od privatnih raspona navedenih u [RFC-u 1918 pod naslovom Address Allocation for Private Internets](https://tools.ietf.org/html/rfc1918).
+imat će četiri podmreže ako je n1 tipa `router`. Primjerice, te podmreže mogu imati adrese 10.0.1.0/24 za n2 -- n1, 10.0.2.0/24 za n3 -- n1, 10.0.3.0/24 za n4 -- n1 i 10.0.4.0/24 za n5 -- n1. Za usporedbu, ako je n1 tipa `ethernet switch`, svi čvorovi i veze bit će jedna podmreža. Primjerice, može imati adresu 10.0.1.0/24. CORE u zadanim postavkama bira podmreže iz raspona adresa 10.0.0.0/8, ali moguće je koristiti i bilo koji drugi od privatnih raspona navedenih u [RFC-u 1918 pod naslovom Address Allocation for Private Internets](https://datatracker.ietf.org/doc/html/rfc1918).
 
 Proces stvaranja i konfiguracije podmreža omogućava odvajanje pojedinih domaćina, računala i radnih stanica u skupine kojima je moguće dodijeliti različita pravila komunikacije (npr. zabranu komunikacije između pojedinih skupina, garantiranu širinu pojasa za pojedinu skupinu, pravo pristupa internetu za neke skupine i sl.)
 

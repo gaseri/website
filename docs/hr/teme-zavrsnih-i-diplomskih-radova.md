@@ -10,7 +10,7 @@ U nastavku je popis predloženih i odabranih tema završnih i diplomskih radova.
 
 ### Akademsko pisanje
 
-Završni i diplomski radovi su akademski radovi, a prilikom pisanja akademskih radova slijedimo uvriježena stilska i strukturna pravila kako bi ti radovi bili čitljivi i potencijalno korisni i drugim članovima akademske zajednice. O pisanju radova [dr. sc. Vanja Pupovac](https://portal.uniri.hr/portfelj/1712) na [mrežnim stranicama Akademsko pisanje](https://www.akademsko-pisanje.uniri.hr/o-nama/) i u istoimenoj knjižici kaže sljedeće:
+Završni i diplomski radovi su akademski radovi, a prilikom pisanja akademskih radova slijedimo uvriježena stilska i strukturna pravila kako bi ti radovi bili čitljivi i potencijalno korisni i drugim članovima akademske zajednice. O pisanju radova [dr. sc. Vanja Pupovac](https://portal.uniri.hr/Portfelj/1712) na [mrežnim stranicama Akademsko pisanje](https://www.akademsko-pisanje.uniri.hr/o-nama/) i u istoimenoj knjižici kaže sljedeće:
 
 > Akademsko pisanje je oblik komunikacije u akademskoj zajednici. Postoje različiti oblici akademskog pisma, a neki od najpoznatijih su esej, seminarski rad, završni, diplomski ili doktorski rad, te stručni ili znanstveni rad. Svrha akademskog pisanje je savladavanje i sažimanje znanja o pojedinoj temi, proširivanje rasprava (novim informacijama ili mišljenjima), prenošenje informacija (znanstvenicima, stručnjacima ili javnosti) i ovjeravanje znanja.
 >
@@ -22,11 +22,11 @@ Za više informacija slijedite poveznice u tekstu iznad i proučite [mrežne str
 
 ### Softverski alati
 
-Za pisanje radova koristite [LibreOffice](https://www.libreoffice.org/) i format [OpenDocument](http://opendocumentformat.org/). Ako preferirate pisanje markupa umjesto korištenja alata tipa [WYSIYG](https://en.wikipedia.org/wiki/WYSIWYG), umjesto LibreOfficea i OpenDocumenta možete koristiti neki od sljedećih alata i formata:
+Za pisanje radova koristite [LibreOffice](https://www.libreoffice.org/) i format [OpenDocument](https://opendocumentformat.org/). Ako preferirate pisanje markupa umjesto korištenja alata tipa [WYSIYG](https://en.wikipedia.org/wiki/WYSIWYG), umjesto LibreOfficea i OpenDocumenta možete koristiti neki od sljedećih alata i formata:
 
 - [Markdown](https://commonmark.org/), [Pandoc](https://pandoc.org/) i proširenja navedena u [objavi Jaana Tollandera de Balscha](https://jaantollander.com/post/scientific-writing-with-markdown/) (preporučeni uređivači: [HackMD](https://hackmd.io/) i [Visual Studio Code](https://code.visualstudio.com/)),
 - [LaTeX](https://www.latex-project.org/) i [Edvin Močibobov](https://edvin.me/) [predložak za završni i diplomski rad](https://bitbucket.org/emocibob/latex-predlozak-za-diplomski-i-zavrsni-rad) (preporučeni uređivači: [TeXstudio](https://texstudio.org/) i [Texmaker](https://www.xm1math.net/texmaker/)),
-- [reStructuredText](https://docutils.readthedocs.io/en/sphinx-docs/user/rst/quickstart.html), [Sphinx](http://www.sphinx-doc.org/en/master/) i [Jeff Terraceov](https://jeffterrace.com/) [snop ekstenzija za akademske radove](https://jterrace.github.io/sphinxtr/) (preporučeni uređivač: [Visual Studio Code](https://code.visualstudio.com/) s proširenjem [reStructuredText](https://marketplace.visualstudio.com/items?itemName=lextudio.restructuredtext)) ili
+- [reStructuredText](https://docutils.sourceforge.io/rst.html), [Sphinx](https://www.sphinx-doc.org/en/master/) i [Jeff Terraceov](https://jeffterrace.com/) [snop ekstenzija za akademske radove](https://jterrace.github.io/sphinxtr/) (preporučeni uređivač: [Visual Studio Code](https://code.visualstudio.com/) s proširenjem [reStructuredText](https://marketplace.visualstudio.com/items?itemName=lextudio.restructuredtext)) ili
 - [AsciiDoc](https://asciidoc.org/) i [Asciidoctor](https://asciidoctor.org/) (preporučeni uređivač: [Visual Studio Code](https://code.visualstudio.com/) s proširenjem [AsciiDoc](https://marketplace.visualstudio.com/items?itemName=asciidoctor.asciidoctor-vscode)).
 
 LibreOffice i LaTeX rade izvrsne PDF-ove (Sphinx također stvara PDF korištenjem LaTeX-a), i mogu, ako je potrebno, napraviti [PDF/A](https://en.wikipedia.org/wiki/PDF/A), varijantu PDF-a prikladnu za arhiviranje i dugoročno čuvanje digitalnih dokumenata.
@@ -58,9 +58,9 @@ Tijekom 80-ih godina na Kalifornijskom sveučilištu u Berkeleyu Keith Bostic, B
 **Literatura:**
 
 1. [Computer Systems Research Group](https://en.wikipedia.org/wiki/Computer_Systems_Research_Group)
-1. [KAME](http://www.kame.net/)
+1. [KAME](https://www.kame.net/)
 1. [IMUNES](http://imunes.net/)
-1. [Jones, T. FreeBSD in Network Research and Standardization (FreeBSD in Research). FreeBSD Journal, January/February 2020.](https://www.freebsdfoundation.org/past-issues/freebsd-in-research/)
+1. [Jones, T. FreeBSD in Network Research and Standardization (FreeBSD in Research). FreeBSD Journal, January/February 2020.](https://freebsdfoundation.org/past-issues/freebsd-in-research/)
 1. [Leffler, S. J., Joy, W. N., Fabry, R. S., & Karels, M. J. Networking Implementation Notes 4.3 BSD Edition. Unix System Manager's Manual, 1986.](https://docs.freebsd.org/44doc/smm/18.net/paper.pdf)
 
 ### Interaktivni interpreter Cling za programski jezik C++ {[PPHS](nastava/kolegiji/PPHS.md)}
@@ -73,7 +73,7 @@ Tijekom 80-ih godina na Kalifornijskom sveučilištu u Berkeleyu Keith Bostic, B
 
 1. [LLVM](https://llvm.org/)
 1. [Clang](https://clang.llvm.org/)
-1. [CLing](https://root.cern.ch/cling)
+1. [CLing](https://root.cern/cling/)
 
 ### Prenosivost znanstvenog softvera među operacijskim sustavima sličnim Unixu {[OS2](nastava/kolegiji/OS2.md)}
 
@@ -84,7 +84,7 @@ Tijekom 80-ih godina na Kalifornijskom sveučilištu u Berkeleyu Keith Bostic, B
 **Literatura:**
 
 1. [illumos](https://illumos.org/)
-1. [GROMACS](http://www.gromacs.org/)
+1. [GROMACS](https://www.gromacs.org/)
 
 ### Modularni usmjerivač Click {[RM1](nastava/kolegiji/RM1.md)}
 
@@ -237,7 +237,7 @@ CUDA je vlasnički programski jezik za heterogeno paralelno programiranje koriš
 
 **Literatura:**
 
-1. [MIAOW GPU](http://miaowgpu.org/)
+1. [MIAOW GPU](https://miaowgpu.org/)
 1. [Southern Islands Series Instruction Set Architecture](https://developer.amd.com/wordpress/media/2012/12/AMD_Southern_Islands_Instruction_Set_Architecture.pdf)
 
 ### Opis backenda program-prevoditelja AMDGPU u infrastrukturi za izgradnju program-prevoditelja LLVM {[PPHS](nastava/kolegiji/PPHS.md)}
@@ -435,7 +435,7 @@ Pandemija koronavirusa SARS-CoV-2 tijekom 2020. godina učinila je da velik broj
 
 **Literatura:**
 
-1. [UPDATE: Preserving Internet Access for the Entire Community (PlayStation.Blog)](https://blog.us.playstation.com/2020/03/24/preserving-internet-access-for-the-entire-community/)
+1. [UPDATE: Preserving Internet Access for the Entire Community (PlayStation.Blog)](https://blog.playstation.com/2020/03/24/preserving-internet-access-for-the-entire-community/)
 1. [Managing Steam Bandwidth During COVID-19 Pandemic (Steam Blog)](https://steamcommunity.com/games/593110/announcements/detail/2074411495515541376)
 1. [Tracking COVID-19’s Impact on Global Internet Performance (Speedtest Insights)](https://www.speedtest.net/insights/blog/tracking-covid-19-impact-global-internet-performance/)
 
@@ -448,8 +448,8 @@ Suvremeni pristupi razvoju web aplikacija dijele aplikaciju na dva osnovna dijel
 **Literatura:**
 
 1. [REST API Tutorial](https://restfulapi.net/)
-1. [Drogon](https://github.com/an-tao/drogon)
-1. [C++ reference](http://www.cppreference.com/)
+1. [Drogon](https://drogon.org/)
+1. [C++ reference](https://www.cppreference.com/)
 1. [C++ Core Guidelines](https://isocpp.org/guidelines)
 
 ### Projekti javnog bežičnog pristupa internetu Wlan slovenija i Otvorena mreža {[RM1](nastava/kolegiji/RM1.md)} [Igor Lipošćak]
@@ -506,9 +506,9 @@ Porastom procesne moći računala, naročito zahvaljujući računanju na grafič
 1. [ROCm](https://rocmdocs.amd.com/)
 1. Ballester, P. J. & Mitchell, J. B. O. [A machine learning approach to predicting protein--ligand binding affinity with applications to molecular docking](https://academic.oup.com/bioinformatics/article/26/9/1169/199938). Bioinformatics 26, 1169--1175 (2010).
 1. Kinnings, S. L. et al. [A Machine Learning-Based Method To Improve Docking Scoring Functions and Its Application to Drug Repurposing](https://pubs.acs.org/doi/abs/10.1021/ci100369f). J. Chem. Inf. Model. 51, 408--419 (2011).
-1. [Vina](http://vina.scripps.edu/)
+1. [Vina](https://vina.scripps.edu/)
 1. [RxDock](https://www.rxdock.org/)
-1. [Glide](https://www.schrodinger.com/glide)
+1. [Glide](https://www.schrodinger.com/products/glide)
 
 ### Paralelizacija predviđanja pristajanja malih molekula na proteine {[PPHS](nastava/kolegiji/PPHS.md)} [Maja Abramović]
 
@@ -561,7 +561,7 @@ Cilj rada je opisati proces instalacije i konfiguracije poslužiteljskih Java ap
 
 1. Nemeth, E., Snyder, G., Hein, T. R., Whaley, B. & Mackin, D. Unix and Linux system administration handbook. (Addison-Wesley, 2017)
 1. [Apache Tomcat Documentation](https://tomcat.apache.org/)
-1. [JBoss Application Server Official Documentation](https://developer.jboss.org/wiki/JBossApplicationServerOfficialDocumentationPage)
+1. [JBoss Application Server Official Documentation](https://developer.jboss.org/docs/DOC-12898)
 1. [IBM WebSphere Documentation](https://www.ibm.com/support/pages/websphere-ibm-i-documentation)
 1. [ELK Stack Documentation](https://www.elastic.co/what-is/elk-stack)
 
@@ -577,9 +577,9 @@ NVIDIA je vodeća tvrtka u domeni vizualizacije i računanja na grafičkim proce
 1. [Radeon Feature on X.Org Wiki](https://www.x.org/wiki/RadeonFeature/)
 1. [Gallium Compute on DRI Wiki](https://dri.freedesktop.org/wiki/GalliumCompute/)
 1. [zogi/mesa (GitHub)](https://github.com/zogi/mesa)
-1. [libclc](http://libclc.llvm.org/)
-1. [LLVM](http://llvm.org/)
-1. [OpenMM](http://openmm.org/)
+1. [libclc](https://libclc.llvm.org/)
+1. [LLVM](https://llvm.org/)
+1. [OpenMM](https://openmm.org/)
 1. [Make OpenMM OpenCL support work on Clover and RadeonSI](https://bugs.freedesktop.org/show_bug.cgi?id=99764)
 1. [Scarpino, Matthew. OpenCL in Action: How to accelerate graphics and computations. (Manning Publications, 2011).](https://www.manning.com/books/opencl-in-action)
 1. [Khronos OpenCL Registry](https://www.khronos.org/registry/OpenCL/)
@@ -635,7 +635,7 @@ GROMACS je jedan od najkorištenijih alata za simulaciju molekularne dinamike i,
 
 **Literatura:**
 
-1. [GROMACS documentation](http://manual.gromacs.org/)
+1. [GROMACS documentation](https://manual.gromacs.org/)
 1. [We ported GROMACS from CUDA to OpenCL (StreamHPC)](https://streamhpc.com/blog/2014-11-01/ported-gromacs-cuda-opencl/)
 1. [Kutzner, C. et al. Best bang for your buck: GPU nodes for GROMACS biomolecular simulations. Journal of Computational Chemistry 36, 1990--2008 (2015).](https://onlinelibrary.wiley.com/doi/full/10.1002/jcc.24030)
 1. [Kutzner, C. et al. More Bang for Your Buck: Improved use of GPU Nodes for GROMACS 2018. arXiv:1903.05918 [physics, q-bio] (2019).](https://arxiv.org/abs/1903.05918)
@@ -664,8 +664,8 @@ Zadatak rada je opisati robotsku automatizaciju procesa i razloge njene primjene
 
 **Literatura:**
 
-1. Lacity, M., and Willcocks, L. P.. *Robotic process automation: the next transformation lever for shared services.* (London School of Economics Outsourcing Unit Working Research Paper Series, 2015). Rad dostupan putem [mrežnih stranica Sveučilišta u Missouriju u St. Louisu](http://www.umsl.edu/~lacitym/OUWP1601.pdf).
-1. Willcocks, L. P., Lacity M. & Craig, A. *Robotic process automation at Xchanging.* (London School of Economics Outsourcing Unit Working Research Paper Series, 2015). Rad dostupan putem [mrežnih stranica Londonske škole ekonomije](http://eprints.lse.ac.uk/64518/1/OUWRPS_15_03_published.pdf).
+1. Lacity, M., and Willcocks, L. P.. *Robotic process automation: the next transformation lever for shared services.* (London School of Economics Outsourcing Unit Working Research Paper Series, 2015). Rad dostupan putem [mrežnih stranica Sveučilišta u Missouriju u St. Louisu](https://www.umsl.edu/~lacitym/OUWP1601.pdf).
+1. Willcocks, L. P., Lacity M. & Craig, A. *Robotic process automation at Xchanging.* (London School of Economics Outsourcing Unit Working Research Paper Series, 2015). Rad dostupan putem [mrežnih stranica Londonske škole ekonomije](https://eprints.lse.ac.uk/64518/1/OUWRPS_15_03_published.pdf).
 1. [Robot Framework Documentation](https://robotframework.org/#documentation)
 
 ### Instalacija i održavanje računalne učionice {[UMS](nastava/kolegiji/UMS.md)} [Pino Zidarić]
@@ -677,7 +677,7 @@ Moderne računalne učionice na fakultetima i u školama rijetko se naivno insta
 - Temelj je zadnji stabilni Debian (u trenutku zadavanja zadatka: 9) ili zadnji Ubuntu LTS (u trenutku zadavanja zadatka: 18.04).
 - Potrebno je na svakom računalu stvoriti korisnički račun informatičke podrške koji ima sudo pristup (npr. podrska), korisnički račun nastavnika koji ima sudo pristup (npr. predavac) i korisnički račun studenta koji nema sudo pristup (npr. student).
 - Potrebno je omogućiti pristup nastavničkom računalu putem VPN-a (pretpostaviti da negdje postoji VPN poslužitelj na javnoj adresi koji se može koristiti), a osim toga VPN-om se mora omogućiti komunikacija između učionica s nastavničkog računala u jednoj učionici na nastavničko računalo u drugoj učionici) ([OpenVPN](https://openvpn.net/community/), [SoftEther](https://www.softether.org/) ili [Wireguard](https://www.wireguard.com/)).
-- Potrebno je instalirati softver za nadzor studentskog rada (poslužiteljska strana na nastavničkom računalu, klijentska strana na studentskim) ([Veyon](https://veyon.io/) ili [Epoptes](http://www.epoptes.org/)).
+- Potrebno je instalirati softver za nadzor studentskog rada (poslužiteljska strana na nastavničkom računalu, klijentska strana na studentskim) ([Veyon](https://veyon.io/) ili [Epoptes](https://epoptes.org/)).
 - Potrebno je postaviti [apt-cacher-ng](https://wiki.debian.org/AptCacherNg) (poslužiteljska strana na nastavničkom računalu, studentska računala ga koriste).
 - Potrebno je postaviti [Ansible](https://www.ansible.com/) na nastavničkom računalu kako bi se moglo upravljati instalacijom softvera na studentskim računalima s jednog mjesta.
 - Potrebno je napraviti skriptu koja kod poziva s nastavničkog računala na svim studentskim računalima putem vatrozida zabranjuje pristup svim stranicama na internetu osim [Merlina](https://moodle.srce.hr/).
@@ -697,7 +697,7 @@ Dok se aplikacija izvodi u heterogenom računalnom sustavu, grafički i središn
 **Literatura:**
 
 1. W. H. Wen-mei, [Heterogeneous System Architecture: A new compute platform infrastructure.](https://www.elsevier.com/books/heterogeneous-system-architecture/hwu/978-0-12-800386-2) Morgan Kaufmann, 2015.
-1. [ROCm: Open Platform For Development, Discovery and Education around GPU Computing (GPUOpen)](https://gpuopen.com/compute-product/rocm/)
+1. [ROCm: Open Platform For Development, Discovery and Education around GPU Computing (GPUOpen)](https://gpuopen.com/professional-compute/)
 
 ## Odabrane teme završnih radova akademske 2017/2018. godine
 
@@ -752,7 +752,7 @@ Transmission Control Protocol (TCP) je protokol koji logički pripada četvrtom,
 
 **Literatura:**
 
-1. [Benvenuti, Christian. Understanding Linux network internals. O'Reilly Media, Inc., 2006.](http://shop.oreilly.com/product/9780596002558.do)
+1. [Benvenuti, Christian. Understanding Linux network internals. O'Reilly Media, Inc., 2006.](https://www.oreilly.com/library/view/understanding-linux-network/0596002556/)
 1. Lacage, Mathieu. Experimentation tools for networking research. Diss. Nice, 2010.
 1. [Sarolahti, Pasi, and Alexey Kuznetsov. "Congestion Control in Linux TCP." USENIX Annual Technical Conference, FREENIX Track. 2002.](https://www.usenix.org/legacy/publications/library/proceedings/usenix02/tech/freenix/full_papers/sarolahti/sarolahti_html/)
 
@@ -768,8 +768,8 @@ Godot je pogon otvorenog koda za izradu 2D i 3D igara dostupand pod licencom MIT
 
 **Literatura:**
 
-1. [Službena dokumentacija pogona Godot](http://docs.godotengine.org/)
-1. [GDScript](http://docs.godotengine.org/en/3.0/getting_started/scripting/gdscript/index.html)
+1. [Službena dokumentacija pogona Godot](https://docs.godotengine.org/)
+1. [GDScript](https://docs.godotengine.org/en/stable/getting_started/scripting/gdscript/index.html)
 1. [Godot 3.0 Open-Source Game Engine Released (Phoronix)](https://www.phoronix.com/scan.php?page=news_item&px=Godot-3.0-Released)
 1. [Godot Engine, the open source game engine has evolved with the big 3.0 release (GamingOnLinux)](https://www.gamingonlinux.com/articles/godot-engine-the-open-source-game-engine-has-evolved-with-the-big-30-release.11135)
 
@@ -785,24 +785,24 @@ Tijekom izbornog ciklusa u Sjedinjenim Američkim Državama 2015. i 2016. nomina
 
 **Literatura:**
 
-1. [Google Trends Indicate Trump Landslide (Regated)](https://regated.com/2016/08/googles-trends-indicate-trump-landslide/)
-1. Hine, Gabriel Emile, et al. "Kek, Cucks, and God Emperor Trump: A Measurement Study of 4chan’s Politically Incorrect Forum and Its Effects on the Web." *International Conference on Web and Social Media (ICWSM)*. Association for the Advancement of Artificial Intelligence (AAAI), 2017. Rad dostupan na [stranicama laboratorija](https://iseclab.org/media/uploads/zotero/4chan-ICWSM2017.pdf) i [arXivu](https://arxiv.org/abs/1610.03452)
-1. [Trump's shrinking electoral map (Politico)](http://www.politico.com/story/2016/08/donald-trump-shrinking-election-map-227076)
+1. [Google Trends Indicate Trump Landslide (Regated)](https://web.archive.org/web/20160902044947/https://regated.com/2016/08/googles-trends-indicate-trump-landslide/)
+1. Hine, Gabriel Emile, et al. "Kek, Cucks, and God Emperor Trump: A Measurement Study of 4chan’s Politically Incorrect Forum and Its Effects on the Web." *International Conference on Web and Social Media (ICWSM)*. Association for the Advancement of Artificial Intelligence (AAAI), 2017. Rad dostupan na [arXivu](https://arxiv.org/abs/1610.03452)
+1. [Trump's shrinking electoral map (Politico)](https://www.politico.com/story/2016/08/donald-trump-shrinking-election-map-227076)
 1. [How the Trump Campaign Built an Identity Database and Used Facebook Ads to Win the Election (Joel Winston, posted on Medium)](https://medium.com/startup-grind/how-the-trump-campaign-built-an-identity-database-and-used-facebook-ads-to-win-the-election-4ff7d24269ac)
-1. [No, Big Data Didn't Win the U.S. Election (Bloomberg)](https://www.bloomberg.com/view/articles/2016-12-08/no-big-data-didn-t-win-the-u-s-election)
+1. [No, Big Data Didn't Win the U.S. Election (Bloomberg)](https://www.bloomberg.com/opinion/articles/2016-12-08/no-big-data-didn-t-win-the-u-s-election)
 1. [Top 10 Trending Keywords in .Com & .Net Registrations in November (Verisign)](https://blog.verisign.com/domain-names/top-10-trending-keywords-in-com-net-registrations-in-november-2/)
 1. [Initial D. Trump](https://youtu.be/b89d1oip7WM)
 1. [How Facebook Saw Trump Coming When No One Else Did (Erin Pettigrew, posted on Medium)](https://medium.com/@erinpettigrew/how-facebook-saw-trump-coming-when-no-one-else-did-84cd6b4e0d8e)
 1. [Trump will win the election and is more popular than Obama in 2008, AI system finds (CNBC)](https://www.cnbc.com/2016/10/28/donald-trump-will-win-the-election-and-is-more-popular-than-obama-in-2008-ai-system-finds.html)
 1. [Trump’s Big Data Mind Explains How He Knew Trump Could Win (Wired)](https://www.wired.com/2016/11/trump-polling-data/)
 1. [App maker: Trump will win election (USA Today)](https://www.usatoday.com/story/tech/2016/08/13/app-maker---trump-win-election/88640044/)
-1. [Clinton vs. Trump: Predicting The Electoral College (HuffPost)](http://www.huffingtonpost.com/richard-north-patterson/clinton-versus-trump-pred_b_9848032.html)
+1. [Clinton vs. Trump: Predicting The Electoral College (HuffPost)](https://www.huffpost.com/entry/clinton-versus-trump-pred_b_9848032)
 1. [Donald Trump v Hillary Clinton: This Map Predicts Who Wins (Time)](https://time.com/4508467/election-donald-trump-hillary-clinton-map/)
 1. [2016 Election Forecast (FiveThirtyEight)](https://projects.fivethirtyeight.com/2016-election-forecast/)
 1. [On A Scale From 1 To 10, How Much Should Democrats Panic? (FiveThirtyEight)](https://fivethirtyeight.com/features/on-a-scale-of-1-to-10-how-much-should-democrats-panic/)
 1. [Election Update: Democrats Should Panic ... If The Polls Still Look Like This In A Week (FiveThirtyEight)](https://fivethirtyeight.com/features/election-update-democrats-should-panic-if-the-polls-still-look-like-this-in-a-week/)
 1. [Visualizing Clinton, Podesta, and the DNC's Wikileaks E-mail Networks](https://clinton.media.mit.edu/)
-1. Zannettou, Savvas, et al. "The Web Centipede: Understanding How Web Communities Influence Each Other Through the Lens of Mainstream and Alternative News Sources." *arXiv preprint arXiv:1705.06947* (2017). Rad dostupan na [arXivu](https://arxiv.org/pdf/1705.06947).
+1. Zannettou, Savvas, et al. "The Web Centipede: Understanding How Web Communities Influence Each Other Through the Lens of Mainstream and Alternative News Sources." *arXiv preprint arXiv:1705.06947* (2017). Rad dostupan na [arXivu](https://arxiv.org/abs/1705.06947).
 
 ### Usporedba Khronos Vulkan i OpenGL API-ja (Comparison of Khronos Vulkan and OpenGL APIs) {[PPHS](nastava/kolegiji/PPHS.md)} [Darko Kraljević]
 
@@ -813,9 +813,9 @@ OpenGL je višeplatformski API za prikaz 2D i 3D vektorske grafiku. Vulkan je vi
 **Literatura:**
 
 1. [OpenGL](https://www.opengl.org/)
-1. [Vulkan](https://www.khronos.org/vulkan)
-1. [List of games with Vulkan support](https://en.wikipedia.org/wiki/List_of_games_with_Vulkan_support)
-1. [List of games with OpenGL support](https://en.wikipedia.org/wiki/List_of_games_with_OpenGL_support)
+1. [Vulkan](https://www.vulkan.org/)
+1. [Vulkan (Wikipedia)](https://en.wikipedia.org/wiki/Vulkan)
+1. [OpenGL (Wikipedia)](https://en.wikipedia.org/wiki/OpenGL)
 1. [AMD vs NV Drivers: A Brief History and Understanding Scheduling & CPU Overhead](https://youtu.be/nIoZB-cnjc0)
 
 ### Testiranje implementacija OpenGL-a i OpenCL-a alatom Piglit (Testing OpenGL and OpenCL implementations using Piglit) {[PPHS](nastava/kolegiji/PPHS.md)} [Mario Ćuro]
@@ -844,9 +844,9 @@ S izlaskom operacijskog sustava Windows 10 zabrinutost kritičara raste, obzirom
 
 **Literatura:**
 
-1. [Secure Boot](https://technet.microsoft.com/library/dn486875.aspx)
-1. [UEFI Secure Boot](https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface#Secure_boot)
-1. [UEFI Secure Boot Criticism](https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface#Secure_boot_criticism)
+1. [Secure Boot](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-8.1-and-8/dn486875(v=ws.11))
+1. [UEFI Secure Boot](https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface#Secure_Boot)
+1. [UEFI Secure Boot Criticism](https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface#Secure_Boot_criticism)
 1. [Cory Doctorow: "The Coming Civil War over General-purpose Computing" | Talks at Google](https://youtu.be/gbYXBJOFgeI)
 1. [DEF CON 23 - Cory Doctorow - Fighting Back in the War on General Purpose Computers](https://youtu.be/pT6itfUUsoQ)
 1. [Windows 10 to make the Secure Boot alt-OS lock out a reality](https://arstechnica.com/information-technology/2015/03/windows-10-to-make-the-secure-boot-alt-os-lock-out-a-reality/)
@@ -863,7 +863,7 @@ CoreOS je operacijski sustav otvorenog koda zasnovan na jezgri Linux koji omogu�
 **Literatura:**
 
 1. [CoreOS](https://coreos.com/)
-1. [Project Atomic](https://www.projectatomic.io/)
+1. [Project Atomic](https://projectatomic.io/)
 1. Scheepers, Mathijs Jeroen. "Virtualization and containerization of application infrastructure: A comparison." (2014).
 
 ## Odabrane teme završnih radova akademske 2015/2016. godine
@@ -879,8 +879,8 @@ Oba datotečna sustava stavljaju naglasak na skaliranje, te na popravak nedostat
 
 **Literatura:**
 
-1. [OpenZFS](http://www.open-zfs.org/)
-1. [ZFS on Linux](http://zfsonlinux.org/)
+1. [OpenZFS](https://openzfs.org/)
+1. [ZFS on Linux](https://zfsonlinux.org/)
 1. Bonwick, Jeff, et al. "The zettabyte file system." Proc. of the 2nd Usenix Conference on File and Storage Technologies. 2003.
 1. Dawidek, Pawel Jakub, and Marshall Kirk McKusick. "porting the Solaris ZFS file system to the FreeBSD operating system." ; login:: the magazine of USENIX & SAGE 32.3 (2007): 19-24.
 1. [btrfs Wiki](https://btrfs.wiki.kernel.org/)
@@ -901,10 +901,10 @@ Softver kao autorsko djelo spada pod zakon o autorskom pravu, a pored toga je u 
 1. [Licences at Choose a License](https://choosealicense.com/licenses/)
 1. [Licences and Standards at Open Source Initiative](https://opensource.org/licenses)
 1. [Copyleft compliance at Software Freedom Conservancy](https://sfconservancy.org/copyleft-compliance/)
-1. [EFF on Patents](https://www.eff.org/patent)
-1. [EFF's Patent Busting Project](https://www.eff.org/patent-busting)
+1. [EFF on Patents](https://www.eff.org/issues/patents)
+1. [EFF's Patent Busting Project](https://www.eff.org/issues/patent-busting-project)
 1. [Open Invention Network](https://www.openinventionnetwork.com/)
-1. [Patent Commons](http://www.patent-commons.org/)
+1. [Patent Commons](https://patentcommons.org/)
 1. [Munich Intellectual Property Law Center](https://www.miplc.de/)
 1. [Mises Institute](https://mises.org/)
 1. Leifeld, Philip, and Sebastian Haunss. "Political discourse networks and the conflict over software patents in Europe." European Journal of Political Research 51.3 (2012): 382-409.
@@ -932,12 +932,12 @@ Međutim, prava promjena događa se tek 2012. kad ICANN otvara mogućnost privat
 1. [Uniregistry](https://uniregistry.link/)
 1. [XYZ](https://xyz.xyz/)
 1. [Google Registry](https://www.registry.google/)
-1. [Famous Four Media](https://www.famousfourmedia.com/)
-1. [Minds + Machines](https://www.mindsandmachines.com/)
-1. [Donuts](http://www.donuts.domains/)
-1. [DotClub](http://nic.club/)
-1. [Radix](http://radix.website/)
-1. [Rightside](http://rightside.co/)
+1. [Famous Four Media](https://web.archive.org/web/20120204044801/https://www.famousfourmedia.com/)
+1. [Minds + Machines](https://mmx.co/)
+1. [Donuts](https://donuts.domains/)
+1. [DotClub](https://get.club/)
+1. [Radix](https://radix.website/)
+1. [Rightside](https://web.archive.org/web/20131207195308/http://rightside.co/)
 
 ### Slobodni softver za anonimnu komunikaciju Tor (Tor: free software for anonymous communication) {[RM1](nastava/kolegiji/RM1.md)} [Marjana Bjelić]
 
@@ -972,7 +972,7 @@ CP2K je popularan slobodan softver otvorenog koda za molekularnu dinamiku. Dokum
 1. [Bootstrap](https://getbootstrap.com/)
 1. [CP2K](https://www.cp2k.org/)
 1. Dokumentacija [Java Platform SE 7](https://docs.oracle.com/javase/7/docs/api/), primjer dizajna korisničkog sučelja
-1. Dokumentacija [Doxygena](https://www.stack.nl/~dimitri/doxygen/), primjer dizajna korisničkog sučelja
+1. Dokumentacija [Doxygena](https://www.doxygen.nl/), primjer dizajna korisničkog sučelja
 
 ### Analiza učinkovitosti paralelnih aplikacija (Performance analysis of parallel applications) {[DS](nastava/kolegiji/DS.md)} [Tomislav Šubić]
 
@@ -988,8 +988,8 @@ Za mjerenje performansi paralelnih aplikacija koriste se specijalizirani alati k
 
 **Literatura:**
 
-1. Gropp, William, and Ewing Lusk. "Reproducible measurements of MPI performance characteristics." European Parallel Virtual Machine/Message Passing Interface Users’ Group Meeting. Springer, Berlin, Heidelberg, 1999. Rad dostupan putem [mrežnih stranica Williama D. Groppa](http://wgropp.cs.illinois.edu/bib/papers/pdata/1999/pvmmpi99/mpptest.pdf)
+1. Gropp, William, and Ewing Lusk. "Reproducible measurements of MPI performance characteristics." European Parallel Virtual Machine/Message Passing Interface Users’ Group Meeting. Springer, Berlin, Heidelberg, 1999. Rad dostupan putem [mrežnih stranica Williama D. Groppa](https://wgropp.cs.illinois.edu/bib/papers/pdata/1999/pvmmpi99/mpptest.pdf)
 1. [VAMPIR](https://www.vampir.eu/)
 1. [MPPTEST](https://www.mcs.anl.gov/research/projects/mpi/mpptest/)
 1. [Allinea MAP](https://www.allinea.com/products/map/)
-1. [Valgrind](http://valgrind.org/)
+1. [Valgrind](https://valgrind.org/)

@@ -96,7 +96,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
         - `9) SIGKILL` -- odmah prekida izvođenje procesa
         - `19) SIGSTOP` -- zaustavlja proces u izvođenju; stavlja proces u background
 
-    - ostale signale proces hvata korištenjem funkcije `signal()` definirane u zaglavlju `signal.h` iz standardne biblioteke jezika C (C++ varijanta je `csignal`); detaljnije na [Wikipedijinoj stranici o signal.h](https://en.wikipedia.org/wiki/signal.h)
+    - ostale signale proces hvata korištenjem funkcije `signal()` definirane u zaglavlju `signal.h` iz standardne biblioteke jezika C (C++ varijanta je `csignal`); detaljnije na [Wikipedijinoj stranici o signal.h](https://en.wikipedia.org/wiki/C_signal_handling)
 
 - `kill -<n> PID` je naredba za slanje signala $n$ procesu PID
 

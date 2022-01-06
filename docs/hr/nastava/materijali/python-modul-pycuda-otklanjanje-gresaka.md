@@ -125,7 +125,7 @@ Specifične naredbe alata `cuda-gdb` su
 - `cuda warp` -- ispis podataka o trenutnoj CUDA osnovi ili odabir osnove
 - `cuda lane` -- ispis podataka o trenutnoj CUDA stazi ili odabir staze
 
-Modul PyCUDA se može koristiti u kombinaciji s alatom `cuda-gdb` prema [službenim uputama](https://wiki.tiker.net/PyCuda/FrequentlyAskedQuestions#Is_it_possible_to_use_cuda-gdb_with_PyCUDA.3F). Iskoristimo primjer koji vrši zbrajanje vektora; alat pokrećemo naredbom
+Modul PyCUDA se može koristiti u kombinaciji s alatom `cuda-gdb` prema [službenim uputama](https://wiki.tiker.net/PyCuda/FrequentlyAskedQuestions/#is-it-possible-to-use-cuda-gdb-with-pycuda). Iskoristimo primjer koji vrši zbrajanje vektora; alat pokrećemo naredbom
 
 ``` bash
 $ cuda-gdb --args python -m pycuda.debug zbrajanje_vektora.py

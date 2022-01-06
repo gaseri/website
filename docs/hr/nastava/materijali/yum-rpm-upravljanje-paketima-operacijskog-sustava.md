@@ -23,7 +23,7 @@ author: Vedran Miletić
 
     - koristi se za stvaranje, instalaciju, deinstalaciju i konfiguriranje paketa
     - *"dependency hell"* (pakao međuovisnosti?)
-    - najpoznatiji su [RPM Package Manager](http://rpm.org/), naredba `rpm`, i [dpkg](https://wiki.debian.org/Teams/Dpkg), naredba `dpkg`
+    - najpoznatiji su [RPM Package Manager](https://rpm.org/), naredba `rpm`, i [dpkg](https://wiki.debian.org/Teams/Dpkg), naredba `dpkg`
 
 !!! admonition "Zadatak"
     Proučite `rpm(8)` (notacija za `man 8 rpm`), specifično dio o naredbama za pretraživanje (engl. query, `rpm -q`).
@@ -83,7 +83,7 @@ author: Vedran Miletić
 
     - Nadogradite sve pakete na sustavu. Hoće li `yum` automatski obnoviti popise? Objasnite što bi se dogodilo u slučaju da prethodno ne obnovi popise paketa. (*Uputa:* Za ilustraciju možete razmišljati u situaciji s popisima paketa starim nekoliko mjeseci.)
 
-- [vrste](http://rpm.org/user_doc/dependencies.html) [međuovisnosti](http://rpm.org/user_doc/more_dependencies.html) (RPM): `Provides`, `PreReq`, `Requires`, `Conflicts`, `Obsoletes`; `Requires(pre)`, `Requires(post)`, `BuildRequires`, `BuildConflicts`, `BuildPreReq`
+- [vrste](https://rpm-software-management.github.io/rpm/manual/dependencies.html) [međuovisnosti](https://rpm-software-management.github.io/rpm/manual/more_dependencies.html) (RPM): `Provides`, `PreReq`, `Requires`, `Conflicts`, `Obsoletes`; `Requires(pre)`, `Requires(post)`, `BuildRequires`, `BuildConflicts`, `BuildPreReq`
 - [vrste međuovisnosti](https://www.debian.org/doc/debian-policy/ch-relationships.html) (dpkg): `Depends`, `Recommends`, `Suggests`, `Enhances`, `Pre-Depends`, `Breaks`, `Conflicts`, `Replaces`, `Provides`
 
 - [PackageKit](https://www.freedesktop.org/software/PackageKit/)

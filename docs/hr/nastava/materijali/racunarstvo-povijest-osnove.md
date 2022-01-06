@@ -8,7 +8,7 @@ author: Vedran Miletić
 
 - Uobičajena percepcija: "nešto što ima veze s računalima", "znanost o računalima"
 
-    - FER-ovi [preddiplomski](https://www.fer.unizg.hr/studiji/fer3/racunarstvo) i [diplomski studiji](https://www.fer.unizg.hr/studiji/diplomski_studiji/rac/racunarska_znanost)
+    - FER-ovi [preddiplomski](https://www.fer.unizg.hr/studiji/fer3/racunarstvo) i [diplomski studiji](https://www.fer.unizg.hr/studiji/dipl/rac/rz)
 
 - izučava procese koji djeluju na podatke i koji se sami mogu prikazati kao podaci u obliku programa
 - [brojne discipline](https://en.wikipedia.org/wiki/Computer_science#Fields): neke su teoretske (npr. računska teorija složenosti), neke praktične (npr. računalna grafika), neke se bave dizajnom sustava (npr. računalne mreže, paralelno i distribuirano računarstvo)
@@ -24,7 +24,7 @@ author: Vedran Miletić
 - [procjena koliko bi koštao razvoj softvera temeljenog na poznatim algoritmima](http://softwarecost.org/tools/COCOMO/) u domeni računalne dinamike fluida koji nudi zadovoljavajuću točnost za primjenu u industriji automobila (softversko inženjerstvo)
 - [grafički prikaz ljudske kože](https://techxplore.com/news/2020-05-gaming-characters-realistic-skin.html) (računalna grafika)
 - na koji način poboljšati performanse procesora unutar iPhonea za barem 20% kako bi aplikacije nove generacije radile prihvatljivo brzo (arhitektura računala)
-- [prilagodba računalne igre za povećanje zaronjenja igrača](http://publications.lib.chalmers.se/records/fulltext/111921.pdf) (engl. *player immersion*) (interakcija čovjeka i računala)
+- [prilagodba računalne igre za povećanje zaronjenja igrača](https://publications.lib.chalmers.se/records/fulltext/111921.pdf) (engl. *player immersion*) (interakcija čovjeka i računala)
 - mogu li Ante i Frane komunicirati preko veze koja se prisluškuje, ali tako da njihov razgovor nije moguće dešifrirati (kriptografija)
 - može li se izračunati koji od prvih n prirodnih brojeva su prosti brojevi i s kojim računalnim resursima (teorija izračunljivosti)
 - ako se može izračunati koji od prvih n prirodnih brojeva su prosti brojevi u jednom danu, može li se korištenjem 24 umrežena računala isto izračunati u jednom satu (paralelno i distribuirano računarstvo)

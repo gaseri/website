@@ -143,7 +143,7 @@ $ siege -c 10 http://localhost:8000/
 
 PHP-ov ugrađeni web poslužitelj u zadanim postavkama ne koristi konkurentnost u obradi zahtjeva više korisnika, odnosno izvodi se u jednoj niti za svih 10 istovremenih korisnika čije opterećenje Siege generira. Brojevi veći od toga u načelu neće donijeti veći broj izvršenih zahtjeva po sekundi.
 
-Od verzije PHP-a 7.4.0 nadalje moguće je PHP-ov ugrađeni web poslužitelj pokrenuti u više procesa koji se pritom nazivaju radnicima (engl. *workers*). To možemo izvesti je postaviti varijablu okoline `PHP_CLI_SERVER_WORKERS` ([dokumentacija](https://www.php.net/manual/ro/features.commandline.webserver.php)) na broj veći od 1 kod pokretanja ugrađenog web poslužitelja, primjerice 10 na način:
+Od verzije PHP-a 7.4.0 nadalje moguće je PHP-ov ugrađeni web poslužitelj pokrenuti u više procesa koji se pritom nazivaju radnicima (engl. *workers*). To možemo izvesti je postaviti varijablu okoline `PHP_CLI_SERVER_WORKERS` ([dokumentacija](https://www.php.net/manual/en/features.commandline.webserver.php)) na broj veći od 1 kod pokretanja ugrađenog web poslužitelja, primjerice 10 na način:
 
 ``` shell
 $ PHP_CLI_SERVER_WORKERS=10 php -S localhost:8000 -t public

@@ -22,7 +22,7 @@ Nastavno opterećenje: 2 + 2 (2 + 1)
 izv. prof. dr. sc. Božidar Kovačić
 
 E-mail: bkovacic@inf.uniri.hr  
-Web stranica: [portal.uniri.hr/portfelj/1506](https://portal.uniri.hr/portfelj/1506)  
+Web stranica: [portal.uniri.hr/Portfelj/1506](https://portal.uniri.hr/Portfelj/1506)  
 Ured: Ulica Radmile Matejčić 2, O-414  
 Vrijeme konzultacija: utorkom od 10 do 12 sati ili po dogovoru e-mailom
 

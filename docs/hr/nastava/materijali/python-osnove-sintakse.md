@@ -187,7 +187,7 @@ Ljuska [IPython](https://ipython.org/) proširuje funkcionalnost osnovnog intepr
 
 ## Podrška za Python u uređivaču teksta Emacs
 
-Emacs u standardnoj distribuciji ima `python.el` koji mu omogućuje [napredno baratanje Python kodom](http://www.saltycrane.com/blog/2010/05/my-emacs-python-environment/):
+Emacs u standardnoj distribuciji ima `python.el` koji mu omogućuje [napredno baratanje Python kodom](https://www.saltycrane.com/blog/2010/05/my-emacs-python-environment/):
 
 - `python-shift-left`, `C-c C-<`: Decrease indentation of the region
 - `python-shift-right`, `C-c C-<`: Increase indentation of the region
@@ -226,7 +226,7 @@ dir() # vraća popis atributa i metoda tipa int
 
     - nedostatak uvlake: `IndentationError: expected an indented block`
     - višak uvlake: `IndentationError: unexpected indent`
-    - Emacs za Python uvlaku koristi 4 razmaka (preporučeno, [PEP 8](http://legacy.python.org/dev/peps/pep-0008/)) i *automatski pravilno uvlači* pritiskom na tipku `Tab`
+    - Emacs za Python uvlaku koristi 4 razmaka (preporučeno, [PEP 8](https://www.python.org/dev/peps/pep-0008/)) i *automatski pravilno uvlači* pritiskom na tipku `Tab`
 
 - `None` -- tip podataka *ništa*; (`a` nedefiniran) != (`a = None`)
 - `True` i `False` -- boolean tip podataka; `False` su `int(0)`, `float(0.0)`, `str("")`, `list([])`

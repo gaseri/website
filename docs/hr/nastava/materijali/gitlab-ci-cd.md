@@ -8,7 +8,7 @@ Pored [posluživanja Git repozitorija i povezanih usluga](https://docs.gitlab.co
 
 Kontinuirana integracija omogućuje nam izgradnju, testiranje i pokretanje softvera u čistoj okolini, što nam pomaže pronaći probleme kod integracije promjena koji developeru možda promaknu dok radi u razvojnoj okolini. GitLab omogućuje korištenje [Docker](https://www.docker.com/) kontejnera ili vlastitih (virtualnih) računala u kojima se izvodi [GitLab Runner](https://docs.gitlab.com/runner/).
 
-Korištenje CI/CD u besplatnoj verziji GitLaba [ograničeno je na 400 minuta mjesečno od rujna 2020. godine](https://about.gitlab.com/releases/2020/09/01/ci-minutes-update-free-users/), što je sasvim dovoljno za eksperimentiranje i edukaciju.
+Korištenje CI/CD u besplatnoj verziji GitLaba [ograničeno je na 400 minuta mjesečno od rujna 2020. godine](https://about.gitlab.com/blog/2020/09/01/ci-minutes-update-free-users/), što je sasvim dovoljno za eksperimentiranje i edukaciju.
 
 ## Konfiguracija kontinuirane integracije
 

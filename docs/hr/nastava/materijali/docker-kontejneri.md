@@ -161,4 +161,4 @@ Poruke su iste kao i kod pokretanja naredbom `docker run` iznad.
 
 U datoteci `/etc/default/docker` mogu se podešavati različiti parametri za rad naredbe `docker`, kao primjerice lokacija spremanja privremenih fileova i slično. Isto tako moguće je definirati na kojem se defaultnom portu pokreću daemon docker apps.
 
-Za prikupljanje logova o aktivnostima na pokrenutim containerima postoje mnogi alati. Specijaliziraju se u prikupljanju i centraliziranju logova sa svih pokrenutih kontejnera i šalju ih na centralni poslužitelj gdje se isti premaju. Neki od alata su [Loggly](https://www.loggly.com/docs/docker-syslog/) i [Fluentd](https://www.fluentd.org/guides/recipes/docker-logging).
+Za prikupljanje logova o aktivnostima na pokrenutim containerima postoje mnogi alati. Specijaliziraju se u prikupljanju i centraliziranju logova sa svih pokrenutih kontejnera i šalju ih na centralni poslužitelj gdje se isti premaju. Neki od alata su [Loggly](https://documentation.solarwinds.com/en/success_center/loggly/content/admin/about-loggly.htm) i [Fluentd](https://www.fluentd.org/guides/recipes/docker-logging).

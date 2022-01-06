@@ -27,7 +27,7 @@ Značajke Avahija:
 - Sposobnost da odražava mDNS promet između više podmreža
 - Sposobnost konfiguriranja unicast DNS poslužitelja automatski od poslužitelja podataka objavljenih na LAN
 - Širokopojasna podrška DNS-SD
-- Kompatibilnost biblioteka sa [HOWL](http://0pointer.de/blog/projects/howl.html) i Apple Bonjour
+- Kompatibilnost biblioteka sa [HOWL](https://0pointer.de/blog/projects/howl.html) i Apple Bonjour
 
 Avahi je osmišljen da bude vrlo jednostavan za korištenje u postavljanju i upravljanju mrežama. Vrlo lako se kreiraju novi serveri, a još lakše se pronalaze postojeći unutar mreže.
 

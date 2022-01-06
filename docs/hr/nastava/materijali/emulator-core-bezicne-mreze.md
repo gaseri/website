@@ -16,7 +16,7 @@ Nakon dodavanja čvora tipa `wireless LAN` na platno stvara se novi čvor imena 
 - Postotak gubitaka (`Loss`)
 - Podrhtavanje zadržavanja (`Jitter`), izraženo u mikrosekundama
 
-Kartica `EMANE` omogućuje nam omogućuje integraciju CORE-a s emulatorom [Extendable Mobile Ad-hoc Network Emulator (EMANE)](https://www.nrl.navy.mil/itd/ncs/products/emane). Time se nećemo baviti.
+Kartica `EMANE` omogućuje nam omogućuje integraciju CORE-a s emulatorom [Extendable Mobile Ad-hoc Network Emulator (EMANE)](https://www.nrl.navy.mil/Our-Work/Areas-of-Research/Information-Technology/NCS/EMANE/). Time se nećemo baviti.
 
 Također možemo postaviti IPv4 podmrežu (`IPv4 subnet`) i IPv6 podmrežu (`IPv6 subnet`).
 

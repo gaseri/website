@@ -207,7 +207,7 @@ Poslužitelji ključeva (engl. *keyservers*) koriste se za distribuciju javnih k
 
 ### Instalacija poslužitelja SKS
 
-[Synchronising Key Server (SKS)](https://bitbucket.org/skskeyserver/sks-keyserver) je OpenPGP poslužitelj čiji je cilj jednostavnost implementacije, decentraliziranost i vrlo pouzdana sinkronizacija. Slijedi nekoliko osnovnih koraka instalacije i konfiguriranja poslužitelja SKS:
+[Synchronising Key Server (SKS)](https://github.com/SKS-Keyserver/sks-keyserver) je OpenPGP poslužitelj čiji je cilj jednostavnost implementacije, decentraliziranost i vrlo pouzdana sinkronizacija. Slijedi nekoliko osnovnih koraka instalacije i konfiguriranja poslužitelja SKS:
 
 ``` shell
 # yum install sks -y
@@ -472,12 +472,12 @@ Instalacija SKS Keyservera i njegova konfiguracija opisana je na više izvora je
 !!! todo
     Reference treba pročistiti i povezati u tekstu.
 
-1. Key server (cryptographic), http://en.wikipedia.org/wiki/Key_server_(cryptographic), siječanj 2013.
-1. Ubuntu Forums, http://ubuntuforums.org/showthread.php?t=680292, siječanj 2013.
-1. Opis PGP i GnuPG alata, http://www.cis.hr/www.edicija/LinkedDocuments/CCERT-PUBDOC-2003-12-51.pdf, siječanj 2013.
-1. Zaštita datoteka na Linux operacijskim sustavima, http://www.cis.hr/www.edicija/LinkedDocuments/CCERT-PUBDOC-2007-05-192.pdf, siječanj 2013.
-1. GPG Quick Start, http://www.madboa.com/geek/gpg-quickstart/, siječanj 2013.
-1. [Osobna kriptografija - GPG, TrueCrypt, SSL](http://security.foi.hr/wiki/index.php/Osobna_kriptografija_-_GPG,_TrueCrypt,_SSL), siječanj 2013.
-1. GnuPG, http://www.gnupg.org/, siječanj 2013.
-1. GNU Privacy Guard, https://sec.carnet.hr/vise-o-sigurnosti/enciklopedija/pretty-good-privacy-pgp/gnu-privacy-guard, siječanj 2013.
-1. Kriptiranje - zaštita poruka u komunikaciji, http://www.informatika.buzdo.com/pojmovi/gpg1.htm, siječanj 2013.
+1. [Key server (cryptographic)](https://en.wikipedia.org/wiki/Key_server_(cryptographic)), siječanj 2013.
+1. [Ubuntu Forums](https://ubuntuforums.org/showthread.php?t=680292), siječanj 2013.
+1. [Opis PGP i GnuPG alata](https://www.cis.hr/www.edicija/LinkedDocuments/CCERT-PUBDOC-2003-12-51.pdf), siječanj 2013.
+1. [Zaštita datoteka na Linux operacijskim sustavima](https://www.cis.hr/www.edicija/LinkedDocuments/CCERT-PUBDOC-2007-05-192.pdf), siječanj 2013.
+1. [GPG Quick Start](https://www.madboa.com/geek/gpg-quickstart/), siječanj 2013.
+1. [Osobna kriptografija - GPG, TrueCrypt, SSL](https://security.foi.hr/wiki/index.php/Osobna_kriptografija_-_GPG,_TrueCrypt,_SSL.html), siječanj 2013.
+1. [GnuPG](https://www.gnupg.org/), siječanj 2013.
+1. [GNU Privacy Guard](https://sec.carnet.hr/vise-o-sigurnosti/enciklopedija/pretty-good-privacy-pgp/gnu-privacy-guard), siječanj 2013.
+1. [Kriptiranje - zaštita poruka u komunikaciji](https://informatika.buzdo.com/pojmovi/gpg-1.htm), siječanj 2013.

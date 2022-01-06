@@ -339,7 +339,7 @@ This is going to take a long time
 
 ### Mjerenje performansi Diffie-Hellmanove razmjene ključeva
 
-OpenSSL omogućuje mjerenje brzine Diffie-Hellmanove razmjene ključeva temeljene na eliptičkim krivuljama (engl. [Elliptic-curve Diffie--Hellman](https://en.wikipedia.org/wiki/Elliptic-curve_Diffie%E2%80%93Hellman)) opcijom `speed ecdsa`.
+OpenSSL omogućuje mjerenje brzine Diffie-Hellmanove razmjene ključeva temeljene na eliptičkim krivuljama (engl. [Elliptic-curve Diffie-Hellman](https://en.wikipedia.org/wiki/Elliptic-curve_Diffie%E2%80%93Hellman)) opcijom `speed ecdsa`.
 
 ### Stvaranje i obrada ostalih ključeva
 

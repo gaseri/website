@@ -50,6 +50,6 @@ author: Vedran Miletić
 - [Ingrid Beloša](https://www.routerfreak.com/author/ingrid/)
 - Ivan Ivakić
 - [Domagoj Margan](https://domargan.net/)
-- [Luka Unuk](http://luka8088.com/)
+- [Luka Unuk](https://luka8088.com/)
 - [Valter Popeškić](https://howdoesinternetwork.com/)
-- [Mladen Bočev](http://mladenbocev.com/)
+- [Mladen Bočev](https://www.youtube.com/channel/UCiI-bkFc_QirAA8ZC24yslw)

@@ -114,7 +114,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 
     - dozvoljava rad nad nizom podataka
     - podaci sa standardnog ulaza uređuju se prema prethodno napisanim uputama, naredbama spremljenim u datoteku i prosljeđuju se na standardni izlaz
-    - više detalja o naredbi pronađite [na Wikipedijinoj stranici](https://en.wikipedia.org/wiki/Sed) i u [službenom priručniku](https://www.gnu.org/software/sed/manual/sed.html) ili [tutorialu Brucea Barnetta](http://www.grymoire.com/unix/sed.html)
+    - više detalja o naredbi pronađite [na Wikipedijinoj stranici](https://en.wikipedia.org/wiki/Sed) i u [službenom priručniku](https://www.gnu.org/software/sed/manual/sed.html) ili [tutorialu Brucea Barnetta](https://www.grymoire.com/unix/sed.html)
 
 `sed` nudi dvije osnovne mogućnosti primjene.
 

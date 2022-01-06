@@ -6,11 +6,11 @@ author: Vedran Miletić
 
 [Secure Shell (SSH)](https://en.wikipedia.org/wiki/Secure_Shell) je kriptografski mrežni protokol za sigurno udaljeno pristupanje uslugama operacijskog sustava putem mreže koja se smatra nesigurnom. Može se reći da je takav oblik prijave na operacijski sustav na udaljenom računalu [sličan astralnoj projekciji](https://twitter.com/nixcraft/status/1232380850378948608). Protokol SSH je izvorno dokumentiran u pet glavnih RFC-a:
 
-- [RFC 4250: SSH Assigned Numbers](https://tools.ietf.org/html/rfc4250)
-- [RFC 4251: SSH Protocol Architecture](https://tools.ietf.org/html/rfc4251)
-- [RFC 4252: SSH Authentication Protocol](https://tools.ietf.org/html/rfc4252)
-- [RFC 4253: SSH Transport Layer Protocol](https://tools.ietf.org/html/rfc4253)
-- [RFC 4254: SSH Connection Protocol (RFC 4254)](https://tools.ietf.org/html/rfc4254)
+- [RFC 4250: SSH Assigned Numbers](https://datatracker.ietf.org/doc/html/rfc4250)
+- [RFC 4251: SSH Protocol Architecture](https://datatracker.ietf.org/doc/html/rfc4251)
+- [RFC 4252: SSH Authentication Protocol](https://datatracker.ietf.org/doc/html/rfc4252)
+- [RFC 4253: SSH Transport Layer Protocol](https://datatracker.ietf.org/doc/html/rfc4253)
+- [RFC 4254: SSH Connection Protocol (RFC 4254)](https://datatracker.ietf.org/doc/html/rfc4254)
 
 Postoji i [nekolicina drugih RFC-a koji opisuju ekstenzije protokola](https://www.openssh.com/specs.html).
 

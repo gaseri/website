@@ -24,12 +24,9 @@ Periodički, približno svakih 3 do 5 godina, Red Hat uzima tehnologiju razvijen
 
 [CentOS](https://centos.org/) je RHEL koji ima drugačiju robnu marku (engl. *branding*), što omogućuje neograničenu distribuciju bez kršenja Red Hatovog autorskog prava (engl. *copyright*) i zaštitnog znaka (engl. *trademark*). CentOS cilja na poslovne i akademske korisnike koji nemaju potrebu ili želju za plaćanjem Red Hatove podrške, a sam nudi podršku bez naknade (i bez garancija) od strane zajednice okupljene oko projekta.
 
-!!! tip
-    CentOS spada među projekte koji proizvedeni softver distribuiraju putem zrcalnih poslužitelja (engl. *mirror servers*) diljem svijeta ([popis](https://www.centos.org/download/mirrors/)), a među njima je i [zrcalni poslužitelj slobodnog softvera otvorenog koda na Sveučilištu u Rijeci](https://mirrors.uniri.hr/). Za više informacija pročitajte članke na temu na stranicama [Riječke podružnice Hrvatske udruge Linux korisnika](https://www.ri.linux.hr/2017/09/23/centos-mirroran-na-sveucilistu-u-rijeci/) i [Nudged Elastic Band is my band name](https://nudgedelastic.band/2017/09/mirroring-free-and-open-source-software-matters/).
-
 Dokumentacija koju vrijedi konzultirati je:
 
-- [Red Hat Enterprise Linux dokumentacija](https://access.redhat.com/knowledge/docs/Red_Hat_Enterprise_Linux/)
+- [Red Hat Enterprise Linux dokumentacija](https://access.redhat.com/products/red-hat-enterprise-linux/)
 
     - CentOS je 100% kompatibilan s istom verzijom RHEL-a pa sva dokumentacija RHEL-a vrijedi, a nadopunjuje je [CentOS Wiki](https://wiki.centos.org/)
 
@@ -63,7 +60,7 @@ Kod uobičajene instalacije moguće je napraviti odabir paketa (dijelova sustava
 
 ## Živa instalacija (Fedora Workstation)
 
-Kod [žive instalacije](https://fedoraproject.org/wiki/LiveOS_image) se prvo pokreće boot učitavač [ISOLINUX](https://www.syslinux.org/wiki/index.php?title=ISOLINUX). U slučaju da korisnik ne pritisne nijednu tipku, on provjerava medij i pokreće Fedoru nakon 60 sekundi. U slučaju da korisnik želi nešto drugo, ima izbor:
+Kod [žive instalacije](https://fedoraproject.org/wiki/LiveOS_image) se prvo pokreće boot učitavač [ISOLINUX](https://wiki.syslinux.org/wiki/index.php?title=ISOLINUX). U slučaju da korisnik ne pritisne nijednu tipku, on provjerava medij i pokreće Fedoru nakon 60 sekundi. U slučaju da korisnik želi nešto drugo, ima izbor:
 
 - pokretanje sustava (`Start Fedora-Workstation-Live`),
 - provjera medij i pokretanje sustava (`Test this media & start Fedora-Workstation-Live`),
@@ -77,7 +74,7 @@ U pozadini Plymouthovih efekata pojavljuju se sistemske poruke, a u slučaju da 
 
 Zatim se pokreće poslužitelj zaslona Wayland ili X, a na njemu aplikacija [GNOME Display Manager (GDM)](https://wiki.gnome.org/Projects/GDM), koja služi za prijavu korisnika u grafičkom sučelju. Mi GDM ne vidimo, jer je postavljena automatska prijava zadanog korisnika bez čekanja na korisničku intervenciju.
 
-GDM pokreće standardni [GNOME Desktop Environment](https://www.gnome.org/gnome-3/) i moguće je pokrenuti sve njegove programe ([tekst editor](https://wiki.gnome.org/Apps/Gedit), [terminal](https://wiki.gnome.org/Apps/Terminal), [video player](https://wiki.gnome.org/Apps/Videos) itd.), kao da je sustav instaliran. Ovo služi da korisnici mogu isprobati radi li sustav na njihovom računalu kako treba prije nego se odluče na instalaciju. Naravno, zbog manje brzine čitanja sa CD-a, DVD-a i USB flash diskova realno je za očekivati da sustav radi nešto sporije nego kad je instaliran.
+GDM pokreće standardni [GNOME Desktop Environment](https://www.gnome.org/) i moguće je pokrenuti sve njegove programe ([tekst editor](https://wiki.gnome.org/Apps/Gedit), [terminal](https://wiki.gnome.org/Apps/Terminal), [video player](https://wiki.gnome.org/Apps/Videos) itd.), kao da je sustav instaliran. Ovo služi da korisnici mogu isprobati radi li sustav na njihovom računalu kako treba prije nego se odluče na instalaciju. Naravno, zbog manje brzine čitanja sa CD-a, DVD-a i USB flash diskova realno je za očekivati da sustav radi nešto sporije nego kad je instaliran.
 
 Sustav koji se pokrene bit će na engleskom jeziku. Korisniku se nudi isprobavanje Fedore i instalacija na čvrsti disk. U slučaju da korisnik odabere isprobavanje, instalaciju je uvijek moguće pokrenuti iz Dasha (niza ikona koje se pojave na lijevoj strani radne površine nakon klika na `Activities`).
 

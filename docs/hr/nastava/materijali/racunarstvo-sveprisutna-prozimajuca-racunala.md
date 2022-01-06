@@ -14,6 +14,6 @@ Marketinšku priču na stranu, autori operacijskih sustava današnjice razumiju 
 
 ![Windows 10 product family](../../../images/windows-10-product-family.jpg)
 
-**Slika:** Windows 10 Product Family. (Slika preuzeta iz Techweezovog članka [Windows 10: A Bold New Direction For Microsoft](https://www.techweez.com/2015/01/22/microsoft-windows-10/).)
+**Slika:** Windows 10 Product Family. (Slika preuzeta iz Techweezovog članka [Windows 10: A Bold New Direction For Microsoft](https://techweez.com/2015/01/22/microsoft-windows-10/).)
 
 Pored ovih uređaja i računalne opreme za podatkovne centre, računala su i pametni kućanski aparati, ADSL modemi, pomoćni uređaji za ljude s poteškoćama, sustavi za klimatizaciju zgrada, automobili i drugi.

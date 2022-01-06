@@ -69,7 +69,7 @@ print("CPU i GPU daju isti rezultat?\n", result_cpu == result_gpu.get())
     Prilagodite gornji kod tako da se zrnu prosljeđuje i veličina matrice koja se koristi u izračunu; za to trebate napraviti tri stvari:
 
     - U zrnu promijeniti kod da potpis bude `__global__ void zbroji_matrice (float *dest, float *a, float *b, int n)`,
-    - Inicijalizirati u Python kodu `n` na željenu vrijednost odgovarajućeg `numpy` tipa (proučite [ranije navedeni popis](https://wiki.tiker.net/PyCuda/FrequentlyAskedQuestions#How_do_I_specify_the_correct_types_when_calling_and_preparing_PyCUDA_functions.3F)),
+    - Inicijalizirati u Python kodu `n` na željenu vrijednost odgovarajućeg `numpy` tipa (proučite [ranije navedeni popis](https://wiki.tiker.net/PyCuda/FrequentlyAskedQuestions/#how-do-i-specify-the-correct-types-when-calling-and-preparing-pycuda-functions)),
     - Izvesti poziv funkcije s `matrix_sum(result_gpu, a_gpu, b_gpu, n, ...)`, obzirom da se kod prosljeđivanja argumenata po vrijednosti može raditi s nekim `numpy` tipovima (za detalje proučite [dokumentaciju objekta pycuda.driver.Function](https://documen.tician.de/pycuda/driver.html#pycuda.driver.Function)).
 
     **Napomena:** veličinu matrice potrebno je znati kada broj niti koje rade na matrici nije identičan kao ta veličina. Primjerice, za zbroj matrica veličine `(16, 16)` koji izvodi 20 niti kod bi mogao biti oblika

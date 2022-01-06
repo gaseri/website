@@ -55,7 +55,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
     $ ln -s test.txt test_simbolicka_poveznica.txt
     ```
 
-- jedan od zanimljivih problema koji mogu nastati ako se simboličke poveznice pogrešno koriste je [petlja simboličkih poveznica](http://tuxdna.wordpress.com/2011/12/10/symlink-loop-is-still-an-unsolved-problem/)
+- jedan od zanimljivih problema koji mogu nastati ako se simboličke poveznice pogrešno koriste je [petlja simboličkih poveznica](https://tuxdna.wordpress.com/2011/12/10/symlink-loop-is-still-an-unsolved-problem/)
 
 !!! admonition "Zadatak"
     - Stvorite u svom direktoriju tekstualnu datoteku `pepeljuga`, i upišite u nju sadržaj po želji.

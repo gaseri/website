@@ -81,7 +81,7 @@ P1. Razvoj računala i interneta
 P2. Superračunala i znanstveni softver  
 P3. Intelektualno vlasništvo nad softverom, podacima i znanstvenim radovima  
 P4. Kemoinformatika i bioinformatika  
-P5. Posjet [muzeju starih računala i informatičke tehnologije PEEK&POKE](http://www.peekpoke.hr/) s osvrtom
+P5. Posjet [muzeju starih računala i informatičke tehnologije PEEK&POKE](https://www.peekpoke.hr/) s osvrtom
 
 ### Vježbe
 

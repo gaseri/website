@@ -15,7 +15,7 @@ Virtualizacija je tijekom 2000-ih godina ubrzano razvijala i bila jedna od najpo
 - smanjenje troškova infrastrukture,
 - pokretanje Windowsa ili Linuxa na Mac OS X-u (i brojne druge kombinacije).
 
-Virtualizacija se danas koristi gotovo svuda, ili se namjerava preći na nju kod sljedeće nadogradnje. Primjerice, poslužitelj koji pogoni [lab.miletic.net](https://lab.miletic.net/) je isto virtualni stroj (tzv. virtualni privatni server, VPS), iznajmljen kod [Hetznera](https://www.hetzner.com/). Porast snage računala, specifično povećanje broja jezgara procesora i količine memorije, učinio je da jedno računalo ima dovoljno resursa za izvođenje više operacijskih sustava te je, usputno s razvojem tehnologije virtualizacije koja omogućuje takvo dijeljenje računala u više njih, razvijena i ekonomija iznajmljivanja virtualnih računala (u "oblaku") po potrebi.
+Virtualizacija se danas koristi gotovo svuda, ili se namjerava preći na nju kod sljedeće nadogradnje. Primjerice, poslužitelj koji pogoni [www.miletic.net](https://www.miletic.net/) je isto virtualni stroj (tzv. virtualni privatni server, VPS), iznajmljen kod [Hetznera](https://www.hetzner.com/). Porast snage računala, specifično povećanje broja jezgara procesora i količine memorije, učinio je da jedno računalo ima dovoljno resursa za izvođenje više operacijskih sustava te je, usputno s razvojem tehnologije virtualizacije koja omogućuje takvo dijeljenje računala u više njih, razvijena i ekonomija iznajmljivanja virtualnih računala (u "oblaku") po potrebi.
 
 ## Potreba za virtualizacijom
 
@@ -66,7 +66,7 @@ Potpuna virtualizacija podrazumijeva simulaciju hardvera fizičkog stroja što o
 
 Neka od rješenja za potpunu virtualizaciju su:
 
-- Microsoft [Hyper-V](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/), nasljednik [Windows Virtual PC](https://support.microsoft.com/en-us/help/958559/description-of-windows-virtual-pc),
+- Microsoft [Hyper-V](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/), nasljednik [Windows Virtual PC](https://support.microsoft.com/en-us/topic/description-of-windows-virtual-pc-262c8961-90e5-1125-654f-d87cd5ba16f8),
 - Oracle (nekad Sun, InnoTek) [VirtualBox](https://www.virtualbox.org/),
 - Parallels [Desktop](https://www.parallels.com/products/desktop/), nekad i [Workstation](https://en.wikipedia.org/wiki/Parallels_Workstation),
 - [QEMU](https://www.qemu.org/), [KVM](https://www.linux-kvm.org/) i [Virtual Machine Manager](https://virt-manager.org/),
@@ -81,7 +81,7 @@ Hardverski potpomognuta virtualizacija, ponekad nazvana i izvorna virtualizacija
 Podrška za hardverski potpomognutu virtualizaciju dodana je u obliku procesorskih ekstenzija za x86 procesore koje su neovisno implementirali Intel i AMD. Tako su nastale dvije tehnologije:
 
 - [Intel Virtualization Technology for x86 (Intel VT-x)](https://www.intel.com/content/www/us/en/virtualization/virtualization-technology/intel-virtualization-technology.html) (jedna od [komponenata Intel VT](https://www.thomas-krenn.com/en/wiki/Overview_of_the_Intel_VT_Virtualization_Features)),
-- [AMD Virtualization (AMD-V)](https://www.amd.com/en/technologies/virtualization).
+- [AMD Virtualization (AMD-V)](https://www.amd.com/en/technologies/virtualization-solutions).
 
 Iako su one po specifikacijama različite, obje postižu isti cilj: omogućuju izvođenje virtualnih mašina s nepromijenjenim OS-ovima brzinom koja je vrlo slična situaciji kada se OS pokreće direktno na računalu. Prije uvođenja tih ekstenzija za virtualnu mašinu procesor je bilo potrebno emulirati, što je činilo da je virtualizirani OS u izvođenju bio bitno sporiji od onoga koji se izravno pokretao na računalu.
 
@@ -157,7 +157,7 @@ Više detalja možemo pronaći u man stranici `qemu(1)` (naredba `man 1 qemu`) i
 
 Paravirtualizacija, za razliku od potpune virtualizacije, je virtualizacijska tehnika koja s ciljem poboljašanja performansi ne emulira sav hardver računalnog sustava i stoga očekuje da je gostujući operacijski sustav prilagođen radu u virtualnoj mašini.
 
-Najznačajnije rješenje u ovom području je [Xen Project](https://xenproject.org/), čiji razvoj financira Linux Foundation, a nekad je bio u vlasništu tvrtke [Citrix Systems](https://www.citrix.com/), koja je [kupila XenSource](https://www.citrix.com/blogs/2016/08/24/10-years-of-xenserver/).
+Najznačajnije rješenje u ovom području je [Xen Project](https://xenproject.org/), čiji razvoj financira Linux Foundation, a nekad je bio u vlasništu tvrtke [Citrix Systems](https://www.citrix.com/), koja je [kupila XenSource](https://www.cnet.com/news/citrix-to-buy-virtualization-company-xensource-for-500-million/).
 
 Ovo spominjemo radi potpunosti i ovdje se detaljnije ovom vrstom virtualizacije nećemo baviti.
 
@@ -165,7 +165,7 @@ Ovo spominjemo radi potpunosti i ovdje se detaljnije ovom vrstom virtualizacije 
 
 virtualizacija na razini operacijskog sustava je virtualizacijska metoda kod koje jezgra operacijskog sustava omogućuje pokretanje više izoliranih instanci prostora korisničkih aplikacija umjesto samo jedne. Svaka od tih instanci, koje se često nazivaju kontejneri (engl. *containers*) ili zatvori (engl. *jails*), iz pozicije korisnika unutar nje izgleda kao stvarni poslužitelj.
 
-[Linux Containers (LXC)](https://linuxcontainers.org/) je virtualizacija na razini operacijskog sustava namijenjena za Linux koja na osnovu [kontrolnih grupa jezgre](https://www.kernel.org/doc/Documentation/cgroup-v1/cgroups.txt) (engl. *kernel control groups*) i [izolacije imenika](https://prefetch.net/blog/2018/02/22/making-sense-of-linux-namespaces/) (engl. *namespace isolation*).
+[Linux Containers (LXC)](https://linuxcontainers.org/) je virtualizacija na razini operacijskog sustava namijenjena za Linux koja na osnovu [kontrolnih grupa jezgre](https://en.wikipedia.org/wiki/Cgroups) (engl. *kernel control groups*) ([službena dokumentacija verzije 1](https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v1/index.html), [službena dokumentacija verzije 2](https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v2.html)) i [izolacije imenika](https://prefetch.net/blog/2018/02/22/making-sense-of-linux-namespaces/) (engl. *namespace isolation*).
 
 Alternativna rješenja koja se u praksi sreću su [Linux-VServer](http://www.linux-vserver.org/) i [OpenVZ](https://openvz.org/) za Linux, [Jails](https://wiki.freebsd.org/Jails) za FreeBSD i [Solaris Containers/Zones](https://www.usenix.org/legacy/event/lisa04/tech/full_papers/price/price.pdf) za Oracle Solaris.
 
@@ -178,7 +178,7 @@ Virtualizacija se relativno brzo preselila sa poslužitelja na radne stanice i d
 Korisnicima je omogućen istovremeni rad s dva ili više operacijskih sustava, što otvara čitav niz primjena, primjerice:
 
 - korištenje Windowsa XP na Windowsima 7 zbog potrebe pokretanja stare verzije Clariona,
-- korištenje Windowsa Vista na [Arch Linuxu](https://www.archlinux.org/) zbog potrebe pokretanja Adobe Flasha,
+- korištenje Windowsa Vista na [Arch Linuxu](https://archlinux.org/) zbog potrebe pokretanja Adobe Flasha,
 - korištenje Ubuntua na Windowsima 10 za vježbanje Operacijskih sustava 1 i 2,
 - korištenje Debiana na Windowsima 8 za pokretanje mrežnog simulatora [ns-3](https://www.nsnam.org/).
 
@@ -212,5 +212,5 @@ Virtualna primjena je slika virtualnog stroja namijenjena pokretanju na određen
 [Open Virtualization Format (OVF)](https://www.dmtf.org/standards/ovf) je otvoreni standard za pakiranje i distribuciju virtualnih primjena i općenitog softvera za virtualne strojeve.
 
 !!! admonition "Zadatak"
-    - Preuzmite [virtualnu primjenu s poslužitelja inf2](https://inf2.uniri.hr/VM/).
+    - Preuzmite [virtualnu primjenu Ubuntu LTS-a](https://cloud-images.ubuntu.com/focal/current/).
     - Pokrenite virtualnu primjenu.

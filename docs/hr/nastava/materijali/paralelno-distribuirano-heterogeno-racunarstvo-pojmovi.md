@@ -56,10 +56,10 @@ Evolucija računalnih sustava prema [AMD](https://en.wikipedia.org/wiki/Advanced
     - **razvoj ograničavaju:** potošnja energije, (ne)paralelnost softvera, skalabilnost
     - **programski alati:** [pthreads](https://en.wikipedia.org/wiki/POSIX_Threads) -> [OpenMP](https://en.wikipedia.org/wiki/OpenMP) -> [MPI](https://en.wikipedia.org/wiki/Message_Passing_Interface)
 
-- **era heterogenih sustava** je [trenutno](https://gpuopen.com/professional-compute/) [hit](http://cs264.org/) [tema](https://code.google.com/p/stanford-cs193g-sp2010/) u [akademskom](https://research.nvidia.com/content/cuda-courses-map) [istraživačkom](https://research.nvidia.com/) i [nastavnom](https://www.coursera.org/course/hetero) [okruženju](https://www.fsb.unizg.hr/mat-4/?PARALELNI_ALGORITMI)
+- **era heterogenih sustava** je [trenutno](https://gpuopen.com/professional-compute/) [hit](https://www.slideshare.net/npinto/cs264-01-introduction) [tema](https://code.google.com/p/stanford-cs193g-sp2010/) u [akademskom](https://people.maths.ox.ac.uk/gilesm/cuda/) [istraživačkom](https://research.nvidia.com/) i [nastavnom](https://www.coursera.org/learn/opencl-fpga-introduction) [okruženju](https://www.fsb.unizg.hr/mat-4/?PARALELNI_ALGORITMI)
 
     - **primjeri:** AMD Llano i Trinity (A, E i C serije), Intel Sandy Bridge i Ivy Bridge (Core i3/i5/i7-2000 i 3000 serije), NVIDIA Tegra
-    - **razvoj omogućuju:** [programabilni Shaderi](https://en.wikipedia.org/wiki/Shader_(realtime,_logical)), masivna paralelizacija softvera, energetski efikasni GPU-i, [GPGPU](https://en.wikipedia.org/wiki/GPGPU)
+    - **razvoj omogućuju:** [programabilni Shaderi](https://en.wikipedia.org/wiki/Shader), masivna paralelizacija softvera, energetski efikasni GPU-i, [GPGPU](https://en.wikipedia.org/wiki/GPGPU)
     - **razvoj ograničavaju:** načini programiranja, pretek zbog komunikacije
     - **programski alati:** [NVIDIA Cg](https://en.wikipedia.org/wiki/Cg_(programming_language)), [Microsoft HLSL](https://en.wikipedia.org/wiki/High_Level_Shader_Language) -> [NVIDIA CUDA](https://en.wikipedia.org/wiki/CUDA), [Microsoft DirectCompute](https://en.wikipedia.org/wiki/DirectCompute) -> [OpenCL](https://en.wikipedia.org/wiki/OpenCL)
 
@@ -85,26 +85,26 @@ Evolucija računalnih sustava prema [AMD](https://en.wikipedia.org/wiki/Advanced
     - svaki posao se sastoji od više procesa na jednom ili više računala
     - kod većih sustava alati kao [HTCondor](https://research.cs.wisc.edu/htcondor/) služe za redanje više MPI poslova za izvođenje
 
-- otvoreni standard, specifikacija dostupna na [MPI Forumu](http://www.mpi-forum.org/)
+- otvoreni standard, specifikacija dostupna na [MPI Forumu](https://www.mpi-forum.org/)
 
     - zadnja verzija standarda je MPI-3
     - najkorištenije značajke dio (koje ćemo i mi koristiti) su dio i MPI-1 verzije standarda; novosti iz MPI-2 se nešto rjeđe koriste
 
-- podržan u mnogim jezicima: C, C++ ([Boost.MPI](http://www.boost.org/libs/mpi/)), Fortran, Java ([MPJ](http://mpj-express.org/)), Python, Perl, Ruby, ...
+- podržan u mnogim jezicima: C, C++ ([Boost.MPI](https://www.boost.org/doc/libs/release/libs/mpi/)), Fortran, Java ([MPJ](http://mpjexpress.org/)), Python, Perl, Ruby, ...
 - dvije implementacije se aktivno razvijaju; podrška za MPI-2 je postoji već dugo vremena, podrška za MPI-3 je dostupna odnedavno
 
     - [Open MPI](https://www.open-mpi.org/) (najpopularnija implementacija, nasljednik LAM/MPI)
     - [MPICH2 i MPICH 3](https://www.mpich.org/) (također vrlo popularna implementacija, nasljednik MPICH)
     - velika prednost: standardizirano sučelje => **kompatibilnost na razini izvornog koda**
 
-- dvije implementacije se samo održavaju; kompletna podrška za MPI-1, djelomična podrška za MPI-2
+- dvije implementacije su nekad bile značajne; kompletna podrška za MPI-1, djelomična podrška za MPI-2
 
-    - [LAM/MPI](http://www.lam-mpi.org/)
-    - [MPICH](http://www.mpich.org/)
+    - [LAM/MPI](https://blogs.cisco.com/performance/a-farewell-to-lammpi)
+    - [MPICH1](https://www.mpich.org/), koji je postao temelj za [MVAPICH](https://mvapich.cse.ohio-state.edu/)
 
 - korišten u znanosti i istraživanju, dostupno puno tutoriala
 
-    - [Lawrence Livermore National Laboratory tutorial](https://computing.llnl.gov/tutorials/mpi/)
+    - [Lawrence Livermore National Laboratory tutorial](https://hpc-tutorials.llnl.gov/mpi/)
     - [Argonne National Laboratory tutorial](https://www.mcs.anl.gov/research/projects/mpi/tutorial/)
     - [Kansas University tutorial](http://condor.cc.ku.edu/~grobe/docs/intro-MPI-C.shtml)
     - [Torsten Hoefler (ETH Zürich) tutorials](https://htor.inf.ethz.ch/teaching/mpi_tutorials/)
@@ -125,9 +125,9 @@ Osnvoni procesor je dobar za serijsku obradu, a grafički procesor je dobar za m
 
 ### HSA Foundation
 
-[AMD](https://www.amd.com/), [ARM](https://www.arm.com/), [Imagination](https://www.imgtec.com/), [MediaTek](https://www.mediatek.com/) i [Texas Instruments](https://www.ti.com/) su [12. lipnja 2012. godine u gradu Bellevu u saveznoj državi Washington osnovali HSA Foundation](http://www.hsafoundation.com/hello-hsa-foundation/). Zakladi su se vremeno pridružili [Vivante](http://www.hsafoundation.com/vivante-joins-the-hsa-foundation-as-a-member/), [Sonics](http://www.hsafoundation.com/sonics-joins-hsa-foundation-to-help-drive-open-standard-for-next-generation-heterogeneous-computing/), [Apical, MulticoreWare, Symbio](http://www.hsafoundation.com/hsa-foundation-announces-six-new-members/), [Arteris](http://www.hsafoundation.com/4263/), [Qualcomm](http://www.hsafoundation.com/hsa-foundation-announces-qualcomm-as-newest-founder-member/), [DMP](http://www.hsafoundation.com/dmp-joins-heterogeneous-system-architecture-hsa-foundation-to-contribute-its-expertise-in-3d-graphics-and-common-compute/), [LG Electronics](http://www.hsafoundation.com/hsa-foundation-announces-lg-electronics-as-newest-member/), [Ceva](http://www.hsafoundation.com/ceva-and-tensilica-are-new-hsa-foundation-members/) i [Tensilica](http://www.hsafoundation.com/tensilica-joins-hsa-foundation-to-help-establish-standards-for-embedded-heterogeneous-computing/).
+[AMD](https://www.amd.com/), [ARM](https://www.arm.com/), [Imagination](https://www.imgtec.com/), [MediaTek](https://www.mediatek.com/) i [Texas Instruments](https://www.ti.com/) su [12. lipnja 2012. godine u gradu Bellevu u saveznoj državi Washington osnovali HSA Foundation](https://hsafoundation.com/2012/06/12/hello-hsa-foundation/). Zakladi su se vremeno pridružili [Vivante](https://hsafoundation.com/2012/08/29/vivante-joins-the-hsa-foundation-as-a-member/), [Sonics](https://hsafoundation.com/2012/08/30/sonics-joins-hsa-foundation-to-help-drive-open-standard-for-next-generation-heterogeneous-computing/), [Apical, MulticoreWare, Symbio](https://hsafoundation.com/2012/08/31/hsa-foundation-announces-six-new-members/), [Arteris](https://hsafoundation.com/2012/08/31/4263-2/), [Qualcomm](https://hsafoundation.com/2012/10/03/hsa-foundation-announces-qualcomm-as-newest-founder-member/), [DMP](https://hsafoundation.com/2012/10/30/dmp-joins-heterogeneous-system-architecture-hsa-foundation-to-contribute-its-expertise-in-3d-graphics-and-common-compute/), [LG Electronics](https://hsafoundation.com/2012/10/31/hsa-foundation-announces-lg-electronics-as-newest-member/), [Ceva](https://hsafoundation.com/2012/11/14/ceva-and-tensilica-are-new-hsa-foundation-members/) i [Tensilica](https://hsafoundation.com/2013/03/18/tensilica-joins-hsa-foundation-to-help-establish-standards-for-embedded-heterogeneous-computing/).
 
-Iako **heterogeno računarstvo** (engl. *heterogeneous computing*) ne počinje s **heterogenom sustavskom arhitekturom** (engl. *Heterogeneous System Architecture*, HSA), ona je danas vjerojatno najbolji primjer istoga. Na stranicama [zaklade HSA Foundation](http://www.hsafoundation.com/) može se pronaći [opis temeljnih značajki HSA](http://www.hsafoundation.com/what-is-heterogeneous-system-architecture-hsa/) i [argumentacija zašto HSA predstavlja evoluciju računarstva](http://www.hsafoundation.com/hsa-represents-the-evolution-of-computing/). [Prva specifikacija](http://www.hsafoundation.com/standards/) je [objavljena 29. svibnja 2013. godine](http://www.hsafoundation.com/hsa-foundation-announces-first-specification/).
+Iako **heterogeno računarstvo** (engl. *heterogeneous computing*) ne počinje s **heterogenom sustavskom arhitekturom** (engl. *Heterogeneous System Architecture*, HSA), ona je danas vjerojatno najbolji primjer istoga. Na stranicama [zaklade HSA Foundation](https://hsafoundation.com/) može se pronaći [opis temeljnih značajki HSA](https://hsafoundation.com/2012/08/31/what-is-heterogeneous-system-architecture-hsa/) i [argumentacija zašto HSA predstavlja evoluciju računarstva](https://hsafoundation.com/2012/08/28/hsa-represents-the-evolution-of-computing/). [Prva specifikacija](https://hsafoundation.com/standards/) je [objavljena 29. svibnja 2013. godine](https://hsafoundation.com/2013/05/29/hsa-foundation-announces-first-specification/).
 
 ### Tehnologije NVIDIA Compute Unified Device Architecture (CUDA) i OpenCL
 

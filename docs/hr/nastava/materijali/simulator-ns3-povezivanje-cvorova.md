@@ -209,7 +209,7 @@ Važno je da se ova metoda pozove **nakon** svih poziva `Install()` metode nad o
 
 Datoteka koju generira ova metoda bit će smještena u direktoriju gdje se događa kompajliranje vašeg programskog koda. U slučaju da ste kao odredište spremanja datoteka projekta odabrali vaš kućni direktorij (u virtualnoj mašini to je `/home/student`), a projekt nazvali ga `rm2-vj1-primjer1i`, direktorij u kojem se nalazi pcap datoteke zove se `rm2-vj1-primjer1i-build-<verzija Qt biblioteke i program prevoditelja>`. Taj direktorij, sadrži izvršnu datoteku vašeg projekta, datoteke s objektnim kodom (`*.o`) i pcap datoteke koje imaju prefiks u imenu koji ste zadali. Naravno, pretpostavka je da ste prethodno pokrenuli izvršnu datoteku koja će stvoriti pcap datoteke (upravo zbog toga što ih stvara izvršna datoteka simulacije pcap datoteke se i nalaze u tom direktoriju).
 
-Imena pcap datoteka generirana su prema uzorku `<odabrani niz znakova>-X-Y.pcap`, pri čemu je `X` je identifikator čvora, a `Y` identifikator mrežnog sučelja na čvoru. Sadržaj pcap datoteka moguće je pregledati korištenjem [Wiresharka](https://en.wikipedia.org/wiki/Wireshark) ili [tcpdumpa](https://en.wikipedia.org/wiki/tcpdump).
+Imena pcap datoteka generirana su prema uzorku `<odabrani niz znakova>-X-Y.pcap`, pri čemu je `X` je identifikator čvora, a `Y` identifikator mrežnog sučelja na čvoru. Sadržaj pcap datoteka moguće je pregledati korištenjem [Wiresharka](https://en.wikipedia.org/wiki/Wireshark) ili [tcpdumpa](https://en.wikipedia.org/wiki/Tcpdump).
 
 ``` c++
 pointToPoint.EnablePcapAll ("vjezba-udp-echo");

@@ -17,7 +17,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 - [Filesystem Hierarchy Standard](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard) definira naziv u ulogu direktorija u datotečnom sustavu
 
     - dugo vremena je bila aktualna verzija 2.3, siječanj 2004., trenutna aktualna je verzija verzija 3.0, ljeto 2012.
-    - više informacija možete pronaći na [stranici s dokumentima o FHS](http://www.pathname.com/fhs/)
+    - više informacija možete pronaći na [stranici s dokumentima o FHS](https://www.pathname.com/fhs/)
 
 - `/bin`, `/sbin`, `/lib` -- izvršne datoteke i bibliotečne datoteke
 

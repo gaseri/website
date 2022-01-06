@@ -6,9 +6,9 @@ author: Nikola Barković, Vedran Miletić
 
 [Dynamic Host Configuration Protocol](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol) (kraće DHCP) je mrežni protokol koji se koristi za konfiguraciju mrežnih uređaja kako bi mogli komunicirati u IP mreži.
 
-DHCP je prvi put standardiziran 1993. godine ([RFC 1541](https://tools.ietf.org/html/rfc1541)) kao dodatak protokolu [Bootstrap Protocol](https://en.wikipedia.org/wiki/Bootstrap_Protocol) (kraće BOOTP). Motivacija za nadogradnju BOOTP-a je njegova potreba za ručnim unosom konfiguracijskih informacija za svaki od klijenata i nedostatak mehanizma za uzimanje nekorištenih IP adresa. DHCP je postao popularan i od 1997. godine ([RFC 2131](https://tools.ietf.org/html/rfc2131)) postaje samostalni protokol, ali nastavlja koristiti vrata koja je IANA dodjelila za BOOTP: UDP vrata 67 za slanje podataka poslužitelju i UDP vrata 68 za slanje podataka klijentu. Danas je standard na gotovo svim uređajima koji koriste IP.
+DHCP je prvi put standardiziran 1993. godine ([RFC 1541](https://datatracker.ietf.org/doc/html/rfc1541)) kao dodatak protokolu [Bootstrap Protocol](https://en.wikipedia.org/wiki/Bootstrap_Protocol) (kraće BOOTP). Motivacija za nadogradnju BOOTP-a je njegova potreba za ručnim unosom konfiguracijskih informacija za svaki od klijenata i nedostatak mehanizma za uzimanje nekorištenih IP adresa. DHCP je postao popularan i od 1997. godine ([RFC 2131](https://datatracker.ietf.org/doc/html/rfc2131)) postaje samostalni protokol, ali nastavlja koristiti vrata koja je IANA dodjelila za BOOTP: UDP vrata 67 za slanje podataka poslužitelju i UDP vrata 68 za slanje podataka klijentu. Danas je standard na gotovo svim uređajima koji koriste IP.
 
-DHCP se koristi za IPv4 i IPv6; iako obje verzije služe istoj svrsi, detalji protokola su dovoljno različiti da bi bili različiti protokoli. DHCPv6 (DHCP za IPv6) opisan je u [RFC-u 8415](https://tools.ietf.org/html/rfc8415). Mi ćemo se u nastavku ograničiti na DHCP za IPv4.
+DHCP se koristi za IPv4 i IPv6; iako obje verzije služe istoj svrsi, detalji protokola su dovoljno različiti da bi bili različiti protokoli. DHCPv6 (DHCP za IPv6) opisan je u [RFC-u 8415](https://datatracker.ietf.org/doc/html/rfc8415). Mi ćemo se u nastavku ograničiti na DHCP za IPv4.
 
 ## Uloge DHCP klijenta i poslužitelja
 
@@ -53,7 +53,7 @@ Kada DHCP poslužitelj primi zahtjev od DHCP klijenta, proces konfiguracije ulaz
 
 ## ISC DHCP
 
-Mi ćemo u nastavku koristiti [ISC DHCP](https://www.isc.org/dhcp/), DHCP poslužitelj i klijent čiji je autor [Internet Systems Consortium](https://www.isc.org/dhcp/) (kraće ISC). ISC DHCP podržava IPv4 i IPv6, skalabilan je i dostupan pod licencom slobodnog softvera otvorenog koda [MPL 2.0](https://www.mozilla.org/en-US/MPL/2.0/). Očekuje se da će u budućnosti ISC-ov DHCP poslužitelj postepeno biti zamijenjen novijim ISC-ovim DHCP poslužiteljem imena [Kea](https://www.isc.org/kea/).
+Mi ćemo u nastavku koristiti [ISC DHCP](https://www.isc.org/dhcp/), DHCP poslužitelj i klijent čiji je autor [Internet Systems Consortium](https://www.isc.org/) (kraće ISC). ISC DHCP podržava IPv4 i IPv6, skalabilan je i dostupan pod licencom slobodnog softvera otvorenog koda [MPL 2.0](https://www.mozilla.org/en-US/MPL/2.0/). Očekuje se da će u budućnosti ISC-ov DHCP poslužitelj postepeno biti zamijenjen novijim ISC-ovim DHCP poslužiteljem imena [Kea](https://www.isc.org/kea/).
 
 ### Klijentska strana
 

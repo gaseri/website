@@ -21,14 +21,14 @@ Upravitelj računalnih sustava i mreža, popularno zvan sistem admistrator, od m
 - U laboratoriju za teorijsku astrofiziku Ivana želi napraviti upload obrađenih podataka na poslužitelj [kolaboracije ARIANNA](https://arianna.ps.uci.edu/) kako bi ih njezini suradnici mogli pregledati, ali veza na internet je višestruko sporija nego ona u njenom uredu.
 - Sanjin želi udaljeni pristup poslužitelju s datotekama unutar tvrtke. Poslužitelj je inače dostupan jedino iz ureda zaposlenika, ali Sanjin ide na službeni put u Australiju na 3 tjedna i želi moći surađivati na kvartalnom izvještaju koji treba biti spreman u manje od mjesec dana.
 - Andreji treba instalirati novu verziju alata za upravljanje referencama [Zotero](https://www.zotero.org/) u računalnoj učionici za nastavu iz Uvoda u istraživački rad u biotehnologiji. Nova verzija 5.0 jako poboljšava sinkronizaciju što će omogućiti studentima da budu produktivniji na satovima vježbi.
-- Tvrtko želi dual-boot Windowsa 10 i Ubuntua 18.04 na novom laptopu [HP Spectre](https://www8.hp.com/hr/hr/premium/laptops/index.html#!spectrex360), koji mu je predan na korištenje kao zamjena za upravo rashodovani, 4 godine stari [Lenovo ThinkPad](https://www3.lenovo.com/hr/hr/laptops/thinkpad/c/thinkpad-laptops).
+- Tvrtko želi dual-boot Windowsa 10 i Ubuntua 18.04 na novom laptopu [HP Spectre](https://www.hp.com/hr-hr/premium/laptops/index.html#!spectrex360), koji mu je predan na korištenje kao zamjena za upravo rashodovani, 4 godine stari [Lenovo ThinkPad](https://www.lenovo.com/hr/hr/thinkpad/).
 - Martina bi htjela imati udaljeni pristup desktopu svog uredskog računala. Naime, neki od softvera koje ona i suradnici razvijaju mogu se izvoditi samo unutar organizacije obzirom da su jedino tamo dostupne licencirane verzije vlasničkih softvera koje ti lokalno razvijeni softveri zahtijevaju za svoj rad. Obzirom da izgradnja i izvođenje testova tih softvera traje gotovo 2 sata, ponekad Martina želi pokrenuti taj proces dok je na terenu ili na sastanku u drugoj tvrtci.
 - Franka želi rezultate simulacija [molekularne dinamike](https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/molecular-dynamics) veličine približno 10 TB učiniti dostupnima za udaljeni pristup suradnicima sa [Sveučilišta Rurh u Bochumu](https://www.ruhr-uni-bochum.de/). Zbog veličine datoteka, oni ih nemaju namjeru preuzimati u cijelosti, ali bi ih htjeli obrađivati na udaljenom računalu i eventualno preuzeti dio njih za daljnju analizu vlastitim alatima.
 - Marin je pronašao bug u softveru VoIP telefona Cisco koji onemogućuje korištenje funkcije imenika kad je jezik postavljen na hrvatski i kad je aktivirana funkcija automatskog prelaska u low power način rada nakon 15 minuta. Taj je bug popravljen u verziji softvera koja je od pred dva tjedna dostupna na Ciscovim stranicama.
 - [MIT](https://web.mit.edu/) želi uspostaviti [udrugu diplomiranih bivših studenata](https://alum.mit.edu/about) koja će, među ostalim, svakom članu osigurati da može zauvijek koristiti e-mail alias oblika `<ime>@alum.mit.edu` i URL alias oblika `http(s)://alum.mit.edu/~<ime>/`.
 - Nakon zadnjeg updatea Windowsa 10 u travnju 2018. godine, Ivona ima probleme sa "zamrzavanjem" računala nakon pokretanja memorijski zahtjevnih aplikacija kao što su Adobe Dreamweaver i SideFX Houdini na svom uredskom desktop računalu [Dell OptiPlex](https://www.dell.com/en-us/work/shop/desktop-and-all-in-one-pcs/sf/optiplex-desktops). Postoji mogućnost da je problem u UEFI firmwareu na tom računalu, obzirom da njeno računalo koristi verziju iz veljače 2016. godine, a od tada je Dell izdao 8 verzija s uključenim zakrpama za različite probleme koji su im prijavljeni od strane korisnika ili koje su sami pronašli.
 - Moreno želi da se njegove statičke mrežne stranice pisane u [Markdownu](https://daringfireball.net/projects/markdown/) automatski izgrađuju [MkDocsom](https://www.mkdocs.org/) kad napraviti `git push` u određeni repozitorij i da se, ako izgradnja prođe bez greške, datoteke kopiraju u `/var/www` umjesto postojećih.
-- Podravka želi nadograditi svoj službeni automobil [Tesla Model S](https://www.tesla.com/models) novim [softverom](https://www.tesla.com/software) koji donosi poboljšanja mnogih značajki, uključujući i [samovožnju](https://www.tesla.com/autopilot).
+- Podravka želi nadograditi svoj službeni automobil [Tesla Model S](https://www.tesla.com/models) [novim softverom](https://www.tesla.com/support/software-updates) koji donosi poboljšanja mnogih značajki, uključujući i [samovožnju](https://www.tesla.com/autopilot).
 
 ## Mjesta na webu koja vrijedi pratiti
 
@@ -54,12 +54,12 @@ Upravitelj računalnih sustava i mreža, popularno zvan sistem admistrator, od m
 ### Slobodni softver otvorenog koda
 
 - [BSD Now](https://www.bsdnow.tv/)
-- [Cat-v.org Random Contrarian Insurgent Organization](http://cat-v.org/)
+- [Cat-v.org Random Contrarian Insurgent Organization](https://cat-v.org/)
 - [installgentoo (the often imitated but never duplicated)](https://installgentoo.com/)
 - ["Linux, GNU/Linux, free software... on Reddit (r/linux/)](https://www.reddit.com/r/linux/)
 - [May your htop stats be low and your beard grow long on Reddit (r/linuxmasterrace/)](https://www.reddit.com/r/linuxmasterrace/)
-- [Linux @ OneAndOneIs2](http://linux.oneandoneis2.org/)
-- [LWN.net](https://www.lwn.net/)
+- [Linux @ OneAndOneIs2](https://linux.oneandoneis2.org/)
+- [LWN.net](https://lwn.net/)
 - [OMG! Ubuntu](https://www.omgubuntu.co.uk/)
 - [OSTechNix](https://www.ostechnix.com/)
 - [Phoronix](https://www.phoronix.com/)
@@ -68,7 +68,7 @@ Upravitelj računalnih sustava i mreža, popularno zvan sistem admistrator, od m
 - [Planet Fedora](https://planet.fedoraproject.org/)
 - [Planet FreeBSD](https://planet.xbsd.net/)
 - [Planet openSUSE](https://planet.opensuse.org/)
-- [Planet Ubuntu](http://planet.ubuntu.com/)
+- [Planet Ubuntu](https://planet.ubuntu.com/)
 
 ### Sigurnost
 
@@ -88,7 +88,7 @@ Upravitelj računalnih sustava i mreža, popularno zvan sistem admistrator, od m
 ### Internet i umrežavanje
 
 - [APNIC Blog](https://blog.apnic.net/)
-- [ICANN News & Media](https://www.icann.org/news)
+- [ICANN Announcements](https://www.icann.org/en/announcements)
 - [IETF Blog](https://ietf.org/blog/)
 - [RIPE Labs](https://labs.ripe.net/)
 
@@ -103,7 +103,7 @@ Upravitelj računalnih sustava i mreža, popularno zvan sistem admistrator, od m
 - [HotHardware](https://hothardware.com/)
 - [InfoWorld](https://www.infoworld.com/)
 - [PCWorld](https://www.pcworld.com/)
-- [The Register](https://www.theregister.co.uk/)
+- [The Register](https://www.theregister.com/)
 - [Semiconductor Engineering](https://semiengineering.com/)
 - [Softpedia News](https://news.softpedia.com/)
 - [Techdirt](https://www.techdirt.com/)
@@ -125,7 +125,7 @@ Upravitelj računalnih sustava i mreža, popularno zvan sistem admistrator, od m
 - [IGN](https://www.ign.com/)
 - [Niche Gamer](https://nichegamer.com/)
 - [GamingOnLinux](https://www.gamingonlinux.com/)
-- [Gematsu](https://gematsu.com/)
+- [Gematsu](https://www.gematsu.com/)
 - [GNU/Linux Gaming on Reddit (r/linux_gaming/)](https://www.reddit.com/r/linux_gaming/)
 - [PCGamer](https://www.pcgamer.com/)
 - [Rock, Paper, Shotgun](https://www.rockpapershotgun.com/)
@@ -138,6 +138,6 @@ Upravitelj računalnih sustava i mreža, popularno zvan sistem admistrator, od m
 - [A-Z Index of the Linux command line (SS64.com)](https://ss64.com/bash/)
 - [ArchWiki](https://wiki.archlinux.org/)
 - [Gentoo Wiki](https://wiki.gentoo.org/)
-- [The Linux Documentation Project](https://www.tldp.org/)
+- [The Linux Documentation Project](https://tldp.org/)
 - [OSDev Wiki](https://wiki.osdev.org/)
-- [Unix Toolbox (Colin Barschel)](http://cb.vu/unixtoolbox.xhtml)
+- [Unix Toolbox (Colin Barschel)](https://www.linuxsc.net/pdf/unixtoolbox.pdf)

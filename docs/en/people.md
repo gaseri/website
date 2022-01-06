@@ -67,6 +67,6 @@ author: Vedran Miletić
 
     > I am a Ph.D. student in Computer Systems at the Department of Computing, Imperial College London. During my undergraduate studies at the University of Rijeka, I used to spend quite a bit of my days sticking around CNPSLab and bugging Vedran with topics on Linux, free and open-source software (FOSS), distributed systems, and Python. Vedran generously provided me with a hands-on opportunity to learn and engage in technologies that I was passionate about and kept ever-supporting me in giving my best. Working as an undergraduate minion in CNPSLab enabled me to be involved in teaching, system administration, and programming, and while providing a substantial technical and social experience, it served as great preparation for my further studies.
 
-- [Luka Unuk](http://luka8088.com/)
+- [Luka Unuk](https://luka8088.com/)
 - [Valter Popeškić](https://howdoesinternetwork.com/)
-- [Mladen Bočev](http://mladenbocev.com/)
+- [Mladen Bočev](https://www.youtube.com/channel/UCiI-bkFc_QirAA8ZC24yslw)

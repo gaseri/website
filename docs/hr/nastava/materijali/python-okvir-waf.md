@@ -5,7 +5,7 @@ author: Vedran Miletić
 # Rad s Python okvirom waf
 
 !!! note
-    Materijali su složeni prema [Waf Tutorialu](http://docs.waf.googlecode.com/git/apidocs_17/tutorial.html). Za više detalja proučite [ostalu Waf dokumentaciju](http://docs.waf.googlecode.com/git/apidocs_17/index.html) i [Waf Book](http://docs.waf.googlecode.com/git/book_17/single.html).
+    Materijali su složeni prema [Waf Booku](https://waf.io/book/). Osim tog izvora, za više detalja proučite [Waf API dokumentaciju](https://waf.io/apidocs/).
 
 [Sustavi za automatizaciju izgradnje softvera](https://en.wikipedia.org/wiki/Build_automation) (engl. *build automation system*) su aplikacije koje automatiziraju ili skriptiraju aktivnosti u procesu izgradnje softvera.
 
@@ -13,12 +13,12 @@ Primjeri takvih alata su [Autotools](https://en.wikipedia.org/wiki/GNU_build_sys
 
 Autotools i CMake rade tako da generiraju datoteku `./configure`, a ponekad i datoteku `Makefile`. Korisnik ih najčešće pokreće putem prethodno napravljenih skripti za kompajiranje programa, a za samu izgradnju koristi `make`.
 
-[Waf](http://code.google.com/p/waf/) je okvir za konfiguraciju, prevođenje i instalaciju aplikacija. Za razliku od Autotools-a i CMake-a, Waf ne koristi `make`.
+[Waf](https://waf.io/) je okvir za konfiguraciju, prevođenje i instalaciju aplikacija. Za razliku od Autotools-a i CMake-a, Waf ne koristi `make`.
 
 Da bi iskoristili Waf na svojem projektu, postupak je vrlo jednostavan:
 
 - `$ cd myproject`
-- `$ curl -o waf http://ftp.waf.io/pub/release/waf-1.7.16`
+- `$ curl -o waf https://waf.io/waf-2.0.23`
 - `$ chmod +x waf`
 - u istom direktoriju treba napravit `wscript` sa sadržajem
 

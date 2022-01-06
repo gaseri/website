@@ -8,7 +8,7 @@ author: Vedran Miletić, Vanja Slavuj
 
 - softver koji možete prilagođavati svojim potrebama i dijeliti prilagođene verzije, npr.
 
-    - [BSD](https://www.freebsd.org/doc/en_US.ISO8859-1/books/design-44bsd/) (Bell Labs, Kalifornijsko sveučilište u Berkeleyu)
+    - [BSD](https://docs.freebsd.org/en/books/design-44bsd/) (Bell Labs, Kalifornijsko sveučilište u Berkeleyu)
     - [X Window System](https://www.x.org/) ([Digital Equipment Corporation](https://en.wikipedia.org/wiki/Digital_Equipment_Corporation), MIT, IBM)
     - [TeX](https://www.tug.org/) ([Donald E. Knuth](https://www-cs-faculty.stanford.edu/~knuth/))
 
@@ -18,7 +18,7 @@ author: Vedran Miletić, Vanja Slavuj
 
     - radi u MIT AI Labu; [priča o printeru i napuštanju MIT-a](https://en.wikipedia.org/wiki/Richard_Stallman#Events_leading_to_GNU)
     - 1983\. osniva projekt [GNU](https://www.gnu.org/), kratica za *GNU's Not Unix* (GNU zaista nije Unix jer je neovisno razvijen kao slobodni softver, a Unix je neslobodni softver)
-    - želi napraviti GNU OS, slobodni operacijski sustav [sličan Unixu](https://en.wikipedia.org/wiki/Unix-like), razvija [Emacs](https://www.gnu.org/software/emacs/) i [GCC](http://gcc.gnu.org/)
+    - želi napraviti GNU OS, slobodni operacijski sustav [sličan Unixu](https://en.wikipedia.org/wiki/Unix-like), razvija [Emacs](https://www.gnu.org/software/emacs/) i [GCC](https://gcc.gnu.org/)
     - 1985\. osniva Free Software Foundation (FSF) kako bi financirao razvoj slobodnog softvera
 
 - Stallman definira slobodni softver kroz [četiri slobode koje korisnici imaju](https://www.gnu.org/philosophy/free-sw.hr.html):
@@ -58,7 +58,7 @@ author: Vedran Miletić, Vanja Slavuj
 - GNU/Linux -- kombinacije jezgre Linux i korisničke okoline GNU čini cjeloviti operacijski sustav sličan Unixu
 
     - nazivlje Linux ili GNU/Linux -- [postoje zagovornici oba](https://en.wikipedia.org/wiki/GNU/Linux_naming_controversy), [nema](https://devrant.com/rants/1051771/id-just-like-to-interject-for-a-moment-what-you-re-referring-to-as-linux-is-in-f) [konsenzusa](https://wiki.installgentoo.com/index.php/Interjection)
-    - operacijski sustavi slični Unixu prilično su različiti od Windowsa, [pa je to i Linux](http://linux.oneandoneis2.org/LNW.htm)
+    - operacijski sustavi slični Unixu prilično su različiti od Windowsa, [pa je to i Linux](https://linux.oneandoneis2.org/LNW.htm)
 
         - zbog tih razlika i brojnih mogućnosti koje nude ponekad su neprivlačni novim korisnicima
         - zbog tih razlika i brojnih mogućnosti koje nude odlična su podloga za izučavanje značajki operacijskih sustava
@@ -76,12 +76,12 @@ author: Vedran Miletić, Vanja Slavuj
 
     - skupina programa koje su spojile grupe ljudi (najčešće iz idealističkih motiva) ili tvrtke (najčešće zbog profita)
     - uključuje sve komponente koje su potrebne da bi korisnik mogao koristiti operacijski sustav
-    - najviše korištene distribucije se mijenjaju vremenom, nepreciznu statistku vodi [DistroWatch Page Hit Ranking](https://distrowatch.com/stats.php?section=popularity)
+    - najviše korištene distribucije se mijenjaju vremenom, nepreciznu statistku vodi [DistroWatch Page Hit Ranking](https://distrowatch.com/dwres.php?section=popularity)
     - deset najpopularnijih distribucija s opisom: [DistroWatch: Top Ten Distributions](https://distrowatch.com/dwres.php?resource=major)
 
 - Neke od najvažnijih Linux distribucija:
 
-    - [Ubuntu](https://www.ubuntu.com/desktop/features), započeo 2004.
+    - [Ubuntu](https://ubuntu.com/desktop/features), započeo 2004.
 
         - osnova joj je distribucija [Debian GNU/Linux](https://www.debian.org/), čiji je razvoj započeo 1993.
         - primarno namijenjena krajnim korisnicima, velik naglasak na uključivanje popularnih desktop aplikacija
@@ -93,7 +93,7 @@ author: Vedran Miletić, Vanja Slavuj
         - primarno namijenjena Linux entuzijastima, velik naglasak na slobodu softvera i nove značajke
         - na njoj se zasnivaju [Red Hat Enterprise Linux](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux) i [CentOS](https://centos.org/)
 
-    - [Arch Linux](https://www.archlinux.org/), započeo 2002.
+    - [Arch Linux](https://archlinux.org/), započeo 2002.
 
         - neovisna distribucija
         - primarno namijenjena naprednim korisnicima
@@ -119,8 +119,8 @@ author: Vedran Miletić, Vanja Slavuj
 - u svijetu operacijskih sustava sličnim Unixu: svaki distributer pakira softver za svoju distribuciju u takozvane pakete (slični zip arhivama), a korisnik zatraži instalaciju softvera koji želi, sve ostalo rješava upravitelj paketima
 
     - omogućene nadogradnje svog softvera
-    - na istim načelima zasnivaju se [trgovina Google Play za Android aplikacije](https://play.google.com/store/apps) i [Apple App Store](https://www.apple.com/hr/ios/app-store/)
-    - primjer grafičkog sučelja: [GNOME Software](https://wiki.gnome.org/Apps/Software) i [KDE Apper](https://kde.org/applications/system/org.kde.apper)
+    - na istim načelima zasnivaju se [trgovina Google Play za Android aplikacije](https://play.google.com/store/apps) i [Apple App Store](https://www.apple.com/app-store/)
+    - primjer grafičkog sučelja: [GNOME Software](https://wiki.gnome.org/Apps/Software) i [KDE Apper](https://apps.kde.org/apper/)
 
 ## GNOME i KDE
 
@@ -134,7 +134,7 @@ author: Vedran Miletić, Vanja Slavuj
 
 - beskrajne rasprave GNOME vs. KDE, danas sve manje
 
-- druga korisnička sučelja: [Xfce](https://xfce.org/), [LXDE](https://lxde.org/), [Enlightenment](https://www.enlightenment.org/about-enlightenment)
+- druga korisnička sučelja: [Xfce](https://xfce.org/), [LXDE](https://www.lxde.org/), [Enlightenment](https://www.enlightenment.org/about-enlightenment)
 
 ## Red Hat
 

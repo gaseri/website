@@ -10,7 +10,7 @@ TCP algoritmi za kontrolu zagušenja koje opisujemo u nastavku razvijeni s cilje
 
 ## Varijanta TCP RFC793
 
-[RFC 793](https://tools.ietf.org/html/rfc793) definira da TCP vrši ponovni prijenos podataka u slučaju isteka vremena. Veličina prozora pošiljatelja se pritom ne mijenja, već ovisi samo o oglašenom prozoru primatelja. To uzrokuje česta zagušenja mreže, te su tijekom 80-tih godina predloženi algoritmi za upravljanje zagušenjem koji mijenjaju veličinu prozora pošiljatelja, koji se naziva i [prozor zagušenja](https://en.wikipedia.org/wiki/Congestion_window) (engl. *congestion window*).
+[RFC 793](https://datatracker.ietf.org/doc/html/rfc793) definira da TCP vrši ponovni prijenos podataka u slučaju isteka vremena. Veličina prozora pošiljatelja se pritom ne mijenja, već ovisi samo o oglašenom prozoru primatelja. To uzrokuje česta zagušenja mreže, te su tijekom 80-tih godina predloženi algoritmi za upravljanje zagušenjem koji mijenjaju veličinu prozora pošiljatelja, koji se naziva i [prozor zagušenja](https://en.wikipedia.org/wiki/Congestion_window) (engl. *congestion window*).
 
 ## Varijante TCP Tahoe i TCP Reno
 

@@ -74,7 +74,7 @@ Obzirom da vrijeme u kojem se simulacija izvodi ne mora biti sinkronizirano s vr
 
 Pored simuliranog vremena, osnova simulatora je programski model dijelova mreže. Pod tim pojmom podrazumijevamo klase i funkcije koje opisuju ponašanje objekata stvarne mreže: paketa, mrežnih kartica, čvorova, aplikacija, kabela itd. Većina mrežnih simulatora implementira i prostorne koordinate, generiranje slučajnih brojeva, alate za statističku analizu rezultata simulacije, sučelja prema alatima za crtanje grafova i sl.
 
-Simulator koji koristimo za laboratorijske vježbe je mrežni simulator [ns-3](https://en.wikipedia.org/wiki/ns_(simulator)).
+Simulator koji koristimo za laboratorijske vježbe je mrežni simulator [ns-3](https://en.wikipedia.org/wiki/Ns_(simulator)).
 
 ## Mrežni simulator ns-3
 

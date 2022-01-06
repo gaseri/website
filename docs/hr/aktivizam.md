@@ -12,7 +12,7 @@ U nastavku su detaljno opisane teme koje su relevantne za naš sadašnji aktivis
 
 ## Uvjerenja i vrijednosti
 
-Ideje, uvjerenja, pretpostavke i vrijednosti su važni jer utječu na to kako se bavimo znanošću i kako razvijamo tehnologiju. [Peter Thiel](http://zerotoonebook.com/) navodi u [The Education of a Libertarian](https://www.cato-unbound.org/2009/04/13/peter-thiel/education-libertarian):
+Ideje, uvjerenja, pretpostavke i vrijednosti su važni jer utječu na to kako se bavimo znanošću i kako razvijamo tehnologiju. [Peter Thiel](http://zerotoonebook.com/) navodi u [The Education of a Libertarian](https://www.cato-unbound.org/2009/04/13/peter-thiel/education-libertarian/):
 
 > The future of technology is not pre-determined, and we must resist the temptation of technological utopianism -- the notion that technology has a momentum or will of its own, that it will guarantee a more free future, and therefore that we can ignore the terrible arc of the political in our world.
 >
@@ -32,7 +32,7 @@ Paket uredskih alata (tekst procesor, tablični kalkulator i alat za izradu prez
 
 Kako raširenost interneta omogućuje suradnju velikog broja programera, njihov rad tijekom sredine 90-ih i kasnije dovodi u mainstream softvere kao što su [Mozilla Firefox](https://www.mozilla.org/firefox/), LibreOffice, Linux, [HTTP poslužitelj Apache](https://httpd.apache.org/), [VLC media player](https://www.videolan.org/vlc/) i brojne druge slobodne softvere otvorenog koda. Zajednička razlika svih ovih softvera sa softverima koje nudi Microsoft je ta da ih stvatko može bez ograničenja dijeliti, mijenjati i prilagođavati vlastitim potrebama, te dijeliti prilagođene verzije drugima. Tom otvorenošću se izbjegava ovisnost korisnika softvera o samo jednom proizvođaču softvera, takozvani *vendor lock-in*. Kako je kod otvoren, kompanije se ne mogu natjecati na temelju vlasništva nad softverom, već isključivo na temelju kvalitete podrške i prilagodbe softvera zahtjevima korisnika.
 
-Specifično u domeni paketa uredskih alata Microsoft ne uspijeva razumjeti i iskoristiti potrebu programera i korisnika za otvorenošću. Steve Ballmer, CEO Microsofta od 2000. do 2014. godine, pokazuje nerazumijevanje svojom izjavom da je Linux ["rak koji se veže u smislu intelektualnog vlasništva na sve što takne"](https://www.theregister.co.uk/2001/06/02/ballmer_linux_is_a_cancer/). Ono što on opisuje je licencija GNU General Public License (GPL), koju među ostalim projektima otvorenog koda koristi i Linux. GPL je viralna licencija, koja zahtijeva od svakog novog softvera koji iskorištava postojeći softver pod GPL-om da i sam bude pod GPL-om. Na taj način, s vremenom, sve veći broj softvera postaje slobodni softver otvorenog koda, odnosno postoji sve više tehnologije dostupne svima za korištenje i prilagodbu u skladu s vlastitim potrebama.
+Specifično u domeni paketa uredskih alata Microsoft ne uspijeva razumjeti i iskoristiti potrebu programera i korisnika za otvorenošću. Steve Ballmer, CEO Microsofta od 2000. do 2014. godine, pokazuje nerazumijevanje svojom izjavom da je Linux ["rak koji se veže u smislu intelektualnog vlasništva na sve što takne"](https://www.theregister.com/2001/06/02/ballmer_linux_is_a_cancer/). Ono što on opisuje je licencija GNU General Public License (GPL), koju među ostalim projektima otvorenog koda koristi i Linux. GPL je viralna licencija, koja zahtijeva od svakog novog softvera koji iskorištava postojeći softver pod GPL-om da i sam bude pod GPL-om. Na taj način, s vremenom, sve veći broj softvera postaje slobodni softver otvorenog koda, odnosno postoji sve više tehnologije dostupne svima za korištenje i prilagodbu u skladu s vlastitim potrebama.
 
 Ključan alat u procesu zamjene svih neslobodnih softvera slobodnim je uredski paket LibreOffice, nasljednik projekta OpenOffice.org. U javnoj upravi navode se brojni primjeri [migracije s uredskog paketa Microsoft Office na OpenOffice.org ili LibreOffice](https://wiki.documentfoundation.org/LibreOffice_Migrations). Neki od primjera su grad Limerick u Irskoj, bolnice u gradu Kopenhagenu u Danskoj, grad Las Palmas u Španjolskoj, grad Largo u saveznoj državi Florida u SAD-u, grad München u Njemačkoj, grad Toulouse u Francuskoj i Ministarstvo obrane u Italiji. Procjene ušteda variraju od nekoliko desetaka tisuća do nekoliko desetaka milijuna eura, ovisno o broju računala i specifičnostima ugovora s Microsoftom koji je prethodio migraciji.
 
@@ -74,7 +74,7 @@ Relativno je lako doći u poziciju da koristite Linux za sve osim za igranje iga
 
 Microsoftova originalna vizija *osobnog računala na svakom stolu, Windowsa na svakom osobnom računalu*, u velikoj se mjeri ostvarila. Bez sumnje, uspjeh osobnih računala i Windowsa omogućio je da se dogode mnoge velike stvari, ali to vrijeme je prošlo. Sada je vrijeme da se ide dalje.
 
-Danas je Windows, uključujući tehnologije poput DirectX-a, samo još jedan naslijeđeni vlasnički softver koji živi zahvaljujući [zaključavanju dobavljača, uključujući Microsoftovu kontrolu nad ekosustavom Secure Boot](https://nudgedelastic.band/2016/01/i-am-still-not-buying-the-new-open-source-friendly-microsoft-bullshit/). Uz [moderne DirectX igre koje su ekskluzivne za Windows Store](https://www.theguardian.com/technology/2016/mar/04/microsoft-monopolise-pc-games-development-epic-games-gears-of-war) i [Microsoft uništava zajednice oko Androida i Linuxa patentnim licencama](http://www.infoworld.com/article/3042699/open-source-tools/microsoft-loves-open-source-only-when-its-convenient.html), situacija će se u budućnosti samo pogoršavati.
+Danas je Windows, uključujući tehnologije poput DirectX-a, samo još jedan naslijeđeni vlasnički softver koji živi zahvaljujući [zaključavanju dobavljača, uključujući Microsoftovu kontrolu nad ekosustavom Secure Boot](https://nudgedelastic.band/2016/01/i-am-still-not-buying-the-new-open-source-friendly-microsoft-bullshit/). Uz [moderne DirectX igre koje su ekskluzivne za Windows Store](https://www.theguardian.com/technology/2016/mar/04/microsoft-monopolise-pc-games-development-epic-games-gears-of-war) i [Microsoft uništava zajednice oko Androida i Linuxa patentnim licencama](https://www.infoworld.com/article/3042699/microsoft-loves-open-source-only-when-its-convenient.html), situacija će se u budućnosti samo pogoršavati.
 
 Svaki put kada koristite Windows za igranje računalnih igara, rasplačete [Gabea](https://gaben.tv/) [Newella](http://gabenewell.org/). On je naš veliki gospodar i to sigurno ne zaslužuje.
 
@@ -102,7 +102,7 @@ Izvan softvera, patenti su puno važniji nego u softveru (gdje je autorsko pravo
 >
 > Patentleft is analogous to copyleft, a license which allows distribution of a copyrighted work and derived works, but only under the same terms.
 
-Ove ideje su zakonski implementirane u [Defensive Patent License](https://defensivepatentlicense.org/), a u praksi ih koristi [Tesla](https://www.tesla.com/). Elon Musk, izvršni direktor Tesle, [izjavio je sljedeće](https://www.tesla.com/blog/all-our-patent-are-belong-you):
+Ove ideje su zakonski implementirane u [Defensive Patent License](https://www.defensivepatentlicense.org/), a u praksi ih koristi [Tesla](https://www.tesla.com/). Elon Musk, izvršni direktor Tesle, [izjavio je sljedeće](https://www.tesla.com/blog/all-our-patent-are-belong-you):
 
 > Technology leadership is not defined by patents, which history has repeatedly shown to be small protection indeed against a determined competitor, but rather by the ability of a company to attract and motivate the world’s most talented engineers. We believe that applying the open source philosophy to our patents will strengthen rather than diminish Tesla’s position in this regard.
 
@@ -142,7 +142,7 @@ Vedran Miletić radi kao viši predavač na Odjelu za informatiku Sveučilišta 
 
 **Vrijeme:** 9. travnja 2019. u 14:00
 
-**Događaj:** [Otvoreni dan sveučilišnih odjela 2019](https://www.inf.uniri.hr/hr/naslovnica/106-hr/naslovnica/1351-otvoreni-dan-sveucilisnih-odjela-9-4-2019.html)
+**Događaj:** [Otvoreni dan sveučilišnih odjela 2019](https://www.inf.uniri.hr/11-hr/naslovnica/87-otvoreni-dan-sveucilisnih-odjela-9-4-2019)
 
 #### Sažetak predavanja "Fotorealistična multimedija i široki raspon boja"
 
@@ -167,8 +167,8 @@ U prosincu 2015. godine, AMD je zauzeo stav za otvoreni kod i objavio da pokreć
 - [Ars Technica](https://arstechnica.com/information-technology/2015/12/amd-embraces-open-source-to-take-on-nvidias-gameworks/)
 - [ExtremeTech](https://www.extremetech.com/gaming/219434-amd-finally-unveils-an-open-source-answer-to-nvidias-gameworks)
 - [HotHardware](https://hothardware.com/news/amd-goes-open-source-announces-gpuopen-initiative-new-compiler-and-drivers-for-lunix-and-hpc)
-- [ITWorld](https://www.itworld.com/article/3015782/linux/amd-announces-open-source-initiative-gpuopen.html)
-- [PCWorld](https://www.pcworld.com/article/3014773/components-graphics/watch-out-gameworks-amds-gpuopen-will-offer-developers-deeper-access-to-its-chips.html)
+- [InfoWorld](https://www.infoworld.com/article/3015782/amd-announces-open-source-initiative-gpuopen.html)
+- [PCWorld](https://www.pcworld.com/article/418766/watch-out-gameworks-amds-gpuopen-will-offer-developers-deeper-access-to-its-chips.html)
 - [Maximum PC](https://www.maximumpc.com/amd-rtg-summit-gpuopen-and-software/)
 - [Phoronix](https://www.phoronix.com/scan.php?page=news_item&px=AMD-GPUOpen)
 - [Softpedia](https://news.softpedia.com/news/amd-going-open-source-with-amdgpu-linux-driver-and-gpuopen-tools-497663.shtml)
@@ -178,7 +178,7 @@ AMD-ov radu u okviru GPUOpena podrazumijeva uključivanje zajednice entuzijasta 
 
 Cilj je omogućiti da grafički procesori AMD Radeon mogu pokretati [GROMACS](https://www.gromacs.org/), [LAMMPS](https://lamps.sandia.gov/) i [CP2K](https://www.cp2k.org/). Kako bi se to ostvarilo, poboljšanja će se prvo dogoditi u [Radeonovom OpenCL upravljačkom programu](https://dri.freedesktop.org/wiki/GalliumCompute/), a tek onda u OpenCL aplikacijama; ako su aplikacije u skladu sa standardom, neće se raditi nikakve promjene na njima. Daljnje informacije:
 
-- [tstellar dev blog](http://www.stellard.net/tom/blog/)
+- [tstellar dev blog](https://www.stellard.net/tom/blog/)
 - [Bug 99553 -- Tracker bug for runnning OpenCL applications on Clover](https://bugs.freedesktop.org/show_bug.cgi?id=99553)
 - [XDC2013: Tom Stellard - Clover Status Update](https://www.youtube.com/watch?v=UTaRlmsCro4)
 - [FSOSS 2014 Day 2 Tom Stellard AMD Open Source GPU Drivers](https://www.youtube.com/watch?v=JZ-EEgXYzUk)
@@ -196,7 +196,7 @@ Prezentacije na konferencijama:
 
 **Vrijeme:** 21. travnja 2015. u 14:00
 
-**Događaj:** [Otvoreni dan sveučilišnih odjela 2015](https://www.inf.uniri.hr/hr/student-info/589-otvoreni-dan-sveucilisnih-odjela-21-4-2015.html)
+**Događaj:** [Otvoreni dan sveučilišnih odjela 2015](https://web.archive.org/web/20150320153120/https://www.inf.uniri.hr/hr/student-info/589-otvoreni-dan-sveucilisnih-odjela-21-4-2015.html)
 
 #### Sažetak predavanja "Ratovi web preglednika"
 
@@ -210,7 +210,7 @@ Predavanje će govoriti kako su prvi i drugi rat preglednika učinili da [otvore
 
 #### Životopis predavača "Ratovi web preglednika"
 
-Vedran Miletić radi kao asistent na [Odjelu za informatiku](https://www.inf.uniri.hr/) i [Tehničkom fakultetu](http://www.riteh.uniri.hr/) [Sveučilišta u Rijeci](https://www.uniri.hr/). Student je [doktorskog studija elektrotehnike i računarstva](https://www.fer.unizg.hr/studiji/doktorski_studij) na [FER-u](https://www.fer.unizg.hr/) u Zagrebu, s temom [u području pouzdanosti i raspoloživosti optičkih telekomunikacijskih mreža](https://www.fer.unizg.hr/ztel). Ostali znanstveni interesi uključuju računarstvo visokih performansi, otvorene tehnologije za distribuirane računalne sustave i korištenje grafičkih procesora u domeni znanstvenog računanja.
+Vedran Miletić radi kao asistent na [Odjelu za informatiku](https://www.inf.uniri.hr/) i [Tehničkom fakultetu](http://www.riteh.uniri.hr/) [Sveučilišta u Rijeci](https://uniri.hr/). Student je [doktorskog studija elektrotehnike i računarstva](https://www.fer.unizg.hr/studiji/doktorski_studij) na [FER-u](https://www.fer.unizg.hr/) u Zagrebu, s temom [u području pouzdanosti i raspoloživosti optičkih telekomunikacijskih mreža](https://www.fer.unizg.hr/ztel). Ostali znanstveni interesi uključuju računarstvo visokih performansi, otvorene tehnologije za distribuirane računalne sustave i korištenje grafičkih procesora u domeni znanstvenog računanja.
 
 ### Predavanje: Savršena oluja
 
@@ -236,4 +236,4 @@ Predavanje će govoriti kako je svjetska financijska kriza ustvari bila ključan
 
 #### Životopis predavača "Savršena oluja"
 
-Vedran Miletić radi kao asistent na [Odjelu za informatiku](https://www.inf.uniri.hr/) i [Tehničkom fakultetu](http://www.riteh.uniri.hr/) [Sveučilišta u Rijeci](https://www.uniri.hr/). Student je [doktorskog studija elektrotehnike i računarstva](https://www.fer.unizg.hr/studiji/doktorski_studij) na [FER-u](https://www.fer.unizg.hr/) u Zagrebu, s temom [u području pouzdanosti i raspoloživosti optičkih telekomunikacijskih mreža](https://www.fer.unizg.hr/ztel). Ostali znanstveni interesi uključuju računarstvo visokih performansi, otvorene tehnologije za distribuirane računalne sustave i korištenje grafičkih procesora u domeni znanstvenog računanja.
+Vedran Miletić radi kao asistent na [Odjelu za informatiku](https://www.inf.uniri.hr/) i [Tehničkom fakultetu](http://www.riteh.uniri.hr/) [Sveučilišta u Rijeci](https://uniri.hr/). Student je [doktorskog studija elektrotehnike i računarstva](https://www.fer.unizg.hr/studiji/doktorski_studij) na [FER-u](https://www.fer.unizg.hr/) u Zagrebu, s temom [u području pouzdanosti i raspoloživosti optičkih telekomunikacijskih mreža](https://www.fer.unizg.hr/ztel). Ostali znanstveni interesi uključuju računarstvo visokih performansi, otvorene tehnologije za distribuirane računalne sustave i korištenje grafičkih procesora u domeni znanstvenog računanja.

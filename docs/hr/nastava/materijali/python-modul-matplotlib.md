@@ -55,7 +55,7 @@ Također, moguće je odrediti i oblik linija korištenih na crtežu:
 - `-.` -- linija u obliku crta-točka-crta
 - `:` -- točkasta linija
 
-Ostale oblike i boje linija možete pogledati u [službenoj dokumentaciji](http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot) funkcije `plt.plot()`.
+Ostale oblike i boje linija možete pogledati u [službenoj dokumentaciji](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html) funkcije `plt.plot()`.
 
 ``` python
 import matplotlib.pyplot as plt

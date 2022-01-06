@@ -56,16 +56,14 @@ OpenSSL ima podršku za mnogo kriptografskih algoritama, koje možemo podijeliti
 
     - [RSA](https://en.wikipedia.org/wiki/RSA_(algorithm)),
     - [DSA](https://en.wikipedia.org/wiki/Digital_Signature_Algorithm),
-    - [Diffie--Hellmanova razmjena ključeva](https://en.wikipedia.org/wiki/Diffie--Hellman_key_exchange),
+    - [Diffie-Hellmanova razmjena ključeva](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange),
     - [Eliptična krivulja](https://en.wikipedia.org/wiki/Elliptic_curve_cryptography),
     - [GOST R 34.10-2001](https://en.wikipedia.org/wiki/GOST_(hash_function)),
-    - [SM2](https://tools.ietf.org/html/draft-shen-sm2-ecdsa-02),
+    - [SM2](https://datatracker.ietf.org/doc/html/draft-shen-sm2-ecdsa-02),
     - [Ed25519](https://en.wikipedia.org/wiki/EdDSA#Ed25519),
     - [X25519](https://en.wikipedia.org/wiki/Curve25519),
     - [Ed448](https://en.wikipedia.org/wiki/Curve448),
     - [X448](https://en.wikipedia.org/wiki/Curve448).
-
-Na službenim stranicama može se naći [popis RFC-a koji je relevantan za implementacije tih algoritama u OpenSSL-u](https://www.openssl.org/docs/standards.html).
 
 ### Biblioteke
 

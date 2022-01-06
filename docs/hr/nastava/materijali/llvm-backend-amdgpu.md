@@ -441,7 +441,7 @@ Iako nam neće trebati toliko detaljno poznavanje instrukcija, [čitava specifik
 
 ## Nivoi optimizacije
 
-Clang [podržava 4 nivoa optimizacije](https://developers.redhat.com/blog/2019/08/05/customize-the-compilation-process-with-clang-optimization-options/): `-O0`, `-O1`, `-O2` i `-O3`.
+Clang [podržava 4 nivoa optimizacije](https://developers.redhat.com/blog/2019/08/05/customize-the-compilation-process-with-clang-optimization-options): `-O0`, `-O1`, `-O2` i `-O3`.
 
 Iskoristimo nivo optimizacije `-O0`:
 

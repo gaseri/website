@@ -5,7 +5,7 @@ author: Vedran Miletić
 # Pregled heterogene sustavske arhitekture
 
 !!! note
-    Složeno prema *HSA Overview*, autor P. Rogers, poglavlje u knjizi *Heterogeneous System Architecture: A New Compute Platform Infrastructure*, urednik Wen-mei W. Hwu, izdavač [Elsevier](https://www.elsevier.com/books/heterogeneous-system-architecture/hwu/978-0-12-800386-2) (dalje u tekstu: HSAANCPI). Autorska prava na izvorni tekst zadržava [HSA Foundation](http://www.hsafoundation.com/).
+    Složeno prema *HSA Overview*, autor P. Rogers, poglavlje u knjizi *Heterogeneous System Architecture: A New Compute Platform Infrastructure*, urednik Wen-mei W. Hwu, izdavač [Elsevier](https://www.elsevier.com/books/heterogeneous-system-architecture/hwu/978-0-12-800386-2) (dalje u tekstu: HSAANCPI). Autorska prava na izvorni tekst zadržava [HSA Foundation](https://hsafoundation.com/).
 
 Heterogena sustavska arhitektura (engl. *Heterogeneous System Architecture*, HSA) je:
 

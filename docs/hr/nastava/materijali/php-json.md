@@ -54,7 +54,7 @@ php > echo $arr2["drugi broj"];
 
 ## Kodiranje i dekodiranje JSON-a
 
-[JavaScript Object Notation (JSON)](https://www.json.org/) ([Wikipedia](https://en.wikipedia.org/wiki/JSON), [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON)) je jednostavan format za razmjenu podataka koji se intenzivno koristi na suvremenom webu. Standardiziran je u okviru [RFC-a 7159 naslovljenog The JavaScript Object Notation (JSON) Data Interchange Format](https://tools.ietf.org/html/rfc7159). Primjer objekta zapisanog u JSON-u koji opisuje osobu (inspiriran [Wikipedijinim primjerom](https://en.wikipedia.org/wiki/JSON#Syntax)) je oblika:
+[JavaScript Object Notation (JSON)](https://www.json.org/) ([Wikipedia](https://en.wikipedia.org/wiki/JSON), [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON)) je jednostavan format za razmjenu podataka koji se intenzivno koristi na suvremenom webu. Standardiziran je u okviru [RFC-a 7159 naslovljenog The JavaScript Object Notation (JSON) Data Interchange Format](https://datatracker.ietf.org/doc/html/rfc7159). Primjer objekta zapisanog u JSON-u koji opisuje osobu (inspiriran [Wikipedijinim primjerom](https://en.wikipedia.org/wiki/JSON#Syntax)) je oblika:
 
 ``` json
 {

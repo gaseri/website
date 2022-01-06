@@ -31,7 +31,7 @@ Vrijeme konzultacija: ponedjeljkom od 14 do 16 sati ili po dogovoru e-mailom
 Milan Petrović
 
 E-mail: milan.petrovic@inf.uniri.hr  
-Web stranica: [portal.uniri.hr/Portfelj/Details/4166](https://portal.uniri.hr/Portfelj/Details/4166)  
+Web stranica: [portal.uniri.hr/Portfelj/4166](https://portal.uniri.hr/Portfelj/4166)  
 Ured: Ulica Radmile Matejčić 2, O-522  
 Vrijeme konzultacija: ponedjeljkom od 14 do 16 sati ili po dogovoru e-mailom
 

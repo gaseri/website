@@ -5,7 +5,7 @@ author: Luka Vretenar, Vedran Miletić
 # Automatizacija zadaća operacijskog sustava
 
 !!! hint
-    Za više informacija proučite [Chapter 19. Automating System Tasks](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/System_Administrators_Guide/ch-Automating_System_Tasks.html) u [Red Hat Enterprise Linux 7 System Administrator's Guide](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/System_Administrators_Guide/).
+    Za više informacija proučite [Chapter 19. Automating System Tasks](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/ch-automating_system_tasks) u [Red Hat Enterprise Linux 7 System Administrator's Guide](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/index).
 
 ## Systemd timer
 

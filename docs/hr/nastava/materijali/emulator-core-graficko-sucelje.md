@@ -14,9 +14,9 @@ U ovoj vježbi i naredne dvije koristit ćemo emulator CORE.
 
 Alat **Common Open Research Emulator** (CORE) je [emulator računalnih mreža](https://en.wikipedia.org/wiki/Network_emulation). CORE izrađuje prikaz stvarne računalne mreže i omogućuje korisniku rad s njom u stvarnom vremenu. Takva emulacija, obzirom da radi u stvarnom vremenu, može se povezati i sa stvarnim mrežama, a u njoj se mogu koristiti i stvarne mrežne aplikacije. CORE podržava Linux i FreeBSD, a na Linuxu radi na osnovi kontejnerske virtualizacije [LinuX Containers (LXC)](https://en.wikipedia.org/wiki/LXC).
 
-Alat CORE je razvijen od strane istraživačkog odjela [Boeinga](http://www.boeing.com/) uz podršku [istraživačkog laboratorija Američke mornarice](https://www.nrl.navy.mil/), a zasnovan je na alatu [Integrated Multiprotocol Network Emulator/Simulator (IMUNES)](http://www.imunes.tel.fer.hr/) razvijenom na [Zavodu za telekomunikacije](https://www.fer.unizg.hr/ztel) [Fakulteta elektrotehnike i računarstva Sveučilišta u Zagrebu](https://www.fer.unizg.hr/).
+Alat CORE je razvijen od strane istraživačkog odjela [Boeinga](https://www.boeing.com/) uz podršku [istraživačkog laboratorija Američke mornarice](https://www.nrl.navy.mil/), a zasnovan je na alatu [Integrated Multiprotocol Network Emulator/Simulator (IMUNES)](http://imunes.net/) razvijenom na [Zavodu za telekomunikacije](https://www.fer.unizg.hr/ztel) [Fakulteta elektrotehnike i računarstva Sveučilišta u Zagrebu](https://www.fer.unizg.hr/).
 
-CORE ima [vrlo bogatu dokumentaciju](https://coreemu.github.io/core/) koja je dostupna na [službenim stranicama alata](https://www.nrl.navy.mil/itd/ncs/products/core).
+CORE ima [vrlo bogatu dokumentaciju](https://coreemu.github.io/core/) koja je dostupna na [službenim stranicama alata](https://www.nrl.navy.mil/Our-Work/Areas-of-Research/Information-Technology/NCS/CORE/).
 
 ## Grafičko korisničko sučelje alata CORE
 
@@ -92,7 +92,7 @@ Pokretanje emulacije vrši se kao i u situaciji kada slažemo vlastitu emulaciju
 
 ## Emulacija mrežnog prometa korištenjem alata MGEN
 
-CORE omogućuje korištenje alata Multi-Generator (MGEN) za generiranje prometa. MGEN također razvijen od strane istraživačkog laboratorija Američke mornarice, a moguće ga je koristiti i neovisno o alatu CORE. Mi se tim načinom korištenja ovdje nećemo baviti; za više informacija proučite [službenu dokumentaciju](https://github.com/USNavalResearchLaboratory/mgen/blob/master/doc/mgen.pdf) dostupnu na [službenim stranicama alata MGEN](https://www.nrl.navy.mil/itd/ncs/products/mgen).
+CORE omogućuje korištenje alata Multi-Generator (MGEN) za generiranje prometa. MGEN također razvijen od strane istraživačkog laboratorija Američke mornarice, a moguće ga je koristiti i neovisno o alatu CORE. Mi se tim načinom korištenja ovdje nećemo baviti; za više informacija proučite [službenu dokumentaciju](https://github.com/USNavalResearchLaboratory/mgen/blob/master/doc/mgen.pdf) dostupnu na [službenim stranicama alata MGEN](https://www.nrl.navy.mil/Our-Work/Areas-of-Research/Information-Technology/NCS/MGEN/).
 
 Odabirom opcije `Tools/Traffic` otvara se dijalog `CORE traffic flows` u kojem je moguće klikom na gumb `new` definirati novi tok paketa. Odabir izvornog i odredišnog čvora vrši se klikom na pravokutnik pored `source node`, odnosno `destination node` i zatim na odgovarajući čvor. Pored toga moguće je konfigurirati:
 

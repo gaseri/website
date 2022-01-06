@@ -18,6 +18,6 @@ Ista podjela vrijedi i kod kupovanja računalnih resursa u oblacima pa pružatel
 
 Veći pružatelji usluga u oblaku osim osnovnih nude i puno dodatnih usluga. Za ilustraciju:
 
-- [Amazonovog AWS](https://aws.amazon.com/pricing/services/)
+- [Amazonovog AWS](https://aws.amazon.com/products/)
 - [Microsoft Azure](https://azure.microsoft.com/en-us/services/)
 - [Google Cloud](https://cloud.google.com/products/)

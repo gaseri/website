@@ -6,7 +6,7 @@ author: Vedran Miletić
 
 [Debian-Installer](https://www.debian.org/devel/debian-installer/), kao što samo ime sugerira, je instalacijski program koji [operacijski sustav Debian](https://www.debian.org/) koristi za instalaciju na računalo.
 
-Kod instalacije Debiana prvo se pokreće boot učitavač [ISOLINUX](https://www.syslinux.org/wiki/index.php?title=ISOLINUX) koji nudi korisniku nekoliko mogućnosti:
+Kod instalacije Debiana prvo se pokreće boot učitavač [ISOLINUX](https://wiki.syslinux.org/wiki/index.php?title=ISOLINUX) koji nudi korisniku nekoliko mogućnosti:
 
 1. `Install` -- pokretanje instalacije u tekstualnom sučelju,
 1. `Graphical install` -- slično prvoj opciji, pokretanje instalacije u grafičkom sučelju,
@@ -37,4 +37,4 @@ Prosječna instalacija Linuxa na desktopu imat će od par stotina do dvije tisu�
 Nakon ponovnog pokretanja računala, i izbacivanja instalacijskog medija, pokrenut će se GRUB na disku računala i ponuditi opciju pokretanja Debiana, i eventualno memtest86+-a i Windowsa.
 
 !!! note
-    Vrlo popularna distribucija Linuxa [Ubuntu](https://www.ubuntu.com/) je derivat Debiana, ali ne koristi isti softver za instalaciju operacijskog sustava. Više o instalaciji Ubuntua možete pronaći u službenim tutorialima za [Desktop](https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop) (omogućuje i [isprobavanje prije instalacije](https://tutorials.ubuntu.com/tutorial/try-ubuntu-before-you-install)) i [Server](https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-server).
+    Vrlo popularna distribucija Linuxa [Ubuntu](https://ubuntu.com/) je derivat Debiana, ali ne koristi isti softver za instalaciju operacijskog sustava. Više o instalaciji Ubuntua možete pronaći u službenim tutorialima za [Desktop](https://ubuntu.com/tutorials/install-ubuntu-desktop) (omogućuje i [isprobavanje prije instalacije](https://ubuntu.com/tutorials/try-ubuntu-before-you-install)) i [Server](https://ubuntu.com/tutorials/install-ubuntu-server).

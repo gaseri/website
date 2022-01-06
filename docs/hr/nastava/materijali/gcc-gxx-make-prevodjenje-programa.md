@@ -11,7 +11,7 @@ author: Vedran Miletić
 
 [Clang](https://en.wikipedia.org/wiki/Clang) i [LLVM](https://en.wikipedia.org/wiki/LLVM) čine alternativu GCC-u.
 
-- razvoj je započeo na [University of Illinois at Urbana-Champaign](http://illinois.edu/), danas ga dobrim dijelom sponzorira Apple
+- razvoj je započeo na [University of Illinois at Urbana-Champaign](https://illinois.edu/), danas ga dobrim dijelom sponzorira Apple
 - Clang podržava C, Objective-C (`clang`), C++ i Objective-C++ (`clang++`), a LLVM ima dodatke koji podržavaju i druge programske jezike
 
 !!! admonition "Zadatak"
