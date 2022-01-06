@@ -68,7 +68,7 @@ author: Luka Vretenar
     ├── dev
     ├── etc
     ├── home
-    │   └── lukav
+    │   └── lukav
     │       ├── Desktop
     │       ├── Documents
     │       ├── Downloads
