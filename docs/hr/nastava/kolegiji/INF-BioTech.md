@@ -37,6 +37,8 @@
 
 ### Obrada dokumenata i izrada prezentacija
 
+- [Snimanje zvuka, videa i dijelova zaslona programom OBS Studio](../materijali/obs-studio-snimanje.md)
+
 ### Osnove programiranja i obrade podataka
 
 - [Programiranje i programski jezik Python](../materijali/python-programiranje.md)

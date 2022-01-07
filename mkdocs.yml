@@ -153,6 +153,7 @@ nav:
         - Web poslužitelj nginx: hr/nastava/materijali/nginx-web-posluzitelj.md
         - Analiza ranjivosti računalne mreže: hr/nastava/materijali/nmap-analiza-ranjivosti.md
         - Računarstvo u oblaku: hr/nastava/materijali/oblak-resursi-usluge.md
+        - Snimanje zvuka, videa i dijelova zaslona programom OBS Studio: hr/nastava/materijali/obs-studio-snimanje.md
         - Pretraživanje, prava pristupa, rad sa tekstom: hr/nastava/materijali/oi1-linux-upravljanje-datotecnim-sustavom-2.md
         - Osnove rada sa komandnom linijom: hr/nastava/materijali/oi1-linux-upravljanje-datotecnim-sustavom.md
         - Skriptiranje u Perl-u: hr/nastava/materijali/oi1-perl.md
