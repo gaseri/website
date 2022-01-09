@@ -1,6 +1,6 @@
 # GASERI | group.miletic.net
 
-![GASERI logo Koleda](images/gaseri-logo-koleda.png)
+![GASERI logo](images/gaseri-logo.png)
 
 🇭🇷 [Grupa za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi](hr/index.md)
 
@@ -29,6 +29,6 @@
 
 ## Poster
 
-![GASERI poster Koleda](images/gaseri-poster-koleda.webp)
+![GASERI poster](images/gaseri-poster.webp)
 
-[PDF (A3, landscape)](images/gaseri-poster-koleda.pdf)
+[PDF (A3, landscape)](images/gaseri-poster.pdf)
