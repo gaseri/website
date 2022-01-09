@@ -27,6 +27,10 @@
 
 - [Konfiguracija sustava za predmemoriju Redis](../materijali/redis-predmemorija.md)
 
+### Upravljanje dokumentacijom
+
+- [Upravljanje dokumentacijom računalnih sustava i mreža](../materijali/upravljanje-dokumentacijom-racunalnih-sustava-i-mreza.md)
+
 ### Korištenje usluga računalnih oblaka za pokretanje web aplikacija
 
 ### Profiliranje aplikacija na mobilnim operacijskim sustavima
