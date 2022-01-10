@@ -65,7 +65,7 @@ $ cat cookies.txt
 localhost       FALSE   /       FALSE   0       kolacic Bugnes%20lyonnaises
 ```
 
-Iz datoteke možemo pročitati da postavljeni kolačić:
+Poveznica u datoteci vodi nas na [odjeljak HTTP Cookies u cURL-ovoj službenoj dokumentaciji](https://curl.se/docs/http-cookies.html) koji objašnjava značaj pojedinih stupaca u svakom od redaka s kolačićem. U našem slučaju, u datoteci vidimo jedan postavljeni kolačić i možemo pročitati da taj kolačić:
 
 - na domeni `localhost`
 - ne odnosi se na poddomene
@@ -75,7 +75,7 @@ Iz datoteke možemo pročitati da postavljeni kolačić:
 - ima ime `kolacic`
 - ima vrijednost `Bugnes%20lyonnaises`
 
-Vidimo da su svi stupcima osim imena i vrijednosti dodijeljene automatski. Želimo li postaviti neke druge postavke za kolačić, to možemo napraviti korištenjem polja opcionalnih parametara funkcije `setcookie()`. Primjerice, kodom:
+Postavili smo ime i vrijednost kolačića, a ostale postavke kolačića (domena, odnosi li se na poddomene, putanja, ograničenost na HTTPS i vrijeme isteka) su postavljene na zadanu vrijednost. Želimo li postaviti neke druge vrijednosti za neke od tih postavki kolačića, to možemo napraviti korištenjem polja opcionalnih parametara funkcije `setcookie()`. Primjerice, kodom:
 
 ``` php
 <?php
