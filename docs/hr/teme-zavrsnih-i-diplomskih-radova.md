@@ -37,7 +37,191 @@ Kojom god temom da se bavite, svakako koristite slobodne softvere otvorenog koda
 
 ## Ponuđene teme završnih radova
 
-### Upravljanje kontejnerima aplikacija korištenjem Podmana {[UMS](nastava/kolegiji/UMS.md)}
+### Primjena kompleta za razvoj softvera DOCA na jedinicama za obradu podataka NVIDIA BlueField {[PPHS](nastava/kolegiji/PPHS.md)/[URS](nastava/kolegiji/URS.md)}
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [NVIDIA DOCA SDK](https://developer.nvidia.com/networking/doca)
+1. [Demystifying NVIDIA DOCA (NVIDIA Developer Blog)](https://developer.nvidia.com/blog/demystifying-doca/)
+1. [NVIDIA Creates Zero-Trust Cybersecurity Platform (NVIDIA Blog)](https://blogs.nvidia.com/blog/2021/11/09/zero-trust-cybersecurity/)
+1. [Introduction to DOCA for DPUs (NVIDIA Deep Learning Institute)](https://courses.nvidia.com/courses/course-v1:DLI+S-NP-01+V1/about)
+1. [DOCA Base Image (NVIDIA NGC)](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/doca/containers/doca)
+
+### Mjerenje performansi simulacije molekulske dinamike {[PPHS](nastava/kolegiji/PPHS.md)}
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [Best bang for your buck: GPU nodes for GROMACS biomolecular simulations](https://onlinelibrary.wiley.com/doi/full/10.1002/jcc.24030) ([PDF](https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/jcc.24030))
+1. [More bang for your buck: Improved use of GPU nodes for GROMACS 2018](https://onlinelibrary.wiley.com/doi/full/10.1002/jcc.26011) ([PDF](https://onlinelibrary.wiley.com/doi/pdf/10.1002/jcc.26011))
+
+### Kriptografski algoritmi u WireGuardu {[SIKS](nastava/kolegiji/SIKS.md)}
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [WireGuard](https://www.wireguard.com/)
+1. [Protocol & Cryptography (WireGuard)](https://www.wireguard.com/protocol/)
+1. [Formal Verification (WireGuard)](https://www.wireguard.com/formal-verification/)
+
+### Implementacija aktualnih softverskih i hardverskih standarada u OpenWrtu {[RM](nastava/kolegiji/RM.md)/[RM1](nastava/kolegiji/RM1.md)}
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [OpenWrt version history](https://openwrt.org/about/history)
+1. [Wi-Fi /etc/config/wireless](https://openwrt.org/docs/guide-user/network/wifi/basic)
+1. [Table of Hardware: Ideal for OpenWrt + 802.11ax supported](https://openwrt.org/toh/views/toh_available_16128_ax-wifi)
+
+### Uobličavanje mrežnog prometa u OpenWrtu {[RM](nastava/kolegiji/RM.md)/[RM2](nastava/kolegiji/RM2.md)}
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [Traffic shaping](https://openwrt.org/docs/guide-user/network/traffic-shaping/start)
+1. [QoS (Network Traffic Control)](https://openwrt.org/docs/guide-user/network/traffic-shaping/packet.scheduler)
+
+### Automatizacija IT infrastrukture korištenjem Chefa {[URS](nastava/kolegiji/URS.md)}
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [Chef](https://www.chef.io/)
+
+### Automatizacija IT infrastrukture korištenjem Puppeta {[URS](nastava/kolegiji/URS.md)}
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [Puppet](https://puppet.com/)
+
+### Čitanje, obrada i pohrana JSON-a u web aplikacijama {[PW](nastava/kolegiji/PW.md)}
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [JSON Functions (PHP)](https://www.php.net/manual/en/ref.json.php)
+1. [JSON methods, toJSON (The Modern JavaScript Tutorial)](https://javascript.info/json)
+1. [PostgreSQL](https://www.postgresql.org/)
+1. [MariaDB](https://mariadb.org/)
+1. [MongoDB](https://www.mongodb.com/)
+1. [Apache CouchDB](https://couchdb.apache.org/)
+
+### Razvoj web aplikacije korištenjem okvira Ruby on Rails i biblioteke Hotwire {[PW](nastava/kolegiji/PW.md)}
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [Ruby on Rails](https://rubyonrails.org/)
+1. [HTML Over The Wire (Hotwire)](https://hotwired.dev/)
+
+### Razvoj web aplikacije korištenjem okvira Laravel i biblioteke Livewire {[PW](nastava/kolegiji/PW.md)}
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [Laravel](https://laravel.com/)
+1. [Livewire](https://laravel-livewire.com/)
+
+### Razvoj web aplikacije korištenjem okvira Laravel i sučelja Inertia.js {[PW](nastava/kolegiji/PW.md)}
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [Laravel](https://laravel.com/)
+1. [Inertia.js](https://inertiajs.com/)
+
+### Proširenja i primjene Herokuove metodologije dvanaest faktora {[PW](nastava/kolegiji/PW.md)}
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [The Twelve-Factor App](https://12factor.net/)
+1. [An illustrated guide to 12 Factor Apps (Red Hat Enable Architect)](https://www.redhat.com/architect/12-factor-app)
+1. [Beyond the Twelve-Factor App (Adam Bloom, VMWare Tanzu Blog)](https://tanzu.vmware.com/content/blog/beyond-the-twelve-factor-app)
+1. [Beyond the 12 Factor App: Exploring the DNA of Highly Scalable, Resilient Cloud Applications (VMWare Tanzu Content Library)](https://tanzu.vmware.com/content/ebooks/beyond-the-12-factor-app)
+
+### Web3 {[PW](nastava/kolegiji/PW.md)}
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [What's Web3? (Brave Browser)](https://brave.com/learn/what-is-web3/)
+1. [Web3 — A vision for a decentralized web (The Cloudflare Blog)](https://blog.cloudflare.com/what-is-web3/)
+1. [Web3 Foundation](https://web3.foundation/)
+1. [The Father of Web3 Wants You to Trust Less (WIRED)](https://www.wired.com/story/web3-gavin-wood-interview/)
+
+### Softver otvorenog koda za infrastrukturu oblaka OpenStack {[MMOS](nastava/kolegiji/MMOS.md)/[URS](nastava/kolegiji/URS.md)}
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [OpenStack](https://www.openstack.org/)
+
+### Upravljanje fizičkim i virtualnim poslužiteljima korištenjem Foremana {[MMOS](nastava/kolegiji/MMOS.md)/[URS](nastava/kolegiji/URS.md)}
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [Foreman](https://theforeman.org/)
+
+### Pregled projekata Zaklade za oblaku urođeno računarstvo {[MMOS](nastava/kolegiji/MMOS.md)/[URS](nastava/kolegiji/URS.md)}
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [Graduated and incubating projects (Cloud Native Computing Foundation)](https://www.cncf.io/projects/)
+
+### Upravljanje kontejnerima aplikacija korištenjem Podmana {[MMOS](nastava/kolegiji/MMOS.md)/[URS](nastava/kolegiji/URS.md)}
 
 **Opis teme:**
 
@@ -49,7 +233,7 @@ Kontejneri su postali sastavni dio skupa alata koje koriste i razvijatelji softv
 1. [Podman](https://podman.io/)
 1. [Quay](https://quay.io/)
 
-### Doprinos projekta Berkeley Software Distribution i potomaka u razvoju interneta {[RM2](nastava/kolegiji/RM2.md)}
+### Doprinos projekta Berkeley Software Distribution i potomaka u razvoju interneta {[RM](nastava/kolegiji/RM.md)/[RM2](nastava/kolegiji/RM2.md)}
 
 **Opis teme:**
 
@@ -86,37 +270,6 @@ Tijekom 80-ih godina na Kalifornijskom sveučilištu u Berkeleyu Keith Bostic, B
 1. [illumos](https://illumos.org/)
 1. [GROMACS](https://www.gromacs.org/)
 
-### Modularni usmjerivač Click {[RM1](nastava/kolegiji/RM1.md)}
-
-**Opis teme:**
-
-**Literatura:**
-
-1. [The Click modular router](https://github.com/kohler/click)
-
-### Implementacija konfiguracijskih datoteka korištenjem TOML-a {[PPHS](nastava/kolegiji/PPHS.md)}
-
-**Opis teme:**
-
-...
-
-**Literatura:**
-
-1. [RxDock](https://www.rxdock.org/)
-1. [toml11](https://github.com/ToruNiina/toml11)
-1. [cpptoml](https://github.com/skystrife/cpptoml)
-
-### Mjerenje performansi jezika OpenCL i CUDA korištenjem skupa alata za mjerenje brzine izvođenja SHOC {[PPHS](nastava/kolegiji/PPHS.md)}
-
-**Opis teme:**
-
-NVIDIA je vodeća tvrtka u domeni vizualizacije i računanja na grafičkim procesorima. SHOC je skup alata za mjerenje brzine hardvera prilikom izvođenja aplikacija pisanim u jezicima CUDA i OpenCL. Zadatak rada je izmjeriti performanse SHOC-a na NVIDIA-inim grafičkim procesorima korištenjem tehnologije CUDA i tehnologije OpenCL te analizirati mjerenja.
-
-**Literatura:**
-
-1. [SHOC](https://github.com/vetter/shoc)
-1. NVIDIA-ina službena dokumentacija za CUDA-u i OpenCL
-
 ### Usporedba arhitekture i značajki Waylanda i X.Org X11 Servera {[PPHS](nastava/kolegiji/PPHS.md)}
 
 **Opis teme:**
@@ -135,18 +288,6 @@ X.Org je tradicionalni display server koji se koristi na operacijskim sustavima 
 **Literatura:**
 
 1. [Named Data Networking Project](https://named-data.net/)
-
-### Automatsko generiranje SSL certifikata korištenjem CA Let’s Encrypt i klijenta Certbot {[RM2](nastava/kolegiji/RM2.md)}
-
-**Opis teme:**
-
-**Literatura:**
-
-1. [Let's Encrypt](https://letsencrypt.org/)
-1. [Certbot](https://certbot.eff.org/)
-1. [HTTPS Tops 30%: How Google Is Winning the Long War (Moz)](https://moz.com/blog/https-tops-30-how-google-is-winning-the-long-war)
-1. [Let's Encrypt Stats](https://letsencrypt.org/stats/)
-1. [Halfway there! Firefox users now visit over 50% of pages via HTTPS (Naked Security)](https://nakedsecurity.sophos.com/2016/10/18/halfway-there-firefox-users-now-visit-over-50-of-pages-via-https/)
 
 ### CoCCA: softver otvorenog koda za upravljanje registrom domena {[RM2](nastava/kolegiji/RM2.md)}
 
@@ -176,7 +317,7 @@ CZ.NIC je upravitelj Češke državne domene .cz, a softver FRED koji koriste za
 
 1. [Domain Name Registry System](https://sourceforge.net/projects/dnrs/)
 
-### Prekršaji licence GNU GPL i njihovo rješavanje {[OS1](nastava/kolegiji/OS1.md)}
+### Prekršaji licence GNU GPL i njihovo razrješavanje {[OS1](nastava/kolegiji/OS1.md)}
 
 **Opis teme:**
 
@@ -210,17 +351,106 @@ OpenDocument je format dokumenata uredskih aplikacija zasnovan na XML-u. OpenDoc
 
 ## Ponuđene teme diplomskih radova
 
+### Implementacija TLS-a u jezgri operacijskog sustava FreeBSD {[UMS](nastava/kolegiji/UMS.md)}
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [In-Kernel TLS Framing and Encryption for FreeBSD (John Baldwin, vBSDCon, September 6, 2019)](https://papers.freebsd.org/2019/vbsdcon/baldwin_in-kernel_tls_framing_and_encryption_for_freebsd/) ([prezentacija](https://papers.freebsd.org/2019/vBSDCon/baldwin_In-Kernel_TLS_Framing_and_Encryption_for_FreeBSD.files/slides.pdf))
+1. [D21277: Add kernel-side support for in-kernel TLS. (FreeBSD's Phabricator)](https://reviews.freebsd.org/D21277)
+1. [D24274: security/openssl: Add support for in-kernel TLS (KTLS). (FreeBSD's Phabricator)](https://reviews.freebsd.org/D24274)
+1. [FreeBSD in kernel TLS (Vladimir Kotal)](https://gist.github.com/vladak/8fc4bb65f68a55eb98630b5ab5c6a4b9)
+1. [Nginx KTLS support on FreeBSD 13? (FreeBSD Forums)](https://forums.freebsd.org/threads/nginx-ktls-support-on-freebsd-13.83619/)
+1. [Kernel TLS and hardware TLS offload in FreeBSD 13 (Slava Shwartsman, Drew Gallatin, EuroBSDCon 2019)](https://papers.freebsd.org/2019/eurobsdcon/shwartsman_gallatin-kernel_tls_harware_offload/) ([prezentacija](https://papers.freebsd.org/2019/EuroBSDCon/shwartsman_gallatin-Kernel_TLS_harware_offload.files/slides.pdf), [dodatna kopija prezentacije](https://people.freebsd.org/~gallatin/talks/euro2019-ktls.pdf))
+
+### Implementacija TLS-a u jezgri operacijskog sustava Linux {[UMS](nastava/kolegiji/UMS.md)}
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [KTLS: Linux Kernel Transport Layer Security (1st Dave Watson, Facebook, San Franciso, USA)](https://legacy.netdevconf.info/1.2/papers/ktls.pdf)
+1. [Kernel TLS (Linux Networking Documentation)](https://www.kernel.org/doc/html/latest/networking/tls.html)
+1. [Kernel TLS offload (Linux Networking Documentation)](https://www.kernel.org/doc/html/latest/networking/tls-offload.html)
+1. [ktls (GitHub)](https://github.com/ktls)
+
+### Pohrana podataka o molekulama u sustavu za upravljanje bazom podataka PostgreSQL {[UMS](nastava/kolegiji/UMS.md)}
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [CREATE EXTENSION (PostgreSQL)](https://www.postgresql.org/docs/current/sql-createextension.html)
+1. [CREATE SCHEMA (PostgreSQL)](https://www.postgresql.org/docs/current/sql-createschema.html)
+1. [RDKit database cartridge](https://www.rdkit.org/docs/Cartridge.html)
+
+### Prilagodba znanstvenog softvera za izvođenje na eksaskalarnim superračunalima {[DS](nastava/kolegiji/DS.md)}
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [German Priority Programme 1648: Software for Exascale Computing (SPPEXA)](http://www.sppexa.de/)
+1. [Exascale Computing Project](https://www.exascaleproject.org/)
+1. [European High-Performance Computing Joint Undertaking](https://eurohpc-ju.europa.eu/)
+1. [Skalabilni algoritmi visokih preformansi za buduće heterogene distribuirane računalne sustave](https://www.irb.hr/Istrazivanja/Projekti/Skalabilni-algoritmi-visokih-preformansi-za-buduce-heterogene-distribuirane-racunalne-sustave)
+
+### Nadzor rada mikroservisa i osiguravanje visoke dostupnosti {[UMS](nastava/kolegiji/UMS.md)}
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [Microservices: High availability (Vaadin)](https://vaadin.com/blog/microservices-high-availability)
+1. [Resiliency and high availability in microservices (Microsoft Docs)](https://docs.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/resilient-high-availability-microservices)
+1. [Prometheus](https://prometheus.io/)
+1. [Grafana](https://grafana.com/)
+
+### Skalabilnost mikroservisa {[UMS](nastava/kolegiji/UMS.md)}
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [Nomad by HashiCorp](https://www.nomadproject.io/)
+1. [Scaling Microservices: The Challenges and Solutions (DZone Microservices)](https://dzone.com/articles/scaling-microservices-the-challenges-and-solutions)
+1. [The Scale Cube (Microservices.io)](https://microservices.io/articles/scalecube.html)
+
+### Pretvorba OpenCL C-a u Vulkanova računska sjenčanja alatom clspv {[PPHS](nastava/kolegiji/PPHS.md)}
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [google/clspv (GitHub)](https://github.com/google/clspv)
+
 ### Simulatori heterogene sustavske arhitekture {[PPHS](nastava/kolegiji/PPHS.md)}
 
 **Opis teme:**
 
-Heterogena sustavska arhitektura ...
+...
 
 **Literatura:**
 
 1. Hwu, W. Heterogeneous system architecture: practical applications for industry. (Elsevier, 2015).
+1. [gem5](https://www.gem5.org/)
 
-### Usporedba program prevoditelja NVIDIA nvcc i Clang za programskih jezik CUDA {[PPHS](nastava/kolegiji/PPHS.md)}
+### Usporedba program prevoditelja NVIDIA nvcc i Clang za programski jezik CUDA {[PPHS](nastava/kolegiji/PPHS.md)}
 
 **Opis teme:**
 
@@ -235,6 +465,8 @@ CUDA je vlasnički programski jezik za heterogeno paralelno programiranje koriš
 
 **Opis teme:**
 
+...
+
 **Literatura:**
 
 1. [MIAOW GPU](https://miaowgpu.org/)
@@ -244,7 +476,12 @@ CUDA je vlasnički programski jezik za heterogeno paralelno programiranje koriš
 
 **Opis teme:**
 
+...
+
 **Literatura:**
+
+1. [User Guide for AMDGPU Backend (LLVM Documentation)](https://www.llvm.org/docs/AMDGPUUsage.html)
+1. [LLVM AMDGPU Assembler Helper Tools (ROCm-Developer-Tools/LLVM-AMDGPU-Assembler-Extra on GitHub)](https://github.com/ROCm-Developer-Tools/LLVM-AMDGPU-Assembler-Extra)
 
 ### Instalacija i konfiguracija poslužitelja datoteka {[UMS](nastava/kolegiji/UMS.md)}
 
@@ -260,6 +497,45 @@ Poslužitelj datoteka je dio gotovo svakog suvremenog poslovnog sustava. Bio taj
 
 1. [File Server (Ubuntu Server Guide)](https://ubuntu.com/server/docs/samba-file-server)
 1. [Using Samba as a server (Red Hat Enterprise Linux 8 Documentation: Deploying different types of servers)](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/deploying_different_types_of_servers/assembly_using-samba-as-a-server_deploying-different-types-of-servers)
+
+## Odabrane teme završnih radova akademske 2021/2022. godine
+
+### Razvoj web aplikacije korištenjem okvira Django i biblioteke HTMX {[DWA2](nastava/kolegiji/DWA2.md)} {Tvrtko Kaurinović}
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [htmx - high power tools for html](https://htmx.org/)
+1. [HTMX/Django](https://htmx-django.com/)
+1. [Carson Gross - REST, HATEOAS & Django - It's OK to not use JSON... or Javascript (DjangoCon US 2021, YouTube)](https://youtu.be/L_UWY-zHlOA)
+
+### Vulkan API u Unity 3D-u {[PPHS](nastava/kolegiji/PPHS.md)} [Hrvoje Sedlar]
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [Introducing the Vulkan renderer preview (Unity Blog)](https://blog.unity.com/technology/introducing-the-vulkan-renderer-preview)
+1. [Graphics API support (Unity Manual)](https://docs.unity3d.com/Manual/GraphicsAPIs.html)
+
+## Odabrane teme diplomskih radova akademske 2021/2022. godine
+
+### Evolucija monolitne web aplikacije u mikroservisnu besposlužiteljsku aplikaciju {[UMS](nastava/kolegiji/UMS.md)} [Ana Novokmet]
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [What is a serverless microservice? (Cloudflare)](https://www.cloudflare.com/learning/serverless/glossary/serverless-microservice/)
+1. [Serverless microservices (AWS Documentation)](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/serverless-microservices.html)
+1. [Serverless Microservices reference architecture (Microsoft Docs)](https://docs.microsoft.com/en-us/samples/azure-samples/serverless-microservices-reference-architecture/serverless-microservices-reference-architecture/)
 
 ## Odabrane teme završnih radova akademske 2020/2021. godine
 
