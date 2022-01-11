@@ -26,25 +26,27 @@ CORE pokrećemo naredbom `core-gui` u terminalu ili stavkom `CORE Network Emulat
 $ core-gui
 ```
 
-Time dobivamo prazno platno na koje možemo dodavati čvorove i veze. U izborniku s lijeve strane imamo redom
+Time dobivamo prazno platno na koje možemo dodavati čvorove i veze. U traci s alatima ([dokumentacija](https://coreemu.github.io/core/gui.html#toolbar)) koja se nalazi vertikalno na lijevoj strani grafičkog sučelja imamo redom
 
 - `selection tool`, za odabir objekata emulacije,
 - `start the session`, koji pokreće emulaciju,
 - `link tool`, alat za stvaranje veza,
-- `network-layer virtual nodes`, alat za stvaranje čvorova koji poznaju mrežni i više slojeve
+- `network-layer virtual nodes`, alat za stvaranje čvorova koji poznaju mrežni i više slojeve ([dokumentacija](https://coreemu.github.io/core/gui.html#core-nodes))
 
     - `router`, usmjerivač koji koristi alat Quagga za izradu tablica usmjeravanja
     - `host`, emulirano poslužiteljsko računalo koje u zadanim postavkama ima pokrenut SSH poslužitelj,
     - `pc`, emulirano račulano koje u zadanim postavkama nema pokrenutih procesa.
 
-- `link-layer nodes`, alat za stvaranje čvorova koji rade na sloju veze podataka
+- `link-layer nodes`, alat za stvaranje čvorova koji rade na sloju veze podataka ([dokumentacija](https://coreemu.github.io/core/gui.html#network-nodes))
 
     - `ethernet hub`, Ethernet koncentrator koji primljene pakete prosljeđuje svima koji su na njega povezani,
     - `ethernet switch`, Ethernet preklopnik koji primljene pakete prosljeđuje pametnije korištenjem tablice prosljeđivanja,
 
 - `background annotation tools`, koji služe za estetski dojam.
 
-Čvorove postavljamo odabirom željenog čvora iz grupe `network-layer virtual nodes` ili `link-layer nodes` i klikom na odgovarajuće mjesto. Čvorove konfiguriramo odabirom opcije `Configure` u izborniku dostupnom na desni klik. Veze postavljamo odabirom alata `link tool`, klikom na jedan od dva željena čvor i povlačenjem do drugog. Veze konfiguriramo analogno čvorovima, desnim klikom i odabirom opcije `Configure`.
+Čvorove postavljamo odabirom željenog čvora iz grupe `network-layer virtual nodes` ili `link-layer nodes` i klikom na odgovarajuće mjesto. Čvorove konfiguriramo odabirom opcije `Configure` u izborniku dostupnom na desni klik.
+
+Veze postavljamo odabirom alata `link tool`, klikom na jedan od dva željena čvor i povlačenjem do drugog. Veze konfiguriramo analogno čvorovima, desnim klikom i odabirom opcije `Configure` ili dvostrukim klikom na vezu ([dokumentacija](https://coreemu.github.io/core/gui.html#wired-networks)).
 
 U dijalogu `link configuration` možemo postaviti:
 
@@ -55,9 +57,11 @@ U dijalogu `link configuration` možemo postaviti:
 - `Color`, odnosno boju crte kojom je veza nacrtana na platnu (što je osobito značajno za estetski dojam),
 - `Width`, odnosno širinu crte kojom je veza nacrtana na platnu (što je također vrlo značajno za estetski dojam).
 
-Nakon slaganja željene mreže emulaciju pokrećemo klikom na gumb `start the session`, koji zatim postaje `stop the session`.
+## Pokretanje emulacije
 
-Dok je emulacija pokrenuta, ostali alati u izborniku su:
+Nakon slaganja željene mreže emulaciju pokrećemo klikom na gumb `start the session` ([dokumentacija](https://coreemu.github.io/core/gui.html#editing-toolbar)), koji zatim postaje `stop the session` ([dokumentacija](https://coreemu.github.io/core/gui.html#execution-toolbar)).
+
+Dok je emulacija pokrenuta, ostali alati u traci s alatima ([dokumentacija](https://coreemu.github.io/core/gui.html#execution-toolbar)) su:
 
 - `observer widgets tool`, koji omogućuje odabir značajki koje će se prikazivati kod prijelaza preko čvora pokazivačem miša,
 - `plot tool`, koji omogućuje da lijevim klikom na vezu nacrtamo graf propusnosti; graf se miče desnim klikom,
@@ -65,13 +69,13 @@ Dok je emulacija pokrenuta, ostali alati u izborniku su:
 - `two-node tool`, koji omogućuje pokretanje naredbi `ping` i `traceroute` na dva čvora; čvorovi se biraju klikom na pravokutnik pored `source node`, odnosno `destination node` i zatim na odgovarajući čvor.
 - `run tool`, koji omogućuje pokretanje proizvoljnih naredbi na jednom ili više čvorova.
 
-Za vrijeme dok je emulacija pokrenuta moguće je pristupiti ljusci svakog pojedinog čvora desnim klikom na čvor i odabirom opcije `Shell window/bash`.
+Za vrijeme dok je emulacija pokrenuta moguće je pristupiti ljusci svakog pojedinog čvora desnim klikom na čvor i odabirom opcije `Shell window/bash` ili dvostrukim klikom na čvor.
 
 [Službena dokumentacija grafičkog korisničkog sučelja alata CORE](https://coreemu.github.io/core/gui.html) ima više detalja o opisanoj funkcionalnosti i ostalim mogućnostima grafičkog sučelja.
 
 ## Spremanje i učitavanje emulacijskih scenarija
 
-Scenarije za emulaciju koji smo složili moguće je spremiti kao `.imn` datoteku korištenjem `File/Save as...` i kasnije učitati korištenjem `File/Open...`. Gotovi scenariji dostupni su u direktoriju `.core/configs` unutar kućnog direktorija korisnika.
+Scenarije za emulaciju koji smo složili moguće je spremiti kao `.imn` datoteku korištenjem `File/Save as...` i kasnije učitati korištenjem `File/Open...` ([dokumentacija](https://coreemu.github.io/core/gui.html#file-menu)). Gotovi scenariji dostupni su u direktoriju `.core/configs` unutar kućnog direktorija korisnika.
 
 Da bi ilustrirali dostupne gotove scenarije, naredbom
 
@@ -94,7 +98,7 @@ Pokretanje emulacije vrši se kao i u situaciji kada slažemo vlastitu emulaciju
 
 CORE omogućuje korištenje alata Multi-Generator (MGEN) za generiranje prometa. MGEN također razvijen od strane istraživačkog laboratorija Američke mornarice, a moguće ga je koristiti i neovisno o alatu CORE. Mi se tim načinom korištenja ovdje nećemo baviti; za više informacija proučite [službenu dokumentaciju](https://github.com/USNavalResearchLaboratory/mgen/blob/master/doc/mgen.pdf) dostupnu na [službenim stranicama alata MGEN](https://www.nrl.navy.mil/Our-Work/Areas-of-Research/Information-Technology/NCS/MGEN/).
 
-Odabirom opcije `Tools/Traffic` otvara se dijalog `CORE traffic flows` u kojem je moguće klikom na gumb `new` definirati novi tok paketa. Odabir izvornog i odredišnog čvora vrši se klikom na pravokutnik pored `source node`, odnosno `destination node` i zatim na odgovarajući čvor. Pored toga moguće je konfigurirati:
+Odabirom opcije `Tools/Traffic...` ([dokumentacija](https://coreemu.github.io/core/gui.html#tools-menu)) otvara se dijalog `CORE traffic flows` u kojem je moguće klikom na gumb `new` definirati novi tok paketa. Odabir izvornog i odredišnog čvora vrši se klikom na pravokutnik pored `source node`, odnosno `destination node` i zatim na odgovarajući čvor. Pored toga moguće je konfigurirati:
 
 - `port` za izvor i odredište,
 - `protocol`, TCP ili UDP,

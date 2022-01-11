@@ -4,11 +4,11 @@ author: Vedran Miletić
 
 # Emulacija bežičnih mreža
 
-Emulator CORE nudi emulaciju bežičnih mreža koje rade po standardu [IEEE 802.11](https://en.wikipedia.org/wiki/IEEE_802.11), poznatijih pod komercijalnim nazivom [Wi-Fi](https://en.wikipedia.org/wiki/Wi-Fi). Za tu svrhu među čvorovima veznog sloja (gumb `link-layer nodes` u alatnoj traci s lijeve strane) moguće je odabrati `wireless LAN`.
+Emulator CORE nudi emulaciju bežičnih mreža koje rade po standardu [IEEE 802.11](https://en.wikipedia.org/wiki/IEEE_802.11), poznatijih pod komercijalnim nazivom [Wi-Fi](https://en.wikipedia.org/wiki/Wi-Fi). Za tu svrhu među čvorovima veznog sloja (gumb `link-layer nodes` u alatnoj traci s lijeve strane) moguće je odabrati `wireless LAN` ([dokumentacija](https://coreemu.github.io/core/gui.html#network-nodes)).
 
 ## Konfiguracija čvora bežične mreže
 
-Nakon dodavanja čvora tipa `wireless LAN` na platno stvara se novi čvor imena `wlanN`, pri čemu je `N` redni broj čvora. Desnim klikom na čvor nudi nam se mogućnost konfiguracije (`Configure`). U konfiguraciji čvora na kartici `Basic` možemo postaviti sljedeće:
+Nakon dodavanja čvora tipa `wireless LAN` na platno stvara se novi čvor imena `wlanN`, pri čemu je `N` redni broj čvora ([dokumentacija](https://coreemu.github.io/core/gui.html#wireless-networks)). Desnim klikom na čvor nudi nam se mogućnost konfiguracije (`Configure`). U konfiguraciji čvora na kartici `Basic` možemo postaviti sljedeće:
 
 - Doseg (`Range`), izražen u pikselima (pretvorbu piksela i metara te veličinu platna na kojem crtamo mrežu moguće je konfigurirati pod stavkom izbornika `Canvas` pa onda `Size/scale`)
 - Širinu pojasa (`Bandwidth`), izraženu u bitovima po sekundi
