@@ -12,18 +12,18 @@ Svi alati koje opisujemo ovdje pokreću se u ljusci, a rade jednako dobro na stv
 
 Ping je vrlo jednostavno za koristiti. Najjednostavniji oblik korištenja je korištenje bez dodatnih parametara. Ako je domaćin dostupan, te ako se paketi mogu slati bez poteškoća, dobiti ćemo povratnu informaciju o uspješnosti, te informaciju o tome kako nema izgubljenih paketa ("0% packet loss").
 
-Ukoliko želimo provjeriti je li domaćin inf2 dostupan na mreži jednostavno iza naredbe pišemo ime domaćina i mrežu kojoj pripada:
+Ukoliko želimo provjeriti je li domaćin example dostupan na mreži group.miletic.net jednostavno iza naredbe pišemo ime domaćina i mrežu kojoj pripada:
 
 ``` shell
-$ ping inf2.uniri.hr
-PING inf2.uniri.hr (193.198.209.42) 56(84) bytes of data.
+$ ping example.group.miletic.net
+PING example.group.miletic.net (193.198.209.42) 56(84) bytes of data.
 64 bytes from 193.198.209.42: icmp_seq=1 ttl=56 time=3.48 ms
 64 bytes from 193.198.209.42: icmp_seq=2 ttl=56 time=3.44 ms
 64 bytes from 193.198.209.42: icmp_seq=3 ttl=56 time=3.49 ms
 64 bytes from 193.198.209.42: icmp_seq=4 ttl=56 time=3.49 ms
 64 bytes from 193.198.209.42: icmp_seq=5 ttl=56 time=3.46 ms
 ^C
---- inf2.uniri.hr ping statistics ---
+--- example.group.miletic.net ping statistics ---
 5 packets transmitted, 5 received, 0% packet loss, time 4006ms
 rtt min/avg/max/mdev = 3.445/3.476/3.497/0.077 ms
 ```
@@ -49,19 +49,19 @@ Uvođenjem dodatnih parametara, možemo manipulirati načinom i učestalosti sla
 Za slanje u određenom intervalu (svakih n sekundi), koristimo parametar `-i`, te broj sekundi. Ping bez argumenata zahtjev šalje u intervalima od 1 sekunde. Moguće je smanjiti taj interval, npr. na pola sekunde:
 
 ``` shell
-$ ping -i 0.5 inf2.uniri.hr
+$ ping -i 0.5 example.group.miletic.net
 ```
 
 Želimo li poslati određen broj zahtjeva (umjesto da sami prekidamo slanje sa `Ctrl+C`), koristimo parametar `-c` i broj paketa. Primjerice, ako želimo poslati 3 zahtjeva:
 
 ``` shell
-$ ping -c 3 inf2.uniri.hr
-PING inf2.uniri.hr (193.198.209.42) 56(84) bytes of data.
+$ ping -c 3 example.group.miletic.net
+PING example.group.miletic.net (193.198.209.42) 56(84) bytes of data.
 64 bytes from 193.198.209.42: icmp_seq=1 ttl=56 time=3.82 ms
 64 bytes from 193.198.209.42: icmp_seq=2 ttl=56 time=3.45 ms
 64 bytes from 193.198.209.42: icmp_seq=3 ttl=56 time=6.35 ms
 
---- inf2.uniri.hr ping statistics ---
+--- example.group.miletic.net ping statistics ---
 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
 rtt min/avg/max/mdev = 3.454/4.545/6.354/1.290 ms
 ```
@@ -69,16 +69,16 @@ rtt min/avg/max/mdev = 3.454/4.545/6.354/1.290 ms
 Također, parametrom `-w` možemo odrediti ukupno vrijeme u kojem želimo da se zahtjevi šalju. Nakon određenog broja sekundi slanje se prekida (u našem primjeru 3 sekunde).
 
 ``` shell
-$ ping -w 3 inf2.uniri.hr
+$ ping -w 3 example.group.miletic.net
 ```
 
 Ako ne želimo vidjeti informacije o svakom poslanom zahtjevu posebno, možemo uključiti 'tihi' način rada parametrom `-q`; u tom slučaju prikazat će se samo završni izvještaj.
 
 ``` shell
-$ ping -q -c 10 inf2.uniri.hr
-PING inf2.uniri.hr (193.198.209.42) 56(84) bytes of data.
+$ ping -q -c 10 example.group.miletic.net
+PING example.group.miletic.net (193.198.209.42) 56(84) bytes of data.
 
---- inf2.uniri.hr ping statistics ---
+--- example.group.miletic.net ping statistics ---
 10 packets transmitted, 10 received, 0% packet loss, time 9014ms
 rtt min/avg/max/mdev = 3.472/3.931/5.105/0.540 ms
 ```
@@ -86,12 +86,12 @@ rtt min/avg/max/mdev = 3.472/3.931/5.105/0.540 ms
 Parametrom `-s` možemo mijenjati veličinu paketa kojeg šaljemo. Zadana veličina paketa je 56 bajta. Veličini koju odredimo se dodaje još 28 byteova, zbog veličine zaglavlja paketa (u nastavku kolegija naučit ćemo zašto baš 28 bajta). U primjeru šaljemo pakete čije je tijelo veličine 200 bajta, što zajedno sa zaglavljem čini ukupno 228 bajta.
 
 ``` shell
-$ ping -s 200 inf2.uniri.hr
-PING inf2.uniri.hr (193.198.209.42) 200(228) bytes of data.
+$ ping -s 200 example.group.miletic.net
+PING example.group.miletic.net (193.198.209.42) 200(228) bytes of data.
 208 bytes from 193.198.209.42: icmp_seq=1 ttl=56 time=3.49 ms
 208 bytes from 193.198.209.42: icmp_seq=2 ttl=56 time=3.75 ms
 ^C
---- inf2.uniri.hr ping statistics ---
+--- example.group.miletic.net ping statistics ---
 2 packets transmitted, 2 received, 0% packet loss, time 1001ms
 rtt min/avg/max/mdev = 3.493/3.626/3.759/0.133 ms
 ```
@@ -110,10 +110,10 @@ Za informacije o ostalim mogućnostima proučite `man ping`.
 
 Alati `traceroute` i `tracepath` prate putanju kretanja paketa od slanja do odredišta. Iako postoje netrivijalne razlike između alata `traceroute` i `tracepath`, za naše potrebe oni su jednako dobri. U nastavku opisujemo korištenje naredbe `tracepath`; `traceroute` se koristi na vrlo sličan način.
 
-`tracepath` koristimo navođenjem imena ili IP adrese čvora u mreži. Primjerice, želimo li pratiti putanju kretanja paketa s privatnog domaćina (T-Com ISP) do poslužitelja inf2:
+`tracepath` koristimo navođenjem imena ili IP adrese čvora u mreži. Primjerice, želimo li pratiti putanju kretanja paketa s privatnog domaćina (T-Com ISP) do poslužitelja example:
 
 ``` shell
-$ tracepath inf2.uniri.hr
+$ tracepath example.group.miletic.net
  1:  host.lan                                         0.191ms pmtu 1500
  1:  dsldevice.lan                                        84.268ms
  1:  dsldevice.lan                                        95.075ms
@@ -126,15 +126,15 @@ $ tracepath inf2.uniri.hr
  7:  CN-Riteh-01-RO.core.carnet.hr                        66.910ms asymm 12
  8:  CN-Riteh.01-ES.core.carnet.hr                        67.485ms
  9:  kbf03-ro.access.carnet.hr                            72.179ms
-10:  inf2.uniri.hr                                        78.724ms
-11:  inf2.uniri.hr                                        82.123ms reached
+10:  example.group.miletic.net                                        78.724ms
+11:  example.group.miletic.net                                        82.123ms reached
      Resume: pmtu 1492 hops 11 back 54
 ```
 
 Ukoliko želimo vidjeti putanju kretanja isključivo po IP adresama, koristimo parametar `-n`:
 
 ``` shell
-$ tracepath -n inf2.uniri.hr
+$ tracepath -n example.group.miletic.net
  1:  192.168.1.2                                           0.209ms pmtu 1500
  1:  192.168.1.1                                          14.326ms
  1:  192.168.1.1                                         300.088ms
@@ -155,7 +155,7 @@ $ tracepath -n inf2.uniri.hr
 Također, ako želimo vidjeti ispis i imena domaćina/gatewaya i njihovih IP adresa, koristimo parametar `-b`:
 
 ``` shell
-$ tracepath -b inf2.uniri.hr
+$ tracepath -b example.group.miletic.net
 ```
 
 Pregled parametara za alat `tracepath`:
@@ -349,7 +349,7 @@ unix  2      [ ACC ]     STREAM     LISTENING     14513    private/retry
 unix  2      [ ACC ]     STREAM     LISTENING     15240    /tmp/.s.PGSQL.5432
 unix  2      [ ACC ]     STREAM     LISTENING     12302    /var/run/acpid.socket
 unix  2      [ ACC ]     STREAM     LISTENING     11029    /var/run/avahi-daemon/socket
-unix  2      [ ACC ]     STREAM     LISTENING     18721    /var/run/screen/S-lukav/1998.pts-0.inf2
+unix  2      [ ACC ]     STREAM     LISTENING     18721    /var/run/screen/S-lukav/1998.pts-0.ares
 unix  2      [ ACC ]     STREAM     LISTENING     11041    /var/run/dbus/system_bus_socket
 unix  2      [ ACC ]     STREAM     LISTENING     14472    private/defer
 unix  2      [ ACC ]     STREAM     LISTENING     14516    private/discard
@@ -427,9 +427,9 @@ Za više informacija proučite `man netstat`.
 Alatom `clockdiff` možemo mjeriti satnu razliku između domaćina na mreži, koristeći ICMP TIMESTAMP pakete. `clockdiff` koristimo navođenjem imena ili IP adrese domaćina.
 
 ``` shell
-$ clockdiff inf2.uniri.hr
+$ clockdiff example.group.miletic.net
 ...................................................
-host=inf2.uniri.hr rtt=15(0)ms/15ms delta=-2844ms/-2843ms Wed Jun 13 20:21:57 2012
+host=example.group.miletic.net rtt=15(0)ms/15ms delta=-2844ms/-2843ms Wed Jun 13 20:21:57 2012
 ```
 
 Za informacije o ostalim parametrima proučite `man clockdiff`.

@@ -28,11 +28,11 @@ OpenSSH_8.2p1, OpenSSL 1.1.1e  17 Mar 2020
 !!! warning
     Za verziju koju imamo svakako treba provjeriti [popis poznatih ranjivosti](https://www.openssh.com/security.html). Poznate ranjivosti u OpenSSH-u su vrlo rijetke, no moramo biti svjesni da ih ima i koje su točno prisutne u verziji koju koristimo.
 
-Korištenjem OpenSSH klijenta možemo se povezati na udaljeni poslužitelj na kojem je pokrenut SSH poslužitelj, primjerice `inf2.uniri.hr`:
+Korištenjem OpenSSH klijenta možemo se povezati na udaljeni poslužitelj na kojem je pokrenut SSH poslužitelj, primjerice `example.group.miletic.net`:
 
 ``` shell
-$ ssh inf2.uniri.hr
-The authenticity of host 'inf2.uniri.hr (31.147.204.151)' can't be established.
+$ ssh example.group.miletic.net
+The authenticity of host 'example.group.miletic.net (135.181.105.39)' can't be established.
 ECDSA key fingerprint is SHA256:0ru7bD+izhNW+qTNFkxqHtDoiyDRNLUHHvvuF0O0I84.
 Are you sure you want to continue connecting (yes/no/[fingerprint])?
 ```
@@ -41,48 +41,48 @@ Ovdje ćemo odgovoriti [Yes](https://knowyourmeme.com/memes/yes-chad) (`yes`), o
 
 ```
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
-Warning: Permanently added 'inf2.uniri.hr,31.147.204.151' (ECDSA) to the list of known hosts.
-korisnik@inf2.uniri.hr's password:
+Warning: Permanently added 'example.group.miletic.net,135.181.105.39' (ECDSA) to the list of known hosts.
+korisnik@example.group.miletic.net's password:
 ```
 
-Naravno, kako bismo se mogli prijaviti na poslužitelj, na njemu moramo imati otvoren korisnički račun tako da se na `inf2.uniri.hr` nećemo moći prijaviti. Sama prijava bi nam bila bitna kad bismo na poslužitelju zaista htjeli nešto i raditi, što jest razlog za korištenje OpenSSH-a u realnom svijetu, ali u ovom trenutku samo izučavamo kako proces povezivanja radi i prijava na poslužitelj nam nije toliko važna.
+Naravno, kako bismo se mogli prijaviti na poslužitelj, na njemu moramo imati otvoren korisnički račun tako da se na `example.group.miletic.net` nećemo moći prijaviti. Sama prijava bi nam bila bitna kad bismo na poslužitelju zaista htjeli nešto i raditi, što jest razlog za korištenje OpenSSH-a u realnom svijetu, ali u ovom trenutku samo izučavamo kako proces povezivanja radi i prijava na poslužitelj nam nije toliko važna.
 
-Prekid povezivanja izvodimo, kao i drugdje, kombinacijom tipki Control + C (`^C`). Za ilustraciju kako OpenSSH klijent radi, zamislimo da imamo otvoren korisnički račun imena `student` na `inf2.uniri.hr`. Tada ćemo se povezati na način:
+Prekid povezivanja izvodimo, kao i drugdje, kombinacijom tipki Control + C (`^C`). Za ilustraciju kako OpenSSH klijent radi, zamislimo da imamo otvoren korisnički račun imena `student` na `example.group.miletic.net`. Tada ćemo se povezati na način:
 
 ``` shell
-$ ssh student@inf2.uniri.hr
-student@inf2.uniri.hr's password:
+$ ssh student@example.group.miletic.net
+student@example.group.miletic.net's password:
 ```
 
 Korisničko ime se može navesti i kao vrijednost parametra `-l` [uz obavezni samozadovoljni izraz na licu jer naredba u tom obliku postanje manje čitljiva laicima](https://dilbert.com/strip/1995-06-24):
 
 ``` shell
-$ ssh -l student inf2.uniri.hr
-student@inf2.uniri.hr's password:
+$ ssh -l student example.group.miletic.net
+student@example.group.miletic.net's password:
 ```
 
 SSH poslužitelj se obično izvodi na [TCP ili UDP vratima 22](https://www.iana.org/assignments/service-names-port-numbers). Ako je SSH poslužitelj pokrenut na nekim drugim vratima, parametrom `-p` možemo ih navesti:
 
 ``` shell
-$ ssh -p 2223 student@inf2.uniri.hr
-student@inf2.uniri.hr's password:
+$ ssh -p 2223 student@example.group.miletic.net
+student@example.group.miletic.net's password:
 ```
 
 Navedemo li vrata na kojima nije pokrenut SSH poslužitelj, klijent će javiti grešku. Primjerice, pokušajmo se spojiti na vrata 443 na kojima je pokrenut HTTPS poslužitelj:
 
 ``` shell
-$ ssh -p 443 student@inf2.uniri.hr
+$ ssh -p 443 student@example.group.miletic.net
 kex_exchange_identification: Connection closed by remote host
 ```
 
 Parametrom `-v` (kratica od verbose) možemo saznati više detalja o uspješnom ili neuspješnom spajanju:
 
 ``` shell
-$ ssh -v -p 443 inf2.uniri.hr
+$ ssh -v -p 443 example.group.miletic.net
 OpenSSH_8.2p1, OpenSSL 1.1.1e  17 Mar 2020
 debug1: Reading configuration data /home/korisnik/.ssh/config
 debug1: Reading configuration data /etc/ssh/ssh_config
-debug1: Connecting to inf2.uniri.hr [31.147.204.151] port 443.
+debug1: Connecting to example.group.miletic.net [135.181.105.39] port 443.
 debug1: Connection established.
 debug1: identity file /home/korisnik/.ssh/id_rsa type -1
 debug1: identity file /home/korisnik/.ssh/id_rsa-cert type -1
@@ -121,17 +121,17 @@ Ovdje vidimo da je HTTP poslužitelj [nginx](https://nginx.org/) odgovorio sa st
 Za usporedbu, kod uspješnog spajanja dobivamo nešto duži ispis, navode se algoritmi koji se koriste za različite postupke šifriranja i brojne druge informacije, a naposlijetku i upit za zaporkom kakav smo već vidjeli ranije:
 
 ``` shell
-$ ssh -v inf2.uniri.hr
+$ ssh -v example.group.miletic.net
 OpenSSH_8.2p1, OpenSSL 1.1.1e  17 Mar 2020
 debug1: Reading configuration data /home/vedranm/.ssh/config
 debug1: Reading configuration data /etc/ssh/ssh_config
-debug1: Connecting to inf2.uniri.hr [31.147.204.151] port 22.
+debug1: Connecting to example.group.miletic.net [135.181.105.39] port 22.
 debug1: Connection established.
 (...)
 debug1: Local version string SSH-2.0-OpenSSH_8.2
 debug1: Remote protocol version 2.0, remote software version OpenSSH_7.4p1 Debian-10+deb9u7
 debug1: match: OpenSSH_7.4p1 Debian-10+deb9u7 pat OpenSSH_7.0*,OpenSSH_7.1*,OpenSSH_7.2*,OpenSSH_7.3*,OpenSSH_7.4*,OpenSSH_7.5*,OpenSSH_7.6*,OpenSSH_7.7* compat 0x04000002
-debug1: Authenticating to inf2.uniri.hr:22 as 'korisnik'
+debug1: Authenticating to example.group.miletic.net:22 as 'korisnik'
 debug1: SSH2_MSG_KEXINIT sent
 debug1: SSH2_MSG_KEXINIT received
 debug1: kex: algorithm: curve25519-sha256
@@ -140,11 +140,11 @@ debug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit
 debug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
 debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
 debug1: Server host key: ecdsa-sha2-nistp256 SHA256:0ru7bD+izhNW+qTNFkxqHtDoiyDRNLUHHvvuF0O0I84
-debug1: Host 'inf2.uniri.hr' is known and matches the ECDSA host key.
+debug1: Host 'example.group.miletic.net' is known and matches the ECDSA host key.
 debug1: Found key in /home/korisnik/.ssh/known_hosts:1
 (...)
 debug1: Next authentication method: password
-korisnik@inf2.uniri.hr's password:
+korisnik@example.group.miletic.net's password:
 ```
 
 OpenSSH klijent ima još nekoliko parametara koji se mogu koristiti po potrebi, a njihov se opis može pronaći u `man` stranici `ssh(1)`.
@@ -520,7 +520,7 @@ dok su javni ključevi nešto drugačijeg zapisa gdje se redom odvojeni razmakom
 
 ``` shell
 $ cat .ssh/id_ecdsa.pub
-ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBNe0tO77688HKwOnXKyF6oGsFJRYrOUINkkhh6EUEwIxhQWA/GIaD7H9Sp18z9Ho50oi02boOoDEDJOMnQpqH6o= vedranmiletic@inf2.uniri.hr
+ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBNe0tO77688HKwOnXKyF6oGsFJRYrOUINkkhh6EUEwIxhQWA/GIaD7H9Sp18z9Ho50oi02boOoDEDJOMnQpqH6o= vedranmiletic@example.group.miletic.net
 ```
 
 Kako bismo omogućili prijavu korištenjem nekog para ključeva umjesto zaporke, dodat ćemo njegov javni ključ u `.ssh/authorized_keys`, primjerice za gornji ECDSA ključ to možemo učiniti ručnim kopiranjem i ljepljenjem u nekom uređivaču teksta ili na način:

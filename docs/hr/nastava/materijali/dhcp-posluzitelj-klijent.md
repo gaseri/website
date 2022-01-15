@@ -102,7 +102,7 @@ ISC DHCP poslužitelj naziva se `dhcpd`; slovo `d` na kraju imena oznaka je da s
 jer će, za razliku od klijenta, bez konfiguracije vrlo teško raditi ispravno. Ostale parametre naredbenog retka moguće je naći u man stranici `dhcpd(8)`. Tipična konfiguracijska datoteke `mydhcpd.conf` sadrži sljedeće konfiguracijske naredbe
 
 ``` nginx
-option domain-name "inf2.uniri.hr";
+option domain-name "core-emulation.rm.miletic.net";
 authoritative;
 ```
 
@@ -151,7 +151,7 @@ Radi potpunosti, isključit ćemo sve usluge (desni klik na čvor, `Configure` p
 Nakon pokretanja emulacije, u ljusci čvora n4 korištenjem bilo kojeg uređivačem teksta stvaramo datoteku `mydhcpd.conf` oblika
 
 ``` nginx
-option domain-name "inf2.uniri.hr";
+option domain-name "core-emulation.rm.miletic.net";
 authoritative;
 
 default-lease-time 86400;

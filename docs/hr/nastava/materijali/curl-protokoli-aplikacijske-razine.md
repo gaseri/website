@@ -39,18 +39,371 @@ cURL podržava SSL certifikate, HTTP naredbe POST i PUT, FTP upload, HTTP upload
 Preuzimanje se vrši navođenjem URL-a.
 
 ``` shell
-$ curl http://inf2.uniri.hr/
-<!DOCTYPE html>
-<html lang="hr">
+$ curl http://example.group.miletic.net/
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta charset="utf-8">
-    <title>Naslovna stranica poslužitelja inf2</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- <script src="script.js"></script> -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Apache2 Debian Default Page: It works</title>
+    <style type="text/css" media="screen">
+  * {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  body, html {
+    padding: 3px 3px 3px 3px;
+
+    background-color: #D8DBE2;
+
+    font-family: Verdana, sans-serif;
+    font-size: 11pt;
+    text-align: center;
+  }
+
+  div.main_page {
+    position: relative;
+    display: table;
+
+    width: 800px;
+
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 0px 0px 0px;
+
+    border-width: 2px;
+    border-color: #212738;
+    border-style: solid;
+
+    background-color: #FFFFFF;
+
+    text-align: center;
+  }
+
+  div.page_header {
+    height: 99px;
+    width: 100%;
+
+    background-color: #F5F6F7;
+  }
+
+  div.page_header span {
+    margin: 15px 0px 0px 50px;
+
+    font-size: 180%;
+    font-weight: bold;
+  }
+
+  div.page_header img {
+    margin: 3px 0px 0px 40px;
+
+    border: 0px 0px 0px;
+  }
+
+  div.table_of_contents {
+    clear: left;
+
+    min-width: 200px;
+
+    margin: 3px 3px 3px 3px;
+
+    background-color: #FFFFFF;
+
+    text-align: left;
+  }
+
+  div.table_of_contents_item {
+    clear: left;
+
+    width: 100%;
+
+    margin: 4px 0px 0px 0px;
+
+    background-color: #FFFFFF;
+
+    color: #000000;
+    text-align: left;
+  }
+
+  div.table_of_contents_item a {
+    margin: 6px 0px 0px 6px;
+  }
+
+  div.content_section {
+    margin: 3px 3px 3px 3px;
+
+    background-color: #FFFFFF;
+
+    text-align: left;
+  }
+
+  div.content_section_text {
+    padding: 4px 8px 4px 8px;
+
+    color: #000000;
+    font-size: 100%;
+  }
+
+  div.content_section_text pre {
+    margin: 8px 0px 8px 0px;
+    padding: 8px 8px 8px 8px;
+
+    border-width: 1px;
+    border-style: dotted;
+    border-color: #000000;
+
+    background-color: #F5F6F7;
+
+    font-style: italic;
+  }
+
+  div.content_section_text p {
+    margin-bottom: 6px;
+  }
+
+  div.content_section_text ul, div.content_section_text li {
+    padding: 4px 8px 4px 16px;
+  }
+
+  div.section_header {
+    padding: 3px 6px 3px 6px;
+
+    background-color: #8E9CB2;
+
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 112%;
+    text-align: center;
+  }
+
+  div.section_header_red {
+    background-color: #CD214F;
+  }
+
+  div.section_header_grey {
+    background-color: #9F9386;
+  }
+
+  .floating_element {
+    position: relative;
+    float: left;
+  }
+
+  div.table_of_contents_item a,
+  div.content_section_text a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  div.table_of_contents_item a:link,
+  div.table_of_contents_item a:visited,
+  div.table_of_contents_item a:active {
+    color: #000000;
+  }
+
+  div.table_of_contents_item a:hover {
+    background-color: #000000;
+
+    color: #FFFFFF;
+  }
+
+  div.content_section_text a:link,
+  div.content_section_text a:visited,
+   div.content_section_text a:active {
+    background-color: #DCDFE6;
+
+    color: #000000;
+  }
+
+  div.content_section_text a:hover {
+    background-color: #000000;
+
+    color: #DCDFE6;
+  }
+
+  div.validator {
+  }
+    </style>
   </head>
   <body>
-    <h1>Poslužitelj inf2 je zvijer</h1>
-    ...
+    <div class="main_page">
+      <div class="page_header floating_element">
+        <img src="/icons/openlogo-75.png" alt="Debian Logo" class="floating_element"/>
+        <span class="floating_element">
+          Apache2 Debian Default Page
+        </span>
+      </div>
+<!--      <div class="table_of_contents floating_element">
+        <div class="section_header section_header_grey">
+          TABLE OF CONTENTS
+        </div>
+        <div class="table_of_contents_item floating_element">
+          <a href="#about">About</a>
+        </div>
+        <div class="table_of_contents_item floating_element">
+          <a href="#changes">Changes</a>
+        </div>
+        <div class="table_of_contents_item floating_element">
+          <a href="#scope">Scope</a>
+        </div>
+        <div class="table_of_contents_item floating_element">
+          <a href="#files">Config files</a>
+        </div>
+      </div>
+-->
+      <div class="content_section floating_element">
+
+
+        <div class="section_header section_header_red">
+          <div id="about"></div>
+          It works!
+        </div>
+        <div class="content_section_text">
+          <p>
+                This is the default welcome page used to test the correct 
+                operation of the Apache2 server after installation on Debian systems.
+                If you can read this page, it means that the Apache HTTP server installed at
+                this site is working properly. You should <b>replace this file</b> (located at
+                <tt>/var/www/html/index.html</tt>) before continuing to operate your HTTP server.
+          </p>
+
+
+          <p>
+                If you are a normal user of this web site and don't know what this page is
+                about, this probably means that the site is currently unavailable due to
+                maintenance.
+                If the problem persists, please contact the site's administrator.
+          </p>
+
+        </div>
+        <div class="section_header">
+          <div id="changes"></div>
+                Configuration Overview
+        </div>
+        <div class="content_section_text">
+          <p>
+                Debian's Apache2 default configuration is different from the
+                upstream default configuration, and split into several files optimized for
+                interaction with Debian tools. The configuration system is
+                <b>fully documented in
+                /usr/share/doc/apache2/README.Debian.gz</b>. Refer to this for the full
+                documentation. Documentation for the web server itself can be
+                found by accessing the <a href="/manual">manual</a> if the <tt>apache2-doc</tt>
+                package was installed on this server.
+
+          </p>
+          <p>
+                The configuration layout for an Apache2 web server installation on Debian systems is as follows:
+          </p>
+          <pre>
+/etc/apache2/
+|-- apache2.conf
+|       `--  ports.conf
+|-- mods-enabled
+|       |-- *.load
+|       `-- *.conf
+|-- conf-enabled
+|       `-- *.conf
+|-- sites-enabled
+|       `-- *.conf
+          </pre>
+          <ul>
+                        <li>
+                           <tt>apache2.conf</tt> is the main configuration
+                           file. It puts the pieces together by including all remaining configuration
+                           files when starting up the web server.
+                        </li>
+
+                        <li>
+                           <tt>ports.conf</tt> is always included from the
+                           main configuration file. It is used to determine the listening ports for
+                           incoming connections, and this file can be customized anytime.
+                        </li>
+
+                        <li>
+                           Configuration files in the <tt>mods-enabled/</tt>,
+                           <tt>conf-enabled/</tt> and <tt>sites-enabled/</tt> directories contain
+                           particular configuration snippets which manage modules, global configuration
+                           fragments, or virtual host configurations, respectively.
+                        </li>
+
+                        <li>
+                           They are activated by symlinking available
+                           configuration files from their respective
+                           *-available/ counterparts. These should be managed
+                           by using our helpers
+                           <tt>
+                                a2enmod,
+                                a2dismod,
+                           </tt>
+                           <tt>
+                                a2ensite,
+                                a2dissite,
+                            </tt>
+                                and
+                           <tt>
+                                a2enconf,
+                                a2disconf
+                           </tt>. See their respective man pages for detailed information.
+                        </li>
+
+                        <li>
+                           The binary is called apache2. Due to the use of
+                           environment variables, in the default configuration, apache2 needs to be
+                           started/stopped with <tt>/etc/init.d/apache2</tt> or <tt>apache2ctl</tt>.
+                           <b>Calling <tt>/usr/bin/apache2</tt> directly will not work</b> with the
+                           default configuration.
+                        </li>
+          </ul>
+        </div>
+
+        <div class="section_header">
+            <div id="docroot"></div>
+                Document Roots
+        </div>
+
+        <div class="content_section_text">
+            <p>
+                By default, Debian does not allow access through the web browser to
+                <em>any</em> file apart of those located in <tt>/var/www</tt>,
+                <a href="http://httpd.apache.org/docs/2.4/mod/mod_userdir.html" rel="nofollow">public_html</a>
+                directories (when enabled) and <tt>/usr/share</tt> (for web
+                applications). If your site is using a web document root
+                located elsewhere (such as in <tt>/srv</tt>) you may need to whitelist your
+                document root directory in <tt>/etc/apache2/apache2.conf</tt>.
+            </p>
+            <p>
+                The default Debian document root is <tt>/var/www/html</tt>. You
+                can make your own virtual hosts under /var/www. This is different
+                to previous releases which provides better security out of the box.
+            </p>
+        </div>
+
+        <div class="section_header">
+          <div id="bugs"></div>
+                Reporting Problems
+        </div>
+        <div class="content_section_text">
+          <p>
+                Please use the <tt>reportbug</tt> tool to report bugs in the
+                Apache2 package with Debian. However, check <a
+                href="http://bugs.debian.org/cgi-bin/pkgreport.cgi?ordering=normal;archive=0;src=apache2;repeatmerged=0"
+                rel="nofollow">existing bug reports</a> before reporting a new bug.
+          </p>
+          <p>
+                Please report bugs specific to modules (such as PHP and others)
+                to respective packages, not to the web server itself.
+          </p>
+        </div>
+
+
+
+
+      </div>
+    </div>
+    <div class="validator">
+    </div>
   </body>
 </html>
 ```
@@ -58,7 +411,7 @@ $ curl http://inf2.uniri.hr/
 Ukoliko želimo spremiti izlaz u datoteku umjesto ispisati na standardni izlaz, koristimo parametar `-o` i navodimo ime datoteke:
 
 ``` shell
-$ curl -o inf2-index.html http://inf2.uniri.hr/
+$ curl -o example-index.html http://example.group.miletic.net/
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100  2033  100  2033    0     0  74324      0 --:--:-- --:--:-- --:--:-- 75296
@@ -67,7 +420,7 @@ $ curl -o inf2-index.html http://inf2.uniri.hr/
 Parametrom `-O` izlaz možemo spremiti u lokalnu datoteku istog imena kao datoteka na poslužitelju:
 
 ``` shell
-$ curl -O http://inf2.uniri.hr/index.html
+$ curl -O http://example.group.miletic.net/index.html
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100  2033  100  2033    0     0   120k      0 --:--:-- --:--:-- --:--:--  124k
@@ -80,12 +433,13 @@ index.html
 Parametrom `-r` moguće je specificirati raspon podataka datoteke koji će bit preuzet:
 
 ``` shell
-$ curl -r 0-120 http://inf2.uniri.hr/index.html
-<!DOCTYPE html>
-<html lang="hr">
+$ curl -r 0-350 http://example.group.miletic.net/index.html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta charset="utf-8">
-    <title>Naslovna stranica poslužitelja inf2</tit%
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Apache2 Debian Default Page: It works</title>
+    <style type="text/css" media="screen">
 ```
 
 ### Mjerenje napretka
@@ -128,7 +482,7 @@ $ curl -O -# https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg
 Ograničavanje se vrši parametrom `-Y`. Pritom se brzina prijenosa navodi u bajtovima po sekundi.
 
 ``` shell
-$ curl -Y 3000 http://inf2.uniri.hr/
+$ curl -Y 3000 http://example.group.miletic.net/
 ```
 
 U ovom primjeru smo brzinu prijenosa ograničili na približno 3 kilobajta po sekundi.
@@ -136,18 +490,18 @@ U ovom primjeru smo brzinu prijenosa ograničili na približno 3 kilobajta po se
 ### Rječit način rada
 
 !!! note
-    Poslužitelj `inf2.uniri.hr` danas koristi [nginx](https://nginx.org/) tako da će ispis biti malo drugačiji kad isprobate iduće naredbe.
+    Poslužitelj `example.group.miletic.net` danas koristi [nginx](https://nginx.org/) tako da će ispis biti malo drugačiji kad isprobate iduće naredbe.
 
 Parametrom `-v` moguće je dobiti više detalja kod prijenosa. Sami detalji variraju ovisno o protokolu:
 
 ``` shell
-$ curl -v http://inf2.uniri.hr/
+$ curl -v http://example.group.miletic.net/
 * Hostname was NOT found in DNS cache
 *   Trying 193.198.209.42...
-* Connected to inf2.uniri.hr (193.198.209.42) port 80 (#0)
+* Connected to example.group.miletic.net (193.198.209.42) port 80 (#0)
 > GET / HTTP/1.1
 > User-Agent: curl/7.35.0
-> Host: inf2.uniri.hr
+> Host: example.group.miletic.net
 > Accept: */*
 >
 < HTTP/1.1 200 OK
@@ -165,7 +519,7 @@ $ curl -v http://inf2.uniri.hr/
 <html lang="hr">
 ...
 </html>
-* Connection #0 to host inf2.uniri.hr left intact
+* Connection #0 to host example.group.miletic.net left intact
 ```
 
 ## Rad sa specifičnim značajkama protokola HTTP u alatu cURL
@@ -178,8 +532,8 @@ $ curl -v http://inf2.uniri.hr/
 Korištenjem parametra `-X` moguće je specificirati tip zahtjeva koji će biti napravljen na poslužitelj. HTTP sa zadanim postavkama koristi GET, tako da su iduće dvije naredbe ekvivalentne:
 
 ``` shell
-$ curl http://inf2.uniri.hr/
-$ curl -X GET http://inf2.uniri.hr/
+$ curl http://example.group.miletic.net/
+$ curl -X GET http://example.group.miletic.net/
 ```
 
 ### HTTP metoda HEAD
@@ -187,7 +541,7 @@ $ curl -X GET http://inf2.uniri.hr/
 HTTP metoda HEAD dohvaća metapodatke iz HTTP zaglavlja. Parametrom `-i` uključujemo prikaz dohvaćenog HTTP zaglavlja.
 
 ``` shell
-$ curl -X HEAD -i http://inf2.uniri.hr/
+$ curl -X HEAD -i http://example.group.miletic.net/
 HTTP/1.1 200 OK
 Date: Thu, 20 Mar 2014 13:18:14 GMT
 Server: Apache/2.4.7 (Debian)
@@ -204,7 +558,7 @@ curl: (18) transfer closed with 2033 bytes remaining to read
 Greška koju cURL javlja je očekivana i posljedica je činjenice da HEAD dohvaća samo zaglavlje HTTP odgovora, ne i tijelo. Ona se može izbjeći korištenjem parametra `-I` za dohvaćanje zaglavlja umjesto `-X HEAD`:
 
 ``` shell
-$ curl -I http://inf2.uniri.hr/
+$ curl -I http://example.group.miletic.net/
 HTTP/1.1 200 OK
 Date: Thu, 20 Mar 2014 13:19:30 GMT
 Server: Apache/2.4.7 (Debian)
@@ -221,12 +575,12 @@ Content-Type: text/html
 Kod metode POST potrebno je parametrom `-d` navesti podatke koji se šalju u obliku `varijabla=vrijednost`. Ukoliko se navodi više varijabli, parametar `-d` navodi se više puta:
 
 ``` shell
-$ curl -X POST -d "ime=Ivan" -d "prezime=Horvat" -d "dob=23" http://inf2.uniri.hr/postexperiment.php
+$ curl -X POST -d "ime=Ivan" -d "prezime=Horvat" -d "dob=23" https://app.miletic.net/post/
 <!DOCTYPE html>
 <html lang="hr">
   <head>
     <meta charset="utf-8">
-    <title>Naslovna stranica poslužitelja inf2</title>
+    <title>Stranica za eksperimentiranje s HTTP POST zahtjevima</title>
     <link rel="stylesheet" href="style.css">
     <!-- <script src="script.js"></script> -->
   </head>
@@ -242,7 +596,7 @@ $ curl -X POST -d "ime=Ivan" -d "prezime=Horvat" -d "dob=23" http://inf2.uniri.h
 Parametar `-d` implicira metodu POST, tako da je gornja naredba ekvivalentna naredbi:
 
 ``` shell
-$ curl -d "ime=Ivan" -d "prezime=Horvat" -d "dob=23" http://inf2.uniri.hr/postexperiment.php
+$ curl -d "ime=Ivan" -d "prezime=Horvat" -d "dob=23" https://app.miletic.net/post/
 ```
 
 ### HTTP metoda PUT
@@ -250,7 +604,7 @@ $ curl -d "ime=Ivan" -d "prezime=Horvat" -d "dob=23" http://inf2.uniri.hr/postex
 Za postavljanje datoteka na poslužitelj koristi se HTTP metoda PUT. Međutim, iz sigurnosnih razloga ona je većinom nedozvoljena na poslužiteljima:
 
 ``` shell
-$ curl -T lokalnadatoteka.txt http://inf2.uniri.hr/podaci.txt
+$ curl -T lokalnadatoteka.txt http://example.group.miletic.net/podaci.txt
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
 <html><head>
 <title>405 Method Not Allowed</title>
@@ -258,7 +612,7 @@ $ curl -T lokalnadatoteka.txt http://inf2.uniri.hr/podaci.txt
 <h1>Method Not Allowed</h1>
 <p>The requested method PUT is not allowed for the URL /podaci.txt.</p>
 <hr>
-<address>Apache/2.4.7 (Debian) Server at inf2.uniri.hr Port 80</address>
+<address>Apache/2.4.7 (Debian) Server at example.group.miletic.net Port 80</address>
 </body></html>
 ```
 
@@ -267,13 +621,13 @@ $ curl -T lokalnadatoteka.txt http://inf2.uniri.hr/podaci.txt
 HTTP referer naveden u zahtjevu moguće je navesti parametrom `-e`. Da bi vidjeli promjenu, potrebno je uključiti rječiti način rada.
 
 ``` shell
-$ curl -v -e www.google.hr -I http://inf2.uniri.hr/
+$ curl -v -e www.google.hr -I http://example.group.miletic.net/
 * Hostname was NOT found in DNS cache
 *   Trying 193.198.209.42...
-* Connected to inf2.uniri.hr (193.198.209.42) port 80 (#0)
+* Connected to example.group.miletic.net (193.198.209.42) port 80 (#0)
 > HEAD / HTTP/1.1
 > User-Agent: curl/7.35.0
-> Host: inf2.uniri.hr
+> Host: example.group.miletic.net
 > Accept: */*
 > Referer: www.google.hr
 >
@@ -298,7 +652,7 @@ Vary: Accept-Encoding
 Content-Type: text/html
 
 <
-* Connection #0 to host inf2.uniri.hr left intact
+* Connection #0 to host example.group.miletic.net left intact
 ```
 
 ### HTTP user agent
@@ -306,13 +660,13 @@ Content-Type: text/html
 HTTP user agent koji cURL koristi u zadanim postavkama je `curl/7.35.0` (pri čemu je 7.35.0 verzija cURL-a) i moguće ga je promijeniti parametrom `-A`. Ponovno koristimo rječit način rada kako bi u zaglavlju vidjeli razliku:
 
 ``` shell
-$ curl -v -A 'Mozilla/5.0 (X11; Linux x86_64; rv:24.0) Gecko/20140205 Firefox/24.0 Iceweasel/24.3.0' -I http://inf2.uniri.hr/
+$ curl -v -A 'Mozilla/5.0 (X11; Linux x86_64; rv:24.0) Gecko/20140205 Firefox/24.0 Iceweasel/24.3.0' -I http://example.group.miletic.net/
 * Hostname was NOT found in DNS cache
 *   Trying 193.198.209.42...
-* Connected to inf2.uniri.hr (193.198.209.42) port 80 (#0)
+* Connected to example.group.miletic.net (193.198.209.42) port 80 (#0)
 > HEAD / HTTP/1.1
 > User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:24.0) Gecko/20140205 Firefox/24.0 Iceweasel/24.3.0
-> Host: inf2.uniri.hr
+> Host: example.group.miletic.net
 > Accept: */*
 >
 < HTTP/1.1 200 OK
@@ -336,7 +690,7 @@ Vary: Accept-Encoding
 Content-Type: text/html
 
 <
-* Connection #0 to host inf2.uniri.hr left intact
+* Connection #0 to host example.group.miletic.net left intact
 ```
 
 Primjeri user agenata koji se također mogu koristiti:
@@ -532,21 +886,21 @@ Access-Control-Allow-Credentials: true
 Dohvaćanje FTP URL-a se izvodi slično kao kod HTTP-a:
 
 ``` shell
-$ curl ftp://inf2.uniri.hr/
+$ curl ftp://example.group.miletic.net/
 drwxr-xr-x    2 0        0            4096 Mar 30 23:21 pub
 ```
 
 U slučaju da u direktoriju postoje datoteke, one će biti ispisane:
 
 ``` shell
-$ curl ftp://inf2.uniri.hr/pub/
+$ curl ftp://example.group.miletic.net/pub/
 -rw-r--r--    1 0        0              18 Mar 30 23:21 cake.txt
 ```
 
 U slučaju da preuzimamo datoteku, na standardni izlaz ispisuje se njen sadržaj:
 
 ``` shell
-$ curl ftp://inf2.uniri.hr/pub/cake.txt
+$ curl ftp://example.group.miletic.net/pub/cake.txt
 THE CAKE IS A LIE
 ```
 
@@ -555,19 +909,19 @@ THE CAKE IS A LIE
 Postavljanje datoteke na FTP poslužitelj vrši se parametrom `-T`:
 
 ``` shell
-$ curl -T lokalnadatoteka.txt ftp://inf2.uniri.hr/datoteka.txt
+$ curl -T lokalnadatoteka.txt ftp://example.group.miletic.net/datoteka.txt
 ```
 
 Postavljanje datoteke uz prijavu vrši se parametrom `-u` i navođenjem korisničkog imena i zaporke:
 
 ``` shell
-$ curl -T lokalnadatoteka.txt -u vedranm:l33th4x0rp4ssw0rd ftp://inf2.uniri.hr/datoteka.txt
+$ curl -T lokalnadatoteka.txt -u vedranm:l33th4x0rp4ssw0rd ftp://example.group.miletic.net/datoteka.txt
 ```
 
 Ukoliko je nakon `-u` navedeno samo korisničko ime, cURL će tražiti unos zaporke:
 
 ``` shell
-$ curl -T lokalnadatoteka.txt -u vedranm ftp://inf2.uniri.hr/datoteka.txt
+$ curl -T lokalnadatoteka.txt -u vedranm ftp://example.group.miletic.net/datoteka.txt
 Enter host password for user 'vedranm':
 ```
 
@@ -576,7 +930,7 @@ Enter host password for user 'vedranm':
 U cURL-u se SCP i SFTP koriste slično kao FTP; razlika je da postoji mogućnost korištenja privatnog ključa umjesto lozinke. Ponovno parametrom `-u` navodimo korisničko ime kojim se prijavljujemo na poslužitelj. Primjer korištenja SCP-a je oblika:
 
 ``` shell
-$ curl -u vedranm scp://inf2.uniri.hr/home/vedranm/epic-battle.txt
+$ curl -u vedranm scp://example.group.miletic.net/home/vedranm/epic-battle.txt
 Enter host password for user 'vedranm':
 
 Tacgnol vs Longcat
@@ -586,7 +940,7 @@ On a scale from 1 to epic, I'd probably say EPIC
 Primjer s korištenjem SFTP-a je oblika:
 
 ``` shell
-$ curl -u vedranm sftp://inf2.uniri.hr/~/protip.txt
+$ curl -u vedranm sftp://example.group.miletic.net/~/protip.txt
 Enter host password for user 'vedranm':
 
 Doom II protip: To defeat the Cyberdemon, shoot at it until it dies.

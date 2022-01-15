@@ -15,7 +15,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 
     - [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/), koristi se na Windowsima starijim od 10
 
-        - demonstracija: Host treba biti `inf2.uniri.hr`, `Translation` treba osigurati da je `UTF-8`
+        - demonstracija: Host treba biti `example.group.miletic.net`, `Translation` treba osigurati da je `UTF-8`
 
     - [OpenSSH klijent](https://www.openssh.com/), dolazi s većinom operacijskih sustava sličnih Unixu te Windowsima 10 i novijima
 
