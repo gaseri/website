@@ -195,7 +195,7 @@ Nastava će se na predmetu odvijati u zimskom semestru prema sljedećem raspored
 | 13. | 11. 1. 2022. | 12:15--13:45 | O-358 | Primjeri izvođenja algoritama na distribuiranim sustavima | P | izv. prof. dr. sc. Božidar Kovačić |
 | 13. | 11. 1. 2022. | 16:15--17:45 | O-350 | Python modul zmq: složeniji uzorci poručivanja tipa zahtjev-odgovor | V | Milan Petrović |
 | 14. | 18. 1. 2022. | 12:15--13:45 | O-358 | Primjeri izvođenja algoritama na distribuiranim sustavima | P | izv. prof. dr. sc. Božidar Kovačić |
-| 14. | 28. 1. 2022. | 16:15--17:45 | O-350 | **2. kontrolna zadaća** | I | Milan Petrović |
+| 14. | 18. 1. 2022. | 16:15--17:45 | O-350 | **2. kontrolna zadaća** | I | Milan Petrović |
 | 15. | 25. 1. 2022. | 12:15--13:45 | O-358 | **2. kolokvij** | I | izv. prof. dr. sc. Božidar Kovačić |
 | 15. | 25. 1. 2022. | 16:15--17:45 | O-350 | Izvođenje distribuiranih programa na superračunalu | V | Milan Petrović |
 
