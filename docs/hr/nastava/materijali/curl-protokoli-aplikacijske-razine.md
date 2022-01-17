@@ -36,7 +36,7 @@ cURL podržava SSL certifikate, HTTP naredbe POST i PUT, FTP upload, HTTP upload
 
 ### Preuzimanje stranice ili datoteke
 
-Preuzimanje se vrši navođenjem URL-a.
+Preuzimanje se vrši navođenjem URL-a. Pristupimo HTTP poslužitelju na domeni `example.group.miletic.net` za primjer:
 
 ``` shell
 $ curl http://example.group.miletic.net/
@@ -490,7 +490,7 @@ U ovom primjeru smo brzinu prijenosa ograničili na približno 3 kilobajta po se
 ### Rječit način rada
 
 !!! note
-    Poslužitelj `example.group.miletic.net` danas koristi [nginx](https://nginx.org/) tako da će ispis biti malo drugačiji kad isprobate iduće naredbe.
+    Poslužitelj `example.group.miletic.net` danas koristi noviju verziju [HTTP poslužitelja Apache](https://httpd.apache.org/) tako da će ispis biti malo drugačiji kad isprobate iduće naredbe.
 
 Parametrom `-v` moguće je dobiti više detalja kod prijenosa. Sami detalji variraju ovisno o protokolu:
 

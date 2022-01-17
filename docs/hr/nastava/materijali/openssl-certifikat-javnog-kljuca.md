@@ -380,10 +380,10 @@ $ openssl s_client -connect example.com:636
 
 Nakon spajanja mougće je unositi naredbe. Konkretno, ukoliko smo ostvarili HTTPS vezu, moguće je unositi uobičajene HTTP naredbe (npr. GET i POST).
 
-Za primjer se možemo spojiti HTTPS-om na poslužitelj na kojem se nalaze ovi nastavni materijali dostupan na adresi `lab.miletic.net`.
+Za primjer se možemo spojiti na HTTPS poslužitelj na domeni `example.group.miletic.net` naredbom:
 
 ```
-$ $ openssl s_client -connect lab.miletic.net:443
+$ openssl s_client -connect example.group.miletic.net:443
 CONNECTED(00000003)
 depth=2 O = Digital Signature Trust Co., CN = DST Root CA X3
 verify return:1
@@ -463,10 +463,10 @@ Ovdje možemo primijetiti brojne informacije. Odmah na početku vidimo podatke o
 
 [Server Name Indication](https://en.wikipedia.org/wiki/Server_Name_Indication) (SNI) je proširenje TLS-a kojim klijent navodi u procesu rukovanja ime poslužitelja na koji se povezuje, što dozvoljava da na jednoj IP adresi postoji više od jednog HTTPS poslužitelja. Kako gotovo sve novije implementacije TLS-a podržavaju SNI, njegova [uporaba je u porastu posljednjih godina](https://developer.akamai.com/blog/2017/10/20/encrypting-web-all-need-support-tls-sni-remaining-clients).
 
-Na istom poslužitelju na kojem je `lab.miletic.net` je i [web sjedište projekta RxDock](https://www.rxdock.org/) `www.rxdock.org`. Iskoristimo parametar `-servername` da navedemo ime poslužitelja na koji se povezujemo:
+Na istom poslužitelju na kojem je `example.group.miletic.net` je i [web sjedište projekta RxDock](https://www.rxdock.org/) `www.rxdock.org`. Iskoristimo parametar `-servername` da navedemo ime poslužitelja na koji se povezujemo:
 
 ``` shell
-$ openssl s_client -connect lab.miletic.net:443 -servername www.rxdock.org
+$ openssl s_client -connect example.group.miletic.net:443 -servername www.rxdock.org
 CONNECTED(00000003)
 depth=2 O = Digital Signature Trust Co., CN = DST Root CA X3
 verify return:1
@@ -518,7 +518,7 @@ issuer=C = US, O = Let's Encrypt, CN = R3
 (...)
 ```
 
-Uočimo kako smo dobili drugi certifikat te je ime domene `lab.miletic.net` bilo iskorišteno samo za otkrivanje IP adrese na koju će se `s_client` povezati.
+Uočimo kako smo dobili drugi certifikat te je ime domene `example.group.miletic.net` bilo iskorišteno samo za otkrivanje IP adrese na koju će se `s_client` povezati.
 
 Više o opciji `s_client` i parametrima koje prima moguće je naći u pripadnoj stranici priručnika `s_client(1ssl)`.
 
