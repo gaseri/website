@@ -320,6 +320,22 @@ nav:
         - Free energy of solvation of methane: en/tutorials/gromacs/4-methane-fe/index.md
         - Window sampling: en/tutorials/gromacs/5-umbrella/index.md
         - Test particle insertion: en/tutorials/gromacs/6-tpi/index.md
+    - Blog:
+      - Markdown vs reStructuredText for teaching materials: en/blog/2021-08-16-markdown-vs-restructuredtext-for-teaching-materials.md
+      - Mirroring free and open-source software matters: en/blog/2017-09-24-mirroring-free-and-open-source-software-matters.md
+      - Fly away, little bird: en/blog/2017-07-31-fly-away-little-bird.md
+      - Why we use reStructuredText and Sphinx static site generator for maintaining teaching materials: en/blog/2017-07-29-why-we-use-restructuredtext-and-sphinx-static-site-generator-for-maintaining-teaching-materials.md
+      - Enabling HTTP/2, HTTPS, and going HTTPS-only on inf2: en/blog/2017-07-22-enabling-http2-https-and-going-https-only-on-inf2.md
+      - Celebrating Graphics and Compute Freedom Day: en/blog/2016-12-14-celebrating-graphics-and-compute-freedom-day.md
+      - The academic and the free software community ideals: en/blog/2016-03-25-the-academic-and-the-free-software-community-ideals.md
+      - I am still not buying the new-open-source-friendly-Microsoft narrative: en/blog/2016-01-30-i-am-still-not-buying-the-new-open-source-friendly-microsoft-narrative.md
+      - AMD and the open-source community are writing history: en/blog/2016-01-17-amd-and-the-open-source-community-are-writing-history.md
+      - On having leverage and using it for pushing open-source software adoption: en/blog/2015-12-13-on-having-leverage-and-using-it-for-pushing-open-source-software-adoption.md
+      - What is the price of open-source fear, uncertainty, and doubt?: en/blog/2015-09-14-what-is-the-price-of-open-source-fear-uncertainty-and-doubt.md
+      - Joys and pains of interdisciplinary research: en/blog/2015-07-28-joys-and-pains-of-interdisciplinary-research.md
+      - Open-source magic all around the world: en/blog/2015-07-03-open-source-magic-all-around-the-world.md
+      - The follow-up: en/blog/2015-06-18-the-follow-up.md
+      - Browser wars: en/blog/2015-05-01-browser-wars.md
     - Very important information: en/very-important-information.md
 theme:
   name: material
