@@ -140,7 +140,7 @@ author: Vedran Miletić, Vanja Slavuj
 
 > What we realized very early on is the one unique thing we were delivering was not technology at all. This is not a better operating system. Solaris is a better operating system than Linux for many things. Windows NT is a better operating system for many other things. The one unique thing that we could do that no one else could do was, for the first time, we were giving control of the operating system to the user.
 
--- [Bob Young](https://www.zdnet.com/article/bob-young-talks-about-the-origins-of-red-hat/), CEO, [Red Hat Inc.](https://www.redhat.com/en/about/company) (citat preuzet iz Pattinson, H.M. (2005). [Mapping implemented strategies of bringing Internet-based software applications to market using storytelling research methods.](https://opus.lib.uts.edu.au/bitstream/10453/37359/2/02whole.pdf) PhD Thesis. University of Technology Sydney., str. 109)
+-- [Bob Young](https://www.zdnet.com/article/bob-young-talks-about-the-origins-of-red-hat/), CEO, [Red Hat Inc.](https://www.redhat.com/en/about/company) (citat preuzet iz Pattinson, H. M. (2005). [Mapping implemented strategies of bringing Internet-based software applications to market using storytelling research methods.](https://opus.lib.uts.edu.au/bitstream/10453/37359/2/02whole.pdf) PhD Thesis. University of Technology Sydney., str. 109)
 
 !!! admonition "Ponovimo!"
     - Što je slobodni softver?
