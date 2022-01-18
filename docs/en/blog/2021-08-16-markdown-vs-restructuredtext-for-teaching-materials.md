@@ -5,7 +5,7 @@ date: 2021-08-16
 
 # Markdown vs reStructuredText for teaching materials
 
-Back in summer 2017. I wrote an article explaining [why we used Sphinx and ReStructureText to produce teaching materials](2017-07-29-why-we-use-restructuredtext-and-sphinx-static-site-generator-for-maintaining-teaching-materials.md) and not a wiki. In addition to recommending Sphinx as the solution to use, it was general praise for generating static HTML files from Markdown or reStructuredText.
+Back in summer 2017. I wrote an article explaining [why we used Sphinx and reStructuredText to produce teaching materials](2017-07-29-why-we-use-restructuredtext-and-sphinx-static-site-generator-for-maintaining-teaching-materials.md) and not a wiki. In addition to recommending Sphinx as the solution to use, it was general praise for generating static HTML files from Markdown or reStructuredText.
 
 This summer I made the conversion of teaching materials from reStructuredText to Markdown. Unfortunately, the automated conversion using [Pandoc](https://pandoc.org/) didn't quite produce the result I wanted so I ended up cooking my own Python script that converted the specific dialect of reStructuredText that was used for writing the contents of [the group website](../../index.md) and fixing a myriad of inconsistencies in the writing style that accumulated over the years.
 
