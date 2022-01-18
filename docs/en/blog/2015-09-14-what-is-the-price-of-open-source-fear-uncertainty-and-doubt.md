@@ -5,7 +5,7 @@ date: 2015-09-14
 
 # What is the price of open-source fear, uncertainty, and doubt?
 
-[The Journal of Physical Chemistry Letters](https://pubs.acs.org/journal/jpclcd), published by [American Chemical Society](https://www.acs.org/), recently put out two Viewpoints discussing open-source software:
+[The Journal of Physical Chemistry Letters (JPCL)](https://pubs.acs.org/journal/jpclcd), published by [American Chemical Society](https://www.acs.org/), recently put out two Viewpoints discussing open-source software:
 
 1. [Open Source and Open Data Should Be Standard Practices](https://pubs.acs.org/doi/abs/10.1021/acs.jpclett.5b00285) by [J. Daniel Gezelter](https://chemistry.nd.edu/people/j-daniel-gezelter/), and
 2. [What Is the Price of Open-Source Software?](https://pubs.acs.org/doi/abs/10.1021/acs.jpclett.5b01258) by [Anna I. Krylov](http://iopenshell.usc.edu/), [John M. Herbert](https://chemistry.osu.edu/people/herbert.44), Filipp Furche, Martin Head-Gordon, Peter J. Knowles, Roland Lindh, Frederick R. Manby, Peter Pulay, Chris-Kriton Skylaris, and Hans-Joachim Werner.
@@ -25,6 +25,9 @@ There are reactions to both articles already posted on the Internet. [Christoph 
 > Therefore, method developers in quantum chemistry need some existing program package as a “development platform”. Both open-source and commercial codes can offer such a platform. Open-source codes have the advantage that there is no barrier to access. Anyone can download the source code and start working on a new method.
 
 I fully agree with this idea and the rest of his post, so I will not repeat it here. What is interesting to note, however, is that Christoph is a contributor to [ADF](https://www.scm.com/), a proprietary quantum chemistry software.
+
+!!! success
+    Christoph Jacob later published a Viewpoint in JPCL titled [How Open Is Commercial Scientific Software?](https://pubs.acs.org/doi/full/10.1021/acs.jpclett.5b02609) based on his blog post.
 
 [Another well-put reply](https://plus.google.com/u/0/+MaximilianKubillus/posts/M8HS3VCMgjT) is posted by [Maximilian Kubillus](https://www.ipc.kit.edu/tcb/english/Staff_427.php). This part is particularly well put:
 
