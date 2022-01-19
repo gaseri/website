@@ -2,35 +2,36 @@
 author: Vedran Miletić, Edvin Močibob
 ---
 
-# Rad s protokolima aplikacijske razine
+# Rad s protokolima aplikacijske razine korištenjem cURL-a
 
 ## Pregled protokola aplikacijske razine
 
 ### Pojam URL-a
 
-**URL (uniform resource locator)** je znakovni niz koji predstavlja vezu na neki resurs. URL se često koristi za web stranice (HTTP protokol) no, između ostalih, podržava FTP i e-mail (mailto) protokole.
+[Uniform Resource Locator (URL)](https://en.wikipedia.org/wiki/URL) je znakovni niz koji predstavlja vezu na neki resurs. URL se često koristi za pristupanje web stranicama korištenjem protokola HTTP (`http://`) i HTTPS (`https://`), ali podržava i druge protokole, npr. FTP (`ftp://`) i e-mail (`mailto:`).
 
-Sintaksu URL-a čine: protokol, domena ili IP adresa, broj porta (opcionalno) i putanja do resursa. Primjerice:
+Primjerice, URL može biti `http://example.group.miletic.net:80/page/subpage`. Njegovi su dijelovi:
 
-```
-http://www.example.org/page/subpage
-```
+- protokol (`http://`),
+- domena (`example.group.miletic.net`), umjesto domene se može koristiti i IP adresa,
+- broj vrata (`80`, opcionalan) i
+- putanja do resursa (`/page/subpage`).
 
 ### Protokoli HTTP i HTTPS
 
-**HTTP (Hypertext Transfer Protocol)** je aplikacijski protokol i temelj podatkovne komunikacije za WWW. Internet Engineering Task Force (IETF) i the World Wide Web Consortium (W3C) stoje iza njegovog razvijanja. HTTP radi na request-response paradigmi po kljent-poslužitelj modelu. Jedna HTTP sesija sastoji se od niza zahtjeva (klijent) i odgovora (poslužitelj).
+[Hypertext Transfer Protocol (HTTP)](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) je aplikacijski protokol i temelj podatkovne komunikacije za WWW. Internet Engineering Task Force (IETF) i the World Wide Web Consortium (W3C) stoje iza njegovog razvijanja. HTTP radi na request-response paradigmi po kljent-poslužitelj modelu. Jedna HTTP sesija sastoji se od niza zahtjeva (klijent) i odgovora (poslužitelj).
 
-**HTTPS** je proširenje HTTP protokola SSL/TLS slojem. HTTPS se koristi za sigurnu komunikaciju preko računalne mreže. U srži TLS-a je korištenje privatnih i javnih ključeva te enkripcija podataka. HTTPS još podrazumijeva autentifikaciju i korištenje certifikata za dokazivanje identiteta.
+[Hypertext Transfer Protocol Secure (HTTPS)](https://en.wikipedia.org/wiki/HTTPS) je proširenje HTTP protokola SSL/TLS slojem. HTTPS se koristi za sigurnu komunikaciju preko računalne mreže. U srži TLS-a je korištenje privatnih i javnih ključeva te enkripcija podataka. HTTPS još podrazumijeva autentifikaciju i korištenje certifikata za dokazivanje identiteta.
 
 ### Protokol FTP
 
-**FTP (File Transfer Protocol)** je mrežni protokol koji omogućuje transfer datoteka sa jednog domaćina na drugi preko TCP veze. Radi na klijent-poslužitelj principu. FTP može, ali ne mora koristiti autentifikaciju.
+[File Transfer Protocol (FTP)](https://en.wikipedia.org/wiki/File_Transfer_Protocol) je mrežni protokol koji omogućuje transfer datoteka sa jednog domaćina na drugi preko TCP veze. Radi na klijent-poslužitelj principu. FTP može, ali ne mora koristiti autentifikaciju.
 
-**FTPS** proširuje FTP tako da uz autentifikaciju omogućuje i enkripciju (SSL/TLS usluge). FTPS treba razlikovati od SFTP protokola koji je vezan uz SSH (Secure Shell).
+[FTP-SSL (FTPS, poznat kao i FTP Secure)](https://en.wikipedia.org/wiki/FTPS) proširuje FTP tako da uz autentifikaciju omogućuje i enkripciju (SSL/TLS usluge). FTPS treba razlikovati od SFTP protokola koji je vezan uz SSH (Secure Shell).
 
 ## Osnovne značajke i način korištenja alata cURL
 
-**cURL** (naredba `curl`) je komandno linijski alat za prijenos podataka korištenjem URL sintakse. Podržava brojne protokole (DICT, FILE, FTP, FTPS, Gopher, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, Telnet i TFTP), od kojih ćemo u nastavku koristiti manji dio. cURL je slobodan softver dostupan pod [MIT licencom](https://en.wikipedia.org/wiki/MIT_License).
+[cURL](https://en.wikipedia.org/wiki/CURL) (naredba `curl`) je komandno linijski alat za prijenos podataka korištenjem URL sintakse. Podržava brojne protokole (DICT, FILE, FTP, FTPS, Gopher, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, Telnet i TFTP), od kojih ćemo u nastavku koristiti manji dio. cURL je slobodan softver dostupan pod [MIT licencom](https://en.wikipedia.org/wiki/MIT_License).
 
 cURL podržava SSL certifikate, HTTP naredbe POST i PUT, FTP upload, HTTP upload zasnovan na obrascima, proxy poslužitelje, keksiće, autentifikaciju korištenjem korisničkog imena i zaproke (Basic, Digest, NTLM, Negotiate, kerberos i druge), nastavljanje prijenosa datoteke, tuneliranje putem proxy poslužitelja i još mnogo toga. Mi ćemo se ograničiti na osnovnu funkcionalnost, ali [službena dokumentacija](https://curl.se/docs/manual.html) dostupna na [cURL-ovim stranicama](https://curl.se/) ima više detalja.
 
