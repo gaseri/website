@@ -296,6 +296,24 @@ nav:
       - Eseji:
         - Peter Norvig -- Naučite programirati u deset godina: hr/arhiva/eseji/peter-norvig-naucite-programirati-u-deset-godina.md
         - Vedran Miletić -- Zaboravite na PCChipovo mišljenje o Linuxu: hr/arhiva/eseji/vedran-miletic-zaboravite-na-pcchipovo-misljenje-o-linuxu.md
+      - Web sjedišta:
+        - Dvanaestofaktorska aplikacija:
+          - Uvod: hr/arhiva/web-sjedista/12factor-net/intro.md
+          - Pozadina: hr/arhiva/web-sjedista/12factor-net/background.md
+          - Tko bi trebao pročitati ovaj dokument?: hr/arhiva/web-sjedista/12factor-net/who.md
+          - Metodologija dvanaest faktora: hr/arhiva/web-sjedista/12factor-net/toc.md
+          - I. Baza izvornog kôda: hr/arhiva/web-sjedista/12factor-net/codebase.md
+          - II. Zavisnosti: hr/arhiva/web-sjedista/12factor-net/dependencies.md
+          - III. Konfiguracija: hr/arhiva/web-sjedista/12factor-net/config.md
+          - IV. Prateće usluge: hr/arhiva/web-sjedista/12factor-net/backing-services.md
+          - V. Izgradnja, izdavanje, pokretanje: hr/arhiva/web-sjedista/12factor-net/build-release-run.md
+          - VI. Procesi: hr/arhiva/web-sjedista/12factor-net/processes.md
+          - VII. Povezivanje na vrata: hr/arhiva/web-sjedista/12factor-net/port-binding.md
+          - VIII. Konkurentnost: hr/arhiva/web-sjedista/12factor-net/concurrency.md
+          - IX. Jednokratna upotreba: hr/arhiva/web-sjedista/12factor-net/disposability.md
+          - X. Paritet razvoja/produkcije: hr/arhiva/web-sjedista/12factor-net/dev-prod-parity.md
+          - XI. Zapisnici: hr/arhiva/web-sjedista/12factor-net/logs.md
+          - XII. Administrativni procesi: hr/arhiva/web-sjedista/12factor-net/admin-processes.md
     - Vrlo važne informacije: hr/vrlo-vazne-informacije.md
   - 🇺🇸 Contents in English:
     - About the group: en/index.md
