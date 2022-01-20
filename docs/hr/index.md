@@ -6,7 +6,7 @@ author: Vedran Miletić
 
 (Ova je stranica također dostupna [na engleskom jeziku](../en/index.md).)
 
-**Grupa za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi** (engl. *Group for Applications and Services on Exascale Research Infrastructure*, kraće GASERI) je istraživačka, razvojna i nastavna jedinica na [Odjelu za informatiku](https://www.inf.uniri.hr/) [Sveučilišta u Rijeci](https://uniri.hr/).
+**Grupa za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi** (engl. *Group for Applications and Services on Exascale Research Infrastructure*, kraće GASERI) je istraživačka, razvojna i nastavna jedinica na [Fakultet informatike i digitalnih tehnologija](https://www.inf.uniri.hr/) [Sveučilišta u Rijeci](https://uniri.hr/).
 
 ## Interesi
 
@@ -57,7 +57,7 @@ Adrese e-pošte [članova osoblja](ljudi.md#osoblje) imaju sljedeći oblik: *ime
 ### Položaj
 
 Grupa za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi  
-Odjel za informatiku Sveučilišta u Rijeci  
+Fakultet informatike i digitalnih tehnologija Sveučilišta u Rijeci  
 Radmile Matejčić 2  
 51000 Rijeka  
 Hrvatska
