@@ -108,7 +108,7 @@ Simulacije napisane u mrežnom simulatoru ns-3 su C++ programi. Općeniti proces
 
 ## Simulacijski objekti
 
-Simulacijski objekti u mrežnom simulatoru ns-3 implemntirani su kao C++ klase. Obzirom da u trentunom programu studija kolegij Objektno orjentirano programiranje slijedi nakon Računalnih mreža u nastavku ćemo pokazati osnove rada s objektima. Kako se nećemo baviti stvaranjem novih klasa, već samo korištenjem postojećih, **smatrat ćemo da su klase ekvivalentne strukturama**. Iako općenito klase i strukture ne rade na isti način, razlike nam ovdje nisu bitne.
+Simulacijski objekti u mrežnom simulatoru ns-3 implemntirani su kao C++ klase. Obzirom da u trentunom programu studija kolegij Objektno orijentirano programiranje slijedi nakon Računalnih mreža u nastavku ćemo pokazati osnove rada s objektima. Kako se nećemo baviti stvaranjem novih klasa, već samo korištenjem postojećih, **smatrat ćemo da su klase ekvivalentne strukturama**. Iako općenito klase i strukture ne rade na isti način, razlike nam ovdje nisu bitne.
 
 Unutar klase postoje funkcije, koje nazivamo **metodama** i varijable, koje nazivamo **atributima**. (Atribut objekta nešto je općenitiji pojam od ns-3 atributa objekta; svaki ns-3 atribut je atribut, ali obrat ne mora vrijediti.) Ukoliko imamo klasu `Mobitel` i u njoj metodu `ZoviBroj112()`, poziv metode se vrši na način
 
@@ -124,7 +124,7 @@ Mobitel* mob = new Mobitel();
 mob->ZoviBroj112();
 ```
 
-Atributima objekta se najčešće ne pristupa izravno, što je zapravo jedina suštinska razlika u odnosu na strukture. Primjerice, ako imamo atribut `brojPozivaPrema112`, postojat će i metoda `DohvatiBrojPozivaPrema112()` i evenutalno metoda `ResetirajBrojPozivaPrema112()` koje ćemo moći koristiti na opisani način. Razloge za ovu realizaciju učit ćete na kolegiju Objektno orjentirano programiranje.
+Atributima objekta se najčešće ne pristupa izravno, što je zapravo jedina suštinska razlika u odnosu na strukture. Primjerice, ako imamo atribut `brojPozivaPrema112`, postojat će i metoda `DohvatiBrojPozivaPrema112()` i evenutalno metoda `ResetirajBrojPozivaPrema112()` koje ćemo moći koristiti na opisani način. Razloge za ovu realizaciju učit ćete na kolegiju Objektno orijentirano programiranje.
 
 ns-3 ima nekoliko istaknutih klasa koje su sadržane u gotovo svakoj simulaciji.
 

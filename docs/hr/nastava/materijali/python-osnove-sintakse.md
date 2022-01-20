@@ -120,7 +120,7 @@ author: Vedran Miletić
 
 - tipovi (klase) varijabli
 
-    - objektno orjentiran jezik: svaka varijabla je *objekt*
+    - objektno orijentiran jezik: svaka varijabla je *objekt*
 
     ``` python
     type() # vraća tip (klasu) objekta

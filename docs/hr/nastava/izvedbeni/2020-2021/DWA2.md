@@ -44,7 +44,7 @@ Vrijeme konzultacija: ponedjeljkom od 14 do 16 sati ili po dogovoru e-mailom
 
 ## Korespodentnost i korelativnost programa
 
-Sadržaj ovog kolegija izravno se nadovezuje na sadržaj kolegija *Dinamičke web aplikacije 1*, a intenzivno koristi znanja iz kolegija *Objektno orjentirano programiranje*, *Uvod u baze podataka*, *Operacijski sustavi 1*, *Operacijski sustavi 2* i *Računalne mreže 2*.
+Sadržaj ovog kolegija izravno se nadovezuje na sadržaj kolegija *Dinamičke web aplikacije 1*, a intenzivno koristi znanja iz kolegija *Objektno orijentirano programiranje*, *Uvod u baze podataka*, *Operacijski sustavi 1*, *Operacijski sustavi 2* i *Računalne mreže 2*.
 
 ## Okvirni sadržaj predmeta
 
@@ -52,7 +52,7 @@ Relacijski model podataka i jezik SQL: definiranje tipova podataka; primarni, se
 
 Konfiguracija baze podataka u dinamičkoj web aplikaciji ili servisu. Tvorba sastavljenih izraza. Metode rada sa bazom podataka. Transakcije. Količina podataka i učinkovitost mrežnih aplikacija i servisa. Rukovanje sa vremenom za izvršenje operacija. Zaštita integriteta baze podataka.
 
-Objektno orjentirano programiranje u programskim jezicima za web: klase, objekti, metode; konstruktori, nasljeđivanje, nadjačavanje. Izrada dinamičkog web sjedišta uz uporabu klasa i ponovno iskorištavanje koda; korištenje okosnice. Objektno-relacijsko preslikavanje.
+Objektno orijentirano programiranje u programskim jezicima za web: klase, objekti, metode; konstruktori, nasljeđivanje, nadjačavanje. Izrada dinamičkog web sjedišta uz uporabu klasa i ponovno iskorištavanje koda; korištenje okosnice. Objektno-relacijsko preslikavanje.
 
 Sigurnost i zaštita podataka: identifikacija korisnika, ograničavanje pristupa i operacija; specifične ovlasti korisnika u dinamičkoj web aplikaciji ili servisu.
 
@@ -171,7 +171,7 @@ Nastava će se na predmetu odvijati u ljetnom semestru prema sljedećem raspored
 
 | Tj. | Datum | Vrijeme | Prostor | Tema | Nastava | Izvođač |
 | --- | ----- | ------- | ------- | ---- | ------- | ------- |
-| 1. | 1. 03. 2021. | 12:00--13:30 | O-S32 | Arhitekture web aplikacija: monolitna i servisno orjentirana. Paradigme programiranja u web aplikacijama: proceduralna, objektno orjentirana, funkcijska | P | v. pred. dr. sc. Vedran Miletić |
+| 1. | 1. 03. 2021. | 12:00--13:30 | O-S32 | Arhitekture web aplikacija: monolitna i servisno orijentirana. Paradigme programiranja u web aplikacijama: proceduralna, objektno orijentirana, funkcijska | P | v. pred. dr. sc. Vedran Miletić |
 | 1. | 4. 03. 2021. | 14:00--17:15 | O-365 | Postavljanje razvojnog okruženja web aplikacija na operacijskim sustavima sličnim Unixu i Windowsima. Stvaranje projekta i organizacija koda. Korištenje dokumentacije | V | Milan Petrović |
 | 2. | 8. 03. 2021. | 12:00--13:30 | O-S32 | Objektno modeliranje i programiranje web aplikacija. Objektno-relacijsko preslikavanje | P | v. pred. dr. sc. Vedran Miletić |
 | 2. | 11. 03. 2021. | 14:00--17:15 | online | Korištenje baze podataka. Stvaranje modela i objektno-relacijsko preslikavanje | V | Milan Petrović |

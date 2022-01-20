@@ -40,7 +40,7 @@ PostgreSQL je sustav za upravljanje relacijskim bazama podataka otvorenog koda. 
 
 ## Povijest
 
-Razvoj Ingres projekta započeo je krajem 70-ih godina na Sveučilištu Berkley u Kaliforniji. Profesor informacijskih znanosti, Michael Stonebraker, njegov je začetnik. Nakon što je Ingres, koji je razvijao od 1977. -- 1985., preuzela tvrtka Relational Technologies/Ingres Corporation, Stonebraker je 1986. godine počeo raditi na boljem sustavu za upravljanje bazama podataka. Nadograđuje Ingres objektno-orijentiranim svojstvima i daje mu novo ime: Postgres. Njegova je popularnost u nadolazećim godinama značajno rasla.
+Razvoj Ingres projekta započeo je krajem 70-ih godina na Sveučilištu Berkley u Kaliforniji. Profesor informacijskih znanosti, Michael Stonebraker, njegov je začetnik. Nakon što je Ingres, koji je razvijao od 1977. -- 1985., preuzela tvrtka Relational Technologies/Ingres Corporation, Stonebraker je 1986. godine počeo raditi na boljem sustavu za upravljanje bazama podataka. Nadograđuje Ingres objektno orijentiranim svojstvima i daje mu novo ime: Postgres. Njegova je popularnost u nadolazećim godinama značajno rasla.
 
 90-ih godina Postgres je koristio specifični upitini jezik Postquel. Andrew Yu i Jolly Chen dodali su Postgres-u podršku za SQL upitni jezik sredinom 90-ih godina te on tada mijenja i ime: Postgres u PostgreSQL. Danas PostgreSQL razvija međunarodna grupa stručnjaka PostgreSQL Global Development Group.
 

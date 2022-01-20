@@ -121,7 +121,7 @@ Na kraju ne preostaje ništa drugo nego pokrenuti simulator sa metodom `Run()`.
 Simulator::Run ();
 ```
 
-Uočite da se ova metoda pokreće na drugačiji način, odnosno da nema instancu klase. Radi se o takozvanoj *statičkoj klasi* koja se ne može instancirati; time se nećemo ovdje nećemo više baviti (uzimati ćemo da to jednostavno radi tako), obzirom da se o tome više govori na kolegiju Objektno orjentirano programiranje.
+Uočite da se ova metoda pokreće na drugačiji način, odnosno da nema instancu klase. Radi se o takozvanoj *statičkoj klasi* koja se ne može instancirati; time se nećemo ovdje nećemo više baviti (uzimati ćemo da to jednostavno radi tako), obzirom da se o tome više govori na kolegiju Objektno orijentirano programiranje.
 
 Nakon što je simulator završio sa radom valja počistiti memoriju, a to činimo metodom `Destroy()`. Dvije potonje linije koda zapravo slijede jedna drugu iz razloga što u samom simulatoru određujemo vrijeme trajanja simulacije definicijom topologije i zakazivanjem događaja. Simulacija se u cijelosti izvršava pozivom metode `Run()` pa tek nakon završetka izvođenje programa dolazi do linije u kojoj se poziva metoda `Destroy()`.
 

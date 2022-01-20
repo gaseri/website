@@ -108,7 +108,7 @@ Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primje
     "Profesore, zašto se od nas očekuje da aktivno radimo na slobodnom softveru?"
 
 !!! tip
-    "Profesore, ja razumijem zašto trebamo raditi na slobodnom softveru i svakako to želim. Međutim, ovaj GNOME mi je nekako previše korisnički-orjentiran i suviše jednostavan. Ja smatram da su računala stvar za ljude koji razumiju računarstvo. Znate onaj biblatex koji je aktualna stvar u TeX zajednici i predstavlja veliki napredak u odnosu na bibtex, ja znam da bi ga vi sigurno preveli na hrvatski jezik bolje od mene, ali čisto da vas rasteretim, što kažete da to ja prevedem? Ne za bodove, nego za gušt i da pridonesem slobodnom softveru."
+    "Profesore, ja razumijem zašto trebamo raditi na slobodnom softveru i svakako to želim. Međutim, ovaj GNOME mi je nekako previše korisnički orijentiran i suviše jednostavan. Ja smatram da su računala stvar za ljude koji razumiju računarstvo. Znate onaj biblatex koji je aktualna stvar u TeX zajednici i predstavlja veliki napredak u odnosu na bibtex, ja znam da bi ga vi sigurno preveli na hrvatski jezik bolje od mene, ali čisto da vas rasteretim, što kažete da to ja prevedem? Ne za bodove, nego za gušt i da pridonesem slobodnom softveru."
 
 ### Primjer 10
 

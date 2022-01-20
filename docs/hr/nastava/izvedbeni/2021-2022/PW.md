@@ -31,7 +31,7 @@ Vrijeme konzultacija: Utorkom od 14:00 do 16:00 po dogovoru e-mailom
 
 ### Ciljevi predmeta
 
-Usvajanje znanja o naprednim konceptima razvoja interaktivnih web aplikacija (prednostima i nedostatcima pojedinih pristupa razvoju -- proceduralni, objektno-orjentirani, model-view-controller, model-view-viewmodel, uzorci dizajna), korištenja JavaScript tehnologija za izradu web aplikacija te usvajanje tehnologija i vještina potrebnih za samostalan rad web programera -- sigurnosni koncepti u web programiranju, testiranje i dokumentiranje koda, timski rad u sustavima za čuvanje verzija.
+Usvajanje znanja o naprednim konceptima razvoja interaktivnih web aplikacija (prednostima i nedostatcima pojedinih pristupa razvoju -- proceduralni, objektno orijentirani, model-view-controller, model-view-viewmodel, uzorci dizajna), korištenja JavaScript tehnologija za izradu web aplikacija te usvajanje tehnologija i vještina potrebnih za samostalan rad web programera -- sigurnosni koncepti u web programiranju, testiranje i dokumentiranje koda, timski rad u sustavima za čuvanje verzija.
 
 ### Uvjeti za upis predmeta
 
@@ -43,7 +43,7 @@ Očekuje se da nakon izvršavanja svih programom predviđenih obveza studenti bu
 
 I1. Izraditi bazu podataka korištenjem relacijskog sustava za upravljanje bazom podataka i poznavati mogućnosti njegove uporabe u web aplikacijama.  
 I2. Identificirati i analizirati različite pristupe razvoju web aplikacija.  
-I3. Izraditi web aplikaciju prema zadanim funkcionalnim i nefunkcionalnim zahtjevima korištenjem različitih pristupa (proceduralno, objektno-orjentirano, model-view-controller, model-view-viewmodel).  
+I3. Izraditi web aplikaciju prema zadanim funkcionalnim i nefunkcionalnim zahtjevima korištenjem različitih pristupa (proceduralno, objektno orijentirano, model-view-controller, model-view-viewmodel).  
 I4. Identificirati prednosti i nedostatke pojedinih pristupa razvoju web aplikacija u smislu kvalitete programskog rješenja.  
 I5. Prepoznati pojedine uzorke dizajna uz identifikaciju prednosti implementacije pojedinog uzorka.  
 I6. Razviti skup testova i provoditi testiranje radi kontrole kvalitete programskog rješenja.  
@@ -184,9 +184,9 @@ Nastava će se na predmetu odvijati u zimskom semestru prema sljedećem raspored
 
 | Tj. | Datum | Vrijeme | Prostor | Tema | Nastava | Izvođač |
 | --- | ----- | ------- | ------- | ---- | ------- | ------- |
-| 1. | 7. 10. 2021. | 16:00--17:30 | O-S32 | Uvodne informacije o kolegiju. Arhitekture web aplikacija: monolitna i uslužno orjentirana | P1 | v. pred. dr. sc. Vedran Miletić |
+| 1. | 7. 10. 2021. | 16:00--17:30 | O-S32 | Uvodne informacije o kolegiju. Arhitekture web aplikacija: monolitna i uslužno orijentirana | P1 | v. pred. dr. sc. Vedran Miletić |
 | 1. | 7. 10. 2021. | 18:00--19:30 | O-350 | Postavljanje razvojnog okruženja web aplikacija na operacijskim sustavima sličnim Unixu i Windowsima. Stvaranje projekta: organizacija, oblikovanje i dokumentiranje koda. Korištenje dokumentacije | V1 | Milan Petrović |
-| 2. | 14. 10. 2021. | 16:00--17:30 | O-S32 | Paradigme programiranja u web aplikacijama: proceduralna, objektno orjentirana, funkcijska. Objektno modeliranje i programiranje web aplikacija. Objektno-relacijsko preslikavanje | P2 | v. pred. dr. sc. Vedran Miletić |
+| 2. | 14. 10. 2021. | 16:00--17:30 | O-S32 | Paradigme programiranja u web aplikacijama: proceduralna, objektno orijentirana, funkcijska. Objektno modeliranje i programiranje web aplikacija. Objektno-relacijsko preslikavanje | P2 | v. pred. dr. sc. Vedran Miletić |
 | 2. | 14. 10. 2021. | 18:00--19:30 | O-350 | Korištenje baze podataka. Stvaranje modela i objektno-relacijsko preslikavanje. Migracije baze podataka | V2 | Milan Petrović |
 | 3. | 21. 10. 2021. | 16:00--17:30 | O-S32 | Uzorci dizajna u web aplikacijama: kreacijski i strukturni uzorci | P3 | v. pred. dr. sc. Vedran Miletić |
 | 3. | 21. 10. 2021. | 18:00--19:30 | O-350 | Sijanje. Relacije među modelima. Upiti. **Objava ponuđenih tema** | V3 | Milan Petrović |

@@ -61,7 +61,7 @@ author: Vedran Miletić
 
 ## Klase
 
-- klasa je slična strukturi (i klasi) u C++-u i omogućuje nasljeđivanje atributa i metoda (više o tome čuti ćete na Objektno orjentiranom programiranju)
+- klasa je slična strukturi (i klasi) u C++-u i omogućuje nasljeđivanje atributa i metoda (više o tome čuti ćete na Objektno orijentiranom programiranju)
 - `class` se koristi za definiranje klase
 
     ``` python

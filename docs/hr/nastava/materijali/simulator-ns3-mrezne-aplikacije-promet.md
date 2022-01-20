@@ -338,20 +338,20 @@ int main()
 
 ## Dodatak: pojmovi nasljeđivanja i apstraktne klase
 
-U objektno orjentiranom programiranju postoji koncept nasljeđivanja; drugim riječima, omogućuje se da klasa (koju nazivamo *podklasom*) dobije sve ili dio atributa i metoda druge klase (koju nazivamo *nadklasom*). To je vrlo korisno, jer smanjuje duplikaciju koda.
+U objektno orijentiranom programiranju postoji koncept nasljeđivanja; drugim riječima, omogućuje se da klasa (koju nazivamo *podklasom*) dobije sve ili dio atributa i metoda druge klase (koju nazivamo *nadklasom*). To je vrlo korisno, jer smanjuje duplikaciju koda.
 
-Nadgradnja toga je uključuje koncept *apstraktne klase*; pod tim nazivom podrazumijevamo klasu koja će biti korištena isključivo kao nadklasa, i deklarira koje funkcije sve podklase koje je nasljeđuju moraju definirati. Na taj način se omogućuje da se sa svim podklasama određene apstraktne klase radi na isti način  (obzirom da one imaju metode koje primaju i vraćaju iste tipove podataka), što bitno olakšava rad kod većeg broja klasa. O svemu tome više ćete čuti na kolegiju Objektno orjentirano programiranje.
+Nadgradnja toga je uključuje koncept *apstraktne klase*; pod tim nazivom podrazumijevamo klasu koja će biti korištena isključivo kao nadklasa, i deklarira koje funkcije sve podklase koje je nasljeđuju moraju definirati. Na taj način se omogućuje da se sa svim podklasama određene apstraktne klase radi na isti način  (obzirom da one imaju metode koje primaju i vraćaju iste tipove podataka), što bitno olakšava rad kod većeg broja klasa. O svemu tome više ćete čuti na kolegiju Objektno orijentirano programiranje.
 
 U konkretnom slučaju, `RandomVariableStream` je primjer apstraktne klase, a `ConstantRandomVariable` i `UniformRandomVariable` su njene podklase.
 
 ## Dodatak: programiranje vlastite mrežne aplikacije u simulatoru
 
 !!! warning
-    Za razumijevanje ovog dijela potrebno je poznavati gradivo kolegija Objektno orjentirano programiranje.
+    Za razumijevanje ovog dijela potrebno je poznavati gradivo kolegija Objektno orijentirano programiranje.
 
 U ovom dijelu ćemo napraviti vlastitu aplikaciju, u dosadašnjoj terminologiji "on" aplikaciju. Za razliku od on-off aplikacije, ova nema "off" period pa je nešto jednostavnija. Bez obzira, demonstirati će neka od sučelja koja je potrebno koristiti za programiranje vlastitih aplikacija. Ono što je olakotna okolnost je da su sučelja u simulatoru vrlo slična onima u stvarnim operacijskim sutavima, a sama programska logika mrežne aplikacije potpuno ista, te je lako znanje stečeno u jednom području primijeniti na ono drugo.
 
-Naša jednostavna aplikacija raditi će tako da će slati određen broj paketa određene veličine, na određenu adresu. Kada završi s time, neće zakazivati dodatne događaje i čekati će kraj simulacije. Kako je ns-3 sustav zasnovan na C++ klasama, za stvaranje takve aplikacije potrebno je poznavati osnovne objektno orjentiranog programiranja.
+Naša jednostavna aplikacija raditi će tako da će slati određen broj paketa određene veličine, na određenu adresu. Kada završi s time, neće zakazivati dodatne događaje i čekati će kraj simulacije. Kako je ns-3 sustav zasnovan na C++ klasama, za stvaranje takve aplikacije potrebno je poznavati osnovne objektno orijentiranog programiranja.
 
 Simulator ns-3 implementira osnovne značajke aplikacije u klasi `Application`. Naša aplikacija, nazvana jednostavno `MojaAplikacija` ,nasljeđuje klasu `Application`.
 
