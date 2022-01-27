@@ -63,3 +63,9 @@ Radmile Matejčić 2
 Hrvatska
 
 <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=14.465107619762422%2C45.32765866582893%2C14.468648135662079%2C45.329265285900924&amp;layer=mapnik&amp;marker=45.32846198156121%2C14.46687787771225" style="border: 1px solid black; width: 100%; height: 25em"></iframe>
+
+## Poster
+
+![GASERI poster](../images/gaseri-poster.webp)
+
+[Preuzimanje u formatu PDF (A3, položeno)](../images/gaseri-poster.pdf)
