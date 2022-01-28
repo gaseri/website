@@ -249,6 +249,7 @@ nav:
         - Povijesni pregled razvoja računala i temelji računarske znanosti: hr/nastava/materijali/racunarstvo-povijest-osnove.md
         - Sveprisutna i prožimajuća računala: hr/nastava/materijali/racunarstvo-sveprisutna-prozimajuca-racunala.md
         - Konfiguracija sustava za predmemoriju Redis: hr/nastava/materijali/redis-predmemorija.md
+        - Instalacija i konfiguracija softvera za vježbe iz kolegija Računalne mreže: hr/nastava/materijali/rm-instalacija-softvera-garuda-linux.md
         - rocALUTION -- ROCm SPARSE Linear Algebra PACkage: hr/nastava/materijali/rocm-rocalution.md
         - rocBLAS -- ROCm Basic Linear Algebra Subprograms: hr/nastava/materijali/rocm-rocblas.md
         - rocFFT -- ROCm Fast Fourier Transforms: hr/nastava/materijali/rocm-rocfft.md

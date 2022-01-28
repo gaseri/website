@@ -1,5 +1,7 @@
 # Računalne mreže
 
+- [Instalacija i konfiguracija softvera za vježbe iz kolegija Računalne mreže](../materijali/rm-instalacija-softvera-garuda-linux.md)
+
 ## Auditorne vježbe
 
 ### Auditorna vježba 1
