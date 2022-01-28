@@ -143,6 +143,15 @@ $ sudo pacman -S gnuplot
 (...)
 ```
 
+## Razvojno okruženje Visual Studio Code
+
+``` shell
+$ sudo pacman -S visual-studio-code-bin
+(...)
+```
+
+Visual Studio Code uključuje podršku za [Markdown](https://code.visualstudio.com/docs/languages/markdown) i [PHP](https://code.visualstudio.com/docs/languages/php) pa ne moramo ništa dodatno instalirati.
+
 ## HTTP klijent cURL
 
 ``` shell
@@ -159,7 +168,9 @@ $ sudo pacman -S php jq
 
 ### Provjera instalacije PHP-a
 
-U upravitelju datoteka Dolphin stvorite direktorij (mapu) `php-prvi-projekt` i otvorite ga u Visual Studio Codeu. U direktoriju koji ste otvorili stvorite iz VS Codea direktorij `public` pa u njemu datoteku `index.php` sa sadržajem:
+U upravitelju datoteka Dolphin stvorite direktorij (mapu) `php-prvi-projekt` i otvorite ga u Visual Studio Codeu korištenjem izbornika `File\Open Folder...` ili kombinacijom tipki `Ctrl + K` pa `Ctrl + O`. Nakon otvaranja direktorija, iskoristite gumb `New Folder` dostupan u pogledu Explorer ([pregled sučelja](https://code.visualstudio.com/docs/getstarted/userinterface)) za stvaranje poddirektorija (podmape) naziva `public`.
+
+Unutar poddirektorija `public` stvorite iskoristite gumb `New File` za stvaranje datoteke imena `index.php` sa sadržajem:
 
 ``` php
 <?php
@@ -167,7 +178,7 @@ U upravitelju datoteka Dolphin stvorite direktorij (mapu) `php-prvi-projekt` i o
 phpinfo();
 ```
 
-U [ugrađenom terminalu](https://code.visualstudio.com/docs/editor/integrated-terminal) u VS Code-u pokrenite ugrađeni poslužitelj PHP-ovog interpretera na IPv4 adresi lokalnog domaćina `127.0.0.1`:
+Pokrenite [ugrađeni terminal](https://code.visualstudio.com/docs/editor/integrated-terminal) putem izbornika `Terminal\New Terminal` ili kombinacije tipki ``Ctrl + Shift + ` ``. U njemu pokrenite ugrađeni poslužitelj PHP-ovog interpretera na adresi lokalnog domaćina `127.0.0.1`:
 
 ``` shell
 $ php -S 127.0.0.1:8080 -t public
@@ -180,12 +191,5 @@ Korištenjem web preglednika otvorite adresu `http://127.0.0.1:8080/` i uvjerite
 
 ``` shell
 $ sudo pacman -S siege
-(...)
-```
-
-## Razvojno okruženje Visual Studio Code
-
-``` shell
-$ sudo pacman -S visual-studio-code-bin
 (...)
 ```
