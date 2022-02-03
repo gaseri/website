@@ -32,8 +32,6 @@ Web stranica: [vedran.miletic.net](https://vedran.miletic.net/)
 Ured: Ulica Radmile Matejčić 2, O-520  
 Vrijeme konzultacija: utorkom od 12 do 14 sati ili po dogovoru e-mailom
 
-# PARALELNO PROGRAMIRANJE NA HETEROGENIM SUSTAVIMA
-
 ## Razvijanje općih i specifičnih kompetencija (znanja i vještina)
 
 - usvajanje temeljnih znanja o načinu rada grafičkog procesora kod izvođenja računskih operacija opće namjene

@@ -35,8 +35,6 @@ Web stranica: [vedran.miletic.net](https://vedran.miletic.net/)
 Ured: Ulica Radmile Matejčić 2, O-520  
 Vrijeme konzultacija: utorkom od 12 do 14 sati ili po dogovoru e-mailom
 
-# DISTRIBUIRANI SUSTAVI
-
 ## Razvijanje općih i specifičnih kompetencija (znanja i vještina)
 
 - upoznavanje studenata sa distribuiranim sustavima i usvajanje osnovnih pojmova distribuiranih operacijskih sustava: komunikacija i sinkronizacija, upravljanje podacima, sigurnost i zaštita

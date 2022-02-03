@@ -26,8 +26,6 @@ Web stranica: [vedran.miletic.net](https://vedran.miletic.net/)
 Ured: Ulica Radmile Matejčić 2, O-520  
 Vrijeme konzultacija: utorkom od 12 do 14 sati ili po dogovoru e-mailom
 
-# RAČUNALNE MREŽE 1
-
 ## Razvijanje općih i specifičnih kompetencija (znanja i vještina)
 
 - usvajanje temeljnih znanja o elementima i arhitekturi računalnih mreža i o strukturnim osobinama računalnih komunikacijskih sustava

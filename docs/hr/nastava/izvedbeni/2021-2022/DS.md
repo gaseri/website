@@ -35,8 +35,6 @@ Web stranica: [portal.uniri.hr/Portfelj/4166](https://portal.uniri.hr/Portfelj/4
 Ured: Ulica Radmile Matejčić 2, O-522  
 Vrijeme konzultacija: utorkom od 14 do 16 sati ili po dogovoru e-mailom
 
-# DISTRIBUIRANI SUSTAVI
-
 ## Razvijanje općih i specifičnih kompetencija (znanja i vještina)
 
 - upoznavanje studenata sa distribuiranim sustavima i usvajanje osnovnih pojmova distribuiranih operacijskih sustava: komunikacija i sinkronizacija, upravljanje podacima, sigurnost i zaštita

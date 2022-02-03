@@ -35,8 +35,6 @@ Web stranica: [vedran.miletic.net](https://vedran.miletic.net/)
 Ured: Ulica Radmile Matejčić 2, O-520  
 Vrijeme konzultacija: utorkom od 14 do 16 sati ili po dogovoru e-mailom
 
-# OPERACIJSKI SUSTAVI 2
-
 ## Razvijanje općih i specifičnih kompetencija (znanja i vještina)
 
 - upoznavanje studenata sa distribuiranim sustavima;

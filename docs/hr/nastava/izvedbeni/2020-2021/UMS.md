@@ -23,8 +23,6 @@ Web stranica: [vedran.miletic.net](https://vedran.miletic.net/)
 Ured: Ulica Radmile Matejčić 2, O-520  
 Vrijeme konzultacija: utorkom od 12 do 14 sati ili po dogovoru e-mailom
 
-# UPRAVLJANJE MREŽNIM SUSTAVIMA
-
 ## Razvijanje općih i specifičnih kompetencija (znanja i vještina)
 
 - upoznavanje temeljnih elemenata upravljanja mrežnim sustavima: instalacija i održavanje operacijskih sustava i drugih softvera mrežnih čvorova, upravljanje mrežnim uslugama, metode i procese zaštite mrežnih sustava od raznih vrsta napada, izrada rezervnih kopija i pohranu podataka, kontrola performansi i optimizacija rada mrežnog sustava

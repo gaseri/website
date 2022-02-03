@@ -35,8 +35,6 @@ Web stranica: [portal.uniri.hr/Portfelj/4166](https://portal.uniri.hr/Portfelj/4
 Ured: Ulica Radmile Matejčić 2, O-522  
 Vrijeme konzultacija: ponedjeljkom od 14 do 16 sati ili po dogovoru e-mailom
 
-# DINAMIČKE WEB APLIKACIJE 2
-
 ## Razvijanje općih i specifičnih kompetencija (znanja i vještina)
 
 - usvajanje naprednijih znanja o metodama programiranja dinamičkih web aplikacija i servisa u programskim jezicima i okvirima za web
