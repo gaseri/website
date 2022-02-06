@@ -1,5 +1,12 @@
 {% extends "base.html" %}
 
+{% block extrahead %}
+  {{ super() }}
+  {% if page and page.abs_url %}
+    <meta http-equiv="onion-location" content="http://vcwkbqby652dtqgbtbtr6ouvs6fu5abx5z45dmlug6dl55d6zcadsuqd.onion{{ page.abs_url }}">
+  {% endif %}
+{% endblock %}
+
 {% block content %}
   {{ super() }}
   {% if page and page.meta and page.meta.author %}
