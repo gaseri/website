@@ -395,6 +395,19 @@ extra:
   analytics:
     provider: google
     property: G-3CSW7LLM5F
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/gaseri
+      name: GASERI on GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/gaseri
+      name: GASERI on LinkedIn
+    - icon: fontawesome/brands/gitlab
+      link: https://gitlab.com/gaseri
+      name: GASERI on GitLab
+    - icon: fontawesome/brands/bitbucket
+      link: https://bitbucket.org/gaseri
+      name: GASERI on Bitbucket
 markdown_extensions:
   - admonition
   - meta
