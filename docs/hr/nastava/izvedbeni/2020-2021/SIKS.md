@@ -98,7 +98,7 @@ Nema.
 | ---------------- | ---- | ------------- | -------------------- | --------------------- | ----------- |
 | Pohađanje nastave i aktivnosti u nastavi | 1,5 | I1--I5 | Prisutnost studenata i odgovaranje na pitanja nastavnika | Popisivanje (evidencija) | 0 |
 | Pisani ispit | 1 | I1, I2 | Kolokvij iz dijela gradiva predavanja | Ovisno o stupnju točnosti i potpunosti | 25 |
-| Kontinuirana provjera znanja | 1 | I1, I2 | Kontrolna zadaća iz dijela gradiva vježbi | Ovisno o stupnju točnosti i potpunosti | 25 |
+| Kontinuirana provjera znanja | 1 | I1, I2 | Pet laboratorijskih vježbi | Ovisno o stupnju točnosti i potpunosti | 25 |
 | Projekt (dio) | 0,5 | I3 | Određivanje zaštitne funkcije informacijskog sustava te izrada ili konfiguracija model autentifikacije i autorizacije korisnika za zadanu aplikaciju | 20 bodova prema definiranim kriterijima | 20 |
 | Završni ispit | 1 | I3, I4, I5 | Analiza rizika i upravljanje razinom usluga, incidentima, problemima, zahtjevima i raspoloživošću | 30 bodova prema definiranim kriterijima | 30 |
 | **UKUPNO** | **5** |  |  |  | **100** |
@@ -115,7 +115,7 @@ Tijekom semestra pisat će se kolokvij koji će uključivati teorijska pitanja i
 
 #### Kontinuirana provjera znanja
 
-Tijekom semestra bit će održano pet laboratorijskih vježbi koje će uključivati korištenje algoritama za šifriranje u okviru nekoliko gotovih aplikacija (sigurna ljuska, VPN klijent i poslužitelj, web klijent i poslužitelj te sustav za upravljanje bazom podataka) na računalu prema danim uputama. Laboratorijske vježbe se izvode po modelu obrnute učionice (engl. flipped classroom) tako da student unaprijed dobiva nastavne materijale i zadatke za samostalnu pripremu putem sustava za e-učenje, a zatim na laboratorijskoj vježbi rješava zadatke i predaje rješenja koja se ocjenjuju. Student će rješavanjem zadanih zadataka na svakoj laboratorijskoj vježbi moći skupiti maksimalno 5 boda, dakle ukupno na svih pet laboratorijskih vježbi maksimalno 25 bodova.
+Tijekom semestra bit će održano pet laboratorijskih vježbi koje će uključivati korištenje algoritama za šifriranje u okviru nekoliko gotovih aplikacija (sigurna ljuska, VPN klijent i poslužitelj, web klijent i poslužitelj te sustav za upravljanje bazom podataka) na računalu prema danim uputama. Laboratorijske vježbe se izvode po modelu obrnute učionice (engl. flipped classroom) tako da student unaprijed dobiva nastavne materijale i zadatke za samostalnu pripremu putem sustava za e-učenje, a zatim na laboratorijskoj vježbi rješava zadatke i predaje rješenja koja se ocjenjuju. Student će rješavanjem zadanih zadataka na svakoj laboratorijskoj vježbi moći skupiti maksimalno 5 bodova, dakle ukupno na svih pet laboratorijskih vježbi maksimalno 25 bodova.
 
 #### Projekt (dio)
 
