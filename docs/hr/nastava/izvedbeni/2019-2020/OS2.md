@@ -1,4 +1,4 @@
-Sveučilište u Rijeci  
+SVEUČILIŠTE U RIJECI  
 ODJEL ZA INFORMATIKU  
 Ulica Radmile Matejčić 2, Rijeka  
 Akademska 2019/2020. godina
