@@ -110,23 +110,23 @@ Nema.
 
 ### Obveze i vrednovanje studenata
 
-#### Pohađanje nastave
+#### 1. Pohađanje nastave
 
 Nastava se odvija prema mješovitom modelu u kombinaciji klasične nastave u učionici i online nastave uz pomoć sustava za e-učenje Merlin ([moodle.srce.hr/2021-2022/](https://moodle.srce.hr/2021-2022/)).
 
-#### Eksperimentalni rad
+#### 2. Eksperimentalni rad
 
 Tijekom semestra bit će održano deset laboratorijskih vježbi koje će uključivati korištenje simulatora mreže, emulatora mreže te poslužiteljskih, klijentskih i pomoćnih aplikacija za izvođenje eksperimenata iz područja računalnih mreža na računalu prema danim uputama. Laboratorijske vježbe se izvode tako da student unaprijed dobiva nastavne materijale i zadatke za samostalnu pripremu putem sustava za e-učenje te dolazi pripremljen na laboratorijsku vježbu. Na početku laboratorijske vježbe rješava kviz s pitanjima i zadacima iz materijala koje je dobio za samostalnu pripremu. Ako je kviz prolazan (prag je 50% uspješno odgovorenih pitanja i riješenih zadataka), student preuzima zadatke laboratorijske vježbe, rješava ih i predaje njihova rješenja koja se ocjenjuju. Student će rješavanjem zadanih zadataka na svakoj laboratorijskoj vježbi moći skupiti maksimalno 4 boda, dakle ukupno na svih deset laboratorijskih vježbi maksimalno 40 bodova.
 
 U zadnjem će tjednu studentima koji nisu predali rješenja zadanih zadataka na nekoj od laboratorijskih vježbi biti dana mogućnost nadoknade jedne laboratorijske vježbe.
 
-#### Kontinuirana provjera znanja
+#### 3. Kontinuirana provjera znanja
 
 **Domaće zadaće.** Tijekom semestra bit će održane dvije auditorne vježbe i nakon svake od njih bit će zadana domaća zadaća. Student će nakon zadavanja svake od zadaća imati dva tjedna da preda rješenje i pritom će po zadaći moći skupiti maksimalno 5 bodova, što nosi ukupno maksimalno 10 bodova.
 
 **Test.** Tijekom semestra pisat će se test na Merlinu koji će uključivati pitanja i zadatke iz dijela gradiva predavanja i na njemu će student moći skupiti maksimalno 20 bodova. Pogrešni odgovori na pitanja višestrukog izbora donose negativne bodove.
 
-#### Završni ispit
+#### 4. Završni ispit
 
 Završni ispit je test na Merlinu koji uključuje pitanja i zadatke iz čitavog gradiva predavanja i na njemu će student moći skupiti maksimalno 30 bodova. Pogrešni odgovori na pitanja višestrukog izbora donose negativne bodove.
 

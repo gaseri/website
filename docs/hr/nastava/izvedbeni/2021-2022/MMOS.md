@@ -113,25 +113,25 @@ Nema.
 
 ### Obveze i vrednovanje studenata
 
-#### Pohađanje nastave
+#### 1. Pohađanje nastave
 
 Nastava se odvija prema mješovitom modelu u kombinaciji klasične nastave u učionici i online nastave uz pomoć sustava za e-učenje Merlin ([moodle.srce.hr/2021-2022/](https://moodle.srce.hr/2021-2022/)).
 
-#### Seminarski rad
+#### 2. Seminarski rad
 
 Tijekom semestra studenti će za domaću zadaću napraviti dva seminarska rada.
 
 Prvi seminarski rad pokrivat će formiranje oblaka namijenjenog za izvođenje zadane aplikacije i u njemu će student moći ostvariti maksimalno 25 bodova, a drugi seminarski rad će uključivati razvoj, dokumentiranje i postavljanje na mobilni uređaj mobilne aplikacije koja koristi senzore te će na njoj student moći ostvariti maksimalno 15 bodova.
 
-#### Projekt
+#### 3. Projekt
 
 Tijekom semestra student će u okviru projekta izvesti profiliranje razvijene mobilne aplikacije i analizirati dobivene podatke.
 
-#### Kontinuirana provjera znanja
+#### 4. Kontinuirana provjera znanja
 
 Tijekom semestra pisat će se test na Merlinu koji će uključivati pitanja i zadatke iz dijela gradiva predavanja i na njemu će student moći skupiti maksimalno 20 bodova.
 
-#### Završni ispit
+#### 5. Završni ispit
 
 Završni ispit je test na Merlinu koji uključuje pitanja i zadatke iz čitavog gradiva predavanja i na njemu će student moći skupiti maksimalno 30 bodova.
 

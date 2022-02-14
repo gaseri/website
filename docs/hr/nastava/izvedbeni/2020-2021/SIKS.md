@@ -105,23 +105,23 @@ Nema.
 
 ### Obveze i vrednovanje studenata
 
-#### Pohađanje nastave i aktivnosti u nastavi
+#### 1. Pohađanje nastave i aktivnosti u nastavi
 
 Nastava se odvija prema mješovitom modelu u kombinaciji klasične nastave u učionici i online nastave uz pomoć sustava za e-učenje Merlin ([moodle.srce.hr/2020-2021/](https://moodle.srce.hr/2020-2021/)).
 
-#### Pisani ispit
+#### 2. Pisani ispit
 
 Tijekom semestra pisat će se kolokvij koji će uključivati teorijska pitanja iz dijela sadržaja predavanja. Na kolokviju student će moći sakupiti najviše 25 ocjenskih bodova.
 
-#### Kontinuirana provjera znanja
+#### 3. Kontinuirana provjera znanja
 
 Tijekom semestra bit će održano pet laboratorijskih vježbi koje će uključivati korištenje algoritama za šifriranje u okviru nekoliko gotovih aplikacija (sigurna ljuska, VPN klijent i poslužitelj, web klijent i poslužitelj te sustav za upravljanje bazom podataka) na računalu prema danim uputama. Laboratorijske vježbe se izvode po modelu obrnute učionice (engl. flipped classroom) tako da student unaprijed dobiva nastavne materijale i zadatke za samostalnu pripremu putem sustava za e-učenje, a zatim na laboratorijskoj vježbi rješava zadatke i predaje rješenja koja se ocjenjuju. Student će rješavanjem zadanih zadataka na svakoj laboratorijskoj vježbi moći skupiti maksimalno 5 bodova, dakle ukupno na svih pet laboratorijskih vježbi maksimalno 25 bodova.
 
-#### Projekt (dio)
+#### 4. Projekt (dio)
 
 Student samostalno ili u paru na praktičnom projektnom zadatku za konkretno zadani informacijski sustav određuje zaštitne funkcije informacijskog sustava te izrađuje ili konfigurira model autentifikacije i autorizacije korisnika za zadanu aplikaciju. Na taj način može steći maksimalno 20 bodova. Student mora ostvariti minimalno 50% (10 bodova) da bi izrađeni projektni zadatak smatrao uspješnim, čime ostvaruje uvjet za pristupanje završnom ispitu.
 
-#### Završni ispit
+#### 5. Završni ispit
 
 Student samostalno ili u paru nakon izrade ili konfiguriranja modela autentifikacije i autorizacije korisnika za zadanu aplikaciju projekta u pisanom obliku izrađuje analizu rizika te argumentirano objašnjava postupke upravljanja razinom usluga, incidentima, problemima, zahtjevima i raspoloživošću (npr. izraditi tablicu odaziva s obzirom na vrstu problema i incidenta).
 

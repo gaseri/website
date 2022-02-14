@@ -119,15 +119,15 @@ Nema.
 
 ### Obveze i vrednovanje studenata
 
-#### Pohađanje nastave
+#### 1. Pohađanje nastave
 
 Nastava se odvija prema mješovitom modelu u kombinaciji klasične nastave u učionici i online nastave uz pomoć sustava za e-učenje Merlin ([moodle.srce.hr/2021-2022/](https://moodle.srce.hr/2021-2022/)).
 
-#### Kontinuirana provjera znanja
+#### 2. Kontinuirana provjera znanja
 
 Tijekom semestra pisat će se pisat će se test na Merlinu koji će uključivati pitanja iz gradiva predavanja i njemu će student moći skupiti maksimalno 30 bodova.
 
-#### Praktični rad
+#### 3. Praktični rad
 
 **Praktični kolokvij.** Tijekom semestra pisat će se praktični kolokvij koji će uključivati zadatke iz gradiva vježbi. Na praktičnom kolokviju student će moći skupiti najviše 20 bodova. Prag za pravo pristupa završnom ispitu je ostvarenih 50% od ukupnog broja bodova na praktičnom kolokviju.
 
@@ -137,7 +137,7 @@ U unaprijed danom terminu krajem semestra moguće je ispravljati praktični kolo
 
 Studenti će djelomično izraditi web aplikaciju ili uslugu tako da sadrži izrađene modele i predati je u tom obliku u danom roku. Predana aplikacija ili usluga može sadržavati i ostale elemente, ali oni se neće uzimati u obzir kod vrednovanja. Ovisno o točnosti i potpunosti izrađenih modela, studenti će pritom moći ostvariti do 20 bodova.
 
-#### Završni ispit
+#### 4. Završni ispit
 
 Prije izlaska na završni ispit bit će potrebno izvršiti predaju web aplikacije ili usluge izrađene na temelju ranije izrađenih modela.
 
