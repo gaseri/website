@@ -19,7 +19,14 @@
 
 {% block content %}
   {{ super() }}
-  {% if page and page.meta and page.meta.author %}
-    <p><small>Author: {{ page.meta.author }}</small></p>
+  {% if page and page.meta %}
+    <p>
+    {% if page.meta.author %}
+      <small>Author: {{ page.meta.author }}</small><br />
+    {% endif %}
+    {% if page.meta.date %}
+      <small>Date: {{ page.meta.date }}</small><br />
+    {% endif %}
+    </p>
   {% endif %}
 {% endblock %}
