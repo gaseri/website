@@ -16,12 +16,15 @@ nav:
       - O nastavi: hr/nastava/index.md
       - Izvedbeni planovi:
         - 2021/2022:
+          - Dinamičke web aplikacije 2: hr/nastava/izvedbeni/2021-2022/DWA2.md
           - Distribuirani sustavi: hr/nastava/izvedbeni/2021-2022/DS.md
           - Mrežni i mobilni operacijski sustavi: hr/nastava/izvedbeni/2021-2022/MMOS.md
           - Programiranje za web: hr/nastava/izvedbeni/2021-2022/PW.md
           - Računalne mreže: hr/nastava/izvedbeni/2021-2022/RM.md
           - Računalne mreže 1: hr/nastava/izvedbeni/2021-2022/RM1.md
+          - Sigurnost informacijskih i komunikacijskih sustava: hr/nastava/izvedbeni/2021-2022/SIKS.md
           - Upravljanje mrežnim sustavima: hr/nastava/izvedbeni/2021-2022/UMS.md
+          - Upravljanje računalnim sustavima: hr/nastava/izvedbeni/2021-2022/URS.md
         - 2020/2021:
           - Distribuirani sustavi: hr/nastava/izvedbeni/2020-2021/DS.md
           - Dinamičke web aplikacije 2: hr/nastava/izvedbeni/2020-2021/DWA2.md
