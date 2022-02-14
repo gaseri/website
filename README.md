@@ -2,17 +2,9 @@
 
 The group is interested in scientific software development, high-performance computers, cloud computing, and the use of free open-source software in the development of applications and services for supercomputers and cloud platforms, specifically in the application of exascale computing to solve problems in computational biochemistry and related fields. Visit [the group website](https://group.miletic.net/en/) for more information.
 
+## Prerequisites
+
 Editing the website contents requires at least [the basic knowledge of writing Markdown in MkDocs](https://www.mkdocs.org/user-guide/writing-your-docs/).
-
-## Preparing the environment
-
-The website is built using [MkDocs](https://www.mkdocs.org/) and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/). Make sure that you have [Python](https://www.python.org/) and [pip](https://pip.pypa.io/) installed on your system; these two packages can usually be obtained via the operating system's package manager (e.g. APT, DNF, Pacman, Zypper, FreeBSD pkg, Homebrew, or Windows Package Manager).
-
-Once Python and pip are successfully set up, start by installing the required Python packages using the `pip` command:
-
-``` shell
-$ pip install mkdocs mkdocs[i18n] mkdocs-material
-```
 
 ## Obtaining the sources
 
@@ -20,11 +12,22 @@ Clone the repository using [Git](https://git-scm.com/):
 
 ``` shell
 $ git clone https://github.com/gaseri/website.git
+$ cd website
 ```
 
 ## Editing the contents
 
-Make the edits you want using any text editor you like (e.g. [Visual Studio Code](https://code.visualstudio.com/) supports [highlighting and previewing Markdown out of the box](https://code.visualstudio.com/docs/languages/markdown) and so does [Atom](https://atom.io/)).
+Make the edits you want using any text editor you like. Popular choices include [Visual Studio Code](https://code.visualstudio.com/), which supports [highlighting and previewing Markdown out of the box](https://code.visualstudio.com/docs/languages/markdown), [VSCodium](https://vscodium.com/), the community-driven and freely-licensed binary distribution of VS Code, [IntelliJ IDEA](https://www.jetbrains.com/idea/) with [the bundled Markdown plugin](https://www.jetbrains.com/help/idea/markdown.html), [Markdown Mode for GNU Emacs](https://www.emacswiki.org/emacs/MarkdownMode), and [Markdown Vim Mode](https://github.com/preservim/vim-markdown).
+
+## Preparing the build environment
+
+The website is built using [MkDocs](https://www.mkdocs.org/) and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/). Make sure that you have [Python](https://www.python.org/) and [pip](https://pip.pypa.io/) installed on your system; these two packages can usually be obtained via the operating system's package manager (e.g. [APT](https://wiki.debian.org/Apt), [DNF](https://dnf.readthedocs.io/), [Pacman](https://wiki.archlinux.org/title/Pacman), [Zypper](https://en.opensuse.org/SDB:Zypper_usage), [FreeBSD pkg](https://docs.freebsd.org/en/books/handbook/ports/#pkgng-intro), [Homebrew](https://brew.sh/), or [Windows Package Manager](https://docs.microsoft.com/en-us/windows/package-manager/)).
+
+Once Python and pip are successfully set up, start by installing the required Python packages using the `pip` command:
+
+``` shell
+$ pip install -r requirements.txt
+```
 
 ## Previewing the website
 
