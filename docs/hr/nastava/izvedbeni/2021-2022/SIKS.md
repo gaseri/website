@@ -171,11 +171,11 @@ Nastava će se na predmetu odvijati u zimskom semestru prema sljedećem raspored
 | 2. | 7. 3. 2022. | 8:15--9:45 | online | Analiza i procjena rizika | P2 | izv. prof. dr. sc. Božidar Kovačić |
 | 2. | 10. 3. 2022. | 14:00--15:30 i 16:00--17:30 | O-350 | Primjena kriptografije javnog ključa (OpenSSL) | V2 | Milan Petrović |
 | 3. | 14. 3. 2022. | 8:15--9:45 | online | Prijetnje sigurnosti i vjerojatnost njihova nastanka | P3 | izv. prof. dr. sc. Božidar Kovačić |
-| 3. | 17. 3. 2022. | 14:00--15:30 i 16:00--17:30 | O-350 | *Laboratorijska vježba 1:* Sigurna ljuska (OpenSSH) | V3 | Milan Petrović |
+| 3. | 17. 3. 2022. | 14:00--15:30 i 16:00--17:30 | online | Certifikat javnog ključa, certifikacijska tijela i sigurni poslužitelj (OpenSSL) | V3 | Milan Petrović |
 | 4. | 21. 3. 2022. | 8:15--9:45 | online | Ranjivost informacijskih sustava | P4 | izv. prof. dr. sc. Božidar Kovačić |
-| 4. | 24. 3. 2022. | 14:00--15:30 i 16:00--17:30 | O-350 | *Laboratorijska vježba 2:* Sigurnost virtualne privatne mreže (WireGuard) | V4 | Milan Petrović |
+| 4. | 24. 3. 2022. | 14:00--15:30 i 16:00--17:30 | O-350 | *Laboratorijska vježba 1:* Sigurna ljuska (OpenSSH) | V4 | Milan Petrović |
 | 5. | 28. 3. 2022. | 8:15--9:45 | online | Sigurnosni incidenti informacijskih sustava | P5 | izv. prof. dr. sc. Božidar Kovačić |
-| 5. | 31. 3. 2022. | 14:00--15:30 i 16:00--17:30 | O-350 | Certifikat javnog ključa, certifikacijska tijela i sigurni poslužitelj (OpenSSL) | V5 | Milan Petrović |
+| 5. | 31. 3. 2022. | 14:00--15:30 i 16:00--17:30 | O-350 | *Laboratorijska vježba 2:* Sigurnost virtualne privatne mreže (WireGuard) | V5 | Milan Petrović |
 | 6. | 4. 4. 2022. | 8:15--9:45 | online | Prepoznavanje znakova sigurnosnih incidenata | P6 | izv. prof. dr. sc. Božidar Kovačić |
 | 6. | 7. 4. 2022. | 14:00--15:30 i 16:00--17:30 | O-350 | *Laboratorijska vježba 3:* Web poslužitelj (HTTPie, Apache, ab) | V6 | Milan Petrović |
 | 6. | 9. 4. 2022. | 8:15--9:45 | O-028 | Sigurnosni mehanizmi i kontrolni postupci | P7 | izv. prof. dr. sc. Božidar Kovačić |
