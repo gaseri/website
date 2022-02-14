@@ -2,6 +2,10 @@
 
 The group is interested in scientific software development, high-performance computers, cloud computing, and the use of free open-source software in the development of applications and services for supercomputers and cloud platforms, specifically in the application of exascale computing to solve problems in computational biochemistry and related fields. Visit [the group website](https://group.miletic.net/en/) for more information.
 
+## License
+
+The contents of the website are licensed under [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/), except teaching materials in Croatian under [/hr/nastava/materijali/](docs/hr/nastava/), teaching materials in English under [/en/teaching/materials/](docs/en/teaching/), and tutorials in English under [/en/tutorials/](docs/en/tutorials/gromacs/), which are licensed under [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).
+
 ## Prerequisites
 
 Editing the website contents requires at least [the basic knowledge of writing Markdown in MkDocs](https://www.mkdocs.org/user-guide/writing-your-docs/).
