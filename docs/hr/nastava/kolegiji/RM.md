@@ -29,6 +29,7 @@
 
 ### Laboratorijska vježba 3
 
+- [Slanje podataka u HTTP zahtjevu metodama GET i POST u jeziku PHP](../materijali/php-slanje-podataka.md)
 - [Postavljanje datoteka na poslužitelj u jeziku PHP](../materijali/php-file-upload.md)
 - [Višejezičnost u jeziku PHP](../materijali/php-visejezicnost.md)
 - [Kodiranje HTTP sadržaja i kompresija u jeziku PHP](../materijali/php-http-encoding.md)

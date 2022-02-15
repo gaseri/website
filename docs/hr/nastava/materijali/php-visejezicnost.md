@@ -10,6 +10,56 @@ HTTP zaglavlje `Accept-Language` u zahtjevu oglašava koje jezike klijent može 
 
 HTTP zaglavlje `Content-Language` u odgovoru navodi u kojem je jeziku napisan sadržaj koji se šalje ([više detalja o HTTP zaglavlju Content-Language na MDN-u](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Language)). Primjerice, `Content-Language: de-AT` znači da je sadržaj na njemačkom jeziku kakav se govori u Austriji. Najčešće se koristi za tekstualni sadržaj (čisti tekst i HTML), ali može se koristiti za bilo koji medij.
 
+## Rad s poljima u jeziku PHP
+
+Dosad smo već koristili vrijednosti iz polja `$_SERVER` kao što su `$_SERVER["REQUEST_URI"]` i `$_SERVER["REQUEST_METHOD"]`. Vidjeli smo da su te vrijednosti znakovni nizovi, a istog su tipa i ključevi `"REQUEST_URI"` i `"REQUEST_METHOD"` putem kojih ih dohvaćamo. Dakle, ključevi polja u jeziku PHP ne moraju biti poredani cijeli brojevi koji kreću od nule kako smo navikli kod rada s poljima u C/C++-u. Polje u PHP-u ([dokumentacija](https://www.php.net/manual/en/language.types.array.php)) je zapravo poredano preslikavanje (engl. *ordered map*). Za ilustraciju načina rada s poljima u PHP-u od [verzije 5.4.0](https://www.php.net/releases/5_4_0.php) nadalje, definirajmo dva polja: prvo slično poljima u C/C++-u, a drugo polju `$_SERVER`:
+
+``` php
+<?php
+
+$arr1 = ["moja vrijednost", 1, 3.5, true]; // ekvivalentno [0 => "moja vrijednost", 1 => 8, 2 => 3.5, 3 => true]
+$arr2 = ["moj kljuc" => "moja vrijednost", "broj" => 8, "drugi broj" => 3.5, "je li istina" => true];
+```
+
+Vrijednosti elemenata prvog polja možemo dohvatiti na način `$arr1[0]`,  `$arr1[1]`,  `$arr1[2]` i  `$arr1[3]`, a drugog na način `$arr1["moj kljuc"]`,  `$arr1["broj"]`,  `$arr1["drugi broj"]` i  `$arr1["je li istina"]`.
+
+Pokrenimo interaktivni način rada interpretera PHP-a korištenjem parametra `--interactive`, odnosno `-a` te definirajmo ta dva polja `$arr1` i `$arr2` kao iznad, a zatim provjerimo njihov sadržaj funkcijom ispisa `print_r()` ([dokumentacija](https://www.php.net/manual/en/function.print-r.php)):
+
+``` shell
+$ php -a
+Interactive mode enabled
+
+php > $arr1 = ["moja vrijednost", 1, 3.5, true];
+php > $arr2 = ["moj kljuc" => "moja vrijednost", "broj" => 8, "drugi broj" => 3.5, "je li istina" => true];
+php > print_r($arr1);
+Array
+(
+    [0] => moja vrijednost
+    [1] => 1
+    [2] => 3.5
+    [3] => 1
+)
+php > print_r($arr2);
+Array
+(
+    [moj kljuc] => moja vrijednost
+    [broj] => 8
+    [drugi broj] => 3.5
+    [je li istina] => 1
+)
+```
+
+Možemo se uvjeriti i da uspješno dohvaćamo pojedine vrijednosti iz polja na način koji smo naveli:
+
+```
+php > echo $arr1[0];
+moja vrijednost
+php > echo $arr2["broj"];
+8
+php > echo $arr2["drugi broj"];
+3.5
+```
+
 ## Jednostavan odabir jezika
 
 Implementirajmo jednostavan odabir jezika koji omogućuje primanje odabira na hrvatskom, engleskom ili poruke o pogrešci. Ako klijent navede da prihvaća hrvatski, dobit će odgovor na hrvatskom bez obzira je li naveo engleski jer je hrvatski preferirani jezik poslužitelja. Ako klijent navede da prihvaća engleski ili navede da prihvaća sve jezike bez da eksplicitno navede hrvatski ili engleski, dobit će odgovor na engleskom. Ako klijent navede popis jezika koji ne uključuje niti hrvatski, niti engleski, niti sve ostale jezike, dobit će odgovor s postavljenim HTTP statusnim kodom 406 Not Acceptable.

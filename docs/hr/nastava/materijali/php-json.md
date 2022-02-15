@@ -4,56 +4,6 @@ author: Vedran Miletić
 
 # Obrada podataka zapisanih u obliku JavaScript Object Notation (JSON) u jeziku PHP
 
-Dosad smo već koristili vrijednosti iz polja `$_SERVER` kao što su `$_SERVER["REQUEST_URI"]` i `$_SERVER["REQUEST_METHOD"]`. Vidjeli smo da su te vrijednosti znakovni nizovi, a istog su tipa i ključevi `"REQUEST_URI"` i `"REQUEST_METHOD"` putem kojih ih dohvaćamo. Dakle, ključevi polja u jeziku PHP ne moraju biti poredani cijeli brojevi koji kreću od nule kako smo navikli kod rada s poljima u C/C++-u. Polje u PHP-u ([dokumentacija](https://www.php.net/manual/en/language.types.array.php)) je zapravo poredano preslikavanje (engl. *ordered map*). Za ilustraciju načina rada s poljima u PHP-u od [verzije 5.4.0](https://www.php.net/releases/5_4_0.php) nadalje, definirajmo dva polja: prvo slično poljima u C/C++-u, a drugo polju `$_SERVER`:
-
-``` php
-<?php
-
-$arr1 = ["moja vrijednost", 1, 3.5, true]; // ekvivalentno [0 => "moja vrijednost", 1 => 8, 2 => 3.5, 3 => true]
-$arr2 = ["moj kljuc" => "moja vrijednost", "broj" => 8, "drugi broj" => 3.5, "je li istina" => true];
-```
-
-Vrijednosti elemenata prvog polja možemo dohvatiti na način `$arr1[0]`,  `$arr1[1]`,  `$arr1[2]` i  `$arr1[3]`, a drugog na način `$arr1["moj kljuc"]`,  `$arr1["broj"]`,  `$arr1["drugi broj"]` i  `$arr1["je li istina"]`.
-
-Pokrenimo interaktivni način rada interpretera PHP-a korištenjem parametra `--interactive`, odnosno `-a` te definirajmo ta dva polja `$arr1` i `$arr2` kao iznad, a zatim provjerimo njihov sadržaj funkcijom ispisa `print_r()` ([dokumentacija](https://www.php.net/manual/en/function.print-r.php)):
-
-``` shell
-$ php -a
-Interactive mode enabled
-
-php > $arr1 = ["moja vrijednost", 1, 3.5, true];
-php > $arr2 = ["moj kljuc" => "moja vrijednost", "broj" => 8, "drugi broj" => 3.5, "je li istina" => true];
-php > print_r($arr1);
-Array
-(
-    [0] => moja vrijednost
-    [1] => 1
-    [2] => 3.5
-    [3] => 1
-)
-php > print_r($arr2);
-Array
-(
-    [moj kljuc] => moja vrijednost
-    [broj] => 8
-    [drugi broj] => 3.5
-    [je li istina] => 1
-)
-```
-
-Možemo se uvjeriti i da uspješno dohvaćamo pojedine vrijednosti iz polja na način koji smo naveli:
-
-```
-php > echo $arr1[0];
-moja vrijednost
-php > echo $arr2["broj"];
-8
-php > echo $arr2["drugi broj"];
-3.5
-```
-
-## Kodiranje i dekodiranje JSON-a
-
 [JavaScript Object Notation (JSON)](https://www.json.org/) ([Wikipedia](https://en.wikipedia.org/wiki/JSON), [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON)) je jednostavan format za razmjenu podataka koji se intenzivno koristi na suvremenom webu. Standardiziran je u okviru [RFC-a 7159 naslovljenog The JavaScript Object Notation (JSON) Data Interchange Format](https://datatracker.ietf.org/doc/html/rfc7159). Primjer objekta zapisanog u JSON-u koji opisuje osobu (inspiriran [Wikipedijinim primjerom](https://en.wikipedia.org/wiki/JSON#Syntax)) je oblika:
 
 ``` json
@@ -86,6 +36,8 @@ php > echo $arr2["drugi broj"];
 ```
 
 Iz ovako zapisanih podataka lako je izdvojiti onaj koji nam treba te ga postaviti na odgovarajuće mjesto na web stranici. Za ilustraciju, možemo zamisliti kako bi ime, prezime, titula i korisničko ime na Twitteru bili iskorišteni kod stvaranja stranice [Team Sections od Tailwind CSS UI Components](https://tailwindui.com/components/marketing/sections/team-sections) koja bi navela Ivana Horvata kao dio tima, ali procesom izrade web stranica na taj način ćemo se detaljnije baviti nekom drugom prigodom.
+
+## Kodiranje i dekodiranje JSON-a
 
 Interpreter PHP-a [podržava kodiranje i dekodiranje JSON-a](https://www.php.net/manual/en/book.json.php) od [verzije 5.2.0](https://www.php.net/releases/5_2_0.php) nadalje.
 
