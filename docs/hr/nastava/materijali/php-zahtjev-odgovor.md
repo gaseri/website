@@ -409,25 +409,25 @@ $ curl -v -H 'Host: www.riteh.rm.miletic.net' http://localhost:8000/
 <p>Ovo je Tehnički fakultet.</p>
 * Closing connection 0
 
-$ curl -v -H 'Host: www.riteh.inf.miletic.net' http://localhost:8000/
+$ curl -v -H 'Host: www.inf.rm.miletic.net' http://localhost:8000/
 *   Trying 127.0.0.1:8000...
 * connect to 127.0.0.1 port 8000 failed: Veza odbijena
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET / HTTP/1.1
-> Host: www.riteh.inf.miletic.net
+> Host: www.inf.rm.miletic.net
 > User-Agent: curl/7.81.0
 > Accept: */*
 >
 * Mark bundle as not supporting multiuse
 < HTTP/1.1 200 OK
-< Host: www.riteh.inf.miletic.net
+< Host: www.inf.rm.miletic.net
 < Date: Tue, 15 Feb 2022 17:44:40 GMT
 < Connection: close
 < X-Powered-By: PHP/8.1.2
 < Content-type: text/html; charset=UTF-8
 <
-<p>Hello, world!</p>
+<p>Ovo je Fakultet informatike i digitalnih tehnologija.</p>
 * Closing connection 0
 
 $ curl -v -H 'Host: www.inf.uniri.hr' http://localhost:8000/
