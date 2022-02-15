@@ -183,6 +183,7 @@ nav:
         - Obrada podataka zapisanih u obliku JavaScript Object Notation (JSON) u jeziku PHP: hr/nastava/materijali/php-json.md
         - Korištenje biblioteke OpenSSL u jeziku PHP: hr/nastava/materijali/php-openssl.md
         - Implementacija REpresentational State Transfer (REST) aplikacijskog programskog sučelja u jeziku PHP: hr/nastava/materijali/php-rest.md
+        - Slanje podataka u HTTP zahtjevu metodama GET i POST u jeziku PHP: hr/nastava/materijali/php-slanje-podataka.md
         - Programiranje mrežnih aplikacija korištenjem utičnica u jeziku PHP: hr/nastava/materijali/php-sockets.md
         - Korištenje biblioteke Sodium u jeziku PHP: hr/nastava/materijali/php-sodium.md
         - Ugrađeni web poslužitelj u interpreteru jezika PHP: hr/nastava/materijali/php-ugradjeni-web-posluzitelj.md
