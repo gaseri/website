@@ -6,11 +6,11 @@ author: Milan Petrović
 
 ## Postavljanje razvojnog okruženja web aplikacija na operacijskim sustavima sličnim Unixu i Windowsima. Stvaranje projekta i organizacija koda. Korištenje dokumentacije
 
-### Instalacija
+### Instalacija programske podrške
 
-IDE u kojem se radi na vježbama je Visual Studio Code koji možete preuzeti na [linku](https://code.visualstudio.com/).
+Razvojno okruženje u kojem se radi na vježbama je Visual Studio (VS) Code koji možete preuzeti na [službenim stranicama](https://code.visualstudio.com/).
 
-Nakon što preuzimete i instalirate VS Code. Pokrenite ga, zatim s kraticom `CTRL` + `SHIFT` + `X` otvorite dio za instalaciju ekstenzija, pronađite Python i instalirajte ga. Dodatna upustva za instalaciju Python ekstenzije unutar VS Codea možete pronaći na [linku](https://code.visualstudio.com/docs/python/python-tutorial).
+Nakon što preuzimete i instalirate VS Code, pokrenite ga, zatim kraticom `Ctrl` + `Shift` + `X` otvorite dio za instalaciju ekstenzija, pronađite Python i instalirajte ga. Dodatna upustva za instalaciju Python ekstenzije unutar VS Codea možete pronaći u [službenom tutorialu](https://code.visualstudio.com/docs/python/python-tutorial).
 
 Instalacija [pip](https://pypi.org/project/pip/)-a (kod sebe doma na WSL ili kakvom god Ubuntuu):
 
