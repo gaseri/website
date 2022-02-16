@@ -448,11 +448,14 @@ $ curl -r 0-350 http://example.group.miletic.net/index.html
 Kod većih datoteka može se uočiti da je mjerenje napretka interaktivno:
 
 ``` shell
-$ curl -O https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img
+$ curl -O https://mirror.pkgbuild.com/images/latest/Arch-Linux-x86_64-basic-20220215.47946.qcow2
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0 554M    0 2985k    0     0  9896k      0  0:03:49 --:--:--  0:03:49 9886k
+  5  459M    5 23.7M    0     0  1777k      0  0:04:24  0:00:13  0:04:11 2849k
 ```
+
+!!! tip
+    Poveznica u primjeru iznad je na verziju od 15. veljače 2022. i vjerojatno je zastarjela. Provjerite [mirror.pkgbuild.com/images/latest/](https://mirror.pkgbuild.com/images/latest/) za točno ime aktualne verzije.
 
 Sa lijeva na desno stupci redom imaju sljedeće značenje.
 
@@ -474,8 +477,8 @@ Sa lijeva na desno stupci redom imaju sljedeće značenje.
 Jednostavniji prikaz napretka parametrom `-#` prikazuje samo postotak obavljenog prijenosa numerički i znakom `#`:
 
 ``` shell
-$ curl -O -# https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img
-#                                                                          1.6%
+$ curl -O -# https://mirror.pkgbuild.com/images/latest/Arch-Linux-x86_64-cloudimg-20220215.47946.qcow2
+#####################                                                                          23,0%
 ```
 
 ### Ograničenje brzine

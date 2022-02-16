@@ -91,13 +91,14 @@ author: Vedran Miletić, Vanja Slavuj
 
         - osnova joj je distribucija [Red Hat Linux](https://en.wikipedia.org/wiki/Red_Hat_Linux), čiji je rauzvoj započeo 1994. i čiji je nasljednik upravo Fedora
         - primarno namijenjena Linux entuzijastima, velik naglasak na slobodu softvera i nove značajke
-        - na njoj se zasnivaju [Red Hat Enterprise Linux](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux) i [CentOS](https://centos.org/)
+        - na njoj se zasnivaju [Red Hat Enterprise Linux](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux) i [CentOS](https://centos.org/), namijenjene poslovnim korisnicima
 
     - [Arch Linux](https://archlinux.org/), započeo 2002.
 
         - neovisna distribucija
-        - primarno namijenjena naprednim korisnicima
-        - "btw I use Arch", "i use arch btw"
+        - primarno namijenjena naprednim korisnicima; za ilustraciju: [btw I use Arch](https://knowyourmeme.com/memes/btw-i-use-arch), [i use arch btw](https://iusearchbtw.lol/)
+        - na njoj se zasnivaju [Manjaro](https://manjaro.org/) i [Garuda Linux](https://garudalinux.org/), namijenjene krajnjim korisnicima
+        - sve popularnija među određenim skupinama korisnika, npr. [igračima računalnih igara na Linuxu](https://www.gamingonlinux.com/users/statistics/)
 
 ## X Window System
 

@@ -88,7 +88,7 @@ Pojam procesora se mijenjao tijekom godina, ali uvijek ima [aritmetičko-logičk
 
 [Sustavni softver](https://en.wikipedia.org/wiki/System_software) (engl *system software*) je softver koji služi kao platforma za drugi softver.
 
-- Operacijski sustav: npr. [Ubuntu](https://ubuntu.com/), [FreeBSD](https://www.freebsd.org/), [macOS](https://www.apple.com/macos/), [Microsoft Windows](https://www.microsoft.com/windows/)
+- Operacijski sustav: npr. [Manjaro](https://manjaro.org/), [Ubuntu](https://ubuntu.com/), [FreeBSD](https://www.freebsd.org/), [macOS](https://www.apple.com/macos/), [Microsoft Windows](https://www.microsoft.com/windows/)
 - Upravljački programi uređaja: npr. [NVIDIA Driver](https://www.nvidia.com/Download/index.aspx), [AMD Radeon Software](https://www.amd.com/en/technologies/radeon-software), [Mellanox EN Driver](https://www.mellanox.com/products/ethernet-drivers/linux/mlnx_en)
 - Pomoćni alati: npr. [systemd](https://www.freedesktop.org/wiki/Software/systemd/), [GCC](https://gcc.gnu.org/)
 

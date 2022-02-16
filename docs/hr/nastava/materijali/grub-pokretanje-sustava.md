@@ -22,7 +22,7 @@ Pokreće operacijski sustav s master boot recorda (MBR) ili bootabilnih particij
     - Mogućnost korištenja mreže bez pokretanja OS-a, e.g. "Check for firmware update on line"
     - Modularan dizajn
 
-- Nudi pokretanje imenovanih operacijskih sustava koje pronađe na sustavskim EFI particijama na diskovima; primjerice, boot menu ima u popisu `ubuntu`, `Windows` ili `Fedora` umjesto `Seagate 1 TB HDD` ili `Samsung 256 GB M.2 SSD`.
+- Nudi pokretanje imenovanih operacijskih sustava koje pronađe na sustavskim EFI particijama na diskovima; primjerice, boot menu ima u popisu `Arch Linux`, `Windows Boot Manager`, `FreeBSD 12.2` ili `Fedora` umjesto `Seagate 1 TB HDD` ili `Samsung 256 GB M.2 SSD`.
 - Omogućuje "Fast Boot" kod kojeg se inicijalizira samo dio uređaja unutar računala i specijalno samo onaj disk koji je nužan za pokretanje operacijskog sustava, što ubrzava boot proces.
 - Većina današnjeg UEFI hardvera nudi kompatibilnost s legacy BIOS-om pa mogu pokretati operacijske sustave koji ne poznaju UEFI.
 

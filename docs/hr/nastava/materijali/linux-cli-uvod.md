@@ -23,7 +23,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 
 - Početak rada s komandnom linijom
 
-    - koristimo distribuciju [Edubuntu](https://edubuntu.org/), varijantu Ubuntu-a prilagođenu za edukacijsku upotrebu
+    - koristimo distribucije [Manjaro](https://manjaro.org/) i [Garuda Linux](https://garudalinux.org/), varijante [Arch Linuxa](https://archlinux.org/) prilagođene za korištenje na desktopima i laptopima
     - Logiranje u sustav -> čim se završi postupak pokretanja servera, rad na terminalima je moguć; nije potrebna zaporka niti korisničko ime
 
 - `naredba -parm arg1 arg2` -- općenita struktura: naredba, parametri, argumenti (nakon naredbe opcionalno idu prvo parametri pa argumenti)

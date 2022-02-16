@@ -70,7 +70,7 @@ radnastanica2
 
 ## Ansible playbook
 
-Stvorimo [YAML](https://yaml.org/) datoteku `/etc/ansible/playbook.yml` koja će tražiti instalaciju paketa koji sadrži MkDocs (paket je nazvan upravo `mkdocs`) i pokrenuti uslugu [Uncomplicated Firewall](https://help.ubuntu.com/community/UFW) (kraće UFW, ime usluge `ufw`) ako već nije pokrenuta. Datoteka je sadržaja:
+Stvorimo [YAML](https://yaml.org/) datoteku `/etc/ansible/playbook.yml` koja će tražiti instalaciju paketa koji sadrži MkDocs (paket je nazvan upravo `mkdocs`) i pokrenuti uslugu [Uncomplicated Firewall](https://wiki.archlinux.org/title/Uncomplicated_Firewall) (kraće UFW, ime usluge `ufw`) ako već nije pokrenuta. Datoteka je sadržaja:
 
 ``` yaml
 - name: Install MkDocs and ensure UFW is running

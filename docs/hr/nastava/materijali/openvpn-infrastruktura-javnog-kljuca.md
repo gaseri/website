@@ -70,6 +70,8 @@ Na nekim distribucijama Linuxa naredba `easyrsa` nije ni u jednom od direktorija
 - na Ubuntuu naredbom `export PATH=/usr/share/easy-rsa:$PATH`
 - na Fedori naredbom `export PATH=/usr/share/easy-rsa/3:$PATH`
 
+Na Arch Linuxu i derivatima (npr. Manjaro i Garuda Linux) se naredba `easyrsa` nakon instalacije [easy-rsa](https://archlinux.org/packages/extra/any/easy-rsa/) nalazi u `/usr/bin` te je odmah dostupna za korištenje.
+
 Na FreeBSD-u se naredba `easyrsa` nakon instalacije [security/easy-rsa](https://www.freshports.org/security/easy-rsa/) nalazi u `/usr/local/bin` te je odmah dostupna za korištenje.
 
 ## Osnovna struktura infrastrukture javnog ključa i autoritet certifikata

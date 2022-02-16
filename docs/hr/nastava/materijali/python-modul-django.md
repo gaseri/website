@@ -12,21 +12,46 @@ Razvojno okruženje u kojem se radi na vježbama je Visual Studio (VS) Code koji
 
 Nakon što preuzimete i instalirate VS Code, pokrenite ga, zatim kraticom `Ctrl` + `Shift` + `X` otvorite dio za instalaciju ekstenzija, pronađite Python i instalirajte ga. Dodatna upustva za instalaciju Python ekstenzije unutar VS Codea možete pronaći u [službenom tutorialu](https://code.visualstudio.com/docs/python/python-tutorial).
 
-Instalacija [pip](https://pypi.org/project/pip/)-a (kod sebe doma na WSL ili kakvom god Ubuntuu):
+Specijalno, na [Arch Linuxu](https://archlinux.org/) i derivatima kao što su [Manjaro](https://manjaro.org/) i [Garuda Linux](https://garudalinux.org/) možete instalirati [službeni VS Code binary](https://aur.archlinux.org/packages/visual-studio-code-bin) iz AUR-a:
 
-``` shell
-$ sudo apt install python3 python3-pip python-is-python3 pylint
+```
+$ paru -S visual-studio-code-bin
 (...)
 ```
 
-(Nepreporučeno jer je Django verzija 2.x) Instalacija pakirane verzije [Djanga](https://www.djangoproject.com/):
+#### Instalacija preduvjeta
+
+Preduvjet je instalacija [pip](https://pypi.org/project/pip/)-a i [Pylint](https://pylint.org/)-a; naredbe za [Ubuntu WSL](https://ubuntu.com/wsl) ili koji god:
+
+``` shell
+$ sudo apt install python-is-python3 python3-pip pylint
+(...)
+```
+
+Naredbe za Linux distribucije temeljene na Arch Linuxu (npr. Manjaro i Garuda Linux):
+
+```
+$ sudo pacman -S python-pip python-pylint
+(...)
+```
+
+#### Instalacija Djanga
+
+Instalacija pakirane verzije [Djanga](https://www.djangoproject.com/) na Ubuntu WSL-u i drugima (nepreporučeno jer je verzija 2.x):
 
 ``` shell
 $ sudo apt install python3-django
 (...)
 ```
 
-(Preporučeno jer je Django verzija 3.x) Instalacija Djanga korištenjem pip-a (kod sebe doma na WSL ili kakvom god Ubuntuu, uključujući i učionicu):
+Naredbe za Linux distribucije temeljene na Arch Linuxu (npr. Manjaro i Garuda Linux) (nepreporučeno jer je verzija 3.x):
+
+``` shell
+$ sudo pacman -S python-django
+(...)
+```
+
+Instalacija Djanga korištenjem pip-a (preporučeno jer je verzija 4.x, radi na svim distribucijama, koristimo i u učionici):
 
 ``` shell
 $ pip3 install Django

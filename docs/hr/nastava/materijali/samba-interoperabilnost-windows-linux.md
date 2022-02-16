@@ -62,4 +62,4 @@ Za pokretanje Sambe potrebno je aktivirati oba daemona:
 # systemctl restart nmbd.service
 ```
 
-Nakon toga spremni smo na korištenje Sambe, te se korisnici mogu spojiti sa drugih računala. U Windowsima, da bismo vidjeli dijeljenu mapu, potrebno je otići u Computer -> Network i tu vidimo da je prikazan Ubuntu, klikom na njega vidimo mapu `share` i u njoj tekstualnu datoteku `test.txt`.
+Nakon toga spremni smo na korištenje Sambe, te se korisnici mogu spojiti sa drugih računala. U Windowsima, da bismo vidjeli dijeljenu mapu, potrebno je otići u Computer -> Network i tu vidimo da je prikazano naše računalo, klikom na njega vidimo mapu `share` i u njoj tekstualnu datoteku `test.txt`.

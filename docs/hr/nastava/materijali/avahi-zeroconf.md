@@ -43,7 +43,7 @@ $ sudo update-rc.d avahi-daemon defaults
 
 ## Oglašavanje usluge
 
-Dalje, kreiramo datoteku `/etc/avahi/services/afpd.service` koje će specificirati informacije o AppleShare serveru pokrenutom na našem Ubuntu sustavu te kopiramo sljedeći XML kod u tu datoteku:
+Dalje, kreiramo datoteku `/etc/avahi/services/afpd.service` koje će specificirati informacije o AppleShare serveru pokrenutom na našem sustavu te kopiramo sljedeći XML kod u tu datoteku:
 
 ``` xml
 <?xml version="1.0" standalone='no'?><!--*-nxml-*-->
@@ -63,15 +63,15 @@ Nakon svega, ponovno pokrenemo Avahi:
 $ sudo /etc/init.d/avahi-daemon restart
 ```
 
-Nakon svih ovih koraka, prilikom pokretanja aplikacije Avahi Zeroconf browser (naredba `avahi-discover`) instalirane unutar sustava Ubuntu dobijemo sljedeće.
+Nakon svih ovih koraka, prilikom pokretanja aplikacije Avahi Zeroconf browser (naredba `avahi-discover`) instalirane unutar sustava, dobijemo sljedeće.
 
-Vidimo da je naš AppleShare server aktivan na našem sustavu Ubuntu. Vidimo sve nama zanimljive i potrebne podatke o tom serveru.
+Vidimo da je naš AppleShare server aktivan na našem sustavu. Vidimo sve nama zanimljive i potrebne podatke o tom serveru.
 
 - Tip servisa: `_afpovertcp._tcp`
-- Ime servisa: `ubuntu`
+- Ime servisa: `mymachine`
 - Domena: `local`
 - Sučelje: `eth0` IPv4
-- Adresa: `ubuntu.local/192.168.142.128:548`
+- Adresa: `mymachine.local/192.168.142.128:548`
 - TXT dana: prazno
 
 Također postoje i još dvije verzije avahi-browsera:
