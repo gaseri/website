@@ -5,7 +5,7 @@ date: 2017-07-22
 
 # Enabling HTTP/2, HTTPS, and going HTTPS-only on inf2
 
-Inf2 is a web server at [University of Rijeka](https://www.uniri.hr/) [Department of Informatics](https://www.inf.uniri.hr/), hosting Sphinx-produced static HTML course materials ([mirrored](../../hr/nastava/index.md) [elsewhere](../../hr/index.md)), some big files, a Wordpress instance ([archived](https://fiditri.github.io/elarsportal/) [elsewhere](https://github.com/FIDiTRi)), and an internal instance of [Moodle](https://moodle.org/).
+Inf2 is a web server at [University of Rijeka](https://www.uniri.hr/) [Department of Informatics](https://www.inf.uniri.hr/), hosting Sphinx-produced static HTML course materials ([mirrored](../../hr/nastava/index.md) [elsewhere](../../hr/index.md)), some big files, a Wordpress instance ([archived](https://fidtri.github.io/elarsportal/) [elsewhere](https://github.com/FIDTRi)), and an internal instance of [Moodle](https://moodle.org/).
 
 HTTPS was enabled on inf2 for a long time, albeit using a self-signed certificate. However, with [Let's Encrpyt](https://letsencrypt.org/) coming into [public beta](https://letsencrypt.org/2015/11/12/public-beta-timing.html), we decided to [join the movement to HTTPS](https://www.facebook.com/inf.uniri/posts/972284382811042).
 
