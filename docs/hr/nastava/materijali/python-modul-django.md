@@ -172,7 +172,7 @@ Ovo je poslužitelj na kojem ćemo razvijati Django aplikacije.
 U terminalu možemo vidjeti HTTP zahtjeve na poslužitelj i statusni kod odgovora na njih.
 
 !!! zadatak
-    Provjerite ispis u terminalu prilikom osvježavanja stranice pritiskom na tipki`CTRL` + `R` ili `F5`.
+    Provjerite ispis u terminalu prilikom osvježavanja stranice pritiskom na tipki `Ctrl` + `R` ili `F5`.
 
 #### Dodatak: Čitanje dokumentacije i StackOverflow
 
