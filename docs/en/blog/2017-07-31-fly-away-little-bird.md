@@ -1,6 +1,12 @@
 ---
 author: Vedran Miletić
 date: 2017-07-31
+tags:
+  - web server
+  - mozilla
+  - domain name
+  - decentralization
+  - php
 ---
 
 # Fly away, little bird

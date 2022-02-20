@@ -1,6 +1,12 @@
 ---
 author: Vedran Miletić
 date: 2016-03-25
+tags:
+  - academia
+  - free and open-source software
+  - software licensing
+  - software patents
+  - unicode
 ---
 
 # The academic and the free software community ideals

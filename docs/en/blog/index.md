@@ -1,0 +1,5 @@
+# Blog index
+
+## Tags
+
+[TAGS]

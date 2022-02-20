@@ -1,6 +1,12 @@
 ---
 author: Vedran Miletić
 date: 2015-05-01
+tags:
+  - free and open-source software
+  - mozilla
+  - web standards
+  - opendocument
+  - popular science
 ---
 
 # Browser wars

@@ -1,6 +1,12 @@
 ---
 author: Vedran Miletić
 date: 2015-06-18
+tags:
+  - elon musk
+  - fer
+  - phd
+  - poetry
+  - tesla
 ---
 
 # The follow-up

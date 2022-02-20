@@ -1,6 +1,12 @@
 ---
 author: Vedran Miletić
 date: 2015-12-13
+tags:
+  - cp2k
+  - ethz
+  - mit
+  - free and open-source software
+  - q-chem
 ---
 
 # On having leverage and using it for pushing open-source software adoption

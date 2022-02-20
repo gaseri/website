@@ -1,6 +1,10 @@
 ---
 author: Vedran Miletić
 date: 2017-07-22
+tags:
+  - web server
+  - sphinx
+  - letsencrypt
 ---
 
 # Enabling HTTP/2, HTTPS, and going HTTPS-only on inf2

@@ -1,6 +1,14 @@
 ---
 author: Marko Luka Zubčić
 date: 2016-02-23
+tags:
+  - docker
+  - open access
+  - free and open-source software
+  - peerj
+  - plos
+  - postgresql
+  - tesla
 ---
 
 # Free to know -- Open access and open source

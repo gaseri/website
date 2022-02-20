@@ -1,6 +1,14 @@
 ---
 author: Vedran Miletić
 date: 2015-09-14
+tags:
+  - american chemical society
+  - cp2k
+  - nwchem
+  - q-chem
+  - free and open-source software
+  - scientific software
+  - software licensing
 ---
 
 # What is the price of open-source fear, uncertainty, and doubt?

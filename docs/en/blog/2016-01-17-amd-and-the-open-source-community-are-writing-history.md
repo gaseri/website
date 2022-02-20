@@ -1,6 +1,16 @@
 ---
 author: Vedran Miletić
 date: 2016-01-17
+tags:
+  - amd
+  - radeon
+  - gpuopen
+  - free and open-source software
+  - firmware
+  - gpu drivers
+  - intel
+  - nvidia
+  - gpu computing
 ---
 
 # AMD and the open-source community are writing history

@@ -1,6 +1,12 @@
 ---
 author: Vedran Miletić
 date: 2016-01-30
+tags:
+  - microsoft
+  - opendocument
+  - free and open-source software
+  - secure boot
+  - web standards
 ---
 
 # I am still not buying the new-open-source-friendly-Microsoft narrative

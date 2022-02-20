@@ -344,6 +344,7 @@ nav:
         - Window sampling: en/tutorials/gromacs/5-umbrella/index.md
         - Test particle insertion: en/tutorials/gromacs/6-tpi/index.md
     - Blog:
+      - Blog index: en/blog/index.md
       - Markdown vs reStructuredText for teaching materials: en/blog/2021-08-16-markdown-vs-restructuredtext-for-teaching-materials.md
       - Mirroring free and open-source software matters: en/blog/2017-09-24-mirroring-free-and-open-source-software-matters.md
       - Fly away, little bird: en/blog/2017-07-31-fly-away-little-bird.md
@@ -421,3 +422,7 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: true
+plugins:
+  - search
+  - tags:
+      tags_file: en/blog/index.md

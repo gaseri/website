@@ -1,6 +1,14 @@
 ---
 author: Vedran Miletić
 date: 2017-07-29
+tags:
+  - restructuredtext
+  - sphinx
+  - markdown
+  - mkdocs
+  - git
+  - mediawiki
+  - php
 ---
 
 # Why we use reStructuredText and Sphinx static site generator for maintaining teaching materials

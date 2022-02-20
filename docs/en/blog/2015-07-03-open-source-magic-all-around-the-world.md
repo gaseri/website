@@ -1,6 +1,12 @@
 ---
 author: Vedran Miletić
 date: 2015-07-03
+tags:
+  - free and open-source software
+  - popular science
+  - information revolution
+  - red hat
+  - systemd
 ---
 
 # Open-source magic all around the world

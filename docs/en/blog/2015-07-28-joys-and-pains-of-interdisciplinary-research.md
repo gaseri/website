@@ -1,6 +1,14 @@
 ---
 author: Vedran Miletić
 date: 2015-07-28
+tags:
+  - academia
+  - researchers night
+  - cp2k
+  - nwchem
+  - gromacs
+  - nvidia
+  - gpu computing
 ---
 
 # Joys and pains of interdisciplinary research

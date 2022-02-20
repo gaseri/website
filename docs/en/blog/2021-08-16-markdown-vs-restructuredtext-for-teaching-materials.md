@@ -1,6 +1,12 @@
 ---
 author: Vedran Miletić
 date: 2021-08-16
+tags:
+  - restructuredtext
+  - sphinx
+  - markdown
+  - mkdocs
+  - git
 ---
 
 # Markdown vs reStructuredText for teaching materials

@@ -1,6 +1,12 @@
 ---
 author: Jovan Jokić
 date: 2016-12-14
+tags:
+  - amd
+  - gpuopen
+  - free and open-source software
+  - gpu drivers
+  - firmware
 ---
 
 # Celebrating Graphics and Compute Freedom Day
