@@ -117,19 +117,15 @@ Nastava se odvija prema mješovitom modelu u kombinaciji klasične nastave u uč
 
 #### 2. Kontinuirana provjera znanja
 
-**Domaće zadaće.** Tijekom semestra bit će održane dvije auditorne vježbe i nakon svake od njih bit će zadana domaća zadaća. Student će nakon zadavanja svake od zadaća imati dva tjedna da preda rješenje i pritom će po zadaći moći skupiti maksimalno 5 bodova, što nosi ukupno maksimalno 10 bodova.
-
-**Test.** Tijekom semestra pisat će se test na Merlinu koji će uključivati pitanja i zadatke iz dijela gradiva predavanja i na njemu će student moći skupiti maksimalno 20 bodova. Pogrešni odgovori na pitanja višestrukog izbora donose negativne bodove.
+Tijekom semestra pisat će se dva testa na Merlinu koji će uključivati pitanja i zadatke iz gradiva predavanja i vježbi. Na svakom od njih će student moći skupiti maksimalno po 15 bodova, što nosi ukupno maksimalno 30 bodova.
 
 #### 3. Praktični rad
 
-Tijekom semestra bit će održano deset laboratorijskih vježbi koje će uključivati korištenje simulatora mreže, emulatora mreže te poslužiteljskih, klijentskih i pomoćnih aplikacija za izvođenje eksperimenata iz područja računalnih mreža na računalu prema danim uputama. Laboratorijske vježbe se izvode tako da student unaprijed dobiva nastavne materijale i zadatke za samostalnu pripremu putem sustava za e-učenje te dolazi pripremljen na laboratorijsku vježbu. Na početku laboratorijske vježbe rješava kviz s pitanjima i zadacima iz materijala koje je dobio za samostalnu pripremu. Ako je kviz prolazan (prag je 50% uspješno odgovorenih pitanja i riješenih zadataka), student preuzima zadatke laboratorijske vježbe, rješava ih i predaje njihova rješenja koja se ocjenjuju. Student će rješavanjem zadanih zadataka na svakoj laboratorijskoj vježbi moći skupiti maksimalno 4 boda, dakle ukupno na svih deset laboratorijskih vježbi maksimalno 40 bodova.
-
-U zadnjem će tjednu studentima koji nisu predali rješenja zadanih zadataka na nekoj od laboratorijskih vježbi biti dana mogućnost nadoknade jedne laboratorijske vježbe.
+Tijekom semestra svaki student će samostalno postaviti usluge prema zadanim kriterijima, učiniti ih dostupnim putem interneta i dokumentirati taj proces, pritom zapisujući korištene zaporke u bazu zaporki. Stvorena dokumentacija mora biti takva da je moguće replicirati proces postavljanja usluga samo na temelju naredbi i opisa u dokumentaciji (dakle, bez korištenja dodatnih izvora) te da je moguće uslugama pristupiti s interneta i kao korisnik i kao administrator samo na temelju podataka u dokumentaciji i baze zaporki. Student će predati stvorenu dokumentaciju i bazu zaporki te na taj način moći skupiti maksimalno 40 bodova.
 
 #### 4. Završni ispit
 
-Završni ispit je test na Merlinu koji uključuje pitanja i zadatke iz čitavog gradiva predavanja i na njemu će student moći skupiti maksimalno 30 bodova. Pogrešni odgovori na pitanja višestrukog izbora donose negativne bodove.
+Na završnom ispitu student usmenim putem odgovara na 6 postavljenih pitanja s unaprijed poznatog popisa. Izbor pitanja koja će biti postavljena studentu vrši se na sljedeći način: prvo nastavnik s popisa izbacuje 6 pitanja koja tada nije moguće izabrati, zatim student od preostalih pitanja bira 2 pitanja na koja će odgovarati i naposlijetku se od neizabranih i neizbačenih pitanja slučajnim odabirom dodjeljuju 4 pitanja.
 
 Završni ispit se smatra položenim samo ako na njemu student postigne minimalno 50%-tni uspjeh (ispitni prag je 50% uspješno riješenih zadataka).
 
