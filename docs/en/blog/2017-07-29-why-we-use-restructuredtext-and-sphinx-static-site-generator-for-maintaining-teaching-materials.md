@@ -33,7 +33,7 @@ In an unrelated sequence of events I have set up [a MediaWiki instance, later re
 
 When migrating a MediaWiki instance from a server to another server, you have to dump/restore the database and adjust the config files (if you're lucky it won't be required to convert [Apache](https://httpd.apache.org/) configuration directives to [Nginx](https://nginx.org/) ones or vice versa). None of this is especially complicated, but it's extra work compared to flat file wikis and static websites.
 
-Finally, my favorite MediaWiki theme (_skin_ in its terminology) is [Vector](https://www.mediawiki.org/wiki/Skin:Vector), so my potential wiki with teaching materials would look exactly like Wikipedia. While nice and trendy, it is not very original to look like Wikipedia.
+Finally, my favorite MediaWiki theme (*skin* in its terminology) is [Vector](https://www.mediawiki.org/wiki/Skin:Vector), so my potential wiki with teaching materials would look exactly like Wikipedia. While nice and trendy, it is not very original to look like Wikipedia.
 
 ## Going static, going reStructured
 
