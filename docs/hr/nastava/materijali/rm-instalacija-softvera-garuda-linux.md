@@ -168,7 +168,7 @@ $ sudo pacman -S php jq
 
 ### Provjera instalacije PHP-a
 
-U upravitelju datoteka Dolphin stvorite direktorij (mapu) `php-prvi-projekt` i otvorite ga u Visual Studio Codeu korištenjem izbornika `File\Open Folder...` ili kombinacijom tipki `Ctrl + K` pa `Ctrl + O`. Nakon otvaranja direktorija, iskoristite gumb `New Folder` dostupan u pogledu Explorer ([pregled sučelja](https://code.visualstudio.com/docs/getstarted/userinterface)) za stvaranje poddirektorija (podmape) naziva `public`.
+U upravitelju datoteka Dolphin stvorite direktorij (mapu) `php-prvi-projekt` i otvorite ga u Visual Studio Codeu korištenjem izbornika `File\Open Folder...` ili kombinacijom tipki ++control+k++ pa ++control+o++. Nakon otvaranja direktorija, iskoristite gumb `New Folder` dostupan u pogledu Explorer ([pregled sučelja](https://code.visualstudio.com/docs/getstarted/userinterface)) za stvaranje poddirektorija (podmape) naziva `public`.
 
 Unutar poddirektorija `public` stvorite iskoristite gumb `New File` za stvaranje datoteke imena `index.php` sa sadržajem:
 
@@ -178,7 +178,7 @@ Unutar poddirektorija `public` stvorite iskoristite gumb `New File` za stvaranje
 phpinfo();
 ```
 
-Pokrenite [ugrađeni terminal](https://code.visualstudio.com/docs/editor/integrated-terminal) putem izbornika `Terminal\New Terminal` ili kombinacije tipki ``Ctrl + Shift + ` ``. U njemu pokrenite ugrađeni poslužitelj PHP-ovog interpretera na adresi lokalnog domaćina `127.0.0.1`:
+Pokrenite [ugrađeni terminal](https://code.visualstudio.com/docs/editor/integrated-terminal) putem izbornika `Terminal\New Terminal` ili kombinacije tipki ++control+shift+grave++. U njemu pokrenite ugrađeni poslužitelj PHP-ovog interpretera na adresi lokalnog domaćina `127.0.0.1`:
 
 ``` shell
 $ php -S 127.0.0.1:8080 -t public

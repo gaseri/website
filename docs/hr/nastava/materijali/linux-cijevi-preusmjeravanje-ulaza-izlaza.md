@@ -4,7 +4,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 
 # Cijevi, preusmjeravanje ulaza i izlaza
 
-- cijev, znak `|` (`AltGr + W`), omogućuje da izlaz jedne naredbe postane ulaz druge naredbe
+- cijev, znak `|` (++alt-graph+w++ na hrvatskoj tipkovnici), omogućuje da izlaz jedne naredbe postane ulaz druge naredbe
 
     - broj cijevi u nizu je praktično neograničen
     - jedna od osnovnih vještina rada na operacijskim sustavima slični Unixu

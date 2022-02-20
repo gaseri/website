@@ -47,7 +47,7 @@ author: Luka Vretenar
 - Izvršavanje unesene naredbe izvodimo pritiskom tipke `Enter`.
 
 !!! hint
-    U slučaju da želimo prekinuti izvršavanje naredbe koja se odvija dugo ili se čini da se zamrznula, možemo to učiniti kombinacijom tipki `<Ctrl> + C`.
+    U slučaju da želimo prekinuti izvršavanje naredbe koja se odvija dugo ili se čini da se zamrznula, možemo to učiniti kombinacijom tipki ++control+c++.
 
 !!! hint
     Za sve naredbe koje će biti spomenute može se pristupiti dokumentaciji u komandnoj liniji naredbom `man` dajući kao argument naziv aplikacije, iz dokumentacije izlazimo tipkom `q`.
@@ -116,7 +116,7 @@ author: Luka Vretenar
 - Moguće je iz prikazanih specijalnih putanji i navedenih oblika putanji graditi kompleksne putanje spajanjem znakom `/`.
 
 !!! hint
-    Znak `~` se naziva tilda i možete je dobiti kombinacijom tipki `<AltGr> + 1`.
+    Znak `~` se naziva tilda i možete je na hrvatskoj tipkovnici dobiti kombinacijom tipki ++alt-graph+1++.
 
 !!! hint
     Svaki korisnik na sustavu ima vlastiti home direktorij koji se nazali u `/home/korisnik` gdje je korisnik naziv korisnika. Pojedini korisnik može upravljati datotekama samo u vlastitom home direktoriju.

@@ -28,7 +28,7 @@ PING example.group.miletic.net (193.198.209.42) 56(84) bytes of data.
 rtt min/avg/max/mdev = 3.445/3.476/3.497/0.077 ms
 ```
 
-Ping bez dodatnih argumenata šalje ICMP zahtjeve u beskonačnost, pa je slanje nužno prekinuti kombinacijom tipki `Ctrl+C`.
+Ping bez dodatnih argumenata šalje ICMP zahtjeve u beskonačnost, pa je slanje nužno prekinuti kombinacijom tipki ++control+c++.
 
 Ukoliko je potrebno, umjesto imena domaćina možemo pisati njegovu IP adresu:
 
@@ -52,7 +52,7 @@ Za slanje u određenom intervalu (svakih n sekundi), koristimo parametar `-i`, t
 $ ping -i 0.5 example.group.miletic.net
 ```
 
-Želimo li poslati određen broj zahtjeva (umjesto da sami prekidamo slanje sa `Ctrl+C`), koristimo parametar `-c` i broj paketa. Primjerice, ako želimo poslati 3 zahtjeva:
+Želimo li poslati određen broj zahtjeva (umjesto da sami prekidamo slanje kombinacijom tipki ++control+c++), koristimo parametar `-c` i broj paketa. Primjerice, ako želimo poslati 3 zahtjeva:
 
 ``` shell
 $ ping -c 3 example.group.miletic.net

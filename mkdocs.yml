@@ -417,6 +417,7 @@ markdown_extensions:
   - meta
   - pymdownx.details
   - pymdownx.highlight
+  - pymdownx.keys
   - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: true

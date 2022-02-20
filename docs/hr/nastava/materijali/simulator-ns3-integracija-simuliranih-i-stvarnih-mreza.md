@@ -180,7 +180,7 @@ Pokrenimo simulaciju.
 $ ./waf --run tap-csma-virtual-machine
 ```
 
-Simulacija će trajati 10 minuta, ako je prije ne prekinemo s `Ctrl + c`. Ako u lijevi terminal upišemo:
+Simulacija će trajati 10 minuta, ako je prije ne prekinemo s ++control+c++. Ako u lijevi terminal upišemo:
 
 ``` shell
 # ping -c 4 10.0.0.2

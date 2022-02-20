@@ -131,7 +131,7 @@ author: Luka Vretenar
     $ nano datoteka.txt
     ```
 
-- Nakon što smo završili unos ili izmjenu, datoteku možemo spremiti kombinacijom tipki `<Ctrl> + x` te pratiti upite na dnu ekrana.
+- Nakon što smo završili unos ili izmjenu, datoteku možemo spremiti kombinacijom tipki ++control+x++ te pratiti upite na dnu ekrana.
 - Sve naredbe editora su navedene na dnu ekrana.
 
 ### Naredbe za pregled sadržaja
@@ -171,7 +171,7 @@ author: Luka Vretenar
 
     - prima nijedan, jedan ili više naziva datoteka kao argumente
     - ispisuje datoteke zadanim redoslijedom u komandnu liniju
-    - u slučaju da se pokrene bez argumenta, samo ponavlja unešeni tekst, unos se prekida sa `<Ctrl> + d`
+    - u slučaju da se pokrene bez argumenta, samo ponavlja unešeni tekst, unos se prekida sa ++control+d++
 
 !!! admonition "Zadatak"
     - Naredbom `less` pregledati sadržaj datoteke iz prethodnog zadatka.
@@ -214,4 +214,4 @@ author: Luka Vretenar
 
 !!! admonition "Zadatak"
     - U datoteku `dupla.txt` nadodati preusmjeravanjem sadržaj konkatenacije datoteke iz `nano` zadatka same sa sobom.
-    - Iskoristite naredbu `cat` za izradu datoteke, izlaz naredbe preusmjerite u datoteku `izlaz.txt`. (Unos prekidate tipkama `<Ctrl> + d` na praznoj liniji)
+    - Iskoristite naredbu `cat` za izradu datoteke, izlaz naredbe preusmjerite u datoteku `izlaz.txt`. (Unos prekidate tipkama ++control+d++ na praznoj liniji)

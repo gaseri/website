@@ -90,7 +90,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 
 - `kill -l` daje popis signala
 
-    - dva smo već koristili: `Ctrl + C` == `2) SIGINT`, `Ctrl + Z` == `20) SIGTSTP`
+    - dva smo već koristili: ++control+c++ šalje signal `2) SIGINT`, a ++control+z++ signal `20) SIGTSTP`
     - dva signala koja proces ne može uhvatiti su:
 
         - `9) SIGKILL` -- odmah prekida izvođenje procesa
@@ -151,7 +151,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
     - `u` prikaži samo procese navedenog korisnika
     - `h` prikaz pomoći
     - `z` uključuje boju kod prikaza
-    - `B` uključuje bold kod prikaza; unosi se sa `Shift + B`
+    - `B` uključuje bold kod prikaza; unosi se sa ++shift+b++
 
 - `htop` je `top` na steroidima
 

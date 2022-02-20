@@ -10,7 +10,7 @@ author: Milan Petrović
 
 Razvojno okruženje u kojem se radi na vježbama je Visual Studio (VS) Code koji možete preuzeti na [službenim stranicama](https://code.visualstudio.com/).
 
-Nakon što preuzimete i instalirate VS Code, pokrenite ga, zatim kraticom `Ctrl` + `Shift` + `X` otvorite dio za instalaciju ekstenzija, pronađite Python i instalirajte ga. Dodatna upustva za instalaciju Python ekstenzije unutar VS Codea možete pronaći u [službenom tutorialu](https://code.visualstudio.com/docs/python/python-tutorial).
+Nakon što preuzimete i instalirate VS Code, pokrenite ga, zatim kraticom ++control+shift+x++ otvorite dio za instalaciju ekstenzija, pronađite Python i instalirajte ga. Dodatna upustva za instalaciju Python ekstenzije unutar VS Codea možete pronaći u [službenom tutorialu](https://code.visualstudio.com/docs/python/python-tutorial).
 
 Specijalno, na [Arch Linuxu](https://archlinux.org/) i derivatima kao što su [Manjaro](https://manjaro.org/) i [Garuda Linux](https://garudalinux.org/) možete instalirati [službeni VS Code binary](https://aur.archlinux.org/packages/visual-studio-code-bin) iz AUR-a:
 
@@ -172,7 +172,7 @@ Ovo je poslužitelj na kojem ćemo razvijati Django aplikacije.
 U terminalu možemo vidjeti HTTP zahtjeve na poslužitelj i statusni kod odgovora na njih.
 
 !!! zadatak
-    Provjerite ispis u terminalu prilikom osvježavanja stranice pritiskom na tipki `Ctrl` + `R` ili `F5`.
+    Provjerite ispis u terminalu prilikom osvježavanja stranice pritiskom na tipki ++control+r++ ili ++f5++.
 
 #### Dodatak: Čitanje dokumentacije i StackOverflow
 

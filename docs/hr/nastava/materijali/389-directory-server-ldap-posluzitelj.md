@@ -267,7 +267,7 @@ Kontrola pristupa podrazumijeva autorizaciju, autentifikaciju, reviziju i dozvol
 - Dozvoli zaposlenicima čitanje, pisanje i pretraživanje
 - ...
 
-Definiranje kontrole pristupa u 389 imeniku vrši se pomoću konzole. U samoj konzoli potrebno je desnim klikom na organizacijsku jedinicu, grupu ili korisnika pozvati izbornik te na njemu odabrati `Set Access Permissions` (kratica Ctrl + L). Ta naredba otvara `Access Control Editor`, tj. uređivač kontrole pristupa. Pomoću njega definiramo kako i kada korisnici pristupaju određenim informacijama.
+Definiranje kontrole pristupa u 389 imeniku vrši se pomoću konzole. U samoj konzoli potrebno je desnim klikom na organizacijsku jedinicu, grupu ili korisnika pozvati izbornik te na njemu odabrati `Set Access Permissions` (kratica ++control+l++). Ta naredba otvara `Access Control Editor`, tj. uređivač kontrole pristupa. Pomoću njega definiramo kako i kada korisnici pristupaju određenim informacijama.
 
 ### Stvaranje nove kontrole pristupa
 

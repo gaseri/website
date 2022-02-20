@@ -75,7 +75,7 @@ korisnik-mojredis-1  | 1:M 03 Jan 2022 22:26:37.088 * DB loaded from disk: 0.000
 korisnik-mojredis-1  | 1:M 03 Jan 2022 22:26:37.088 * Ready to accept connections
 ```
 
-Izvođenje, kao i inače, prekidamo kombinacijom tipki `Ctrl + C`:
+Izvođenje, kao i inače, prekidamo kombinacijom tipki ++control+c++:
 
 ``` shell
 ^CGracefully stopping... (press Ctrl+C again to force)

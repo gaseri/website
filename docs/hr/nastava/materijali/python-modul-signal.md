@@ -80,7 +80,7 @@ author: Vanja Slavuj, Vedran Miletić
     ```
 
 !!! admonition "Zadatak"
-    Proširite kod primjera tako da ignorira SIGCONT, a da nakon primanja SIGINT-a ispiše `Primljen Ctrl + C, nastavljam izvođenje`. Uvjerite se da se zaista program ne može zaustaviti kombinacijom tipki Control + C (`^C`).
+    Proširite kod primjera tako da ignorira SIGCONT, a da nakon primanja SIGINT-a ispiše `Primljen SIGINT, nastavljam izvođenje`. Uvjerite se da se zaista program ne može zaustaviti kombinacijom tipki ++control+c++ (`^C`) koja šalje SIGINT.
 
 !!! admonition "Dodatni zadatak"
     Napišite program koji hvata signal SIGKILL, čeka na pristizanje signala, te po pristizanju signala KILL na zaslon ispisuje poruku o identifikatoru signala i završava izvođenje. Uočite što se događa i pokušajte objasniti zbog čega.

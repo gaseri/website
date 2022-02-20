@@ -78,9 +78,9 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 
     - kad se pokrene bez argumeanata radi beskonačno dugo
 
-- `^` je oznaka za tipku `Ctrl`
-- `^C` == `Ctrl + C` služi za prekid izvođenja većine naredbi ([više informacija](https://en.wikipedia.org/wiki/Control-C))
-- `^D` == `Ctrl + D` kraj rada, izlaz iz terminala  ([više informacija](https://en.wikipedia.org/wiki/Control-D))
+- `^` je oznaka za tipku ++control++
+- `^C`, odnosno ++control+c++ služi za prekid izvođenja većine naredbi ([više informacija](https://en.wikipedia.org/wiki/Control-C))
+- `^D`, odnosno ++control+d++ kraj rada, izlaz iz terminala ([više informacija](https://en.wikipedia.org/wiki/Control-D))
 
 !!! admonition "Zadatak"
     - Saznajte imena svih datoteka koje postoje u vašem direktoriju (uključujući i skrivene).

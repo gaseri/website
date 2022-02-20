@@ -13,7 +13,7 @@ author: Vedran Miletić
 
 Uzmimo za testiranje [web aplikaciju za ispis IP adrese i korisničkog agenta](https://app.miletic.net/ip/). Dobra je ideja testirati vlastiti web poslužitelj jer drugi web poslužitelji mogu iznenadni velik broj zahtjeva shvatiti kao napad.
 
-Pokrenemo li Siege bez parametara, radit će do prekida kombinacijom tipki Ctrl + C:
+Pokrenemo li Siege bez parametara, radit će do prekida kombinacijom tipki ++control+c++:
 
 ``` shell
 $ siege https://app.miletic.net/ip/

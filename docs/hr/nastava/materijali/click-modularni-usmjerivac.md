@@ -14,7 +14,7 @@ Click pokrećemo naredbom `click` i navođenjem konfiguracijske datoteke. Primje
 $ click mojrouter.click
 ```
 
-U nekim konfiguracijama Click će se nastaviti izvoditi sve dok ga ne prekinemo. Naime, radi se o usmjerivaču koji je osmišljen da nakon inicijalizacije konfiguracije radi usmjeravanje i prosljeđivanje paketa dokle god mu se ne kaže da radi drugačije. Prekid rada Clicka ćemo izvesti kombinacijom tipki `Ctrl + C`, što terminali često prikazuju kao `^C`.
+U nekim konfiguracijama Click će se nastaviti izvoditi sve dok ga ne prekinemo. Naime, radi se o usmjerivaču koji je osmišljen da nakon inicijalizacije konfiguracije radi usmjeravanje i prosljeđivanje paketa dokle god mu se ne kaže da radi drugačije. Prekid rada Clicka ćemo izvesti kombinacijom tipki ++control+c++, što terminali često prikazuju kao `^C`.
 
 ## Vlastiti jezik Click
 
