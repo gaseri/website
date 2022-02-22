@@ -368,6 +368,7 @@ theme:
   features:
     - header.autohide
     - navigation.instant
+    - navigation.indexes
     - navigation.sections
     - navigation.tabs
     - navigation.tracking
