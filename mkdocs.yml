@@ -322,7 +322,9 @@ nav:
     - Vrlo važne informacije: hr/vrlo-vazne-informacije.md
   - 🇺🇸 Contents in English:
     - About the group: en/index.md
-    - People: en/people.md
+    - People:
+      - People index: en/people/index.md
+      - Principal investigator: en/people/principal-investigator.md
     - Projects: en/projects.md
     - Publications: en/publications.md
     - Teaching:

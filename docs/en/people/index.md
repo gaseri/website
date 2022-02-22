@@ -4,11 +4,11 @@ author: Vedran Miletić
 
 # People
 
-(This page is also available [in Croatian](../hr/ljudi.md).)
+(This page is also available [in Croatian](../../hr/ljudi.md).)
 
 ## Staff
 
-- [Dr. Vedran Miletić](https://vedran.miletic.net/), Assistant Professor
+- [Dr. Vedran Miletić](https://vedran.miletic.net/), Assistant Professor, [Principal Investigator](principal-investigator.md)
 - [Milan Petrović](https://milanxpetrovic.github.io/), Research and Teaching Assistant
 - [Matea Turalija](https://mateaturalija.github.io/), Research and Teaching Assistant
 

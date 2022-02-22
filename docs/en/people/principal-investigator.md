@@ -1,0 +1,157 @@
+---
+author: Vedran Miletić
+---
+
+# Principal investigator Dr. Vedran Miletić
+
+> "Ideas are organic entities," someone has said. The very fact of their birth endows them with form, and that form is action. He in whose brain the most ideas are born accomplishes the most. From that cause a genius, chained to an official desk, must die or go mad, just as it often happens that a man of powerful constitution, and at the same time of sedentary life and simple habits, dies of an apoplectic stroke.
+>
+> Passions are naught but ideas in their first development; they are an attribute of the youth of the heart, and foolish is he who thinks that he will be agitated by them all his life. Many quiet rivers begin their course as noisy waterfalls, and there is not a single stream which will leap or foam throughout its way to the sea. That quietness, however, is frequently the sign of great, though latent, strength. The fulness and depth of feelings and thoughts do not admit of frenzied outbursts.
+
+-- [A Hero of Our Time](https://www.gutenberg.org/ebooks/913) by [Mikhail Iurevich Lermontov](https://novaonline.nvcc.edu/eli/evans/his241/notes/lermontov.html)
+
+[Vedran Miletić](https://vedran.miletic.net/) is the principal investigator of the [Group for Applications and Services on Exascale Research Infrastructure (GASERI)](../index.md) and an assistant professor of computer science at [Faculty of Informatics and Digital Technology](https://www.inf.uniri.hr/), [University of Rijeka](https://uniri.hr/). More information is available in his [curriculum vitae](https://vedran.miletic.net/files/cv-vedran-miletic.pdf).
+
+## Research
+
+### Present research
+
+The focus of my research work is heterogeneous, parallel, and [distributed computing](https://hazelcast.com/glossary/distributed-computing/) on [high performance computers](https://www.netapp.com/data-storage/high-performance-computing/what-is-hpc/) and in the cloud for [computational chemistry](https://www.acs.org/content/acs/en/careers/chemical-sciences/fields/computational-chemistry.html) applications. Presently, I am collaborating with [Martina Ašenbrener Katić](https://portal.uniri.hr/Portfelj/987) on research of distributed chemical compound database architectures that meet the scalability and reliability requirements of high-throughput virtual screening campaigns.
+
+### Past research
+
+I was a postdoctoral researcher in professor [Frauke Gräter](https://www.h-its.org/people/prof-dr-frauke-grater/)'s [Molecular Biomechanics (MBM)](https://www.h-its.org/research/mbm/) [group](https://www.h-its.org/research/mbm/people/) at [Heidelberg Institute for Theoretical Studies (HITS)](https://www.h-its.org/). I was researching efficient ways to simulate breaking and formation of [disulfide bonds in proteins](https://www.h-its.org/projects/mechanobiochemistry/) as well as participating in development of [free](https://www.fsf.org/about/what-is-free-software) and [open source](https://opensource.com/resources/what-open-source) software we used. Our developments [can be found on GitHub](https://hits-mbm.github.io/).
+
+I was also a postdoctoral researcher in professor [Željko Svedružić](https://svedruziclab.github.io/principal-investigator.html)'s [Biomolecular Structure and Function (BioSF)](https://svedruziclab.github.io/) [Group](https://svedruziclab.github.io/group.html). I was studying [molecular modelling of biomolecules](https://svedruziclab.github.io/research.html). I was concentrated on investigating reaction dynamics of [protein–ligand interactions](https://svedruziclab.github.io/software.html#autodock-and-autodock-vina) with [molecular](https://svedruziclab.github.io/software.html#gromacs) [dynamics](../tutorials/gromacs/index.md) and nudged elastic band methods using [quantum](https://svedruziclab.github.io/software.html#cp2k) [chemistry](https://svedruziclab.github.io/software.html#nwchem) and QM/MM approaches.
+
+I have done my PhD work under the supervision of professor [Branko Mikac](https://www.fer.unizg.hr/branko.mikac) (retd.) at [University of Zagreb](http://www.unizg.hr/) [Faculty of Electrical Engineering and Computing (FER)](https://www.fer.unizg.hr/) [Department of Telecommunications](https://tel.fer.hr/ztel). My PhD research work has been focused on evaluation of [optical telecommunication network reliability](https://integraoptics.com/whats-up-network-reliability/) and availability using [Monte Carlo method](https://mathworld.wolfram.com/MonteCarloMethod.html) and optimization of [routing and wavelength assignment](https://web.mit.edu/dimitrib/www/RWA.pdf). Additionally, I was focused on parallel execution of [network simulation](https://www.networkworld.com/article/3227076/network-simulation-or-emulation.html) software.
+
+## Development
+
+I am leading the development of [RxDock](https://www.rxdock.org/), a fork of [rDock](https://www.rdock.org/) protein–ligand docking software developed at [RxTx Research](https://www.rxtx.tech/research) (in collaboration with [Patrik Nikolić](https://nikoli.ch/)). (Feel free to [contact me](https://vedran.miletic.net/#contact) if you want to contribute to the project in any way.)
+
+I am developing [extensions and modifications](https://hits-mbm.github.io/) of [GROMACS](https://www.gromacs.org/) molecular dynamics simulator in a number of different directions, but all designed with [upstreaming](https://manual.gromacs.org/documentation/current/dev-manual/contribute.html) in mind. Among others, I'm working on [sliced pull and conditional stop](https://github.com/HITS-MBM/gromacs-developments). (Feel free to [contact me](https://vedran.miletic.net/#contact) with any questions or ideas.)
+
+I was one of the developers of [ns-3](https://www.nsnam.org/) network simulator. In particular, I was a developer of [optical telecommunication network model](https://www.nsnam.org/wiki/Optical_network_models) called [Photonic WDM Network Simulator (PWNS)](../../hr/istrazivanje-i-razvoj.md#fotonicki-wdm-mrezni-simulator-photonic-wdm-network-simulator-pwns) ([source code available on request](https://vedran.miletic.net/#contact); detailed description of the feature functionality is available in [my PhD thesis](https://vedran.miletic.net/files/phd-thesis-vedran-miletic.pdf)).
+
+Among other projects, I have contributed patches to [LLVM](https://www.llvm.org/) and [Mesa](https://www.mesa3d.org/) (part of [Radeon open source Linux driver development](../..//hr/aktivizam.md#razvoj-upravljackih-programa-otvorenog-koda-za-graficke-procesore-amd-radeon) effort), [CP2K](https://www.cp2k.org/), [LaTeX Beamer class](https://www.ctan.org/author/miletic), and others (detailed summary of my contributions can be found on [OpenHub](https://www.openhub.net/accounts/vedranmiletic)). Prior to contributing code to open source projects, I was a tester and web standards advocate for [Mozilla](https://www.mozilla.org/) and also tester and support for [kX Project](https://github.com/kxproject), an alternative driver for [Sound Blaster Live!](https://en.wikipedia.org/wiki/Sound_Blaster_Live!) and [Audigy](https://en.wikipedia.org/wiki/Sound_Blaster_Audigy) cards developed to expand the potential of the [EMU10kX](https://commons.wikimedia.org/wiki/File:Soundblasterlive1024_4closeup.png) DSPs.
+
+I follow the development of tools such as [NEPI/NEF/NETNS](http://yans.pl.sophia.inria.fr/trac/nepi/), [IMUNES](http://www.imunes.tel.fer.hr/)/[CORE](https://www.nrl.navy.mil/itd/ncs/products/core), [OpenFlow](http://www.openflow.org/), [NDN](https://github.com/named-data), [CUB](https://nvlabs.github.io/cub/), [Modern GPU](https://nvlabs.github.io/moderngpu/), [NVBIO](https://nvlabs.github.io/nvbio/), and [UGENE](https://ugene.net/).
+
+## Teaching
+
+At [Faculty of Informatics and Digital Technology (formerly Department of Informatics)](https://www.inf.uniri.hr/) I teach the following courses ([teaching materials](../../hr/nastava/index.md) are [available on GitHub](https://github.com/gaseri/website/tree/main/docs/hr/nastava) under [CC-BY-SA 4.0 license](https://creativecommons.org/licenses/by-sa/4.0/)):
+
+- [Computer Networks](../../hr/nastava/kolegiji/RM.md) (TA: [Matea Turalija](https://mateaturalija.github.io/))
+- [Security of Information and Communication Systems](../../hr/nastava/kolegiji/SIKS.md) (only TA)
+- [Code](../../hr/nastava/kolegiji/OPK.md) [Optimization](../teaching/courses/CO.md) for [YUFE](https://yufe.eu/) students
+- [Web Programming](../../hr/nastava/kolegiji/PW.md) (TA: [Milan Petrović](https://milanxpetrovic.github.io/))
+- [Communication Networks](../../hr/nastava/kolegiji/KM.md)
+- [Network and Mobile Operating Systems](../../hr/nastava/kolegiji/MMOS.md) (only TA)
+- [Computer System Administration](../../hr/nastava/kolegiji/URS.md) (only TA)
+- [Supercomputer Systems](../../hr/nastava/kolegiji/SRS.md)
+- [Network Systems Management](../../hr/nastava/kolegiji/UMS.md)
+
+I taught [Dynamic Web Applications 2](../../hr/nastava/kolegiji/DWA2.md) (TA: [Milan Petrović](https://milanxpetrovic.github.io/)) until 2021, [Computer Networks 1](../../hr/nastava/kolegiji/RM1.md) and [Computer Networks 2](../../hr/nastava/kolegiji/RM2.md) until 2020, since inherting the courses from professor [Mario Radovan](https://fidtri.github.io/mario-radovan/) (retd.). I TA'd [Parallel Programming on Heterogeneous Systems](../../hr/nastava/kolegiji/PPHS.md) ([developed from 2012. to 2016.](../../hr/partnerstva-i-suradnje.md#obrazovni-centar-za-graficke-procesore-gpu-education-center-bivsi-cuda-nastavni-centar-cuda-teaching-center) in partnernship with [NVIDIA](https://www.nvidia.com/) under [GPU Education Center (formerly CUDA Teaching Center) Program](https://developer.nvidia.com/higher-education-and-research)) and [Distributed Systems](../../hr/nastava/kolegiji/DS.md) until 2021, [Operating Systems 2](../../hr/nastava/kolegiji/OS2.md) until 2020, [Operating Systems 1](../../hr/nastava/kolegiji/OS1.md) until 2012, and Educational System Design until 2011, all courses instructed by professor [Božidar Kovačić](https://portal.uniri.hr/portfelj/1506).
+
+At [Faculty of Engineering](http://www.riteh.uniri.hr/) I TA'd [Computer Networks](../../hr/nastava/kolegiji/RM-RiTeh.md) course on undergraduate level in 2013 and 2014, instructed by professor [Mladen Tomić](http://www.riteh.uniri.hr/osoba/mladen-tomic). At [Department of Biotechnology](https://www.biotech.uniri.hr/) I TA'd [Informatics](../../hr/nastava/kolegiji/INF-BioTech.md) in 2009 and taught it in 2019, 2020, and 2021.
+
+## Activism
+
+I am a member of the Committee for [Supercomputing Resources at University of Rijeka](https://cnrm.uniri.hr/members/) that is directing the activities of [Centre for Advanced Computing and Modelling (CNRM)](https://cnrm.uniri.hr/) and supporting the users of [the Bura supercomputer](https://cnrm.uniri.hr/hr/bura/).
+
+As a coordinator of the local Linux user group (LUG) [HULK Rijeka](https://www.ri.linux.hr/), I regularly advocate for the usage and development of free and open source software (FOSS). In particular, we are organizing the observances of [Document Freedom Day](https://freedomday.github.io/document/) on a regular basis, where we promote the usage of [LibreOffice](https://www.libreoffice.org/), an [open source](https://opensource.org/osd) office suite, and [OpenDocument](https://www.oasis-open.org/committees/office/), an open standard format for office documents.
+
+Finally, I stand for individual freedom which is constantly under threat from pervasive surveillance and unrestrained authoritarian governments. I appreciate and support the work of [Electronic Frontier Foundation](https://www.eff.org/) in this area.
+
+## Projects
+
+## Present projects
+
+- [EuroCC – National Competence Centres in the framework of EuroHPC](https://www.eurocc-access.eu/the-projects/), funded by [Horizon 2020](https://cordis.europa.eu/project/id/951732), timeframe 2020–2022
+- [Development of the Code Optimization online course for YUFE virtual campus](../../hr/istrazivanje-i-razvoj.md#razvoj-online-kolegija-optimizacija-programskog-koda-code-optimization-na-sveucilistu-u-rijeci-u-akademskoj-20202021-i-20212022-godini), funded by [University of Rijeka](https://uniri.hr/), timeframe 2020–2022
+- [Modernization, modularization, and active maintenance of RxDock, a fast, versatile, and open-source program for docking ligands to proteins and nucleic acids](https://www.rxdock.org/), funded by [RxTx Research](https://www.rxtx.tech/research), timeframe 2019–2022
+- [Biokemija na superračunalu: razvoj programskih alata, dizajn lijekova i analize molekularnih mehanizama u razvoju bolesti](https://svedruziclab.github.io/research.html#the-development-of-novel-bivalent-mechanism-based-inhibitors-of-membrane-embedded-protease-γ-secretase) (reference number uniri-prirod-18-132), funded by [University of Rijeka](https://uniri.hr/), timeframe 2019–2021
+
+## Past projects
+
+- [Development of the International Education Program Veleri-OI IoT School](https://iot-school.veleri.hr/), funded by [European Social Fund](https://ec.europa.eu/social/main.jsp?catId=325&langId=en), timeframe 2018–2021
+- [Mechano(bio)chemistry](https://www.h-its.org/projects/mechanobiochemistry/), funded by various sources including [German Research Foundation](https://www.dfg.de/), [Klaus Tschira Foundation](https://www.klaus-tschira-stiftung.de/), [Heidelberg Institute for Theoretical Studies](https://www.h-its.org/), and [University of Heidelberg](https://www.uni-heidelberg.de/), timeframe 2014–2018
+- [The development and commercialization of human DNA methyltransferase Dnmt1 inhibitor with a goal to reprogram functional organization of the genome of human cells](https://svedruziclab.github.io/research.html#the-development-of-mechanism-based-inhibitors-of-human-dna-methyltransferase-dnmt1) (reference number 13.11.1.2.04), funded by [University of Rijeka](https://uniri.hr/), timeframe 2014–2018
+- [Recommender system for computer aided learning (ELARS)](https://inf2.uniri.hr/elarsportal/) (reference number 13.13.1.3.05), funded by [University of Rijeka](https://uniri.hr/), timeframe 2014–2018; continuation of [Computer supported education](https://www.bib.irb.hr/pregled/projekti/036-0361983-2019) (reference number 036-0361983-2019), funded by [MZOS](https://mzo.gov.hr/), timeframe 2007–2013
+- [RFID (Internet of Things) based animal individual behavior intelligent identification technology and application in traceability (REMALLOY)](https://www.inf.uniri.hr/znanstveni-i-strucni-rad/projekti/zavrseni-projekti/33-hr/znanstveni-i-strucni-rad/projekti/medunarodni/182-remalloy), funded by [MZOS](https://mzo.gov.hr/), timeframe 2014–2016
+- Establishment of the [GPU Education Center (formerly CUDA Teaching Center) at the University of Rijeka](../../hr/partnerstva-i-suradnje.md#obrazovni-centar-za-graficke-procesore-gpu-education-center-bivsi-cuda-nastavni-centar-cuda-teaching-center), funded by [NVIDIA](https://www.nvidia.com/), timeframe 2012–2016
+- Development of the [Photonic (formerly Prototype) WDM Network Simulator (PWNS)](../../hr/istrazivanje-i-razvoj.md#fotonicki-wdm-mrezni-simulator-photonic-wdm-network-simulator-pwns), no external funding, timeframe 2012–2014
+- [Development of e-learning materials for Computer Networks 2 course](../../hr/istrazivanje-i-razvoj.md#razvoj-e-kolegija-racunalne-mreze-2-na-sveucilistu-u-rijeci-u-akademskoj-20112012-godini), funded by [University of Rijeka](https://uniri.hr/), timeframe 2012
+- [Building the Future Optical Network in Europe: The e-Photon/ONe Network](https://biblio.ugent.be/publication/676542), funded by [FP7](https://cordis.europa.eu/project/id/216863), timeframe 2008–2011
+- [Supporting e-Business by Distance Learning System Based on Dialogue](https://www.bib.irb.hr/pregled/projekti/318-0362027-1331) (reference number 009-0362027-1331), funded by [MZOS](https://mzo.gov.hr/), timeframe 2007–2013
+
+## Publications and presentations
+
+### Books and theses
+
+- PhD thesis: [Method for optimizing availability of optical telecommunication network in presence of correlated failures.](https://vedran.miletic.net/files/phd-thesis-vedran-miletic.pdf) Defended at [Department of Telecommunications](https://tel.fer.hr/ztel), [Faculty of Electrical Engineering and Computing](https://www.fer.unizg.hr/), University of Zagreb, 8th June 2015.
+- Master thesis: [Banach algebras.](https://vedran.miletic.net/files/diplomski-rad-vedran-miletic.pdf) Defended at [Department of Mathematics](https://www.math.uniri.hr/), Faculty of Arts and Sciences, University of Rijeka on 17th March 2009.
+
+### Research papers in journals
+
+1. Svedružić, Ž. M, Vrbnjak, K., Martinović, M. & **Miletić, V.** [Structural Analysis of the Simultaneous Activation and Inhibition of γ-Secretase Activity in the Development of Drugs for Alzheimer’s Disease.](https://www.mdpi.com/1999-4923/13/4/514) *Pharmaceutics* **13**(4), 514 (2021). [doi:10.3390/pharmaceutics13040514](https://doi.org/10.3390/pharmaceutics13040514) ([WoS-SCIE, Q1 (2020), JIF: 6.321 (2020)](https://jcr.clarivate.com/jcr-jp/journal-profile?journal=PHARMACEUTICS&year=2020); [times](https://www.webofscience.com/wos/woscc/full-record/WOS:000643531400001) [cited](https://publons.com/publon/45697621/): 1)
+1. Herrera-Rodríguez, A., **Miletić, V.**, Aponte-Santamaría, C., & Gräter, F. [Molecular dynamics simulations of molecules in uniform flow.](https://www.cell.com/biophysj/fulltext/S0006-3495(19)30109-2) *Biophys. J.* **116**(6), 621–632 (2019). [doi:10.1016/j.bpj.2018.12.025](https://doi.org/10.1016/j.bpj.2018.12.025) ([WoS-SCIE, Q1, JIF: 3.854](https://jcr.clarivate.com/jcr-jp/journal-profile?journal=BIOPHYS%20J&year=2019); [times](https://www.webofscience.com/wos/woscc/full-record/WOS:000467046000001) [cited](https://publons.com/publon/29803261/): 2)
+1. Franz, F., Aponte-Santamaría, C., Daday, C., **Miletić, V.** & Gräter, F. [Stability of Biological Membranes upon Mechanical Indentation.](https://pubs.acs.org/doi/abs/10.1021/acs.jpcb.8b01861) *J. Phys. Chem. B* **122**(28), 7073–7079 (2018). [doi:10.1021/acs.jpcb.8b01861](https://doi.org/10.1021/acs.jpcb.8b01861) ([WoS-SCIE, Q2, JIF: 2.923](https://jcr.clarivate.com/jcr-jp/journal-profile?journal=J%20PHYS%20CHEM%20B&year=2018); [times](https://www.webofscience.com/wos/woscc/full-record/WOS:000439662100006) [cited](https://publons.com/publon/18273527/): 2)
+1. **Miletić, V.**, Odorčić, I., Nikolić, P. & Svedružić, Ž. M. [In silico design of the first DNA-independent mechanism-based inhibitor of mammalian DNA methyltransferase Dnmt1.](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0174410) *PLOS ONE* **12**(4), e0174410 (2017). [doi:10.1371/journal.pone.0174410](https://doi.org/10.1371/journal.pone.0174410) ([WoS-SCIE, Q1, JIF: 2.766](https://jcr.clarivate.com/jcr-jp/journal-profile?journal=PLOS%20ONE&year=2017); [times](https://www.webofscience.com/wos/woscc/full-record/WOS:000399949000010) [cited](https://publons.com/publon/15852150/): 13)
+
+### Research papers in conference proceedings
+
+1. **Miletić, V.**, Nikolić, P. & Kinkela, D. [Structure-based Molecular Docking in the Identification of Novel Inhibitors Targeting SARS-CoV-2 Main Protease.](https://ieeexplore.ieee.org/document/9596660) in 2021 44th International Convention on Information, Communication, and Electronic Technology (MIPRO), 435–440 (2021). [doi:10.23919/MIPRO52101.2021.9596660](https://doi.org/10.23919/MIPRO52101.2021.9596660)
+1. **Miletić, V.**, Ašenbrener Katić, M. & Svedružić, Ž. [High-throughput Virtual Screening Web Service Development for SARS-CoV-2 Drug Design.](https://ieeexplore.ieee.org/document/9245082) in 2020 43rd International Convention on Information, Communication, and Electronic Technology (MIPRO), 371–376 (2020). [doi:10.23919/MIPRO48935.2020.9245082](https://doi.org/10.23919/MIPRO48935.2020.9245082)
+1. **Miletić, V.**, Šubić, T. & Mikac, B. [Optimizing maximum shared risk link group disjoint path algorithm using NVIDIA CUDA heterogeneous parallel programming platform.](https://ieeexplore.ieee.org/document/6987645) in *Proceedings on the 2014 X International Symposium on Telecommunications (BIHTEL)* (ed. Mrdović, S.; University of Sarajevo, Sarajevo, Bosnia and Herzegovina), 1–6 (IEEE, 2014). [doi:10.1109/BIHTEL.2014.6987645](https://doi.org/10.1109/BIHTEL.2014.6987645)
+1. **Miletić, V.**, Holenko Dlab, M. & Hoić-Božić, N. [Optimizing ELARS Algorithms Using NVIDIA CUDA Heterogeneous Parallel Programming Platform.](https://link.springer.com/chapter/10.1007/978-3-319-09879-1_14) in *ICT Innovations 2014, Advances in Intelligent Systems and Computing* (eds. Bogdanova, A. M. & Gjorgjevikj, D.; University of Skopje, Berlin, Heidelberg) **311,** 135–144 (Springer International Publishing, 2015). [doi:10.1007/978-3-319-09879-1_14](https://doi.org/10.1007/978-3-319-09879-1_14)
+1. **Miletić, V.**, Maniadakis, D., Mikac, B. & Varoutas, D. [On the influence of the underlying network topology on optical telecommunication network availability under shared risk link group failures.](https://ieeexplore.ieee.org/document/6816135) in *Proceedings of the 2014 10th International Conference on the Design of Reliable Communication Networks (DRCN)* (ed. Van Daele, P.; University of Ghent, Ghent, Belgium), 1–8 (IEEE, 2014). [doi:10.1109/DRCN.2014.6816135](https://doi.org/10.1109/DRCN.2014.6816135)
+1. **Miletić, V.**, Mikac, B. & Džanko, M. [Impact evaluation of physical length of shared risk link groups on optical network availability using Monte Carlo simulation.](https://ieeexplore.ieee.org/document/6582897) in *Proceedings of the 2013 18th European Conference on Networks and Optical Communications (NOC) and 8th Conference on Optical Cabling & Infrastructure (OC&I)* (ed. Leitgeb, E.; Technical University Graz, Graz, Austria), 249–256 (IEEE, 2013). [doi:10.1109/NOC-OCI.2013.6582897](https://doi.org/10.1109/NOC-OCI.2013.6582897)
+1. Džanko, M., Mikac, B., **Miletić, V.**, Gonzalez, N. A., Zervas, G. S. & Simeonidou, D. [Analytical and simulation availability models of ROADM architectures.](https://ieeexplore.ieee.org/document/6578268) in *Proceedings of the 12th International Conference on Telecommunications (ConTEL)* (eds. Pripužić, K. & Banek, M.; University of Zagreb, Zagreb, Croatia), 39–45 (IEEE, 2013).
+1. **Miletić, V.**, Mikac, B. & Džanko, M. [Modelling optical network components: A network simulator-based approach.](https://ieeexplore.ieee.org/document/6412064) in *Proceedings on the 2012 IX International Symposium on Telecommunications (BIHTEL)* (ed. Mrdović, S.; University of Sarajevo, Sarajevo, Bosnia and Herzegovina), 1–6 (IEEE, 2012). [doi:10.1109/BIHTEL.2012.6412064](https://doi.org/10.1109/BIHTEL.2012.6412064)
+1. Džanko, M., Mikac, B. & **Miletić, V.** [Availability of all-optical switching fabrics used in optical cross-connects.](https://ieeexplore.ieee.org/document/6240710) in *Proceedings on the 35th Convention International MIPRO 2012* (ed. Golubić, S.; MIPRO, Opatija, Croatia), 613–617 (IEEE, 2012).
+
+### Book chapters
+
+1. Nikolić, P., **Miletić, V.**, Odorčić, I. & Svedružić, Ž. M. [In Silico Optimization of the First DNA-Independent Mechanism-Based Inhibitor of Mammalian DNA Methyltransferase DNMT1.](https://www.sciencedirect.com/science/article/pii/B9780128028087000058) *Epi-Informatics* 113–153 (2016). [doi:10.1016/B978-0-12-802808-7.00005-8](https://doi.org/10.1016/B978-0-12-802808-7.00005-8)
+
+### Abstracts in conference proceedings
+
+1. Koren, R., Martinović, M., Nikolić, P., Odorčić, I., Ostojić, L., Visentin, D., Vrbnjak, K., **Miletić, V.** & Svedružić, Ž. M. Supercomputers as microscopes for the 21st century: substrate channeling, epigenetic regulation, and molecular basis of Alzheimer's disease. in [27HSKIKI Book of Abstracts](https://27hskiki.hkd.hr/book-of-abstracts/), Zagreb, Croatia ([Croatian Chemical Society](https://www.hkd.hr/), 2021).
+1. **Miletić, V.**, Páll, S. & Gräter, F. [LLVM AMDGPU for High Performance Computing: are we competitive yet?](https://www.llvm.org/devmtg/2017-03/2017/02/20/accepted-sessions.html#31) in *2017 European LLVM Developers' Meeting*, Saarbrücken, Germany (2017). [Recording of the talk](https://youtu.be/r2Chmg85Xik?list=PL_R5A0lGi1AD12EbUChEnD3s51oqfZLe3)
+1. **Miletić, V.**, Páll, S. & Gräter, F. [Towards fully open source GPU accelerated molecular dynamics simulation.](https://www.llvm.org/devmtg/2016-03/#lightning6) in *2016 European LLVM Developers' Meeting*, Barcelona, Spain (2016). [Recording of the talk](https://youtu.be/TkanbGAG_Fo?t=23m47s&list=PL_R5A0lGi1ADuZKWUJOVOgXr2dRW06e55)
+1. Nikolić, P., **Miletić, V.** & Svedružić, Ž. M. DNA Methyltransferase Dnmt1: Regulation of Substrate Selectivity. in *6th OEGMBT Annual Meeting 2014 Abstract Book* (eds. Khassidov, A., Glaser, W. & Klimek, C.; Austrian Association of Molecular Life Sciences; Biotechnology; Servicebetrieb ÖH-Uni Graz GmbH, Vienna, Austria), 129 (2014).
+
+### Professional Papers and Conference presentations
+
+1. Škarica, M., Ašenbrener Katić, M. & **Miletić, V.** [Primjena kviza u nastavi matematike.](http://docs.mipro-proceedings.com/ce/79_ce_6731.pdf) in 2021 44th International Convention on Information, Communication, and Electronic Technology (MIPRO), 996–1000 (2021).
+1. Jakupović A., Čandrlić S., Šumanm, S, Ašenbrener Katić. M., Jakšić, D., Načinović Prskalo, L., Slavuj, V., **Miletić, V.**, Kaluža, M., Davidović, V., Širola, D., Rafajac, O., Pobar, M. & Malnar, D. Ogledni primjer web aplikacije Veleri-OI Meteo System razvijene za potrebe obrazovnog programa Veleri-OI IoT School. in [Razvoj poslovnih i informatičkih sustava CASE 2021](https://case.conferenceatnet.com/Home/Custom?code=Collections), edited by Mislav Polonijo, 61–73. Zagreb, Croatia ([CASE](https://www.case.hr/), 2021).
+1. **Miletić, V.**, Kovačić, B. & Lenković, K. PG-Strom: primjena tehnologije paralelnog programiranja NVIDIA CUDA na sustav za upravljanje bazom podataka PostgreSQL. in [Razvoj poslovnih i informatičkih sustava CASE 25](https://case.conferenceatnet.com/Home/Custom?code=Collections), edited by Mislav Polonijo, 53–59. Zagreb, Croatia ([CASE](https://www.case.hr/), 2013).
+
+### Popular science papers and conference presentations
+
+1. **Miletić, V.** [Slobodni softver otvorenog koda – nositelj inovativnosti.](https://www.unist.hr/sveucilisni-list-universitas?EntryId=665&Command=Core_Download) In *[Sveučilišni list Universitas](https://www.unist.hr/sveucilisni-list-universitas) 70*, edited by Tomislav Čižmić-Marović, 24. Split, Croatia (University of Split, 2015).
+1. **Miletić, V.** Open source računalna kemija, [Primatijada 2015](https://studentski.hr/studenti/vijesti/primatijada-2015-odrzava-se-u-porecu/)
+1. **Miletić, V.** [Ratovi web preglednika.](https://www.unist.hr/sveucilisni-list-universitas?EntryId=660&Command=Core_Download) In *[Sveučilišni list Universitas](https://www.unist.hr/sveucilisni-list-universitas) 65*, edited by Tomislav Čižmić-Marović, 18–19. Split, Croatia (University of Split, 2015).
+1. **Miletić, V.** Kako su "neozbiljne" računalne igre razvile vrlo ozbiljnu tehnologiju korištenu u istraživanjima u računalnoj kemiji, biologiji i fizici, [Primatijada 2014](https://studentski.hr/studenti/vijesti/primatijada-2014/)
+1. **Miletić, V.** Možemo li predvidjeti (i spriječiti) prekid rada telekomunikacijske mreže? in *[Dan Novih Tehnologija (DaNTe) 2013](https://www.mojarijeka.hr/8-dan-novih-tehnologija-dante-2013/)*, edited by Petar Biljanović, 1. Rijeka, Croatia (MIPRO/IEEE, 2013).
+
+### Recorded professional and popular presentations
+
+1. [Evolucija studija informatike](https://youtu.be/T4kpOMC4avs?t=30m47s), [#2](https://itzajednicarijeka.com/2-unconference-it-zajednica-rijeka/) [unConference](https://itzajednicarijeka.com/category/unconference/) [IT zajednice Rijeka](https://itzajednicarijeka.com/), 2021.
+1. [Od Aleksandrijske knjižnice do programskih knjižnica na GitHubu](https://youtu.be/7IXURHGi7W0), [Otvoreni dan sveučilišnih odjela](https://festivalznanosti.uniri.hr/category/otvoreni-dan-sveucilisnih-odjela/), 2020.
+1. [The development of RxDock web server and the future of scalable pharmaceutical research in the cloud](https://youtu.be/NH6XSRdezyI), [Seminar of School of Chemical Sciences, University of Auckland](https://www.auckland.ac.nz/en/science/about-the-faculty/school-of-chemical-sciences.html), 2020.
+1. [Design of drugs using RxDock high-throughput molecular docking software](https://youtu.be/0GuQMdhOQVA), [Seminar of Department of Biotechnology, University of Rijeka](https://www.biotech.uniri.hr/hr/seminari-odjela.html), 2020.
+1. [OpenClass: Forkanje projekata slobodnog softvera otvorenog koda](https://youtu.be/KjuT_tLtaJk), [HULK Rijeka OpenClass](https://www.ri.linux.hr/2019/06/25/openclass-forkanje-projekata-slobodnog-softvera-otvorenog-koda/), 2019.
+1. [State of open source AMD GPU drivers](https://youtu.be/cWyBkWkzcYM?list=PLDMnMa3XBHD-1u6noZasTl7v5HR7NBRE6), [DORS/CLUC](https://www.dorscluc.org/), [2019](https://2019.dorscluc.org/).
+1. [Dan slobode računalne grafike i računanja na grafičkim procesorima](https://youtu.be/4mGrcxFaqNk?list=PLIS7UemacwzPR1QE0B4z5bO9ttpBYoxnV), [Graphics and Compute Freedom Day](https://freedomday.github.io/graphicsandcompute/) [2018](https://freedomday.github.io/graphicsandcompute/2018.html), [HULK Rijeka OpenClass](https://www.ri.linux.hr/2018/12/13/openclass-proslava-dana-slobode-racunalne-grafike-i-racunanja-na-grafickim-procesorima-2018/), 2018.
+1. [Umiru li vlasničke tehnologije u softveru i šire? (predavanje)](https://youtu.be/aG_O88vaH60) i [(diskusija)](https://youtu.be/GV5nM-EQDZk), [Skeptici u pubu](http://www.pzkm.org/skeptici-u-pubu/), 2015.
+1. [Secure Boot: the good, the bad, and secureboot.me](https://youtu.be/mWJj0Gn7SWc?list=PLDMnMa3XBHD9kR2Gre8T4c5j7AsZ_MiGA), [DORS/CLUC](https://www.dorscluc.org/), [2015](https://2015.dorscluc.org/).
+1. [Ratovi web preglednika](https://youtu.be/pz73gD1H-s4), [Otvoreni dan sveučilišnih odjela](https://www.inf.uniri.hr/znanstveni-i-strucni-rad/dogadanja-info/otvoreni-dan), 2015.
+1. [Dan slobode dokumenata, LibreOffice, OpenDocument i PDF](https://youtu.be/mj8pqyVgeyw?list=PLIS7UemacwzMYiHe_ammJJCLRnwC3HP2K), [Document Freedom Day](https://freedomday.github.io/document/) [2015](https://freedomday.github.io/document/2015.html) ([Dani digitalne slobode](https://freedomday.github.io/freedomday/)), [HULK Rijeka OpenClass](https://www.ri.linux.hr/2015/03/19/dan-slobode-dokumenata-25-ozujka-2015-u-rijeci/), 2015.
+1. [Savršena oluja](https://youtu.be/EE2cZSeqB3k), [Rikon](https://rikonrijeka.com/), 2014.
+1. [Open source računalna kemija](https://youtu.be/3mHn6gk97hc?list=PLsClViPcQxS_PfbmcOjCQOg3pY4vzGJxn) (with [Patrik Nikolić](https://nikoli.ch/)), [LKLK](https://sysportal.carnet.hr/node/1443), 2014.
+1. [NVIDIA CUDA ekosustav: što je tu open, a što baš i ne?](https://youtu.be/UYnnbsU0BoQ?list=PLDMnMa3XBHD8iF7xnwVAybQa_BlEXbhbg), [DORS/CLUC](https://www.dorscluc.org/), [2014](https://2014.dorscluc.org/).
+1. [Mrežni simulator ns-3: mogućnosti i unutarnji dizajn](https://youtu.be/-ZgJheNepmo?list=PL7982D00F0ADDF7F1), [DORS/CLUC](https://www.dorscluc.org/), [2012](http://2012.dorscluc.org/).
+1. [LuaTeX i ConTeXt MkIV: TeX is still alive and kicking](https://youtu.be/OiuU1dzYEk4?list=PL2D48D538AEE006BA), [DORS/CLUC](https://www.dorscluc.org/), [2011](https://robertbasic.com/blog/dorscluc-2011-recap/).

@@ -30,7 +30,7 @@ The group started in October 2021. It is built on the legacy of Computer Network
 
 ### E-mail
 
-E-mail addresses of the [staff members](people.md#staff) have the following format: *firstname.lastname@inf.uniri.hr*
+E-mail addresses of the [staff members](people/index.md#staff) have the following format: *firstname.lastname@inf.uniri.hr*
 
 ### Social networks
 
