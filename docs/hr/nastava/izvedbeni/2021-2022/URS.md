@@ -181,8 +181,8 @@ Nastava će se na predmetu odvijati u zimskom semestru prema sljedećem raspored
 | 11. | 13. 5. 2022. | 14:00--15:30 i 16:00--17:30 | O-350 | Primjer postavljanja mrežne usluge na računalnom sustavu | P11 i V11 | doc. dr. sc. Vedran Miletić |
 | 12. | 20. 5. 2022. | 14:00--15:30 i 16:00--17:30 | O-350 | Automatizacija infrastrukture i infrastruktura kao usluga | P12 i V12 | doc. dr. sc. Vedran Miletić |
 | 13. | 27. 5. 2022. | 14:00--15:30 i 16:00--17:30 | O-350 | **2. test na Merlinu**  | P13 i V13 | doc. dr. sc. Vedran Miletić |
-| 14. | 3. 6. 2022. | 14:00--15:30 i 16:00--17:30 | O-350 | *Konzultacije za izradu praktičnih radova* | P14 i V14 | doc. dr. sc. Vedran Miletić |
-| 15. | 10. 6. 2022. | 14:00--15:30 i 16:00--17:30 | O-350 | *Konzultacije za izradu praktičnih radova* | P15 i V15 | doc. dr. sc. Vedran Miletić |
+| 14. | 3. 6. 2022. | 14:00--15:30 i 16:00--17:30 | O-350 | Primjer postavljanja mrežne usluge na računalnom sustavu -- priprema za izradu praktičnog rada | P14 i V14 | doc. dr. sc. Vedran Miletić |
+| 15. | 10. 6. 2022. | 14:00--15:30 i 16:00--17:30 | O-350 | Primjer postavljanja mrežne usluge na računalnom sustavu -- priprema za izradu praktičnog rada | P15 i V15 | doc. dr. sc. Vedran Miletić |
 
 P -- predavanja  
 V -- vježbe
