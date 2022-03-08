@@ -265,6 +265,7 @@ nav:
         - Multipleksiranje terminala: hr/nastava/materijali/screen-tmux-multipleksiranje-terminala.md
         - Mandantna kontrola pristupa korištenjem sustava SELinux: hr/nastava/materijali/selinux-mandantna-kontrola-pristupa.md
         - Mjerenje performansi web poslužitelja alatom Siege: hr/nastava/materijali/siege-mjerenje-performansi-web-posluzitelja.md
+        - Instalacija i konfiguracija softvera za vježbe iz kolegija Sigurnost informacijskih i komunikacijskih sustava: hr/nastava/materijali/siks-instalacija-softvera-garuda-linux.md
         - Integracija simuliranih i stvarnih mreža: hr/nastava/materijali/simulator-ns3-integracija-simuliranih-i-stvarnih-mreza.md
         - Simulacijski modeli grešaka paketa: hr/nastava/materijali/simulator-ns3-modeli-gresaka.md
         - Simulacijski modeli mrežnih aplikacija kao generatora prometa: hr/nastava/materijali/simulator-ns3-mrezne-aplikacije-promet.md

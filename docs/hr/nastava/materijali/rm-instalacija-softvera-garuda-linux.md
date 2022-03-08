@@ -9,11 +9,18 @@ Instalacija softvera na Arch Linuxu je centralizirana, slično kao što su na dr
 Svakako prije instalacije paketa u nastavku instalirajte sve dostupne nadogradnje. U terminalu upišite prvo
 
 ``` shell
+$ sudo garuda-update
+(...)
+```
+
+pa, kad vas sustav to pita, unesite vašu zaporku. Ova naredba je specifična za Garuda Linux; Na ostalim derivatima Arch Linuxa možete instalaciju svih dostupnih nadogradnji izvesti naredbom
+
+``` shell
 $ sudo pacman -Syu
 (...)
 ```
 
-pa, kad vas sustav to pita, unesite vašu zaporku. Ova će naredba osvježiti popis dostupnih paketa, a time i nadogradnji, pa zatim instalirati dostupne nadogradnje.
+Obje će naredbe osvježiti popis dostupnih paketa, a time i njihovih nadogradnji, pa zatim instalirati dostupne nadogradnje.
 
 U nastavku za instalaciju softvera uz Pacman koristimo i [Paru](https://github.com/Morganamilo/paru), koji omogućuje instalaciju programa koji nisu pakirani iz njhovog izvornog koda. Njegove popise dostupnih softvera osvježite naredbom
 
@@ -134,7 +141,14 @@ $ sudo usermod -aG wireshark $(whoami)
 (...)
 ```
 
-(U naredbi iznad ne morate ništa mijenjati jer naredba `whoami` vraća ime vašeg korisnika.)
+Ako koristite ljusku `fish`, ova će naredba javiti grešku u sintaksi. Ispravan oblik naredbe za ljusku `fish` je:
+
+``` shell
+$ sudo usermod -aG wireshark (whoami)
+(...)
+```
+
+(U naredbama iznad ne morate ništa mijenjati jer naredba `whoami` vraća ime vašeg korisnika.)
 
 ## Alat za crtanje grafova Gnuplot
 
@@ -150,7 +164,11 @@ $ sudo pacman -S visual-studio-code-bin
 (...)
 ```
 
-Visual Studio Code uključuje podršku za [Markdown](https://code.visualstudio.com/docs/languages/markdown) i [PHP](https://code.visualstudio.com/docs/languages/php) pa ne moramo ništa dodatno instalirati.
+Visual Studio Code uključuje podršku za [Markdown](https://code.visualstudio.com/docs/languages/markdown) i [PHP](https://code.visualstudio.com/docs/languages/php).
+
+### Alat za statičku analizu Markdowna markdownlint
+
+Pokrenite Visual Studio Code. U dijelu `Extensions` koji se nalazi u `Side Bar`-u ([pregled sučelja](https://code.visualstudio.com/docs/getstarted/userinterface)) instalirajte proširenje [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint).
 
 ## HTTP klijent cURL
 
