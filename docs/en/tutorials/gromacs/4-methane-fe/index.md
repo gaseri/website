@@ -100,27 +100,27 @@ for ((i = 0 ; i < 15 ; i++)); do
 
     sed 's/MYLAMBDA/'$i'/g' mdp/min.mdp > grompp.mdp
     if [[ $i -eq 0 ]]; then
-        gmx grompp -o min.$i -pp min.$i -po min.$i
+        gmx grompp -o min.$i.tpr -pp min.$i.top -po min.$i.mdp
     else
-        gmx grompp -c prd.$(($i-1)).gro -o min.$i -pp min.$i -po min.$i
+        gmx grompp -c prd.$(($i-1)).gro -o min.$i.tpr -pp min.$i.top -po min.$i.mdp
     fi
-    gmx mdrun -deffnm min.$i
+    gmx mdrun -s min.$i.tpr -o min.$i.trr -x min.$i.xtc -c min.$i.gro -e min.$i.edr -g min.$i.log
 
     sed 's/MYLAMBDA/'$i'/g' mdp/min2.mdp > grompp.mdp
-    gmx grompp -o min2.$i -c min.$i -t min.$i -pp min2.$i -po min2.$i -maxwarn 1
-    gmx mdrun -deffnm min2.$i
+    gmx grompp -o min2.$i.tpr -c min.$i.gro -pp min2.$i.top -po min2.$i.mdp -maxwarn 1
+    gmx mdrun -s min2.$i.tpr -o min2.$i.trr -x min2.$i.xtc -c min2.$i.gro -e min2.$i.edr -g min2.$i.log
 
     sed 's/MYLAMBDA/'$i'/g' mdp/eql.mdp > grompp.mdp
-    gmx grompp -o eql.$i -c min2.$i -t min2.$i -pp eql.$i -po eql.$i
-    gmx mdrun -deffnm eql.$i
+    gmx grompp -o eql.$i.tpr -c min2.$i.gro -pp eql.$i.top -po eql.$i.mdp
+    gmx mdrun -s eql.$i.tpr -o eql.$i.trr -x eql.$i.xtc -c eql.$i.gro -e eql.$i.edr -g eql.$i.log
 
     sed 's/MYLAMBDA/'$i'/g' mdp/eql2.mdp > grompp.mdp
-    gmx grompp -o eql2.$i -c eql.$i -t eql.$i -pp eql2.$i -po eql2.$i
-    gmx mdrun -deffnm eql2.$i
+    gmx grompp -o eql2.$i.tpr -c eql.$i.gro -pp eql2.$i.top -po eql2.$i.mdp
+    gmx mdrun -s eql2.$i.tpr -o eql2.$i.trr -x eql2.$i.xtc -c eql2.$i.gro -e eql2.$i.edr -g eql2.$i.log
 
     sed 's/MYLAMBDA/'$i'/g' mdp/prd.mdp > grompp.mdp
-    gmx grompp -o prd.$i -c eql2.$i -t eql2.$i -pp prd.$i -po prd.$i
-    gmx mdrun -deffnm prd.$i
+    gmx grompp -o prd.$i.tpr -c eql2.$i.gro -pp prd.$i.top -po prd.$i.mdp
+    gmx mdrun -s prd.$i.tpr -o prd.$i.trr -x prd.$i.xtc -c prd.$i.gro -e prd.$i.edr -g prd.$i.log
 
 done
 ```

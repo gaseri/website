@@ -87,13 +87,13 @@ saved trajectory file (which was named `prd.xtc` in the first tutorial). To do
 this first run `grompp`:
 
 ``` shell
-$ gmx grompp -f mdp/tpi.mdp -o tpi -po tpi -pp tpi -c conf.gro
+$ gmx grompp -f mdp/tpi.mdp -o tpi.tpr -po tpi.mdp -pp tpi.top -c conf.gro
 ```
 
 Now use the `-rerun` flag with `mdrun`:
 
 ``` shell
-$ gmx mdrun -deffnm tpi -rerun prd.xtc
+$ gmx mdrun mdrun -s tpi.tpr -o tpi.trr -x tpi.xtc -c tpi.gro -e tpi.edr -g tpi.log -rerun prd.xtc
 ```
 
 ## Analysis

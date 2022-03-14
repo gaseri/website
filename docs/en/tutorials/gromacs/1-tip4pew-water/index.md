@@ -184,11 +184,11 @@ topology file).
 First, let's run our two minimization steps by doing the following:
 
 ``` shell
-$ gmx grompp -f mdp/min.mdp -o min -pp min -po min
-$ gmx mdrun -deffnm min
+$ gmx grompp -f mdp/min.mdp -o min.tpr -pp min.top -po min.mdp
+$ gmx mdrun -s min.tpr -o min.trr -x min.xtc -c min.gro -e min.edr -g min.log
 
-$ gmx grompp -f mdp/min2.mdp -o min2 -pp min2 -po min2 -c min -t min
-$ gmx mdrun -deffnm min2
+$ gmx grompp -f mdp/min2.mdp -o min2.tpr -pp min2.top -po min2.mdp -c min.gro
+$ gmx mdrun -s min2.tpr -o min2.trr -x min2.xtc -c min2.gro -e min2.edr -g min2.log
 ```
 
 At each part, we are reading in the .mdp file with the `-f` flag. By default if
@@ -255,8 +255,8 @@ Now that we have a good starting structure, let's do the first equilibration
 step, by adding the temperature coupling:
 
 ``` shell
-$ gmx grompp -f mdp/eql.mdp -o eql -pp eql -po eql -c min2 -t min2
-$ gmx mdrun -deffnm eql
+$ gmx grompp -f mdp/eql.mdp -o eql.tpr -pp eql.top -po eql.mdp -c min2.gro
+$ gmx mdrun -s eql.tpr -o eql.trr -x eql.xtc -c eql.gro -e eql.edr -g eql.log
 ```
 
 Let's take a look at how the temperature varies throughout the simulation:
@@ -278,8 +278,8 @@ settles.
 For our last equilibration, as stated earlier, we're adding a pressure coupling:
 
 ``` shell
-$ gmx grompp -f mdp/eql2.mdp -o eql2 -pp eql2 -po eql2 -c eql -t eql
-$ gmx mdrun -deffnm eql2
+$ gmx grompp -f mdp/eql2.mdp -o eql2.tpr -pp eql2.top -po eql2.mdp -c eql.gro
+$ gmx mdrun -s eql2.tpr -o eql2.trr -x eql2.xtc -c eql2.gro -e eql2.edr -g eql2.log
 ```
 
 You can check out the temperature and pressure using `gmx energy` as above.
@@ -295,8 +295,8 @@ full equilibration should be close to 1 bar in this case.
 Now for the production part do:
 
 ``` shell
-$ gmx grompp -f mdp/prd.mdp -o prd -pp prd -po prd -c eql2 -t eql2
-$ gmx mdrun -deffnm prd
+$ gmx grompp -f mdp/prd.mdp -o prd.tpr -pp prd.top -po prd.mdp -c eql2.gro
+$ gmx mdrun -s prd.tpr -o prd.trr -x prd.xtc -c prd.gro -e prd.edr -g prd.log
 ```
 
 ## Analysis
