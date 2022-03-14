@@ -51,7 +51,7 @@ Methane         3
 [ System ]
 Methane in water
 
-[ Molecules ] 
+[ Molecules ]
 SOL               395
 Methane           1
 ```

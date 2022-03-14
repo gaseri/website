@@ -33,7 +33,7 @@ Then add water to the box:
 $ gmx solvate -cs tip4p -cp box.gro -o conf.gro -p topol.top -maxsol 1000
 ```
 
-*gmx solvate* automatically updates `topol.top` for us.
+The command `gmx solvate` automatically updates `topol.top` for us.
 
 Reuse the .mdp files from last time, except change `nsteps` in `prd.mdp` to be
 longer. I myself ran this for 100 ns, so I simply added a 0 to the end of the
@@ -57,7 +57,7 @@ $ gmx make_ndx -f conf.gro
 > q
 ```
 
-Now use *gmx rdf* just like last time, but instead choose the group containing
+Now use `gmx rdf` just like last time, but instead choose the group containing
 `C` twice.
 
 Depending on how many frames you saved and how long you ran the simulation (I
@@ -97,9 +97,9 @@ at that distance. We'll use umbrella sampling in a later tutorial to solve this.
 
 ## Summary
 
-In this tutorial, we created a box of 10 methanes and 1000 waters using *gmx
-insert-molecules* and *gmx solvate*. We simulated this just like last time,
-except we did it a little longer. We again used *gmx rdf* to get the radial
+In this tutorial, we created a box of 10 methanes and 1000 waters using `gmx
+insert-molecules` and `gmx solvate`. We simulated this just like last time,
+except we did it a little longer. We again used `gmx rdf` to get the radial
 distribution function, but this time for methane-methane. We had to add a
 correction due to this, and from there we were able to get the potential of mean
 force.

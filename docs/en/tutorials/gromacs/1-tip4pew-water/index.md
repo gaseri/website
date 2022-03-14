@@ -73,7 +73,7 @@ $ gmx solvate -cs tip4p -o conf.gro -box 2.3 2.3 2.3 -p topol.top
 
 If you open back up `topol.top` you'll see that a line has been added at the
 end with the word `SOL` and number. `SOL` is the name of the `moleculetype` that
-is defined in `oplsaa.ff/tip4pew.itp`. When we ran _gmx solvate_, GROMACS added
+is defined in `oplsaa.ff/tip4pew.itp`. When we ran `gmx solvate`, GROMACS added
 enough water molecules to fill a box 2.3 nm in each direction.
 
 ### Parameter files
@@ -94,12 +94,12 @@ for more information on each option.
 
 | parameter | value | explanation |
 | --------- | ----- | ----------- |
-| cutoff-scheme | Verlet | Use in creating neighbor lists. This is now the default, but we provide it here in order to avoid any notes.|
-| coulombtype | PME | Use Particle-Mesh Ewald for long-range (k-space) electrostatics. |
-| rcoulomb | 1.0 | Cut-off for real/k-space for PME (nm). |
-| vdwtype | Cut-off | van der Walls forces cut-off at `rvdw`. |
-| rvdw | 1.0 | Cut-off for VDW (nm). |
-| DispCorr | EnerPress | Long-range correction for VDW for both energy and pressure. |
+| `cutoff-scheme` | `Verlet` | Use in creating neighbor lists. This is now the default, but we provide it here in order to avoid any notes.|
+| `coulombtype` | `PME` | Use Particle-Mesh Ewald for long-range (k-space) electrostatics. |
+| `rcoulomb` | `1.0` | Cut-off for real/k-space for PME (nm). |
+| `vdwtype` | `Cut-off` | van der Walls forces cut-off at `rvdw`. |
+| `rvdw` | `1.0` | Cut-off for VDW (nm). |
+| `DispCorr` | `EnerPress` | Long-range correction for VDW for both energy and pressure. |
 
 Cut-off distances should be set keeping in mind how the force field was
 parameterized. In other words, it's a good idea to look at the journal article
@@ -140,13 +140,13 @@ several parameters that are shown below:
 
 | parameter | value | explanation |
 | --------- | ----- | ----------- |
-| gen-vel | yes | Generate velocities for each atomic site according to a Maxwell-Boltzmann distribution. **Only generate velocities for your first equilibration step**. This gets us close to the temperature at which we will couple the system. |
-| gen-temp | 298.15 | Temperature in K to use for `gen-vel`. Unless you are doing some strange/interesting stuff, this should be the same as `ref-t`. |
-| tcoupl | Nose-Hoover | The algorithm to use for temperature coupling. Nose-Hoover correctly produces the canonical ensemble. |
-| tc-grps | System | Which groups should be temperature-coupled. You can couple different groups of atoms separately, but we'll just couple the whole system. |
-| tau-t | 2.0 | Time constant for coupling. See the manual for details. |
-| ref-t | 298.15 | The temperature in K at which to couple. |
-| nhchainlength | 1 | Leap-frog integrator only supports 1, but by default, this is 10. This is set so GROMACS doesn't complain to us. |
+| `gen-vel` | `yes` | Generate velocities for each atomic site according to a Maxwell-Boltzmann distribution. **Only generate velocities for your first equilibration step**. This gets us close to the temperature at which we will couple the system. |
+| `gen-temp` | `298.15` | Temperature in K to use for `gen-vel`. Unless you are doing some strange/interesting stuff, this should be the same as `ref-t`. |
+| `tcoupl` | `Nose-Hoover` | The algorithm to use for temperature coupling. Nose-Hoover correctly produces the canonical ensemble. |
+| `tc-grps` | `System` | Which groups should be temperature-coupled. You can couple different groups of atoms separately, but we'll just couple the whole system. |
+| `tau-t` | `2.0` | Time constant for coupling. See the manual for details. |
+| `ref-t` | `298.15` | The temperature in K at which to couple. |
+| `nhchainlength` | `1` | Leap-frog integrator only supports 1, but by default, this is 10. This is set so GROMACS doesn't complain to us. |
 
 The point of this first equilibration is to get us to the correct temperature
 (298.15 K) before adding pressure coupling. Adding temperature and pressure
@@ -156,7 +156,7 @@ don't want to shock our system at the beginning. Additionally, we have set
 ps. This is adequate for what we are doing here, but in larger / more
 complicated systems you may need to equilibrate longer.
 
-The second equilibration adds pressure coupling. Note that we are _not_
+The second equilibration adds pressure coupling. Note that we are *not*
 generating velocities again, since that will undo some of the work we just did.
 We also set `continuation = yes` for the constraints, since we are continuing
 the simulation from the first equilibration. This part will run for 1 ns. Again,
@@ -164,10 +164,10 @@ this may need to be longer for other systems.
 
 | parameter | value | explanation |
 | --------- | ----- | ----------- |
-| pcoupl | Parrinello-Rahman | The algorithm to use for pressure coupling. Parrinello-Rahman correctly produces the isobaric-isothermal ensemble when used with Nose-Hoover. |
-| tau-p | 2.0 | Time constant for pressure coupling. See the manual for details. |
-| ref-p | 1.0 | The pressure in bars at which to pressure couple. |
-| compressibility | 4.46e-5 | The compressibility of the system in bar^-1. |
+| `pcoupl` | `Parrinello-Rahman` | The algorithm to use for pressure coupling. Parrinello-Rahman correctly produces the isobaric-isothermal ensemble when used with Nose-Hoover. |
+| `tau-p` | `2.0` | Time constant for pressure coupling. See the manual for details. |
+| `ref-p` | `1.0` | The pressure in bars at which to pressure couple. |
+| `compressibility` | `4.46e-5` | The compressibility of the system in bar^-1. |
 
 For the production run, everything is exactly the same as the last
 equilibration, except we are outputting more data and running for 10 ns.
@@ -175,7 +175,7 @@ equilibration, except we are outputting more data and running for 10 ns.
 ## Simulation
 
 We have all the files we need now to run each part of the simulation. In each
-part you typically run *gmx grompp* to preprocess the three files we now have
+part you typically run `gmx grompp` to preprocess the three files we now have
 (.gro, .top, and .mdp) into a .tpr file (sometimes confusingly also called a
 topology file).
 
@@ -201,7 +201,7 @@ At each subsequent step we read in the previous step's last structure file or
 checkpoint file using the `-c` and `-t` flags. By default GROMACS outputs
 checkpoint files every 15 minutes and at the last step. If the checkpoint file
 is not present, GROMACS will use the structure file defined by `-c`, so it is a
-good practice to specify both. At each *gmx mdrun* we are telling GROMACS to use
+good practice to specify both. At each `gmx mdrun` we are telling GROMACS to use
 a default name for each input and output file, since several files are output.
 
 Note we are using `-maxwarn 1` for the second minimization. Only use this flag
@@ -209,7 +209,7 @@ if you know what you are doing! In this case we get a warning about the
 efficiency of L-BFGS which we can safely bypass.
 
 To get a feel for what's going on, let's extract the potential energy of both of
-these parts using the GROMACS command *gmx energy*. Do the following and enter
+these parts using the GROMACS command `gmx energy`. Do the following and enter
 the number that corresponds with `Potential`, followed by enter again:
 
 ``` shell
@@ -262,7 +262,7 @@ $ gmx mdrun -deffnm eql
 Let's take a look at how the temperature varies throughout the simulation:
 
 ``` shell
-$ gmx energy -f eql.edr -o eql-temp.xvg 
+$ gmx energy -f eql.edr -o eql-temp.xvg
 ```
 
 Choose the number corresponding to `Temperature` at the prompt and hit enter
@@ -282,7 +282,7 @@ $ gmx grompp -f mdp/eql2.mdp -o eql2 -pp eql2 -po eql2 -c eql -t eql
 $ gmx mdrun -deffnm eql2
 ```
 
-You can check out the temperature and pressure using *gmx energy* as above.
+You can check out the temperature and pressure using `gmx energy` as above.
 Here's a plot of the pressure:
 
 ![Equilibration 2 Pressure ](eql2-press.png)
@@ -301,7 +301,7 @@ $ gmx mdrun -deffnm prd
 
 ## Analysis
 
-Using *gmx energy* as above on `prd.edr`, get the average temperature, pressure,
+Using `gmx energy` as above on `prd.edr`, get the average temperature, pressure,
 and density. Are they what you expect?
 
 Here's my output:
@@ -333,8 +333,8 @@ Here's a snapshot:
 ![Water](water1.png)
 
 Note that due to the periodic boundary condition this can look kind of strange
-with bonds stretching across the box. You can make molecules whole by using *gmx
-trjconv*:
+with bonds stretching across the box. You can make molecules whole by using `gmx
+trjconv`:
 
 ``` shell
 $ gmx trjconv -f prd.xtc -s prd.tpr -pbc mol -o prd-mol.xtc
@@ -346,9 +346,9 @@ Viewing that file should look much nicer:
 
 ## Summary
 
-In this tutorial, we generate a box of TIP4PEW water using *gmx solvate*. We
+In this tutorial, we generate a box of TIP4PEW water using `gmx solvate`. We
 simulated it in five distinct parts: minimization 1, minimization 2,
 equilbiration 1, equilibration 2, and production. Each part used its own .mdp
-files which were explained. At each part, we used *gmx energy* to extract useful
+files which were explained. At each part, we used `gmx energy` to extract useful
 information about the simulation. After the production run, we were able to find
 the density of TIP4PEW water.

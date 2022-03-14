@@ -10,7 +10,7 @@ methane in a box of TIP4PEW water.
 ## Setup
 
 As before, we need a structure file, a topology file, and parameter files. We're
-going to use the GROMACS tool *gmx pdb2gmx* to generate the topology from a pdb
+going to use the GROMACS tool `gmx pdb2gmx` to generate the topology from a pdb
 file.
 
 ### Setup residues for pdb2gmx
@@ -27,7 +27,7 @@ $ echo $GMXPREFIX
 
 If you are properly sourcing the GROMACS configuration file, this will give you
 the installation location. Look for the directory `share/gromacs/top` in that directory and go
-into it (*e.g.,* if GMXPREFIX is `/usr` then go to `/usr/share/gromacs/top`). Or
+into it (*e.g.*, if GMXPREFIX is `/usr` then go to `/usr/share/gromacs/top`). Or
 you can simply go to `$GMXDATA/top`.
 
 Let's take a look at the force field directory's contents:
@@ -43,7 +43,7 @@ you'll see a `[ defaults ]` section as well as the inclusion of two other files 
 one for bonded interactions and one for non-bonded interactions. We're also
 interested in `atomtypes.atp` which gives the descriptions for the cryptic
 `opls_####` terms as well as the `aminoacids.rtp` which give a list of
-recognized residues used for the *gmx pdb2gmx* command.
+recognized residues used for the `gmx pdb2gmx` command.
 
 Open `atomtypes.atp` with your text editor. The following opens it with `vim`:
 
@@ -99,9 +99,9 @@ that directory instead of the one provided in the GROMACS default directory.
 Now go into `oplsaa.ff` and open `aminoacids.rtp`. You'll notice several
 residues already in the file.  We're going to add a new file called
 `methane.rtp` for our methane with a residue that we'll call `CH4`. Close
-`aminoacids.rtp`. We'll need to tell *gmx pdb2gmx* the atoms and bonds in the atom in
+`aminoacids.rtp`. We'll need to tell `gmx pdb2gmx` the atoms and bonds in the atom in
 our residue file. We could also tell it the angles, but we'll leave them out,
-since *gmx pdb2gmx* will figure it out for us. You should create with the
+since `gmx pdb2gmx` will figure it out for us. You should create with the
 following contents and save as `methane.rtp` in the `oplsaa.ff` directory:
 
 ```
@@ -134,7 +134,7 @@ hydrogen. We could optionally add `[ angles ]`, but as stated earlier, GROMACS
 will sort this out for us. Now close the file. See section 5.6 for more
 information about this.
 
-### Create pdb file and run *gmx pdb2gmx*
+### Create pdb file and run `gmx pdb2gmx`
 
 Now we are ready to create the pdb file. There are several programs out there
 to create molecule structure files.
@@ -163,7 +163,7 @@ END
 
 Save the file as `methane.pdb`.
 
-Now we can use *gmx pdb2gmx* to create GROMACS .conf and .top files:
+Now we can use `gmx pdb2gmx` to create GROMACS .conf and .top files:
 
 ``` shell
 $ gmx pdb2gmx -f methane.pdb
@@ -186,14 +186,14 @@ Chapter 5 of the GROMACS manual will help you understand the topology file more.
 !!! note
     Files `topol.top` and `methane.pdb` will be used again in other tutorials.
 
-For those who use *gmx pdb2gmx* to generate topologies for large proteins,
+For those who use `gmx pdb2gmx` to generate topologies for large proteins,
 things can get more complicated. This is merely a simple example, and really we
 probably could have found this topology somewhere else.
 
 ### Solvate system
 
 Our structure file and topology file only have our methane thus far. We need to
-add waters by using *gmx solvate*:
+add waters by using `gmx solvate`:
 
 ``` shell
 $ gmx solvate -cp conf.gro -o conf.gro -cs tip4p -p topol.top -box 2.3 2.3 2.3
@@ -262,7 +262,7 @@ $ gmx make_ndx -f conf.gro
 > q
 ```
 
-Now run *gmx rdf*:
+Now run `gmx rdf`:
 
 ``` shell
 $ gmx rdf -f prd.xtc -n index.ndx
@@ -282,7 +282,7 @@ It should look something like this:
 ## Summary
 
 In this tutorial, we learned how to create a residue template file (.rtp) for
-use with *gmx pdb2gmx*. We created a structure for OPLS methane and the
-generated a topology for it. From there we put water around it using *gmx
-solvated*. After this, we ran a simulation, just like last time. Lastly, we found
-the C-OW radial distribution function using *gmx rdf*.
+use with `gmx pdb2gmx`. We created a structure for OPLS methane and the
+generated a topology for it. From there we put water around it using `gmx
+solvated`. After this, we ran a simulation, just like last time. Lastly, we found
+the C-OW radial distribution function using `gmx rdf`.
