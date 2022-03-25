@@ -58,7 +58,7 @@
 - [Boot proces računala i učitavač GRUB](../materijali/grub-pokretanje-sustava.md)
 - [Upravljanje uslugama operacijskog sustava](../materijali/systemd-systemctl-upravljanje-uslugama-operacijskog-sustava.md)
 - [Praćenje događaja operacijskog sustava](../materijali/systemd-journalctl-pracenje-dogadjaja-operacijskog-sustava.md)
-- [Automatizacija zadaća operacijskog sustava](../materijali/systemd-cron-automatizacija-zadaca-operacijskog-sustava.md)
+- [Automatizacija zadaća operacijskog sustava](../materijali/systemd-timer-automatizacija-zadaca-operacijskog-sustava.md)
 - [Prevođenje C, C++ i Fortran programa u izvršni kod](../materijali/gcc-gxx-make-prevodjenje-programa.md)
 - [Nabavka, kompajliranje i instalacija softvera otvorenog koda](../materijali/nabavka-prevodjenje-instalacija-softvera-otvorenog-koda.md)
 - [Binarna kompatibilnost i kompatibilnost na razini izvornog koda](../materijali/api-abi-kompatibilnost.md)
@@ -90,3 +90,4 @@
 - [Zerconf NSS/mDNS sustav Avahi](../materijali/avahi-zeroconf.md)
 - [Strujanje multimedijskog sadržaja alatom VLC](../materijali/vlc-strujanje-multimedijskog-sadrzaja.md)
 - [OpenWrt](../materijali/openwrt-ugradbeni-softver-za-bezicne-mrezne-usmjerivace.md)
+- [Inkrementalni prijenos podataka korištenjem rsynca](../materijali/rsync-inkrementalni-prijenos-podataka.md)

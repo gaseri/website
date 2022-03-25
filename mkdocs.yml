@@ -261,6 +261,7 @@ nav:
         - rocRAND -- ROCm RANDom number generator: hr/nastava/materijali/rocm-rocrand.md
         - rocSOLVER -- ROCm-ov linear algebra SOLVER: hr/nastava/materijali/rocm-rocsolver.md
         - rocSPARSE -- ROCm SPARSE basic linear algebra subroutines: hr/nastava/materijali/rocm-rocsparse.md
+        - Inkrementalni prijenos podataka korištenjem rsynca: hr/nastava/materijali/rsync-inkrementalni-prijenos-podataka.md
         - Interoperabilnost operacijskih sustava Windows i GNU/Linux korištenjem Sambe: hr/nastava/materijali/samba-interoperabilnost-windows-linux.md
         - Multipleksiranje terminala: hr/nastava/materijali/screen-tmux-multipleksiranje-terminala.md
         - Mandantna kontrola pristupa korištenjem sustava SELinux: hr/nastava/materijali/selinux-mandantna-kontrola-pristupa.md
@@ -277,7 +278,7 @@ nav:
         - Spam filter -- SpamAssassin: hr/nastava/materijali/spamassasin-spam-filter.md
         - Praćenje korištenja programskih sučelja sustava korištenjem alata strace i ltrace: hr/nastava/materijali/strace-ltrace-sucelja-operacijskog-sustava.md
         - IPsec alat strongSwan: hr/nastava/materijali/strongswan-ipsec.md
-        - Automatizacija zadaća operacijskog sustava: hr/nastava/materijali/systemd-cron-automatizacija-zadaca-operacijskog-sustava.md
+        - Automatizacija zadaća operacijskog sustava: hr/nastava/materijali/systemd-timer-automatizacija-zadaca-operacijskog-sustava.md
         - Praćenje događaja operacijskog sustava: hr/nastava/materijali/systemd-journalctl-pracenje-dogadjaja-operacijskog-sustava.md
         - Upravljanje uslugama operacijskog sustava: hr/nastava/materijali/systemd-systemctl-upravljanje-uslugama-operacijskog-sustava.md
         - Tuneliranje alatom tinc: hr/nastava/materijali/tinc-virtualna-privatna-mreza.md

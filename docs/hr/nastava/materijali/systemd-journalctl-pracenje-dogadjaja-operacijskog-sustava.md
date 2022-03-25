@@ -5,17 +5,15 @@ author: Vedran Miletić
 # Praćenje događaja operacijskog sustava
 
 !!! hint
-    Za više informacija proučite [Chapter 18. Viewing and Managing Log Files](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/ch-viewing_and_managing_log_files) u [Red Hat Enterprise Linux 7 System Administrator's Guide](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/index).
+    Za dodatne primjere naredbi proučite [stranicu system/Journal na ArchWikiju](https://wiki.archlinux.org/title/Systemd/Journal) i [Chapter 23. Viewing and Managing Log Files](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/ch-viewing_and_managing_log_files) u [Red Hat Enterprise Linux 7 System Administrator's Guide](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/index).
 
 - log datoteke sadrže informacije o operacijskom sustavu: jezgri, uslugama i aplikacijama
 - log datoteke nalaze se u direktoriju `/var/log`
-
-    - `/var/log/messages` -- poruke operacijskog sustava
-    - `/var/log/yum.log` -- poruke upravitelja paketima `yum`
+    - `/var/log/journal` -- poruke koje bilježi systemd Journal
+    - `/var/log/cloud-init.log` i `/var/log/cloud-init-output.log` -- poruke cloud-inita
+    - `/var/log/httpd/access_log` -- poruke o pristupu klijenata Apache HTTP Serveru
     - `/var/log/Xorg.0.log` -- poruke koje javlja X Window System
-
 - log datoteke se **rotiraju** da ne bi postale prevelike
-
     - datoteka `xyz.log` postaje `xyz.log.1` ili `xyz.log-20140326`
     - stvara se nova prazna datoteka `xyz.log`
 
@@ -27,7 +25,6 @@ author: Vedran Miletić
 
 - narefba `rsyslog`
 - konfiguracijska datoteka `/etc/rsyslog.conf`
-
     - `$` -- globalne naredbe
     - `$ModLoad`
 
@@ -36,10 +33,8 @@ author: Vedran Miletić
     - Proučite `man rsyslog.conf` i pronađite način da stvorite datoteku `/var/log/mojzapis.log` koja koristi [RFC 3339](https://datatracker.ietf.org/doc/html/rfc3339) vremenske pečate.
 
 - `<FACILITY>.<PRIORITY>` zapis filtera
-
     - `<FACILITY>` je jedan od `auth`, `authpriv`, `cron`, `daemon`, `kern`, `lpr`, `mail`, `news`, `syslog`, `user`, `uucp` i `local0` through `local7`.
     - `<PRIORITY>` je jedan od `debug`, `info`, `notice`, `warning`, `err`, `crit`, `alert`, and `emerg`.
-
 - nakon svake promjene potrebno je ponovno pokrenuti uslugu `rsyslog`
 
 !!! admonition "Zadatak"
@@ -51,7 +46,6 @@ author: Vedran Miletić
 
 - naredba `logrotate`
 - konfiguracijska datoteka `/etc/logrotate.conf`
-
     - direktive koje određuju koliko često se događa rotacija: `daily`, `weekly`, `monthly`, `yearly`
     - direktive koje određuju kompresiju: `compress`, `nocompress`, `compresscmd`, `uncompresscmd`, `compressext`, `compressoptions`, `delaycompress`
     - direktiva `rotate BROJ` čini da se čuva `BROJ` rotiranih datoteka, odnosno da log datoteka prođe `BROJ` rotiranja prije brisanja
@@ -64,23 +58,21 @@ author: Vedran Miletić
 
 ## Systemd Journal
 
-- Journal je komponenta `systemd`-a zadužena za pregledavanje i upravljanje log datotekama
-- koristi se paralelno sa Syslogom, a može ga i zamijeniti
-- usluga `journald` sakuplja i pohranjuje log podatke i pripadne metapodatke
+- Journal (daemon `systemd-journald`) je komponenta systemd-a zadužena za pregledavanje i upravljanje log datotekama
+- zamjena za Syslog, iako sustavi mogu koristiti oboje
+- usluga `systemd-journald` sakuplja i pohranjuje log podatke i pripadne metapodatke u binarnom obliku
 - alat `journalctl` služi za pregledavanje log datoteka
-
     - struktura izlaza slična `/var/log/messages`, način rada sličan `less`-u (vrlo neočekivano!)
     - vizualno su označene poruke većeg prioriteta (crvenom bojom, podebljano)
     - vremena se prevode u lokalnu vremensku zonu
     - prikazuju se svi podaci, uključujući rotirane log datoteke
-
 - `journalctl -n BROJ` prikazuje samo zadnjih `BROJ` poruka
 - `journalctl -o OBLIK` prikazuje izlaz u obliku ispisa `OBLIK`, pri čemu `OBLIK` može biti `verbose`, `export`, `json`, ...
 - `journalctl -f` prati poruke kako nastaju
 
 !!! admonition "Zadatak"
     - Usporedite zadnjih 40 unosa u `verbose` i `json` obliku.
-    - Pratite poruke kako nastaju dok korištenjem `yum`-a obrišete pa instalirate paket `nano`.
+    - Pratite poruke kako nastaju dok korištenjem upravitelja obrišete pa instalirate paket GNU nano.
 
 - `journalctl -p PRIORITET` prikazuje samo poruke prioriteta `PRIORITET` ili višeg, pri čemu je `PRIORITET` jedan od `debug`, `info`, `notice`, `warning`, `err`, `crit`, `alert`, `emerg`
 - `journalctl -b` prikazuje poruke od zadnjeg pokretanja

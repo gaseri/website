@@ -16,7 +16,7 @@
 - [Pakiranje deb paketa](../materijali/deb-pakiranje-paketa.md)
 - [Upravljanje uslugama operacijskog sustava](../materijali/systemd-systemctl-upravljanje-uslugama-operacijskog-sustava.md)
 - [Praćenje događaja operacijskog sustava](../materijali/systemd-journalctl-pracenje-dogadjaja-operacijskog-sustava.md)
-- [Automatizacija zadaća operacijskog sustava](../materijali/systemd-cron-automatizacija-zadaca-operacijskog-sustava.md)
+- [Automatizacija zadaća operacijskog sustava](../materijali/systemd-timer-automatizacija-zadaca-operacijskog-sustava.md)
 
 ### Specifičnosti sustava za upravljanje bazom podataka
 
