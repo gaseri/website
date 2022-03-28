@@ -106,6 +106,8 @@ $ sudo docker run hello-world
 (...)
 ```
 
+Nakon odjave i ponovne prijave bit će moguće pokretati Docker kontejnere i kao običan korisnik, bez naredbe sudo.
+
 ## Razvojno okruženje Visual Studio Code
 
 ``` shell

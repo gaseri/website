@@ -40,7 +40,7 @@ Apache možemo instalirati kao i svaki drugi program i pokretati kao i svaki dru
 Apache se na Docker Hubu naziva [httpd](https://hub.docker.com/_/httpd), a zbog svoje popularnosti spada među [službene slike](https://hub.docker.com/search?type=image&image_filter=official) za koje se [garantira redovitost sigurnosnih nadogradnji](https://docs.docker.com/docker-hub/official_images/). Pokretanje kontejnera `httpd` izvodimo naredbom `docker run`:
 
 ``` shell
-$ sudo docker run httpd:2.4
+$ docker run httpd:2.4
 Unable to find image 'httpd:2.4' locally
 2.4: Pulling from library/httpd
 54fec2fa59d0: Pull complete
@@ -98,7 +98,7 @@ U ovom zapisu oblika Common Log Format polja su redom, odvojena razmakom: ime il
 Poslužitelj sad možemo zaustaviti jer želimo prije ponovnog pokretanja učiniti što od nas traži upozorenje `AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message`. Dohvatimo Apachejevu konfiguracijsku datoteku iz kontejnera:
 
 ``` shell
-$ sudo docker run --rm httpd:2.4 cat /usr/local/apache2/conf/httpd.conf > my-httpd.conf
+$ docker run --rm httpd:2.4 cat /usr/local/apache2/conf/httpd.conf > my-httpd.conf
 ```
 
 Uočimo da ovdje imamo novi parametar `--rm` koji Dockeru kaže da izbriše stvoreni kontejner nakon što završi izvođenje. Također, uočimo da uz ime kontejnera navodimo i naredbu koju želimo pokrenuti unutar kontejnera (umjesto zadane naredbe `httpd`), a to je ovdje `cat /usr/local/apache2/conf/httpd.conf`. Izlaz te naredbe spremamo u `my-httpd.conf`. Proučimo tu datoteku (možemo je ispisati korištenjem naredbe `cat` ili otvoriti u uređivaču teksta po želji):
@@ -174,7 +174,7 @@ COPY ./my-httpd.conf /usr/local/apache2/conf/httpd.conf
 Ova datoteka kaže da će novi Docker kontejneri nastajati iz slike `httpd:2.4` u koju je dodatno kopirana datoteka `./my-httpd.conf` na mjesto `/usr/local/apache2/conf/httpd.conf`. Izgradimo novu sliku naredbom `docker build` na način:
 
 ``` shell
-$ sudo docker build -t "my-httpd:2.4-1" .
+$ docker build -t "my-httpd:2.4-1" .
 Sending build context to Docker daemon  27.14kB
 Step 1/2 : FROM httpd:2.4
 ---> b2c2ab6dcf2e
@@ -187,7 +187,7 @@ Successfully tagged my-httpd:2.4-1
 Ovdje su ime `my-httpd` i verzija `2.4-1` proizvoljni, ali `.` nakon imena i verzije je vrlo važna jer označava trenutni direktorij u kojem se nalaze `Dockerfile` i ostale datoteke. Sada pokrenimo kontejner na temelju stvorene slike:
 
 ``` shell
-$ sudo docker run my-httpd:2.4-1
+$ docker run my-httpd:2.4-1
 [Fri May 08 23:33:45.732132 2020] [mpm_event:notice] [pid 1:tid 139777349747840] AH00489: Apache/2.4.43 (Unix) configured -- resuming normal operations
 [Fri May 08 23:33:45.732472 2020] [core:notice] [pid 1:tid 139777349747840] AH00094: Command line: 'httpd -D FOREGROUND'
 ```
@@ -266,7 +266,7 @@ COPY ./www /var/www
 Izgradimo novu sliku naredbom `docker build` na način:
 
 ``` shell
-$ sudo docker build -t "my-httpd:2.4-2" .
+$ docker build -t "my-httpd:2.4-2" .
 Sending build context to Docker daemon   25.6kB
 Step 1/3 : FROM httpd:2.4
 ---> b2c2ab6dcf2e
@@ -281,7 +281,7 @@ Successfully tagged my-httpd:2.4-2
 Verziju smo postavili na `2.4-2` čisto da bude različita od prethodne i da imamo povijest promjena za kasnije pregledavanje. Sada pokrenimo kontejner na temelju stvorene slike:
 
 ``` shell
-$ sudo docker run my-httpd:2.4-2
+$ docker run my-httpd:2.4-2
 [Sun May 10 15:39:27.908202 2020] [mpm_event:notice] [pid 1:tid 140585480324224] AH00489: Apache/2.4.43 (Unix) configured -- resuming normal operations
 [Sun May 10 15:39:27.908547 2020] [core:notice] [pid 1:tid 140585480324224] AH00094: Command line: 'httpd -D FOREGROUND
 ```

@@ -63,7 +63,7 @@ Modul mod_ssl za svoj rad zahtijeva modul [mod_socache_shmcb](https://httpd.apac
 Izgradimo sliku i pokrenimo kontejner:
 
 ``` shell
-$ sudo docker build -t "my-httpd:2.4-4" .
+$ docker build -t "my-httpd:2.4-4" .
 Sending build context to Docker daemon  32.26kB
 Step 1/5 : FROM httpd:2.4
 ---> b2c2ab6dcf2e
@@ -77,7 +77,7 @@ Step 5/5 : COPY server.crt /usr/local/apache2/conf
 ---> d5b1f004015f
 Successfully built d5b1f004015f
 Successfully tagged my-httpd:2.4-4
-$ sudo docker run my-httpd:2.4-4
+$ docker run my-httpd:2.4-4
 [Sun May 10 17:02:53.475776 2020] [ssl:warn] [pid 1:tid 140698297431168] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
 [Sun May 10 17:02:53.476093 2020] [ssl:warn] [pid 1:tid 140698297431168] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
 [Sun May 10 17:02:53.478932 2020] [ssl:warn] [pid 1:tid 140698297431168] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
@@ -111,7 +111,7 @@ Vidimo da HTTPS poslužitelj odgovara na upit, ali ne sadržajem datoteke `index
 Morat ćemo konfigurirati `DocumentRoot` i za HTTPS poslužitelj. Dohvatimo konfiguracijsku datoteku:
 
 ``` shell
-$ sudo docker run --rm httpd:2.4 cat /usr/local/apache2/conf/extra/httpd-ssl.conf > my-httpd-ssl.conf
+$ docker run --rm httpd:2.4 cat /usr/local/apache2/conf/extra/httpd-ssl.conf > my-httpd-ssl.conf
 ```
 
 !!! todo
@@ -190,7 +190,7 @@ COPY ./my-httpd-ssl.conf /usr/local/apache2/conf/extra/httpd-ssl.conf
 Izgradimo sliku i pokrenimo Docker kontejner:
 
 ``` shell
-$ sudo docker build -t "my-httpd:2.4-5" .
+$ docker build -t "my-httpd:2.4-5" .
 Sending build context to Docker daemon  72.19kB
 Step 1/6 : FROM httpd:2.4
 ---> b2c2ab6dcf2e
@@ -208,7 +208,7 @@ Step 6/6 : COPY ./my-httpd-ssl.conf /usr/local/apache2/conf/extra/httpd-ssl.conf
 ---> 0514261bb6fe
 Successfully built 0514261bb6fe
 Successfully tagged my-httpd:2.4-5
-$ sudo docker run my-httpd:2.4-5
+$ docker run my-httpd:2.4-5
 [Sun May 10 18:57:41.346009 2020] [ssl:warn] [pid 1:tid 139678405715072] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
 [Sun May 10 18:57:41.346345 2020] [ssl:warn] [pid 1:tid 139678405715072] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
 [Sun May 10 18:57:41.349298 2020] [ssl:warn] [pid 1:tid 139678405715072] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
@@ -312,7 +312,7 @@ COPY prometej.key /usr/local/apache2/conf
 Izgradit ćemo sliku i pokrenut Docker kontejner:
 
 ``` shell
-$ sudo docker build -t "my-httpd:2.4-6" .
+$ docker build -t "my-httpd:2.4-6" .
 Sending build context to Docker daemon   72.7kB
 Step 1/11 : FROM httpd:2.4
 ---> b2c2ab6dcf2e
@@ -343,7 +343,7 @@ Step 11/11 : COPY prometej.key /usr/local/apache2/conf
 ---> 3b4c03a5e682
 Successfully built 3b4c03a5e682
 
-$ sudo docker run my-httpd:2.4-6
+$ docker run my-httpd:2.4-6
 [Sun May 10 22:49:09.438791 2020] [ssl:warn] [pid 1:tid 140677310489728] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
 [Sun May 10 22:49:09.439105 2020] [ssl:warn] [pid 1:tid 140677310489728] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
 [Sun May 10 22:49:09.439521 2020] [ssl:warn] [pid 1:tid 140677310489728] AH01906: prometej.rm.miletic.net:80:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)

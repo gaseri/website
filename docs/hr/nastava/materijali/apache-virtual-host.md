@@ -75,7 +75,7 @@ $ echo '<html><body><h1>Prometej</h1></body></html>' > www/prometej/html/index.h
 Apache koji koristimo već dolazi s konfiguracijskom datotekom za virtualne domaćine koju možemo prilagoditi i uključiti. Dohvatimo tu datoteku:
 
 ``` shell
-$ sudo docker run --rm httpd:2.4 cat /usr/local/apache2/conf/extra/httpd-vhosts.conf > my-httpd-vhosts.conf
+$ docker run --rm httpd:2.4 cat /usr/local/apache2/conf/extra/httpd-vhosts.conf > my-httpd-vhosts.conf
 ```
 
 Uredimo tu datoteku; uočimo da su nam konfiguracijske naredbe `ServerAdmin`, `ServerName` i `DocumentRoot` već poznate, samo se nalaze unutar bloka naredbi `<VirtualHost>`:
@@ -187,7 +187,7 @@ COPY ./my-httpd-vhosts.conf /usr/local/apache2/conf/extra/httpd-vhosts.conf
 Izgradimo sliku i pokrenimo Docker kontejner:
 
 ``` shell
-$ sudo docker build -t "my-httpd:2.4-3" .
+$ docker build -t "my-httpd:2.4-3" .
 Sending build context to Docker daemon  54.78kB
 Step 1/4 : FROM httpd:2.4
 ---> b2c2ab6dcf2e
@@ -200,7 +200,7 @@ Step 4/4 : COPY ./my-httpd-vhosts.conf /usr/local/apache2/conf/extra/httpd-vhost
 Successfully built 7839a9247066
 Successfully tagged my-httpd:2.4-3
 
-$ sudo docker run my-httpd:2.4-3
+$ docker run my-httpd:2.4-3
 [Sun May 10 22:09:41.239474 2020] [mpm_event:notice] [pid 1:tid 139624574960768] AH00489: Apache/2.4.43 (Unix) configured -- resuming normal operations
 [Sun May 10 22:09:41.239504 2020] [core:notice] [pid 1:tid 139624574960768] AH00094: Command line: 'httpd -D FOREGROUND'
 ```
