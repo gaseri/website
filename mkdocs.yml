@@ -290,6 +290,7 @@ nav:
         - Osnovni pojmovi upravljanja računalnim sustavima i mrežama: hr/nastava/materijali/upravljanje-racunalnim-sustavima-i-mrezama-pojmovi.md
         - Vlasnički softveri posebne namjene i računalne igre: hr/nastava/materijali/vlasnicki-softveri-posebne-namjene-i-racunalne-igre.md
         - Strujanje multimedijskog sadržaja alatom VLC: hr/nastava/materijali/vlc-strujanje-multimedijskog-sadrzaja.md
+        - Konfiguracija virtualne privatne mreže alatom WireGuard: hr/nastava/materijali/wireguard-virtualna-privatna-mreza.md
         - Filtriranje paketa: hr/nastava/materijali/wireshark-filtriranje-paketa.md
         - Snimanje prometa aplikacija: hr/nastava/materijali/wireshark-snimanje-prometa.md
         - Instalacija i konfiguracija sustava za upravljanje sadržajem Wordpress: hr/nastava/materijali/wordpress-instalacija-web-aplikacije.md
