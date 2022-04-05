@@ -35,6 +35,7 @@
 
 - [Osnovni pojmovi upravljanja računalnim sustavima i mrežama](../materijali/upravljanje-racunalnim-sustavima-i-mrezama-pojmovi.md)
 - [Upravljanje dokumentacijom računalnih sustava i mreža](../materijali/upravljanje-dokumentacijom-racunalnih-sustava-i-mreza.md)
+- [Upravljanje dokumentacijom računalnih sustava i mreža](../materijali/upravljanje-zaporkama.md)
 - [Instalacija operacijskog sustava Debian korištenjem instalacijskog alata Debian-Installer](../materijali/debian-installer-instalacija-operacijskog-sustava.md)
 - [Instalacija operacijskih sustava Fedora i CentOS korištenjem instalacijskog alata Anaconda](../materijali/anaconda-instalacija-operacijskog-sustava.md)
 - [Automatizacija konfiguracije i održavanja sustava alatom Ansible](../materijali/ansible-automatizacija-konfiguracije-odrzavanja-sustava.md)
