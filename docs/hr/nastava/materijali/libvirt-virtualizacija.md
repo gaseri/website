@@ -200,6 +200,9 @@ U Virtual Machine Manageru moguće je za pojedini virtualni stroj pronaći ovaj 
 
 ## virsh
 
+!!! hint
+    Za dodatne primjere naredbi proučite [stranicu libvirt na ArchWikiju](https://wiki.archlinux.org/title/libvirt).
+
 [virsh](https://libvirt.org/manpages/virsh.html) je korisničko sučelje naredbenog retka za upravljanje virtualnim strojevima.
 
 Uvjerimo se da je instaliran pokretanjem naredbe `virsh` s parametrom `--version`, odnosno `-v`:

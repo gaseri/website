@@ -117,6 +117,9 @@ Obje tehnologije proširenje su postojećih tehnologija za hardverski potpomognu
 
 #### QEMU i KVM
 
+!!! hint
+    Za dodatne primjere naredbi proučite [stranicu QEMU na ArchWikiju](https://wiki.archlinux.org/title/QEMU).
+
 Kako bismo pokrenuli QEMU kao običan korisnik, moramo biti član grupe `kvm`. U slučaju da to nismo, možemo svojeg korisnika (npr. u primjeru `korisnik`) dodati u tu grupu naredbom:
 
 ``` shell

@@ -5,6 +5,7 @@
 ### Korištenje virtualizacijskih tehnologija
 
 - [Virtualizacija korištenjem KVM-a i QEMU-a](../materijali/kvm-virtualizacija.md)
+- [Konfiguracija cloud slike korištenjem cloud-inita](../materijali/cloud-init-konfiguracija-cloud-slike.md)
 - [Virtualizacija korištenjem Virtual Machine Managera](../materijali/virt-manager-virtualizacija.md)
 - [Virtualizacija korištenjem libvirta](../materijali/libvirt-virtualizacija.md)
 - [Kontejnerizacija alatom Docker](../materijali/docker-kontejneri.md)
