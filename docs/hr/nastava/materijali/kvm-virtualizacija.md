@@ -15,7 +15,7 @@ Virtualizacija je tijekom 2000-ih godina ubrzano razvijala i bila jedna od najpo
 - smanjenje troškova infrastrukture,
 - pokretanje Windowsa ili Linuxa na Mac OS X-u (i brojne druge kombinacije).
 
-Virtualizacija se danas koristi gotovo svuda, ili se namjerava preći na nju kod sljedeće nadogradnje. Primjerice, poslužitelj koji pogoni [www.miletic.net](https://www.miletic.net/) je isto virtualni stroj (tzv. virtualni privatni server, VPS), iznajmljen kod [Hetznera](https://www.hetzner.com/). Porast snage računala, specifično povećanje broja jezgara procesora i količine memorije, učinio je da jedno računalo ima dovoljno resursa za izvođenje više operacijskih sustava te je, usputno s razvojem tehnologije virtualizacije koja omogućuje takvo dijeljenje računala u više njih, razvijena i ekonomija iznajmljivanja virtualnih računala (u "oblaku") po potrebi.
+Virtualizacija se danas koristi gotovo svuda, ili se namjerava preći na nju kod sljedeće nadogradnje. Primjerice, posebna vrsta virtualnog stroja zvana [virtualni privatni poslužitelj](https://www.ibm.com/cloud/learn/vps) (engl. *virtual private server*, kraće VPS) omogućava pristup ovom web sjedištu putem [Tor onion usluge](https://support.torproject.org/onionservices/) (adresu .onion možete pronaći u podnožju stranice). Porast snage računala, specifično povećanje broja jezgara procesora i količine memorije, učinio je da jedno računalo ima dovoljno resursa za izvođenje više operacijskih sustava te je, usputno s razvojem tehnologije virtualizacije koja omogućuje takvo dijeljenje računala u više njih, razvijena i ekonomija iznajmljivanja virtualnih računala (u "oblaku") po potrebi.
 
 ## Potreba za virtualizacijom
 
