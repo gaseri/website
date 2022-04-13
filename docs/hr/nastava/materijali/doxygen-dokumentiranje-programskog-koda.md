@@ -17,7 +17,7 @@ Neki od projekata koji koriste Doxygen za generiranje dokumentacije aplikacijsko
 - [KDE](https://api.kde.org/)
 - [ns-3](https://www.nsnam.org/docs/doxygen/)
 - ROCm-ove biblioteke [rocPRIM](https://codedocs.xyz/ROCmSoftwarePlatform/rocRAND/) i [rocRAND](https://codedocs.xyz/ROCmSoftwarePlatform/rocRAND/)
-- [RxDock](https://www.rxdock.org/api-documentation/devel/html/)
+- [RxDock](https://rxdock.gitlab.io/api-documentation/devel/html/)
 - [VTK](https://vtk.org/doc/nightly/html/)
 
 ## Osnovna konfiguracija

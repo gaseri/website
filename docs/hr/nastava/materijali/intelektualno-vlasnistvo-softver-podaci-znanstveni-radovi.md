@@ -126,7 +126,7 @@ Primjerice, [PyMOL](https://pymol.org/) je dostupan pod [licencom](https://githu
 >
 > (...)
 
-[RxDock](https://www.rxdock.org/) je, kao i njegov temelj [rDock](http://rdock.sourceforge.net/), [dostupan pod licencom LGPLv3](https://gitlab.com/rxdock/rxdock/blob/master/LICENSE.md).
+[RxDock](https://rxdock.gitlab.io/) je, kao i njegov temelj [rDock](http://rdock.sourceforge.net/), [dostupan pod licencom LGPLv3](https://gitlab.com/rxdock/rxdock/blob/master/LICENSE.md).
 
 #### Problemi autorskih prava
 
@@ -159,7 +159,7 @@ Primjeri patenata:
 U zajednici slobodnog softvera otvorenog koda postoji nepisano pravilo da se postojeća imena softvera ne dupliciraju, bila registrirana kao zaštitni znak ili ne.
 
 - Mozillin web preglednik, inicijalno nazvan Firebird, postao [Firefox](https://www.mozilla.org/firefox/) kako bi se razlikovao od sustava za upravljanje bazom podataka [Firebird](https://firebirdsql.org/).
-- Isto vrijedi i kod odvajanja (tzv. forkanja) projekta, paket uredskih alata [OpenOffice.org](https://www.openoffice.org/) je postao [LibreOffice](https://www.libreoffice.org/), program prevoditelj [GCC](https://gcc.gnu.org/) je neko vrijeme bio poznat kao [EGCS](https://www.gnu.org/software/gcc/egcs-1.0/), a alat za molekularni docking [rDock](http://rdock.sourceforge.net/) forkan je kao [RxDock](https://www.rxdock.org/).
+- Isto vrijedi i kod odvajanja (tzv. forkanja) projekta, paket uredskih alata [OpenOffice.org](https://www.openoffice.org/) je postao [LibreOffice](https://www.libreoffice.org/), program prevoditelj [GCC](https://gcc.gnu.org/) je neko vrijeme bio poznat kao [EGCS](https://www.gnu.org/software/gcc/egcs-1.0/), a alat za molekularni docking [rDock](http://rdock.sourceforge.net/) forkan je kao [RxDock](https://rxdock.gitlab.io/).
 
 #### Problemi zaštitnih znakova
 

@@ -463,20 +463,20 @@ Ovdje možemo primijetiti brojne informacije. Odmah na početku vidimo podatke o
 
 [Server Name Indication](https://en.wikipedia.org/wiki/Server_Name_Indication) (SNI) je proširenje TLS-a kojim klijent navodi u procesu rukovanja ime poslužitelja na koji se povezuje, što dozvoljava da na jednoj IP adresi postoji više od jednog HTTPS poslužitelja. Kako gotovo sve novije implementacije TLS-a podržavaju SNI, njegova [uporaba je u porastu posljednjih godina](https://developer.akamai.com/blog/2017/10/20/encrypting-web-all-need-support-tls-sni-remaining-clients).
 
-Na istom poslužitelju na kojem je `example.group.miletic.net` je i [web sjedište projekta RxDock](https://www.rxdock.org/) `www.rxdock.org`. Iskoristimo parametar `-servername` da navedemo ime poslužitelja na koji se povezujemo:
+Na istom poslužitelju na kojem je `example.group.miletic.net` su i [usluge i aplikacije koje je grupa razvila](https://apps.group.miletic.net/) `apps.group.miletic.net`. Iskoristimo parametar `-servername` da navedemo ime poslužitelja na koji se povezujemo:
 
 ``` shell
-$ openssl s_client -connect example.group.miletic.net:443 -servername www.rxdock.org
+$ openssl s_client -connect example.group.miletic.net:443 -servername apps.group.miletic.net
 CONNECTED(00000003)
 depth=2 O = Digital Signature Trust Co., CN = DST Root CA X3
 verify return:1
 depth=1 C = US, O = Let's Encrypt, CN = R3
 verify return:1
-depth=0 CN = rxdock.org
+depth=0 CN = apps.group.miletic.net
 verify return:1
 ---
 Certificate chain
- 0 s:CN = rxdock.org
+ 0 s:CN = apps.group.miletic.net
    i:C = US, O = Let's Encrypt, CN = R3
  1 s:C = US, O = Let's Encrypt, CN = R3
    i:O = Digital Signature Trust Co., CN = DST Root CA X3
@@ -512,7 +512,7 @@ n2ufgLXWBUg2m4e4cjN7tPdZqlQdR8KKV/ssiUbDj8L/yOuxkjm8NYBMRUOKrMN5
 f4dnt69CcpNmTTcw6qENs3mcz5IYmVoB4PRD2DBQ0swsPIxcpViaHbcxEgfIIFFU
 xvZop7QEC07dsp1+T5+4WP4EWDHfpiuqxcJHnndjPg==
 -----END CERTIFICATE-----
-subject=CN = rxdock.org
+subject=CN = apps.group.miletic.net
 
 issuer=C = US, O = Let's Encrypt, CN = R3
 (...)

@@ -783,7 +783,7 @@ Porastom procesne moći računala, naročito zahvaljujući računanju na grafič
 1. Ballester, P. J. & Mitchell, J. B. O. [A machine learning approach to predicting protein--ligand binding affinity with applications to molecular docking](https://academic.oup.com/bioinformatics/article/26/9/1169/199938). Bioinformatics 26, 1169--1175 (2010).
 1. Kinnings, S. L. et al. [A Machine Learning-Based Method To Improve Docking Scoring Functions and Its Application to Drug Repurposing](https://pubs.acs.org/doi/abs/10.1021/ci100369f). J. Chem. Inf. Model. 51, 408--419 (2011).
 1. [Vina](https://vina.scripps.edu/)
-1. [RxDock](https://www.rxdock.org/)
+1. [RxDock](https://rxdock.gitlab.io/)
 1. [Glide](https://www.schrodinger.com/products/glide)
 
 ### Paralelizacija predviđanja pristajanja malih molekula na proteine {[PPHS](nastava/kolegiji/PPHS.md)} [Maja Abramović]
@@ -797,7 +797,7 @@ Visokoprotočni virtualni pregled molekula koje su potencijalni lijekovi kroz pr
 1. [Slurm](https://slurm.schedmd.com/)
 1. [Virtual Flow](https://virtual-flow.org/)
 1. Ruiz-Carmona S, Alvarez-Garcia D, Foloppe N, Garmendia-Doval AB, Juhos S, Schmidtke P, et al. [rDock: A Fast, Versatile and Open Source Program for Docking Ligands to Proteins and Nucleic Acids](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003571). PLoS Comput Biol 10(4): e1003571 (2014). [doi:10.1371/journal.pcbi.1003571](https://doi.org/10.1371/journal.pcbi.1003571)
-1. [RxDock](https://www.rxdock.org/)
+1. [RxDock](https://rxdock.gitlab.io/)
 1. [C++11 thread support library](https://en.cppreference.com/w/cpp/thread)
 1. [Taskflow (C++14)](https://taskflow.github.io/)
 1. [C++17 algorithms library](https://en.cppreference.com/w/cpp/algorithm)

@@ -13,4 +13,4 @@ Primjeri znanstvenih softvera:
 - [Madagascar](https://www.reproducibility.org/), softver za [obradu trodimenzionalnih seizmičkih podataka](https://youtu.be/B1euM2aISGk)
 - [gem5](https://gem5.org/), softver za [simulaciju mikroprocesora](https://youtu.be/0K-v_N-WHKs)
 - [OpenFOAM](https://openfoam.org/), softver za [računalnu dinamike fluida](https://youtu.be/cSsbcuZvO1I)
-- [RxDock](https://www.rxdock.org/), softver za [optimizaciju pristajanja malih molekula na proteine](https://youtu.be/_kmMTuzP-W4)
+- [RxDock](https://rxdock.gitlab.io/), softver za [optimizaciju pristajanja malih molekula na proteine](https://youtu.be/_kmMTuzP-W4)
