@@ -10,93 +10,180 @@ MariaDB zadržava visok nivo kompatibilnosti s MySQL-om, ali proširuje njegovu 
 
 Ime MariaDB dao je autor MySQL-a [Michael "Monty" Widenius](https://en.wikipedia.org/wiki/Michael_Widenius) prema svojoj mlađoj kćeri koja se zove Maria. Slično tome, ime MySQL dao je prema imenu starije kćeri koja se zove My.
 
-## Konfiguracija poslužitelja MariaDB
-
 !!! note
     Kako MariaDB zadržava što je moguće veću razinu kompatibilnosti s MySQL-om, uočit ćemo kako se u naredbama ljuske, konfiguracijskim naredbama i nazivima datoteka na mnogo mjesta može koristiti naziv MySQL umjesto MariaDB. Primjerice, klijent sučelja naredbenog retka dostupan je naredbama `mariadb` i `mysql`, a poslužitelj naredbama `mariadbd` (MariaDB daemon) i `mysqld` (MySQL daemon).
 
-Nakon instalacije sva konfiguracija poslužitelja MariaDB nalazi se u `/etc/mysql`. Nama će u nastavku biti zanimljive samo datoteka `/etc/mysql/mariadb.cnf` i datoteke u direktorijima  `/etc/mysql/mariadb.conf.d` i `/etc/mysql/mariadb.conf.d`. Razmotrimo za početak sadržaj datoteke `/etc/mysql/mariadb.cnf`:
+## Slika `mariadb` na Docker Hubu
 
-``` ini
-# The MariaDB configuration file
-#
-# The MariaDB/MySQL tools read configuration files in the following order:
-# 1. "/etc/mysql/mariadb.cnf" (this file) to set global defaults,
-# 2. "/etc/mysql/conf.d/*.cnf" to set global options.
-# 3. "/etc/mysql/mariadb.conf.d/*.cnf" to set MariaDB-only options.
-# 4. "~/.my.cnf" to set user-specific options.
-#
-# If the same option is defined multiple times, the last one will apply.
-#
-# One can use all long options that the program supports.
-# Run program with --help to get a list of available options and with
-# --print-defaults to see which it would actually understand and use.
-
-#
-# This group is read both both by the client and the server
-# use it for options that affect everything
-#
-[client-server]
-
-# Import all .cnf files from configuration directory
-!includedir /etc/mysql/conf.d/
-!includedir /etc/mysql/mariadb.conf.d/
-```
-
-Uočimo kako gotovo čitav sadržaj datoteke čine komentari i prazni retci, osim odjeljka `[client-server]` i dvije naredbe `!includedir` kojima se uključuju konfiguracijske datoteke iz dva već ranije spomenuta direktorija.
-
-U direktoriju `/etc/mysql/conf.d/` datoteka `mysql.cnf` sadrži samo oznaku odjeljka, a datoteka `mysqldump.cnf` tiče se konfiguracije naredbe `mysqldump` koja omogućuje pohranjivanje baza u tekstualnom zapisu kao niz SQL upita i koja nam u nastavku neće trebati.
-
-U direktoriju `/etc/mysql/mariadb.conf.d/` nalazimo konfiguraciju klijenta (`50-client.cnf`), svih aplikacija za pristup poslužitelju (`50-mysql-clients.cnf`), konfiguraciju za sigurno pokretanje u slučaju problema (`50-mysqld_safe.cnf`) i konfiguraciju poslužitelja (`50-server.cnf`). Razmtorimo sadržaj posljednje datoteke:
-
-``` ini
-#
-# These groups are read by MariaDB server.
-# Use it for options that only the server (but not clients) should see
-#
-# See the examples of server my.cnf files in /usr/share/mysql
-
-# this is read by the standalone daemon and embedded servers
-[server]
-
-# this is only for the mysqld standalone daemon
-[mysqld]
-
-#
-# * Basic Settings
-#
-user                    = mysql
-pid-file                = /run/mysqld/mysqld.pid
-socket                  = /run/mysqld/mysqld.sock
-#port                   = 3306
-basedir                 = /usr
-datadir                 = /var/lib/mysql
-tmpdir                  = /tmp
-lc-messages-dir         = /usr/share/mysql
-#skip-external-locking
-
-# Instead of skip-networking the default is now to listen only on
-# localhost which is more compatible and is not less secure.
-bind-address            = 127.0.0.1
-
-# ...
-```
-
-Uočimo kako su u odjeljku `[mysqld]` koji se odnosi na poslužitelj MariaDB navedene brojne konfiguracijske naredbe, primjerice:
-
-- `user`, kojom se postavlja ime korisnika koji pokreće poslužitelj,
-- `pid`, kojom se postavlja putanja do datoteke u kojoj je naveden PID procesa poslužitelja,
-- `datadir`, kojom se navodi putanja do podatkovnog direktorija u kojem se spremaju baze podataka i binarni logovi
-- `tmpdir`, kojom se navodi putanja do direktorija s privremenim datotekama i
-- `lc-messages-dir`, kojom se navodi putanja do direktorija s lokalizacijskim datotekama (prijevodima na različite jezike).
-
-Povežimo se klijentom na poslužitelj:
+Sustav za upravljanje bazom podataka MariaDB koristit ćemo u obliku [Docker](https://www.docker.com/) [kontejnera](https://www.docker.com/resources/what-container/). Na [Docker Hubu](https://hub.docker.com/) moguće je pronaći sliku [mariadb](https://hub.docker.com/_/mariadb), koja je jedna od [službenih slika](https://hub.docker.com/search?type=image&image_filter=official). Koristit ćemo [verziju 10.7](https://mariadb.com/kb/en/changes-improvements-in-mariadb-107/), koja je posljednja izdana stabilna verzija. Pokretanje kontejnera `maridab` izvodimo naredbom `docker run`:
 
 ``` shell
-$ sudo mariadb
+$ docker run mariadb:10.7
+Unable to find image 'mariadb:10.7' locally
+10.7: Pulling from library/mariadb
+e0b25ef51634: Pull complete
+8aa3f605beb6: Pull complete
+c43298fa9eba: Pull complete
+f565e2a61005: Pull complete
+3b5a73a7467f: Pull complete
+d219b4dd5889: Pull complete
+008719f0a8ad: Pull complete
+cdb2ef26c44d: Pull complete
+16f6e068c19c: Pull complete
+ecfd25d3e0e6: Pull complete
+fc6e322e4875: Pull complete
+Digest: sha256:9d2cde0e154989d499114bf468fab23497120cf889fb6965050c0f8fcf69d037
+Status: Downloaded newer image for mariadb:10.7
+2022-04-15 16:51:01+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.7.3+maria~focal started.
+2022-04-15 16:51:01+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+2022-04-15 16:51:01+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.7.3+maria~focal started.
+2022-04-15 16:51:01+00:00 [ERROR] [Entrypoint]: Database is uninitialized and password option is not specified
+        You need to specify one of MARIADB_ROOT_PASSWORD, MARIADB_ALLOW_EMPTY_ROOT_PASSWORD and MARIADB_RANDOM_ROOT_PASSWORD
+```
+
+Docker slika ne dozvoljava pokretanje bez navođenja zaporke korijenskog korisnika koja će se korstiti. Navedimo ju putem varijable okoline `MARIADB_ROOT_PASSWORD` parametrom `--env` i dodajmo parametar `--detach` kako bismo zadržali mogućnost daljnjeg rada u terminalu:
+
+``` shell
+$ docker run --detach --env MARIADB_ROOT_PASSWORD=m0j4z4p0rk4 mariadb:10.7
+b618846ff70c0012813dc62c02a3e262f29d0ac6e54d4504ff042914e7f6d9e9
+```
+
+Naredbom `docker ps` možemo se uvjeriti da je kontejner pokrenut:
+
+``` shell
+$ docker ps
+CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS         PORTS      NAMES
+b618846ff70c   mariadb:10.7   "docker-entrypoint.s…"   2 minutes ago   Up 2 minutes   3306/tcp   cranky_jang
+```
+
+Naredbom `docker logs` koja kao argument prima identifikator kontejnera možemo se uvjeriti da je pokretanje poslužitelja bilo uspješno:
+
+``` shell
+$ docker logs b618846ff70c0012813dc62c02a3e262f29d0ac6e54d4504ff042914e7f6d9e9
+2022-04-15 17:07:23+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.7.3+maria~focal started.
+2022-04-15 17:07:23+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+2022-04-15 17:07:23+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.7.3+maria~focal started.
+2022-04-15 17:07:24+00:00 [Note] [Entrypoint]: Initializing database files
+2022-04-15 17:07:24 0 [Warning] You need to use --log-bin to make --expire-logs-days or --binlog-expire-logs-seconds work.
+
+
+PLEASE REMEMBER TO SET A PASSWORD FOR THE MariaDB root USER !
+To do so, start the server, then issue the following command:
+
+'/usr/bin/mysql_secure_installation'
+
+which will also give you the option of removing the test
+databases and anonymous user created by default.  This is
+strongly recommended for production servers.
+
+See the MariaDB Knowledgebase at https://mariadb.com/kb
+
+Please report any problems at https://mariadb.org/jira
+
+The latest information about MariaDB is available at https://mariadb.org/.
+
+Consider joining MariaDB's strong and vibrant community:
+https://mariadb.org/get-involved/
+
+2022-04-15 17:07:25+00:00 [Note] [Entrypoint]: Database files initialized
+2022-04-15 17:07:25+00:00 [Note] [Entrypoint]: Starting temporary server
+2022-04-15 17:07:25+00:00 [Note] [Entrypoint]: Waiting for server startup
+2022-04-15 17:07:25 0 [Note] mariadbd (server 10.7.3-MariaDB-1:10.7.3+maria~focal) starting as process 155 ...
+2022-04-15 17:07:25 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2022-04-15 17:07:25 0 [Note] InnoDB: Number of transaction pools: 1
+2022-04-15 17:07:25 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2022-04-15 17:07:25 0 [Note] InnoDB: Using Linux native AIO
+2022-04-15 17:07:25 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+2022-04-15 17:07:25 0 [Note] InnoDB: Completed initialization of buffer pool
+2022-04-15 17:07:25 0 [Note] InnoDB: 128 rollback segments are active.
+2022-04-15 17:07:25 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2022-04-15 17:07:25 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2022-04-15 17:07:25 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2022-04-15 17:07:25 0 [Note] InnoDB: 10.7.3 started; log sequence number 41361; transaction id 14
+2022-04-15 17:07:25 0 [Note] Plugin 'FEEDBACK' is disabled.
+2022-04-15 17:07:25 0 [Warning] You need to use --log-bin to make --expire-logs-days or --binlog-expire-logs-seconds work.
+2022-04-15 17:07:25 0 [Warning] 'user' entry 'root@b618846ff70c' ignored in --skip-name-resolve mode.
+2022-04-15 17:07:25 0 [Warning] 'proxies_priv' entry '@% root@b618846ff70c' ignored in --skip-name-resolve mode.
+2022-04-15 17:07:25 0 [Note] mariadbd: ready for connections.
+Version: '10.7.3-MariaDB-1:10.7.3+maria~focal'  socket: '/run/mysqld/mysqld.sock'  port: 0  mariadb.org binary distribution
+2022-04-15 17:07:26+00:00 [Note] [Entrypoint]: Temporary server started.
+Warning: Unable to load '/usr/share/zoneinfo/leap-seconds.list' as time zone. Skipping it.
+Warning: Unable to load '/usr/share/zoneinfo/leapseconds' as time zone. Skipping it.
+Warning: Unable to load '/usr/share/zoneinfo/tzdata.zi' as time zone. Skipping it.
+2022-04-15 17:07:27+00:00 [Note] [Entrypoint]: Securing system users (equivalent to running mysql_secure_installation)
+
+2022-04-15 17:07:27+00:00 [Note] [Entrypoint]: Stopping temporary server
+2022-04-15 17:07:27 0 [Note] mariadbd (initiated by: root[root] @ localhost []): Normal shutdown
+2022-04-15 17:07:27 0 [Note] InnoDB: FTS optimize thread exiting.
+2022-04-15 17:07:27 0 [Note] InnoDB: Starting shutdown...
+2022-04-15 17:07:27 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+2022-04-15 17:07:27 0 [Note] InnoDB: Buffer pool(s) dump completed at 220419 17:07:27
+2022-04-15 17:07:27 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+2022-04-15 17:07:27 0 [Note] InnoDB: Shutdown completed; log sequence number 42335; transaction id 15
+2022-04-15 17:07:27 0 [Note] mariadbd: Shutdown complete
+
+2022-04-15 17:07:28+00:00 [Note] [Entrypoint]: Temporary server stopped
+
+2022-04-15 17:07:28+00:00 [Note] [Entrypoint]: MariaDB init process done. Ready for start up.
+
+2022-04-15 17:07:28 0 [Note] mariadbd (server 10.7.3-MariaDB-1:10.7.3+maria~focal) starting as process 1 ...
+2022-04-15 17:07:28 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2022-04-15 17:07:28 0 [Note] InnoDB: Number of transaction pools: 1
+2022-04-15 17:07:28 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2022-04-15 17:07:28 0 [Note] InnoDB: Using Linux native AIO
+2022-04-15 17:07:28 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+2022-04-15 17:07:28 0 [Note] InnoDB: Completed initialization of buffer pool
+2022-04-15 17:07:28 0 [Note] InnoDB: 128 rollback segments are active.
+2022-04-15 17:07:28 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2022-04-15 17:07:28 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2022-04-15 17:07:28 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2022-04-15 17:07:28 0 [Note] InnoDB: 10.7.3 started; log sequence number 42335; transaction id 14
+2022-04-15 17:07:28 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+2022-04-15 17:07:28 0 [Note] Plugin 'FEEDBACK' is disabled.
+2022-04-15 17:07:28 0 [Warning] You need to use --log-bin to make --expire-logs-days or --binlog-expire-logs-seconds work.
+2022-04-15 17:07:28 0 [Note] InnoDB: Buffer pool(s) load completed at 220419 17:07:28
+2022-04-15 17:07:28 0 [Note] Server socket created on IP: '0.0.0.0'.
+2022-04-15 17:07:28 0 [Note] Server socket created on IP: '::'.
+2022-04-15 17:07:28 0 [Note] mariadbd: ready for connections.
+Version: '10.7.3-MariaDB-1:10.7.3+maria~focal'  socket: '/run/mysqld/mysqld.sock'  port: 3306  mariadb.org binary distribution
+```
+
+Poslužitelj zaustavljamo naredbom `docker kill`:
+
+``` shell
+$ docker kill b618846ff70c0012813dc62c02a3e262f29d0ac6e54d4504ff042914e7f6d9e9
+b618846ff70c0012813dc62c02a3e262f29d0ac6e54d4504ff042914e7f6d9e9
+```
+
+Naredba `docker ps` ukazuje da poslužitelj više nije pokrenut:
+
+``` shell
+$ docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+```
+
+Uvjerili smo se da možemo pokrenuti i zaustaviti poslužitelj, ali [klijent](https://youtu.be/lMxDPYraXG4) se neće moći povezati na ovako pokrenut poslužitelj. Naime, kako bi se mogla ostvariti veza klijenta i poslužitelja, oni moraju biti u istoj mreži i poslužitelj mora biti imenovan. Stvorimo mrežu naredbom `docker network`:
+
+``` shell
+$ docker network create db-network
+ef5139aa1ec739e9c5da903581328a537380095b9117b555d72a1b33678836b7
+```
+
+Pokrenimo poslužitelj na toj mreži i nazovimo ga `fidtri-mariadb` korištenjem parametra `--name`:
+
+``` shell
+$ docker run --detach --network db-network --name fidtri-mariadb --env MARIADB_ROOT_PASSWORD=m0j4z4p0rk4 mariadb:10.7
+39b77a3679fd4e5c8638d63d3d577464b46c3ee0b9cc34a965b100355b9bb6aa
+```
+
+Pokrenimo klijent na istoj mreži i iskoristimo parametar `-h` naredbe `mariadb` za navođenje imena poslužitelja, parametar `-u` za navođenje imena korisnika i parametar `-p` za uključivanje upita za zaporkom. Uočimo pritom kako naredba `mariadb` ne očekuje razmak između parametra i njegove vrijednosti.
+
+``` shell
+$ docker run -it --network db-network mariadb:10.7 mariadb -hfidtri-mariadb -uroot -p
+Enter password:
 Welcome to the MariaDB monitor.  Commands end with ; or \g.
-Your MariaDB connection id is 52
-Server version: 10.3.25-MariaDB-0ubuntu0.20.04.1 Ubuntu 20.04
+Your MariaDB connection id is 3
+Server version: 10.7.3-MariaDB-1:10.7.3+maria~focal mariadb.org binary distribution
 
 Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
 
@@ -104,6 +191,8 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 MariaDB [(none)]>
 ```
+
+Nakon unošenja zaporke vidimo da smo se uspješno povezali na poslužitelj.
 
 U ljusci klijenta MariaDB dostupne su nam naredbe jezika SQL i brojne druge specifične za MariaDB. Naredbe jezika SQL su slične među različitim sustavima za upravljanje bazama podataka i njih ćemo koristiti nešto kasnije. Jedna od naredbi specifičnih za MariaDB je `SHOW` ([dokumentacija](https://mariadb.com/kb/en/show/)) koja može prikazati popis autora MariaDB korištenjem parametra `AUTHORS` ([dokumentacija](https://mariadb.com/kb/en/show-authors/)):
 
@@ -138,8 +227,9 @@ SHOW DATABASES;
 | information_schema |
 | mysql              |
 | performance_schema |
+| sys                |
 +--------------------+
-3 rows in set (0.000 sec)
+4 rows in set (0.001 sec)
 ```
 
 Naposlijetku, moguće je prikazati globalne varijable ili varijable trenutne sesije parametrom `VARIABLES` ([dokumentacija](https://mariadb.com/kb/en/show-variables/)). U slučaju da želimo prikazati globalnu varijablu, dodajemo i parametar `GLOBAL`, a kod navođenja imena varijable u obliku znakovnog niza koristimo standardni SQL operator `LIKE` ([dokumentacija](https://mariadb.com/kb/en/like/)). MariaDB [podržava jednostruke i dvostruke navodnike kod navođenja znakovnih nizova](https://mariadb.com/kb/en/string-literals/). Varijabla koja nas zanima je `have_ssl` pa je naredba oblika:
@@ -170,10 +260,21 @@ MariaDB [podržava šifriranje](https://mariadb.com/kb/en/securing-mariadb-encry
 
 #### Stvaranje asimetričnih ključeva
 
-[Ključeve i X.509 certifikate](https://mariadb.com/docs/security/encryption/in-transit/create-self-signed-certificates-keys-openssl/#create-self-signed-certificates-keys-openssl) koje će MariaDB koristiti stvaramo korištenjem OpenSSL-a i Easy-RSA. Inicijalizirajmo infrastrukturu privatnog ključa i stvorimo ključ i certifikat autoriteta certifikata:
+!!! note
+    U nastavku stvaramo ključeve korištenjem [Easy-RSA](https://community.openvpn.net/openvpn/wiki/EasyRSA), koji je skup skripti za olakšavanje stvaranja RSA ključeva korištenjem OpenSSL-a. Alternativno, moguće je certifikate napraviti i ručnim korištenjem OpenSSL-a, kako je to opisano u koracima 3, 4, 5 i 6 u [članku How to set up MariaDB SSL and secure connections from clients na nixCraftu](https://www.cyberciti.biz/faq/how-to-setup-mariadb-ssl-and-secure-connections-from-clients/).
+
+[Ključeve i X.509 certifikate](https://mariadb.com/docs/security/encryption/in-transit/create-self-signed-certificates-keys-openssl/#create-self-signed-certificates-keys-openssl) koje će MariaDB koristiti stvaramo korištenjem OpenSSL-a i Easy-RSA. Inicijalizirajmo infrastrukturu privatnog ključa i kopirajmo direktorij s informacijama o vrstama X.509 certifikata i datoteke s postavkama OpenSSL-a:
 
 ``` shell
 $ easyrsa init-pki
+$ cp -r /etc/easy-rsa/x509-types pki
+$ cp /etc/easy-rsa/openssl-easyrsa.cnf pki
+$ cp /etc/easy-rsa/vars pki
+```
+
+Izgradimo prvo ključ i certifikat autoriteta certifikata:
+
+``` shell
 $ easyrsa build-ca
 ```
 
@@ -191,38 +292,29 @@ Izgradimo ključ i certifikat koji će klijent koristiti:
 $ easyrsa build-client-full moj-mariadb-klijent nopass
 ```
 
-Kopirajmo stvoreni certifikat autoriteta certifikata na mjesto s kojeg ćemo ga koristiti pa mu postavimo odgovarajućeg vlasnika i grupu te dozvole:
+Pripremit ćemo direktorije s konfiguracijom i certifikatima za poslužiteljski i klijentski kontejner. Kopirajmo stvoreni certifikat autoriteta certifikata, poslužiteljski certifikat i ključ na mjesto s kojeh ćemo ih koristiti te dozvolimo ostalim korisnicima (među kojima je i korisnik `mysql` koji pokreće MariaDB poslužitelj) čitanje datoteka:
 
 ``` shell
-$ sudo mkdir /etc/mysql/certs
-
-$ sudo cp pki/ca.crt /etc/mysql/certs/ca-cert.pem
-$ sudo chmod go-rwx /etc/mysql/certs/ca-cert.pem
+$ mkdir -p mariadb-server-conf/certs
+$ cp pki/ca.crt mariadb-server-conf/certs/ca-cert.pem
+$ cp pki/issued/moj-mariadb-posluzitelj.crt mariadb-server-conf/certs/server-cert.pem
+$ cp pki/private/moj-mariadb-posluzitelj.key mariadb-server-conf/certs/server-key.pem
+$ chmod a+r mariadb-server-conf/certs/*.pem
 ```
 
-Napravimo isto za poslužiteljski certifikat i ključ:
+Analogno pripremimo certifikate i ključeve za klijentski kontejner:
 
 ``` shell
-$ sudo cp pki/issued/moj-mariadb-posluzitelj.crt /etc/mysql/certs/server-cert.pem
-$ sudo chmod go-rwx /etc/mysql/certs/server-cert.pem
-
-$ sudo cp pki/private/moj-mariadb-posluzitelj.key /etc/mysql/certs/server-key.pem
-$ sudo chmod go-rwx /etc/mysql/certs/server-key.pem
-```
-
-Naposlijetku, postavimo na isto mjesto i klijentski certifikat i ključ:
-
-``` shell
-$ sudo cp pki/issued/moj-mariadb-klijent.crt /etc/mysql/certs/client-cert.pem
-$ sudo chmod go-rwx /etc/mysql/certs/client-cert.pem
-
-$ sudo cp pki/private/moj-mariadb-klijent.key /etc/mysql/certs/client-key.pem
-$ sudo chmod go-rwx /etc/mysql/certs/client-key.pem
+$ mkdir -p mariadb-client-conf/certs
+$ cp pki/ca.crt mariadb-client-conf/certs/ca-cert.pem
+$ cp pki/issued/moj-mariadb-klijent.crt mariadb-client-conf/certs/client-cert.pem
+$ cp pki/private/moj-mariadb-klijent.key mariadb-client-conf/certs/client-key.pem
+$ chmod a+r mariadb-client-conf/certs/*.pem
 ```
 
 #### Uključivanje ključeva u konfiguracijsku datoteku
 
-Nakon stvaranja privatnog ključa i X.509 certifikata te njihovog premještanja u `/etc/mysql/certs` uključit ćemo njihovo korištenje konfiguracijskim naredbama:
+Nakon stvaranja privatnog ključa i X.509 certifikata te njihovog kopiranja u direktorije iz kojih će se koristiti uključit ćemo njihovo korištenje konfiguracijskim naredbama:
 
 - `ssl_cert` ([dokumentacija](https://mariadb.com/docs/reference/mdb/system-variables/ssl_cert/)), kojom ćemo navesti X.509 certifikat u formatu PEM
 - `ssl_key` ([dokumentacija](https://mariadb.com/docs/reference/mdb/system-variables/ssl_key/)), kojom ćemo navesti privatni ključ u formatu PEM
@@ -230,37 +322,54 @@ Nakon stvaranja privatnog ključa i X.509 certifikata te njihovog premještanja 
 
 Više informacija o ovim konfiguracijskim naredbama može se naći u [službenoj dokumentaciji](https://mariadb.com/docs/security/encryption/in-transit/enable-tls-server/).
 
-MariaDB ne preporuča modificiranje postojećih konfiguracijskih datoteka, već dodavanje novih. U direktoriju `/etc/mysql/mariadb.conf.d` korištenjem uređivača teksta GNU nano ili bilo kojeg drugog stvorimo datoteku `90-ssl.cnf`:
+MariaDB ne preporuča modificiranje postojećih konfiguracijskih datoteka, već dodavanje novih. U direktoriju za konfiguraciju poslužitelja korištenjem uređivača teksta GNU nano ili bilo kojeg drugog stvorimo datoteku `ssl.cnf`:
 
 ``` shell
-$ sudo nano /etc/mysql/mariadb.conf.d/90-ssl.cnf
+$ nano mariadb-server-conf/ssl.cnf
 ```
 
-Jako je važno da nastavak bude `.cnf`, a ne `.conf` ili neka treća jer konfiguracijska naredba `!includedir` učitava u danom direktoriju samo datoteke s nastavkom `.cnf`. U njoj postavimo željene postavke poslužiteljskih i klijentskih ključeva i certifikata:
+Jako je važno da nastavak bude `.cnf`, a ne `.conf` ili neka treća jer konfiguracijska naredba `!includedir` koju MariaDB koristi učitava u danom direktoriju samo datoteke s nastavkom `.cnf`. U njoj postavimo putanje poslužiteljskih ključeva i certifikata:
 
 ``` ini
 [mariadb]
 
-ssl_cert = /etc/mysql/certs/server-cert.pem
-ssl_key = /etc/mysql/certs/server-key.pem
-ssl_ca = /etc/mysql/certs/ca-cert.pem
-
-[client-mariadb]
-
-ssl_cert = /etc/mysql/certs/client-cert.pem
-ssl_key = /etc/mysql/certs/client-key.pem
-ssl_ca = /etc/mysql/certs/ca-cert.pem
+ssl_cert = /etc/mysql/conf.d/certs/server-cert.pem
+ssl_key = /etc/mysql/conf.d/certs/server-key.pem
+ssl_ca = /etc/mysql/conf.d/certs/ca-cert.pem
 ```
 
-Umjesto odjeljka `[mariadb]` također smo konfiguracijske naredbe mogli staviti i u odjeljak `[server]` ili `[mysqld]` koje poslužitelj čita kod pokretanja (detaljnije objašnjenje pojedinih odjeljaka moguće je [naći u dijelu službene dokumentacije Configuring MariaDB with Option Files](https://mariadb.com/kb/en/configuring-mariadb-with-option-files/#server-option-groups)), dok smo umjesto odjeljka `[client-mariadb]` također mogli koristiti `[client]` ([detalji](https://mariadb.com/kb/en/configuring-mariadb-with-option-files/#client-option-groups)).
-
-Pokrenimo ponovno poslužitelj kako bi učitao nove postavke:
+Analogno stvorimo konfiguracijsku datoteku klijenta i u njoj postavimo putanje za klijentske ključeve i certifikate:
 
 ``` shell
-$ sudo systemctl restart mariadb
+$ nano mariadb-client-conf/ssl.cnf
 ```
 
-Kako bismo se uvjerili da je TLS uključen, povežimo se klijentom (naredba `mariadb`) kao i ranije pa iskoristimo naredbu `SHOW` za prikaz vrijednosti globalne varijable `have_ssl`:
+``` ini
+[client-mariadb]
+
+ssl_cert = /etc/mysql/conf.d/certs/client-cert.pem
+ssl_key = /etc/mysql/conf.d/certs/client-key.pem
+ssl_ca = /etc/mysql/conf.d/certs/ca-cert.pem
+```
+
+!!! note
+    Umjesto u odjeljak `[mariadb]`, konfiguracijske smo naredbe mogli staviti u `[server]` ili `[mysqld]` koje poslužitelj čita kod pokretanja (detaljnije objašnjenje pojedinih odjeljaka moguće je [naći u dijelu službene dokumentacije Configuring MariaDB with Option Files](https://mariadb.com/kb/en/configuring-mariadb-with-option-files/#server-option-groups)), dok smo umjesto u odjeljak `[client-mariadb]` konfiguracijske naredbe mogli staviti u odjeljak `[client]` ([detalji](https://mariadb.com/kb/en/configuring-mariadb-with-option-files/#client-option-groups)).
+
+Pokrenimo ponovno poslužitelj tako da dodatno parametrom `-v` montiramo direktorij `/home/korisnik/mariadb-server-conf` na `/etc/mysql/conf.d`, iz kojeg će MariaDB poslužitelj čitati konfiguraciju:
+
+``` shell
+$ docker run --detach --network db-network --name fidtri-mariadb -v /home/korisnik/mariadb-server-conf:/etc/mysql/conf.d --env MARIADB_ROOT_PASSWORD=m0j4z4p0rk4 mariadb:10.7
+fd5bc31673cb7f87d632ef9d59bf515bafa944ba4c1058f5776f3d0dc74a402d
+```
+
+Kako bismo se uvjerili da je TLS uključen, povežimo se klijentom tako da i na njegovoj strani montiramo direktorij s konfiguracijskim datotekama:
+
+``` shell
+$ docker run -it --network db-network -v /home/korisnik/mariadb-client-conf:/etc/mysql/conf.d mariadb:10.7 mariadb -hfidtri-mariadb -uroot -p
+Enter password:
+```
+
+Zatim iskoristimo naredbu `SHOW` za prikaz vrijednosti globalne varijable `have_ssl`:
 
 ``` sql
 SHOW GLOBAL VARIABLES LIKE 'have_ssl';
@@ -293,7 +402,7 @@ MariaDB podržava šifriranje podataka na odmoru korištenjem [HashiCorp Vaulta]
 
 #### Učitavanje dodatka
 
-U direktoriju `/etc/mysql/mariadb.conf.d` stvorimo datoteku `91-file-key-management.cnf` u kojoj ćemo konfiguracijskom naredbom `plugin_load_add` ([dokumentacija](https://mariadb.com/docs/reference/mdb/cli/mariadbd/plugin-load-add/)) učitati dodatak `file_key_management`:
+U konfiguracijskom direktoriju poslužitelja stvorimo datoteku `file-key-management.cnf` u kojoj ćemo konfiguracijskom naredbom `plugin_load_add` ([dokumentacija](https://mariadb.com/docs/reference/mdb/cli/mariadbd/plugin-load-add/)) učitati dodatak `file_key_management`:
 
 ``` ini
 [mariadb]
@@ -313,10 +422,10 @@ $ openssl rand -hex 32
 U slučaju da trebamo više ključeva, naredbu ćemo iskoristiti više puta. Dodatne informacije o ovoj naredbi i parametrima koje podržava moguće je pronaći u man stranici `rand(1ssl)` (naredba `man 1ssl rand`). Stvorimo direktorij za ključeve za šifriranje:
 
 ``` shell
-$ sudo mkdir /etc/mysql/encryption
+$ mkdir mariadb-server-conf/encryption
 ```
 
-Stvorimo u njemu datoteku `/etc/mysql/encryption/keyfile` u kojoj su u svakom retku identifikator ključa (cijeli broj), znak točke sa zarezom i ključ:
+Stvorimo u tom direktoriju datoteku `keyfile` u kojoj su u svakom retku identifikator ključa (cijeli broj), znak točke sa zarezom i ključ:
 
 ```
 1;1cece9bfd9e0263da50bcf02d088b12889cf1eddeb7f8ffdd719b9ab23359be2
@@ -325,22 +434,17 @@ Stvorimo u njemu datoteku `/etc/mysql/encryption/keyfile` u kojoj su u svakom re
 34;34e791122e8cb9fe983534d33bc45522d3e9ca2ec373e720eb08fc34e7f59b7b
 ```
 
-Identifikatori ključa moraju biti međusobno različiti, ali ne moraju ići po redu. Dodijelimo tu datoteku korisniku `mysql` i grupi `mysql` pa je skrijmo od ostalih:
-
-``` shell
-$ sudo chown mysql:mysql /etc/mysql/encryption/keyfile
-$ sudo chmod o-rwx /etc/mysql/encryption/keyfile
-```
+Identifikatori ključa moraju biti međusobno različiti, ali ne moraju ići po redu.
 
 #### Uključivanje datoteke s ključevima
 
-Dopunimo datoteku `91-file-key-management.cnf` dodavanjem konfiguracijske naredbe `file_key_management_filename` ([dokumentacija](https://mariadb.com/kb/en/file-key-management-encryption-plugin/#file_key_management_filename)) tako da bude oblika:
+Dopunimo datoteku `file-key-management.cnf` dodavanjem konfiguracijske naredbe `file_key_management_filename` ([dokumentacija](https://mariadb.com/kb/en/file-key-management-encryption-plugin/#file_key_management_filename)) tako da bude oblika:
 
 ``` ini
 [mariadb]
 
 plugin_load_add = file_key_management
-file_key_management_filename = /etc/mysql/encryption/keyfile
+file_key_management_filename = /etc/mysql/conf.d/encryption/keyfile
 ```
 
 !!! tip
@@ -353,13 +457,13 @@ Podržane su dvije varijante algoritma AES:
 - AES-CBC, koji koristi [Cipher block chaining (CBC)](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Cipher_block_chaining_(CBC))
 - AES-CTR, koji koristi kombinaciju [Counter (CTR)](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Counter_(CTR)) i [Galois/Counter Mode (GCM)](https://en.wikipedia.org/wiki/Galois/Counter_Mode) (zahtijeva da korišteni OpenSSL podržava te algoritme)
 
-Kombinacija CTR-a i GCM-a se smatra boljim odabirom i naša je verzija OpenSSL-a podržava pa ćemo njeno korištenje uključiti dodavanjem konfiguracijske naredbe `file_key_management_encryption_algorithm` ([dokumentacija](https://mariadb.com/kb/en/file-key-management-encryption-plugin/#file_key_management_encryption_algorithm)) u datoteku `91-file-key-management.cnf` tako da bude oblika:
+Kombinacija CTR-a i GCM-a se smatra boljim odabirom i naša je verzija OpenSSL-a podržava pa ćemo njeno korištenje uključiti dodavanjem konfiguracijske naredbe `file_key_management_encryption_algorithm` ([dokumentacija](https://mariadb.com/kb/en/file-key-management-encryption-plugin/#file_key_management_encryption_algorithm)) u datoteku `file-key-management.cnf` tako da bude oblika:
 
 ``` ini
 [mariadb]
 
 plugin_load_add = file_key_management
-file_key_management_filename = /etc/mysql/encryption/keyfile
+file_key_management_filename = /etc/mysql/conf.d/encryption/keyfile
 file_key_management_encryption_algorithm = AES_CTR
 ```
 
@@ -369,11 +473,7 @@ Ako korišteni OpenSSL ne podržava taj algoritam, zamijenit ćemo posljednju li
 file_key_management_encryption_algorithm = AES_CBC
 ```
 
-Pokrenimo ponovno poslužitelj kako bi učitao nove postavke:
-
-``` shell
-$ sudo systemctl restart mariadb
-```
+Zaustavimo i pokrenimo ponovno poslužitelj kako bi učitao nove postavke pa se povežimo na njega klijentom.
 
 #### Šifriranje tablica u bazi podataka
 
@@ -826,3 +926,80 @@ GRANT professor to kristian;
 ```
 
 Naredba `DROP ROLE` koristi se analogno naredbi `CREATE ROLE`.
+
+## Dodatak: pregled strukture konfiguracije poslužitelja MariaDB
+
+Nakon instalacije sva konfiguracija poslužitelja MariaDB nalazi se u `/etc/mysql`. Nama će u nastavku biti zanimljive samo datoteka `/etc/mysql/mariadb.cnf` i datoteke u direktorijima  `/etc/mysql/mariadb.conf.d` i `/etc/mysql/mariadb.conf.d`. Razmotrimo za početak sadržaj datoteke `/etc/mysql/mariadb.cnf`:
+
+``` ini
+# The MariaDB configuration file
+#
+# The MariaDB/MySQL tools read configuration files in the following order:
+# 1. "/etc/mysql/mariadb.cnf" (this file) to set global defaults,
+# 2. "/etc/mysql/conf.d/*.cnf" to set global options.
+# 3. "/etc/mysql/mariadb.conf.d/*.cnf" to set MariaDB-only options.
+# 4. "~/.my.cnf" to set user-specific options.
+#
+# If the same option is defined multiple times, the last one will apply.
+#
+# One can use all long options that the program supports.
+# Run program with --help to get a list of available options and with
+# --print-defaults to see which it would actually understand and use.
+
+#
+# This group is read both both by the client and the server
+# use it for options that affect everything
+#
+[client-server]
+
+# Import all .cnf files from configuration directory
+!includedir /etc/mysql/conf.d/
+!includedir /etc/mysql/mariadb.conf.d/
+```
+
+Uočimo kako gotovo čitav sadržaj datoteke čine komentari i prazni retci, osim odjeljka `[client-server]` i dvije naredbe `!includedir` kojima se uključuju konfiguracijske datoteke iz dva već ranije spomenuta direktorija.
+
+U direktoriju `/etc/mysql/conf.d/` datoteka `mysql.cnf` sadrži samo oznaku odjeljka, a datoteka `mysqldump.cnf` tiče se konfiguracije naredbe `mysqldump` koja omogućuje pohranjivanje baza u tekstualnom zapisu kao niz SQL upita i koja nam u nastavku neće trebati.
+
+U direktoriju `/etc/mysql/mariadb.conf.d/` nalazimo konfiguraciju klijenta (`50-client.cnf`), svih aplikacija za pristup poslužitelju (`50-mysql-clients.cnf`), konfiguraciju za sigurno pokretanje u slučaju problema (`50-mysqld_safe.cnf`) i konfiguraciju poslužitelja (`50-server.cnf`). Razmtorimo sadržaj posljednje datoteke:
+
+``` ini
+#
+# These groups are read by MariaDB server.
+# Use it for options that only the server (but not clients) should see
+#
+# See the examples of server my.cnf files in /usr/share/mysql
+
+# this is read by the standalone daemon and embedded servers
+[server]
+
+# this is only for the mysqld standalone daemon
+[mysqld]
+
+#
+# * Basic Settings
+#
+user                    = mysql
+pid-file                = /run/mysqld/mysqld.pid
+socket                  = /run/mysqld/mysqld.sock
+#port                   = 3306
+basedir                 = /usr
+datadir                 = /var/lib/mysql
+tmpdir                  = /tmp
+lc-messages-dir         = /usr/share/mysql
+#skip-external-locking
+
+# Instead of skip-networking the default is now to listen only on
+# localhost which is more compatible and is not less secure.
+bind-address            = 127.0.0.1
+
+# ...
+```
+
+Uočimo kako su u odjeljku `[mysqld]` koji se odnosi na poslužitelj MariaDB navedene brojne konfiguracijske naredbe, primjerice:
+
+- `user`, kojom se postavlja ime korisnika koji pokreće poslužitelj,
+- `pid`, kojom se postavlja putanja do datoteke u kojoj je naveden PID procesa poslužitelja,
+- `datadir`, kojom se navodi putanja do podatkovnog direktorija u kojem se spremaju baze podataka i binarni logovi
+- `tmpdir`, kojom se navodi putanja do direktorija s privremenim datotekama i
+- `lc-messages-dir`, kojom se navodi putanja do direktorija s lokalizacijskim datotekama (prijevodima na različite jezike).

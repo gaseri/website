@@ -36,6 +36,13 @@ $ sudo pacman -S openssl python-pyopenssl
 (...)
 ```
 
+## Skup alata za upravljanje autoritetom certifikata easy-rsa
+
+``` shell
+$ sudo pacman -S easy-rsa
+(...)
+```
+
 ## Python modul pyca/cryptography
 
 ``` shell
