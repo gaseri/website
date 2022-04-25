@@ -33,7 +33,7 @@ $ vlc
 
 ## Strujanje
 
-Strujanje videa se može pokrenuti pomoću GUI-a (`Media/Streaming`) koji nam uvelike olakšavaju posao, jer su sve opcije i metode ponuđene na panelima. No, u ovom radu ću prikazati streaming preko command line-a.
+Strujanje videa se može pokrenuti pomoću GUI-a (`Media/Streaming`) koji nam uvelike olakšavaju posao, jer su sve opcije i metode [ponuđene na panelima](https://wiki.videolan.org/Documentation:Advanced_Use_of_VLC). No, u ovom radu ću prikazati streaming preko command line-a.
 
 Pomoću naredbe `cvlc` pokrećemo VLC unutar terminala, zatim s modulom `STANDARD` omogućujemo streamanje preko mreže nakon što preko opcije `mux` enkapsuliramo metodu kojom ćemo streamat, u ovom slučaju `ogg` (ova opcija je obavezna).
 
@@ -63,7 +63,7 @@ i dobivamo sljedeći output/izlaz u VLC media playeru u terminalu:
 Ukoliko upišemo `vlc` ili `nvlc` umjesto `cvlc`, dobivamo i VLC-ovo grafičko sučelje ili ncurses sučelje (respektivno). Parametrom `--sout` možemo odlučiti kamo će se spremiti sadržaj preuzet strujanjem:
 
 ``` shell
-$ nvlc http:// 192.168.104:8080 --sout=file/ogg: sintel_trailer-1080p .ogg
+$ nvlc http:// 192.168.104:8080 --sout=file/ogg: sintel_trailer-1080p.ogg
 ```
 
 Pomoću VLC-a možemo spremiti stream na disk, a da bi to napravili koristimo VLC-ov Stream Output. Spomenuto možemo učiniti koristeći grafičko sučelje i VLC-ov record button ili putem Linux-ove komandne linije parametrom `--sout file/muxer:stream.xyz`, gdje je `muxer` jedan od podržanih formata. Format za spremanje streamova možemo mijenjati, podržani formati su:
@@ -94,23 +94,25 @@ Standardan UDP streaming istog videa u avi formatu iz direktorija `/home/iva/str
 $ cvlc -vvv /home/iva/stream/sintel.avi --sout #std{access=udp, mux=ts, dst=:1234}'
 ```
 
+Više detalja o strujanju u VLC-u može se pronaći na VideoLAN-ovom wikiju u dijelu dokumentacije [Streaming HowTo](https://wiki.videolan.org/Documentation:Streaming_HowTo): [Command Line Examples](https://wiki.videolan.org/Documentation:Streaming_HowTo/Command_Line_Examples), [Receive and Save a Stream](https://wiki.videolan.org/Documentation:Streaming_HowTo/Receive_and_Save_a_Stream) i [Advanced streaming with samples, multiple files streaming, using multicast in streaming](https://wiki.videolan.org/Documentation:Streaming_HowTo/Advanced_streaming_with_samples,_multiple_files_streaming,_using_multicast_in_streaming).
+
 ## Transkodiranje
 
 Ako većina klijenata do kojih želim doprijeti koristi operacijski sustav Windows, znači da ću ja za VLC koristiti argument da on transkodira video u Windows Media Video (wmv) jer ću time moć doprijeti do najvećeg broja klijenata i bit ću sigurna da neće imati problema sa gledanjem mojih video snimki. Ako se na playlisti nalazi video u formatu avi, mpeg1, i sl., svaki taj video će se transkodirati u wmv format jer onda pouzdano znam da će većina korisnika (klijenata) bez ikakvih dodatnih kodeka moći gledati iste.
 
-Primjerice, za Windows Media Video version 1, bitrate 512 with MP3 audio and ASFH muxer over MMSH protocol (mmsh://192.168.0.10:30001) parametri su:
+Primjerice, za Windows Media Video version 1, bitrate 512 with MP3 audio and ASFH muxer over MMSH protocol (`mmsh://192.168.0.10:30001`) parametri su:
 
 ```
 '#transcode{vcodec=WMV1,vb=512,scale=1,acodec=mp3,ab=64}:std{access=mmsh,mux=asfh,dst=192.168.0.104:30001}'
 ```
 
-Za DivX version 3, bitrate 1024 with Dolby Digital AC3 audio and ASFH muxer over MMSH protocol (mmsh://192.168.0.10:30001) parametri su:
+Za DivX version 3, bitrate 1024 with Dolby Digital AC3 audio and ASFH muxer over MMSH protocol (`mmsh://192.168.0.10:30001`) parametri su:
 
 ```
 '#transcode{vcodec=DIV3,vb=1024,acodec=a52,ab=512}:std{access=mmsh,mux=asfh,dst=192.168.0.104:30001}'
 ```
 
-Za MPEG-4 with marquee filter, bitrate 1024 with MP3 audio and OGG muxer over HTTP protocol (http://192.168.0.10:30001) parametri su:
+Za MPEG-4 with marquee filter, bitrate 1024 with MP3 audio and OGG muxer over HTTP protocol (`http://192.168.0.10:30001`) parametri su:
 
 ```
 '#transcode{vcodec=mp4v,sfilter=marq,vb=1024,acodec=mp3,ab=512}:std{access=http,mux=ogg,dst=192.168.0.104:30001}
@@ -118,17 +120,6 @@ Za MPEG-4 with marquee filter, bitrate 1024 with MP3 audio and OGG muxer over HT
 
 ## Upravljanje VLC-om putem web sučelja
 
-Kako bi omogućili da se VLC kontrolira preko preglednika, potrebno je aktivirati Web interface putem kvačice na `Tools/Preferences/Interface/Main interfaces/Web`.
+Kako bi omogućili da se [VLC kontrolira preko preglednika](https://wiki.videolan.org/Documentation:Modules/http_intf), potrebno je aktivirati Web interface putem kvačice na `Tools/Preferences/Interface/Main interfaces/Web`.
 
-Zatim, otvaramo preglednik i na adresi http://127.0.0.1:8080 se pokreće sljedeći prozor.
-
-## Literatura
-
-!!! todo
-    Reference treba pročistiti i povezati u tekstu.
-
-1. https://wiki.videolan.org/Documentation:Modules/http_intf
-1. https://wiki.videolan.org/Documentation:Play_HowTo/Advanced_Use_of_VLC
-1. https://wiki.videolan.org/Documentation:Streaming_HowTo/Advanced_streaming_with_samples,_multiple_files_streaming,_using_multicast_in_streaming
-1. https://wiki.videolan.org/Documentation:Streaming_HowTo/Receive_and_Save_a_Stream
-1. https://wiki.videolan.org/Documentation:Streaming_HowTo/Command_Line_Examples
+Zatim, otvaramo preglednik i na adresi `http://127.0.0.1:8080` se pokreće sljedeći prozor.
