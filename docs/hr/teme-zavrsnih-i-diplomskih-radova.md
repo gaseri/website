@@ -245,7 +245,7 @@ Tijekom 80-ih godina na Kalifornijskom sveučilištu u Berkeleyu Keith Bostic, B
 1. [KAME](https://www.kame.net/)
 1. [IMUNES](http://imunes.net/)
 1. [Jones, T. FreeBSD in Network Research and Standardization (FreeBSD in Research). FreeBSD Journal, January/February 2020.](https://freebsdfoundation.org/past-issues/freebsd-in-research/)
-1. [Leffler, S. J., Joy, W. N., Fabry, R. S., & Karels, M. J. Networking Implementation Notes 4.3 BSD Edition. Unix System Manager's Manual, 1986.](https://docs.freebsd.org/44doc/smm/18.net/paper.pdf)
+1. [Leffler, S. J., Joy, W. N., Fabry, R. S. & Karels, M. J. Networking Implementation Notes 4.3 BSD Edition. Unix System Manager's Manual, 1986.](https://docs.freebsd.org/44doc/smm/18.net/paper.pdf)
 
 ### Interaktivni interpreter Cling za programski jezik C++ {[PPHS](nastava/kolegiji/PPHS.md)}
 
@@ -550,7 +550,7 @@ Sveprisutnost weba čini da se mnoge aplikacije realiziraju kao web aplikacije. 
 **Literatura:**
 
 1. [Django](https://www.djangoproject.com/)
-1. Shaw, B., Badhwar, S., Bird, A., Chandra K S, B., & Guest, C. [Web Development with Django](https://www.oreilly.com/library/view/web-development-with/9781839212505/), O'Reilly, 2021.
+1. Shaw, B., Badhwar, S., Bird, A., Chandra K S, B. & Guest, C. [Web Development with Django](https://www.oreilly.com/library/view/web-development-with/9781839212505/), O'Reilly, 2021.
 
 ### Izrada web aplikacije korištenjem Flaska {[DWA2](nastava/kolegiji/DWA2.md)} [Ivan Modrić]
 
@@ -595,9 +595,9 @@ Kriptovalute su danas vrlo aktualna i intrigantna tema, kako u području informa
 **Literatura:**
 
 1. Rivest, R. L. Cryptography and Machine Learning, Advances in Cryptology -- ASIACRYPT '91 (H. Imai, R. L. Rivest, and T. Matsumoto, eds.), (Berlin, Heidelberg), pp. 427--439, Springer Berlin Heidelberg, 1993.
-1. Alessandretti, L., ElBahrawy, A., Aiello, L. M., & Baronchelli, A. Anticipating cryptocurrency prices using machine learning. Complexity, 2018.
+1. Alessandretti, L., ElBahrawy, A., Aiello, L. M. & Baronchelli, A. Anticipating cryptocurrency prices using machine learning. Complexity, 2018.
 1. Nakamoto, S. Bitcoin: A Peer-to-Peer Electronic Cash System. Dostupno na: [bitcoin.org/bitcoin.pdf](https://bitcoin.org/bitcoin.pdf)
-1. Ellis, S. Juels, A., & Nazarov, S. ChainLink -- A Decentralized Oracle Network. Dostupno na: [link.smartcontract.com/whitepaper](https://link.smartcontract.com/whitepaper)
+1. Ellis, S. Juels, A. & Nazarov, S. ChainLink -- A Decentralized Oracle Network. Dostupno na: [link.smartcontract.com/whitepaper](https://link.smartcontract.com/whitepaper)
 
 ### Optimizacijske tehnike kod sjenčanja u Unreal Engineu {[PPHS](nastava/kolegiji/PPHS.md)} [Mia Doričić]
 
