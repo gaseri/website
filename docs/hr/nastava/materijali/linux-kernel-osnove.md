@@ -51,7 +51,57 @@ author: Vedran Miletić
 !!! todo
     Ovdje treba objasniti način korištenja naredbi `modinfo`, `modprobe`, `insmod`, `rmmod`, `lsmod`.
 
+## Parametri jezgre
+
+Kao i programi u korisničkom prostoru, jezgra operacijskog sustava može primati [različite parametre jezgre](https://wiki.archlinux.org/title/Kernel_parameters) kod pokretanja. Parametre pokrenute jezgre operacijskog sustava možemo pronaći u datoteci `/proc/cmdline`:
+
+``` shell
+$ cat /proc/cmdline
+BOOT_IMAGE=/boot/vmlinuz-linux root=UUID=950382f8-aeef-4f3d-baea-6030a38707f0 rw net.ifnames=0 console=tty1 console=ttyS0 rootflags=compress-force=zstd
+```
+
+Za isprobavanje parametara u fazi učenja uređivat ćemo izravno datoteku `/boot/grub/grub.cfg` i time prekršiti preporuku da se tu datoteku ne uređuje, što je u fazi učenja prihvatljivo.
+
+Parametri:
+
+- `1` (uočimo poruku)
+- `3` (uočimo izlaz naredbe `systemctl get-default`)
+- `ro` (možemo li stvoriti datoteke)
+- `quiet`
+- `module_blacklist=snd_hda_intel` (proučite koncept [blacklistanja modula](https://wiki.archlinux.org/title/Kernel_module#Blacklisting))
+- `init=/bin/sh`
+- `maxcpus`, `mem`, `video`
+
 ## Kompajliranje jezgre
 
 !!! todo
     Ovdje treba opisati `make menuconfig` i ostalo.
+
+## Specfičnosti jezgre Arch Linuxa
+
+Arch Linux [službeno podržava četiri vrste jezgre Linuxa](https://wiki.archlinux.org/title/Kernel):
+
+- stabilna, paket [linux](https://archlinux.org/packages/?name=linux)
+- očvrsnuta, paket [linux-hardened](https://archlinux.org/packages/?name=linux-hardened)
+- dugotrajna, paket [linux-lts](https://archlinux.org/packages/?name=linux-lts)
+- Zen, paket [linux-zen](https://archlinux.org/packages/?name=linux-zen)
+
+Zadana instalacija koristi stabilnu verziju, ali za ilustraciju korištenja vrste jezgre koja nije zadana prijeći ćemo na dugotrajnu instalacijom paketa `linux-lts`:
+
+``` shell
+$ sudo pacman -S linux-lts
+```
+
+Nakon instalacije, ali i ponovnog pokretanja uvjerit ćemo se da se novoinstalirana varijanta jezgra ne koristi:
+
+``` shell
+$ uname -a
+Linux ares.miletic.net 5.17.5-arch1-1 #1 SMP PREEMPT Wed, 27 Apr 2022 20:56:11 +0000 x86_64 GNU/Linux
+```
+
+Uvjerimo se da su slika jezgre i [početni datotečni sustav za RAM](https://wiki.archlinux.org/title/Arch_boot_process#initramfs) za pakete linux i linux-lts na mjestu:
+
+``` shell
+$ ls /boot
+efi  grub  initramfs-linux-fallback.img  initramfs-linux-lts-fallback.img  initramfs-linux-lts.img  initramfs-linux.img  vmlinuz-linux  vmlinuz-linux-lts
+```

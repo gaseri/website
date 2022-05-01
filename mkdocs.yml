@@ -279,6 +279,7 @@ nav:
         - Spam filter -- SpamAssassin: hr/nastava/materijali/spamassasin-spam-filter.md
         - Praćenje korištenja programskih sučelja sustava korištenjem alata strace i ltrace: hr/nastava/materijali/strace-ltrace-sucelja-operacijskog-sustava.md
         - IPsec alat strongSwan: hr/nastava/materijali/strongswan-ipsec.md
+        - Analiza upravitelja operacijskog sustava: hr/nastava/materijali/systemd-analyze-analiza-operacijskog-sustava.md
         - Automatizacija zadaća operacijskog sustava: hr/nastava/materijali/systemd-timer-automatizacija-zadaca-operacijskog-sustava.md
         - Praćenje događaja operacijskog sustava: hr/nastava/materijali/systemd-journalctl-pracenje-dogadjaja-operacijskog-sustava.md
         - Upravljanje uslugama operacijskog sustava: hr/nastava/materijali/systemd-systemctl-upravljanje-uslugama-operacijskog-sustava.md

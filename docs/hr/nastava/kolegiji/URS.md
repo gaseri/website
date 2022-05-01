@@ -15,3 +15,6 @@
 - [Automatizacija zadaća operacijskog sustava](../materijali/systemd-timer-automatizacija-zadaca-operacijskog-sustava.md)
 - [Inkrementalni prijenos podataka korištenjem rsynca](../materijali/rsync-inkrementalni-prijenos-podataka.md)
 - [Datotečni sustav i upravitelj volumenima ZFS](../materijali/zfs-datotecni-sustav-upravitelj-volumenima.md)
+- [Rad s jezgrom operacijskog sustava](../materijali/linux-kernel-osnove.md)
+- [Boot proces računala i učitavač GRUB](../materijali/grub-pokretanje-sustava.md)
+- [Analiza upravitelja operacijskog sustava](../materijali/systemd-analyze-analiza-operacijskog-sustava.md)
