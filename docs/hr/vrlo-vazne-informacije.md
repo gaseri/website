@@ -34,6 +34,10 @@ U svom [poznatom govoru](https://hr.wikisource.org/wiki/Govor_Franje_Tu%C4%91man
 >
 > Da! [Mi smo stvarali svoju slobodu za prava korisnika i za otvorene standarde](https://www.w3.org/blog/2008/11/w3c-open-web-standards/), ali za prava korisnika prije svega većine korisnika slobodnog softvera. Ali ćemo, razumije se, mi sa tom slobodom softvera i otvorenim kodom osigurati i korisnicima neslobodnog softvera ta prava i otvorene standarde. [Ali nećemo dopustiti da nam ti sa strane rješavaju, odnosno nameću rješenja.](https://www.computerworld.com/article/2543739/microsoft-guns-open-xml-onto-iso-fast-track.html) Slobodan softver neće biti pod kontrolom nijedne kompanije. Unix je dosta bio i pod Berkeleyem i pod AT&T-em, i pod Sunom i pod IBM-om, i pod SGI-em. Zajednica oko Linuxa je izborila svoju slobodu, svoju samostalnost, svoje pravo da sama odlučuje o svojoj sudbini.
 
+### Kako se zovu predstavnici novih generacija okrenuti exaskalarnim superračunalima i isključivo firmiranom hardveru?
+
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@nikola_replay/video/7090912972452711686" data-video-id="7090912972452711686" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@nikola_replay" href="https://www.tiktok.com/@nikola_replay">@nikola_replay</a> 🤣 <a title="foryou" target="_blank" href="https://www.tiktok.com/tag/foryou">#foryou</a> <a title="foryoupage" target="_blank" href="https://www.tiktok.com/tag/foryoupage">#foryoupage</a> <a target="_blank" title="♬ original sound - @nikola_replay" href="https://www.tiktok.com/music/original-sound-7090912949518338821">♬ original sound - @nikola_replay</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+
 ## Mnogo više od deset primjera kako se (ne) ulizivati VM
 
 Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primjeri su iz kasnijih godina. Napisano prema istinitim događajima, ali prilagođeno po potrebi.
