@@ -768,7 +768,7 @@ Porastom veličine međuspremnika usmjerivača na internetu raste prosječno vri
 1. [Flent](https://flent.org/)
 1. [CoDel](https://www.bufferbloat.net/projects/codel/wiki/)
 1. [Make Wi-Fi Fast](https://www.bufferbloat.net/projects/make-wifi-fast/wiki/)
-1. Bozkurt, Ilker Nadi, et al. "Why is the Internet so slow?!." International Conference on Passive and Active Network Measurement. Springer, Cham, 2017. Rad dostupan putem [mrežnih stranica Ilkera Nadija Bozkurta](https://users.cs.duke.edu/%7Eilker/papers/conference/pam17.pdf); pojednostavljeni opis zaključaka rada dostupan na [APNIC-ovom blogu](https://blog.apnic.net/2017/06/19/why-is-the-internet-so-slow/)
+1. Bozkurt, Ilker Nadi, et al. "Why is the Internet so slow?!." International Conference on Passive and Active Network Measurement. Springer, Cham, 2017. Rad dostupan putem [Sveučilišta Illinois](https://pbg.web.engr.illinois.edu/papers/bozkurt17why.pdf) [Urbana-Champaign](https://cspeedweb.web.engr.illinois.edu/assets/publications/bozkurt-pam2017.pdf); pojednostavljeni opis zaključaka rada dostupan na [APNIC-ovom blogu](https://blog.apnic.net/2017/06/19/why-is-the-internet-so-slow/)
 
 ### Predviđanje pristajanja malih molekula na proteine korištenjem tehnika umjetne inteligencije na grafičkim procesorima {[PPHS](nastava/kolegiji/PPHS.md)} [Adis Tokalić]
 
