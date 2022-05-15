@@ -8,6 +8,10 @@ author: Vedran Miletić
 
 **Grupa za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi** (engl. *Group for Applications and Services on Exascale Research Infrastructure*, kraće GASERI) je istraživačka, razvojna i nastavna jedinica na [Fakultet informatike i digitalnih tehnologija](https://www.inf.uniri.hr/) [Sveučilišta u Rijeci](https://uniri.hr/).
 
+## Uvodna prezentacija
+
+[Svijetla pozadina](https://cdn.group.miletic.net/GASERI-Introductory-presentation-light-background.pdf){ .md-button } [Tamna pozadina](https://cdn.group.miletic.net/GASERI-Introductory-presentation-dark-background.pdf){ .md-button .md-button--primary }
+
 ## Interesi
 
 Superračunalo, također poznato kao računalo visokih performansi (engl. *high performance computer*, kraće HPC), nudi mnogo veće performanse od osobnog računala. Performanse se obično mjere brojem operacija s pomičnim zarezom u sekundi (engl. *floating-point operations per second*, kraće FLOPS) koje računalo može izvesti; osobno računalo može izvesti do desetke teraFLOPS-a, dok moderni HPC-i mogu izvesti stotine petaFLOPS-a, što rezultira faktorom ubrzanja od otprilike deset tisuća.
