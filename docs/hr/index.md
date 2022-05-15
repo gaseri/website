@@ -66,7 +66,7 @@ Radmile Matejčić 2
 51000 Rijeka  
 Hrvatska
 
-<iframe src="https://www.openstreetmap.org/export/embed.html?bbox=14.465107619762422%2C45.32765866582893%2C14.468648135662079%2C45.329265285900924&amp;layer=mapnik&amp;marker=45.32846198156121%2C14.46687787771225" style="border: 1px solid black; width: 100%; height: 25em"></iframe>
+<iframe src="https://www.openstreetmap.org/export/embed.html?bbox=14.465005695819857%2C45.32756626493193%2C14.46918457746506%2C45.32927471428796&amp;layer=mapnik&amp;marker=45.32842049605121%2C14.467095136642456" style="border: 1px solid black; width: 100%; height: 25em"></iframe>
 
 ## Poster
 
