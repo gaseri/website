@@ -339,6 +339,13 @@ nav:
       - About the teaching: en/teaching/index.md
       - Courses:
         - Code optimization: en/teaching/courses/CO.md
+      - Materials:
+        - The Clang compiler: en/teaching/materials/llvm-clang.md
+        - Implementing an analysis and transformation pass in the LLVM compiler infrastructure: en/teaching/materials/llvm-development-analysis-and-transformation.md
+        - Developing with the LLVM compiler infrastructure: en/teaching/materials/llvm-development.md
+        - The LLVM intermediate representation: en/teaching/materials/llvm-intermediate-representation.md
+        - The usage of the LLVM libraries in the Mesa 3D graphics library: en/teaching/materials/llvm-mesa.md
+        - The LLVM tools: en/teaching/materials/llvm-tools.md
       - Programmes:
         - Revision 2021/2022:
           - Code optimization: en/teaching/programmes/revision-2021-2022/CO.md
