@@ -7,7 +7,7 @@ author: Vedran Miletić
 In addition to the usage of LLVM via the Clang compiler and via the Mesa 3d graphics library, it is also possible to use LLVM via [several command-line tools bundled with it](https://llvm.org/docs/CommandGuide/index.html). We have already used `llc` and `llvm-cxxfilt` among these and we will be also using:
 
 - [llvm-mca](#llvm-mca), the LLVM machine code analyzer
-- [lli](#lli), `the LLVM just-in-time compiler or interpreter
+- [lli](#lli), the LLVM just-in-time compiler or interpreter
 - [llvm-diff](#llvm-diff), the structural `diff` tool for files containing LLVM intermediate representations
 - [llvm-stress](#llvm-stress), the random generator of files containing LLVM intermediate representation
 - [opt](#opt), the LLVM optimizer
