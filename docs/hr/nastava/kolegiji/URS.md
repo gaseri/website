@@ -18,3 +18,5 @@
 - [Rad s jezgrom operacijskog sustava](../materijali/linux-kernel-osnove.md)
 - [Boot proces računala i učitavač GRUB](../materijali/grub-pokretanje-sustava.md)
 - [Analiza upravitelja operacijskog sustava](../materijali/systemd-analyze-analiza-operacijskog-sustava.md)
+- [Ograničavanje pristupa uslugama vatrozidom nftables](../materijali/nftables-filtriranje-paketa.md)
+- [Automatizacija konfiguracije i održavanja sustava alatom Ansible](../materijali/ansible-automatizacija-konfiguracije-odrzavanja-sustava.md)

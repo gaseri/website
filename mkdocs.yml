@@ -154,6 +154,7 @@ nav:
         - Nabavka, kompajliranje i instalacija softvera otvorenog koda: hr/nastava/materijali/nabavka-prevodjenje-instalacija-softvera-otvorenog-koda.md
         - BLAS i LAPACK: hr/nastava/materijali/netlib-blas-lapack.md
         - Mrežni datotečni sustav NFS: hr/nastava/materijali/nfs-mrezni-datotecni-sustav.md
+        - Ograničavanje pristupa uslugama vatrozidom nftables: hr/nastava/materijali/nftables-filtriranje-paketa.md
         - Web poslužitelj nginx: hr/nastava/materijali/nginx-web-posluzitelj.md
         - Analiza ranjivosti računalne mreže: hr/nastava/materijali/nmap-analiza-ranjivosti.md
         - Računarstvo u oblaku: hr/nastava/materijali/oblak-resursi-usluge.md
