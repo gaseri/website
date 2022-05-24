@@ -10,40 +10,12 @@
    aria-hidden="true"
    width="420mm"
    height="297mm"
-   sodipodi:docname="gaseri-naljepnica.svg"
-   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20, custom)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1020"
-     id="namedview214"
-     showgrid="false"
-     inkscape:zoom="0.32879871"
-     inkscape:cx="913.93302"
-     inkscape:cy="739.05399"
-     inkscape:window-x="0"
-     inkscape:window-y="32"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg4"
-     inkscape:document-rotation="0"
-     inkscape:pagecheckerboard="0"
-     inkscape:document-units="mm"
-     inkscape:lockguides="false" />
   <metadata
      id="metadata10">
     <rdf:RDF>
@@ -52,14 +24,12 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
      id="defs8">
     <linearGradient
-       inkscape:collect="always"
        id="linearGradient21832">
       <stop
          style="stop-color:#00adef;stop-opacity:1;"
@@ -78,7 +48,6 @@
        x="0"
        y="0" />
     <linearGradient
-       inkscape:collect="always"
        xlink:href="#linearGradient21832"
        id="linearGradient21834"
        x1="43.97333"
@@ -1324,42 +1293,36 @@
      x="45.360001"
      y="121.77397"
      id="text1080"><tspan
-       sodipodi:role="line"
        id="tspan1078"
        x="45.360001"
        y="121.77397"
        style="fill:#00adef;fill-opacity:1;stroke:none"><tspan
    style="font-weight:bold;fill:#00adef;fill-opacity:1;stroke:none"
    id="tspan1092">G</tspan>roup for</tspan><tspan
-       sodipodi:role="line"
        x="45.360001"
        y="255.10773"
        id="tspan1082"
        style="fill:#00adef;fill-opacity:1;stroke:none"><tspan
    style="font-weight:bold;fill:#00adef;fill-opacity:1;stroke:none"
    id="tspan1094">A</tspan>pplications and</tspan><tspan
-       sodipodi:role="line"
        x="45.360001"
        y="388.44147"
        id="tspan1084"
        style="fill:#00adef;fill-opacity:1;stroke:none"><tspan
    style="font-weight:bold;fill:#00adef;fill-opacity:1;stroke:none"
    id="tspan1096">S</tspan>ervices on</tspan><tspan
-       sodipodi:role="line"
        x="45.360001"
        y="521.77521"
        id="tspan1086"
        style="fill:#00adef;fill-opacity:1;stroke:none"><tspan
    style="font-weight:bold;fill:#00adef;fill-opacity:1;stroke:none"
    id="tspan1098">E</tspan>xascale</tspan><tspan
-       sodipodi:role="line"
        x="45.360001"
        y="655.10895"
        id="tspan1088"
        style="fill:#00adef;fill-opacity:1;stroke:none"><tspan
    style="font-weight:bold;fill:#00adef;fill-opacity:1;stroke:none"
    id="tspan1100">R</tspan>esearch</tspan><tspan
-       sodipodi:role="line"
        x="45.360001"
        y="788.44275"
        id="tspan1090"
@@ -1372,32 +1335,26 @@
      x="1556.6077"
      y="115.03229"
      id="text1215"><tspan
-       sodipodi:role="line"
        id="tspan1213"
        x="1556.6077"
        y="115.03229"
        style="font-size:106.667px;text-align:end;text-anchor:end;fill:#00adef;fill-opacity:1;stroke:none">Scientific</tspan><tspan
-       sodipodi:role="line"
        x="1556.6077"
        y="248.36604"
        style="font-size:106.667px;text-align:end;text-anchor:end;fill:#00adef;fill-opacity:1;stroke:none"
        id="tspan243">Interests:</tspan><tspan
-       sodipodi:role="line"
        x="1556.6077"
        y="381.6998"
        id="tspan1225"
        style="font-size:106.667px;text-align:end;text-anchor:end;fill:#00adef;fill-opacity:1;stroke:none">HPC↩</tspan><tspan
-       sodipodi:role="line"
        x="1556.6077"
        y="517.10297"
        id="tspan1219"
        style="font-size:106.667px;text-align:end;text-anchor:end;fill:#00adef;fill-opacity:1;stroke:none">Cloud↩</tspan><tspan
-       sodipodi:role="line"
        x="1556.6077"
        y="652.50616"
        id="tspan1221"
        style="font-size:106.667px;text-align:end;text-anchor:end;fill:#00adef;fill-opacity:1;stroke:none">FOSS↩</tspan><tspan
-       sodipodi:role="line"
        x="1556.6077"
        y="787.90936"
        id="tspan1223"
