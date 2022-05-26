@@ -1,4 +1,4 @@
-# GASERI | group.miletic.net
+# GASERI | gaseri.org
 
 ![GASERI logo with text](images/gaseri-logo-text.png)
 

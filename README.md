@@ -1,6 +1,6 @@
 # 😎 Group for apps and services on exascale research infrastructure (GASERI) website
 
-The group is interested in scientific software development, high-performance computers, cloud computing, and the use of free open-source software in the development of applications and services for supercomputers and cloud platforms, specifically in the application of exascale computing to solve problems in computational biochemistry and related fields. Visit [the group website](https://group.miletic.net/en/) for more information.
+The group is interested in scientific software development, high-performance computers, cloud computing, and the use of free open-source software in the development of applications and services for supercomputers and cloud platforms, specifically in the application of exascale computing to solve problems in computational biochemistry and related fields. Visit [the group website](https://gaseri.org/en/) for more information.
 
 ## License
 
@@ -78,6 +78,6 @@ Once you have confirmed that the build is successful, push the built contents to
 $ mkdocs gh-deploy
 ```
 
-Wait a few minutes until [GitHub Pages](https://pages.github.com/) finishes building the new site from the changes you just pushed and then visit [group.miletic.net](https://group.miletic.net/) to make sure that your changes are visible.
+Wait a few minutes until [GitHub Pages](https://pages.github.com/) finishes building the new site from the changes you just pushed and then visit [gaseri.org](https://gaseri.org/) to make sure that your changes are visible.
 
 *That's all, folks!*
