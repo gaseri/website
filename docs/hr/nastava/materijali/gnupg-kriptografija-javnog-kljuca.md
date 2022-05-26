@@ -479,5 +479,4 @@ Instalacija SKS Keyservera i njegova konfiguracija opisana je na više izvora je
 1. [GPG Quick Start](https://www.madboa.com/geek/gpg-quickstart/), siječanj 2013.
 1. [Osobna kriptografija - GPG, TrueCrypt, SSL](https://security.foi.hr/wiki/index.php/Osobna_kriptografija_-_GPG,_TrueCrypt,_SSL.html), siječanj 2013.
 1. [GnuPG](https://www.gnupg.org/), siječanj 2013.
-1. [GNU Privacy Guard](https://sec.carnet.hr/vise-o-sigurnosti/enciklopedija/pretty-good-privacy-pgp/gnu-privacy-guard), siječanj 2013.
 1. [Kriptiranje - zaštita poruka u komunikaciji](https://informatika.buzdo.com/pojmovi/gpg-1.htm), siječanj 2013.

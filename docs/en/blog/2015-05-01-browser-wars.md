@@ -11,9 +11,9 @@ tags:
 
 # Browser wars
 
-Last week in Rijeka we held [Science festival 2015](http://www.festivalznanosti.hr/2015/). This is the (hopefully not unlucky) 13th instance of the festival that started in 2003. Popular science events were organized in 18 cities in Croatia.
+Last week in Rijeka we held [Science festival 2015](https://www.mojarijeka.hr/otvoren-13-festival-znanosti-s-temom-sunce/). This is the (hopefully not unlucky) 13th instance of the festival that started in 2003. Popular science events were organized in 18 cities in Croatia.
 
-I was invited to give a popular lecture at the [University departments open day](http://www.festivalznanosti.hr/2015/grad/rijeka/2015-04-21), which is a part of the festival. This is the second time in a row that I got invited to give popular lecture at the open day. In 2014 I talked about The Perfect Storm in information technology caused by the fall of economy during [2008-2012 Great Recession](https://en.wikipedia.org/wiki/Great_Recession) and the simultaneous rise of low-cost, high-value open-source solutions. Open source completely changed the landscape of information technology in just a few years.
+I was invited to give a popular lecture at the [University departments open day](https://www.math.uniri.hr/hr/component/content/article/13-hr/novosti/404-otvornei-dan-2015.html), which is a part of the festival. This is the second time in a row that I got invited to give popular lecture at the open day. In 2014 I talked about The Perfect Storm in information technology caused by the fall of economy during [2008-2012 Great Recession](https://en.wikipedia.org/wiki/Great_Recession) and the simultaneous rise of low-cost, high-value open-source solutions. Open source completely changed the landscape of information technology in just a few years.
 
 The talk was well received, but unfortunately was not recorded. However, I was invited to repeat it at [Rikon](https://rikonrijeka.com/) 2014, and we have the [recording from there posted on YouTube](https://youtu.be/EE2cZSeqB3k). The recording is in Croatian, but the [Truth Happens Remix video](https://youtu.be/5EkkMfjetEY) I play during the talk is in English. I also have to credit [Jim Whitehurst's TEDx talk on Economics of the Information Revolution](https://youtu.be/6ag8DiOWG1I) for inspiration.
 
