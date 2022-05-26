@@ -10,7 +10,7 @@ author: Vedran Miletić
 
 ## Introductory presentation
 
-[Light background](https://cdn.group.miletic.net/GASERI-Introductory-presentation-light-background.pdf){ .md-button } [Dark background](https://cdn.group.miletic.net/GASERI-Introductory-presentation-dark-background.pdf){ .md-button .md-button--primary }
+[Light background](https://files.group.miletic.net/GASERI-Introductory-presentation-light-background.pdf){ .md-button } [Dark background](https://files.group.miletic.net/GASERI-Introductory-presentation-dark-background.pdf){ .md-button .md-button--primary }
 
 ## Interests
 
