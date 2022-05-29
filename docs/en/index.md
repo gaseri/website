@@ -8,6 +8,8 @@ author: Vedran Miletić
 
 **Group for Applications and Services on Exascale Research Infrastructure** (hrv. *Grupa za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi*, abbr. GASERI) is a research, development, and teaching unit at [University of Rijeka](https://uniri.hr/) [Faculty of Informatics and Digital Technologies](https://www.inf.uniri.hr/).
 
+![Rev1 Ternary Complex with dTTP and Ca2+ (7T18) binding site](../images/7t18-binding-site.webp)
+
 ## Introductory presentation
 
 [Light background](https://files.group.miletic.net/GASERI-Introductory-presentation-light-background.pdf){ .md-button } [Dark background](https://files.group.miletic.net/GASERI-Introductory-presentation-dark-background.pdf){ .md-button .md-button--primary }
