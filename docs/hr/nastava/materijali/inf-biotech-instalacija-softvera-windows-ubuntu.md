@@ -1,3 +1,7 @@
+---
+author: Vedran Miletić
+---
+
 # Instalacija i konfiguracija softvera za vježbe iz kolegija Informatika (BioTech)
 
 Upute u nastavku pisane su za korisnike Microsoftovih operacijskih sustava [Windows, verzije 10 i 11](https://www.microsoft.com/en-us/windows). Ako ste korisnik Ubuntua, možete preskočiti dio uputa koji je specifičan za operacijski sustav Windows i odmah početi s upisivanjem naredbi danih naredbi u terminalu.

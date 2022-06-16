@@ -1,3 +1,7 @@
+---
+author: Vedran Miletić
+---
+
 # Instalacija i konfiguracija softvera za vježbe iz kolegija Sigurnost informacijskih i komunikacijskih sustava
 
 Upute u nastavku pisane su za [Garuda Linux](https://garudalinux.org/), ali su vjerojatno upotrebljive i na drugim derivatima [Arch Linuxa](https://archlinux.org/) kao što su [Manjaro](https://manjaro.org/), [EndeavourOS](https://endeavouros.com/) i [KaOS](https://kaosx.us/).
