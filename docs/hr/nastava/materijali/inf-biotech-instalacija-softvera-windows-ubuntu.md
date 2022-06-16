@@ -8,11 +8,11 @@ Upute u nastavku pisane su za korisnike Microsoftovih operacijskih sustava [Wind
 
 ## Priprema operacijskog sustava Windows
 
-Korištenjem sustava [Windows Update](https://support.microsoft.com/en-us/windows/update-windows-3c5ae7fc-9fb6-9af1-1984-b5e0412c556a) instalirajte sve dostupne nadogradnje. Po potrebi, ponovno pokrenite računalo kad Windowsi to zatraže. Ovaj korak je nužan preduvjet za nastavak i s njime ste gotovi tek kada vam Windowsi prestanu nuditi ikakve nadogradnje za instalaciju.
+Korištenjem sustava [Windows Update](https://support.microsoft.com/en-us/windows/update-windows-3c5ae7fc-9fb6-9af1-1984-b5e0412c556a) instalirajte sve dostupne nadogradnje. Po potrebi, ponovno pokrenite računalo kad Windows to zatraži. Ovaj korak je nužan preduvjet za instalaciju preostalog softvera i s njime ste gotovi tek kada vam Windowsi prestanu nuditi ikakve nadogradnje za instalaciju.
 
 ## Instalacija podsustava Windows Subsystem for Linux (WSL)
 
-Instalirajte Windows Subsystem for Linux (WSL) prema [Microsoftovim uputama](https://docs.microsoft.com/en-us/windows/wsl/install), specifično odjeljku `Install WSL command`. Nemojte zaboraviti pokrenuti PowerShell ili Windows Command Prompt kao administrator prije upisivanja navedene naredbe.
+Instalirajte Windows Subsystem for Linux (WSL) prema [Microsoftovim uputama](https://docs.microsoft.com/en-us/windows/wsl/install), specifično odjeljku [Install WSL command](https://docs.microsoft.com/en-us/windows/wsl/install#install-wsl-command). Nemojte zaboraviti pokrenuti PowerShell ili Windows Command Prompt kao administrator prije upisivanja navedene naredbe.
 
 ### Windows Terminal
 
