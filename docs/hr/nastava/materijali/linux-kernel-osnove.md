@@ -86,7 +86,15 @@ Arch Linux [službeno podržava četiri vrste jezgre Linuxa](https://wiki.archli
 - dugotrajna, paket [linux-lts](https://archlinux.org/packages/?name=linux-lts)
 - Zen, paket [linux-zen](https://archlinux.org/packages/?name=linux-zen)
 
-Zadana instalacija koristi stabilnu verziju, ali za ilustraciju korištenja vrste jezgre koja nije zadana prijeći ćemo na dugotrajnu instalacijom paketa `linux-lts`:
+Zadana instalacija koristi stabilnu verziju.
+
+### Nadogradnja verzije jezgre
+
+Kod nadogradnje svih paketa naredbom `pacman -Syu`, moguće je da će među nadogradnjama biti i novija verzija paketa `linux`. Za razliku od svih ostalih paketa, nadogradnja jezgre zahtijeva ponovno pokretanje operacijskog sustava kako bi se pokrenula. Štoviše, sve do ponovnog pokretanja operacijskog sustava neće ispravno raditi naredbe koje koriste informacije o pokrenutoj verziji jezgre kod traženja modula jezgre (kao što je, primjerice, naredba `modprobe`).
+
+### Promjena vrste jezgre koja se koristi
+
+Za ilustraciju korištenja vrste jezgre koja nije zadana prijeći ćemo na dugotrajnu instalacijom paketa `linux-lts`:
 
 ``` shell
 $ sudo pacman -S linux-lts
@@ -105,3 +113,27 @@ Uvjerimo se da su slika jezgre i [početni datotečni sustav za RAM](https://wik
 $ ls /boot
 efi  grub  initramfs-linux-fallback.img  initramfs-linux-lts-fallback.img  initramfs-linux-lts.img  initramfs-linux.img  vmlinuz-linux  vmlinuz-linux-lts
 ```
+
+## Pokretanje nove verzije jezgre korištenjem kexeca
+
+Iako pokretanje nove verzije jezgre operacijskog sustava nominalno zahtijeva ponovno pokretanje računala, Linux podržava [sustavski poziv pokretanja jezgre](https://en.wikipedia.org/wiki/Kexec) (engl. *kernel execute*, kraće kexec) koji omogućuje pokretanje novije verzije jezgre iz trenutno pokrenute jezgre. Time se preskače inicijalizacija hardvera i pokretanje bootloadera.
+
+Prvi korak je instalacija paketa `kexec-tools`:
+
+``` shell
+$ sudo pacman -S kexec-tools
+```
+
+Ako je instalirana nova verzija jezgre, alat `kexec` je može pripremiti za pokretanje korištenjem parametra `-l` na način:
+
+``` shell
+$ kexec -l /boot/vmlinuz-linux --initrd=/boot/initramfs-linux.img --reuse-cmdline
+```
+
+Pokretanje nove verzije jezgre uz zaustavljanje svih usluga i odmontiranje svih datotečnih sustava vrši se korištenjem systemdove naredbe `systemctl kexec`:
+
+``` shell
+$ sudo systemctl kexec
+```
+
+Više detalja moguće je pronaći na [stranici kexec na ArchWikiju](https://wiki.archlinux.org/title/Kexec).
