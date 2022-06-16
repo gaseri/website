@@ -38,6 +38,10 @@ U svom [poznatom govoru](https://hr.wikisource.org/wiki/Govor_Franje_Tu%C4%91man
 
 <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@nikola_replay/video/7090912972452711686" data-video-id="7090912972452711686" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@nikola_replay" href="https://www.tiktok.com/@nikola_replay">@nikola_replay</a> 🤣 <a title="foryou" target="_blank" href="https://www.tiktok.com/tag/foryou">#foryou</a> <a title="foryoupage" target="_blank" href="https://www.tiktok.com/tag/foryoupage">#foryoupage</a> <a target="_blank" title="♬ original sound - @nikola_replay" href="https://www.tiktok.com/music/original-sound-7090912949518338821">♬ original sound - @nikola_replay</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
 
+### Ima li Grupa za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi više teleskopa nego Ruđer Bošković?
+
+Naravno da nema, jedino [Bore Balboa](https://youtu.be/x9x0oAcjFNA?t=42s) ima [u kući više teleskopa nego Ruđer Bošković](https://genius.com/23445076).
+
 ## Mnogo više od deset primjera kako se (ne) ulizivati VM
 
 Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primjeri su iz kasnijih godina. Napisano prema istinitim događajima, ali prilagođeno po potrebi.
