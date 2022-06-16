@@ -125,6 +125,7 @@ nav:
         - Pregled heterogene sustavske arhitekture: hr/nastava/materijali/hsa-pregled.md
         - HTTP klijent HTTPie: hr/nastava/materijali/httpie-http-klijent.md
         - Osnovni alati za konfiguraciju računalne mreže: hr/nastava/materijali/ifconfig-konfiguracija-mreznih-sucelja.md
+        - Instalacija i konfiguracija softvera za vježbe iz kolegija Informatika (BioTech): hr/nastava/materijali/inf-biotech-instalacija-softvera-windows-ubuntu.md
         - Intelektualno vlasništvo nad softverom, podacima i znanstvenim radovima: hr/nastava/materijali/intelektualno-vlasnistvo-softver-podaci-znanstveni-radovi.md
         - Prevođenje mrežnih adresa: hr/nastava/materijali/iptables-prevodjenje-adresa.md
         - Filtriranje paketa vatrozidom: hr/nastava/materijali/iptables-vatrozid.md

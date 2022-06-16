@@ -1,5 +1,7 @@
 # Informatika (BioTech)
 
+- [Instalacija i konfiguracija softvera za vježbe iz kolegija Informatika (BioTech)](../materijali/inf-biotech-instalacija-softvera-windows-ubuntu.md)
+
 ## Predavanja
 
 - [Sveprisutna i prožimajuća računala](../materijali/racunarstvo-sveprisutna-prozimajuca-racunala.md)
