@@ -190,6 +190,14 @@ Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primje
 !!! tip
     "Profesore, puno je ljudi odgovorilo d) u 6. pitanju, međutim, tvrditi da je zbog toga d) točan odgovor je *argumentum ad populum*, a svi dobro znamo da je to jedna od čestih zabluda u argumentiranju."
 
+### Bonus primjer 9
+
+!!! error
+    "Profesore, zašto bi me u doba kad veza na internet radi na dva klika mišem ili dodira po ekranu zanimalo kako se konfiguriraju te podmreže, adrese i maske?"
+
+!!! tip
+    "Profesore, moram vam reći da sam se na poslu nedavno cijeli dan držao za glavu jer nisam pratio kad se predavalo o CIDR-u i blokovima adresa."
+
 ## Poezija
 
 ### Tina Ivanović -- Modul subprocess (prerada Bunda od nerca)
