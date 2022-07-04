@@ -4,6 +4,13 @@ author: Vedran Miletić
 
 # Publications
 
+## 2022
+
+- Turalija, M., Petrović, M. & Kovačić, B. [Towards General-Purpose Long-Timescale Molecular Dynamics Simulation on Exascale Supercomputers with Data Processing Units.](https://ieeexplore.ieee.org/document/9803537) in 2022 45th International Convention on Information, Communication, and Electronic Technology (MIPRO), 300–306 (2021). [doi:10.23919/MIPRO55190.2022.9803537](https://doi.org/10.23919/MIPRO55190.2022.9803537)
+
+    ??? abstract
+        Molecular dynamics (MD) simulation provides the atomic-level characterization of biomolecular systems and their transitions, such as conformational changes in proteins. The computational demands of such simulations and limits of parallelization techniques have prevented simulations of real-world systems from reaching the microsecond timescales, which are relevant for real-world applications. The notable exceptions are the supercomputers specifically designed for MD simulations. An example of such supercomputers is the Anton supercomputer, nowadays in its third iteration, which uses a substantial number of application-specific integrated circuits (ASICs) for MD simulation and is not generally available. Recent advances in algorithms, software, and hardware towards exascale supercomputing have made microsecond-timescale simulations of practically relevant biomolecular systems reachable within days. Data processing units (DPUs) are already being used in data centers for the in-flight processing of network packets (e.g. encryption, decryption, and intrusion detection) and are expected to be used in future exascale supercomputers in some form. The usage of DPUs in the supercomputers unlocks the potential to accelerate MD simulations that were previously available only in networking ASICs in supercomputers such as Anton. This paper proposes the usage of DPUs for MD simulation acceleration in an innovative way inspired by the Anton supercomputer.
+
 ## 2021
 
 - Miletić, V., Nikolić, P. & Kinkela, D. [Structure-based Molecular Docking in the Identification of Novel Inhibitors Targeting SARS-CoV-2 Main Protease.](https://ieeexplore.ieee.org/document/9596660) in 2021 44th International Convention on Information, Communication, and Electronic Technology (MIPRO), 435–440 (2021). [doi:10.23919/MIPRO52101.2021.9596660](https://doi.org/10.23919/MIPRO52101.2021.9596660)
