@@ -156,3 +156,7 @@ Finally, I stand for individual freedom which is constantly under threat from pe
 1. [NVIDIA CUDA ekosustav: što je tu open, a što baš i ne?](https://youtu.be/UYnnbsU0BoQ?list=PLDMnMa3XBHD8iF7xnwVAybQa_BlEXbhbg), [DORS/CLUC](https://www.dorscluc.org/), [2014](https://2014.dorscluc.org/).
 1. [Mrežni simulator ns-3: mogućnosti i unutarnji dizajn](https://youtu.be/-ZgJheNepmo?list=PL7982D00F0ADDF7F1), [DORS/CLUC](https://www.dorscluc.org/), [2012](http://2012.dorscluc.org/).
 1. [LuaTeX i ConTeXt MkIV: TeX is still alive and kicking](https://youtu.be/OiuU1dzYEk4?list=PL2D48D538AEE006BA), [DORS/CLUC](https://www.dorscluc.org/), [2011](https://robertbasic.com/blog/dorscluc-2011-recap/).
+
+### Mentions in research paper acknowledgments
+
+1. Rennekamp, B., Kutzki, F., Obarska-Kosinska, A., Zapp, C. & Gräter, F. [Hybrid Kinetic Monte Carlo/Molecular Dynamics Simulations of Bond Scissions in Proteins.](https://pubs.acs.org/doi/10.1021/acs.jctc.9b00786) *J. Chem. Theory Comput.* **16**(1), 553-563 (2020). [10.1021/acs.jctc.9b00786](https://doi.org/10.1021/acs.jctc.9b00786) ([WoS-SCIE, Q2, JIF: 6.006](https://jcr.clarivate.com/jcr-jp/journal-profile?journal=J%20CHEM%20THEORY%20COMPUT&year=2020); [times](https://www.webofscience.com/wos/woscc/full-record/WOS:000508474800042) [cited](https://publons.com/publon/36864842/): 5)
