@@ -1,7 +1,7 @@
 SVEUČILIŠTE U RIJECI  
 ODJEL ZA INFORMATIKU  
 Ulica Radmile Matejčić 2, Rijeka  
-Akademska 2019/2020. godina
+Akademska godina 2019./2020.
 
 # UPRAVLJANJE MREŽNIM SUSTAVIMA
 
@@ -153,7 +153,7 @@ Izvanredni:
 - 27\. ožujka 2020.
 - 7\. rujna 2020.
 
-## RASPORED NASTAVE -- zimski (III) semestar ak. 2019./2020. godine
+## RASPORED NASTAVE -- zimski (III) semestar ak. god. 2019./2020.
 
 Nastava će se na predmetu odvijati u zimskom semestru prema sljedećem rasporedu:
 

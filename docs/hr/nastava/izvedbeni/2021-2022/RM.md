@@ -162,7 +162,7 @@ Izvanredni:
 - 25\. ožujka 2022.
 - 9\. rujna 2022.
 
-## RASPORED NASTAVE -- zimski (3.) semestar ak. 2021./2022. godine
+## RASPORED NASTAVE -- zimski (3.) semestar ak. god. 2021./2022.
 
 Nastava će se na predmetu odvijati u zimskom semestru prema sljedećem rasporedu:
 

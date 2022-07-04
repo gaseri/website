@@ -498,7 +498,7 @@ Poslužitelj datoteka je dio gotovo svakog suvremenog poslovnog sustava. Bio taj
 1. [File Server (Ubuntu Server Guide)](https://ubuntu.com/server/docs/samba-file-server)
 1. [Using Samba as a server (Red Hat Enterprise Linux 8 Documentation: Deploying different types of servers)](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/deploying_different_types_of_servers/assembly_using-samba-as-a-server_deploying-different-types-of-servers)
 
-## Odabrane teme završnih radova akademske 2021/2022. godine
+## Odabrane teme završnih radova akademske godine 2021./2022.
 
 ### Razvoj web aplikacije korištenjem okvira Django i biblioteke HTMX {[DWA2](nastava/kolegiji/DWA2.md)} {Tvrtko Kaurinović}
 
@@ -523,7 +523,7 @@ Poslužitelj datoteka je dio gotovo svakog suvremenog poslovnog sustava. Bio taj
 1. [Introducing the Vulkan renderer preview (Unity Blog)](https://blog.unity.com/technology/introducing-the-vulkan-renderer-preview)
 1. [Graphics API support (Unity Manual)](https://docs.unity3d.com/Manual/GraphicsAPIs.html)
 
-## Odabrane teme diplomskih radova akademske 2021/2022. godine
+## Odabrane teme diplomskih radova akademske godine 2021./2022.
 
 ### Evolucija monolitne web aplikacije u mikroservisnu besposlužiteljsku aplikaciju {[UMS](nastava/kolegiji/UMS.md)} [Ana Novokmet]
 
@@ -537,7 +537,7 @@ Poslužitelj datoteka je dio gotovo svakog suvremenog poslovnog sustava. Bio taj
 1. [Serverless microservices (AWS Documentation)](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/serverless-microservices.html)
 1. [Serverless Microservices reference architecture (Microsoft Docs)](https://docs.microsoft.com/en-us/samples/azure-samples/serverless-microservices-reference-architecture/serverless-microservices-reference-architecture/)
 
-## Odabrane teme završnih radova akademske 2020/2021. godine
+## Odabrane teme završnih radova akademske godine 2020./2021.
 
 ### Izrada web aplikacije korištenjem Djanga {[DWA2](nastava/kolegiji/DWA2.md)} [Antonela Troha]
 
@@ -630,7 +630,7 @@ U računalnoj grafici se razrađuju temeljni koncepti i tehnike prikazivanja 2D 
 1. M. Čupić, Ž. Mihajlović, Interaktivna računalna grafika kroz primjere u OpenGL-u, udžbenik Fakulteta elektronike i računarstva, 2018.
 1. R. Scitovski, Numerička matematika, 3. izmijenjeno i dopunjeno izdanje, Odjel za matematiku, Sveučilište u Osijeku, 2015.
 
-### Razvoj aplikacije korištenjem mrežne i kriptografske biblioteke NaCl {[RM2](nastava/kolegiji/RM2.md)} [Đino Prenc, preneseno iz 2019/2020.]
+### Razvoj aplikacije korištenjem mrežne i kriptografske biblioteke NaCl {[RM2](nastava/kolegiji/RM2.md)} [Đino Prenc, preneseno iz 2019./2020.]
 
 **Naslov na engleskom:** Application development using NaCl network and cryptographic library
 
@@ -643,7 +643,7 @@ Brojne mrežne aplikacije koje svakodnevno vrše šifriranje i dešifriranje sad
 1. [NaCl: Networking and Cryptography library](https://nacl.cr.yp.to/)
 1. [Libsodium documentation](https://libsodium.gitbook.io/)
 
-### Prvoaprilski RFC-i {[RM2](nastava/kolegiji/RM2.md)} [Dino Šarković, preseneno iz 2018/2019.]
+### Prvoaprilski RFC-i {[RM2](nastava/kolegiji/RM2.md)} [Dino Šarković, preseneno iz 2018./2019.]
 
 **Naslov na engleskom:** April Fools' Day Request for Comments
 
@@ -656,7 +656,7 @@ Osim ozbiljnih RFC-a, kao što su primjerice oni koji opisuju TCP, IPv6 ili ICMP
 1. [April Fools' Day Request for Comments](https://en.wikipedia.org/wiki/April_Fools%27_Day_Request_for_Comments)
 1. Limoncelli, T. A. & Salus, P. H. [The Complete April Fools' Day RFCs.](https://www.rfchumor.com/) (Peer-to-Peer Communications, 2007.)
 
-## Odabrane teme diplomskih radova akademske 2020/2021. godine
+## Odabrane teme diplomskih radova akademske godine 2020./2021.
 
 ### Ponovljiva izgradnja programske podrške {[UMS](nastava/kolegiji/UMS.md)} [Matija Banjan]
 
@@ -701,7 +701,7 @@ Cilj rada je opisati tehnike napada na mikroservise i web aplikacije, alate koji
 1. [ASP.NET Core](https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core)
 1. [Spring](https://spring.io/)
 
-## Odabrane teme završnih radova akademske 2019/2020. godine
+## Odabrane teme završnih radova akademske godine 2019./2020.
 
 ### Utjecaj pandemije COVID-19 na igranje igara za više igrača putem interneta {[RM2](nastava/kolegiji/RM2.md)} [Ana Novokmet]
 
@@ -802,7 +802,7 @@ Visokoprotočni virtualni pregled molekula koje su potencijalni lijekovi kroz pr
 1. [Taskflow (C++14)](https://taskflow.github.io/)
 1. [C++17 algorithms library](https://en.cppreference.com/w/cpp/algorithm)
 
-### Rješavanje zadataka iz predmeta Računalne mreže na računalu {[RM1](nastava/kolegiji/RM1.md)} [Andrea Hrelja, preneseno iz 2018/2019.]
+### Rješavanje zadataka iz predmeta Računalne mreže na računalu {[RM1](nastava/kolegiji/RM1.md)} [Andrea Hrelja, preneseno iz 2018./2019.]
 
 **Opis teme:**
 
@@ -813,7 +813,7 @@ Predmet Računalne mreže jedan od je temeljnih predmeta preddiplomskog studija 
 1. Peterson, L. L. & Davie, B. S. Computer networks: a systems approach. (Morgan Kaufmann, 2012.)
 1. Dokumentacija odabranog programskog jezika
 
-## Odabrane teme diplomskih radova akademske 2019/2020. godine
+## Odabrane teme diplomskih radova akademske godine 2019./2020.
 
 ### InterPlanetary File System (IPFS) {[UMS](nastava/kolegiji/UMS.md)} [Dario Ognjanović]
 
@@ -884,7 +884,7 @@ Programi za sjenčanje neizbježan su dio modernih računalnih igara gdje služe
 1. [The Linux Graphics Stack (Clean Rinse)](https://blog.mecheye.net/2012/06/the-linux-graphics-stack/)
 1. [A brief introduction to the Linux graphics stack (Iago Toral Developer Log, Igalia)](https://blogs.igalia.com/itoral/2014/07/29/a-brief-introduction-to-the-linux-graphics-stack/)
 
-## Odabrane teme završnih radova akademske 2018/2019. godine
+## Odabrane teme završnih radova akademske godine 2018./2019.
 
 ### Implementacija Kruskalovog algoritma primjenom tehnologije CUDA {[PPHS](nastava/kolegiji/PPHS.md)} [Vicenco Tomaš]
 
@@ -901,7 +901,7 @@ NVIDIA CUDA je vodeća tehnologija za računanje na grafičkim procesorima i isk
 1. [NVIDIA CUDA](https://developer.nvidia.com/cuda-zone)
 1. [Kruskal's algorithm](https://en.wikipedia.org/wiki/Kruskal's_algorithm)
 
-## Odabrane teme diplomskih radova akademske 2018/2019. godine
+## Odabrane teme diplomskih radova akademske godine 2018./2019.
 
 ### Performanse upravljačkih programa grafičkog procesora kod izvođenja simulacija molekularne dinamike alatom GROMACS {[PPHS](nastava/kolegiji/PPHS.md)} [Mario Ćuro]
 
@@ -975,7 +975,7 @@ Dok se aplikacija izvodi u heterogenom računalnom sustavu, grafički i središn
 1. W. H. Wen-mei, [Heterogeneous System Architecture: A new compute platform infrastructure.](https://www.elsevier.com/books/heterogeneous-system-architecture/hwu/978-0-12-800386-2) Morgan Kaufmann, 2015.
 1. [ROCm: Open Platform For Development, Discovery and Education around GPU Computing (GPUOpen)](https://gpuopen.com/professional-compute/)
 
-## Odabrane teme završnih radova akademske 2017/2018. godine
+## Odabrane teme završnih radova akademske godine 2017./2018.
 
 ### Napadi tipa man-in-the-middle na HTTPS i njihovo prepoznavanje {[RM2](nastava/kolegiji/RM2.md)} [Dominik Varelija]
 
@@ -989,7 +989,7 @@ Dok se aplikacija izvodi u heterogenom računalnom sustavu, grafički i središn
 1. Durumeric, Zakir, et al. "The Security Impact of HTTPS Interception." Network and Distributed Systems Symposium (NDSS’17). 2017. Rad dostupan putem [mrežnih stranica J. Alexa Hanldermana](https://jhalderm.com/pub/papers/interception-ndss17.pdf).
 1. [Detecting HTTPS Interception (Caddy web server)](https://caddyserver.com/docs/mitm-detection)
 
-### Nomulus: softver otvorenog koda za upravljanje registrom domena (Nomulus: open source domain registry management software) {[RM2](nastava/kolegiji/RM2.md)} [Sanja Ivić, preneseno iz 2016/2017.]
+### Nomulus: softver otvorenog koda za upravljanje registrom domena (Nomulus: open source domain registry management software) {[RM2](nastava/kolegiji/RM2.md)} [Sanja Ivić, preneseno iz 2016./2017.]
 
 **Opis teme:**
 
@@ -1003,7 +1003,7 @@ Literatura
 1. [Introducing Nomulus: an open source top-level domain name registry (Google Open Source Blog)](https://opensource.googleblog.com/2016/10/introducing-nomulus-open-source.html)
 1. [ICANN New gTLDs](https://newgtlds.icann.org/)
 
-### Ugradbeni softver za bežične usmjerivače OpenWrt / LEDE (OpenWRT/LEDE embedded wireless router software) {[RM1](nastava/kolegiji/RM1.md)} [Matija Banjan, preneseno iz 2016/2017.]
+### Ugradbeni softver za bežične usmjerivače OpenWrt / LEDE (OpenWRT/LEDE embedded wireless router software) {[RM1](nastava/kolegiji/RM1.md)} [Matija Banjan, preneseno iz 2016./2017.]
 
 **Opis teme:**
 
@@ -1014,7 +1014,7 @@ OpenWrt / LEDE je distribucija Linuxa koja se koristi kao ugradbeni softver za b
 1. [OpenWRT](https://openwrt.org/)
 1. [LEDE](https://www.lede-project.org/)
 
-## Odabrane teme diplomskih radova akademske 2017/2018. godine
+## Odabrane teme diplomskih radova akademske godine 2017./2018.
 
 ### Implementacija TCP-a u jezgri Linuxa i njene primjene (TCP implementation in Linux kernel and its applications) {[OS1](nastava/kolegiji/OS1.md)} [Ana Tomasović]
 
@@ -1049,7 +1049,7 @@ Godot je pogon otvorenog koda za izradu 2D i 3D igara dostupand pod licencom MIT
 1. [Godot 3.0 Open-Source Game Engine Released (Phoronix)](https://www.phoronix.com/scan.php?page=news_item&px=Godot-3.0-Released)
 1. [Godot Engine, the open source game engine has evolved with the big 3.0 release (GamingOnLinux)](https://www.gamingonlinux.com/articles/godot-engine-the-open-source-game-engine-has-evolved-with-the-big-30-release.11135)
 
-## Odabrane teme završnih radova akademske 2016/2017. godine
+## Odabrane teme završnih radova akademske godine 2016./2017.
 
 ### Utjecaj interneta na rezultat predsjedničkih izbora 2016. godine u Sjedinjenim Američkim Državama (Impact of the Internet on the result of US Presidential Election 2016) {[RM2](nastava/kolegiji/RM2.md)} [Mihael Orlović]
 
@@ -1109,7 +1109,7 @@ Piglit je skup testova za implemetacije OpenGL-a i OpenCL-a neovisan o hardveru,
 1. [OpenCL](https://www.khronos.org/opencl/)
 1. Dokumentacija upravljačkih programa odabranog hardvera
 
-### Ograničenje pokretanja operacijskih sustava tehnologijom UEFI Secure Boot (Restricting operating system boot using UEFI Secure Boot technology) {[OS1](nastava/kolegiji/OS1.md)} [Kristian Nekić, preneseno iz 2015/2016.]
+### Ograničenje pokretanja operacijskih sustava tehnologijom UEFI Secure Boot (Restricting operating system boot using UEFI Secure Boot technology) {[OS1](nastava/kolegiji/OS1.md)} [Kristian Nekić, preneseno iz 2015./2016.]
 
 [Poveznica na rad u repozitoriju](https://urn.nsk.hr/urn:nbn:hr:195:915124)
 
@@ -1128,7 +1128,7 @@ S izlaskom operacijskog sustava Windows 10 zabrinutost kritičara raste, obzirom
 1. [Windows 10 to make the Secure Boot alt-OS lock out a reality](https://arstechnica.com/information-technology/2015/03/windows-10-to-make-the-secure-boot-alt-os-lock-out-a-reality/)
 1. [Secure Boot: the good, the bad, and secureboot.me - Vedran Miletić DORS/CLUC 2015](https://youtu.be/mWJj0Gn7SWc)
 
-### Operacijski sustav CoreOS (CoreOS operating system) {[OS2](nastava/kolegiji/OS2.md)} [Matija Šegović, preneseno iz 2015/2016.]
+### Operacijski sustav CoreOS (CoreOS operating system) {[OS2](nastava/kolegiji/OS2.md)} [Matija Šegović, preneseno iz 2015./2016.]
 
 [Poveznica na rad u repozitoriju](https://urn.nsk.hr/urn:nbn:hr:195:958447)
 
@@ -1142,7 +1142,7 @@ CoreOS je operacijski sustav otvorenog koda zasnovan na jezgri Linux koji omogu�
 1. [Project Atomic](https://projectatomic.io/)
 1. Scheepers, Mathijs Jeroen. "Virtualization and containerization of application infrastructure: A comparison." (2014).
 
-## Odabrane teme završnih radova akademske 2015/2016. godine
+## Odabrane teme završnih radova akademske godine 2015./2016.
 
 ### Datotečni sustavi ZFS i Btrfs (Btrfs and ZFS filesystems) {[OS1](nastava/kolegiji/OS1.md)} [Ana Tomasović]
 
@@ -1229,7 +1229,7 @@ Tor (The Onion Router) je slobodan softver za anonimnu komunikaciju putem intern
 1. [Tor: Hidden Services and Deanonymisation [31c3]](https://archive.org/details/youtube-oZdeRmlj8Gw)
 1. [Shari Steele on online anonymity: Tor staff are 'freedom fighters'](https://www.theguardian.com/technology/2016/jan/11/shari-steele-tor-encryption-online-anonymity-censorship)
 
-## Odabrane teme diplomskih radova akademske 2015/2016. godine
+## Odabrane teme diplomskih radova akademske godine 2015./2016.
 
 ### Primjena responsive tehnologije za izradu dokumentacije aplikacije CP2K (Application of responisve technology for creating CP2K documentation) {[DS](nastava/kolegiji/DS.md)} [Kristijan Lenković]
 

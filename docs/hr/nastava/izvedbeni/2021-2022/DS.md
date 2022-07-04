@@ -1,7 +1,7 @@
 SVEUČILIŠTE U RIJECI  
 ODJEL ZA INFORMATIKU  
 Ulica Radmile Matejčić 2, Rijeka  
-Akademska 2021/2022. godina
+Akademska godina 2021./2022.
 
 # DISTRIBUIRANI SUSTAVI
 
@@ -157,7 +157,7 @@ Izvanredni:
 - 22\. ožujka 2022.
 - 13\. rujna 2022.
 
-## RASPORED NASTAVE -- zimski (I) semestar ak. 2021./2022. godine
+## RASPORED NASTAVE -- zimski (I) semestar ak. god. 2021./2022.
 
 Nastava će se na predmetu odvijati u zimskom semestru prema sljedećem rasporedu:
 

@@ -1,6 +1,6 @@
 # Detaljni izvedbeni nastavni plan za kolegij: INFORMATIKA
 
-**Akademska godina:** 2019/2020
+**Akademska godina:** 2019./2020.
 
 **Studij:** Preddiplomski studij Biotehnologija i istraživanje lijekova
 

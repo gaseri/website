@@ -4,7 +4,7 @@ author: Mario Radovan, Vedran Miletić, Ivan Ivakić, Domagoj Margan, Tomislav �
 
 # Istraživanje i razvoj
 
-## Razvoj online kolegija Optimizacija programskog koda (Code optimization) na Sveučilištu u Rijeci u akademskoj 2020/2021. i 2021/2022. godini
+## Razvoj online kolegija Optimizacija programskog koda (Code optimization) na Sveučilištu u Rijeci u akademskim godinama 2020./2021. i 2021./2022.
 
 ### Podaci o osobama odgovornim za provedbu projekta
 
@@ -66,7 +66,7 @@ kolegija i asistent)
 
 #### Dosadašnji način izvođenja nastave
 
-Kolegij će se prvi put izvoditi u akademskoj godini 2021/2022 kao i preostali kolegiji na 3. godini novog preddiplomskog studijskog programa "Informatika" čija je izvedba započela akademske godine 2019/2020.
+Kolegij će se prvi put izvoditi u akademskoj godini 2021./2022. kao i preostali kolegiji na 3. godini novog preddiplomskog studijskog programa "Informatika" čija je izvedba započela akademske godine 2019./2020.
 
 #### Razina sadašnje primjene alata e-učenja
 
@@ -101,7 +101,7 @@ Preduvjet za upis kolegija su položeni predmeti koji obrađuju programiranje, s
 
 #### Početak izvedbe kolegija u 2020./21. (navesti datum)
 
-Početak zimskog semestra akademske godine 2021/2022., približno 1. listopad 2021.
+Početak zimskog semestra akademske godine 2021./2022., približno 1. listopad 2021.
 
 #### Očekivani ishodi učenja na kolegiju
 

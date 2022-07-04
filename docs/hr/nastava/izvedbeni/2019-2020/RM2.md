@@ -1,7 +1,7 @@
 SVEUČILIŠTE U RIJECI  
 ODJEL ZA INFORMATIKU  
 Ulica Radmile Matejčić 2, Rijeka  
-Akademska 2019/2020. godina
+Akademska godina 2019./2020.
 
 # RAČUNALNE MREŽE 2
 
@@ -151,7 +151,7 @@ Izvanredni:
 - 3\. rujna 2020.
 - 17\. rujna 2020.
 
-## RASPORED NASTAVE -- ljetni (IV) semestar ak. 2019./2020. godine
+## RASPORED NASTAVE -- ljetni (IV) semestar ak. god. 2019./2020.
 
 Nastava će se na predmetu odvijati u ljetnom semestru prema sljedećem rasporedu:
 

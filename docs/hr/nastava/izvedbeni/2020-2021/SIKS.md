@@ -157,7 +157,7 @@ Izvanredni:
 - 2\. rujna 2021.
 - 16\. rujna 2021.
 
-## RASPORED NASTAVE -- ljetni (4.) semestar ak. 2020./2021. godine
+## RASPORED NASTAVE -- ljetni (4.) semestar ak. god. 2020./2021.
 
 Nastava će se na predmetu odvijati u zimskom semestru prema sljedećem rasporedu:
 

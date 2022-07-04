@@ -1,7 +1,7 @@
 SVEUČILIŠTE U RIJECI  
 ODJEL ZA INFORMATIKU  
 Ulica Radmile Matejčić 2, Rijeka  
-Akademska 2020/2021. godina
+Akademska godina 2020./2021.
 
 # DISTRIBUIRANI SUSTAVI
 
@@ -159,7 +159,7 @@ Izvanredni:
 - 30\. ožujka 2021.
 - 14\. rujna 2021.
 
-## RASPORED NASTAVE -- zimski (I) semestar ak. 2020./2021. godine
+## RASPORED NASTAVE -- zimski (I) semestar ak. god. 2020./2021.
 
 Nastava će se na predmetu odvijati u zimskom semestru prema sljedećem rasporedu:
 

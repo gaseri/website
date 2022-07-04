@@ -1,7 +1,7 @@
 SVEUČILIŠTE U RIJECI  
 FAKULTET INFORMATIKE I DIGITALNIH TEHNOLOGIJA  
 Ulica Radmile Matejčić 2, Rijeka  
-Akademska 2021/2022. godina
+Akademska godina 2021./2022.
 
 # DINAMIČKE WEB APLIKACIJE 2
 
@@ -160,7 +160,7 @@ Izvanredni:
 - 30\. kolovoza 2022.
 - 13\. rujna 2022.
 
-## RASPORED NASTAVE -- ljetni (VI) semestar ak. 2021./2022. godine
+## RASPORED NASTAVE -- ljetni (VI) semestar ak. god. 2021./2022.
 
 Nastava će se na predmetu odvijati u ljetnom semestru prema sljedećem rasporedu:
 

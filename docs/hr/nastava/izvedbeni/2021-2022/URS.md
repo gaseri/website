@@ -159,7 +159,7 @@ Izvanredni:
 - 2\. rujna 2022.
 - 16\. rujna 2022.
 
-## RASPORED NASTAVE -- ljetni (6.) semestar ak. 2021./2022. godine
+## RASPORED NASTAVE -- ljetni (6.) semestar ak. god. 2021./2022.
 
 Nastava će se na predmetu odvijati u zimskom semestru prema sljedećem rasporedu:
 

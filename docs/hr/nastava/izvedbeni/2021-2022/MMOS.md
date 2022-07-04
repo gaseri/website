@@ -167,7 +167,7 @@ Izvanredni:
 - 22\. ožujka 2022.
 - 13\. rujna 2022.
 
-## RASPORED NASTAVE -- zimski (5.) semestar ak. 2020./2021. godine
+## RASPORED NASTAVE -- zimski (5.) semestar ak. god. 2020./2021.
 
 Nastava će se na predmetu odvijati u zimskom semestru prema sljedećem rasporedu:
 
