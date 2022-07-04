@@ -34,8 +34,6 @@ Prema [Wikipediji](https://en.wikipedia.org/wiki/Molecular_modelling):
 - [vizualizacija](https://en.wikipedia.org/wiki/Visualization_(graphics)) prikazuje molekule u grafičkom obliku
 - [popis softvera](https://en.wikipedia.org/wiki/List_of_molecular_graphics_systems)
 
----
-
 ## Kemoinformatika ili *in silico* kemija
 
 Prema [Wikipediji](https://en.wikipedia.org/wiki/Cheminformatics):
