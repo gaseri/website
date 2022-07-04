@@ -303,6 +303,9 @@ nav:
         - Datotečni sustav i upravitelj volumenima ZFS: hr/nastava/materijali/zfs-datotecni-sustav-upravitelj-volumenima.md
         - Znanstveni softver: hr/nastava/materijali/znanstveni-softver.md
         - Upute za upravljanje bibliografijom korištenjem alata Zotero: hr/nastava/materijali/zotero-citiranje-bibliografija.md
+      - Programi studija:
+        - Verzija 2022./2023.:
+          - Infrastruktura za podatke velikog obujma: hr/nastava/programi/verzija-2022-2023/IPVO.md
     - Teme završnih i diplomskih radova: hr/teme-zavrsnih-i-diplomskih-radova.md
     - Aktivizam: hr/aktivizam.md
     - Povijest: hr/povijest.md
