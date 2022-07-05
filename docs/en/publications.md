@@ -4,14 +4,14 @@ author: Vedran Miletić
 
 # Publications
 
-## 2022
+## Year 2022
 
 - Turalija, M., Petrović, M. & Kovačić, B. [Towards General-Purpose Long-Timescale Molecular Dynamics Simulation on Exascale Supercomputers with Data Processing Units.](https://ieeexplore.ieee.org/document/9803537) in 2022 45th International Convention on Information, Communication, and Electronic Technology (MIPRO), 300–306 (2021). [doi:10.23919/MIPRO55190.2022.9803537](https://doi.org/10.23919/MIPRO55190.2022.9803537)
 
     ??? abstract
         Molecular dynamics (MD) simulation provides the atomic-level characterization of biomolecular systems and their transitions, such as conformational changes in proteins. The computational demands of such simulations and limits of parallelization techniques have prevented simulations of real-world systems from reaching the microsecond timescales, which are relevant for real-world applications. The notable exceptions are the supercomputers specifically designed for MD simulations. An example of such supercomputers is the Anton supercomputer, nowadays in its third iteration, which uses a substantial number of application-specific integrated circuits (ASICs) for MD simulation and is not generally available. Recent advances in algorithms, software, and hardware towards exascale supercomputing have made microsecond-timescale simulations of practically relevant biomolecular systems reachable within days. Data processing units (DPUs) are already being used in data centers for the in-flight processing of network packets (e.g. encryption, decryption, and intrusion detection) and are expected to be used in future exascale supercomputers in some form. The usage of DPUs in the supercomputers unlocks the potential to accelerate MD simulations that were previously available only in networking ASICs in supercomputers such as Anton. This paper proposes the usage of DPUs for MD simulation acceleration in an innovative way inspired by the Anton supercomputer.
 
-## 2021
+## Year 2021
 
 - Miletić, V., Nikolić, P. & Kinkela, D. [Structure-based Molecular Docking in the Identification of Novel Inhibitors Targeting SARS-CoV-2 Main Protease.](https://ieeexplore.ieee.org/document/9596660) in 2021 44th International Convention on Information, Communication, and Electronic Technology (MIPRO), 435–440 (2021). [doi:10.23919/MIPRO52101.2021.9596660](https://doi.org/10.23919/MIPRO52101.2021.9596660)
 
@@ -23,14 +23,14 @@ author: Vedran Miletić
     ??? abstract
         **Significance:** The majority of the drugs which target membrane-embedded protease γ-secretase show an unusual biphasic activation–inhibition dose-response in cells, model animals, and humans. Semagacestat and avagacestat are two biphasic drugs that can facilitate cognitive decline in patients with Alzheimer’s disease. Initial mechanistic studies showed that the biphasic drugs, and pathogenic mutations, can produce the same type of changes in γ-secretase activity. **Results:** DAPT, semagacestat LY-411,575, and avagacestat are four drugs that show different binding constants, and a biphasic activation–inhibition dose-response for amyloid-β-40 products in SH-SY5 cells. Multiscale molecular dynamics studies have shown that all four drugs bind to the most mobile parts in the presenilin structure, at different ends of the 29 Å long active site tunnel. The biphasic dose-response assays are a result of the modulation of γ-secretase activity by the concurrent binding of multiple drug molecules at each end of the active site tunnel. The drugs activate γ-secretase by facilitating the opening of the active site tunnel, when the rate-limiting step is the tunnel opening, and the formation of the enzyme–substrate complex. The drugs inhibit γ-secretase as uncompetitive inhibitors by binding next to the substrate, to dynamic enzyme structures which regulate processive catalysis. The drugs can modulate the production of different amyloid-β catalytic intermediates by penetration into the active site tunnel, to different depths, with different flexibility and different binding affinity. **Conclusions:** Biphasic drugs and pathogenic mutations can affect the same dynamic protein structures that control processive catalysis. Successful drug-design strategies must incorporate transient changes in the γ-secretase structure in the development of specific modulators of its catalytic activity.
 
-## 2020
+## Year 2020
 
 - Miletić, V., Ašenbrener Katić, M. & Svedružić, Ž. [High-throughput Virtual Screening Web Service Development for SARS-CoV-2 Drug Design.](https://ieeexplore.ieee.org/document/9245082) in 2020 43rd International Convention on Information, Communication and Electronic Technology (MIPRO), 371–376 (2020). [doi:10.23919/MIPRO48935.2020.9245082](https://doi.org/10.23919/MIPRO48935.2020.9245082)
 
     ??? abstract
         The available structures of viral proteins and RNA molecules related to SARS-CoV-2 are used to screen and design a new set of drugs using the commercial databases and molecular docking protocols. The selected molecules are then studied further using molecular dynamics. Based on our earlier experiences we can target proteases, enzymes in DNA and RNA metabolism, and protein-protein interactions. In this paper we describe the planned research and development efforts for efficient screening and design of new drugs. Prior to the screening campaign, we will develop new open-source computational infrastructure, with two major outcomes. A new database containing all commercially available small-molecule ligands will be developed. A docking server with a web-based user interface will be developed and interfaced with the compound database. The docking server will use the database for sourcing of the molecules for the high-throughput virtual screening. Our approach offers major advantages that can bypass the problems that have traditionally plagued the pharmaceutical industry: our protocols are faster, cheaper, versatile, and offer minimal risks. We are developing new drugs using commercial databases, which allows us to buy the lead compounds for affordable prices that can bypass expensive and slow organic synthesis protocols.
 
-## 2019
+## Year 2019
 
 - Herrera-Rodríguez, A., Miletić, V., Aponte-Santamaría, C. & Gräter, F. [Molecular dynamics simulations of molecules in uniform flow.](https://www.cell.com/biophysj/fulltext/S0006-3495(19)30109-2) Biophys. J. 116(6), 621–632 (2019). [doi:10.1016/j.bpj.2018.12.025](https://doi.org/10.1016/j.bpj.2018.12.025) (WoS-SCIE, Q1, JIF: 3.854; times cited: 2)
 
