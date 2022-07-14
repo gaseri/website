@@ -42,6 +42,14 @@ U svom [poznatom govoru](https://hr.wikisource.org/wiki/Govor_Franje_Tu%C4%91man
 
 Naravno da nema, jedino [Bore Balboa](https://youtu.be/x9x0oAcjFNA?t=42s) ima [u kući više teleskopa nego Ruđer Bošković](https://genius.com/23445076).
 
+### Jesu li GASERI u ontološko-fenomenološkom smislu tradicionalni ili moderni?
+
+Oko ovog pitanja u [javnom](https://sh.wikipedia.org/wiki/Dizela%C5%A1i) [diskursu](https://vukajlija.com/gaser) postoje [stanovita](https://www.instagram.com/prosecni.gaser/) [neslaganja](https://znatko.com/17071/tko-je-gaser) pa smo odlučili prepustiti [umjetnoj inteligenciji Craiyon](https://www.craiyon.com/) (ranije poznatoj pod imenom [DALL-E mini](https://github.com/borisdayma/dalle-mini)) da na njega odgovori.
+
+![gaseri images drawn by Craiyon, formerly DALL-E mini](../images/craiyon-gaseri.webp)
+
+Slika govori više od tisuću riječi pa je u ovih [više od 9000](https://knowyourmeme.com/memes/its-over-9000) riječi Craiyon jasno dao do znanja da su gaseri sastavni dio višestoljetne tradicije.
+
 ## Mnogo više od deset primjera kako se (ne) ulizivati VM
 
 Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primjeri su iz kasnijih godina. Napisano prema istinitim događajima, ali prilagođeno po potrebi.
