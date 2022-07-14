@@ -308,6 +308,7 @@ nav:
       - Programi studija:
         - Verzija 2022./2023.:
           - Infrastruktura za podatke velikog obujma: hr/nastava/programi/verzija-2022-2023/IPVO.md
+          - Računalna biokemija i biofizika: hr/nastava/programi/verzija-2022-2023/RBKBF.md
     - Teme završnih i diplomskih radova: hr/teme-zavrsnih-i-diplomskih-radova.md
     - Aktivizam: hr/aktivizam.md
     - Povijest: hr/povijest.md
@@ -355,6 +356,8 @@ nav:
         - The usage of the LLVM libraries in the Mesa 3D graphics library: en/teaching/materials/llvm-mesa.md
         - The LLVM tools: en/teaching/materials/llvm-tools.md
       - Programmes:
+        - Revision 2022/2023:
+          - Computational biochemistry and biophysics: en/teaching/programmes/revision-2022-2023/CBCBP.md
         - Revision 2021/2022:
           - Code optimization: en/teaching/programmes/revision-2021-2022/CO.md
         - Revision 2019/2020:
