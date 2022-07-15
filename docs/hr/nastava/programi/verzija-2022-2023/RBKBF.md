@@ -17,7 +17,7 @@ Bodovna vrijednost i način izvođenja nastave:
 
 ### Ciljevi predmeta
 
-Projekt ljudskog genoma započeo je 1990-ih kako bi identificirao i sekvencirao sve ljudske gene. Već početkom 2000-ih, velika količina podataka o genima koji kodiraju proteine ​​bila je javno dostupna za istraživanje. Ti podaci i informacije dobivene iz njih, dostupnost sve bržih superračunala, te napredak metoda korištenih u računalnoj biokemiji i biofizici u sljedeća dva desetljeća omogućili su brzi razvoj grane molekularne biologije nazvane strukturna biologija, koja povezuje strukturu i funkcija bioloških makromolekula proteina, nukleinskih kiselina i membrana.
+Projekt ljudskog genoma započeo je 1990-ih kako bi identificirao i sekvencirao sve ljudske gene. Već početkom 2000-ih, velika količina podataka o genima koji kodiraju proteine bila je javno dostupna za istraživanje. Ti podaci i informacije dobivene iz njih, dostupnost sve bržih superračunala, te napredak metoda korištenih u računalnoj biokemiji i biofizici u sljedeća dva desetljeća omogućili su brzi razvoj grane molekularne biologije nazvane strukturna biologija, koja povezuje strukturu i funkcija bioloških makromolekula proteina, nukleinskih kiselina i membrana.
 
 Cilj kolegija je stjecanje znanja o strukturama podataka i algoritmima koji čine osnovu suvremenog softvera u području računalne biokemije i biofizike te o mogućnostima primjene i postupcima za daljnji razvoj postojećeg softvera prema znanstvenoistraživačkim potrebama. Poseban fokus je na podatkovnim strukturama i algoritmima koji omogućuju izvođenje ovog softvera na eksaskalarnim superračunalima. Cilj kolegija je i upoznavanje s aktualnim znanstvenoistraživačkim problemima u ovom području i pristupima koji odgovaraju na ta pitanja.
 
