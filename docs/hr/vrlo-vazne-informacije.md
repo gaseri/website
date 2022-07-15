@@ -48,7 +48,7 @@ Oko ovog pitanja u [javnom](https://sh.wikipedia.org/wiki/Dizela%C5%A1i) [diskur
 
 ![gaseri images drawn by Craiyon, formerly DALL-E mini](../images/craiyon-gaseri.webp)
 
-Slika govori više od tisuću riječi pa je u ovih [više od 9000](https://knowyourmeme.com/memes/its-over-9000) riječi Craiyon jasno dao do znanja da su gaseri sastavni dio višestoljetne tradicije.
+[Slika govori](https://en.wiktionary.org/wiki/a_picture_paints_a_thousand_words) [više nego](https://www.croexpress.eu/hrvatske-narodne-izreke-odabrali-smo-vise-od-60-najzanimljivijih/) [tisuću riječi](https://en.wikipedia.org/wiki/A_picture_is_worth_a_thousand_words) pa je u ovih [više od 9000](https://knowyourmeme.com/memes/its-over-9000) riječi Craiyon jasno svima dao do znanja da su gaseri sastavni dio višestoljetne tradicije.
 
 ## Mnogo više od deset primjera kako se (ne) ulizivati VM
 
