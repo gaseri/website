@@ -5,7 +5,7 @@
 Nositelj predmeta: doc. dr. sc. Vedran Miletić  
 Naziv predmeta: Optimizacija programskog koda  
 Studijski program: Preddiplomski sveučilišni studij Informatika  
-Status predmeta: obvezatan/**izborni**
+Status predmeta: obvezatan/**izborni**  
 Godina: 3.
 
 Bodovna vrijednost i način izvođenja nastave:
