@@ -99,7 +99,7 @@ Detaljan način razrade bodovanja na predmetu te pragovi prolaza za pojedine akt
 ### Obvezna literatura (u trenutku prijave prijedloga studijskog programa)
 
 1. Takada, M. *Distributed systems: for fun and profit*. (Mixu, 2013). Dostupno online: [book.mixu.net/distsys/](http://book.mixu.net/distsys/)
-2. Beyer, B., Jones, C., Petoff, J. & Murphy, N. R. *SS*. Dostupno online: [sre.google/sre-book/table-of-contents/](https://sre.google/sre-book/table-of-contents/)
+2. Beyer, B., Jones, C., Petoff, J. & Murphy, N. R. *Site Reliability Engineering: How Google Runs Production Systems*. Dostupno online: [sre.google/sre-book/table-of-contents/](https://sre.google/sre-book/table-of-contents/)
 3. Kleppmann, M. *Designing data-intensive applications: The big ideas behind reliable, scalable, and maintainable systems*. (O'Reilly Media, 2017).
 4. Scholl, B., Swanson, T. & Jausovec, P. *Cloud Native: Using Containers, Functions, and Data to Build Next-Generation Applications*. (O'Reilly Media, 2019).
 5. Aspnes, J. *Notes on Theory of Distributed Systems*. (Aspnes, 2021). Dostupno online: [cs-www.cs.yale.edu/homes/aspnes/classes/465/notes.pdf](http://cs-www.cs.yale.edu/homes/aspnes/classes/465/notes.pdf)
