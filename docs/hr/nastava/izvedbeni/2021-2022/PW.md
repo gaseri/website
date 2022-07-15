@@ -52,13 +52,13 @@ I8. Primijeniti tehnike timskog rada u sustavima za čuvanje verzija.
 
 ### Sadržaj predmeta
 
-- Objektno modeliranje web aplikacija i objektno programiranje u skriptnim programskim jezicima za web: klase, objekti, metode; konstruktori, nasljeđivanje, nadjačavanje.
+- Objektno modeliranje web aplikacija i objektno programiranje u skriptnim programskim jezicima za web: klase, objekti, metode; konstruktori, nasljeđivanje, nadjačavanje. Uzorci dizajna u web aplikacijama.
 - Relacijski model podataka i relacijske baze podataka: definiranje strukturnih osobina tablica i baze podataka; tvorba tablica i baze podataka. Jezik SQL, tvorba sastavljenih SQL izraza (naredbi).
 - Dvosmjerna komunikacija između klijenta, poslužitelja (web aplikacije), interpretera i sustava baze podataka.
 - Kreiranje komunikacijskog sučelja za pristup web aplikaciji; kreiranje veze skripta i sustava baze podataka, prihvat i oblikovanje odgovora iz baze podataka. Upiti i mijenjanje sadržaja baze pomoću skriptnog programskog jezika. Skriptiranje korištenjem JavaScript tehnologija.
 - Sigurnost web aplikacija.
-- Pisanje i provođenje automatiziranih testova koda. Pisanje i generiranje dokumentacije koda. Timski rad u sustavima za čuvanje verzija.
-- Uzorci dizajna u web aplikacijama.
+- Pisanje i provođenje automatiziranih testova koda. Pisanje i generiranje dokumentacije koda.
+- Timski rad u sustavima za čuvanje verzija.
 
 ### Vrsta izvođenja nastave
 
