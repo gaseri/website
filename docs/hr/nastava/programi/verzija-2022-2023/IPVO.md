@@ -5,7 +5,7 @@
 Nositelj predmeta: doc. dr. sc. Vedran Miletić  
 Naziv predmeta: Infrastruktura za podatke velikog obujma  
 Studijski program: Diplomski studij Informatika  
-Status predmeta: obvezatan  
+Status predmeta: **obvezatan** za modul IIS
 Godina: 1.
 
 Bodovna vrijednost i način izvođenja nastave:
