@@ -301,6 +301,22 @@ nav:
         - Upravljanje zaporkama: hr/nastava/materijali/upravljanje-zaporkama.md
         - Vlasnički softveri posebne namjene i računalne igre: hr/nastava/materijali/vlasnicki-softveri-posebne-namjene-i-racunalne-igre.md
         - Strujanje multimedijskog sadržaja alatom VLC: hr/nastava/materijali/vlc-strujanje-multimedijskog-sadrzaja.md
+        - Arhitekture web aplikacija - monolitna i uslužno orijentirana: hr/nastava/materijali/web-arhitekture.md
+        - Pisanje dokumentacije programskog koda i web aplikacija: hr/nastava/materijali/web-dokumentiranje.md
+        - Prošlost, sadašnjost i budućnost weba kao platforme za razvoj aplikacija i usluga: hr/nastava/materijali/web-evolucija.md
+        - Faktori razvoja web aplikacija: hr/nastava/materijali/web-faktori.md
+        - Kontejnerizacija web aplikacija: hr/nastava/materijali/web-kontejnerizacija.md
+        - Kontinuirana integracija i isporuka web aplikacija: hr/nastava/materijali/web-kontinuirana-integracija.md
+        - Objektno modeliranje i programiranje web aplikacija. Objektno-relacijsko preslikavanje: hr/nastava/materijali/web-objektno.md
+        - Paradigme programiranja u web aplikacijama - proceduralna, objektno orijentirana, funkcijska: hr/nastava/materijali/web-paradigme-programiranja.md
+        - Mjerenje i tehnike poboljšanja performansi web aplikacija: hr/nastava/materijali/web-performanse.md
+        - Sigurnost web aplikacija: hr/nastava/materijali/web-sigurnost.md
+        - Statička analiza programskog koda web aplikacija: hr/nastava/materijali/web-staticka-analiza.md
+        - Pisanje i provođenje automatiziranih testova programskog koda i web aplikacija: hr/nastava/materijali/web-testiranje.md
+        - Uvodno predavanje: hr/nastava/materijali/web-uvod.md
+        - Uzorci dizajna u web aplikacijama. Uzorci model-pogled-*: hr/nastava/materijali/web-uzorci-dizajna.md
+        - Podrška web aplikacija za izvođenje na različitim verzijama platforme: hr/nastava/materijali/web-verzije-platforme.md
+        - Timski razvoj web aplikacija i upravljanje verzijama programskog koda: hr/nastava/materijali/web-verzioniranje.md
         - Konfiguracija virtualne privatne mreže alatom WireGuard: hr/nastava/materijali/wireguard-virtualna-privatna-mreza.md
         - Filtriranje paketa: hr/nastava/materijali/wireshark-filtriranje-paketa.md
         - Snimanje prometa aplikacija: hr/nastava/materijali/wireshark-snimanje-prometa.md
