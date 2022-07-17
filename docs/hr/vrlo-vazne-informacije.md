@@ -50,6 +50,10 @@ Oko ovog pitanja u [javnom](https://sh.wikipedia.org/wiki/Dizela%C5%A1i) [diskur
 
 [Slika govori](https://en.wiktionary.org/wiki/a_picture_paints_a_thousand_words) [više nego](https://www.croexpress.eu/hrvatske-narodne-izreke-odabrali-smo-vise-od-60-najzanimljivijih/) [tisuću riječi](https://en.wikipedia.org/wiki/A_picture_is_worth_a_thousand_words) pa je u ovih [više od 9000](https://knowyourmeme.com/memes/its-over-9000) riječi Craiyon jasno svima dao do znanja da su gaseri sastavni dio višestoljetne tradicije.
 
+### Nudite li pristup vašim poslužiteljima putem SSH?
+
+GASERI ne nude pristup putem [SSH](https://www.openssh.com/), već samo putem [SSHH..](https://youtu.be/Fs96WfdspEk)
+
 ## Mnogo više od deset primjera kako se (ne) ulizivati VM
 
 Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primjeri su iz kasnijih godina. Napisano prema istinitim događajima, ali prilagođeno po potrebi.
