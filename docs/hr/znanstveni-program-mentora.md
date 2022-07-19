@@ -16,15 +16,15 @@ Naziv doktorskog studija: [Poslijediplomski sveučilišni doktorski studij Infor
 
 ## Područja znanstveno-istraživačkog rada mentora
 
-Heterogeno računarstvo (engl. *heterogeneous computing*)  
-Računarstvo visokih performansi (engl. *high-performance computing*)  
-Računarstvo u oblaku (engl. *cloud computing*)  
-Računalno modeliranje u fizici i kemiji (engl. *computer modelling in physics and chemistry*)  
-Znanstveno računanje (engl. *scientific computing*)
+- Heterogeno računarstvo (engl. *heterogeneous computing*)
+- Računarstvo visokih performansi (engl. *high-performance computing*)
+- Računarstvo u oblaku (engl. *cloud computing*)
+- Računalno modeliranje u fizici i kemiji (engl. *computer modelling in physics and chemistry*)
+- Znanstveno računanje (engl. *scientific computing*)
 
 ## Nositeljstvo kolegija na doktorskom studiju Informatika
 
-[Računalna biokemija i biofizika](nastava/kolegiji/RBKBF.md) (engl. *Computational biochemistry and biophysics*)
+- [Računalna biokemija i biofizika](nastava/kolegiji/RBKBF.md) (engl. *Computational biochemistry and biophysics*)
 
 ## Voditeljstvo i suradnja na tekućim projektima
 
