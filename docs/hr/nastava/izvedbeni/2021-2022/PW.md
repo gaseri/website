@@ -9,7 +9,7 @@ Akademska godina 2021./2022.
 
 Naziv predmeta: Računalne mreže  
 Studijski program: Sveučilišni preddiplomski studij informatike  
-Status predmeta: **obvezatan**/izborni  
+Status predmeta: **obvezatan** za modul RPP/izborni  
 Semestar: 3.
 
 Bodovna vrijednost i način izvođenja nastave:
