@@ -62,14 +62,14 @@ I7. Izgraditi jezgru operacijskog sustava, upravljačke programe i aplikativne s
 ### Vrsta izvođenja nastave
 
 - [x] predavanja
-- [x] samostalni zadaci
 - [ ] seminari i radionice
-- [ ] multimedija i mreža
 - [x] vježbe
-- [x] laboratorij
 - [x] obrazovanje na daljinu
-- [ ] mentorski rad
 - [ ] terenska nastava
+- [x] samostalni zadaci
+- [ ] multimedija i mreža
+- [x] laboratorij
+- [ ] mentorski rad
 - [ ] ostalo ___________________
 
 ### Komentari

@@ -65,14 +65,14 @@ I8. Analizirati mehanizme sigurnosti za operacijske sustave mobilnih uređaja te
 ### Vrsta izvođenja nastave
 
 - [x] predavanja
-- [x] samostalni zadaci
 - [ ] seminari i radionice
-- [x] multimedija i mreža
 - [x] vježbe
-- [x] laboratorij
 - [ ] obrazovanje na daljinu
-- [ ] mentorski rad
 - [ ] terenska nastava
+- [x] samostalni zadaci
+- [x] multimedija i mreža
+- [x] laboratorij
+- [ ] mentorski rad
 - [ ] ostalo ___________________
 
 ### Komentari

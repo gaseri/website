@@ -58,14 +58,14 @@ I5. Pojasniti načine zaštite informacijskog sustava od pojedinih vrsta napada 
 ### Vrsta izvođenja nastave
 
 - [x] predavanja
-- [x] samostalni zadaci
 - [ ] seminari i radionice
-- [x] multimedija i mreža
 - [x] vježbe
-- [x] laboratorij
 - [x] obrazovanje na daljinu
-- [ ] mentorski rad
 - [ ] terenska nastava
+- [x] samostalni zadaci
+- [x] multimedija i mreža
+- [x] laboratorij
+- [ ] mentorski rad
 - [ ] ostalo ___________________
 
 ### Komentari
