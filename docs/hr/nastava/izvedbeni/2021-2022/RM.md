@@ -1,7 +1,7 @@
 SVEUČILIŠTE U RIJECI  
 ODJEL ZA INFORMATIKU  
 Ulica Radmile Matejčić 2, Rijeka  
-Akademska 2021./2022. godina
+Akademska godina 2021./2022.
 
 # RAČUNALNE MREŽE
 
