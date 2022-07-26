@@ -17,7 +17,8 @@ nav:
       - O nastavi: hr/nastava/index.md
       - Izvedbeni planovi:
         - Akademska godina 2022./2023.:
-          - Informatika za farmaceute: hr/nastava/izvedbeni/2022-2023/INF-Pharma.md
+          - Informatika za farmaceute (MedRi): hr/nastava/izvedbeni/2022-2023/INF-Pharma.md
+          - Informatika (BioTech): hr/nastava/izvedbeni/2022-2023/INF-BioTech.md
         - Akademska godina 2021./2022.:
           - Dinamičke web aplikacije 2: hr/nastava/izvedbeni/2021-2022/DWA2.md
           - Distribuirani sustavi: hr/nastava/izvedbeni/2021-2022/DS.md
