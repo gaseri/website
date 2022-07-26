@@ -125,23 +125,20 @@ Nastavni sadržaji i sve obavijesti vezane uz kolegij kao i ispitni termini nala
 
 | Datum | Predavanja (vrijeme i mjesto) | Seminari (vrijeme i mjesto) | Vježbe (vrijeme i mjesto) | Nastavnik |
 | ----- | ----------------------------- | --------------------------- | ------------------------- | --------- |  
-| 4. 10. 2022. | P1 (vrijeme i mjesto naknadno) | | | Dejan Ljubobratović, pred. |
-| 5. 10. 2022. | P2 (vrijeme i mjesto naknadno) | | | Dejan Ljubobratović, pred. |
-| 11. 10. 2022. | P3 (vrijeme i mjesto naknadno) | | | Dejan Ljubobratović, pred. |
-| 18. 10. 2022. | P4 (vrijeme i mjesto naknadno) | | | Dejan Ljubobratović, pred. |
-| 25. 10. 2022. | P5 (vrijeme i mjesto naknadno) | | | Dejan Ljubobratović, pred. |
-| 9. 11. 2022. | | | V1 (vrijeme i mjesto naknadno) | Dejan Ljubobratović, pred. |
-| 16. 11. 2022. | | | V2 (vrijeme i mjesto naknadno) | Dejan Ljubobratović, pred. |
-| 22. 11. 2023. | 1. test (vrijeme i mjesto naknadno) | | | Dejan Ljubobratović, pred. |
-| 23. 11. 2022. | | | V3 (vrijeme i mjesto naknadno) | Dejan Ljubobratović, pred. |
-| 30. 11. 2022. | | | V4 (vrijeme i mjesto naknadno) | Dejan Ljubobratović, pred. |
-| 7. 12. 2022. | | | V5 (vrijeme i mjesto naknadno) | Dejan Ljubobratović, pred. |
-| 14. 12. 2022. | | S1 (vrijeme i mjesto naknadno) | | Dejan Ljubobratović, pred. |
-| 20. 12. 2022. | | S2 (vrijeme i mjesto naknadno) | | Dejan Ljubobratović, pred. |
-| 21. 12. 2022. | | S3 (vrijeme i mjesto naknadno) | | Dejan Ljubobratović, pred. |
-| 10. 01. 2023. | | S4 (vrijeme i mjesto naknadno) | | Dejan Ljubobratović, pred. |
-| 11. 01. 2023. | | S5 (vrijeme i mjesto naknadno) | | Dejan Ljubobratović, pred. |
-| 31. 01. 2023. | | 2. test (vrijeme i mjesto naknadno) | | Dejan Ljubobratović, pred. |
+| 5. 10. 2022. | P1 (12:00 -- 15:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) | | | Dejan Ljubobratović, pred. |
+| 12. 10. 2022. | P2 (12:00 -- 15:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) | | | Dejan Ljubobratović, pred. |
+| 19. 10. 2022. | P3 (12:00 -- 15:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) | | | Dejan Ljubobratović, pred. |
+| 26. 10. 2022. | P4 (12:00 -- 15:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) | | | Dejan Ljubobratović, pred. |
+| 2. 11. 2022. | P5 (12:00 -- 15:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) | | | Dejan Ljubobratović, pred. |
+| 9. 11. 2022. | 1. test (12:00 -- 13:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) | | V1 (13:00 -- 16:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) | Dejan Ljubobratović, pred. |
+| 16. 11. 2022. | | | V2 (12:00 -- 15:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) | Dejan Ljubobratović, pred. |
+| 23. 11. 2023. | | | V3 (12:00 -- 15:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) | Dejan Ljubobratović, pred. |
+| 30. 11. 2022. | | | V4 (12:00 -- 15:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) | Dejan Ljubobratović, pred. |
+| 30. 11. 2022. | | | V5 (12:00 -- 15:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) | Dejan Ljubobratović, pred. |
+| 7. 12. 2022. | | S1 + S2 (12:00 -- 15:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) | | Dejan Ljubobratović, pred. |
+| 14. 12. 2022. | | S3 + S4 (12:00 -- 15:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) | | Dejan Ljubobratović, pred. |
+| 21. 12. 2022. | | S5 (12:00 -- 15:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) | | Dejan Ljubobratović, pred. |
+| 11. 01. 2023. | | 2. test (12:00 -- 13:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) | | Dejan Ljubobratović, pred. |
 
 **Napomena:** U slučaju pogoršane epidemiološke situacije uvjetovane Covid-19 pandemijom dio nastave (u obimu koji će ovisiti o trenutnoj situaciji) će se održati *on-line* u gore navedenim terminima.
 
@@ -149,29 +146,29 @@ Nastavni sadržaji i sve obavijesti vezane uz kolegij kao i ispitni termini nala
 
 |    | PREDAVANJA (tema predavanja) | Broj sati nastave | Mjesto održavanja |
 | -- | ---------------------------- | ----------------- | ----------------- |
-| P1 | Povijesni razvoj računala. Sklopovska i programska oprema | 3 | naknadno |
-| P2 | Povijesni razvoj interneta i operacijskih sustava. Znanstvena programska oprema | 3 | naknadno |
-| P3 | Superračunala. Trendovi i smjerovi razvoja informacijske i komunikacijske tehnologije | 3 | naknadno |
-| P4 | Intelektualno vlasništvo nad programskom opremom i podacima. Licenciranje | 3 | naknadno |
-| P5 | Računalna kemija, molekularno modeliranje i bioinformatika | 3 | naknadno |
+| P1 | Povijesni razvoj računala. Sklopovska i programska oprema | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
+| P2 | Povijesni razvoj interneta i operacijskih sustava. Znanstvena programska oprema | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
+| P3 | Superračunala. Trendovi i smjerovi razvoja informacijske i komunikacijske tehnologije | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
+| P4 | Intelektualno vlasništvo nad programskom opremom i podacima. Licenciranje | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
+| P5 | Računalna kemija, molekularno modeliranje i bioinformatika | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
 |    | **Ukupan broj sati predavanja** | **15** | |
 
 |    | SEMINARI (tema seminara) | Broj sati nastave | Mjesto održavanja |
 | -- | ---------------------------- | ----------------- | ----------------- |
-| S1 | Predviđanje pristajanja molekula | 3 | naknadno |
-| S2 | Molekularna dinamika. Slobodna energija | 3 | naknadno |
-| S3 | Kvantitativna analiza odnosa strukture i aktivnosti molekule | 3 | naknadno |
-| S4 | Metode kvantne kemije | 3 | naknadno |
-| S5 | Pretraživanje i poravnanje sekvenci | 3 | naknadno |
+| S1 | Predviđanje pristajanja molekula | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
+| S2 | Molekularna dinamika. Slobodna energija | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
+| S3 | Kvantitativna analiza odnosa strukture i aktivnosti molekule | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
+| S4 | Metode kvantne kemije | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
+| S5 | Pretraživanje i poravnanje sekvenci | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
 |    | **Ukupan broj sati seminara** | **15** | |
 
 |    | VJEŽBE (tema vježbe) | Broj sati nastave | Mjesto održavanja |
 | -- | ---------------------------- | ----------------- | ----------------- |
-| V1 | Baze podataka i postojeća programska podrška u računalnoj kemiji, molekularnom modeliranju i bioinformatici | 3 | naknadno |
-| V2 | Obrada dokumenata koji sadrže kemijske molekularne formule i jednadžbe. Osnove programiranja: kontrolna struktura, simboličko i numeričko računanje | 3 | naknadno |
-| V3 | Crtanje strukturnih formula i računanje osnovnih svojstava molekula | 3 | naknadno |
-| V4 | Obrada strukturiranih podataka. Crtanje grafova | 3 | naknadno |
-| V5 | Rad s osnovnim funkcijama i postavljanje operacijskog sustava | 3 | naknadno |
+| V1 | Baze podataka i postojeća programska podrška u računalnoj kemiji, molekularnom modeliranju i bioinformatici | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
+| V2 | Obrada dokumenata koji sadrže kemijske molekularne formule i jednadžbe. Osnove programiranja: kontrolna struktura, simboličko i numeričko računanje | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
+| V3 | Crtanje strukturnih formula i računanje osnovnih svojstava molekula | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
+| V4 | Obrada strukturiranih podataka. Crtanje grafova | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
+| V5 | Rad s osnovnim funkcijama i postavljanje operacijskog sustava | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
 |    | **Ukupan broj sati vježbi** | **15** | |
 
 |     | ISPITNI TERMINI (završni ispit) |
