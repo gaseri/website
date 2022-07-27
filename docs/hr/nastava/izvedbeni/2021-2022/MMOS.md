@@ -167,7 +167,7 @@ Izvanredni:
 - 22\. ožujka 2022.
 - 13\. rujna 2022.
 
-## RASPORED NASTAVE -- zimski (5.) semestar ak. god. 2020./2021.
+## RASPORED NASTAVE -- zimski (5.) semestar ak. god. 2021./2022.
 
 Nastava će se na predmetu odvijati u zimskom semestru prema sljedećem rasporedu:
 
@@ -192,7 +192,7 @@ Nastava će se na predmetu odvijati u zimskom semestru prema sljedećem raspored
 | 7. | 16. 11. 2021. | 14:00--15:30 | O-366 | Docker | V7 |  |
 | 8. | 23. 11. 2021. | 12:00--13:30 | O-357 | Sigurnost mrežnih operacijskih sustava: autentifikacija i autorizacije | P8 | izv. prof. dr. sc. Božidar Kovačić |
 | 8. | 23. 11. 2021. | 14:00--15:30 | O-366 | Docker Compose | V8 |  |
-| 9. | 30. 11. 2021. | 12:00--13:30 | O-359 | Sigurnost mrežnih operacijskih sustava: kontrola pristupa resursima, restrikcije u sustavu | P9 | izv. prof. dr. sc. Božidar Kovačić |
+| 9. | 30. 11. 2021. | 12:00--13:30 | O-357 | Sigurnost mrežnih operacijskih sustava: kontrola pristupa resursima, restrikcije u sustavu | P9 | izv. prof. dr. sc. Božidar Kovačić |
 | 9. | 30. 11. 2021. | 14:00--15:30 | O-366 | Primjeri formiranja oblaka za pokretanje web aplikacija | V9 |  |
 | 10. | 7. 12. 2021. | 12:00--13:30 |  | **Test na Merlinu** | P10 | izv. prof. dr. sc. Božidar Kovačić |
 | 10. | 7. 12. 2021. | 14:00--15:30 | O-366 | Primjeri formiranja oblaka za pokretanje web aplikacija | V10 |  |
