@@ -146,22 +146,22 @@ Konačna ocjena je zbroj bodova ostvarenih tijekom nastave i bodova ostvarenih n
 
 | Datum | Grupa | Vrijeme | Broj sati nastave | Mjesto | Oblik nastave | Izvođač |
 | ----- | ----- | ------- | ----------------- | ------ | ------------- | ------- |
-| 19. 06. 2021. (ponedjeljak) | svi | 08:30--10:00 | 2 | O-S32 | P1 | Dejan Ljubobratović, pred. |
-| 19. 06. 2021. (ponedjeljak) | svi | 10:30--12:00 | 2 | O-S32 | P2 | Dejan Ljubobratović, pred. |
-| 20. 06. 2021. (utorak) | svi | 8:30--10:00 | 2 | O-S32 | P3 | Dejan Ljubobratović, pred. |
-| 20. 06. 2021. (utorak) | svi | 10:30--12:00 | 2 | O-S32 | P4 | Dejan Ljubobratović, pred. |
-| 21. 06. 2021. (srijeda) | svi | 08:30--10:00 | 2 | O-S32 | P5 | Dejan Ljubobratović, pred. |
-| 23. 06. 2021. (petak) | 1 | 08:30--11:30 | 4 | O-365 | V1 + Provjera znanja | Dejan Ljubobratović, pred. |
-| 23. 06. 2021. (petak) | 2 | 12:00--15:00 | 4 | O-365 | V1 + Provjera znanja | Dejan Ljubobratović, pred. |
-| 26. 06. 2021. (ponedjeljak) | 1 | 08:30--11:30 | 4 | O-365 | V2 | Dejan Ljubobratović, pred. |
-| 26. 06. 2021. (ponedjeljak) | 2 | 12:00--15:00 | 4 | O-365 | V2 | Dejan Ljubobratović, pred. |
-| 27. 06. 2021. (utorak) | 1 | 08:30--11:30 | 4 | O-365 | V3 | Dejan Ljubobratović, pred. |
-| 27. 06. 2021. (utorak) | 2 | 12:00--15:00 | 4 | O-365 | V3 | Dejan Ljubobratović, pred. |
-| 28. 06. 2021. (srijeda) | 1 | 08:30--11:30 | 4 | O-365 | V4 | Dejan Ljubobratović, pred. |
-| 28. 06. 2021. (srijeda) | 2 | 12:00--15:00 | 4 | O-365 | V4 | Dejan Ljubobratović, pred. |
-| 29. 06. 2021. (četvrtak) | 1 | 08:30--11:30 | 4 | O-365 | V5 | Dejan Ljubobratović, pred. |
-| 29. 06. 2021. (četvrtak) | 2 | 12:00--15:00 | 4 | O-365 | V5 | Dejan Ljubobratović, pred. |
-| 30. 06. 2021. (petak) | svi | 09:00--12:00 | 1 test | O-365 | Završni ispit 1. rok | Dejan Ljubobratović, pred. |
+| 19. 06. 2023. (ponedjeljak) | svi | 08:30--10:00 | 2 | O-S32 | P1 | Dejan Ljubobratović, pred. |
+| 19. 06. 2023. (ponedjeljak) | svi | 10:30--12:00 | 2 | O-S32 | P2 | Dejan Ljubobratović, pred. |
+| 20. 06. 2023. (utorak) | svi | 8:30--10:00 | 2 | O-S32 | P3 | Dejan Ljubobratović, pred. |
+| 20. 06. 2023. (utorak) | svi | 10:30--12:00 | 2 | O-S32 | P4 | Dejan Ljubobratović, pred. |
+| 21. 06. 2023. (srijeda) | svi | 08:30--10:00 | 2 | O-S32 | P5 | Dejan Ljubobratović, pred. |
+| 23. 06. 2023. (petak) | 1 | 08:30--11:30 | 4 | O-365 | V1 + Provjera znanja | Dejan Ljubobratović, pred. |
+| 23. 06. 2023. (petak) | 2 | 12:00--15:00 | 4 | O-365 | V1 + Provjera znanja | Dejan Ljubobratović, pred. |
+| 26. 06. 2023. (ponedjeljak) | 1 | 08:30--11:30 | 4 | O-365 | V2 | Dejan Ljubobratović, pred. |
+| 26. 06. 2023. (ponedjeljak) | 2 | 12:00--15:00 | 4 | O-365 | V2 | Dejan Ljubobratović, pred. |
+| 27. 06. 2023. (utorak) | 1 | 08:30--11:30 | 4 | O-365 | V3 | Dejan Ljubobratović, pred. |
+| 27. 06. 2023. (utorak) | 2 | 12:00--15:00 | 4 | O-365 | V3 | Dejan Ljubobratović, pred. |
+| 28. 06. 2023. (srijeda) | 1 | 08:30--11:30 | 4 | O-365 | V4 | Dejan Ljubobratović, pred. |
+| 28. 06. 2023. (srijeda) | 2 | 12:00--15:00 | 4 | O-365 | V4 | Dejan Ljubobratović, pred. |
+| 29. 06. 2023. (četvrtak) | 1 | 08:30--11:30 | 4 | O-365 | V5 | Dejan Ljubobratović, pred. |
+| 29. 06. 2023. (četvrtak) | 2 | 12:00--15:00 | 4 | O-365 | V5 | Dejan Ljubobratović, pred. |
+| 30. 06. 2023. (petak) | svi | 09:00--12:00 | 1 test | O-365 | Završni ispit 1. rok | Dejan Ljubobratović, pred. |
 
 ## Dodatne informacije
 
