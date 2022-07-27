@@ -125,7 +125,7 @@ Prvi seminarski rad pokrivat će formiranje oblaka namijenjenog za izvođenje za
 
 #### 3. Projekt
 
-Tijekom semestra student će u okviru projekta izvesti profiliranje razvijene mobilne aplikacije i analizirati dobivene podatke.
+Tijekom semestra student će u okviru projekta izvesti profiliranje razvijene mobilne aplikacije i analizirati dobivene podatke. Na taj način će moći skupiti maksimalno 10 bodova.
 
 #### 4. Kontinuirana provjera znanja
 
