@@ -10,7 +10,7 @@ Akademska godina 2022./2023.
 Naziv predmeta: Računalne mreže  
 Studijski program: Sveučilišni preddiplomski studij informatike  
 Status predmeta: **obvezatan**/izborni  
-Semestar: 3.
+Semestar: 5.
 
 Bodovna vrijednost i način izvođenja nastave:
 
