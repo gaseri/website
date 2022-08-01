@@ -49,6 +49,14 @@ Statičku analizu provode programski alati. U suprotnom, kad programer izučava 
 
 ---
 
+## Komercijalna rješenja za statičku analizu
+
+- uglavnom podržavaju više jezika, fokusirana na raspoznavanje i prijavu složenijih problema neovisnih o jeziku
+- često su [open core](https://opensource.com/article/21/11/open-core-vs-open-source) softveri: osnovna funkcionalnost je otvorenog koda, a dodatna funkcionalnost je jedino dio softvera koji se isporučuje kao usluga
+- primjeri: [Codacy](https://www.codacy.com/) i [SonarQube](https://www.sonarqube.org/)
+
+---
+
 ## Statički i dinamički tipovi podataka
 
 TypeScript vs JavaScript
