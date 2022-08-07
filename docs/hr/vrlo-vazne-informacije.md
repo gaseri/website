@@ -210,6 +210,59 @@ Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primje
 !!! tip
     "Profesore, moram vam reći da sam se na poslu nedavno cijeli dan držao za glavu jer nisam pratio kad se predavalo o CIDR-u i blokovima adresa."
 
+## Proza
+
+### Legenda o nastanku **S**tandarda **O**značavanja **R**ačunalnih **M**reža
+
+Prema zapisima povjesničara Emilijana Pesara, koji je živio u doba vladavine mletačkog dužda Domenica II Contarinija, **SORM** potječe od perzijskih spisa koje je Marko Polo pronašao za vrijeme putovanja Kinom i sa sobom donio u Veneciju. Kako bi ih zaštitio od inkvizicije, sakrio ih je među svoje osobne bilješke s putovanja po kineskim južnim i istočnim provincijama. Te su bilješke zajedno s umetnutim perzijskim spisima njegovi otac i ujak prodali trgovcima sitnom robom za vrijeme dok je bio u tamnici, zbog čega je Marko bio primoran svoju priču ispričati Rustichelliju iz Pise po sjećanju.
+
+Jedan od vojskovođa mletačkog dužda, Michele Valiero, priča kako je na štandu u Veneciji uočio nekakve spise na neobičnom materijalu sličnom papiru, ali bitno različitom od svega što je bilo poznato u Europi. Želeći istražiti o čemu se radi, od trgovca je, bez puno premišljanja, otkupio sve što je ovaj imao.
+
+Proučavajući spise, vojskovođa je shvatio da bi otkrivanje ovih drevnih istina moglo imati katastrofalne posljedice i uzrokovati pomicanje kraja svijeta na raniji datum, te ih je u kasnijem osvajačkom pohodu na Starigrad Paklenicu zakopao ispod Večke kule.
+
+Stoljećima kasnije, mladi asistent sa Zavoda za komunikacijske sustave Odjela za informatiku Sveučilišta u Rijeci jedne se večeri šetao laganim koracima uz obalu, osluškujući živu glazbu koja je dopirala s terase obližnjeg hotela.
+
+Našavši se blizu Večke kule, osjetio je energetsku auru crveno-plave boje i potrčao prema mjestu gdje ju je najjače osjećao. Iznenada je počeo mahnito kopati. Na metar i pol ispod zemlje naišao na ukrašenu metalnu škrinju.
+
+Škrinja je na poklopcu imala ugraviranog lava s ptičjim krilima, koji je desnom šapom držao otvorenu knjigu na kojoj je pisalo:
+
+> PAX TIBI MARCE EVANGELISTA MEVS.
+
+Mladi asistent je osjetio da će ovo što je pronašao iz temelja promijeniti živote svih ljudi koje poznaje i koje će tek upoznati. Snažno je proživljavao svaku sekundu koju je potiho otkucavao njegov ručni sat dok je bezuspješno pokušavao naći način da otvori lokot kojim je škrinja bila zatvorena.
+
+Napokon je obio lokot kamenom grotom s plaže, podigao poklopac i njime nehotice ogrebao desno staklo na naočalama.
+
+Vojskovođa je zapisao:
+
+> Tajne perzijske tehnike crtanja dijagrama iz Računalnih mreža zapisane na ovim papirima dio su knjige *Matematičko modeliranje računalnih mreža* koju je napisao Datafarnah. U ovih dvije godine uspio sam otkriti značenje većine spisa, i postao sam svjestan kakav bi utjecaj mogli oni imati ako dođu u krive ruke.
+>
+> Bojim se, najviše od svega, proročanstva koje opisuje što bi se dogodilo da netko neuk napiše **SORM** malim slovima, zakošeno ili običnim oblikom pisma. Zato **SORM** uvijek piši masnim uspravnim oblikom pisma, velikim slovima.
+
+Mladi se asistent na trenutak zamislio. Osjetio je da je ovo prilika koja se rijetkima pruža i koju još rjeđi znaju cijeniti, ali tada još nije imao čistu viziju što treba napraviti.
+
+Mjesecima kasnije, krećući se laganim koracima kroz snijegom obasuti Karlovac, razmišljao je o svemu što je doživio tog ljeta. U putničkom vlaku na relaciji Karlovac–Zagreb, napokon je shvatio dubinu koju imaju
+Micheleove riječi i osjetio pravo značenje svog poziva.
+
+### Legenda o nastanku laboratorijskih vježbi iz Računalnih mreža
+
+Rustichelli iz Pise čuo je od Marka Pola za vrijeme dok su obojica bili zarobljeni u tamnici brojne priče o putovanjima Kini. Jedna od njih govorila je kako su na putu prema Kini Markov otac i ujak dobili na poklon od svećenika u Kašgaru svilu koja je na sebi imala naslikane neobične dijagrame, za razliku od ostale svile koja je uglavnom bila oslikana motivima iz prirode.
+
+Gotovo dvadeset godina kasnije, na povratku, Markov su otac i ujak pokušavali odgonetnuti značenje dijagrama na svili, i svoje rezultate zapisivali na spisima koje su čuvali u kući u Veneciji. Marko Polo ponio je svile i spise sa sobom na Korčulu; svile su mu otete kada je zarobljen od strane đenovljanskih vojnika u bitci s Mlecima, a spisi su ostali u njegovoj kući na Korčuli jer su smatrani bezvrijednima.
+
+Rustichelli kaže da, iako je Marko znao za te svile i spise, izgleda da nije bio svjestan vrijednosti onog što je bilo na njima jer ih je tek u nekoliko navrata usputno spomenuo. Upravitelj zatvora, Enrico Lenafesto, saznavši za to, bio je odlučan u namjeri da spise pronađe i detaljno pregleda.
+
+Predstavivši se kao brat tadašnje Markove zaručnice Donate Badoer, Enrico je u prvi mah pušten u kuću bez prevelikog propitivanja od strane Korčulanaca. U kući je pronašao čitavu škrinju punu spisa; većina njih bila je neuredna i s puno pogrešaka, ali ubrzo ih je pregledao i uspio poredati. Zaključio je da su autori spisa odgonetnuli i detaljno opisali značenja dijagrama na svili. Uspoređujući spise i slike na svili, došao je do zapanjujućih rezultata.
+
+Iako je imao namjeru vratiti se u Genovu, ubijen je na povratku od strane Mletaka koji su ga otkrili u prijevari. Enrico je u bijegu sa sobom htio ponijeti i originale i svoje prijepise i zaključke; kako nije mogao sve nositi odjednom, u trenutku kada je bio uhvaćen sa sobom je imao originale; prijepisi su ostali nedaleko pristaništa za brodove.
+
+Stoljećima kasnije, mladi asistent sa Zavoda za komunikacijske sustave Odjela za informatiku Sveučilišta u Rijeci osjetio je na trajektnom pristaništu Dominče energetski karakter bežičnih valova, što je smatrao nadasve neobičnim s obzirom na to da u blizini nije bilo dostupnih pristupnih točaka bežične mreže. Razgledavajući okolo, došao je do mjesta gdje je osjećao *ful jako* djelovanje valova i počeo razmicati naslagane kamene grote.
+
+Kako je Sveti Krševan tada vršio ukrcaj, nitko na mladog asistenta nije obraćao previše pažnje i on je neometano izvukao drvenu kutiju. Razbio ju je grotom s plaže i počeo čitati papire koji su se pritom rasuli. Govorili su o modeliranju i simulaciji komunikacije na daljinu. Ubrzo se povukao na skrovitije mjesto, znao je da će ovo potrajati.
+
+Nekoliko sati kasnije znao je točno što mora napraviti. Uzeo je snop papira formata A4 i na vrh prvoga napisao:
+
+> Računalne mreže 2 -- laboratorijska vježba 1.
+
 ## Poezija
 
 ### Tina Ivanović -- Modul subprocess (prerada Bunda od nerca)
