@@ -18,6 +18,14 @@ Na [Zavodu (rus. Заводу) 311](https://battlefield.fandom.com/wiki/Zavod#Za
 
 (Stranice laboratorija servira [Apache](https://httpd.apache.org/), a ne [nginx](https://nginx.org/); ako vam se to čini kao [sasvim proizvoljan odabir jer, eto, mi zasad nismo Google](https://news.ycombinator.com/item?id=14588024), dobro je podsjetiti se da je inicijalni autor nginxa (bolje rečeno, [нгинкса](https://nginx.org/ru/)) poznati ruski haker [Igor](https://youtu.be/YWRYbLKsS0I) [Vladimirovich](https://youtu.be/j9VSQ8UaBnY) [Sysoev](http://sysoev.ru/en/).)
 
+### Zašto CNPSLab nije naveden na [popisu laboratorija FIDIT-a](https://www.inf.uniri.hr/znanstveni-i-strucni-rad/laboratoriji)?
+
+Laboratorij je [ukinut promjenom unutarnjeg ustroja](../hr/index.md#povijest) prilikom [promjene naziva Odjela za infromatiku u Fakultet informatike i digitalnih tehnologija](https://www.inf.uniri.hr/11-hr/naslovnica/915-odjel-za-informatiku-postaje-fakultet-informatike-i-digitalnih-tehnologija).
+
+### Zašto GASERI nisu navedeni na [popisu laboratorija FIDIT-a](https://www.inf.uniri.hr/znanstveni-i-strucni-rad/laboratoriji)?
+
+Mi smo Grupa za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi (GASERI), a ne Laboratorij za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi (LASERI).
+
 ### Bojite li se `du -ha`?
 
 Ne bojimo se `du -ha` jer imamo oštrog `ps -a`; ako to ne bude dovoljno, uzet ćemo `top` u ruke i napraviti `killall`.
