@@ -26,6 +26,12 @@ Laboratorij je [ukinut promjenom unutarnjeg ustroja](../hr/index.md#povijest) pr
 
 Mi smo Grupa za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi (GASERI), a ne Laboratorij za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi (LASERI).
 
+### Može li si ozbiljna institucija dozvoliti da ima emoji kao logo?
+
+Razmotrimo tvrtku [Hugging Face](https://huggingface.co/), autore [Transformersa](https://huggingface.co/transformers), skupa predtreniranih modela za strojno učenje koji ima [68 tisuća zvjezdica na GitHubu](https://github.com/huggingface/transformers). Dosad su [primili 160 milijuna dolara investicija](https://www.crunchbase.com/organization/hugging-face), [procjenjena vrijednost tvrtke iznosi 2 mlijarde dolara](https://www.forbes.com/sites/kenrickcai/2022/05/09/the-2-billion-emoji-hugging-face-wants-to-be-launchpad-for-a-machine-learning-revolution/), a njihovo web sjedište ima [19.4 milijuna pogleda mjesečno](https://www.similarweb.com/website/huggingface.co/).
+
+Naravno, mi imamo emoji [Smiling Face with Sunglasses (Cool) 😎](https://emojipedia.org/smiling-face-with-sunglasses/) kao svoj logo prije svega zato što to i jesmo.
+
 ### Bojite li se `du -ha`?
 
 Ne bojimo se `du -ha` jer imamo oštrog `ps -a`; ako to ne bude dovoljno, uzet ćemo `top` u ruke i napraviti `killall`.
