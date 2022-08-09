@@ -1,6 +1,6 @@
 # GASERI | gaseri.org
 
-![GASERI logo with text](images/gaseri-logo-text.png)
+[![GASERI logo Kupala](images/gaseri-logo-kupala.png)](https://youtu.be/ADB5h4-oHjo)
 
 ## 🇭🇷 [Grupa za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi](hr/index.md)
 
