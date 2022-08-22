@@ -431,6 +431,7 @@ theme:
   name: material
   custom_dir: overrides
   features:
+    - announce.dismiss
     - header.autohide
     - navigation.instant
     - navigation.indexes
