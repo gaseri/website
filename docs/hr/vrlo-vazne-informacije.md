@@ -32,6 +32,10 @@ Razmotrimo tvrtku [Hugging Face](https://huggingface.co/), autore [Transformersa
 
 Naravno, mi imamo emoji [Smiling Face with Sunglasses (Cool) 😎](https://emojipedia.org/smiling-face-with-sunglasses/) kao svoj logo prije svega zato što to i jesmo.
 
+### Kako izgleda sastanak grupe?
+
+😎💬😎💬... 😎🤝😎.
+
 ### Bojite li se `du -ha`?
 
 Ne bojimo se `du -ha` jer imamo oštrog `ps -a`; ako to ne bude dovoljno, uzet ćemo `top` u ruke i napraviti `killall`.
