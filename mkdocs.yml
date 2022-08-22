@@ -2,7 +2,7 @@ site_name: GASERI – Group for apps and services on exascale research infrastru
 site_description: GASERI is a research, development, and teaching group at the University of Rijeka Faculty of Informatics and Digital Technologies (FIDIT Rijeka).
 site_author: Vedran Miletić
 site_url: https://gaseri.org/
-copyright: Copyright 2011 – 2022, <a href="https://vedran.miletic.net/">Vedran Miletić</a> <i>et <a href="/en/people/">alii</a></i>; contents licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC-BY-NC-ND 4.0</a>, except teaching materials in Croatian under <a href="/hr/nastava/">/hr/nastava/materijali/</a>, teaching materials in English under <a href="/en/teaching/">/en/teaching/materials/</a>, and tutorials in English under <a href="/en/tutorials/gromacs/">/en/tutorials/</a>, which are licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a>. Source code available on <a href="https://github.com/gaseri/website">GitHub gaseri/website</a>. Hosted on <a href="https://pages.github.com/">GitHub Pages</a>. Reachable as a <a href="https://community.torproject.org/onion-services/">Tor onion service</a> at <a href="http://vcwkbqby652dtqgbtbtr6ouvs6fu5abx5z45dmlug6dl55d6zcadsuqd.onion/">vcwkbqby652dtqgbtbtr6ouvs6fu5abx5z45dmlug6dl55d6zcadsuqd.onion</a>.
+copyright: Copyright 2011 – 2022, <a href="https://vedran.miletic.net/">Vedran Miletić</a> <i>et <a href="/en/people/">alii</a></i>; contents licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC-BY-NC-ND 4.0</a>, except teaching materials in Croatian under <a href="/hr/nastava/">/hr/nastava/materijali/</a>, teaching materials in English under <a href="/en/teaching/">/en/teaching/materials/</a>, and tutorials in English under <a href="/en/tutorials/gromacs/">/en/tutorials/</a>, which are licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a>. Source code available on <a href="https://github.com/gaseri/website">GitHub gaseri/website</a>. Hosted on <a href="https://pages.github.com/">GitHub Pages</a>. Reachable as a <a href="https://community.torproject.org/onion-services/">Tor onion service</a> at <a href="http://vcwkbqby652dtqgbtbtr6ouvs6fu5abx5z45dmlug6dl55d6zcadsuqd.onion/">vcwkbqby652dtqgbtbtr6ouvs6fu5abx5z45dmlug6dl55d6zcadsuqd.onion</a>. <a href="#__consent">Change cookie settings</a>.
 repo_url: https://github.com/gaseri/website/
 edit_uri: blob/main/docs/
 nav:
@@ -466,6 +466,9 @@ extra:
   analytics:
     provider: google
     property: G-3CSW7LLM5F
+  consent:
+    title: Cookie consent
+    description: We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our website and whether users find what they're searching for. With your consent, you're helping us to make our website better.
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/gaseri
