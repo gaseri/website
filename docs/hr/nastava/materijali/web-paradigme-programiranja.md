@@ -129,7 +129,7 @@ class FetchName {
 
 class ProfileDataFetcher {
   public function __construct($mysqli) {
-    // 
+    // ...
   }
   public function getAll(): array|null {
     // ...
@@ -185,7 +185,7 @@ def Address < ApplicationRecord
 end
 
 def Exam < ApplicationRecord
-  belongs_to :student 
+  belongs_to :student
 end
 
 student = Student.create(name: "Ivan Horvat", jmbag: "0123456789")

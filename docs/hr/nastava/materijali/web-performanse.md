@@ -363,7 +363,7 @@ Povezivanje unaprijed omogućuje pregledniku da uspostavi vezu s poslužiteljem 
 ``` html
 <head>
   <!-- ... -->
-  <link rel="preconnect" href="https://www.example.com/" 
+  <link rel="preconnect" href="https://www.example.com/"
         crossorigin="anonymous">
 </head>
 ```

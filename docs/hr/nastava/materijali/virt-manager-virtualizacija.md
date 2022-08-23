@@ -142,7 +142,7 @@ Stvaranjem više kopija Ubuntuove slike i više kopija ranije stvorene slike `us
     frontend myfrontend
         bind :80
         default_backend myservers
-    
+
     backend myservers
         server apache1 srv1.example.com:80
         server apache2 srv2.example.com:80

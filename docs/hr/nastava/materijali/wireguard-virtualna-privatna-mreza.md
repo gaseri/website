@@ -413,7 +413,7 @@ PING 10.31.31.1 (10.31.31.1) 56(84) bytes of data.
 64 bytes from 10.31.31.1: icmp_seq=2 ttl=64 time=0.268 ms
 64 bytes from 10.31.31.1: icmp_seq=3 ttl=64 time=0.422 ms
 64 bytes from 10.31.31.1: icmp_seq=4 ttl=64 time=0.124 ms
-^C                                                                                                           
+^C
 ```
 
 Uvjerili smo se da paketi `ping`-a uredno prolaze u oba smjera te pokazali da je VPN uspješno uspostavljen.

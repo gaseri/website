@@ -374,7 +374,7 @@ class PublicUploads implements FileRepository {
   public function getFiles() {
     $files = array();
     $handle = opendir('/var/www/html/uploads');
- 
+
     if ($handle) {
       while (($entry = readdir($handle)) !== FALSE) {
         $files[] = $entry;
@@ -469,7 +469,7 @@ class PageLoader {
 
 interface DbConnectionInterface {
   public function connect();
-} 
+}
 
 class MySqlConnection implements DbConnectionInterface {
   public function connect() { /* ... */  }
@@ -666,7 +666,7 @@ class Migration(migrations.Migration):
 Na temelju ove migracije Django generira upit:
 
 ```sql
-ALTER TABLE members ADD COLUMN e_mail VARCHAR(30); 
+ALTER TABLE members ADD COLUMN e_mail VARCHAR(30);
 ```
 
 ---

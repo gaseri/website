@@ -262,7 +262,7 @@ $ curl http://example.group.miletic.net/
         </div>
         <div class="content_section_text">
           <p>
-                This is the default welcome page used to test the correct 
+                This is the default welcome page used to test the correct
                 operation of the Apache2 server after installation on Debian systems.
                 If you can read this page, it means that the Apache HTTP server installed at
                 this site is working properly. You should <b>replace this file</b> (located at

@@ -161,7 +161,7 @@ U zasebnom terminalu za pokretanje poslužitelja koristi se naredba:
 
 ``` shell
 $ ./manage.py runserver
-(...) 
+(...)
 ```
 
 !!! zadatak
@@ -428,9 +428,9 @@ Administratora kreiramo naredbom:
 
 ``` shell
 $ ./manage.py createsuperuser
-Username (leave blank to use 'korisnik'): 
-Email address: 
-Password: 
+Username (leave blank to use 'korisnik'):
+Email address:
+Password:
 Password (again):
 ```
 
@@ -469,10 +469,8 @@ Relacije su detaljno opisane u [Djangovoj dokumnetaciji](https://docs.djangoproj
 Na prethodnim vježbama stvorili smo model koji sadržava klasu Predmet, dodajmo sada klasu Student koja će biti povezana s Predmetom relacijom ManyToMany.
 
 !!! zadatak
-    - Model iz Vježbi2 `main/models.py` nadopunite tako da stvorite novu klasu `Student`. Klasa student sadrži stupce naziva `student_ime`, `student_prezime`, `student_broj_xice` i `student_prvi_upis_predmeta`. Tipovi podataka neka budu `CharField()` za `student_ime` sa `max_length` na `25`, `student_prezime` sa `max_length` na `50`. Vrijednost `student_broj_xice` postavite na `CharField()` za `student_ime` sa `max_length` na `10`.  
-    - Dodajte vrijednost `student_predmeti` koja će biti povezan s klasom `Predmet`, tip veze neka bude `ManyToMany`.  
-    Unutar klase `Predmet` izmijenite vrijednost `predmet_vrijeme_objave` tako da joj postavite zadanu vrijednost na `timezone.now`.  
-    Nakon kreirane klase pokrenite naredbe `makemigrations` i `migrate`.
+    - Model iz Vježbi2 `main/models.py` nadopunite tako da stvorite novu klasu `Student`. Klasa student sadrži stupce naziva `student_ime`, `student_prezime`, `student_broj_xice` i `student_prvi_upis_predmeta`. Tipovi podataka neka budu `CharField()` za `student_ime` sa `max_length` na `25`, `student_prezime` sa `max_length` na `50`. Vrijednost `student_broj_xice` postavite na `CharField()` za `student_ime` sa `max_length` na `10`.
+    - Dodajte vrijednost `student_predmeti` koja će biti povezan s klasom `Predmet`, tip veze neka bude `ManyToMany`. Unutar klase `Predmet` izmijenite vrijednost `predmet_vrijeme_objave` tako da joj postavite zadanu vrijednost na `timezone.now`. Nakon kreirane klase pokrenite naredbe `makemigrations` i `migrate`.
 
 **Rješenje zadatka.** Uredit ćemo datoteku `main/models.py` tako da bude oblika:
 
@@ -537,7 +535,7 @@ class Profesor(models.Model):
     prof_email = models.EmailField()
 
     def __str__(self):
-        return self.prof_email   
+        return self.prof_email
 ```
 
 !!! zadatak
@@ -555,7 +553,7 @@ class Predmet(models.Model):
     predmet_nositelj = models.ForeignKey(Profesor, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.predmet_naslov 
+        return self.predmet_naslov
 ```
 
 #### One-to-one
@@ -563,9 +561,9 @@ class Predmet(models.Model):
 Student i Profesor povezat ćemo u klasi ZavrsniRad, na kojem radi student, dok mu je profesor mentor. Svaki završni rad ima Studenta koji ga piše i profesora koji mu je mentor. Ovo ćemo ostvariti vezama *one-to-one*.
 
 !!! zadatak
-    - Definirajte klasu `ZavrsniRad`. `ZavrsniRad` neka ima zadanog nositelja `mentor` koji je povezan sa `Profesor` pomoću `OneToOne` veze, dodatni parametar koje zadajete u definiciji veze je `primary_key=True`.  
-    - Klasu `ZavrsniRad` zatim povežite sa `Student`, tip veze neka bude `One-to-one`, dodatni parametri koje zadajete su `on_delete=models.CASCADE` i `primary_key=True`.  
-    - Zatim dodajte vrijednosti `rad_naslov` i `rad_zadatak` koji su CharField duljine 25 i 50 i bool vrijednost `rad_prvi_upis` koja po defaultu ima vrijednost `True`.  
+    - Definirajte klasu `ZavrsniRad`. `ZavrsniRad` neka ima zadanog nositelja `mentor` koji je povezan sa `Profesor` pomoću `OneToOne` veze, dodatni parametar koje zadajete u definiciji veze je `primary_key=True`.
+    - Klasu `ZavrsniRad` zatim povežite sa `Student`, tip veze neka bude `One-to-one`, dodatni parametri koje zadajete su `on_delete=models.CASCADE` i `primary_key=True`.
+    - Zatim dodajte vrijednosti `rad_naslov` i `rad_zadatak` koji su CharField duljine 25 i 50 i bool vrijednost `rad_prvi_upis` koja po defaultu ima vrijednost `True`.
     - Nakon kreirane klase pokrenite naredbe `makemigrations` i `migrate`.
 
 **Rješenje zadatka.** U datoteci `main/models.py`:
@@ -582,7 +580,7 @@ class ZavrsniRad(models.Model):
         on_delete=models.CASCADE,
         primary_key=True,
     )
-    
+
     rad_naslov = models.CharField(max_length=50)
     rad_zadatak = models.CharField(max_length=50)
     rad_prvi_upis = models.BooleanField(default=True)
@@ -615,7 +613,7 @@ Korištenje naredbe `./manage.py`:
 Naredba za pokretanje Pythonove ljuske specifične za Django:
 
 ``` shell
-$ ./manage.py shell 
+$ ./manage.py shell
 >>>
 ```
 
@@ -784,7 +782,7 @@ urlpatterns = [
 Program smo usmjerili na `main/urls.py` koji trenutno ne postoji. Iz toga razloga, potrebno ga je stvoriti.
 
 !!! zadatak
-    Stvorite datoteku `main/urls.py`. Odmah importajte sve iz datoteke `main/views.py` i neka ime aplikacije bude zadano na `app_name = 'main'`.  
+    Stvorite datoteku `main/urls.py`. Odmah importajte sve iz datoteke `main/views.py` i neka ime aplikacije bude zadano na `app_name = 'main'`.
     Zatim definirajte uzorak URL-a neka upućuje na `homepage`, odnosno na funkciju unutar `main/views.py` koja se zove `homepage`.
 
 **Rješenje zadatka.** Datoteka `main/urls.py`:
@@ -888,8 +886,7 @@ Nakon što je baza pomoću modela kreirana, potrebno je unijeti u nju vrijednost
 Kada smo popunili bazu, idemo kreirati i upite.
 
 !!! zadatak
-    Definirajte funkciju koja u bazi pronalazi sve studente zadanog imena, listu pronađenih imena proslijedite funkciji `render`. Proslijeđena rješenja neka se prikazuju unutar `students.html`.  
-    Za početak, neka vaša funkcija vraća `render(request, 'students.html', context=context)`, a datoteku `students.html` ćemo stvoriti u nastavku rješavanja ovoga zadatka.
+    Definirajte funkciju koja u bazi pronalazi sve studente zadanog imena, listu pronađenih imena proslijedite funkciji `render`. Proslijeđena rješenja neka se prikazuju unutar `students.html`. Za početak, neka vaša funkcija vraća `render(request, 'students.html', context=context)`, a datoteku `students.html` ćemo stvoriti u nastavku rješavanja ovoga zadatka.
 
 U datoteci `views.py`:
 
@@ -924,9 +921,7 @@ Datoteka `students.html` ima sadržaj:
 Idemo još prikazati ukupan broj studenata u našoj bazi. Ovaj broj ćemo zatim proslijediti funkciji `render()` koja će ispisati ukupan broj studenata u za to kreiranom HTML-u.
 
 !!! zadatak
-    Definirajte funkciju koja u bazi pronalazi ukupan broj studenata, broj studenata funkciji `render`.  
-    Proslijeđena rješenja neka se prikazuju unutar datoteke `index.html`.  
-    Dodajte grešku u slučaju da `Student` u bazi nije pronađen.
+    Definirajte funkciju koja u bazi pronalazi ukupan broj studenata, broj studenata funkciji `render`. Proslijeđena rješenja neka se prikazuju unutar datoteke `index.html`. Dodajte grešku u slučaju da `Student` u bazi nije pronađen.
 
 **Rješenje zadatka.** U datoteci `views.py`:
 
@@ -1078,8 +1073,7 @@ Potrebno je još zadati putanju za predloške unutar `settings.py`.
 Za dodavanje putanje, pod `TEMPLATES` dodajte putanju do `templates` direktorija (`./templates`), odnosno `'DIRS': ['./templates'],`.
 
 !!! zadatak
-    Kreirajte administratora i dodajte u bazu podataka 3 izdavača. Sve vrijednosti proizvoljno zadajte.  
-    Provjerite ispis izdavača koji su dodani u bazu na adresi `http://127.0.0.1/main/publishers/`.
+    Kreirajte administratora i dodajte u bazu podataka 3 izdavača. Sve vrijednosti proizvoljno zadajte. Provjerite ispis izdavača koji su dodani u bazu na adresi `http://127.0.0.1/main/publishers/`.
 
 #### Dinamičko filtriranje
 
@@ -1172,7 +1166,7 @@ class Book(models.Model):
     abstract = models.TextField()
     author = models.ForeignKey(Author, on_delete=models.CASCADE)
     publication_date = models.DateField()
-    
+
     def __str__(self):
         return self.title
 ```
@@ -1220,14 +1214,14 @@ class BookFactory(DjangoModelFactory):
     title = factory.Faker("sentence", nb_words=4)
     abstract = factory.Faker("sentence", nb_words=50)
     author = factory.Iterator(Author.objects.all())
-    publication_date = factory.Faker("date_time")      
+    publication_date = factory.Faker("date_time")
 ```
 
 !!! zadatak
     Nakon što su klase definirane unutar `factory.py`, isprobajte njihovu funkcionalnost. Prije pokretanja ljuske primjenite migraciju na bazu.
 
 ``` shell
-$ ./manage.py shell 
+$ ./manage.py shell
 (...)
 ```
 
@@ -1267,7 +1261,7 @@ Za početak porenite naredbu:
 
 ``` shell
 $ ./manage.py
-(...) 
+(...)
 ```
 
 Izlistao nam se trenutni popis opcija koje možemo izvršavati.
@@ -1320,7 +1314,7 @@ class Command(BaseCommand):
 
         for _ in range(NUM_AUTHORS):
             author = AuthorFactory()
-    
+
         for _ in range(NUM_BOOKS):
             book = BookFactory()
 ```
@@ -1484,12 +1478,12 @@ Dodavanje CSS-a u HTML predložak.
 #### Uvoz
 
 ``` html
-<link rel="stylesheet" href="https://www.w3schools.com/html/styles.css"> 
+<link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
 ```
 
 ``` html
 <head>
-    <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css"> 
+    <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
     <title>{% block title %}Knjižnica{% endblock %}</title>
 </head>
 ```
@@ -1588,7 +1582,7 @@ Izmjenimo i predložak za prikaz knjiga. Datoteka `book_list.html`:
         <h4>{{author.name}}</h4>
         <p>City: {{author.city}}</p>
         <p>Country: {{author.country}}</p>
-        <p><a href="{{author.name}}"> All books by {{author.name}}</a></p> 
+        <p><a href="{{author.name}}"> All books by {{author.name}}</a></p>
     </div>
 {% endfor %}
 {% endblock %}
@@ -1622,8 +1616,8 @@ Izmjenimo i predložak za prikaz knjiga. Datoteka `book_list.html`:
 ### Sijanje (seeding)
 
 !!! zadatak
-    - Kreirajte projekt `vj9` i unutar njega aplikaciju `main`. Unutar modela u aplikaciji `main` kreirajte klasu `Student`. Klasa `Student` neka sadrži vrijednost `first_name`.  
-    - Provedite potrebne naredbe za migraciju.  
+    - Kreirajte projekt `vj9` i unutar njega aplikaciju `main`. Unutar modela u aplikaciji `main` kreirajte klasu `Student`. Klasa `Student` neka sadrži vrijednost `first_name`.
+    - Provedite potrebne naredbe za migraciju.
     - Pokrenite `./manage.py shell` i kreirajte jednog studenta.
 
 Naredbom `dumpdata` izvozimo vrijednosti iz baze ([detaljnije o naredbi dumpdata](https://docs.djangoproject.com/en/3.2/ref/django-admin/#dumpdata)). Pokrenimo je na način:
@@ -1715,7 +1709,7 @@ Skriptu pokrenite naredbom:
 
 ``` shell
 $ manage.py shell < revert_seed.py
-(...) 
+(...)
 ```
 
 ### Učitavanje podataka sijanja u testiranje
@@ -1727,9 +1721,9 @@ Testirajmo rad tako da dohvatimo podatke o studentu koji ima primarni ključ 1 i
 from django.test import TestCase
 from main.models import Student
 
-class MyTest(TestCase): 
-    # fixtures = ["0001_student.json"]  
-    
+class MyTest(TestCase):
+    # fixtures = ["0001_student.json"]
+
     def test_should_create_group(self):
         s = Student.objects.get(pk=1)
         self.assertEqual(s.first_name, 'Ivo')
@@ -1780,7 +1774,7 @@ Datoteka `main/urls.py`:
 
 ``` python
 from django.urls import path
-from . import views 
+from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
@@ -1871,7 +1865,7 @@ I kreiramo funkciju `register()`:
 def register(request):
     form = UserCreationForm()
     context = {'form': form}
-    
+
     return render(request, 'registration/register.html', context)
 ```
 
@@ -1923,7 +1917,7 @@ Izmjene na `index.html` ako je korisnik ulogiran.
 <h1>This is our homepage</h1>
 
 {% if user.is_authenticated %}
-    <p>Vaše ime: {{ user.username }}</p>   
+    <p>Vaše ime: {{ user.username }}</p>
 {% else %}
     <p>Niste prijavljeni.</p>
 {% endif %}
@@ -2033,7 +2027,7 @@ class TestViews(TestCase):
             address = 'TestAdress',
             city = 'TestCity',
             country = 'TestCountry'
-        )        
+        )
 
     def test_project_homepage_GET(self):
         client = Client()

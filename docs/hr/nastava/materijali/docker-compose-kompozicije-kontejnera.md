@@ -51,7 +51,7 @@ $ docker-compose pull
 Stvaranje kontejnera na temelju preuzetih slika i njihovo pokretanje ćemo izvesti argumentom `up` ([dokumentacija](https://docs.docker.com/engine/reference/commandline/compose_up/)):
 
 ``` shell
-$ docker-compose up 
+$ docker-compose up
 [+] Running 2/0
 ⠿ Container korisnik-mojhttpd-1  Created                                   0.0s
 ⠿ Container korisnik-mojredis-1  Created                                   0.0s

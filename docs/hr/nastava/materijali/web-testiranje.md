@@ -89,7 +89,7 @@ $ pytest
 ============================= test session starts =============================
 platform linux -- Python 3.9.2, pytest-6.0.2, py-1.10.0, pluggy-0.13.0
 rootdir: /home/vedranmiletic
-collected 1 item                                                               
+collected 1 item
 
 test_sample.py .                                                        [100%]
 

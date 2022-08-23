@@ -378,7 +378,7 @@ class Arcade < Game
   def description
     puts "I am an Arcade named #{@title}"
   end
-end 
+end
 ```
 
 ---
@@ -402,7 +402,7 @@ class ArcadeFactory < GameFactory
   def create(title)
     Arcade.new title
   end
-end  
+end
 ```
 
 ---
@@ -820,7 +820,7 @@ class CachingRetriever implements DataRetriever
   public function retrieve(string $data): string
   {
     if (isset($this->cache[$data])) {
-      return $this->cache[$url];  
+      return $this->cache[$url];
     }
 
     $result = $this->databaseRetriever->retrieve($url);
@@ -883,7 +883,7 @@ interface Command {
 
 class ImageMagickCommand implements Command {
   private parameters;
-  constructor(parameters) { 
+  constructor(parameters) {
     this.parameters = parameters;
   }
 
@@ -1013,7 +1013,7 @@ Order.prototype = {
     this.observers = this.observers.filter(
       function(item) {
         if (item !== fn) {
-          return item;    
+          return item;
     }}); },
   fire: function() {
     this.observers.forEach(
