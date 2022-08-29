@@ -136,7 +136,7 @@ Nastavni sadržaji i sve obavijesti vezane uz kolegij kao i ispitni termini nala
 | 30. 11. 2022. | | | V4 (12:00 -- 15:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) | Dejan Ljubobratović, pred. |
 | 7. 12. 2022. | | S1 (15:00 -- 18:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) | V5 (12:00 -- 15:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) | Dejan Ljubobratović, pred. |
 | 14. 12. 2022. | | S2 + S3 (12:00 -- 18:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) | | Dejan Ljubobratović, pred. |
-| 21. 12. 2022. | | S4 + S5 (12:00 -- 15:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) | | Dejan Ljubobratović, pred. |
+| 21. 12. 2022. | | S4 + S5 (12:00 -- 18:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) | | Dejan Ljubobratović, pred. |
 | 11. 01. 2023. | | 2. test (12:00 -- 13:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) | | Dejan Ljubobratović, pred. |
 
 **Napomena:** U slučaju pogoršane epidemiološke situacije uvjetovane pandemijom COVID-19 dio nastave (u obimu koji će ovisiti o trenutnoj situaciji) će se održati *on-line* u gore navedenim terminima.
