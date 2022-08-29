@@ -28,7 +28,7 @@ Mi smo Grupa za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukt
 
 ### Koliko su GASERI jaka institucija?
 
-Druga su najjača institucija na Balkanu, odmah nakon [unuka Bake Praseta](https://www.youtube.com/watch?v=8SsrKd_o010).
+Druga su najjača institucija na Balkanu, odmah nakon [unuka Bake Praseta](https://youtu.be/8SsrKd_o010).
 
 ### Može li si ozbiljna institucija dozvoliti da ima emoji kao logo?
 

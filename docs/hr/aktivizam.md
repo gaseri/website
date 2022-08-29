@@ -48,7 +48,7 @@ Voditeljima promocije za sada nije poznat primjer srednje škole koja je zamijen
 
 #### Ciljevi i postupak promocije
 
-[Primjer školskog okruga Penn Manor iz savezne države Pennsylvania u SAD-u](https://www.youtube.com/watch?v=Nj3dGK3c4nY) pokazuje da inicijativa može ići i odozdo. Taj okrug već dvije godine studentima daje laptope s Ubuntu Linuxom i LibreOfficeom, te ih uči radu u navedenom softveru. Korištenjem slobodnog softvera štede na licencijama i -- što nije manje važno -- podižu svijest o slobodnom korištenju softvera i potiču individualnu kreativnost u rješavanju problema. Učenik se dovodi u poziciju da je dio zajednice koja stvara softver jer može pomoći poboljšanju softvera koji koristi, bez obzira na znanje programiranja. Primjerice, može poboljšati dokumentaciju ili dizajnirati novi skup ikona. Učenik više nije samo konzument softvera koji nalazi u školi, već može postati aktivni sudionik u njegovu razvoju.
+[Primjer školskog okruga Penn Manor iz savezne države Pennsylvania u SAD-u](https://youtu.be/Nj3dGK3c4nY) pokazuje da inicijativa može ići i odozdo. Taj okrug već dvije godine studentima daje laptope s Ubuntu Linuxom i LibreOfficeom, te ih uči radu u navedenom softveru. Korištenjem slobodnog softvera štede na licencijama i -- što nije manje važno -- podižu svijest o slobodnom korištenju softvera i potiču individualnu kreativnost u rješavanju problema. Učenik se dovodi u poziciju da je dio zajednice koja stvara softver jer može pomoći poboljšanju softvera koji koristi, bez obzira na znanje programiranja. Primjerice, može poboljšati dokumentaciju ili dizajnirati novi skup ikona. Učenik više nije samo konzument softvera koji nalazi u školi, već može postati aktivni sudionik u njegovu razvoju.
 
 Često se ova praksa propituje s obzirom na to da još uvijek na desktop računalima Microsoft Windows i Office koristi najveći broj korisnika. Međutim, učenik koji danas kreće u školu nakon završetka svog obrazovanja koristit će softvere koji će izgledom biti bitno drugačiji od onoga što je učio. No ti će softveri funkcionalnošću biti vrlo slični, vjerojatno i bogatiji. Učenik stoga treba biti spreman snaći se za koji god softver da sjedne; grafička sučelja na Linuxu, macOS-u i Windowsima funkcionalnošću su danas ionako vrlo slična. Razlike u izgledu (dizajnu) koje postoje među njima ne smiju biti prepreka korištenju.
 
@@ -179,8 +179,8 @@ Cilj je omogućiti da grafički procesori AMD Radeon mogu pokretati [GROMACS](ht
 
 - [tstellar dev blog](https://www.stellard.net/tom/blog/)
 - [Bug 99553 -- Tracker bug for runnning OpenCL applications on Clover](https://bugs.freedesktop.org/show_bug.cgi?id=99553)
-- [XDC2013: Tom Stellard - Clover Status Update](https://www.youtube.com/watch?v=UTaRlmsCro4)
-- [FSOSS 2014 Day 2 Tom Stellard AMD Open Source GPU Drivers](https://www.youtube.com/watch?v=JZ-EEgXYzUk)
+- [XDC2013: Tom Stellard - Clover Status Update](https://youtu.be/UTaRlmsCro4)
+- [FSOSS 2014 Day 2 Tom Stellard AMD Open Source GPU Drivers](https://youtu.be/JZ-EEgXYzUk)
 
 Prezentacije na konferencijama:
 
