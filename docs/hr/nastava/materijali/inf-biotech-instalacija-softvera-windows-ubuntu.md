@@ -64,7 +64,7 @@ Preuzmite Avogadro sa [službenih stranica](https://avogadro.cc/). Instalirajte 
 
 ### OpenBabel za Windowse
 
-Preuzmite OpenBabel sa [službenih stranica](http://openbabel.org/). Instalirajte ga sa zadanim postavkama.
+Preuzmite OpenBabel sa [službenih stranica](https://openbabel.org/). Instalirajte ga sa zadanim postavkama.
 
 ### PyMOL za Windowse
 
@@ -72,7 +72,7 @@ Preuzmite PyMOL sa [službenih stranica](https://pymol.org/). Instalirajte ga sa
 
 ### UGENE za Windowse
 
-Preuzmite UGENE sa [službenih stranica](http://ugene.net/). Instalirajte ga sa zadanim postavkama.
+Preuzmite UGENE sa [službenih stranica](https://ugene.net/). Instalirajte ga sa zadanim postavkama.
 
 ### Avogadro, OpenBabel, PyMOL i UGENE za Ubuntu
 

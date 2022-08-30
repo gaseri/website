@@ -107,7 +107,7 @@ $ make -j 2 check
 
 ## The overview of the LLVM architecture
 
-While LLVM is building, let's take a look at the LLVM architecture. [Chris Lattner](http://www.nondot.org/sabre/), the main author of LLVM, wrote the [LLVM](https://www.aosabook.org/en/llvm.html) chapter of [The Architecture of Open Source Applications](https://aosabook.org/en/index.html) book. To follow the code described in the chapter, open the following files in the `llvm-project-13.0.1/llvm-13.0.1` directory:
+While LLVM is building, let's take a look at the LLVM architecture. [Chris Lattner](https://www.nondot.org/sabre/), the main author of LLVM, wrote the [LLVM](https://www.aosabook.org/en/llvm.html) chapter of [The Architecture of Open Source Applications](https://aosabook.org/en/index.html) book. To follow the code described in the chapter, open the following files in the `llvm-project-13.0.1/llvm-13.0.1` directory:
 
 - `include/llvm/Analysis/InstructionSimplify.h`
 - `lib/Analysis/InstructionSimplify.cpp`

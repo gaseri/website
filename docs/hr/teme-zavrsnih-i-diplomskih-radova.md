@@ -326,7 +326,7 @@ GPL violations: Linksys WRT54G, Linux devices, SF Conservancy, SF Law Center
 **Literatura:**
 
 1. [[Ksummit-discuss] [CORE TOPIC] GPL defense issues](https://lists.linuxfoundation.org/pipermail/ksummit-discuss/2016-August/003578.html)
-1. [GPL violations](http://gpl-violations.org/)
+1. [GPL violations](https://gpl-violations.org/)
 1. [Software Freedom Law Center](https://softwarefreedom.org/)
 1. [Software Freedom Conservancy](https://sfconservancy.org/)
 1. [Bradley M. Kuhn's Blog](http://www.ebb.org/bkuhn/blog/)
@@ -697,7 +697,7 @@ Cilj rada je opisati tehnike napada na mikroservise i web aplikacije, alate koji
 1. [Express](https://expressjs.com/)
 1. [Lumen](https://lumen.laravel.com/)
 1. [Flask](https://flask.palletsprojects.com/)
-1. [Sinatra](http://sinatrarb.com/)
+1. [Sinatra](https://sinatrarb.com/)
 1. [ASP.NET Core](https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core)
 1. [Spring](https://spring.io/)
 

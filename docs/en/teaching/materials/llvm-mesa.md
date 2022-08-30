@@ -649,7 +649,7 @@ For example, llc -mcpu=mycpu -mattr=+feature1,-feature2
 ```
 
 !!! tip
-    A good starting point for further study of AMDGPU backend is [Tom Stellard](http://www.stellard.net/tom/blog/)'s [A Detailed Look at the R600 Backend](https://llvm.org/devmtg/2013-11/#talk7) ([slides](https://llvm.org/devmtg/2013-11/slides/Stellard-R600.pdf), [recording](https://youtu.be/hz1jFSi1fEY?list=PL_R5A0lGi1AA4GNONa4vof63jalYbs-MG)), presented at [2013 LLVM Developers' Meeting](https://llvm.org/devmtg/2013-11/). While focused on R600 and not GCN, many of the points made in the talk still hold.
+    A good starting point for further study of AMDGPU backend is [Tom Stellard](https://www.stellard.net/tom/blog/)'s [A Detailed Look at the R600 Backend](https://llvm.org/devmtg/2013-11/#talk7) ([slides](https://llvm.org/devmtg/2013-11/slides/Stellard-R600.pdf), [recording](https://youtu.be/hz1jFSi1fEY?list=PL_R5A0lGi1AA4GNONa4vof63jalYbs-MG)), presented at [2013 LLVM Developers' Meeting](https://llvm.org/devmtg/2013-11/). While focused on R600 and not GCN, many of the points made in the talk still hold.
 
 !!! admonition "Assignment"
     Use Clang to compile the OpenCL C code from the previous example to LLVM intermediate representation and then use `llc` to compile it for `gfx700`, `fiji`, and `gfx1030` processors. Compare the resulting assembly codes in terms of the code size, types of instructions used, and register pressure.

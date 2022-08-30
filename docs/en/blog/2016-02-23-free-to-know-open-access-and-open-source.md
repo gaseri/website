@@ -38,7 +38,7 @@ Therefore, we can not use the terms interchangeably.
 
 It is hard to think about either Open access or open source as having any regional character; both are global movements. Nevertheless, there are numerous efforts relating to promotion of the open source movement happening in Croatia. The largest two groups promoting open source are [Croatian Linux Users Group](http://www.linux.hr/) (Hrvatska udruga Linux korisnika, HULK) and [HrOpen](https://www.open.hr/), the organizers behind the [DORS/CLUC](https://www.dorscluc.org/) conference, the [Document Freedom Day](https://www.documentfreedom.org/) celebrations, the Linux installfests, and other events.
 
-There are many smaller groups and events, such as [Monteparadiso Hacklab](https://fazan.org/) in Pula, [LKLK konferencija Linux korisnika](http://lklk.eu/) in Rijeka, [Otvorena mreža](http://www.otvorenamreza.org/), [OpenStreetMap](https://osm-hr.org/) Hrvatska, and probably many others I have not been involved with. Open source covers a large spectrum of interests and activities, so I am pretty sure I am not aware of all or even the most of them.
+There are many smaller groups and events, such as [Monteparadiso Hacklab](https://fazan.org/) in Pula, [LKLK konferencija Linux korisnika](http://lklk.eu/) in Rijeka, [Otvorena mreža](https://www.otvorenamreza.org/), [OpenStreetMap](https://osm-hr.org/) Hrvatska, and probably many others I have not been involved with. Open source covers a large spectrum of interests and activities, so I am pretty sure I am not aware of all or even the most of them.
 
 ## Do you believe there a need for greater popular movement for Open access / open source? If there is, how do you imagine it should develop? Can artists help?
 
@@ -82,8 +82,8 @@ Existing studies such as [1] show the contrary to be true, that is, the open sou
 
 ## Can you provide few good and up-to-date sources for anybody interested in the subject of Open access or open source?
 
-For Open access, there is [Open access at Oxford](http://openaccess.ox.ac.uk/) and a number of blogs tied to specific publishers, for example [PeerJ Blog](https://peerj.com/blog/) and [The Official PLOS Blog](https://theplosblog.plos.org/).
+For Open access, there is [Open access at Oxford](https://openaccess.ox.ac.uk/) and a number of blogs tied to specific publishers, for example [PeerJ Blog](https://peerj.com/blog/) and [The Official PLOS Blog](https://theplosblog.plos.org/).
 
-For open source, there are the two news sites I personally follow on a regular basis: [Opensource.com](https://opensource.com/) and Linux and Open Source section at [ZDNet](http://www.zdnet.com/blog/open-source/). Furthermore, nearly all tech sites that talk about the software also talk about the open source software. Finally, many of the large open source projects have "planets" where the developer blogs are aggregated; they are also interesting to follow.
+For open source, there are the two news sites I personally follow on a regular basis: [Opensource.com](https://opensource.com/) and Linux and Open Source section at [ZDNet](https://www.zdnet.com/blog/open-source/). Furthermore, nearly all tech sites that talk about the software also talk about the open source software. Finally, many of the large open source projects have "planets" where the developer blogs are aggregated; they are also interesting to follow.
 
 *Thank you, Vedran!*

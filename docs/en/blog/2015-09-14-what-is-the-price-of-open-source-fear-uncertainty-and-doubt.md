@@ -16,7 +16,7 @@ tags:
 [The Journal of Physical Chemistry Letters (JPCL)](https://pubs.acs.org/journal/jpclcd), published by [American Chemical Society](https://www.acs.org/), recently put out two Viewpoints discussing open-source software:
 
 1. [Open Source and Open Data Should Be Standard Practices](https://pubs.acs.org/doi/abs/10.1021/acs.jpclett.5b00285) by [J. Daniel Gezelter](https://chemistry.nd.edu/people/j-daniel-gezelter/), and
-2. [What Is the Price of Open-Source Software?](https://pubs.acs.org/doi/abs/10.1021/acs.jpclett.5b01258) by [Anna I. Krylov](http://iopenshell.usc.edu/), [John M. Herbert](https://chemistry.osu.edu/people/herbert.44), Filipp Furche, Martin Head-Gordon, Peter J. Knowles, Roland Lindh, Frederick R. Manby, Peter Pulay, Chris-Kriton Skylaris, and Hans-Joachim Werner.
+2. [What Is the Price of Open-Source Software?](https://pubs.acs.org/doi/abs/10.1021/acs.jpclett.5b01258) by [Anna I. Krylov](https://iopenshell.usc.edu/), [John M. Herbert](https://chemistry.osu.edu/people/herbert.44), Filipp Furche, Martin Head-Gordon, Peter J. Knowles, Roland Lindh, Frederick R. Manby, Peter Pulay, Chris-Kriton Skylaris, and Hans-Joachim Werner.
 
 Viewpoints are not detailed reviews of the topic, but instead, present the author's view on the state-of-the-art of a particular field.
 

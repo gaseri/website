@@ -152,7 +152,7 @@ Uglavnom se primjenjuje na nivou jedinice izvornog koda (engl. *source code unit
 Primjeri alata za testiranje softvera na opisan način su:
 
 - [pytest](https://docs.pytest.org/) (Python)
-- [Mocha](https://mochajs.org/) i [Jest](http://jestjs.io/) (JavaScript)
+- [Mocha](https://mochajs.org/) i [Jest](https://jestjs.io/) (JavaScript)
     - [Mocha](https://convergentcoffee.com/what-is-mocha/) je inače fina kava, a [Jester](https://en.wikipedia.org/wiki/Jester) je dvorska luda i [smije se kao Joker](https://youtu.be/ocw-VGMiOmk)
 - [NUnit](https://nunit.org/) (C#)
 - [PHPUnit](https://phpunit.de/) (PHP)
