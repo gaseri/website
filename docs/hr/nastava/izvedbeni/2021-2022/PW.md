@@ -7,7 +7,7 @@ Akademska godina 2021./2022.
 
 ## OSNOVNI PODACI O PREDMETU
 
-Naziv predmeta: Računalne mreže  
+Naziv predmeta: Programiranje za web  
 Studijski program: Sveučilišni preddiplomski studij informatike  
 Status predmeta: **obvezatan** za modul RPP/izborni  
 Semestar: 5.
