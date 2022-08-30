@@ -168,7 +168,7 @@ Popularni CDN-ovi:
 ## Smanjenje korištenja HTTP 301 Moved Permanently
 
 - Preusmjeravanje uvodi barem jedno dodatno povratno vrijeme slanja zahtjeva i primanja odgovora na zahtjev
-- Ilustracija rješenja: [github.com/fiditri/](https://github.com/fiditri/) i [github.com/fiditri](https://github.com/fiditri) imaju isti sadržaj i nema preusmjeravanja
+- Ilustracija rješenja: [github.com/fidit-rijeka/](https://github.com/fidit-rijeka/) i [github.com/fidit-rijeka](https://github.com/fidit-rijeka) imaju isti sadržaj i nema preusmjeravanja
     - Tražilice kao Google penaliziraju duplicirani sadržaj, ali [postoji rješenje korištenjem kanonskih oznaka](https://moz.com/learn/seo/canonicalization) `<link rel="canonical" href="..." />`
 
 ---
