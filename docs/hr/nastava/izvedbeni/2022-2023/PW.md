@@ -7,7 +7,7 @@ Akademska godina 2022./2023.
 
 ## OSNOVNI PODACI O PREDMETU
 
-Naziv predmeta: Računalne mreže  
+Naziv predmeta: Programiranje za Web
 Studijski program: Sveučilišni preddiplomski studij informatike  
 Status predmeta: **obvezatan**/izborni  
 Semestar: 5.
