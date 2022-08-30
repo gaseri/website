@@ -169,17 +169,17 @@ $ docker network create db-network
 ef5139aa1ec739e9c5da903581328a537380095b9117b555d72a1b33678836b7
 ```
 
-Pokrenimo poslužitelj na toj mreži i nazovimo ga `fidtri-mariadb` korištenjem parametra `--name`:
+Pokrenimo poslužitelj na toj mreži i nazovimo ga `fidit-mariadb` korištenjem parametra `--name`:
 
 ``` shell
-$ docker run --detach --network db-network --name fidtri-mariadb --env MARIADB_ROOT_PASSWORD=m0j4z4p0rk4 mariadb:10.7
+$ docker run --detach --network db-network --name fidit-mariadb --env MARIADB_ROOT_PASSWORD=m0j4z4p0rk4 mariadb:10.7
 39b77a3679fd4e5c8638d63d3d577464b46c3ee0b9cc34a965b100355b9bb6aa
 ```
 
 Pokrenimo klijent na istoj mreži i iskoristimo parametar `-h` naredbe `mariadb` za navođenje imena poslužitelja, parametar `-u` za navođenje imena korisnika i parametar `-p` za uključivanje upita za zaporkom. Uočimo pritom kako naredba `mariadb` ne očekuje razmak između parametra i njegove vrijednosti.
 
 ``` shell
-$ docker run -it --network db-network mariadb:10.7 mariadb -hfidtri-mariadb -uroot -p
+$ docker run -it --network db-network mariadb:10.7 mariadb -hfidit-mariadb -uroot -p
 Enter password:
 Welcome to the MariaDB monitor.  Commands end with ; or \g.
 Your MariaDB connection id is 3
@@ -358,14 +358,14 @@ ssl_ca = /etc/mysql/conf.d/certs/ca-cert.pem
 Pokrenimo ponovno poslužitelj tako da dodatno parametrom `-v` montiramo direktorij `/home/korisnik/mariadb-server-conf` na `/etc/mysql/conf.d`, iz kojeg će MariaDB poslužitelj čitati konfiguraciju:
 
 ``` shell
-$ docker run --detach --network db-network --name fidtri-mariadb -v /home/korisnik/mariadb-server-conf:/etc/mysql/conf.d --env MARIADB_ROOT_PASSWORD=m0j4z4p0rk4 mariadb:10.7
+$ docker run --detach --network db-network --name fidit-mariadb -v /home/korisnik/mariadb-server-conf:/etc/mysql/conf.d --env MARIADB_ROOT_PASSWORD=m0j4z4p0rk4 mariadb:10.7
 fd5bc31673cb7f87d632ef9d59bf515bafa944ba4c1058f5776f3d0dc74a402d
 ```
 
 Kako bismo se uvjerili da je TLS uključen, povežimo se klijentom tako da i na njegovoj strani montiramo direktorij s konfiguracijskim datotekama:
 
 ``` shell
-$ docker run -it --network db-network -v /home/korisnik/mariadb-client-conf:/etc/mysql/conf.d mariadb:10.7 mariadb -hfidtri-mariadb -uroot -p
+$ docker run -it --network db-network -v /home/korisnik/mariadb-client-conf:/etc/mysql/conf.d mariadb:10.7 mariadb -hfidit-mariadb -uroot -p
 Enter password:
 ```
 
