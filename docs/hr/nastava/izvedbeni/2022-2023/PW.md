@@ -35,7 +35,7 @@ Usvajanje znanja o naprednim konceptima razvoja interaktivnih web aplikacija (pr
 
 ### Uvjeti za upis predmeta
 
-Položen predmet Uvod u programiranje za web.
+Odslušan predmet Uvod u programiranje za web.
 
 ### Očekivani ishodi učenja za predmet
 
