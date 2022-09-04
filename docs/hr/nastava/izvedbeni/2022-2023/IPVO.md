@@ -197,7 +197,7 @@ Nastava će se na predmetu odvijati u zimskom semestru prema sljedećem raspored
 | 8. | 21. 11. 2022. | 16:00--17:30 | O-366 | Postavljanje usluge Airflow | V7 | doc. dr. sc. Vedran Miletić |
 | 9. | 28. 11. 2022. | 14:00--15:30 | O-S32 | Razvoj i implementacija oblaku urođenih aplikacija. Rad s podacima u oblaku | P8 | doc. dr. sc. Vedran Miletić |
 | 9. | 28. 11. 2022. | 16:00--17:30 | O-366 | Postavljanje usluge Cassandra | V8 | doc. dr. sc. Vedran Miletić |
-| 10. | 5. 12. 2022. | 14:00--15:30 | O-359 | DevOps i najbolje prakse. Prenosivost između različitih oblaka | P9 | doc. dr. sc. Vedran Miletić |
+| 10. | 5. 12. 2022. | 14:00--15:30 | O-S32 | DevOps i najbolje prakse. Prenosivost između različitih oblaka | P9 | doc. dr. sc. Vedran Miletić |
 | 10. | 5. 12. 2022. | 16:00--17:30 | O-366 | Postavljanje usluge Spark. **Rok za odabir teme eksperimentalnog rada** | V9 | doc. dr. sc. Vedran Miletić |
 | 11. | 12. 12. 2022. | 14:00--15:30 | O-S32 | Evolucija monolitnih aplikacija u mikrouslužne: planiranje | P10 | doc. dr. sc. Vedran Miletić |
 | 11. | 12. 12. 2022. | 16:00--17:30 | O-366 | Postavljanje usluga Containerd i CoreDNS | V10 | doc. dr. sc. Vedran Miletić |
