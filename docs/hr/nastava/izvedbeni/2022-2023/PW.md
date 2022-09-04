@@ -147,7 +147,7 @@ Završni ispit se smatra položenim samo ako na njemu student postigne minimalno
 
 ### Ocjenjivanje
 
-Kontinuiranim radom tijekom semestra na prethodno opisani način studenti mogu ostvariti najviše 70 ocjenskih bodova, a da bi mogli pristupiti završnom ispitu moraju ostvarili 50% i više bodova (minimalno 35) te ostvariti barem 50% od ukupnog broja bodova na svakom od praktičnih kolokvija.
+Kontinuiranim radom tijekom semestra na prethodno opisani način studenti mogu ostvariti najviše 70 ocjenskih bodova, a da bi mogli pristupiti završnom ispitu moraju ostvarili 50% i više bodova (minimalno 35) te ostvariti barem 50% od ukupnog broja bodova na praktičnom kolokviju.
 
 Studenti koji su skupili najmanje 35 ocjenskih bodova i ostvarili potrebne pragove, mogu pristupiti završnom ispitu.
 
