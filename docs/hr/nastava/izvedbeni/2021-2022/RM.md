@@ -20,7 +20,7 @@ Bodovna vrijednost i način izvođenja nastave:
 Nositelj predmeta: v. pred. dr. sc. Vedran Miletić  
 E-mail: vmiletic@inf.uniri.hr  
 Ured: O-520  
-Vrijeme konzultacija: Utorkom od 12:00 do 14:00 po dogovoru e-mailom
+Vrijeme konzultacija: Utorkom od 12:00 do 14:00 uz prethodni dogovor e-mailom
 
 Asistent:  
 E-mail:  
