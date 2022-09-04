@@ -103,7 +103,7 @@ Nema.
 | Pisani ispit | 2 | 1--7 | Dva kolokvija | 0--20 bodova za svaki kolokvij, ovisno o stupnju točnosti i potpunosti | 40 |
 | Kontinuirana provjera znanja | 1 | 2--4 | Dvije kontrolne zadaće | 0--15 bodova za svaku kontrolnu zadaću, ovisno o stupnju točnosti i potpunosti | 30 |
 | Projekt | 2 (1) | 2--4 | Dizajn, implementacija i prezentacija distribuiranog algoritma | 30 bodova prema definiranim kriterijima | 30 |
-| **UKUPNO** | **6 (5)** |  |  |  | **100** |
+| **UKUPNO** | **6 (5)** |   |   |   | **100** |
 
 ### Obveze i vrednovanje studenata
 

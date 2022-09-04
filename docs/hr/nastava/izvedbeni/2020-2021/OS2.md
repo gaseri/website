@@ -87,7 +87,7 @@ Nema.
 | Aktivnost u nastavi | 2 | 1--6 | Dvije kontrolne zadaće | 0--15 bodova za svaku kontrolnu zadaću, ovisno o stupnju točnosti i potpunosti | 30 |
 | Kontinuirana provjera znanja | 1 | 1--6 | Dva kolokvija | 0--20 bodova za svaki kolokvij, ovisno o stupnju točnosti i potpunosti | 40 |
 | Završni ispit | 2 | 1--6 | Pisani test | 30 bodova prema definiranim kriterijima | 30 |
-| **UKUPNO** | **5** |  |  |  | **100** |
+| **UKUPNO** | **5** |   |   |   | **100** |
 
 ### Obveze i vrednovanje studenata
 

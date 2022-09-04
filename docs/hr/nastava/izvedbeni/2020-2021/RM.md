@@ -104,9 +104,9 @@ Nema.
 | Pohađanje nastave i aktivnosti u nastavi | 1,5 | I1--I6 | Prisutnost studenata i odgovaranje na pitanja nastavnika | Popisivanje (evidencija), Kahoot! | 0 |
 | Eksperimentalni rad | 1 | I3, I5 | Deset laboratorijskih vježbi | Ovisno o stupnju točnosti i potpunosti | 40 |
 | Kontinuirana provjera znanja | 1,5 | I3, I5 | Dvije domaće zadaće | Ovisno o stupnju točnosti i potpunosti | 10 |
-|  |  | I1, I2, I4, I6 | Online test na Merlinu | Ovisno o stupnju točnosti i potpunosti; pogrešni odgovori na pitanja višestrukog izbora donose negativne bodove | 20 |
+|   |   | I1, I2, I4, I6 | Online test na Merlinu | Ovisno o stupnju točnosti i potpunosti; pogrešni odgovori na pitanja višestrukog izbora donose negativne bodove | 20 |
 | Završni ispit | 1 | I1, I2, I4, I6 | Online test na Merlinu | Ovisno o stupnju točnosti i potpunosti; pogrešni odgovori na pitanja višestrukog izbora donose negativne bodove | 30 |
-| **UKUPNO** | **5** |  |  |  | **100** |
+| **UKUPNO** | **5** |   |   |   | **100** |
 
 ### Obveze i vrednovanje studenata
 

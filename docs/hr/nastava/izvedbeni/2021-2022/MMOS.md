@@ -109,7 +109,7 @@ Nema.
 | Projekt | 0,5 | I6, I7 | Praktični projektni zadatak | Ovisno o stupnju točnosti i potpunosti | 10 |
 | Kontinuirana provjera znanja | 1 | I1, I3, I4 | Test na Merlinu | Ovisno o stupnju točnosti i potpunosti | 20 |
 | Završni ispit | 0,5 | I5, I8 | Test na Merlinu | Ovisno o stupnju točnosti i potpunosti | 30 |
-| **UKUPNO** | **5** |  |  |  | **100** |
+| **UKUPNO** | **5** |   |   |   | **100** |
 
 ### Obveze i vrednovanje studenata
 
@@ -177,35 +177,35 @@ Nastava će se na predmetu odvijati u zimskom semestru prema sljedećem raspored
 | Tj. | Datum | Vrijeme | Prostor | Tema | Nastava | Izvođač |
 | --- | ----- | ------- | ------- | ---- | ------- | ------- |
 | 1. | 5. 10. 2021. | 12:00--13:30 | O-357 | Funkcije mrežnih operacijskih sustava: podrška izvođenju procesa, detekcija hardvera | P1 | izv. prof. dr. sc. Božidar Kovačić |
-| 1. | 5. 10. 2021. | 14:00--15:30 | O-366 | Pregled značajki i korištenje osnovnih funkcija OpenStacka. OpenStack Horizon | V1 |  |
+| 1. | 5. 10. 2021. | 14:00--15:30 | O-366 | Pregled značajki i korištenje osnovnih funkcija OpenStacka. OpenStack Horizon | V1 |   |
 | 2. | 12. 10. 2021. | 12:00--13:30 | O-357 | Funkcije mrežnih operacijskih sustava: izvođenje protokola | P2 | izv. prof. dr. sc. Božidar Kovačić |
-| 2. | 12. 10. 2021. | 14:00--15:30 | O-366 | OpenStack Nova | V2 |  |
+| 2. | 12. 10. 2021. | 14:00--15:30 | O-366 | OpenStack Nova | V2 |   |
 | 3. | 19. 10. 2021. | 12:00--13:30 | O-357 | Funkcije mrežnih operacijskih sustava: web servisi | P3 | izv. prof. dr. sc. Božidar Kovačić |
-| 3. | 19. 10. 2021. | 14:00--15:30 | O-366 | OpenStack Cinder | V3 |  |
+| 3. | 19. 10. 2021. | 14:00--15:30 | O-366 | OpenStack Cinder | V3 |   |
 | 4. | 26. 10. 2021. | 12:00--13:30 | O-357 | Funkcije mrežnih operacijskih sustava: sigurnost | P4 | izv. prof. dr. sc. Božidar Kovačić |
-| 4. | 26. 10. 2021. | 14:00--15:30 | O-366 | OpenStack Neutron | V4 |  |
+| 4. | 26. 10. 2021. | 14:00--15:30 | O-366 | OpenStack Neutron | V4 |   |
 | 5. | 2. 11. 2021. | 12:00--13:30 | O-357 | Implementacije datotečnog sustava, imenovanja i replika u mrežnim operacijskim sustavima | P5 | izv. prof. dr. sc. Božidar Kovačić |
-| 5. | 2. 11. 2021. | 14:00--15:30 | O-366 | OpenStack Glance | V5 |  |
+| 5. | 2. 11. 2021. | 14:00--15:30 | O-366 | OpenStack Glance | V5 |   |
 | 6. | 9. 11. 2021. | 12:00--13:30 | O-357 | Mrežni protokoli u mrežnim operacijskim sustavima | P6 | izv. prof. dr. sc. Božidar Kovačić |
-| 6. | 9. 11. 2021. | 14:00--15:30 | O-366 | OpenStack Keystone | V6 |  |
+| 6. | 9. 11. 2021. | 14:00--15:30 | O-366 | OpenStack Keystone | V6 |   |
 | 7. | 16. 11. 2021. | 12:00--13:30 | O-357 | Podržanost web servisa u mrežnim operacijskim sustavima | P7 | izv. prof. dr. sc. Božidar Kovačić |
-| 7. | 16. 11. 2021. | 14:00--15:30 | O-366 | Docker | V7 |  |
+| 7. | 16. 11. 2021. | 14:00--15:30 | O-366 | Docker | V7 |   |
 | 8. | 23. 11. 2021. | 12:00--13:30 | O-357 | Sigurnost mrežnih operacijskih sustava: autentifikacija i autorizacije | P8 | izv. prof. dr. sc. Božidar Kovačić |
-| 8. | 23. 11. 2021. | 14:00--15:30 | O-366 | Docker Compose | V8 |  |
+| 8. | 23. 11. 2021. | 14:00--15:30 | O-366 | Docker Compose | V8 |   |
 | 9. | 30. 11. 2021. | 12:00--13:30 | O-357 | Sigurnost mrežnih operacijskih sustava: kontrola pristupa resursima, restrikcije u sustavu | P9 | izv. prof. dr. sc. Božidar Kovačić |
-| 9. | 30. 11. 2021. | 14:00--15:30 | O-366 | Primjeri formiranja oblaka za pokretanje web aplikacija | V9 |  |
-| 10. | 7. 12. 2021. | 12:00--13:30 |  | **Test na Merlinu** | P10 | izv. prof. dr. sc. Božidar Kovačić |
-| 10. | 7. 12. 2021. | 14:00--15:30 | O-366 | Primjeri formiranja oblaka za pokretanje web aplikacija | V10 |  |
+| 9. | 30. 11. 2021. | 14:00--15:30 | O-366 | Primjeri formiranja oblaka za pokretanje web aplikacija | V9 |   |
+| 10. | 7. 12. 2021. | 12:00--13:30 |   | **Test na Merlinu** | P10 | izv. prof. dr. sc. Božidar Kovačić |
+| 10. | 7. 12. 2021. | 14:00--15:30 | O-366 | Primjeri formiranja oblaka za pokretanje web aplikacija | V10 |   |
 | 11. | 14. 12. 2021. | 12:00--13:30 | O-357 | Arhitektura operacijskih sustava za mobilne uređaje | P11 | izv. prof. dr. sc. Božidar Kovačić |
-| 11. | 14. 12. 2021. | 14:00--15:30 | O-366 | **Rok za predaju 1. seminarskog rada.** NativeScript | V11 |  |
+| 11. | 14. 12. 2021. | 14:00--15:30 | O-366 | **Rok za predaju 1. seminarskog rada.** NativeScript | V11 |   |
 | 12. | 21. 12. 2021. | 12:00--13:30 | O-357 | Upravljanje aktivnosti pri izvođenju aplikacija na mobilnim operacijskim sustavima | P12 | izv. prof. dr. sc. Božidar Kovačić |
-| 12. | 21. 12. 2021. | 14:00--15:30 | O-366 | NativeScript | V12 |  |
+| 12. | 21. 12. 2021. | 14:00--15:30 | O-366 | NativeScript | V12 |   |
 | 13. | 11. 1. 2022. | 12:00--13:30 | O-357 | Komunikacija u operacijskim sustavima za mobilne uređaje: obrada zahtjeva korisnika primjenom zaslona osjetljivog na dodir, upravljanje senzorima mobilnih uređaja, podržanost mrežnih servisa | P13 | izv. prof. dr. sc. Božidar Kovačić |
-| 13. | 11. 1. 2022. | 14:00--15:30 | O-366 | Profiliranje aplikacija | V13 |  |
+| 13. | 11. 1. 2022. | 14:00--15:30 | O-366 | Profiliranje aplikacija | V13 |   |
 | 14. | 18. 1. 2022. | 12:00--13:30 | O-357 | Servisi operacijskih sustava za mobilne uređaje | P14 | izv. prof. dr. sc. Božidar Kovačić |
-| 14. | 18. 1. 2022. | 14:00--15:30 | O-366 | **Rok za predaju 2. seminarskog rada.** Profiliranje aplikacija | V14 |  |
+| 14. | 18. 1. 2022. | 14:00--15:30 | O-366 | **Rok za predaju 2. seminarskog rada.** Profiliranje aplikacija | V14 |   |
 | 15. | 25. 1. 2022. | 12:00--13:30 | O-357 | Sigurnost operacijskih sustava za mobilne uređaje | P15 | izv. prof. dr. sc. Božidar Kovačić |
-| 15. | 25. 1. 2022. | 14:00--15:30 | O-366 | **Rok za predaju projekta.** Razvojna okruženja, okviri i biblioteke na mobilnim operacijskim sustavima | V15 |  |
+| 15. | 25. 1. 2022. | 14:00--15:30 | O-366 | **Rok za predaju projekta.** Razvojna okruženja, okviri i biblioteke na mobilnim operacijskim sustavima | V15 |   |
 
 P -- predavanja  
 V -- vježbe

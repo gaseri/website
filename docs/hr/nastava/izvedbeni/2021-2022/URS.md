@@ -107,7 +107,7 @@ Nema.
 | Kontinuirana provjera znanja | 1 | I2, I3, I4, I6, I7 | Dva testa na Merlinu | Ovisno o stupnju točnosti i potpunosti | 30 |
 | Praktični rad | 1 | I1, I2, I3, I4, I5 | Postavljanje usluga prema zahtjevima i opis postupka | Vrednovanje potpunosti i točnosti odrađenog zadatka prema unaprijed definiranim kriterijima | 40 |
 | Završni ispit | 1 | I3, I4, I5, I6, I7 | Usmeni ispit | Ovisno o stupnju točnosti i potpunosti | 30 |
-| **UKUPNO** | **5** |  |  |  | **100** |
+| **UKUPNO** | **5** |   |   |   | **100** |
 
 ### Obveze i vrednovanje studenata
 

@@ -97,7 +97,7 @@ Nema.
 | Pisani ispit | 1 (0,5) | 1, 2, 4, 6 | Online test na Merlinu | 20 bodova, ovisno o stupnju točnosti i potpunosti | 20 |
 | Kontinuirana provjera znanja | 2 (1) | 3, 5 | Deset laboratorijskih vježbi | 50 bodova, ovisno o stupnju točnosti i potpunosti | 50 |
 | Završni ispit | 1 | 1, 2, 4, 6 | Online test na Merlinu | 0--30 bodova, ovisno o stupnju točnosti i potpunosti | 30 |
-| **UKUPNO** | **5** |  |  |  | **100** |
+| **UKUPNO** | **5** |   |   |   | **100** |
 
 ### Obveze i vrednovanje studenata
 

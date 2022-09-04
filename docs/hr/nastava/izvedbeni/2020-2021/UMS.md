@@ -89,7 +89,7 @@ Nema.
 | Praktični rad | 2 | Ovise o odabranom zadatku | Kontinuiran samostalni rad na praktičnom zadatku iz područja kolegija | Vrednovanje potpunosti i točnosti odrađenog zadatka prema unaprijed definiranim kriterijima | 40 |
 | Esej | 1 | 1--6 | Dva eseja | Vrednovanje prema unaprijed definiranim kriterijima | 20 |
 | Završni ispit | 1 | 1--6 | Usmeni ispit | 0--30 bodova, ovisno o stupnju točnosti i potpunosti | 30 |
-| **UKUPNO** | **6** |  |  |  | **100** |
+| **UKUPNO** | **6** |   |   |   | **100** |
 
 ### Obveze i vrednovanje studenata
 

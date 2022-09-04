@@ -116,7 +116,7 @@ Nema.
 | Pismeni ispit | 1 | 0 | I1, I2, I4, I5 | Dva testa na Merlinu | Ovisno o stupnju točnosti i potpunosti | 30 |
 | Praktični rad | 1 | 1 | I5--I8 | Odabir tehnologija u oblaku, razvoj usluge sa sučeljima i pisanje dokumentacije | Ovisno o stupnju točnosti i potpunosti | 20 |
 | Završni ispit | 1 | 0,5 | I5--I8 | Usmeni ispit | Ovisno o stupnju točnosti i potpunosti | 30 |
-| **UKUPNO** | **6** | **3,5** |  |  |  | **100** |
+| **UKUPNO** | **6** | **3,5** |   |   |   | **100** |
 
 ### Obveze i vrednovanje studenata
 

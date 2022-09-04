@@ -89,7 +89,7 @@ Nema.
 | Pismeni ispit | 2 | 1, 3, 4 | Dva testa na Merlinu | Vrednovanje prema unaprijed definiranim kriterijima | 30 |
 | Praktični rad | 1 | 1--6 | Odabir tehnologija u oblaku, razvoj usluge sa sučeljima i pisanje dokumentacije | Vrednovanje potpunosti i točnosti prema unaprijed definiranim kriterijima | 20 |
 | Završni ispit | 1 | 1--6 | Usmeni ispit | 0--30 bodova, ovisno o stupnju točnosti i potpunosti | 30 |
-| **UKUPNO** | **6** |  |  |  | **100** |
+| **UKUPNO** | **6** |   |   |   | **100** |
 
 ### Obveze i vrednovanje studenata
 

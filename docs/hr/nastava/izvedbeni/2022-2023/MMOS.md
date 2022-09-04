@@ -109,7 +109,7 @@ Nema.
 | Projekt | 0,5 | 0,5 | I6, I7 | Praktični projektni zadatak | Ovisno o stupnju točnosti i potpunosti | 10 |
 | Kontinuirana provjera znanja | 1 | 0 | I1, I3, I4 | Test na Merlinu | Ovisno o stupnju točnosti i potpunosti | 20 |
 | Završni ispit | 0,5 | 0 | I5, I8 | Test na Merlinu | Ovisno o stupnju točnosti i potpunosti | 30 |
-| **UKUPNO** | **5** | **2,5** |  |  |  | **100** |
+| **UKUPNO** | **5** | **2,5** |   |   |   | **100** |
 
 ### Obveze i vrednovanje studenata
 
@@ -195,7 +195,7 @@ Nastava će se na predmetu odvijati u zimskom semestru prema sljedećem raspored
 | 9. | 30. 11. 2022. | 16:00--17:30 | O-366 | Povezivanje kontejnera i virtualnih strojeva specifične namjene | V9 | Matea Turalija |
 | 10. | 6. 12. 2022. | 10:00--11:30 | O-358 | Sigurnost mrežnih operacijskih sustava: kontrola pristupa resursima, restrikcije u sustavu | P9 | izv. prof. dr. sc. Božidar Kovačić |
 | 10. | 7. 12. 2022. | 16:00--17:30 | O-366 | Zapis infrastrukture u obliku koda | V10 | Matea Turalija |
-| 11. | 13. 12. 2022. | 10:00--11:30 |  | **Test na Merlinu** | P10 | izv. prof. dr. sc. Božidar Kovačić |
+| 11. | 13. 12. 2022. | 10:00--11:30 |   | **Test na Merlinu** | P10 | izv. prof. dr. sc. Božidar Kovačić |
 | 11. | 14. 12. 2022. | 16:00--17:30 | O-366 | **Rok za predaju 1. seminarskog rada.** Osnove korištenja NativeScripta na mobilnim operacijskim sustavima | V11 | Matea Turalija |
 | 12. | 20. 12. 2022. | 10:00--11:30 | O-358 | Arhitektura operacijskih sustava za mobilne uređaje | P11 | izv. prof. dr. sc. Božidar Kovačić |
 | 12. | 21. 12. 2022. | 16:00--17:30 | O-366 | Korištenje NativeScripta s JavaScript bibliotekama i okvirima na mobilnim operacijskim sustavima | V12 | Matea Turalija |

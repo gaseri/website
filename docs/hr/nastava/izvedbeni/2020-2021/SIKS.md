@@ -101,7 +101,7 @@ Nema.
 | Kontinuirana provjera znanja | 1 | I1, I2 | Pet laboratorijskih vježbi | Ovisno o stupnju točnosti i potpunosti | 25 |
 | Projekt (dio) | 0,5 | I3 | Određivanje zaštitne funkcije informacijskog sustava te izrada ili konfiguracija model autentifikacije i autorizacije korisnika za zadanu aplikaciju | 20 bodova prema definiranim kriterijima | 20 |
 | Završni ispit | 1 | I3, I4, I5 | Analiza rizika i upravljanje razinom usluga, incidentima, problemima, zahtjevima i raspoloživošću | 30 bodova prema definiranim kriterijima | 30 |
-| **UKUPNO** | **5** |  |  |  | **100** |
+| **UKUPNO** | **5** |   |   |   | **100** |
 
 ### Obveze i vrednovanje studenata
 

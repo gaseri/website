@@ -105,7 +105,7 @@ Ima (engleski).
 | Pisani ispit | 1 | 1--6 | Dva kolokvija | 0--20 bodova za svaki kolokvij, ovisno o stupnju točnosti i potpunosti | 40 |
 | Kontinuirana provjera znanja | 1 | 7--8 | Dvije kontrolne zadaće | 0--15 bodova za svaku kontrolnu zadaću, ovisno o stupnju točnosti i potpunosti | 30 |
 | Završni ispit | 2 | 7--8 | Dizajn, implementacija i prezentacija heterogenog paralelnog algoritma | 30 bodova prema definiranim kriterijima | 30 |
-| **UKUPNO** | **5** |  |  |  | **100** |
+| **UKUPNO** | **5** |   |   |   | **100** |
 
 ### Obveze i vrednovanje studenata
 

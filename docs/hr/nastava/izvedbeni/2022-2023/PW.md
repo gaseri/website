@@ -113,9 +113,9 @@ Nema.
 | Pohađanje nastave | 2 | 1 | I1--I8 | Prisutnost studenata i odgovaranje na pitanja nastavnika | Popisivanje (evidencija), Kahoot! | 0 |
 | Kontinuirana provjera znanja | 1 | 0,5 | I2, I4, I5 | Test na Merlinu | Ovisno o stupnju točnosti i potpunosti | 30 |
 | Praktični rad | 1 | 1 | I1, I3, I6, I7, I8 | Praktični kolokvij | Ovisno o stupnju točnosti i potpunosti | 20 |
-|  |  |  |  | Izrada modela i predložaka (pogleda) za web aplikaciju ili uslugu | Ovisno o stupnju točnosti i potpunosti | 20 |
+|   |   |   |   | Izrada modela i predložaka (pogleda) za web aplikaciju ili uslugu | Ovisno o stupnju točnosti i potpunosti | 20 |
 | Završni ispit | 1 | 1 | I1--I8 | Timska izrada web aplikacije ili usluge na temelju izrađenih modela i predložaka (pogleda) te prezentacija projekta | Ovisno o stupnju točnosti i potpunosti | 30 |
-| **UKUPNO** | **5** | **3,5** |  |  |  | **100** |
+| **UKUPNO** | **5** | **3,5** |   |   |   | **100** |
 
 ### Obveze i vrednovanje studenata
 
@@ -210,7 +210,7 @@ Nastava će se na predmetu odvijati u zimskom semestru prema sljedećem raspored
 | 12. | 22. 12. 2022. | 14:00--15:30 | O-366 | **Rok za predaju modela i predložaka (pogleda).** Korištenje REST API-ja za slanje podataka | V12 | Milan Petrović |
 | 13. | 12. 1. 2023. | 12:00--13:30 | O-S32 | Pregled postojećih sustava za razvoj web aplikacija | P13 | doc. dr. sc. Vedran Miletić |
 | 13. | 12. 1. 2023. | 14:00--15:30 | O-366 | Primjer izvedbe projekta razvoja web aplikacije | V13 | Milan Petrović |
-| 14. | 19. 1. 2023. | 12:00--13:30 |  | **Test na Merlinu** | P14 | doc. dr. sc. Vedran Miletić |
+| 14. | 19. 1. 2023. | 12:00--13:30 |   | **Test na Merlinu** | P14 | doc. dr. sc. Vedran Miletić |
 | 14. | 19. 1. 2023. | 14:00--15:30 | O-366 | Primjer izvedbe projekta razvoja web usluge | V14 | Milan Petrović |
 | 15. | 26. 1. 2023. | 12:00--13:30 | O-S32 | Prošlost, sadašnjost i budućnost weba kao platforme za razvoj aplikacija i usluga | P15 | doc. dr. sc. Vedran Miletić |
 | 15. | 26. 1. 2023. | 14:00--15:30 | O-366 | **Ispravak praktičnog kolokvija** | V15 | Milan Petrović |

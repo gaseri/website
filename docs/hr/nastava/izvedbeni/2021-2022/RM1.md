@@ -88,7 +88,7 @@ Nema.
 | Pisani ispit | 1 | 1--4 | Online test na Merlinu | 20 bodova, ovisno o stupnju točnosti i potpunosti | 20 |
 | Kontinuirana provjera znanja | 2 (1) | 2--3 | Osam laboratorijskih vježbi | 50 bodova, ovisno o stupnju točnosti i potpunosti | 50 |
 | Završni ispit | 1 | 1--4 | Online test na Merlinu | 0--30 bodova, ovisno o stupnju točnosti i potpunosti | 30 |
-| **UKUPNO** | **5** |  |  |  | **100** |
+| **UKUPNO** | **5** |   |   |   | **100** |
 
 ### Obveze i vrednovanje studenata
 
@@ -153,7 +153,7 @@ Nastava će se na predmetu odvijati u zimskom semestru prema sljedećem raspored
 | 2. | 15. 10. 2021. | 14:15--17:30 | O-350 | Instalacija softvera za vježbe na računalima studenata | V | v. pred. dr. sc. Vedran Miletić |
 | 3. | 22. 10. 2021. | 14:15--17:30 | online | *Laboratorijska vježba 1:* Analiza računalnih mreža (IMUNES/CORE) | V | v. pred. dr. sc. Vedran Miletić |
 | 4. | 29. 10. 2021. | 14:15--17:30 | online | *Laboratorijska vježba 2:* Snimanje i pregledavanje mrežnog prometa (Wireshark) | V | v. pred. dr. sc. Vedran Miletić |
-| 9. | 30. 11. 2021. | 8:15--9:45 |  | **Test na Merlinu** | I | v. pred. dr. sc. Vedran Miletić |
+| 9. | 30. 11. 2021. | 8:15--9:45 |   | **Test na Merlinu** | I | v. pred. dr. sc. Vedran Miletić |
 | 9. | 3. 12. 2021. | 14:15--17:30 | online | *Laboratorijska vježba 3:* Stvaranje podmreža (IMUNES/CORE) | V9 | v. pred. dr. sc. Vedran Miletić |
 | 10. | 10. 12. 2021. | 14:15--17:30 | online | *Laboratorijska vježba 4:* Prevođenje mrežnih adresa i filtriranje paketa vatrozidom na mrežnom sloju (IMUNES/CORE) | V10 | v. pred. dr. sc. Vedran Miletić |
 | 11. | 17. 12. 2021. | 14:15--17:30 | online | *Laboratorijska vježba 5:* Konfiguracija svojstava podmreža i usmjeravanje (IMUNES/CORE) | V11 | v. pred. dr. sc. Vedran Miletić |

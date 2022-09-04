@@ -104,9 +104,9 @@ Nema.
 | Pohađanje nastave | 2 | I1--I6 | Prisutnost studenata i odgovaranje na pitanja nastavnika | Popisivanje (evidencija), Kahoot! | 0 |
 | Eksperimentalni rad | 1 | I3, I5 | Deset laboratorijskih vježbi | Ovisno o stupnju točnosti i potpunosti | 40 |
 | Kontinuirana provjera znanja | 1 | I3, I5 | Dvije domaće zadaće | Ovisno o stupnju točnosti i potpunosti | 10 |
-|  |  | I1, I2, I4, I6 | Test na Merlinu | Ovisno o stupnju točnosti i potpunosti; pogrešni odgovori na pitanja višestrukog izbora donose negativne bodove | 20 |
+|   |   | I1, I2, I4, I6 | Test na Merlinu | Ovisno o stupnju točnosti i potpunosti; pogrešni odgovori na pitanja višestrukog izbora donose negativne bodove | 20 |
 | Završni ispit | 1 | I1, I2, I4, I6 | Test na Merlinu | Ovisno o stupnju točnosti i potpunosti; pogrešni odgovori na pitanja višestrukog izbora donose negativne bodove | 30 |
-| **UKUPNO** | **5** |  |  |  | **100** |
+| **UKUPNO** | **5** |   |   |   | **100** |
 
 ### Obveze i vrednovanje studenata
 
@@ -187,7 +187,7 @@ Nastava će se na predmetu odvijati u zimskom semestru prema sljedećem raspored
 | 7. | 19. 11. 2021. | 14:15--17:30 | O-350 | *Laboratorijska vježba 4:* HTTP autentifikacija, postavljanje i obrada kolačića (cURL, PHP) | V7 | v. pred. dr. sc. Vedran Miletić |
 | 8. | 23. 11. 2021. | 8:15--9:45 | O-028 | Usmjerivač. Prosljeđivanje paketa i adresiranje na internetu | P8 | v. pred. dr. sc. Vedran Miletić |
 | 8. | 26. 11. 2021. | 14:15--17:30 | O-350 | *Auditorna vježba 2:* Implementacija API-ja korištenjem HTTP metoda (cURL, PHP) | V8 | v. pred. dr. sc. Vedran Miletić |
-| 9. | 30. 11. 2021. | 8:15--9:45 |  | **Test na Merlinu** | P9 | v. pred. dr. sc. Vedran Miletić |
+| 9. | 30. 11. 2021. | 8:15--9:45 |   | **Test na Merlinu** | P9 | v. pred. dr. sc. Vedran Miletić |
 | 9. | 3. 12. 2021. | 14:15--17:30 | O-350 | *Laboratorijska vježba 5:* Stvaranje podmreža (IMUNES/CORE) | V9 | v. pred. dr. sc. Vedran Miletić |
 | 10. | 7. 12. 2021. | 8:15--9:45 | O-028 | Unutardomensko usmjeravanje. Broadcast i multicast | P10 | v. pred. dr. sc. Vedran Miletić |
 | 10. | 10. 12. 2021. | 14:15--17:30 | O-350 | *Laboratorijska vježba 6:* Prevođenje mrežnih adresa i filtriranje paketa vatrozidom na mrežnom sloju (IMUNES/CORE) | V10 | v. pred. dr. sc. Vedran Miletić |

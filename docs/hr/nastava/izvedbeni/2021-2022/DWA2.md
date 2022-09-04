@@ -104,7 +104,7 @@ Nema.
 | Pisani ispit | 0,5 | 1, 5 | Online test na Merlinu | 0--20 bodova, ovisno o stupnju točnosti i potpunosti | 20 |
 | Kontinuirana provjera znanja | 2 | 2, 3, 4, 7 | Dvije kontrolne zadaće | 0--25 bodova za svaki kontrolnu zadaću, ovisno o stupnju točnosti i potpunosti | 50 |
 | Završni ispit | 0,5 | 1--8 | Implementacija web aplikacije ili servisa i prezentacija projekta | 0--30 bodova, ovisno o stupnju točnosti i potpunosti | 30 |
-| **UKUPNO** | **4** |  |  |  | **100** |
+| **UKUPNO** | **4** |   |   |   | **100** |
 
 ### Obveze i vrednovanje studenata
 
