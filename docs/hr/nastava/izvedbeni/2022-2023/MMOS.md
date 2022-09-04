@@ -10,7 +10,7 @@ Akademska godina 2022./2023.
 Naziv predmeta: Mrežni i mobilni operacijski sustavi  
 Studijski program: Sveučilišni preddiplomski studij informatike  
 Status predmeta: **obvezatan** za modul KS/izborni  
-Semestar: 3.
+Semestar: 5.
 
 Bodovna vrijednost i način izvođenja nastave:
 
