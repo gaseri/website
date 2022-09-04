@@ -122,11 +122,11 @@ Detaljan način razrade bodovanja na predmetu te pragovi prolaza za pojedine akt
 
 | Naslov | Broj primjeraka | Broj studenata |
 | ------ | --------------- | -------------- |
-| Distributed systems: for fun and profit | [Dostupno online](http://book.mixu.net/distsys/) | |
-| Site Reliability Engineering: How Google Runs Production Systems | [Dostupno online](https://sre.google/sre-book/table-of-contents/) | |
-| Designing data-intensive applications: The big ideas behind reliable, scalable, and maintainable systems | 1 | |
-| Cloud Native: Using Containers, Functions, and Data to Build Next-Generation Applications | 1 | |
-| Notes on Theory of Distributed Systems | [Dostupno online](http://cs-www.cs.yale.edu/homes/aspnes/classes/465/notes.pdf) | |
+| Distributed systems: for fun and profit | [Dostupno online](http://book.mixu.net/distsys/) | 20 |
+| Site Reliability Engineering: How Google Runs Production Systems | [Dostupno online](https://sre.google/sre-book/table-of-contents/) | 20 |
+| Designing data-intensive applications: The big ideas behind reliable, scalable, and maintainable systems | 1 | 20 |
+| Cloud Native: Using Containers, Functions, and Data to Build Next-Generation Applications | 1 | 20 |
+| Notes on Theory of Distributed Systems | [Dostupno online](http://cs-www.cs.yale.edu/homes/aspnes/classes/465/notes.pdf) | 20 |
 
 ### Načini praćenja kvalitete koji osiguravaju stjecanje izlaznih znanja, vještina i kompetencija
 
