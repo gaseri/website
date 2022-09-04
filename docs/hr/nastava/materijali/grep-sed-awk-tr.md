@@ -237,22 +237,22 @@ Najčešće korišteni parametri naredbe `sed` su:
 
     | Sed parametri | Raspon | Naredb | Rezultat/ispis |
     | ------------- | ------ | ------ | -------------- |
-    | `sed -n` | `1,10` | `p` | Ispisuje samo prvih deset reda |
-    | `sed -n` | `11,$` | `!p` |  |
-    | `sed` | `1,10` | `!d` |  |
-    | `sed` | `11,$` | `d` |  |
-    | `sed -n` | `1,10` | `!p` |  |
-    | `sed -n` | `11,$` | `p` |  |
-    | `sed` | `1,10` | `d` |  |
-    | `sed` | `11,$` | `!d` |  |
-    | `sed -n` | `1,10` | `d` |  |
-    | `sed -n` | `1,10` | `!d` |  |
-    | `sed -n` | `11,$` | `d` |  |
-    | `sed -n` | `11,$` | `!d` |  |
-    | `sed` | `1,10` | `p` |  |
-    | `sed` | `11,$` | `!p` |  |
-    | `sed` | `1,10` | `!p` |  |
-    | `sed` | `11,$` | `p` |  |
+    | `sed -n` | `1,10` | `p` | Ispisuje samo prvih deset redaka |
+    | `sed -n` | `11,$` | `!p` |   |
+    | `sed` | `1,10` | `!d` |   |
+    | `sed` | `11,$` | `d` |   |
+    | `sed -n` | `1,10` | `!p` |   |
+    | `sed -n` | `11,$` | `p` |   |
+    | `sed` | `1,10` | `d` |   |
+    | `sed` | `11,$` | `!d` |   |
+    | `sed -n` | `1,10` | `d` |   |
+    | `sed -n` | `1,10` | `!d` |   |
+    | `sed -n` | `11,$` | `d` |   |
+    | `sed -n` | `11,$` | `!d` |   |
+    | `sed` | `1,10` | `p` |   |
+    | `sed` | `11,$` | `!p` |   |
+    | `sed` | `1,10` | `!p` |   |
+    | `sed` | `11,$` | `p` |   |
 
 ## Složenije izdvajanje i obrada teksta
 
