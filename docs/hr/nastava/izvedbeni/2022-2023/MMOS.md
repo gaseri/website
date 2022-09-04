@@ -105,7 +105,7 @@ Nema.
 | VRSTA AKTIVNOSTI | ECTS | ECTS -- PRAKTIČNI RAD | ISHODI UČENJA | SPECIFIČNA AKTIVNOST | METODA PROCJENJIVANJA | BODOVI MAX. |
 | ---------------- | ---- | --------------------- | ------------ | -------------------- | --------------------- | ----------- |
 | Pohađanje nastave | 2 | 1 | I1--I8 | Prisutnost studenata i odgovaranje na pitanja nastavnika | Popisivanje (evidencija) | 0 |
-| Seminarski rad | 1 | 1 | | I2, I7 | Dvije domaće zadaće | Ovisno o stupnju točnosti i potpunosti | 40 |
+| Seminarski rad | 1 | 1 | I2, I7 | Dvije domaće zadaće | Ovisno o stupnju točnosti i potpunosti | 40 |
 | Projekt | 0,5 | 0,5 | I6, I7 | Praktični projektni zadatak | Ovisno o stupnju točnosti i potpunosti | 10 |
 | Kontinuirana provjera znanja | 1 | 0 | I1, I3, I4 | Test na Merlinu | Ovisno o stupnju točnosti i potpunosti | 20 |
 | Završni ispit | 0,5 | 0 | I5, I8 | Test na Merlinu | Ovisno o stupnju točnosti i potpunosti | 30 |
