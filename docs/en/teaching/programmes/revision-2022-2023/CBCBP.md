@@ -114,10 +114,10 @@ Learning outcomes are assessed through scientific research in which the student 
 
 | Naslov | Broj primjeraka | Broj studenata |
 | ------ | --------------- | -------------- |
-| Advances in Molecular Simulation | [Available online](https://www.mdpi.com/books/pdfview/book/4780) | |
-| Molecular Dynamics Simulation | [Available online](https://www.mdpi.com/books/pdfview/book/75) | |
-| Accelerated Molecular Dynamics for the Exascale | [Available online](https://tigerprints.clemson.edu/all_dissertations/2716) | |
-| GROMACS Reference Manual, User Guide, and Developer Guide | [Available online](https://manual.gromacs.org/) | |
+| Advances in Molecular Simulation | [Available online](https://www.mdpi.com/books/pdfview/book/4780) |   |
+| Molecular Dynamics Simulation | [Available online](https://www.mdpi.com/books/pdfview/book/75) |   |
+| Accelerated Molecular Dynamics for the Exascale | [Available online](https://tigerprints.clemson.edu/all_dissertations/2716) |   |
+| GROMACS Reference Manual, User Guide, and Developer Guide | [Available online](https://manual.gromacs.org/) |   |
 
 ### Quality monitoring methods that ensure the acquisition of exit knowledge, skills and competences
 

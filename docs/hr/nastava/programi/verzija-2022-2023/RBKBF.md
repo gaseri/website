@@ -120,10 +120,10 @@ Ishodi učenja će se vrednovati kroz znanstveno istraživanje u kojem student p
 
 | Naslov | Broj primjeraka | Broj studenata |
 | ------ | --------------- | -------------- |
-| Advances in Molecular Simulation | [Dostupno online](https://www.mdpi.com/books/pdfview/book/4780) | |
-| Molecular Dynamics Simulation | [Dostupno online](https://www.mdpi.com/books/pdfview/book/75) | |
-| Accelerated Molecular Dynamics for the Exascale | [Dostupno online](https://tigerprints.clemson.edu/all_dissertations/2716) | |
-| GROMACS Reference Manual, User Guide, and Developer Guide | [Dostupno online](https://manual.gromacs.org/) | |
+| Advances in Molecular Simulation | [Dostupno online](https://www.mdpi.com/books/pdfview/book/4780) |   |
+| Molecular Dynamics Simulation | [Dostupno online](https://www.mdpi.com/books/pdfview/book/75) |   |
+| Accelerated Molecular Dynamics for the Exascale | [Dostupno online](https://tigerprints.clemson.edu/all_dissertations/2716) |   |
+| GROMACS Reference Manual, User Guide, and Developer Guide | [Dostupno online](https://manual.gromacs.org/) |   |
 
 ### Načini praćenja kvalitete koji osiguravaju stjecanje izlaznih znanja, vještina i kompetencija
 
