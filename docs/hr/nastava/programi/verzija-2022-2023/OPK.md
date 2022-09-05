@@ -117,7 +117,7 @@ Detaljan način razrade bodovanja na predmetu te pragovi prolaza za pojedine akt
 | Naslov | Broj primjeraka | Broj studenata |
 | ------ | --------------- | -------------- |
 | Engineering a compiler | 1 | 30 |
-| Compiler design in C  | [Dostupno online](https://holub.com/compiler/) | 30 |
+| Compiler design in C | [Dostupno online](https://holub.com/compiler/) | 30 |
 
 ### Načini praćenja kvalitete koji osiguravaju stjecanje izlaznih znanja, vještina i kompetencija
 
