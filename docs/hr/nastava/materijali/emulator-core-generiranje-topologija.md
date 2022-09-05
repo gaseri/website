@@ -13,7 +13,7 @@ Kako bismo generirali topologiju po želji, najprije je potrebno odabrati vrstu 
 | Uzorak | Opis |
 | ------ | ---- |
 | Slučajni (`Random`) | Čvorovi su nasumično postavljeni na platno, ali nisu međusobno povezani. Ovaj uzorak se može koristiti u kombinaciji s čvorom tipa `wireless LAN` za brzo stvaranje bežične mreže. |
-| Rešetka (`Grid`) | Čvorovi su smješteni u vodoravnim redovima koji počinju u  gornjem lijevom kutu, ravnomjerno razmaknuti kod razmještanja prema desno. Kao i kod slučajnog uzorka, čvorovi nisu međusobno povezani. |
+| Rešetka (`Grid`) | Čvorovi su smješteni u vodoravnim redovima koji počinju u gornjem lijevom kutu, ravnomjerno razmaknuti kod razmještanja prema desno. Kao i kod slučajnog uzorka, čvorovi nisu međusobno povezani. |
 | Povezana rešetka (`Connected Grid`) | Čvorovi su smješteni u pravokutnu mrežu širine N i visine M i svaki je čvor povezan s čvorom iznad, dolje, lijevo i desno od sebe. |
 | Lanac (`Chain`) | Čvorovi su povezani jedan za drugim u lancu. |
 | Zvijezda (`Star`) | Jedan je čvor postavljen u središte s N čvorova koji ga okružuju i svaki je čvor povezan sa središnjim čvorom. |

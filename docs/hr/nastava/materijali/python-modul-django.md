@@ -313,7 +313,7 @@ Svaki novi model je nova tablica u bazi podataka. Zbog toga moramo napraviti dvi
 Pokrenimo naš lokalni server naredbom `./manage.py runserver`. Primijetite u outputu konzole sljedeću poruku `You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions
 Run './manage.py migrate' to apply them`.
 
-Unesite naredbu  da bi pripremili migraciju.
+Unesite naredbu kako biste pripremili migraciju.
 
 ``` shell
 $ ./manage.py makemigrations
@@ -1050,7 +1050,7 @@ Kada smo kreirali pogled i pozvali ga unutar `urls.py` potreban nam je predloža
 
 Sve predloške koje ćemo koristiti organizirat ćemo tako da se nalaze u zajedničkom direktoriju `templates`, koji se nalazi u korijenskom direktoriju.
 
-Kreirajte `./templates` direktorij, unutar kojeg kreirate `main` direktorij, dakle `./templates/main`, a unutar njega  kreirajte `publisher_list.html`.
+Kreirajte direktorij `./templates`, unutar kojeg kreirate direktorij `main`, dakle `./templates/main`, a unutar njega kreirajte datoteku `publisher_list.html`.
 
 Datoteka `./templates/main/publisher_list.html` ima sadržaj:
 
@@ -1180,7 +1180,7 @@ $ pip3 install factory_boy
 (...)
 ```
 
-Kada je instaliran [paket factory_boy](https://pypi.org/project/factory-boy/), potrebno je kreirati klase koje će automatski popunjavati bazu sa tzv. *dummy data*, odnostno nasumično generiranim podacima koji će nam pojednostaviti proces popunjavanja baze nad kojom želimo izvršavati upite. Detaljnije o  njegovoj funkcionalnosti možete pronaći u [službenoj dokumentaciji](https://factoryboy.readthedocs.io/).
+Kada je instaliran [paket factory_boy](https://pypi.org/project/factory-boy/), potrebno je kreirati klase koje će automatski popunjavati bazu sa tzv. *dummy data*, odnostno nasumično generiranim podacima koji će nam pojednostaviti proces popunjavanja baze nad kojom želimo izvršavati upite. Detaljnije o njegovoj funkcionalnosti možete pronaći u [službenoj dokumentaciji](https://factoryboy.readthedocs.io/).
 
 !!! zadatak
     Unutar `vj6/main` stvorite datoteku `factory.py`

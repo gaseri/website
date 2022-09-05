@@ -140,8 +140,8 @@ author: Vedran Miletić
     - promjenjivi: `list`, `set`, `dict`, `bytearray`
 
         - `list` je pandan C++-ovom `std::list` i `std::vector`
-        - `set` je  pandan C++-ovom `std::set`
-        - `dict` je  pandan C++-ovom `std::map`
+        - `set` je pandan C++-ovom `std::set`
+        - `dict` je pandan C++-ovom `std::map`
 
     - za svaki od tipova postoji istoimena funkcija (tzv. *konstruktor*) koja služi za stvaranje instanci klase i pretvaranje među različitim tipovima
 
@@ -328,7 +328,7 @@ dir() # vraća popis atributa i metoda tipa int
 - Python koristi i jednostruke i dvostruke navodnike za navođenje znakovnih nizova
 
     - `"...'..."`, `'..."...'` ili `"...\"..."`
-    - mi ćemo koristiti dvostruke navodnike, s prekidnim znakom  po potrebi
+    - mi ćemo koristiti dvostruke navodnike, s prekidnim znakom po potrebi
 
 - podnizovi znakovnih nizova rade po pravilu "početak uključen, kraj isključen"
 

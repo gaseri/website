@@ -38,7 +38,7 @@ Sloj veze podataka zadužen je za strukturiranje podataka u *okvire* sa zaglavlj
 
 Mrežni sloj ima za zadatak usmjeriti *pakete* od izvora do odredišta. Protokol koji vežemo za mrežni sloj je Internet Protokol (engl. *Internet Protocol*, IP). IP definira strukturu paketa podataka koji se prenose mrežom, adresni prostor i način prosljeđivanja paketa od izvora do odredišta.
 
-Sloj kontrole prijenosa zadužen je za upravljanje prijenosom i kontrolu ispravnosti  prijenosa. Protokoli koje vežemo za sloj kontrole prijenosa su TCP i UDP.
+Sloj kontrole prijenosa zadužen je za upravljanje prijenosom i kontrolu ispravnosti prijenosa. Protokoli koje vežemo za sloj kontrole prijenosa su TCP i UDP.
 
 ## Mjerne jedinice za količinu podataka i vrijeme
 

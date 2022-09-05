@@ -673,7 +673,7 @@ ALTER TABLE members ADD COLUMN e_mail VARCHAR(30);
 
 ## Migracije u web aplikacijama otvorenog koda
 
-- [Phabricator](https://secure.phabricator.com/): migracije se nalaze [u repozitoriju izvornog koda, u direktoriju `resources/sql`](https://github.com/phacility/phabricator/tree/master/resources/sql) u poddirektorijima `patches` i `autopatches`; napisan u obliku SQL upita za  MariaDB/MySQL (drugi sustavi nisu podržani)
+- [Phabricator](https://secure.phabricator.com/): migracije se nalaze [u repozitoriju izvornog koda, u direktoriju `resources/sql`](https://github.com/phacility/phabricator/tree/master/resources/sql) u poddirektorijima `patches` i `autopatches`; napisan u obliku SQL upita za MariaDB/MySQL (drugi sustavi nisu podržani)
 - [Flarum](https://flarum.org/): migracije se nalaze [u repozitoriju izvornog koda, u direktoriju `migrations`](https://github.com/flarum/core/tree/master/migrations); koristi Laravel Eloquent
 - [Canvas LMS](https://www.instructure.com/canvas): migracije se nalaze [u repozitoriju izvornog koda, u direktoriju `db/migrate`](https://github.com/instructure/canvas-lms/tree/master/db/migrate); koristi Ruby on Rails ActiveRecord
 

@@ -6,7 +6,7 @@ author: Vedran Miletić
 
 ## Berkeley Software Distribution (BSD)
 
-- BSD Unix nastaje [krajem 1970-tih i tijekom 1980-tih godina  kao derivat AT&T-evog Unixa](https://klarasystems.com/articles/history-of-freebsd-unix-and-bsd/), začetnik je [Bill Joy](https://en.wikipedia.org/wiki/Bill_Joy) sa [University of California, Berkeley](https://www.berkeley.edu/)
+- BSD Unix nastaje [krajem 1970-tih i tijekom 1980-tih godina kao derivat AT&T-evog Unixa](https://klarasystems.com/articles/history-of-freebsd-unix-and-bsd/), začetnik je [Bill Joy](https://en.wikipedia.org/wiki/Bill_Joy) sa [University of California, Berkeley](https://www.berkeley.edu/)
 - razvija ga [Computer Systems Research Group (CSRG)](https://en.wikipedia.org/wiki/Computer_Systems_Research_Group): [Keith Bostic](https://en.wikipedia.org/wiki/Keith_Bostic), [Bill Joy](https://en.wikipedia.org/wiki/Bill_Joy), [Marshall Kirk McKusick](https://en.wikipedia.org/wiki/Marshall_Kirk_McKusick), [Sam Leffler](https://en.wikipedia.org/wiki/Samuel_J._Leffler), [Mike Karels](https://en.wikipedia.org/wiki/Michael_J._Karels) i drugi
 - brzo postaje popularan na sveučilištima i institutima, zaslužan za popularizaciju Unixa na sveučilištima u SAD-u
 - verzije 1BSD, 2BSD, 3BSD, 4BSD, 4.1BSD, 4.2BSD, 4.3BSD, ...; dobar povijesni izvor je [Twenty Years of Berkeley Unix: From AT&T-Owned to Freely Redistributable (Open Sources: Voices from the Open Source Revolution)](https://www.oreilly.com/openbook/opensources/book/kirkmck.html)

@@ -136,7 +136,7 @@ author: Tina Maršić, Vedran Miletić
 
 ## Sigurnosni kontekst korisnika
 
-- naredbom `semanage login -a -s SELINUX_USER LOGIN_USER` moguće je dodati pravilo po kojemu se korisnik `LOGIN_USER` pridružuje  SELinux korisniku `SELINUX_USER`
+- naredbom `semanage login -a -s SELINUX_USER LOGIN_USER` moguće je dodati pravilo po kojemu se korisnik `LOGIN_USER` pridružuje SELinux korisniku `SELINUX_USER`
 - naredbom `semanage login -l` vrši se provjera pridruživanja korisnika SELinux korisnicima
 
 !!! admonition "Zadatak"

@@ -67,7 +67,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov, Anja Vrbanjac
 - `\` -- tzv. *prekidni znak*
 
 !!! admonition "Zadatak"
-    - U svom kućnom direktoriju stvorite poddirektorij `Zadatci` i  u njemu datoteke `zadatak`, `zadatek`, `zadatuk`, `zadatak1`, `zadatak2`, `zadatakABC`, `zadatakabc`, `zadacnica`, `zadacnicA`, `zad3` i `dat05`.
+    - U svom kućnom direktoriju stvorite poddirektorij `Zadatci` i u njemu datoteke `zadatak`, `zadatek`, `zadatuk`, `zadatak1`, `zadatak2`, `zadatakABC`, `zadatakabc`, `zadacnica`, `zadacnicA`, `zad3` i `dat05`.
     - Jednom naredbom, koristeći se glob-om, izlistajte samo:
 
         - `zadatak`, `zadatek` i `zadatuk`

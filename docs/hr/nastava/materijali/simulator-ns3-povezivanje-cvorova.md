@@ -453,7 +453,7 @@ int main ()
 
 ## Dodatak: optimizirano usmjeravanje
 
-Nix-Vector je protokol usmjeravanja specifičan za simulaciju i namijenjen za veće mrežne topologije. On radi na zahtjev, odnosno ne računa tablice usmjeravanja unaprijed, te ima manje zauzeće memorije i time bolje performanse (odnosno kraće vrijeme izvođenja simulacije) u odnosu na GlobalRouting, što se naročito dobro vidi kod simulacija koje imaju nekoliko stotina ili čak tisuća čvorova. Nix-Vector usmjeravanje rute računa  korištenjem breadth-first pretraživanja, a izračunate rute se spremaju u efikasnu strukturu koja se zove nix-vector.
+Nix-Vector je protokol usmjeravanja specifičan za simulaciju i namijenjen za veće mrežne topologije. On radi na zahtjev, odnosno ne računa tablice usmjeravanja unaprijed, te ima manje zauzeće memorije i time bolje performanse (odnosno kraće vrijeme izvođenja simulacije) u odnosu na GlobalRouting, što se naročito dobro vidi kod simulacija koje imaju nekoliko stotina ili čak tisuća čvorova. Nix-Vector usmjeravanje rute računa korištenjem breadth-first pretraživanja, a izračunate rute se spremaju u efikasnu strukturu koja se zove nix-vector.
 
 !!! tip
     Da bi vidjeli kako usmjeravanje može imati problema sa skaliranjem na veliki broj čvorova, razmotrimo sljedeće. Algoritam usmjeravanja koji GlobalRouting koristi radi tako da svaki čvor pamti izlazni mrežni uređaj na koji mora poslati paket za svaku od IPv4 adresa koje postoje u simulaciji.

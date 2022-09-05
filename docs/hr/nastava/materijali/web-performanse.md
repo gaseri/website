@@ -516,7 +516,7 @@ last-modified: Wed, 25 Aug 2021 14:52:01 GMT
 
 ## Utjecaj HTTP/2 na web
 
-> With HTTP2, you no longer pay a large penalty for sending many small files instead of one big file. A single connection can multiplex  all the responses you need. No more managing multiple connections, paying for multiple SSL handshakes. This means that bundling all your JavaScript into a single file loses many of its performance benefits (yes, yes, [tree-shaking](https://developers.google.com/web/fundamentals/performance/optimizing-javascript/tree-shaking/) [link added] is still one).
+> With HTTP2, you no longer pay a large penalty for sending many small files instead of one big file. A single connection can multiplex all the responses you need. No more managing multiple connections, paying for multiple SSL handshakes. This means that bundling all your JavaScript into a single file loses many of its performance benefits (yes, yes, [tree-shaking](https://developers.google.com/web/fundamentals/performance/optimizing-javascript/tree-shaking/) [link added] is still one).
 
 Izvor: [Modern web apps without JavaScript bundling or transpiling (DHH, HEY World)](https://world.hey.com/dhh/modern-web-apps-without-javascript-bundling-or-transpiling-a20f2755)
 
