@@ -1,4 +1,4 @@
-# GASERI | gaseri.org
+# 😎 GASERI | gaseri.org
 
 [![GASERI logo Kupala](images/gaseri-logo-kupala.png)](https://youtu.be/ADB5h4-oHjo)
 
