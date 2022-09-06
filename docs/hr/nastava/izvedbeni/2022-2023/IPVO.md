@@ -193,7 +193,7 @@ Nastava će se na predmetu odvijati u zimskom semestru prema sljedećem raspored
 | 6. | 7. 11. 2022. | 16:00--17:30 | O-366 | Primjene stoga Logstash, Elasticsearch i Kibana | V5 | doc. dr. sc. Vedran Miletić |
 | 7. | 14. 11. 2022. | 14:00--15:30 | O-S32 | Izazovi distribuiranih sustava: garancija konzistentnosti i konsenzus | P6 | doc. dr. sc. Vedran Miletić |
 | 7. | 14. 11. 2022. | 16:00--17:30 | O-366 | Postavljanje usluga ZooKeeper i Kafka | V6 | doc. dr. sc. Vedran Miletić |
-| 8. | 21. 11. 2022. | 14:00--15:30 | O-S32 | **Test na Merlinu** | P7 | doc. dr. sc. Vedran Miletić |
+| 8. | 21. 11. 2022. | 14:00--15:30 | O-S32 | **1. test na Merlinu** | P7 | doc. dr. sc. Vedran Miletić |
 | 8. | 21. 11. 2022. | 16:00--17:30 | O-366 | Postavljanje usluge Airflow | V7 | doc. dr. sc. Vedran Miletić |
 | 9. | 28. 11. 2022. | 14:00--15:30 | O-S32 | Razvoj i implementacija oblaku urođenih aplikacija. Rad s podacima u oblaku | P8 | doc. dr. sc. Vedran Miletić |
 | 9. | 28. 11. 2022. | 16:00--17:30 | O-366 | Postavljanje usluge Cassandra | V8 | doc. dr. sc. Vedran Miletić |
@@ -207,7 +207,7 @@ Nastava će se na predmetu odvijati u zimskom semestru prema sljedećem raspored
 | 13. | 9. 1. 2023. | 16:00--17:30 | O-366 | Postavljanje usluga Fluentd i Jaeger | V12 | doc. dr. sc. Vedran Miletić |
 | 14. | 16. 1. 2023. | 14:00--15:30 | O-S32 | Potporne usluge inteligentnog informacijskog sustava u oblaku | P13 | doc. dr. sc. Vedran Miletić |
 | 14. | 16. 1. 2023. | 16:00--17:30 | O-366 | Postavljanje usluga Kubernetes, Linkerd i OPA. **Rok za odabir teme praktičnog rada** | V13 | doc. dr. sc. Vedran Miletić |
-| 15. | 23. 1. 2023. | 14:00--15:30 | O-S32 | **Test na Merlinu** | P14 | doc. dr. sc. Vedran Miletić |
+| 15. | 23. 1. 2023. | 14:00--15:30 | O-S32 | **2. test na Merlinu** | P14 | doc. dr. sc. Vedran Miletić |
 | 15. | 23. 1. 2023. | 16:00--17:30 | O-366 | Postavljanje usluga Prometheus i TUF/Notary | V14 | doc. dr. sc. Vedran Miletić |
 | 16. | 30. 1. 2023. | 14:00--15:30 | O-S32 | Budućnost sustava za obradu podataka velikog obujma | P15 | doc. dr. sc. Vedran Miletić |
 | 16. | 30. 1. 2023. | 16:00--17:30 | O-366 | Postavljanje usluga Rook i Vitess | V15 | doc. dr. sc. Vedran Miletić |
