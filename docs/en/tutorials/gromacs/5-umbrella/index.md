@@ -188,7 +188,7 @@ Additionally, we need to shift the plot up such that its tail goes to zero. I
 found adding about 77 worked for my particular system, but yours may be
 different. To plot this in gnuplot do the following in a gnuplot terminal:
 
-```gnuplot
+``` gnuplot
 > plot 'profile.xvg' u 1:($2+2*8.314e-3*298.15*log($1)+77) w l
 ```
 

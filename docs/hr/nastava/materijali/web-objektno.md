@@ -665,7 +665,7 @@ class Migration(migrations.Migration):
 
 Na temelju ove migracije Django generira upit:
 
-```sql
+``` sql
 ALTER TABLE members ADD COLUMN e_mail VARCHAR(30);
 ```
 

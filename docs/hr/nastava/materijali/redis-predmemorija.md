@@ -16,7 +16,7 @@ $ sudo apt install redis
 
 Nakon instalacije uvjerimo se da se Redis poslužitelj pokrenuo naredbom:
 
-```shell
+``` shell
 $ systemctl status redis-server.service
 ```
 
