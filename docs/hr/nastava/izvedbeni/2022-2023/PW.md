@@ -201,9 +201,9 @@ Nastava će se na predmetu odvijati u zimskom semestru prema sljedećem raspored
 | 8. | 24. 11. 2022. | 12:00--13:30 | O-359 | Timski razvoj web aplikacija i upravljanje verzijama. Kontinuirana integracija i isporuka | P8 | doc. dr. sc. Vedran Miletić |
 | 8. | 24. 11. 2022. | 14:00--15:30 | O-366 | Autentifikacija. Testiranje | V8 | Milan Petrović |
 | 9. | 1. 12. 2022. | 12:00--13:30 | O-S32 | Konternerizacija web aplikacija i podrška za izvođenje na različitim verzijama platforme | P9 | doc. dr. sc. Vedran Miletić |
-| 9. | 1. 12. 2022. | 14:00--15:30 | O-366 | **Praktični kolokvij** | V9 | Milan Petrović |
+| 9. | 1. 12. 2022. | 14:00--15:30 | O-366 | Izrada REST API-ja | V9 | Milan Petrović |
 | 10. | 8. 12. 2022. | 12:00--13:30 | O-S32 | Mjerenje i tehnike poboljšanja performansi: smanjenje broja zahtjeva, kompresija, korištenje mreža za distribuciju sadržaja, DNS prefetch, HTTP/2, web fontovi | P10 | doc. dr. sc. Vedran Miletić |
-| 10. | 8. 12. 2022. | 14:00--15:30 | O-366 | Izrada REST API-ja | V10 | Milan Petrović |
+| 10. | 8. 12. 2022. | 14:00--15:30 | O-366 | **Praktični kolokvij** | V10 | Milan Petrović |
 | 11. | 15. 12. 2022. | 12:00--13:30 | O-S32 | Mjerenje i tehnike poboljšanja performansi: optimizacije relacijske baze, keširanje podataka, keširanje operacija, JIT | P11 | doc. dr. sc. Vedran Miletić |
 | 11. | 15. 12. 2022. | 14:00--15:30 | O-366 | Korištenje REST API-ja za dohvaćanje podataka | V11 | Milan Petrović |
 | 12. | 22. 12. 2022. | 12:00--13:30 | O-S32 | Sigurnost dinamičkih web aplikacija | P12 | doc. dr. sc. Vedran Miletić |
