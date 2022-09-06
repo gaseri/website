@@ -26,13 +26,6 @@ $ sudo pacman -Syu
 
 Obje će naredbe osvježiti popis dostupnih paketa, a time i njihovih nadogradnji, pa zatim instalirati dostupne nadogradnje.
 
-``` shell
-$ sudo pacman -Syu
-(...)
-```
-
-pa, kad vas sustav to pita, unesite vašu zaporku. Ova će naredba osvježiti popis dostupnih paketa, a time i nadogradnji, pa zatim instalirati dostupne nadogradnje.
-
 ## Skup alata za kriptografiju i SSL/TLS OpenSSL i Python modul pyOpenSSL
 
 ``` shell
