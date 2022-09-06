@@ -258,6 +258,8 @@ Kako ćemo dobiti podatke o autoru u formatu JSON?
 Jedno moguće rješenje:
 
 ``` php
+<?php
+
 class Author {
   private $name;
   private $surname;
@@ -370,6 +372,8 @@ class UserUploads implements FileRepository {
 ## Liskovino načelo zamjene (3/3)
 
 ``` php
+<?php
+
 class PublicUploads implements FileRepository {
   public function getFiles() {
     $files = array();
@@ -388,17 +392,19 @@ class PublicUploads implements FileRepository {
 
 ---
 
-## Načelo razdvajanja sučelja (1/3)
+## Načelo razdvajanja sučelja (1/4)
 
 (**I**) Načelo razdvajanja sučelja (engl. *interface segregation principle*): mnoga sučelja specifična za pojedinog klijenta bolja su od jednog sučelja opće namjene (prema [Wikipediji](https://en.wikipedia.org/wiki/Interface_segregation_principle)).
 
 ---
 
-## Načelo razdvajanja sučelja (2/3)
+## Načelo razdvajanja sučelja (2/4)
 
 🙋 **Pitanje:** Zadovoljavaju li ove klase načelo razdvajanja sučelja?
 
 ``` php
+<?php
+
 interface User {
   public function authenticate();
   public function getUserEmail();
@@ -407,9 +413,11 @@ interface User {
 
 ---
 
-## Načelo razdvajanja sučelja (3/3)
+## Načelo razdvajanja sučelja (3/4)
 
 ``` php
+<?php
+
 class Student implements User {
   public function authenticate() {
     // ...
@@ -419,6 +427,14 @@ class Student implements User {
     // ...
   }
 }
+```
+
+---
+
+## Načelo razdvajanja sučelja (4/4)
+
+``` php
+<?php
 
 class Guest implements User {
   public function authenticate() {

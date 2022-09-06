@@ -233,6 +233,8 @@ Primjer u [Apache HTTP Serveru](https://httpd.apache.org/) s uključenim [mod_he
 Ilustrativan primjer u čistom PHP-u (Laravel ima klasu [`SetCacheHeaders`](https://laravel.com/api/8.x/Illuminate/Http/Middleware/SetCacheHeaders.html)):
 
 ``` php
+<?php
+
 header('Cache-Control: max-age=86400, public');
 ```
 
