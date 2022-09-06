@@ -13,7 +13,7 @@ Instalacija softvera na Arch Linuxu je centralizirana, slično kao što su na dr
 Svakako prije instalacije paketa u nastavku instalirajte sve dostupne nadogradnje. U terminalu upišite prvo
 
 ``` shell
-$ sudo garuda-update
+$ garuda-update
 (...)
 ```
 
