@@ -10,12 +10,14 @@ author: Vedran Miletić, Edvin Močibob
 
 [Uniform Resource Locator (URL)](https://en.wikipedia.org/wiki/URL) je znakovni niz koji predstavlja vezu na neki resurs. URL se često koristi za pristupanje web stranicama korištenjem protokola HTTP (`http://`) i HTTPS (`https://`), ali podržava i druge protokole, npr. FTP (`ftp://`) i e-mail (`mailto:`).
 
-Primjerice, URL može biti `http://example.group.miletic.net:80/page/subpage`. Njegovi su dijelovi:
+Primjerice, URL može biti `http://example.group.miletic.net:80/category/page.html`. Njegovi su dijelovi:
 
 - protokol (`http://`),
 - domena (`example.group.miletic.net`), umjesto domene se može koristiti i IP adresa,
 - broj vrata (`80`, opcionalan) i
-- putanja do resursa (`/page/subpage`).
+- putanja do resursa (`/category/page.html`).
+
+Pritom resurs može biti HTML datoteka kao u primjeru, ali i bilo što drugo (npr. CSS datoteka, slika ili video).
 
 ### Protokoli HTTP i HTTPS
 
