@@ -796,9 +796,9 @@ Transfer-Encoding: chunked
 * Connection #0 to host www.google.hr left intact
 ```
 
-## Dodatak: alternativno korisničko sučelje Curlie
+## Pojednostavljeno korisničko sučelje Curlie
 
-[Curlie](https://curlie.io/) je alternativno korisničko sučelje za alat cURL napravljeno po uzoru na [HTTPie](https://httpie.io/). Curlie podržava sve cURL-ove značajke, ali nudi jednostavnije sučelje naredbenog retka i bojenje izlaza.
+[Curlie](https://curlie.io/) je pojednostavljeno korisničko sučelje za alat cURL inspirirano sučeljem naredbenog retka alata [HTTPie](https://httpie.io/) (cURL + HTTPie = Curlie). Curlie podržava sve cURL-ove značajke, ali nudi i jednostavnost korištenja sučelja naredbenog retka i ljepše oblikovanje izlaznih podataka (specifično, zaglavlja HTTP odgovora i JSON-a u tijelu HTTP odgovora) uz korištenje boje.
 
 Uvjerimo se da imamo instaliran Curlie:
 

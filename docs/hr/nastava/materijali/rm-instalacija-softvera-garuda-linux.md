@@ -174,10 +174,10 @@ Visual Studio Code uključuje podršku za [Markdown](https://code.visualstudio.c
 
 Pokrenite Visual Studio Code. U dijelu `Extensions` koji se nalazi u `Side Bar`-u ([pregled sučelja](https://code.visualstudio.com/docs/getstarted/userinterface)) instalirajte proširenje [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint).
 
-## HTTP klijent cURL
+## HTTP klijent cURL i sučelje Curlie
 
 ``` shell
-$ sudo pacman -S curl
+$ sudo pacman -S curl curlie
 (...)
 ```
 
