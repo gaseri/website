@@ -64,8 +64,6 @@ Instalirajmo prvo softvere koje CORE zahtijeva.
 ### Instalacija preduvjeta
 
 ``` shell
-$ sudo pacman -S tk
-(...)
 $ paru -S tkimg
 (...)
 ```
