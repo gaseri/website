@@ -58,10 +58,10 @@ Uočimo prvo da zadani raspon ima mrežni prefiks duljine 24 bita i identifikato
 
 Najveća podmreža mora imati dovoljno adresa za 28 domaćina i jedan usmjerivač, dakle trebamo ukupno 29 adresa. Uzmemo li prefiks duljine 27, imat ćemo 2^5 = 32 adrese, od kojih 30 možemo iskoristiti za domaćine, što nam je dovoljno. Takvih podmreža ima 2^8 / 2^5 = 2^3 = 8, a dovoljno nam ih je 5. Jedna moguća dodjela podmreža je:
 
-- podmreža oko n3: 10.0.5.0/27 (raspon adresa domaćina je od 10.0.5.1 to 10.0.5.30)
-- podmreža oko n4: 10.0.5.32/27 (raspon adresa domaćina je od 10.0.5.33 to 10.0.5.62)
-- podmreža oko n5: 10.0.5.64/27 (raspon adresa domaćina je od 10.0.5.65 to 10.0.5.94)
-- podmreža oko n6: 10.0.5.96/27 (raspon adresa domaćina je od 10.0.5.97 to 10.0.5.126)
+- podmreža oko n3: 10.0.5.0/27 (raspon adresa domaćina je od 10.0.5.1 do 10.0.5.30)
+- podmreža oko n4: 10.0.5.32/27 (raspon adresa domaćina je od 10.0.5.33 do 10.0.5.62)
+- podmreža oko n5: 10.0.5.64/27 (raspon adresa domaćina je od 10.0.5.65 do 10.0.5.94)
+- podmreža oko n6: 10.0.5.96/27 (raspon adresa domaćina je od 10.0.5.97 do 10.0.5.126)
 - podmreža n1 -- n2: 10.0.5.128/27
 
 !!! note
@@ -95,10 +95,10 @@ Za podmrežu koja sadrži dva usmjerivača možemo iskoristiti posljednju preost
 
 Jedna moguća dodjela podmreža je sada oblika:
 
-- podmreža oko n3: 10.0.5.0/25 (raspon adresa domaćina je od 10.0.5.1 to 10.0.5.126)
-- podmreža oko n4: 10.0.5.128/26 (raspon adresa domaćina je od 10.0.5.129 to 10.0.5.190)
-- podmreža oko n5: 10.0.5.192/27 (raspon adresa domaćina je od 10.0.5.193 to 10.0.5.222)
-- podmreža oko n6: 10.0.5.224/28 (raspon adresa domaćina je od 10.0.5.225 to 10.0.5.238)
+- podmreža oko n3: 10.0.5.0/25 (raspon adresa domaćina je od 10.0.5.1 do 10.0.5.126)
+- podmreža oko n4: 10.0.5.128/26 (raspon adresa domaćina je od 10.0.5.129 do 10.0.5.190)
+- podmreža oko n5: 10.0.5.192/27 (raspon adresa domaćina je od 10.0.5.193 do 10.0.5.222)
+- podmreža oko n6: 10.0.5.224/28 (raspon adresa domaćina je od 10.0.5.225 do 10.0.5.238)
 - podmreža n1 -- n2: 10.0.5.240/28
 
 !!! tip
