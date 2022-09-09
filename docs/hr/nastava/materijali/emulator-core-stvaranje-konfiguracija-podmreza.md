@@ -4,6 +4,65 @@ author: Vedran Miletić
 
 # Stvaranje i konfiguracija podmreža
 
+# IP adresa
+
+Kako bismo mogli razlikovati računala spojena na Internet i na taj način preusmjeravati pakete s izvornog računala na odredišno računalo, potrebno im je dodijeliti jedinstvenu IP adresu.
+
+IP adresa (Internet Protocol) je adresa mrežnog sloja. To je logička adresa dodijeljena uređaju koji želimo spojiti na mrežu. Svako računalo koje je povezano na Internet mora imati jednoznačno dodijeljenu IP adresu. Budući da je IP adresa logička adresa koja se može mijenjati i često se dodjeljuje dinamički, ne može se reći da jedinstveno identificira određeni mrežni uređaj. Umjesto toga, samo omogućuje lociranje uređaja i prosljeđivanje toka podataka do njega.
+
+Trenutno su u upotrebi dvije verzije IP protokola: verzija 4 (IPv4) i verzija 6 (IPv6). IPv4 adresa se sastoji od 32 bita. Maksimalni broj različitih adresa je 2^32 što je približno 4,3 milijarde adresa. Broj 2 se uzima kao baza kalkulacije jer jedan bit može imati 2 stanja: 0 ili 1. Iako se ovaj broj čini prilično velikim, širenje Interneta i porast potražnje za novim IP adresama učinili su ovaj adresni prostor daleko premalim za sve potrebe. Doista, nije daleko dan kada će svaka osoba na svijetu imati svoje računalo koje treba javnu IP adresu, a postoje i mnogi poslužitelji koji također trebaju IP adrese za svoj rad. Osim toga, mobilni i ostali elektronički uređaji (kućanski aparati, razni uređaji u industriji, transportu, turizmu...) vrlo brzo će se integrirati s Internetom u svrhu razmjene i prikupljanja informacija, komunikacije, daljinskog upravljanja i sl.
+
+Stoga su predložena različita rješenja od kojih je i implementacija internetskog protokola IPv6 koji ima širi raspon dostupnih adresa. IPv6 koristi 128-bitnu IP adresu, stoga je maksimalan broj različitih adresa 2^128 što je približno 3400 trlijun trilijuna mogućih adresa. Ovaj je broj teško uopće pojmiti. Ovdje je dovoljno reći da se teško može zamisliti stvarna situacija u kojoj taj broj različitih adresa ne bi bio dovoljan za današnje primjene. Međutim, sustav se ne može odmah implementirati jer postoje određeni problemi u njegovom uvođenju. Stoga se preporuča postupno uvođenje sustava čime se i postupno unapređuje sama mrežna infrastruktura.
+
+## Karakteristike IPv4 adrese
+
+IPv4 adresa je 32 bitna logička adresa koja jasno određuje domaćina mreže. Zbog lakšeg rada sa adresama, one se bilježe brojevima decimalnog brojevnog sustava. 32 bita su podjeljena u 4 okteta po 8 bitova. Svaki od okteta je odjeljen od slijedećeg s točkom. 
+
+IP adresa je u osnovi binarni broj, međutim zbog lakšeg rada s adresama, one se bilježe brojevima decimalnog brojevnog sustava. Decimalne vrijednosti svakog od okteta mogu se kretati od 0 do 255, a u binarnom sustavu od 00000000 do 11111111. Od 8 bitova koji se nalaze unutar okteta moguće je dobiti 2ˆ8 = 256 različitih brojčanih vrijednosti, odnosno adresa. IPv6 verzija protokola predviđa 128-bitne adrese te se u tom slučaju može koristiti i heksadecimalni zapis, radi kraćeg oblika i jednostavnosti. 
+
+Primjer IPv4 adrese domene www.inf.uniri.hr je 193.198.209.68, odnosno u binarnom sustavu 11000001.11000110.11010001.1000100
+
+## Mrežne klase i maska podmreže
+
+Dio bitova unutar IP adrese definira adresu mreže, a ostatak adrese domaćina. Svaka IP adresa dolazi uz pripadajuću masku podmreže (*engl.* subnet mask). Uz pomoć maske podmreže možemo razlikovati koji je dio adrese dio mreže, a koji dio domaćina. Primjerice, ako imamo IP adresu 193.198.209.68 sa mrežnom podmaskom 255.255.255.0 (ili /24), to znači da će dio 193.198.209 biti adresa mreže, odnosno nepromjenjiva za sva računala u toj mreži. Dok će posljednja znamenka .68 bit adresa računala (ili routera) različita za svako računalo te mreže.
+
+Pomoću tehnike podmrežavanja možemo podijeliti velike mreže određene klase na manje podmreže. Najčešće se koriste A, B i C klase adresa. Svaka klasa prepoznaje se po svojoj masci podmreže. Kategorizacijom zadane maske podmreže možemo lako prepoznati klasu IP adrese mreže:
+
+- Klasi A adresa pripadaju sve adrese kojima prvi oktet počinje sa brojem između 1 i 126. Zadana mrežna maska definira prvi oktet kao mrežni dio adrese, a ostatak je adresa domaćina (255.0.0.0 ili /8).
+- Klasi B pripadaju sve adrese kojima prvi oktet počinje brojem između 128 i 191. Zadana mrežna maska definira prva dva okteta kao mrežni dio adrese, a ostatak je adresa domaćina (255.255.0.0 ili /16).
+- Klasi C pripadaju sve adrese kojima prvi oktet počinje brojem između 192 i 223. Zadana mrežna maska definira prva tri okteta kao mrežni dio adrese, a ostatak je adresa domaćina (255.255.255.0 ili /24).
+- Klasi D pripadaju sve adrese kojima prvi oktet počinje brojem između 224 i 239 (od 224.0.0.0 do 239.255.255.255). Ovo su višeodredišne, multicast adrese.
+- Klasi E pripadaju sve adrese kojima prvi oktet počinje brojem između 240 i 247 (od 240.0.0.0 do 247.255.255.255). Ove adrese služe za istraživačke svrhe.
+
+## Podmreže varijabilne duljine
+
+U slučaju različitog broja računala u svakoj podmreži potrebno je koristiti varijabilne maske. To znači da neće sva računala koristiti istu mrežnu masku, nego će svaka podmreža imati različitu masku. Varijabilno segmentiranje mreže tako omogućuje najučinkovitiju podjelu mreže.
+
+Recimo da na raspolaganju imamo raspon adresa 192.198.25.0/24. Ako trebamo podmreže koje mogu smjestiti 120 računala za goste, 30 za prodaju, 20 za marketing, 10 za upravu i dva računala za šefa neke tvrtke, ustanovit ćemo da nepotrebno gubimo IP adrese ako dodijelimo 8 bita svakoj mreži, što odgovara 256 mogućih adresa računala. 
+
+Stoga postoji mogućnost definiranja različitih mrežnih maski za svaku podmrežu. To znači da prvoj mreži dodijelimo 7 bitova jer je 2^6 = 64 < 120 < 2^7 = 128, sljedećoj 5 bitova (2^5 = 32 IP adrese), marketingu također 5 bitova, upravi 4 bita i šefu tvrtke 2 bita. Dok ostale neiskorištene bitove možemo pripojiti mrežnom dijelu.
+
+!!! note
+    U varijabilnim mrežama vrlo je bitno da podmrežavanje započnemo od najvećih mreža, jer će nam to kasnije olakšati dodavanje novih računala ukoliko se ukaže potreba za time.
+
+- U našem primjeru mreža za goste imat ćemo raspon od 192.198.25.1 do 192.198.25.126 s mrežnom podmaskom \25. Kada stavimo 7 bitova za adrese domaćina, proširujemo mrežni dio na 25 bitova.
+- Mreža za prodaju treba 5 bitova i krenut će od sljedeće dostupne IP adrese, a to je 192.198.25.129 pa do 192.198.25.158 s prefiksom duljine \27. 
+- Isto vrijedi vrijedi i za marketing, koji će dobiti sljedeći dostupni raspon od 192.198.25.161 do 192.198.25.190 s prefiksom duljine \27.
+- Za upravu imat ćemo raspon od 192.198.25.193 do 192.198.25.206 s prefiksom duljine \28.
+- A šef tvrtke će dobiti raspon od 192.198.25.209 do 192.198.25.210 s prefiksom duljine \30.
+
+Primijetite ovdje da preskačemo dvije IP adrese između podmreža. Početna i krajnja adresa unutar podmreže imaju posebno značenje i općenito se ne koriste kao adrese pojedinačnih mrežnih uređaja. Početna adresa je adresa podmreže koja identificira cijelu podmrežu. Završna ili broadcast adresa je adresa na kojoj mrežni promet primaju sva računala unutar podmreže. Najmanja mreža koja nema drugih podmreža naziva se broadcast domena, to je u biti lokalna mreža - LAN. Unutar broadcast domene mrežni uređaji (računala, komunikacijska oprema,...) međusobno izravno komuniciraju pomoću fizičkih MAC (Media Access Control) adresa.
+
+MAC adresa je broj koji označava neku mrežnu karticu (*engl.* Network card, NIC) i jedinstvena je za svaki uređaj. Sastoji se od 48 bita po 6 okteta koji se zapisuje u heksadecimalnom brojevnom sustavu na više različitih načina grupiranja i odvajanja znamenki:
+
+- 6 parova znamenki odvojenih crticom: 00-1A-4D-5B-05-AB
+- 6 parova znamenki odvojenih dvotočkom: 00:1A:4D:5B:05:AB
+- 3 skupine po 4 znamenke odvojene točkom: 001A.4D5B.05AB
+
+MAC adresa je logično podijeljena na dva dijela. Prva 24 bita predstavljaju naziv proizvođača mrežne kartice i isti su za sve kartice tog proizvođača. Preostala 24 bita jedinstvena su za svaku karticu i dodjeljuje ih proizvođač. Iako je zamišljeno da MAC adresa predstavlja mrežni uređaj na potpuno jedinstven način, to nije tako, jer većina današnjih mrežnih kartica ima mogućnost promjene MAC adrese. Taj se proces naziva MAC spoofing.
+
+## Stvaranje i konfiguracija podmreža
+
 Vidjeli smo već kako unutar alata CORE čvorovi tipa `ethernet switch` povezuju čvorove u jednu podmrežu, a čvorovi tipa `router` omogućuju povezivanje različitih podmreža. Konkretno, mreža oblika
 
 ```
