@@ -4,7 +4,66 @@ author: Vedran Miletić
 
 # Generiranje topologija
 
-Mrežne topologije su u stvarnim mrežama uglavnom pravilne na neki način. Zbog toga kod izučavanja mreža možemo uočiti [prstenastu topologiju, isprepletenu topologiju, zvijezdastu topologiju, linearnu topologiju i druge](https://en.wikipedia.org/wiki/Computer_network#Network_topology).
+## Mrežne topologije
+
+Mogućnost međusobnog povezivanja računala omogućila je ne samo razmjenu poruka ili podataka, već i stvaranje lokalnih i globalnih mreža. Razvoj takvih struktura omogućile su mrežne topologije čiji je dizajn osiguravao brzinu i sigurnost takvih veza.
+
+Za implementaciju računalne mreže u koju želimo povezati različita računala potrebno je prethodno planiranje. Prilikom planiranja računalne mreže od velike je važnosti odabir vrste topologije, jer njezina konfiguracija određuje način rada računalne mreže. Mrežna topologija tako definira niz različitih kategorija koje se mogu koristiti za određivanje rasporeda i veza između čvorova (računala, komunikacijska oprema, ...) te putanje podataka unutar mreže.
+
+Najčešća podjela mrežne topologije odnosi se na fizičku i logičku topologiju. Fizička topologija pokazuje na koji su način fizički povezani čvorovi mreže. Pod pojmom logičke topologije podrazumijevamo putanju koju prolazi signal od jednog računala do drugog. Ona može biti ista kao fizička topologija, ali i ne mora.
+
+Imamo više različitih topologija: 
+
+- Od točke do točke (*engl.* Point-to-point)
+- Sabirnička ili bus (*engl.* bus)
+- Zvjezdasta (*engl.* star)
+- Prstenasta (*engl.* ring)
+- Stablasta ili hijerarhijska (*engl.* tree)
+- Isprepletena (*engl.* mesh)
+- Potpuno povezana (*engl.* fully connected)
+- Hibridna (*engl.* hybrid)
+
+### Od točke do točke mrežna topologija 
+
+Najjednostavnija je topologija s namjenskom vezom između dvije krajnje točke. Veza između čvorova može biti stalna ili dinamička. U dinamičkoj vezi uspostavlja se komunikacijski kanal prije početka razmjene podataka, kao što je telefonski poziv.
+
+### Sabirnička mrežna topologija
+
+U ovoj vrsti topologije, svi čvorovi su povezani preko zajedničkog vodiča na način da mogu izravno komunicirati. Budući da se topologija sabirnice sastoji od samo jedne žice, lakše ju je implementirati od drugih topologija, ali uštede su nadoknađene višim troškovima upravljanja mrežom. Osim toga, budući da mreža ovisi o jednom kabelu, svi čvorovi su isključeni u slučaju njegova prekida.
+
+### Zvjezdasta mrežna topologija 
+
+Zvjezdasta topologija smatra se najlakšom topologijom za projektiranje i implementaciju. U ovoj vrsti topologije postoji središnji čvor na koji su ostali čvorovi mreže izravno povezani kabelima. Ulogu središnjeg čvora uglavnom obavlja preklopnik (*engl.* switch). U ovoj mreži obično nema međusobne veze između računala jer svi podaci prolaze kroz središnji čvor.
+
+Jedna od prednosti ove topologije je da se kvarovi mogu lako locirati te jednostavnost dodavanja dodatnih čvorova. Glavni nedostatak je da ako centralni čvor zakaže, cijela mreža pada. Kvar bilo kojeg drugog čvora u mreži, osim središnjeg čvora, ne utječe na komunikaciju ostalih čvorova.
+
+Mreža ne mora nužno biti u obliku zvijezde da bi bila klasificirana kao zvjezdasta mreža, ali svi čvorovi mreže moraju biti povezani s jednim središnjim čvorom. Ova topologija sa svojim podvrstama je najčešći oblik povezivanja u lokalnim mrežama (LAN).
+
+### Prstenasta mrežna topologija 
+
+Prstenasta topologija je u osnovi sabirnička topologija u zatvorenoj petlji. Svaki čvor je povezan samo s dva susjedna čvora. Podaci se kreću kružno od jednog čvora do drugog i obično samo u jednom smjeru. Kada jedan čvor šalje podatke drugom, podaci prolaze kroz svaki međučvor u prstenu dok ne stignu do odredišta. Svaki čvor je ravnopravan; ne postoji hijerarhijski odnos između klijenata i poslužitelja.
+
+Glavni nedostatak ove topologije je spor prijenos i mogućnost međučvorova da vide poslane pakete podataka, budući da paketi moraju proći kroz njih. Postoji i dvostruka prsetansta topologija (*engl.* dual-ring) s dvije veze između svaka dva čvora. Obično se koristi samo jedan prsten, dok drugi služi kao rezerva u slučaju da prvi zakaže.
+
+### Stablasta mrežna topologija
+
+Stablasta topologija sastoji se od korijenskog (*engl.* root) čvora koji je najviši u hijerarhijskom rasporedu čvorova i na njega spojenih čvorova koji se nalaze na sloju niže od njega. Čvorovi nižeg sloja opet mogu imati na sebe spojene čvorove još nižeg sloja, itd. Prilično je slična proširenoj topologiji zvijezde, ali njezina je temeljna razlika u tome što nema središnji čvor. Kao i u zvjezdastoj mreži, ako jedan čvor zakaže, svi čvorovi povezani s njim mogu biti izolirani od ostatka.
+
+### Isprepletena mrežna topologija 
+
+U isprepletenoj topologiji, čvorovi mreže mogu biti izravno povezani s nekoliko drugih čvorova. Kvar jednog čvora u mreži ne utječe na druge čvorove u mreži. Na ovakav način funkcionira i Internet. Prednost takve mreže je što se lako može proširivati i nadograđivati.
+
+### Potpuna mrežna topologija 
+
+U potpuno povezanoj mreži svi su čvorovi međusobno povezani. To omogućuje prijenos poruka s jednog čvora na drugi različitim rutama. Odnosno, nema prekida u komunikaciji. Cilj je osigurati neprekidnu povezanost kada je protok podataka od velike važnosti (nuklearni, istraživački centri i sl.).
+
+Glavni nedostatak takve topologije je skupo povezivanje svih čvorova jer zahtjeva veliku količinu kabela. Također, presložena je za primjenu tako da se koristi samo tamo gdje je to krajnje neophodno i gdje nije potrebno spajati mnogo čvorova.
+
+### Hibridna mrežna topologija 
+
+Hibridna topologija poznata je i pod nazivom topologija mreže ili mješovita jer koristi dvije ili više topologija za njihovo povezivanje na takav način da rezultirajuća mreža nema nijednu od standardnih topologija. U praksi je to jedna od najčešće korištenih topologija. Glavna prednost je što se može jednostavno proširiti i prilagoditi zahtjevima svakog klijenta.
+
+## Generiranje topologija
 
 Kako bi CORE omogućio da se vjerno reprezentiraju mreže kakve postoje u stvarnosti, podržano je generiranje topologija mreže po različitim pravilima. U CORE-ovom izborniku pod `Tools` moguće je pronaći `Topology generator` koji nam omogućuje brzo stvaranje različitih topologija mreže. Čvorovi mogu biti nasumično postavljeni, poredani u rešetku, zvijezdu ili neki drugi od ponuđenih topoloških obrazaca; odabirom stavke izbornika `Tools/Topology generator` vidljiv je podizbornik s popisom topologija koje je moguće generirati.
 
