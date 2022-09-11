@@ -133,7 +133,7 @@ Za stjecanje prava pristupa završnom ispitu potrebno je ostvariti barem 50% od 
 
 #### 4. Kontinuirana provjera znanja
 
-Tijekom semestra pisat će se test na Merlinu koji će uključivati pitanja i zadatke iz dijela gradiva predavanja i na njemu će student moći skupiti maksimalno 20 bodova.
+Tijekom semestra pisat će se kolokvij u obliku testa na Merlinu koji će uključivati pitanja i zadatke iz dijela gradiva predavanja i na njemu će student moći skupiti maksimalno 20 bodova.
 
 #### 5. Završni ispit
 
@@ -163,13 +163,13 @@ Donosi se na osnovu zbroja svih bodova prikupljenih tijekom izvođenja nastave p
 
 Redoviti:
 
-- 14\. veljače 2023.
-- 28\. veljače 2023.
+- 7\. veljače 2023.
+- 21\. veljače 2023.
 
 Izvanredni:
 
-- 21\. ožujka 2023.
-- 5\. rujna 2023.
+- 7\. ožujka 2023.
+- 12\. rujna 2023.
 
 ## RASPORED NASTAVE -- zimski (5.) semestar ak. god. 2022./2023.
 
@@ -197,9 +197,9 @@ Nastava će se na predmetu odvijati u zimskom semestru prema sljedećem raspored
 | 8. | 23. 11. 2022. | 16:00--17:30 | O-366 | Povezivanje kontejnera i virtualnih strojeva opće namjene | V8 | Matea Turalija |
 | 9. | 29. 11. 2022. | 10:00--11:30 | O-358 | Sigurnost mrežnih operacijskih sustava: autentifikacija i autorizacije | P8 | izv. prof. dr. sc. Božidar Kovačić |
 | 9. | 30. 11. 2022. | 16:00--17:30 | O-366 | Povezivanje kontejnera i virtualnih strojeva specifične namjene | V9 | Matea Turalija |
-| 10. | 6. 12. 2022. | 10:00--11:30 | O-358 | Sigurnost mrežnih operacijskih sustava: kontrola pristupa resursima, restrikcije u sustavu | P9 | izv. prof. dr. sc. Božidar Kovačić |
+| 10. | 6. 12. 2022. | 10:00--11:30 | O-359 | **Kolokvij** | P9 | izv. prof. dr. sc. Božidar Kovačić |
 | 10. | 7. 12. 2022. | 16:00--17:30 | O-366 | Zapis infrastrukture u obliku koda | V10 | Matea Turalija |
-| 11. | 13. 12. 2022. | 10:00--11:30 |   | **Test na Merlinu** | P10 | izv. prof. dr. sc. Božidar Kovačić |
+| 11. | 13. 12. 2022. | 10:00--11:30 | O-358 | Sigurnost mrežnih operacijskih sustava: kontrola pristupa resursima, restrikcije u sustavu | P10 | izv. prof. dr. sc. Božidar Kovačić |
 | 11. | 14. 12. 2022. | 16:00--17:30 | O-366 | **Rok za predaju 1. seminarskog rada.** Osnove korištenja NativeScripta na mobilnim operacijskim sustavima | V11 | Matea Turalija |
 | 12. | 20. 12. 2022. | 10:00--11:30 | O-358 | Arhitektura operacijskih sustava za mobilne uređaje | P11 | izv. prof. dr. sc. Božidar Kovačić |
 | 12. | 21. 12. 2022. | 16:00--17:30 | O-366 | Korištenje NativeScripta s JavaScript bibliotekama i okvirima na mobilnim operacijskim sustavima | V12 | Matea Turalija |
