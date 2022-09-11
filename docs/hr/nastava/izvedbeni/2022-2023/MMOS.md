@@ -123,9 +123,13 @@ Tijekom semestra studenti će za domaću zadaću napraviti dva seminarska rada.
 
 Prvi seminarski rad pokrivat će formiranje oblaka namijenjenog za izvođenje zadane aplikacije i u njemu će student moći ostvariti maksimalno 25 bodova, a drugi seminarski rad će uključivati razvoj, dokumentiranje i postavljanje na mobilni uređaj mobilne aplikacije koja koristi senzore te će na njoj student moći ostvariti maksimalno 15 bodova.
 
+Za stjecanje prava pristupa završnom ispitu potrebno je ostvariti barem 50% od maksimalnog broja bodova na svakom od seminarskih radova.
+
 #### 3. Projekt
 
 Tijekom semestra student će u okviru projekta izvesti profiliranje razvijene mobilne aplikacije i analizirati dobivene podatke. Na taj način će moći skupiti maksimalno 10 bodova.
+
+Za stjecanje prava pristupa završnom ispitu potrebno je ostvariti barem 50% od maksimalnog broja bodova na projektu.
 
 #### 4. Kontinuirana provjera znanja
 
@@ -139,9 +143,9 @@ Završni ispit se smatra položenim samo ako na njemu student postigne minimalno
 
 ### Ocjenjivanje
 
-Kontinuiranim radom tijekom semestra na prethodno opisani način studenti mogu ostvariti najviše 70 ocjenskih bodova, a da bi mogli pristupiti završnom ispitu moraju ostvarili 50% i više bodova (minimalno 35).
+Kontinuiranim radom tijekom semestra na prethodno opisani način studenti mogu ostvariti najviše 70 ocjenskih bodova, a da bi mogli pristupiti završnom ispitu moraju ostvarili 50% i više bodova (minimalno 35) te zadovoljiti ostale postavljene kriterije.
 
-Studenti koji su skupili najmanje 35 ocjenskih bodova, mogu pristupiti završnom ispitu.
+Studenti koji su skupili najmanje 35 ocjenskih bodova i zadovoljiti ostale postavljene kriterije, mogu pristupiti završnom ispitu.
 
 Ukoliko je završni ispit prolazan, skupljeni bodovi će se pribrojati prethodnima i prema ukupnom rezultatu formirati će se pripadajuća ocjena. U suprotnom, student ima pravo pristupa završnom ispitu još 2 puta (ukupno do 3 puta).
 

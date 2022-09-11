@@ -128,6 +128,8 @@ Nastava se odvija prema mješovitom modelu u kombinaciji klasične nastave u uč
 
 Student će raditi s različitim arhitekturama za obradu podataka velikog obujma i odgovarajućima alatima s ciljem prikupljanja analitičkih metrika nužnih za predviđanje potreba za infrastrukturom od strane inteligentnog informacijskog sustava temeljenog na toj arhitekturi. U skladu s predviđenom infrastruktrom student će oblikovati model upravljanja podacima, koordinacije, razmjene poruka i interakcije te preporučiti tehnologije za implementaciju heterogenog i distribuiranog podatkovnog sustava. Na ovaj način student će moći skupiti maksimalno 20 bodova.
 
+Za stjecanje prava pristupa završnom ispitu potrebno je ostvariti barem 50% od maksimalnog broja bodova na eksperimentalnom radu.
+
 #### 3. Pismeni ispit
 
 Tijekom semestra pisat će se pisat će se dva testa na Merlinu koja će uključivati pitanja iz gradiva predavanja i na svakom od njih će student moći skupiti maksimalno po 15 bodova, ukupno maksimalno 30 bodova.
@@ -135,6 +137,8 @@ Tijekom semestra pisat će se pisat će se dva testa na Merlinu koja će uključ
 #### 3. Praktični rad
 
 Student će odabrati odgovarajući skup tehnologija u oblaku i iskoristiti ga za razvoj komponente inteligentnog informacijskog sustava temeljene na analitici podataka ili umjetnoj inteligenciji te pripadnih sučelja, uz odgovarajuću dokumentaciju. U okviru razvoja implementirat će i procedure automatiziranog testiranja usluge u oblaku koristeći odgovarajuće tehnologije. Na ovaj način student će moći skupiti maksimalno 20 bodova.
+
+Za stjecanje prava pristupa završnom ispitu potrebno je ostvariti barem 50% od maksimalnog broja bodova na praktičnom radu.
 
 #### 4. Završni ispit
 
@@ -144,9 +148,9 @@ Završni ispit se smatra položenim samo ako na njemu student postigne minimalno
 
 ### Ocjenjivanje
 
-Kontinuiranim radom tijekom semestra na prethodno opisani način studenti mogu ostvariti najviše 70 ocjenskih bodova, a da bi mogli pristupiti završnom ispitu moraju ostvarili 50% i više bodova (minimalno 35).
+Kontinuiranim radom tijekom semestra na prethodno opisani način studenti mogu ostvariti najviše 70 ocjenskih bodova, a da bi mogli pristupiti završnom ispitu moraju ostvarili 50% i više bodova (minimalno 35) te zadovoljiti ostale postavljene kriterije.
 
-Studenti koji su skupili najmanje 35 ocjenskih bodova i ostvarili potrebne pragove, mogu pristupiti završnom ispitu.
+Studenti koji su skupili najmanje 35 ocjenskih bodova i zadovoljiti ostale postavljene kriterije, mogu pristupiti završnom ispitu.
 
 Ukoliko je završni ispit prolazan, skupljeni bodovi će se pribrojati prethodnima i prema ukupnom rezultatu formirati će se pripadajuća ocjena. U suprotnom, student ima pravo pristupa završnom ispitu još 2 puta (ukupno do 3 puta).
 
