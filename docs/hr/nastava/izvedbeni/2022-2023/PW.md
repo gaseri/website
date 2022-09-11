@@ -63,14 +63,14 @@ I8. Primijeniti tehnike timskog rada u sustavima za čuvanje verzija.
 ### Vrsta izvođenja nastave
 
 - [x] predavanja
-- [x] samostalni zadaci
 - [ ] seminari i radionice
-- [ ] multimedija i mreža
 - [x] vježbe
-- [x] laboratorij
 - [x] obrazovanje na daljinu
-- [ ] mentorski rad
 - [ ] terenska nastava
+- [x] samostalni zadaci
+- [ ] multimedija i mreža
+- [x] laboratorij
+- [ ] mentorski rad
 - [ ] ostalo ___________________
 
 ### Komentari
@@ -145,7 +145,8 @@ Prije izlaska na završni ispit bit će potrebno izvršiti predaju web aplikacij
 
 Na završnom ispitu će biti organizirana obrana usmenim putem. Cjeloviti rad se sastoji se od izrade web aplikacije ili usluge na temelju ranije izrađenih modela i predložaka (pogleda), testova i pripadne dokumentacije prema zadanim funkcionalnim i nefunkcionalnim zahtjevima. Vrednovat će se točnost i potpunost predanog programskog koda i pripadne dokumentacije te opis načina rješavanja danog problema i uloge (preuzetih zadataka) pojedinih članova grupe. Na taj način studenti će moći ostvariti do 30 bodova.
 
-Završni ispit se smatra položenim samo ako na njemu student postigne minimalno 50%-tni uspjeh (ispitni prag je 50% uspješno riješenih zadataka).
+Završni ispit se smatra položenim samo ako na njemu student postigne minim- [ ] terenska nastava
+alno 50%-tni uspjeh (ispitni prag je 50% uspješno riješenih zadataka).
 
 ### Ocjenjivanje
 
