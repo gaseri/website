@@ -438,6 +438,7 @@ theme:
     - navigation.sections
     - navigation.tabs
     - navigation.tracking
+    - toc.follow
   logo: images/gaseri-logo.svg
   favicon: images/favicon.png
   language: hr
