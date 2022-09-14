@@ -506,5 +506,6 @@ markdown_extensions:
       custom_checkbox: true
 plugins:
   - search
+  - social
   - tags:
       tags_file: en/blog/index.md
