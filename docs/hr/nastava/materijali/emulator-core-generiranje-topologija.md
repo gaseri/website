@@ -73,7 +73,7 @@ Glavni nedostatak ove topologije je spor prijenos i mogućnost međučvorova da 
 
 ``` mermaid
 graph LR;
-    n1((n1)) --- n2((n2)) --- n3((n3)) --- n4((n4)) --- n5((n5)) --- n1((n1)); 
+    n1((n1)) --- n2((n2)) --- n3((n3)) --- n4((n4)) --- n5((n5)) --- n1((n1));
 ```
 
 ### Stablasta mrežna topologija
@@ -124,10 +124,10 @@ U potpuno povezanoj mreži svi su čvorovi međusobno povezani. To omogućuje pr
 Glavni nedostatak takve topologije je skupo povezivanje svih čvorova jer zahtjeva veliku količinu kabela. Također, presložena je za primjenu tako da se koristi samo tamo gdje je to krajnje neophodno i gdje nije potrebno spajati mnogo čvorova.
 
 ``` mermaid
-graph TB;
+graph LR;
     n1((n1)) --- n2((n2));
     n1((n2)) --- n3((n3));
-    n1((n1)) --- n4((n4)); 
+    n1((n1)) --- n4((n4));
     n2((n4)) --- n3((n4));
     n2((n2)) --- n4((n3));
     n3((n3)) --- n4((n4));
