@@ -1,5 +1,5 @@
 ---
-author: Vedran Miletić
+author: Vedran Miletić, Matea Turalija
 ---
 
 # Generiranje topologija
