@@ -12,7 +12,7 @@ Za implementaciju računalne mreže u koju želimo povezati različita računala
 
 Najčešća podjela mrežne topologije odnosi se na fizičku i logičku topologiju. Fizička topologija pokazuje na koji su način fizički povezani čvorovi mreže. Pod pojmom logičke topologije podrazumijevamo putanju koju prolazi signal od jednog računala do drugog. Ona može biti ista kao fizička topologija, ali i ne mora.
 
-Imamo više različitih topologija:
+Razlikujemo više različitih topologija:
 
 - Od točke do točke (engl. *point-to-point*)
 - Sabirnička ili bus (engl. *bus*)
@@ -27,9 +27,25 @@ Imamo više različitih topologija:
 
 Najjednostavnija je topologija s namjenskom vezom između dvije krajnje točke. Veza između čvorova može biti stalna ili dinamička. U dinamičkoj vezi uspostavlja se komunikacijski kanal prije početka razmjene podataka, kao što je telefonski poziv.
 
+``` mermaid
+graph LR;
+    n1((n1)) --- n2((n2));
+```
+
 ### Sabirnička mrežna topologija
 
 U ovoj vrsti topologije, svi čvorovi su povezani preko zajedničkog vodiča na način da mogu izravno komunicirati. Budući da se topologija sabirnice sastoji od samo jedne žice, lakše ju je implementirati od drugih topologija, ali uštede su nadoknađene višim troškovima upravljanja mrežom. Osim toga, budući da mreža ovisi o jednom kabelu, svi čvorovi su isključeni u slučaju njegova prekida.
+
+``` mermaid
+graph LR;
+    n1((n1)) --- b1[ ];
+    n2((n2)) --- b2[ ];
+    n3((n3)) --- b3[ ];
+    b1[ ] --- b2[ ] --- b3[ ];
+    n4((n4)) --- b1[ ];
+    n5((n5)) --- b2[ ];
+    n6((n6)) --- b3[ ];
+```
 
 ### Zvjezdasta mrežna topologija
 
@@ -39,29 +55,99 @@ Jedna od prednosti ove topologije je da se kvarovi mogu lako locirati te jednost
 
 Mreža ne mora nužno biti u obliku zvijezde da bi bila klasificirana kao zvjezdasta mreža, ali svi čvorovi mreže moraju biti povezani s jednim središnjim čvorom. Ova topologija sa svojim podvrstama je najčešći oblik povezivanja u lokalnim mrežama (LAN).
 
+``` mermaid
+graph TB;
+    n1((n1)) --- n4((n4));
+    n2((n2)) --- n4((n4));
+    n3((n3)) --- n4((n4));
+    n4((n4)) --- n5((n4));
+    n4((n4)) --- n6((n6));
+    n4((n4)) --- n7((n7));
+```
+
 ### Prstenasta mrežna topologija
 
 Prstenasta topologija je u osnovi sabirnička topologija u zatvorenoj petlji. Svaki čvor je povezan samo s dva susjedna čvora. Podaci se kreću kružno od jednog čvora do drugog i obično samo u jednom smjeru. Kada jedan čvor šalje podatke drugom, podaci prolaze kroz svaki međučvor u prstenu dok ne stignu do odredišta. Svaki čvor je ravnopravan; ne postoji hijerarhijski odnos između klijenata i poslužitelja.
 
 Glavni nedostatak ove topologije je spor prijenos i mogućnost međučvorova da vide poslane pakete podataka, budući da paketi moraju proći kroz njih. Postoji i dvostruka prsetansta topologija (engl. *dual-ring topology*) s dvije veze između svaka dva čvora. Obično se koristi samo jedan prsten, dok drugi služi kao rezerva u slučaju da prvi zakaže.
 
+``` mermaid
+graph LR;
+    n1((n1)) --- n2((n2)) --- n3((n3)) --- n4((n4)) --- n5((n5)) --- n1((n1)); 
+```
+
 ### Stablasta mrežna topologija
 
 Stablasta topologija sastoji se od korijenskog (engl. *root*) čvora koji je najviši u hijerarhijskom rasporedu čvorova i na njega spojenih čvorova koji se nalaze na sloju niže od njega. Čvorovi nižeg sloja opet mogu imati na sebe spojene čvorove još nižeg sloja, itd. Prilično je slična proširenoj topologiji zvijezde, ali njezina je temeljna razlika u tome što nema središnji čvor. Kao i u zvjezdastoj mreži, ako jedan čvor zakaže, svi čvorovi povezani s njim mogu biti izolirani od ostatka.
+
+``` mermaid
+graph TB;
+    n1((n1)) --- n2((n2));
+    n1((n1)) --- n3((n3));
+    n2((n2)) --- n4((n4));
+    n2((n2)) --- n5((n5));
+    n3((n3)) --- n6((n6));
+    n3((n3)) --- n7((n7));
+    n4((n4)) --- n8((n8));
+    n4((n4)) --- n9((n9));
+    n5((n5)) --- n10((n10));
+    n5((n5)) --- n11((n11));
+    n6((n6)) --- n12((n12));
+    n6((n6)) --- n13((n13));
+    n7((n7)) --- n14((n14));
+    n7((n7)) --- n15((n15));
+```
 
 ### Isprepletena mrežna topologija
 
 U isprepletenoj topologiji, čvorovi mreže mogu biti izravno povezani s nekoliko drugih čvorova. Kvar jednog čvora u mreži ne utječe na druge čvorove u mreži. Na ovakav način funkcionira i Internet. Prednost takve mreže je što se lako može proširivati i nadograđivati.
 
-### Potpuna mrežna topologija
+``` mermaid
+graph TB;
+    n7((n7)) --- n4((n4));
+    n7((n7)) --- n5((n5));
+    n7((n7)) --- n6((n6));
+    n1((n1)) --- n2((n2));
+    n1((n1)) --- n6((n6));
+    n1((n1)) --- n3((n3));
+    n2((n2)) --- n5((n5));
+    n2((n2)) --- n4((n4));
+    n1((n1)) --- n7((n7));
+    n2((n2)) --- n7((n7));
+    n3((n3)) --- n7((n7));
+```
+
+### Potpuno povezana mrežna topologija
 
 U potpuno povezanoj mreži svi su čvorovi međusobno povezani. To omogućuje prijenos poruka s jednog čvora na drugi različitim rutama. Odnosno, nema prekida u komunikaciji. Cilj je osigurati neprekidnu povezanost kada je protok podataka od velike važnosti (nuklearni, istraživački centri i sl.).
 
 Glavni nedostatak takve topologije je skupo povezivanje svih čvorova jer zahtjeva veliku količinu kabela. Također, presložena je za primjenu tako da se koristi samo tamo gdje je to krajnje neophodno i gdje nije potrebno spajati mnogo čvorova.
 
+``` mermaid
+graph TB;
+    n1((n1)) --- n2((n2));
+    n1((n2)) --- n3((n3));
+    n1((n1)) --- n4((n4)); 
+    n2((n4)) --- n3((n4));
+    n2((n2)) --- n4((n3));
+    n3((n3)) --- n4((n4));
+```
+
 ### Hibridna mrežna topologija
 
 Hibridna topologija poznata je i pod nazivom topologija mreže ili mješovita jer koristi dvije ili više topologija za njihovo povezivanje na takav način da rezultirajuća mreža nema nijednu od standardnih topologija. U praksi je to jedna od najčešće korištenih topologija. Glavna prednost je što se može jednostavno proširiti i prilagoditi zahtjevima svakog klijenta.
+
+``` mermaid
+graph TB;
+    n1((n1)) --- n2((n2));
+    n1((n1)) --- n3((n3));
+    n2((n2)) --- n4((n4));
+    n2((n2)) --- n5((n5));
+    n3((n3)) --- n6((n6));
+    n7((n7)) --- n6((n6));
+    n8((n8)) --- n3((n3));
+    n8((n8)) --- n7((n7));
+```
 
 ## Postupak generiranja topologija
 
