@@ -1,4 +1,4 @@
-# 😎 GASERI | gaseri.org
+# 😎 Grupa za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi / Group for Applications and Services on Exascale Research Infrastructure (GASERI)
 
 ![GASERI logo with text](images/gaseri-logo-text.png)
 
