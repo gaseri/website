@@ -2,7 +2,7 @@
 marp: true
 author: Vedran Miletić
 title: Podrška web aplikacija za izvođenje na različitim verzijama platforme
-subject: Razvoj web aplikacija i usluga
+description: Razvoj web aplikacija i usluga
 keywords: razvoj web aplikacija usluga
 theme: default
 class: _invert

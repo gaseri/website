@@ -2,7 +2,7 @@
 marp: true
 author: Vedran Miletić
 title: Timski razvoj web aplikacija i upravljanje verzijama programskog koda
-subject: Razvoj web aplikacija i usluga
+description: Razvoj web aplikacija i usluga
 keywords: razvoj web aplikacija usluga
 theme: default
 class: _invert

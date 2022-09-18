@@ -2,7 +2,7 @@
 marp: true
 author: Vedran Miletić
 title: "Objektno modeliranje i programiranje web aplikacija. Objektno-relacijsko preslikavanje"
-subject: Razvoj web aplikacija i usluga
+description: Razvoj web aplikacija i usluga
 keywords: razvoj web aplikacija usluga
 theme: default
 class: _invert
