@@ -179,10 +179,10 @@ For convenience, we will be compiling the OpenCL programs with standalone Clang 
 
 ``` c
 __kernel void vector_add(__global const int *a, __global const int *b, __global int *c) {
- 
+
     // Get the global identifier of the thread
     int i = get_global_id(0);
- 
+
     // Perform addition on elements at index i
     c[i] = a[i] + b[i];
 }

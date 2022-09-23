@@ -135,7 +135,7 @@ Za stjecanje prava pristupa završnom ispitu potrebno je ostvariti barem 50% od 
 
 U unaprijed danom terminu krajem semestra moguće je ispravljati praktični kolokvij, pri čemu bodovi ostvareni na ispravku zamjenjuju bodove ostvarene na kolokviju. Ispravku praktičnog kolokvija mogu, ako žele, pristupiti i studenti koji su ostvarili 50% i više bodova na kolokviju. Bodovi ostvareni na ispravku zamjenjuju bodove ostvarene na kolokviju bez obzira na vrijednost.
 
-**Izrada modela i predložaka (pogleda) za web aplikaciju ili uslugu.** Tijekom semestra studenti će u grupama po dvoje ili troje odabrati temu koju će realizirati u obliku web aplikacije ili usluge. 
+**Izrada modela i predložaka (pogleda) za web aplikaciju ili uslugu.** Tijekom semestra studenti će u grupama po dvoje ili troje odabrati temu koju će realizirati u obliku web aplikacije ili usluge.
 
 Studenti će u grupi započeti izradu web aplikacije ili usluge i u danom roku predati aplikaciju ili uslugu koja ima izrađene modele i predloške (poglede). Predana aplikacija ili usluga može sadržavati i ostale elemente, ali oni se neće uzimati u obzir kod vrednovanja. Ovisno o točnosti i potpunosti izrađenih modela i predložaka (pogleda), studenti će pritom moći ostvariti do 20 bodova.
 
