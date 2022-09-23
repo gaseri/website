@@ -125,13 +125,13 @@ Nastava se odvija prema mješovitom modelu u kombinaciji klasične nastave u uč
 
 #### 2. Kontinuirana provjera znanja
 
-Tijekom semestra pisat će se pisat će se test na Merlinu koji će uključivati pitanja iz gradiva predavanja i njemu će student moći skupiti maksimalno 30 bodova.
+Tijekom semestra pisat će se test na Merlinu koji će uključivati pitanja iz gradiva predavanja i njemu će student moći skupiti maksimalno 30 bodova.
 
 #### 3. Praktični rad
 
 **Praktični kolokvij.** Tijekom semestra pisat će se praktični kolokvij koji će uključivati zadatke iz gradiva vježbi. Na praktičnom kolokviju student će moći skupiti najviše 20 bodova. Prag za pravo pristupa završnom ispitu je ostvarenih 50% od ukupnog broja bodova na praktičnom kolokviju.
 
-U unaprijed danom terminu krajem semestra moguće je ispravljati praktični kolokvij pri čemu bodovi ostvareni na ispravku zamjenjuju bodove ostvarene na odgovarajućem kolokviju. Ispravku praktičnog kolokvija mogu, ako žele, pristupiti i studenti koji su ostvarili 50% i više bodova na kolokviju.
+U unaprijed danom terminu krajem semestra moguće je ispravljati praktični kolokvij, pri čemu bodovi ostvareni na ispravku zamjenjuju bodove ostvarene na kolokviju. Ispravku praktičnog kolokvija mogu, ako žele, pristupiti i studenti koji su ostvarili 50% i više bodova na kolokviju.
 
 **Izrada modela za web aplikaciju ili uslugu.** Tijekom semestra studenti će u grupama po dvoje ili troje odabrati temu koju će realizirati u obliku web aplikacije ili usluge.
 
@@ -147,9 +147,9 @@ Završni ispit se smatra položenim samo ako na njemu student postigne minimalno
 
 ### Ocjenjivanje
 
-Kontinuiranim radom tijekom semestra na prethodno opisani način studenti mogu ostvariti najviše 70 ocjenskih bodova, a da bi mogli pristupiti završnom ispitu moraju ostvarili 50% i više bodova (minimalno 35) te ostvariti barem 50% od ukupnog broja bodova na praktičnom kolokviju.
+Kontinuiranim radom tijekom semestra na prethodno opisani način studenti mogu ostvariti najviše 70 ocjenskih bodova, a da bi mogli pristupiti završnom ispitu moraju ostvarili 50% i više bodova (minimalno 35) te ostvariti potrebni prag na praktičnom kolokviju.
 
-Studenti koji su skupili najmanje 35 ocjenskih bodova i ostvarili potrebne pragove, mogu pristupiti završnom ispitu.
+Studenti koji su skupili najmanje 35 ocjenskih bodova i ostvarili potrebni prag na praktičnom kolokviju, mogu pristupiti završnom ispitu.
 
 Ukoliko je završni ispit prolazan, skupljeni bodovi će se pribrojati prethodnima i prema ukupnom rezultatu formirati će se pripadajuća ocjena. U suprotnom, student ima pravo pristupa završnom ispitu još 2 puta (ukupno do 3 puta).
 

@@ -125,7 +125,7 @@ Nastava se odvija prema mješovitom modelu u kombinaciji klasične nastave u uč
 
 #### 2. Kontinuirana provjera znanja
 
-Tijekom semestra pisat će se pisat će se test na Merlinu koji će uključivati pitanja iz gradiva predavanja i njemu će student moći skupiti maksimalno 30 bodova.
+Tijekom semestra pisat će se test na Merlinu u računalnoj učionici pod nadzorom nastavnika koji će uključivati pitanja iz gradiva predavanja. Na testu će student moći skupiti maksimalno 30 bodova.
 
 #### 3. Praktični rad
 
@@ -133,20 +133,19 @@ Tijekom semestra pisat će se pisat će se test na Merlinu koji će uključivati
 
 Za stjecanje prava pristupa završnom ispitu potrebno je ostvariti barem 50% od maksimalnog broja bodova na praktičnom kolokviju.
 
-U unaprijed danom terminu krajem semestra moguće je ispravljati praktični kolokvij pri čemu bodovi ostvareni na ispravku zamjenjuju bodove ostvarene na odgovarajućem kolokviju. Ispravku praktičnog kolokvija mogu, ako žele, pristupiti i studenti koji su ostvarili 50% i više bodova na kolokviju.
+U unaprijed danom terminu krajem semestra moguće je ispravljati praktični kolokvij, pri čemu bodovi ostvareni na ispravku zamjenjuju bodove ostvarene na kolokviju. Ispravku praktičnog kolokvija mogu, ako žele, pristupiti i studenti koji su ostvarili 50% i više bodova na kolokviju. Bodovi ostvareni na ispravku zamjenjuju bodove ostvarene na kolokviju bez obzira na vrijednost.
 
-**Izrada modela i predložaka (pogleda) za web aplikaciju ili uslugu.** Tijekom semestra studenti će u grupama po dvoje ili troje odabrati temu koju će realizirati u obliku web aplikacije ili usluge.
+**Izrada modela i predložaka (pogleda) za web aplikaciju ili uslugu.** Tijekom semestra studenti će u grupama po dvoje ili troje odabrati temu koju će realizirati u obliku web aplikacije ili usluge. 
 
-Studenti će djelomično izraditi web aplikaciju ili uslugu tako da sadrži izrađene modele i predloške (poglede) te je predati je u tom obliku u danom roku. Predana aplikacija ili usluga može sadržavati i ostale elemente, ali oni se neće uzimati u obzir kod vrednovanja. Ovisno o točnosti i potpunosti izrađenih modela i predložaka (pogleda), studenti će pritom moći ostvariti do 20 bodova.
+Studenti će u grupi započeti izradu web aplikacije ili usluge i u danom roku predati aplikaciju ili uslugu koja ima izrađene modele i predloške (poglede). Predana aplikacija ili usluga može sadržavati i ostale elemente, ali oni se neće uzimati u obzir kod vrednovanja. Ovisno o točnosti i potpunosti izrađenih modela i predložaka (pogleda), studenti će pritom moći ostvariti do 20 bodova.
 
 #### 4. Završni ispit
 
 Prije izlaska na završni ispit bit će potrebno izvršiti predaju web aplikacije ili usluge izrađene na temelju ranije izrađenih modela i predložaka (pogleda).
 
-Na završnom ispitu će biti organizirana obrana usmenim putem. Cjeloviti rad se sastoji se od izrade web aplikacije ili usluge na temelju ranije izrađenih modela i predložaka (pogleda), testova i pripadne dokumentacije prema zadanim funkcionalnim i nefunkcionalnim zahtjevima. Vrednovat će se točnost i potpunost predanog programskog koda i pripadne dokumentacije te opis načina rješavanja danog problema i uloge (preuzetih zadataka) pojedinih članova grupe. Na taj način studenti će moći ostvariti do 30 bodova.
+Na završnom ispitu će biti organizirana obrana usmenim putem. Cjeloviti rad se sastoji od izrade web aplikacije ili usluge na temelju ranije izrađenih modela i predložaka (pogleda), testova i pripadne dokumentacije prema zadanim funkcionalnim i nefunkcionalnim zahtjevima. Vrednovat će se točnost i potpunost predanog programskog koda i pripadne dokumentacije te opis načina rješavanja danog problema i uloge (preuzetih zadataka) pojedinih članova grupe. Na taj način studenti će moći ostvariti do 30 bodova.
 
-Završni ispit se smatra položenim samo ako na njemu student postigne minim- [ ] terenska nastava
-alno 50%-tni uspjeh (ispitni prag je 50% uspješno riješenih zadataka).
+Završni ispit se smatra položenim samo ako na njemu student postigne minimalno 50%-tni uspjeh (ispitni prag je 50% uspješno riješenih zadataka).
 
 ### Ocjenjivanje
 
