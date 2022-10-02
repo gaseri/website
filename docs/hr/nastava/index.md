@@ -22,9 +22,11 @@ Nastavni materijali kolegija su na hrvatskom jeziku, osim [Optimizacije programs
 
 ### Diplomski
 
-- [Distribuirani sustavi](kolegiji/DS.md)
-- [Superračunalni sustavi](kolegiji/SRS.md)
-- [Upravljanje mrežnim sustavima](kolegiji/UMS.md)
+- [Infrastruktura za podatke velikog obujma](kolegiji/IPVO.md)
+
+### Poslijediplomski
+
+- [Računalna biokemija i biofizika](kolegiji/RBKBF.md)
 
 ### Ostali
 
@@ -42,3 +44,9 @@ Nastavni materijali kolegija su na hrvatskom jeziku, osim [Optimizacije programs
 - [Računalne mreže 1](kolegiji/RM1.md)
 - [Računalne mreže 2](kolegiji/RM2.md)
 - [Dinamičke web aplikacije 2](kolegiji/DWA2.md)
+
+### Stari diplomski
+
+- [Distribuirani sustavi](kolegiji/DS.md)
+- [Superračunalni sustavi](kolegiji/SRS.md)
+- [Upravljanje mrežnim sustavima](kolegiji/UMS.md)

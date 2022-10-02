@@ -22,9 +22,11 @@ Teaching materials are in Croatian, except [Code Optimization](courses/CO.md) fo
 
 ### Graduate
 
-- [Distributed Systems](../../hr/nastava/kolegiji/DS.md)
-- [Supercomputer Systems](../../hr/nastava/kolegiji/SRS.md)
-- [Network Systems Management](../../hr/nastava/kolegiji/UMS.md)
+- [Big Data Infrastructure](../../hr/nastava/kolegiji/IPVO.md)
+
+### Postgraduate
+
+- [Computational Biochemistry and Biophysics](../../hr/nastava/kolegiji/RBKBF.md)
 
 ### Other
 
@@ -42,3 +44,9 @@ Teaching materials are in Croatian, except [Code Optimization](courses/CO.md) fo
 - [Computer Networks 1](../../hr/nastava/kolegiji/RM1.md)
 - [Computer Networks 2](../../hr/nastava/kolegiji/RM2.md)
 - [Dynamical Web Applications 2](../../hr/nastava/kolegiji/DWA2.md)
+
+### Former graduate
+
+- [Distributed Systems](../../hr/nastava/kolegiji/DS.md)
+- [Supercomputer Systems](../../hr/nastava/kolegiji/SRS.md)
+- [Network Systems Management](../../hr/nastava/kolegiji/UMS.md)
