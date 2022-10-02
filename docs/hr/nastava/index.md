@@ -29,6 +29,7 @@ Nastavni materijali kolegija su na hrvatskom jeziku, osim [Optimizacije programs
 ### Ostali
 
 - [Informatika (BioTech)](kolegiji/INF-BioTech.md)
+- [Informatika za farmaceute (MedRi)](kolegiji/INF-Pharma.md)
 - [Računalne mreže (RiTeh)](kolegiji/RM-RiTeh.md)
 - [Optimizacija programskog koda (YUFE)](../../en/teaching/courses/CO.md)
 
