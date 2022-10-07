@@ -495,10 +495,16 @@ extra:
     - icon: fontawesome/brands/bitbucket
       link: https://bitbucket.org/gaseri
       name: GASERI on Bitbucket
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 markdown_extensions:
   - admonition
   - attr_list
   - meta
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.details
   - pymdownx.highlight
   - pymdownx.keys
