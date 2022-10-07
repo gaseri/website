@@ -44,15 +44,15 @@ Sloj kontrole prijenosa zadužen je za upravljanje prijenosom i kontrolu ispravn
 
 Količinu podataka mjerimo u **bitovima** i **bajtovima** pri čemu je je 1 bajt = 8 bitova. Bajte označavamo velikim slovom B i koristimo [binarne prefikse](https://en.wikipedia.org/wiki/Binary_prefix):
 
-- Ki (kilo) -> 1 KiB = 1024 B = $2^{10}$ B
-- Mi (mega) -> 1 MiB = 1048576 B = $2^{20}$ B
-- Gi (giga) -> 1 GiB = 1073741824 B = $2^{30}$ B
+- Ki (kilo) -> 1 KiB = 1024 B = 2^10^ B
+- Mi (mega) -> 1 MiB = 1048576 B = 2^20^ B
+- Gi (giga) -> 1 GiB = 1073741824 B = 2^30^ B
 
 Vrijeme mjerimo u sekundama (s), a prefiksi koje često koristimo su:
 
-- n (nano) -> 1 ns = $10^{-9}$ s
-- µ (mikro) -> 1 µs = $10^{-6}$ s
-- m (mili) -> 1 ms = $10^{-3}$ s
+- n (nano) -> 1 ns = 10^-9^ s
+- µ (mikro) -> 1 µs = 10^-6^$ s
+- m (mili) -> 1 ms = 10^-3^ s
 
 Širina frekventnog pojasa omjer broja bitova i vremena koju veza nominalno ostvaruje ovisno o tehničkoj realizaciji veze. Propusnost je realni (izmjereni) omjer broja bitova i vremena koje veza prenosi u danom trenutku.
 

@@ -95,7 +95,7 @@ Korištenje svih jezgara zahtijeva veliki broj blokova (barem onoliko koliko ima
 
 Skrivanje kašnjenja eksploatira paralelnost između komponenata GPU-a: ako postoje računske osnove koje mogu biti otpremljene dok druge računske osnove čekaju, kašnjenje je time pokriveno. Skrivanje kašnjenja zahtijeva poznavanje otpreme instrukcija, što ovisi od računskoj sposobnosti uređaja. Uređaji s računskom sposobnošću 2.0 skrivaju kašnjenje na slijedeći način:
 
-- 1 instrukcija po računskoj osnovi u 2 instrukcijska ciklusa, 2 računske osnove u svakom trenutku => $N$ instrukcija skriva $N$ instrukcijskih ciklusa
+- 1 instrukcija po računskoj osnovi u 2 instrukcijska ciklusa, 2 računske osnove u svakom trenutku => `N` instrukcija skriva `N` instrukcijskih ciklusa
 
 Tipična instrukcija zahtijeva 22 instrukcijska ciklusa da se izvrši. To implicira da je potrebno barem 22 računske osnove (za sposobnost 2.x) da bi sakrili standardno sekvencijalno izvođenje (instrukcija ovisi o rezultatu izvođenja prethodne instrukcije).
 

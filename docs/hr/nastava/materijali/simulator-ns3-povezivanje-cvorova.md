@@ -458,9 +458,9 @@ Nix-Vector je protokol usmjeravanja specifičan za simulaciju i namijenjen za ve
 !!! tip
     Da bi vidjeli kako usmjeravanje može imati problema sa skaliranjem na veliki broj čvorova, razmotrimo sljedeće. Algoritam usmjeravanja koji GlobalRouting koristi radi tako da svaki čvor pamti izlazni mrežni uređaj na koji mora poslati paket za svaku od IPv4 adresa koje postoje u simulaciji.
 
-    Simulacija koja ima $n$ čvorova s po 2 adrese, ima ukupno $2n$ adresa. Kada se koristi GlobalRouting, to znači da tablica usmjeravanja *na svakom čvoru* ima $2n$ unosa, odnosno da ukupno ima $2n^2$ unosa u tablicama usmjeravanja u simulaciji.
+    Simulacija koja ima `n` čvorova s po 2 adrese, ima ukupno `2 * n` adresa. Kada se koristi `GlobalRouting`, to znači da tablica usmjeravanja *na svakom čvoru* ima `2 * n` unosa, odnosno da ukupno ima `2 * n * n` unosa u tablicama usmjeravanja u simulaciji.
 
-    Za simulacije koje imaju relativno mali broj čvorova (relativno mali $n$) i broj $2n^2$ nije velik, pa je usmjeravanje relativno brzo. Međutim, za simulacije koje imaju nekoliko tisuća čvorova $2n^2$ je reda veličine nekoliko milijuna, što je mnogo.
+    Za simulacije koje imaju relativno mali broj čvorova (relativno mali `n`) i broj `2 * n * n` nije velik, pa je usmjeravanje relativno brzo. Međutim, za simulacije koje imaju nekoliko tisuća čvorova `2 * n * n` je reda veličine nekoliko milijuna, što je mnogo.
 
     Kako će sve naše simulacije biti relativno malene, za nas ovo neće predstavljati problem.
 

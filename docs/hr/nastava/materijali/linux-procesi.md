@@ -16,7 +16,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
     - omogućuje baratanje sa više poslova u jednom terminalu
 
 - `jobs` ispisuje popis pokrenutih poslova
-- `%n` oznaka posao s brojem $n$
+- `%n` oznaka posao s brojem `n`
 - `%+` označava posao koji se prethodno izvodio
 - `%-` označava posao koji se pretprethodno izvodio
 - `fg` vraća posao s danim brojem u foreground
@@ -98,11 +98,11 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 
     - ostale signale proces hvata korištenjem funkcije `signal()` definirane u zaglavlju `signal.h` iz standardne biblioteke jezika C (C++ varijanta je `csignal`); detaljnije na [Wikipedijinoj stranici o signal.h](https://en.wikipedia.org/wiki/C_signal_handling)
 
-- `kill -<n> PID` je naredba za slanje signala $n$ procesu PID
+- `kill -<n> PID` je naredba za slanje signala `n` procesu PID
 
     - zadan je signal broj 15, SIGTERM, koji traži od procesa da prekine s izvođenjem
 
-- `killall -<n> ime_naredbe` šalje signal $n$ svim pokrenutim instancama naredbe sa zadanim imenom (koje može biti i regularni izraz)
+- `killall -<n> ime_naredbe` šalje signal `n` svim pokrenutim instancama naredbe sa zadanim imenom (koje može biti i regularni izraz)
 
 !!! admonition "Zadatak"
     - Pokrenite dva terminala u kojima ste povezani na poslužitelj.

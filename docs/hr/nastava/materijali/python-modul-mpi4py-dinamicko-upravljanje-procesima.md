@@ -69,7 +69,7 @@ Dokumentacija svih funkcija koje koristimo u nastavku dana je u sklopu [pregleda
 
 ## Primjeri primjene dinamičkog upravljanja procesima
 
-### Paralelno računanje broja $pi$ uz dinamičko upravljanje procesima
+### Paralelno računanje broja $\pi$ uz dinamičko upravljanje procesima
 
 - roditelj, datoteka `pi-parent.py`
 

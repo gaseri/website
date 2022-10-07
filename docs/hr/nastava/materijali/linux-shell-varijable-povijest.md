@@ -101,7 +101,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov, Anja Vrbanjac
 - povijest unesenih naredbi ljuska sprema u `$HISTFILE`
 - naredba `history` ispisuje do `$HISTSIZE` prethodno unesenih naredbi
 - moguće je po povijesti kretati se strelicama gore i dolje
-- `!n` pokreće naredbu sa $n$-tog mjesta u povijesti
+- `!n` pokreće naredbu sa `n`-tog mjesta u povijesti
 - `!niz_znakova` ako postoji, pokreće posljednju naredbu koja na početku ima dani niz znakova
 - `^R` pretraživanje povijesti unatrag za specifičnom naredbom
 

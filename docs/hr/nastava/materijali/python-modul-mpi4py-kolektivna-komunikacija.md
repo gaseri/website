@@ -88,7 +88,7 @@ print("Nakon broadcasta proces ranga", rank, "ima vrijednost varijable", msg)
 
 ## Operacija scatter
 
-- `comm.scatter(sendmsg, root)` listu od $n$ elemenata raspršuje na $n$ procesa, tako da svaki proces dobiva po jedan element i to točno onaj s indeksom koliki je njegov rang
+- `comm.scatter(sendmsg, root)` listu od `n` elemenata raspršuje na `n` procesa, tako da svaki proces dobiva po jedan element i to točno onaj s indeksom koliki je njegov rang
 
     - `sendmsg` je Python lista koja se raspršuje; **mora biti iste veličine kao broj procesa** na korijenskom procesu, i `None` na ostalima
     - `root` je rang korijenskog procesa
@@ -108,7 +108,7 @@ else:
 recvmsg = comm.scatter(sendmsg, root=0)
 ```
 
-- `comm.Scatter(sendmsg, recvmsg, root)` -- listu od $n$ elemenata raspršuje na $n$ procesa, tako da svaki proces dobiva po jedan element i to točno onaj s indeksom koliki je njegov rang
+- `comm.Scatter(sendmsg, recvmsg, root)` -- listu od `n` elemenata raspršuje na `n` procesa, tako da svaki proces dobiva po jedan element i to točno onaj s indeksom koliki je njegov rang
 
     - `sendmsg` je numpy polje koje se raspršuje; **mora biti iste veličine kao broj procesa** na korijenskom procesu, i `None` na ostalima
     - `recvmsg` je numpy polje veličine jednog elementa u koje se sprema rezultat raspršenja
@@ -276,7 +276,7 @@ print("Proces ranga", rank, "ima vrijednost prve primljene poruke", recvmsg1, "i
 
 ## Operacija alltoall
 
-- `comm.alltoall(sendmsg)` -- element vektora sa indeksom $j$ iz `sendmsg` na procesu $i$ postaje element vektora sa indeksom $i$ u `recvmsg` na procesu $j$
+- `comm.alltoall(sendmsg)` -- element vektora sa indeksom `j` iz `sendmsg` na procesu `i` postaje element vektora sa indeksom `i` u `recvmsg` na procesu `j`
 
     - `sendmsg` je lista koja se šalje, veličine jednake ukupnom broju procesa
 
@@ -295,7 +295,7 @@ recvmsg = comm.alltoall(sendmsg)
 print("Proces ranga", rank, "ima vrijednost poslane poruke", sendmsg, "vrijednost primljene poruke", recvmsg)
 ```
 
-- `comm.Alltoall(sendmsg, recvmsg)` -- element vektora sa indeksom $j$ iz `sendmsg` na procesu $i$ postaje element vektora sa indeksom $i$ u `recvmsg` na procesu $j$
+- `comm.Alltoall(sendmsg, recvmsg)` -- element vektora sa indeksom `j` iz `sendmsg` na procesu `i` postaje element vektora sa indeksom `i` u `recvmsg` na procesu `j`
 
     - `sendmsg` je numpy polje koje se šalje, veličine jednake ukupnom broju procesa
     - `recvmsg` je numpy polje koje se prima, veličine jednake ukupnom broju procesa
@@ -427,7 +427,7 @@ print("Proces ranga", rank, "ima vrijednost poslane poruke", sendmsg, "vrijednos
 
 ### Računanje skalarnog produkta vektora
 
-Skalarni produkt vektora `a` i `b` veličine $n$ elemenata je izraz oblika
+Skalarni produkt vektora `a` i `b` veličine `n` elemenata je izraz oblika
 
 ``` python
 skalarni_produkt = a[0] * b[0] + a[1] * b[1] + ... a[n] * b[n]
@@ -753,7 +753,7 @@ $$
 
 !!! admonition "Zadatak"
     - Modificirajte gornji primjer tako da dodate kod koji mjeri vrijeme izvođenja za svaki od procesa.
-    - Usporedite vrijeme izvođenja algoritma za 2, 3, 4 procesa kad svaki proces izvodi $10^4$, $10^5$, $10^6$ iteracija. Opišite svoje zaključke.
+    - Usporedite vrijeme izvođenja algoritma za 2, 3, 4 procesa kad svaki proces izvodi 10^4^, 10^5^, 10^6^ iteracija. Opišite svoje zaključke.
 
 ### Aproksimativno računanje broja $\pi$ korištenjem Monte Carlo metode
 
@@ -764,13 +764,13 @@ Broj $\pi$ može se aproksimativno računati i korištenjem Monte Carlo metode. 
 - četvrtina kvadrata je površine 1 (obzirom da su mu obje stranice duljine 1),
 - čevrtina kruga je površine $\frac{\pi}{4}$ (obzirom da mu je radijus 1).
 
-Slučajno odabrana točka unutar četvrtine kvadrata ima vjerojatnost $\frac{\pi}{4}$ da upadne unutar četvrtine kruga. Dakle, ako s $n$ označimo broj slučajno odabranih točaka, a s $h$ broj točaka koje se od $n$ slučajno odabranih nalaze unutar četvrtine kruga, aproksimativno možemo odrediti broj pi kao
+Slučajno odabrana točka unutar četvrtine kvadrata ima vjerojatnost $\frac{\pi}{4}$ da upadne unutar četvrtine kruga. Dakle, ako s $n$ označimo broj slučajno odabranih točaka, a s $h$ broj točaka koje se od $n$ slučajno odabranih nalaze unutar četvrtine kruga, aproksimativno možemo odrediti broj $\pi$ kao
 
 $$
 \pi = 4 \times \frac{h}{n}.
 $$
 
-Povećavajući $n$ dobivamo točniju aproksimaciju, a navedena metoda naziva se Monte Carlo metoda. Programski kod koji aproksimira broj pi korištenjem Monte Carlo metode je oblika:
+Povećavajući $n$ dobivamo točniju aproksimaciju, a navedena metoda naziva se Monte Carlo metoda. Programski kod koji aproksimira broj $\pi$ korištenjem Monte Carlo metode je oblika:
 
 - sekvencijalni kod
 

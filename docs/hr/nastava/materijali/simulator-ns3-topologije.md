@@ -268,7 +268,7 @@ g.AssignIpv4Addresses (Ipv4AddressHelper ("10.1.1.0", "255.255.255.0"),
 
 ### Topologija zvijezde
 
-Najjednostavnije kreiranje ima topologija zvijezde s obzirom da pomoćnik prima samo dva parametra, prvi je broj krakova koje kreirana zvijezda ima, a drugi naravno veza koja će biti između pojedinih čvorova. Jedino što moramo paziti da se kreiranjem $n$ krakova zvijezde zapravo kreira $n+1$ čvorova ukupno u topologiji iz razloga što se središnji čvor nužno kreira. U primjeru kreiramo 6 krakova, dakle 7 čvorova ukupno.
+Najjednostavnije kreiranje ima topologija zvijezde s obzirom da pomoćnik prima samo dva parametra, prvi je broj krakova koje kreirana zvijezda ima, a drugi naravno veza koja će biti između pojedinih čvorova. Jedino što moramo paziti da se kreiranjem `n` krakova zvijezde zapravo kreira `n + 1` čvorova ukupno u topologiji iz razloga što se središnji čvor nužno kreira. U primjeru kreiramo 6 krakova, dakle 7 čvorova ukupno.
 
 ``` c++
 uint32_t numSpokes = 6;

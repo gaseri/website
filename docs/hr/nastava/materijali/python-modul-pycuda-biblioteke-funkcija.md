@@ -158,7 +158,7 @@ $$
 
 !!! admonition "Zadatak"
     - Modificirajte gornji primjer tako da dodate kod koji mjeri vrijeme izvođenja.
-    - Usporedite vrijeme izvođenja algoritma na CPU-u i na GPU-u za $10^4$, $10^5$, $10^6$ iteracija; ukoliko neku od ovih veličina ne budete mogli izvesti zbog nedostatka memorije na GPU-u, zanemarite tu i sve veće. Opišite svoje zaključke.
+    - Usporedite vrijeme izvođenja algoritma na CPU-u i na GPU-u za 10^4^, 10^5^, 10^6^ iteracija; ukoliko neku od ovih veličina ne budete mogli izvesti zbog nedostatka memorije na GPU-u, zanemarite tu i sve veće. Opišite svoje zaključke.
 
 ## Modul pycuda.curandom: generiranje polja sa slučajnim brojevima
 
@@ -171,7 +171,7 @@ print(nekvalitetni_slucajni)
 
 ### XORWOW i MRG32k3a generatori
 
-- kvalitetniji generatori slučajnih brojeva; oba generatora imaju period barem $2^{190}$
+- kvalitetniji generatori slučajnih brojeva; oba generatora imaju period barem 2^190^
 - `pycuda.curandom.XORWOWRandomNumberGenerator()` -- konstruira instancu XORWOW generatora
 - `pycuda.curandom.MRG32k3aRandomNumberGenerator()` -- konstruira instancu MRG32k3a generatora
 - identično sučelje za pristup funkcionalnosti, primjer sa XORWOW generatorom
@@ -215,13 +215,13 @@ Broj $\pi$ može se aproksimativno računati i korištenjem Monte Carlo metode. 
 - četvrtina kvadrata je površine 1 (obzirom da su mu obje stranice duljine 1),
 - čevrtina kruga je površine $\frac{\pi}{4}$ (obzirom da mu je radijus 1).
 
-Slučajno odabrana točka unutar četvrtine kvadrata ima vjerojatnost $\frac{\pi}{4}$ da upadne unutar četvrtine kruga. Dakle, ako s $n$ označimo broj slučajno odabranih točaka, a s $h$ broj točaka koje se od $n$ slučajno odabranih nalaze unutar četvrtine kruga, aproksimativno možemo odrediti broj pi kao
+Slučajno odabrana točka unutar četvrtine kvadrata ima vjerojatnost $\frac{\pi}{4}$ da upadne unutar četvrtine kruga. Dakle, ako s $n$ označimo broj slučajno odabranih točaka, a s $h$ broj točaka koje se od $n$ slučajno odabranih nalaze unutar četvrtine kruga, aproksimativno možemo odrediti broj $\pi$ kao
 
 $$
 \pi = 4 \times \frac{h}{n}.
 $$
 
-Povećavajući $n$ dobivamo točniju aproksimaciju, a navedena metoda naziva se Monte Carlo metoda. Programski kod koji aproksimira broj pi korištenjem Monte Carlo metode je oblika:
+Povećavajući $n$ dobivamo točniju aproksimaciju, a navedena metoda naziva se Monte Carlo metoda. Programski kod koji aproksimira broj $\pi$ korištenjem Monte Carlo metode je oblika:
 
 - sekvencijalni kod
 
@@ -304,7 +304,7 @@ Povećavajući $n$ dobivamo točniju aproksimaciju, a navedena metoda naziva se 
 
 !!! admonition "Zadatak"
     - Modificirajte primjer dan za Monte Carlo simulaciju da dodate kod koji mjeri vrijeme izvođenja.
-    - Usporedite vrijeme izvođenja simulacije na CPU-u i na GPU-u za $10^4$, $10^5$, $10^6$, $10^7$, $10^8$, $10^9$ iteracija; ukoliko neku od ovih veličina ne budete mogli izvesti zbog nedostatka memorije na GPU-u, zanemarite tu i sve veće. Opišite svoje zaključke.
+    - Usporedite vrijeme izvođenja simulacije na CPU-u i na GPU-u za 10^4^, 10^5^, 10^6^, 10^7^, 10^8^, 10^9^ iteracija; ukoliko neku od ovih veličina ne budete mogli izvesti zbog nedostatka memorije na GPU-u, zanemarite tu i sve veće. Opišite svoje zaključke.
 
 !!! admonition "Zadatak"
     Usporedite vrijeme izvođenja programa i točnost aproksimacije pi korištenjem:
@@ -312,7 +312,7 @@ Povećavajući $n$ dobivamo točniju aproksimaciju, a navedena metoda naziva se 
     - sumiranja elemenata niza,
     - Monte Carlo simulacije,
 
-    na CPU-u i na GPU-u za $10^4$, $10^5$, $10^6$ iteracija. Opišite svoje zaključke.
+    na CPU-u i na GPU-u za 10^4^, 10^5^, 10^6^ iteracija. Opišite svoje zaključke.
 
 !!! admonition "Zadatak"
     Simulirajmo ekonomiju. Inicijalizirajte GPUArray veličine 200 elemenata koji predstavlja financijsko stanje 200 jediniki u ekonomiji koju simuliramo. Incijalizirajte vrijednosti elemenata na 10. Definirajte dvije operacije
