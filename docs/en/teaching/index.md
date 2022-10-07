@@ -31,7 +31,7 @@ Teaching materials are in Croatian, except [Code Optimization](courses/CO.md) fo
 ### Other
 
 - [Informatics (BioTech)](../../hr/nastava/kolegiji/INF-BioTech.md)
-- [Informatics for pharmacists (MedRi)](../../hr/nastava/kolegiji/INF-Pharma.md)
+- [Informatics for Pharmacists (MedRi)](../../hr/nastava/kolegiji/INF-Pharma.md)
 - [Computer Networks (RiTeh)](../../hr/nastava/kolegiji/RM-RiTeh.md)
 - [Code Optimization (YUFE)](courses/CO.md)
 
