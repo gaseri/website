@@ -123,7 +123,7 @@ Finally, I stand for individual freedom which is constantly under threat from pe
 1. **Miletić, V.**, Páll, S. & Gräter, F. [Towards fully open source GPU accelerated molecular dynamics simulation.](https://www.llvm.org/devmtg/2016-03/#lightning6) in *2016 European LLVM Developers' Meeting*, Barcelona, Spain (2016). [Recording of the talk](https://youtu.be/TkanbGAG_Fo?t=23m47s&list=PL_R5A0lGi1ADuZKWUJOVOgXr2dRW06e55)
 1. Nikolić, P., **Miletić, V.** & Svedružić, Ž. M. DNA Methyltransferase Dnmt1: Regulation of Substrate Selectivity. in *6th OEGMBT Annual Meeting 2014 Abstract Book* (eds. Khassidov, A., Glaser, W. & Klimek, C.; Austrian Association of Molecular Life Sciences; Biotechnology; Servicebetrieb ÖH-Uni Graz GmbH, Vienna, Austria), 129 (2014).
 
-### Professional Papers and Conference presentations
+### Professional papers and conference presentations
 
 1. Škarica, M., Ašenbrener Katić, M. & **Miletić, V.** [Primjena kviza u nastavi matematike.](http://docs.mipro-proceedings.com/ce/79_ce_6731.pdf) in 2021 44th International Convention on Information, Communication, and Electronic Technology (MIPRO), 996–1000 (2021).
 1. Jakupović A., Čandrlić S., Šumanm, S, Ašenbrener Katić. M., Jakšić, D., Načinović Prskalo, L., Slavuj, V., **Miletić, V.**, Kaluža, M., Davidović, V., Širola, D., Rafajac, O., Pobar, M. & Malnar, D. Ogledni primjer web aplikacije Veleri-OI Meteo System razvijene za potrebe obrazovnog programa Veleri-OI IoT School. in [Razvoj poslovnih i informatičkih sustava CASE 2021](https://case.conferenceatnet.com/Home/Custom?code=Collections), edited by Mislav Polonijo, 61–73. Zagreb, Croatia ([CASE](https://www.case.hr/), 2021).
