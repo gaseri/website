@@ -93,6 +93,10 @@ Finally, I stand for individual freedom which is constantly under threat from pe
 - PhD thesis: [Method for optimizing availability of optical telecommunication network in presence of correlated failures.](https://vedran.miletic.net/files/phd-thesis-vedran-miletic.pdf) Defended at [Department of Telecommunications](https://tel.fer.hr/ztel), [Faculty of Electrical Engineering and Computing](https://www.fer.unizg.hr/), University of Zagreb, 8th June 2015.
 - Master thesis: [Banach algebras.](https://vedran.miletic.net/files/diplomski-rad-vedran-miletic.pdf) Defended at [Department of Mathematics](https://www.math.uniri.hr/), Faculty of Arts and Sciences, University of Rijeka on 17th March 2009.
 
+### Book chapters
+
+1. Nikolić, P., **Miletić, V.**, Odorčić, I. & Svedružić, Ž. M. [In Silico Optimization of the First DNA-Independent Mechanism-Based Inhibitor of Mammalian DNA Methyltransferase DNMT1.](https://www.sciencedirect.com/science/article/pii/B9780128028087000058) *Epi-Informatics* 113–153 (2016). [doi:10.1016/B978-0-12-802808-7.00005-8](https://doi.org/10.1016/B978-0-12-802808-7.00005-8)
+
 ### Research papers in journals
 
 1. Svedružić, Ž. M, Vrbnjak, K., Martinović, M. & **Miletić, V.** [Structural Analysis of the Simultaneous Activation and Inhibition of γ-Secretase Activity in the Development of Drugs for Alzheimer’s Disease.](https://www.mdpi.com/1999-4923/13/4/514) *Pharmaceutics* **13**(4), 514 (2021). [doi:10.3390/pharmaceutics13040514](https://doi.org/10.3390/pharmaceutics13040514) ([WoS-SCIE, Q1, JIF: 6.525](https://jcr.clarivate.com/jcr-jp/journal-profile?journal=PHARMACEUTICS&year=2021); [times](https://www.webofscience.com/wos/woscc/full-record/WOS:000643531400001) [cited](https://publons.com/publon/45697621/): 2)
@@ -111,10 +115,6 @@ Finally, I stand for individual freedom which is constantly under threat from pe
 1. Džanko, M., Mikac, B., **Miletić, V.**, Gonzalez, N. A., Zervas, G. S. & Simeonidou, D. [Analytical and simulation availability models of ROADM architectures.](https://ieeexplore.ieee.org/document/6578268) in *Proceedings of the 12th International Conference on Telecommunications (ConTEL)* (eds. Pripužić, K. & Banek, M.; University of Zagreb, Zagreb, Croatia), 39–45 (IEEE, 2013).
 1. **Miletić, V.**, Mikac, B. & Džanko, M. [Modelling optical network components: A network simulator-based approach.](https://ieeexplore.ieee.org/document/6412064) in *Proceedings on the 2012 IX International Symposium on Telecommunications (BIHTEL)* (ed. Mrdović, S.; University of Sarajevo, Sarajevo, Bosnia and Herzegovina), 1–6 (IEEE, 2012). [doi:10.1109/BIHTEL.2012.6412064](https://doi.org/10.1109/BIHTEL.2012.6412064)
 1. Džanko, M., Mikac, B. & **Miletić, V.** [Availability of all-optical switching fabrics used in optical cross-connects.](https://ieeexplore.ieee.org/document/6240710) in *Proceedings on the 35th Convention International MIPRO 2012* (ed. Golubić, S.; MIPRO, Opatija, Croatia), 613–617 (IEEE, 2012).
-
-### Book chapters
-
-1. Nikolić, P., **Miletić, V.**, Odorčić, I. & Svedružić, Ž. M. [In Silico Optimization of the First DNA-Independent Mechanism-Based Inhibitor of Mammalian DNA Methyltransferase DNMT1.](https://www.sciencedirect.com/science/article/pii/B9780128028087000058) *Epi-Informatics* 113–153 (2016). [doi:10.1016/B978-0-12-802808-7.00005-8](https://doi.org/10.1016/B978-0-12-802808-7.00005-8)
 
 ### Abstracts in conference proceedings
 
