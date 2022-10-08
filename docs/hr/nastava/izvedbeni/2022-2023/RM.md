@@ -112,7 +112,9 @@ Nema.
 
 #### 1. Pohađanje nastave
 
-Nastava se odvija prema mješovitom modelu u kombinaciji klasične nastave u učionici i online nastave uz pomoć sustava za e-učenje Merlin ([moodle.srce.hr/2022-2023/](https://moodle.srce.hr/2022-2023/)).
+Nastava se odvija prema mješovitom modelu u kombinaciji klasične nastave u učionici i online nastave uz pomoć sustava za e-učenje prema rasporedu koji je prikazan je tablicom u nastavku. Studenti su dužni koristiti sustav za e-učenje Merlin ([moodle.srce.hr/2022-2023/](https://moodle.srce.hr/2022-2023/)) gdje će se objavljivati informacije o predmetu, materijali za učenje, zadaci za vježbu, zadaci za domaće zadaće te obavijesti vezane za izvođenje nastave (putem foruma *Obavijesti*).
+
+Studenti su dužni redovito pohađati nastavu, aktivno sudjelovati tijekom nastave te izvršavati aktivnosti predmeta u okviru sustava Merlin koje će nastavnici najavljivati putem foruma.
 
 #### 2. Eksperimentalni rad
 
