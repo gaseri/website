@@ -329,14 +329,15 @@ Izvor: [The Rise of JS Frameworks -- Part 1: Today](https://weblog.west-wind.com
 
 ## Aktivnosti i ocjenjivanje studenata
 
-- **Pohađanje nastave**: nije obavezno; praćenje obavijesti na [Merlinu](https://moodle.srce.hr/2021-2022/) obavezno
+- **Pohađanje nastave**: obavezno, kao i praćenje obavijesti na [Merlinu](https://moodle.srce.hr/2022-2023/)
     - predavanja u učionici, iznimno online (sveučilišni BigBlueButton): predmet je sintetski i zbog toga su *predavanja zamišljena kao interaktivna*
     - vježbe u učionici, iznimno online (sveučilišni BigBlueButton)
-- **Test na Merlinu (20 bodova)**: pokriva gradivo predavanja
+- **Test na Merlinu (30 bodova)**: pokriva gradivo predavanja
     - pišete ga u računalnoj učionici i možete za vrijeme pisanja testa koristiti *svoje bilješke* s predavanja; pitanja slična primjerima na predavanjima
-- **Praktični kolokviji (2 x 25 bodova)**: pokrivaju veći dio gradiva vježbi
-    - prag za pravo pristupa završnom ispitu iznosi 50% ostvarenih bodova *na svakom od kolokvija*; postoji mogućnost ispravka jednog kolokvija u posljednjem tjednu
-- **Završni ispit (30 bodova)**: timski razvoj web aplikacije ili usluge na temelju modela i prezentacija projekta
+- **Praktični kolokvij (20 bodova)**: pokriva osnovni dio gradiva vježbi
+    - prag za pravo pristupa završnom ispitu iznosi 50% ostvarenih bodova; postoji mogućnost ispravka kolokvija u posljednjem tjednu
+- **Izrada modela i predložaka (pogleda) za web aplikaciju ili uslugu (20 bodova)**
+- **Završni ispit (30 bodova)**: timski razvoj web aplikacije ili usluge na temelju izrađenih modela i predložaka (pogleda) te prezentacija projekta
 
 ---
 
