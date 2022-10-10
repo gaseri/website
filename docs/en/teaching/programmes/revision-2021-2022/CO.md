@@ -1,6 +1,6 @@
 # Code Optimization
 
-## Course description
+## General information
 
 Course instructor: Assoc. Prof. Ana Meštrović, PhD / Vedran Miletić, PhD  
 Name of the course: Code Optimization  

@@ -1,6 +1,6 @@
 # Code Optimization
 
-## Course description
+## General information
 
 Course instructor: Asst. Prof. Miran Pobar, PhD / Vedran Miletić, PhD  
 Name of the course: Code Optimization  
