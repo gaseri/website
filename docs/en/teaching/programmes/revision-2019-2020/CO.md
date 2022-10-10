@@ -51,7 +51,7 @@ I7. Analyse the problem of optimization phase sequence.
 - [ ] multimedia and network
 - [x] laboratories
 - [ ] mentorship
-- [ ] other
+- [ ] other ___________________
 
 ## Comments
 
