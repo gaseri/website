@@ -12,15 +12,17 @@ ECTS credits and manner of instruction:
 - ECTS credits: 5
 - Number of class hours (L+E+S): 30+30+0
 
-## Course objectives
+## Course description
+
+### Course objectives
 
 The objective of this course is to introduce students to basic principles and methods of code optimization at the level of abstract syntax, program flowchart and executable (machine) code.
 
-## Course enrollment requirements
+### Course enrollment requirements
 
 A pass mark in Algorithms and Data Structures.
 
-## Expected learning outcomes
+### Expected learning outcomes
 
 After fulfilling all the obligations anticipated by the course, students are expected to be able to:
 
@@ -32,7 +34,7 @@ I5. Describe differences between higher-level optimizations and target architect
 I6. Choose instructions.  
 I7. Analyse the problem of optimization phase sequence.
 
-## Course content
+### Course content
 
 - Overview of programming language optimizing compiler. Optimization per elements. Analysis of properties enabling transformation. Flowchart and representation of program concepts. Problem of optimization phase sequence.
 - Types of optimization. Local optimization: peephole optimization, instruction scheduling. Global optimization: common subexpressions, code changes. Interprocedural optimization. Call graph.
@@ -40,7 +42,7 @@ I7. Analyse the problem of optimization phase sequence.
 - Overview of higher-level optimizations. Pointer analysis and pseudonym analysis.
 - Target architecture-specific optimization. Choice of instruction. Instruction scheduling and related problem of optimization phase sequence.
 
-## Manner of instruction
+### Manner of instruction
 
 - [x] lectures
 - [ ] seminars and workshops
@@ -53,11 +55,11 @@ I7. Analyse the problem of optimization phase sequence.
 - [ ] mentorship
 - [ ] other ___________________
 
-## Comments
+### Comments
 
 Classes are held by combining classroom work and computer laboratory work, with the application of distance learning system. When they enrol into this course, students will be instructed to use the distance learning system. A detailed schedule with lectures and exercises will be defined in the syllabus.
 
-## Student responsibilities
+### Student responsibilities
 
 Student responsibilities for this course are as follows:
 
@@ -68,7 +70,7 @@ Student responsibilities for this course are as follows:
 
 A detailed scoring system for the course and passing scores for individual activities will be specified in the course syllabus.
 
-## Monitoring[^1] of student work
+### Monitoring[^1] of student work
 
 - Class attendance: 1
 - Class participation: 0.5
@@ -84,19 +86,19 @@ A detailed scoring system for the course and passing scores for individual activ
 - Practical work: 1
 - Portfolio:
 
-## Assessment of learning outcomes in class and at the final exam (procedure and examples)
+### Assessment of learning outcomes in class and at the final exam (procedure and examples)
 
 - Practical assessment on a computer (practical preliminary exam), in which students analyse and transform the code, and use and adapt the existing optimizations (I1, I2, I3, I4, I6).
 - Group or individual practical work in which students, according to the set instructions, implement a solution containing required optimizations and draw up documentation for their own implementation (I1, I2, I3, I4, I6).
 - Written or online assessment in which students demonstrate their understanding of theoretical concepts related to optimization of programming code, e.g. through multiple choice questions, fill in the blank questions and essay questions (I1, I2, I4, I5, I7).
 
-## Mandatory literature (at the time of submission of study programme proposal)
+### Mandatory literature (at the time of submission of study programme proposal)
 
 1. Cooper, K. D. & Torczon, L. Engineering a compiler. (Elsevier/Morgan Kaufmann, 2011).
 1. Holub, A. I. Compiler design in C. (Prentice Hall, 1990). (E-book is available for free download from the author’s site [holub.com/compiler/](https://holub.com/compiler/) and can be printed if necessary)
 1. Scripts, presentations and other learning material available in the e-course.
 
-## Optional/additional literature (at the time of submission of the study programme proposal)
+### Optional/additional literature (at the time of submission of the study programme proposal)
 
 1. Fraser, C. W. & Hanson, D. R. A retargetable C compiler: design and implementation. (Benjamin-Cummings, 1995).
 1. Muchnick, S. S. Advanced compiler design and implementation. (Morgan Kaufmann, 1997).
@@ -109,14 +111,14 @@ A detailed scoring system for the course and passing scores for individual activ
 1. The GNU Compiler Collection. GCC online documenatation. (GNU, 2019). (available online: [gcc.gnu.org/onlinedocs/](https://gcc.gnu.org/onlinedocs/))
 1. The LLVM Compiler Infrastructure. LLVM documentation. (LLVM, 2019). (available online: [llvm.org/docs/](https://llvm.org/docs/))
 
-## Number of assigned reading copies in relation to the number of students currently attending the course
+### Number of assigned reading copies in relation to the number of students currently attending the course
 
 | Title | Number of copies | Number of students |
 |-------|------------------|--------------------|
 | Engineering a compiler | 10 will be bought | 20 |
 | Compiler design in C | Unlimited (out of print, free e-book) | 20 |
 
-## Quality monitoring methods that ensure the acquisition of exit knowledge, skills and competences
+### Quality monitoring methods that ensure the acquisition of exit knowledge, skills and competences
 
 It is anticipated to make periodical evaluations for the purpose of ensuring and continuously improving the quality of classes and study programme (as part of the activities of the Quality Assurance Committee at the Department of Informatics). In the last week of classes, students will evaluate the quality of classes using an anonymous questionnaire. Students’ achievements in the course will also be analysed (percentage of students who passed the course and their average grade).
 
