@@ -10,8 +10,7 @@ Akademska godina 2022./2023.
 Naziv predmeta: Programiranje za web  
 Studijski program: Sveučilišni preddiplomski studij informatike  
 Status predmeta: **obvezatan**/izborni  
-Semestar: 5.
-
+Semestar: 5.  
 Bodovna vrijednost i način izvođenja nastave:
 
 - ECTS koeficijent opterećenosti studenata: 5

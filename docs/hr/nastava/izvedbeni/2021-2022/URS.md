@@ -10,8 +10,7 @@ Akademska godina 2021./2022.
 Naziv predmeta: Upravljanje računalnim sustavima  
 Studijski program: Sveučilišni preddiplomski studij informatike  
 Status predmeta: **obvezatan** za modul KS/izborni  
-Semestar: 6.
-
+Semestar: 6.  
 Bodovna vrijednost i način izvođenja nastave:
 
 - ECTS koeficijent opterećenosti studenata: 5

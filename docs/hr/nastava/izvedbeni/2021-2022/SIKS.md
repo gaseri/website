@@ -10,8 +10,7 @@ Akademska godina 2021./2022.
 Naziv predmeta: Sigurnost informacijskih i komunikacijskih sustava  
 Studijski program: Sveučilišni preddiplomski studij informatike  
 Status predmeta: **obvezatan**/izborni  
-Semestar: 4.
-
+Semestar: 4.  
 Bodovna vrijednost i način izvođenja nastave:
 
 - ECTS koeficijent opterećenosti studenata: 5

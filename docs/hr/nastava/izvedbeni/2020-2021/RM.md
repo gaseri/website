@@ -10,8 +10,7 @@ Akademska godina 2020./2021.
 Naziv predmeta: Računalne mreže  
 Studijski program: Sveučilišni preddiplomski studij informatike  
 Status predmeta: **obvezatan**/izborni  
-Semestar: 3.
-
+Semestar: 3.  
 Bodovna vrijednost i način izvođenja nastave:
 
 - ECTS koeficijent opterećenosti studenata: 5

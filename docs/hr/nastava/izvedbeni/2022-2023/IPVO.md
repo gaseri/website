@@ -10,8 +10,7 @@ Akademska godina 2022./2023.
 Naziv predmeta: Infrastruktura za podatke velikog obujma  
 Studijski program: Sveučilišni diplomski studij Informatika  
 Status predmeta: **obvezatan** za modul IIS/izborni  
-Semestar: 1.
-
+Semestar: 1.  
 Bodovna vrijednost i način izvođenja nastave:
 
 - ECTS koeficijent opterećenosti studenata: 6
