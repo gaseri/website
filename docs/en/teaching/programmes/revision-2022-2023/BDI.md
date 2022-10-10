@@ -129,6 +129,6 @@ A detailed scoring system for the course and passing scores for individual activ
 
 ### Quality monitoring methods that ensure the acquisition of exit knowledge, skills and competences
 
-It is envisaged that periodic evaluation will be carried out with the aim of ensuring and continuously improving the quality of the teaching and study programme (as part of the activities of the Quality Assurance Committee at the Faculty of Informatics and Digital Technologies). In the last week of classes, students will evaluate the quality of classes using an anonymous questionnaire. Students' achievements in the course will also be analysed (percentage of students who passed the course and their average grade).
+Periodical evaluations will be carried out in order to ensure and continuously improve the quality of the course and the study programme (as part of the activities of the Quality Assurance Committee of the Faculty of Informatics and Digital Technologies). In the last week of classes, students will anonymously evaluate the quality of the course. An analysis of student success in the course will also be carried out (percentage of students who successfully completed the course and their grade average).
 
 [^1]: **Important:** Enter the appropriate proportion of ECTS credits for each activity so that the total number of credits equals the ECTS value of the course. Use empty fields for additional activities.
