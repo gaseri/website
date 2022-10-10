@@ -1,4 +1,4 @@
-# Code optimization
+# Code Optimization
 
 ## Course description
 
