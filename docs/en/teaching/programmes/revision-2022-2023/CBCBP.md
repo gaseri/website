@@ -70,7 +70,7 @@ Relevant scientific papers by the course instructor:
 
 Students should actively participate in all course activities.
 
-### Monitoring of student work[^1]
+### Monitoring[^1] of student work
 
 - Class attendance: 1
 - Class participation:
@@ -121,3 +121,5 @@ Learning outcomes are assessed through scientific research in which the student 
 ### Quality monitoring methods that ensure the acquisition of exit knowledge, skills and competences
 
 Regular evaluation is planned in order to ensure and continuously improve the quality of teaching and study programs (as part of the activities of the Quality Assurance Committee of the Faculty of Informatics and Digital Technologies).
+
+[^1]: **Important:** Enter the appropriate proportion of ECTS credits for each activity so that the total number of credits equals the ECTS value of the course. Use empty fields for additional activities.
