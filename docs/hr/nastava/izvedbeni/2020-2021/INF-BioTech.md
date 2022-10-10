@@ -1,29 +1,19 @@
 # Detaljni izvedbeni nastavni plan za kolegij: INFORMATIKA
 
-**Akademska godina:** 2020./2021.
-
-**Studij:** Preddiplomski studij Biotehnologija i istraživanje lijekova
-
-**Kod kolegija:** BIL103
-
-**ECTS bodovi:** 3
-
-**Jezik na kojem se izvodi kolegij:** Hrvatski
-
-**Nastavno opterećenje kolegija:** 30 sati (10P + 20V) (*online:* 8P; 8/30 = 27%)
-
+**Akademska godina:** 2020./2021.  
+**Studij:** Preddiplomski studij Biotehnologija i istraživanje lijekova  
+**Kod kolegija:** BIL103  
+**ECTS bodovi:** 3  
+**Jezik na kojem se izvodi kolegij:** Hrvatski  
+**Nastavno opterećenje kolegija:** 30 sati (10P + 20V) (*online:* 8P; 8/30 = 27%)  
 **Preduvjeti za upis kolegija:** Nema
 
 ## Nositelj kolegija i kontakt podaci
 
-**Titula i ime:** v. pred. dr. sc. Vedran Miletić
-
-**Adresa:** [Ulica Radmile Matejčić 2](https://www.openstreetmap.org/way/436306129), soba O-520
-
-**Telefon:** 051/584-717
-
-**E-mail:** vmiletic@inf.uniri.hr
-
+**Titula i ime:** v. pred. dr. sc. Vedran Miletić  
+**Adresa:** [Ulica Radmile Matejčić 2](https://www.openstreetmap.org/way/436306129), soba O-520  
+**Telefon:** 051/584-717  
+**E-mail:** vmiletic@inf.uniri.hr  
 **Web stranica:** [vedran.miletic.net](https://vedran.miletic.net/)
 
 ## Vrijeme konzultacija

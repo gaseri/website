@@ -1,29 +1,19 @@
 # Detaljni izvedbeni nastavni plan za kolegij: INFORMATIKA
 
-**Akademska godina:** 2018./2019.
-
-**Studij:** Preddiplomski studij Biotehnologija i istraživanje lijekova
-
-**Kod kolegija:** BIL103
-
-**ECTS bodovi:** 3
-
-**Jezik na kojem se izvodi kolegij:** Hrvatski
-
-**Nastavno opterećenje kolegija:** 30 sati (10P + 20V)
-
+**Akademska godina:** 2018./2019.  
+**Studij:** Preddiplomski studij Biotehnologija i istraživanje lijekova  
+**Kod kolegija:** BIL103  
+**ECTS bodovi:** 3  
+**Jezik na kojem se izvodi kolegij:** Hrvatski  
+**Nastavno opterećenje kolegija:** 30 sati (10P + 20V)  
 **Preduvjeti za upis kolegija:** Nema
 
 ## Nositelj kolegija i kontakt podaci
 
-**Titula i ime:** doc. dr. sc. Sanja Čandrlić
-
-**Adresa:** [Ulica Radmile Matejčić 2](https://www.openstreetmap.org/way/436306129), soba O-515
-
-**Telefon:** 051/584-706
-
-**E-mail:** sanjac@inf.uniri.hr
-
+**Titula i ime:** doc. dr. sc. Sanja Čandrlić  
+**Adresa:** [Ulica Radmile Matejčić 2](https://www.openstreetmap.org/way/436306129), soba O-515  
+**Telefon:** 051/584-706  
+**E-mail:** sanjac@inf.uniri.hr  
 **Web stranica:** [portal.uniri.hr/Portfelj/Index/487](https://portal.uniri.hr/Portfelj/Index/487)
 
 ## Vrijeme konzultacija
