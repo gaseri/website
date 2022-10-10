@@ -388,11 +388,11 @@ nav:
         - The LLVM tools: en/teaching/materials/llvm-tools.md
       - Programmes:
         - Revision 2022/2023:
-          - Computational biochemistry and biophysics: en/teaching/programmes/revision-2022-2023/CBCBP.md
+          - Computational Biochemistry and Biophysics: en/teaching/programmes/revision-2022-2023/CBCBP.md
         - Revision 2021/2022:
-          - Code optimization: en/teaching/programmes/revision-2021-2022/CO.md
+          - Code Optimization: en/teaching/programmes/revision-2021-2022/CO.md
         - Revision 2019/2020:
-          - Code optimization: en/teaching/programmes/revision-2019-2020/CO.md
+          - Code Optimization: en/teaching/programmes/revision-2019-2020/CO.md
     - Tutorials:
       - GROMACS:
         - Overview: en/tutorials/gromacs/index.md
