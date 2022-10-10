@@ -153,7 +153,7 @@ Provjera ishoda učenja vrši se preko sljedećih procjena znanja:
 Ukupno trajanje kolegija je 15 tjedana (jedan semestar).
 
 | Nastavna cjelina | Nastavne aktivnosti | Trajanje / tj. | Opterećenje studenta / h |
-|------------------|---------------------|----------------|--------------------------|
+| ---------------- | ------------------- | -------------- | ------------------------ |
 | 1. | Pregled optimizirajućeg prevoditelja programskog jezika. Optimizacija po dijelovima. Analiza svojstava koja omogućuju transformaciju | 1 | 5 |
 | 2. | Graf toka i reprezentacija programskih koncepata. Problem redoslijeda faza optimizacije. **1. pisani osvrt** | 1 | 7 |
 | 3. | Vrste optimizacije. Lokalna optimizacija: optimizacija kroz okance, zakazivanje instrukcija | 1 | 5 |
@@ -175,7 +175,7 @@ Ukupno trajanje kolegija je 15 tjedana (jedan semestar).
 Projekt će se provesti u 7 faza.
 
 | Faza | Trajanje | Aktivnosti i rezultati |
-|------|----------|------------------------|
+| ---- | -------- | ---------------------- |
 | 1. | 15. 11. 2020. -- 31. 1. 2021. | **Aktivnosti:** Nabava literature za izradu online lekcija. Nabava opreme koja će, uz postojeća računala na Odjelu za informatiku, biti korištena za izučavanje optimizacije programskog koda na praktičnim primjerima te usporedbu optimizacija programskog koda na različitim arhitekturama. Priprema razvojne okoline (program prevoditelji, programi za ispravljanje pogrešaka, integrirana razvojan okruženja i dr.) na postojećoj i nabavljenoj opremi. **Rezultati:** Nabavljena literatura i oprema; postavljena razvojna okolina. |
 | 2. | 1. 2. 2021. -- 28. 2. 2020. | **Aktivnosti:** Proučavanje literature i priprema nacrta sadržaja online lekcija. Izrada detaljnog izvedbenog nastavnog plana kolegija. **Rezultati:** Pripremljen nacrt sadržaja online lekcija. Izrađen detaljni izvedbeni nastavni plan. |
 | 3. | 1. 3. 2021. -- 31. 7. 2021. | **Aktivnosti:** Izrada tekstualnih i audiovizualnih sadržaja online lekcija i primjera riješenih zadataka na engleskom jeziku. **Rezultati:** Izrađeni tekstualni i audiovizualni materijali spremni za postavljanje na Merlin. |

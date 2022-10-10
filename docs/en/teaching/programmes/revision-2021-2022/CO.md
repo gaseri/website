@@ -114,7 +114,7 @@ A detailed scoring system for the course and passing scores for individual activ
 ### Number of assigned reading copies in relation to the number of students currently attending the course
 
 | Title | Number of copies | Number of students |
-|-------|------------------|--------------------|
+| ----- | ---------------- | ------------------ |
 | Engineering a compiler | 10 will be bought | 20 |
 | Compiler design in C | Unlimited (out of print, free e-book) | 20 |
 
