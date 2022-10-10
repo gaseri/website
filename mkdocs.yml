@@ -388,6 +388,7 @@ nav:
         - The LLVM tools: en/teaching/materials/llvm-tools.md
       - Programmes:
         - Revision 2022/2023:
+          - Big Data Infrastructure: en/teaching/programmes/revision-2022-2023/BDI.md
           - Computational Biochemistry and Biophysics: en/teaching/programmes/revision-2022-2023/CBCBP.md
         - Revision 2021/2022:
           - Code Optimization: en/teaching/programmes/revision-2021-2022/CO.md
