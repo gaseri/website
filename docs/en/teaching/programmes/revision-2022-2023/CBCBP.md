@@ -4,7 +4,7 @@
 
 Course instructor: Assist. Prof. Vedran Miletić  
 Name of the course: Computational Biochemistry and Biophysics  
-Study programme: University Postgraduate Doctoral Study Informatics  
+Study programme: Postgraduate University Doctoral Study Programme Informatics  
 Status of the course: compulsory/**elective**  
 Year of study: 1./2.
 

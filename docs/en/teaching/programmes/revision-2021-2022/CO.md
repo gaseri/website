@@ -4,7 +4,7 @@
 
 Course instructor: Assoc. Prof. Ana Meštrović, PhD / Vedran Miletić, PhD  
 Name of the course: Code Optimization  
-Study programme: Undergraduate university programme in informatics  
+Study programme: Undergraduate University Study Programme Informatics  
 Status of the course: **compulsory** for Software Development (SD) module, elective for other modules  
 Year of study: 3  
 ECTS credits and manner of instruction:
