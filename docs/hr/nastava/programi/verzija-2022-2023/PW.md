@@ -6,8 +6,7 @@ Nositelj predmeta: doc. dr. sc. Vedran Miletić
 Naziv predmeta: Programiranje za web  
 Studijski program: Preddiplomski sveučilišni studij Informatika  
 Status predmeta: **obvezatan** za modul RPP  
-Godina: 3.
-
+Godina: 3.  
 Bodovna vrijednost i način izvođenja nastave:
 
 - ECTS koeficijent opterećenosti studenata: 5

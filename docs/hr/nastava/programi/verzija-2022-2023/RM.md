@@ -6,8 +6,7 @@ Nositelj predmeta: doc. dr. sc. Vedran Miletić
 Naziv predmeta: Računalne mreže  
 Studijski program: Preddiplomski sveučilišni studij Informatika  
 Status predmeta: **obvezatan**/izborni  
-Godina: 2.
-
+Godina: 2.  
 Bodovna vrijednost i način izvođenja nastave:
 
 - ECTS koeficijent opterećenosti studenata: 5

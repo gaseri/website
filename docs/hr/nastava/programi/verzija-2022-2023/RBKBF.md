@@ -6,8 +6,7 @@ Nositelj predmeta: doc. dr. sc. Vedran Miletić
 Naziv predmeta: Računalna biokemija i biofizika  
 Studijski program: Poslijediplomski sveučilišni doktorski studij Informatika  
 Status predmeta: obvezatan/**izborni**  
-Godina: 1./2.
-
+Godina: 1./2.  
 Bodovna vrijednost i način izvođenja nastave:
 
 - ECTS koeficijent opterećenosti studenata: 6

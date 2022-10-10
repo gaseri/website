@@ -6,8 +6,7 @@ Course instructor: Assist. Prof. Vedran Miletić
 Name of the course: Computational Biochemistry and Biophysics  
 Study programme: Postgraduate University Doctoral Study Programme Informatics  
 Status of the course: compulsory/**elective**  
-Year of study: 1./2.
-
+Year of study: 1./2.  
 ECTS credits and manner of instruction:
 
 - ECTS credits: 6
