@@ -1,23 +1,22 @@
 # Mrežni i mobilni operacijski sustavi
 
+- [Instalacija i konfiguracija softvera za vježbe iz kolegija Mrežni i mobilni operacijski sustavi](../materijali/mmos-instalacija-softvera-manjaro.md)
+
 ## Vježbe
+
+- [Osnovni pojmovi mrežnih operacijskih sustava](../materijali/mrezni-os-pojmovi.md)
 
 ### Korištenje virtualizacijskih tehnologija
 
-- [Virtualizacija korištenjem KVM-a i QEMU-a](../materijali/kvm-virtualizacija.md)
-- [Konfiguracija cloud slike korištenjem cloud-inita](../materijali/cloud-init-konfiguracija-cloud-slike.md)
-- [Virtualizacija korištenjem Virtual Machine Managera](../materijali/virt-manager-virtualizacija.md)
-- [Virtualizacija korištenjem libvirta](../materijali/libvirt-virtualizacija.md)
 - [Kontejnerizacija alatom Docker](../materijali/docker-kontejneri.md)
 - [Komponiranje kontejnera alatom Docker Compose](../materijali/docker-compose-kompozicije-kontejnera.md)
 
-### Upravljanje aplikacijama i uslugama na sustavu
+### Specifičnosti web poslužitelja
 
-- [Upravljanje paketima](../materijali/yum-rpm-upravljanje-paketima-operacijskog-sustava.md)
-- [Pakiranje deb paketa](../materijali/deb-pakiranje-paketa.md)
-- [Upravljanje uslugama operacijskog sustava](../materijali/systemd-systemctl-upravljanje-uslugama-operacijskog-sustava.md)
-- [Praćenje događaja operacijskog sustava](../materijali/systemd-journalctl-pracenje-dogadjaja-operacijskog-sustava.md)
-- [Automatizacija zadaća operacijskog sustava](../materijali/systemd-timer-automatizacija-zadaca-operacijskog-sustava.md)
+- [Osnovna konfiguracija web poslužitelja Apache HTTP Server](../materijali/apache-web-posluzitelj.md)
+- [Konfiguracija virtualnih domaćina u web poslužitelju Apache HTTP Server](../materijali/apache-virtual-host.md)
+- [Konfiguracija HTTPS-a u web poslužitelju Apache HTTP Server](../materijali/apache-mod-ssl.md)
+- [Mjerenje performansi web poslužitelja alatom ab (Apache HTTP server benchmarking tool)](../materijali/apache-ab-mjerenje-performansi-web-posluzitelja.md)
 
 ### Specifičnosti sustava za upravljanje bazom podataka
 
