@@ -59,7 +59,7 @@ Docker volumeni (engl. *volumes*) široko su korišten i koristan alat za osigur
 U ovom dijelu naučit ćete kako preuzeti slike i pokrenuti kontejnere, ali i o izlolaciji samih kontejnera. Možete provjeriti je li Docker instaliran i prikupiti neke informacije o trenutnoj verziji pomoću sljedeće naredbe:
 
 ``` shell
-$ sudo docker version
+$ docker version
 
 Client:
  Version:           20.10.17
@@ -94,7 +94,7 @@ Server:
 Također postoji brz i jednostavan način da vidite koliko je Docker kontejnera trenutno pokrenuto i vidite neke od Dockerovih konfiguriranih opcija:
 
 ``` shell
-$ sudo docker info
+$ docker info
 
 Client:
  Context:    default
@@ -301,7 +301,7 @@ CONTAINER ID   IMAGE     COMMAND     CREATED          STATUS                    
 Ponovo upišimo naredbu:
 
 ``` shell
-$ sudo docker info
+$ docker info
 
 ...
 Server:
@@ -416,14 +416,14 @@ Ovaj put dobivamo popis direktorija i prikazuje našu datoteku "hello.txt" jer s
 Baratanje kontejnerima vršimo naredbom `docker container`. Provjerimo ponovno popis pokrenutih kontejnera naredbom `docker container list`:
 
 ``` shell
-$ sudo docker container list
+$ docker container list
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
 ```
 
 Vidimo da ih nema. Dodamo li parametar `-a` (`--all`), bit će prikazani svi kontejneri:
 
 ``` shell
-$ sudo docker container list -a
+$ docker container list -a
 CONTAINER ID        IMAGE               COMMAND              CREATED             STATUS                     PORTS               NAMES
 1e470c81b80a        httpd               "hello"              12 minutes ago      Exited (0) 3 minutes ago                       eager_mcnulty
 ```
@@ -431,21 +431,21 @@ CONTAINER ID        IMAGE               COMMAND              CREATED            
 Među njima je i kontejner koji smo stvorili pokretanjem slike `hello-world`. Pokrenimo ga naredbom `docker container start` korištenjem ID-a:
 
 ``` shell
-$ sudo docker container start 1e470c81b80a
+$ docker container start 1e470c81b80a
 1e470c81b80a
 ```
 
 ili korištenjem imena:
 
 ``` shell
-$ sudo docker container start eager_mcnulty
+$ docker container start eager_mcnulty
 eager_mcnulty
 ```
 
 Kako god smo izveli pokretanje, uvjerimo se da je pokrenut naredbom `docker ps`:
 
 ``` shell
-$ sudo docker ps
+$ docker ps
 CONTAINER ID        IMAGE               COMMAND              CREATED             STATUS              PORTS               NAMES
 1e470c81b80a        httpd               "hello"              14 minutes ago      Up 6 seconds        80/tcp              eager_mcnulty
 ```
@@ -453,7 +453,7 @@ CONTAINER ID        IMAGE               COMMAND              CREATED            
 Naposlijetku, naredbom `docker logs` pročitajmo poruke koje je kontejner ispisao nakon pokretanja:
 
 ``` shell
-$ sudo docker logs eager_mcnulty
+$ docker logs eager_mcnulty
 Hello from Docker!
 This message shows that your installation appears to be working correctly.
 
@@ -489,13 +489,13 @@ Ideja jest da se napravi mali OS koji ce se moci pokrenuti na svakoj mašini gdj
 Proces kreće se instaliravanjem Docker alata na mašinu, što je već i učinjeno. Sljedeći korak jest pokretanje samom dockera i prijavljivanje na online repozitorij. Iskoristio sam postojeći account sa github-a za izradu docker repozitorija te sam se na taj način prijavio. Odabrao sam sinatru za sustav koji ću prilagoditi svojim potrebama pa za početak povlačim na lokalnu mašinu:
 
 ``` shell
-$ sudo docker pull training/sinatra
+$ docker pull training/sinatra
 ```
 
 Sljedeći korak jest pokretanje preuzetog sustava i izvršavanje željenih izmjena u sustavu, instaliravanje i brisanje paketa i sl, u ovom slučaju demonstracije radi sam instalirao json i jos neke dodatne alate:
 
 ``` shell
-$ sudo docker run -t -i training/sinatra /bin/bash
+$ docker run -t -i training/sinatra /bin/bash
 $ gem install json
 $ sudo apt-get install git
 ```
@@ -509,19 +509,19 @@ $ git clone https://lbrumnic@bitbucket.org/lbrumnic/ds_projekt.git
 Nakon toga izlaskom iz trenutne slike, vrši se commit napravljenih izmjena prema trenutnom "kontejneru" koji se kreirao pokretanjem slike:
 
 ``` shell
-$ sudo docker commit 79de9d702c2e lukabrumnic/sinatraluka
+$ docker commit 79de9d702c2e lukabrumnic/sinatraluka
 ```
 
 Svaki kontejner pri pokretanju dobije svoj individualni id koje se može provjeriti naredbom:
 
 ``` shell
-$ sudo docker ps
+$ docker ps
 ```
 
 Na kraju ta ista slika se "push-a" na online repozitorij:
 
 ``` shell
-$ sudo docker push lukabrumnic/sinatraluka
+$ docker push lukabrumnic/sinatraluka
 ```
 
 U sljedećem koraku sljedi testiranje napravljenih izmjena a to ću napraviti tako da podignem novi virtualni stroj sa sutavom Fedora 20, te se na njemu ulogiram u svoj Docker repozitorij, preuzmem
@@ -530,9 +530,9 @@ traženu sliku i provjerim imam li instaliran `json` na njoj.
 Fedora 20 ima Docker u službenom repozitoriju paketa stoga je dovoljno instalirati paket `docker-io`. Nakon instalacije paketa, vrši se loginna docker repozitorij, zatim se preuzima željeni image te se istog pokreće.
 
 ``` shell
-$ sudo docker login
-$ sudo docker pull lukabrumnic/sinatraluka
-$ sudo docker run -t -i lukabrumnic/sinatraluka /bin/bash
+$ docker login
+$ docker pull lukabrumnic/sinatraluka
+$ docker run -t -i lukabrumnic/sinatraluka /bin/bash
 ```
 
 Provjeru da je riječ o istom imageu nalazim u home folderu gdje sam preuzeo repozitorij sa Bitbucketa.
@@ -542,25 +542,25 @@ Provjeru da je riječ o istom imageu nalazim u home folderu gdje sam preuzeo rep
 Od ostalih primjena postoji mogućnost pokretanja daemon aplikacije u pozadini čime se zapravo pokreće novi container u kojem se neka aplikacije vrti. Još jedna korisna mogućnost je pokretanje web aplikacija u Dockeru. Uzmimo primjer:
 
 ``` shell
-$ sudo docker run -d -P training/webapp python app.py
+$ docker run -d -P training/webapp python app.py
 ```
 
 Aplikacije se pokrene na portu 49153 no može se ručno podesiti da aplikacije se izvršava na željenom portu. Primjer prema gornjem primjeru:
 
 ``` shell
-$ sudo docker run -d -p 5000:5000 training/webapp python app.py
+$ docker run -d -p 5000:5000 training/webapp python app.py
 ```
 
 Dodatno se još može specificirati i interface na kojemu će se pokrenuti aplikacije, po defaultu će vezati specificirani port na sva sučelja no to se može ograničiti. Primjer za gonji primjer:
 
 ``` shell
-$ sudo docker run -d -p 127.0.0.1:5000:5000 training/webapp python app.py
+$ docker run -d -p 127.0.0.1:5000:5000 training/webapp python app.py
 ```
 
 Također se mogu pokrenuti u pozadini i izvršavati određene aktivnosti bez smetnje za klijenta.
 
 ``` shell
-$ sudo docker run -d -p ubuntu:14.04 /bin/sh -c "while true; do echo hello world; sleep 1; done"
+$ docker run -d -p ubuntu:14.04 /bin/sh -c "while true; do echo hello world; sleep 1; done"
 ```
 
 ## Konfiguracija
