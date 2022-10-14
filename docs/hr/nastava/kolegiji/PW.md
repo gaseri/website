@@ -21,6 +21,8 @@
 
 ## Vježbe
 
+- [Instalacija i konfiguracija softvera za vježbe iz kolegija Programiranje za web](../materijali/pw-instalacija-softvera-manjaro.md)
+
 ### Ponavljanje gradiva i temeljni koncepti
 
 - [Rad s protokolima aplikacijske razine](../materijali/curl-protokoli-aplikacijske-razine.md)

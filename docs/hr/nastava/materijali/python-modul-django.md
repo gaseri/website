@@ -4,71 +4,12 @@ author: Milan Petrović
 
 # Python: Django
 
-## Postavljanje razvojnog okruženja web aplikacija na operacijskim sustavima sličnim Unixu i Windowsima. Stvaranje projekta i organizacija koda. Korištenje dokumentacije
-
-### Instalacija programske podrške
-
-Razvojno okruženje u kojem se radi na vježbama je Visual Studio (VS) Code koji možete preuzeti na [službenim stranicama](https://code.visualstudio.com/).
-
-Nakon što preuzimete i instalirate VS Code, pokrenite ga, zatim kraticom ++control+shift+x++ otvorite dio za instalaciju ekstenzija, pronađite Python i instalirajte ga. Dodatna upustva za instalaciju Python ekstenzije unutar VS Codea možete pronaći u [službenom tutorialu](https://code.visualstudio.com/docs/python/python-tutorial).
-
-Specijalno, na [Arch Linuxu](https://archlinux.org/) i derivatima kao što su [Manjaro](https://manjaro.org/) i [Garuda Linux](https://garudalinux.org/) možete instalirati [službeni VS Code binary](https://aur.archlinux.org/packages/visual-studio-code-bin) iz AUR-a:
-
-```
-$ paru -S visual-studio-code-bin
-(...)
-```
-
-#### Instalacija preduvjeta
-
-Preduvjet je instalacija [pip](https://pypi.org/project/pip/)-a i [Pylint](https://pylint.org/)-a; naredbe za [Ubuntu WSL](https://ubuntu.com/wsl) ili koji god:
-
-``` shell
-$ sudo apt install python-is-python3 python3-pip pylint
-(...)
-```
-
-Naredbe za Linux distribucije temeljene na Arch Linuxu (npr. Manjaro i Garuda Linux):
-
-```
-$ sudo pacman -S python-pip python-pylint
-(...)
-```
-
-#### Instalacija Djanga
-
-Instalacija pakirane verzije [Djanga](https://www.djangoproject.com/) na Ubuntu WSL-u i drugima (nepreporučeno jer je verzija 2.x):
-
-``` shell
-$ sudo apt install python3-django
-(...)
-```
-
-Naredbe za Linux distribucije temeljene na Arch Linuxu (npr. Manjaro i Garuda Linux) (nepreporučeno jer je verzija 3.x):
-
-``` shell
-$ sudo pacman -S python-django
-(...)
-```
-
-Instalacija Djanga korištenjem pip-a (preporučeno jer je verzija 4.x, radi na svim distribucijama, koristimo i u učionici):
-
-``` shell
-$ pip3 install Django
-(...)
-```
-
-ili
-
-``` shell
-$ python3 -m pip install Django
-(...)
-```
-
-Primjer web sjedišta u Djangu:
+Primjeri web sjedišta u Djangu:
 
 - [Instagram](https://www.instagram.com/) (velikim dijelom)
 - [RiTeh](http://www.riteh.uniri.hr/) (shoutout: [Zavod za računarstvo](http://www.riteh.uniri.hr/ustroj/zavodi/zr/))
+
+## Postavljanje razvojnog okruženja web aplikacija na operacijskim sustavima sličnim Unixu i Windowsima. Stvaranje projekta i organizacija koda. Korištenje dokumentacije
 
 ### Stvaranje prvog projekta
 

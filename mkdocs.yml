@@ -210,6 +210,7 @@ nav:
         - Message transfer agent -- Postfix: hr/nastava/materijali/postfix-procmail-smtp-posluzitelj.md
         - Konfiguracija sustava za upravljanje bazom podataka PostgreSQL: hr/nastava/materijali/postgresql-sustav-za-upravljanje-bazom-podataka.md
         - Datotečni sustavi Procfs i Sysfs: hr/nastava/materijali/procfs-sysfs-informacije-konfiguracija.md
+        - Instalacija i konfiguracija softvera za vježbe iz kolegija Programiranje za web: hr/nastava/materijali/pw-instalacija-softvera-manjaro.md
         - Pokretanje računala putem mrežnog sučelja: hr/nastava/materijali/pxe-pokretanje-racunala-putem-mreznog-sucelja.md
         - Vizualizacija molekula u alatu PyMOL: hr/nastava/materijali/pymol-vizualizacija-molekula.md
         - Dokumentiranje Python koda: hr/nastava/materijali/python-dokumentiranje.md
