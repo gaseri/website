@@ -171,7 +171,7 @@ To generate this message, Docker took the following steps:
 
 Izlaz pokretanja kontejnera temeljenog na slici `hello-world` govori što se upravo dogodilo. Docker koji radi na vašem terminalu pokušao je pronaći sliku pod nazivom `hello-world`. Budući da ste tek započeli, nema slika pohranjenih lokalno (`Unable to find image 'hello-world:latest' locally`) pa Docker odlazi u svoj zadani Docker registar, Docker Hub, i traži sliku pod nazivom `hello-world`. Tamo pronalazi sliku, povlači je i zatim pokreće u kontejneru. Jedina funkcija `hello-world`-a je ispisati tekst koji vidite na vašem terminalu, nakon čega kontejner izlazi.
 
-### Upravljanje Dockero slikama
+### Upravljanje Dockerovim slikama
 
 Sada ste spremni za instaliranje slika s Dockerom. Ako trebate tražiti željeni softver putem Dockera, možete koristiti sljedeću sintaksu naredbe:
 
