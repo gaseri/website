@@ -178,6 +178,10 @@ Visual Studio Code uključuje podršku za [Markdown](https://code.visualstudio.c
 
 Pokrenite Visual Studio Code. U dijelu `Extensions` koji se nalazi u `Side Bar`-u ([pregled sučelja](https://code.visualstudio.com/docs/getstarted/userinterface)) instalirajte proširenje [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint).
 
+### Paket proširenja za PHP
+
+U dijelu `Extensions` također instalirajte [PHP Extension Pack](https://marketplace.visualstudio.com/items?itemName=xdebug.php-pack).
+
 ## HTTP klijent cURL i sučelje Curlie
 
 ``` shell
@@ -185,10 +189,10 @@ $ sudo pacman -S curl curlie
 (...)
 ```
 
-## HTTP poslužitelj za razvoj aplikacija, testiranje i edukaciju PHP built-in web server i JSON procesor jq
+## HTTP poslužitelj za razvoj aplikacija, testiranje i edukaciju PHP built-in web server, proširenje Xdebug i JSON procesor jq
 
 ``` shell
-$ sudo pacman -S php jq
+$ sudo pacman -S php xdebug jq
 (...)
 ```
 
