@@ -171,6 +171,14 @@ To generate this message, Docker took the following steps:
 
 Izlaz pokretanja kontejnera temeljenog na slici `hello-world` govori što se upravo dogodilo. Docker koji radi na vašem terminalu pokušao je pronaći sliku pod nazivom `hello-world`. Budući da ste tek započeli, nema slika pohranjenih lokalno (`Unable to find image 'hello-world:latest' locally`) pa Docker odlazi u svoj zadani Docker registar, Docker Hub, i traži sliku pod nazivom `hello-world`. Tamo pronalazi sliku, povlači je i zatim pokreće u kontejneru. Jedina funkcija `hello-world`-a je ispisati tekst koji vidite na vašem terminalu, nakon čega kontejner izlazi.
 
+!!! admonition "Zadatak"
+    Pokrenite kontejner zasnovan na [slici Alpine Linuxa](https://hub.docker.com/_/alpine/). [Alpine Linux](https://alpinelinux.org/) je lagana distribucija Linuxa pa se brzo skida i pokreće.
+
+!!! admonition "Zadatak"
+    Docker ima mogućnost pokretanja naredbe unutar kontejnera u interaktivnom terminalu korištenjem parametara `-i` i `-t`. Pokrenite naredbu `/bin/sh` unutar kontejnera Alpine Linuxa.
+
+    Kada ste unutar kontejnera koji pokrenuli ljusku, možete isprobati nekoliko naredbi poput `ls -l`, `uname -a` i drugih, isprobajte ih. Imajte na umu da je Alpine Linux malena distribucija pa bi moglo nedostajati nekoliko naredbi. Izađite iz ljuske i kontejnera upisivanjem naredbe `exit`.
+
 ### Upravljanje Dockerovim slikama
 
 Sada ste spremni za instaliranje slika s Dockerom. Ako trebate tražiti željeni softver putem Dockera, možete koristiti sljedeću sintaksu naredbe:
@@ -334,11 +342,6 @@ Nakon što odlučite da vam kontejner više ne treba, uklonite ga pomoću naredb
 ``` shell
 $ docker rm intelligent_babbage 
 ```
-
-### Zadaci za vježbu
-
-1. Pokrenite Alpine kontejner. Alpine je lagana distribucija Linuxa pa se brzo skida i pokreće.
-2. Docker ima mogućnost dodavanjem oznake za pokretanje kontejnera u interaktivnom terminalu. Za ovaj primjer upišite `docker container run -it alpine /bin/sh`. Sada ste unutar kontejnera koji pokreće Linux ljusku i možete isprobati nekoliko naredbi poput `ls -l`, `uname -a` i drugih, isprobajte ih. Imajte na umu da je Alpine mali Linux OS pa bi moglo nedostajati nekoliko naredbi. Izađite iz ljuske i kontejnera upisivanjem `exit` naredbe.
 
 ### Izolacija Docker kontejnera
 
