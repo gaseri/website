@@ -4,7 +4,7 @@ author: Vedran Miletić
 
 # The usage of the LLVM libraries in the Mesa 3D graphics library
 
-The [Mesa 3D graphics library](https://www.mesa3d.org/) is the de facto standard open-source implementation of [OpenGL](https://www.opengl.org/), [OpenGL ES](https://www.khronos.org/opengles/), [OpenCL](https://www.khronos.org/opencl/), [Vulkan](https://www.vulkan.org/), and [other open standards](https://www.khronos.org/developers). Mesa offers [several hardware drivers](https://docs.mesa3d.org/systems.html), including the drivers for several generations of AMD Radeon GPUs. In the following we will focus on [RadeonSI](https://www.phoronix.com/scan.php?page=search&q=RadeonSI), Mesa's OpenGL, OpenGL ES, and OpenCL driver for Graphics Core Next (GCN) and Radeon DNA (RDNA) GPUs. For what it's worth, Mesa's GCN and RDNA Vulkan driver is called [RADV](https://www.phoronix.com/scan.php?page=search&q=RADV); more detailed overview of the driver structure can be found in the [State of open source AMD GPU drivers](https://2019.dorscluc.org/talk/29/) presentation ([recording](https://youtu.be/cWyBkWkzcYM)).
+The [Mesa 3D graphics library](https://www.mesa3d.org/) represents the de facto standard open-source implementation of [OpenGL](https://www.opengl.org/), [OpenGL ES](https://www.khronos.org/opengles/), [OpenCL](https://www.khronos.org/opencl/), [Vulkan](https://www.vulkan.org/), and [other open standards](https://www.khronos.org/developers). Mesa offers [several hardware drivers](https://docs.mesa3d.org/systems.html), including the drivers for several generations of AMD Radeon GPUs. In the following we will focus on [RadeonSI](https://www.phoronix.com/scan.php?page=search&q=RadeonSI), Mesa's OpenGL, OpenGL ES, and OpenCL driver for Graphics Core Next (GCN) and Radeon DNA (RDNA) GPUs. For what it's worth, Mesa's GCN and RDNA Vulkan driver is called [RADV](https://www.phoronix.com/scan.php?page=search&q=RADV); a more detailed overview of the driver structure can be found in the [State of open source AMD GPU drivers](https://2019.dorscluc.org/talk/29/) presentation ([recording](https://youtu.be/cWyBkWkzcYM)).
 
 ## Overview of the Graphics Core Next (GCN) and Radeon DNA (RDNA) architecture generations
 
@@ -28,7 +28,7 @@ Generations of the [Radeon DNA (RDNA)](https://en.wikipedia.org/wiki/RDNA_(micro
 !!! note
     While Clover on RadeonSI can run many OpenCL programs, it is not a complete implementation of the OpenCL standard; the detailed list of the supported extensions can be found on the [Mesa drivers matrix](https://mesamatrix.net/#OpenCL). There is an ongoing community effort to [improve the Clover frontend](https://cgit.freedesktop.org/mesa/mesa/log/?qt=grep&q=clover) and the RadeonSI driver as well. For a 2016/2017 overview of the work required to make Clover and RadeonSI usable for the scientific computing applications, see the presentations [LLVM AMDGPU for High Performance Computing: are we competitive yet?](https://www.llvm.org/devmtg/2017-03/2017/02/20/accepted-sessions.html#31) ([slides](https://llvm.org/devmtg/2017-03//assets/slides/llvm_admgpu_for_high_performance_computing_are_we_compatitive_yet.pdf), [recording](https://youtu.be/r2Chmg85Xik?list=PL_R5A0lGi1AD12EbUChEnD3s51oqfZLe3)) and [Towards fully open source GPU accelerated molecular dynamics simulation](https://www.llvm.org/devmtg/2016-03/#lightning6) ([slides](https://llvm.org/devmtg/2016-03/Lightning-Talks/miletic-gromacs-amdgpu.pdf), [recording](https://youtu.be/TkanbGAG_Fo?t=23m47s&list=PL_R5A0lGi1ADuZKWUJOVOgXr2dRW06e55)) by the author of these exercises.
 
-We'll start by running [clinfo](https://github.com/Oblomov/clinfo), a simple OpenCL program that prints all known properties of all OpenCL platforms and devices on the system. Using the `--version` parameter we'll make sure that `clinfo` command is working properly and we're using a recent version:
+We will start by running [clinfo](https://github.com/Oblomov/clinfo), a simple OpenCL program that prints out all known properties of all OpenCL platforms and devices in the system. Using the `--version` parameter we'll make sure that the `clinfo` command is working properly and that a recent version is being used:
 
 ``` shell
 $ clinfo --version
@@ -175,7 +175,7 @@ Mesa supports [many environment variables](https://docs.mesa3d.org/envvars.html)
 
 ## Compiling the OpenCL programs with Clang
 
-For convenience, we will be compiling the OpenCL programs with standalone Clang from now on. An example OpenCL kernel that performs vector addition is:
+For convenience, we will be compiling the OpenCL programs with standalone Clang. An example OpenCL kernel that performs vector addition is as follows:
 
 ``` c
 __kernel void vector_add(__global const int *a, __global const int *b, __global int *c) {
@@ -449,7 +449,7 @@ LLVM (http://llvm.org/):
     xcore      - XCore
 ```
 
-Note the `amdgcn` entry in the list of the LLVM's registered target architectures, i.e. AMD's graphics processors based on the [Graphics Core Next architecture (GCN)](https://www.amd.com/en/technologies/gcn). As the instructions of the [Radeon DNA (RDNA)](https://www.amd.com/en/technologies/rdna) architecture are very similar to the instructions of the GCN architecture, the same LLVM backend is also used for RDNA, despite the name maybe suggesting otherwise. The situation is similar with older graphics processors: the `r600` backend supports the R600 architecture (marketing names Radeon HD 2000 and Radeon HD 3000) as well as R700 (Radeon HD 4000 series), Evergreen (Radeon HD 5000 series), and Northern Islands (Radeon HD 6000 series) architectures.
+Note the `amdgcn` entry in the list of the LLVM's registered target architectures, i.e. AMD's graphics processors based on the [Graphics Core Next architecture (GCN)](https://www.amd.com/en/technologies/gcn). As the instructions of the [Radeon DNA (RDNA)](https://www.amd.com/en/technologies/rdna) architecture are very similar to the instructions of the GCN architecture, the same LLVM backend is also used for RDNA, despite the name perhaps suggesting otherwise. The situation is similar with older graphics processors: the `r600` backend supports the R600 architecture (marketing names Radeon HD 2000 and Radeon HD 3000) as well as R700 (Radeon HD 4000 series), Evergreen (Radeon HD 5000 series), and Northern Islands (Radeon HD 6000 series) architectures.
 
 Each architecture generation has a number of processors. The [official documentation of the LLVM AMDGPU backend](https://llvm.org/docs/AMDGPUUsage.html) contains the list of [processors](https://llvm.org/docs/AMDGPUUsage.html#processors) and [features](https://llvm.org/docs/AMDGPUUsage.html#target-features). In addition, the list of the supported processors and features of the target can be obtained using the `llc` command with `-march` and `-mattr` parameters:
 
@@ -652,4 +652,4 @@ For example, llc -mcpu=mycpu -mattr=+feature1,-feature2
     A good starting point for further study of AMDGPU backend is [Tom Stellard](https://www.stellard.net/tom/blog/)'s [A Detailed Look at the R600 Backend](https://llvm.org/devmtg/2013-11/#talk7) ([slides](https://llvm.org/devmtg/2013-11/slides/Stellard-R600.pdf), [recording](https://youtu.be/hz1jFSi1fEY?list=PL_R5A0lGi1AA4GNONa4vof63jalYbs-MG)), presented at [2013 LLVM Developers' Meeting](https://llvm.org/devmtg/2013-11/). While focused on R600 and not GCN, many of the points made in the talk still hold.
 
 !!! admonition "Assignment"
-    Use Clang to compile the OpenCL C code from the previous example to LLVM intermediate representation and then use `llc` to compile it for `gfx700`, `fiji`, and `gfx1030` processors. Compare the resulting assembly codes in terms of the code size, types of instructions used, and register pressure.
+    Use Clang to compile the OpenCL C code from the previous example to LLVM intermediate representation and then use `llc` to compile it for `gfx700`, `fiji`, and `gfx1030` processors. Compare the resulting assembly codes in terms of the code size, types of instructions used as well as register pressure.

@@ -6,7 +6,7 @@ author: Vedran Miletić
 
 [Clang](https://clang.llvm.org/) is a compiler for C-like programming languages, including C, C ++, Objective C/C++, OpenCL C, and CUDA C/C++. It is part of the [LLVM project](https://llvm.org/).
 
-Before continuing, let's convince ourselves that Clang was built successfully:
+Before continuing, let us make sure that Clang has been successfully compiled:
 
 ``` shell
 $ ./bin/clang --version
@@ -16,7 +16,7 @@ Thread model: posix
 InstalledDir: /home/vedranm/workspace/Development/llvm-project/builddir/./bin
 ```
 
-The `Target:` line specifies the default target triple containing the processor architecture, the processor sub-architecture (optional), the processor vendor, the operating system, the environment, and the object format (optional). Without additional parameters that would specify the architecture, we will be compiling the code for the host processor architecture ([x86-64](https://en.wikipedia.org/wiki/X86-64) in our case, also known as [AMD64](https://www.amd.com/system/files/TechDocs/24592.pdf) and [Intel EM64T](https://www.intel.com/content/www/us/en/support/articles/000005898/processors.html)), the host operating system (Linux in our case), and the host environment (GNU). Notice how the host processor vendor is unknown, as Clang compiled for x86-64 can be executed on both Intel and AMD processors.
+The `Target:` line specifies the default target triple containing the processor architecture, the processor sub-architecture (optional), the processor vendor, the operating system, the environment, and the object format (optional). In the absence of additional parameters spoecifying the architecture, we will compile the code for the host processor architecture ([x86-64](https://en.wikipedia.org/wiki/X86-64) in our case, also known as [AMD64](https://www.amd.com/system/files/TechDocs/24592.pdf) and [Intel EM64T](https://www.intel.com/content/www/us/en/support/articles/000005898/processors.html)), the host operating system (Linux in our case), and the host environment (GNU). Notice how the host processor vendor is unknown, as Clang compiled for x86-64 can be executed on both Intel and AMD processors.
 
 ## Creating executable files from the C/C++ source code
 
@@ -70,13 +70,13 @@ example2.cpp:(.text.startup+0xf): undefined reference to `std::ios_base::Init::I
 clang-13: error: linker command failed with exit code 1 (use -v to see invocation)
 ```
 
-The failure happens at the linking stage; Clang is treating the source file language as C-like instead of specifically C++ and therefore isn't linking the resulting executable to the C++ standard library. This can be done manually by using the `-l` parameter:
+The failure occurs at the linking stage; Clang treats the the source file language as C-like instead of specifically C++ and therefore does not link the resulting executable to the C++ standard library. This can be done manually by using the `-l` parameter:
 
 ``` shell
 $ ./bin/clang example2.cpp -o example2 -l stdc++
 ```
 
-While this approach will mostly work, the recommended one is to specify C++ as the source file language using the `-x` parameter and let Clang worry about linking the standard library:
+Although this approach almost always work, the recommended method is to specify C++ as the source file language using the `-x` parameter and let Clang take care of linking the standard library:
 
 ``` shell
 $ ./bin/clang example2.cpp -o example2 -x c++
@@ -96,9 +96,9 @@ $ ./bin/clang++ example2.cpp -o example2
 ```
 
 !!! admonition "Assignment"
-    Pick either the C or the C++ example and modify it to include other code, e.g. value assignments to variables and control flow (`if`, `for`, or `while`). Observe Clang's reporting of errors and warnings during compilation.
+    Select the C or the C++ example and modify it to include other code, e.g. value assignments to variables and control flow (`if`, `for`, or `while`). Pay attention to Clang's reporting of errors and warnings during compilation.
 
-While Clang is a very good compiler for practical applications (including large applications such as [LibreOffice](https://wiki.documentfoundation.org/Development/Building_LibreOffice_with_Clang) and [Linux](https://docs.kernel.org/kbuild/llvm.html)), from now on we will focus on using Clang to translate the source code into the assembly code or the LLVM intermediate representation (IR). In both cases Clang will output the resulting code after the specified compilation stage, but not link it to the libraries. Therefore, Clang will not create an executable file as it did until now and we will focus on studying the results by reading the output instead of executing it.
+Although Clang is an excellent compiler for practical applications (including large applications such as [LibreOffice](https://wiki.documentfoundation.org/Development/Building_LibreOffice_with_Clang) and [Linux](https://docs.kernel.org/kbuild/llvm.html)), from now on we will focus on using Clang to translate the source code into assembly code or the LLVM intermediate representation (IR). In both case,  Clang will produce the output code after the specified compilation stage, but will not link it to libraries. Therefore, Clang will not create an executable file as it has done so far and we will focus on studying the results by reading the output instead of executing it.
 
 ## Compiling the source code into the target machine assembly
 
@@ -386,7 +386,7 @@ std::basic_ostream<char, std::char_traits<char> >& std::operator<<<std::char_tra
 
 ## Compiling the source code into the LLVM intermediate representation
 
-Just like assembly, Clang can output the LLVM intermediate representation (IR), which is more convenient for study of optimization (i.e. analysis and transformation) passes. To produce LLVM IR, we will use `-emit-llvm` parameter in addition to the `-S` parameter:
+Just like assembly, Clang can output the LLVM intermediate representation (IR), which is more convenient for the study of optimization (i.e. analysis and transformation) passes. To produce LLVM IR, we will use `-emit-llvm` parameter in addition to the `-S` parameter:
 
 ``` shell
 $ ./clang example1.c -S -emit-llvm
@@ -430,4 +430,4 @@ attributes #1 = { "frame-pointer"="all" "no-trapping-math"="true" "stack-protect
 !!! admonition "Assignment"
     Compare the LLVM IR produced by different optimization levels and see if you can observe the optimizations performed.
 
-We will treat Clang's code generation as a black box from now on and only modify the optimization passes in LLVM. A good starting point for further study of the inner workings of Clang's code generation is the [LLVM Target-Independent Code Generator section](https://llvm.org/docs/CodeGenerator.html) in the official documentation.
+From now on, we will treat Clang's code generation as a black box and modify only the optimization steps in LLVM. A good starting point to delve into the inner workings of Clang's code generation is the [LLVM Target-Independent Code Generator section](https://llvm.org/docs/CodeGenerator.html) contained in the the official documentation.

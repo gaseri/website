@@ -4,22 +4,22 @@ author: Vedran Miletić
 
 # Developing with the LLVM compiler infrastructure
 
-[LLVM](https://llvm.org/) is a well-known open-source compiler and toolchain we'll be using for the course. It is distributed under the [Apache License 2.0 with LLVM Exceptions](https://releases.llvm.org/13.0.1/LICENSE.TXT). Due to its popularity, various LLVM programs and libraries are packaged for many operating systems, including [Debian GNU/Linux](https://tracker.debian.org/pkg/llvm-defaults), [Arch Linux](https://archlinux.org/packages/extra/x86_64/llvm/), and [FreeBSD](https://www.freshports.org/devel/llvm/). Therefore we could install LLVM from the operating system repository, but doing so would prevent us from modifying its source code later.
+During the course we will use [LLVM](https://llvm.org/)., which is a well-known open-source compiler and toolchain. It is distributed under the [Apache License 2.0 with LLVM Exceptions](https://releases.llvm.org/13.0.1/LICENSE.TXT). Due to its popularity, there are various LLVM programs and libraries are packaged for many operating systems, including [Debian GNU/Linux](https://tracker.debian.org/pkg/llvm-defaults), [Arch Linux](https://archlinux.org/packages/extra/x86_64/llvm/), and [FreeBSD](https://www.freshports.org/devel/llvm/). Therefore we could install LLVM from the operating system repository, although this would later prevent us from modifying its source code.
 
 ## Setting up the integrated development environment
 
-We'll be using [Visual Studio Code](https://code.visualstudio.com/) as the integrated development enviroment going forward. However, using any development enviroment for C++ is acceptable, including [Qt Creator](https://www.qt.io/product/development-tools), [CLion](https://www.jetbrains.com/clion/), [CodeLite](https://codelite.org/), [NetBeans](https://netbeans.apache.org/), and [Eclipse](https://www.eclipse.org/).
+Furthermore we will also use the [Visual Studio Code](https://code.visualstudio.com/) as the integrated development enviroment. However, the use of any development enviroment for C++ is acceptable, including [Qt Creator](https://www.qt.io/product/development-tools), [CLion](https://www.jetbrains.com/clion/), [CodeLite](https://codelite.org/), [NetBeans](https://netbeans.apache.org/), and [Eclipse](https://www.eclipse.org/).
 
 !!! note
-    The commands below assume that a [Unix-like](https://en.wikipedia.org/wiki/Unix-like) operating system is used, which includes Linux, FreeBSD, macOS, illumOS, and many others, but not Windows. To get a Unix-like environment on Windows 10 and newer, it is recommended to use the [Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install), [Windows Terminal](https://docs.microsoft.com/en-us/windows/terminal/install), and [Visual Studio Code Remote - WSL](https://code.visualstudio.com/docs/remote/wsl) extension.
+    The commands below assume that the [Unix-like](https://en.wikipedia.org/wiki/Unix-like) operating system is used, which includes Linux, FreeBSD, macOS, illumOS, and many others, but not Windows. To get a Unix-like environment on Windows 10 and newer, it is recommended to use the [Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install), [Windows Terminal](https://docs.microsoft.com/en-us/windows/terminal/install), and [Visual Studio Code Remote - WSL](https://code.visualstudio.com/docs/remote/wsl) extension.
 
 First, install the [C/C++ Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack), which will install [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) and [CMake](https://marketplace.visualstudio.com/items?itemName=twxs.cmake) extensions. More details about these extensions can be found in the [C/C++ for Visual Studio Code](https://code.visualstudio.com/docs/languages/cpp) guide.
 
 ## Building the LLVM compiler infrastructure from source
 
-In the following we will more or less follow the [Getting started with the LLVM System](https://llvm.org/docs/GettingStarted.html) from the [Getting Started/Tutorials section](https://llvm.org/docs/GettingStartedTutorials.html).
+Hereafter we will more or less follow the directions of [Getting started with the LLVM System](https://llvm.org/docs/GettingStarted.html) from the [Getting Started/Tutorials section](https://llvm.org/docs/GettingStartedTutorials.html).
 
-LLVM source code can be downloaded from its [releases page](https://releases.llvm.org/). We'll be using the latest patch release from the latest series at the starting time of the course, [release 13.0.1](https://releases.llvm.org/download.html#13.0.1).
+It is possible to download the LLVM source code from its [releases page](https://releases.llvm.org/). At the time of the start of the course We'll be using the latest patch release from the latest series [release 13.0.1](https://releases.llvm.org/download.html#13.0.1).
 
 We'll be following [Building LLVM with CMake](https://llvm.org/docs/13.0.1/CMake.html) from [LLVM documentation](https://llvm.org/docs/13.0.1/), section [User Guides](https://llvm.org/docs/13.0.1/UserGuides.html). We'll start by creating a directory for LLVM project:
 
@@ -49,7 +49,7 @@ Observe the `.src` in the name, indicating that we're downloading the source cod
 - Polly high-level loop and data-locality optimizations infrastructure, and
 - test suite.
 
-While all of those are interesting in their own way, we will not be using most of them here. Specifically, we will be using Clang to demonstrate the compile process. We'll download it just like LLVM:
+Although all of these tools are interesting in their own way, most of them will not be used here. In particular, we will be using Clang to demonstrate the compile process. We'll download it just like LLVM:
 
 ``` shell
 $ curl -OL https://github.com/llvm/llvm-project/releases/download/llvmorg-13.0.1/clang-13.0.1.src.tar.xz

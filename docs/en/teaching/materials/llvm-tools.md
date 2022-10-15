@@ -4,7 +4,7 @@ author: Vedran Miletić
 
 # The LLVM tools
 
-In addition to the usage of LLVM via the Clang compiler and via the Mesa 3d graphics library, it is also possible to use LLVM via [several command-line tools bundled with it](https://llvm.org/docs/CommandGuide/index.html). We have already used `llc` and `llvm-cxxfilt` among these and we will be also using:
+In addition to the use of LLVM via the Clang compiler and the Mesa 3d graphics library, it is also possible to use LLVM via [several command-line tools bundled with it](https://llvm.org/docs/CommandGuide/index.html). Among these We have already used `llc` and will also be using `llvm-cxxfilt`:
 
 - [llvm-mca](#llvm-mca), the LLVM machine code analyzer
 - [lli](#lli), the LLVM just-in-time compiler or interpreter
@@ -12,9 +12,9 @@ In addition to the usage of LLVM via the Clang compiler and via the Mesa 3d grap
 - [llvm-stress](#llvm-stress), the random generator of files containing LLVM intermediate representation
 - [opt](#opt), the LLVM optimizer
 
-We will be working with files containing LLVM intermediate representation (IR). Many LLVM IR examples are available in the [VirtualMachine/ir-examples repository on GitHub](https://github.com/Virtual-Machine/ir-examples) which we obtained earlier. We will be using both the [C source code](https://github.com/Virtual-Machine/ir-examples/tree/master/c) and the [LLVM IR source code](https://github.com/Virtual-Machine/ir-examples/tree/master/ll) from that repository.
+We will be working with files containing the LLVM intermediate representation (IR). Many LLVM IR examples are available in the [VirtualMachine/ir-examples repository on GitHub](https://github.com/Virtual-Machine/ir-examples) that we obtained earlier. We will use both the [C source code](https://github.com/Virtual-Machine/ir-examples/tree/master/c) and the [LLVM IR source code](https://github.com/Virtual-Machine/ir-examples/tree/master/ll) from that repository.
 
-In the following examples we will put the `ir-examples` directory is in the `builddir` directory of the `llvm-project`. After positioning in the `builddir` directory, this can be achieved using cURL:
+In the following examples we will place the `ir-examples` directory  in the `builddir` directory of the `llvm-project`. Once placed in the `builddir` directory, we can achieve this using cURL:
 
 ``` shell
 $ curl -OL https://github.com/Virtual-Machine/ir-examples/archive/refs/heads/master.zip
@@ -743,7 +743,7 @@ in function autogen_SD0:
     <   %A1 = alloca <16 x i1>, align 16
 ```
 
-Adding the parameter `-time-passes` will make `opt` print the pass execution timing report after the optimization is finished:
+Adding the parameter `-time-passes` will cause `opt` to print the pass execution timing report after the optimization is finished:
 
 ``` shell
 $ ./bin/opt example-stress-size8.ll -S -passes adce -time-passes -o example-stress-size8-adce.ll
@@ -771,12 +771,12 @@ $ ./bin/opt example-stress-size8.ll -S -passes adce -time-passes -o example-stre
 ```
 
 !!! admonition "Assignment"
-    Check how this optimization pass behaves on other files created by `llvm-stress`. Specifically check if a similar amount of code eliminated and try to explain why or why not by inspecting the files.
+    Check the behaviour of this optimization pass on other files created by `llvm-stress`. I partocular, check whether a similar amount of code is deleted and try to explain why or why not by inspecting the files.
 
 !!! admonition "Assignment"
-    Many optimization passes are not applicable to many situations. Choose any file created by `llvm-stress` and find two optimization passes that are changing the code and two optimization passes that are not (i.e. the code is invariant in relation to these optimizations).
+    Many optimization passes are not applicable to many situations. Pick any file created by `llvm-stress` and find two optimization passes that modify the code and two that do not (i.e. the code is invariant in relation to these optimizations).
 
-Optimizations are generally non-comutative, that is the [order of optimization passes is important](https://llvm.org/docs/Frontend/PerformanceTips.html#pass-ordering). For example, consider the following optimization of `example-stress.ll` file where loop unrolling is performed first, and code sinking second:
+Optimizations are generally noncommutative, that is, the [order of optimization passes is important](https://llvm.org/docs/Frontend/PerformanceTips.html#pass-ordering). For example, consider the following optimization of  the`example-stress.ll` file in which loop unrolling is performed first, and code sinking second:
 
 ``` shell
 $ ./bin/opt example-stress.ll -S -passes loop-unroll,sink -o example-stress-loop-unroll-sink.ll
@@ -832,4 +832,4 @@ in function autogen_SD0:
 ```
 
 !!! admonition "Assignment"
-    Check if two optimizations that were chaning the code that you chose in the last assignment can be performed on that code in any order.
+    Check whether two optimizations that were changing the code chosen in the last assignment can be performed on that code in any order.
