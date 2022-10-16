@@ -1,9 +1,8 @@
 # Mrežni i mobilni operacijski sustavi
 
-- [Instalacija i konfiguracija softvera za vježbe iz kolegija Mrežni i mobilni operacijski sustavi](../materijali/mmos-instalacija-softvera-manjaro.md)
-
 ## Vježbe
 
+- [Instalacija i konfiguracija softvera za vježbe iz kolegija Mrežni i mobilni operacijski sustavi](../materijali/mmos-instalacija-softvera-manjaro.md)
 - [Osnovni pojmovi mrežnih operacijskih sustava](../materijali/mrezni-os-pojmovi.md)
 
 ### Korištenje virtualizacijskih tehnologija
