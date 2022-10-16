@@ -2,7 +2,7 @@
 
 ## Predavanja
 
-- [Uvodno predavanje](../materijali/web-uvod.md)
+- [Uvodno predavanje predmeta Programiranje za web](../materijali/web-uvod.md)
 - [Arhitekture web aplikacija: monolitna i uslužno orijentirana](../materijali/web-arhitekture.md)
 - [Paradigme programiranja u web aplikacijama: proceduralna, objektno orijentirana, funkcijska](../materijali/web-paradigme-programiranja.md)
 - [Objektno modeliranje i programiranje web aplikacija. Objektno-relacijsko preslikavanje](../materijali/web-objektno.md)

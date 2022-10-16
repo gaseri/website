@@ -18,7 +18,7 @@ code {
 }
 </style>
 
-# Programiranje za web: uvodno predavanje
+# Uvodno predavanje predmeta Programiranje za web
 
 Studij: Preddiplomski studij informatike  
 Modul: Razvoj programske potpore (RPP)  
