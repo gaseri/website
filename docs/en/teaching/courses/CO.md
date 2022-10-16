@@ -1,5 +1,7 @@
 # Code optimization
 
+- [Course introduction](../materials/opt-intro.md)
+
 ## Exercises
 
 - [Developing with the LLVM compiler infrastructure](../materials/llvm-development.md)
