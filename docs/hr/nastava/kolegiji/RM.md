@@ -71,7 +71,7 @@
 - [Emulacija bežičnih mreža](../materijali/emulator-core-bezicne-mreze.md)
 - [Mobilnost](../materijali/emulator-core-mobilnost.md)
 
-### Dodatni laboratorijskih vježbi
+### Dodatni materijali laboratorijskih vježbi
 
 - [Programiranje mrežnih aplikacija u programskim jezicima C i C++](../materijali/c-mrezne-aplikacije.md)
 - [Modularni usmjerivač Click](../materijali/click-modularni-usmjerivac.md)

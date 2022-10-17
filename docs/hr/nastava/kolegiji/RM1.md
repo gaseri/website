@@ -43,7 +43,7 @@
 - [Emulacija bežičnih mreža](../materijali/emulator-core-bezicne-mreze.md)
 - [Mobilnost](../materijali/emulator-core-mobilnost.md)
 
-### Dodatni laboratorijskih vježbi
+### Dodatni materijali laboratorijskih vježbi
 
 - [Modularni usmjerivač Click](../materijali/click-modularni-usmjerivac.md)
 - [Korištenje mrežnih protokola u modularnom usmjerivaču Click](../materijali/click-protokoli.md)
