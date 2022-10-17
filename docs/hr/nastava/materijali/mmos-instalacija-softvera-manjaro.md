@@ -2,9 +2,11 @@
 author: Matea Turalija
 ---
 
-# Instalacija i konfiguracija softvera za vježbe iz kolegija Mrežni i mobilni operacijski sustavi
+# Instalacija i konfiguracija softvera za vježbe iz kolegija Mrežni i mobilni operacijski sustavi te Infrastruktura za podatke velikog obujma
 
 Upute u nastavku su pisane za [Manjaro](https://manjaro.org/).
+
+Alternativno, Docker i Docker Compose je moguće koristiti na Windowsima 10 i 11 prema [službenim uputama](https://docs.docker.com/desktop/install/windows-install/).
 
 ## Docker
 
