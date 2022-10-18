@@ -37,7 +37,7 @@ Kontejneri imaju drugačiji pristup jer virtualiziraju operacijski sustav, a ne 
 
 #### Slika
 
-Kada se kontejner pokrene, on koristi izolirani datotečni sustav. Ovaj prilagođeni datotečni sustav predstavlja sliku kontejnera. Budući da slika sadrži datotečni sustav kontejnera, mora sadržavati sve što je potrebno za pokretanje aplikacije - sve ovisnosti, konfiguracije, skripte, binarne datoteke i sl. Slika također sadrži druge konfiguracije za kontejner, kao što su varijable okruženja, zadana naredba za pokretanje i drugi metapodaci. Dakle, slika je predložak za čitanje koja sadrži skup uputa za stvaranje kntejnera, a kontejner je tada pokrenuta instanca slike.
+Kada se kontejner pokrene, on koristi izolirani datotečni sustav. Ovaj prilagođeni datotečni sustav predstavlja sliku kontejnera. Budući da slika sadrži datotečni sustav kontejnera, mora sadržavati sve što je potrebno za pokretanje aplikacije – sve ovisnosti, konfiguracije, skripte, binarne datoteke i sl. Slika također sadrži druge konfiguracije za kontejner, kao što su varijable okruženja, zadana naredba za pokretanje i drugi metapodaci. Dakle, slika je predložak za čitanje koja sadrži skup uputa za stvaranje kntejnera, a kontejner je tada pokrenuta instanca slike.
 
 ##### Registar
 
@@ -360,7 +360,7 @@ $ echo "hello world" > hello.txt
 $ ls
 ```
 
-Prva `echo` naredba stvara datoteku pod nazivom "hello.txt" s riječima "hello world" unutar nje. Druga naredba daje vam popis datoteka u direktoriju i trebala bi prikazati vašu novostvorenu datoteku "hello.txt". Sada upišite `exit` da napustite ovaj kontejner.
+Prva `echo` naredba stvara datoteku pod nazivom `hello.txt` s riječima `hello world` unutar nje. Druga naredba daje vam popis datoteka u direktoriju i trebala bi prikazati vašu novostvorenu datoteku `hello.txt`. Sada upišite `exit` da napustite ovaj kontejner.
 
 Da pokažete kako izolacija funkcionira, pokrenite sljedeće:
 
@@ -368,13 +368,13 @@ Da pokažete kako izolacija funkcionira, pokrenite sljedeće:
 $ docker container run alpine ls
 ```
 
-To je ista `ls` naredba koju smo koristili unutar interaktivne ljuske kontejnera, ali ovaj put, primijetite da nedostaje datoteka “hello.txt”. To je izolacija. Naredba je pokrenuta u novoj i zasebnoj instanci, iako se temelji na istoj slici.
+To je ista `ls` naredba koju smo koristili unutar interaktivne ljuske kontejnera, ali ovaj put, primijetite da nedostaje datoteka `hello.txt`. To je izolacija. Naredba je pokrenuta u novoj i zasebnoj instanci, iako se temelji na istoj slici.
 
 U svakodnevnom radu, korisnici Dockera koriste ovu značajku ne samo za sigurnost, već i za testiranje učinaka promjena aplikacije. Izolacija omogućuje korisnicima da brzo stvore odvojene, izolirane testne kopije aplikacije ili usluge i da se one pokreću usporedno bez ometanja jedna druge.
 
-Sada nam ostaje odgovoriti na pitanje "kako da se vratim do kontejnera koji ima 'hello.txt' datoteku?"
+Sada nam ostaje odgovoriti na pitanje: "Kako se vratiti do kontejnera koji sadrži datoteku `hello.txt`"?
 
-Još jednom pokrenite
+Još jednom pokrenite naredbu `docker container ls` na način:
 
 ``` shell
 $ docker container ls -a
@@ -387,7 +387,7 @@ d52407b6b1c3   alpine    "echo 'hello from al…"   2 hours ago      Exited (0) 
 878157a77c7b   alpine    "ls -l"                  3 hours ago      Exited (0) 3 hours ago                boring_ishizaka
 ```
 
-Kontejner u kojem smo stvorili datoteku "hello.txt" isti je onaj u kojem smo koristili `/bin/ash` ljusku, koju možemo vidjeti navedenu u stupcu `COMMAND`. U ovom slučaju radi se o kontejneru s ID-om `091a118b96c4` naziva `ecstatic_grothendieck`. Prisjetimo se naredbe za pokretanje kontejnera pomoću ID-a ili naziva i pokrenimo navedeni kontejner.
+Kontejner u kojem smo stvorili datoteku `hello.txt` isti je onaj u kojem smo koristili `/bin/ash` ljusku, koju možemo vidjeti navedenu u stupcu `COMMAND`. U ovom slučaju radi se o kontejneru s ID-om `091a118b96c4` naziva `ecstatic_grothendieck`. Prisjetimo se naredbe za pokretanje kontejnera pomoću ID-a ili naziva i pokrenimo navedeni kontejner.
 
 Možemo upotrijebiti nešto drugačiju naredbu kako bismo rekli Dockeru da pokrene ovu specifičnu instancu kontejnera.
 
@@ -406,13 +406,13 @@ CONTAINER ID   IMAGE     COMMAND      CREATED          STATUS              PORTS
 091a118b96c4   alpine    "/bin/ash"   10 minutes ago   Up About a minute             ecstatic_grothendieck
 ```
 
-Primijetite da ovaj put naš kontejner još uvijek radi. Ovaj put koristili smo `ash shell` tako da umjesto jednostavnog izlaska na način na koji je `/bin/sh` učinio ranije, `ash` čeka naredbu. Možemo poslati naredbu u kontejner da se pokrene pomoću `exec` naredbe:
+Primijetite da ovaj put naš kontejner još uvijek radi. Ovaj put koristili smo `ash shell` tako da umjesto jednostavnog izlaska na način na koji je `/bin/sh` učinio ranije, `ash` čeka naredbu. Možemo poslati naredbu u kontejner da se pokrene pomoću naredbe `exec`:
 
 ``` shell
 $ docker container exec <kontejner ID> ls
 ```
 
-Ovaj put dobivamo popis direktorija i prikazuje našu datoteku "hello.txt" jer smo koristili instancu kontejnera u kojoj smo stvorili tu datoteku. Sada počinjete uviđati neke od važnih koncepata kontejnera. U sljedećoj vježbi radit ćemo s aplikacijama koje se sastoje od skupa kontejnera pomoću Docker Compose-a.
+Ovaj put dobivamo popis direktorija i prikazuje našu datoteku `hello.txt` jer smo koristili instancu kontejnera u kojoj smo stvorili tu datoteku. Sada počinjete uviđati neke od važnih koncepata kontejnera. U sljedećoj vježbi radit ćemo s aplikacijama koje se sastoje od skupa kontejnera pomoću Docker Composea.
 
 ## Druge naredbe za baratanje kontejnerima aplikacija
 
