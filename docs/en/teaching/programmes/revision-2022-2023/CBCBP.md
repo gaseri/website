@@ -28,10 +28,10 @@ There are no enrolment requirements.
 
 After fulfilling all the obligations anticipated by the course, students are expected to be able to:
 
-I1. Propose an improvement of an existing algorithm or method in the molecular dynamics simulation.  
-I2. Predict the performance of molecular dynamics simulators on supercomputers and in cloud computing.  
-I3. Design an extension of the molecular dynamics simulator with a new feature.  
-I4. Develop a new feature of the molecular dynamics simulator.
+O1. Propose an improvement of an existing algorithm or method in the molecular dynamics simulation.  
+O2. Predict the performance of molecular dynamics simulators on supercomputers and in cloud computing.  
+O3. Design an extension of the molecular dynamics simulator with a new feature.  
+O4. Develop a new feature of the molecular dynamics simulator.
 
 ### Course content
 

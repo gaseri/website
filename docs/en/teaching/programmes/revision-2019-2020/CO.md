@@ -26,13 +26,13 @@ A pass mark in Algorithms and Data Structures.
 
 After fulfilling all the obligations anticipated by the course, students are expected to be able to:
 
-I1. Analyse the properties enabling code transformation and represent the code using a flowchart.  
-I2. Show the differences between local and global optimization and identify where each of them applies.  
-I3. Perform a conventional data flow analysis, register allocation by graph colouring and common subexpression elimination.  
-I4. Describe mode of operation of higher-level optimization and apply existing optimizations.  
-I5. Describe differences between higher-level optimizations and target architecture-specific optimizations.  
-I6. Choose instructions.  
-I7. Analyse the problem of optimization phase sequence.
+O1. Analyse the properties enabling code transformation and represent the code using a flowchart.  
+O2. Show the differences between local and global optimization and identify where each of them applies.  
+O3. Perform a conventional data flow analysis, register allocation by graph colouring and common subexpression elimination.  
+O4. Describe mode of operation of higher-level optimization and apply existing optimizations.  
+O5. Describe differences between higher-level optimizations and target architecture-specific optimizations.  
+O6. Choose instructions.  
+O7. Analyse the problem of optimization phase sequence.
 
 ### Course content
 

@@ -26,14 +26,14 @@ There are no enrolment requirements.
 
 It is expected that after successfully fulfilling all the obligations stipulated in the program, the student will be able to:
 
-I1. Choose distributed architectures for working with big data (eg lambda, kappa, delta, etc.) and appropriate tools for such architectures.  
-I2. Anticipate the needs of an intelligent information system for the infrastructure in the cloud with the connection to appropriate interfaces of data, information and knowledge repositories with associated metadata.  
-I3. Design a model of data management, coordination, message exchange, and interaction in an intelligent information system using appropriate methods and techniques (e.g. distributed databases, cache systems, message exchange systems, data streaming systems, etc.) and a corresponding distributed database model using appropriate languages ​​for data modeling and taking into account the specifics of the system architecture.  
-I4. Recommend technologies for implementing the integration of data, information and knowledge from heterogeneous and distributed data systems that meet the requirements of the given problem.  
-I5. Choose an appropriate set of cloud technologies (eg monolithic and microservice architectures, containers, virtual machines, etc.) for the implementation of an intelligent information system.  
-I6. Develop intelligent cloud services based on data analytics and artificial intelligence, as well as related interfaces and appropriate documentation.  
-I7. Develop components of intelligent information systems and associated automated testing procedures using platforms, libraries, frameworks and cloud services as infrastructure.  
-I8. Implement an intelligent agent that solves the given problem using the default interfaces, services, applications, interaction mechanisms, and types of behavior suitable for the given problem, and an agent model of the system that will be used to simulate the system's behavior.
+O1. Choose distributed architectures for working with big data (eg lambda, kappa, delta, etc.) and appropriate tools for such architectures.  
+O2. Anticipate the needs of an intelligent information system for the infrastructure in the cloud with the connection to appropriate interfaces of data, information and knowledge repositories with associated metadata.  
+O3. Design a model of data management, coordination, message exchange, and interaction in an intelligent information system using appropriate methods and techniques (e.g. distributed databases, cache systems, message exchange systems, data streaming systems, etc.) and a corresponding distributed database model using appropriate languages ​​for data modeling and taking into account the specifics of the system architecture.  
+O4. Recommend technologies for implementing the integration of data, information and knowledge from heterogeneous and distributed data systems that meet the requirements of the given problem.  
+O5. Choose an appropriate set of cloud technologies (eg monolithic and microservice architectures, containers, virtual machines, etc.) for the implementation of an intelligent information system.  
+O6. Develop intelligent cloud services based on data analytics and artificial intelligence, as well as related interfaces and appropriate documentation.  
+O7. Develop components of intelligent information systems and associated automated testing procedures using platforms, libraries, frameworks and cloud services as infrastructure.  
+O8. Implement an intelligent agent that solves the given problem using the default interfaces, services, applications, interaction mechanisms, and types of behavior suitable for the given problem, and an agent model of the system that will be used to simulate the system's behavior.
 
 ### Course content
 
