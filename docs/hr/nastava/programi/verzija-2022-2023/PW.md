@@ -110,7 +110,7 @@ Detaljan način razrade bodovanja na predmetu te pragovi prolaza za pojedine akt
 4. McConnel, S. *Rapid Development*. (Microsoft Press, 1996).
 5. McConnel, S. *Code Complete*. (Microsoft Press, 2004).
 6. Brooks, F. J. *The Mythical Man-Month*. (Addison-Wesley, 1995).
-7. Hoffman, K. *Beyond the 12 Factor App*. (O’Reilly, 2016).
+7. Hoffman, K. *Beyond the 12 Factor App*. (O'Reilly, 2016).
 8. Chacon, S. *Pro Git*. (Apress, 2014). Dostupno online: [git-scm.com/book/en/v2](https://git-scm.com/book/en/v2)
 
 ### Broj primjeraka obavezne literature u odnosu na broj studenata koji trenutno pohađaju nastavu na predmetu

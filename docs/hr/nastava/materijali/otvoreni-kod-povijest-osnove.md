@@ -125,7 +125,7 @@ author: Vedran Miletić, Vanja Slavuj
 
 - Problem zatvorenih formata
 
-    - Kryder’s Law: cijena pohrane jedinice informacije eksponencijalno opada s vremenom
+    - Kryder's Law: cijena pohrane jedinice informacije eksponencijalno opada s vremenom
     - Digitalne arhive dokumenata zamjenjuju klasične arhive (e-izdvadak, e-zdravstvo)
     - Zastarijevanje softvera i problem čitanja binarnih formata dokumenata
 

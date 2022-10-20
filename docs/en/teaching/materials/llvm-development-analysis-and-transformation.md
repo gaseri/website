@@ -59,4 +59,4 @@ One can observe the function name in the output. The resulting LLVM IR file can 
 !!! admonition "Assignment"
     Modify the optimization pass so that it also prints the number of instructions and then intersects  the instruction list (note that the instructions reside inside of the basic blocks). For each of the instructions, print the type and the operands, if any.
 
-Finally, before starting a specific project implemented using the LLVM libraries, you should read the [LLVM Programmer’s Manual](https://llvm.org/docs/ProgrammersManual.html).
+Finally, before starting a specific project implemented using the LLVM libraries, you should read the [LLVM Programmer's Manual](https://llvm.org/docs/ProgrammersManual.html).

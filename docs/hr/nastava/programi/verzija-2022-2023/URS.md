@@ -107,7 +107,7 @@ Detaljan način razrade bodovanja na predmetu te pragovi prolaza za pojedine akt
 ### Dopunska literatura (u trenutku prijave prijedloga studijskog programa)
 
 1. Hennessy, J. L. & Patterson, D. A. *Computer architecture: a quantitative approach*. (Morgan Kaufmann, 2007).
-2. Frisch, Ae. *Essential system administration*. (O’Reilly, 2002).
+2. Frisch, Ae. *Essential system administration*. (O'Reilly, 2002).
 3. Nemeth, E., Snyder, G., Hein, T. R., Whaley, B. & Mackin, D. *Unix and Linux system administration handbook*. (Addison-Wesley, 2017).
 
 ### Broj primjeraka obavezne literature u odnosu na broj studenata koji trenutno pohađaju nastavu na predmetu

@@ -49,7 +49,7 @@ Predavanja, vježbe, samostalni zadaci, konzultacije.
 
 ## Popis literature potrebne za studij i polaganje ispita
 
-1. Frisch, Ae. Essential system administration. (O’Reilly, 2002).
+1. Frisch, Ae. Essential system administration. (O'Reilly, 2002).
 1. Nemeth, E., Snyder, G., Hein, T. R., Whaley, B. & Mackin, D. Unix and Linux system administration handbook. (Addison-Wesley, 2017).
 1. Skripte, prezentacije i ostali materijali za učenje dostupni u e-kolegiju.
 

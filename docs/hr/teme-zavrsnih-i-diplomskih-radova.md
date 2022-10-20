@@ -458,7 +458,7 @@ CUDA je vlasnički programski jezik za heterogeno paralelno programiranje koriš
 
 **Literatura:**
 
-1. [2015 LLVM Developers’ Meeting: Jingyue Wu "Optimizing LLVM for GPGPU"](https://youtu.be/JHfb8z-iSYk?list=PL_R5A0lGi1AA4Lv2bBFSwhgDaHvvpVU21)
+1. [2015 LLVM Developers' Meeting: Jingyue Wu "Optimizing LLVM for GPGPU"](https://youtu.be/JHfb8z-iSYk?list=PL_R5A0lGi1AA4Lv2bBFSwhgDaHvvpVU21)
 1. Službena NVIDIA-ina dokumentacija za CUDA-u
 
 ### Grafički procesor otvorenog koda MIAOW {[PPHS](nastava/kolegiji/PPHS.md)}
@@ -713,7 +713,7 @@ Pandemija koronavirusa SARS-CoV-2 tijekom 2020. godina učinila je da velik broj
 
 1. [UPDATE: Preserving Internet Access for the Entire Community (PlayStation.Blog)](https://blog.playstation.com/2020/03/24/preserving-internet-access-for-the-entire-community/)
 1. [Managing Steam Bandwidth During COVID-19 Pandemic (Steam Blog)](https://steamcommunity.com/games/593110/announcements/detail/2074411495515541376)
-1. [Tracking COVID-19’s Impact on Global Internet Performance (Speedtest Insights)](https://www.speedtest.net/insights/blog/tracking-covid-19-impact-global-internet-performance/)
+1. [Tracking COVID-19's Impact on Global Internet Performance (Speedtest Insights)](https://www.speedtest.net/insights/blog/tracking-covid-19-impact-global-internet-performance/)
 
 ### Razvoj HTTP web aplikacije korištenjem okvira Drogon {[RM2](nastava/kolegiji/RM2.md)} [Rikardo Jagnjić]
 
@@ -751,7 +751,7 @@ Moderni grafički procesori imaju programabilni cjevovod koji koriste za prikaz 
 
 **Literatura:**
 
-1. [What’s the Difference Between Ray Tracing and Rasterization? (NVIDIA Blog)](https://blogs.nvidia.com/blog/2018/03/19/whats-difference-between-ray-tracing-rasterization/)
+1. [What's the Difference Between Ray Tracing and Rasterization? (NVIDIA Blog)](https://blogs.nvidia.com/blog/2018/03/19/whats-difference-between-ray-tracing-rasterization/)
 1. [ROCm](https://rocmdocs.amd.com/)
 1. [NVIDIA CUDA](https://developer.nvidia.com/cuda-zone)
 
@@ -927,7 +927,7 @@ Ucjenjivački softver je vrsta zlonamjernog softvera koja šifrira datoteke na r
 **Literatura:**
 
 1. [Ransomware](https://en.wikipedia.org/wiki/Ransomware)
-1. [Ransomware doesn’t mean game over (Malwarebytes Labs)](https://blog.malwarebytes.com/101/2016/11/ransomware-doesnt-mean-game-over/)
+1. [Ransomware doesn't mean game over (Malwarebytes Labs)](https://blog.malwarebytes.com/101/2016/11/ransomware-doesnt-mean-game-over/)
 1. [Massive WannaCry/Wcry Ransomware Attack Hits Countries (Trend Micro Research)](https://www.trendmicro.com/en_us/research/17/e/massive-wannacrywcry-ransomware-attack-hits-various-countries.html)
 
 ### Robotska automatizacija procesa {[UMS](nastava/kolegiji/UMS.md)} [Marko Čolak]
@@ -986,7 +986,7 @@ Dok se aplikacija izvodi u heterogenom računalnom sustavu, grafički i središn
 **Literatura:**
 
 1. [Half the Web Is Now Encrypted. That Makes Everyone Safer (Wired)](https://www.wired.com/2017/01/half-web-now-encrypted-makes-everyone-safer/)
-1. Durumeric, Zakir, et al. "The Security Impact of HTTPS Interception." Network and Distributed Systems Symposium (NDSS’17). 2017. Rad dostupan putem [mrežnih stranica J. Alexa Hanldermana](https://jhalderm.com/pub/papers/interception-ndss17.pdf).
+1. Durumeric, Zakir, et al. "The Security Impact of HTTPS Interception." Network and Distributed Systems Symposium (NDSS'17). 2017. Rad dostupan putem [mrežnih stranica J. Alexa Hanldermana](https://jhalderm.com/pub/papers/interception-ndss17.pdf).
 1. [Detecting HTTPS Interception (Caddy web server)](https://caddyserver.com/docs/mitm-detection)
 
 ### Nomulus: softver otvorenog koda za upravljanje registrom domena (Nomulus: open source domain registry management software) {[RM2](nastava/kolegiji/RM2.md)} [Sanja Ivić, preneseno iz 2016./2017.]
@@ -1062,7 +1062,7 @@ Tijekom izbornog ciklusa u Sjedinjenim Američkim Državama 2015. i 2016. nomina
 **Literatura:**
 
 1. [Google Trends Indicate Trump Landslide (Regated)](https://web.archive.org/web/20160902044947/https://regated.com/2016/08/googles-trends-indicate-trump-landslide/)
-1. Hine, Gabriel Emile, et al. "Kek, Cucks, and God Emperor Trump: A Measurement Study of 4chan’s Politically Incorrect Forum and Its Effects on the Web." *International Conference on Web and Social Media (ICWSM)*. Association for the Advancement of Artificial Intelligence (AAAI), 2017. Rad dostupan na [arXivu](https://arxiv.org/abs/1610.03452)
+1. Hine, Gabriel Emile, et al. "Kek, Cucks, and God Emperor Trump: A Measurement Study of 4chan's Politically Incorrect Forum and Its Effects on the Web." *International Conference on Web and Social Media (ICWSM)*. Association for the Advancement of Artificial Intelligence (AAAI), 2017. Rad dostupan na [arXivu](https://arxiv.org/abs/1610.03452)
 1. [Trump's shrinking electoral map (Politico)](https://www.politico.com/story/2016/08/donald-trump-shrinking-election-map-227076)
 1. [How the Trump Campaign Built an Identity Database and Used Facebook Ads to Win the Election (Joel Winston, posted on Medium)](https://medium.com/startup-grind/how-the-trump-campaign-built-an-identity-database-and-used-facebook-ads-to-win-the-election-4ff7d24269ac)
 1. [No, Big Data Didn't Win the U.S. Election (Bloomberg)](https://www.bloomberg.com/opinion/articles/2016-12-08/no-big-data-didn-t-win-the-u-s-election)
@@ -1070,7 +1070,7 @@ Tijekom izbornog ciklusa u Sjedinjenim Američkim Državama 2015. i 2016. nomina
 1. [Initial D. Trump](https://youtu.be/b89d1oip7WM)
 1. [How Facebook Saw Trump Coming When No One Else Did (Erin Pettigrew, posted on Medium)](https://medium.com/@erinpettigrew/how-facebook-saw-trump-coming-when-no-one-else-did-84cd6b4e0d8e)
 1. [Trump will win the election and is more popular than Obama in 2008, AI system finds (CNBC)](https://www.cnbc.com/2016/10/28/donald-trump-will-win-the-election-and-is-more-popular-than-obama-in-2008-ai-system-finds.html)
-1. [Trump’s Big Data Mind Explains How He Knew Trump Could Win (Wired)](https://www.wired.com/2016/11/trump-polling-data/)
+1. [Trump's Big Data Mind Explains How He Knew Trump Could Win (Wired)](https://www.wired.com/2016/11/trump-polling-data/)
 1. [App maker: Trump will win election (USA Today)](https://www.usatoday.com/story/tech/2016/08/13/app-maker---trump-win-election/88640044/)
 1. [Clinton vs. Trump: Predicting The Electoral College (HuffPost)](https://www.huffpost.com/entry/clinton-versus-trump-pred_b_9848032)
 1. [Donald Trump v Hillary Clinton: This Map Predicts Who Wins (Time)](https://time.com/4508467/election-donald-trump-hillary-clinton-map/)
@@ -1264,7 +1264,7 @@ Za mjerenje performansi paralelnih aplikacija koriste se specijalizirani alati k
 
 **Literatura:**
 
-1. Gropp, William, and Ewing Lusk. "Reproducible measurements of MPI performance characteristics." European Parallel Virtual Machine/Message Passing Interface Users’ Group Meeting. Springer, Berlin, Heidelberg, 1999. Rad dostupan putem [mrežnih stranica Williama D. Groppa](https://wgropp.cs.illinois.edu/bib/papers/pdata/1999/pvmmpi99/mpptest.pdf)
+1. Gropp, William, and Ewing Lusk. "Reproducible measurements of MPI performance characteristics." European Parallel Virtual Machine/Message Passing Interface Users' Group Meeting. Springer, Berlin, Heidelberg, 1999. Rad dostupan putem [mrežnih stranica Williama D. Groppa](https://wgropp.cs.illinois.edu/bib/papers/pdata/1999/pvmmpi99/mpptest.pdf)
 1. [VAMPIR](https://www.vampir.eu/)
 1. [MPPTEST](https://www.mcs.anl.gov/research/projects/mpi/mpptest/)
 1. [Allinea MAP](https://www.allinea.com/products/map/)

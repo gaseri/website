@@ -104,7 +104,7 @@ Izvan softvera, patenti su puno važniji nego u softveru (gdje je autorsko pravo
 
 Ove ideje su zakonski implementirane u [Defensive Patent License](https://www.defensivepatentlicense.org/), a u praksi ih koristi [Tesla](https://www.tesla.com/). Elon Musk, izvršni direktor Tesle, [izjavio je sljedeće](https://www.tesla.com/blog/all-our-patent-are-belong-you):
 
-> Technology leadership is not defined by patents, which history has repeatedly shown to be small protection indeed against a determined competitor, but rather by the ability of a company to attract and motivate the world’s most talented engineers. We believe that applying the open source philosophy to our patents will strengthen rather than diminish Tesla’s position in this regard.
+> Technology leadership is not defined by patents, which history has repeatedly shown to be small protection indeed against a determined competitor, but rather by the ability of a company to attract and motivate the world's most talented engineers. We believe that applying the open source philosophy to our patents will strengthen rather than diminish Tesla's position in this regard.
 
 ## Aktivnosti
 

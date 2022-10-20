@@ -282,7 +282,7 @@ Kako vidimo na primjeru Wikipedije, aplikacija može i sama spremiti generirani 
 
 Popularni okviri za razvoj aplikacija imaju gotove implementacije sustava za keširanje koji onda umjesto programera brinu o spremanju i dohvaćanju sadržaja te postavljanju odgovarajućih zaglavlja u HTTP odgovorima. Primjeri takvih sustava su:
 
-- [Django’s cache framework](https://docs.djangoproject.com/en/3.2/topics/cache/), koristi Memcached ili bazu podataka
+- [Django's cache framework](https://docs.djangoproject.com/en/3.2/topics/cache/), koristi Memcached ili bazu podataka
 - [Laravel Cache](https://laravel.com/docs/8.x/cache), koristi Memcached ili Redis
 - [Caching with Rails](https://guides.rubyonrails.org/caching_with_rails.html), koristi Memcached ili Redis
 
@@ -322,7 +322,7 @@ Izvor: [Laurence Tratt](https://tratt.net/laurie/), [What Challenges and Trade-O
 
 [Django overview](https://www.djangoproject.com/start/overview/): "Ridiculously fast. Django was designed to help developers take applications from concept to completion as quickly as possible."
 
-[The Rails Doctrine](https://rubyonrails.org/doctrine/): 'One of the early productivity mottos of Rails went: "You’re not a beautiful and unique snowflake". It postulated that by giving up vain individuality, you can leapfrog the toils of mundane decisions, and make faster progress in areas that really matter.'
+[The Rails Doctrine](https://rubyonrails.org/doctrine/): 'One of the early productivity mottos of Rails went: "You're not a beautiful and unique snowflake". It postulated that by giving up vain individuality, you can leapfrog the toils of mundane decisions, and make faster progress in areas that really matter.'
 
 ---
 

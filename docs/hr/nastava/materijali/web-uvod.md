@@ -38,7 +38,7 @@ Naziv predmeta na starom jednopredmetnom i dvopredmetnom studiju informatike: *D
 ## Razvoj aplikacija u praksi: web, mobilne i stolne (1/2)
 
 > (...) since the early 2000s, **the number of web development jobs (and within the past decade, mobile jobs) has increased exponentially** (...)
-> (...) it’s clear that a number of the most-used languages are utilized in many different contexts, including web, mobile, and desktop; however, it’s pretty clear that **most usage targets mobile and the web**; just look at how Apple has been trying to desperately convince developers to build for macOS (...)
+> (...) it's clear that a number of the most-used languages are utilized in many different contexts, including web, mobile, and desktop; however, it's pretty clear that **most usage targets mobile and the web**; just look at how Apple has been trying to desperately convince developers to build for macOS (...)
 > (...) JetBrains survey of Python development in 2018 showed data analysis as the most popular (58 percent) with **web development at 52 percent**, machine learning at 38 percent and **explicit desktop development at just 19 percent** (...)
 
 Izvor: [Is Desktop Development Dead? Or Still Worth It?](https://insights.dice.com/2020/03/04/desktop-development-dead-still-worth-it/) (Dice Insights, 4th March 2020)
@@ -299,7 +299,7 @@ end
 
     > Low-code and no-code tools are increasingly playing a crucial role in speeding up the delivery of applications. Gartner predicts that by 2023, over 50% of medium to large enterprises will have adopted a low-code or no-code as one of their strategic application platforms and that low-code will be responsible for more than 65% of application development activity by 2024.
 
-    Izvor: [Low-Code and No-Code: What’s the Difference and When to Use What?](https://www.outsystems.com/blog/posts/low-code-vs-no-code/) (Forsyth Alexander, [OutSystems](https://outsystems.com/), 8th January 2021)
+    Izvor: [Low-Code and No-Code: What's the Difference and When to Use What?](https://www.outsystems.com/blog/posts/low-code-vs-no-code/) (Forsyth Alexander, [OutSystems](https://outsystems.com/), 8th January 2021)
 
 ---
 
@@ -321,7 +321,7 @@ Primjerice, u Ruby on Railsu su razvijene (prema [BuiltWith](https://builtwith.c
 
 Izgled web sjedišta i korisničko iskustvo određuju HTML, CSS i JS, danas uglavnom na prednjem dijelu web aplikacija: [Bootstrap](https://getbootstrap.com/) (MMS), [Vue.js](https://vuejs.org/) i [Quasar](https://quasar.dev/) (UPW/DWA1), [Headless UI](https://headlessui.dev/) i [Tailwind CSS](https://tailwindcss.com/) (PW/DWA2) ([ostale](https://www.keycdn.com/blog/frontend-frameworks) [mogućnosti](https://athemes.com/collections/best-css-frameworks/)).
 
-> To me it’s obvious that the days of low level JavaScript for front end applications for the average developer are numbered and **baseline frameworks [React, Vue.js, Angular, Svelte etc.] are going to be the future for the majority of Web developers** that need to get stuff done. **The productivity gain** and the fact that the frameworks encapsulate hard-won knowledge and experience about quirks and performance in the DOM and JavaScript, **make it impractical to ‘roll your own’ any longer** and stay competitive in the process.
+> To me it's obvious that the days of low level JavaScript for front end applications for the average developer are numbered and **baseline frameworks [React, Vue.js, Angular, Svelte etc.] are going to be the future for the majority of Web developers** that need to get stuff done. **The productivity gain** and the fact that the frameworks encapsulate hard-won knowledge and experience about quirks and performance in the DOM and JavaScript, **make it impractical to ‘roll your own' any longer** and stay competitive in the process.
 
 Izvor: [The Rise of JS Frameworks -- Part 1: Today](https://weblog.west-wind.com/posts/2015/Jul/18/The-Rise-of-JavaScript-Frameworks-Part-1-Today) ([Rick Strahl](https://weblog.west-wind.com/), 18th July 2015)
 

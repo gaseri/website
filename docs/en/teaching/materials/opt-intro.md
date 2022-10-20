@@ -128,7 +128,7 @@ code {
 ## Mandatory literature
 
 1. Cooper, K. D. & Torczon, L. Engineering a compiler. (Elsevier/Morgan Kaufmann, 2011).
-1. Holub, A. I. Compiler design in C. (Prentice Hall, 1990). (e-book is available for free download from the author’s site [holub.com/compiler/](https://holub.com/compiler/))
+1. Holub, A. I. Compiler design in C. (Prentice Hall, 1990). (e-book is available for free download from the author's site [holub.com/compiler/](https://holub.com/compiler/))
 1. Scripts, presentations and other learning material available in the e-course.
 
 ---

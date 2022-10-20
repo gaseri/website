@@ -28,7 +28,7 @@ code {
 
 ## Objektno orijentirano modeliranje i programiranje
 
-Za modeliranje koristit ćemo po potrebi [Allen Holub’s UML Quick Reference](https://holub.com/uml/):
+Za modeliranje koristit ćemo po potrebi [Allen Holub's UML Quick Reference](https://holub.com/uml/):
 
 - Use-Case (Story) Diagram
 - Static-Model (Class) Diagram
@@ -182,7 +182,7 @@ Prema [Wikipediji](https://en.wikipedia.org/wiki/SOLID), SOLID je skup načela k
 
 > What goes wrong with software? The design of many software applications begins as a vital image in the minds of its designers. At this stage it is clean, elegant, and compelling. (...)
 >
-> But then something begins to happen. **The software starts to rot.** At first it isn’t so bad. An ugly wart here, a clumsy hack there, but the beauty of the design still shows through. Yet, over time as **the rotting continues, the ugly festering sores and boils accumulate until they dominate the design** of the application. The program becomes a festering mass of code that the developers find increasingly hard to maintain. (...)
+> But then something begins to happen. **The software starts to rot.** At first it isn't so bad. An ugly wart here, a clumsy hack there, but the beauty of the design still shows through. Yet, over time as **the rotting continues, the ugly festering sores and boils accumulate until they dominate the design** of the application. The program becomes a festering mass of code that the developers find increasingly hard to maintain. (...)
 
 ---
 
@@ -507,7 +507,7 @@ class PageLoader {
 
 [Katerina Trajchevska](https://trajchevska.com/) iz [Adeve](https://www.adeva.com/) u objavi na blogu pod naslovom [SOLID Design Principles: The Guide to Becoming Better Developers](https://adevait.com/software/solid-design-principles-the-guide-to-becoming-better-developers) piše:
 
-> Product owners don’t always understand the implications of bad software design principles. It's on us, as engineers, to consider the best design practices when estimating and make sure we write code that’s easy to maintain and extend. SOLID design principles can help us achieve that.
+> Product owners don't always understand the implications of bad software design principles. It's on us, as engineers, to consider the best design practices when estimating and make sure we write code that's easy to maintain and extend. SOLID design principles can help us achieve that.
 
 Snimka predavanja na temu: [Becoming a better developer by using the SOLID design principles](https://youtu.be/rtmFCcjEgEw) by [Katerina Trajchevska](https://trajchevska.com/) ([Laracon EU](https://laracon.eu/), 28th January 2019)
 

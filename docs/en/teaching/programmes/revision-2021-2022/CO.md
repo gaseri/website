@@ -95,7 +95,7 @@ A detailed scoring system for the course and passing scores for individual activ
 ### Mandatory literature (at the time of submission of study programme proposal)
 
 1. Cooper, K. D. & Torczon, L. Engineering a compiler. (Elsevier/Morgan Kaufmann, 2011).
-1. Holub, A. I. Compiler design in C. (Prentice Hall, 1990). (E-book is available for free download from the author’s site [holub.com/compiler/](https://holub.com/compiler/) and can be printed if necessary)
+1. Holub, A. I. Compiler design in C. (Prentice Hall, 1990). (E-book is available for free download from the author's site [holub.com/compiler/](https://holub.com/compiler/) and can be printed if necessary)
 1. Scripts, presentations and other learning material available in the e-course.
 
 ### Optional/additional literature (at the time of submission of the study programme proposal)
@@ -120,6 +120,6 @@ A detailed scoring system for the course and passing scores for individual activ
 
 ### Quality monitoring methods that ensure the acquisition of exit knowledge, skills and competences
 
-It is anticipated to make periodical evaluations for the purpose of ensuring and continuously improving the quality of classes and study programme (as part of the activities of the Quality Assurance Committee at the Department of Informatics). In the last week of classes, students will evaluate the quality of classes using an anonymous questionnaire. Students’ achievements in the course will also be analysed (percentage of students who passed the course and their average grade).
+It is anticipated to make periodical evaluations for the purpose of ensuring and continuously improving the quality of classes and study programme (as part of the activities of the Quality Assurance Committee at the Department of Informatics). In the last week of classes, students will evaluate the quality of classes using an anonymous questionnaire. Students' achievements in the course will also be analysed (percentage of students who passed the course and their average grade).
 
 [^1]: **Important:** Enter the appropriate proportion of ECTS credits for each activity so that the total number of credits equals the ECTS value of the course. Use empty fields for additional activities.
