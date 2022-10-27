@@ -1,4 +1,10 @@
-# 😎 Grupa za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi / Group for Applications and Services on Exascale Research Infrastructure (GASERI)
+---
+hide:
+  - navigation
+  - toc
+---
+
+# 😎 GASERI – Grupa za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi / **G**roup for **A**pplications and **S**ervices on **E**xascale **R**esearch **I**nfrastructure
 
 ![GASERI logo with text](images/gaseri-logo-text.png)
 
