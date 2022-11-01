@@ -410,6 +410,7 @@ nav:
     - Blog:
       - Blog index: en/blog/index.md
       - Year 2022:
+        - Publishing (Material for) MkDocs website to GitHub Pages using custom Actions workflow: en/blog/2022-11-01-publishing-material-for-mkdocs-website-to-github-pages-using-custom-actions-workflow.md
         - Don't use RAR: en/blog/2022-02-24-dont-use-rar.md
       - Year 2021:
         - Markdown vs reStructuredText for teaching materials: en/blog/2021-08-16-markdown-vs-restructuredtext-for-teaching-materials.md
