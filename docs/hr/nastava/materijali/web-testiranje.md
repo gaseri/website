@@ -132,7 +132,7 @@ Uglavnom se primjenjuje na nivou jedinice izvornog koda (engl. *source code unit
 ## Tehnike testiranja metodom bijele kutije
 
 - **testiranje aplikacijskih programskih sučelja (API-ja)**: testiranje aplikacije pomoću javnih i privatnih API-ja
-    - primjerice, kod korištenja API-ja može se raditi o pozivu funkcije programskog jezika u obliku ``get_persons(5)``, korištenju objektno-orijentiranog pristupa ili slanju zahtjeva HTTP metodom GET na URI ``/persons/5``
+    - primjerice, kod korištenja API-ja može se raditi o pozivu funkcije programskog jezika u obliku `get_persons(5)`, korištenju objektno-orijentiranog pristupa ili slanju zahtjeva HTTP metodom GET na URI `/persons/5`
 - **analiza pokrivenosti koda testovima** (engl. *code coverage*): izrada testova kako bi se udovoljilo nekim kriterijima pokrivenosti koda
     - primjerice, dizajner testa može stvoriti testove kako bi barem jednom izvršili sve ispise koje aplikacija vrši
 - **metode ubrizgavanja kvarova**: namjerno uvode greške kako bi se procijenila učinkovitost strategija ispitivanja

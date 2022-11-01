@@ -55,7 +55,7 @@ $ mgen
 (...)
 ```
 
-MGEN će vjerojatno javiti pogreške oko datoteke ili direktorija koje ne može otvoriti unutar funkcije ``GPSSubscribe()`` oblika ``GPSSubscribe(): fopen() error: No such file or directory``. Te nam pogreške nisu važne jer se unatoč njima MGEN pokreće i uredno radi.
+MGEN će vjerojatno javiti pogreške oko datoteke ili direktorija koje ne može otvoriti unutar funkcije `GPSSubscribe()` oblika `GPSSubscribe(): fopen() error: No such file or directory`. Te nam pogreške nisu važne jer se unatoč njima MGEN pokreće i uredno radi.
 
 ## Emulator računalnih mreža CORE
 

@@ -186,7 +186,7 @@ server.listen(port, host, () => {
 
 ## PHP
 
-Recimo da je datoteka ``public/index.php`` sadržaja:
+Recimo da je datoteka `public/index.php` sadržaja:
 
 ``` php
 <?php
