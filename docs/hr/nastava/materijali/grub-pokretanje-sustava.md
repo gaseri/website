@@ -156,4 +156,6 @@ Pronađena initrd slika: /boot/initramfs-linux.img
 Završeno
 ```
 
+Želimo li generiranu konfiguraciju i zapisati u datoteku, naredbi ćemo dodati parametar `--output`, odnosno `-o` i argument u kojem ćemo navesti putanju do datoteke, u našem slučaju `/boot/grub/grub.cfg`.
+
 Nakon ponovnog pokretanja operacijskog sustava i odabira jezgre `linux-lts` putem GRUB-a možemo se naredbom `uname -a` uvjeriti da se zaista koristi novoinstalirana varijanta jezgre.
