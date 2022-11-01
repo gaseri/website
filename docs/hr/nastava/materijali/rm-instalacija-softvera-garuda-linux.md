@@ -97,13 +97,13 @@ $ systemctl status core-daemon.service
 Je li instalacija bila uspješna provjerit ćemo naredbom:
 
 ``` shell
-$ core-gui --version
+$ core-gui-legacy --version
 (...)
 ```
 
-CORE bi morao javiti da je verzija 7.5.2.
+CORE bi morao javiti da je verzija 8.2.0.
 
-Grafičko sučelje alata CORE pokrećemo naredbom ``core-gui`` ili ikonom iz izbornika desktop sučelja. Zatvorite CORE kao i bilo koji drugi prozor, a zatim nastavite u terminalu s instalacijama ostalih softvera.
+Grafičko sučelje alata CORE pokrećemo naredbom `core-gui-legacy` ili ikonom iz izbornika desktop sučelja. Zatvorite CORE kao i bilo koji drugi prozor, a zatim nastavite u terminalu s instalacijama ostalih softvera.
 
 ## OpenSSH te osnovni alati za analizu i konfiguraciju računalne mreže
 
