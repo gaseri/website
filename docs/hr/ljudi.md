@@ -27,6 +27,7 @@ author: Vedran Miletić
 - Valentin Kuharić
 - Dorian Manjarić
 - Marin Martuslović
+- [Luka Ljubojević](https://lukaljubojevic.github.io/web/)
 
 !!! tip
     Zainteresirani studenti [nam se mogu javiti](index.md#kako-se-ukljuciti).
