@@ -19,7 +19,7 @@ Since this summer, GitHub offers [publishing Pages using a custom Actions workfl
 
 Let's see how far we can get. Without going into details about the [syntax for GitHub Actions](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions), here is the starting workflow configuration file for Jekyll:
 
-``` yaml hl_lines="30-36"
+``` yaml hl_lines="1-2 30-36"
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
 name: Deploy Jekyll with GitHub Pages dependencies preinstalled
 
@@ -76,9 +76,9 @@ The highlighted lines are Jekyll-specific. We can easily replace these lines wit
 
 In this case, since we want a drop-in replacement for Jekyll so that the remaining commands work perfectly, we will perform the MkDocs build using the `mkdocs.yml` configuration file in the current directory and write the built site output files into the `_site` directory.
 
-``` yaml hl_lines="30-44"
-# Sample workflow for building and deploying a Jekyll site to GitHub Pages
-name: Deploy Jekyll with GitHub Pages dependencies preinstalled
+``` yaml hl_lines="1-2 30-44"
+# Sample workflow for building and deploying a MkDocs site to GitHub Pages
+name: Deploy MkDocs with GitHub Pages dependencies preinstalled
 
 on:
   # Runs on pushes targeting the default branch
@@ -138,6 +138,8 @@ jobs:
 ```
 
 And that's it! There is no more requirement for the `.nojekyll` file as Jekyll never gets ran in the build process. There is also no more separate `gh-pages` branch that the built files get pushed to, so there is also no more worry whether the site builds over time will add up to the [1 GB soft limit](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github#repository-size-limits).
+
+Finally, if you want to use a custom domain, having the `CNAME` file in the repository root or the `docs` subfolder will no longer have the desired effect; the domain has to be [configured through the repository settings or using the API](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#creating-a-custom-github-actions-workflow-to-publish-your-site).
 
 The next step in streamlining this approach further is probably patching [actions/configure-pages](https://github.com/actions/configure-pages) that will allow us to replace:
 
