@@ -481,6 +481,23 @@ https://docs.docker.com/get-started/
 
 Poruke su iste kao i kod pokretanja naredbom `docker run` iznad.
 
+## Izrada vlastitih kontejnera
+
+U sljedećem zadatku stvorite, izradite i pokrenite vlastitu Docker sliku u kontejneru.
+
+!!! adomonition "Zadatak"
+    Po uzoru na [zadatak s GitHuba](https://github.com/techno-tim/launchpad/tree/master/docker/custom-image) izradite vlastitu Docker sliku.
+
+U sljedećem zadatku izradit ćete jednostavnu web stranicu za e-trgovinu. Web stranica će koristiti API na uslugu proizvoda kako bi zatražila popis proizvoda za prikaz kupcu.
+
+!!! adomonition "Zadatak"
+    Napravite Docker sliku za [aplikaciju koja nudi uslugu proizvoda](https://github.com/jakewright/tutorials/tree/master/docker/02-docker-compose).
+
+U sljedećem zadatku izradit ćete Python aplikaciju koja će vam nuditi izbor filmova slučajnim odabirom.
+
+!!! adomonition "Zadatak"
+    Preuzmite [Python skriptu moviepickera](https://github.com/python-engineer/python-fun/tree/master/moviepicker) i naravite `Dockerfile` za Docker sliku koja će pokrenuti skriptu kod pokretanja u kontejneru.
+
 ## Primjer primjene
 
 Kao alat, Docker ima vrlo široku primjenu. U ovom projektu iskoristiti ću ga kao alat za dijeljenje kompaktnog OS-a za rad sa JSON-om.
