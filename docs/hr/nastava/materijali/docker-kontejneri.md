@@ -496,7 +496,7 @@ U sljedećem zadatku izradit ćete jednostavnu web stranicu za e-trgovinu. Web s
 U sljedećem zadatku izradit ćete Python aplikaciju koja će vam nuditi izbor filmova slučajnim odabirom.
 
 !!! adomonition "Zadatak"
-    Preuzmite [Python skriptu moviepickera](https://github.com/python-engineer/python-fun/tree/master/moviepicker) i naravite `Dockerfile` za Docker sliku koja će pokrenuti skriptu kod pokretanja u kontejneru.
+    Preuzmite [Python skriptu moviepickera](https://github.com/python-engineer/python-fun/tree/master/moviepicker) i napravite `Dockerfile` za Docker sliku koja će pokrenuti skriptu kod pokretanja u kontejneru.
 
 ## Primjer primjene
 
@@ -506,13 +506,13 @@ Ideja jest da se napravi mali OS koji ce se moci pokrenuti na svakoj mašini gdj
 
 ### Distribucija prilagođenog OS-a
 
-Proces kreće se instaliravanjem Docker alata na mašinu, što je već i učinjeno. Sljedeći korak jest pokretanje samom dockera i prijavljivanje na online repozitorij. Iskoristio sam postojeći account sa github-a za izradu docker repozitorija te sam se na taj način prijavio. Odabrao sam sinatru za sustav koji ću prilagoditi svojim potrebama pa za početak povlačim na lokalnu mašinu:
+Proces kreće s instaliravanjem Docker alata na mašinu, što je već i učinjeno. Sljedeći korak jest pokretanje samog dockera i prijavljivanje na online repozitorij. Iskoristite postojeći račun sa github-a za izradu docker repozitorija. Odaberimo `sinatru` za sustav koji ćemo prilagoditi svojim potrebama:
 
 ``` shell
 $ docker pull training/sinatra
 ```
 
-Sljedeći korak jest pokretanje preuzetog sustava i izvršavanje željenih izmjena u sustavu, instaliravanje i brisanje paketa i sl, u ovom slučaju demonstracije radi sam instalirao json i jos neke dodatne alate:
+Sljedeći korak jest pokretanje preuzetog sustava i izvršavanje željenih izmjena u sustavu, instaliravanje i brisanje paketa i sl. Uzmimo za primjer `json` i još neke dodatne alate:
 
 ``` shell
 $ docker run -t -i training/sinatra /bin/bash
@@ -520,34 +520,33 @@ $ gem install json
 $ sudo apt-get install git
 ```
 
-i dodatno sam preuzeo stari repozitorij sa bitbucketa koji sam napravio na distribuiranim sustavima:
+Dodatno je preuzet repozitorij s Bitbucket-a koji je napravljen na distribuiranim sustavima:
 
 ``` shell
 $ git clone https://lbrumnic@bitbucket.org/lbrumnic/ds_projekt.git
 ```
 
-Nakon toga izlaskom iz trenutne slike, vrši se commit napravljenih izmjena prema trenutnom "kontejneru" koji se kreirao pokretanjem slike:
+Izlaskom iz trenutne slike, vrši se `commit` napravljenih izmjena prema trenutnom kontejneru koji se kreirao pokretanjem slike:
 
 ``` shell
 $ docker commit 79de9d702c2e lukabrumnic/sinatraluka
 ```
 
-Svaki kontejner pri pokretanju dobije svoj individualni id koje se može provjeriti naredbom:
+Svaki kontejner pri pokretanju dobije svoj individualni `id` koje se može provjeriti naredbom:
 
 ``` shell
 $ docker ps
 ```
 
-Na kraju ta ista slika se "push-a" na online repozitorij:
+Na kraju se slika `push-a` na online repozitorij:
 
 ``` shell
 $ docker push lukabrumnic/sinatraluka
 ```
 
-U sljedećem koraku sljedi testiranje napravljenih izmjena a to ću napraviti tako da podignem novi virtualni stroj sa sutavom Fedora 20, te se na njemu ulogiram u svoj Docker repozitorij, preuzmem
-traženu sliku i provjerim imam li instaliran `json` na njoj.
+U sljedećem koraku sljedi testiranje napravljenih izmjena, a to ćemo napraviti tako da se podigne novi virtualni stroj sa sutavom `Fedora 20`. Na njemu se ulogirajte u svoj Docker repozitorij, preuzmite traženu sliku i provjerite ima li instaliran `json` na njoj.
 
-Fedora 20 ima Docker u službenom repozitoriju paketa stoga je dovoljno instalirati paket `docker-io`. Nakon instalacije paketa, vrši se loginna docker repozitorij, zatim se preuzima željeni image te se istog pokreće.
+`Fedora 20` ima Docker u službenom repozitoriju paketa stoga je dovoljno instalirati paket `docker-io`. Nakon instalacije paketa, vrši se `login` na docker repozitorij. Zatim se preuzima željeni `image` te se istog pokreće.
 
 ``` shell
 $ docker login
@@ -555,23 +554,23 @@ $ docker pull lukabrumnic/sinatraluka
 $ docker run -t -i lukabrumnic/sinatraluka /bin/bash
 ```
 
-Provjeru da je riječ o istom imageu nalazim u home folderu gdje sam preuzeo repozitorij sa Bitbucketa.
+Provjeru da je riječ o istom `image-u` nalazimo u `home` direktoriju gdje smo preuzeli repozitorij sa Bitbucket-a.
 
 ### Ostale primjene
 
-Od ostalih primjena postoji mogućnost pokretanja daemon aplikacije u pozadini čime se zapravo pokreće novi container u kojem se neka aplikacije vrti. Još jedna korisna mogućnost je pokretanje web aplikacija u Dockeru. Uzmimo primjer:
+Od ostalih primjena postoji mogućnost pokretanja `daemon` aplikacije u pozadini čime se zapravo pokreće novi kontejner u kojem se neka aplikacije vrti. Još jedna korisna mogućnost je pokretanje web aplikacija u Dockeru. Uzmimo primjer:
 
 ``` shell
 $ docker run -d -P training/webapp python app.py
 ```
 
-Aplikacije se pokrene na portu 49153 no može se ručno podesiti da aplikacije se izvršava na željenom portu. Primjer prema gornjem primjeru:
+Aplikacija se pokrene na portu 49153 no može se ručno podesiti da se aplikacije izvršavaju na željenom portu. Na primjer:
 
 ``` shell
 $ docker run -d -p 5000:5000 training/webapp python app.py
 ```
 
-Dodatno se još može specificirati i interface na kojemu će se pokrenuti aplikacije, po defaultu će vezati specificirani port na sva sučelja no to se može ograničiti. Primjer za gonji primjer:
+Dodatno se još može specificirati i sučelje na kojemu će se pokrenuti aplikacija. Po zadanom će se vezati specificirani port na sva sučelja, no to se može ograničiti. Primjerice:
 
 ``` shell
 $ docker run -d -p 127.0.0.1:5000:5000 training/webapp python app.py
@@ -585,6 +584,6 @@ $ docker run -d -p ubuntu:14.04 /bin/sh -c "while true; do echo hello world; sle
 
 ## Konfiguracija
 
-U datoteci `/etc/default/docker` mogu se podešavati različiti parametri za rad naredbe `docker`, kao primjerice lokacija spremanja privremenih fileova i slično. Isto tako moguće je definirati na kojem se defaultnom portu pokreću daemon docker apps.
+U datoteci `/etc/default/docker` mogu se podešavati različiti parametri za rad naredbe `docker`, kao primjerice lokacija spremanja privremenih datoteka i slično. Isto tako moguće je definirati na kojem se zadanom portu pokreću `daemon docker apps`.
 
-Za prikupljanje logova o aktivnostima na pokrenutim containerima postoje mnogi alati. Specijaliziraju se u prikupljanju i centraliziranju logova sa svih pokrenutih kontejnera i šalju ih na centralni poslužitelj gdje se isti premaju. Neki od alata su [Loggly](https://documentation.solarwinds.com/en/success_center/loggly/content/admin/about-loggly.htm) i [Fluentd](https://www.fluentd.org/guides/recipes/docker-logging).
+Za prikupljanje logova o aktivnostima na pokrenutim kontejneraima postoje mnogi alati. Specijaliziraju se u prikupljanju i centraliziranju logova sa svih pokrenutih kontejnera i šalju ih na centralni poslužitelj gdje se isti spremaju. Neki od alata su [Loggly](https://documentation.solarwinds.com/en/success_center/loggly/content/admin/about-loggly.htm) i [Fluentd](https://www.fluentd.org/guides/recipes/docker-logging).
