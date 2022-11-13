@@ -40,6 +40,10 @@ Naravno, mi imamo emoji [Smiling Face with Sunglasses (Cool) 😎](https://emoji
 
 😎💬😎💬... 😎🤝😎.
 
+### Kada ćete objaviti određeni znanstveni rad/programski kod/skup podataka/audiovizualni uradak?
+
+Uskoro, stvari se rješavaju.
+
 ### Bojite li se `du -ha`?
 
 Ne bojimo se `du -ha` jer imamo oštrog `ps -a`; ako to ne bude dovoljno, uzet ćemo `top` u ruke i napraviti `killall`.
