@@ -11,12 +11,12 @@ author: Vedran Miletić
 
 ## Osnovne mogućnosti i način korištenja
 
-Uzmimo za testiranje [web aplikaciju za ispis IP adrese i korisničkog agenta](https://app.miletic.net/ip/). Dobra je ideja testirati vlastiti web poslužitelj jer drugi web poslužitelji mogu iznenadni velik broj zahtjeva shvatiti kao napad.
+Uzmimo za testiranje [web aplikaciju za ispis IP adrese i korisničkog agenta](https://apps.group.miletic.net/ip/). Dobra je ideja testirati vlastiti web poslužitelj jer drugi web poslužitelji mogu iznenadni velik broj zahtjeva shvatiti kao napad.
 
 Pokrenemo li Siege bez parametara, radit će do prekida kombinacijom tipki ++control+c++:
 
 ``` shell
-$ siege https://app.miletic.net/ip/
+$ siege https://apps.group.miletic.net/ip/
 ^C
 ```
 
@@ -40,7 +40,7 @@ $ siege https://app.miletic.net/ip/
 Želimo li ograničiti vrijeme mjerenja performansi, primjerice na 10 sekundi, iskoristit ćemo parametar `--time`, odnosno `-t`:
 
 ``` shell
-$ siege -t 10s https://app.miletic.net/ip/
+$ siege -t 10s https://apps.group.miletic.net/ip/
 ```
 
 ``` json
@@ -63,7 +63,7 @@ $ siege -t 10s https://app.miletic.net/ip/
 Parametrom `--concurrent`, odnosno `-c` možemo navesti broj istovremenih korisnika čije opterećenje će biti generirano. Postavimo taj broj na 100:
 
 ``` shell
-$ siege -c 100 -t 10s https://app.miletic.net/ip/
+$ siege -c 100 -t 10s https://apps.group.miletic.net/ip/
 ```
 
 ``` json
@@ -92,7 +92,7 @@ Ako ne navedemo ništa, Siege će generirati zahtjeve 10 istovremenih korisnika,
 Po potrebi parametrom `--header`, odnosno `-H` možemo navesti zaglavlje koje će biti poslano u zahtjevu. Primjerice, možemo od web aplikacije zatražiti slanje odgovora u obliku JSON navođenjem zaglavlja Accept i pripadnog MIME tipa na način:
 
 ``` shell
-$ siege -t 10s -H 'Accept: application/json' https://app.miletic.net/ip/
+$ siege -t 10s -H 'Accept: application/json' https://apps.group.miletic.net/ip/
 ```
 
 ``` json

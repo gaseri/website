@@ -166,7 +166,7 @@ Stvaranjem više kopija Ubuntuove slike i više kopija ranije stvorene slike `us
         <script>
         var myHeaders = new Headers({ Accept: "application/json" });
         const myInit = { headers: myHeaders };
-        fetch("http://app.miletic.net/ip/", myInit)
+        fetch("http://apps.group.miletic.net/ip/", myInit)
             .then(function (response) {
                 return response.json().then(function (data) {
                     document.getElementById("myIP").innerHTML = data["address"];

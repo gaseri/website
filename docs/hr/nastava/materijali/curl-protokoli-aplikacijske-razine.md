@@ -581,7 +581,7 @@ Content-Type: text/html
 Kod metode POST potrebno je parametrom `-d` navesti podatke koji se šalju u obliku `varijabla=vrijednost`. Ukoliko se navodi više varijabli, parametar `-d` navodi se više puta:
 
 ``` shell
-$ curl -X POST -d "ime=Ivan" -d "prezime=Horvat" -d "dob=23" https://app.miletic.net/post/
+$ curl -X POST -d "ime=Ivan" -d "prezime=Horvat" -d "dob=23" https://apps.group.miletic.net/request/
 <!DOCTYPE html>
 <html lang="hr">
   <head>
@@ -602,7 +602,7 @@ $ curl -X POST -d "ime=Ivan" -d "prezime=Horvat" -d "dob=23" https://app.miletic
 Parametar `-d` implicira metodu POST, tako da je gornja naredba ekvivalentna naredbi:
 
 ``` shell
-$ curl -d "ime=Ivan" -d "prezime=Horvat" -d "dob=23" https://app.miletic.net/post/
+$ curl -d "ime=Ivan" -d "prezime=Horvat" -d "dob=23" https://apps.group.miletic.net/request/
 ```
 
 ### HTTP metoda PUT
