@@ -725,7 +725,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && $_SERVER["REQUEST_URI"] == "/persons
                              "known_for" => $person["known_for"],
                              "created" => $date_time,
                              "edited" => $date_time,
-             "url" => "http://localhost:8000/persons/" . $id];
+                             "url" => "http://localhost:8000/persons/" . $id];
             http_response_code(201);
         } else {
             http_response_code(400);
@@ -1069,7 +1069,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && $_SERVER["REQUEST_URI"] == "/persons"
                              "known_for" => $person["known_for"],
                              "created" => $date_time,
                              "edited" => $date_time,
-             "url" => "http://localhost:8000/persons/" . $id];
+                             "url" => "http://localhost:8000/persons/" . $id];
             http_response_code(201);
         } else {
             http_response_code(400);
