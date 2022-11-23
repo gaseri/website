@@ -809,12 +809,16 @@ if ($_SERVER["REQUEST_METHOD"] == "PUT" && preg_match("/^\/persons\/[1-9][0-9]*$
         if ($person != NULL &&
             array_key_exists("name", $person) && gettype($person["name"]) == "string" &&
             array_key_exists("birth_year", $person) && gettype($person["birth_year"]) == "integer" &&
-            array_key_exists("known_for", $person) && gettype($person["known_for"]) == "array") {
+            array_key_exists("known_for", $person) && gettype($person["known_for"]) == "array" &&
+            array_key_exists("created", $person) && gettype($person["created"]) == "string" &&
+            array_key_exists("url", $person) && gettype($person["url"]) == "string") {
         $date_time = date(DATE_ISO8601);
             $persons[$id] = ["name" => $person["name"],
                              "birth_year" => $person["birth_year"],
                              "known_for" => $person["known_for"],
-                             "edited" => $date_time];
+                             "created" => $person["created"],
+                             "edited" => $date_time,
+                             "url" => $person["url"]];
             http_response_code(200);
         } else {
             http_response_code(400);
@@ -1080,12 +1084,16 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && $_SERVER["REQUEST_URI"] == "/persons"
         if ($person != NULL &&
             array_key_exists("name", $person) && gettype($person["name"]) == "string" &&
             array_key_exists("birth_year", $person) && gettype($person["birth_year"]) == "integer" &&
-            array_key_exists("known_for", $person) && gettype($person["known_for"]) == "array") {
+            array_key_exists("known_for", $person) && gettype($person["known_for"]) == "array" &&
+            array_key_exists("created", $person) && gettype($person["created"]) == "string" &&
+            array_key_exists("url", $person) && gettype($person["url"]) == "string") {
         $date_time = date(DATE_ISO8601);
             $persons[$id] = ["name" => $person["name"],
                              "birth_year" => $person["birth_year"],
                              "known_for" => $person["known_for"],
-                             "edited" => $date_time];
+                             "created" => $person["created"],
+                             "edited" => $date_time,
+                             "url" => $person["url"]];
             http_response_code(200);
         } else {
             http_response_code(400);
