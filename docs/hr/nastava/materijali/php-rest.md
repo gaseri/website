@@ -120,7 +120,14 @@ Recimo da u istom direktoriju `public` gdje se nalazi `index.php` postoji datote
 !!! warning
     Iz sigurnosne perspektive, spremanje podataka u datoteku koja se nalazi na mjestu s kojeg je klijenti mogu dohvatiti HTTP zahtjevima (u ovom slučaju naredbom `curl http://localhost:8000/persons.json`) je katastrofalno loša praksa. U procesu učenja datoteku pohranjujemo na tom mjestu samo radi jednostavnosti.
 
-Mi, naravno, ne možemo biti sigurni da će ta datoteka uvijek postojati pa ćemo kod pokretanja funkcijom `file_exists()` ([dokumentacija](https://www.php.net/manual/en/function.file-exists.php)) provjeriti njeno postojanje. Ako postoji, uzet ćemo da ona ima spremljene podatke od ranije te je učitati funkcijom `file_get_contents()` ([dokumentacija](https://www.php.net/manual/en/function.file-get-contents.php)) pa funkcijom `json_decode()` pretvoriti dobiveni sadržaj u obliku JSON u polje s podacima o osobama. Ako datoteka ne postoji, inicijalizirat ćemo popis osoba na prazno polje. Kod u datoteci `index.php` je oblika:
+Mi, naravno, ne možemo biti sigurni da će ta datoteka uvijek postojati pa ćemo kod pokretanja funkcijom `file_exists()` ([dokumentacija](https://www.php.net/manual/en/function.file-exists.php)) provjeriti njeno postojanje. Ako postoji, uzet ćemo da ona ima spremljene podatke od ranije te je učitati funkcijom `file_get_contents()` ([dokumentacija](https://www.php.net/manual/en/function.file-get-contents.php)) pa funkcijom `json_decode()` pretvoriti dobiveni sadržaj u obliku JSON u polje s podacima o osobama.
+
+Ako datoteka ne postoji, popis osoba mogli bismo inicijalizirati na prazno polje. U tom slučaju bi prva osoba koju kasnije dodamo bila postavljena u polje kao element na indeksu 0 i imala isti taj broj kao identifikator za dohvaćanje putem URL-a. Kako ljudi intuitivno preferiraju brojati od 1, dodat ćemo u to polje proizvoljni element da zauzme indeks 0 pa će prva kasnije dodana osoba biti postavljena na indeks 1. Kako element na indeksu 0 nećemo koristiti, njegov nam sadržaj nije bitan pa možemo iskoristiti vrijednost `NULL`.
+
+!!! note
+    Uočimo da prazno polje, vrijednost `NULL` i polje koje sadrži vrijednost `NULL` nisu iste vrijednosti: prvo je polje bez elemenata, drugo nije polje, a treće je polje s jednim elementom; tip tog elementa ne mijenja činjenicu da polje ima element.
+
+Kod u datoteci `index.php` je oblika:
 
 ``` php
 <?php
@@ -130,7 +137,7 @@ if (file_exists($datoteka)) {
     $j = file_get_contents($datoteka);
     $persons = json_decode($j, true);
 } else {
-    $persons = [];
+    $persons = [NULL];
 }
 ```
 
@@ -148,7 +155,7 @@ if (file_exists($datoteka)) {
     $j = file_get_contents($datoteka);
     $persons = json_decode($j, true);
 } else {
-    $persons = [];
+    $persons = [NULL];
 }
 
 header("Content-Type: application/json");
@@ -245,7 +252,7 @@ if (file_exists($datoteka)) {
     $j = file_get_contents($datoteka);
     $persons = json_decode($j, true);
 } else {
-    $persons = [];
+    $persons = [NULL];
 }
 
 header("Content-Type: application/json");
@@ -381,9 +388,9 @@ A evo, dobro.
 
 ## Stvaranje podataka
 
-Kako je HTTP protokol koji ne održava stanje (engl. *stateless protocol*), svaki zahtjev se obrađuje neovisno o prethodnima. Konkretno, eventualna dopuna polja `$persons` još jednom osobom ili izmjena podataka neke od postojećih osoba izvedena u jednom zahtjevu neće biti vidljiva u sljedećem jer to polje i time svi podaci u njemu prestaju postojati nakon slanja odgovora na primljeni zahtjev. Kako se prilikom obrade novog zahtjeva isti kod izvršava ispočetka i pritom inicijalizira polje `$persons` ili iz datoteke ili prazno, podatke dodane ili promijenjene u prethodnom zahtjevu ne možemo dohvatiti.
+Kako je HTTP protokol koji ne održava stanje (engl. *stateless protocol*), svaki zahtjev se obrađuje neovisno o prethodnima. Konkretno, eventualna dopuna polja `$persons` još jednom osobom ili izmjena podataka neke od postojećih osoba izvedena u jednom zahtjevu neće biti vidljiva u sljedećem zahtjevu. Razlog tome je što to polje i time svi podaci u njemu prestaju postojati brisanjem sadržaja memorije nakon slanja odgovora na primljeni zahtjev. Kako se prilikom obrade svakog zahtjeva isti kod izvršava ispočetka i pritom inicijalizira polje `$persons` ili iz datoteke ili kao polje s elementom `NULL`, podaci dodani ili promijenjeni u memoriji kod obrane prethodnog zahtjeva neće biti vidljivi.
 
-Kako bi nove osobe ili izmjene osoba bile trajno sačuvane, potrebno je nakon obrade zahtjeva i slanja odgovora promijenjeni sadržaj spremiti u datoteku koju koristimo kao izvor podataka. Ponovno ćemo iskoristiti serijalizaciju u oblik JSON funkcijom `json_encode()` te pohraniti dobiveni JSON zapis u datoteku funkcijom `file_put_contents()`. Kod je oblika:
+Kako bi nove osobe ili izmjene osoba bile trajno sačuvane, potrebno je nakon obrade zahtjeva i slanja odgovora promijenjeni sadržaj spremiti iz memorije u datoteku koju koristimo kao izvor podataka. Ponovno ćemo iskoristiti serijalizaciju u oblik JSON funkcijom `json_encode()` te pohraniti dobiveni JSON zapis u datoteku funkcijom `file_put_contents()`. Kod je oblika:
 
 ``` php
 <?php
@@ -426,7 +433,7 @@ if (file_exists($datoteka)) {
     $j = file_get_contents($datoteka);
     $persons = json_decode($j, true);
 } else {
-    $persons = [];
+    $persons = [NULL];
 }
 
 header("Content-Type: application/json");
@@ -459,7 +466,7 @@ if (file_exists($datoteka)) {
     $j = file_get_contents($datoteka);
     $persons = json_decode($j, true);
 } else {
-    $persons = [];
+    $persons = [NULL];
 }
 
 header("Content-Type: application/json");
@@ -499,7 +506,7 @@ if (file_exists($datoteka)) {
     $j = file_get_contents($datoteka);
     $persons = json_decode($j, true);
 } else {
-    $persons = [];
+    $persons = [NULL];
 }
 
 header("Content-Type: application/json");
@@ -543,7 +550,7 @@ if (file_exists($datoteka)) {
     $j = file_get_contents($datoteka);
     $persons = json_decode($j, true);
 } else {
-    $persons = [];
+    $persons = [NULL];
 }
 
 header("Content-Type: application/json");
@@ -701,7 +708,7 @@ if (file_exists($datoteka)) {
     $j = file_get_contents($datoteka);
     $persons = json_decode($j, true);
 } else {
-    $persons = [];
+    $persons = [NULL];
 }
 
 header("Content-Type: application/json");
@@ -794,7 +801,7 @@ if (file_exists($datoteka)) {
     $j = file_get_contents($datoteka);
     $persons = json_decode($j, true);
 } else {
-    $persons = [];
+    $persons = [NULL];
 }
 
 header("Content-Type: application/json");
@@ -851,7 +858,7 @@ if (file_exists($datoteka)) {
     $j = file_get_contents($datoteka);
     $persons = json_decode($j, true);
 } else {
-    $persons = [];
+    $persons = [NULL];
 }
 
 header("Content-Type: application/json");
@@ -930,7 +937,7 @@ if (file_exists($datoteka)) {
     $j = file_get_contents($datoteka);
     $persons = json_decode($j, true);
 } else {
-    $persons = [];
+    $persons = [NULL];
 }
 
 header("Content-Type: application/json");
@@ -1009,7 +1016,7 @@ if (file_exists($datoteka)) {
     $j = file_get_contents($datoteka);
     $persons = json_decode($j, true);
 } else {
-    $persons = [];
+    $persons = [NULL];
 }
 
 header("Content-Type: application/json");
