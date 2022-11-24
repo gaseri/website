@@ -340,9 +340,7 @@ Za stvaranje novih osoba moramo prvo naučiti obraditi tijelo zahtjeva.
 
 ## Obrada tijela zahtjeva i stvaranje tijela odgovora
 
-Tijelo HTTP zahtjeva nam je u jeziku PHP dostupno na putanji `php://input` ([dokumentacija](https://www.php.net/manual/en/wrappers.php.php)) i ponaša se kao datoteka iz koje možemo čitati. Ovaj zapis putanje tijela HTTP zahtjeva ne treba mistificirati jer naprosto radi o konvenciji koja se koristi; postoji analogna putanja `php://output` u koju možemo kao u datoteku zapisivati sadržaj tijela odgovora, odnosno na drugačiji način izvesti isto što već rutinski radimo naredbom `echo`. Štoviše, na sličnim putanjama dostupni su i drugi ulazno-izlazni tokovi: standardni ulaz, standardni izlaz i standardni izlaz za greške operacijskog sustava redom pod `php://stdin`, `php://stdout` i `php://stderr` ([dokumentacija](https://www.php.net/manual/en/features.commandline.io-streams.php)), opisnici otvorenih datoteka pod `php://fd` itd.
-
-U nastavku ćemo koristiti dvije funkcije iz [dijela Filesystem](https://www.php.net/manual/en/book.filesystem.php): sadržaj tijela zahtjeva dohvatit ćemo već ranije korištenom funkcijom `file_get_contents()`, a sadržaj tijela odgovora ćemo u slučaju potrebe puniti analognom funkcijom `file_put_contents()` ([dokumentacija](https://www.php.net/manual/en/function.file-put-contents.php)).
+Tijelo HTTP zahtjeva koje nam je u jeziku PHP dostupno na već ranije korištenoj putanji `php://input`. Kako se radi o putanjama s kojima se radi kao s datotekama, sadržaj tijela zahtjeva dohvatit ćemo već ranije korištenom funkcijom `file_get_contents()`, a sadržaj tijela odgovora na putanji `php://output` puniti analognom funkcijom `file_put_contents()` ([dokumentacija](https://www.php.net/manual/en/function.file-put-contents.php)).
 
 Napravimo poslužitelj koji na zahtjev tipa POST sa sadržajem `Kako ide?` koji je MIME tipa text/plain odgovara sadržajem `A evo, dobro.` također MIME tipa text/plain. Kod je oblika:
 
@@ -388,7 +386,9 @@ A evo, dobro.
 
 ## Stvaranje podataka
 
-Kako je HTTP protokol koji ne održava stanje (engl. *stateless protocol*), svaki zahtjev se obrađuje neovisno o prethodnima. Konkretno, eventualna dopuna polja `$persons` još jednom osobom ili izmjena podataka neke od postojećih osoba izvedena u jednom zahtjevu neće biti vidljiva u sljedećem zahtjevu. Razlog tome je što to polje i time svi podaci u njemu prestaju postojati brisanjem sadržaja memorije nakon slanja odgovora na primljeni zahtjev. Kako se prilikom obrade svakog zahtjeva isti kod izvršava ispočetka i pritom inicijalizira polje `$persons` ili iz datoteke ili kao polje s elementom `NULL`, podaci dodani ili promijenjeni u memoriji kod obrane prethodnog zahtjeva neće biti vidljivi.
+Podsjetimo se da je HTTP protokol koji ne održava stanje (engl. *stateless*) pa se svaki zahtjev obrađuje neovisno o prethodnima.
+
+U konkretnom slučaju to znači da eventualna dopuna polja `$persons` još jednom osobom ili izmjena podataka neke od postojećih osoba izvedena u jednom zahtjevu neće biti vidljiva u sljedećem zahtjevu. Razlog tome je što to polje i time svi podaci u njemu prestaju postojati brisanjem sadržaja memorije nakon slanja odgovora na primljeni zahtjev. Kako se prilikom obrade svakog zahtjeva isti kod izvršava ispočetka i pritom inicijalizira polje `$persons` ili iz datoteke ili kao polje s elementom `NULL`, podaci dodani ili promijenjeni u memoriji kod obrane prethodnog zahtjeva neće biti vidljivi.
 
 Kako bi nove osobe ili izmjene osoba bile trajno sačuvane, potrebno je nakon obrade zahtjeva i slanja odgovora promijenjeni sadržaj spremiti iz memorije u datoteku koju koristimo kao izvor podataka. Ponovno ćemo iskoristiti serijalizaciju u oblik JSON funkcijom `json_encode()` te pohraniti dobiveni JSON zapis u datoteku funkcijom `file_put_contents()`. Kod je oblika:
 

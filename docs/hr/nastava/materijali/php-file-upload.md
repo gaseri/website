@@ -131,9 +131,11 @@ Izlistavanjem sadržaja radnog direktorija web poslužitelja možemo se uvjeriti
 
 ## Postavljanje datoteke metodom PUT
 
-Osim HTTP metodom POST, postavljanje datoteke na poslužitelj [moguće je izvesti i HTTP metodom PUT](https://www.php.net/manual/en/features.file-upload.put-method.php) ([više detalja o HTTP metodi PUT na MDN-u](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT)). Kod postavljanja datoteke HTTP metodom PUT sadržaj datoteke nalazit će se u tijelu HTTP zahtjeva koje nam je u jeziku PHP dostupno na već ranije korištenoj putanji `php://input`.
+Osim HTTP metodom POST, postavljanje datoteke na poslužitelj [moguće je izvesti i HTTP metodom PUT](https://www.php.net/manual/en/features.file-upload.put-method.php) ([više detalja o HTTP metodi PUT na MDN-u](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT)). Kod postavljanja datoteke HTTP metodom PUT sadržaj datoteke nalazit će se u tijelu HTTP zahtjeva.
 
-Sadržaj tijela zahtjeva ćemo u PHP-u dohvatiti s putanje `php://input` funkcijom `file_get_contents()`, a zatim ćemo funkcijom `file_put_contents()` spremiti u datoteku `popis.txt` dohvaćeni sadržaj. Kako se koristi HTTP metoda PUT, očekujemo da `$_SERVER["REQUEST_METHOD"]` ima vrijednost `"PUT"` i da klijent šalje zahtjeve na putanju `http://localhost:8000/upload` pa je kod oblika:
+Sadržaj tijela HTTP zahtjeva nam je u jeziku PHP dostupan na putanji `php://input` ([dokumentacija](https://www.php.net/manual/en/wrappers.php.php)) i ponaša se kao datoteka iz koje možemo čitati. Ovaj zapis putanje tijela HTTP zahtjeva ne treba mistificirati jer naprosto radi o konvenciji koja se koristi; postoji analogna putanja `php://output` u koju možemo kao u datoteku zapisivati sadržaj tijela odgovora, odnosno na drugačiji način izvesti isto što već rutinski radimo naredbom `echo`. Štoviše, na sličnim putanjama dostupni su i drugi ulazno-izlazni tokovi: standardni ulaz, standardni izlaz i standardni izlaz za greške operacijskog sustava redom pod `php://stdin`, `php://stdout` i `php://stderr` ([dokumentacija](https://www.php.net/manual/en/features.commandline.io-streams.php)), opisnici otvorenih datoteka pod `php://fd` itd.
+
+Sadržaj tijela zahtjeva ćemo u PHP-u dohvatiti s putanje `php://input` funkcijom `file_get_contents()` ([dokumentacija](https://www.php.net/manual/en/function.file-get-contents.php)), a zatim ćemo funkcijom `file_put_contents()` ([dokumentacija](https://www.php.net/manual/en/function.file-put-contents.php)) spremiti u datoteku `popis.txt` dohvaćeni sadržaj. Kako se koristi HTTP metoda PUT, očekujemo da `$_SERVER["REQUEST_METHOD"]` ima vrijednost `"PUT"` i da klijent šalje zahtjeve na putanju `http://localhost:8000/upload` pa je kod oblika:
 
 ``` php
 <?php

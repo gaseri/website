@@ -154,9 +154,15 @@ if ($_SERVER["REQUEST_URI"] == "/kolaci") {
 
 ### Pohrana podataka o korisnicima
 
-Podsjetimo se da je HTTP protokol koji ne održava stanje (engl. *stateless*) pa se svaki zahtjev obrađuje neovisno o prethodnima.
+Kako je HTTP protokol koji ne održava stanje (engl. *stateless protocol*), svaki zahtjev se obrađuje neovisno o prethodnima. Kako bismo spremili podatke o kolačima koje su korisnici naručili, trebat će nam datoteka. U tu datoteku u koju ćemo spremiti serijalizirane podatke iz memorije za kasnije učitavanje; ponovno ćemo iskoristiti serijalizaciju u oblik JSON funkcijom `json_encode()` te kod učitavanja deserializaciju iz JSON-a u podatke funkcijom `json_decode()`.
 
-Kako bismo pohranili kolače koje su korisnici naručili, svakako će nam trebati datoteka u koju ćemo pohraniti serijalizirane podatke pohraniti funkcijom `file_put_contents()`. Ponovno ćemo iskoristiti serijalizaciju u oblik JSON funkcijom `json_encode()` te deserializaciju iz JSON-a u podatke funkcijom `json_decode()`. Kod pokretanja ćemo funkcijom `file_exists()` ([dokumentacija](https://www.php.net/manual/en/function.file-exists.php)) provjeriti ako postoji datoteka sa spremljenim podacima od ranije te ih učitati funkcijom `file_get_contents()`. Datoteku nazovimo `orders.json` pa imamo kod oblika:
+U nastavku ćemo koristiti tri funkcije iz [dijela Filesystem](https://www.php.net/manual/en/book.filesystem.php):
+
+- kod pokretanja ćemo funkcijom `file_exists()` ([dokumentacija](https://www.php.net/manual/en/function.file-exists.php)) provjeriti ako postoji datoteka sa spremljenim podacima od ranije,
+- učitat ćemo spremljene podatke iz datoteke u memoriju funkcijom `file_get_contents()` ([dokumentacija](https://www.php.net/manual/en/function.file-get-contents.php)),
+- nakon završetka obrade zahtjeva spremiti ćemo podatke iz memorije u datoteku `file_put_contents()` ([dokumentacija](https://www.php.net/manual/en/function.file-put-contents.php)).
+
+Datoteku nazovimo `orders.json` pa imamo kod oblika:
 
 ``` php
 <?php
