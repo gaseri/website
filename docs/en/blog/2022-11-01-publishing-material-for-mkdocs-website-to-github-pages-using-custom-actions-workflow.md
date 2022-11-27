@@ -143,12 +143,14 @@ Finally, if you want to use a custom domain, having the `CNAME` file in the repo
 
 The next step in streamlining this approach further is probably patching [actions/configure-pages](https://github.com/actions/configure-pages) that will allow us to replace:
 
-``` yaml
+``` yaml hl_lines="8-20"
 jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
@@ -166,7 +168,7 @@ jobs:
 
 with something along the lines of:
 
-``` yaml
+``` yaml hl_lines="8-10"
 jobs:
   # Build job
   build:
