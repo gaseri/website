@@ -109,7 +109,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: '3.11'
       - name: Install MkDocs and Material for MkDocs
         run: pip install mkdocs[i18n] mkdocs-material
       - name: Install Pillow and CairoSVG (required for social card generation)
@@ -154,7 +154,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: '3.11'
       - name: Install MkDocs and Material for MkDocs
         run: pip install mkdocs[i18n] mkdocs-material
       - name: Install Pillow and CairoSVG (required for social card generation)
@@ -182,3 +182,5 @@ jobs:
 ```
 
 We can even [dream bigger](https://youtu.be/GoJOVN2ycXQ) than that: specifying the `generator_config_file` should make some JavaScript-powered parsing magic/logic detect the requirement for the installation of optional dependencies and the caching setup, and enable them only if required.
+
+**Updated on 2022-11-25:** changed Python version from 3.10 to 3.11, resulting in faster docs builds (see [Faster CPython](https://docs.python.org/3.11/whatsnew/3.11.html#faster-cpython) for details).
