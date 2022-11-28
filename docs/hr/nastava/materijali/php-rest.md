@@ -145,7 +145,7 @@ if (file_exists($datoteka)) {
 
 Klijentu koji vrši dohvaćanje svih osoba HTTP metodom GET na URI `/persons` potrebno je vratiti dva podatka, broj osoba u odgovoru i podatke o osobama. Broj osoba ćemo dobiti funkcijom `count()` ([dokumentacija](https://www.php.net/manual/en/function.count.php)), a podatke o osobama možemo iz asocijativnog polja (proizvoljni indeksi, u našem slučaju identifikatori) pretvoriti u oblik indeksiranog polja (indeksi su cijeli brojevi od nule nadalje) funkcijom `array_values()` ([dokumentacija](https://www.php.net/manual/en/function.array-values.php)).
 
-Time smo formirali odgovor i ostaje nam samo pretvoriti ga u JSON funkcijom `json_encode()` te ga ispisati. Kako bismo olakšali razlikovanje neispravnih zahtjeva od zahtjeva koji rezultiraju praznim odgovorom, dodatno ćemo sve na sve zahtjeve koje nismo eksplicitno dozvolili (na način kako smo upravo dozvolili HTTP zahtjev metodom GET na `/persons`) vratiti HTTP statusni kod [400 Bad Request](https://http.cat/400) ([više detalja o HTTP statusnom kodu 400 Bad Request na MDN-u](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)). Kod je oblika:
+Time smo formirali odgovor i ostaje nam samo pretvoriti ga u JSON funkcijom `json_encode()` te ga ispisati. Kako bismo olakšali razlikovanje neispravnih zahtjeva od zahtjeva koji rezultiraju praznim odgovorom, postavit ćemo poslužitelj da na sve zahtjeve koji nisu eksplicitno dozvoljeni (na način kako smo upravo dozvolili HTTP zahtjev metodom GET na `/persons`) vraća HTTP statusni kod [400 Bad Request](https://http.cat/400) ([više detalja o HTTP statusnom kodu 400 Bad Request na MDN-u](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)). Kod je oblika:
 
 ``` php
 <?php
@@ -401,7 +401,7 @@ $j = json_encode($persons);
 file_put_contents($datoteka, $j);
 ```
 
-Od korisnika očekujemo da nam šalje zahtjeve za stvaranjem podataka čiji je sadržaj MIME tipa application/json pa možemo u suprotnom (ako MIME tip nije taj ili nije naveden uopće) postaviti HTTP statusni kod odgovora na [415 Unsupported Media Type](https://http.cat/415) ([više detalja o HTTP statusnom kodu 415 Unsupported Media Type na MDN-u](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/415)) i potom prekinuti obradu zahtjeva naredbom `exit` ([dokumentacija](https://www.php.net/manual/en/function.exit.php)).
+Poslužitelj očekuje od klijenta primiti zahtjeve za stvaranjem podataka čiji je sadržaj u formatu JSON i koji imaju u zaglavlju naveden odgovarajući MIME tip. U suprotnom, tj.ako HTTP zaglavlje `Content-Type` ne postoji u zahtjevu ili ako postoji i ima vrijednost koja nije application/json, poslužitelj će postaviti HTTP statusni kod odgovora na [415 Unsupported Media Type](https://http.cat/415) ([više detalja o HTTP statusnom kodu 415 Unsupported Media Type na MDN-u](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/415)) i potom prekinuti obradu zahtjeva naredbom `exit` ([dokumentacija](https://www.php.net/manual/en/function.exit.php)).
 
 ``` php
 <?php
@@ -490,7 +490,7 @@ file_put_contents($datoteka, $j);
 
 Klijent sada može dodati kao osobu bilo koji valjani JSON zapis, npr. `{"institution": "Odjel za informatiku", "address": "Radmile Matejčić 2"}` i taj će podatak biti spremljen. Kako bismo to izbjegli, izvest ćemo dvije promjene:
 
-- Poslužitelj će provjeriti ćemo da su navedeni podaci `"name"` tipa `string`, `"birth_year"` tipa `int` i `"known_for"` tipa `array` (u praksi bi trebalo izvršiti i provjeru pojedinih elemenata polja `"known_for"`, ali ovdje radi jednostavnosti to nećemo raditi). Tip podatka saznat ćemo funkcijom `gettype()` ([dokumentacija](https://www.php.net/manual/en/function.gettype.php)).
+- Poslužitelj će provjeriti da su navedeni podaci `"name"` tipa `string`, `"birth_year"` tipa `int` i `"known_for"` tipa `array` (u praksi bi trebalo izvršiti i provjeru pojedinih elemenata polja `"known_for"`, ali ovdje radi jednostavnosti to nećemo raditi). Tip podatka saznat ćemo funkcijom `gettype()` ([dokumentacija](https://www.php.net/manual/en/function.gettype.php)).
 - Iz klijentskog sadržaja poslužitelj će kod stvaranja osobe prihvatiti samo podatke `"name"`, `"birth_year"` i `"known_for"`, a sve ostale zanemariti. Primjerice, ako klijent pošalje JSON zapis `{"name": "Michael J. Karels", "worked_on_bsd_unix": true}`, onda će podatak `"worked_on_bsd_unix"` biti zanemaren.
 
 ``` php
