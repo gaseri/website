@@ -21,7 +21,7 @@ $ cd website
 
 ## Editing the contents
 
-Make the edits you want using any text editor you like. Popular choices include [Visual Studio Code](https://code.visualstudio.com/), which supports [highlighting and previewing Markdown out of the box](https://code.visualstudio.com/docs/languages/markdown), [VSCodium](https://vscodium.com/), the community-driven and freely-licensed binary distribution of VS Code, [IntelliJ IDEA](https://www.jetbrains.com/idea/) with [the bundled Markdown plugin](https://www.jetbrains.com/help/idea/markdown.html), [Markdown Mode for GNU Emacs](https://www.emacswiki.org/emacs/MarkdownMode), and [Markdown Vim Mode](https://github.com/preservim/vim-markdown).
+Make the changes you want using any text editor you like. Popular choices include [Visual Studio Code](https://code.visualstudio.com/), which supports [highlighting and previewing Markdown out of the box](https://code.visualstudio.com/docs/languages/markdown), [VSCodium](https://vscodium.com/), the community-driven and freely-licensed binary distribution of VS Code, [IntelliJ IDEA](https://www.jetbrains.com/idea/) with [the bundled Markdown plugin](https://www.jetbrains.com/help/idea/markdown.html), [Markdown Mode for GNU Emacs](https://www.emacswiki.org/emacs/MarkdownMode), and [Markdown Vim Mode](https://github.com/preservim/vim-markdown).
 
 ## Preparing the build environment
 
@@ -53,31 +53,25 @@ $ mkdocs build
 
 If the build was unsuccessful, fix the errors and repeat the building process.
 
-## Saving the edits
+## Saving the changes
 
-Once the build is successful, add the edited files using Git and commit the changes:
+Confirm that the website can be successfully built, add the changed files using Git, and commit the changes:
 
 ``` shell
 $ git add docs
 $ git commit
 ```
 
-## Publishing the edits
+## Publishing the changes
 
-To publish your edits in source form, push them to GitHub:
+To publish the changes, push them to GitHub:
 
 ``` shell
 $ git push
 ```
 
-## Publishing the website
+Wait a few minutes until [GitHub Pages](https://pages.github.com/) finishes building the new site, including the changes you just pushed. Visit [gaseri.org](https://gaseri.org/) to make sure that your changes are visible.
 
-Once you have confirmed that the build is successful, push the built contents to GitHub using the [MkDocs gh-deloy command](https://www.mkdocs.org/user-guide/deploying-your-docs/):
-
-``` shell
-$ mkdocs gh-deploy
-```
-
-Wait a few minutes until [GitHub Pages](https://pages.github.com/) finishes building the new site from the changes you just pushed and then visit [gaseri.org](https://gaseri.org/) to make sure that your changes are visible.
+**Note:** The official MkDocs approach, which we *don't* use, is to push the built contents to GitHub using the [MkDocs's GitHub deploy command](https://www.mkdocs.org/user-guide/deploying-your-docs/) (`mkdocs gh-deploy`).
 
 *That's all, folks!*
