@@ -55,6 +55,6 @@ Croatia
 
 ## Poster
 
-![GASERI poster](../images/gaseri-poster.webp)
+![GASERI poster Koleda](../images/gaseri-poster-koleda.webp)
 
-[Download in PDF format (A3, landscape)](../images/gaseri-poster.pdf)
+[Download in PDF format (A3, landscape)](../images/gaseri-poster-koleda.pdf)
