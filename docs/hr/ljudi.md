@@ -25,7 +25,7 @@ author: Vedran Miletić
 - Dominik Kinkela
 - Erik Jermaniš
 - Valentin Kuharić
-- Dorian Manjarić
+- [Dorian Manjarić](https://manjaric.com/)
 - Marin Martuslović
 - [Luka Ljubojević](https://lukaljubojevic.github.io/web/)
 
