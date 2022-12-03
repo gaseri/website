@@ -27,6 +27,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
@@ -38,7 +40,7 @@ jobs:
       - name: Setup caching
         uses: actions/cache@v3
         with:
-          key: ${{ github.ref }}
+          key: ${{ github.sha }}
           path: .cache
       - name: Build site (_site directory name is used for Jekyll compatiblity)
         run: mkdocs build --config-file ./mkdocs.yml --site-dir ./_site

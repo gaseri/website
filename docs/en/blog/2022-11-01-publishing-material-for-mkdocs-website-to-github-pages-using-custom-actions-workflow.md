@@ -19,7 +19,7 @@ Since this summer, GitHub offers [publishing Pages using a custom Actions workfl
 
 Let's see how far we can get. Without going into details about the [syntax for GitHub Actions](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions), here is the starting workflow configuration file for Jekyll:
 
-``` yaml hl_lines="1-2 30-36"
+``` yaml hl_lines="1-2 32-36"
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
 name: Deploy Jekyll with GitHub Pages dependencies preinstalled
 
@@ -76,7 +76,7 @@ The highlighted lines are Jekyll-specific. We can easily replace these lines wit
 
 In this case, since we want a drop-in replacement for Jekyll so that the remaining commands work perfectly, we will perform the MkDocs build using the `mkdocs.yml` configuration file in the current directory and write the built site output files into the `_site` directory.
 
-``` yaml hl_lines="1-2 30-44"
+``` yaml hl_lines="1-2 32-44"
 # Sample workflow for building and deploying a MkDocs site to GitHub Pages
 name: Deploy MkDocs with GitHub Pages dependencies preinstalled
 
@@ -106,6 +106,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
@@ -117,7 +119,7 @@ jobs:
       - name: Setup caching
         uses: actions/cache@v3
         with:
-          key: ${{ github.ref }}
+          key: ${{ github.sha }}
           path: .cache
       - name: Build site (_site directory name is used for Jekyll compatiblity)
         run: mkdocs build --config-file ./mkdocs.yml --site-dir ./_site
@@ -151,6 +153,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
@@ -162,7 +166,7 @@ jobs:
       - name: Setup caching
         uses: actions/cache@v3
         with:
-          key: ${{ github.ref }}
+          key: ${{ github.sha }}
           path: .cache
 ```
 
@@ -184,3 +188,5 @@ jobs:
 We can even [dream bigger](https://youtu.be/GoJOVN2ycXQ) than that: specifying the `generator_config_file` should make some JavaScript-powered parsing magic/logic detect the requirement for the installation of optional dependencies and the caching setup, and enable them only if required.
 
 **Updated on 2022-11-25:** changed Python version from 3.10 to 3.11, resulting in faster docs builds (see [Faster CPython](https://docs.python.org/3.11/whatsnew/3.11.html#faster-cpython) for details).
+
+**Updated on 2022-12-03:** changed caching to use `github.sha` instead of `github.ref`, enabling rebuilds of social cards when site contents change.
