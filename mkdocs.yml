@@ -381,6 +381,8 @@ nav:
       - PhD students: en/people/phd-students.md
     - Projects: en/projects.md
     - Publications: en/publications.md
+    - Talks:
+      - The challenges of the upcoming exascale supercomputing era in computational biochemistry: en/talks/2022-01-26-the-challenges-of-the-upcoming-exascale-supercomputing-era-in-computational-biochemistry.md
     - Teaching:
       - About the teaching: en/teaching/index.md
       - Courses:
