@@ -85,7 +85,7 @@ Server:
   GitCommit:        9cd3357b7fd7218e4aec3eae239db1f68a5a6ec6.m
  runc:
   Version:          1.1.4
-  GitCommit:        
+  GitCommit:
  docker-init:
   Version:          0.19.0
   GitCommit:        de40ad0
@@ -116,7 +116,7 @@ Server:
 Korištenje `docker` sastoji se od prosljeđivanja niza opcija, naredbi i praćenih argumentima. Sintaksa ima ovaj oblik:
 
 ``` shell
-$ docker <opcija> <naredba> <argumenti> 
+$ docker <opcija> <naredba> <argumenti>
 ```
 
 Da biste vidjeli sve dostupne podnaredbe, upišite:
@@ -151,7 +151,7 @@ $ docker run hello-world
 
 Unable to find image 'hello-world:latest' locally
 latest: Pulling from library/hello-world
-2db29710123e: Pull complete 
+2db29710123e: Pull complete
 Digest: sha256:62af9efd515a25f84961b70f973a798d2eca956b1b2b026d0a4a63a3b0b6a3f2
 Status: Downloaded newer image for hello-world:latest
 
@@ -193,30 +193,30 @@ Na primjer, pokušajmo pretražiti python, koji je popularan programski jezik op
 $ docker search python
 
 NAME                                DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
-python                              Python is an interpreted, interactive, objec…   7939      [OK]       
-pypy                                PyPy is a fast, compliant alternative implem…   335       [OK]       
-circleci/python                     Python is an interpreted, interactive, objec…   52                   
-hylang                              Hy is a Lisp dialect that translates express…   46        [OK]       
+python                              Python is an interpreted, interactive, objec…   7939      [OK]
+pypy                                PyPy is a fast, compliant alternative implem…   335       [OK]
+circleci/python                     Python is an interpreted, interactive, objec…   52
+hylang                              Hy is a Lisp dialect that translates express…   46        [OK]
 bitnami/python                      Bitnami Python Docker Image                     22                   [OK]
-clearlinux/python                   Python programming interpreted language with…   7                    
-cimg/python                                                                         5                    
-openwhisk/python3action             Apache OpenWhisk runtime for Python 3 Actions   5                    
-openwhisk/python3aiaction           Apache OpenWhisk runtime for Python 3 Action…   2                    
-openwhisk/python2action             Apache OpenWhisk runtime for Python v2 Actio…   2                    
-pachyderm/python-build                                                              0                    
-appdynamics/python-agent-init       AppDynamics Repository for Python agent inst…   0                    
-bitnami/python-snapshot                                                             0                    
-rapidfort/python-chromedriver                                                       0                    
+clearlinux/python                   Python programming interpreted language with…   7
+cimg/python                                                                         5
+openwhisk/python3action             Apache OpenWhisk runtime for Python 3 Actions   5
+openwhisk/python3aiaction           Apache OpenWhisk runtime for Python 3 Action…   2
+openwhisk/python2action             Apache OpenWhisk runtime for Python v2 Actio…   2
+pachyderm/python-build                                                              0
+appdynamics/python-agent-init       AppDynamics Repository for Python agent inst…   0
+bitnami/python-snapshot                                                             0
+rapidfort/python-chromedriver                                                       0
 mirantis/python-operations-api      https://mirantis.jira.com/browse/IT-40189       0                    [OK]
-submitty/python                     Official Repository for Submitty Python Imag…   0                    
-okteto/python-fastapi                                                               0                    
-okteto/python                                                                       0                    
-corpusops/python                    https://github.com/corpusops/docker-images/     0                    
-pipelinecomponents/python-safety    Safety by pyup.io for Python in a container …   0                    
-itisfoundation/python-with-pandas                                                   0                    
-ibmcom/python-sybase-ppc64le        Docker image for python-sybase-ppc64le          0                    
-ibmcom/python-semver-ppc64le        Docker image for python-semver-ppc64leDocker…   0                    
-ibmcom/python-memcached-ppc64le     Docker image for python-memcached-ppc64le       0                    
+submitty/python                     Official Repository for Submitty Python Imag…   0
+okteto/python-fastapi                                                               0
+okteto/python                                                                       0
+corpusops/python                    https://github.com/corpusops/docker-images/     0
+pipelinecomponents/python-safety    Safety by pyup.io for Python in a container …   0
+itisfoundation/python-with-pandas                                                   0
+ibmcom/python-sybase-ppc64le        Docker image for python-sybase-ppc64le          0
+ibmcom/python-semver-ppc64le        Docker image for python-semver-ppc64leDocker…   0
+ibmcom/python-memcached-ppc64le     Docker image for python-memcached-ppc64le       0
 ibmcom/python-dropbox-ppc64le       Docker image for python-dropbox-ppc64leDocke…   0
 ```
 
@@ -235,15 +235,15 @@ $ docker image pull python
 
 Using default tag: latest
 latest: Pulling from library/python
-23858da423a6: Pull complete 
-326f452ade5c: Pull complete 
-a42821cd14fb: Pull complete 
-8471b75885ef: Pull complete 
-8ffa7aaef404: Pull complete 
-15132af73342: Pull complete 
-aaf3b07565c2: Pull complete 
-736f7bc16867: Pull complete 
-94da21e53a5b: Pull complete 
+23858da423a6: Pull complete
+326f452ade5c: Pull complete
+a42821cd14fb: Pull complete
+8471b75885ef: Pull complete
+8ffa7aaef404: Pull complete
+15132af73342: Pull complete
+aaf3b07565c2: Pull complete
+736f7bc16867: Pull complete
+94da21e53a5b: Pull complete
 Digest: sha256:e9c35537103a2801a30b15a77d4a56b35532c964489b125ec1ff24f3d5b53409
 Status: Downloaded newer image for python:latest
 docker.io/library/python:latest
@@ -334,13 +334,13 @@ docker start 415b131fe935
 Za zaustavljanje kontejnera koji radi upotrijebite `docker stop`, nakon čega slijedi ID ili njegov naziv. Ovaj put ćemo koristiti naziv koji je Docker dodijelio kontejneru, a to je `intelligent_babbage`:
 
 ``` shell
-$ docker stop intelligent_babbage 
+$ docker stop intelligent_babbage
 ```
 
 Nakon što odlučite da vam kontejner više ne treba, uklonite ga pomoću naredbe `docker rm`, opet koristeći ID kontejnera ili ime.
 
 ``` shell
-$ docker rm intelligent_babbage 
+$ docker rm intelligent_babbage
 ```
 
 ### Izolacija Docker kontejnera
