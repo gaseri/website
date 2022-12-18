@@ -9,15 +9,6 @@ class: _invert
 paginate: true
 ---
 
-<style>
-section {
-  font-family: 'Fira Sans', sans-serif;
-}
-code {
-  font-family: 'Fira Code', monospace;
-}
-</style>
-
 # Faktori razvoja web aplikacija
 
 ## doc. dr. sc. Vedran Miletić, vmiletic@inf.uniri.hr, [vedran.miletic.net](https://vedran.miletic.net/)

@@ -4,15 +4,6 @@ theme: gaia
 class: gaia
 ---
 
-<style>
-section {
-  font-family: 'Roboto', sans-serif;
-}
-code {
-  font-family: 'Roboto Mono', monospace;
-}
-</style>
-
 ##### **GASERI** 😎
 
 # **G**roup for **A**pplications and **S**ervices on **E**xascale **R**esearch **I**nfrastructure

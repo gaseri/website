@@ -9,15 +9,6 @@ class: _invert
 paginate: true
 ---
 
-<style>
-section {
-  font-family: 'Fira Sans', sans-serif;
-}
-code {
-  font-family: 'Fira Code', monospace;
-}
-</style>
-
 # Uvodno predavanje predmeta Programiranje za web
 
 Studij: Preddiplomski studij informatike  

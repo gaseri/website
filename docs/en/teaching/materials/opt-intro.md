@@ -9,15 +9,6 @@ class: _invert
 paginate: true
 ---
 
-<style>
-section {
-  font-family: 'Fira Sans', sans-serif;
-}
-code {
-  font-family: 'Fira Code', monospace;
-}
-</style>
-
 # Code optimization: course introduction
 
 ## Dr. Vedran Miletić, Sen. Lect., vmiletic@inf.uniri.hr

@@ -9,15 +9,6 @@ class: gaia
 paginate: true
 ---
 
-<style>
-section {
-  font-family: 'Fira Sans', sans-serif;
-}
-code {
-  font-family: 'Fira Code', monospace;
-}
-</style>
-
 # The challenges of the upcoming exascale supercomputing era in computational biochemistry
 
 ## Dr. Vedran Miletić ([group.miletic.net](https://group.miletic.net/))
