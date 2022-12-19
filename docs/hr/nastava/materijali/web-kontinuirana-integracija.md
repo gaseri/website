@@ -56,9 +56,9 @@ Izvor: [Continuous Delivery Best Practices: Extent and Intent](https://www3.dbma
 
 ---
 
-## Kontinuirana integracija (engl. *continuous integration*, kraće CI)
+## Kontinuirana integracija
 
-Prema [Wikipediji](https://en.wikipedia.org/wiki/Continuous_integration):
+Kontinuirana integracija (engl. *continuous integration*, kraće CI) je prema [Wikipediji](https://en.wikipedia.org/wiki/Continuous_integration):
 
 * praksa spajanja svih radnih kopija programera u zajedničku glavnu razvojnu granu *nekoliko puta dnevno*
 * američki programer [Grady Booch](https://en.wikipedia.org/wiki/Grady_Booch) je 1991. godine predložio pojam CI [u svojoj knjizi](https://en.wikipedia.org/wiki/Booch_method) pod naslovom *Object Oriented Design with Applications*
@@ -227,9 +227,9 @@ Izvor: [Won't Work For Us](https://www.comicagile.net/comic/wont-work-for-us/) (
 
 ---
 
-## Kontinuirana isporuka (engl. *continuous delivery*, kraće CD) (1/2)
+## Kontinuirana isporuka (1/2)
 
-Prema [Wikipediji](https://en.wikipedia.org/wiki/Continuous_delivery):
+Kontinuirana isporuka (engl. *continuous delivery*, kraće CD) je prema [Wikipediji](https://en.wikipedia.org/wiki/Continuous_delivery):
 
 * pristup programskom inženjerstvu u kojem timovi proizvode softver u kratkim ciklusima, osiguravajući da se softver može pouzdano postaviti
     - u bilo kojem trenutku
@@ -240,7 +240,7 @@ Prema [Wikipediji](https://en.wikipedia.org/wiki/Continuous_delivery):
 
 ---
 
-## Kontinuirana isporuka (engl. *continuous delivery*, kraće CD) (2/2)
+## Kontinuirana isporuka (2/2)
 
 ![Continuous Delivery process diagram](https://upload.wikimedia.org/wikipedia/commons/c/c3/Continuous_Delivery_process_diagram.svg)
 
@@ -256,16 +256,18 @@ Izvor: [deployment pipeline](https://turnoff.us/geek/deployment-pipeline/) {turn
 
 ---
 
-## Kontinuirano postavljanje (engl. *continuous deployment*, kr. CD)
+## Kontinuirano postavljanje
 
-Prema [Wikipediji](https://en.wikipedia.org/wiki/Continuous_deployment):
+![CI/CD flow](https://www.redhat.com/cms/managed-files/styles/wysiwyg_full_width/s3/ci-cd-flow-desktop_0.png?itok=QgBYmjA2)
+
+Izvor: [What is a CI/CD pipeline? (Red Hat Topics, Understanding DevOps)](https://www.redhat.com/en/topics/devops/what-cicd-pipeline)
+
+Kontinuirano postavljanje (engl. *continuous deployment*, kraće CD) je prema [Wikipediji](https://en.wikipedia.org/wiki/Continuous_deployment):
 
 * pristup u programskom inženjerstvu u kojem se programska funkcionalnost isporučuje automatiziranim postavljanjem na redovitoj bazi
 * slijedi **nakon** s kontinuirane isporuke
     - u fazi kontinuirane isporuke programska se funkcionalnost smatra potencijalno prikladnom za postavljanje, ali se postavljanje *ne* događa
     - u fazi kontinuirane isporuke očekuje se ručno postavljanje
-    - ![CI/CD flow](https://www.redhat.com/cms/managed-files/styles/wysiwyg_full_width/s3/ci-cd-flow-desktop_0.png?itok=QgBYmjA2)
-        - Izvor: [What is a CI/CD pipeline? (Red Hat Topics, Understanding DevOps)](https://www.redhat.com/en/topics/devops/what-cicd-pipeline)
 
 ---
 
