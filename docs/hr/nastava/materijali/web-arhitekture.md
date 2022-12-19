@@ -100,6 +100,18 @@ Prema [Wikipediji](https://en.wikipedia.org/wiki/Multitier_architecture):
 
 ---
 
+![Conway's Law bg 95% left:60%](https://i0.wp.com/www.comicagile.net/wp-content/uploads/2021/05/761C8B2B-C2F7-4100-99A2-7FD502CB1E78.jpeg)
+
+## Conwayev zakon
+
+Izvor: [Conway's Law](https://www.comicagile.net/comic/conways-law/) (Comic Agilé #85)
+
+Prema [Wikipediji](https://en.wikipedia.org/wiki/Conway%27s_law), američki računalni znanstvenik [Melvin Conway](https://en.wikipedia.org/wiki/Melvin_Conway) je rekao:
+
+> Svaka organizacija koja dizajnira sustav (široko definiran) proizvest će dizajn čija je struktura kopija komunikacijske strukture organizacije.
+
+---
+
 ## Monolitna i mikrouslužna arhitektura
 
 ![Monolithic architecture vs microservices architecture](https://devopedia.org/images/article/129/3581.1541934780.png)

@@ -219,6 +219,14 @@ test_db:
 
 ---
 
+![Won't Work For Us bg 95% left:65%](https://i0.wp.com/www.comicagile.net/wp-content/uploads/2022/04/BA8C83E8-1C86-434C-B8C7-29C878D76232.jpeg?resize=1536%2C1352&ssl=1)
+
+## Nije to za nas
+
+Izvor: [Won't Work For Us](https://www.comicagile.net/comic/wont-work-for-us/) (Comic Agilé #169)
+
+---
+
 ## Kontinuirana isporuka (engl. *continuous delivery*, kraće CD) (1/2)
 
 Prema [Wikipediji](https://en.wikipedia.org/wiki/Continuous_delivery):
