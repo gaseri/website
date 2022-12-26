@@ -1,5 +1,3 @@
-# Blog index
-
-## Tags
+# Blog index by tags
 
 [TAGS]
