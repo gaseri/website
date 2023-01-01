@@ -722,7 +722,7 @@ A citati u GROMACS-u ostaju moj jedini glas
 Moram da mdrunam to znaš ne brini trjconvaću ja  
 Jer naš je san ti i ja i BioSFLab
 
-([Izvorni tekst na Tekstovi Pjesama](https://www.tekstovipjesamalyrics.com/tekst-pjesme/51746-dj-shone-dado-polumenta-i-elitni-odredi-beograd-tekst-pjesme))
+([Izvorni tekst na Geniusu](https://genius.com/Dj-shone-beograd-private-version-lyrics))
 
 ### Luna -- Sistemcu (prerada Šećeru)
 

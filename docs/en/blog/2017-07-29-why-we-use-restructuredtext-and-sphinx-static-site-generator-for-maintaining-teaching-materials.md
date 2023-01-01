@@ -53,7 +53,7 @@ Therefore, we opted to use [Sphinx](https://www.sphinx-doc.org/) and reStructure
 - one can still have social share links by including e.g. [AddToAny](https://www.addtoany.com/) in a post-processing script after the compilation,
 - one can still have comments (our teaching materials will not) by including e.g. [Disqus](https://disqus.com/),
 - super easy deployment: choose whether you want your URLs to end in `.html` or `/`, compile accordingly, and dump the generated HTML files,
-- plently of good looking themes, some of which are responsive ([reStructuredHgWiki](../../hr/povijest.md#restructuredtext-sphinx-i-bootstrap) uses [sphinx-bootstrap-theme](https://ryan-roemer.github.io/sphinx-bootstrap-theme/), [CNPSLab](../../hr/povijest.md#laboratorij-za-racunalne-mreze-paralelizaciju-i-simulaciju) uses [sphinx-rtd-theme](https://docs.readthedocs.io/en/latest/theme.html), and there are [many more to choose from](https://github.com/search?q=sphinx+theme)),
+- plently of good looking themes, some of which are responsive ([reStructuredHgWiki](../../hr/povijest.md#restructuredtext-sphinx-i-bootstrap) uses [sphinx-bootstrap-theme](https://ryan-roemer.github.io/sphinx-bootstrap-theme/), [CNPSLab](../../hr/povijest.md#laboratorij-za-racunalne-mreze-paralelizaciju-i-simulaciju) uses [sphinx-rtd-theme](https://sphinx-rtd-theme.readthedocs.io/), and there are [many more to choose from](https://github.com/search?q=sphinx+theme)),
 - Sphinx can produce (LaTeX) PDF from the reStructuredText source (and [a nice-looking one](https://www.sphinx-doc.org/_/downloads/en/master/pdf/), I must say), but [Pandoc can produce almost anything you can imagine](https://pandoc.org/).
 
 There is a number of issues which affected us:

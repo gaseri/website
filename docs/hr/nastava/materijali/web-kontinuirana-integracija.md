@@ -39,8 +39,8 @@ Izvor: [Mixed Feelings](https://www.monkeyuser.com/2021/mixed-feelings/) (Monkey
     - [5. faktor: Izgradite, objavite izdanje, pokrenite](https://12factor.net/build-release-run)
     - [10. faktor: Pariter razvoja/produkcije](https://12factor.net/dev-prod-parity)
 * [rječnik pojmova oblaku urođenih aplikacija](https://glossary.cncf.io/)
-    - [Continuous integration (CI)](https://glossary.cncf.io/continuous_integration/)
-    - [Continuous delivery (CD)](https://glossary.cncf.io/continuous_delivery/)
+    - [Continuous integration (CI)](https://glossary.cncf.io/continuous-integration/)
+    - [Continuous delivery (CD)](https://glossary.cncf.io/continuous-delivery/)
 * [Developer Roadmaps](https://roadmap.sh/): [Frontend](https://roadmap.sh/frontend), [Backend](https://roadmap.sh/backend) i [DevOps](https://roadmap.sh/devops)
 * primjena u tvrtkama:
     - Cisco, kompanija temeljena na vlasničkom softveru: [What is CI/CD?](https://www.cisco.com/c/en/us/solutions/data-center/data-center-networking/what-is-ci-cd.html)
@@ -139,7 +139,7 @@ Softveri otvorenog koda za samostalno postavljanje i održavanje:
 * phpBB [koristi](https://github.com/phpbb/phpbb/commits/master) [GitHub Actions](https://github.com/phpbb/phpbb/actions)
 * PHP (interpreter) [koristi](https://github.com/php/php-src/commits/master) [Cirrus CI](https://cirrus-ci.com/github/php/php-src), [AppVeyor](https://ci.appveyor.com/project/php/php-src), [Azure Pipelines](https://dev.azure.com/phpazuredevops/PHP/_build) i [Travis CI](https://app.travis-ci.com/github/php/php-src)
 * LLVM [koristi](https://github.com/llvm/llvm-project/commits/main) [vlastitu instancu Buildbota](https://lab.llvm.org/buildbot/#/console)
-* (primjer van weba) GROMACS [koristi](https://gitlab.com/gromacs/gromacs/-/commits/master) [GitLab CI/CD](https://gitlab.com/gromacs/gromacs/-/pipelines)
+* (primjer van weba) ns-3 [koristi](https://gitlab.com/nsnam/ns-3-dev/-/commits/master) [GitLab CI/CD](https://gitlab.com/nsnam/ns-3-dev/-/pipelines)
     - [konfiguracija](https://docs.gitlab.com/ee/ci/yaml/gitlab_ci_yaml.html) se piše u [obliku YAML](https://yaml.org/)
 
 ---

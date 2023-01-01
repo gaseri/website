@@ -60,7 +60,7 @@ Pokreće operacijski sustav s master boot recorda (MBR) ili bootabilnih particij
 
     - Operacijski sustavi čiji bootloader je potpisan ključem Microsoft Corporation UEFI CA 2011:
 
-        - [Fedora (18+)](https://docs.fedoraproject.org/en-US/Fedora/18/html-single/UEFI_Secure_Boot_Guide/)
+        - [Fedora (18+)](https://fedoraproject.org/wiki/Secureboot)
         - [openSUSE (12.3+)](https://en.opensuse.org/openSUSE:UEFI)
         - [Ubuntu (12.04.2+)](https://help.ubuntu.com/community/UEFI)
 

@@ -35,10 +35,10 @@ Dokumentacija koju vrijedi konzultirati je:
     - velikim dijelom, ali ne sasvim, odnosi se i na RHEL/CentOS
     - dio dokumentacije je neovisan o verziji, a kad je ovisan o verziji vrijede sljedeća pravila o [odnosu](https://en.wikipedia.org/wiki/Red_Hat_Enterprise_Linux#Relationship_with_Fedora) [Fedore](https://docs.fedoraproject.org/en-US/quick-docs/fedora-and-red-hat-enterprise-linux/) i [RHEL-a](https://access.redhat.com/articles/3078):
 
-        - RHEL/CentOS 5 ~= [Fedora Core 6](https://docs.fedoraproject.org/en-US/Fedora_Core/6/html/Release_Notes/)
-        - RHEL/CentOS 6 ~= [Fedora 12](https://docs.fedoraproject.org/en-US/Fedora/12/html/Release_Notes/) i [Fedora 13](https://docs.fedoraproject.org/en-US/Fedora/13/html/Release_Notes/)
-        - RHEL/CentOS 7 ~= [Fedora 19](https://docs.fedoraproject.org/en-US/Fedora/19/html/Release_Notes/) i [Fedora 20](https://docs.fedoraproject.org/en-US/Fedora/20/html/Release_Notes/)
-        - RHEL/CentOS 8 ~= [Fedora 28](https://docs.fedoraproject.org/en-US/fedora/f28/release-notes/)
+        - RHEL/CentOS 5 ~= [Fedora Core 6](https://docs.fedoraproject.org/en-US/releases/f6/)
+        - RHEL/CentOS 6 ~= [Fedora 12](https://docs.fedoraproject.org/en-US/releases/f12/) i [Fedora 13](https://docs.fedoraproject.org/en-US/releases/f13/)
+        - RHEL/CentOS 7 ~= [Fedora 19](https://docs.fedoraproject.org/en-US/releases/f19/) i [Fedora 20](https://docs.fedoraproject.org/en-US/releases/f20/)
+        - RHEL/CentOS 8 ~= [Fedora 28](https://docs.fedoraproject.org/en-US/releases/f28/)
 
 ## Instalacije Fedore korištenjem Anaconde
 

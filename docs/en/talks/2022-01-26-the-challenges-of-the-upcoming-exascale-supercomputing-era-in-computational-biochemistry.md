@@ -168,7 +168,7 @@ abstract: |
 ## RDKit and RxDock
 
 - RDKit, the open-source chemoinformatics toolkit
-    - official blog frequently talks about [molecular](https://greglandrum.github.io/rdkit-blog/similarity/reference/2021/05/21/similarity-search-thresholds.html) [fingerprints](https://greglandrum.github.io/rdkit-blog/exploratory/reference/2022/01/04/number-of-unique-fp-bits.html)
+    - official blog frequently talks about [molecular](https://greglandrum.github.io/rdkit-blog/posts/2021-05-21-similarity-search-thresholds.html) [fingerprints](https://greglandrum.github.io/rdkit-blog/posts/2022-01-04-number-of-unique-fp-bits.html)
     - [database cartridge for PostgreSQL](https://www.rdkit.org/docs/Cartridge.html) offers scalable molecular storage and retrieval
 - RxDock predicts binding modes of small molecules to proteins and nucleic acids
 

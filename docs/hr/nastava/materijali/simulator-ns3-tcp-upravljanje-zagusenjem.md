@@ -259,7 +259,7 @@ Simulator ns-3 ima modul `stats` koji između ostalog omogućuje generiranje gnu
 #include <ns3/stats-module.h>
 ```
 
-Zatim stvaramo objekt `plot` tipa `Gnuplot` ([dokumentacija](https://www.nsnam.org/docs/doxygen/classns3_1_1_gnuplot.html)) koji će biti korišten za stvaranje datoteke s uputama za crtanje; pritom navodimo željeno ime izlazne datoteke s `.png` ekstenzijom. Metodom `SetTitle()` postavljamo naslov grafa, a metodom `SetTerminal()` postavljamo tip izlazne datoteke (terminal u gnuplot terminologiji) koja će biti stvorena nakon pokretanja gnuplota na `.plt` datoteku.
+Zatim stvaramo objekt `plot` tipa `Gnuplot` ([dokumentacija](https://www.nsnam.org/docs/doxygen/d4/d96/classns3_1_1_gnuplot.html)) koji će biti korišten za stvaranje datoteke s uputama za crtanje; pritom navodimo željeno ime izlazne datoteke s `.png` ekstenzijom. Metodom `SetTitle()` postavljamo naslov grafa, a metodom `SetTerminal()` postavljamo tip izlazne datoteke (terminal u gnuplot terminologiji) koja će biti stvorena nakon pokretanja gnuplota na `.plt` datoteku.
 
 ``` c++
 Gnuplot plot ("cwnd-plot.png");

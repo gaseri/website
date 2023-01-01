@@ -15,7 +15,7 @@ Vlasnički softver za Linux može biti distribuiran kao RPM ili deb paket, izvr�
 Za primjer vlasničkog softvera uzmimo [DraftSight](https://www.draftsight.com/) tvrtke [Dassault Systèmes](https://www.3ds.com/). DraftSight ima osnovnu i profesionalnu verziju: osnovna verzija se ne naplaćuje, ali zahtijeva registraciju nakon instalacije putem e-maila, dok se profesionalna verzija naplaćuje 99 dolara godišnje.
 
 !!! admonition "Zadatak"
-    - Preuzmite DraftSight sa [službenih stranica za preuzimanje osnovne verzije](https://www.draftsight.com/freetrial) i proučite [licencu](https://www.draftsight.com/support/eula) na koju pritom pristajete. Uočite u kojem formatu je pakiran i za koje distribucije Linuxa postoje verzije.
+    - Preuzmite DraftSight sa [službenih stranica za preuzimanje osnovne verzije](https://www.draftsight.com/freetrial) i proučite [licencu](https://www.draftsight.com/support/license-agreement) na koju pritom pristajete. Uočite u kojem formatu je pakiran i za koje distribucije Linuxa postoje verzije.
     - Analizirajte popis ovisnosti koje paket koji ste preuzeli ima.
     - Instalirajte paket ili raspakirajte njegov sadržaj te analizirajte izvršne datoteke i biblioteke unutar paketa. Jesu li dinamički ili statički povezane? Objasnite zašto.
 

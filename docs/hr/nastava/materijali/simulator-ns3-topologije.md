@@ -153,9 +153,9 @@ interfaces46 = address.Assign (devices46);
 
 Modul `point-to-point-layout` pomaže nam u stvaranju topologija sa više čvorova raspoređenih u određenom obliku. Ns-3 implementira tri takve topologije:
 
-- Dumbbell (hrv. *bučica*) topologiju sa `PointToPointDumbbellHelper` ([dokumentacija](https://www.nsnam.org/docs/doxygen/classns3_1_1_point_to_point_dumbbell_helper.html))
-- Grid (hrv. *rešetka*) topologiju sa `PointToPointGridHelper` ([dokumentacija](https://www.nsnam.org/docs/doxygen/classns3_1_1_point_to_point_grid_helper.html)) te
-- Star (hrv. *zvijezda*) topologiju sa `PointToPointStarHelper` ([dokumentacija](https://www.nsnam.org/docs/doxygen/classns3_1_1_point_to_point_star_helper.html))
+- Dumbbell (hrv. *bučica*) topologiju sa `PointToPointDumbbellHelper` ([dokumentacija](https://www.nsnam.org/docs/doxygen/d3/dd4/classns3_1_1_point_to_point_dumbbell_helper.html))
+- Grid (hrv. *rešetka*) topologiju sa `PointToPointGridHelper` ([dokumentacija](https://www.nsnam.org/docs/doxygen/dd/d58/classns3_1_1_point_to_point_grid_helper.html)) te
+- Star (hrv. *zvijezda*) topologiju sa `PointToPointStarHelper` ([dokumentacija](https://www.nsnam.org/docs/doxygen/d3/d7b/classns3_1_1_point_to_point_star_helper.html))
 
 Kao što smo već vidjeli, topologija bučice ima jednu središnju vezu, a na svakom od krajnjih čvorova određeni broj čvorova povezanih na krajnji čvor. Broj čvorova da desne i lijeve strane bučice ne mora biti isti.
 

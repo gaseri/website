@@ -96,13 +96,13 @@ paginate: true
 ## Primjeri web 3.0 aplikacija (nast.)
 
 - [Cashaa](https://cashaa.com/)
-- [Everledger](https://www.everledger.io/)
+- [Everledger](https://everledger.io/)
 - [LivePeer](https://livepeer.com/)
 - [LBRY](https://lbry.com/); implementacija: [odysee](https://odysee.com/)
 - [Invidious](https://invidious.io/)
 - [CryptoTask](https://www.cryptotask.org/)
 - [Atlas.Work](https://www.atlas.work/)
-- [Ethlance](https://ethlance.com/)
+- [Sapien](https://www.sapien.network/)
 - [Brave](https://brave.com/)
 - [Beaker Browser](https://beakerbrowser.com/)
 

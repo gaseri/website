@@ -21,7 +21,7 @@ Hereafter we will more or less follow the directions of [Getting started with th
 
 It is possible to download the LLVM source code from its [releases page](https://releases.llvm.org/). At the time of the start of the course We'll be using the latest patch release from the latest series [release 13.0.1](https://releases.llvm.org/download.html#13.0.1).
 
-We'll be following [Building LLVM with CMake](https://llvm.org/docs/13.0.1/CMake.html) from [LLVM documentation](https://llvm.org/docs/13.0.1/), section [User Guides](https://llvm.org/docs/13.0.1/UserGuides.html). We'll start by creating a directory for LLVM project:
+We'll be following [Building LLVM with CMake](https://llvm.org/docs/CMake.html) from [LLVM documentation](https://llvm.org/docs/), section [User Guides](https://llvm.org/docs/UserGuides.html). We'll start by creating a directory for LLVM project:
 
 ``` shell
 $ mkdir llvm-project-13.0.1

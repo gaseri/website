@@ -95,7 +95,7 @@ Drugi članci na Moz blogu u kojima govori o brzini prikaza web stranica: [Winni
 
 - [detaljne upute](https://web.dev/learn-web-vitals/) ([sekvencijalni pregled za lakše učenje](https://developers.google.com/learn/pathways/web-vitals))
 - [opis tipičnih uzoraka: carousel, oblici pisama, slike, beskonačno pomicanje itd.](https://web.dev/patterns/web-vitals-patterns/)
-- drugi ih navode, npr. [Splunk](https://www.splunk.com/en_us/observability/resources/what-are-web-vitals.html)
+- drugi ih navode, npr. [Cloudflare](https://www.cloudflare.com/learning/performance/what-are-core-web-vitals/)
 
 ---
 

@@ -153,7 +153,7 @@ Na sličan način kao `PhyTxBegin` rade i `PhyTxEnd`, koja prati događaje zavr�
 - `PhyRxDrop`, odbacivanje paketa kod primanja na fizičkom sloju zbog grešaka, i
 - `MacRx`, početak primanja paketa na sloju veze podataka.
 
-Svi navedeni izvori opisani su u [dokumentaciji klase PointToPointNetDevice](https://www.nsnam.org/docs/doxygen/classns3_1_1_point_to_point_net_device.html).
+Svi navedeni izvori opisani su u [dokumentaciji klase PointToPointNetDevice](https://www.nsnam.org/docs/doxygen/dc/d89/classns3_1_1_point_to_point_net_device.html).
 
 Cjelokupan kod primjera je
 
@@ -277,7 +277,7 @@ ta poruka biti prikazana. Uočimo da razliku čini količina logginga uključena
 
 ## Model učestalosti grešaka paketa
 
-Najjednostavniji model grešaka je `RateErrorModel` ([dokumentacija](https://www.nsnam.org/docs/doxygen/classns3_1_1_rate_error_model.html)) koji određeni broj paketa u uzorku označava iskrivljenim.
+Najjednostavniji model grešaka je `RateErrorModel` ([dokumentacija](https://www.nsnam.org/docs/doxygen/d6/de9/classns3_1_1_rate_error_model.html)) koji određeni broj paketa u uzorku označava iskrivljenim.
 
 Kao i do sada, u primjeru korištenja objasnit ćemo samo one dijelove koji su novi u odnosu na prethodnu vježbu. Ukoliko ima kakvih nejasnoća u dijelu koda koji ovdje nije objašnjen preporuka je da ponovno proučite prethodnu vježbu.
 

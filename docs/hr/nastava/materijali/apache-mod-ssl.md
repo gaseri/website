@@ -225,7 +225,7 @@ $ curl -k https://172.17.0.2/
 ```
 
 !!! hint
-    U praksi je ponekad moguće automatizirati čitav ovdje opisani postupak. Naime, Apache [od verzije 2.4.30 nadalje](https://kevingimbel.de/blog/2020/01/auto-ssl-with-apache2/) sadrži [mod_md](https://httpd.apache.org/docs/2.4/mod/mod_md.html) koji dohvaća certifikate s [besplatnog i otvorenog](https://letsencrypt.org/about/) [autoriteta certifikata Let's Encrypt](https://letsencrypt.org/) za domene navedene pod konfiguracijskom naredbom `MDomain`. Nažalost, taj postupak ovdje ne možemo koristiti jer Let's Encrypt zahtijeva da imamo registrirane domene na internetu kako bi mogao izdati certifikat za njih. Pored toga, čak i kad možemo automatizirati postavljanje certifikata, dobro je znati kako čitav postupak izgleda kako bismo se mogli snaći u situacijama kad neki dio tog automatiziranog postupka zakaže.
+    U praksi je ponekad moguće automatizirati čitav ovdje opisani postupak. Naime, Apache [od verzije 2.4.30 nadalje](https://blog.des.no/2021/10/lets-encrypt-apache-mod-md/) sadrži [mod_md](https://httpd.apache.org/docs/2.4/mod/mod_md.html) koji dohvaća certifikate s [besplatnog i otvorenog](https://letsencrypt.org/about/) [autoriteta certifikata Let's Encrypt](https://letsencrypt.org/) za domene navedene pod konfiguracijskom naredbom `MDomain`. Nažalost, taj postupak ovdje ne možemo koristiti jer Let's Encrypt zahtijeva da imamo registrirane domene na internetu kako bi mogao izdati certifikat za njih. Pored toga, čak i kad možemo automatizirati postavljanje certifikata, dobro je znati kako čitav postupak izgleda kako bismo se mogli snaći u situacijama kad neki dio tog automatiziranog postupka zakaže.
 
 ## Server Name Indication
 

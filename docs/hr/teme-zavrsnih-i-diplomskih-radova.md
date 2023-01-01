@@ -402,7 +402,7 @@ OpenDocument je format dokumenata uredskih aplikacija zasnovan na XML-u. OpenDoc
 1. [German Priority Programme 1648: Software for Exascale Computing (SPPEXA)](http://www.sppexa.de/)
 1. [Exascale Computing Project](https://www.exascaleproject.org/)
 1. [European High-Performance Computing Joint Undertaking](https://eurohpc-ju.europa.eu/)
-1. [Skalabilni algoritmi visokih preformansi za buduće heterogene distribuirane računalne sustave](https://www.irb.hr/Istrazivanja/Projekti/Skalabilni-algoritmi-visokih-preformansi-za-buduce-heterogene-distribuirane-racunalne-sustave)
+1. [Skalabilni algoritmi visokih preformansi za buduće heterogene distribuirane računalne sustave](https://www.irb.hr/Istrazivanja/Projekti/Skalabilni-algoritmi-visokih-performansi-za-buduce-heterogene-distribuirane-racunalne-sustave)
 
 ### Nadzor rada mikroservisa i osiguravanje visoke dostupnosti {[UMS](nastava/kolegiji/UMS.md)}
 

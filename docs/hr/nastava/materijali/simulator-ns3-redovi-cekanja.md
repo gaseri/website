@@ -12,7 +12,7 @@ Redovi čekanja su u ns-3-u implementirani u klasi `Queue`.
 
 ## Redovi čekanja s odbacivanjem repa
 
-Najjednostavnija varijanta reda čekanja je `DropTailQueue` ([dokumentacija](https://www.nsnam.org/docs/doxygen/classns3_1_1_drop_tail_queue.html)) koja implementira red čekanja s odbacivanjem repa.
+Najjednostavnija varijanta reda čekanja je `DropTailQueue` ([dokumentacija](https://www.nsnam.org/docs/doxygen/dc/dc6/classns3_1_1_drop_tail_queue.html)) koja implementira red čekanja s odbacivanjem repa.
 
 Da bi imalo smisla uopće promatrati redove čekanja s odbacivanjem repa, potrebno je stvoriti situaciju u kojoj dolazi do prepunjavanja reda čekanja. Razmatrat ćemo mrežu koja ima već razmatranu linearnu topologiju koja se sastoji od tri čvora i dvije veze između njih; pritom prvi čvor šalje pakete trećem čvoru preko drugog. Želimo simulirati situaciju u kojoj drugi čvor ima red čekanja paketa za slanje na kojem se događaju odbacivanja repa. Kako je u ovom primjeru on-off aplikacija na prvom čvoru, a šalje pakete u odvod na trećem čvoru, drugi čvor koji radi kao usmjerivač pakete prima s prve mrežne kartice, a šalje ih na drugu. U slučaju da su obje veze jednake širine frekventnog pojasa, do zagušenja (i time odbacivanja repa) neće doći. Stoga ćemo staviti da je prva veza veće širine frekventnog pojasa nego druga. Zadržavanje nam nije naročito značajno pa ćemo staviti da obje veze imaju jednako.
 
@@ -186,7 +186,7 @@ Slučajno rano otkrivanje/odbacivanje (engl. *Random Early Detection/Drop*, RED)
 
 Simulaciju kreiramo kao i za redove čekanja tipa `DropTailQueue`. Promjena u kodu je vezana za promjenu tipa reda čekanja, a osnovni je način prikazan u nastavku.
 
-Kreiramo novi objekt tipa `RedQueue` ([dokumentacija](https://www.nsnam.org/docs/doxygen/classns3_1_1_red_queue.html)) i spremamo pokazivač na njega u varijablu `queue`.
+Kreiramo novi objekt tipa `RedQueue` ([dokumentacija](https://www.nsnam.org/docs/doxygen/df/dae/classns3_1_1_red_queue_disc.html)) i spremamo pokazivač na njega u varijablu `queue`.
 
 ``` c++
 Ptr<RedQueue> queue = CreateObject<RedQueue> ();
@@ -295,7 +295,7 @@ int main ()
 
 ## Dodatak: nadgledanje tokova paketa
 
-Modul `flow-monitor` možemo koristiti za nadgledanje toka/ova paketa. Radi jednostavnosti koristit ćemo pomagač `FlowMonitorHelper` ([dokumentacija](https://www.nsnam.org/docs/doxygen/classns3_1_1_flow_monitor_helper.html)).
+Modul `flow-monitor` možemo koristiti za nadgledanje toka/ova paketa. Radi jednostavnosti koristit ćemo pomagač `FlowMonitorHelper` ([dokumentacija](https://www.nsnam.org/docs/doxygen/db/dbb/classns3_1_1_flow_monitor_helper.html)).
 
 ``` c++
 FlowMonitorHelper flow;

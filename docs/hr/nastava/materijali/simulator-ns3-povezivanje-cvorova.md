@@ -27,14 +27,14 @@ LogComponentEnable ("UdpEchoClientApplication", LOG_LEVEL_INFO);
 LogComponentEnable ("UdpEchoServerApplication", LOG_LEVEL_INFO);
 ```
 
-koje se tiču logginga. Za sada je dovoljno znati da su one potrebne da bi simulacija dala ikakav izlaz na ekran. Na počeku simulacije stvaramo objekt `nodes` koji je instanca klase `NodeContainer` ([dokumentacija](https://www.nsnam.org/docs/doxygen/classns3_1_1_node_container.html)). Zatim u tom objektu stvaramo dva čvora metodom `Create()`.
+koje se tiču logginga. Za sada je dovoljno znati da su one potrebne da bi simulacija dala ikakav izlaz na ekran. Na počeku simulacije stvaramo objekt `nodes` koji je instanca klase `NodeContainer` ([dokumentacija](https://www.nsnam.org/docs/doxygen/d7/db2/classns3_1_1_node_container.html)). Zatim u tom objektu stvaramo dva čvora metodom `Create()`.
 
 ``` c++
 NodeContainer nodes;
 nodes.Create (2);
 ```
 
-`PointToPointHelper` ([dokumentacija](https://www.nsnam.org/docs/doxygen/classns3_1_1_point_to_point_helper.html)) je pomoćnik (ili čarobnjak kako možemo vidjeti u mnogim programima) koji stvara sve što je potrebno za rad veze tipa točka-do-točke između dva čvora (stvara mreže uređaje, dodaje ih čvorovima i povezuje ih kanalom). Stvaramo instancu te klase i nazivamo ju pointToPoint, a zatim metodom `SetDeviceAttribute()` postavljamo atribute budućih uređaja. Vrijednosti parametara su tipa znakovni niz i zapravo eksplicitno govore o čemu se radi: konkretno, atribut `DataRate` je brzina prijenosa podataka i iznosi `"5Mbps"`.
+`PointToPointHelper` ([dokumentacija](https://www.nsnam.org/docs/doxygen/d3/d84/classns3_1_1_point_to_point_helper.html)) je pomoćnik (ili čarobnjak kako možemo vidjeti u mnogim programima) koji stvara sve što je potrebno za rad veze tipa točka-do-točke između dva čvora (stvara mreže uređaje, dodaje ih čvorovima i povezuje ih kanalom). Stvaramo instancu te klase i nazivamo ju pointToPoint, a zatim metodom `SetDeviceAttribute()` postavljamo atribute budućih uređaja. Vrijednosti parametara su tipa znakovni niz i zapravo eksplicitno govore o čemu se radi: konkretno, atribut `DataRate` je brzina prijenosa podataka i iznosi `"5Mbps"`.
 
 Metoda `SetChannelAttribute()` postavlja atribute same veze. `Delay` je zadržavanje veze i ono iznosi `"2ms"`. Funkciju StringValue koristimo da bismo pretvorili eventualni varijable tipa `const char *` (podaci `"5Mbps"` i `"2ms"` su tog tipa, kao i svi ostali znakovni nizovi navedeni u izvornom kodu) u tip `StringValue` koji metode SetDeviceAttribute i SetChannelAttribute primaju kao drugi parametar.
 
@@ -44,35 +44,35 @@ pointToPoint.SetDeviceAttribute ("DataRate", StringValue ("5Mbps"));
 pointToPoint.SetChannelAttribute ("Delay", StringValue ("2ms"));
 ```
 
-`NetDeviceContainer` ([dokumentacija](https://www.nsnam.org/docs/doxygen/classns3_1_1_net_device_container.html)) je klasa koja služi kao kontejner za mrežne uređaja. Kreiramo instancu `devices`, a zatim metodom `Install()` na objekt `nodes` instaliramo uređaje na čvorove i istovremeno ih pohranjujemo u kontejner da lakše s njima baratamo. (Uočite da je u dokumentaciji navedena metoda `Get()` koja nam olakšava dohvaćanje elementa kontejnera.)
+`NetDeviceContainer` ([dokumentacija](https://www.nsnam.org/docs/doxygen/d6/ddf/classns3_1_1_net_device_container.html)) je klasa koja služi kao kontejner za mrežne uređaja. Kreiramo instancu `devices`, a zatim metodom `Install()` na objekt `nodes` instaliramo uređaje na čvorove i istovremeno ih pohranjujemo u kontejner da lakše s njima baratamo. (Uočite da je u dokumentaciji navedena metoda `Get()` koja nam olakšava dohvaćanje elementa kontejnera.)
 
 ``` c++
 NetDeviceContainer devices;
 devices = pointToPoint.Install (nodes);
 ```
 
-`InternetStackHelper` ([dokumentacija](https://www.nsnam.org/docs/doxygen/classns3_1_1_internet_stack_helper.html)) je još jedan u nizu pomoćnika koje koristimo. Metodom `Install()` na objekt `nodes` instaliramo TCP/UDP i IP funkcionalnost na čvorove koji su unutar tog kontejnera.
+`InternetStackHelper` ([dokumentacija](https://www.nsnam.org/docs/doxygen/db/df3/classns3_1_1_internet_stack_helper.html)) je još jedan u nizu pomoćnika koje koristimo. Metodom `Install()` na objekt `nodes` instaliramo TCP/UDP i IP funkcionalnost na čvorove koji su unutar tog kontejnera.
 
 ``` c++
 InternetStackHelper stack;
 stack.Install (nodes);
 ```
 
-`Ipv4AddressHelper` ([dokumentacija](https://www.nsnam.org/docs/doxygen/classns3_1_1_ipv4_address_helper.html)) je pomoćnik koji dodjeljuje IPv4 adrese mrežnim uređajima (podsjetite se zašto su IPv4 adrese vezane za mrežne uređaje, a ne za čvorove). `SetBase()` je metoda koja prima dva parametra: prvi parametar je adresa, a drugi maska podmreže.
+`Ipv4AddressHelper` ([dokumentacija](https://www.nsnam.org/docs/doxygen/d5/d4f/classns3_1_1_ipv4_address_helper.html)) je pomoćnik koji dodjeljuje IPv4 adrese mrežnim uređajima (podsjetite se zašto su IPv4 adrese vezane za mrežne uređaje, a ne za čvorove). `SetBase()` je metoda koja prima dva parametra: prvi parametar je adresa, a drugi maska podmreže.
 
 ``` c++
 Ipv4AddressHelper address;
 address.SetBase ("10.1.1.0", "255.255.255.0");
 ```
 
-`Ipv4InterfaceContainer` ([dokumentacija](https://www.nsnam.org/docs/doxygen/classns3_1_1_ipv4_interface_container.html)) je kontejner za IPv4 sučelja na mrežnim uređajima. Metoda `Assign()` klase `Ipv4AddressHelper` dodjeljuje adrese uređajima unutar kontejnera `devices`.
+`Ipv4InterfaceContainer` ([dokumentacija](https://www.nsnam.org/docs/doxygen/db/d86/classns3_1_1_ipv4_interface_container.html)) je kontejner za IPv4 sučelja na mrežnim uređajima. Metoda `Assign()` klase `Ipv4AddressHelper` dodjeljuje adrese uređajima unutar kontejnera `devices`.
 
 ``` c++
 Ipv4InterfaceContainer interfaces;
 interfaces = address.Assign (devices);
 ```
 
-`UdpEchoServerHelper` ([dokumentacija](https://www.nsnam.org/docs/doxygen/classns3_1_1_udp_echo_server_helper.html)) je pomoćnik. Kod stvaranja instance `echoServer` prosljeđuje se jedan parametar; iz dokumentacije se može iščitati da se radi o broju vrata (u ovom slučaju 9) na kojima će komunikacija biti omogućena.
+`UdpEchoServerHelper` ([dokumentacija](https://www.nsnam.org/docs/doxygen/d6/d64/classns3_1_1_udp_echo_server_helper.html)) je pomoćnik. Kod stvaranja instance `echoServer` prosljeđuje se jedan parametar; iz dokumentacije se može iščitati da se radi o broju vrata (u ovom slučaju 9) na kojima će komunikacija biti omogućena.
 
 ``` c++
 UdpEchoServerHelper echoServer (9);
@@ -88,7 +88,7 @@ serverApps.Start (Seconds (1.0));
 serverApps.Stop (Seconds (10.0));
 ```
 
-`UdpEchoClientHelper` ([dokumentacija](https://www.nsnam.org/docs/doxygen/classns3_1_1_udp_echo_client_helper.html)) imena `echoClient` koristimo na sličan način za kreiranje klijentske aplikacije. Parametri koje prima kod stvaranja su adresa i vrata poslužiteljske aplikacije. Ovdje je to IPv4 sučelje drugog čvora (`interfaces.GetAddress(1)`) i vrata 9. Zatim postavljamo razne atribute klijentske aplikacije.
+`UdpEchoClientHelper` ([dokumentacija](https://www.nsnam.org/docs/doxygen/d5/d2f/classns3_1_1_udp_echo_client_helper.html)) imena `echoClient` koristimo na sličan način za kreiranje klijentske aplikacije. Parametri koje prima kod stvaranja su adresa i vrata poslužiteljske aplikacije. Ovdje je to IPv4 sučelje drugog čvora (`interfaces.GetAddress(1)`) i vrata 9. Zatim postavljamo razne atribute klijentske aplikacije.
 
 - `MaxPackets` je broj paketa koje šalje klijentska aplikacija i očekuje vrijednost tipa `UintegerValue` (vrijednost tipa nepredznačeni cijeli broj) te je potrebno napraviti pretvorbu.
 - `Interval` je razmak između slanja svakog pojedinog paketa, zapravo frekvencija slanja, vrijednost tipa `TimeValue`. Ovdje je vrijednost postavljena na 1 sekundu što znači da će se paketi slati u pravilnom vremenskom intervalu od jedne sekunde.
