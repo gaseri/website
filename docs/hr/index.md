@@ -72,6 +72,6 @@ Hrvatska
 
 ## Poster
 
-![GASERI poster Koleda](../images/gaseri-poster-koleda.webp)
+![GASERI poster](../images/gaseri-poster.webp)
 
-[Preuzimanje u formatu PDF (A3, položeno)](../images/gaseri-poster-koleda.pdf)
+[Preuzimanje u formatu PDF (A3, položeno)](../images/gaseri-poster.pdf)
