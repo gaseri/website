@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="512"
-   height="128"
-   version="1.1"
-   id="svg326"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:dc="http://purl.org/dc/elements/1.1/">
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="128"
+   height="128"
+   style="enable-background:new 0 0 128 128;"
+   version="1.1"
+   id="svg326">
   <metadata
      id="metadata332">
     <rdf:RDF>
@@ -18,6 +19,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -31,50 +33,50 @@
       <rect
          id="XMLID_110_"
          height="128"
-         style="fill:none;stroke:#4285f4;stroke-miterlimit:10"
+         style="fill:none;stroke:#4285F4;stroke-miterlimit:10;"
          width="128"
          x="-64"
          y="-64" />
       <path
          id="XMLID_109_"
-         d="M 36.95,37.82 C 27.32,46.32 14.2,51 0,51 -14.27,51 -27.39,46.38 -36.96,37.99 -47.45,28.79 -53,15.65 -53,0 c 0,-15.58 5.55,-28.69 16.04,-37.92 C -27.36,-46.35 -14.24,-51 0,-51 c 14.17,0 27.29,4.71 36.95,13.25 C 47.45,-28.45 53,-15.4 53,0 53,15.47 47.45,28.55 36.95,37.82 Z"
-         style="fill:none;stroke:#4285f4;stroke-miterlimit:10" />
+         d="M36.95,37.82C27.32,46.32,14.2,51,0,51 c-14.27,0-27.39-4.62-36.96-13.01C-47.45,28.79-53,15.65-53,0c0-15.58,5.55-28.69,16.04-37.92C-27.36-46.35-14.24-51,0-51 c14.17,0,27.29,4.71,36.95,13.25C47.45-28.45,53-15.4,53,0C53,15.47,47.45,28.55,36.95,37.82z"
+         style="fill:none;stroke:#4285F4;stroke-miterlimit:10;" />
       <path
          id="XMLID_108_"
-         d="m 0,55 v 0 0 c -29.59,0 -57,-19.01 -57,-55 0,-35.8 27.41,-55 57,-55 v 0 0 c 29.59,0 57,19.69 57,55 0,35.51 -27.41,55 -57,55 z"
-         style="fill:none;stroke:#4285f4;stroke-miterlimit:10" />
+         d="M0,55L0,55L0,55c-29.59,0-57-19.01-57-55 c0-35.8,27.41-55,57-55h0h0c29.59,0,57,19.69,57,55C57,35.51,29.59,55,0,55z"
+         style="fill:none;stroke:#4285F4;stroke-miterlimit:10;" />
       <path
          id="XMLID_107_"
-         d="m 0,-43 c -12.29,0 -23.54,3.94 -31.68,11.09 C -40.39,-24.25 -45,-13.21 -45,0 -45,29.7 -22.4,43 0,43 21.67,43 45,29.54 45,0 45,-29.54 21.67,-43 0,-43 Z"
-         style="fill:none;stroke:#4285f4;stroke-miterlimit:10" />
+         d="M0-43c-12.29,0-23.54,3.94-31.68,11.09 C-40.39-24.25-45-13.21-45,0c0,29.7,22.6,43,45,43c21.67,0,45-13.46,45-43S21.67-43,0-43L0-43z"
+         style="fill:none;stroke:#4285F4;stroke-miterlimit:10;" />
       <line
          id="XMLID_106_"
-         style="fill:none;stroke:#4285f4;stroke-miterlimit:10"
-         x1="-0.0099999998"
-         x2="-0.0099999998"
+         style="fill:none;stroke:#4285F4;stroke-miterlimit:10;"
+         x1="-0.01"
+         x2="-0.01"
          y1="51"
          y2="-51" />
       <line
          id="XMLID_105_"
-         style="fill:none;stroke:#4285f4;stroke-miterlimit:10"
+         style="fill:none;stroke:#4285F4;stroke-miterlimit:10;"
          x1="-16"
          x2="-16"
-         y1="48.950001"
+         y1="48.95"
          y2="-48.93" />
       <line
          id="XMLID_104_"
-         style="fill:none;stroke:#4285f4;stroke-miterlimit:10"
+         style="fill:none;stroke:#4285F4;stroke-miterlimit:10;"
          x1="15.99"
          x2="15.99"
          y1="48.91"
          y2="-48.93" />
       <line
          id="XMLID_103_"
-         style="fill:none;stroke:#4285f4;stroke-miterlimit:10"
+         style="fill:none;stroke:#4285F4;stroke-miterlimit:10;"
          x1="53"
          x2="-53"
-         y1="0.079999998"
-         y2="0.079999998" />
+         y1="0.08"
+         y2="0.08" />
     </g>
   </symbol>
   <g
@@ -129,11 +131,11 @@
          id="path31" />
       <path
          d="m 21.12,51.95 c -0.1,1.6 -0.74,3.08 -2.31,3.37 -0.18,0.03 -0.36,0.05 -0.54,0.05 -1.36,0 -2.58,-0.97 -2.84,-2.36 -0.56,-2.98 0.09,-5.77 1.82,-7.86 1.62,-1.96 4.02,-3.08 6.58,-3.08 1.6,0 3.01,0.99 3.01,2.58 0,1.88 -1.5,2.67 -3.01,3.2 -1.41,0.51 -2.59,2.16 -2.71,4.1 z"
-         style="fill:#eb8f00;fill-opacity:1"
+         style="fill:#00adef;fill-opacity:1"
          id="path33" />
       <path
          d="m 84.7,51.95 c -0.1,1.6 -0.74,3.08 -2.31,3.37 -0.18,0.03 -0.36,0.05 -0.54,0.05 -1.36,0 -2.58,-0.97 -2.84,-2.36 -0.56,-2.98 0.09,-5.77 1.82,-7.86 1.62,-1.96 4.02,-3.08 6.58,-3.08 1.6,0 3.01,0.99 3.01,2.58 0,1.88 -1.5,2.67 -3.01,3.2 -1.4,0.51 -2.59,2.16 -2.71,4.1 z"
-         style="fill:#eb8f00;fill-opacity:1"
+         style="fill:#00adef;fill-opacity:1"
          id="path35" />
     </g>
     <path
@@ -143,106 +145,106 @@
   </g>
   <g
      id="Layer_2"
-     style="display:none">
+     style="display:none;">
     <g
-       style="display:inline"
+       style="display:inline;"
        id="g288">
       <g
-         style="opacity:0.6"
+         style="opacity:0.6;"
          id="g70">
         <circle
            cx="64"
            cy="64"
            r="28"
-           style="opacity:0.61;fill:none;stroke:#000000;stroke-width:0.2625;stroke-miterlimit:10"
+           style="opacity:0.61;fill:none;stroke:#000000;stroke-width:0.2625;stroke-miterlimit:10;"
            id="circle42" />
         <line
-           style="opacity:0.61;fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+           style="opacity:0.61;fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
            x1="84"
            x2="84"
            y1="0"
            y2="128"
            id="line44" />
         <line
-           style="opacity:0.61;fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+           style="opacity:0.61;fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
            x1="44"
            x2="44"
            y1="0"
            y2="128"
            id="line46" />
         <line
-           style="opacity:0.61;fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+           style="opacity:0.61;fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
            x1="64"
            x2="64"
            y1="0"
            y2="128"
            id="line48" />
         <line
-           style="opacity:0.61;fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+           style="opacity:0.61;fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
            x1="128"
            x2="0"
            y1="64"
            y2="64"
            id="line50" />
         <line
-           style="opacity:0.61;fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+           style="opacity:0.61;fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
            x1="128"
            x2="0"
            y1="44"
            y2="44"
            id="line52" />
         <line
-           style="opacity:0.61;fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+           style="opacity:0.61;fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
            x1="128"
            x2="0"
            y1="83.75"
            y2="83.75"
            id="line54" />
         <line
-           style="opacity:0.61;fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+           style="opacity:0.61;fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
            x1="128"
            x2="0"
            y1="128"
            y2="0"
            id="line56" />
         <line
-           style="opacity:0.61;fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+           style="opacity:0.61;fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
            x1="0"
            x2="128"
            y1="128"
            y2="0"
            id="line58" />
         <g
-           style="opacity:0.61"
+           style="opacity:0.61;"
            id="g62">
           <path
-             d="m 64,4.26 c 32.94,0 59.74,26.8 59.74,59.74 0,32.94 -26.8,59.74 -59.74,59.74 C 31.06,123.74 4.26,96.94 4.26,64 4.26,31.06 31.06,4.26 64,4.26 M 64,4 C 30.86,4 4,30.86 4,64 4,97.14 30.86,124 64,124 97.14,124 124,97.14 124,64 124,30.86 97.14,4 64,4 Z"
+             d="M64,4.26c32.94,0,59.74,26.8,59.74,59.74S96.94,123.74,64,123.74S4.26,96.94,4.26,64S31.06,4.26,64,4.26 M64,4 C30.86,4,4,30.86,4,64s26.86,60,60,60s60-26.86,60-60S97.14,4,64,4L64,4z"
              id="path60" />
         </g>
         <path
-           d="M 107.97,115.97 H 20.03 c -4.42,0 -8.03,-3.61 -8.03,-8.03 V 20.03 C 12,15.61 15.61,12 20.03,12 h 87.94 c 4.42,0 8.03,3.61 8.03,8.03 v 87.91 c 0,4.42 -3.61,8.03 -8.03,8.03 z"
-           style="opacity:0.61;fill:none;stroke:#000000;stroke-width:0.2578;stroke-miterlimit:10"
+           d="M107.97,115.97H20.03 c-4.42,0-8.03-3.61-8.03-8.03V20.03c0-4.42,3.61-8.03,8.03-8.03h87.94c4.42,0,8.03,3.61,8.03,8.03v87.91 C116,112.36,112.39,115.97,107.97,115.97z"
+           style="opacity:0.61;fill:none;stroke:#000000;stroke-width:0.2578;stroke-miterlimit:10;"
            id="path64" />
         <path
-           d="M 100,124 H 28 c -4.4,0 -8,-3.6 -8,-8 V 12 c 0,-4.4 3.6,-8 8,-8 h 72 c 4.4,0 8,3.6 8,8 v 104 c 0,4.4 -3.6,8 -8,8 z"
-           style="opacity:0.61;fill:none;stroke:#000000;stroke-width:0.2628;stroke-miterlimit:10"
+           d="M100,124H28c-4.4,0-8-3.6-8-8 V12c0-4.4,3.6-8,8-8h72c4.4,0,8,3.6,8,8v104C108,120.4,104.4,124,100,124z"
+           style="opacity:0.61;fill:none;stroke:#000000;stroke-width:0.2628;stroke-miterlimit:10;"
            id="path66" />
         <path
-           d="M 113.77,108 H 14.23 C 8.6,108 4,103.4 4,97.77 V 30.28 C 4,24.65 8.6,20.05 14.23,20.05 h 99.54 c 5.63,0 10.23,4.6 10.23,10.23 v 67.48 c 0,5.64 -4.6,10.24 -10.23,10.24 z"
-           style="opacity:0.61;fill:none;stroke:#000000;stroke-width:0.2627;stroke-miterlimit:10"
+           d="M113.77,108H14.23 C8.6,108,4,103.4,4,97.77V30.28c0-5.63,4.6-10.23,10.23-10.23h99.54c5.63,0,10.23,4.6,10.23,10.23v67.48 C124,103.4,119.4,108,113.77,108z"
+           style="opacity:0.61;fill:none;stroke:#000000;stroke-width:0.2627;stroke-miterlimit:10;"
            id="path68" />
       </g>
       <g
          id="g286">
         <g
-           style="opacity:0.2"
+           style="opacity:0.2;"
            id="g274">
           <defs
              id="defs73">
             <rect
                id="SVGID_2_"
                height="128"
-               style="opacity:0.2"
+               style="opacity:0.2;"
                width="128"
                x="0"
                y="0" />
@@ -250,339 +252,340 @@
           <clipPath
              id="SVGID_3_">
             <use
-               style="overflow:visible"
+               style="overflow:visible;"
                xlink:href="#SVGID_2_"
                id="use75" />
           </clipPath>
           <g
+             style="clip-path:url(#SVGID_3_);"
              clip-path="url(#SVGID_3_)"
              id="g272">
             <g
                id="g172">
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-28"
                  x2="-28"
                  y1="160"
                  y2="-32"
                  id="line78" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-24"
                  x2="-24"
                  y1="160"
                  y2="-32"
                  id="line80" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-20"
                  x2="-20"
                  y1="160"
                  y2="-32"
                  id="line82" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-16"
                  x2="-16"
                  y1="160"
                  y2="-32"
                  id="line84" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-12"
                  x2="-12"
                  y1="160"
                  y2="-32"
                  id="line86" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-8"
                  x2="-8"
                  y1="160"
                  y2="-32"
                  id="line88" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-4"
                  x2="-4"
                  y1="160"
                  y2="-32"
                  id="line90" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="0"
                  x2="0"
                  y1="160"
                  y2="-32"
                  id="line92" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="4"
                  x2="4"
                  y1="160"
                  y2="-32"
                  id="line94" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="8"
                  x2="8"
                  y1="160"
                  y2="-32"
                  id="line96" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="12"
                  x2="12"
                  y1="160"
                  y2="-32"
                  id="line98" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="16"
                  x2="16"
                  y1="160"
                  y2="-32"
                  id="line100" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="20"
                  x2="20"
                  y1="160"
                  y2="-32"
                  id="line102" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="24"
                  x2="24"
                  y1="160"
                  y2="-32"
                  id="line104" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="28"
                  x2="28"
                  y1="160"
                  y2="-32"
                  id="line106" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="32"
                  x2="32"
                  y1="160"
                  y2="-32"
                  id="line108" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="36"
                  x2="36"
                  y1="160"
                  y2="-32"
                  id="line110" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="40"
                  x2="40"
                  y1="160"
                  y2="-32"
                  id="line112" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="44"
                  x2="44"
                  y1="160"
                  y2="-32"
                  id="line114" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="48"
                  x2="48"
                  y1="160"
                  y2="-32"
                  id="line116" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="52"
                  x2="52"
                  y1="160"
                  y2="-32"
                  id="line118" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="56"
                  x2="56"
                  y1="160"
                  y2="-32"
                  id="line120" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="60"
                  x2="60"
                  y1="160"
                  y2="-32"
                  id="line122" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="64"
                  x2="64"
                  y1="160"
                  y2="-32"
                  id="line124" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="68"
                  x2="68"
                  y1="160"
                  y2="-32"
                  id="line126" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="72"
                  x2="72"
                  y1="160"
                  y2="-32"
                  id="line128" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="76"
                  x2="76"
                  y1="160"
                  y2="-32"
                  id="line130" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="80"
                  x2="80"
                  y1="160"
                  y2="-32"
                  id="line132" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="84"
                  x2="84"
                  y1="160"
                  y2="-32"
                  id="line134" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="88"
                  x2="88"
                  y1="160"
                  y2="-32"
                  id="line136" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="92"
                  x2="92"
                  y1="160"
                  y2="-32"
                  id="line138" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="96"
                  x2="96"
                  y1="160"
                  y2="-32"
                  id="line140" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="100"
                  x2="100"
                  y1="160"
                  y2="-32"
                  id="line142" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="104"
                  x2="104"
                  y1="160"
                  y2="-32"
                  id="line144" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="108"
                  x2="108"
                  y1="160"
                  y2="-32"
                  id="line146" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="112"
                  x2="112"
                  y1="160"
                  y2="-32"
                  id="line148" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="116"
                  x2="116"
                  y1="160"
                  y2="-32"
                  id="line150" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="120"
                  x2="120"
                  y1="160"
                  y2="-32"
                  id="line152" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="124"
                  x2="124"
                  y1="160"
                  y2="-32"
                  id="line154" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="128"
                  x2="128"
                  y1="160"
                  y2="-32"
                  id="line156" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="132"
                  x2="132"
                  y1="160"
                  y2="-32"
                  id="line158" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="136"
                  x2="136"
                  y1="160"
                  y2="-32"
                  id="line160" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="137"
                  x2="137"
                  y1="166.05"
-                 y2="-25.950001"
+                 y2="-25.95"
                  id="line162" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="144"
                  x2="144"
                  y1="160"
                  y2="-32"
                  id="line164" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="148"
                  x2="148"
                  y1="160"
                  y2="-32"
                  id="line166" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="152"
                  x2="152"
                  y1="160"
                  y2="-32"
                  id="line168" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="156"
                  x2="156"
                  y1="160"
@@ -592,329 +595,329 @@
             <g
                id="g268">
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="-28"
                  y2="-28"
                  id="line174" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="-24"
                  y2="-24"
                  id="line176" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="-20"
                  y2="-20"
                  id="line178" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="-16"
                  y2="-16"
                  id="line180" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="-12"
                  y2="-12"
                  id="line182" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="-8"
                  y2="-8"
                  id="line184" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="-4"
                  y2="-4"
                  id="line186" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="0"
                  y2="0"
                  id="line188" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="4"
                  y2="4"
                  id="line190" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="8"
                  y2="8"
                  id="line192" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="12"
                  y2="12"
                  id="line194" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="16"
                  y2="16"
                  id="line196" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="20"
                  y2="20"
                  id="line198" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="24"
                  y2="24"
                  id="line200" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="28"
                  y2="28"
                  id="line202" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="32"
                  y2="32"
                  id="line204" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="36"
                  y2="36"
                  id="line206" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="40"
                  y2="40"
                  id="line208" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="44"
                  y2="44"
                  id="line210" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="48"
                  y2="48"
                  id="line212" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="52"
                  y2="52"
                  id="line214" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="56"
                  y2="56"
                  id="line216" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="60"
                  y2="60"
                  id="line218" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="64"
                  y2="64"
                  id="line220" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="68"
                  y2="68"
                  id="line222" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="72"
                  y2="72"
                  id="line224" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="76"
                  y2="76"
                  id="line226" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="80"
                  y2="80"
                  id="line228" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="84"
                  y2="84"
                  id="line230" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="88"
                  y2="88"
                  id="line232" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="92"
                  y2="92"
                  id="line234" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="96"
                  y2="96"
                  id="line236" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="100"
                  y2="100"
                  id="line238" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="104"
                  y2="104"
                  id="line240" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="108"
                  y2="108"
                  id="line242" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="112"
                  y2="112"
                  id="line244" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="116"
                  y2="116"
                  id="line246" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="120"
                  y2="120"
                  id="line248" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="124"
                  y2="124"
                  id="line250" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="128"
                  y2="128"
                  id="line252" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="132"
                  y2="132"
                  id="line254" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="136"
                  y2="136"
                  id="line256" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="140"
                  y2="140"
                  id="line258" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="144"
                  y2="144"
                  id="line260" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="148"
                  y2="148"
                  id="line262" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="152"
                  y2="152"
                  id="line264" />
               <line
-                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10"
+                 style="fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;"
                  x1="-32"
                  x2="160"
                  y1="156"
@@ -922,7 +925,7 @@
                  id="line266" />
             </g>
             <path
-               d="m 159.75,-31.75 v 191.5 h -191.5 v -191.5 h 191.5 M 160,-32 H -32 v 192 h 192 z"
+               d="M159.75-31.75v191.5h-191.5v-191.5H159.75 M160-32H-32v192h192V-32L160-32z"
                id="path270" />
           </g>
         </g>
@@ -930,30 +933,30 @@
            id="g284">
           <rect
              height="128"
-             style="opacity:0.3;fill:#f44336"
+             style="opacity:0.3;fill:#F44336;"
              width="4"
              x="0"
              y="0"
              id="rect276" />
           <rect
              height="128"
-             style="opacity:0.3;fill:#f44336"
+             style="opacity:0.3;fill:#F44336;"
              width="4"
              x="124"
              y="0"
              id="rect278" />
           <rect
              height="120"
-             style="opacity:0.3;fill:#f44336"
-             transform="rotate(90,64,2)"
+             style="opacity:0.3;fill:#F44336;"
+             transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 66 -62)"
              width="4"
              x="62"
              y="-58"
              id="rect280" />
           <rect
              height="120"
-             style="opacity:0.3;fill:#f44336"
-             transform="rotate(90,64,126)"
+             style="opacity:0.3;fill:#F44336;"
+             transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 190 62)"
              width="4"
              x="62"
              y="66"
@@ -964,261 +967,242 @@
   </g>
   <g
      id="Layer_3"
-     style="display:none">
+     style="display:none;">
     <rect
        id="XMLID_46_"
        height="128"
-       style="display:inline;fill:none;stroke:#616161;stroke-width:0.25;stroke-miterlimit:10"
-       transform="rotate(-90,64,64)"
+       style="display:inline;fill:none;stroke:#616161;stroke-width:0.25;stroke-miterlimit:10;"
+       transform="matrix(-1.346904e-10 -1 1 -1.346904e-10 8.631098e-09 128)"
        width="128"
-       x="0"
-       y="0" />
+       x="0" />
     <g
        id="XMLID_9_"
-       style="display:inline">
+       style="display:inline;">
       <rect
          id="XMLID_45_"
          height="128"
-         style="fill:none;stroke:#e0e0e0;stroke-width:0.25;stroke-miterlimit:10"
+         style="fill:none;stroke:#E0E0E0;stroke-width:0.25;stroke-miterlimit:10;"
          width="128"
-         x="0"
-         y="0" />
+         x="0" />
       <line
          id="XMLID_44_"
-         style="fill:none;stroke:#e0e0e0;stroke-width:0.25;stroke-miterlimit:10"
+         style="fill:none;stroke:#E0E0E0;stroke-width:0.25;stroke-miterlimit:10;"
          x1="8"
          x2="8"
          y1="0"
          y2="128" />
       <line
          id="XMLID_43_"
-         style="fill:none;stroke:#e0e0e0;stroke-width:0.25;stroke-miterlimit:10"
+         style="fill:none;stroke:#E0E0E0;stroke-width:0.25;stroke-miterlimit:10;"
          x1="16"
          x2="16"
          y1="0"
          y2="128" />
       <line
          id="XMLID_42_"
-         style="fill:none;stroke:#e0e0e0;stroke-width:0.25;stroke-miterlimit:10"
+         style="fill:none;stroke:#E0E0E0;stroke-width:0.25;stroke-miterlimit:10;"
          x1="24"
          x2="24"
          y1="0"
          y2="128" />
       <line
          id="XMLID_41_"
-         style="fill:none;stroke:#e0e0e0;stroke-width:0.25;stroke-miterlimit:10"
+         style="fill:none;stroke:#E0E0E0;stroke-width:0.25;stroke-miterlimit:10;"
          x1="32"
          x2="32"
          y1="0"
          y2="128" />
       <line
          id="XMLID_40_"
-         style="fill:none;stroke:#e0e0e0;stroke-width:0.25;stroke-miterlimit:10"
+         style="fill:none;stroke:#E0E0E0;stroke-width:0.25;stroke-miterlimit:10;"
          x1="40"
          x2="40"
          y1="0"
          y2="128" />
       <line
          id="XMLID_39_"
-         style="fill:none;stroke:#e0e0e0;stroke-width:0.25;stroke-miterlimit:10"
+         style="fill:none;stroke:#E0E0E0;stroke-width:0.25;stroke-miterlimit:10;"
          x1="48"
          x2="48"
          y1="0"
          y2="128" />
       <line
          id="XMLID_38_"
-         style="fill:none;stroke:#e0e0e0;stroke-width:0.25;stroke-miterlimit:10"
+         style="fill:none;stroke:#E0E0E0;stroke-width:0.25;stroke-miterlimit:10;"
          x1="56"
          x2="56"
          y1="0"
          y2="128" />
       <line
          id="XMLID_37_"
-         style="fill:none;stroke:#e0e0e0;stroke-width:0.25;stroke-miterlimit:10"
-         x1="63.990002"
-         x2="63.990002"
+         style="fill:none;stroke:#E0E0E0;stroke-width:0.25;stroke-miterlimit:10;"
+         x1="63.99"
+         x2="63.99"
          y1="0"
          y2="128" />
       <line
          id="XMLID_36_"
-         style="fill:none;stroke:#e0e0e0;stroke-width:0.25;stroke-miterlimit:10"
-         x1="71.989998"
-         x2="71.989998"
+         style="fill:none;stroke:#E0E0E0;stroke-width:0.25;stroke-miterlimit:10;"
+         x1="71.99"
+         x2="71.99"
          y1="0"
          y2="128" />
       <line
          id="XMLID_35_"
-         style="fill:none;stroke:#e0e0e0;stroke-width:0.25;stroke-miterlimit:10"
-         x1="79.989998"
-         x2="79.989998"
+         style="fill:none;stroke:#E0E0E0;stroke-width:0.25;stroke-miterlimit:10;"
+         x1="79.99"
+         x2="79.99"
          y1="0"
          y2="128" />
       <line
          id="XMLID_34_"
-         style="fill:none;stroke:#e0e0e0;stroke-width:0.25;stroke-miterlimit:10"
-         x1="87.989998"
-         x2="87.989998"
+         style="fill:none;stroke:#E0E0E0;stroke-width:0.25;stroke-miterlimit:10;"
+         x1="87.99"
+         x2="87.99"
          y1="0"
          y2="128" />
       <line
          id="XMLID_33_"
-         style="fill:none;stroke:#e0e0e0;stroke-width:0.25;stroke-miterlimit:10"
-         x1="95.989998"
-         x2="95.989998"
+         style="fill:none;stroke:#E0E0E0;stroke-width:0.25;stroke-miterlimit:10;"
+         x1="95.99"
+         x2="95.99"
          y1="0"
          y2="128" />
       <line
          id="XMLID_32_"
-         style="fill:none;stroke:#e0e0e0;stroke-width:0.25;stroke-miterlimit:10"
+         style="fill:none;stroke:#E0E0E0;stroke-width:0.25;stroke-miterlimit:10;"
          x1="103.99"
          x2="103.99"
          y1="0"
          y2="128" />
       <line
          id="XMLID_47_"
-         style="fill:none;stroke:#e0e0e0;stroke-width:0.25;stroke-miterlimit:10"
+         style="fill:none;stroke:#E0E0E0;stroke-width:0.25;stroke-miterlimit:10;"
          x1="111.99"
          x2="111.99"
          y1="0"
          y2="128" />
       <line
          id="XMLID_48_"
-         style="fill:none;stroke:#e0e0e0;stroke-width:0.25;stroke-miterlimit:10"
+         style="fill:none;stroke:#E0E0E0;stroke-width:0.25;stroke-miterlimit:10;"
          x1="119.99"
          x2="119.99"
          y1="0"
          y2="128" />
       <line
          id="XMLID_49_"
-         style="fill:none;stroke:#e0e0e0;stroke-width:0.25;stroke-miterlimit:10"
+         style="fill:none;stroke:#E0E0E0;stroke-width:0.25;stroke-miterlimit:10;"
          x1="128"
          x2="0"
          y1="120"
          y2="120" />
       <line
          id="XMLID_50_"
-         style="fill:none;stroke:#e0e0e0;stroke-width:0.25;stroke-miterlimit:10"
+         style="fill:none;stroke:#E0E0E0;stroke-width:0.25;stroke-miterlimit:10;"
          x1="128"
          x2="0"
          y1="112"
          y2="112" />
       <line
          id="XMLID_51_"
-         style="fill:none;stroke:#e0e0e0;stroke-width:0.25;stroke-miterlimit:10"
+         style="fill:none;stroke:#E0E0E0;stroke-width:0.25;stroke-miterlimit:10;"
          x1="128"
          x2="0"
          y1="104"
          y2="104" />
       <line
          id="XMLID_52_"
-         style="fill:none;stroke:#e0e0e0;stroke-width:0.25;stroke-miterlimit:10"
+         style="fill:none;stroke:#E0E0E0;stroke-width:0.25;stroke-miterlimit:10;"
          x1="128"
          x2="0"
          y1="96"
          y2="96" />
       <line
          id="XMLID_53_"
-         style="fill:none;stroke:#e0e0e0;stroke-width:0.25;stroke-miterlimit:10"
+         style="fill:none;stroke:#E0E0E0;stroke-width:0.25;stroke-miterlimit:10;"
          x1="128"
          x2="0"
          y1="88"
          y2="88" />
       <line
          id="XMLID_54_"
-         style="fill:none;stroke:#e0e0e0;stroke-width:0.25;stroke-miterlimit:10"
+         style="fill:none;stroke:#E0E0E0;stroke-width:0.25;stroke-miterlimit:10;"
          x1="128"
          x2="0"
          y1="80"
          y2="80" />
       <line
          id="XMLID_55_"
-         style="fill:none;stroke:#e0e0e0;stroke-width:0.25;stroke-miterlimit:10"
+         style="fill:none;stroke:#E0E0E0;stroke-width:0.25;stroke-miterlimit:10;"
          x1="128"
          x2="0"
          y1="72"
          y2="72" />
       <line
          id="XMLID_56_"
-         style="fill:none;stroke:#e0e0e0;stroke-width:0.25;stroke-miterlimit:10"
+         style="fill:none;stroke:#E0E0E0;stroke-width:0.25;stroke-miterlimit:10;"
          x1="128"
          x2="0"
-         y1="64.010002"
-         y2="64.010002" />
+         y1="64.01"
+         y2="64.01" />
       <line
          id="XMLID_57_"
-         style="fill:none;stroke:#e0e0e0;stroke-width:0.25;stroke-miterlimit:10"
+         style="fill:none;stroke:#E0E0E0;stroke-width:0.25;stroke-miterlimit:10;"
          x1="128"
          x2="0"
-         y1="56.009998"
-         y2="56.009998" />
+         y1="56.01"
+         y2="56.01" />
       <line
          id="XMLID_58_"
-         style="fill:none;stroke:#e0e0e0;stroke-width:0.25;stroke-miterlimit:10"
+         style="fill:none;stroke:#E0E0E0;stroke-width:0.25;stroke-miterlimit:10;"
          x1="128"
          x2="0"
-         y1="48.009998"
-         y2="48.009998" />
+         y1="48.01"
+         y2="48.01" />
       <line
          id="XMLID_60_"
-         style="fill:none;stroke:#e0e0e0;stroke-width:0.25;stroke-miterlimit:10"
+         style="fill:none;stroke:#E0E0E0;stroke-width:0.25;stroke-miterlimit:10;"
          x1="128"
          x2="0"
-         y1="40.009998"
-         y2="40.009998" />
+         y1="40.01"
+         y2="40.01" />
       <line
          id="XMLID_61_"
-         style="fill:none;stroke:#e0e0e0;stroke-width:0.25;stroke-miterlimit:10"
+         style="fill:none;stroke:#E0E0E0;stroke-width:0.25;stroke-miterlimit:10;"
          x1="128"
          x2="0"
-         y1="32.009998"
-         y2="32.009998" />
+         y1="32.01"
+         y2="32.01" />
       <line
          id="XMLID_62_"
-         style="fill:none;stroke:#e0e0e0;stroke-width:0.25;stroke-miterlimit:10"
+         style="fill:none;stroke:#E0E0E0;stroke-width:0.25;stroke-miterlimit:10;"
          x1="128"
          x2="0"
          y1="24.01"
          y2="24.01" />
       <line
          id="XMLID_63_"
-         style="fill:none;stroke:#e0e0e0;stroke-width:0.25;stroke-miterlimit:10"
+         style="fill:none;stroke:#E0E0E0;stroke-width:0.25;stroke-miterlimit:10;"
          x1="128"
          x2="0"
          y1="16.01"
          y2="16.01" />
       <line
          id="XMLID_64_"
-         style="fill:none;stroke:#e0e0e0;stroke-width:0.25;stroke-miterlimit:10"
+         style="fill:none;stroke:#E0E0E0;stroke-width:0.25;stroke-miterlimit:10;"
          x1="128"
          x2="0"
-         y1="8.0100002"
-         y2="8.0100002" />
+         y1="8.01"
+         y2="8.01" />
     </g>
     <use
        id="XMLID_31_"
        height="129"
-       style="display:inline;overflow:visible"
-       transform="matrix(1,0,0,-1,64,64)"
+       style="display:inline;overflow:visible;"
+       transform="matrix(1 0 0 -1 64 64)"
        width="129"
        x="-64.5"
        xlink:href="#Grid"
        y="-64.5" />
   </g>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:'Fira Sans';fill:#000000;fill-opacity:1;stroke:none;-inkscape-font-specification:'Fira Sans';font-stretch:normal;font-variant:normal"
-     x="170.65736"
-     y="59.157192"
-     id="text352"><tspan
-       id="tspan350" /></text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:106.667px;line-height:1.25;font-family:sans-serif;fill:#eb8f00;fill-opacity:1;stroke:none"
-     x="150.04419"
-     y="100.74678"
-     id="text406"><tspan
-       id="tspan404"
-       x="150.04419"
-       y="100.74678"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:106.667px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';fill-opacity:1;fill:#eb8f00">GASERI</tspan></text>
 </svg>
