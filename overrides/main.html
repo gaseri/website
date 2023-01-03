@@ -2,16 +2,6 @@
 
 {% block extrahead %}
   {{ super() }}
-  {% set title = config.site_name %}
-  {% if page and page.meta and page.meta.title %}
-    {% set title = page.meta.title ~ " - " ~ title %}
-  {% elif page and page.title and not page.is_homepage %}
-    {% set title = page.title ~ " - " ~ title %}
-  {% endif %}
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="{{ title }}" />
-  <meta property="og:description" content="{{ config.site_description }}" />
-  <meta property="og:url" content="{{ page.canonical_url }}" />
   {% if page and page.abs_url %}
     <meta http-equiv="onion-location" content="http://vcwkbqby652dtqgbtbtr6ouvs6fu5abx5z45dmlug6dl55d6zcadsuqd.onion{{ page.abs_url }}">
   {% endif %}
