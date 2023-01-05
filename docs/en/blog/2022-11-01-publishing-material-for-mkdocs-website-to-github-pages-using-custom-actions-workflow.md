@@ -143,50 +143,6 @@ And that's it! There is no more requirement for the `.nojekyll` file as Jekyll n
 
 Finally, if you want to use a custom domain, having the `CNAME` file in the repository root or the `docs` subfolder will no longer have the desired effect; the domain has to be [configured through the repository settings or using the API](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#creating-a-custom-github-actions-workflow-to-publish-your-site).
 
-The next step in streamlining this approach further is probably patching [actions/configure-pages](https://github.com/actions/configure-pages) that will allow us to replace:
-
-``` yaml hl_lines="8-20"
-jobs:
-  # Build job
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup Pages
-        uses: actions/configure-pages@v2
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.11'
-      - name: Install MkDocs and Material for MkDocs
-        run: pip install mkdocs[i18n] mkdocs-material
-      - name: Install Pillow and CairoSVG (required for social card generation)
-        run: pip install pillow cairosvg
-      - name: Setup caching
-        uses: actions/cache@v3
-        with:
-          key: ${{ github.sha }}
-          path: .cache
-```
-
-with something along the lines of:
-
-``` yaml hl_lines="8-10"
-jobs:
-  # Build job
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup Pages
-        uses: actions/configure-pages@v2
-        static_site_generator: mkdocs
-```
-
-We can even [dream bigger](https://youtu.be/GoJOVN2ycXQ) than that: specifying the `generator_config_file` should make some JavaScript-powered parsing magic/logic detect the requirement for the installation of optional dependencies and the caching setup, and enable them only if required.
-
 **Updated on 2022-11-25:** changed Python version from 3.10 to 3.11, resulting in faster docs builds (see [Faster CPython](https://docs.python.org/3.11/whatsnew/3.11.html#faster-cpython) for details).
 
 **Updated on 2022-12-03:** changed caching to use `github.sha` instead of `github.ref`, enabling rebuilds of social cards when site contents change.
