@@ -242,6 +242,14 @@ Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primje
 !!! tip
     "Profesore, moram vam reći da sam se na poslu nedavno cijeli dan držao za glavu jer nisam pratio kad se predavalo o CIDR-u i blokovima adresa."
 
+### Bonus primjer 10
+
+!!! error
+    "Profesore, ja stvarno ne znam kako su drugi prepisali od mene."
+
+!!! tip
+    "Profesore, ja znam kako su drugi prepisali od mene i prihvaćam krivnju za to. Pošaljite nas svih na stegovno povjerenstvo jer prepisivanje nije u redu."
+
 ## Proza
 
 ### Legenda o nastanku **S**tandarda **O**značavanja **R**ačunalnih **M**reža
