@@ -1119,3 +1119,75 @@ Le-le-le, le-le-le-le-legende, B
 Le-le-le, le-le-le-le-legende, B
 
 ([Izvorni tekst na Geniusu](https://genius.com/Corona-legende-lyrics))
+
+### Đ-Shock -- PSG (prerada PSG)
+
+[Uvod]  
+(Milky, Milky)  
+(Je l' tako Mile?)
+
+[Refren]  
+Skupi kao PSG, ovi ostali su žasu  
+Zadnja vuča - BMW, ovi moji svi u gasu  
+Oko mene moji ljudi, po-podižemo masu  
+Na nastupu odvaljen, bato, opet skidam masku  
+Skupi kao PSG, ovi ostali su žasu  
+Zadnja vuča - BMW, ovi moji svi u gasu  
+Oko mene moji ljudi, po-podižemo masu  
+Na nastupu odvaljen, bato, opet skidam masku
+
+[Strofa 1]  
+Flow lige šampiona, svako hoće sad sa nama  
+Pazi drama, Milky šije rezultate u labu - galama  
+Recezenti smaraju, pa mentor mi šizi  
+Opet grizemo ga jako, FIDIT - Busy  
+Levi dlan me svrbi, znači pare stižu  
+Novu tetovažu imam, čet'ri kurve oližu  
+Svako veče u labu novi papir u nizu  
+GASERI su u lovi, drugi nisu ni blizu
+
+[Pred-Refren]  
+Oni sve bi dali (Oni sve bi dali, oni sve bi dali, oni sve bi dali)  
+Da vide da smo pali (Da smo pali)  
+Samo gazi, gazi, gazi
+
+[Refren]  
+Skupi kao PSG, ovi ostali su žasu  
+Zadnja vuča - BMW, ovi moji svi u gasu  
+Oko mene moji ljudi, po-podižemo masu  
+Na nastupu odvaljen, bato, opet skidam masku  
+Skupi kao PSG, ovi ostali su žasu  
+Zadnja vuča - BMW, ovi moji svi u gasu  
+Oko mene moji ljudi, po-podižemo masu  
+Na nastupu odvaljen, bato, opet skidam masku
+
+[Strofa 2]  
+Riba puca mi kô gram, pa joj zato bulja seva  
+Gde god odem pravim lom, pa joj zato brine keva  
+Ova godina je naša, puna flaša, sve u zicer  
+GASERI tu su sa mnom, nova konfa, pali blic  
+Tu sa braćom u klubu, pare lete, sve nas vole  
+Svi u gradu sad nas znaju, soon nastupi na more  
+Telefoni non-stop zvone, zbog FIDIT-a svi smo vrući  
+Ne kapiraš ti taj sleng, GASERI su u kući
+
+[Pred-Refren]  
+Oni sve bi dali (Oni sve bi dali, oni sve bi dali, oni sve bi dali)  
+Da vide da smo pali (Da smo pali)  
+Samo gazi, gazi, gazi
+
+[Refren]  
+Skupi kao PSG, ovi ostali su žasu  
+Zadnja vuča - BMW, ovi moji svi u gasu  
+Oko mene moji ljudi, po-podižemo masu  
+Na nastupu odvaljen, bato, opet skidam masku  
+Skupi kao PSG, ovi ostali su žasu  
+Zadnja vuča - BMW, ovi moji svi u gasu  
+Oko mene moji ljudi, po-podižemo masu  
+Na nastupu odvaljen, bato, opet skidam masku
+
+[Završetak]  
+(Milky, Milky)  
+(Je l' tako Mile?)
+
+([Izvorni tekst na Geniusu](https://genius.com/Shock-srb-psg-lyrics))
