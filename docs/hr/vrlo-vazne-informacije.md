@@ -125,7 +125,7 @@ Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primje
 
 ### Primjer 1
 
-!!! error
+!!! bug
     "Profesore, znate, probao sam ATI Catalyst 10.2 na Windowsima 7... jel' mi možete objasniti zašto Call of Duty 6 ima corruptane teksture?"
 
 !!! tip
@@ -133,7 +133,7 @@ Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primje
 
 ### Primjer 2
 
-!!! error
+!!! bug
     "Profesore, jeste li u Wordu 2007..."
 
 !!! tip
@@ -141,7 +141,7 @@ Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primje
 
 ### Primjer 3
 
-!!! error
+!!! bug
     "Ovo [Računalne mreže 1] i Kombinatorika su nam najteži predmeti."
 
 !!! tip
@@ -149,7 +149,7 @@ Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primje
 
 ### Primjer 4
 
-!!! error
+!!! bug
     "Profesore, zašto moramo zadaće pisati na posebnom obrascu?"
 
 !!! tip
@@ -157,7 +157,7 @@ Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primje
 
 ### Primjer 5
 
-!!! error
+!!! bug
     "Zašto moramo toliko zadaća i kolokvija imati?"
 
 !!! tip
@@ -165,7 +165,7 @@ Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primje
 
 ### Primjer 6
 
-!!! error
+!!! bug
     "Profesore, znate kako dobro C# radi XY..."
 
 !!! tip
@@ -173,7 +173,7 @@ Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primje
 
 ### Primjer 7
 
-!!! error
+!!! bug
     "Profesore, biste li napisali postupak kako se instalira Oracle XE na Windowsima?"
 
 !!! tip
@@ -181,7 +181,7 @@ Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primje
 
 ### Primjer 8
 
-!!! error
+!!! bug
     "Profesore, jel mi možete odgoditi..."
 
 !!! tip
@@ -189,7 +189,7 @@ Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primje
 
 ### Primjer 9
 
-!!! error
+!!! bug
     "Profesore, zašto se od nas očekuje da aktivno radimo na slobodnom softveru?"
 
 !!! tip
@@ -197,7 +197,7 @@ Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primje
 
 ### Primjer 10
 
-!!! error
+!!! bug
     "Joj da znate kako je nama teško ovo ono..."
 
 !!! tip
@@ -205,7 +205,7 @@ Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primje
 
 ### Bonus primjer 1
 
-!!! error
+!!! bug
     "Zašto moramo učiti kako raditi u Emacsu?"
 
 !!! tip
@@ -213,7 +213,7 @@ Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primje
 
 ### Bonus primjer 2
 
-!!! error
+!!! bug
     "Profesore, radi li MPI for Python na Windowsima?"
 
 !!! tip
@@ -221,7 +221,7 @@ Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primje
 
 ### Bonus primjer 3
 
-!!! error
+!!! bug
     "Profesore, znate kako sam puno napravila tijekom preddiplomskog studija, ovdje je moj projekt za završni rad od 120 linija koda."
 
 !!! tip
@@ -229,7 +229,7 @@ Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primje
 
 ### Bonus primjer 4
 
-!!! error
+!!! bug
     "Joj, baš mi se ne da ništa učiti, radije bih gledao zezancije i e-celebe na Instagramu."
 
 !!! tip
@@ -237,7 +237,7 @@ Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primje
 
 ### Bonus primjer 5
 
-!!! error
+!!! bug
     "Kolega, ja mislim da bi ti trebao koristiti neslobodan softver Microsoft Office umjesto slobodnog softvera LibreOffice."
 
 !!! tip
@@ -245,7 +245,7 @@ Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primje
 
 ### Bonus primjer 6
 
-!!! error
+!!! bug
     "Profesore, jučer sam do 3 ujutro igrao Battlefield 4 u multiplayeru."
 
 !!! tip
@@ -253,7 +253,7 @@ Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primje
 
 ### Bonus primjer 7
 
-!!! error
+!!! bug
     "Profesore, zašto moramo učiti Emacs? Ja bih radije da učimo Vim."
 
 !!! tip
@@ -261,7 +261,7 @@ Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primje
 
 ### Bonus primjer 8
 
-!!! error
+!!! bug
     "Profesore, puno je ljudi odgovorilo d) u 6. pitanju, a vi tvrdite da je točno b), pa ja mislim da je zapravo točno i d) zbog toga što je puno ljudi odgovorilo d) te biste vi trebali priznati i d) kao točno."
 
 !!! tip
@@ -269,7 +269,7 @@ Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primje
 
 ### Bonus primjer 9
 
-!!! error
+!!! bug
     "Profesore, zašto bi me u doba kad veza na internet radi na dva klika mišem ili dodira po ekranu zanimalo kako se konfiguriraju te podmreže, adrese i maske?"
 
 !!! tip
@@ -277,7 +277,7 @@ Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primje
 
 ### Bonus primjer 10
 
-!!! error
+!!! bug
     "Profesore, ja stvarno ne znam kako su drugi prepisali od mene."
 
 !!! tip
