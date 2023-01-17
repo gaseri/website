@@ -519,6 +519,7 @@ extra_javascript:
 markdown_extensions:
   - admonition
   - attr_list
+  - def_list
   - meta
   - pymdownx.arithmatex:
       generic: true
