@@ -10,20 +10,20 @@ author: Vedran Miletić
 
 ### 50 Cent -- In da lab (In da club remake)
 
-[Intro]  
+\[Intro\]  
 Go, go, go, go, go, go  
 Go shorty, it's your birthday  
 We gonna code like it's your birthday  
 We gonna hack OpenCV like it's your birthday  
 And you know we don't give a fuck it's not your birthday
 
-[Hook]  
+\[Hook\]  
 You can find me in the lab, PC full of deb  
 Look Mami I got the X11 if you into RandR  
 I'm into having binary, I ain't into making builds  
 So come gimme a commit if you're into developing stuff
 
-[Verse 1]  
+\[Verse 1\]  
 When I pull git up front, you see the ROS on debs  
 When I roll twenty pushes, it's twenty experiments in the lab  
 Students heard I work with K, now they wanna show me tech  
@@ -41,19 +41,19 @@ Got a mill' LOC out the project and I'm still on the grind
 Now shorty said she feeling my code style, she feeling my execution flow  
 Her girlfriend Dee Dee willin' to get bi and they ready to go
 
-[Hook]  
+\[Hook\]  
 You can find me in the lab, PC full of deb  
 Look Mami I got the X11 if you into RandR  
 I'm into having binary, I ain't into making builds  
 So come gimme a commit if you're into developing stuff
 
-[Bridge]  
+\[Bridge\]  
 My execution flow, my show brought me the dough  
 That bought me all my fancy things  
 My e-reader, my 90s car, my laptop, my jacket  
 Look man I done PhD planned, and I ain't changed
 
-[Verse 2]  
+\[Verse 2\]  
 And you should love it way more than you hate it  
 Friend you mad, I thought that you'd be happy I researched it  
 I'm that cat in the box toasting to the Schrodinger experiment  
@@ -68,13 +68,13 @@ If the researchers hate then let them hate and watch the journal papers pile up
 Or we can go upside your laptop with a pack of debs  
 They know where we fuckin' be
 
-[Hook]  
+\[Hook\]  
 You can find me in the lab, PC full of deb  
 Look Mami I got the X11 if you into RandR  
 I'm into having binary, I ain't into making builds  
 So come gimme a commit if you're into developing stuff
 
-[Outro]  
+\[Outro\]  
 Don't try to act like you don't know where we be neither, man  
 We in the lab all the time, man, it's about to pop off, man  
 A-Unit
@@ -83,10 +83,10 @@ A-Unit
 
 ### LeToya feat. Bun B, Killa Kyleon & Slim Thug -- Eclipser (Swagger remake)
 
-[Intro: Slim Thug + LeToya]  
+\[Intro: Slim Thug + LeToya\]  
 Jartown (E-Town)
 
-[Killa Kyleon]  
+\[Killa Kyleon\]  
 Run that back up in rsync again, wh-where checksums 're good again  
 Mir-mirrorin Eclipse full ser-servin all those jars again  
 I got that plugin, I use that menu, yeah that's why I code that code  
@@ -96,13 +96,13 @@ Tippin 4, my buttons they glow, y'all make it rain, I make it snow
 Marketplace where I usually go, hit that solution I install straight in  
 FTP yeah that's my protocol, don't do no eighties, my top be twenty-one
 
-[Verse 1: LeToya]  
+\[Verse 1: LeToya\]  
 It's E-Town chick, you already know  
 Call me Mrs. SWT cuz i'm makin windows  
 My project bugless, Jenkins by my Git  
 Richest text on my docs, Mylyn on my tasks
 
-[Hook: Slim Thug + LeToya]  
+\[Hook: Slim Thug + LeToya\]  
 I hear your programs talkin but they ain't fast enough  
 It cost to be a dev but you ain't got enough  
 Now get ya eclipser up, now get ya eclipser up  
@@ -112,7 +112,7 @@ Parallel Tools swipin, runnin everything you likin
 Now get ya eclipser up, now get ya eclipser up  
 Now get ya eclipser up, now get ya eclipser up
 
-[Verse 2: LeToya]  
+\[Verse 2: LeToya\]  
 I'm back at it, been gone for a minute  
 Busy feature planning and runnin my own business  
 Had to shake a couple models, devs thought I was finished  
@@ -122,7 +122,7 @@ You might spot me in the office packin MDT jars
 Draw it out in my Graphiti, to the webmaster I go  
 If I ain't workin e4 PDE devs open my door
 
-[Hook: Slim Thug + LeToya]  
+\[Hook: Slim Thug + LeToya\]  
 I hear your programs talkin but they ain't fast enough  
 It cost to be a dev but you ain't got enough  
 Now get ya eclipser up, now get ya eclipser up  
@@ -132,7 +132,7 @@ Parallel Tools swipin, runnin everything you likin
 Now get ya eclipser up, now get ya eclipser up  
 Now get ya eclipser up, now get ya eclipser up
 
-[Verse 3: LeToya]  
+\[Verse 3: LeToya\]  
 It's the B-I-R-T, everybody know  
 Rockin big data with the Data Tools Platform  
 Gotta be first, hello world class when i'm on the go  
@@ -142,7 +142,7 @@ In my RHEL7 beta with your devs jelly
 And like JW say, 'let me upgrade ya'  
 Well WB say 'eclipser up, baby'
 
-[Verse 4: Bun B]  
+\[Verse 4: Bun B\]  
 You see my chain game is crazy and my piece game is playa  
 My fit game is fiyah and my shoe game'll slay ya  
 My wrist game ready and my whip game proper  
@@ -152,7 +152,7 @@ Down in Texas where these boys be runnin game for days
 If ya gal is in the building when I spot her I'ma snag her  
 Better luck next time partner, step up your swagger
 
-[Hook: Slim Thug + LeToya]  
+\[Hook: Slim Thug + LeToya\]  
 I hear your programs talkin but they ain't fast enough  
 It cost to be a dev but you ain't got enough  
 Now get ya eclipser up, now get ya eclipser up  
@@ -162,7 +162,7 @@ Parallel Tools swipin, runnin everything you likin
 Now get ya eclipser up, now get ya eclipser up  
 Now get ya eclipser up, now get ya eclipser up
 
-[Outro: Bun B]  
+\[Outro: Bun B\]  
 Man, get your swagger up, baby  
 Especially if you coming to H-Town, baby  
 Cause we really go down down here, know what I'm saying  
@@ -176,7 +176,7 @@ You already know, baby
 
 ### Pitbull feat. Marc Anthony -- Boot over me (Rain over me remake)
 
-[Chorus: Marc Anthony]  
+\[Chorus: Marc Anthony\]  
 Girl my OS don't crash  
 (Red Hat)  
 I'm out my swap  
@@ -194,7 +194,7 @@ Ay ay ay
 Ay ay ay  
 Let it boot over me
 
-[Verse 1: Pitbull]  
+\[Verse 1: Pitbull\]  
 3.0 is the new kernel  
 Final is the new rawhide  
 b43 is the new legacy  
@@ -209,7 +209,7 @@ Powerful yes, they love to get the malloc nasty, ow
 This ain't a terminal you'll see, you can do git blame on me  
 Dale munequita ahora ahi, and let it boot over me
 
-[Chorus: Marc Anthony]  
+\[Chorus: Marc Anthony\]  
 Girl my OS don't crash  
 I'm out my swap  
 Let it boot over me  
@@ -224,7 +224,7 @@ Ay ay ay
 Ay ay ay  
 Let it boot over me
 
-[Verse 2: Pitbull]  
+\[Verse 2: Pitbull\]  
 3.0 is the new kernel  
 And final is the new rawhide  
 Fedora is the new majority, ya tu sabe  
@@ -238,7 +238,7 @@ Baby no me hables mas, y tiramelo mami chula
 No games you'll see, you can do git blame on me  
 Dale munequita ahora ahi, and let it boot over me
 
-[Chorus: Marc Anthony]  
+\[Chorus: Marc Anthony\]  
 Girl my OS don't crash  
 I'm out my swap  
 Let it boot over me  
@@ -253,7 +253,7 @@ Ay ay ay
 Ay ay ay  
 Let it boot over me
 
-[Bridge: Pitbull]  
+\[Bridge: Pitbull\]  
 Fedora Worldwide, MARC Archive, tu sabe  
 I was virtualizing her, she was booting on me  
 Next thing you know, we were sharing the kernel tree  
@@ -263,7 +263,7 @@ Next thing you know, we were sharing the kernel tree
 Oh oh oh oh oh oh  
 Boot over me
 
-[Chrous: Marc Anthony]  
+\[Chrous: Marc Anthony\]  
 Girl my OS don't crash  
 I'm out my swap  
 Let it boot over me  
@@ -282,7 +282,7 @@ Let it boot over me
 
 ### Fedde le Grand & Nicky Romero feat. Matthew Koma -- Debs (Sparks remake)
 
-[Verse]  
+\[Verse\]  
 Listen to your apt for your ucf's sake  
 You'll move a config  
 I'll install all the packages that your fingers place  
@@ -292,7 +292,7 @@ A new Debian Policy in contrib where we both cope
 I'll take you to reproducible builds just to let go  
 Turn off your unattended-upgrades... (unattended-upgrades, unattended-upgrades, unattended-upgrades, ...)
 
-[Bridge]  
+\[Bridge\]  
 This is the time  
 This is the time to turn off your unattended-upgrades  
 This is the time to turn off your unattended-upgrades, unattended-upgrades  
@@ -300,7 +300,7 @@ Let me show you with your eyes closed, unattended-upgrades, unattended-upgrades
 What our apts both know, it's the time  
 This is the time to turn off your unattended-upgrades
 
-[Verse]  
+\[Verse\]  
 Listen to your apt for your ucf's sake  
 You'll move a config  
 I'll install all the packages that your fingers type  
@@ -310,7 +310,7 @@ A new Debian Policy in contrib where we both cope
 I'll take you to reproducible builds just to let go  
 Turn off your unattended-upgrades... (unattended-upgrades, unattended-upgrades, unattended-upgrades, ...)
 
-[Bridge]  
+\[Bridge\]  
 This is the time  
 This is the time to turn off your unattended-upgrades  
 This is the time to turn off your unattended-upgrades, unattended-upgrades  

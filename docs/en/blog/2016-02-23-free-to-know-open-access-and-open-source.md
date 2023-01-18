@@ -76,9 +76,9 @@ Possibly, and it will depend on what the users demand from software vendors. If 
 
 ## Are open source software products easier targets for security issues? Are there ways for this to be avoided?
 
-Existing studies such as [1] show the contrary to be true, that is, the open source software makes it easier to find and fix security issues. As an anecdotal example, there was a recent fiasco by [Oracle](https://www.oracle.com/), a prominent database software vendor. An Oracle employee published and later removed a blog post explaining that a user is not allowed to reverse-engineer their software to find security bugs. At the same time, [EnterpriseDB](https://www.enterprisedb.com/), a prominent open source database software vendor providing support and services around [PostgreSQL](https://www.postgresql.org/) database software, actually invited the users to study PostgreSQL source code and find the security bugs so they can be fixed.
+Existing studies such as \[1\] show the contrary to be true, that is, the open source software makes it easier to find and fix security issues. As an anecdotal example, there was a recent fiasco by [Oracle](https://www.oracle.com/), a prominent database software vendor. An Oracle employee published and later removed a blog post explaining that a user is not allowed to reverse-engineer their software to find security bugs. At the same time, [EnterpriseDB](https://www.enterprisedb.com/), a prominent open source database software vendor providing support and services around [PostgreSQL](https://www.postgresql.org/) database software, actually invited the users to study PostgreSQL source code and find the security bugs so they can be fixed.
 
-[1] Hoepman, Jaap-Henk and Jacobs, Bart. [Increased security through open source.](https://dl.acm.org/doi/fullHtml/10.1145/1188913.1188921) Communications of the ACM 50.1 (2007): 79--83.
+\[1\] Hoepman, Jaap-Henk and Jacobs, Bart. [Increased security through open source.](https://dl.acm.org/doi/fullHtml/10.1145/1188913.1188921) Communications of the ACM 50.1 (2007): 79--83.
 
 ## Can you provide few good and up-to-date sources for anybody interested in the subject of Open access or open source?
 

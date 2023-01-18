@@ -21,7 +21,7 @@ paginate: true
 
 - [The Living Internet](https://www.livinginternet.com/)
 - [Serverless Architectures Review, Future Trend and the Solutions to Open Problems](http://pubs.sciepub.com/ajse/6/1/1/index.html)
-    - [Figure 1. Evolution from Bare metal to Serverless (adapted from [1])](http://pubs.sciepub.com/ajse/6/1/1/bigimage/fig1.png)
+    - [Figure 1. Evolution from Bare metal to Serverless (adapted from \[1\])](http://pubs.sciepub.com/ajse/6/1/1/bigimage/fig1.png)
 
 ---
 

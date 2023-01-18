@@ -264,11 +264,11 @@ Vidljivost Zaklade Sveučilišta u Rijeci izražavati će kroz naljepnice logoti
 
 ### Pregled
 
-Fotonički WDM mrežni simulator (Photonic WDM Network Simulator, PWNS) proširenje je [mrežnog simulatora ns-3](https://www.nsnam.org/) koje omogućuje simulaciju optičkih transportnih mreža. Proširenje je inspirirano optičkim WDM mrežnim simulatorom (Optical WDM network simulator, OWns), proširenjem sa sličnim ciljevima implementiranom u ns-2 i opisanom u [6]. Sam naziv proširenja PWNS je parodija na OWns; kako *[own](https://www.urbandictionary.com/define.php?term=own)* u *[leetspeaku](https://www.urbandictionary.com/define.php?term=leet%20speak)* postaje *[pwn](https://www.urbandictionary.com/define.php?term=pwn)*, tako *owns* postaje *pwns*.
+Fotonički WDM mrežni simulator (Photonic WDM Network Simulator, PWNS) proširenje je [mrežnog simulatora ns-3](https://www.nsnam.org/) koje omogućuje simulaciju optičkih transportnih mreža. Proširenje je inspirirano optičkim WDM mrežnim simulatorom (Optical WDM network simulator, OWns), proširenjem sa sličnim ciljevima implementiranom u ns-2 i opisanom u \[6\]. Sam naziv proširenja PWNS je parodija na OWns; kako *[own](https://www.urbandictionary.com/define.php?term=own)* u *[leetspeaku](https://www.urbandictionary.com/define.php?term=leet%20speak)* postaje *[pwn](https://www.urbandictionary.com/define.php?term=pwn)*, tako *owns* postaje *pwns*.
 
 ### Značajke
 
-PWNS sadrži modele za sljedeće komponente optičke transportne mreže [5]:
+PWNS sadrži modele za sljedeće komponente optičke transportne mreže \[5\]:
 
 - rubni mrežni uređaji,
 - uređaji jezgrene mreže,
@@ -276,7 +276,7 @@ PWNS sadrži modele za sljedeće komponente optičke transportne mreže [5]:
 - kanali, i
 - upravljačka ravnina.
 
-Osim toga, PWNS nudi modele za sljedeće fizičke i virtualne entitete [4]:
+Osim toga, PWNS nudi modele za sljedeće fizičke i virtualne entitete \[4\]:
 
 - fizički kabel koji sadrži jedno ili više optičkih vlakana,
 - grupa veza s dijeljenim rizikom (engl. *shared risk link group*) koja sadrži dijelove dva ili više kabela koji dijele fizičku lokaciju,
@@ -287,18 +287,18 @@ Osim toga, PWNS nudi modele za sljedeće fizičke i virtualne entitete [4]:
 
 ### Dostupnost
 
-Planirani razvoj PWNS-a završen je 2015. godine obranom doktorata [1]. Posljednja verzija PWNS-a dostupna je u obliku izvornog koda [na zahtjev](https://vedran.miletic.net/#contact), a moguće je da će pojedini njegovi dijelovi u budućnosti biti uključeni u osnovni kod ns-3-a. Prijave pogrešaka i zakrpe koje ih ispravljaju ili dodaju nove značajke su uvijek dobrodošli.
+Planirani razvoj PWNS-a završen je 2015. godine obranom doktorata \[1\]. Posljednja verzija PWNS-a dostupna je u obliku izvornog koda [na zahtjev](https://vedran.miletic.net/#contact), a moguće je da će pojedini njegovi dijelovi u budućnosti biti uključeni u osnovni kod ns-3-a. Prijave pogrešaka i zakrpe koje ih ispravljaju ili dodaju nove značajke su uvijek dobrodošli.
 
 ### Reference
 
-Ako koristite PWNS u svom radu, molimo vas da citirate barem radove [4] i [5].
+Ako koristite PWNS u svom radu, molimo vas da citirate barem radove \[4\] i \[5\].
 
-- [1] Miletić, V. [Method for optimizing availability of optical telecommunication network in presence of correlated failures](https://vedran.miletic.net/files/phd-thesis-vedran-miletic.pdf). PhD thesis defended at Faculty of Electrical Engineering and Computing, University of Zagreb, 8th June 2015.
-- [2] Miletić, V., Šubić, T. & Mikac, B. [Optimizing maximum shared risk link group disjoint path algorithm using NVIDIA CUDA heterogeneous parallel programming platform](https://ieeexplore.ieee.org/document/6987645). in Proceedings on the 2014 X International Symposium on Telecommunications (BIHTEL) (ed. Mrdović, S.; University of Sarajevo, Sarajevo, Bosnia and Herzegovina), 1–6 (IEEE, 2014). [doi:10.1109/BIHTEL.2014.6987645](https://doi.org/10.1109/BIHTEL.2014.6987645)
-- [3] Miletić, V., Maniadakis, D., Mikac, B. & Varoutas, D. [On the influence of the underlying network topology on optical telecommunication network availability under shared risk link group failures](https://ieeexplore.ieee.org/document/6816135). in Proceedings of the 2014 10th International Conference on the Design of Reliable Communication Networks (DRCN) (ed. Van Daele, P.; University of Ghent, Ghent, Belgium), 1–8 (IEEE, 2014). [doi:10.1109/DRCN.2014.6816135](https://doi.org/10.1109/DRCN.2014.6816135)
-- [4] Miletić, V., Mikac, B. & Džanko, M. [Impact evaluation of physical length of shared risk link groups on optical network availability using Monte Carlo simulation](https://ieeexplore.ieee.org/document/6582897). in Proceedings of the 2013 18th European Conference on Networks and Optical Communications (NOC) and 8th Conference on Optical Cabling & Infrastructure (OC&I) (ed. Leitgeb, E.; Technical University Graz, Graz, Austria), 249–256 (IEEE, 2013). [doi:10.1109/NOC-OCI.2013.6582897](https://doi.org/10.1109/NOC-OCI.2013.6582897)
-- [5] Miletić, V., Mikac, B. & Džanko, M. [Modelling optical network components: A network simulator-based approach](https://ieeexplore.ieee.org/document/6412064). in Proceedings on the 2012 IX International Symposium on Telecommunications (BIHTEL) (ed. Mrdović, S.; University of Sarajevo, Sarajevo, Bosnia and Herzegovina), 1–6 (IEEE, 2012). [doi:10.1109/BIHTEL.2012.6412064](https://doi.org/10.1109/BIHTEL.2012.6412064)
-- [6] Wen, B., Bhide, N. M., Shenai, R. K. & Sivalingam, K. M. [Optical wavelength division multiplexing (WDM) network simulator (OWns): architecture and performance studies](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=4bb0395e580baa22ba96969c54f966248d37a43f). SPIE Optical Networks Magazine, 2(5), 16-26 (2001).
+- \[1\] Miletić, V. [Method for optimizing availability of optical telecommunication network in presence of correlated failures](https://vedran.miletic.net/files/phd-thesis-vedran-miletic.pdf). PhD thesis defended at Faculty of Electrical Engineering and Computing, University of Zagreb, 8th June 2015.
+- \[2\] Miletić, V., Šubić, T. & Mikac, B. [Optimizing maximum shared risk link group disjoint path algorithm using NVIDIA CUDA heterogeneous parallel programming platform](https://ieeexplore.ieee.org/document/6987645). in Proceedings on the 2014 X International Symposium on Telecommunications (BIHTEL) (ed. Mrdović, S.; University of Sarajevo, Sarajevo, Bosnia and Herzegovina), 1–6 (IEEE, 2014). [doi:10.1109/BIHTEL.2014.6987645](https://doi.org/10.1109/BIHTEL.2014.6987645)
+- \[3\] Miletić, V., Maniadakis, D., Mikac, B. & Varoutas, D. [On the influence of the underlying network topology on optical telecommunication network availability under shared risk link group failures](https://ieeexplore.ieee.org/document/6816135). in Proceedings of the 2014 10th International Conference on the Design of Reliable Communication Networks (DRCN) (ed. Van Daele, P.; University of Ghent, Ghent, Belgium), 1–8 (IEEE, 2014). [doi:10.1109/DRCN.2014.6816135](https://doi.org/10.1109/DRCN.2014.6816135)
+- \[4\] Miletić, V., Mikac, B. & Džanko, M. [Impact evaluation of physical length of shared risk link groups on optical network availability using Monte Carlo simulation](https://ieeexplore.ieee.org/document/6582897). in Proceedings of the 2013 18th European Conference on Networks and Optical Communications (NOC) and 8th Conference on Optical Cabling & Infrastructure (OC&I) (ed. Leitgeb, E.; Technical University Graz, Graz, Austria), 249–256 (IEEE, 2013). [doi:10.1109/NOC-OCI.2013.6582897](https://doi.org/10.1109/NOC-OCI.2013.6582897)
+- \[5\] Miletić, V., Mikac, B. & Džanko, M. [Modelling optical network components: A network simulator-based approach](https://ieeexplore.ieee.org/document/6412064). in Proceedings on the 2012 IX International Symposium on Telecommunications (BIHTEL) (ed. Mrdović, S.; University of Sarajevo, Sarajevo, Bosnia and Herzegovina), 1–6 (IEEE, 2012). [doi:10.1109/BIHTEL.2012.6412064](https://doi.org/10.1109/BIHTEL.2012.6412064)
+- \[6\] Wen, B., Bhide, N. M., Shenai, R. K. & Sivalingam, K. M. [Optical wavelength division multiplexing (WDM) network simulator (OWns): architecture and performance studies](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=4bb0395e580baa22ba96969c54f966248d37a43f). SPIE Optical Networks Magazine, 2(5), 16-26 (2001).
 
 ## Razvoj e-kolegija Računalne mreže 2 na Sveučilištu u Rijeci u akademskoj 2011/2012. godini
 

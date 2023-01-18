@@ -21,7 +21,7 @@ paginate: true
 
 > Managing complexity is the most important technical topic in software development. In my view, it's so important that **Software's Primary Technical Imperative has to be managing complexity**.
 >
-> Dijkstra pointed out [in 1972] that no one's skull is really big enough to contain a modern computer program, which means that we as software developers shouldn't try to cram whole programs into our skulls at once; we should try to organize our programs in such a way that we can safely focus on one part of it at a time. The goal is to **minimize the amount of a program you have to think about at any one time**.
+> Dijkstra pointed out \[in 1972\] that no one's skull is really big enough to contain a modern computer program, which means that we as software developers shouldn't try to cram whole programs into our skulls at once; we should try to organize our programs in such a way that we can safely focus on one part of it at a time. The goal is to **minimize the amount of a program you have to think about at any one time**.
 
 Izvor: [Steve McConnel](https://stevemcconnell.com/), [Code Complete](https://stevemcconnell.com/books/), [2nd Edition](https://www.microsoftpressstore.com/store/code-complete-9780735619678), 2004.
 
@@ -104,7 +104,7 @@ public final class Main {
 Prema [Wikipediji](https://en.wikipedia.org/wiki/Software_design): proces kojim agent (ovdje u značenju: programer s puno iskustva) stvara specifikaciju softverskog artefakta (npr. programa, okvira ili biblioteke) namijenjenog postizanju ciljeva, koristeći skup primitivnih komponenata i podložan ograničenjima; dvije mogućnosti:
 
 - > sve aktivnosti uključene u konceptualiziranje, uokvirivanje, implementaciju, puštanje u rad i konačno modificiranje složenih sustava
-- > aktivnost koja slijedi nakon specifikacije zahtjeva i prije programiranja, kao ... [u] stiliziranom procesu programskog inženjerstva
+- > aktivnost koja slijedi nakon specifikacije zahtjeva i prije programiranja, kao ... \[u\] stiliziranom procesu programskog inženjerstva
 
 ---
 

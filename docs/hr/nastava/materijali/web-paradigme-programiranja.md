@@ -37,7 +37,7 @@ Razvijeno više metodologija razvoja softvera; najvažnije još aktualne su [str
 
 Američki računalnih arhitekt i programski inženjer [Fred Brooks](https://en.wikipedia.org/wiki/Fred_Brooks) objavljuje 1987. godine [članak u časopisu IEEE Computer](https://ieeexplore.ieee.org/document/1663532) pod naslovom [No Silver Bullet – Essence and Accident in Software Engineering](https://en.wikipedia.org/wiki/No_Silver_Bullet) u kojem piše:
 
-- > "there is no single development, in either technology or management technique, which by itself promises even **one order of magnitude [tenfold] improvement within a decade in productivity, in reliability, in simplicity**"
+- > "there is no single development, in either technology or management technique, which by itself promises even **one order of magnitude \[tenfold\] improvement within a decade in productivity, in reliability, in simplicity**"
 - > "we **cannot expect ever to see two-fold gains every two years [in software development**, as there is in hardware development (Moore's law)]"
 
 ---

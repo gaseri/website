@@ -184,8 +184,8 @@ Cilj je omogućiti da grafički procesori AMD Radeon mogu pokretati [GROMACS](ht
 
 Prezentacije na konferencijama:
 
-- [1] Miletić, V., Páll, S. & Gräter, F. [LLVM AMDGPU for High Performance Computing: are we competitive yet?](https://www.llvm.org/devmtg/2017-03/2017/02/20/accepted-sessions.html#31) in 2017 European LLVM Developers' Meeting, Saarbrücken, Germany (2017). ([video](https://youtu.be/r2Chmg85Xik?list=PL_R5A0lGi1AD12EbUChEnD3s51oqfZLe3))
-- [2] Miletić, V., Páll, S. & Gräter, F. [Towards fully open source GPU accelerated molecular dynamics simulation.](https://www.llvm.org/devmtg/2016-03/#lightning6) in 2016 European LLVM Developers' Meeting, Barcelona, Spain (2016). ([video](https://youtu.be/TkanbGAG_Fo?t=23m47s&list=PL_R5A0lGi1ADuZKWUJOVOgXr2dRW06e55))
+- \[1\] Miletić, V., Páll, S. & Gräter, F. [LLVM AMDGPU for High Performance Computing: are we competitive yet?](https://www.llvm.org/devmtg/2017-03/2017/02/20/accepted-sessions.html#31) in 2017 European LLVM Developers' Meeting, Saarbrücken, Germany (2017). ([video](https://youtu.be/r2Chmg85Xik?list=PL_R5A0lGi1AD12EbUChEnD3s51oqfZLe3))
+- \[2\] Miletić, V., Páll, S. & Gräter, F. [Towards fully open source GPU accelerated molecular dynamics simulation.](https://www.llvm.org/devmtg/2016-03/#lightning6) in 2016 European LLVM Developers' Meeting, Barcelona, Spain (2016). ([video](https://youtu.be/TkanbGAG_Fo?t=23m47s&list=PL_R5A0lGi1ADuZKWUJOVOgXr2dRW06e55))
 
 ### Predavanje: Ratovi web preglednika
 

@@ -442,7 +442,7 @@ class Guest implements User {
 
 ## Načelo inverzije zavisnosti (1/3)
 
-(**D**) Načelo inverzije zavisnosti (engl. *dependency inversion principle*): ovisnost o apstrakcijama, [ne] o konkretizacijama (prema [Wikipediji](https://en.wikipedia.org/wiki/Dependency_inversion_principle)).
+(**D**) Načelo inverzije zavisnosti (engl. *dependency inversion principle*): ovisnost o apstrakcijama, \[ne\] o konkretizacijama (prema [Wikipediji](https://en.wikipedia.org/wiki/Dependency_inversion_principle)).
 
 ---
 

@@ -217,10 +217,10 @@ Prema [Wikipediji](https://en.wikipedia.org/wiki/Eating_your_own_dog_food):
 
 *Dogfooding* se može koristiti i kod projekata otvorenog koda, npr. developeri Mozille su kasnih 90-ih intenzivno koristili web preglednik, e-mail klijent i druge alate koje su razvijali pa prijavljivali probleme na koje su pritom naišli:
 
-- [[BETA][DOGFOOD]No proxy authentication](https://bugzilla.mozilla.org/show_bug.cgi?id=15927)
-- [[DOGFOOD]Form submission with post data no longer works](https://bugzilla.mozilla.org/show_bug.cgi?id=16258)
-- [[DOGFOOD][BLOCKER]Start Seamonkey with problems for running multiple profiles.](https://bugzilla.mozilla.org/show_bug.cgi?id=20910)
-- [[DOGFOOD][bugday] mail news buttons disappear on click and mouse-over](https://bugzilla.mozilla.org/show_bug.cgi?id=21075)
+- [\[BETA\]\[DOGFOOD\]No proxy authentication](https://bugzilla.mozilla.org/show_bug.cgi?id=15927)
+- [\[DOGFOOD\]Form submission with post data no longer works](https://bugzilla.mozilla.org/show_bug.cgi?id=16258)
+- [\[DOGFOOD\]\[BLOCKER\]Start Seamonkey with problems for running multiple profiles.](https://bugzilla.mozilla.org/show_bug.cgi?id=20910)
+- [\[DOGFOOD\]\[bugday\] mail news buttons disappear on click and mouse-over](https://bugzilla.mozilla.org/show_bug.cgi?id=21075)
 
 ---
 

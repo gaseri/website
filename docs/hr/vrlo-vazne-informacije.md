@@ -26,12 +26,12 @@ Za druge sheme boja i sezonske logotipe pregledajte [direktorij `docs/images` u 
 
 ### Himna
 
-[Pred-Refren]  
+\[Pred-Refren\]  
 Oni sve bi dali (Oni sve bi dali, oni sve bi dali, oni sve bi dali)  
 Da vide da smo pali (Da smo pali)  
 Samo gazi, gazi, gazi
 
-[Refren]  
+\[Refren\]  
 Skupi kao PSG, ovi ostali su žasu  
 Zadnja vuča - BMW, ovi moji svi u gasu  
 Oko mene moji ljudi, po-podižemo masu  
@@ -142,10 +142,10 @@ Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primje
 ### Primjer 3
 
 !!! bug
-    "Ovo [Računalne mreže 1] i Kombinatorika su nam najteži predmeti."
+    "Ovo \[Računalne mreže 1\] i Kombinatorika su nam najteži predmeti."
 
 !!! tip
-    "Ovo [Računalne mreže 1] i Kombinatorika su nam najizazovniji predmeti. Kako nam je drago što imamo predmete na kojima možemo tako puno naučiti. Mislim, što će nam trivijalni predmeti?"
+    "Ovo \[Računalne mreže 1\] i Kombinatorika su nam najizazovniji predmeti. Kako nam je drago što imamo predmete na kojima možemo tako puno naučiti. Mislim, što će nam trivijalni predmeti?"
 
 ### Primjer 4
 
@@ -241,7 +241,7 @@ Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primje
     "Kolega, ja mislim da bi ti trebao koristiti neslobodan softver Microsoft Office umjesto slobodnog softvera LibreOffice."
 
 !!! tip
-    "Kolega, ja razumijem da ne možeš baš uvijek i svugdje koristiti slobodan softver, ali izrazito cijenim što pokušavaš i smatram da bi [na Paralelnom programiranju na heterogenim sustavima i u znanstvenom radu] trebao umjesto NVIDIA-ine vlasničke tehnologije CUDA koristiti otvoreni standard OpenCL na AMD-ovoj implementaciji otvorenog koda ili Intelovom Beignetu."
+    "Kolega, ja razumijem da ne možeš baš uvijek i svugdje koristiti slobodan softver, ali izrazito cijenim što pokušavaš i smatram da bi \[na Paralelnom programiranju na heterogenim sustavima i u znanstvenom radu\] trebao umjesto NVIDIA-ine vlasničke tehnologije CUDA koristiti otvoreni standard OpenCL na AMD-ovoj implementaciji otvorenog koda ili Intelovom Beignetu."
 
 ### Bonus primjer 6
 
@@ -249,7 +249,7 @@ Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primje
     "Profesore, jučer sam do 3 ujutro igrao Battlefield 4 u multiplayeru."
 
 !!! tip
-    "Profesore, jučer sam namjeravao do 3 ujutro igrati Battlefield 4 u multiplayeru, ali za vrijeme igranja sam se zamislio kako ta igra zapravo radi i shvatio da je ona jedinstvena sinteza rada eksperata iz mnogih područja računarstva pa sam skratio malo igranje i umjesto toga izučavao po DICE-ovim prezentacijama i radovima kako radi [Battlefieldov game engine] Frostbite. Zakon mi je što su sve te informacije učinili dostupnim putem svojih mrežnih stranica."
+    "Profesore, jučer sam namjeravao do 3 ujutro igrati Battlefield 4 u multiplayeru, ali za vrijeme igranja sam se zamislio kako ta igra zapravo radi i shvatio da je ona jedinstvena sinteza rada eksperata iz mnogih područja računarstva pa sam skratio malo igranje i umjesto toga izučavao po DICE-ovim prezentacijama i radovima kako radi \[Battlefieldov game engine\] Frostbite. Zakon mi je što su sve te informacije učinili dostupnim putem svojih mrežnih stranica."
 
 ### Bonus primjer 7
 
@@ -340,19 +340,19 @@ Nekoliko sati kasnije znao je točno što mora napraviti. Uzeo je snop papira fo
 
 ### Tina Ivanović -- Modul subprocess (prerada Bunda od nerca)
 
-[Strofa 1]  
+\[Strofa 1\]  
 Pokaži mi da si Pythonaš  
 Pokaži se da module znaš  
 Potrudi se pa me os.forkaj  
 os.waitom me pričekaj
 
-[Prijelaz 1]  
+\[Prijelaz 1\]  
 Pokaži da si Uniksaš na delu  
 Da nisi noob u Python shellu  
 Napiši mi kodove razne  
 Pusti dretve prazne
 
-[Refren]  
+\[Refren\]  
 Ako imaš Python, ako imaš Unix  
 Pokloni mi modul subprocess  
 Ako imas Python, ako imaš Linux  
@@ -362,19 +362,19 @@ Pokloni mi modul subprocess
 Ako imas Python, ako imaš Linux  
 Daemonske procese pokreni mi na bootu
 
-[Strofa 2]  
+\[Strofa 2\]  
 Pokaži mi imaš li MacBook  
 Da vidimo kakva si zverka  
 Pokaži algoritmom koliko vrediš  
 Zar na memoriji da sad štediš
 
-[Prijelaz 2]  
+\[Prijelaz 2\]  
 Pokaži da si Uniksaš na delu  
 Da nisi noob u Python shellu  
 Napiši mi kodove razne  
 Pusti procese prazne
 
-[Refren]  
+\[Refren\]  
 Ako imaš Python, ako imaš Unix  
 Pokloni mi modul subprocess  
 Ako imas Python, ako imaš Linux  
@@ -384,7 +384,7 @@ Pokloni mi modul subprocess
 Ako imas Python, ako imaš Linux  
 Daemonske procese pokreni mi na bootu
 
-[Refren]  
+\[Refren\]  
 Ako imaš Python, ako imaš Unix  
 Pokloni mi modul subprocess  
 Ako imas Python, ako imaš Linux  
@@ -398,7 +398,7 @@ Daemonske procese pokreni mi na bootu
 
 ### Ivana Selakov -- Rokam MPI (prerada Probijam led)
 
-[Strofa: Ivana Selakov]  
+\[Strofa: Ivana Selakov\]  
 Daj mi, daj mi  
 PTP-a bar na tren,  
 Koda je prepuno  
@@ -408,7 +408,7 @@ Jedan Eclipse tu za komp
 Znam da to je premalo  
 Kad je procesa dvijesto
 
-[Prijelaz: Ivana Selakov]  
+\[Prijelaz: Ivana Selakov\]  
 Linux, Linux  
 Noćas vrti velik job  
 Procesa je prepuno  
@@ -418,7 +418,7 @@ Ko bi scatter radio
 Časove u haxanju  
 Ti si meni davao
 
-[Refren: Ivana Selakov]  
+\[Refren: Ivana Selakov\]  
 Ja rokam MPI  
 Ja rokam MPI  
 U 365 noćas  
@@ -430,7 +430,7 @@ Oo, ooo, ooo
 Nek' ide proces  
 Oo, ooo, ooo
 
-[Strofa: Ivana Selakov]  
+\[Strofa: Ivana Selakov\]  
 Daj mi, daj mi  
 PTP-a bar na tren,  
 Koda je prepuno  
@@ -440,13 +440,13 @@ Jedan Eclipse tu za komp
 Znam da to je premalo  
 Kad je procesa dvijesto
 
-[Prijelaz: Ivana Selakov]  
+\[Prijelaz: Ivana Selakov\]  
 Linux, Linux  
 Noćas vrti velik job  
-[Prijelaz: Sha]  
+\[Prijelaz: Sha\]  
 Da vidim radove znanstvene  
 Na htopu sve jezgre zelene  
-[Prijelaz: Ivana Selakov]  
+\[Prijelaz: Ivana Selakov\]  
 Procesa je prepuno  
 Lete kao avion  
 Pun je array na rootu  
@@ -454,7 +454,7 @@ Ko bi scatter radio
 Časove u haxanju  
 Ti si meni davao
 
-[Refren: Ivana Selakov]  
+\[Refren: Ivana Selakov\]  
 Ja rokam MPI  
 Ja rokam MPI  
 U 365 noćas  
@@ -466,7 +466,7 @@ Oo, ooo, ooo
 Nek' ide proces  
 Oo, ooo, ooo
 
-[Prijelaz: pozadinski vokali]  
+\[Prijelaz: pozadinski vokali\]  
 Noćas vrtimo velik job  
 Procesi lete k'o avion  
 Pun je array na rootu  
@@ -475,7 +475,7 @@ Jedan Eclipse tu za komp
 Znam da to je premalo  
 Kad je procesa dvijesto
 
-[Refren: Ivana Selakov]  
+\[Refren: Ivana Selakov\]  
 Ja rokam MPI  
 Ja rokam MPI  
 U 365 noćas  
@@ -496,13 +496,13 @@ za novi terminal otvaram prozor
 satkana od opensource fora  
 gde god prođem ja Linux-BSD šo-šo-šora
 
-[Bridge]  
+\[Bridge\]  
 Za igru bez heada i taila  
 ja povod sam ti dala  
 sa pogrešnim postavkama sam ja  
 grep i sed pokretala
 
-[Refren]  
+\[Refren\]  
 Ja igram nSnake, ne dam se  
 a onda malo predam se  
 zaigrajmo ti i ja  
@@ -523,13 +523,13 @@ stdin srce da da ti trne
 mala maca sam koja prede  
 ali ume i da mc pokrene
 
-[Bridge]  
+\[Bridge\]  
 Za igru bez heada i taila  
 ja povod sam ti dala  
 sa pogrešnim postavkama sam ja  
 grep i sed pokretala
 
-[Refren]  
+\[Refren\]  
 Ja igram nSnake, ne dam se  
 a onda malo predam se  
 zaigrajmo ti i ja  
@@ -557,7 +557,7 @@ Za sutra ne brini ti nemaš radno vreme
 osloni se na mene pa startaj simulacije  
 samo da se radove objavljuje
 
-[Refren]  
+\[Refren\]  
 Neka starta, starta  
 znaš da lude i T čuva, čuva  
 cele dane neka starta, starta  
@@ -570,7 +570,7 @@ za sutra ne brini ugasi Windowse
 da nam resurse ne troše pa startaj simulacije  
 samo da se radove objavljuje
 
-[Refren]  
+\[Refren\]  
 Neka starta, starta  
 znaš da lude i T čuva, čuva  
 cele dane neka starta, starta  
@@ -592,7 +592,7 @@ Mamac za commitove, Mercurial,
 U oblaku Bitbucketa sad, nastaje najbolje,  
 Halo, ekipa, Hackathon počinje!
 
-[Refren]  
+\[Refren\]  
 I što da ne, i gde,  
 tamo gde se razvija,  
 i gde su sve cure prave testerke,  
@@ -604,7 +604,7 @@ Gore mpi4py, dole OpenMPI,
 Za naš softver, uvek, samo najbolje,  
 Halo, ekipa, Hackathon počinje!
 
-[Refren]  
+\[Refren\]  
 I što da ne, i gde,  
 tamo gde se razvija,  
 i gde su sve cure prave testerke,  
@@ -619,7 +619,7 @@ Za sve module, što da ne,
 Do pusha, što da ne,  
 Do pulla, što da ne.
 
-[Refren]  
+\[Refren\]  
 I što da ne, i gde,  
 tamo gde se razvija,  
 i gde su sve cure prave testerke,  
@@ -630,7 +630,7 @@ neka gore klasteri, neka gore klasteri!
 
 ### Slađa Delibašić -- CUDA, NVIDIA, Tesla (prerada Poznata, viđena, slavna)
 
-[Uvod: DJ Mijat]  
+\[Uvod: DJ Mijat\]  
 Je, je, je, baš to  
 DJ KL is in the place  
 Je, je, je  
@@ -639,45 +639,45 @@ CUDA, NVIDIA, Tesla
 Baš to, je, je, je  
 CUDA, NVIDIA, Tesla
 
-[Refren: Slađa]  
+\[Refren: Slađa\]  
 Baš to dve grafe u komp i PPHS  
 Baš to osećam nešto u printfu tvom  
 Baš to dve Tesle u komp i PPHS  
 Baš to ostani samnom i testiraj kod
 
-[Strofa: Slađa]  
+\[Strofa: Slađa\]  
 Ti voliš velike paralelne programe  
 Baš tako kodiraš iz tame  
 Elegantno sedim za Teslom  
 Pokrenem kod sa float64 tipom
 
-[Prijelaz: Slađa]  
+\[Prijelaz: Slađa\]  
 Testiraš drsko assert na sve strane  
 Slobodno pokreni pa što ako stane  
 OpenCL tutorial te čeka pa čeka  
 Nek' pričeka  
 Nek' pričeka
 
-[Refren: Slađa]  
+\[Refren: Slađa\]  
 Baš to dve grafe u komp i PPHS  
 Baš to osećam nešto u printfu tvom  
 Baš to dve Tesle u komp i PPHS  
 Baš to ostani samnom i testiraj kod
 
-[Strofa: Slađa]  
+\[Strofa: Slađa\]  
 Ti voliš velike paralelne programe  
 Baš tako kodiraš iz tame  
 Elegantno sedim za Teslom  
 Pokrenem kod sa float64 tipom
 
-[Prijelaz: Slađa]  
+\[Prijelaz: Slađa\]  
 Testiraš drsko assert na sve strane  
 Slobodno pokreni pa što ako stane  
 OpenCL tutorial te čeka pa čeka  
 Nek' pričeka  
 Nek' pričeka
 
-[Refren: Slađa]  
+\[Refren: Slađa\]  
 Baš to dve grafe u komp i PPHS  
 Baš to osećam nešto u printfu tvom  
 Baš to dve Tesle u komp i PPHS  
@@ -688,19 +688,19 @@ Ko bi pored nje koristio OpenCL
 Bezobzrano jednostavno indeksiranje radi  
 Rizik za mene, višedimenzionalno polje
 
-[Strofa: DJ Mijat]  
+\[Strofa: DJ Mijat\]  
 Gledam taj kod i radim commit  
 +-diff and that's git  
 Dve grafe u komp za CUDA-u  
 Malo koda i performansu sigurnu
 
-[Prijelaz: DJ Mijat]  
+\[Prijelaz: DJ Mijat\]  
 Python modul, CUDA string  
 paralelno je my thing  
 ume da računa  
 ma nek me izračuna
 
-[Refren: Slađa]  
+\[Refren: Slađa\]  
 Baš to dve grafe u komp i PPHS  
 Baš to osećam nešto u printfu tvom  
 Baš to dve Tesle u komp i PPHS  
@@ -710,20 +710,20 @@ Baš to ostani samnom i testiraj kod
 
 ### DJ Shone feat. Dado Polumenta i Elitni odredi -- BioSFLab (prerada Beograd private version)
 
-[Refren: Dado Polumenta]  
+\[Refren: Dado Polumenta\]  
 Moliću BB-a za nas da mi čuva tvoj tpr  
 A citati u GROMACS-u ostaju moj jedini glas  
 Moram da mdrunam to znaš ne brini trjconvaću ja  
 Jer naš je san ti i ja i BioSFLab
 
-[Intro: svi]  
+\[Intro: svi\]  
 Ovo je lab BioSFLab  
 DJ IO  
 PN  
 Elitni računarci  
 Ovo je lab BioSFLab
 
-[Strofa: Relja]  
+\[Strofa: Relja\]  
 Bila si božji dar, baš ti mogla si da  
 Lako me digneš do neba i spustiš do dna  
 Baš tu, na koži je trag, baš nju, zavoleo mlad  
@@ -737,19 +737,19 @@ Da ona ne oživi
 Ti poljubi me za kraj, ove noći kao taj  
 To moram da preživim
 
-[Prijelaz: Relja]  
+\[Prijelaz: Relja\]  
 Isto mi je vredela, ne vredela  
 Kad tebi je malo sve što sam dao  
 Ma isto mi je želela, ne želela me  
 Ako znam da nisi moja odavno
 
-[Refren: Dado Polumenta]  
+\[Refren: Dado Polumenta\]  
 Moliću BB-a za nas da mi čuva tvoj tpr  
 A citati u GROMACS-u ostaju moj jedini glas  
 Moram da mdrunam to znaš ne brini trjconvaću ja  
 Jer naš je san ti i ja i BioSFLab
 
-[Strofa: Wonta]  
+\[Strofa: Wonta\]  
 Zdravo, zdravo, dobar dan  
 Ćao developeri, hoću odmah NetBeans, Clang  
 Na git logu piše već da imam commita dva  
@@ -763,7 +763,7 @@ Nije od belog zlata, to je od belog rada
 Sutra me čeka zapad, srce je tu kod Juga  
 Veruj mi neću dugo, ti samo budi budna
 
-[Refren: Dado Polumenta]  
+\[Refren: Dado Polumenta\]  
 Moliću BB-a za nas da mi čuva tvoj tpr  
 A citati u GROMACS-u ostaju moj jedini glas  
 Moram da mdrunam to znaš ne brini trjconvaću ja  
@@ -773,19 +773,19 @@ Jer naš je san ti i ja i BioSFLab
 
 ### Luna -- Sistemcu (prerada Šećeru)
 
-[Strofa]  
+\[Strofa\]  
 Šta bi hteo sistemcu  
 Da me vodiš na konferencu  
 Posle toga u server room  
 Da odigramo multiplayer Doom
 
-[Prijelaz]  
+\[Prijelaz\]  
 Ma šta bi hteo sistemcu  
 Slutim da se radi o mamcu  
 Jedno predavanje, možda dva  
 Igra ti je providna
 
-[Refren]  
+\[Refren\]  
 Naivan si moj sistemcu  
 Ja sam na Mipru bila jučer
 
@@ -793,65 +793,65 @@ Ja sam na Mipru bila jučer
 
 ### Ana Nikolić -- Clang, LLVM (prerada Romale, romali)
 
-[Strofa]  
+\[Strofa\]  
 Vatreni znak na nebu jak  
 I noćni vetar lud i vreo  
 Prevari me, uspavaj me  
 Dobro si počeo
 
-[Prijelaz]  
+\[Prijelaz\]  
 Clang, LLVM, samo to reci mi  
 Clang, LLVM, i ja skidam kaiš na sandali  
 Clang, LLVM, pojas na haljini  
 Na te reči čarobne
 
-[Refren]  
+\[Refren\]  
 Hej, LLVM, Clang, LLVM  
 Svaku tačku na telu mi noćas ljubi  
 Hej, LLVM, Clang, LLVM  
 U ovu mačku se ti što pre zaljubi
 
-[Nastavak refrena]  
+\[Nastavak refrena\]  
 U ovu mačku se ti što pre zaljubi  
 U ovu macku se ti sto pre zaljubi
 
-[Strofa]  
+\[Strofa\]  
 Hajde, vodi me, sada znam i gde  
 Tamo gde bolu mesto nije  
 Da nas prži led  
 Gde je mesec u znaku vodolije
 
-[Prijelaz]  
+\[Prijelaz\]  
 Clang, LLVM, samo to reci mi  
 Clang, LLVM, i ja skidam kaiš na sandali  
 Clang, LLVM, pojas na haljini  
 Na te reči čarobne
 
-[Refren]  
+\[Refren\]  
 Hej, LLVM, Clang, LLVM  
 Svaku tačku na telu mi noćas ljubi  
 Hej, LLVM, Clang, LLVM  
 U ovu mačku se ti što pre zaljubi
 
-[Strofa]  
+\[Strofa\]  
 Stavljam prste u med  
 Da ovaj zasladim san  
 Al' bez tebe je med  
 Kao i suze slan
 
-[Prijelaz]  
+\[Prijelaz\]  
 Clang, LLVM, samo to reci mi  
 Clang, LLVM, i ja skidam kaiš na sandali  
 Clang, LLVM, pojas na haljini  
 Na te reči čarobne
 
-[Refren]  
+\[Refren\]  
 Hej, LLVM, Clang, LLVM  
 Svaku tačku na telu mi noćas ljubi  
 Hej, LLVM, Clang, LLVM  
 U ovu mačku se ti što pre zaljubi
 
-[Nastavak refrena]  
+\[Nastavak refrena\]  
 U ovu mačku se ti što pre zaljubi  
 U ovu mačku se ti što pre zaljubi
 
@@ -859,13 +859,13 @@ U ovu mačku se ti što pre zaljubi
 
 ### Senidah -- Radeonke (prerada Mišići)
 
-[Strofa]  
+\[Strofa\]  
 Kao da tonem u mrak, dozivam te  
 Java mi se čini teškom kad nismo zajedno  
 Kao da tonem u mrak, dozivam te  
 I znaj da se prezivam neverom
 
-[Prijelaz]  
+\[Prijelaz\]  
 Jer kada odeš, jako me zebe  
 Ja plešem, plešem  
 Put me zove, nisam dete  
@@ -873,7 +873,7 @@ Tebi treba sestra, ti bi da me merkaš
 Ja plešem, plešem  
 Put me zove (put me zove)
 
-[Refren]  
+\[Refren\]  
 Imaš Radeonke da pokreneš GROMACS  
 I simuliraš ceo protein, tvoj HPC je tako jak  
 I kada se SSH-am preko VPN-a, čini mi se da  
@@ -893,7 +893,7 @@ Lažeš ko gmx-ov genconf
 Ostaću u labu u kutu obučena  
 Kada sve segfaulta, vuče
 
-[Prijelaz]  
+\[Prijelaz\]  
 Jer kada odeš, jako me zebe  
 Ja plešem, plešem  
 Put me zove, nisam dete  
@@ -901,7 +901,7 @@ Tebi treba sestra, ti bi da me merkaš
 Ja plešem, plešem  
 Put me zove (put me zove)
 
-[Refren]  
+\[Refren\]  
 Imaš mišiće da otvoriš vrata  
 I pokažeš ceo stan, ti si tako jak  
 I kada pređem preko praga, čini mi se da  
@@ -925,8 +925,7 @@ Kada sve uvene, vuče
 
 ### Jala & Buba Corelli -- Lenovo ThinkServer (prerada Trinidad & Tobago)
 
-[Verse 1: Jala Brat]
-
+\[Verse 1: Jala Brat\]  
 (Ah) Upadam k'o vuk u stado  
 Na očima 'čale, bembarom rolamo gradom  
 Sarajevska hića k'o Haićanin sa bradom  
@@ -948,8 +947,7 @@ Motam kabele, zujim k'o 1U ventilator
 Neću ljeto u datacentru, ovo ljeto u Antaliju  
 Mala crno zlato k'o da gledam u Arabiju
 
-[Chorus: Buba Corelli & Jala Brat]
-
+\[Chorus: Buba Corelli & Jala Brat\]  
 Mala crna kao Lenovo ThinkServer  
 Kotači ormara crni kada guramo ih hodnikom  
 Duša crna, imam ugovor s Microsoftom  
@@ -959,8 +957,7 @@ Kotači ormara crni kada guramo ih hodnikom
 Duša crna, imam ugovor s Microsoftom  
 Crne 'čale, crna jakna, gledaš me s Deep Rackom
 
-[Verse 2: Buba Corelli]
-
+\[Verse 2: Buba Corelli\]  
 Izlazi ti mala k'o sistemka iz datacentra  
 Poslije orkestracije mi šaputala na uho par ideja  
 Ponudim joj kontejnera, imam i AMD-a  
@@ -978,8 +975,7 @@ Kako ste ofirni, mi Unixaši originalni, a vi kopirani
 CARNET nam upao u pola dva, mi se nismo ni opirali  
 Servisi na tuđim VPS-ovima, brane nas firewalli konfigurirani
 
-[Chorus: Buba Corelli & Jala Brat]
-
+\[Chorus: Buba Corelli & Jala Brat\]  
 Mala crna kao Lenovo ThinkServer  
 Kotači ormara crni kada guramo ih hodnikom  
 Duša crna, imam ugovor s Microsoftom  
@@ -1001,7 +997,7 @@ Crne 'čale, crna jakna, gledaš me s Deep Rackom
 
 ### Devito -- Tuxa mi (prerada Mame mi)
 
-[Refren]  
+\[Refren\]  
 Tuxa mi, oko mene samo devovi i sistemci  
 Pale Della, Lenova i HP  
 Lude mašine, tebra, sve to reinstallo bih  
@@ -1011,7 +1007,7 @@ Pale Della, Lenova i HP
 Lude mašine, tebra, sve to reinstallo bih  
 Ali samo rebootam ih, Tuxa mi
 
-[Strofa 1]  
+\[Strofa 1\]  
 Treba ti Linux ili BSD?  
 Sve probleme rešićemo kontejnerima (Dock, dock)  
 Nisam sam, uvek okružen sam glavama  
@@ -1021,7 +1017,7 @@ Imam sve izvorne kodove, ako te zanima
 U /var-u git repoi - fsckamo ih danima  
 A 1U ventilator zavija
 
-[Refren]  
+\[Refren\]  
 Tuxa mi, oko mene samo devovi i sistemci  
 Pale Della, Lenova i HP  
 Lude mašine, tebra, sve to reinstallo bih  
@@ -1031,7 +1027,7 @@ Pale Della, Lenova i HP
 Lude mašine, tebra, sve to reinstallo bih  
 Ali samo rebootam ih, Tuxa mi
 
-[Strofa 2]  
+\[Strofa 2\]  
 Ne znam na naše mašine da l' smeš  
 Svakog dana se obrće memcached  
 Za nove ljude, tu je ipfw (Deny, deny)  
@@ -1041,7 +1037,7 @@ Gde su drugi stali, ja sam pokrenuo Metasploit
 Život med i mleko, tebra, verujem da znaš  
 Nemoj da se SSH-aš (SSH)
 
-[Refren]  
+\[Refren\]  
 Tuxa mi, oko mene samo devovi i sistemci  
 Pale Della, Lenova i HP  
 Lude mašine, tebra, sve to reinstallo bih  
@@ -1055,30 +1051,30 @@ Ali samo rebootam ih, Tuxa mi
 
 ### Dara Bubamara -- Linuxi (prerada Zidovi)
 
-[Strofa 1]  
+\[Strofa 1\]  
 Laptop sam otvorila, na Windowsu Twitch pokrenula  
 Predavanja sam gledala, od profesora M-a (La-la-la)  
 Pred svima me posramio, samo mi je hladno rekao  
 "Windows koristiš, i to desetku, pazi"
 
-[Refren]  
+\[Refren\]  
 Ovi Tuxevi brzinu imaju, ma kakvi prozori  
 Laptop grije se i onda gasi se  
 Jer pun je prašine, baš briga te
 
-[Strofa 2]  
+\[Strofa 2\]  
 Šta je tebi Ryzen taj, nekako sam te upitala  
 Rekao si "Sve mi je", Novidya je sranje (La-la-la)  
 Pred svima me posramio, samo mi je nulu upisao  
 "Kolegij pala si, moj AMD ne gazi"
 
-[Refren]  
+\[Refren\]  
 Tvoji bodovi vrijednost nemaju da predmet prođeš ti  
 Majka stidi se i ona kaje se, što pare dala je, pa kaže  
 Tvoji bodovi vrijednost nemaju da predmet prođeš ti  
 Majka stidi se i ona kaje se, što pare dala je, sad kasno je!
 
-[Refren]  
+\[Refren\]  
 Ovi zidovi Buru podnose, a J baš i ne  
 Zove bolnica, pokvario je sve, J uzmite, a ne  
 Ovi zidovi Buru podnose, a J baš i ne  
@@ -1088,22 +1084,22 @@ Zove bolnica, pokvario je sve, pls ga uzmite, a ne ne ne!
 
 ### Corona -- Legende (prerada Legende)
 
-[Intro]  
+\[Intro\]  
 Sedamstodevetnaest, sedamstodevetnaest, sedamstodevetnaest
 
-[Refren]  
+\[Refren\]  
 Kampus noćas voli nas, voli nas ovaj kvart, B  
 Boli sad svaki seminar, bod, B  
 Kad ne bude nas, firme kad pozovu nas, tad, B  
 Ostaje trag, ostaje zauvek trag, B
 
-[Post-Refren]  
+\[Post-Refren\]  
 Le-le-le, le-le-le-le-legende, B  
 Le-le-le, le-le-le-le-legende, B  
 Le-le-le, le-le-le-le-legende, B  
 Le-le-le, le-le-le-le-legende, B
 
-[Strofa 1]  
+\[Strofa 1\]  
 Zauvek će OIRI da pamti, STEM Games tvrd kao beton  
 Samo pred P ja ću stati, legende zato žive večno  
 Uvek u brucoševskoj pratnji, al' ovde postalo je tesno  
@@ -1113,25 +1109,25 @@ Svaki tren je remek-delo kô da ga programira Z
 Dušu uzô mi je Uno, sve pod nogama se trese  
 Samo Tommy Ha duksa, Sexy Suzi, iPhone
 
-[Pred-Refren]  
+\[Pred-Refren\]  
 B, velik je grad, ne mogu iz kože sad  
 Pravac Labin, Malinska, pa Lošinj, Cres  
 A kad ne bude nas, kad se ugase računala sva  
 Ostaje trag, ostaje trag
 
-[Refren]  
+\[Refren\]  
 Kampus noćas voli nas, voli nas ovaj kvart, B  
 Boli sad svaki seminar, bod, B  
 Kad ne bude nas, firme kad pozovu nas, tad, B  
 Ostaje trag, ostaje zauvek trag, B
 
-[Post-Refren]  
+\[Post-Refren\]  
 Le-le-le, le-le-le-le-legende, B  
 Le-le-le, le-le-le-le-legende, B  
 Le-le-le, le-le-le-le-legende, B  
 Le-le-le, le-le-le-le-legende, B
 
-[Strofa 2]  
+\[Strofa 2\]  
 Kekspayi puni para, puni smo cuge svakog momenta  
 Brzo mislim, slabo spavam, to je život studenta  
 Uvek prepisujem bez traga, zadaće, kôdna dela  
@@ -1141,19 +1137,19 @@ Kad se čuje zvuk e-maila, uvek se držimo kô braća
 Srce ledeno kô stena, travnjak sad me zove nazad  
 Jednom kad nas više nema, OIRI-ju se opet vraćam
 
-[Pred-Refren]  
+\[Pred-Refren\]  
 B, velik je grad, ne mogu iz kože sad  
 Pravac Labin, Malinska, pa Lošinj, Cres  
 A kad ne bude nas, kad se ugase računala sva  
 Ostaje trag, ostaje trag
 
-[Refren]  
+\[Refren\]  
 Kampus noćas voli nas, voli nas ovaj kvart, B  
 Boli sad svaki seminar, bod, B  
 Kad ne bude nas, firme kad pozovu nas, tad, B  
 Ostaje trag, ostaje zauvek trag, B
 
-[Post-Refren]  
+\[Post-Refren\]  
 Le-le-le, le-le-le-le-legende, B  
 Le-le-le, le-le-le-le-legende, B  
 Le-le-le, le-le-le-le-legende, B  
@@ -1163,11 +1159,11 @@ Le-le-le, le-le-le-le-legende, B
 
 ### Đ-Shock -- PSG (prerada PSG)
 
-[Uvod]  
+\[Uvod\]  
 (Milky, Milky)  
 (Je l' tako Mile?)
 
-[Refren]  
+\[Refren\]  
 Skupi kao PSG, ovi ostali su žasu  
 Zadnja vuča - BMW, ovi moji svi u gasu  
 Oko mene moji ljudi, po-podižemo masu  
@@ -1177,7 +1173,7 @@ Zadnja vuča - BMW, ovi moji svi u gasu
 Oko mene moji ljudi, po-podižemo masu  
 Na nastupu odvaljen, bato, opet skidam masku
 
-[Strofa 1]  
+\[Strofa 1\]  
 Flow lige šampiona, svako hoće sad sa nama  
 Pazi drama, Milky šije rezultate u labu - galama  
 Recezenti smaraju, pa mentor mi šizi  
@@ -1187,12 +1183,12 @@ Novu tetovažu imam, čet'ri kurve oližu
 Svako veče u labu novi papir u nizu  
 GASERI su u lovi, drugi nisu ni blizu
 
-[Pred-Refren]  
+\[Pred-Refren\]  
 Oni sve bi dali (Oni sve bi dali, oni sve bi dali, oni sve bi dali)  
 Da vide da smo pali (Da smo pali)  
 Samo gazi, gazi, gazi
 
-[Refren]  
+\[Refren\]  
 Skupi kao PSG, ovi ostali su žasu  
 Zadnja vuča - BMW, ovi moji svi u gasu  
 Oko mene moji ljudi, po-podižemo masu  
@@ -1202,7 +1198,7 @@ Zadnja vuča - BMW, ovi moji svi u gasu
 Oko mene moji ljudi, po-podižemo masu  
 Na nastupu odvaljen, bato, opet skidam masku
 
-[Strofa 2]  
+\[Strofa 2\]  
 Riba puca mi kô gram, pa joj zato bulja seva  
 Gde god odem pravim lom, pa joj zato brine keva  
 Ova godina je naša, puna flaša, sve u zicer  
@@ -1212,12 +1208,12 @@ Svi u gradu sad nas znaju, soon nastupi na more
 Telefoni non-stop zvone, zbog FIDIT-a svi smo vrući  
 Ne kapiraš ti taj sleng, GASERI su u kući
 
-[Pred-Refren]  
+\[Pred-Refren\]  
 Oni sve bi dali (Oni sve bi dali, oni sve bi dali, oni sve bi dali)  
 Da vide da smo pali (Da smo pali)  
 Samo gazi, gazi, gazi
 
-[Refren]  
+\[Refren\]  
 Skupi kao PSG, ovi ostali su žasu  
 Zadnja vuča - BMW, ovi moji svi u gasu  
 Oko mene moji ljudi, po-podižemo masu  
@@ -1227,7 +1223,7 @@ Zadnja vuča - BMW, ovi moji svi u gasu
 Oko mene moji ljudi, po-podižemo masu  
 Na nastupu odvaljen, bato, opet skidam masku
 
-[Završetak]  
+\[Završetak\]  
 (Milky, Milky)  
 (Je l' tako Mile?)
 

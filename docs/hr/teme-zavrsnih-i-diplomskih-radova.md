@@ -325,7 +325,7 @@ GPL violations: Linksys WRT54G, Linux devices, SF Conservancy, SF Law Center
 
 **Literatura:**
 
-1. [[Ksummit-discuss] [CORE TOPIC] GPL defense issues](https://lists.linuxfoundation.org/pipermail/ksummit-discuss/2016-August/003578.html)
+1. [\[Ksummit-discuss\] \[CORE TOPIC\] GPL defense issues](https://lists.linuxfoundation.org/pipermail/ksummit-discuss/2016-August/003578.html)
 1. [GPL violations](https://gpl-violations.org/)
 1. [Software Freedom Law Center](https://softwarefreedom.org/)
 1. [Software Freedom Conservancy](https://sfconservancy.org/)
@@ -914,7 +914,7 @@ GROMACS je jedan od najkorištenijih alata za simulaciju molekularne dinamike i,
 1. [GROMACS documentation](https://manual.gromacs.org/)
 1. [We ported GROMACS from CUDA to OpenCL (StreamHPC)](https://streamhpc.com/blog/2014-11-01/ported-gromacs-cuda-opencl/)
 1. [Kutzner, C. et al. Best bang for your buck: GPU nodes for GROMACS biomolecular simulations. Journal of Computational Chemistry 36, 1990--2008 (2015).](https://onlinelibrary.wiley.com/doi/full/10.1002/jcc.24030)
-1. [Kutzner, C. et al. More Bang for Your Buck: Improved use of GPU Nodes for GROMACS 2018. arXiv:1903.05918 [physics, q-bio] (2019).](https://arxiv.org/abs/1903.05918)
+1. [Kutzner, C. et al. More Bang for Your Buck: Improved use of GPU Nodes for GROMACS 2018. arXiv:1903.05918 \[physics, q-bio\] (2019).](https://arxiv.org/abs/1903.05918)
 1. [A free GROMACS benchmark set (MPI-BPC Theoretical and Computational Biophysics)](https://www.mpibpc.mpg.de/grubmueller/bench)
 1. [gmxapi Python package](https://gmxapi.readthedocs.io/)
 
@@ -1226,7 +1226,7 @@ Tor (The Onion Router) je slobodan softver za anonimnu komunikaciju putem intern
 **Literatura:**
 
 1. [Tor Project](https://www.torproject.org/)
-1. [Tor: Hidden Services and Deanonymisation [31c3]](https://archive.org/details/youtube-oZdeRmlj8Gw)
+1. [Tor: Hidden Services and Deanonymisation \[31c3\]](https://archive.org/details/youtube-oZdeRmlj8Gw)
 1. [Shari Steele on online anonymity: Tor staff are 'freedom fighters'](https://www.theguardian.com/technology/2016/jan/11/shari-steele-tor-encryption-online-anonymity-censorship)
 
 ## Odabrane teme diplomskih radova akademske godine 2015./2016.

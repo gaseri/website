@@ -38,8 +38,8 @@ Izvor: [Is Desktop Development Dead? Or Still Worth It?](https://insights.dice.c
 
 ## Razvoj aplikacija u praksi: web, mobilne i stolne (2/2)
 
-> (...) I noticed my wife was using Google Maps on her PC to map something. I asked her why she was using Google Maps instead of our old pal [Microsoft] Streets and Trips, and she said, quite matter of factly, "Because it's faster."
-> (...) [Microsoft] Streets and Trips seems to be completely stuck in the old world mentality of toolbars, menus, and right-clicking. **All the innovation in user interface seems to be taking place on the web**, and desktop applications just aren't keeping up. **Web applications are evolving online at a frenetic pace**, while most desktop applications are mired in circa-1999 desktop user interface conventions, plopping out yearly releases with barely noticeable new features (...)
+> (...) I noticed my wife was using Google Maps on her PC to map something. I asked her why she was using Google Maps instead of our old pal \[Microsoft\] Streets and Trips, and she said, quite matter of factly, "Because it's faster."
+> (...) \[Microsoft\] Streets and Trips seems to be completely stuck in the old world mentality of toolbars, menus, and right-clicking. **All the innovation in user interface seems to be taking place on the web**, and desktop applications just aren't keeping up. **Web applications are evolving online at a frenetic pace**, while most desktop applications are mired in circa-1999 desktop user interface conventions, plopping out yearly releases with barely noticeable new features (...)
 
 Izvor: [Who Killed the Desktop Application?](https://blog.codinghorror.com/who-killed-the-desktop-application/) (Coding Horror, 7th June 2007)
 
