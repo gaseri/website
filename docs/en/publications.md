@@ -4,6 +4,13 @@ author: Vedran Miletić
 
 # Publications
 
+## Year 2023
+
+- Saftić Martinović, L., Birkić, N., **Miletić, V.**, Antolović, R., Štanfel, D. & Wittine, K. [Antioxidant Activity, Stability in Aqueous Medium and Molecular Docking/Dynamics Study of 6-Amino- and N-Methyl-6-amino-L-ascorbic Acid.](https://www.mdpi.com/1422-0067/24/2/1410) *Int. J. Mol. Sci.* **24**(2), 1410 (2023). [doi:10.3390/ijms24021410](https://doi.org/10.3390/ijms24021410) ([WoS-SCIE, Q1 (2021), JIF: 6.208 (2021)](https://jcr.clarivate.com/jcr-jp/journal-profile?journal=INT%20J%20MOL%20SCI&year=2021))
+
+    ??? abstract
+        The antioxidant activity and chemical stability of 6-amino-6-deoxy-L-ascorbic acid (D1) and N-methyl-6-amino-6-deoxy-L-ascorbic acid (D2) were examined with ABTS and DPPH assays and compared with the reference L-ascorbic acid (AA). In addition, the optimal storing conditions, as well as the pH at which the amino derivatives maintain stability, were determined using mass spectrometry. Comparable antioxidant activities were observed for NH-bioisosteres and AA. Moreover, D1 showed higher stability in an acidic medium than the parent AA. In addition, AA, D1, and D2 share the same docking profile, with wild-type human peroxiredoxin as a model system. Their docking scores are similar to those of dithiothreitol (DTT). This suggests a similar binding affinity to the human peroxiredoxin binding site.
+
 ## Year 2022
 
 - Turalija, M., Petrović, M. & Kovačić, B. [Towards General-Purpose Long-Timescale Molecular Dynamics Simulation on Exascale Supercomputers with Data Processing Units.](https://ieeexplore.ieee.org/document/9803537) in *2022 45th Jubilee International Convention on Information, Communication, and Electronic Technology (MIPRO)*, 300–306 (2022). [doi:10.23919/MIPRO55190.2022.9803537](https://doi.org/10.23919/MIPRO55190.2022.9803537)
