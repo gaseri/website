@@ -119,6 +119,10 @@ GASERI ne nude pristup putem [SSH](https://www.openssh.com/), već samo putem [S
 
 Trenutno ne, ali smo uvijek otvoreni za suradnju. Primjerice, dobro bi nam došao [viličar](https://www.caterpillar.com/en/brands/cat-lift-trucks.html) za furati servere od laboratorija do podatkovnog centra i nazad.
 
+### Sponzorira li vas [Renault Sport](https://en.wikipedia.org/wiki/Renault_Sport)? Imate li službeni [Mégane RS](https://en.wikipedia.org/wiki/Renault_M%C3%A9gane_RS)?
+
+Ne može nas sponzorirati jer je nestao krajem 2021. godine pripajanjem u [Automobiles Alpine](https://www.alpinecars.fr/). Službeni Mégane RS trenutno nemamo, ali priča se po kvartu da se takav auto može koristiti za [službeni put](https://www.youtube.com/watch?v=UN5-tPrZMHE) do [Grobnika](https://grobnik.hr/).
+
 ## Mnogo više od deset primjera kako se (ne) ulizivati VM
 
 Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primjeri su iz kasnijih godina. Napisano prema istinitim događajima, ali prilagođeno po potrebi.
