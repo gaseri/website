@@ -114,7 +114,7 @@ Naše aktivnosti možete pratiti na stranicama [Riječke podružnice Hrvatske ud
 
 **Predavač:** v. pred. dr.sc. Vedran Miletić, Odjel za informatiku Sveučilišta u Rijeci
 
-**Mjesto:** O-403, [zgrada sveučilišnih odjela Sveučilišta u Rijeci](https://www.openstreetmap.org/way/436306129) i [YouTube kanal Festival Znanosti](https://www.youtube.com/channel/UCtl8E53TxHXJpFqJDrpcIdA)
+**Mjesto:** O-403, [zgrada sveučilišnih odjela Sveučilišta u Rijeci](https://www.openstreetmap.org/way/436306129) i [YouTube kanal Festival Znanosti](https://www.youtube.com/@festivalznanosti7099)
 
 **Vrijeme:** 13. listopada 2020. u 14:00
 

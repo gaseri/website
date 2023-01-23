@@ -121,7 +121,7 @@ Trenutno ne, ali smo uvijek otvoreni za suradnju. Primjerice, dobro bi nam doša
 
 ### Sponzorira li vas [Renault Sport](https://en.wikipedia.org/wiki/Renault_Sport)? Imate li službeni [Mégane RS](https://en.wikipedia.org/wiki/Renault_M%C3%A9gane_RS)?
 
-Ne može nas sponzorirati jer je nestao krajem 2021. godine pripajanjem u [Automobiles Alpine](https://www.alpinecars.fr/). Službeni Mégane RS trenutno nemamo, ali priča se po kvartu da se takav auto može koristiti za [službeni put](https://www.youtube.com/watch?v=UN5-tPrZMHE) do [Grobnika](https://grobnik.hr/).
+Ne može nas sponzorirati jer je nestao krajem 2021. godine pripajanjem u [Automobiles Alpine](https://www.alpinecars.fr/). Službeni Mégane RS trenutno nemamo, ali priča se po kvartu da se takav auto može koristiti za [službeni put](https://youtu.be/UN5-tPrZMHE) do [Grobnika](https://grobnik.hr/).
 
 ## Mnogo više od deset primjera kako se (ne) ulizivati VM
 

@@ -70,4 +70,4 @@ author: Vedran Miletić
 
 - [Luka Unuk](https://luka8088.com/)
 - [Valter Popeškić](https://howdoesinternetwork.com/)
-- [Mladen Bočev](https://www.youtube.com/channel/UCiI-bkFc_QirAA8ZC24yslw)
+- [Mladen Bočev](https://www.youtube.com/@mladenbocev)

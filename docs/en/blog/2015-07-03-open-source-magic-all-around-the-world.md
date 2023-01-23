@@ -25,7 +25,7 @@ Watching streaming events is cool, but having them in your city is even cooler. 
 
 That isn't to say that any of these things should be undervalued, as most of them aren't trivial. It's just that our research work approaches technology in a much broader way, and (somewhat counter-intuitively) solves very specific problems. For example, one such overview would be to look at the [historical development of Internet protocols at Berkeley in the '80s](https://youtu.be/ds77e3aO9nA) and later; one such problem would be the implementation of [Multipath TCP](https://en.wikipedia.org/wiki/Multipath_TCP) on Linux or Android.
 
-As usual, the presentation was recorded, so the videos will appear^W^W are [on PZKM's YouTube channel](https://www.youtube.com/user/dzpzikm): [leture](https://youtu.be/aG_O88vaH60) and [discussion](https://youtu.be/GV5nM-EQDZk).
+As usual, the presentation was recorded, so the videos will appear^W^W are [on PZKM's YouTube channel](https://www.youtube.com/@dzpzikm): [leture](https://youtu.be/aG_O88vaH60) and [discussion](https://youtu.be/GV5nM-EQDZk).
 
 The short version of the presentation is: [computers are not just PCs anymore, but a range of devices](https://blogs.windows.com/windows-insider/2015/01/21/the-next-generation-of-windows-windows-10/). Non-proprietary software vendors recognized this expansion first, so open technologies are leading the way in many new areas (e.g. mobile phones and tablets), and have also taken the lead in some of the more traditional ones (e.g. infrastructure, web browsers). The "moving to the open-source technologies" trend is very obvious, at least in software. However, even in software, the proprietary vendors are far from being dead yet.
 
