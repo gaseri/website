@@ -123,6 +123,10 @@ Trenutno ne, ali smo uvijek otvoreni za suradnju. Primjerice, dobro bi nam doša
 
 Ne može nas sponzorirati jer je nestao krajem 2021. godine pripajanjem u [Automobiles Alpine](https://www.alpinecars.fr/). Službeni Mégane RS trenutno nemamo, ali priča se po kvartu da se takav auto može koristiti za [službeni put](https://youtu.be/UN5-tPrZMHE) do [Grobnika](https://grobnik.hr/).
 
+### Ako vas ne sponzoriraju ni Caterpillar ni Renault Sport, kako to da ste onda odabrali ovu nijansu oker boje za osnovne elemente web sjedišta?
+
+Mi svakodnevno djelujemo *na granici* poznatih znanja dok provodimo svoja istraživanja. Zbog važnosti te naše misije osjećamo ne samo veliku odgovornost, već i srodnost našeg svakodnevnog zalaganja u znanosti s neprestanom borbom za opstanak glavnih likova iz 2. sezone serije [Južni vetar](https://rezim.rs/), naslovljene *Na granici*. Kako bismo javno izrazili suosjećanje u svakidašnjim naporima, na našem web sjedištu koristi se ista nijansa oker boje kao u pripadnom *teaseru* [Južni vetar: Na granici](https://youtu.be/XE-X4sYwGuI) (engl. [*South Wind: On the Edge*](https://youtu.be/H_5jc49JM0g)). Dodatni je bonus što je u tom *teaseru* za pozadinsku glazbenu temu odabrana pjesma [RASTA X LINK - I DALJE SAM ISTI (OFFICIAL VIDEO)](https://youtu.be/pW5RQRvKIXM), za koju je spot sniman u Rijeci nedaleko [sveučilišnog kampusa](https://www.rijeka.hr/gradska-uprava/gradski-projekti/realizirani-projekti/ostala-velika-ulaganja/kampus-sveucilista-u-rijeci/).
+
 ## Mnogo više od deset primjera kako se (ne) ulizivati VM
 
 Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primjeri su iz kasnijih godina. Napisano prema istinitim događajima, ali prilagođeno po potrebi.
