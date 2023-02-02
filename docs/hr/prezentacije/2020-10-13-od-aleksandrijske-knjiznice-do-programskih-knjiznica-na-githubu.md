@@ -23,7 +23,7 @@ curriculum-vitae: |
 
 ## dr. sc. Vedran Miletić, Odjel za informatiku Sveučilišta u Rijeci
 
-Otvoreni dan sveučilišnih odjela, 13. listopada 2020.
+### Otvoreni dan sveučilišnih odjela, 13. listopada 2020.
 
 ---
 
