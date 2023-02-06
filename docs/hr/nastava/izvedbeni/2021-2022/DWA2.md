@@ -79,7 +79,7 @@ Predavanja, vježbe, samostalni zadaci, konzultacije.
 
 ## Način praćenja kvalitete i uspješnosti izvedbe predmeta
 
-Kroz ustrojeni sustav osiguranja kvalitete Odjela za informatiku.
+Kroz ustrojeni sustav osiguranja kvalitete Fakulteta informatike i digitalnih tehnologija.
 
 ## Mogućnost izvođenja na stranom jeziku
 
