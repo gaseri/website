@@ -36,7 +36,7 @@ abstract: |
 - Dr. Branko Mikac's group at FER Dept. of Telecommunications
 - What to do after finishing the Ph.D. thesis? 🤔
     - NVIDIA CUDA Teaching Center (later: GPU Education Center)
-    - research in Dr. Željko Svedružić’s Biomolecular Structure and Function Group and Group (BioSFGroup)
+    - research in Dr. Željko Svedružić’s Biomolecular Structure and Function Group and Group (BioSFGroup, [svedruziclab.github.io](https://svedruziclab.github.io/))
 - postdoc in Dr. Frauke Gräter's Molecular Biomechanics (MBM) group at Heidelberg Institute for Theoretical Studies
     - collaboration with GROMACS developers from KTH, Max Planck Institute for Biophysical Chemistry (now: Multidisciplinary Sciences), and University of Virginia
 
@@ -50,7 +50,7 @@ abstract: |
 - started RxTx ([www.rxtx.tech](https://www.rxtx.tech/))
     - collaboration with Patrik Nikolić ([www.nikoli.ch](https://nikoli.ch/), former student researcher in BioSFGroup)
     - vision: *advancing the pharmaceutical drug research by improving the scientific software behind the scenes*
-    - developed open-source high-throughput virtual screening engine RxDock (until the promotion to assistant professor)
+    - developed open-source high-throughput virtual screening engine RxDock ([rxdock.gitlab.io](https://rxdock.gitlab.io/), until promotion to assist. prof.)
 
 ---
 
@@ -171,7 +171,7 @@ abstract: |
     - official blog frequently talks about [molecular](https://greglandrum.github.io/rdkit-blog/posts/2021-05-21-similarity-search-thresholds.html) [fingerprints](https://greglandrum.github.io/rdkit-blog/posts/2022-01-04-number-of-unique-fp-bits.html)
     - [database cartridge for PostgreSQL](https://www.rdkit.org/docs/Cartridge.html) offers scalable molecular storage and retrieval
 - RxDock predicts binding modes of small molecules to proteins and nucleic acids
-
+    - official comparison with rDock shows [example videos](https://rdock.gitlab.io/)
 - in the late 2021. we submitted the study of [36 million molecules](https://www.emolecules.com/) binding to SARS-CoV-2 main protease
 
 ---
