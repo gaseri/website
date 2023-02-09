@@ -1107,7 +1107,7 @@ Koristi se kod razvoja:
 
 ---
 
-## Model, pogled i upravitelj (2/2)
+## Model, pogled i upravitelj (3/3)
 
 Prema [Wikipediji](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller):
 
