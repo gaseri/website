@@ -93,7 +93,7 @@ Simulator ns-3 sastoji se od više desetaka modula od kojih ćemo ovdje koristit
 
     - [ns-3 Tutorial](https://www.nsnam.org/docs/tutorial/html/) opisuje kako započeti s radom i pisanjem jednostavnih simulacija i odlična je nadopuna ovih materijala,
     - [ns-3 Manual](https://www.nsnam.org/docs/manual/html/) opisuje unutarnji dizajn simulatora i može poslužiti kao dodatna literatura za studente koji žele znati više, te
-    - [ns-3 Model Library](https://www.nsnam.org/docs//models/html/) opisuje dizajn modela koji su trenutno implementirani, a strukturiran je po modulima.
+    - [ns-3 Model Library](https://www.nsnam.org/docs/models/html/) opisuje dizajn modela koji su trenutno implementirani, a strukturiran je po modulima.
 
 ## Proces stvaranja simulacije
 
