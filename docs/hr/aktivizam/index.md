@@ -82,10 +82,6 @@ Zaustavimo dominaciju Windowsa zajedno. Koristite Linux ili [SteamOS](https://st
 
 Otvorimo dalje osobna računala. Neka vizija budućnosti osobnog računarstva bude **Windows ni na jednom osobnom računalu**.
 
-### Programski jezici i program prevoditelji otvorenog koda
-
-Intenzivno promoviramo Python i njegove dodatke. Poštujemo individualni izbor programskog jezika, ali uvjereni smo da je Python odlična alternativa zastarjelim programskim jezicima kao što su Pascal i Visual Basic, i zato se može koristiti u edukaciji. Pored toga, Python može biti alternativa i Fortranu i raznom znanstvenom softveru (uz MatPlotLib, SciPy, NumPy), C#-u, Javi i drugim jezicima.
-
 ### Slobodni softveri za slovoslagarstvo
 
 Smatramo da je TeX (LaTeX, ConTeXt) bolji nego bilo koji drugi program iste namjene. Jedan od pokazatelja te činjenice je i to što je to jedini rašireni program koji je kompatibilan sa samim sobom već gotovo 30 godina, a da se pritom aktivno razvija i proširuje.
