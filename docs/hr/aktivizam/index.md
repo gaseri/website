@@ -10,6 +10,11 @@ author: Vedran Miletić
 
 U nastavku su detaljno opisane teme koje su relevantne za naš sadašnji aktivistički rad prema većoj slobodi u tehnologiji (uključujući slobodni softver otvorenog izvora i otvoreni hardver). Informiranje o temama uključuje praćenje glavnih, alternativnih i specijaliziranih izvora vijesti koji pokrivaju tehnologiju, društvo, digitalnu privatnost, autorska prava i slično.
 
+## Teme
+
+- [Skupina Archeri: Arch Linux](archeri.md)
+- [Skupina Mapapijri: Markdown](mapapijri.md)
+
 ## Uvjerenja i vrijednosti
 
 Ideje, uvjerenja, pretpostavke i vrijednosti su važni jer utječu na to kako se bavimo znanošću i kako razvijamo tehnologiju. [Peter Thiel](http://zerotoonebook.com/) navodi u [The Education of a Libertarian](https://www.cato-unbound.org/2009/04/13/peter-thiel/education-libertarian/):
@@ -21,72 +26,6 @@ Ideje, uvjerenja, pretpostavke i vrijednosti su važni jer utječu na to kako se
 Kao i [Red Hat](https://www.redhat.com/en/about/company), vjerujemo da je naša misija biti dio zajednice koja stvara bolju tehnologiju na [način otvorenog izvora](https://opensource.com/open-source-way). I znanje i izvorni kod softvera (koji je sam po sebi oblik znanja) su sami po sebi neoskudni resursi: jednom stvoreni, mogu se beskonačno kopirati po želji vrlo jeftino ili gotovo besplatno. Vjerujemo da bi ovo svojstvo znanja trebalo koristiti za maksimiziranje koristi koje ono donosi društvu.
 
 Snažno podržavamo različite inicijative u otvorenom licenciranju, otvorenom pristupu znanstvenim rezultatima, otvorenim standardima i otvorenim patentima. Često govorimo o [problemima koji okružuju autorska prava](https://falkvinge.net/topic/era/old-world/copyright-monopoly/), uključujući [Digital Millenium Copyright Act](https://www.eff.org/issues/dmca) i njegove europske ekvivalente, i [ograničenjima softverskih patenata](https://www.eff.org/issues/patents). Za ilustraciju, u članku [What is the price of open-source fear, uncertainty, and doubt?](../../en/blog/2015-09-14-what-is-the-price-of-open-source-fear-uncertainty-and-doubt.md), Vedran Miletić je dao odgovor na članak [What Is the Price of Open-Source Software?](https://pubs.acs.org/doi/abs/10.1021/acs.jpclett.5b01258), stajalište koje su objavili Anna I. Krylov, John M. Herbert, Filipp Furche, Martin Head-Gordon, Peter J. Knowles, Roland Lindh, Frederick R. Manby, Peter Pulay, Chris-Kriton Skylaris i Hans-Joachim Werner u časopisu *The Journal of Physical Chemistry Letters*. Slične ideje nudi i [Dr. Christoph R. Jacob](https://blog.christophjacob.eu/about/), profesor s Tehničkog sveučilišta u Braunschweigu, u svom članku [How Open Is Commercial Scientific Software?](https://pubs.acs.org/doi/abs/10.1021/acs.jpclett.5b02609) također objavljenom u časopisu *The Journal of Physical Chemistry Letters*.
-
-## Teme
-
-### Promocija paketa uredskih alata LibreOffice i otvorenog formata dokumenata OpenDocument
-
-#### Slobodni i neslobodni paketi uredskih alata
-
-Paket uredskih alata (tekst procesor, tablični kalkulator i alat za izradu prezentacija) spada među najkorištenije softverske paketa na računalu. Vladine organizacije, tvrtke, neprofitne organizacije, akademska zajednica, zdravstvene ustanove i mnogi drugi sustavi ovise o paketima uredskih alata za svakodnevno izvršavanje vlastitih zadaća; možemo reći da su ti alati toliko korišteni da se o njima ne razmišlja, štoviše uzima ih se zdravo za gotovo. Najpopularniji paket uredskih alata za desktop računala je [Microsoft Office](https://en.wikipedia.org/wiki/Microsoft_Office), a uz njega vrijedi spomenuti još dva alata: [Apple iWork](https://en.wikipedia.org/wiki/IWork) (Pages, Numbers, Keynote), namijenjen korisnicima macOS-a, i [LibreOffice](https://www.libreoffice.org/), namijenjen korisnicima Windowsa, Linuxa i macOS-a. Microsoft Office i Apple iWork su vlasnički softveri, a LibreOffice je slobodni softver otvorenog koda čijim razvojem upravlja [The Document Foundation](https://www.documentfoundation.org/).
-
-Kako raširenost interneta omogućuje suradnju velikog broja programera, njihov rad tijekom sredine 90-ih i kasnije dovodi u mainstream softvere kao što su [Mozilla Firefox](https://www.mozilla.org/firefox/), LibreOffice, Linux, [HTTP poslužitelj Apache](https://httpd.apache.org/), [VLC media player](https://www.videolan.org/vlc/) i brojne druge slobodne softvere otvorenog koda. Zajednička razlika svih ovih softvera sa softverima koje nudi Microsoft je ta da ih stvatko može bez ograničenja dijeliti, mijenjati i prilagođavati vlastitim potrebama, te dijeliti prilagođene verzije drugima. Tom otvorenošću se izbjegava ovisnost korisnika softvera o samo jednom proizvođaču softvera, takozvani *vendor lock-in*. Kako je kod otvoren, kompanije se ne mogu natjecati na temelju vlasništva nad softverom, već isključivo na temelju kvalitete podrške i prilagodbe softvera zahtjevima korisnika.
-
-Specifično u domeni paketa uredskih alata Microsoft ne uspijeva razumjeti i iskoristiti potrebu programera i korisnika za otvorenošću. Steve Ballmer, CEO Microsofta od 2000. do 2014. godine, pokazuje nerazumijevanje svojom izjavom da je Linux ["rak koji se veže u smislu intelektualnog vlasništva na sve što takne"](https://www.theregister.com/2001/06/02/ballmer_linux_is_a_cancer/). Ono što on opisuje je licencija GNU General Public License (GPL), koju među ostalim projektima otvorenog koda koristi i Linux. GPL je viralna licencija, koja zahtijeva od svakog novog softvera koji iskorištava postojeći softver pod GPL-om da i sam bude pod GPL-om. Vremenom tako sve veći broj softvera postaje slobodni softver otvorenog koda, odnosno postoji sve više tehnologije dostupne svima za korištenje i prilagodbu u skladu s vlastitim potrebama.
-
-Ključan alat u procesu zamjene svih neslobodnih softvera slobodnim je uredski paket LibreOffice, nasljednik projekta OpenOffice.org. U javnoj upravi navode se brojni primjeri [migracije s uredskog paketa Microsoft Office na OpenOffice.org ili LibreOffice](https://wiki.documentfoundation.org/LibreOffice_Migrations). Neki od primjera su grad Limerick u Irskoj, bolnice u gradu Kopenhagenu u Danskoj, grad Las Palmas u Španjolskoj, grad Largo u saveznoj državi Florida u SAD-u, grad München u Njemačkoj, grad Toulouse u Francuskoj i Ministarstvo obrane u Italiji. Procjene ušteda variraju od nekoliko desetaka tisuća do nekoliko desetaka milijuna eura, ovisno o broju računala i specifičnostima ugovora s Microsoftom koji je prethodio migraciji.
-
-#### Situacija u Hrvatskoj
-
-U Republici Hrvatskoj ukupan trošak Microsoft licencija koji se ugovara putem Državnog ureda za središnju javnu nabavu iznosi [približno 200 milijuna kuna za tri godine](https://www.linuxzasve.com/potpisivanje-200-milijuna-kuna-vrijednog-sporazuma-s-microsoftom-evo-sto-kazu-najkompetentniji-ljudi-na-tom-podrucju). Implementacija slobodnih softvera otvorenog koda u državnoj upravi i javnim institucijama razmatrana je u nekoliko navrata, međutim zbog brojnih prepreka zasad nije došlo do realizacije. Jedna od većih prepreka su vlastite aplikacije koji rade isključivo u Windowsima i/ili Internet Exploreru. Svakako veseli činjenica da je format OpenDocument, otvoreni format koji konkurira vlasničkim Microsoft Office formatima, [postao hrvatska norma s oznakom HRN ISO/IEC 26300:2008](https://www.linuxzasve.com/odf-postao-nacionalna-norma).
-
-Za razliku od implementacije u državnoj upravi, implementacija slobodnih softvera otvorenog koda u školama i u akademskoj zajednici ovisi o entuzijazmu nastavnika. Brojni fakulteti u Republici Hrvatskoj već koriste Linux samostalno ili u kombinaciji s Windowsima, od kojih su neki PMF -- Matematički odsjek, Tehnički fakultet, Odjel za informatiku, Odjel za fiziku i Odjel za biotehnologiju Sveučilišta u Rijeci. Znanstveni softveri koje ove institucije koriste u istraživanju i nastavi su uglavnom specifični za granu znanosti kojom se one bave, a ponekad i uvjetuju korištenje određenog operacijskog sustava.
-
-Što se tiče osnovnih i srednjih škola, vrijedi spomenuti Prirodoslovnu i grafičku školu Rijeka gdje se nastava predmeta Baze podataka, Programiranje za web i Internetske tehnologije izvodi na Linuxu, zahvaljujući inicijativi [Barbare Smilović](http://barbara-smilovic.from.hr/), prof. mat. i inf. Korištenje uredskih paketa ne obrađuje se posebno na tim predmetima, ali se LibreOffice koristi usputno. Ova praksa slijedi ideju da se učenike ne treba učiti na specifično sučelje, već na određenu funkcionalnost koju može očekivati od softvera i snalaženje u sučeljima koja su izgledom različita, ali idejom vrlo slična.
-
-Voditeljima promocije za sada nije poznat primjer srednje škole koja je zamijenila Microsoft Office za LibreOffice na predmetima na kojima se obrađuje rad u paketima uredskih alata.
-
-#### Ciljevi i postupak promocije
-
-[Primjer školskog okruga Penn Manor iz savezne države Pennsylvania u SAD-u](https://youtu.be/Nj3dGK3c4nY) pokazuje da inicijativa može ići i odozdo. Taj okrug već dvije godine studentima daje laptope s Ubuntu Linuxom i LibreOfficeom, te ih uči radu u navedenom softveru. Korištenjem slobodnog softvera štede na licencijama i -- što nije manje važno -- podižu svijest o slobodnom korištenju softvera i potiču individualnu kreativnost u rješavanju problema. Učenik se dovodi u poziciju da je dio zajednice koja stvara softver jer može pomoći poboljšanju softvera koji koristi, bez obzira na znanje programiranja. Primjerice, može poboljšati dokumentaciju ili dizajnirati novi skup ikona. Učenik više nije samo konzument softvera koji nalazi u školi, već može postati aktivni sudionik u njegovu razvoju.
-
-Često se ova praksa propituje s obzirom na to da još uvijek na desktop računalima Microsoft Windows i Office koristi najveći broj korisnika. Međutim, učenik koji danas kreće u školu nakon završetka svog obrazovanja koristit će softvere koji će izgledom biti bitno drugačiji od onoga što je učio. No ti će softveri funkcionalnošću biti vrlo slični, vjerojatno i bogatiji. Učenik stoga treba biti spreman snaći se za koji god softver da sjedne; grafička sučelja na Linuxu, macOS-u i Windowsima funkcionalnošću su danas ionako vrlo slična. Razlike u izgledu (dizajnu) koje postoje među njima ne smiju biti prepreka korištenju.
-
-LibreOffice i Linux nastavit će napredovati, a način i načela razvoja slobodnog softvera širit će se u druge vrste softvera i izvan softvera. Želimo li naše učenike pripremiti za takav svijet, alati su nam dostupni, a sve što nam treba je inicijativa odozdo. S tim na umu, i [poučeni dosadašnjim iskustvima](http://zsv-inf.skole.hr/?news_hk=1&news_id=86&mshow=290), voditelji promocije planiraju sljedeće:
-
-- održavanje prezentacija LibreOfficea i načela slobodnog softvera otvorenog koda na Županijskim stručnim vijećima profesora informatike i računalstva,
-- individualne konzultacije putem e-maila, društvenih mreža i/ili IRC-a s nastavnicima i učenicima zainteresiranim za LibreOffice i općenito slobodni softver otvorenog koda,
-- izrada kratkih video materijala na hrvatskom jeziku koji predstavljaju koncepte slobodnog softvera otvorenog koda,
-- izrada dužih video i/ili tekstualnih uputa na hrvatskom jeziku za netrivijalne operacije u LibreOfficeu koje se obrađuju u srednjoškolskim programima,
-- održavanje radionica za nastavnike putem interneta ili u realnom svijetu koje bi služile za razmjenu iskustava i prikupljanje ideja za poboljšanje prethodne četiri točke.
-
-### Linux kao igraća platforma
-
-Uvjerenja smo da je najvažniji razlog što Linux nije najrašireniji operacijski sustav nedovoljna promidžba Linux rješenja. Na tome radimo kroz čitav niz predavanja i prezentacija rješenja zasnovanih na slobodnom softveru.
-
-Tehnički, Linux je superioran svemu drugome što postoji na tržištu u većini primjena. U zadnje vrijeme, kroz distribucije prilagođene krajnjim korisnicima, postao je dovoljno jednostavan za svakoga. To želimo pokazati, prije svega budućim profesorima, inženjerima i voditeljima informatičkih odjela u tvrtkama koji su danas studenti fakulteta Sveučilišta u Rijeci, ali i svim drugim zainteresiranima.
-
-Relativno je lako doći u poziciju da koristite Linux za sve osim za igranje igara. Zahvaljujući zajednicama kao što su [GamingOnLinux](https://www.gamingonlinux.com/) i [/r/linux_gaming](https://www.reddit.com/r/linux_gaming/), bazama kao što su [SteamDB](https://steamdb.info/) i [ProtonDB](https://www.protondb.com/) te popularnosti [Valve Steam Decka](https://www.steamdeck.com/), igranje igara na Linuxu postaje realna mogućnost. Stoga je legitimno postaviti pitanje postoji li uopće potreba za korištenjem neslobodnih operacijskih sustava kao što je Microsoft Windows.
-
-#### Windows ni na jednom osobnom računalu
-
-(Ideja je kopirana i prilagođena sa [Stop Disabling SELinux](https://stopdisablingselinux.com/), javne usluge [Majora Haydena](https://major.io/).)
-
-Microsoftova originalna vizija *osobnog računala na svakom stolu, Windowsa na svakom osobnom računalu*, u velikoj se mjeri ostvarila. Bez sumnje, uspjeh osobnih računala i Windowsa omogućio je da se dogode mnoge velike stvari, ali to vrijeme je prošlo. Sada je vrijeme da se ide dalje.
-
-Danas je Windows, uključujući tehnologije poput DirectX-a, samo još jedan naslijeđeni vlasnički softver koji živi zahvaljujući [zaključavanju dobavljača, uključujući Microsoftovu kontrolu nad ekosustavom Secure Boot](../../en/blog/2016-01-30-i-am-still-not-buying-the-new-open-source-friendly-microsoft-narrative.md). Uz [moderne DirectX igre koje su ekskluzivne za Windows Store](https://www.theguardian.com/technology/2016/mar/04/microsoft-monopolise-pc-games-development-epic-games-gears-of-war) i [Microsoft uništava zajednice oko Androida i Linuxa patentnim licencama](https://www.infoworld.com/article/3042699/microsoft-loves-open-source-only-when-its-convenient.html), situacija će se u budućnosti samo pogoršavati.
-
-Svaki put kada koristite Windows za igranje računalnih igara, rasplačete [Gabea](https://gaben.tv/) [Newella](http://gabenewell.org/). On je naš veliki gospodar i to sigurno ne zaslužuje.
-
-Zaustavimo dominaciju Windowsa zajedno. Koristite Linux ili [SteamOS](https://store.steampowered.com/steamos/), prijavite pogreške u igrama koje igrate i upravljačkim programima hardvera koje koristite, popravite stvari koje znate i pomozite drugima da učine isto. Odbijte kupiti igre koje ne rade na Linuxu ili SteamOS-u.
-
-Otvorimo dalje osobna računala. Neka vizija budućnosti osobnog računarstva bude **Windows ni na jednom osobnom računalu**.
-
-### Slobodni softveri za slovoslagarstvo
-
-Smatramo da je TeX (LaTeX, ConTeXt) bolji nego bilo koji drugi program iste namjene. Jedan od pokazatelja te činjenice je i to što je to jedini rašireni program koji je kompatibilan sa samim sobom već gotovo 30 godina, a da se pritom aktivno razvija i proširuje.
-
-Želimo prije svega potaknuti primjenu TeX-a kod studenata, za pisanje seminarskih, završnih i diplomskih radova zbog njegovih prednosti kod slaganja teksta i formula. Iako nam to nije primarni cilj, želimo promovirati TeX i kao alternativu DTP programima, programima za vektorsku grafiku i izradu prezentacija.
 
 ### Načela otvorenog izvora van softvera
 
