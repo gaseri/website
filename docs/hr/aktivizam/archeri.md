@@ -4,6 +4,9 @@ author: Vedran Miletić
 
 # Archeri
 
+!!! note
+    Zbog svojeg lokalnog karaktera, naša je skupina navedena kao ["neslužbena" hrvatska zajednica korisnika Arch Linuxa](https://wiki.archlinux.org/title/International_communities#Croatian). Otvoreni smo za primanje novih članova i eventualno formiranje "službene" hrvatske zajednice, naravno, ako se pokaže da za time postoji interes.
+
 ## Motivacija
 
 [Načela](https://wiki.archlinux.org/title/Arch_Linux#Principles) [Arch Linuxa](https://archlinux.org/), informacijama bogat [ArchWiki](https://wiki.archlinux.org/), gotovo 14 000 [službenih](https://archlinux.org/packages/) i 88 000 paketa u [korisničkom repozitoriju](https://aur.archlinux.org/), popularnost memea [BTW I use Arch](https://knowyourmeme.com/memes/btw-i-use-arch) i dug popis [distribucija temeljenih na Archu](https://wiki.archlinux.org/title/Arch-based_distributions) u kojem svatko može pronaći distribuciju za sebe, učinili su zajedno da je njegova popularnost u porastu. Taj se porast se osobito dobro vidi među entuzijastima kao što su igrači igara na Linuxu, gdje [statistike koje prikuplja GamingOnLinux](https://www.gamingonlinux.com/users/statistics/) u posljednjih nekoliko godina pokazuju jasan trend rasta korištenja distribucija temeljenih na Arch Linuxu, primarno na uštrb distribucija temeljenih na Ubuntuu.
