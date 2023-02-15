@@ -173,7 +173,7 @@ Nastava će se na predmetu odvijati u ljetnom semestru prema sljedećem raspored
 | 4. | 25. 3. 2022. | 14:00--15:30 i 16:00--17:30 | O-350 | Upravljanje pohranom podataka i izrada sigurnosnih kopija podataka | P4 i V4 | doc. dr. sc. Vedran Miletić |
 | 5. | 1. 4. 2022. | 14:00--15:30 i 16:00--17:30 | O-350 | Upravljanje uslugama i praćenje događaja. Automatizacija zadaća | P5 i V5 | doc. dr. sc. Vedran Miletić |
 | 6. | 8. 4. 2022. | 14:00--15:30 i 16:00--17:30 | O-350 | **1. test na Merlinu** | P6 i V6 | doc. dr. sc. Vedran Miletić |
-| 6. | 9. 4. 2022. | 14:00--15:30 i 16:00--17:30 | online | Proces pokretanja računalnog sustava | P7 i V7 | doc. dr. sc. Vedran Miletić |
+| 7. | 9. 4. 2022. | 14:00--15:30 i 16:00--17:30 | online | Proces pokretanja računalnog sustava | P7 i V7 | doc. dr. sc. Vedran Miletić |
 | 8. | 22. 4. 2022. | 14:00--15:30 i 16:00--17:30 | O-350 | Upravljanje jezgrom operacijskog sustava | P8 i V8 | doc. dr. sc. Vedran Miletić |
 | 9. | 29. 4. 2022. | 14:00--15:30 i 16:00--17:30 | O-350 | Omogućavanje pristupa računalnom sustavu putem mreže | P9 i V9 | doc. dr. sc. Vedran Miletić |
 | 10. | 6. 5. 2022. | 14:00--15:30 i 16:00--17:30 | O-350 | Ograničavanje pristupa računalnom sustavu putem mreže | P10 i V10 | doc. dr. sc. Vedran Miletić |
