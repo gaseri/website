@@ -160,7 +160,7 @@ Izvanredni:
 
 ## RASPORED NASTAVE -- ljetni (6.) semestar ak. god. 2021./2022.
 
-Nastava će se na predmetu odvijati u zimskom semestru prema sljedećem rasporedu:
+Nastava će se na predmetu odvijati u ljetnom semestru prema sljedećem rasporedu:
 
 - predavanja: petkom od 14:00 do 15:30 u O-350
 - vježbe: petkom od 16:00 do 17:30 u O-350

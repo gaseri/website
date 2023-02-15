@@ -158,7 +158,7 @@ Izvanredni:
 
 ## RASPORED NASTAVE -- ljetni (4.) semestar ak. god. 2020./2021.
 
-Nastava će se na predmetu odvijati u zimskom semestru prema sljedećem rasporedu:
+Nastava će se na predmetu odvijati u ljetnom semestru prema sljedećem rasporedu:
 
 - predavanja: srijedom od 12:00 do 13:30 u O-S32 i online
 - vježbe: četvrtkom od 16:15 do 17:45 u O-350 i online
