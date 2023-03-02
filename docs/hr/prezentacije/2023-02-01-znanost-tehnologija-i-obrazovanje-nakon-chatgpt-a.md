@@ -10,7 +10,7 @@ paginate: true
 curriculum-vitae: |
   Vedran Miletić radi kao docent na Fakultetu informatike i digitalnih tehnologija Sveučilišta u Rijeci, gdje je voditelj Grupe za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi te nositelj više kolegija iz područja infrastrukture suvremenog weba. Član je Centra za popularizaciju i promociju znanosti te Povjerenstva za superračunalne resurse Sveučilišta u Rijeci.
 
-  Doktorirao je računarstvo na FER-u u Zagrebu, a poslijedoktorsko usavršavanje u području računalne biokemije proveo je na Heidelberškom institutu za teorijske studije u Heidelbergu, Njemačka. Njegova se istraživačka grupa danas bavi poboljšanjem metoda simulacije molekulske dinamike i njihovom prilagodbom za suvremena superračunala. Doprinio je nekolicini slobodnosoftverskih projekata razvojem otvorenog koda, uključujući simulator molekulske dinamike GROMACS. 
+  Doktorirao je računarstvo na FER-u u Zagrebu, a poslijedoktorsko usavršavanje u području računalne biokemije proveo je na Heidelberškom institutu za teorijske studije u Heidelbergu, Njemačka. Njegova se istraživačka grupa danas bavi poboljšanjem metoda simulacije molekulske dinamike i njihovom prilagodbom za suvremena superračunala. Doprinio je nekolicini slobodnosoftverskih projekata razvojem otvorenog koda, uključujući simulator molekulske dinamike GROMACS.
 ---
 
 # Znanost, tehnologija i obrazovanje nakon ChatGPT-a
@@ -58,8 +58,11 @@ curriculum-vitae: |
 - 1997\. desktop i Microsoft dominiraju tržištem softvera za osobna računala
     - doba prije Googlea
 - 2007\. Paul Graham kaže [Microsoft is Dead](http://www.paulgraham.com/microsoft.html):
+
     > Microsoft's biggest weakness is that they still don't realize how much they suck. They still think they can write software in house. Maybe they can, by the standards of the desktop world. But that world ended a few years ago.
+
     - doba Nakon Googlea
+
 - slična promjena paradigme dogodit će se u narednim godinama uzrokovana širokom primjenom tehnologija koje stoje u pozadini ChatGPT-a
 
 ---
@@ -67,7 +70,9 @@ curriculum-vitae: |
 ## OpenAI
 
 - [osnovan 2015. godine](https://www.businessinsider.com/history-of-openai-company-chatgpt-elon-musk-founded-2022-12), suosnivači Sam Altman i Elon Musk; [charter](https://openai.com/charter/):
+
     > OpenAI’s mission is to ensure that artificial general intelligence (AGI)—by which we mean highly autonomous systems that outperform humans at most economically valuable work—benefits all of humanity. We will attempt to directly build safe and beneficial AGI, but will also consider our mission fulfilled if our work aids others to achieve this outcome.
+
 - Poznatiji proizvodi:
     - [Gym](https://www.gymlibrary.dev/) ([Retro](https://openai.com/blog/gym-retro/))
     - [RoboSumo](https://github.com/openai/robosumo)
