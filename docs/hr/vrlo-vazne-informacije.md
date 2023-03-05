@@ -14,13 +14,13 @@ author: Vedran Miletić, Domagoj Margan, Andrea Toić
 
 [Preuzimanje GASERI logotipa u vektorskom formatu SVG](../images/gaseri-logo.svg)
 
-![GASERI logo with text](../images/gaseri-logo-text.svg)
+![GASERI logo with text](../images/gaseri-logo-text-paths.svg)
 
-[Preuzimanje GASERI logotipa s tekstom u vektorskom formatu SVG](../images/gaseri-logo-text.svg)
+[Preuzimanje GASERI logotipa s tekstom u vektorskom formatu SVG](../images/gaseri-logo-text-paths.svg)
 
-![GASERI poster](../images/gaseri-poster.svg)
+![GASERI poster](../images/gaseri-poster-paths.svg)
 
-[Preuzimanje GASERI postera u vektorskom formatu SVG](../images/gaseri-poster.svg)
+[Preuzimanje GASERI postera u vektorskom formatu SVG](../images/gaseri-poster-paths.svg)
 
 Za druge sheme boja i sezonske logotipe pregledajte [direktorij `docs/images` u repozitoriju našeg web sjedišta na GitHubu](https://github.com/gaseri/website/tree/main/docs/images).
 
