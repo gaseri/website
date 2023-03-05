@@ -4,6 +4,12 @@ author: Mario Radovan, Vedran Miletić, Ivan Ivakić, Domagoj Margan, Tomislav �
 
 # Istraživanje i razvoj
 
+[Simulacija molekulske dinamike](https://youtu.be/NTgAok6n7I4) jedna je najviše korištenih i istraživanih metoda u Grupi za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi. Kako bi ostvarila ciljeve vlastitih istraživanja i [suradnji](ljudi/index.md#suradnici), grupa aktivno sudjeluje u [razvoju](https://gitlab.com/gromacs/gromacs/activity) slobodnog programskog paketa otvorenog koda [GROMACS](https://www.gromacs.org/) za izvođenje i analizu rezultata simulacije molekulske dinamike na računalima visokih performansi.
+
+![GROMACS logo](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Gmx_logo_blue.png/1280px-Gmx_logo_blue.png)
+
+Osim razvoja u skladu s vlastitim i suradničkim istraživačkim interesima i interesima suradnika, grupa nastoji i [doprinijeti](https://manual.gromacs.org/documentation/current/dev-manual/contribute.html) održavanju GROMACS-ove [baze izvornog koda](https://manual.gromacs.org/documentation/current/dev-manual/overview.html), [sustava za izgradnju](https://manual.gromacs.org/documentation/current/dev-manual/build-system.html) i [dokumentacije](https://manual.gromacs.org/documentation/current/dev-manual/overview.html#dev-doc-layout) za buduće razvojne potrebe.
+
 ## Razvoj online kolegija Optimizacija programskog koda (Code optimization) na Sveučilištu u Rijeci u akademskim godinama 2020./2021. i 2021./2022.
 
 ### Podaci o osobama odgovornim za provedbu projekta
