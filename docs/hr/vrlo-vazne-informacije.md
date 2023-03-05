@@ -65,6 +65,14 @@ Druga su najjača institucija na Balkanu, odmah nakon [unuka Bake Praseta](https
 
 Iznimka je [kraj rujna, čitav listopad i početak studenog 2022. godine](https://www.index.hr/magazin/clanak/baki-prasetu-vracen-youtube-kanal-s-preko-dva-milijuna-pratitelja/2409371.aspx) dok je [Baki Prasetu bio ugašen kanal](https://n1info.hr/showbiz/baki-prasetu-ugasen-youtube-kanal-s-vise-od-2-milijuna-pratitelja/) i njegovi su unuci bili nešto slabije organizirani pa su tada GASERI bili najjača institucija na Balkanu.
 
+### Kako postati gaser?
+
+To je prilično dobro objasnio [DZIMI](https://www.instagram.com/dzimiyt_/) u istonaslovljenom [audiovizualnom uratku](https://files.group.miletic.net/DZIMI/KAKO%20POSTATI%20GASER-WxCHY1k8HKw.mp4).
+
+### Kako postati dio grupe GASERI?
+
+To je nešto manje važna informacija od one u odgovoru na prethodno pitanje pa se nalazi [na posebnoj stranici](ljudi/kako-se-ukljuciti.md).
+
 ### Može li si ozbiljna institucija dozvoliti da ima emoji kao logo?
 
 Razmotrimo tvrtku [Hugging Face](https://huggingface.co/), autore [Transformersa](https://huggingface.co/transformers), skupa predtreniranih modela za strojno učenje koji ima [68 tisuća zvjezdica na GitHubu](https://github.com/huggingface/transformers). Dosad su [primili 160 milijuna dolara investicija](https://www.crunchbase.com/organization/hugging-face), [procijenjena vrijednost tvrtke iznosi 2 milijarde dolara](https://www.forbes.com/sites/kenrickcai/2022/05/09/the-2-billion-emoji-hugging-face-wants-to-be-launchpad-for-a-machine-learning-revolution/), a njihovo web sjedište ima [19.4 milijuna pogleda mjesečno](https://www.similarweb.com/website/huggingface.co/).
