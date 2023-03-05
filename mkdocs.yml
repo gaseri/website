@@ -9,7 +9,9 @@ nav:
   - GASERI: index.md
   - 🇭🇷 Sadržaj na hrvatskom:
     - O grupi: hr/index.md
-    - Ljudi: hr/ljudi.md
+    - Ljudi:
+      - Ljudi indeks: hr/ljudi/index.md
+      - Kako se uključiti: hr/ljudi/kako-se-ukljuciti.md
     - Znanstveni program mentora: hr/znanstveni-program-mentora.md
     - Istraživanje i razvoj: hr/istrazivanje-i-razvoj.md
     - Partnerstva i suradnje: hr/partnerstva-i-suradnje.md
