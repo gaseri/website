@@ -188,6 +188,94 @@ Uočimo kako se mijenja samo `radnastanica3` koja ranije nije imala instaliran p
 
 Više detalja moguće je pronaći na [stranici Ansible na ArchWikiju](https://wiki.archlinux.org/title/Ansible).
 
+## Primjeri korištenja Ansiblea za održavanje računalnih praktikuma
+
+### Nadogradnja svih paketa
+
+Za upravljanje paketima na Arch Linuxu koristi se modul zajednice `community.general.pacman` ([dokumentacija](https://docs.ansible.com/ansible/latest/collections/community/general/pacman_module.html)), a playbook `syu.yml` je dostupan u [odjeljku Playbook stranice Ansible na ArchWikiju](https://wiki.archlinux.org/title/Ansible#Playbook).
+
+### Uključivanje pokretanja korištenjem utičnica za Docker i libvirt daemone
+
+Za upravljanje systemd jedinkama koristi se ugrađeni modul `ansible.builtin.systemd` ([dokumentacija](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/systemd_module.html)).
+
+``` yaml
+- name: Enable socket activation for Docker and libvirt
+  hosts: workstation
+  become: yes
+
+  tasks:
+    - name: enable systemd socket unit for Docker daemon
+      systemd:
+        name: docker.socket
+        state: started
+        enabled: true
+    - name: enable systemd socket unit for libvirt daemon
+      systemd:
+        name: libvirtd.socket
+        state: started
+        enabled: true
+```
+
+### Dodavanje lokalnog korisnika bez administratorskih ovlasti
+
+Za upravljanje korisnicima koristi se ugrađeni modul `ansible.builtin.user` ([dokumentacija](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/user_module.html)).
+
+``` yaml
+- name: Add user korisnik and configure groups
+  hosts: workstation
+  become: yes
+
+  tasks:
+    - name: add user korisnik with password korisnik
+      user:
+        name: korisnik
+        comment: FIDIT korisnik
+        password: $6$CvycajZY8Z5mk0qC$AdU3seLtogi4XJGXa1MwRuBZ7pHiuLrQaricpAJ2Id5sqV1.UBoUS//yKGPxrK9nzgvmiiIJI2isGamrtGBGD.
+        shell: /bin/bash
+        groups: docker,libvirt
+        append: yes
+```
+
+[Hashirani zapis zaporke](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/user_module.html#return-password) naveden kao vrijednost ključa `password` je generiran prema [uputama iz Ansibleove dokumentacije](https://docs.ansible.com/ansible/latest/reference_appendices/faq.html#how-do-i-generate-encrypted-passwords-for-the-user-module) korištenjem [algoritma SHA-512](https://wiki.archlinux.org/title/SHA_password_hashes) i soli `CvycajZY8Z5mk0qC` naredbom
+
+``` shell
+$ ansible all -i localhost, -m debug -a "msg={{ 'korisnik' | password_hash('sha512', 'CvycajZY8Z5mk0qC') }}"
+[DEPRECATION WARNING]: Encryption using the Python crypt module is deprecated. The Python crypt module is deprecated and will be removed from Python 3.13. Install the passlib library for continued encryption functionality. This feature will be removed in version 2.17. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+localhost | SUCCESS => {
+    "msg": "$6$CvycajZY8Z5mk0qC$AdU3seLtogi4XJGXa1MwRuBZ7pHiuLrQaricpAJ2Id5sqV1.UBoUS//yKGPxrK9nzgvmiiIJI2isGamrtGBGD."
+}
+```
+
+Korisnik `korisnik` je nakon stvaranja dodan u grupe `docker` i `libvirt`, navedene kao vrijednost ključa `groups`, čime dobiva pravo pokretanja [Docker](https://www.docker.com/) kontejnera i [libvirt](https://libvirt.org/) virtualnih strojeva. Vrijednost `yes` ključa `append` osigurava da će korisnik biti [dodan u navedene grupe](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/user_module.html#return-append) (umjesto da se popis grupa zamijeni navedenim).
+
+### Brisanje datoteka korisnika
+
+Rješenje prezentirano u nastavku pokreće naredbe izravno u ljusci korištenjem ugrađenog modula `ansible.builtin.shell` ([dokumentacija](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/shell_module.html)).
+
+``` yaml
+- name: Logout user korisnik
+  hosts: workstation
+
+  tasks:
+    - name: kill processes owned by user korisnik using loginctl
+      shell: loginctl --signal=KILL kill-user korisnik
+```
+
+``` yaml
+- name: Restore files in home directory of user korisnik to defaults
+  hosts: workstation
+
+  tasks:
+    - name: remove files in home directory of user korisnik
+      shell: rm -r /home/korisnik/{*,.[!.]*}
+      args:
+        executable: /bin/bash
+    - name: copy files from /etc/skel to home directory of user korisnik
+      shell: cp -r /etc/skel/{*,.[!.]*} /home/korisnik
+      args:
+        executable: /bin/bash
+```
+
 ## Pokretanje postojećih Ansible playbooka
 
 Vrlo jednostavan primjer postojećeg playbooka koji instalira HTTP poslužitelj Apache može se pronaći na službenom GitHubu u repozitoriju [ansible/workshop-examples](https://github.com/ansible/workshop-examples). Složeniji primjeri dostupni su u repozitoriju [ansible/ansible-examples](https://github.com/ansible/ansible-examples). Kako su neki od njih pisani specifično za Red Hat Enterprise Linux, potrebne su manje preinake u navođenju sustava za instalaciju paketa i putanjama pojedinih direktorija i datoteka kako bi se mogle pokrenuti na Arch Linuxu.
