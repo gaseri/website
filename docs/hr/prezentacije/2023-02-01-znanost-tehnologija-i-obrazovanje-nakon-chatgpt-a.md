@@ -180,7 +180,7 @@ ChatGPT "zna":
 
 ---
 
-## Primjer predmeta Programiranje za web s preddiplomskog studija Informatika
+## Primjer predmeta Programiranje za web s prijediplomskog studija Informatika
 
 - obrnuta didaktika od tipičnih kolegija iz područja programskog inženjerstva
     - omogućena probojem slobodnog softvera otvorenog koda u mainstream tijekom proteklih 30-ak godina

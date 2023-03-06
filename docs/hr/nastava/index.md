@@ -10,7 +10,7 @@ Nastavni materijali kolegija su na hrvatskom jeziku, osim [Optimizacije programs
 
 ## Kolegiji
 
-### Preddiplomski
+### Prijediplomski
 
 - [Računalne mreže](kolegiji/RM.md)
 - [Sigurnost informacijskih i komunikacijskih sustava](kolegiji/SIKS.md)
@@ -35,7 +35,7 @@ Nastavni materijali kolegija su na hrvatskom jeziku, osim [Optimizacije programs
 - [Računalne mreže (RiTeh)](kolegiji/RM-RiTeh.md)
 - [Optimizacija programskog koda (YUFE)](../../en/teaching/courses/CO.md)
 
-### Stari preddiplomski
+### Stari prijediplomski
 
 - [Osnove informatike 1](kolegiji/OI1.md)
 - [Operacijski sustavi 1](kolegiji/OS1.md)
