@@ -482,6 +482,9 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+  font:
+    text: Fira Sans
+    code: Fira Mono
 extra:
   alternate:
     - name: Croatian
