@@ -1,5 +1,7 @@
 # Code optimization
 
+(This page is also available [in Croatian](../../../hr/nastava/kolegiji/OPK.md).)
+
 - [Course introduction](../materials/opt-intro.md)
 
 ## Exercises
