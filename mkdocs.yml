@@ -381,7 +381,10 @@ nav:
           - X. Paritet razvoja/produkcije: hr/arhiva/web-sjedista/12factor-net/dev-prod-parity.md
           - XI. Zapisnici: hr/arhiva/web-sjedista/12factor-net/logs.md
           - XII. Administrativni procesi: hr/arhiva/web-sjedista/12factor-net/admin-processes.md
-    - Vrlo važne informacije: hr/vrlo-vazne-informacije.md
+    - Vrlo važne informacije:
+      - Vrlo važne informacije indeks: hr/vrlo-vazne-informacije/index.md
+      - Često postavljana pitanja: hr/vrlo-vazne-informacije/cesto-postavljana-pitanja.md
+      - Identitet: hr/vrlo-vazne-informacije/identitet.md
   - 🇺🇸 Contents in English:
     - About the group: en/index.md
     - Introductory presentation: en/introductory-presentation.md
