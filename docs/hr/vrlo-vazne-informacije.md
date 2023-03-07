@@ -53,7 +53,7 @@ Na [Zavodu (rus. Заводу) 311](https://battlefield.fandom.com/wiki/Zavod#Za
 
 ### Zašto CNPSLab nije naveden na [popisu laboratorija FIDIT-a](https://www.inf.uniri.hr/znanstveni-i-strucni-rad/laboratoriji)?
 
-Laboratorij je [ukinut promjenom unutarnjeg ustroja](../hr/index.md#povijest) prilikom [promjene naziva Odjela za infromatiku u Fakultet informatike i digitalnih tehnologija](https://www.inf.uniri.hr/11-hr/naslovnica/915-odjel-za-informatiku-postaje-fakultet-informatike-i-digitalnih-tehnologija).
+Laboratorij je [ukinut promjenom unutarnjeg ustroja](index.md#povijest) prilikom [promjene naziva Odjela za infromatiku u Fakultet informatike i digitalnih tehnologija](https://www.inf.uniri.hr/11-hr/naslovnica/915-odjel-za-informatiku-postaje-fakultet-informatike-i-digitalnih-tehnologija).
 
 ### Zašto GASERI nisu navedeni na [popisu laboratorija FIDIT-a](https://www.inf.uniri.hr/znanstveni-i-strucni-rad/laboratoriji)?
 
