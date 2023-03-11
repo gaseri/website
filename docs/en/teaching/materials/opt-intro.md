@@ -11,11 +11,11 @@ paginate: true
 
 # Code optimization: course introduction
 
-## Dr. Vedran Miletić, Sen. Lect., vmiletic@inf.uniri.hr
+## Dr. Vedran Miletić, Assist. Prof.
 
-### [vedran.miletic.net](https://vedran.miletic.net/) | [group.miletic.net](https://group.miletic.net/hr/)
+### Faculty of Informatics and Digital Technologies, University of Rijeka
 
-#### YUFE course, 2021/2022 academic year
+#### YUFE course, first offered in the 2021/2022 academic year
 
 ---
 
@@ -24,6 +24,8 @@ paginate: true
 - 2009\. M. Ed. in math and CS
 - 2015\. Ph. D. in computer science
 - 2015--2018\. PostDoc in scientific computing, specifically computational biochemistry
+- 2019--2021\. Senior Lecturer in computer science
+- 2021--now Assistant Professor in computer science
 - Interests: parallelization and other performance optimization techniques in scientific software
 
 ---
@@ -68,7 +70,7 @@ paginate: true
 ## Activities: Written commentary
 
 - short written commentary on a given topic
-- e.g. compare the target-dependent optimizations available in GCC and LLVM compilers
+- e.g. compare the target-dependent optimizations available in [GCC](https://gcc.gnu.org/) and [Clang](https://clang.llvm.org/)/[LLVM](https://llvm.org/) compilers
 - 2 during the semester
 - max. 10 points in total
 
@@ -116,6 +118,14 @@ paginate: true
 
 ---
 
+## Usage of ChatGPT
+
+- You are allowed to use [ChatGPT](https://openai.com/blog/chatgpt). However, if you use it, make sure that you:
+    - thoroughly check the produced output and verify its correctness with external sources, and
+    - note the usage of ChatGPT (e.g. in a paragraph at the start of the written commentary or homework).
+
+---
+
 ## Mandatory literature
 
 1. Cooper, K. D. & Torczon, L. Engineering a compiler. (Elsevier/Morgan Kaufmann, 2011).
@@ -131,10 +141,20 @@ paginate: true
 
 ---
 
-## Required software
+## Required software for written commentary and homework
 
 - Visual Studio Code ([code.visualstudio.com](https://code.visualstudio.com/))
     - Markdown editing: `ms-vscode.wordcount`, `DavidAnson.vscode-markdownlint`
-    - Graphviz preview: `joaompinto.vscode-graphviz`
-- If you're on Windows, install Windows Subsystem for Linux (WSL) ([docs.microsoft.com/en-us/windows/wsl/install](https://docs.microsoft.com/en-us/windows/wsl/install)) and VS Code extension `ms-vscode-remote.remote-wsl`
+    - graph drawing, either:
+        - [Mermaid](https://mermaid.js.org/) preview: `bierner.markdown-mermaid`
+        - [Graphviz](https://graphviz.org/) preview: `tintinweb.graphviz-interactive-preview`
+
+---
+
+## Additional required software for project development
+
+- If you're on Windows, install:
+    - Windows Subsystem for Linux (WSL) ([docs.microsoft.com/en-us/windows/wsl/install](https://docs.microsoft.com/en-us/windows/wsl/install))
+    - Windows Terminal ([learn.microsoft.com/en-us/windows/terminal/](https://learn.microsoft.com/en-us/windows/terminal/))
+    - VS Code [Remote Development](https://code.visualstudio.com/docs/remote/remote-overview) extension `ms-vscode-remote.remote-wsl`
 - VS Code C++ extension: `ms-vscode.cpptools`
