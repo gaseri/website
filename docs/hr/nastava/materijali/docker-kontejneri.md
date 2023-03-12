@@ -500,7 +500,7 @@ U sljedećem zadatku izradit ćete Python aplikaciju koja će vam nuditi izbor f
 
 Kao alat, Docker ima vrlo široku primjenu. U ovom projektu iskoristiti ću ga kao alat za dijeljenje kompaktnog OS-a za rad sa JSON-om.
 
-Ideja jest da se napravi mali OS koji ce se moci pokrenuti na svakoj mašini gdje god se nalazio, i da ču na toj mašini imati instalirane sve potrebne alate za rad u JSON-u i podizanje izmjenjenih fileova na GitHub.
+Ideja jest da se napravi mali OS koji će se moći pokrenuti na svakoj mašini gdje god se nalazio i da će na toj mašini imati instalirane sve potrebne alate za rad u JSON-u i podizanje izmjenjenih fileova na GitHub.
 
 ### Distribucija prilagođenog OS-a
 

@@ -98,7 +98,7 @@ Više detalja o strujanju u VLC-u može se pronaći na VideoLAN-ovom wikiju u di
 
 ## Transkodiranje
 
-Ako većina klijenata do kojih želim doprijeti koristi operacijski sustav Windows, znači da ću ja za VLC koristiti argument da on transkodira video u Windows Media Video (wmv) jer ću time moć doprijeti do najvećeg broja klijenata i bit ću sigurna da neće imati problema sa gledanjem mojih video snimki. Ako se na playlisti nalazi video u formatu avi, mpeg1, i sl., svaki taj video će se transkodirati u wmv format jer onda pouzdano znam da će većina korisnika (klijenata) bez ikakvih dodatnih kodeka moći gledati iste.
+Ako većina klijenata do kojih želim doprijeti koristi operacijski sustav Windows, znači da ću ja za VLC koristiti argument da on transkodira video u Windows Media Video (wmv) jer ću time moć doprijeti do najvećeg broja klijenata i bit ću sigurna da neće imati problema sa gledanjem mojih video snimki. Ako se na playlisti nalazi video u formatu avi, mpeg1 i sl., svaki taj video će se transkodirati u wmv format jer onda pouzdano znam da će većina korisnika (klijenata) bez ikakvih dodatnih kodeka moći gledati iste.
 
 Primjerice, za Windows Media Video version 1, bitrate 512 with MP3 audio and ASFH muxer over MMSH protocol (`mmsh://192.168.0.10:30001`) parametri su:
 

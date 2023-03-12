@@ -14,7 +14,7 @@ Capture filtre koristimo za određivanje podataka koje ćemo spremiti i analizir
 
 Popis predefiniranih capture filtara, koji služe kao primjeri kod izrade vlastitih, dostupan je pod `Capture/Capture Filters...` u izborniku.
 
-Da bi uključili korištenje capture filtra kod snimanja prometa, odaberite opciju `Capture Options` na početnom ekranu ili stavku `Capture/Options` u izborniku. U popisu su navedena mrežna sučelja; zadnji stupac navodi aktivne capture filtre, i prazan je ukoliko nijedan nije aktivan. Dvoklikom na sučelje na kojem snimamo pakete dobiva se mogućnost unosa u polje `Capture Filter:` koje odmah po unosu provjerava valjanost definiranih filtara, i u skladu s tim ih boji u crvenu ili zelenu boju. Klikom na gumb `Capture Filters:` dobiva se ranije navedeni popis predefiniranih capture filtera, s kojima možete isprobavati po želji.
+Da bi uključili korištenje capture filtra kod snimanja prometa, odaberite opciju `Capture Options` na početnom ekranu ili stavku `Capture/Options` u izborniku. U popisu su navedena mrežna sučelja; zadnji stupac navodi aktivne capture filtre i prazan je ukoliko nijedan nije aktivan. Dvoklikom na sučelje na kojem snimamo pakete dobiva se mogućnost unosa u polje `Capture Filter:` koje odmah po unosu provjerava valjanost definiranih filtara pa ih u skladu s tim boji u crvenu ili zelenu boju. Klikom na gumb `Capture Filters:` dobiva se ranije navedeni popis predefiniranih capture filtera, s kojima možete isprobavati po želji.
 
 ### Način rada filtera kod snimanja
 

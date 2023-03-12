@@ -29,7 +29,7 @@ Za pisanje radova koristite [LibreOffice](https://www.libreoffice.org/) i format
 - [reStructuredText](https://docutils.sourceforge.io/rst.html), [Sphinx](https://www.sphinx-doc.org/en/master/) i [Jeff Terraceov](https://jeffterrace.com/) [snop ekstenzija za akademske radove](https://jterrace.github.io/sphinxtr/) (preporučeni uređivač: [Visual Studio Code](https://code.visualstudio.com/) s proširenjem [reStructuredText](https://marketplace.visualstudio.com/items?itemName=lextudio.restructuredtext)) ili
 - [AsciiDoc](https://asciidoc.org/) i [Asciidoctor](https://asciidoctor.org/) (preporučeni uređivač: [Visual Studio Code](https://code.visualstudio.com/) s proširenjem [AsciiDoc](https://marketplace.visualstudio.com/items?itemName=asciidoctor.asciidoctor-vscode)).
 
-LibreOffice i LaTeX rade izvrsne PDF-ove (Sphinx također stvara PDF korištenjem LaTeX-a), i mogu, ako je potrebno, napraviti [PDF/A](https://en.wikipedia.org/wiki/PDF/A), varijantu PDF-a prikladnu za arhiviranje i dugoročno čuvanje digitalnih dokumenata.
+LibreOffice i LaTeX rade izvrsne PDF-ove (Sphinx također stvara PDF korištenjem LaTeX-a). Dodatno mogu, ako je potrebno, napraviti [PDF/A](https://en.wikipedia.org/wiki/PDF/A), varijantu PDF-a prikladnu za arhiviranje i dugoročno čuvanje digitalnih dokumenata.
 
 Za upravljanje navodima možete koristiti [Zotero](https://www.zotero.org/) (koji ima i plug-in za LibreOffice) i/ili [BibTeX](http://www.bibtex.org/). Koristite [stil citiranja IEEE](https://ieee-dataport.org/sites/default/files/analysis/27/IEEE%20Citation%20Guidelines.pdf).
 
@@ -649,7 +649,7 @@ Brojne mrežne aplikacije koje svakodnevno vrše šifriranje i dešifriranje sad
 
 **Opis teme:**
 
-Osim ozbiljnih RFC-a, kao što su primjerice oni koji opisuju TCP, IPv6 ili ICMP, postoji i određeni broj RFC-a objavljenih na prvi april koji sadrže inženjerske šale. Bez obzira na njihov humorističan karakter, većina prvoaprilskih RFC-a može se povezati s aktualnim tehnologijama i problemima u domeni računalnih mreža te su stoga zanimljivi za analizu. Cilj rada je analizirati nekolicinu prvoaprilskih RFC-a po izboru studenta, i povezati ih s ozbiljnim RFC-ima na koje se vežu.
+Osim ozbiljnih RFC-a, kao što su primjerice oni koji opisuju TCP, IPv6 ili ICMP, postoji i određeni broj RFC-a objavljenih na prvi april koji sadrže inženjerske šale. Bez obzira na njihov humorističan karakter, većina prvoaprilskih RFC-a može se povezati s aktualnim tehnologijama i problemima u domeni računalnih mreža te su stoga zanimljivi za analizu. Cilj rada je analizirati nekolicinu prvoaprilskih RFC-a po izboru studenta i povezati ih s ozbiljnim RFC-ima na koje se vežu.
 
 **Literatura:**
 
@@ -1169,7 +1169,7 @@ Oba datotečna sustava stavljaju naglasak na skaliranje, te na popravak nedostat
 
 **Opis teme:**
 
-Softver kao autorsko djelo spada pod zakon o autorskom pravu, a pored toga je u pojedinim državama patentabilan. Zakon o autorskom pravu nad softverom uglavnom nije predmet kritike, ali softverski patenti jesu. Iako originalno zamišljeni da štite inovatora od neovlaštenog kopiranja njegove ideje, i daju inovatoru prednost pred drugima na tržištu, danas se uglavnom koriste za obračunavanje velikih korporacija s novonastalom konkurencijom, za obranu velikih korporacija od podjednako velike konkurencije, te od strane takozvanih "patent trollova" za stjecanje profita na temelju kršenju patenata od strane korporacija koje su se probile na tržištu. Zadatak rada je opisati, kategorizirati i međusobno usporediti softverske licence te dati pregled zakonskog okvira koji se odnosi na softverske patenate u EU i SAD-u. Pored toga, potrebno je analizirati nekoliko aktualnih primjera prema izboru studenta velikih korporacija, "patent trollova" i patenata oko kojih su se vodili sudski procesi.
+Softver kao autorsko djelo spada pod zakon o autorskom pravu, a pored toga je u pojedinim državama patentabilan. Zakon o autorskom pravu nad softverom uglavnom nije predmet kritike, ali softverski patenti jesu. Iako originalno zamišljeni da štite inovatora od neovlaštenog kopiranja njegove ideje i daju inovatoru prednost pred drugima na tržištu, danas se uglavnom koriste za obračunavanje velikih korporacija s novonastalom konkurencijom, za obranu velikih korporacija od podjednako velike konkurencije, te od strane takozvanih "patent trollova" za stjecanje profita na temelju kršenju patenata od strane korporacija koje su se probile na tržištu. Zadatak rada je opisati, kategorizirati i međusobno usporediti softverske licence te dati pregled zakonskog okvira koji se odnosi na softverske patenate u EU i SAD-u. Pored toga, potrebno je analizirati nekoliko aktualnih primjera prema izboru studenta velikih korporacija, "patent trollova" i patenata oko kojih su se vodili sudski procesi.
 
 **Literatura:**
 
@@ -1196,7 +1196,7 @@ Softver kao autorsko djelo spada pod zakon o autorskom pravu, a pored toga je u 
 
 **Opis teme:**
 
-U jesen 1984. godine RFC 920 pod naslovom "Domain Requirements" uspostavio je prvih šest vršnih domena: .arpa, .gov, .edu, .com, .mil, .org, i najavio uspostavljanje vršnih domena za svaku pojedinu državu (npr. .de za Njemačku, .ch za Švicarsku, .hr za Hrvatsku). Ubrzo nastaje i .net, a 2000. godine nastaju i .aero, .biz, .coop, .info, .museum, .name i .pro, a nekoliko država, uključujući Kolumbiju, Tokelau, Palau i Kokosove Otoke, predaje svoje vršne domene na upravljanje privatnim kompanijama koje ih zatim prodaju kao alternativu prilično zauzetoj .com domeni.
+U jesen 1984. godine RFC 920 pod naslovom "Domain Requirements" uspostavio je prvih šest vršnih domena: .arpa, .gov, .edu, .com, .mil i .org te najavio uspostavljanje vršnih domena za svaku pojedinu državu (npr. .de za Njemačku, .ch za Švicarsku, .hr za Hrvatsku). Ubrzo nastaje i .net, a 2000. godine nastaju i .aero, .biz, .coop, .info, .museum, .name i .pro, a nekoliko država, uključujući Kolumbiju, Tokelau, Palau i Kokosove Otoke, predaje svoje vršne domene na upravljanje privatnim kompanijama koje ih zatim prodaju kao alternativu prilično zauzetoj .com domeni.
 
 Međutim, prava promjena događa se tek 2012. kad ICANN otvara mogućnost privatnim kompanijama da zauzmu generičku vršnu domenu. Zadatak rada je dati pregled programa novih vršnih domena, usporediti ga s prethodnim komercijalizacijama državnog domenskog prostora i analizirati njegove tehničke i društvene izazove.
 
@@ -1221,7 +1221,7 @@ Međutim, prava promjena događa se tek 2012. kad ICANN otvara mogućnost privat
 
 **Opis teme:**
 
-Tor (The Onion Router) je slobodan softver za anonimnu komunikaciju putem interneta. Iako se u medijima najčešće spominje kao alat za distribuiranje ilegalnih sadržaja i prodaju kontroliranih supstanci, njegove primjene su puno šire: omogućuje anonimnost korisnika interneta koji žele zaobići cenzuru, skriti svoj identitet od zlostavljača, i novinara koji želi objaviti priču koja sadrži povjerljive informacije i čijom objavom bi ugrozio sebe. Usluge unutar Tora nazivaju se skrivenim uslugama i koriste specifičnu domenu .onion koja nije dostupna van Tora (primjerice, Facebook je dostupan putem adrese facebookcorewwwi.onion). Kako .onion domena nema nema centralni registar, potrebno je znati točnu domenu svake usluge kako bi joj se moglo pristupiti. Zadatak rada je opisati način na koji Tor osigurava anonimnost korisnika i način rada skrivenih usluga.
+Tor (The Onion Router) je slobodan softver za anonimnu komunikaciju putem interneta. Iako se u medijima najčešće spominje kao alat za distribuiranje ilegalnih sadržaja i prodaju kontroliranih supstanci, njegove primjene su puno šire: omogućuje anonimnost korisnika interneta koji žele zaobići cenzuru, skriti svoj identitet od zlostavljača i novinara koji želi objaviti priču koja sadrži povjerljive informacije čijom objavom bi ugrozio sebe. Usluge unutar Tora nazivaju se skrivenim uslugama i koriste specifičnu domenu .onion koja nije dostupna van Tora (primjerice, Facebook je dostupan putem adrese facebookcorewwwi.onion). Kako .onion domena nema nema centralni registar, potrebno je znati točnu domenu svake usluge kako bi joj se moglo pristupiti. Zadatak rada je opisati način na koji Tor osigurava anonimnost korisnika i način rada skrivenih usluga.
 
 **Literatura:**
 

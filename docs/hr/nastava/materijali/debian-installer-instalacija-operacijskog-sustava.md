@@ -34,7 +34,7 @@ Instalacija redom sadrži iduće dijaloške okvire:
 
 Prosječna instalacija Linuxa na desktopu imat će od par stotina do dvije tisuće paketa. Radne stanice za razvoj softvera, obradu videa, 3D grafiku, digitalno izdavaštvo i slično će imati više ovisno o potrebama korisnika. S druge strane, poslužitelji uglavnom nemaju grafička sučelja pa je broj paketa koji se instaliraju manji, no to uvelike ovisi o funkcijama koje poslužitelj obavlja.
 
-Nakon ponovnog pokretanja računala, i izbacivanja instalacijskog medija, pokrenut će se GRUB na disku računala i ponuditi opciju pokretanja Debiana, i eventualno memtest86+-a i Windowsa.
+Nakon ponovnog pokretanja računala i izbacivanja instalacijskog medija, pokrenut će se GRUB na disku računala i ponuditi opciju pokretanja Debiana te eventualno memtest86+-a i Windowsa.
 
 !!! note
     Vrlo popularna distribucija Linuxa [Ubuntu](https://ubuntu.com/) je derivat Debiana, ali ne koristi isti softver za instalaciju operacijskog sustava. Više o instalaciji Ubuntua možete pronaći u službenim tutorialima za [Desktop](https://ubuntu.com/tutorials/install-ubuntu-desktop) (omogućuje i [isprobavanje prije instalacije](https://ubuntu.com/tutorials/try-ubuntu-before-you-install)) i [Server](https://ubuntu.com/tutorials/install-ubuntu-server).

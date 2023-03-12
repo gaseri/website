@@ -44,14 +44,14 @@ Tehnologija tuneliranja ima osobine čije prednosti značajno doprinose njezinoj
 Tehnologija tuneliranja koristi tri vrste protokola:
 
 - Protokol nosač -- ovi protokoli služe za usmjeravanje paketa po mreži ka njihovom odredištu. Tunelirani paketi imaju enkapsulaciju ovih protokola. Za usmjeravanje paketa po internetu koristi se IP protokol.
-- Protokol za enkapsulaciju -- ovi protokoli služe za učahurivanje originalnih podataka, i koriste se za stvaranje, održavanje i zatvaranje tunela. Najčešće korišteni su PPTP i L2TP protokoli.
+- Protokol za enkapsulaciju -- ovi protokoli služe za učahurivanje originalnih podataka i koriste se za stvaranje, održavanje i zatvaranje tunela. Najčešće korišteni su PPTP i L2TP protokoli.
 - Transportni protokol -- enkapsulira originalne podatke za transport kroz tunel.
 
 Najpoznatiji su PPP i SLIP protokol.
 
 ### Upravljanje VPN-om
 
-Govoreći o upravljanju, postoje dva pristupa virtualnim privatnim mrežama. Razlikujemo VPN kojima upravljaju korisnici, i VPN kojima upravljaju pružatelji mrežnih usluga (npr. Internet Service Provider -- ISP). Virtualne privatne mreže kojima upravljaju pružatelji mrežnih usluga dijele se na osnovu toga gdje se nalazi oprema koja implementira VPN:
+Govoreći o upravljanju, postoje dva pristupa virtualnim privatnim mrežama. Razlikujemo VPN kojima upravljaju korisnici i VPN kojima upravljaju pružatelji mrežnih usluga (npr. Internet Service Provider -- ISP). Virtualne privatne mreže kojima upravljaju pružatelji mrežnih usluga dijele se na osnovu toga gdje se nalazi oprema koja implementira VPN:
 
 - na strani pružatelja (PE -- provider edge),
 - na strani korisnika (CE -- customer edge).
@@ -82,7 +82,7 @@ VPN mreže koje koriste internet ili druge nezaštićene mreže obično koriste 
 
 ## Tinc
 
-[Tinc](https://www.tinc-vpn.org/) je open-source, samousmjeravajući protokol mesh mreža, koji se koristi za komprimiranje i kriptiranje virtualnih privatnih mreža. Projekt su započeli 1998. Guus Sliepen, Ivo Timmermans, i Wessel Dankers, a objavljen je kao GPL licencirani projekt.
+[Tinc](https://www.tinc-vpn.org/) je open-source, samousmjeravajući protokol mesh mreža, koji se koristi za komprimiranje i kriptiranje virtualnih privatnih mreža. Projekt su započeli 1998. Guus Sliepen, Ivo Timmermans i Wessel Dankers, a objavljen je kao GPL licencirani projekt.
 
 Tinc je aplikacija koja se koristi za tuneliranje i šifriranje tj. stvaranje sigurne VPN virtualne privatne mreže između korisnika tj. hostova na internetu. Tinc je Free Software aplikacija, licencirana kao GNU General Public License verzija 2 ili novija. Budući da se VPN pojavljuje na IP razini mrežnog koda kao normalan mrežni uređaj, nema potrebe prilagođavati bilo koji postojeći softver. To omogućava VPN korisnicima sigurnu međusobnu razmjenu informacija putem interneta, bez opasnosti izlaganja privatnih podataka neovlaštenim osobama.
 

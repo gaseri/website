@@ -4,7 +4,7 @@ author: Vedran Miletić
 
 # Kako se uključiti
 
-Uključiti se u rad grupe možete kroz istraživački, nastavni, i aktivistički rad.
+Uključiti se u rad grupe možete kroz istraživački, nastavni i aktivistički rad.
 
 ## Uključivanje u istraživački rad
 

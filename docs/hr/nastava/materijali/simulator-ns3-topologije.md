@@ -20,7 +20,7 @@ n1 ----- n2
            n4
 ```
 
-i u ns-3-u se slaže istom logikom kao i linearna topologija: prvo stvorimo kontejner `allNodes` sa 4 čvora. Zatim u kontejner `nodes12` stavljamo čvorove `n1` i `n2`, u kontejner `nodes23` čvorove `n2` i `n3`, i naposlijetku u `nodes24` čvorove `n2` i `n4`. Sve čvorove pritom dohvaćamo iz `allNodes`.
+i u ns-3-u se slaže istom logikom kao i linearna topologija: prvo stvorimo kontejner `allNodes` sa 4 čvora. Zatim u kontejner `nodes12` stavljamo čvorove `n1` i `n2`, u kontejner `nodes23` čvorove `n2` i `n3` te u kontejner `nodes24` čvorove `n2` i `n4`. Sve čvorove pritom dohvaćamo iz `allNodes`.
 
 ``` c++
 NodeContainer allNodes;

@@ -180,7 +180,7 @@ $ bro-cut service resp_bytes id.resp_h < conn.log | awk '$1 == "http" && $2 > 10
 65.54.95.7
 ```
 
-Prvo izvlačimo relevantna polja iz datoteke `conn.log`, a to su `id.resp_h`, `service`, i `resp_bytes`. Ideja je filtriranje svih konekcija označenih s `HTTP` kod kojih server koji odgovara na zahtjev šalje više od 1000000 bajtova podataka. Uvjet filtriranja izvodi naredba `awk` koja će pročitati redak, izvesti analizu podataka datoteke `conn.log` i ispisati rezultat. Naredbom `sort -u` izbacuju se duplicirane IP adrese.
+Prvo izvlačimo relevantna polja iz datoteke `conn.log`, a to su `id.resp_h`, `service` i `resp_bytes`. Ideja je filtriranje svih konekcija označenih s `HTTP` kod kojih server koji odgovara na zahtjev šalje više od 1000000 bajtova podataka. Uvjet filtriranja izvodi naredba `awk` koja će pročitati redak, izvesti analizu podataka datoteke `conn.log` i ispisati rezultat. Naredbom `sort -u` izbacuju se duplicirane IP adrese.
 
 Postoje li web serveri na nestandardnim vratima (80, 8080)?
 

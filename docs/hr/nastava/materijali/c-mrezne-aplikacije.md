@@ -87,7 +87,7 @@ socklen_t clilen;
 struct sockaddr_in serv_addr, cli_addr;
 ```
 
-Vršimo stvaranje socketa, i javljamo grešku u slučaju da nije uspješno.
+Vršimo stvaranje socketa i javljamo grešku u slučaju da nije uspješno.
 
 ``` c
 sockfd = socket (AF_INET, SOCK_STREAM, 0);
@@ -262,7 +262,7 @@ struct hostent *server;
 char buffer[256];
 ```
 
-Vršimo stvaranje socketa, i javljamo grešku u slučaju da nije uspješno.
+Vršimo stvaranje socketa i javljamo grešku u slučaju da nije uspješno.
 
 ``` c
 sockfd = socket (AF_INET, SOCK_STREAM, 0);
@@ -318,7 +318,7 @@ if (n < 0)
   error ("ERROR writing to socket");
 ```
 
-Vrijednost međuspremnika se ponovno postavlja na 0, i u njega se učitava korištenjem funkcije `read()` poruka primljena od poslužitelja. Vrijednost varijable `n` bit će broj pročitanih znakova; u slučaju da dođe do greške, bit će manji od 0 i greška će se ispisati na ekran. Poruka se zatim ispisuje na ekran.
+Vrijednost međuspremnika se ponovno postavlja na 0 i u njega se učitava korištenjem funkcije `read()` poruka primljena od poslužitelja. Vrijednost varijable `n` bit će broj pročitanih znakova; u slučaju da dođe do greške, bit će manji od 0 i greška će se ispisati na ekran. Poruka se zatim ispisuje na ekran.
 
 ``` c
 memset (buffer, 0, 256);
