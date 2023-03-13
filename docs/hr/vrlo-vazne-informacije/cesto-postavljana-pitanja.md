@@ -42,6 +42,16 @@ Razmotrimo tvrtku [Hugging Face](https://huggingface.co/), autore [Transformersa
 
 Naravno, mi imamo emoji [Smiling Face with Sunglasses (Cool) 😎](https://emojipedia.org/smiling-face-with-sunglasses/) kao svoj logo prije svega zato što to i jesmo.
 
+## Zašto baš emoji Cool 😎?
+
+Smatramo da je legitimno promatrati društvenu zbilju kako to rade [Prosečni Gaser](https://www.instagram.com/prosecni.gaser/) i [Djak.generacije](https://www.instagram.com/djak.generacije/) pa zbog toga koristiti [Wolf Face 🐺](https://emojipedia.org/wolf/) kao simbol gasera.
+
+Naravno, istovremeno smo svjesni da to nije jedini mogući način promatranja društvene zbilje. Za ilustraciju, razmotrimo jedan drugačiji pogled koji nudi [Nikolina Mitrović](https://www.instagram.com/nika_mitrovicc/) u 4. minuti i 1. sekundi audiovizualnog uratka pod naslovom [10 JE ALI NEMA PARA - NEMA IPHONE 13](https://youtu.be/9w5x622pSc8?t=241) objavljenog na [YouTube kanalu](https://www.youtube.com/@AnjaBla) [Anje Bla](https://www.instagram.com/anjablaa/). Nikolina kaže:
+
+> 10 je ali je gaser😎
+
+Možemo jasno i nedvosmisleno uočiti sraslost pojma gaser i emojija Cool 😎. Ona je ovdje dodatno istaknuta stilskim odabirom izostavljanja razmaka.
+
 ## Kako izgleda sastanak grupe?
 
 😎💬😎💬... 😎🤝😎.
