@@ -46,10 +46,10 @@ abstract: |
 
 ## Non-equilibrium pulling
 
-![Schematic picture of pulling a lipid out of a lipid bilayer with umbrella pulling. bg 120% right:45%](https://manual.gromacs.org/documentation/current/_images/pull.png)
+![Schematic picture of pulling a lipid out of a lipid bilayer with umbrella pulling. bg 120% right:45%](https://manual.gromacs.org/current/_images/pull.png)
 
 - Applies external force to the molecular system
-- Figure source: [Non-equilibrium pulling section](https://manual.gromacs.org/documentation/current/reference-manual/special/pulling.html) in the [GROMACS Reference Manual](https://manual.gromacs.org/documentation/current/reference-manual/)
+- Figure source: [Non-equilibrium pulling section](https://manual.gromacs.org/current/reference-manual/special/pulling.html) in the [GROMACS Reference Manual](https://manual.gromacs.org/current/reference-manual/)
 
 ---
 
@@ -143,7 +143,7 @@ abstract: |
 
 ## The new, general approach (1/3)
 
-- Inspired by [transformation pull coordinates](https://manual.gromacs.org/documentation/current/reference-manual/special/pulling.html#the-transformation-pull-coordinate)
+- Inspired by [transformation pull coordinates](https://manual.gromacs.org/current/reference-manual/special/pulling.html#the-transformation-pull-coordinate)
     - Uses the same [fast mathematical expression parser](https://beltoforion.de/en/muparser/)
 - Atom weight = dynamic weight factor computed from the expression **x** weight factor specified in the parameters file **x** atom mass-derived weight factor
 - Dynamic weight factor (and atom weight) recomputed in each simulation step

@@ -39,7 +39,7 @@ is new to you, consider searching for a tutorial.
 
 I also assume you have GROMACS installed on a machine available to you. Source
 code and installation instructions can be found on the [GROMACS documentation
-page](https://manual.gromacs.org/documentation/).
+page](https://manual.gromacs.org/).
 
 Throughout the tutorials, we'll be using OPLS methane and TIP4PEW water.
 

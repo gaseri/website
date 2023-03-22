@@ -8,7 +8,7 @@ author: Mario Radovan, Vedran Miletić, Ivan Ivakić, Domagoj Margan, Tomislav �
 
 ![GROMACS logo](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Gmx_logo_blue.png/1280px-Gmx_logo_blue.png)
 
-Osim razvoja u skladu s vlastitim i suradničkim istraživačkim interesima i interesima suradnika, grupa nastoji i [doprinijeti](https://manual.gromacs.org/documentation/current/dev-manual/contribute.html) održavanju GROMACS-ove [baze izvornog koda](https://manual.gromacs.org/documentation/current/dev-manual/overview.html), [sustava za izgradnju](https://manual.gromacs.org/documentation/current/dev-manual/build-system.html) i [dokumentacije](https://manual.gromacs.org/documentation/current/dev-manual/overview.html#dev-doc-layout) za buduće razvojne potrebe.
+Osim razvoja u skladu s vlastitim i suradničkim istraživačkim interesima i interesima suradnika, grupa nastoji i [doprinijeti](https://manual.gromacs.org/current/dev-manual/contribute.html) održavanju GROMACS-ove [baze izvornog koda](https://manual.gromacs.org/current/dev-manual/overview.html), [sustava za izgradnju](https://manual.gromacs.org/current/dev-manual/build-system.html) i [dokumentacije](https://manual.gromacs.org/current/dev-manual/overview.html#dev-doc-layout) za buduće razvojne potrebe.
 
 ## Razvoj online kolegija Optimizacija programskog koda (Code optimization) na Sveučilištu u Rijeci u akademskim godinama 2020./2021. i 2021./2022.
 
