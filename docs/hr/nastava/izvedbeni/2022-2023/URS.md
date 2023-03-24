@@ -34,7 +34,7 @@ Cilj je predmeta usvajanje znanja o upravljanja računalnim sustavima i vještin
 
 ### Uvjeti za upis predmeta
 
-Položeni predmeti Operacijski sustavi i Računalne mreže.
+Položen predmet Operacijski sustavi i odslušan predmet Računalne mreže.
 
 ### Očekivani ishodi učenja za predmet
 
