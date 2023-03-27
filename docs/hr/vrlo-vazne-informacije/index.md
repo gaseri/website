@@ -869,7 +869,7 @@ Oko mene moji ljudi, po-podižemo masu
 Na nastupu odvaljen, bato, opet skidam masku
 
 \[Strofa 2\]  
-Riba puca mi kô gram, pa joj zato bulja seva  
+Riba puca mi kô grom, pa joj zato bulja seva  
 Gde god odem pravim lom, pa joj zato brine keva  
 Ova godina je naša, puna flaša, sve u zicer  
 GASERI tu su sa mnom, nova konfa, pali blic  
