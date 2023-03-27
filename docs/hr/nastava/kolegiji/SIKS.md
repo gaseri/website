@@ -1,3 +1,8 @@
+---
+tags:
+  - (kolegij) siks
+---
+
 # Sigurnost informacijskih i komunikacijskih sustava
 
 - [Instalacija i konfiguracija softvera za vježbe iz kolegija Sigurnost informacijskih i komunikacijskih sustava](../materijali/siks-instalacija-softvera-garuda-linux.md)

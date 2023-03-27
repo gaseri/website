@@ -1,3 +1,8 @@
+---
+tags:
+  - (kolegij) mmos
+---
+
 # Mrežni i mobilni operacijski sustavi
 
 ## Vježbe

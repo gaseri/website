@@ -1,3 +1,8 @@
+---
+tags:
+  - (kolegij) inf-biotech
+---
+
 # Informatika (BioTech)
 
 ## Predavanja

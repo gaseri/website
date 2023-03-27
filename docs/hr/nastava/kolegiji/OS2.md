@@ -1,3 +1,8 @@
+---
+tags:
+  - (kolegij) os2
+---
+
 # Operacijski sustavi 2
 
 ## Vježbe

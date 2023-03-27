@@ -1,3 +1,8 @@
+---
+tags:
+  - (kolegij) urs
+---
+
 # Upravljanje računalnim sustavima
 
 ## Predavanja i vježbe

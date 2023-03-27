@@ -1,3 +1,8 @@
+---
+tags:
+  - (kolegij) dwa2
+---
+
 # Dinamičke web aplikacije 2
 
 ## Vježbe

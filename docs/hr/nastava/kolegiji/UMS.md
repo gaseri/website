@@ -1,3 +1,8 @@
+---
+tags:
+  - (kolegij) ums
+---
+
 # Upravljanje mrežnim sustavima
 
 ## Predavanja i vježbe

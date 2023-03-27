@@ -1,3 +1,8 @@
+---
+tags:
+  - (kolegij) rm1
+---
+
 # Računalne mreže 1
 
 ## Laboratorijske vježbe

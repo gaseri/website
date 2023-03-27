@@ -1,3 +1,8 @@
+---
+tags:
+  - (kolegij) os1
+---
+
 # Operacijski sustavi 1
 
 ## Vježbe

@@ -1,3 +1,8 @@
+---
+tags:
+  - (kolegij) rm-riteh
+---
+
 # Računalne mreže (RiTeh)
 
 ## Laboratorijske vježbe

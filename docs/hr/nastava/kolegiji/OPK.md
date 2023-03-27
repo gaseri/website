@@ -1,3 +1,8 @@
+---
+tags:
+  - (kolegij) opk
+---
+
 # Optimizacija programskog koda
 
 (Ova je stranica također dostupna [na engleskom jeziku](../../../en/teaching/courses/CO.md).)
