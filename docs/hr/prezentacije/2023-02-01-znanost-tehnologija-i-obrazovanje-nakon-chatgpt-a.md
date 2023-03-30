@@ -3,7 +3,7 @@ marp: true
 author: Vedran Miletić
 title: Znanost, tehnologija i obrazovanje nakon ChatGPT-a
 description: Predavanje na Rijeci tehnologije
-keywords: free software, open source, open science
+keywords: large language models, artificial intelligence, chatgpt
 theme: default
 class: _invert
 paginate: true
