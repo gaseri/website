@@ -430,6 +430,7 @@ nav:
         - Free energy of solvation of methane: en/tutorials/gromacs/4-methane-fe/index.md
         - Window sampling: en/tutorials/gromacs/5-umbrella/index.md
         - Test particle insertion: en/tutorials/gromacs/6-tpi/index.md
+      - Zettlr: en/tutorials/zettlr.md
     - Blog:
       - Blog index by tags: en/blog/index.md
       - Year 2022:
