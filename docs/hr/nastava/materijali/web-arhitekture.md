@@ -162,7 +162,7 @@ Mikrousluge u suštini slijede [Unixovu filozofiju](https://en.wikipedia.org/wik
 - [hr.wikipedia.org](https://hr.wikipedia.org/) ([Wikimedia servers](https://meta.wikimedia.org/wiki/Wikimedia_servers))
 - [moodle.srce.hr](https://model.srce.hr/) ([Moodle architecture](https://docs.moodle.org/dev/Moodle_architecture))
 - [www.openstreetmap.org](https://www.openstreetmap.org/) ([Component overview](https://wiki.openstreetmap.org/wiki/Component_overview))
-- [razmjena.org](https://razmjena.org/) (pronađite korištenu tehnologiju u footeru stranice)
+- [razmjena.github.io](https://razmjena.github.io/) (pronađite korištenu tehnologiju u footeru stranice)
 
 ---
 

@@ -49,7 +49,7 @@ Isti autori su u [starijem članku iz 1993. godine](https://www.nngroup.com/arti
 Iskoristimo [Network Monitor (Firefox Developer Tools)](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor) za mjerenje brzine prikaza kućne stranice nekoliko web sjedišta:
 
 - [webglsamples.org](https://webglsamples.org/)
-- [razmjena.org](https://razmjena.org/)
+- [razmjena.github.io](https://razmjena.github.io/)
 - [reviews.llvm.org](https://reviews.llvm.org/)
 - [www.inf.uniri.hr](https://www.inf.uniri.hr/)
 
