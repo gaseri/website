@@ -4,6 +4,8 @@ author: Vedran Miletić
 
 # Partnerstva i suradnje
 
+Naši interesi za potencijalne buduće suradnje navedeni su i opisani na [stranici GASERI na Razmjeni](https://razmjena.github.io/gaseri/).
+
 ## Obrazovni centar za grafičke procesore (GPU Education Center), bivši CUDA nastavni centar (CUDA Teaching Center)
 
 > Do your science; let us handle your computation.
