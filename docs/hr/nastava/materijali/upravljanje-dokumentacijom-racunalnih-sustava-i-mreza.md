@@ -30,6 +30,42 @@ Za rad s dokumentacijom koristit ćemo [Markdown](https://commonmark.org/help/) 
 
 ### Crtanje dijagrama
 
+Za crtanje dijagrama najčešće se koriste Mermaid i Graphviz.
+
+#### Mermaid
+
+[Mermaid](https://mermaid.js.org/) je sustav za crtanje dijagrama i grafova čija je sintaksa inspirirana Markdownom. Temeljen je na JavaScriptu pa omogućuje dinamičko stvaranje i promjenu dijagrama. Unutar Markdown dokumenta, kodom
+
+```` markdown
+``` mermaid
+graph LR;
+    LB[balanser opterećenja] --> WS1[web poslužitelj 1];
+    LB[balanser opterećenja] --> WS2[web poslužitelj 2];
+    WS1[web poslužitelj 1] --> DB[sustav za upravljanje bazom podataka];
+    WS2[web poslužitelj 2] --> DB[sustav za upravljanje bazom podataka];
+    WS1[web poslužitelj 1] --> cache[sustav za predmemoriju];
+    WS2[web poslužitelj 2] --> cache[sustav za predmemoriju];
+```
+````
+
+se navodi prikaz dijagrama oblika
+
+``` mermaid
+graph LR;
+    LB[balanser opterećenja] --> WS1[web poslužitelj 1];
+    LB[balanser opterećenja] --> WS2[web poslužitelj 2];
+    WS1[web poslužitelj 1] --> DB[sustav za upravljanje bazom podataka];
+    WS2[web poslužitelj 2] --> DB[sustav za upravljanje bazom podataka];
+    WS1[web poslužitelj 1] --> cache[sustav za predmemoriju];
+    WS2[web poslužitelj 2] --> cache[sustav za predmemoriju];
+```
+
+U [službenoj dokumentaciji](https://mermaid.js.org/intro/) moguće je pronaći više detalja oko podržanih vrsti dijagrama i sintakse kojom se navode. Za isprobavanje i brzi pregled nacrtanih dijagrama može se koristiti [Mermaid Live Editor](https://mermaid.live/).HackMD integrira podršku za Mermaid, a za Visual Studio Code moguće je koristiti [Markdown Preview Mermaid Support](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid).
+
+Vrijedi dodati i da ranije spomenuta [tema Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) [integrira podršku za Mermaid](https://squidfunk.github.io/mkdocs-material/reference/diagrams/).
+
+#### Graphviz
+
 [Graphviz](https://graphviz.org/) je softverski alat otvorenog koda za vizualizaciju grafova i može se koristiti za izradu [različitih vrsta dijagrama](https://graphviz.org/gallery/) koji prikazuju strukturu i način rada računalnih sustava i mreža. Grafovi se navode u obliku čistog teksta u [jeziku DOT](https://graphviz.org/doc/info/lang.html). Primjerice, graf koji opisuje infrastrukturu namijenjenu za izvođenje web aplikacije može biti oblika:
 
 ``` dot
