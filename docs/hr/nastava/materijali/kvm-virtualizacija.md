@@ -108,12 +108,15 @@ KVM podržava i druge arhitekture osim x86(-64), specifično [ARM, PowerPC i S/3
 
 Virtualizacija ulazno/izlaznih jedinica omogućuje virtualnim mašinama *izravno* korištenje perifernih uređaja (npr. mrežnih adaptera i grafičkih procesora, diskovnih kontrolera i slično) na računalu na kojem rade.
 
-Imena dvaju tehnologija koje omogućuju virtualizaciju upravitelja ulaznim/izlaznim jedinicama (IOMMU) na x86 procesorima su:
+Imena dvaju tehnologija koje omogućuju [virtualizaciju upravitelja ulaznim/izlaznim jedinicama](https://en.wikipedia.org/wiki/Input%E2%80%93output_memory_management_unit#Virtualization) (IOMMU) [na x86 procesorima](https://en.wikipedia.org/wiki/X86_virtualization#I/O_MMU_virtualization_(AMD-Vi_and_Intel_VT-d)) su:
 
 - Intel VT-d -- Intel Virtualization Technology for Directed I/O,
 - AMD-Vi -- AMD I/O Virtualization Technology.
 
 Obje tehnologije proširenje su postojećih tehnologija za hardverski potpomognutu virtualizaciju.
+
+!!! todo
+    Ovdje treba dodati opise za [Intel VT-c](https://en.wikipedia.org/wiki/X86_virtualization#Network_virtualization_(VT-c)) i [SR-IOV](https://en.wikipedia.org/wiki/Single-root_input/output_virtualization).
 
 #### QEMU i KVM
 
