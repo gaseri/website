@@ -12,21 +12,27 @@ Za održavanje dokumentacije mogu se koristiti programi za obradu teksta kao št
 
 ### Oblikovanje teksta
 
-Bez obzira na wiki ili generator, tri se načina oblikovanja teksta vrlo često koriste:
+Bez obzira na wiki ili generator, tri se načina oblikovanja teksta vrlo često koriste: Markdown, reStructuredText i AsciiDoc.
 
-- [Markdown](https://daringfireball.net/projects/markdown/), najčešće [varijanta koje je razvio GitHub](https://github.github.com/gfm/) za [pisanje prijava grešaka, komentara i drugog teksta](https://docs.github.com/en/github/writing-on-github), iako [postoje i druge](https://github.com/commonmark/commonmark-spec/wiki/Markdown-Flavors), među kojima je jedna od popularnijih [Python-Markdown](https://python-markdown.github.io/) korištena unutar sustava za izradu dokumentacije [MkDocs](https://www.mkdocs.org/),
+#### Markdown
 
-    - Primjerice, MkDocs i [tema Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) se koriste za proizvodnju [dokumentacije skupa proširenja PyMdown Extensions za Python-Markdown](https://facelessuser.github.io/pymdown-extensions/).
+Kod [Markdowna](https://daringfireball.net/projects/markdown/) se najčešće koristi [varijanta koje je razvio GitHub](https://github.github.com/gfm/) za [pisanje prijava grešaka, komentara i drugog teksta](https://docs.github.com/en/github/writing-on-github). [Postoje i druge varijante](https://github.com/commonmark/commonmark-spec/wiki/Markdown-Flavors), među kojima je jedna od popularnijih [Python-Markdown](https://python-markdown.github.io/), korištena unutar sustava za izradu dokumentacije [MkDocs](https://www.mkdocs.org/).
 
-- [reStructuredText](https://docutils.sourceforge.io/rst.html), najčešće [proširenje koje nudi Sphinx](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html), popularni generator dokumentacije inicijalno namijenjen za [dokumentaciju programskog jezika Python](https://docs.python.org/), a kasnije uopćen,
+Primjerice, MkDocs i [tema Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) se koriste za proizvodnju [ovog web sjedišta](../../povijest.md#markdown-mkdocs-i-material) te [dokumentacije rubnog usmjerivača Traefik](https://doc.traefik.io/traefik/), [web okvira FastAPI](https://fastapi.tiangolo.com/) i [skupa proširenja PyMdown Extensions za Python-Markdown](https://facelessuser.github.io/pymdown-extensions/).
 
-    - Primjerice, Sphinx i [tema Read the Docs](https://sphinx-rtd-theme.readthedocs.io/) se koriste za proizvodnju [dokumentacije jezgre operacijskog sustava Linux](https://www.kernel.org/doc/html/latest/).
+Za rad s dokumentacijom koristit ćemo [Markdown](https://commonmark.org/help/) i online uređivač [HackMD](https://hackmd.io/) ili desktop uređivač [Visual Studio Code](https://code.visualstudio.com/).
 
-- [AsciiDoc](https://asciidoc.org/), danas najčešće korišten u putem generatora dokumentacije [Asciidoctor](https://asciidoctor.org/) i [Antora](https://antora.org/).
+#### reStructuredText
 
-    - Primjerice, Asciidoctor se koristi za proizvodnju [dokumentacije operacijskog sustava FreeBSD](https://docs.freebsd.org/), a Antora za proizvodnju [dokumentacije operacijskog sustava Fedora Linux](https://docs.fedoraproject.org/).
+Kod [reStructuredTexta](https://docutils.sourceforge.io/rst.html) se najčešće koristi [proširenje](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html) koje nudi [Sphinx](https://www.sphinx-doc.org/), popularni generator dokumentacije inicijalno namijenjen za [dokumentaciju programskog jezika Python](https://docs.python.org/), a kasnije uopćen.
 
-Za rad s dokumentacijom koristit ćemo [Markdown](https://commonmark.org/help/) te online uređivač [HackMD](https://hackmd.io/) ili desktop uređivač [Visual Studio Code](https://code.visualstudio.com/).
+Primjerice, Sphinx i [tema Read the Docs](https://sphinx-rtd-theme.readthedocs.io/) se koriste za proizvodnju [dokumentacije programskog jezika za implementaciju pametnih ugovora Solidity](https://docs.soliditylang.org/) i [jezgre operacijskog sustava Linux](https://www.kernel.org/doc/html/latest/), a isti alat i tema [Furo](https://pradyunsg.me/furo/) za proizvodnju [dokumentacije simulatora molekulske dinamike GROMACS](https://manual.gromacs.org/current/).
+
+#### AsciiDoc
+
+[AsciiDoc](https://asciidoc.org/) se najčešće koristi putem generatora dokumentacije [Asciidoctor](https://asciidoctor.org/) i [Antora](https://antora.org/).
+
+Primjerice, Asciidoctor se koristi za proizvodnju [dokumentacije operacijskog sustava FreeBSD](https://docs.freebsd.org/), a Antora za proizvodnju [dokumentacije operacijskog sustava Fedora Linux](https://docs.fedoraproject.org/).
 
 ### Crtanje dijagrama
 
