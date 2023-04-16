@@ -137,10 +137,10 @@ Za stvaranje slika diskova za QEMU-ove virtualne strojeve iskoristit ćemo [QEMU
 $ qemu-img create -f qcow2 moj-disk.qcow2 50G
 ```
 
-Recimo da smo odlučili instalirati [Ubuntu Server 20.04.3 LTS](https://ubuntu.com/download/server) na taj disk. Nakon preuzimanja instalacijskog medija `ubuntu-20.04.3-live-server-amd64.iso`, instalaciju Ubuntua unutar QEMU-a možemo pokrenuti naredbom:
+Recimo da smo odlučili instalirati [Arch Linux](https://archlinux.org/download/) na taj disk. Nakon preuzimanja instalacijskog medija `archlinux-2023.04.01-x86_64.iso`, instalaciju Arch Linuxa unutar QEMU-a možemo pokrenuti naredbom:
 
 ``` shell
-$ qemu-system-x86_64 -accel kvm -cpu host -smp 2 -m 4096 -drive file=moj-disk.qcow2 -cdrom ubuntu-20.04.3-live-server-amd64.iso -boot once=d
+$ qemu-system-x86_64 -accel kvm -cpu host -smp 2 -m 4096 -drive file=moj-disk.qcow2 -cdrom archlinux-2023.04.01-x86_64.iso -boot once=d
 ```
 
 Ovom naredbom smo pokrenuli QEMU koji stvara virtualni stroj arhitekture x86_64 (dakle, iste kao domaćin pa ne vrši emulaciju) i:
@@ -150,34 +150,37 @@ Ovom naredbom smo pokrenuli QEMU koji stvara virtualni stroj arhitekture x86_64 
 - dvije procesorske jezgre (`-smp 2`)
 - 4 gigabajta radne memorije (`-m 4096`, navodi se u megabajtima)
 - koristi ranije stvorenu sliku diska kao čvrsti disk (`-drive file=moj-disk.qcow2`)
-- koristi ranije preuzeti instalacijski medij kao CD-ROM (`-cdrom ubuntu-20.04.3-live-server-amd64.iso`)
+- koristi ranije preuzeti instalacijski medij kao CD-ROM (`-cdrom archlinux-2023.04.01-x86_64.iso`)
 - pokreće jednom s CD-ROM-a, svaki sljedeći put s čvrstog diska (`-boot once=d`)
 
 Više detalja možemo pronaći u man stranici `qemu(1)` (naredba `man 1 qemu`) ili u [dijelu Invocation službene dokumentacije](https://www.qemu.org/docs/master/system/invocation.html).
 
 !!! admonition "Zadatak"
-    - Provedite instalaciju Ubuntua pa ponovno pokrenite virtualnu mašinu, ali bez Ubuntuovog instalacijskog medija.
+    - Provedite instalaciju Arch Linuxa prema [službenom vodiču na ArchWikiju](https://wiki.archlinux.org/title/Installation_guide) (koji je [DistroTube](https://distro.tube/) prezentirao [audiovizualnom obliku](https://youtu.be/PQgyW10xD8s)) ili [korištenjem pomoćne biblioteke archinstall](https://wiki.archlinux.org/title/Archinstall) (za koju također postoje DistroTubeove [upute u audiovizualnom obliku](https://youtu.be/leQbSsu-7F4)) pa ponovno pokrenite virtualnu mašinu, ali sada bez instalacijskog medija.
     - Ponovno pokrenite virtualnu mašinu, ali tako da joj date na korištenje samo jednu procesorsku jezgru i samo 2 GB radne memorije.
 
 ### Paravirtualizacija
 
 Paravirtualizacija, za razliku od potpune virtualizacije, je virtualizacijska tehnika koja s ciljem poboljašanja performansi ne emulira sav hardver računalnog sustava i stoga očekuje da je gostujući operacijski sustav prilagođen radu u virtualnoj mašini.
 
-Najznačajnije rješenje u ovom području je [Xen Project](https://xenproject.org/), čiji razvoj financira Linux Foundation, a nekad je bio u vlasništu tvrtke [Citrix Systems](https://www.citrix.com/), koja je [kupila XenSource](https://www.cnet.com/news/citrix-to-buy-virtualization-company-xensource-for-500-million/).
+Najznačajnije rješenje u ovom području je [Xen](https://xenproject.org/) ([Wikipedia](https://en.wikipedia.org/wiki/Xen)), čiji razvoj financira [Linux Foundation](https://www.linuxfoundation.org/). Xen je ranije bio u vlasništu tvrtke [Citrix Systems](https://www.citrix.com/), koja je [kupila XenSource](https://www.cnet.com/news/citrix-to-buy-virtualization-company-xensource-for-500-million/).
 
-Ovo spominjemo radi potpunosti i ovdje se detaljnije ovom vrstom virtualizacije nećemo baviti.
+Informacije o konfiguriranju Xena na Arch Linuxu moguće je pronaći na [stranici Xen na ArchWikiju](https://wiki.archlinux.org/title/Xen). Ovu vrstu virtualizacije spominjemo samo radi potpunosti i ovdje se detaljnije njome nećemo baviti.
 
 ### Virtualizacija na razini operacijskog sustava
 
 virtualizacija na razini operacijskog sustava je virtualizacijska metoda kod koje jezgra operacijskog sustava omogućuje pokretanje više izoliranih instanci prostora korisničkih aplikacija umjesto samo jedne. Svaka od tih instanci, koje se često nazivaju kontejneri (engl. *containers*) ili zatvori (engl. *jails*), iz pozicije korisnika unutar nje izgleda kao stvarni poslužitelj.
 
-[Linux Containers (LXC)](https://linuxcontainers.org/) je virtualizacija na razini operacijskog sustava namijenjena za Linux koja na osnovu [kontrolnih grupa jezgre](https://en.wikipedia.org/wiki/Cgroups) (engl. *kernel control groups*) ([službena dokumentacija verzije 1](https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v1/index.html), [službena dokumentacija verzije 2](https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v2.html)) i [izolacije imenika](https://prefetch.net/blog/2018/02/22/making-sense-of-linux-namespaces/) (engl. *namespace isolation*).
+[Linux Containers (LXC)](https://linuxcontainers.org/) ([Wikipedia](https://en.wikipedia.org/wiki/LXC), [ArchWiki](https://wiki.archlinux.org/title/Linux_Containers)) je virtualizacija na razini operacijskog sustava namijenjena za Linux koja koristi:
+
+- [kontrolne grupa jezgre](https://en.wikipedia.org/wiki/Cgroups) (engl. *kernel control groups*) ([stranica Cgroups na ArchWikiju](https://wiki.archlinux.org/title/Cgroups), [službena dokumentacija verzije 1](https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v1/index.html), [službena dokumentacija verzije 2](https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v2.html))
+- [izolaciju imenika](https://prefetch.net/blog/2018/02/22/making-sense-of-linux-namespaces/) (engl. *namespace isolation*) ([Wikipedia](https://en.wikipedia.org/wiki/Linux_namespaces)).
+
+Popularnija rješenja temeljena na kontrolnim grupama jezgre i izolaciji imenika su [systemd-nspawn](https://www.freedesktop.org/software/systemd/man/systemd-nspawn.html) ([ArchWiki](https://wiki.archlinux.org/title/Systemd-nspawn)) i [Docker](https://www.docker.com/) ([Wikipedia](https://en.wikipedia.org/wiki/Docker_(software)), [ArchWiki](https://wiki.archlinux.org/title/Docker)).
 
 Alternativna rješenja koja se u praksi sreću su [Linux-VServer](http://www.linux-vserver.org/) i [OpenVZ](https://openvz.org/) za Linux, [Jails](https://wiki.freebsd.org/Jails) za FreeBSD i [Solaris Containers/Zones](https://www.usenix.org/legacy/event/lisa04/tech/full_papers/price/price.pdf) za Oracle Solaris.
 
-Ovo također spominjemo radi potpunosti i ovdje se detaljnije ovom vrstom virtualizacije nećemo baviti.
-
-## Virtualizacija i obični korisnici
+## Svakodnevna primjena virtualizacije
 
 Virtualizacija se relativno brzo preselila sa poslužitelja na radne stanice i desktope običnih korisnika.
 
@@ -218,5 +221,10 @@ Virtualna primjena je slika virtualnog stroja namijenjena pokretanju na određen
 [Open Virtualization Format (OVF)](https://www.dmtf.org/standards/ovf) je otvoreni standard za pakiranje i distribuciju virtualnih primjena i općenitog softvera za virtualne strojeve.
 
 !!! admonition "Zadatak"
-    - Preuzmite [virtualnu primjenu Ubuntu LTS-a](https://cloud-images.ubuntu.com/focal/current/).
-    - Pokrenite virtualnu primjenu.
+    - Preuzmite [virtualnu primjenu Windows 11 razvojnog okruženja](https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/) za VirtualBox.
+    - Pokrenite virtualnu primjenu u VirtualBoxu.
+
+### Vagrant
+
+!!! todo
+    Opisati [Vagrant](https://www.vagrantup.com/) s primjerima korištenja Archevih `.box` datoteka za libvirt i VirtualBox (mogu se preuzeti kao [artefakti poslova](https://gitlab.archlinux.org/archlinux/arch-boxes/-/jobs/artifacts/master/browse/output?job=build:secure) u [repozitoriju archlinux/arch-boxes](https://gitlab.archlinux.org/archlinux/arch-boxes/) na [Archevom GitLabu](https://gitlab.archlinux.org/)).
