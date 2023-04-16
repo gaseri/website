@@ -137,6 +137,8 @@ Za stvaranje slika diskova za QEMU-ove virtualne strojeve iskoristit ćemo [QEMU
 $ qemu-img create -f qcow2 moj-disk.qcow2 50G
 ```
 
+Više informacija o korištenju alata `qemu-img` moguće je pronaći u [odjeljku Creating a hard disk image stranice QEMU na ArchWikiju](https://wiki.archlinux.org/title/QEMU#Creating_a_hard_disk_image).
+
 Recimo da smo odlučili instalirati [Arch Linux](https://archlinux.org/download/) na taj disk. Nakon preuzimanja instalacijskog medija `archlinux-2023.04.01-x86_64.iso`, instalaciju Arch Linuxa unutar QEMU-a možemo pokrenuti naredbom:
 
 ``` shell
