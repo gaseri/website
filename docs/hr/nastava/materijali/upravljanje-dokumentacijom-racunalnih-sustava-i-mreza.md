@@ -22,6 +22,9 @@ Primjerice, MkDocs i [tema Material for MkDocs](https://squidfunk.github.io/mkdo
 
 Za rad s dokumentacijom koristit ćemo [Markdown](https://commonmark.org/help/) i online uređivač [HackMD](https://hackmd.io/) ili desktop uređivač [Visual Studio Code](https://code.visualstudio.com/).
 
+!!! admonition "Zadatak"
+    Unutar Visual Studio Codea instalirajte proširenje [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) (`DavidAnson.vscode-markdownlint`). Stvorite novi Markdown dokument, a zatim pronađite način da izazovete barem pet različitih upozorenja od strane markdownlinta kršenjem stilskih pravila tekstom u dokumentu.
+
 #### reStructuredText
 
 Kod [reStructuredTexta](https://docutils.sourceforge.io/rst.html) se najčešće koristi [proširenje](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html) koje nudi [Sphinx](https://www.sphinx-doc.org/), popularni generator dokumentacije inicijalno namijenjen za [dokumentaciju programskog jezika Python](https://docs.python.org/), a kasnije uopćen.
@@ -69,6 +72,9 @@ graph LR;
 U [službenoj dokumentaciji](https://mermaid.js.org/intro/) moguće je pronaći više detalja oko podržanih vrsti dijagrama i sintakse kojom se navode. Za isprobavanje i brzi pregled nacrtanih dijagrama može se koristiti [Mermaid Live Editor](https://mermaid.live/).HackMD integrira podršku za Mermaid, a za Visual Studio Code moguće je koristiti [Markdown Preview Mermaid Support](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid).
 
 Vrijedi dodati i da ranije spomenuta [tema Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) [integrira podršku za Mermaid](https://squidfunk.github.io/mkdocs-material/reference/diagrams/).
+
+!!! admonition "Zadatak"
+    Modificirajte primjer dijagrama tako da ima uključuje još jedan web poslužitelj i sustav za slanje elektroničke pošte.
 
 #### Graphviz
 
