@@ -84,6 +84,23 @@ U svom [poznatom govoru](https://hr.wikisource.org/wiki/Govor_Franje_Tu%C4%91man
 
 Naravno da nema, jedino [Bore Balboa](https://youtu.be/x9x0oAcjFNA?t=42s) ima [u kući više teleskopa nego Ruđer Bošković](https://genius.com/23445076).
 
+## Koju distribuciju Linuxa koriste vaše kolege s Ceraka u Beogradu?
+
+Nemamo službenu potvrdu, ali nagađamo da bi to mogao biti [Arch Linux](https://wiki.archlinux.org/title/Arch_Linux) ili barem neka od [distribucija temeljenih na Archu](https://wiki.archlinux.org/title/Arch-based_distributions). Naime, analiziramo li [tekst](https://genius.com/Biba-paris-flow-3-lyrics) [Bibine](https://genius.com/artists/Biba) pjesme [Paris Flow #3](https://youtu.be/XBCNhQqeWs0), nalazimo usporedbu ponašanja djevojke u čijem se društvu nalazi s [Pacmanom](https://wiki.archlinux.org/title/Pacman):
+
+> Ova \[mala\] ​je ko Pacman, jede sve bombonice
+
+``` shell
+$ pacman --version 
+
+ .--.                  Pacman v6.0.2 - libalpm v13.0.2
+/ _.-' .-.  .-.  .-.   Copyright (C) 2006-2021 Pacman Development Team
+\  '-. '-'  '-'  '-'   Copyright (C) 2002-2006 Judd Vinet
+ '--'
+Ovaj program može biti slobodno distribuiran 
+sukladno pravilima GNU General Public License.
+```
+
 ## Jesu li GASERI u ontološko-fenomenološkom smislu tradicionalni ili moderni?
 
 Oko ovog pitanja u [javnom](https://sh.wikipedia.org/wiki/Dizela%C5%A1i) [diskursu](https://vukajlija.com/gaser) postoje [stanovita](https://www.instagram.com/prosecni.gaser/) [neslaganja](https://znatko.com/17071/tko-je-gaser) pa smo odlučili prepustiti [umjetnoj inteligenciji Craiyon](https://www.craiyon.com/) (ranije poznatoj pod imenom [DALL-E mini](https://github.com/borisdayma/dalle-mini)) da na njega odgovori.
