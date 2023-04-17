@@ -85,13 +85,13 @@ Za instalaciju softvera u virtualnom stroju koristimo upravitelj paketa [pacman]
 Pokretanjem naredbe `pacman` s parametrom `--version` možemo saznati informacije o dostupnoj verziji pacmana:
 
 ``` shell
-$ pacman --version 
+$ pacman --version
 
  .--.                  Pacman v6.0.2 - libalpm v13.0.2
 / _.-' .-.  .-.  .-.   Copyright (C) 2006-2021 Pacman Development Team
 \  '-. '-'  '-'  '-'   Copyright (C) 2002-2006 Judd Vinet
  '--'
-Ovaj program može biti slobodno distribuiran 
+Ovaj program može biti slobodno distribuiran
 sukladno pravilima GNU General Public License.
 ```
 
