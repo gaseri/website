@@ -87,6 +87,7 @@ nav:
         - LDAP poslužitelj 389 Directory Server: hr/nastava/materijali/389-directory-server-ldap-posluzitelj.md
         - Instalacija operacijskih sustava Fedora i CentOS korištenjem instalacijskog alata Anaconda: hr/nastava/materijali/anaconda-instalacija-operacijskog-sustava.md
         - Automatizacija konfiguracije i održavanja sustava alatom Ansible: hr/nastava/materijali/ansible-automatizacija-konfiguracije-odrzavanja-sustava.md
+        - Instalacija i konfiguracija softvera za vježbe iz kolegija Arhitektura i organizacija računala: hr/nastava/materijali/aor-instalacija-softvera-windows-ubuntu.md
         - Mjerenje performansi web poslužitelja alatom ab (Apache HTTP server benchmarking tool): hr/nastava/materijali/apache-ab-mjerenje-performansi-web-posluzitelja.md
         - Konfiguracija HTTPS-a u web poslužitelju Apache HTTP Server: hr/nastava/materijali/apache-mod-ssl.md
         - Pokretanje PHP web aplikacija u web poslužitelju Apache HTTP Server: hr/nastava/materijali/apache-pokretanje-php-aplikacija.md
