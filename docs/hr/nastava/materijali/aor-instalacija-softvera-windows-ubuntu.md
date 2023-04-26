@@ -22,10 +22,10 @@ Instalirajte iz Microsoft Storea:
 
 ### Uključivanje i isključivanje značajki sustava Windows
 
-U Postavkama uključite značajke sustava Windows:
+U tražilicu postavki odaberite Uključivanje i isključivanje značajki sustava Windows (engl. *Turn Windows features on and off*) te uključite sljedeće značajke sustava Windows:
 
-- Podsustav Linux za Windows
-- Platforma virtualnog računala
+- Podsustav Linux za Windows (engl. *Windows Subsystem for Linux*)
+- Platforma virtualnog računala (engl. *Virtual Machine PLatform*)
 
 Ponovno pokrenite računalo.
 
@@ -53,7 +53,7 @@ i prihvatite nadogradnje koje vam ponudi.
 
 ### Instalacija Clanga i LLVM-a
 
-Upišite naredbu:
+Za instalaciju [Clanga](https://clang.llvm.org/) i [LLVM-a](https://llvm.org/) upišite naredbu:
 
 ``` shell
 $ sudo apt install build-essential clang llvm
@@ -76,4 +76,4 @@ Ako ste na Windowsima, u dijelu `Extensions` koji se nalazi u `Side Bar`-u ([pre
 
 ### Otvaranje direktorija projekta
 
-Povežite se na Ubuntu koji ste instalirali pa otvorite direktorij `mojprojekt`.
+U donjem lijevom kutu kliknite na *Open a Remote Window*, a zatim se povežite na Ubuntu koji ste instalirali klikom na *Connect to WSL* pa otvorite direktorij `mojprojekt`.
