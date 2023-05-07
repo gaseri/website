@@ -25,7 +25,7 @@ Instalirajte iz Microsoft Storea:
 U tražilicu postavki odaberite Uključivanje i isključivanje značajki sustava Windows (engl. *Turn Windows features on and off*) te uključite sljedeće značajke sustava Windows:
 
 - Podsustav Linux za Windows (engl. *Windows Subsystem for Linux*)
-- Platforma virtualnog računala (engl. *Virtual Machine PLatform*)
+- Platforma virtualnog računala (engl. *Virtual Machine Platform*)
 
 Ponovno pokrenite računalo.
 
@@ -76,4 +76,4 @@ Ako ste na Windowsima, u dijelu `Extensions` koji se nalazi u `Side Bar`-u ([pre
 
 ### Otvaranje direktorija projekta
 
-U donjem lijevom kutu kliknite na *Open a Remote Window*, a zatim se povežite na Ubuntu koji ste instalirali klikom na *Connect to WSL* pa otvorite direktorij `mojprojekt`.
+U donjem lijevom kutu kliknite na `Open a Remote Window`, a zatim se povežite na Ubuntu koji ste instalirali klikom na `Connect to WSL` pa otvorite direktorij `mojprojekt`.
