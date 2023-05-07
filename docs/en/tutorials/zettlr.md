@@ -18,7 +18,7 @@ In the following, we will be relying on Zettlr's [official documentation](https:
 
 ## Editing and exporting documents
 
-- [What You See Is What You Mean (WYSIWYM)¶](https://docs.zettlr.com/en/concepts/wysiwym/)
+- [What You See Is What You Mean (WYSIWYM)](https://docs.zettlr.com/en/concepts/wysiwym/)
 - [Exporting](https://docs.zettlr.com/en/core/export/), emphasis on exporting to HTML, OpenDocument Text, Microsoft Word, and PDF Document
 
 ## Academic usage
