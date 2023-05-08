@@ -6,6 +6,31 @@ author: Vedran Miletić
 
 (This page is also available [in Croatian](../hr/kontakt.md).)
 
+## Form
+
+For inquiries please reach out to us by e-mail at <info@gaseri.org> or via the following contact form and we will get back to you as soon as possible.
+
+<form action="https://formspree.io/f/xdovkkwr" method="POST">
+    <p>
+        <label for="name">Name</label><br>
+        <input type="text" name="name" class="md-input md-input--stretch" style="color: var(--md-default-fg-color); background-color: var(--md-default-bg-color)" required>
+    </p>
+    <p>
+        <label for="email">Email</label><br>
+        <input type="email" name="email" class="md-input md-input--stretch" style="color: var(--md-default-fg-color); background-color: var(--md-default-bg-color)" required>
+    </p>
+    <p>
+        <label for="subject">Subject</label><br>
+        <input type="text" name="subject" class="md-input md-input--stretch" style="color: var(--md-default-fg-color); background-color: var(--md-default-bg-color)" required>
+    </p>
+    <p>
+        <label for="message">Message</label><br>
+        <textarea name="message" class="md-input md-input--stretch" style="color: var(--md-default-fg-color); background-color: var(--md-default-bg-color); height: 7rem; outline: none; resize: none" required></textarea>
+    </p>
+    <input type="text" name="_gotcha" style="display: none">
+    <button type="submit" class="md-button md-button--primary">Send</button>
+</form>
+
 ## E-mail
 
 E-mail addresses of the [staff members](people/index.md#staff) have the following format: *firstname.lastname@inf.uniri.hr*
