@@ -32,27 +32,6 @@ The group uses and further develops protein-ligand docking, molecular dynamics s
 
 The group started in October 2021. It is built on the legacy of Computer Networks, Parallelization, and Simulation Laboratory (hrv. *Laboratorij za računalne mreže, paralelizaciju i simulaciju*, abbr. CNPSLab) that was a part of [Department of Informatics](https://www.inf.uniri.hr/) until October 2021.
 
-## Contact
-
-### E-mail
-
-E-mail addresses of the [staff members](people/index.md#staff) have the following format: *firstname.lastname@inf.uniri.hr*
-
-### Social networks
-
-- [GASERI on GitHub](https://github.com/gaseri)
-- [GASERI on LinkedIn](https://www.linkedin.com/company/gaseri)
-
-### Location
-
-Group for Applications and Services on Exascale Research Infrastructure  
-University of Rijeka Faculty of Informatics and Digital Technologies  
-Radmile Matejčić 2  
-HR-51000 Rijeka  
-Croatia
-
-<iframe src="https://www.openstreetmap.org/export/embed.html?bbox=14.465005695819857%2C45.32756626493193%2C14.46918457746506%2C45.32927471428796&amp;layer=mapnik&amp;marker=45.32842049605121%2C14.467095136642456" style="border: 1px solid black; width: 100%; height: 25rem"></iframe>
-
 ## Poster
 
 ![GASERI poster](../images/gaseri-poster.webp)

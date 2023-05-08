@@ -15,6 +15,7 @@ nav:
     - Znanstveni program mentora: hr/znanstveni-program-mentora.md
     - Istraživanje i razvoj: hr/istrazivanje-i-razvoj.md
     - Partnerstva i suradnje: hr/partnerstva-i-suradnje.md
+    - Kontakt: hr/kontakt.md
     - Nastava:
       - O nastavi: hr/nastava/index.md
       - Izvedbeni planovi:
@@ -400,6 +401,7 @@ nav:
       - PhD students: en/people/phd-students.md
     - Projects: en/projects.md
     - Publications: en/publications.md
+    - Contact: en/contact.md
     - Talks:
       - The challenges of the upcoming exascale supercomputing era in computational biochemistry: en/talks/2022-01-26-the-challenges-of-the-upcoming-exascale-supercomputing-era-in-computational-biochemistry.md
       - Extending Non-Equilibrium Pulling Method in GROMACS with Arbitrary User-Defined Atom Weight Factor Expressions: en/talks/2022-09-23-extending-non-equilibrium-pulling-method-in-gromacs-with-arbitrary-user-defined-atom-weight-factor-expressions.md
