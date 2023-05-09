@@ -96,7 +96,7 @@ author: Vedran Miletić, Vanja Slavuj
     - [Arch Linux](https://archlinux.org/), započeo 2002.
 
         - neovisna distribucija
-        - primarno namijenjena naprednim korisnicima; za ilustraciju: [btw I use Arch](https://knowyourmeme.com/memes/btw-i-use-arch), [i use arch btw](https://iusearchbtw.lol/)
+        - primarno namijenjena naprednim korisnicima; za ilustraciju: [btw I use Arch](https://knowyourmeme.com/memes/btw-i-use-arch), [i use arch btw](https://www.urbandictionary.com/define.php?term=i%20use%20arch%20btw)
         - na njoj se zasnivaju [Manjaro](https://manjaro.org/) i [Garuda Linux](https://garudalinux.org/), namijenjene krajnjim korisnicima
         - sve popularnija među određenim skupinama korisnika, npr. [igračima računalnih igara na Linuxu](https://www.gamingonlinux.com/users/statistics/)
 

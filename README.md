@@ -33,7 +33,7 @@ Once Python and pip are successfully set up, start by installing the required Py
 $ pip install -r requirements.txt
 ```
 
-[By the way](https://iusearchbtw.lol/), if you are using [Arch Linux](https://archlinux.org/), you can alternatively use [mkdocs](https://aur.archlinux.org/packages/mkdocs) and [mkdocs-material](https://aur.archlinux.org/packages/mkdocs-material) from [Arch User Repository (AUR)](https://aur.archlinux.org/). Similarly, if you are using [FreeBSD](https://www.freebsd.org/), you can use [py-mkdocs](https://www.freshports.org/textproc/py-mkdocs/) and [py-mkdocs-material](https://www.freshports.org/textproc/py-mkdocs-material/) from [Ports](https://www.freebsd.org/ports/). These packages are mostly kept in sync with the upstream releases.
+[By the way](https://www.urbandictionary.com/define.php?term=i%20use%20arch%20btw), if you are using [Arch Linux](https://archlinux.org/), you can alternatively use [mkdocs](https://aur.archlinux.org/packages/mkdocs) and [mkdocs-material](https://aur.archlinux.org/packages/mkdocs-material) from [Arch User Repository (AUR)](https://aur.archlinux.org/). Similarly, if you are using [FreeBSD](https://www.freebsd.org/), you can use [py-mkdocs](https://www.freshports.org/textproc/py-mkdocs/) and [py-mkdocs-material](https://www.freshports.org/textproc/py-mkdocs-material/) from [Ports](https://www.freebsd.org/ports/). These packages are mostly kept in sync with the upstream releases.
 
 ## Previewing the website
 
