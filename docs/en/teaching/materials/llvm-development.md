@@ -89,12 +89,12 @@ If you have many CPU cores, you can increase the number of parallel compile jobs
 !!! admonition "Assignment"
     Find out how many CPU cores you have and check if increasing the number of jobs speeds up the build process.
 
-Alternatively, LLVM can also be [obtained from GitHub](https://github.com/llvm/llvm-project.git) using [Git](https://git-scm.com/). In that case, the branch `release/13.x` should be used. The rest of the process is pretty similar:
+Alternatively, LLVM can also be [obtained from GitHub](https://github.com/llvm/llvm-project.git) using [Git](https://git-scm.com/). In that case, the branch `release/16.x` should be used. The rest of the process is pretty similar:
 
 ``` shell
 $ git clone https://github.com/llvm/llvm-project.git
 $ cd llvm-project
-$ git checkout release/13.x
+$ git checkout release/16.x
 $ mkdir builddir
 $ cd builddir
 $ cmake -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=ON -DLLVM_ENABLE_PROJECTS=clang ../llvm
