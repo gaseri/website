@@ -41,7 +41,7 @@ Negacija ili komplemet je logička operacija koja djeluje na jednu izjavu, čiji
 Djelovanje logičkih operacija vrlo često opisujemo tablicom kombinacija, odnosno istinitosti. Slijedi tablica istinitosti za operator negacije:
 
 | $A$ | $\overline{A}$ |
-|:---:|:--------------:|
+| :-: | :------------: |
 | 0 | 1 |
 | 1 | 0 |
 
@@ -50,7 +50,7 @@ Djelovanje logičkih operacija vrlo često opisujemo tablicom kombinacija, odnos
 Konjunkcija je logička operacija koja djeluje na dvije ili više varijabli (izjava), a istinita je samo ako su sve izjave istinite. Simbol konjunkcije u logici je $\wedge$, u informatici znak $⋅$, a u programiranju `AND` ili `&&`. Tablica istinitosti je sljedeća:
 
 | $A$ | $B$ | $A \cdot B$ |
-|:---:|:---:|:-----------:|
+| :-: | :-: | :---------: |
 | 0 | 0 | 0 |
 | 0 | 1 | 0 |
 | 1 | 0 | 0 |
@@ -61,7 +61,7 @@ Konjunkcija je logička operacija koja djeluje na dvije ili više varijabli (izj
 Disjunkcija je logička operacija koja djeluje na dvije ili više varijabli (izjava), a istinita je kada je bar jedna izjava istinita. U logici je njezin simbol $\vee$, u informatici znak $+$, a u programskim jezicima `OR` odnosno `||`. Prema tome, tablica istinitosti za disjunkciju je:
 
 | $A$ | $B$ | $A + B$ |
-|:---:|:---:|:-------:|
+| :-: | :-: | :-----: |
 | 0 | 0 | 0 |
 | 0 | 1 | 1 |
 | 1 | 0 | 1 |
@@ -83,7 +83,7 @@ Složene logičke izraze dobit ćemo kombinacijom osnovnih logičkih operacija. 
 **Rješenje:**
 
 | $A$ | $B$ | $C$ | ${A + B}$ | $\overline{A + B}$ | $\overline{C}$ | $\overline{A + B} \cdot \overline{C}$ |
-|:---:|:---:|:---:|:---------:|:------------------:|:--------------:|:-------------------------------------:|
+| :-: | :-: | :-: | :-------: | :----------------: | :------------: | :-----------------------------------: |
 | 0 | 0 | 0 | 0 | 1 | 1 | **1** |
 | 0 | 0 | 1 | 0 | 1 | 0 | **0** |
 | 0 | 1 | 0 | 1 | 0 | 1 | **0** |
@@ -103,7 +103,7 @@ Iz tablice istinitosti vidimo da je izraz $\overline{A + B} \cdot \overline{C}$ 
 Korištenjem disjunktivne ili konjunktivne normalne forme, iz tablice istinitosti možemo dobiti logički izraz. Uzmimo za primjer sljedeću tablicu na koju ćemo primjeniti normalne forme:
 
 | $A$ | $B$ | $Y$ |
-|:---:|:---:|:---:|
+| :-: | :-: | :-: |
 | 0 | 0 | **0** |
 | 0 | 1 | **1** |
 | 1 | 0 | **0** |
@@ -118,7 +118,7 @@ Dobiveni logički izrazi se često mogu i pojednostaviti, ali o tome ćemo prič
 Skraćeno ju nazivamo i **DNF**. Ona započinje traženjem redaka u kojima je vrijednost varijable (u ovom slučaju stupac $Y$) jednak **1**. U gore navedenoj tablici to su 2. i 4. redak te ih promatramo zasebno:
 
 | $A$ | $B$ |
-|:---:|:---:|
+| :-: | :-: |
 | 0 | 1 |
 | 1 | 1 |
 
@@ -131,7 +131,7 @@ Preostaje nam te retke povezati. To činimo operacijom konjunkcije ($+$). Sada d
 Skraćeno ju nazivamo i **KNF**. Ona je po principu rada slična disjunktivnoj normalnoj formi samo što drukčije koristimo vrijednosti i operatore iz tablice. Sada ćemo promatrati retke čija je vrijednost varijable $Y$ jednaka **0**. U našoj tablici to su 1. i 3. redak:
 
 | $A$ | $B$ |
-|:---:|:---:|
+| :-: | :-: |
 | 1 | 0 |
 | 0 | 0 |
 
@@ -164,14 +164,14 @@ $$A \cdot 1 = A$$
 Kako bi nam bilo lakše razumjeti ova dva aksioma možemo izraditi njihove tablice istinitosti.
 
 | $A$ | $0$ | $A + 0$ |
-|:---:|:---:|:-------:|
+| :-: | :-: | :-----: |
 | 0 | 0 | 0 |
 | 1 | 0 | 1 |
 
 Budući da je $0$ konstanta, u njezinom stupcu za svaki redak pišemo vrijednost 0. Možemo primjetiti kako će vrijednost izraza $A + 0$ uvijek imati identičan iznos kao i varijabla $A$. Stoga je $0$ u disjunkiciji neutralni element.
 
 | $A$ | $1$ | $A \cdot 0$ |
-|:---:|:---:|:---:|
+| :-: | :-: | :-: |
 | 0 | 1 | 0 |
 | 1 | 1 | 1 |
 
@@ -186,14 +186,14 @@ $$A \cdot \overline{A} = 0$$
 Kao i kod prethodnog aksioma možemo napraviti tablice istinitosti.
 
 | $A$ | $\overline{A}$ | $A + \overline{A}$ |
-|:---:|:--------------:|:------------------:|
+| :-: | :------------: | :----------------: |
 | 0 | 1 | 1 |
 | 1 | 0 | 1 |
 
 Vrijednost ovog izraza uvijek će biti $1$ jer u svakom retku postoji barem jedna vrijednost $1$ zbog koje će disjunkcija poprimati vrijendost $1$.
 
 | $A$ | $\overline{A}$ | $A \cdot \overline{A}$ |
-|:---:|:--------------:|:----------------------:|
+| :-: | :------------: | :--------------------: |
 | 0 | 1 | 0 |
 | 1 | 0 | 0 |
 
@@ -224,7 +224,7 @@ Na sve teoreme se odnosi **princip dualnosti**. On nam govori da ako u nekom teo
 U ovoj ćemo dokumentaciji spomenuti 8 osnovnih teorema koji će nam biti dovoljni za pojednostavljivanje većine logičkih izraza.
 
 | Broj teorema | Ime teorema | 1. dio | 2. dio |
-|:------------:|:-----------:|:------:|:------:|
+| :----------: | :---------: | :----: | :----: |
 | T1 | Dominacija | $A + 1 = 1$ | $A \cdot 0 = 0$ |
 | T2 | Idempotencija | $A + A = A$ | $A \cdot A = A$ |
 | T3 | Involucija | $\overline{\overline{A}} = A$ | |
