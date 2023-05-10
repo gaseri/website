@@ -87,6 +87,7 @@ nav:
       - Nastavni materijali:
         - LDAP poslužitelj 389 Directory Server: hr/nastava/materijali/389-directory-server-ldap-posluzitelj.md
         - Instalacija operacijskih sustava Fedora i CentOS korištenjem instalacijskog alata Anaconda: hr/nastava/materijali/anaconda-instalacija-operacijskog-sustava.md
+        - Aritmetičke operacije: hr/nastava/materijali/aritmeticke-operacije.md
         - Automatizacija konfiguracije i održavanja sustava alatom Ansible: hr/nastava/materijali/ansible-automatizacija-konfiguracije-odrzavanja-sustava.md
         - Instalacija i konfiguracija softvera za vježbe iz kolegija Arhitektura i organizacija računala: hr/nastava/materijali/aor-instalacija-softvera-windows-ubuntu.md
         - Mjerenje performansi web poslužitelja alatom ab (Apache HTTP server benchmarking tool): hr/nastava/materijali/apache-ab-mjerenje-performansi-web-posluzitelja.md
@@ -100,6 +101,7 @@ nav:
         - Vizualizacija i uređivanje molekula alatom Avogadro: hr/nastava/materijali/avogadro-vizualizacija-uredjivanje-molekula.md
         - DNS sustav BIND9: hr/nastava/materijali/bind9-dns-sustav.md
         - Bioinformatika: hr/nastava/materijali/bioinformatika-povijest-osnove.md
+        - Bistabili i registri: hr/nastava/materijali/bistabili-i-registri.md
         - Booleova algebra: hr/nastava/materijali/booleova-algebra.md
         - Premošćenje mrežnih adaptera i izrada mostova: hr/nastava/materijali/brctl-izrada-mostova.md
         - Raspoznavanje upada u sustav alatom Bro: hr/nastava/materijali/bro-raspoznavanje-upada-u-sustav.md
@@ -339,6 +341,7 @@ nav:
         - Snimanje prometa aplikacija: hr/nastava/materijali/wireshark-snimanje-prometa.md
         - Instalacija i konfiguracija sustava za upravljanje sadržajem Wordpress: hr/nastava/materijali/wordpress-instalacija-web-aplikacije.md
         - Upravljanje paketima: hr/nastava/materijali/yum-rpm-upravljanje-paketima-operacijskog-sustava.md
+        - Zapis informacija u digitalnim sustavima: hr/nastava/materijali/zapis-informacija-u-digitalnim-sustavima.md
         - Datotečni sustav i upravitelj volumenima ZFS: hr/nastava/materijali/zfs-datotecni-sustav-upravitelj-volumenima.md
         - Znanstveni softver: hr/nastava/materijali/znanstveni-softver.md
         - Upute za upravljanje bibliografijom korištenjem alata Zotero: hr/nastava/materijali/zotero-citiranje-bibliografija.md

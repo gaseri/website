@@ -8,6 +8,9 @@ tags:
 ## Vježbe
 
 - [Instalacija i konfiguracija softvera za vježbe iz kolegija Arhitektura i organizacija računala](../materijali/aor-instalacija-softvera-windows-ubuntu.md)
+- [Zapis informacija u digitalnim sustavima](../materijali/zapis-informacija-u-digitalnim-sustavima.md)
+- [Aritmetičke operacije](../materijali/aritmeticke-operacije.md)
+- [Bistabili i registri](../materijali/bistabili-i-registri.md)
 - [Booleova algebra](../materijali/booleova-algebra.md)
 
 ### Dodatni materijali
