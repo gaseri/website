@@ -15,36 +15,33 @@ Ime MariaDB dao je autor MySQL-a [Michael "Monty" Widenius](https://en.wikipedia
 
 ## Slika `mariadb` na Docker Hubu
 
-Sustav za upravljanje bazom podataka MariaDB koristit ćemo u obliku [Docker](https://www.docker.com/) [kontejnera](https://www.docker.com/resources/what-container/). Na [Docker Hubu](https://hub.docker.com/) moguće je pronaći sliku [mariadb](https://hub.docker.com/_/mariadb), koja je jedna od [službenih slika](https://hub.docker.com/search?type=image&image_filter=official). Koristit ćemo [verziju 10.7](https://mariadb.com/kb/en/changes-improvements-in-mariadb-107/), koja je posljednja izdana stabilna verzija. Pokretanje kontejnera `maridab` izvodimo naredbom `docker run`:
+Sustav za upravljanje bazom podataka MariaDB koristit ćemo u obliku [Docker](https://www.docker.com/) [kontejnera](https://www.docker.com/resources/what-container/). Na [Docker Hubu](https://hub.docker.com/) moguće je pronaći sliku [mariadb](https://hub.docker.com/_/mariadb), koja je jedna od [službenih slika](https://hub.docker.com/search?type=image&image_filter=official). Koristit ćemo [verziju 10.11](https://mariadb.com/kb/en/changes-improvements-in-mariadb-1011/), koja je posljednja izdana stabilna verzija. Pokretanje kontejnera `maridab` izvodimo naredbom `docker run`:
 
 ``` shell
-$ docker run mariadb:10.7
-Unable to find image 'mariadb:10.7' locally
-10.7: Pulling from library/mariadb
-e0b25ef51634: Pull complete
-8aa3f605beb6: Pull complete
-c43298fa9eba: Pull complete
-f565e2a61005: Pull complete
-3b5a73a7467f: Pull complete
-d219b4dd5889: Pull complete
-008719f0a8ad: Pull complete
-cdb2ef26c44d: Pull complete
-16f6e068c19c: Pull complete
-ecfd25d3e0e6: Pull complete
-fc6e322e4875: Pull complete
-Digest: sha256:9d2cde0e154989d499114bf468fab23497120cf889fb6965050c0f8fcf69d037
-Status: Downloaded newer image for mariadb:10.7
-2022-04-15 16:51:01+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.7.3+maria~focal started.
-2022-04-15 16:51:01+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
-2022-04-15 16:51:01+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.7.3+maria~focal started.
-2022-04-15 16:51:01+00:00 [ERROR] [Entrypoint]: Database is uninitialized and password option is not specified
+$ docker run mariadb:10.11
+Unable to find image 'mariadb:10.11' locally
+10.11: Pulling from library/mariadb
+1bc677758ad7: Pull complete
+196e1740aea4: Pull complete
+3d4df0997938: Pull complete
+9fa4e4184824: Pull complete
+22001c5fbbed: Pull complete
+49ed08e2853d: Pull complete
+ca39212f2f3c: Pull complete
+439f9b904603: Pull complete
+Digest: sha256:1c33370a599c870eab28891191b1fc5f46ddf8dfd90bd5f56b03e8a16e83f2fb
+Status: Downloaded newer image for mariadb:10.11
+2023-05-10 16:12:11+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.11.2+maria~ubu2204 started.
+2023-05-10 16:12:11+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+2023-05-10 16:12:11+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.11.2+maria~ubu2204 started.
+2023-05-10 16:12:11+00:00 [ERROR] [Entrypoint]: Database is uninitialized and password option is not specified
         You need to specify one of MARIADB_ROOT_PASSWORD, MARIADB_ALLOW_EMPTY_ROOT_PASSWORD and MARIADB_RANDOM_ROOT_PASSWORD
 ```
 
 Docker slika ne dozvoljava pokretanje bez navođenja zaporke korijenskog korisnika koja će se korstiti. Navedimo ju putem varijable okoline `MARIADB_ROOT_PASSWORD` parametrom `--env` i dodajmo parametar `--detach` kako bismo zadržali mogućnost daljnjeg rada u terminalu:
 
 ``` shell
-$ docker run --detach --env MARIADB_ROOT_PASSWORD=m0j4z4p0rk4 mariadb:10.7
+$ docker run --detach --env MARIADB_ROOT_PASSWORD=m0j4z4p0rk4 mariadb:10.11
 b618846ff70c0012813dc62c02a3e262f29d0ac6e54d4504ff042914e7f6d9e9
 ```
 
@@ -52,25 +49,24 @@ Naredbom `docker ps` možemo se uvjeriti da je kontejner pokrenut:
 
 ``` shell
 $ docker ps
-CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS         PORTS      NAMES
-b618846ff70c   mariadb:10.7   "docker-entrypoint.s…"   2 minutes ago   Up 2 minutes   3306/tcp   cranky_jang
+CONTAINER ID   IMAGE           COMMAND                  CREATED         STATUS         PORTS      NAMES
+b618846ff70c   mariadb:10.11   "docker-entrypoint.s…"   4 seconds ago   Up 3 seconds   3306/tcp   sleepy_poincare
 ```
 
 Naredbom `docker logs` koja kao argument prima identifikator kontejnera možemo se uvjeriti da je pokretanje poslužitelja bilo uspješno:
 
 ``` shell
 $ docker logs b618846ff70c0012813dc62c02a3e262f29d0ac6e54d4504ff042914e7f6d9e9
-2022-04-15 17:07:23+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.7.3+maria~focal started.
-2022-04-15 17:07:23+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
-2022-04-15 17:07:23+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.7.3+maria~focal started.
-2022-04-15 17:07:24+00:00 [Note] [Entrypoint]: Initializing database files
-2022-04-15 17:07:24 0 [Warning] You need to use --log-bin to make --expire-logs-days or --binlog-expire-logs-seconds work.
+2023-05-10 16:12:56+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.11.2+maria~ubu2204 started.
+2023-05-10 16:12:56+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+2023-05-10 16:12:56+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.11.2+maria~ubu2204 started.
+2023-05-10 16:12:56+00:00 [Note] [Entrypoint]: Initializing database files
 
 
 PLEASE REMEMBER TO SET A PASSWORD FOR THE MariaDB root USER !
 To do so, start the server, then issue the following command:
 
-'/usr/bin/mysql_secure_installation'
+'/usr/bin/mariadb-secure-installation'
 
 which will also give you the option of removing the test
 databases and anonymous user created by default.  This is
@@ -85,67 +81,63 @@ The latest information about MariaDB is available at https://mariadb.org/.
 Consider joining MariaDB's strong and vibrant community:
 https://mariadb.org/get-involved/
 
-2022-04-15 17:07:25+00:00 [Note] [Entrypoint]: Database files initialized
-2022-04-15 17:07:25+00:00 [Note] [Entrypoint]: Starting temporary server
-2022-04-15 17:07:25+00:00 [Note] [Entrypoint]: Waiting for server startup
-2022-04-15 17:07:25 0 [Note] mariadbd (server 10.7.3-MariaDB-1:10.7.3+maria~focal) starting as process 155 ...
-2022-04-15 17:07:25 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
-2022-04-15 17:07:25 0 [Note] InnoDB: Number of transaction pools: 1
-2022-04-15 17:07:25 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
-2022-04-15 17:07:25 0 [Note] InnoDB: Using Linux native AIO
-2022-04-15 17:07:25 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
-2022-04-15 17:07:25 0 [Note] InnoDB: Completed initialization of buffer pool
-2022-04-15 17:07:25 0 [Note] InnoDB: 128 rollback segments are active.
-2022-04-15 17:07:25 0 [Note] InnoDB: Creating shared tablespace for temporary tables
-2022-04-15 17:07:25 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
-2022-04-15 17:07:25 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
-2022-04-15 17:07:25 0 [Note] InnoDB: 10.7.3 started; log sequence number 41361; transaction id 14
-2022-04-15 17:07:25 0 [Note] Plugin 'FEEDBACK' is disabled.
-2022-04-15 17:07:25 0 [Warning] You need to use --log-bin to make --expire-logs-days or --binlog-expire-logs-seconds work.
-2022-04-15 17:07:25 0 [Warning] 'user' entry 'root@b618846ff70c' ignored in --skip-name-resolve mode.
-2022-04-15 17:07:25 0 [Warning] 'proxies_priv' entry '@% root@b618846ff70c' ignored in --skip-name-resolve mode.
-2022-04-15 17:07:25 0 [Note] mariadbd: ready for connections.
-Version: '10.7.3-MariaDB-1:10.7.3+maria~focal'  socket: '/run/mysqld/mysqld.sock'  port: 0  mariadb.org binary distribution
-2022-04-15 17:07:26+00:00 [Note] [Entrypoint]: Temporary server started.
-Warning: Unable to load '/usr/share/zoneinfo/leap-seconds.list' as time zone. Skipping it.
-Warning: Unable to load '/usr/share/zoneinfo/leapseconds' as time zone. Skipping it.
-Warning: Unable to load '/usr/share/zoneinfo/tzdata.zi' as time zone. Skipping it.
-2022-04-15 17:07:27+00:00 [Note] [Entrypoint]: Securing system users (equivalent to running mysql_secure_installation)
+2023-05-10 16:12:58+00:00 [Note] [Entrypoint]: Database files initialized
+2023-05-10 16:12:58+00:00 [Note] [Entrypoint]: Starting temporary server
+2023-05-10 16:12:58+00:00 [Note] [Entrypoint]: Waiting for server startup
+2023-05-10 16:12:58 0 [Note] Starting MariaDB 10.11.2-MariaDB-1:10.11.2+maria~ubu2204 source revision cafba8761af55ae16cc69c9b53a341340a845b36 as process 111
+2023-05-10 16:12:58 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-05-10 16:12:58 0 [Note] InnoDB: Number of transaction pools: 1
+2023-05-10 16:12:58 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-05-10 16:12:58 0 [Note] InnoDB: Using liburing
+2023-05-10 16:12:58 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-05-10 16:12:58 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-05-10 16:12:58 0 [Note] InnoDB: Buffered log writes (block size=512 bytes)
+2023-05-10 16:12:58 0 [Note] InnoDB: 128 rollback segments are active.
+2023-05-10 16:12:58 0 [Note] InnoDB: Setting file './ibtmp1' size to 12.000MiB. Physically writing the file full; Please wait ...
+2023-05-10 16:12:58 0 [Note] InnoDB: File './ibtmp1' size is now 12.000MiB.
+2023-05-10 16:12:58 0 [Note] InnoDB: log sequence number 46590; transaction id 14
+2023-05-10 16:12:58 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-05-10 16:12:58 0 [Warning] 'user' entry 'root@14890c14c5dc' ignored in --skip-name-resolve mode.
+2023-05-10 16:12:58 0 [Warning] 'proxies_priv' entry '@% root@14890c14c5dc' ignored in --skip-name-resolve mode.
+2023-05-10 16:12:58 0 [Note] mariadbd: ready for connections.
+Version: '10.11.2-MariaDB-1:10.11.2+maria~ubu2204'  socket: '/run/mysqld/mysqld.sock'  port: 0  mariadb.org binary distribution
+2023-05-10 16:12:59+00:00 [Note] [Entrypoint]: Temporary server started.
+2023-05-10 16:13:00+00:00 [Note] [Entrypoint]: Securing system users (equivalent to running mysql_secure_installation)
 
-2022-04-15 17:07:27+00:00 [Note] [Entrypoint]: Stopping temporary server
-2022-04-15 17:07:27 0 [Note] mariadbd (initiated by: root[root] @ localhost []): Normal shutdown
-2022-04-15 17:07:27 0 [Note] InnoDB: FTS optimize thread exiting.
-2022-04-15 17:07:27 0 [Note] InnoDB: Starting shutdown...
-2022-04-15 17:07:27 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
-2022-04-15 17:07:27 0 [Note] InnoDB: Buffer pool(s) dump completed at 220419 17:07:27
-2022-04-15 17:07:27 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
-2022-04-15 17:07:27 0 [Note] InnoDB: Shutdown completed; log sequence number 42335; transaction id 15
-2022-04-15 17:07:27 0 [Note] mariadbd: Shutdown complete
+2023-05-10 16:13:00+00:00 [Note] [Entrypoint]: Stopping temporary server
+2023-05-10 16:13:00 0 [Note] mariadbd (initiated by: unknown): Normal shutdown
+2023-05-10 16:13:00 0 [Note] InnoDB: FTS optimize thread exiting.
+2023-05-10 16:13:00 0 [Note] InnoDB: Starting shutdown...
+2023-05-10 16:13:00 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+2023-05-10 16:13:00 0 [Note] InnoDB: Buffer pool(s) dump completed at 230510 16:13:00
+2023-05-10 16:13:00 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+2023-05-10 16:13:00 0 [Note] InnoDB: Shutdown completed; log sequence number 46590; transaction id 15
+2023-05-10 16:13:00 0 [Note] mariadbd: Shutdown complete
 
-2022-04-15 17:07:28+00:00 [Note] [Entrypoint]: Temporary server stopped
+2023-05-10 16:13:00+00:00 [Note] [Entrypoint]: Temporary server stopped
 
-2022-04-15 17:07:28+00:00 [Note] [Entrypoint]: MariaDB init process done. Ready for start up.
+2023-05-10 16:13:00+00:00 [Note] [Entrypoint]: MariaDB init process done. Ready for start up.
 
-2022-04-15 17:07:28 0 [Note] mariadbd (server 10.7.3-MariaDB-1:10.7.3+maria~focal) starting as process 1 ...
-2022-04-15 17:07:28 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
-2022-04-15 17:07:28 0 [Note] InnoDB: Number of transaction pools: 1
-2022-04-15 17:07:28 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
-2022-04-15 17:07:28 0 [Note] InnoDB: Using Linux native AIO
-2022-04-15 17:07:28 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
-2022-04-15 17:07:28 0 [Note] InnoDB: Completed initialization of buffer pool
-2022-04-15 17:07:28 0 [Note] InnoDB: 128 rollback segments are active.
-2022-04-15 17:07:28 0 [Note] InnoDB: Creating shared tablespace for temporary tables
-2022-04-15 17:07:28 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
-2022-04-15 17:07:28 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
-2022-04-15 17:07:28 0 [Note] InnoDB: 10.7.3 started; log sequence number 42335; transaction id 14
-2022-04-15 17:07:28 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
-2022-04-15 17:07:28 0 [Note] Plugin 'FEEDBACK' is disabled.
-2022-04-15 17:07:28 0 [Warning] You need to use --log-bin to make --expire-logs-days or --binlog-expire-logs-seconds work.
-2022-04-15 17:07:28 0 [Note] InnoDB: Buffer pool(s) load completed at 220419 17:07:28
-2022-04-15 17:07:28 0 [Note] Server socket created on IP: '0.0.0.0'.
-2022-04-15 17:07:28 0 [Note] Server socket created on IP: '::'.
-2022-04-15 17:07:28 0 [Note] mariadbd: ready for connections.
-Version: '10.7.3-MariaDB-1:10.7.3+maria~focal'  socket: '/run/mysqld/mysqld.sock'  port: 3306  mariadb.org binary distribution
+2023-05-10 16:13:00 0 [Note] Starting MariaDB 10.11.2-MariaDB-1:10.11.2+maria~ubu2204 source revision cafba8761af55ae16cc69c9b53a341340a845b36 as process 1
+2023-05-10 16:13:00 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-05-10 16:13:00 0 [Note] InnoDB: Number of transaction pools: 1
+2023-05-10 16:13:00 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-05-10 16:13:00 0 [Note] InnoDB: Using liburing
+2023-05-10 16:13:00 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-05-10 16:13:00 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-05-10 16:13:00 0 [Note] InnoDB: Buffered log writes (block size=512 bytes)
+2023-05-10 16:13:00 0 [Note] InnoDB: 128 rollback segments are active.
+2023-05-10 16:13:00 0 [Note] InnoDB: Setting file './ibtmp1' size to 12.000MiB. Physically writing the file full; Please wait ...
+2023-05-10 16:13:00 0 [Note] InnoDB: File './ibtmp1' size is now 12.000MiB.
+2023-05-10 16:13:00 0 [Note] InnoDB: log sequence number 46590; transaction id 14
+2023-05-10 16:13:00 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+2023-05-10 16:13:00 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-05-10 16:13:00 0 [Warning] You need to use --log-bin to make --expire-logs-days or --binlog-expire-logs-seconds work.
+2023-05-10 16:13:00 0 [Note] InnoDB: Buffer pool(s) load completed at 230510 16:13:00
+2023-05-10 16:13:00 0 [Note] Server socket created on IP: '0.0.0.0'.
+2023-05-10 16:13:00 0 [Note] Server socket created on IP: '::'.
+2023-05-10 16:13:00 0 [Note] mariadbd: ready for connections.
+Version: '10.11.2-MariaDB-1:10.11.2+maria~ubu2204'  socket: '/run/mysqld/mysqld.sock'  port: 3306  mariadb.org binary distribution
 ```
 
 Poslužitelj zaustavljamo naredbom `docker kill`:
@@ -172,18 +164,18 @@ ef5139aa1ec739e9c5da903581328a537380095b9117b555d72a1b33678836b7
 Pokrenimo poslužitelj na toj mreži i nazovimo ga `fidit-mariadb` korištenjem parametra `--name`:
 
 ``` shell
-$ docker run --detach --network db-network --name fidit-mariadb --env MARIADB_ROOT_PASSWORD=m0j4z4p0rk4 mariadb:10.7
+$ docker run --detach --network db-network --name fidit-mariadb --env MARIADB_ROOT_PASSWORD=m0j4z4p0rk4 mariadb:10.11
 39b77a3679fd4e5c8638d63d3d577464b46c3ee0b9cc34a965b100355b9bb6aa
 ```
 
 Pokrenimo klijent na istoj mreži i iskoristimo parametar `-h` naredbe `mariadb` za navođenje imena poslužitelja, parametar `-u` za navođenje imena korisnika i parametar `-p` za uključivanje upita za zaporkom. Uočimo pritom kako naredba `mariadb` ne očekuje razmak između parametra i njegove vrijednosti.
 
 ``` shell
-$ docker run -it --network db-network mariadb:10.7 mariadb -hfidit-mariadb -uroot -p
+$ docker run -it --network db-network mariadb:10.11 mariadb -hfidit-mariadb -uroot -p
 Enter password:
 Welcome to the MariaDB monitor.  Commands end with ; or \g.
 Your MariaDB connection id is 3
-Server version: 10.7.3-MariaDB-1:10.7.3+maria~focal mariadb.org binary distribution
+Server version: 10.11.2-MariaDB-1:10.11.2+maria~ubu2204 mariadb.org binary distribution
 
 Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
 
@@ -358,14 +350,14 @@ ssl_ca = /etc/mysql/conf.d/certs/ca-cert.pem
 Pokrenimo ponovno poslužitelj tako da dodatno parametrom `-v` montiramo direktorij `/home/korisnik/mariadb-server-conf` na `/etc/mysql/conf.d`, iz kojeg će MariaDB poslužitelj čitati konfiguraciju:
 
 ``` shell
-$ docker run --detach --network db-network --name fidit-mariadb -v /home/korisnik/mariadb-server-conf:/etc/mysql/conf.d --env MARIADB_ROOT_PASSWORD=m0j4z4p0rk4 mariadb:10.7
+$ docker run --detach --network db-network --name fidit-mariadb -v /home/korisnik/mariadb-server-conf:/etc/mysql/conf.d --env MARIADB_ROOT_PASSWORD=m0j4z4p0rk4 mariadb:10.11
 fd5bc31673cb7f87d632ef9d59bf515bafa944ba4c1058f5776f3d0dc74a402d
 ```
 
 Kako bismo se uvjerili da je TLS uključen, povežimo se klijentom tako da i na njegovoj strani montiramo direktorij s konfiguracijskim datotekama:
 
 ``` shell
-$ docker run -it --network db-network -v /home/korisnik/mariadb-client-conf:/etc/mysql/conf.d mariadb:10.7 mariadb -hfidit-mariadb -uroot -p
+$ docker run -it --network db-network -v /home/korisnik/mariadb-client-conf:/etc/mysql/conf.d mariadb:10.11 mariadb -hfidit-mariadb -uroot -p
 Enter password:
 ```
 
@@ -645,14 +637,14 @@ Query OK, 0 rows affected (0.000 sec)
 Sada se možemo prijaviti kao taj korisnik, što ćemo i napraviti u drugom terminalu bez prekidanja postojeće sesije korijenskog korisnika. Parametrom `-u` navodimo korisničko ime korisnika koji se prijavljuje, a parametrom `-p` navodimo da ćemo izvršiti prijavu korištenjem zaporke:
 
 ``` shell
-$ mariadb -u ivanzhegalkin
+$ docker run -it --network db-network mariadb:10.11 mariadb -hfidit-mariadb -u ivanzhegalkin
 ERROR 1045 (28000): Access denied for user 'ivanzhegalkin'@'localhost' (using password: NO)
 
-$ mariadb -u ivanzhegalkin -p
+$ docker run -it --network db-network mariadb:10.11 mariadb -hfidit-mariadb -u ivanzhegalkin -p
 Enter password:
 Welcome to the MariaDB monitor.  Commands end with ; or \g.
 Your MariaDB connection id is 58
-Server version: 10.3.25-MariaDB-0ubuntu0.20.04.1 Ubuntu 20.04
+Server version: 10.11.2-MariaDB-1:10.11.2+maria~ubu2204 mariadb.org binary distribution
 
 Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
 
