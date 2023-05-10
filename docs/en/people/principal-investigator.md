@@ -1133,6 +1133,17 @@ Commits listed from [repository on GitLab](https://gitlab.com/nsnam/ns-3-dev):
 - commit [`cc69b4f83f7eab27df7ca1c36c1232da8464f292`](https://gitlab.com/nsnam/ns-3-dev/-/commit/cc69b4f83f7eab27df7ca1c36c1232da8464f292): documentation file name fix
 - commit [`1edd47a75152da15d20104787ded82fc1116e813`](https://gitlab.com/nsnam/ns-3-dev/-/commit/1edd47a75152da15d20104787ded82fc1116e813): fix TeX formulas after doxygen change
 
+### RDKit
+
+Description: [home page](https://www.rdkit.org/), [Wikipedia page](https://en.wikipedia.org/wiki/RDKit).
+
+Commits listed from [repository on GitHub](https://github.com/rdkit/rdkit):
+
+- commit [`f4e929a440d0fffe57be63f20cb0088763ef4c62`](https://github.com/rdkit/rdkit/commit/f4e929a440d0fffe57be63f20cb0088763ef4c62): Added cstdint include (#6338)
+
+    ??? note
+        Required for uint64_t, fixes compile error
+
 ### RxDock
 
 Description: [home page](https://rxdock.gitlab.io/), [Wikipedia page](https://en.wikipedia.org/wiki/RxDock).
