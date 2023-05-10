@@ -4,7 +4,7 @@ author: Vedran Miletić
 
 # Developing with the LLVM compiler infrastructure
 
-During the course we will use [LLVM](https://llvm.org/)., which is a well-known open-source compiler and toolchain. It is distributed under the [Apache License 2.0 with LLVM Exceptions](https://releases.llvm.org/13.0.1/LICENSE.TXT). Due to its popularity, there are various LLVM programs and libraries are packaged for many operating systems, including [Debian GNU/Linux](https://tracker.debian.org/pkg/llvm-defaults), [Arch Linux](https://archlinux.org/packages/extra/x86_64/llvm/), and [FreeBSD](https://www.freshports.org/devel/llvm/). Therefore we could install LLVM from the operating system repository, although this would later prevent us from modifying its source code.
+During the course we will use [LLVM](https://llvm.org/)., which is a well-known open-source compiler and toolchain. It is distributed under the [Apache License 2.0 with LLVM Exceptions](https://llvm.org/docs/DeveloperPolicy.html#new-llvm-project-license-framework). Due to its popularity, there are various LLVM programs and libraries are packaged for many operating systems, including [Debian GNU/Linux](https://tracker.debian.org/pkg/llvm-defaults), [Arch Linux](https://archlinux.org/packages/extra/x86_64/llvm/), and [FreeBSD](https://www.freshports.org/devel/llvm/). Therefore we could install LLVM from the operating system repository, although this would later prevent us from modifying its source code.
 
 ## Setting up the integrated development environment
 
@@ -19,21 +19,21 @@ First, install the [C/C++ Extension Pack](https://marketplace.visualstudio.com/i
 
 Hereafter we will more or less follow the directions of [Getting started with the LLVM System](https://llvm.org/docs/GettingStarted.html) from the [Getting Started/Tutorials section](https://llvm.org/docs/GettingStartedTutorials.html).
 
-It is possible to download the LLVM source code from its [releases page](https://releases.llvm.org/). At the time of the start of the course We'll be using the latest patch release from the latest series [release 13.0.1](https://releases.llvm.org/download.html#13.0.1).
+It is possible to download the LLVM source code from its [releases page](https://releases.llvm.org/). We'll be using the latest patch release from the latest series that is available. At the time of the start of the course, this is [release 16.0.3](https://releases.llvm.org/download.html#16.0.3).
 
 We'll be following [Building LLVM with CMake](https://llvm.org/docs/CMake.html) from [LLVM documentation](https://llvm.org/docs/), section [User Guides](https://llvm.org/docs/UserGuides.html). We'll start by creating a directory for LLVM project:
 
 ``` shell
-$ mkdir llvm-project-13.0.1
-$ cd llvm-project-13.0.1
+$ mkdir llvm-project-16.0.3
+$ cd llvm-project-16.0.3
 ```
 
 If Visual Studio Code is used for the development, this is the project directory that should be opened in it. Afterwards, the [integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal) can be used for running the comamnds.
 
-We'll download the source code from the [LLVM 13.0.1 release on GitHub](https://github.com/llvm/llvm-project/releases/tag/llvmorg-13.0.1):
+We'll download the source code from the [LLVM 16.0.3 release on GitHub](https://github.com/llvm/llvm-project/releases/tag/llvmorg-16.0.3):
 
 ``` shell
-$ curl -OL https://github.com/llvm/llvm-project/releases/download/llvmorg-13.0.1/llvm-13.0.1.src.tar.xz
+$ curl -OL https://github.com/llvm/llvm-project/releases/download/llvmorg-16.0.3/llvm-16.0.3.src.tar.xz
 ```
 
 Observe the `.src` in the name, indicating that we're downloading the source code. The same page also provides the binaries as well as the source code for the [tools and libraries produced by the LLVM sub-projects](https://llvm.org/):
@@ -52,14 +52,14 @@ Observe the `.src` in the name, indicating that we're downloading the source cod
 Although all of these tools are interesting in their own way, most of them will not be used here. In particular, we will be using Clang to demonstrate the compile process. We'll download it just like LLVM:
 
 ``` shell
-$ curl -OL https://github.com/llvm/llvm-project/releases/download/llvmorg-13.0.1/clang-13.0.1.src.tar.xz
+$ curl -OL https://github.com/llvm/llvm-project/releases/download/llvmorg-16.0.3/clang-16.0.3.src.tar.xz
 ```
 
 Now it's time to unpack the source code tarballs.
 
 ``` shell
-$ tar xJf llvm-13.0.1.src.tar.xz
-$ tar xJf clang-13.0.1.src.tar.xz
+$ tar xJf llvm-16.0.3.src.tar.xz
+$ tar xJf clang-16.0.3.src.tar.xz
 ```
 
 LLVM, Clang, and related projects use [CMake for building](https://llvm.org/docs/CMake.html). Most notably, it does not support building in the source tree, so it's necessary to start by creating a directory:
@@ -107,7 +107,7 @@ $ make -j 2 check
 
 ## The overview of the LLVM architecture
 
-While LLVM is building, let's take a look at the LLVM architecture. [Chris Lattner](https://www.nondot.org/sabre/), the main author of LLVM, wrote the [LLVM](https://www.aosabook.org/en/llvm.html) chapter of [The Architecture of Open Source Applications](https://aosabook.org/en/index.html) book. To follow the code described in the chapter, open the following files in the `llvm-project-13.0.1/llvm-13.0.1` directory:
+While LLVM is building, let's take a look at the LLVM architecture. [Chris Lattner](https://www.nondot.org/sabre/), the main author of LLVM, wrote the [LLVM](https://www.aosabook.org/en/llvm.html) chapter of [The Architecture of Open Source Applications](https://aosabook.org/en/index.html) book. To follow the code described in the chapter, open the following files in the `llvm-project-16.0.3/llvm-16.0.3` directory:
 
 - `include/llvm/Analysis/InstructionSimplify.h`
 - `lib/Analysis/InstructionSimplify.cpp`

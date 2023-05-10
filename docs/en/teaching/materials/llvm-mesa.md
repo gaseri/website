@@ -402,7 +402,7 @@ The list of supported architectures can be obtained using the `--version` parame
 ``` shell
 $ ./bin/llc --version
 LLVM (http://llvm.org/):
-  LLVM version 13.0.1
+  LLVM version 16.0.3
   Optimized build.
   Default target: x86_64-unknown-linux-gnu
   Host CPU: skylake

@@ -10,7 +10,7 @@ Before continuing, let us make sure that Clang has been successfully compiled:
 
 ``` shell
 $ ./bin/clang --version
-clang version 13.0.1 (https://github.com/llvm/llvm-project.git 75e33f71c2dae584b13a7d1186ae0a038ba98838)
+clang version 16.0.3 (https://github.com/llvm/llvm-project.git da3cd333bea572fb10470f610a27f22bcb84b08c)
 Target: x86_64-unknown-linux-gnu
 Thread model: posix
 InstalledDir: /home/vedranm/workspace/Development/llvm-project/builddir/./bin
@@ -141,7 +141,7 @@ main:                                   # @main
     .asciz  "hello, world\n"
     .size   .L.str, 14
 
-    .ident  "clang version 13.0.1 (https://github.com/llvm/llvm-project.git 75e33f71c2dae584b13a7d1186ae0a038ba98838)"
+    .ident  "clang version 16.0.3 (https://github.com/llvm/llvm-project.git da3cd333bea572fb10470f610a27f22bcb84b08c)"
     .section    ".note.GNU-stack","",@progbits
     .addrsig
     .addrsig_sym printf
@@ -181,7 +181,7 @@ main:                                   # @main
     .asciz  "hello, world\n"
     .size   .L.str, 14
 
-    .ident  "clang version 13.0.1 (https://github.com/llvm/llvm-project.git 75e33f71c2dae584b13a7d1186ae0a038ba98838)"
+    .ident  "clang version 16.0.3 (https://github.com/llvm/llvm-project.git da3cd333bea572fb10470f610a27f22bcb84b08c)"
     .section    ".note.GNU-stack","",@progbits
     .addrsig
     .addrsig_sym printf
@@ -262,7 +262,7 @@ $.str:
     .asciz  "hello, world\n"
     .size   $.str, 14
 
-    .ident  "clang version 13.0.1 (https://github.com/llvm/llvm-project.git 75e33f71c2dae584b13a7d1186ae0a038ba98838)"
+    .ident  "clang version 16.0.3 (https://github.com/llvm/llvm-project.git da3cd333bea572fb10470f610a27f22bcb84b08c)"
     .section    ".note.GNU-stack","",@progbits
     .addrsig
     .addrsig_sym printf
@@ -365,7 +365,7 @@ _GLOBAL__sub_I_example2.cpp:            # @_GLOBAL__sub_I_example2.cpp
     .section    .init_array,"aw",@init_array
     .p2align    3
     .quad   _GLOBAL__sub_I_example2.cpp
-    .ident  "clang version 13.0.1 (https://github.com/llvm/llvm-project.git 75e33f71c2dae584b13a7d1186ae0a038ba98838)"
+    .ident  "clang version 16.0.3 (https://github.com/llvm/llvm-project.git da3cd333bea572fb10470f610a27f22bcb84b08c)"
     .section    ".note.GNU-stack","",@progbits
     .addrsig
     .addrsig_sym __cxx_global_var_init
@@ -421,7 +421,7 @@ attributes #1 = { "frame-pointer"="all" "no-trapping-math"="true" "stack-protect
 !0 = !{i32 1, !"wchar_size", i32 4}
 !1 = !{i32 7, !"uwtable", i32 1}
 !2 = !{i32 7, !"frame-pointer", i32 2}
-!3 = !{!"clang version 13.0.1 (https://github.com/llvm/llvm-project.git 75e33f71c2dae584b13a7d1186ae0a038ba98838)"}
+!3 = !{!"clang version 16.0.3 (https://github.com/llvm/llvm-project.git da3cd333bea572fb10470f610a27f22bcb84b08c)"}
 ```
 
 !!! admonition "Assignment"
