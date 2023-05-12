@@ -4,6 +4,8 @@ author: Vedran Miletić
 
 # Zettlr workshop
 
+Written teaching materials can have many forms: lecture notes, presentations, and even web sites. The authoring tools for the materials are still mostly tied to the specific form, but in the last decade the Markdown format has emerged as the solution that allows producing many forms of materials from the same content. This workshop presents a user-friendly approach to using Markdown in the production of teaching materials with open-source tools.
+
 [Markdown](https://daringfireball.net/projects/markdown/), according to [Wikipedia](https://en.wikipedia.org/wiki/Markdown), is a lightweight markup language for creating formatted text using a plain-text editor. It is [implemented in many applications](https://en.wikipedia.org/wiki/Markdown#Implementations), including Microsoft Teams, Discord, RStudio, Kanboard, and Discourse.
 
 While any plain-text editor can be used to write Markdown, many students at [Faculty of Informatics and Digital Technologies](https://www.inf.uniri.hr/) like to use powerful integrated development environments such as [Visual Studio Code](https://code.visualstudio.com/) and [PyCharm](https://www.jetbrains.com/pycharm/). Unlike these developer-oriented tools, [Zettlr](https://zettlr.com/) is slim, fast, versatile, and user-friendly Markdown-specific editor that integrates well with reference managers such as [Zotero](https://www.zotero.org/) and [JabRef](https://www.jabref.org/).
