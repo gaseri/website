@@ -2,7 +2,7 @@
 marp: true
 author: Vedran Miletić, Marin Jurjević
 title: C++ ekosustav jučer/danas/sutra
-description: Predavanje na 16. unConferenceu IT zajendnice Rijeka
+description: Predavanje na 16. unConferenceu IT zajednice Rijeka
 keywords: c++, isocpp, qt
 theme: default
 class: _invert
