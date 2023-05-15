@@ -1133,6 +1133,22 @@ Commits listed from [repository on GitLab](https://gitlab.com/nsnam/ns-3-dev):
 - commit [`cc69b4f83f7eab27df7ca1c36c1232da8464f292`](https://gitlab.com/nsnam/ns-3-dev/-/commit/cc69b4f83f7eab27df7ca1c36c1232da8464f292): documentation file name fix
 - commit [`1edd47a75152da15d20104787ded82fc1116e813`](https://gitlab.com/nsnam/ns-3-dev/-/commit/1edd47a75152da15d20104787ded82fc1116e813): fix TeX formulas after doxygen change
 
+### PHP
+
+Description: [home page](https://www.php.net/), [Wikipedia page](https://en.wikipedia.org/wiki/PHP).
+
+Commits listed from [repository on GitHub](https://github.com/php/php-src):
+
+- commit [`7065a222b777098fedc3e529f864e994966c5688`](https://github.com/php/php-src/commit/7065a222b777098fedc3e529f864e994966c5688): Respond with HTTP status 405 to DELETE/PUT/PATCH request on a static resource
+
+    ??? note
+        Co-authored-by: Marin Martuslović <marin.martuslovic@student.uniri.hr>
+
+- commit [`4f509058a95b6952ad24ed9ddb7ea9b39f5311e2`](https://github.com/php/php-src/commit/4f509058a95b6952ad24ed9ddb7ea9b39f5311e2): Respond without body to HEAD request on a static resource
+
+    ??? note
+        Co-authored-by: Marin Martuslović <marin.martuslovic@student.uniri.hr>
+
 ### RDKit
 
 Description: [home page](https://www.rdkit.org/), [Wikipedia page](https://en.wikipedia.org/wiki/RDKit).
