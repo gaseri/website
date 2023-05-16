@@ -12,6 +12,7 @@ tags:
 - [Aritmetičke operacije](../materijali/aritmeticke-operacije.md)
 - [Bistabili i registri](../materijali/bistabili-i-registri.md)
 - [Booleova algebra](../materijali/booleova-algebra.md)
+- [MIPS asembler](../materijali/mips-asembler.md)
 
 ### Dodatni materijali
 
