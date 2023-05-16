@@ -20,6 +20,7 @@ nav:
       - O nastavi: hr/nastava/index.md
       - Izvedbeni planovi:
         - Akademska godina 2022./2023.:
+          - Arhitektura i organizacija računala: hr/nastava/izvedbeni/2022-2023/AOR.md
           - Informatika (BioTech): hr/nastava/izvedbeni/2022-2023/INF-BioTech.md
           - Informatika za farmaceute (MedRi): hr/nastava/izvedbeni/2022-2023/INF-Pharma.md
           - Infrastruktura za podatke velikog obujma: hr/nastava/izvedbeni/2022-2023/IPVO.md
