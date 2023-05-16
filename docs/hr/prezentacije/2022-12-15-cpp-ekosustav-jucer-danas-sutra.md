@@ -139,6 +139,8 @@ int main() {
 
 ```
 
+---
+
 ## Kronologija C++ standarda: C++11/14
 
 Primjer koda koji izvodi zbrajanje dva broja korištenjem lambda funkcije koja vraća i prima auto argumente i rezultat:
@@ -161,6 +163,8 @@ int main(){
     return 0;
 }
 ```
+
+---
 
 ## Memory management i smart pointeri: C++98
 
