@@ -19,25 +19,15 @@ First, install the [C/C++ Extension Pack](https://marketplace.visualstudio.com/i
 
 Hereafter we will more or less follow the directions of [Getting started with the LLVM System](https://llvm.org/docs/GettingStarted.html) from the [Getting Started/Tutorials section](https://llvm.org/docs/GettingStartedTutorials.html).
 
-It is possible to download the LLVM source code from its [releases page](https://releases.llvm.org/). We'll be using the latest patch release from the latest series that is available. At the time of the start of the course, this is [release 16.0.3](https://releases.llvm.org/download.html#16.0.3).
-
-We'll be following [Building LLVM with CMake](https://llvm.org/docs/CMake.html) from [LLVM documentation](https://llvm.org/docs/), section [User Guides](https://llvm.org/docs/UserGuides.html). We'll start by creating a directory for LLVM project:
+It is possible to download the LLVM source code from its [releases page](https://releases.llvm.org/). We'll be using the latest patch release from the latest series that is available. At the time of the start of the course, this is [release 16.0.3](https://releases.llvm.org/download.html#16.0.3). We'll download the source code from the [LLVM 16.0.3 release on GitHub](https://github.com/llvm/llvm-project/releases/tag/llvmorg-16.0.3):
 
 ``` shell
-$ mkdir llvm-project-16.0.3
-$ cd llvm-project-16.0.3
+$ curl -OL https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-16.0.3.tar.gz
 ```
 
-If Visual Studio Code is used for the development, this is the project directory that should be opened in it. Afterwards, the [integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal) can be used for running the comamnds.
+This is the complete source code achive for all tools and libraries. The same page also provides the binaries as well as the separate source code archives for the [tools and libraries produced by the LLVM sub-projects](https://llvm.org/):
 
-We'll download the source code from the [LLVM 16.0.3 release on GitHub](https://github.com/llvm/llvm-project/releases/tag/llvmorg-16.0.3):
-
-``` shell
-$ curl -OL https://github.com/llvm/llvm-project/releases/download/llvmorg-16.0.3/llvm-16.0.3.src.tar.xz
-```
-
-Observe the `.src` in the name, indicating that we're downloading the source code. The same page also provides the binaries as well as the source code for the [tools and libraries produced by the LLVM sub-projects](https://llvm.org/):
-
+- LLVM core libraries,
 - Clang compiler and its tools,
 - compiler-rt runtime library,
 - Flang compiler,
@@ -49,20 +39,21 @@ Observe the `.src` in the name, indicating that we're downloading the source cod
 - Polly high-level loop and data-locality optimizations infrastructure, and
 - test suite.
 
-Although all of these tools are interesting in their own way, most of them will not be used here. In particular, we will be using Clang to demonstrate the compile process. We'll download it just like LLVM:
+Although all of these tools are interesting in their own way, most of them will not be used here. In particular, we will be using Clang to demonstrate the compile process.
+
+We'll be following [Building LLVM with CMake](https://llvm.org/docs/CMake.html) from [LLVM documentation](https://llvm.org/docs/), section [User Guides](https://llvm.org/docs/UserGuides.html). Now it's time to unpack the source code tarballs.
 
 ``` shell
-$ curl -OL https://github.com/llvm/llvm-project/releases/download/llvmorg-16.0.3/clang-16.0.3.src.tar.xz
-```
-
-Now it's time to unpack the source code tarballs.
-
-``` shell
-$ tar xJf llvm-16.0.3.src.tar.xz
-$ tar xJf clang-16.0.3.src.tar.xz
+$ tar xzf llvmorg-16.0.3.tar.gz
 ```
 
 LLVM, Clang, and related projects use [CMake for building](https://llvm.org/docs/CMake.html). Most notably, it does not support building in the source tree, so it's necessary to start by creating a directory:
+
+``` shell
+$ cd llvm-project-llvmorg-16.0.3
+```
+
+If Visual Studio Code is used for the development, this is the project directory that should be opened in it. Afterwards, the [integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal) can be used for running the comamnds.
 
 ``` shell
 $ mkdir builddir
