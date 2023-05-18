@@ -4,7 +4,7 @@ author: Vedran Miletić
 
 # Developing with the LLVM compiler infrastructure
 
-During the course we will use [LLVM](https://llvm.org/)., which is a well-known open-source compiler and toolchain. It is distributed under the [Apache License 2.0 with LLVM Exceptions](https://llvm.org/docs/DeveloperPolicy.html#new-llvm-project-license-framework). Due to its popularity, there are various LLVM programs and libraries are packaged for many operating systems, including [Debian GNU/Linux](https://tracker.debian.org/pkg/llvm-defaults), [Arch Linux](https://archlinux.org/packages/extra/x86_64/llvm/), and [FreeBSD](https://www.freshports.org/devel/llvm/). Therefore we could install LLVM from the operating system repository, although this would later prevent us from modifying its source code.
+During the course we will use [LLVM](https://llvm.org/), which is a well-known open-source compiler and toolchain. It is distributed under the [Apache License 2.0 with LLVM Exceptions](https://llvm.org/docs/DeveloperPolicy.html#new-llvm-project-license-framework). Due to its popularity, there are various LLVM programs and libraries are packaged for many operating systems, including [Debian GNU/Linux](https://tracker.debian.org/pkg/llvm-defaults), [Arch Linux](https://archlinux.org/packages/extra/x86_64/llvm/), and [FreeBSD](https://www.freshports.org/devel/llvm/). Therefore we could install LLVM from the operating system repository, although this would later prevent us from modifying its source code.
 
 ## Setting up the integrated development environment
 
