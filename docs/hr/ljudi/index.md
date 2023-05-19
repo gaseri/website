@@ -18,7 +18,7 @@ author: Vedran Miletić
 - [dr. sc. Vanja Slavuj](https://portal.uniri.hr/Portfelj/1474), docent
 - [dr. sc. Lado Kranjčević](https://portal.uniri.hr/Portfelj/1843), redoviti profesor, [Zavod za mehaniku fluida i računarsko inženjerstvo](http://www.riteh.uniri.hr/ustroj/zavodi/zmfri/), [Tehnički fakultet](http://www.riteh.uniri.hr/), [Sveučilište u Rijeci](https://uniri.hr/)
 - [Dr. Davide Mercadante](https://lab.mercadante.net/), viši predavač, [Škola za kemijske znanosti](https://www.auckland.ac.nz/en/science/about-the-faculty/school-of-chemical-sciences.html), [Sveučilište u Aucklandu](https://www.auckland.ac.nz/en.html)
-- [Patrik Nikolić](https://nikoli.ch/), vlasnik, [BioRX partneri d. o. o.](https://www.biorxpartners.com/); bivši znanstvenik za translacijska istraživanja, [RxTx](https://www.rxtx.tech/)
+- [Patrik Nikolić](https://nikoli.ch/), vlasnik, [BioRX partneri d. o. o.](https://www.biorxpartners.com/); bivši znanstvenik za translacijska istraživanja, [RxTx Research](https://rxtxresearch.github.io/)
 - [Maja Škarica](https://www.jutarnji.hr/vijesti/hrvatska/vodic-za-ustedu-kupujem-jednom-tjedno-na-akcijama-planiram-obroke-i-mjesecno-ustedim-2000-kn-15064860), vlasnica, [Menar Academy Ivanić-Grad](https://menaracademy.eu/upisni-centri/ivanic-grad)
 - [Maja Vrancich](https://maja.vrancich.com/), učiteljica informatike, [Osnovna škola Pećine](http://os-pecine-ri.skole.hr/)
 

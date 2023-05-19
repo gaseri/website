@@ -26,7 +26,7 @@ v\. pred. dr. sc. Vedran Miletić (10P + 20V x 2 grupe)
 
 ### Gostujući predavači
 
-Patrik Nikolić, mag. med. chem. ([Biomedica](https://www.bmgrp.com/) i [RxTx](https://www.rxtx.tech/))
+Patrik Nikolić, mag. med. chem. ([Biomedica](https://www.bmgrp.com/) i [RxTx Research](https://rxtxresearch.github.io/))
 
 ## Obavezna literatura
 

@@ -43,11 +43,11 @@ abstract: |
 ---
 
 <!-- 1 min -->
-## RxTx
+## RxTx Research
 
 - returned from Heidelberg, became a Senior Lecturer
     - 90% working hours teaching (courses + Bura supercomputer), 10% administration, **0% research**
-- started RxTx ([www.rxtx.tech](https://www.rxtx.tech/))
+- started RxTx Research ([rxtxresearch.github.io](https://rxtxresearch.github.io/))
     - collaboration with Patrik Nikolić ([www.nikoli.ch](https://nikoli.ch/), former student researcher in BioSFGroup)
     - vision: *advancing the pharmaceutical drug research by improving the scientific software behind the scenes*
     - developed open-source high-throughput virtual screening engine RxDock ([rxdock.gitlab.io](https://rxdock.gitlab.io/), until promotion to assist. prof.)
