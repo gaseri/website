@@ -117,7 +117,7 @@ Claiming that the individual researcher who did not receive funding for research
 
 This is a sensible argument. However, it does not address the freedom issue already discussed above. **The lab that buys the license to use the software depends on a single vendor to maintain the software for them.** Furthermore, the lab is not granted the right to modify the code to fit their needs and to redistribute their modifications to their colleagues. The issue here is not the price of the license but **the freedom that is taken away from the paying user**.
 
-### What Is “Open Source”?
+### What is *open source* and *free*?
 
 > The term “open source” is ubiquitous but its meaning is ambiguous. Some codes are “free” but are not open, whereas others make the source code available, albeit without binary executables so that responsibility for compilation and installation is left to the user. Insofar as the use of commercial quantum chemistry software is a mainstay of modern chemical research and teaching, there exists a broad consensus that the commercial model offers the stability and user support that the community desires.
 
