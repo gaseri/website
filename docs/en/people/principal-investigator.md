@@ -1149,6 +1149,32 @@ Commits listed from [repository on GitHub](https://github.com/php/php-src):
     ??? note
         Co-authored-by: Marin Martuslović <marin.martuslovic@student.uniri.hr>
 
+### Phorge
+
+Description: [home page](https://we.phorge.it//), [Wikipedia page](https://en.wikipedia.org/wiki/Phorge).
+
+Commits listed from [repository on Phorge](https://we.phorge.it/source/phorge/):
+
+- commit [`f8ffa393c4427f8b9026075e6dc490990a12df12`](https://gitlab.com/rxdock/rxdock/-/commit/569f2fe6df5401ce9b8d6780a487e570030e9a2a): Added cross-platform default fonts
+
+    ??? note
+        Summary:
+        `system-ui` is provided by modern browsers as [a cross-platform default font](https://caniuse.com/font-family-system-ui). Using this font [was a controversial choice back in 2017](https://infinnie.github.io/blog/2017/systemui.html). because it did not address i18n well and therefore it was removed from Bootstrap [twbs/bootstrap#22377](https://github.com/twbs/bootstrap/pull/22377). However, it was added back in Bootstrap v5 [twbs/bootstrap#30561](https://github.com/twbs/bootstrap/pull/30561) since it got better over time.
+
+        Fixes T15049.
+
+        Test Plan: Tested locally for now.
+
+        Reviewers: O1 Blessed Committers, avivey
+
+        Reviewed By: O1 Blessed Committers, avivey
+
+        Subscribers: Matthew, avivey, Cigaryno, 20after4, Ekubischta, speck, tobiaswiese, valerio.bozzolan
+
+        Maniphest Tasks: T15049
+
+        Differential Revision: <https://we.phorge.it/D25021>
+
 ### RDKit
 
 Description: [home page](https://www.rdkit.org/), [Wikipedia page](https://en.wikipedia.org/wiki/RDKit).
