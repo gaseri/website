@@ -169,6 +169,14 @@ Finally, I stand for individual freedom which is constantly under threat from pe
 
 Software projects are listed in alphabetical order. Selected contributions are listed in reverse chronological order.
 
+### Apache HTTP Server
+
+Description: [home page](https://httpd.apache.org/), [Wikipedia page](https://en.wikipedia.org/wiki/Apache_HTTP_Server).
+
+Revisions listed from [repository on Apache-SVN](https://svn.apache.org/viewvc/httpd/):
+
+- revision [`1897297`](https://svn.apache.org/viewvc?view=revision&revision=1897297): Patch from Vedran Miletić. Notes version when this is supported.
+
 ### CP2K
 
 Description: [home page](https://www.cp2k.org/), [Wikipedia page](https://en.wikipedia.org/wiki/CP2K).
