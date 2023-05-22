@@ -6,14 +6,13 @@ author: Adam Wiggins
     Sadržaj u nastavku je prijevod stranice [VI. Processes](https://12factor.net/processes) na web sjedištu [The Twelve-Factor App](https://12factor.net/).
 
 ## VI. Procesi
-
 ### Izvršavajte aplikaciju kao jedan ili više procesa bez stanja
 
 Aplikacija se izvršava u izvršnom okruženju kao jedan ili više *procesa*.
 
-U najjednostavnijem slučaju, kôd je samostalna skripta, izvršno okruženje je lokalno prijenosno računalo razvojnog programera s instaliranim interpreterom i standardnom bibliotekom jezika, a proces se pokreće putem naredbenog retka (na primjer, `python my_script.py`). S druge strane spektra, produkcijska implementacija sofisticirane aplikacije može koristiti mnoge [vrste procesa, instancirane u nula ili više pokrenutih procesa](concurrency.md).
+U najjednostavnijem slučaju, kôd je samostalna skripta, izvršno okruženje je lokalno prijenosno računalo razvijatelja s instaliranim interpreterom i standardnom bibliotekom jezika, a proces se pokreće putem naredbenog retka (na primjer, `python my_script.py`). S druge strane spektra, produkcijska implementacija sofisticirane aplikacije može koristiti mnoge [vrste procesa, instancirane u nula ili više pokrenutih procesa](concurrency.md).
 
-**Dvanaestofaktroski procesi su bez stanja i [ništa ne dijele međusobno](https://en.wikipedia.org/wiki/Shared_nothing_architecture).** Svi podaci koji moraju postojati moraju se pohraniti u [prateću uslugu](backing-services.md), uobičajeno bazu podataka.
+**Dvanaestofaktroski procesi su bez stanja i [ništa ne dijele međusobno](https://en.wikipedia.org/wiki/Shared_nothing_architecture).** Svi podaci koji moraju postojati moraju se pohraniti u [potpornu uslugu](backing-services.md), uobičajeno bazu podataka.
 
 Memorijski prostor ili datotečni sustav procesa može se koristiti kao kratka predmemorija za jednu transakciju. Na primjer, preuzimanje velike datoteke, rad s njom i pohranjivanje rezultata operacije u bazu podataka. Dvanaestofaktorska aplikacija nikada ne pretpostavlja da će sve što je predmemorirano u memoriji ili na disku biti dostupno u budućem zahtjevu ili poslu -- s velikim brojem pokrenutih procesa svake vrste, velike su šanse da će budući zahtjev poslužiti drugi proces. Čak i kada se izvodi samo jedan proces, ponovno pokretanje (pokrenuto implementacijom kôda, promjenom konfiguracije ili izvršnim okruženjem koje premješta proces na drugu fizičku lokaciju) obično će izbrisati svo lokalno (npr. memoriju i datotečni sustav) stanje.
 

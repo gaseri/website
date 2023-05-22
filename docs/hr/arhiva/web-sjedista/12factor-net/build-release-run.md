@@ -6,7 +6,6 @@ author: Adam Wiggins
     Sadržaj u nastavku je prijevod stranice [V. Build, release, run](https://12factor.net/build-release-run) na web sjedištu [The Twelve-Factor App](https://12factor.net/).
 
 ## V. Izgradnja, izdavanje, pokretanje
-
 ### Strogo razdvojite stadije izgradnje i pokretanja
 
 [Baza izvornog kôda](codebase.md) pretvara se u (nerazvojnu) implementaciju kroz tri stadija:
@@ -23,4 +22,4 @@ Alati za implementaciju obično nude alate za upravljanje izdanjima, posebice mo
 
 Svako izdanje uvijek treba imati jedinstveni identifikator izdanja, kao što je vremenska oznaka izdanja (kao što je `2011-04-06-20:32:17`) ili rastući broj (kao što je `v100`). Skup izdanja je namijenjen samo za dodavanje i izdanje se ne može mijenjati nakon što je stvoreno. Svaka promjena mora stvoriti novo izdanje.
 
-Izgradnje pokreću razvojni programeri aplikacije svaki put kad se implementira novi kôd. Za razliku od toga, pokretanje može se dogoditi automatski tijekom izvršavanja u slučajevima kao što je ponovno pokretanje poslužitelja ili srušeni proces kojeg ponovno pokreće upravitelj procesa. Stoga bi se stadij izvršavanja trebao zadržati na što manje pokretnih dijelova, budući da problemi koji sprječavaju pokretanje aplikacije mogu uzrokovati da se pokvari usred noći kada nema razvojnih programera. Stadij izgradnje može biti složeniji, budući da su pogreške uvijek u prvom planu za razvojnog programera koji pokreće implementaciju.
+Izgradnje pokreću razvijatelji aplikacije svaki put kad se implementira novi kôd. Za razliku od toga, pokretanje može se dogoditi automatski tijekom izvršavanja u slučajevima kao što je ponovno pokretanje poslužitelja ili srušeni proces kojeg ponovno pokreće upravitelj procesa. Stoga bi se stadij izvršavanja trebao zadržati na što manje pokretnih dijelova, budući da problemi koji sprječavaju pokretanje aplikacije mogu uzrokovati da se pokvari usred noći kada nema razvijatelja. Stadij izgradnje može biti složeniji, budući da su pogreške uvijek u prvom planu za razvijatelja koji pokreće implementaciju.

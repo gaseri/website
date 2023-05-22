@@ -2,13 +2,14 @@
 author: Adam Wiggins
 ---
 
-# Pozadina
-
 !!! note
     Sadržaj u nastavku je prijevod web sjedišta [The Twelve-Factor App](https://12factor.net/).
 
-Suradnici u izradi ovog dokumenta bili su izravno uključeni u razvoj i implementaciju stotina aplikacija, a neizravno su svjedočili razvoju, radu i skaliranju stotina tisuća aplikacija putem našeg rada na platformi [Heroku](https://www.heroku.com/).
+Pozadina
+========
 
-Ovaj dokument sintetizira sva naša iskustva i zapažanja o širokom spektru aplikacija softvera kao usluge u stvarnom svijetu. On je triangulacija idealnih praksi za razvoj aplikacija, pri čemu se posebna pozornost posvećuje dinamici organskog rasta aplikacije tijekom vremena, dinamici suradnje između razvojnih programera koji rade na bazi kôda aplikacije i [izbjegavanje troškova erozije softvera](https://blog.heroku.com/the_new_heroku_4_erosion_resistance_explicit_contracts).
+Suradnici u izradi ovog dokumenta bili su izravno uključeni u razvoj i implementaciju stotina aplikacija te su neizravno svjedočili razvoju, radu i skaliranju stotina tisuća aplikacija putem našeg rada na platformi [Heroku](https://www.heroku.com/).
 
-Naša motivacija je podizanje svijesti o nekim sustavnim problemima koje smo vidjeli u suvremenom razvoju aplikacija, pružanje zajedničkog rječnika za raspravu o tim problemima i pružanje niza širokih konceptualnih rješenja za te probleme s popratnom terminologijom. Format je inspiriran knjigama Martina Fowlera *[Uzorci arhitekture poslovne aplikacije](https://books.google.com/books?id=FyWZt5DdvFkC)* i *[Refactoring](https://books.google.com/books?id=1MsETFPD3I0C)*.
+Ovaj dokument sintetizira sva naša iskustva i zapažanja o širokom spektru aplikacija softvera kao usluge u divljini (u stvarnom svijetu, op. prev.). To je triangulacija o idealnim praksama za razvoj aplikacija, obraćajući posebnu pozornost na dinamiku organskog rasta aplikacije tijekom vremena, dinamiku suradnje između razvijatelja koji rade na bazi kôda aplikacije i [izbjegavanju troškova erozije softvera](https://blog.heroku.com/the_new_heroku_4_erosion_resistance_explicit_contracts).
+
+Naša motivacija je podići svijest o nekim sustavnim problemima koje smo vidjeli u modernom razvoju aplikacija, pružiti zajednički rječnik za raspravu o tim problemima i ponuditi skup širokih konceptualnih rješenja za te probleme s pratećom terminologijom. Format je inspiriran knjigama Martina Fowlera *[Uzorci arhitekture poslovne aplikacije](https://books.google.com/books?id=FyWZt5DdvFkC)* i *[Refactoring](https://books.google.com/books?id=1MsETFPD3I0C)*.
