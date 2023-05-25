@@ -291,6 +291,48 @@ Description: [home page](https://www.gromacs.org/), [Wikipedia page](https://en.
 
 Commits listed from [repository on GitLab](https://gitlab.com/gromacs/gromacs):
 
+- commit [`8eda9038c579785ddf1dc83657b0c7bdeb98c714`](https://gitlab.com/gromacs/gromacs/-/commit/8eda9038c579785ddf1dc83657b0c7bdeb98c714): Renamed members of {anonymous}::PositionCalculationTest::PositionTest struct to avoid shadowing
+- commit [`045f95c1e4555df193b4822f5316f6a23c465beb`](https://gitlab.com/gromacs/gromacs/-/commit/045f95c1e4555df193b4822f5316f6a23c465beb): Renamed members of {anonymous}::NeighborhoodSearchTestData::TestPosition struct to avoid shadowing
+- commit [`3a2b0e78f75c8f6fab0e18953c8765655b90aec7`](https://gitlab.com/gromacs/gromacs/-/commit/3a2b0e78f75c8f6fab0e18953c8765655b90aec7): Renamed members of {anonymous}::NeighborhoodSearchTestData::RefPair struct to avoid shadowing
+- commit [`bf0869fde35358d5f3094da2dc678a6a79312b15`](https://gitlab.com/gromacs/gromacs/-/commit/bf0869fde35358d5f3094da2dc678a6a79312b15): Renamed members of gmx::test::AnalysisDataTestInputPointSet::Value struct to avoid shadowing
+- commit [`26028764edef168d08b9d88cf31bfff4b6136311`](https://gitlab.com/gromacs/gromacs/-/commit/26028764edef168d08b9d88cf31bfff4b6136311): Renamed members of gmx::test::CommandLineTestHelper::Impl::OutputFileInfo struct to avoid shadowing
+- commit [`f638d179373f12ce4d20e9ea2555cfd36cb4f583`](https://gitlab.com/gromacs/gromacs/-/commit/f638d179373f12ce4d20e9ea2555cfd36cb4f583): Renamed member of gmx::test::MoveOnly struct to avoid shadowing
+- commit [`689b4fdc9021964513c73864b48eecdbfe0631f6`](https://gitlab.com/gromacs/gromacs/-/commit/689b4fdc9021964513c73864b48eecdbfe0631f6): Renamed member of gmx::{anonymous}::OptionsAdapter::ProgramArgData struct to avoid shadowing
+- commit [`d39016b09a03687061ac0bb1a756a875f7d8602f`](https://gitlab.com/gromacs/gromacs/-/commit/d39016b09a03687061ac0bb1a756a875f7d8602f): Renamed member of gmx::{anonymous}::OptionsAdapter::FileNameData struct to avoid shadowing
+- commit [`f32e349632437b5aefc3737ba7e25834013490f3`](https://gitlab.com/gromacs/gromacs/-/commit/f32e349632437b5aefc3737ba7e25834013490f3): Renamed member of gmx::{anonymous}::CommonFormatterData class to avoid shadowing
+- commit [`68b157b64ac8f6031419456ddbb1719c72db5bfb`](https://gitlab.com/gromacs/gromacs/-/commit/68b157b64ac8f6031419456ddbb1719c72db5bfb): Renamed members of gmx::analysismodules::{anonymous}::IndexFileWriterModule::GroupInfo struct to avoid shadowing
+- commit [`7407572f225106bd9b4922d6322c4271ca176167`](https://gitlab.com/gromacs/gromacs/-/commit/7407572f225106bd9b4922d6322c4271ca176167): Renamed members of gmx::HelpLinks::Impl::LinkItem struct to avoid shadowing
+- commit [`92dd58d88c2c6c1bbd5ac672842c868d77fedb7c`](https://gitlab.com/gromacs/gromacs/-/commit/92dd58d88c2c6c1bbd5ac672842c868d77fedb7c): Renamed members of gmx::HelpWriterContext::Impl::ReplaceItem struct to avoid shadowing
+- commit [`df7059c8dd178cb2756c58dc569ea13edcdae1f3`](https://gitlab.com/gromacs/gromacs/-/commit/df7059c8dd178cb2756c58dc569ea13edcdae1f3): Renamed member of gmx::AnalysisDataModuleManager::Impl::ModuleInfo struct to avoid shadowing
+- commit [`051c7d93dcea9747d603df8fe386d33ab401193f`](https://gitlab.com/gromacs/gromacs/-/commit/051c7d93dcea9747d603df8fe386d33ab401193f): Renamed member of gmx::ProcessFrameConversion::FrameModule struct to avoid shadowing
+- commit [`f376fe20ff5899fa3dd89fab313c6f2f3c2afe3e`](https://gitlab.com/gromacs/gromacs/-/commit/f376fe20ff5899fa3dd89fab313c6f2f3c2afe3e): Renamed member of gmx::Constraints::Impl class to avoid shadowing
+- commit [`1c10795d239b0b6c04b256bd7e42485d7464be48`](https://gitlab.com/gromacs/gromacs/-/commit/1c10795d239b0b6c04b256bd7e42485d7464be48): Renamed members of gmx::ImdSession::Impl class to avoid shadowing
+- commit [`d6b1dcb5c2932f197bcfd3bdc67fd20633fae722`](https://gitlab.com/gromacs/gromacs/-/commit/d6b1dcb5c2932f197bcfd3bdc67fd20633fae722): Renamed member of gmx::BiasParams class to avoid shadowing
+- commit [`db023872c617d378477b8109cd4c6f0633154f8c`](https://gitlab.com/gromacs/gromacs/-/commit/db023872c617d378477b8109cd4c6f0633154f8c): Renamed members of gmx::AwhEnergyBlock class to avoid shadowing
+- commit [`e928ef7039b286a35392f6c0a969bff7a850f48a`](https://gitlab.com/gromacs/gromacs/-/commit/e928ef7039b286a35392f6c0a969bff7a850f48a): Renamed member of gmx::ConstraintsParam class to avoid shadowing
+- commit [`a2f880bb1811f739f6dda2524f57258c62630b2b`](https://gitlab.com/gromacs/gromacs/-/commit/a2f880bb1811f739f6dda2524f57258c62630b2b): Renamed members of gmx::CorrelationGrid class to avoid shadowing
+- commit [`1084afd1159be0b72838fab6e752bf5f27c13667`](https://gitlab.com/gromacs/gromacs/-/commit/1084afd1159be0b72838fab6e752bf5f27c13667): Renamed member of gmx::InteractiveMD class to avoid shadowing
+- commit [`d251804c5969cf9309959decb7fb2e49e0e89400`](https://gitlab.com/gromacs/gromacs/-/commit/d251804c5969cf9309959decb7fb2e49e0e89400): Renamed member of gmx::IonSwapping class to avoid shadowing
+- commit [`1565a300656239099b3dc5a35a45190e937326c1`](https://gitlab.com/gromacs/gromacs/-/commit/1565a300656239099b3dc5a35a45190e937326c1): Renamed member of gmx::LegacyInput class to avoid shadowing
+- commit [`b48a3b8e26820d7b85ded78d83f8eb64efe0805e`](https://gitlab.com/gromacs/gromacs/-/commit/b48a3b8e26820d7b85ded78d83f8eb64efe0805e): Renamed members of gmx::SelectionParserValue class to avoid shadowing
+- commit [`f7afdf8174bdac896e6cd050dba4ea116d27abdd`](https://gitlab.com/gromacs/gromacs/-/commit/f7afdf8174bdac896e6cd050dba4ea116d27abdd): Renamed members of Nbnxm::GridSet::DomainSetup struct to avoid shadowing
+- commit [`b63849003354791e18dabfc432a166fc7a51a193`](https://gitlab.com/gromacs/gromacs/-/commit/b63849003354791e18dabfc432a166fc7a51a193): Renamed member of swap_group struct to avoid shadowing
+- commit [`39eae60c361256acc80e9460f0282c8b3240c285`](https://gitlab.com/gromacs/gromacs/-/commit/39eae60c361256acc80e9460f0282c8b3240c285): Renamed members of JListRanges struct to avoid shadowing
+- commit [`9b01106c17d8962cd38846c35b11ba588a50ad19`](https://gitlab.com/gromacs/gromacs/-/commit/9b01106c17d8962cd38846c35b11ba588a50ad19): Renamed members of PairlistParams struct to avoid shadowing
+- commit [`03f14f6c256cac8792dd5db13220a190c32db071`](https://gitlab.com/gromacs/gromacs/-/commit/03f14f6c256cac8792dd5db13220a190c32db071): Renamed members of t_forcetable struct to avoid shadowing
+- commit [`40b1aefc6e18785f6bd903f298ca3b7364ce4024`](https://gitlab.com/gromacs/gromacs/-/commit/40b1aefc6e18785f6bd903f298ca3b7364ce4024): Renamed members of pull_coord_work_t struct to avoid shadowing
+- commit [`a29b354ede30ebb4213d734e68fd8d49973bb829`](https://gitlab.com/gromacs/gromacs/-/commit/a29b354ede30ebb4213d734e68fd8d49973bb829): Renamed members of do_fspline struct to avoid shadowing
+- commit [`daa31a1e200867ae91b56277570c4a57526ba371`](https://gitlab.com/gromacs/gromacs/-/commit/daa31a1e200867ae91b56277570c4a57526ba371): Renamed members of ReverseTopOptions struct to avoid shadowing
+- commit [`84d987250f5195e01c3a80408ab1766d81c6fe83`](https://gitlab.com/gromacs/gromacs/-/commit/84d987250f5195e01c3a80408ab1766d81c6fe83): Renamed members of gmx::TopologyData class to avoid shadowing
+- commit [`43bfcfa3b3cf262340281c4d73129b8af429a0a3`](https://gitlab.com/gromacs/gromacs/-/commit/43bfcfa3b3cf262340281c4d73129b8af429a0a3): Renamed members of gmx::Profiling class to avoid shadowing
+- commit [`7e4a20cfd528649001052a46d4eb1eda621597b4`](https://gitlab.com/gromacs/gromacs/-/commit/7e4a20cfd528649001052a46d4eb1eda621597b4): Renamed members of gmx::ModularSimulatorAlgorithm class to avoid shadowing
+- commit [`1dd5e6055d1a9b11741bc55dc42b4c990dd45653`](https://gitlab.com/gromacs/gromacs/-/commit/1dd5e6055d1a9b11741bc55dc42b4c990dd45653): Renamed members of gmx::DimParams struct to avoid shadowing
+- commit [`30d916f3a1ab88270d4549c59067d9bd74278f2c`](https://gitlab.com/gromacs/gromacs/-/commit/30d916f3a1ab88270d4549c59067d9bd74278f2c): Renamed members of gmx::DataFileInfo struct to avoid shadowing
+- commit [`3de3c223c91f16e667d5deaac7b0ca174280f322`](https://gitlab.com/gromacs/gromacs/-/commit/3de3c223c91f16e667d5deaac7b0ca174280f322): Renamed members of gmx::InstallationPrefixInfo struct to avoid shadowing
+- commit [`6a071afc3c1eb15a0fe6f0c463003be6bde05d34`](https://gitlab.com/gromacs/gromacs/-/commit/6a071afc3c1eb15a0fe6f0c463003be6bde05d34): Renamed members of gmx::File::NotFoundInfo struct to avoid shadowing
+- commit [`c7841e1ffdfd4bcdea41635bfe90f2ac9e2424ff`](https://gitlab.com/gromacs/gromacs/-/commit/c7841e1ffdfd4bcdea41635bfe90f2ac9e2424ff): Renamed members of gmx::SelMethodEvalContext struct to avoid shadowing
+- commit [`9757531930a8687d2ea7d31628694c79c5056979`](https://gitlab.com/gromacs/gromacs/-/commit/9757531930a8687d2ea7d31628694c79c5056979): Renamed members of gmx::SelectionTopologyProperties struct to avoid shadowing
+- commit [`e3d79fe899968ac6d3ff67f64e1670f64890ad6e`](https://gitlab.com/gromacs/gromacs/-/commit/e3d79fe899968ac6d3ff67f64e1670f64890ad6e): Renamed members of gmx::LegacySimulatorData class to avoid shadowing
 - commit [`adff01bb0d0dd4e7529024fd69041607a4e2b690`](https://gitlab.com/gromacs/gromacs/-/commit/adff01bb0d0dd4e7529024fd69041607a4e2b690): Reduce heading size by inserting a "Deprecated functionality" super-section.
 
     ??? note
