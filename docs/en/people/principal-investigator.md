@@ -643,6 +643,17 @@ Commits listed from [repository on GitLab](https://gitlab.com/gromacs/gromacs):
 
         Change-Id: I68b2196ab77e3e18c3a50717327e59b3482f2a29
 
+### Kanboard
+
+Description: [home page](https://kanboard.org/), [Wikipedia page](https://en.wikipedia.org/wiki/Kanboard).
+
+Commits listed from [repository on GitHub](https://github.com/kanboard/kanboard):
+
+- commit [`87432a4f34d4b8da2a06ed717451cee1082114eb`](https://github.com/kanboard/kanboard/commit/87432a4f34d4b8da2a06ed717451cee1082114eb): Separated font-family specification for input and textarea
+
+    ??? note
+        This avoids the requirement to use !important in custom CSS.
+
 ### Linux
 
 Description: [home page](https://www.kernel.org/), [Wikipedia page](https://en.wikipedia.org/wiki/Linux_kernel).
