@@ -1236,6 +1236,17 @@ Commits listed from [repository on Phorge](https://we.phorge.it/source/phorge/):
 
         Differential Revision: <https://we.phorge.it/D25021>
 
+### PyMdown Extensions
+
+Description: [home page](https://facelessuser.github.io/pymdown-extensions/).
+
+Commits listed from [repository on GitHub](https://github.com/facelessuser/pymdown-extensions):
+
+- commit [`0b9345a4901eae13e8372fb981327cd8fc3e556b`](https://github.com/facelessuser/pymdown-extensions/commit/0b9345a4901eae13e8372fb981327cd8fc3e556b): Fixed Python 3.12 DeprecationWarning (#2055)
+
+    ??? note
+        Testing an element's truth value will raise an exception in future versions.
+
 ### RDKit
 
 Description: [home page](https://www.rdkit.org/), [Wikipedia page](https://en.wikipedia.org/wiki/RDKit).
