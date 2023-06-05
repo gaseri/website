@@ -1247,6 +1247,17 @@ Commits listed from [repository on GitHub](https://github.com/facelessuser/pymdo
     ??? note
         Testing an element's truth value will raise an exception in future versions.
 
+### Python-Markdown
+
+Description: [home page](https://python-markdown.github.io/).
+
+Commits listed from [repository on GitHub](https://github.com/Python-Markdown/markdown):
+
+- commit [`1337d0891757e192165668d2606db36cf08e65a9`](https://github.com/Python-Markdown/markdown/commit/1337d0891757e192165668d2606db36cf08e65a9): Fixed Python 3.12 DeprecationWarning
+
+    ??? note
+        Testing an element's truth value will raise an exception in future versions.
+
 ### RDKit
 
 Description: [home page](https://www.rdkit.org/), [Wikipedia page](https://en.wikipedia.org/wiki/RDKit).
