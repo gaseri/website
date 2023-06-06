@@ -17,9 +17,9 @@ There are [several somewhat](https://bluegenes.github.io/mkdocs-github-actions/)
 
 Since this summer, GitHub offers [publishing Pages using a custom Actions workflow](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow) as a [public beta](https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/), which was a unique feature of [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/) for years. I thought that it would be interesting to see if we could use the existing GitHub Actions workflow configuration for Jekyll and simply replace the Jekyll build step with the MkDocs build step. This would streamline the usage of MkDocs with GitHub Pages, and, in particular, eliminate the requirement for publishing the site from a separate `gh-pages` branch, offering a Jekyll-like experience.
 
-Let's see how far we can get. Without going into details about the [syntax for GitHub Actions](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions), here is the starting workflow configuration file for Jekyll:
+Let's see how far we can get. Without going into details about the [syntax for GitHub Actions](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions), here is the [starter workflow](https://github.com/actions/starter-workflows) [configuration file](https://github.com/actions/starter-workflows/blob/main/pages/jekyll-gh-pages.yml) for deploying a Jekyll site to GitHub Pages:
 
-``` yaml hl_lines="1-2 32-36"
+``` yaml hl_lines="1-2 33-37"
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
 name: Deploy Jekyll with GitHub Pages dependencies preinstalled
 
@@ -37,10 +37,11 @@ permissions:
   pages: write
   id-token: write
 
-# Allow one concurrent deployment
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   # Build job
@@ -50,7 +51,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Setup Pages
-        uses: actions/configure-pages@v2
+        uses: actions/configure-pages@v3
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
@@ -69,14 +70,14 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v2
 ```
 
 The highlighted lines are Jekyll-specific. We can easily replace these lines with the Python setup Action, the installation of MkDocs and Material for MkDocs (using pip), the installation of the optional dependencies required for the [generation of social cards](https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards/) (that is, [Pillow](https://python-pillow.org/) and [CairoSVG](https://cairosvg.org/)), the optional caching setup for the downloaded fonts and the generated social cards, and, finally, the MkDocs site build command.
 
 In this case, since we want a drop-in replacement for Jekyll so that the remaining commands work perfectly, we will perform the MkDocs build using the `mkdocs.yml` configuration file in the current directory and write the built site output files into the `_site` directory.
 
-``` yaml hl_lines="1-2 32-44"
+``` yaml hl_lines="1-2 33-45"
 # Sample workflow for building and deploying a MkDocs site to GitHub Pages
 name: Deploy MkDocs with GitHub Pages dependencies preinstalled
 
@@ -94,10 +95,11 @@ permissions:
   pages: write
   id-token: write
 
-# Allow one concurrent deployment
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   # Build job
@@ -107,11 +109,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Setup Pages
-        uses: actions/configure-pages@v2
+        uses: actions/configure-pages@v3
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
+          python-version: '3.x'
       - name: Install MkDocs and Material for MkDocs
         run: pip install mkdocs[i18n] mkdocs-material
       - name: Install Pillow and CairoSVG (required for social card generation)
@@ -136,7 +138,7 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v2
 ```
 
 And that's it! There is no more requirement for the `.nojekyll` file as Jekyll never gets ran in the build process. There is also no more separate `gh-pages` branch that the built files get pushed to, so there is also no more worry whether the site builds over time will add up to the [1 GB soft limit](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github#repository-size-limits).
@@ -146,3 +148,5 @@ Finally, if you want to use a custom domain, having the `CNAME` file in the repo
 **Updated on 2022-11-25:** changed Python version from 3.10 to 3.11, resulting in faster docs builds (see [Faster CPython](https://docs.python.org/3.11/whatsnew/3.11.html#faster-cpython) for details).
 
 **Updated on 2022-12-03:** changed caching to use `github.sha` instead of `github.ref`, enabling rebuilds of social cards when site contents change.
+
+**Updated on 2023-06-06:** rebased our additions on top of the [latest version](https://github.com/actions/starter-workflows/blob/main/pages/jekyll-gh-pages.yml) of `jekyll-gh-pages.yml` from [Starter Workflows](https://github.com/actions/starter-workflows). Changed Python version from 3.11 to the [latest stable 3.x](https://github.com/actions/setup-python/blob/main/docs/advanced-usage.md#using-the-python-version-input), which is 3.11 at the moment. However, using the current beta version of [Python 3.12](https://docs.python.org/3.12/whatsnew/3.12.html) already works well with `mkdocs-material`, so it's unlikely to cause issues even when 3.12 gets released and becomes the latest stable version.
