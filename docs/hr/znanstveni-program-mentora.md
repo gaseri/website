@@ -4,7 +4,7 @@ author: Vedran Miletić
 
 # Znanstveni program mentora
 
-Naziv doktorskog studija: [Poslijediplomski sveučilišni doktorski studij Informatika](https://www.inf.uniri.hr/studiji/poslijediplomski-studij)
+Naziv doktorskog studija: [Sveučilišni poslijediplomski (doktorski) studij Informatika](https://www.inf.uniri.hr/studiji/doktorski-studij)
 
 ## Potencijalni mentor
 

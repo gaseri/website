@@ -86,7 +86,7 @@ abstract: |
 
     > OpenAI’s mission is to ensure that artificial general intelligence (AGI)—by which we mean highly autonomous systems that outperform humans at most economically valuable work—benefits all of humanity. We will attempt to directly build safe and beneficial AGI, but will also consider our mission fulfilled if our work aids others to achieve this outcome.
 
-- Poznatiji proizvodi: [Gym](https://www.gymlibrary.dev/) ([Retro](https://openai.com/blog/gym-retro/)), [RoboSumo](https://github.com/openai/robosumo), [Debate Game](https://debate-game.openai.com/), [Dactyl](https://openai.com/blog/learning-dexterity/), [DALL-E](https://openai.com/dall-e-2/)
+- Poznatiji proizvodi: [Gym](https://www.gymlibrary.dev/) ([Retro](https://openai.com/blog/gym-retro/)), [RoboSumo](https://github.com/openai/robosumo), [Debate Game](https://openai.com/research/debate), [Dactyl](https://openai.com/blog/learning-dexterity/), [DALL-E](https://openai.com/dall-e-2/)
 
 ![OpenAI logo h:150px](https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg)
 

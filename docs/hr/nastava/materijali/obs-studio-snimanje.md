@@ -16,7 +16,7 @@ OBS Studio moguće je [preuzeti sa službenih stranica](https://obsproject.com/d
 
 - [kod instalacije na operacijskom sustavu Windows](https://obsproject.com/wiki/install-instructions#windows), pokreće se instalacijski čarobnjak u kojem se mogu prihvatiti sve zadane postavke
 - [kod instalacija na operacijskom sustavu macOS](https://obsproject.com/wiki/install-instructions#macos), otvara se instalacijska datoteka u obliku [Apple Disk Image](https://en.wikipedia.org/wiki/Apple_Disk_Image) pa potom "odvlači" `OBS` u `Aplikacije`
-- [kod instalacije na operacijskom sustavu Linux](https://obsproject.com/wiki/install-instructions#linux), može se koristiti pakete koje nudi distributer (npr. [Arch Linux](https://archlinux.org/packages/community/x86_64/obs-studio/), [Debian](https://tracker.debian.org/pkg/obs-studio) i [RPMFusion za Fedoru i RHEL](https://admin.rpmfusion.org/pkgdb/package/free/obs-studio/)) ili izgraditi program iz izvornog koda
+- [kod instalacije na operacijskom sustavu Linux](https://obsproject.com/wiki/install-instructions#linux), može se koristiti pakete koje nudi distributer (npr. [Arch Linux](https://archlinux.org/packages/extra/x86_64/obs-studio/), [Debian](https://tracker.debian.org/pkg/obs-studio) i [RPMFusion za Fedoru i RHEL](https://admin.rpmfusion.org/pkgdb/package/free/obs-studio/)) ili izgraditi program iz izvornog koda
 
 Na svim operacijskim sustavima je preporučljivo koristiti [posljednju stabilnu verziju](https://github.com/obsproject/obs-studio/releases/latest) i redovito nadograđivati na nove verzije kada iste postanu dostupne.
 

@@ -76,7 +76,7 @@ curriculum-vitae: |
 - Poznatiji proizvodi:
     - [Gym](https://www.gymlibrary.dev/) ([Retro](https://openai.com/blog/gym-retro/))
     - [RoboSumo](https://github.com/openai/robosumo)
-    - [Debate Game](https://debate-game.openai.com/)
+    - [Debate Game](https://openai.com/research/debate)
     - [Dactyl](https://openai.com/blog/learning-dexterity/)
     - [DALL-E](https://openai.com/dall-e-2/)
 

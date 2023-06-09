@@ -273,7 +273,7 @@ int main ()
 ta poruka biti prikazana. Uočimo da razliku čini količina logginga uključena pozivom funkcije `LogComponentEnable()`. Ovo omogućuje fino razdvajanje poruka koje pojedina komponenta ispisuje na ekran, što olakšava rad s većim simulacijama.
 
 !!! note
-    Više o loggingu možete pronaći u [službenoj dokumentaciji](https://www.nsnam.org/docs/manual/html/logging.html).
+    Više o loggingu možete pronaći u [službenoj dokumentaciji](https://www.nsnam.org/docs/manual/html/logging-asserts.html).
 
 ## Model učestalosti grešaka paketa
 

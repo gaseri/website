@@ -527,6 +527,6 @@ Izvor: [the naive engineer](https://turnoff.us/geek/the-naive-engineer/) ({turno
 
 ## Dodatne optimizacije
 
-- Optimizacija baze podataka (npr. [upute za MariaDB](https://mariadb.com/kb/en/optimization-and-tuning/): [korištenje indeksa](https://mariadb.com/kb/en/optimization-and-indexes/), [optimizacija upita](https://mariadb.com/kb/en/query-optimizations/); [upute za PostgreSQL](https://www.enterprisedb.com/postgresql-tutorials-resources/performance-tuning-optimization); [optimizacija upita u MongoDB-u](https://docs.mongodb.com/manual/core/query-optimization/))
+- Optimizacija baze podataka (npr. [upute za MariaDB](https://mariadb.com/kb/en/optimization-and-tuning/): [korištenje indeksa](https://mariadb.com/kb/en/optimization-and-indexes/), [optimizacija upita](https://mariadb.com/kb/en/query-optimizations/); [upute za PostgreSQL](https://www.enterprisedb.com/postgres-tutorials/introduction-postgresql-performance-tuning-and-optimization); [optimizacija upita u MongoDB-u](https://docs.mongodb.com/manual/core/query-optimization/))
 - Povećanje dostupne memorije sustavu za keširanje (npr. [upute za Memcached](https://github.com/memcached/memcached/wiki/ConfiguringServer))
 - Skaliranje aplikacije ([konkurentnost kod dvanestofaktorske aplikacije](https://12factor.net/concurrency)) nije optimizacija
