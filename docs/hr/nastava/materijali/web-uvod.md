@@ -318,6 +318,18 @@ Izvor: [The Rise of JS Frameworks -- Part 1: Today](https://weblog.west-wind.com
 
 ---
 
+## Različiti pristupi obogaćivanju korisničkog iskustva
+
+- [Hypermedia Systems](https://hypermedia.systems/):
+
+    > A simpler approach to building applications on the Web and beyond with [htmx](https://htmx.org/) and [Hyperview](https://hyperview.org/)
+    >
+    > Enhancing web applications without using SPA frameworks
+
+- slična rješenja: [Hotwire](https://hotwired.dev/) i [Livewire](https://laravel-livewire.com/)
+
+---
+
 ## Aktivnosti i ocjenjivanje studenata
 
 - **Pohađanje nastave**: obavezno, kao i praćenje obavijesti na [Merlinu](https://moodle.srce.hr/2022-2023/)
