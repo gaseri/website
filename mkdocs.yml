@@ -446,6 +446,8 @@ nav:
       - Zettlr: en/tutorials/zettlr.md
     - Blog:
       - Blog index by tags: en/blog/index.md
+      - Year 2023:
+        - Should I do a Ph.D.?: en/blog/2023-06-10-should-i-do-a-phd.md
       - Year 2022:
         - Publishing (Material for) MkDocs website to GitHub Pages using custom Actions workflow: en/blog/2022-11-01-publishing-material-for-mkdocs-website-to-github-pages-using-custom-actions-workflow.md
         - Don't use RAR: en/blog/2022-02-24-dont-use-rar.md
