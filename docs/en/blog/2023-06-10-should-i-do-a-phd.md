@@ -46,7 +46,7 @@ I figured very soon that the Croatian private sector was seldom involved in free
 
 I got the opportunity to start my academic career as a research and teaching assistant at [University of Rijeka](https://uniri.hr/)'s [Department of Informatics](https://www.inf.uniri.hr/) while obtaining a Ph.D. in computer science from [FER](https://www.fer.unizg.hr/) at the University of Zagreb.
 
-Compared to working in the private sector, I hoped there would be more freedom to do things however you like as long as you get them done properly. In the end, I would say that I got what I wanted. Quoting from the *Thanks* section of the thesis:
+Compared to working in the private sector, I hoped there would be more freedom to do things however you like as long as you get them done properly. In the end, I would say that I got what I wanted. Quoting from the *Thanks* section of [my Ph.D. thesis](../people/principal-investigator.md#books-and-theses):
 
 > I am particularly grateful that \[my supervisor Professor Branko Mikac\] enabled me to solve scientific and engineering problems by using and further developing free and open-source software, which is a life passion of mine.
 
