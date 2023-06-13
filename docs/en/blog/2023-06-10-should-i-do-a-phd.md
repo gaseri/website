@@ -14,7 +14,9 @@ tags:
 
 # Should I do a Ph.D.?
 
-Tough question, and the one that has been asked and [answered](https://www.princetonreview.com/grad-school-advice/why-you-shouldnt-pursue-phd) [over](https://www.theguardian.com/commentisfree/2018/aug/15/should-do-phd-you-asked-autocomplete-questions) [and](https://www.elsevier.com/connect/9-things-you-should-consider-before-embarking-on-a-phd) [over](https://awis.org/to-phd-or-not-phd/). The simplest answer is, of course, it depends. In the following, I will give a personal perspective on my Ph.D. endeavor. As I [started blogging](2015-05-01-browser-wars.md) at [the end](2015-06-18-the-follow-up.md#phd-done) of my Ph.D. journey, the topic of how I selected the field and ultimately decided to go for it never really came up.
+Tough question, and the one that has been asked and [answered](https://www.princetonreview.com/grad-school-advice/why-you-shouldnt-pursue-phd) [over](https://www.theguardian.com/commentisfree/2018/aug/15/should-do-phd-you-asked-autocomplete-questions) [and](https://www.elsevier.com/connect/9-things-you-should-consider-before-embarking-on-a-phd) [over](https://awis.org/to-phd-or-not-phd/). The simplest answer is, of course, it depends on many factors.
+
+As I [started blogging](2015-05-01-browser-wars.md) at [the end](2015-06-18-the-follow-up.md#phd-done) of my journey as a doctoral student, the topic of how I selected the field and ultimately decided to enroll in the postgraduate studies never really came up. In the following paragraphs, I will give a personal perspective on my Ph.D. endeavor. Just like other perspectives from doctors of *not that kind*, it is specific to the person in the situation, but parts of it might apply more broadly.
 
 ## Intrinsic motivation
 
