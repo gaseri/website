@@ -12,6 +12,7 @@ tags:
 - [Aritmetičke operacije](../materijali/aritmeticke-operacije.md)
 - [Bistabili i registri](../materijali/bistabili-i-registri.md)
 - [Booleova algebra](../materijali/booleova-algebra.md)
+- [MIPS Instruction Set Cheat Sheet](../../../en/teaching/materials/mips-instruction-set.md)
 - [MIPS asembler](../materijali/mips-asembler.md)
 - [MIPS: grananje i petlje](../materijali/mips-grananje-i-petlje.md)
 - [Protočnost instrukcija](../materijali/protocnost-instrukcija.md)

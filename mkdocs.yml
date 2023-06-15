@@ -426,6 +426,7 @@ nav:
         - The LLVM intermediate representation: en/teaching/materials/llvm-intermediate-representation.md
         - The usage of the LLVM libraries in the Mesa 3D graphics library: en/teaching/materials/llvm-mesa.md
         - The LLVM tools: en/teaching/materials/llvm-tools.md
+        - MIPS Instruction Set Cheat Sheet: en/teaching/materials/mips-instruction-set.md
         - Code optimization -- course introduction: en/teaching/materials/opt-intro.md
       - Programmes:
         - Revision 2022/2023:
