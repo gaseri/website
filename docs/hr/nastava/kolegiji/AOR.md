@@ -13,6 +13,8 @@ tags:
 - [Bistabili i registri](../materijali/bistabili-i-registri.md)
 - [Booleova algebra](../materijali/booleova-algebra.md)
 - [MIPS asembler](../materijali/mips-asembler.md)
+- [MIPS: grananje i petlje](../materijali/mips-grananje-i-petlje.md)
+- [Protočnost instrukcija](../materijali/protocnost-instrukcija.md)
 
 ### Dodatni materijali
 

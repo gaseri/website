@@ -175,6 +175,7 @@ nav:
         - Konfiguracija sustava za upravljanje bazom podataka MariaDB: hr/nastava/materijali/mariadb-sustav-za-upravljanje-bazom-podataka.md
         - Instalacija i konfiguracija wiki sustava MediaWiki: hr/nastava/materijali/mediawiki-instalacija-web-aplikacije.md
         - MIPS asembler: hr/nastava/materijali/mips-asembler.md
+        - MIPS -- grananje i petlje: hr/nastava/materijali/mips-grananje-i-petlje.md
         - Dokumentiranje programa alatom MkDocs: hr/nastava/materijali/mkdocs-dokumentiranje-programa.md
         - Instalacija i konfiguracija softvera za vježbe iz kolegija Mrežni i mobilni operacijski sustavi te Infrastruktura za podatke velikog obujma: hr/nastava/materijali/mmos-instalacija-softvera-manjaro.md
         - Osnovni pojmovi mrežnih operacijskih sustava: hr/nastava/materijali/mrezni-os-pojmovi.md
@@ -222,6 +223,7 @@ nav:
         - Message transfer agent -- Postfix: hr/nastava/materijali/postfix-procmail-smtp-posluzitelj.md
         - Konfiguracija sustava za upravljanje bazom podataka PostgreSQL: hr/nastava/materijali/postgresql-sustav-za-upravljanje-bazom-podataka.md
         - Datotečni sustavi Procfs i Sysfs: hr/nastava/materijali/procfs-sysfs-informacije-konfiguracija.md
+        - Protočnost instrukcija: hr/nastava/materijali/protocnost-instrukcija.md
         - Instalacija i konfiguracija softvera za vježbe iz kolegija Programiranje za web: hr/nastava/materijali/pw-instalacija-softvera-manjaro.md
         - Pokretanje računala putem mrežnog sučelja: hr/nastava/materijali/pxe-pokretanje-racunala-putem-mreznog-sucelja.md
         - Vizualizacija molekula u alatu PyMOL: hr/nastava/materijali/pymol-vizualizacija-molekula.md
