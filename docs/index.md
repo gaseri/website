@@ -6,7 +6,7 @@ hide:
 
 # 😎 GASERI – Grupa za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi / **G**roup for **A**pplications and **S**ervices on **E**xascale **R**esearch **I**nfrastructure
 
-![GASERI logo with text](images/gaseri-logo-text.png)
+![GASERI animated logo](images/gaseri-logo-animated.webp)
 
 ## 🇭🇷 [Grupa za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi](hr/index.md)
 
