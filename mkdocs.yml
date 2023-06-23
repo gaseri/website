@@ -450,6 +450,7 @@ nav:
     - Blog:
       - Blog index by tags: en/blog/index.md
       - Year 2023:
+        - What hardware, software, and cloud services do we use?: en/blog/2023-06-23-what-hardware-software-and-cloud-services-do-we-use.md
         - Should I do a Ph.D.?: en/blog/2023-06-10-should-i-do-a-phd.md
       - Year 2022:
         - Publishing (Material for) MkDocs website to GitHub Pages using custom Actions workflow: en/blog/2022-11-01-publishing-material-for-mkdocs-website-to-github-pages-using-custom-actions-workflow.md
