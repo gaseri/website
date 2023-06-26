@@ -6,38 +6,9 @@ author: Vedran Miletić
 
 U nastavku je popis predloženih i odabranih tema završnih i diplomskih radova. Popis predloženih tema se kontinuirano nadopunjuje i poboljšava vođen sugestijama studenata. Među predloženim temama dio nije potpuno opisan i/ili nema pripadnu literaturu, ali ne očajavajte: ukoliko vam je neka od tema zanimljiva i smatrate da u prijedlogu sadržaja ili literature nešto nedostaje, javite se putem e-maila pa ćemo je prilagoditi vašim interesima.
 
-## Osnovne informacije i preporuke za pisanje radova
-
-### Akademsko pisanje
-
-Završni i diplomski radovi su akademski radovi, a prilikom pisanja akademskih radova slijedimo uvriježena stilska i strukturna pravila kako bi ti radovi bili čitljivi i potencijalno korisni i drugim članovima akademske zajednice. O pisanju radova [dr. sc. Vanja Pupovac](https://portal.uniri.hr/Portfelj/1712) na [mrežnim stranicama Akademsko pisanje](https://www.akademsko-pisanje.uniri.hr/o-nama/) i u istoimenoj knjižici kaže sljedeće:
-
-> Akademsko pisanje je oblik komunikacije u akademskoj zajednici. Postoje različiti oblici akademskog pisma, a neki od najpoznatijih su esej, seminarski rad, završni, diplomski ili doktorski rad, te stručni ili znanstveni rad. Svrha akademskog pisanje je savladavanje i sažimanje znanja o pojedinoj temi, proširivanje rasprava (novim informacijama ili mišljenjima), prenošenje informacija (znanstvenicima, stručnjacima ili javnosti) i ovjeravanje znanja.
->
-> Osnovna karakteristika akademskog rada je logički način razmišljanja; ideje moraju biti sustavno i jednostavno prezentirane, a mišljenja moraju biti potkrijepljena relevantnim i uvjerljivim razlozima i dokazima. No, to nije uvijek lako ostvarivo, stoga proces pisanja akademskog rada dijelimo u četiri faza. Na mrežnim stranicama [Proces pisanja](https://www.akademsko-pisanje.uniri.hr/proces-pisanja/) donosimo pregled osnovnih pravila i aktivnosti za svaku fazu u procesu pisanja.
->
-> Pisanjem akademskog rada uključujemo se u aktualnu raspravu o odabranoj temi. Za uspješno uključivanje u raspravu potrebno je upoznati se s već postojećim činjenicama, idejama i argumentima čitajući relevantnu stručnu ili znanstvenu literaturu. Na taj način osigurat ćemo da vlastite ideje razvijemo na čvrstim znanstvenim temeljima i iskazat ćemo poštovanje prema iskusnijim znanstvenicima. Povjerenje zajednice u vlastiti rad zadobit ćemo preciznim citiranjem i referiranjem izvora što je pojašnjeno na stranici [Rad s izvorima](https://www.akademsko-pisanje.uniri.hr/rad-s-izvorima/). Kredibilitet i vjerodostojnost autora se sporo gradi u akademskoj zajednici, ali lako narušava, stoga savjetujemo da proučite materijale prezentirane na stranici [Akademska čestitost](https://www.akademsko-pisanje.uniri.hr/akademska-cestitost/).
-
-Za više informacija slijedite poveznice u tekstu iznad i proučite [mrežne stranice Akademsko pisanje](https://www.akademsko-pisanje.uniri.hr/) ili [preuzmite knjižicu Akademsko pisanje u formatu PDF](../downloads/knjizica-akademsko-pisanje.pdf).
-
-### Softverski alati
-
-Za pisanje radova koristite [LibreOffice](https://www.libreoffice.org/) i format [OpenDocument](https://opendocumentformat.org/). Ako preferirate pisanje markupa umjesto korištenja alata tipa [WYSIYG](https://en.wikipedia.org/wiki/WYSIWYG), umjesto LibreOfficea i OpenDocumenta možete koristiti neki od sljedećih alata i formata:
-
-- [Markdown](https://commonmark.org/), [Pandoc](https://pandoc.org/) i proširenja navedena u [objavi Jaana Tollandera de Balscha](https://jaantollander.com/post/scientific-writing-with-markdown/) (preporučeni uređivači: [HackMD](https://hackmd.io/) i [Visual Studio Code](https://code.visualstudio.com/)),
-- [LaTeX](https://www.latex-project.org/) i [Edvin Močibobov](https://edvin.me/) [predložak za završni i diplomski rad](https://bitbucket.org/emocibob/latex-predlozak-za-diplomski-i-zavrsni-rad) (preporučeni uređivači: [TeXstudio](https://texstudio.org/) i [Texmaker](https://www.xm1math.net/texmaker/)),
-- [reStructuredText](https://docutils.sourceforge.io/rst.html), [Sphinx](https://www.sphinx-doc.org/en/master/) i [Jeff Terraceov](https://jeffterrace.com/) [snop ekstenzija za akademske radove](https://jterrace.github.io/sphinxtr/) (preporučeni uređivač: [Visual Studio Code](https://code.visualstudio.com/) s proširenjem [reStructuredText](https://marketplace.visualstudio.com/items?itemName=lextudio.restructuredtext)) ili
-- [AsciiDoc](https://asciidoc.org/) i [Asciidoctor](https://asciidoctor.org/) (preporučeni uređivač: [Visual Studio Code](https://code.visualstudio.com/) s proširenjem [AsciiDoc](https://marketplace.visualstudio.com/items?itemName=asciidoctor.asciidoctor-vscode)).
-
-LibreOffice i LaTeX rade izvrsne PDF-ove (Sphinx također stvara PDF korištenjem LaTeX-a). Dodatno mogu, ako je potrebno, napraviti [PDF/A](https://en.wikipedia.org/wiki/PDF/A), varijantu PDF-a prikladnu za arhiviranje i dugoročno čuvanje digitalnih dokumenata.
-
-Za upravljanje navodima možete koristiti [Zotero](https://www.zotero.org/) (koji ima i plug-in za LibreOffice) i/ili [BibTeX](http://www.bibtex.org/). Koristite [stil citiranja IEEE](https://ieee-dataport.org/sites/default/files/analysis/27/IEEE%20Citation%20Guidelines.pdf).
-
-Kojom god temom da se bavite, svakako koristite slobodne softvere otvorenog koda kad god možete. Na će taj način onaj koji koristi vaš rad za vlastito učenje moći lako doći do softvera s kojim u radu radite.
-
 ## Ponuđene teme završnih radova
 
-### Primjena kompleta za razvoj softvera DOCA na jedinicama za obradu podataka NVIDIA BlueField {[PPHS](nastava/kolegiji/PPHS.md)/[URS](nastava/kolegiji/URS.md)}
+### Primjena kompleta za razvoj softvera DOCA na jedinicama za obradu podataka NVIDIA BlueField {[PPHS](../kolegiji/PPHS.md)/[URS](../kolegiji/URS.md)}
 
 **Opis teme:**
 
@@ -51,7 +22,7 @@ Kojom god temom da se bavite, svakako koristite slobodne softvere otvorenog koda
 1. [Introduction to DOCA for DPUs (NVIDIA Deep Learning Institute)](https://courses.nvidia.com/courses/course-v1:DLI+S-NP-01+V1/about)
 1. [DOCA Base Image (NVIDIA NGC)](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/doca/containers/doca)
 
-### Mjerenje performansi simulacije molekulske dinamike {[PPHS](nastava/kolegiji/PPHS.md)}
+### Mjerenje performansi simulacije molekulske dinamike {[PPHS](../kolegiji/PPHS.md)}
 
 **Opis teme:**
 
@@ -62,7 +33,7 @@ Kojom god temom da se bavite, svakako koristite slobodne softvere otvorenog koda
 1. [Best bang for your buck: GPU nodes for GROMACS biomolecular simulations](https://onlinelibrary.wiley.com/doi/full/10.1002/jcc.24030) ([PDF](https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/jcc.24030))
 1. [More bang for your buck: Improved use of GPU nodes for GROMACS 2018](https://onlinelibrary.wiley.com/doi/full/10.1002/jcc.26011) ([PDF](https://onlinelibrary.wiley.com/doi/pdf/10.1002/jcc.26011))
 
-### Kriptografski algoritmi u WireGuardu {[SIKS](nastava/kolegiji/SIKS.md)}
+### Kriptografski algoritmi u WireGuardu {[SIKS](../kolegiji/SIKS.md)}
 
 **Opis teme:**
 
@@ -74,7 +45,7 @@ Kojom god temom da se bavite, svakako koristite slobodne softvere otvorenog koda
 1. [Protocol & Cryptography (WireGuard)](https://www.wireguard.com/protocol/)
 1. [Formal Verification (WireGuard)](https://www.wireguard.com/formal-verification/)
 
-### Implementacija aktualnih softverskih i hardverskih standarada u OpenWrtu {[RM](nastava/kolegiji/RM.md)/[RM1](nastava/kolegiji/RM1.md)}
+### Implementacija aktualnih softverskih i hardverskih standarada u OpenWrtu {[RM](../kolegiji/RM.md)/[RM1](../kolegiji/RM1.md)}
 
 **Opis teme:**
 
@@ -86,7 +57,7 @@ Kojom god temom da se bavite, svakako koristite slobodne softvere otvorenog koda
 1. [Wi-Fi /etc/config/wireless](https://openwrt.org/docs/guide-user/network/wifi/basic)
 1. [Table of Hardware: Ideal for OpenWrt + 802.11ax supported](https://openwrt.org/toh/views/toh_available_16128_ax-wifi)
 
-### Uobličavanje mrežnog prometa u OpenWrtu {[RM](nastava/kolegiji/RM.md)/[RM2](nastava/kolegiji/RM2.md)}
+### Uobličavanje mrežnog prometa u OpenWrtu {[RM](../kolegiji/RM.md)/[RM2](../kolegiji/RM2.md)}
 
 **Opis teme:**
 
@@ -97,7 +68,7 @@ Kojom god temom da se bavite, svakako koristite slobodne softvere otvorenog koda
 1. [Traffic shaping](https://openwrt.org/docs/guide-user/network/traffic-shaping/start)
 1. [QoS (Network Traffic Control)](https://openwrt.org/docs/guide-user/network/traffic-shaping/packet.scheduler)
 
-### Automatizacija IT infrastrukture korištenjem Chefa {[URS](nastava/kolegiji/URS.md)}
+### Automatizacija IT infrastrukture korištenjem Chefa {[URS](../kolegiji/URS.md)}
 
 **Opis teme:**
 
@@ -107,7 +78,7 @@ Kojom god temom da se bavite, svakako koristite slobodne softvere otvorenog koda
 
 1. [Chef](https://www.chef.io/)
 
-### Automatizacija IT infrastrukture korištenjem Puppeta {[URS](nastava/kolegiji/URS.md)}
+### Automatizacija IT infrastrukture korištenjem Puppeta {[URS](../kolegiji/URS.md)}
 
 **Opis teme:**
 
@@ -117,7 +88,7 @@ Kojom god temom da se bavite, svakako koristite slobodne softvere otvorenog koda
 
 1. [Puppet](https://puppet.com/)
 
-### Čitanje, obrada i pohrana JSON-a u web aplikacijama {[PW](nastava/kolegiji/PW.md)}
+### Čitanje, obrada i pohrana JSON-a u web aplikacijama {[PW](../kolegiji/PW.md)}
 
 **Opis teme:**
 
@@ -132,7 +103,7 @@ Kojom god temom da se bavite, svakako koristite slobodne softvere otvorenog koda
 1. [MongoDB](https://www.mongodb.com/)
 1. [Apache CouchDB](https://couchdb.apache.org/)
 
-### Razvoj web aplikacije korištenjem okvira Ruby on Rails i biblioteke Hotwire {[PW](nastava/kolegiji/PW.md)}
+### Razvoj web aplikacije korištenjem okvira Ruby on Rails i biblioteke Hotwire {[PW](../kolegiji/PW.md)}
 
 **Opis teme:**
 
@@ -143,7 +114,7 @@ Kojom god temom da se bavite, svakako koristite slobodne softvere otvorenog koda
 1. [Ruby on Rails](https://rubyonrails.org/)
 1. [HTML Over The Wire (Hotwire)](https://hotwired.dev/)
 
-### Razvoj web aplikacije korištenjem okvira Laravel i biblioteke Livewire {[PW](nastava/kolegiji/PW.md)}
+### Razvoj web aplikacije korištenjem okvira Laravel i biblioteke Livewire {[PW](../kolegiji/PW.md)}
 
 **Opis teme:**
 
@@ -154,7 +125,7 @@ Kojom god temom da se bavite, svakako koristite slobodne softvere otvorenog koda
 1. [Laravel](https://laravel.com/)
 1. [Livewire](https://laravel-livewire.com/)
 
-### Razvoj web aplikacije korištenjem okvira Laravel i sučelja Inertia.js {[PW](nastava/kolegiji/PW.md)}
+### Razvoj web aplikacije korištenjem okvira Laravel i sučelja Inertia.js {[PW](../kolegiji/PW.md)}
 
 **Opis teme:**
 
@@ -165,7 +136,7 @@ Kojom god temom da se bavite, svakako koristite slobodne softvere otvorenog koda
 1. [Laravel](https://laravel.com/)
 1. [Inertia.js](https://inertiajs.com/)
 
-### Proširenja i primjene Herokuove metodologije dvanaest faktora {[PW](nastava/kolegiji/PW.md)}
+### Proširenja i primjene Herokuove metodologije dvanaest faktora {[PW](../kolegiji/PW.md)}
 
 **Opis teme:**
 
@@ -178,7 +149,7 @@ Kojom god temom da se bavite, svakako koristite slobodne softvere otvorenog koda
 1. [Beyond the Twelve-Factor App (Adam Bloom, VMWare Tanzu Blog)](https://tanzu.vmware.com/content/blog/beyond-the-twelve-factor-app)
 1. [Beyond the 12 Factor App: Exploring the DNA of Highly Scalable, Resilient Cloud Applications (VMWare Tanzu Content Library)](https://tanzu.vmware.com/content/ebooks/beyond-the-12-factor-app)
 
-### Web3 {[PW](nastava/kolegiji/PW.md)}
+### Web3 {[PW](../kolegiji/PW.md)}
 
 **Opis teme:**
 
@@ -191,7 +162,7 @@ Kojom god temom da se bavite, svakako koristite slobodne softvere otvorenog koda
 1. [Web3 Foundation](https://web3.foundation/)
 1. [The Father of Web3 Wants You to Trust Less (WIRED)](https://www.wired.com/story/web3-gavin-wood-interview/)
 
-### Softver otvorenog koda za infrastrukturu oblaka OpenStack {[MMOS](nastava/kolegiji/MMOS.md)/[URS](nastava/kolegiji/URS.md)}
+### Softver otvorenog koda za infrastrukturu oblaka OpenStack {[MMOS](../kolegiji/MMOS.md)/[URS](../kolegiji/URS.md)}
 
 **Opis teme:**
 
@@ -201,7 +172,7 @@ Kojom god temom da se bavite, svakako koristite slobodne softvere otvorenog koda
 
 1. [OpenStack](https://www.openstack.org/)
 
-### Upravljanje fizičkim i virtualnim poslužiteljima korištenjem Foremana {[MMOS](nastava/kolegiji/MMOS.md)/[URS](nastava/kolegiji/URS.md)}
+### Upravljanje fizičkim i virtualnim poslužiteljima korištenjem Foremana {[MMOS](../kolegiji/MMOS.md)/[URS](../kolegiji/URS.md)}
 
 **Opis teme:**
 
@@ -211,7 +182,7 @@ Kojom god temom da se bavite, svakako koristite slobodne softvere otvorenog koda
 
 1. [Foreman](https://theforeman.org/)
 
-### Pregled projekata Zaklade za oblaku urođeno računarstvo {[MMOS](nastava/kolegiji/MMOS.md)/[URS](nastava/kolegiji/URS.md)}
+### Pregled projekata Zaklade za oblaku urođeno računarstvo {[MMOS](../kolegiji/MMOS.md)/[URS](../kolegiji/URS.md)}
 
 **Opis teme:**
 
@@ -221,7 +192,7 @@ Kojom god temom da se bavite, svakako koristite slobodne softvere otvorenog koda
 
 1. [Graduated and incubating projects (Cloud Native Computing Foundation)](https://www.cncf.io/projects/)
 
-### Upravljanje kontejnerima aplikacija korištenjem Podmana {[MMOS](nastava/kolegiji/MMOS.md)/[URS](nastava/kolegiji/URS.md)}
+### Upravljanje kontejnerima aplikacija korištenjem Podmana {[MMOS](../kolegiji/MMOS.md)/[URS](../kolegiji/URS.md)}
 
 **Opis teme:**
 
@@ -233,7 +204,7 @@ Kontejneri su postali sastavni dio skupa alata koje koriste i razvijatelji softv
 1. [Podman](https://podman.io/)
 1. [Quay](https://quay.io/)
 
-### Doprinos projekta Berkeley Software Distribution i potomaka u razvoju interneta {[RM](nastava/kolegiji/RM.md)/[RM2](nastava/kolegiji/RM2.md)}
+### Doprinos projekta Berkeley Software Distribution i potomaka u razvoju interneta {[RM](../kolegiji/RM.md)/[RM2](../kolegiji/RM2.md)}
 
 **Opis teme:**
 
@@ -247,7 +218,7 @@ Tijekom 80-ih godina na Kalifornijskom sveučilištu u Berkeleyu Keith Bostic, B
 1. [Jones, T. FreeBSD in Network Research and Standardization (FreeBSD in Research). FreeBSD Journal, January/February 2020.](https://freebsdfoundation.org/past-issues/freebsd-in-research/)
 1. [Leffler, S. J., Joy, W. N., Fabry, R. S. & Karels, M. J. Networking Implementation Notes 4.3 BSD Edition. Unix System Manager's Manual, 1986.](https://docs.freebsd.org/44doc/smm/18.net/paper.pdf)
 
-### Interaktivni interpreter Cling za programski jezik C++ {[PPHS](nastava/kolegiji/PPHS.md)}
+### Interaktivni interpreter Cling za programski jezik C++ {[PPHS](../kolegiji/PPHS.md)}
 
 **Opis teme:**
 
@@ -259,7 +230,7 @@ Tijekom 80-ih godina na Kalifornijskom sveučilištu u Berkeleyu Keith Bostic, B
 1. [Clang](https://clang.llvm.org/)
 1. [CLing](https://root.cern/cling/)
 
-### Prenosivost znanstvenog softvera među operacijskim sustavima sličnim Unixu {[OS2](nastava/kolegiji/OS2.md)}
+### Prenosivost znanstvenog softvera među operacijskim sustavima sličnim Unixu {[OS2](../kolegiji/OS2.md)}
 
 **Opis teme:**
 
@@ -270,7 +241,7 @@ Tijekom 80-ih godina na Kalifornijskom sveučilištu u Berkeleyu Keith Bostic, B
 1. [illumos](https://illumos.org/)
 1. [GROMACS](https://www.gromacs.org/)
 
-### Usporedba arhitekture i značajki Waylanda i X.Org X11 Servera {[PPHS](nastava/kolegiji/PPHS.md)}
+### Usporedba arhitekture i značajki Waylanda i X.Org X11 Servera {[PPHS](../kolegiji/PPHS.md)}
 
 **Opis teme:**
 
@@ -281,7 +252,7 @@ X.Org je tradicionalni display server koji se koristi na operacijskim sustavima 
 1. [X.Org Wiki](https://www.x.org/wiki/)
 1. [Wayland](https://wayland.freedesktop.org/)
 
-### Named Data Networking {[RM1](nastava/kolegiji/RM1.md)}
+### Named Data Networking {[RM1](../kolegiji/RM1.md)}
 
 **Opis teme:**
 
@@ -289,7 +260,7 @@ X.Org je tradicionalni display server koji se koristi na operacijskim sustavima 
 
 1. [Named Data Networking Project](https://named-data.net/)
 
-### CoCCA: softver otvorenog koda za upravljanje registrom domena {[RM2](nastava/kolegiji/RM2.md)}
+### CoCCA: softver otvorenog koda za upravljanje registrom domena {[RM2](../kolegiji/RM2.md)}
 
 **Opis teme:**
 
@@ -297,7 +268,7 @@ X.Org je tradicionalni display server koji se koristi na operacijskim sustavima 
 
 1. [CoCCA](https://cocca.org.nz/)
 
-### FRED: softver otvorenog koda za upravljanje registrom domena {[RM2](nastava/kolegiji/RM2.md)}
+### FRED: softver otvorenog koda za upravljanje registrom domena {[RM2](../kolegiji/RM2.md)}
 
 **Opis teme:**
 
@@ -309,7 +280,7 @@ CZ.NIC je upravitelj Češke državne domene .cz, a softver FRED koji koriste za
 1. [ICANN Wiki](https://icannwiki.org/)
 1. [ICANN-ove informacije o registrima](https://www.icann.org/resources/pages/registries/registries-en)
 
-### Domain Name Registry System: softver otvorenog koda za upravljanje registrom domena {[RM2](nastava/kolegiji/RM2.md)}
+### Domain Name Registry System: softver otvorenog koda za upravljanje registrom domena {[RM2](../kolegiji/RM2.md)}
 
 **Opis teme:**
 
@@ -317,7 +288,7 @@ CZ.NIC je upravitelj Češke državne domene .cz, a softver FRED koji koriste za
 
 1. [Domain Name Registry System](https://sourceforge.net/projects/dnrs/)
 
-### Prekršaji licence GNU GPL i njihovo razrješavanje {[OS1](nastava/kolegiji/OS1.md)}
+### Prekršaji licence GNU GPL i njihovo razrješavanje {[OS1](../kolegiji/OS1.md)}
 
 **Opis teme:**
 
@@ -331,7 +302,7 @@ GPL violations: Linksys WRT54G, Linux devices, SF Conservancy, SF Law Center
 1. [Software Freedom Conservancy](https://sfconservancy.org/)
 1. [Bradley M. Kuhn's Blog](http://www.ebb.org/bkuhn/blog/)
 
-### Migracije sa vlasničkih formata dokumenata uredskih aplikacija na OpenDocument {[OS1](nastava/kolegiji/OS1.md)}
+### Migracije sa vlasničkih formata dokumenata uredskih aplikacija na OpenDocument {[OS1](../kolegiji/OS1.md)}
 
 **Opis teme:**
 
@@ -343,7 +314,7 @@ OpenDocument je format dokumenata uredskih aplikacija zasnovan na XML-u. OpenDoc
 1. [Digital dark age](https://en.wikipedia.org/wiki/Digital_dark_age)
 1. [LibreOffice users and deployments](https://en.wikipedia.org/wiki/LibreOffice#Users_and_deployments)
 
-### Tehnički i društveni problemi Digital Rights Managementa {[OS1](nastava/kolegiji/OS1.md)}
+### Tehnički i društveni problemi Digital Rights Managementa {[OS1](../kolegiji/OS1.md)}
 
 **Opis teme:**
 
@@ -351,7 +322,7 @@ OpenDocument je format dokumenata uredskih aplikacija zasnovan na XML-u. OpenDoc
 
 ## Ponuđene teme diplomskih radova
 
-### Implementacija TLS-a u jezgri operacijskog sustava FreeBSD {[UMS](nastava/kolegiji/UMS.md)}
+### Implementacija TLS-a u jezgri operacijskog sustava FreeBSD {[UMS](../kolegiji/UMS.md)}
 
 **Opis teme:**
 
@@ -366,7 +337,7 @@ OpenDocument je format dokumenata uredskih aplikacija zasnovan na XML-u. OpenDoc
 1. [Nginx KTLS support on FreeBSD 13? (FreeBSD Forums)](https://forums.freebsd.org/threads/nginx-ktls-support-on-freebsd-13.83619/)
 1. [Kernel TLS and hardware TLS offload in FreeBSD 13 (Slava Shwartsman, Drew Gallatin, EuroBSDCon 2019)](https://papers.freebsd.org/2019/eurobsdcon/shwartsman_gallatin-kernel_tls_harware_offload/) ([prezentacija](https://papers.freebsd.org/2019/EuroBSDCon/shwartsman_gallatin-Kernel_TLS_harware_offload.files/slides.pdf), [dodatna kopija prezentacije](https://people.freebsd.org/~gallatin/talks/euro2019-ktls.pdf))
 
-### Implementacija TLS-a u jezgri operacijskog sustava Linux {[UMS](nastava/kolegiji/UMS.md)}
+### Implementacija TLS-a u jezgri operacijskog sustava Linux {[UMS](../kolegiji/UMS.md)}
 
 **Opis teme:**
 
@@ -379,7 +350,7 @@ OpenDocument je format dokumenata uredskih aplikacija zasnovan na XML-u. OpenDoc
 1. [Kernel TLS offload (Linux Networking Documentation)](https://www.kernel.org/doc/html/latest/networking/tls-offload.html)
 1. [ktls (GitHub)](https://github.com/ktls)
 
-### Pohrana podataka o molekulama u sustavu za upravljanje bazom podataka PostgreSQL {[UMS](nastava/kolegiji/UMS.md)}
+### Pohrana podataka o molekulama u sustavu za upravljanje bazom podataka PostgreSQL {[UMS](../kolegiji/UMS.md)}
 
 **Opis teme:**
 
@@ -391,7 +362,7 @@ OpenDocument je format dokumenata uredskih aplikacija zasnovan na XML-u. OpenDoc
 1. [CREATE SCHEMA (PostgreSQL)](https://www.postgresql.org/docs/current/sql-createschema.html)
 1. [RDKit database cartridge](https://www.rdkit.org/docs/Cartridge.html)
 
-### Prilagodba znanstvenog softvera za izvođenje na eksaskalarnim superračunalima {[DS](nastava/kolegiji/DS.md)}
+### Prilagodba znanstvenog softvera za izvođenje na eksaskalarnim superračunalima {[DS](../kolegiji/DS.md)}
 
 **Opis teme:**
 
@@ -404,7 +375,7 @@ OpenDocument je format dokumenata uredskih aplikacija zasnovan na XML-u. OpenDoc
 1. [European High-Performance Computing Joint Undertaking](https://eurohpc-ju.europa.eu/)
 1. [Skalabilni algoritmi visokih preformansi za buduće heterogene distribuirane računalne sustave](https://www.irb.hr/Istrazivanja/Projekti/Skalabilni-algoritmi-visokih-performansi-za-buduce-heterogene-distribuirane-racunalne-sustave)
 
-### Nadzor rada mikroservisa i osiguravanje visoke dostupnosti {[UMS](nastava/kolegiji/UMS.md)}
+### Nadzor rada mikroservisa i osiguravanje visoke dostupnosti {[UMS](../kolegiji/UMS.md)}
 
 **Opis teme:**
 
@@ -417,7 +388,7 @@ OpenDocument je format dokumenata uredskih aplikacija zasnovan na XML-u. OpenDoc
 1. [Prometheus](https://prometheus.io/)
 1. [Grafana](https://grafana.com/)
 
-### Skalabilnost mikroservisa {[UMS](nastava/kolegiji/UMS.md)}
+### Skalabilnost mikroservisa {[UMS](../kolegiji/UMS.md)}
 
 **Opis teme:**
 
@@ -429,7 +400,7 @@ OpenDocument je format dokumenata uredskih aplikacija zasnovan na XML-u. OpenDoc
 1. [Scaling Microservices: The Challenges and Solutions (DZone Microservices)](https://dzone.com/articles/scaling-microservices-the-challenges-and-solutions)
 1. [The Scale Cube (Microservices.io)](https://microservices.io/articles/scalecube.html)
 
-### Pretvorba OpenCL C-a u Vulkanova računska sjenčanja alatom clspv {[PPHS](nastava/kolegiji/PPHS.md)}
+### Pretvorba OpenCL C-a u Vulkanova računska sjenčanja alatom clspv {[PPHS](../kolegiji/PPHS.md)}
 
 **Opis teme:**
 
@@ -439,7 +410,7 @@ OpenDocument je format dokumenata uredskih aplikacija zasnovan na XML-u. OpenDoc
 
 1. [google/clspv (GitHub)](https://github.com/google/clspv)
 
-### Simulatori heterogene sustavske arhitekture {[PPHS](nastava/kolegiji/PPHS.md)}
+### Simulatori heterogene sustavske arhitekture {[PPHS](../kolegiji/PPHS.md)}
 
 **Opis teme:**
 
@@ -450,7 +421,7 @@ OpenDocument je format dokumenata uredskih aplikacija zasnovan na XML-u. OpenDoc
 1. Hwu, W. Heterogeneous system architecture: practical applications for industry. (Elsevier, 2015).
 1. [gem5](https://www.gem5.org/)
 
-### Usporedba program prevoditelja NVIDIA nvcc i Clang za programski jezik CUDA {[PPHS](nastava/kolegiji/PPHS.md)}
+### Usporedba program prevoditelja NVIDIA nvcc i Clang za programski jezik CUDA {[PPHS](../kolegiji/PPHS.md)}
 
 **Opis teme:**
 
@@ -461,7 +432,7 @@ CUDA je vlasnički programski jezik za heterogeno paralelno programiranje koriš
 1. [2015 LLVM Developers' Meeting: Jingyue Wu "Optimizing LLVM for GPGPU"](https://youtu.be/JHfb8z-iSYk?list=PL_R5A0lGi1AA4Lv2bBFSwhgDaHvvpVU21)
 1. Službena NVIDIA-ina dokumentacija za CUDA-u
 
-### Grafički procesor otvorenog koda MIAOW {[PPHS](nastava/kolegiji/PPHS.md)}
+### Grafički procesor otvorenog koda MIAOW {[PPHS](../kolegiji/PPHS.md)}
 
 **Opis teme:**
 
@@ -472,7 +443,7 @@ CUDA je vlasnički programski jezik za heterogeno paralelno programiranje koriš
 1. [MIAOW GPU](https://miaowgpu.org/)
 1. [Southern Islands Series Instruction Set Architecture](https://developer.amd.com/wordpress/media/2012/12/AMD_Southern_Islands_Instruction_Set_Architecture.pdf)
 
-### Opis backenda program-prevoditelja AMDGPU u infrastrukturi za izgradnju program-prevoditelja LLVM {[PPHS](nastava/kolegiji/PPHS.md)}
+### Opis backenda program-prevoditelja AMDGPU u infrastrukturi za izgradnju program-prevoditelja LLVM {[PPHS](../kolegiji/PPHS.md)}
 
 **Opis teme:**
 
@@ -483,7 +454,7 @@ CUDA je vlasnički programski jezik za heterogeno paralelno programiranje koriš
 1. [User Guide for AMDGPU Backend (LLVM Documentation)](https://www.llvm.org/docs/AMDGPUUsage.html)
 1. [LLVM AMDGPU Assembler Helper Tools (ROCm-Developer-Tools/LLVM-AMDGPU-Assembler-Extra on GitHub)](https://github.com/ROCm-Developer-Tools/LLVM-AMDGPU-Assembler-Extra)
 
-### Instalacija i konfiguracija poslužitelja datoteka {[UMS](nastava/kolegiji/UMS.md)}
+### Instalacija i konfiguracija poslužitelja datoteka {[UMS](../kolegiji/UMS.md)}
 
 **Opis teme:**
 
@@ -500,7 +471,7 @@ Poslužitelj datoteka je dio gotovo svakog suvremenog poslovnog sustava. Bio taj
 
 ## Odabrane teme završnih radova akademske godine 2021./2022.
 
-### Razvoj web aplikacije korištenjem okvira Django i biblioteke HTMX {[DWA2](nastava/kolegiji/DWA2.md)} {Tvrtko Kaurinović}
+### Razvoj web aplikacije korištenjem okvira Django i biblioteke HTMX {[DWA2](../kolegiji/DWA2.md)} {Tvrtko Kaurinović}
 
 **Opis teme:**
 
@@ -512,7 +483,7 @@ Poslužitelj datoteka je dio gotovo svakog suvremenog poslovnog sustava. Bio taj
 1. [HTMX/Django](https://htmx-django.com/)
 1. [Carson Gross - REST, HATEOAS & Django - It's OK to not use JSON... or Javascript (DjangoCon US 2021, YouTube)](https://youtu.be/L_UWY-zHlOA)
 
-### Vulkan API u Unity 3D-u {[PPHS](nastava/kolegiji/PPHS.md)} [Hrvoje Sedlar]
+### Vulkan API u Unity 3D-u {[PPHS](../kolegiji/PPHS.md)} [Hrvoje Sedlar]
 
 **Opis teme:**
 
@@ -525,7 +496,7 @@ Poslužitelj datoteka je dio gotovo svakog suvremenog poslovnog sustava. Bio taj
 
 ## Odabrane teme diplomskih radova akademske godine 2021./2022.
 
-### Evolucija monolitne web aplikacije u mikroservisnu besposlužiteljsku aplikaciju {[UMS](nastava/kolegiji/UMS.md)} [Ana Novokmet]
+### Evolucija monolitne web aplikacije u mikroservisnu besposlužiteljsku aplikaciju {[UMS](../kolegiji/UMS.md)} [Ana Novokmet]
 
 **Opis teme:**
 
@@ -539,7 +510,7 @@ Poslužitelj datoteka je dio gotovo svakog suvremenog poslovnog sustava. Bio taj
 
 ## Odabrane teme završnih radova akademske godine 2020./2021.
 
-### Izrada web aplikacije korištenjem Djanga {[DWA2](nastava/kolegiji/DWA2.md)} [Antonela Troha]
+### Izrada web aplikacije korištenjem Djanga {[DWA2](../kolegiji/DWA2.md)} [Antonela Troha]
 
 **Naslov na engleskom:** Web application development using Django
 
@@ -552,7 +523,7 @@ Sveprisutnost weba čini da se mnoge aplikacije realiziraju kao web aplikacije. 
 1. [Django](https://www.djangoproject.com/)
 1. Shaw, B., Badhwar, S., Bird, A., Chandra K S, B. & Guest, C. [Web Development with Django](https://www.oreilly.com/library/view/web-development-with/9781839212505/), O'Reilly, 2021.
 
-### Izrada web aplikacije korištenjem Flaska {[DWA2](nastava/kolegiji/DWA2.md)} [Ivan Modrić]
+### Izrada web aplikacije korištenjem Flaska {[DWA2](../kolegiji/DWA2.md)} [Ivan Modrić]
 
 **Naslov na engleskom:** Web application development using Flask
 
@@ -566,7 +537,7 @@ Suvremeni pristup razvoju web aplikacija podrazumijeva realizaciju aplikacije ko
 1. [Getting Started with AWS](https://aws.amazon.com/getting-started/)
 1. [Getting started with Azure](https://azure.microsoft.com/en-us/get-started/)
 
-### Paralelizacija izračuna dubokih neuralnih mreža na grafičkim procesorima {[PPHS](nastava/kolegiji/PPHS.md)} [Andrija Poleksić]
+### Paralelizacija izračuna dubokih neuralnih mreža na grafičkim procesorima {[PPHS](../kolegiji/PPHS.md)} [Andrija Poleksić]
 
 **Naslov na engleskom:** Parallelization of deep neural network computation on the GPU
 
@@ -580,7 +551,7 @@ Duboke neuralne mreže su temelj modernih primjena strojnog učenja u brojnim do
 1. Goldsborough, P. [A Tour of TensorFlow](https://arxiv.org/abs/1610.01178). ArXiv, 2016.
 1. Chollet, F. [Deep Learning with Python](https://www.manning.com/books/deep-learning-with-python). Manning, 2017.
 
-### Predikcija vrijednosti kriptovaluta metodama strojnog učenja i analizom blockchain informacija {[PPHS](nastava/kolegiji/PPHS.md)} [Dominik Frković]
+### Predikcija vrijednosti kriptovaluta metodama strojnog učenja i analizom blockchain informacija {[PPHS](../kolegiji/PPHS.md)} [Dominik Frković]
 
 **Naslov na engleskom:** Predicting the values of cryptocurrencies using machine learning methods and blockchain information
 
@@ -599,7 +570,7 @@ Kriptovalute su danas vrlo aktualna i intrigantna tema, kako u području informa
 1. Nakamoto, S. Bitcoin: A Peer-to-Peer Electronic Cash System. Dostupno na: [bitcoin.org/bitcoin.pdf](https://bitcoin.org/bitcoin.pdf)
 1. Ellis, S. Juels, A. & Nazarov, S. ChainLink -- A Decentralized Oracle Network. Dostupno na: [link.smartcontract.com/whitepaper](https://link.smartcontract.com/whitepaper)
 
-### Optimizacijske tehnike kod sjenčanja u Unreal Engineu {[PPHS](nastava/kolegiji/PPHS.md)} [Mia Doričić]
+### Optimizacijske tehnike kod sjenčanja u Unreal Engineu {[PPHS](../kolegiji/PPHS.md)} [Mia Doričić]
 
 **Naslov na engleskom:** Shading optimization techniques in Unreal Engine
 
@@ -612,7 +583,7 @@ Posljednjih desetljeća industrija igara je u kontinuiranom porastu te je jedan 
 1. [3D Game Shaders For Beginners](https://lettier.github.io/3d-game-shaders-for-beginners/)
 1. [Shader Development (Unreal Engine Documentation)](https://docs.unrealengine.com/en-US/ProgrammingAndScripting/Rendering/ShaderDevelopment/)
 
-### Krivulje u računalnoj grafici {[PPHS](nastava/kolegiji/PPHS.md)} [Mikaela Oklen]
+### Krivulje u računalnoj grafici {[PPHS](../kolegiji/PPHS.md)} [Mikaela Oklen]
 
 **Naslov na engleskom:** Curves in computer graphics
 
@@ -630,7 +601,7 @@ U računalnoj grafici se razrađuju temeljni koncepti i tehnike prikazivanja 2D 
 1. M. Čupić, Ž. Mihajlović, Interaktivna računalna grafika kroz primjere u OpenGL-u, udžbenik Fakulteta elektronike i računarstva, 2018.
 1. R. Scitovski, Numerička matematika, 3. izmijenjeno i dopunjeno izdanje, Odjel za matematiku, Sveučilište u Osijeku, 2015.
 
-### Razvoj aplikacije korištenjem mrežne i kriptografske biblioteke NaCl {[RM2](nastava/kolegiji/RM2.md)} [Đino Prenc, preneseno iz 2019./2020.]
+### Razvoj aplikacije korištenjem mrežne i kriptografske biblioteke NaCl {[RM2](../kolegiji/RM2.md)} [Đino Prenc, preneseno iz 2019./2020.]
 
 **Naslov na engleskom:** Application development using NaCl network and cryptographic library
 
@@ -643,7 +614,7 @@ Brojne mrežne aplikacije koje svakodnevno vrše šifriranje i dešifriranje sad
 1. [NaCl: Networking and Cryptography library](https://nacl.cr.yp.to/)
 1. [Libsodium documentation](https://libsodium.gitbook.io/)
 
-### Prvoaprilski RFC-i {[RM2](nastava/kolegiji/RM2.md)} [Dino Šarković, preseneno iz 2018./2019.]
+### Prvoaprilski RFC-i {[RM2](../kolegiji/RM2.md)} [Dino Šarković, preseneno iz 2018./2019.]
 
 **Naslov na engleskom:** April Fools' Day Request for Comments
 
@@ -658,7 +629,7 @@ Osim ozbiljnih RFC-a, kao što su primjerice oni koji opisuju TCP, IPv6 ili ICMP
 
 ## Odabrane teme diplomskih radova akademske godine 2020./2021.
 
-### Ponovljiva izgradnja programske podrške {[UMS](nastava/kolegiji/UMS.md)} [Matija Banjan]
+### Ponovljiva izgradnja programske podrške {[UMS](../kolegiji/UMS.md)} [Matija Banjan]
 
 **Naslov na engleskom:** Reproducible building of software
 
@@ -670,7 +641,7 @@ Osim ozbiljnih RFC-a, kao što su primjerice oni koji opisuju TCP, IPv6 ili ICMP
 
 1. [Reproducible Builds](https://reproducible-builds.org/)
 
-### Kvantno računarstvo i digitalna sigurnost {[UMS](nastava/kolegiji/UMS.md)} [Kristian Nekić]
+### Kvantno računarstvo i digitalna sigurnost {[UMS](../kolegiji/UMS.md)} [Kristian Nekić]
 
 **Naslov na engleskom:** Quantum computing and digital security
 
@@ -682,7 +653,7 @@ Osim ozbiljnih RFC-a, kao što su primjerice oni koji opisuju TCP, IPv6 ili ICMP
 
 1. [Quantum Computing Is the Next Big Security Risk (Wired)](https://www.wired.com/story/quantum-computing-is-the-next-big-security-risk/)
 
-### Sigurnost mikroservisa {[UMS](nastava/kolegiji/UMS.md)} [Simon Košmrl]
+### Sigurnost mikroservisa {[UMS](../kolegiji/UMS.md)} [Simon Košmrl]
 
 **Naslov na engleskom:** Microservice security
 
@@ -703,7 +674,7 @@ Cilj rada je opisati tehnike napada na mikroservise i web aplikacije, alate koji
 
 ## Odabrane teme završnih radova akademske godine 2019./2020.
 
-### Utjecaj pandemije COVID-19 na igranje igara za više igrača putem interneta {[RM2](nastava/kolegiji/RM2.md)} [Ana Novokmet]
+### Utjecaj pandemije COVID-19 na igranje igara za više igrača putem interneta {[RM2](../kolegiji/RM2.md)} [Ana Novokmet]
 
 **Opis teme:**
 
@@ -715,7 +686,7 @@ Pandemija koronavirusa SARS-CoV-2 tijekom 2020. godina učinila je da velik broj
 1. [Managing Steam Bandwidth During COVID-19 Pandemic (Steam Blog)](https://steamcommunity.com/games/593110/announcements/detail/2074411495515541376)
 1. [Tracking COVID-19's Impact on Global Internet Performance (Speedtest Insights)](https://www.speedtest.net/insights/blog/tracking-covid-19-impact-global-internet-performance/)
 
-### Razvoj HTTP web aplikacije korištenjem okvira Drogon {[RM2](nastava/kolegiji/RM2.md)} [Rikardo Jagnjić]
+### Razvoj HTTP web aplikacije korištenjem okvira Drogon {[RM2](../kolegiji/RM2.md)} [Rikardo Jagnjić]
 
 **Opis teme:**
 
@@ -728,7 +699,7 @@ Suvremeni pristupi razvoju web aplikacija dijele aplikaciju na dva osnovna dijel
 1. [C++ reference](https://www.cppreference.com/)
 1. [C++ Core Guidelines](https://isocpp.org/guidelines)
 
-### Projekti javnog bežičnog pristupa internetu Wlan slovenija i Otvorena mreža {[RM1](nastava/kolegiji/RM1.md)} [Igor Lipošćak]
+### Projekti javnog bežičnog pristupa internetu Wlan slovenija i Otvorena mreža {[RM1](../kolegiji/RM1.md)} [Igor Lipošćak]
 
 **Opis teme:**
 
@@ -739,7 +710,7 @@ Literatura
 1. [Wlan slovenija](https://wlan-si.net/)
 1. [Otvorena mreža](https://www.otvorenamreza.org/)
 
-### Tehnike rasterizacije {[PPHS](nastava/kolegiji/PPHS.md)} [Mauro Raguzin]
+### Tehnike rasterizacije {[PPHS](../kolegiji/PPHS.md)} [Mauro Raguzin]
 
 **Mentor:** [v. pred. dr. sc. Vedran Miletić](https://vedran.miletic.net/)
 
@@ -755,7 +726,7 @@ Moderni grafički procesori imaju programabilni cjevovod koji koriste za prikaz 
 1. [ROCm](https://rocmdocs.amd.com/)
 1. [NVIDIA CUDA](https://developer.nvidia.com/cuda-zone)
 
-### Problem performansi računalne mreže Bufferbloat {[RM2](nastava/kolegiji/RM2.md)} [Nikola Terihaj]
+### Problem performansi računalne mreže Bufferbloat {[RM2](../kolegiji/RM2.md)} [Nikola Terihaj]
 
 **Opis teme:**
 
@@ -770,7 +741,7 @@ Porastom veličine međuspremnika usmjerivača na internetu raste prosječno vri
 1. [Make Wi-Fi Fast](https://www.bufferbloat.net/projects/make-wifi-fast/wiki/)
 1. Bozkurt, Ilker Nadi, et al. "Why is the Internet so slow?!." International Conference on Passive and Active Network Measurement. Springer, Cham, 2017. Rad dostupan putem [Sveučilišta Illinois](https://pbg.web.engr.illinois.edu/papers/bozkurt17why.pdf) [Urbana-Champaign](https://cspeedweb.web.engr.illinois.edu/assets/publications/bozkurt-pam2017.pdf); pojednostavljeni opis zaključaka rada dostupan na [APNIC-ovom blogu](https://blog.apnic.net/2017/06/19/why-is-the-internet-so-slow/)
 
-### Predviđanje pristajanja malih molekula na proteine korištenjem tehnika umjetne inteligencije na grafičkim procesorima {[PPHS](nastava/kolegiji/PPHS.md)} [Adis Tokalić]
+### Predviđanje pristajanja malih molekula na proteine korištenjem tehnika umjetne inteligencije na grafičkim procesorima {[PPHS](../kolegiji/PPHS.md)} [Adis Tokalić]
 
 **Opis teme:**
 
@@ -786,7 +757,7 @@ Porastom procesne moći računala, naročito zahvaljujući računanju na grafič
 1. [RxDock](https://rxdock.gitlab.io/)
 1. [Glide](https://www.schrodinger.com/products/glide)
 
-### Paralelizacija predviđanja pristajanja malih molekula na proteine {[PPHS](nastava/kolegiji/PPHS.md)} [Maja Abramović]
+### Paralelizacija predviđanja pristajanja malih molekula na proteine {[PPHS](../kolegiji/PPHS.md)} [Maja Abramović]
 
 **Opis teme:**
 
@@ -802,7 +773,7 @@ Visokoprotočni virtualni pregled molekula koje su potencijalni lijekovi kroz pr
 1. [Taskflow (C++14)](https://taskflow.github.io/)
 1. [C++17 algorithms library](https://en.cppreference.com/w/cpp/algorithm)
 
-### Rješavanje zadataka iz predmeta Računalne mreže na računalu {[RM1](nastava/kolegiji/RM1.md)} [Andrea Hrelja, preneseno iz 2018./2019.]
+### Rješavanje zadataka iz predmeta Računalne mreže na računalu {[RM1](../kolegiji/RM1.md)} [Andrea Hrelja, preneseno iz 2018./2019.]
 
 **Opis teme:**
 
@@ -815,7 +786,7 @@ Predmet Računalne mreže jedan od je temeljnih predmeta preddiplomskog studija 
 
 ## Odabrane teme diplomskih radova akademske godine 2019./2020.
 
-### InterPlanetary File System (IPFS) {[UMS](nastava/kolegiji/UMS.md)} [Dario Ognjanović]
+### InterPlanetary File System (IPFS) {[UMS](../kolegiji/UMS.md)} [Dario Ognjanović]
 
 **Opis teme:**
 
@@ -825,7 +796,7 @@ Predmet Računalne mreže jedan od je temeljnih predmeta preddiplomskog studija 
 
 1. [IPFS](https://ipfs.io/)
 
-### Mjerenje performansi poslužiteljskih Java aplikacija u virtualnim strojevima {[UMS](nastava/kolegiji/UMS.md)} [Matija Šegović]
+### Mjerenje performansi poslužiteljskih Java aplikacija u virtualnim strojevima {[UMS](../kolegiji/UMS.md)} [Matija Šegović]
 
 **Opis teme:**
 
@@ -841,7 +812,7 @@ Cilj rada je opisati proces instalacije i konfiguracije poslužiteljskih Java ap
 1. [IBM WebSphere Documentation](https://www.ibm.com/support/pages/websphere-ibm-i-documentation)
 1. [ELK Stack Documentation](https://www.elastic.co/what-is/elk-stack)
 
-### Proširenje mogućnosti OpenCL stoga otvorenog koda za grafičke procesore AMD Radeon {[PPHS](nastava/kolegiji/PPHS.md)} [Dominik Varelija]
+### Proširenje mogućnosti OpenCL stoga otvorenog koda za grafičke procesore AMD Radeon {[PPHS](../kolegiji/PPHS.md)} [Dominik Varelija]
 
 **Opis teme:**
 
@@ -865,7 +836,7 @@ NVIDIA je vodeća tvrtka u domeni vizualizacije i računanja na grafičkim proce
 1. [The Linux Graphics Stack (Clean Rinse)](https://blog.mecheye.net/2012/06/the-linux-graphics-stack/)
 1. [A brief introduction to the Linux graphics stack (Iago Toral Developer Log, Igalia)](https://blogs.igalia.com/itoral/2014/07/29/a-brief-introduction-to-the-linux-graphics-stack/)
 
-### Prevođenje programa za sjenčanje u strojni kod grafičkog procesora AMD Radeon {[PPHS](nastava/kolegiji/PPHS.md)} [Sanja Božić]
+### Prevođenje programa za sjenčanje u strojni kod grafičkog procesora AMD Radeon {[PPHS](../kolegiji/PPHS.md)} [Sanja Božić]
 
 **Opis teme:**
 
@@ -886,7 +857,7 @@ Programi za sjenčanje neizbježan su dio modernih računalnih igara gdje služe
 
 ## Odabrane teme završnih radova akademske godine 2018./2019.
 
-### Implementacija Kruskalovog algoritma primjenom tehnologije CUDA {[PPHS](nastava/kolegiji/PPHS.md)} [Vicenco Tomaš]
+### Implementacija Kruskalovog algoritma primjenom tehnologije CUDA {[PPHS](../kolegiji/PPHS.md)} [Vicenco Tomaš]
 
 **Mentor:** dr. sc. Draško Tomić
 
@@ -903,7 +874,7 @@ NVIDIA CUDA je vodeća tehnologija za računanje na grafičkim procesorima i isk
 
 ## Odabrane teme diplomskih radova akademske godine 2018./2019.
 
-### Performanse upravljačkih programa grafičkog procesora kod izvođenja simulacija molekularne dinamike alatom GROMACS {[PPHS](nastava/kolegiji/PPHS.md)} [Mario Ćuro]
+### Performanse upravljačkih programa grafičkog procesora kod izvođenja simulacija molekularne dinamike alatom GROMACS {[PPHS](../kolegiji/PPHS.md)} [Mario Ćuro]
 
 **Opis teme:**
 
@@ -918,7 +889,7 @@ GROMACS je jedan od najkorištenijih alata za simulaciju molekularne dinamike i,
 1. [A free GROMACS benchmark set (MPI-BPC Theoretical and Computational Biophysics)](https://www.mpibpc.mpg.de/grubmueller/bench)
 1. [gmxapi Python package](https://gmxapi.readthedocs.io/)
 
-### Ucjenjivački softver {[UMS](nastava/kolegiji/UMS.md)} [Stefano Berneš]
+### Ucjenjivački softver {[UMS](../kolegiji/UMS.md)} [Stefano Berneš]
 
 **Opis teme:**
 
@@ -930,7 +901,7 @@ Ucjenjivački softver je vrsta zlonamjernog softvera koja šifrira datoteke na r
 1. [Ransomware doesn't mean game over (Malwarebytes Labs)](https://blog.malwarebytes.com/101/2016/11/ransomware-doesnt-mean-game-over/)
 1. [Massive WannaCry/Wcry Ransomware Attack Hits Countries (Trend Micro Research)](https://www.trendmicro.com/en_us/research/17/e/massive-wannacrywcry-ransomware-attack-hits-various-countries.html)
 
-### Robotska automatizacija procesa {[UMS](nastava/kolegiji/UMS.md)} [Marko Čolak]
+### Robotska automatizacija procesa {[UMS](../kolegiji/UMS.md)} [Marko Čolak]
 
 **Opis teme:**
 
@@ -944,7 +915,7 @@ Zadatak rada je opisati robotsku automatizaciju procesa i razloge njene primjene
 1. Willcocks, L. P., Lacity M. & Craig, A. *Robotic process automation at Xchanging.* (London School of Economics Outsourcing Unit Working Research Paper Series, 2015). Rad dostupan putem [mrežnih stranica Londonske škole ekonomije](https://eprints.lse.ac.uk/64518/1/OUWRPS_15_03_published.pdf).
 1. [Robot Framework Documentation](https://robotframework.org/#documentation)
 
-### Instalacija i održavanje računalne učionice {[UMS](nastava/kolegiji/UMS.md)} [Pino Zidarić]
+### Instalacija i održavanje računalne učionice {[UMS](../kolegiji/UMS.md)} [Pino Zidarić]
 
 **Opis teme:**
 
@@ -964,7 +935,7 @@ Moderne računalne učionice na fakultetima i u školama rijetko se naivno insta
 1. [DigitalOcean Tutorials](https://www.digitalocean.com/community/tutorials/)
 1. [nixCraft HowTos and Tutorials](https://www.cyberciti.biz/faq/)
 
-### Biblioteke heterogene sustavske arhitekture platforme ROCm {[PPHS](nastava/kolegiji/PPHS.md)} [Augustin Sočković]
+### Biblioteke heterogene sustavske arhitekture platforme ROCm {[PPHS](../kolegiji/PPHS.md)} [Augustin Sočković]
 
 **Opis teme:**
 
@@ -977,7 +948,7 @@ Dok se aplikacija izvodi u heterogenom računalnom sustavu, grafički i središn
 
 ## Odabrane teme završnih radova akademske godine 2017./2018.
 
-### Napadi tipa man-in-the-middle na HTTPS i njihovo prepoznavanje {[RM2](nastava/kolegiji/RM2.md)} [Dominik Varelija]
+### Napadi tipa man-in-the-middle na HTTPS i njihovo prepoznavanje {[RM2](../kolegiji/RM2.md)} [Dominik Varelija]
 
 **Opis teme:**
 
@@ -989,7 +960,7 @@ Dok se aplikacija izvodi u heterogenom računalnom sustavu, grafički i središn
 1. Durumeric, Zakir, et al. "The Security Impact of HTTPS Interception." Network and Distributed Systems Symposium (NDSS'17). 2017. Rad dostupan putem [mrežnih stranica J. Alexa Hanldermana](https://jhalderm.com/pub/papers/interception-ndss17.pdf).
 1. [Detecting HTTPS Interception (Caddy web server)](https://caddyserver.com/docs/mitm-detection)
 
-### Nomulus: softver otvorenog koda za upravljanje registrom domena (Nomulus: open source domain registry management software) {[RM2](nastava/kolegiji/RM2.md)} [Sanja Ivić, preneseno iz 2016./2017.]
+### Nomulus: softver otvorenog koda za upravljanje registrom domena (Nomulus: open source domain registry management software) {[RM2](../kolegiji/RM2.md)} [Sanja Ivić, preneseno iz 2016./2017.]
 
 **Opis teme:**
 
@@ -1003,7 +974,7 @@ Literatura
 1. [Introducing Nomulus: an open source top-level domain name registry (Google Open Source Blog)](https://opensource.googleblog.com/2016/10/introducing-nomulus-open-source.html)
 1. [ICANN New gTLDs](https://newgtlds.icann.org/)
 
-### Ugradbeni softver za bežične usmjerivače OpenWrt / LEDE (OpenWRT/LEDE embedded wireless router software) {[RM1](nastava/kolegiji/RM1.md)} [Matija Banjan, preneseno iz 2016./2017.]
+### Ugradbeni softver za bežične usmjerivače OpenWrt / LEDE (OpenWRT/LEDE embedded wireless router software) {[RM1](../kolegiji/RM1.md)} [Matija Banjan, preneseno iz 2016./2017.]
 
 **Opis teme:**
 
@@ -1016,7 +987,7 @@ OpenWrt / LEDE je distribucija Linuxa koja se koristi kao ugradbeni softver za b
 
 ## Odabrane teme diplomskih radova akademske godine 2017./2018.
 
-### Implementacija TCP-a u jezgri Linuxa i njene primjene (TCP implementation in Linux kernel and its applications) {[OS1](nastava/kolegiji/OS1.md)} [Ana Tomasović]
+### Implementacija TCP-a u jezgri Linuxa i njene primjene (TCP implementation in Linux kernel and its applications) {[OS1](../kolegiji/OS1.md)} [Ana Tomasović]
 
 **Mentor:** doc. dr. sc. Božidar Kovačić
 
@@ -1032,7 +1003,7 @@ Transmission Control Protocol (TCP) je protokol koji logički pripada četvrtom,
 1. Lacage, Mathieu. Experimentation tools for networking research. Diss. Nice, 2010.
 1. [Sarolahti, Pasi, and Alexey Kuznetsov. "Congestion Control in Linux TCP." USENIX Annual Technical Conference, FREENIX Track. 2002.](https://www.usenix.org/legacy/publications/library/proceedings/usenix02/tech/freenix/full_papers/sarolahti/sarolahti_html/)
 
-### Pogon otvorenog koda za izradu 2D i 3D igara Godot (Godot open source 2D and 3D game engine) {[PPHS](nastava/kolegiji/PPHS.md)} [Kristijan Faust]
+### Pogon otvorenog koda za izradu 2D i 3D igara Godot (Godot open source 2D and 3D game engine) {[PPHS](../kolegiji/PPHS.md)} [Kristijan Faust]
 
 **Mentor:** doc. dr. sc. Božidar Kovačić
 
@@ -1051,7 +1022,7 @@ Godot je pogon otvorenog koda za izradu 2D i 3D igara dostupand pod licencom MIT
 
 ## Odabrane teme završnih radova akademske godine 2016./2017.
 
-### Utjecaj interneta na rezultat predsjedničkih izbora 2016. godine u Sjedinjenim Američkim Državama (Impact of the Internet on the result of US Presidential Election 2016) {[RM2](nastava/kolegiji/RM2.md)} [Mihael Orlović]
+### Utjecaj interneta na rezultat predsjedničkih izbora 2016. godine u Sjedinjenim Američkim Državama (Impact of the Internet on the result of US Presidential Election 2016) {[RM2](../kolegiji/RM2.md)} [Mihael Orlović]
 
 [Poveznica na rad u repozitoriju](https://urn.nsk.hr/urn:nbn:hr:195:504221)
 
@@ -1080,7 +1051,7 @@ Tijekom izbornog ciklusa u Sjedinjenim Američkim Državama 2015. i 2016. nomina
 1. [Visualizing Clinton, Podesta, and the DNC's Wikileaks E-mail Networks](https://clinton.media.mit.edu/)
 1. Zannettou, Savvas, et al. "The Web Centipede: Understanding How Web Communities Influence Each Other Through the Lens of Mainstream and Alternative News Sources." *arXiv preprint arXiv:1705.06947* (2017). Rad dostupan na [arXivu](https://arxiv.org/abs/1705.06947).
 
-### Usporedba Khronos Vulkan i OpenGL API-ja (Comparison of Khronos Vulkan and OpenGL APIs) {[PPHS](nastava/kolegiji/PPHS.md)} [Darko Kraljević]
+### Usporedba Khronos Vulkan i OpenGL API-ja (Comparison of Khronos Vulkan and OpenGL APIs) {[PPHS](../kolegiji/PPHS.md)} [Darko Kraljević]
 
 **Opis teme:**
 
@@ -1094,7 +1065,7 @@ OpenGL je višeplatformski API za prikaz 2D i 3D vektorske grafiku. Vulkan je vi
 1. [OpenGL (Wikipedia)](https://en.wikipedia.org/wiki/OpenGL)
 1. [AMD vs NV Drivers: A Brief History and Understanding Scheduling & CPU Overhead](https://youtu.be/nIoZB-cnjc0)
 
-### Testiranje implementacija OpenGL-a i OpenCL-a alatom Piglit (Testing OpenGL and OpenCL implementations using Piglit) {[PPHS](nastava/kolegiji/PPHS.md)} [Mario Ćuro]
+### Testiranje implementacija OpenGL-a i OpenCL-a alatom Piglit (Testing OpenGL and OpenCL implementations using Piglit) {[PPHS](../kolegiji/PPHS.md)} [Mario Ćuro]
 
 [Poveznica na rad u repozitoriju](https://urn.nsk.hr/urn:nbn:hr:195:876890)
 
@@ -1109,7 +1080,7 @@ Piglit je skup testova za implemetacije OpenGL-a i OpenCL-a neovisan o hardveru,
 1. [OpenCL](https://www.khronos.org/opencl/)
 1. Dokumentacija upravljačkih programa odabranog hardvera
 
-### Ograničenje pokretanja operacijskih sustava tehnologijom UEFI Secure Boot (Restricting operating system boot using UEFI Secure Boot technology) {[OS1](nastava/kolegiji/OS1.md)} [Kristian Nekić, preneseno iz 2015./2016.]
+### Ograničenje pokretanja operacijskih sustava tehnologijom UEFI Secure Boot (Restricting operating system boot using UEFI Secure Boot technology) {[OS1](../kolegiji/OS1.md)} [Kristian Nekić, preneseno iz 2015./2016.]
 
 [Poveznica na rad u repozitoriju](https://urn.nsk.hr/urn:nbn:hr:195:915124)
 
@@ -1128,7 +1099,7 @@ S izlaskom operacijskog sustava Windows 10 zabrinutost kritičara raste, obzirom
 1. [Windows 10 to make the Secure Boot alt-OS lock out a reality](https://arstechnica.com/information-technology/2015/03/windows-10-to-make-the-secure-boot-alt-os-lock-out-a-reality/)
 1. [Secure Boot: the good, the bad, and secureboot.me - Vedran Miletić DORS/CLUC 2015](https://youtu.be/mWJj0Gn7SWc)
 
-### Operacijski sustav CoreOS (CoreOS operating system) {[OS2](nastava/kolegiji/OS2.md)} [Matija Šegović, preneseno iz 2015./2016.]
+### Operacijski sustav CoreOS (CoreOS operating system) {[OS2](../kolegiji/OS2.md)} [Matija Šegović, preneseno iz 2015./2016.]
 
 [Poveznica na rad u repozitoriju](https://urn.nsk.hr/urn:nbn:hr:195:958447)
 
@@ -1144,7 +1115,7 @@ CoreOS je operacijski sustav otvorenog koda zasnovan na jezgri Linux koji omogu�
 
 ## Odabrane teme završnih radova akademske godine 2015./2016.
 
-### Datotečni sustavi ZFS i Btrfs (Btrfs and ZFS filesystems) {[OS1](nastava/kolegiji/OS1.md)} [Ana Tomasović]
+### Datotečni sustavi ZFS i Btrfs (Btrfs and ZFS filesystems) {[OS1](../kolegiji/OS1.md)} [Ana Tomasović]
 
 [Poveznica na rad u repozitoriju](https://urn.nsk.hr/urn:nbn:hr:195:566784)
 
@@ -1163,7 +1134,7 @@ Oba datotečna sustava stavljaju naglasak na skaliranje, te na popravak nedostat
 1. Rodeh, Ohad, Josef Bacik, and Chris Mason. "BTRFS: The Linux B-tree filesystem." ACM Transactions on Storage (TOS) 9.3 (2013): 9.
 1. Heger, Dominique A.. "Workload Dependent Performance Evaluation of the Btrfs and ZFS Filesystems." CMG (2009).
 
-### Intelektualno vlasništvo nad softverom: licence i patenti (Intellectual property rights in software: licences and patents) {[OS1](nastava/kolegiji/OS1.md)} [Milan Petrović]
+### Intelektualno vlasništvo nad softverom: licence i patenti (Intellectual property rights in software: licences and patents) {[OS1](../kolegiji/OS1.md)} [Milan Petrović]
 
 [Poveznica na rad u repozitoriju](https://urn.nsk.hr/urn:nbn:hr:195:960190)
 
@@ -1190,7 +1161,7 @@ Softver kao autorsko djelo spada pod zakon o autorskom pravu, a pored toga je u 
 1. Rosen, Lawrence. Open source licensing. Prentice Hall, 2005.
 1. Evans, David S., and Anne Layne-Farrar. "Software patents and open source: the battle over intellectual property rights." Va. JL & Tech. 9 (2004): 1.
 
-### ICANN-ov program novih vršnih imena domena (ICANN's new top level domains program) {[RM2](nastava/kolegiji/RM2.md)} [Iris Babić]
+### ICANN-ov program novih vršnih imena domena (ICANN's new top level domains program) {[RM2](../kolegiji/RM2.md)} [Iris Babić]
 
 [Poveznica na rad u repozitoriju](https://urn.nsk.hr/urn:nbn:hr:195:224719)
 
@@ -1215,7 +1186,7 @@ Međutim, prava promjena događa se tek 2012. kad ICANN otvara mogućnost privat
 1. [Radix](https://radix.website/)
 1. [Rightside](https://web.archive.org/web/20131207195308/http://rightside.co/)
 
-### Slobodni softver za anonimnu komunikaciju Tor (Tor: free software for anonymous communication) {[RM1](nastava/kolegiji/RM1.md)} [Marjana Bjelić]
+### Slobodni softver za anonimnu komunikaciju Tor (Tor: free software for anonymous communication) {[RM1](../kolegiji/RM1.md)} [Marjana Bjelić]
 
 [Poveznica na rad u repozitoriju](https://urn.nsk.hr/urn:nbn:hr:195:472725)
 
@@ -1231,7 +1202,7 @@ Tor (The Onion Router) je slobodan softver za anonimnu komunikaciju putem intern
 
 ## Odabrane teme diplomskih radova akademske godine 2015./2016.
 
-### Primjena responsive tehnologije za izradu dokumentacije aplikacije CP2K (Application of responisve technology for creating CP2K documentation) {[DS](nastava/kolegiji/DS.md)} [Kristijan Lenković]
+### Primjena responsive tehnologije za izradu dokumentacije aplikacije CP2K (Application of responisve technology for creating CP2K documentation) {[DS](../kolegiji/DS.md)} [Kristijan Lenković]
 
 **Mentor:** doc. dr. sc. Božidar Kovačić
 
@@ -1250,7 +1221,7 @@ CP2K je popularan slobodan softver otvorenog koda za molekularnu dinamiku. Dokum
 1. Dokumentacija [Java Platform SE 7](https://docs.oracle.com/javase/7/docs/api/), primjer dizajna korisničkog sučelja
 1. Dokumentacija [Doxygena](https://www.doxygen.nl/), primjer dizajna korisničkog sučelja
 
-### Analiza učinkovitosti paralelnih aplikacija (Performance analysis of parallel applications) {[DS](nastava/kolegiji/DS.md)} [Tomislav Šubić]
+### Analiza učinkovitosti paralelnih aplikacija (Performance analysis of parallel applications) {[DS](../kolegiji/DS.md)} [Tomislav Šubić]
 
 **Mentor:** doc. dr. sc. Božidar Kovačić
 
