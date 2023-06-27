@@ -92,9 +92,83 @@ At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praese
 ## Literatura
 ```
 
+Poglavlje *Literatura* bez sadržaja mora biti posljednje jer služi kao mjesto gdje će biti umetnut generirani popis literature.
+
+#### Bibliografija (BibTeX)
+
+U Pandocovom dijalektu Markdowna sintaksa oblika `[@AutorGodina]` se koristi za citiranje izvora. Bibliografija se pohranjuje u datoteci `bibliografija.bib` u formatu BibTeX:
+
+``` bibtex
+@book{Hajn01,
+    title     = {Medical Image Registration},
+    editor    = {J. V. Hajnal and D. Hill and D. J. Hawkes},
+    publisher = {CRC Press LLC},
+    address   = {Boca Raton, USA},
+    year      = {2001},
+}
+
+@incollection{Samp05,
+    author    = {M. P. Sampat and M. K. Markey and A. C. Bovik},
+    editor    = {A.C. Bovik},
+    booktitle = {Handbook of Image and Video Processing},
+    title     = {{Computer-Aided Detection and Diagnosis in Mammography}},
+    pages     = {1195-1217},
+    publisher = {Elsevier Academic Press},
+    year      = {2005},
+    address   = {Amsterdam},
+}
+
+@article{Sim03,
+    author  = {T. Sim and S. Baker and M. Bsat},
+    title   = {{The CMU Pose, Illumination, and Expression Database}},
+    journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+    volume  = {25},
+    number  = {12},
+    pages   = {1615-1618},
+    year    = {2003},
+    month   = {December},
+}
+
+@conference{Wirt99,
+    author    = {M. A. Wirth and C. Choi and A. Jennings},
+    title     = {{A Nonrigid-Body Approach to Matching Mammograms}},
+    booktitle = {{Seventh International Conference on Image Processing and Its Applications}},
+    address   = {Manchester, UK},
+    pages     = {484-488},
+    year      = {1999},
+    month     = {July},
+}
+
+@phdthesis{Will93,
+    author  = {J. Williams},
+    title   = {{Narrow-band Analyzer}},
+    year    = {1993},
+    school  = {Harvard University},
+    address = {Cambridge, MA, SAD},
+}
+
+@misc{Jone12,
+    author = {J. Jones},
+    title  = {Networks},
+    url    = {http://www.atm.com},
+    year   = {(28. srpnja 2012.)},
+}
+
+@manual{Rsoft,
+    title        = {{R: A Language and Environment for Statistical Computing}},
+    author       = {{R Core Team}},
+    organization = {R Foundation for Statistical Computing},
+    address      = {Vienna, Austria},
+    year         = 2012,
+    url          = {http://www.R-project.org}
+}
+```
+
+Osim ručne pripreme ove datoteke, moguće je [skup](https://www.zotero.org/support/collections_and_tags) prikupljenih referenci u [Zoteru](https://www.zotero.org/support/) [izvesti](https://www.zotero.org/support/kb/exporting) kao datoteku u formatu BibTeX.
+
 #### Predložak (LaTeX)
 
-Datoteka `predlozak.latex` sadrži LaTeX predložak u kojem Pandoc zamjenjuje varijablu `$body$` tekstom rada, a sve ostale varijable istoimenim metapodacima:
+Datoteka `predlozak.latex` sadrži LaTeX predložak u kojem Pandoc zamjenjuje varijablu `$body$` tekstom rada, a sve ostale varijable istoimenim metapodacima iz zaglavlja:
 
 ``` latex
 % This is the main file for the template for doctoral thesis at
@@ -458,76 +532,6 @@ $body$
 
 Ovu datoteku nije potrebno mijenjati.
 
-#### Bibliografija (BibTeX)
-
-U Pandocovom dijalektu Markdowna sintaksa oblika `[@AutorGodina]` se koristi za citiranje izvora. Bibliografija se pohranjuje u datoteci `bibliografija.bib` u formatu BibTeX:
-
-``` bibtex
-@book{Hajn01,
-    title     = {Medical Image Registration},
-    editor    = {J. V. Hajnal and D. Hill and D. J. Hawkes},
-    publisher = {CRC Press LLC},
-    address   = {Boca Raton, USA},
-    year      = {2001},
-}
-
-@incollection{Samp05,
-    author    = {M. P. Sampat and M. K. Markey and A. C. Bovik},
-    editor    = {A.C. Bovik},
-    booktitle = {Handbook of Image and Video Processing},
-    title     = {{Computer-Aided Detection and Diagnosis in Mammography}},
-    pages     = {1195-1217},
-    publisher = {Elsevier Academic Press},
-    year      = {2005},
-    address   = {Amsterdam},
-}
-
-@article{Sim03,
-    author  = {T. Sim and S. Baker and M. Bsat},
-    title   = {{The CMU Pose, Illumination, and Expression Database}},
-    journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
-    volume  = {25},
-    number  = {12},
-    pages   = {1615-1618},
-    year    = {2003},
-    month   = {December},
-}
-
-@conference{Wirt99,
-    author    = {M. A. Wirth and C. Choi and A. Jennings},
-    title     = {{A Nonrigid-Body Approach to Matching Mammograms}},
-    booktitle = {{Seventh International Conference on Image Processing and Its Applications}},
-    address   = {Manchester, UK},
-    pages     = {484-488},
-    year      = {1999},
-    month     = {July},
-}
-
-@phdthesis{Will93,
-    author  = {J. Williams},
-    title   = {{Narrow-band Analyzer}},
-    year    = {1993},
-    school  = {Harvard University},
-    address = {Cambridge, MA, SAD},
-}
-
-@misc{Jone12,
-    author = {J. Jones},
-    title  = {Networks},
-    url    = {http://www.atm.com},
-    year   = {(28. srpnja 2012.)},
-}
-
-@manual{Rsoft,
-    title        = {{R: A Language and Environment for Statistical Computing}},
-    author       = {{R Core Team}},
-    organization = {R Foundation for Statistical Computing},
-    address      = {Vienna, Austria},
-    year         = 2012,
-    url          = {http://www.R-project.org}
-}
-```
-
 #### Stil citiranja (CSL)
 
 Stil citiranja [IEEE with URL](https://citationsy.com/styles/ieee-with-url) koji ćemo koristiti može se preuzeti iz repozitorija [citation-style-language/styles](https://github.com/citation-style-language/styles) na GitHubu pomoću cURL-a:
@@ -538,6 +542,8 @@ $ curl -O https://raw.githubusercontent.com/citation-style-language/styles/maste
                                  Dload  Upload   Total   Spent    Left  Speed
 100 14576  100 14576    0     0  71280      0 --:--:-- --:--:-- --:--:-- 71450
 ```
+
+Ovu datoteku također nije potrebno mijenjati.
 
 ### Prevođenje u format PDF
 
