@@ -99,17 +99,6 @@ U nastavku je popis predloženih i odabranih tema završnih i diplomskih radova.
 1. [Ruby on Rails](https://rubyonrails.org/)
 1. [HTML Over The Wire (Hotwire)](https://hotwired.dev/)
 
-### Razvoj web aplikacije korištenjem okvira Laravel i biblioteke Livewire {[PW](../kolegiji/PW.md)}
-
-**Opis teme:**
-
-...
-
-**Literatura:**
-
-1. [Laravel](https://laravel.com/)
-1. [Livewire](https://laravel-livewire.com/)
-
 ### Razvoj web aplikacije korištenjem okvira Laravel i sučelja Inertia.js {[PW](../kolegiji/PW.md)}
 
 **Opis teme:**
@@ -133,19 +122,6 @@ U nastavku je popis predloženih i odabranih tema završnih i diplomskih radova.
 1. [An illustrated guide to 12 Factor Apps (Red Hat Enable Architect)](https://www.redhat.com/architect/12-factor-app)
 1. [Beyond the Twelve-Factor App (Adam Bloom, VMWare Tanzu Blog)](https://tanzu.vmware.com/content/blog/beyond-the-twelve-factor-app)
 1. [Beyond the 12 Factor App: Exploring the DNA of Highly Scalable, Resilient Cloud Applications (VMWare Tanzu Content Library)](https://tanzu.vmware.com/content/ebooks/beyond-the-12-factor-app)
-
-### Web3 {[PW](../kolegiji/PW.md)}
-
-**Opis teme:**
-
-...
-
-**Literatura:**
-
-1. [What's Web3? (Brave Browser)](https://brave.com/learn/what-is-web3/)
-1. [Web3 — A vision for a decentralized web (The Cloudflare Blog)](https://blog.cloudflare.com/what-is-web3/)
-1. [Web3 Foundation](https://web3.foundation/)
-1. [The Father of Web3 Wants You to Trust Less (WIRED)](https://www.wired.com/story/web3-gavin-wood-interview/)
 
 ### Softver otvorenog koda za infrastrukturu oblaka OpenStack {[MMOS](../kolegiji/MMOS.md)/[URS](../kolegiji/URS.md)}
 
@@ -313,18 +289,6 @@ OpenDocument je format dokumenata uredskih aplikacija zasnovan na XML-u. OpenDoc
 1. [Kernel TLS offload (Linux Networking Documentation)](https://www.kernel.org/doc/html/latest/networking/tls-offload.html)
 1. [ktls (GitHub)](https://github.com/ktls)
 
-### Pohrana podataka o molekulama u sustavu za upravljanje bazom podataka PostgreSQL {[UMS](../kolegiji/UMS.md)}
-
-**Opis teme:**
-
-...
-
-**Literatura:**
-
-1. [CREATE EXTENSION (PostgreSQL)](https://www.postgresql.org/docs/current/sql-createextension.html)
-1. [CREATE SCHEMA (PostgreSQL)](https://www.postgresql.org/docs/current/sql-createschema.html)
-1. [RDKit database cartridge](https://www.rdkit.org/docs/Cartridge.html)
-
 ### Prilagodba znanstvenog softvera za izvođenje na eksaskalarnim superračunalima {[DS](../kolegiji/DS.md)}
 
 **Opis teme:**
@@ -337,18 +301,6 @@ OpenDocument je format dokumenata uredskih aplikacija zasnovan na XML-u. OpenDoc
 1. [Exascale Computing Project](https://www.exascaleproject.org/)
 1. [European High-Performance Computing Joint Undertaking](https://eurohpc-ju.europa.eu/)
 1. [Skalabilni algoritmi visokih preformansi za buduće heterogene distribuirane računalne sustave](https://www.irb.hr/Istrazivanja/Projekti/Skalabilni-algoritmi-visokih-performansi-za-buduce-heterogene-distribuirane-racunalne-sustave)
-
-### Skalabilnost mikroservisa {[UMS](../kolegiji/UMS.md)}
-
-**Opis teme:**
-
-...
-
-**Literatura:**
-
-1. [Nomad by HashiCorp](https://www.nomadproject.io/)
-1. [Scaling Microservices: The Challenges and Solutions (DZone Microservices)](https://dzone.com/articles/scaling-microservices-the-challenges-and-solutions)
-1. [The Scale Cube (Microservices.io)](https://microservices.io/articles/scalecube.html)
 
 ### Pretvorba OpenCL C-a u Vulkanova računska sjenčanja alatom clspv {[PPHS](../kolegiji/PPHS.md)}
 
@@ -404,7 +356,75 @@ CUDA je vlasnički programski jezik za heterogeno paralelno programiranje koriš
 1. [User Guide for AMDGPU Backend (LLVM Documentation)](https://www.llvm.org/docs/AMDGPUUsage.html)
 1. [LLVM AMDGPU Assembler Helper Tools (ROCm-Developer-Tools/LLVM-AMDGPU-Assembler-Extra on GitHub)](https://github.com/ROCm-Developer-Tools/LLVM-AMDGPU-Assembler-Extra)
 
-### Instalacija i konfiguracija poslužitelja datoteka {[UMS](../kolegiji/UMS.md)}
+## Odabrane teme završnih radova akademske godine 2022./2023.
+
+### Standardizacija i primjene Web3-a {[DWA2](../kolegiji/DWA2.md)} [Stjepan Friganović]
+
+**Naslov na engleskom:** Web3 standardization and applications
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [What's Web3? (Brave Browser)](https://brave.com/learn/what-is-web3/)
+1. [Web3 — A vision for a decentralized web (The Cloudflare Blog)](https://blog.cloudflare.com/what-is-web3/)
+1. [Web3 Foundation](https://web3.foundation/)
+1. [The Father of Web3 Wants You to Trust Less (WIRED)](https://www.wired.com/story/web3-gavin-wood-interview/)
+
+### Krivulje u računalnoj grafici {[PPHS](../kolegiji/PPHS.md)} [Mikaela Oklen, preneseno iz 2020/2021.]
+
+**Naslov na engleskom:** Curves in computer graphics
+
+**Mentor:** [v. pred. dr. sc. Vedran Miletić](https://vedran.miletic.net/)
+
+**Komentor:** doc. dr. sc. Sanda Bujačić
+
+**Opis teme:**
+
+U računalnoj grafici se razrađuju temeljni koncepti i tehnike prikazivanja 2D i 3D objekata koji su nužni prilikom izrade grafičkih programa na računalu. Jedna od temeljnih karakteristika današnjeg strelovito brzog i uspješnog razvoja računalne grafike jest implementacija optimiziranih grafičkih algoritama u grafičke aplikacije korištenjem standardnih API-ja kao što su OpenGL, Vulkan i vlasničkih API-ja kao što je DirectX. No, uz sve napredne funkcije i mogućnosti koje računalna grafika posjeduje, za ovladavanje svijetom računalne grafike nužno je poznavanje osnovnih i temeljnih koncepata u grafici: od temeljnih pojmova kao što su točka i krivulja do postupka interpolacije i orijentacije promatranih objekata. Cilj rada je predstaviti temeljne matematičke koncepte koji se koriste u računalnoj grafici kao što su točka, vektor, pravac i krivulja te razraditi pristupe koji se koriste prilikom iscrtavanja navedenih pojmova na računalu. Poseban se naglasak stavlja na krivulje čija se matematička svojstva analiziraju i koreliraju sa svojstvima koja su karakteristična za krivulje koje se koriste u računalnoj grafici. Jedan od čestih zadataka u računalnoj grafici je crtanje glatke krivulje između zadanog niza točaka (aproksimacija krivulje), a rješenjetog tipičnog problema numeričke matematike i računalne grafike su aproksimacijske i interpolacijske Bezierove krivulje. Implementaciju algoritama student može izvesti u programskom jeziku po želji te za vizualizaciju može koristiti OpenGL ili Vulkan.
+
+### Izdavanje višeplatformskih projekata korištenjem Unreal Enginea i standarda Vulkan {[PPHS](../kolegiji/PPHS.md)} [Hrvoje Sedlar, preneseno iz 2021./2022.]
+
+**Naslov na engleskom:** Publishing cross-platform projects using Unreal Engine and Vulkan
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+...
+
+### Evolucija arhitekture modularne monolitne web aplikacije u mikroservisnu {[PW](../kolegiji/PW.md)} [Lukas Gambeta]
+
+**Naslov na engleskom:** Evolution of modular monolithic web application architecture into microservices
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+...
+
+### Razvoj web aplikacije za upis više godine studija korištenjem okvira Laravel i biblioteke Livewire {[PW](../kolegiji/PW.md)} [Antonio Heski]
+
+**Naslov na engleskom:** Development of a web application for enrolling non-freshman years of studies using the Laravel framework and the Livewire library
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [Laravel](https://laravel.com/)
+1. [Livewire](https://laravel-livewire.com/)
+
+### Instalacija i konfiguracija poslužitelja datoteka {[URS](../kolegiji/URS.md)} [Deni Kernjus]
+
+**Naslov na engleskom:** Installation and configuration of a file server
 
 **Opis teme:**
 
@@ -418,6 +438,108 @@ Poslužitelj datoteka je dio gotovo svakog suvremenog poslovnog sustava. Bio taj
 
 1. [File Server (Ubuntu Server Guide)](https://ubuntu.com/server/docs/samba-file-server)
 1. [Using Samba as a server (Red Hat Enterprise Linux 8 Documentation: Deploying different types of servers)](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/deploying_different_types_of_servers/assembly_using-samba-as-a-server_deploying-different-types-of-servers)
+
+### Razvoj web aplikacije za dohvaćanje i pohranu informacija o molekulama koištenjem okvira ASP.NET {[PW](../kolegiji/PW.md)} [Mihael Ladić]
+
+**Naslov na engleskom:** Development of a web application for retrieving and storing information about molecules using the ASP.NET framework
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+...
+
+## Odabrane teme diplomskih radova akademske godine 2022./2023.
+
+### Mjere zaštite računalnih igara od piratstva i varanja {[UMS](../kolegiji/UMS.md)} [Dominik Kinkela]
+
+**Naslov na engleskom:** Piracy and cheating prevention measures in PC games
+
+**Područje teme:** Sigurnost aplikacija i usluga
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+...
+
+### Pohrana podataka o molekulama u sustavu za upravljanje bazom podataka PostgreSQL {[UMS](../kolegiji/UMS.md)} [Josip Lukin, preneseno iz 2021/2022.]
+
+**Naslov na engleskom:** Molecular data storage in PostgreSQL database management system
+
+**Područje teme:** Pohrana podataka
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [CREATE EXTENSION (PostgreSQL)](https://www.postgresql.org/docs/current/sql-createextension.html)
+1. [CREATE SCHEMA (PostgreSQL)](https://www.postgresql.org/docs/current/sql-createschema.html)
+1. [RDKit database cartridge](https://www.rdkit.org/docs/Cartridge.html)
+
+### Razvoj i implementacija sustava za trgovanje kriptovalutama {[UMS](../kolegiji/UMS.md)} [Ivan Modrić]
+
+**Naslov na engleskom:** Development and implementation of cryptocurency trading system
+
+**Područje teme:** Upravljanje aplikacijama i uslugama
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+...
+
+### Skalabilnost mikroservisa {[UMS](../kolegiji/UMS.md)} [Kristian Nekić, preneseno iz 2020/2021.]
+
+**Naslov na engleskom:** Microservice scalability
+
+**Područje teme:** Upravljanje aplikacijama i uslugama
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [Nomad by HashiCorp](https://www.nomadproject.io/)
+1. [Scaling Microservices: The Challenges and Solutions (DZone Microservices)](https://dzone.com/articles/scaling-microservices-the-challenges-and-solutions)
+1. [The Scale Cube (Microservices.io)](https://microservices.io/articles/scalecube.html)
+
+### Evaluacija i primjena statičke i dinamičke analize izvornog koda za otkrivanje sigurnosnih propusta {[UMS](../kolegiji/UMS.md)} [Đino Prenc]
+
+**Naslov na engleskom:** Evaluation and application of static and dynamic source code analysis in finding security issues
+
+**Područje teme:** Sigurnost aplikacija i usluga
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+...
+
+### Razvoj, mjerenje performansi i optimizacija višeplatformskih računalnih igara {[UMS](../kolegiji/UMS.md)} [Bruno Šavor]
+
+**Naslov na engleskom:** Development, performance measurement, and optimization of cross-platform PC games
+
+**Područje teme:** Upravljanje aplikacijama i uslugama
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+...
 
 ## Odabrane teme završnih radova akademske godine 2021./2022.
 
@@ -465,20 +587,6 @@ Poslužitelj datoteka je dio gotovo svakog suvremenog poslovnog sustava. Bio taj
 1. [IT Automation with Ansible](https://www.ansible.com/overview/it-automation)
 1. [Ansible (ArchWiki)](https://wiki.archlinux.org/title/Ansible)
 
-### Upravljanje kontejnerima aplikacija korištenjem Podmana {[DWA2](../kolegiji/DWA2.md)} [Ante Šimurina]
-
-**Naslov na engleskom:** Managing containers using Podman
-
-**Opis teme:**
-
-Kontejneri su postali sastavni dio skupa alata koje koriste i razvijatelji softvera i upravitelji računalnih sustava (sistemci), a najkorištenije rješenje je Docker. Red Hat je u suradnji sa zajednicom slobodnog softvera otvorenog koda razvio alternativu Dockeru imena Podman. Osim toga, razvijena je i alternativa bazi kontejnera Docker Hub pod imenom Quay. Zadatak rada je opisati način rada Podmana i usporediti ga s Dockerom
-
-**Literatura:**
-
-1. [Docker](https://www.docker.com/)
-1. [Podman](https://podman.io/)
-1. [Quay](https://quay.io/)
-
 ### Razvoj web aplikacije korištenjem okvira Django i biblioteke HTMX {[DWA2](../kolegiji/DWA2.md)} [Tvrtko Kaurinović]
 
 **Naslov na engleskom:** Web application development using Django framework and HTMX library
@@ -492,19 +600,6 @@ Kontejneri su postali sastavni dio skupa alata koje koriste i razvijatelji softv
 1. [htmx - high power tools for html](https://htmx.org/)
 1. [HTMX/Django](https://htmx-django.com/)
 1. [Carson Gross - REST, HATEOAS & Django - It's OK to not use JSON... or Javascript (DjangoCon US 2021, YouTube)](https://youtu.be/L_UWY-zHlOA)
-
-### Vulkan API u Unity 3D-u {[PPHS](../kolegiji/PPHS.md)} [Hrvoje Sedlar]
-
-**Naslov na engleskom:** Vulkan API in Unity 3D
-
-**Opis teme:**
-
-...
-
-**Literatura:**
-
-1. [Introducing the Vulkan renderer preview (Unity Blog)](https://blog.unity.com/technology/introducing-the-vulkan-renderer-preview)
-1. [Graphics API support (Unity Manual)](https://docs.unity3d.com/Manual/GraphicsAPIs.html)
 
 ## Odabrane teme diplomskih radova akademske godine 2021./2022.
 
@@ -522,18 +617,6 @@ Kontejneri su postali sastavni dio skupa alata koje koriste i razvijatelji softv
 1. [Resiliency and high availability in microservices (Microsoft Docs)](https://docs.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/resilient-high-availability-microservices)
 1. [Prometheus](https://prometheus.io/)
 1. [Grafana](https://grafana.com/)
-
-### Razvoj i postavljanje aplikacije u okviru Spring {[UMS](../kolegiji/UMS.md)} [Josip Lukin]
-
-**Naslov na engleskom:** Spring application development and configuration
-
-**Opis teme:**
-
-...
-
-**Literatura:**
-
-1. [Spring Framework Documentation](https://docs.spring.io/spring-framework/reference/)
 
 ### Primjena grafičkih procesora u projektiranju građevina korištenjem strojnog učenja {[PPHS](../kolegiji/PPHS.md), [DS](../kolegiji/DS.md)} [Adis Tokalić]
 
@@ -589,18 +672,6 @@ Kontejneri su postali sastavni dio skupa alata koje koriste i razvijatelji softv
 **Literatura:**
 
 1. [Reproducible Builds](https://reproducible-builds.org/)
-
-### Kvantno računarstvo i digitalna sigurnost {[UMS](../kolegiji/UMS.md)} [Kristian Nekić, preneseno iz 2020./2021.]
-
-**Naslov na engleskom:** Quantum computing and digital security
-
-**Opis teme:**
-
-...
-
-**Literatura:**
-
-1. [Quantum Computing Is the Next Big Security Risk (Wired)](https://www.wired.com/story/quantum-computing-is-the-next-big-security-risk/)
 
 ## Odabrane teme završnih radova akademske godine 2020./2021.
 
@@ -676,18 +747,6 @@ Posljednjih desetljeća industrija igara je u kontinuiranom porastu te je jedan 
 
 1. [3D Game Shaders For Beginners](https://lettier.github.io/3d-game-shaders-for-beginners/)
 1. [Shader Development (Unreal Engine Documentation)](https://docs.unrealengine.com/en-US/ProgrammingAndScripting/Rendering/ShaderDevelopment/)
-
-### Krivulje u računalnoj grafici {[PPHS](../kolegiji/PPHS.md)} [Mikaela Oklen]
-
-**Naslov na engleskom:** Curves in computer graphics
-
-**Mentor:** [v. pred. dr. sc. Vedran Miletić](https://vedran.miletic.net/)
-
-**Komentor:** doc. dr. sc. Sanda Bujačić
-
-**Opis teme:**
-
-U računalnoj grafici se razrađuju temeljni koncepti i tehnike prikazivanja 2D i 3D objekata koji su nužni prilikom izrade grafičkih programa na računalu. Jedna od temeljnih karakteristika današnjeg strelovito brzog i uspješnog razvoja računalne grafike jest implementacija optimiziranih grafičkih algoritama u grafičke aplikacije korištenjem standardnih API-ja kao što su OpenGL, Vulkan i vlasničkih API-ja kao što je DirectX. No, uz sve napredne funkcije i mogućnosti koje računalna grafika posjeduje, za ovladavanje svijetom računalne grafike nužno je poznavanje osnovnih i temeljnih koncepata u grafici: od temeljnih pojmova kao što su točka i krivulja do postupka interpolacije i orijentacije promatranih objekata. Cilj rada je predstaviti temeljne matematičke koncepte koji se koriste u računalnoj grafici kao što su točka, vektor, pravac i krivulja te razraditi pristupe koji se koriste prilikom iscrtavanja navedenih pojmova na računalu. Poseban se naglasak stavlja na krivulje čija se matematička svojstva analiziraju i koreliraju sa svojstvima koja su karakteristična za krivulje koje se koriste u računalnoj grafici. Jedan od čestih zadataka u računalnoj grafici je crtanje glatke krivulje između zadanog niza točaka (aproksimacija krivulje), a rješenjetog tipičnog problema numeričke matematike i računalne grafike su aproksimacijske i interpolacijske Bezierove krivulje. Implementaciju algoritama student može izvesti u programskom jeziku po želji te za vizualizaciju može koristiti OpenGL ili Vulkan.
 
 **Literatura:**
 
