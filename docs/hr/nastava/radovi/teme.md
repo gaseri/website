@@ -88,21 +88,6 @@ U nastavku je popis predloženih i odabranih tema završnih i diplomskih radova.
 
 1. [Puppet](https://puppet.com/)
 
-### Čitanje, obrada i pohrana JSON-a u web aplikacijama {[PW](../kolegiji/PW.md)}
-
-**Opis teme:**
-
-...
-
-**Literatura:**
-
-1. [JSON Functions (PHP)](https://www.php.net/manual/en/ref.json.php)
-1. [JSON methods, toJSON (The Modern JavaScript Tutorial)](https://javascript.info/json)
-1. [PostgreSQL](https://www.postgresql.org/)
-1. [MariaDB](https://mariadb.org/)
-1. [MongoDB](https://www.mongodb.com/)
-1. [Apache CouchDB](https://couchdb.apache.org/)
-
 ### Razvoj web aplikacije korištenjem okvira Ruby on Rails i biblioteke Hotwire {[PW](../kolegiji/PW.md)}
 
 **Opis teme:**
@@ -172,16 +157,6 @@ U nastavku je popis predloženih i odabranih tema završnih i diplomskih radova.
 
 1. [OpenStack](https://www.openstack.org/)
 
-### Upravljanje fizičkim i virtualnim poslužiteljima korištenjem Foremana {[MMOS](../kolegiji/MMOS.md)/[URS](../kolegiji/URS.md)}
-
-**Opis teme:**
-
-...
-
-**Literatura:**
-
-1. [Foreman](https://theforeman.org/)
-
 ### Pregled projekata Zaklade za oblaku urođeno računarstvo {[MMOS](../kolegiji/MMOS.md)/[URS](../kolegiji/URS.md)}
 
 **Opis teme:**
@@ -191,18 +166,6 @@ U nastavku je popis predloženih i odabranih tema završnih i diplomskih radova.
 **Literatura:**
 
 1. [Graduated and incubating projects (Cloud Native Computing Foundation)](https://www.cncf.io/projects/)
-
-### Upravljanje kontejnerima aplikacija korištenjem Podmana {[MMOS](../kolegiji/MMOS.md)/[URS](../kolegiji/URS.md)}
-
-**Opis teme:**
-
-Kontejneri su postali sastavni dio skupa alata koje koriste i razvijatelji softvera i upravitelji računalnih sustava (sistemci), a najkorištenije rješenje je Docker. Red Hat je u suradnji sa zajednicom slobodnog softvera otvorenog koda razvio alternativu Dockeru imena Podman. Osim toga, razvijena je i alternativa bazi kontejnera Docker Hub pod imenom Quay. Zadatak rada je opisati način rada Podmana i usporediti ga s Dockerom
-
-**Literatura:**
-
-1. [Docker](https://www.docker.com/)
-1. [Podman](https://podman.io/)
-1. [Quay](https://quay.io/)
 
 ### Doprinos projekta Berkeley Software Distribution i potomaka u razvoju interneta {[RM](../kolegiji/RM.md)/[RM2](../kolegiji/RM2.md)}
 
@@ -375,19 +338,6 @@ OpenDocument je format dokumenata uredskih aplikacija zasnovan na XML-u. OpenDoc
 1. [European High-Performance Computing Joint Undertaking](https://eurohpc-ju.europa.eu/)
 1. [Skalabilni algoritmi visokih preformansi za buduće heterogene distribuirane računalne sustave](https://www.irb.hr/Istrazivanja/Projekti/Skalabilni-algoritmi-visokih-performansi-za-buduce-heterogene-distribuirane-racunalne-sustave)
 
-### Nadzor rada mikroservisa i osiguravanje visoke dostupnosti {[UMS](../kolegiji/UMS.md)}
-
-**Opis teme:**
-
-...
-
-**Literatura:**
-
-1. [Microservices: High availability (Vaadin)](https://vaadin.com/blog/microservices-high-availability)
-1. [Resiliency and high availability in microservices (Microsoft Docs)](https://docs.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/resilient-high-availability-microservices)
-1. [Prometheus](https://prometheus.io/)
-1. [Grafana](https://grafana.com/)
-
 ### Skalabilnost mikroservisa {[UMS](../kolegiji/UMS.md)}
 
 **Opis teme:**
@@ -471,7 +421,67 @@ Poslužitelj datoteka je dio gotovo svakog suvremenog poslovnog sustava. Bio taj
 
 ## Odabrane teme završnih radova akademske godine 2021./2022.
 
-### Razvoj web aplikacije korištenjem okvira Django i biblioteke HTMX {[DWA2](../kolegiji/DWA2.md)} {Tvrtko Kaurinović}
+### Čitanje, obrada i pohrana JSON-a u web aplikacijama {[DWA2](../kolegiji/DWA2.md)} [Sven Tajz]
+
+**Naslov na engleskom:** Reading, processing, and storing of JSON in web applications
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [JSON Functions (PHP)](https://www.php.net/manual/en/ref.json.php)
+1. [JSON methods, toJSON (The Modern JavaScript Tutorial)](https://javascript.info/json)
+1. [PostgreSQL](https://www.postgresql.org/)
+1. [MariaDB](https://mariadb.org/)
+1. [MongoDB](https://www.mongodb.com/)
+1. [Apache CouchDB](https://couchdb.apache.org/)
+
+### Upravljanje fizičkim i virtualnim poslužiteljima korištenjem Foremana {[MMOS](../kolegiji/MMOS.md)/[URS](../kolegiji/URS.md)} [Fran Poje]
+
+**Naslov na engleskom:** Managing phyiscal and virtual servers using Foreman
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [Foreman](https://theforeman.org/)
+
+### Automatizacija infrastrukture korištenjem platforme Ansible {[URS](../kolegiji/URS.md)} [Luka Ljubojević]
+
+**Naslov na engleskom:** Infrastructure automation using Ansible
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [Ansible Documentation](https://docs.ansible.com/)
+1. [Red Hat Ansible Automation Platform](https://www.redhat.com/en/technologies/management/ansible)
+1. [IT Automation with Ansible](https://www.ansible.com/overview/it-automation)
+1. [Ansible (ArchWiki)](https://wiki.archlinux.org/title/Ansible)
+
+### Upravljanje kontejnerima aplikacija korištenjem Podmana {[DWA2](../kolegiji/DWA2.md)} [Ante Šimurina]
+
+**Naslov na engleskom:** Managing containers using Podman
+
+**Opis teme:**
+
+Kontejneri su postali sastavni dio skupa alata koje koriste i razvijatelji softvera i upravitelji računalnih sustava (sistemci), a najkorištenije rješenje je Docker. Red Hat je u suradnji sa zajednicom slobodnog softvera otvorenog koda razvio alternativu Dockeru imena Podman. Osim toga, razvijena je i alternativa bazi kontejnera Docker Hub pod imenom Quay. Zadatak rada je opisati način rada Podmana i usporediti ga s Dockerom
+
+**Literatura:**
+
+1. [Docker](https://www.docker.com/)
+1. [Podman](https://podman.io/)
+1. [Quay](https://quay.io/)
+
+### Razvoj web aplikacije korištenjem okvira Django i biblioteke HTMX {[DWA2](../kolegiji/DWA2.md)} [Tvrtko Kaurinović]
+
+**Naslov na engleskom:** Web application development using Django framework and HTMX library
 
 **Opis teme:**
 
@@ -485,6 +495,8 @@ Poslužitelj datoteka je dio gotovo svakog suvremenog poslovnog sustava. Bio taj
 
 ### Vulkan API u Unity 3D-u {[PPHS](../kolegiji/PPHS.md)} [Hrvoje Sedlar]
 
+**Naslov na engleskom:** Vulkan API in Unity 3D
+
 **Opis teme:**
 
 ...
@@ -496,7 +508,65 @@ Poslužitelj datoteka je dio gotovo svakog suvremenog poslovnog sustava. Bio taj
 
 ## Odabrane teme diplomskih radova akademske godine 2021./2022.
 
+### Nadzor rada mikroservisa i osiguravanje visoke dostupnosti {[UMS](../kolegiji/UMS.md)} [Maja Abramović]
+
+**Naslov na engleskom:** Monitoring and ensuring high availability of microservices
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [Microservices: High availability (Vaadin)](https://vaadin.com/blog/microservices-high-availability)
+1. [Resiliency and high availability in microservices (Microsoft Docs)](https://docs.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/resilient-high-availability-microservices)
+1. [Prometheus](https://prometheus.io/)
+1. [Grafana](https://grafana.com/)
+
+### Razvoj i postavljanje aplikacije u okviru Spring {[UMS](../kolegiji/UMS.md)} [Josip Lukin]
+
+**Naslov na engleskom:** Spring application development and configuration
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [Spring Framework Documentation](https://docs.spring.io/spring-framework/reference/)
+
+### Primjena grafičkih procesora u projektiranju građevina korištenjem strojnog učenja {[PPHS](../kolegiji/PPHS.md), [DS](../kolegiji/DS.md)} [Adis Tokalić]
+
+**Naslov na engleskom:** Application of graphics processing units in design of buildings using machine learning
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [CUDA Toolkit Documentation](https://docs.nvidia.com/cuda/)
+1. [TensorFlow Guide](https://www.tensorflow.org/guide)
+1. [PyTorch Documentation](https://pytorch.org/docs/)
+1. [Blender Documentation](https://docs.blender.org/)
+
+### Napadi na blockchain {[UMS](../kolegiji/UMS.md)} [Paolo Kos]
+
+**Naslov na engleskom:** Blockchain attacks
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [What is Blockchain Security? (IBM)](https://www.ibm.com/topics/blockchain-security)
+1. [Top Five Blockchain Attacks & DLT Vulnerabilities to Know in 2022 (Spiceworks)](https://www.spiceworks.com/it-security/vulnerability-management/articles/top-five-blockchain-attacks/)
+1. [51% Attack: Definition, Who Is At Risk, Example, and Cost (Investopedia)](https://www.investopedia.com/terms/1/51-attack.asp)
+
 ### Evolucija monolitne web aplikacije u mikroservisnu besposlužiteljsku aplikaciju {[UMS](../kolegiji/UMS.md)} [Ana Novokmet]
+
+**Naslov na engleskom:** Monolith to serverless microservice application evolution
 
 **Opis teme:**
 
@@ -507,6 +577,30 @@ Poslužitelj datoteka je dio gotovo svakog suvremenog poslovnog sustava. Bio taj
 1. [What is a serverless microservice? (Cloudflare)](https://www.cloudflare.com/learning/serverless/glossary/serverless-microservice/)
 1. [Serverless microservices (AWS Documentation)](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/serverless-microservices.html)
 1. [Serverless Microservices reference architecture (Microsoft Docs)](https://docs.microsoft.com/en-us/samples/azure-samples/serverless-microservices-reference-architecture/serverless-microservices-reference-architecture/)
+
+### Ponovljiva izgradnja programske podrške {[UMS](../kolegiji/UMS.md)} [Matija Banjan, preneseno iz 2020./2021.]
+
+**Naslov na engleskom:** Reproducible building of software
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [Reproducible Builds](https://reproducible-builds.org/)
+
+### Kvantno računarstvo i digitalna sigurnost {[UMS](../kolegiji/UMS.md)} [Kristian Nekić, preneseno iz 2020./2021.]
+
+**Naslov na engleskom:** Quantum computing and digital security
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [Quantum Computing Is the Next Big Security Risk (Wired)](https://www.wired.com/story/quantum-computing-is-the-next-big-security-risk/)
 
 ## Odabrane teme završnih radova akademske godine 2020./2021.
 
@@ -628,30 +722,6 @@ Osim ozbiljnih RFC-a, kao što su primjerice oni koji opisuju TCP, IPv6 ili ICMP
 1. Limoncelli, T. A. & Salus, P. H. [The Complete April Fools' Day RFCs.](https://www.rfchumor.com/) (Peer-to-Peer Communications, 2007.)
 
 ## Odabrane teme diplomskih radova akademske godine 2020./2021.
-
-### Ponovljiva izgradnja programske podrške {[UMS](../kolegiji/UMS.md)} [Matija Banjan]
-
-**Naslov na engleskom:** Reproducible building of software
-
-**Opis teme:**
-
-...
-
-**Literatura:**
-
-1. [Reproducible Builds](https://reproducible-builds.org/)
-
-### Kvantno računarstvo i digitalna sigurnost {[UMS](../kolegiji/UMS.md)} [Kristian Nekić]
-
-**Naslov na engleskom:** Quantum computing and digital security
-
-**Opis teme:**
-
-...
-
-**Literatura:**
-
-1. [Quantum Computing Is the Next Big Security Risk (Wired)](https://www.wired.com/story/quantum-computing-is-the-next-big-security-risk/)
 
 ### Sigurnost mikroservisa {[UMS](../kolegiji/UMS.md)} [Simon Košmrl]
 
