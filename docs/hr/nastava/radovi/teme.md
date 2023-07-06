@@ -8,6 +8,17 @@ U nastavku je popis predloženih i odabranih tema završnih i diplomskih radova.
 
 ## Ponuđene teme završnih radova
 
+### Modeli prometa u mobilnim mrežama
+
+**Opis teme:**
+
+...
+
+**Literatura:**
+
+1. [Guidelines for LTE Backhaul Traffic Estimation](https://www.ngmn.org/publications/guidelines-for-lte-backhaul-traffic-estimation.html)
+1. [Bojovic, B., & Lagen, S. Enabling NGMN Mixed Traffic Models for ns-3. In Proceedings of the 2022 Workshop on ns-3 (pp. 127-134). (2022, June).](https://dl.acm.org/doi/abs/10.1145/3532577.3532602)
+
 ### Primjena kompleta za razvoj softvera DOCA na jedinicama za obradu podataka NVIDIA BlueField {[PPHS](../kolegiji/PPHS.md)/[URS](../kolegiji/URS.md)}
 
 **Opis teme:**
