@@ -6,7 +6,8 @@ copyright: Copyright 2011 – 2023, <a href="https://vedran.miletic.net/">Vedran
 repo_url: https://github.com/gaseri/website/
 edit_uri: edit/main/docs/
 nav:
-  - GASERI: index.md
+  - Services: https://gaseri.com/
+  - Group: index.md
   - 🇭🇷 Sadržaj na hrvatskom:
     - O grupi: hr/index.md
     - Ljudi:
@@ -411,7 +412,6 @@ nav:
     - Projects: en/projects.md
     - Publications: en/publications.md
     - Software: en/software.md
-    - Services: en/services.md
     - Contact: en/contact.md
     - Talks:
       - The challenges of the upcoming exascale supercomputing era in computational biochemistry: en/talks/2022-01-26-the-challenges-of-the-upcoming-exascale-supercomputing-era-in-computational-biochemistry.md
