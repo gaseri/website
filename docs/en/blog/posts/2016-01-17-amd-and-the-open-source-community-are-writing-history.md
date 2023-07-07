@@ -1,5 +1,7 @@
 ---
 author: Vedran Miletić
+authors:
+  - vedranmiletic
 date: 2016-01-17
 tags:
   - amd
@@ -20,6 +22,8 @@ Over the last few years, [AMD](https://www.amd.com/) has slowly been walking the
 AMD finally [publically unveiled](https://youtu.be/eXCXJoRsgJc) the GPUOpen initiative on the 15th of December 2015. The story was covered on [AnandTech](https://www.anandtech.com/show/9853/amd-gpuopen-linux-open-source), [Maximum PC](https://www.maximumpc.com/amd-rtg-summit-gpuopen-and-software/), [Ars Technica](https://arstechnica.com/information-technology/2015/12/amd-embraces-open-source-to-take-on-nvidias-gameworks/), [Softpedia](https://news.softpedia.com/news/amd-going-open-source-with-amdgpu-linux-driver-and-gpuopen-tools-497663.shtml), and others. For the open-source community that follows the development of Linux graphics and computing stack, this announcement comes as hardly surprising: Alex Deucher and Jammy Zhou [presented plans regarding amdgpu on XDC2015](https://youtu.be/lXi0ByVTFyY) in September 2015. Regardless, public announcement in mainstream media proves that AMD is serious about GPUOpen.
 
 I believe GPUOpen is **the best chance we will get in this decade** to open up the driver and software stacks in the graphics and computing industry. I will outline the reasons for my optimism below. As for the history behind open-source drivers for ATi/AMD GPUs, I suggest [the well-written reminiscence on Phoronix](https://www.phoronix.com/scan.php?page=news_item&px=Reminiscing-OSS-AMD-2016).
+
+<!-- more -->
 
 ## Intel and NVIDIA
 

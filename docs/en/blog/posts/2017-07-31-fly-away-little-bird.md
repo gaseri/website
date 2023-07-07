@@ -1,5 +1,7 @@
 ---
 author: Vedran Miletić
+authors:
+  - vedranmiletic
 date: 2017-07-31
 tags:
   - web server
@@ -12,6 +14,8 @@ tags:
 # Fly away, little bird
 
 The last day of July happened to be the day that [Domagoj Margan](https://domargan.net/), a former student teaching assistant and a great friend of mine, set up his own [DigitalOcean](https://www.digitalocean.com/) [droplet](https://www.digitalocean.com/products/droplets/) running a web server and serving his professional website on his own domain `domargan.net`. For a few years, I was helping him by providing space on the server I owned and maintained, and I was always glad to do so. Let me explain why.
+
+<!-- more -->
 
 During the [early years of Mozilla](2015-05-01-browser-wars.md) ([video recording of my 2015 talk in Croatian](https://youtu.be/pz73gD1H-s4), [a really nice article at ExtremeTech](https://www.extremetech.com/computing/90200-the-history-of-mozilla-and-firefox)), I would follow [Planet Mozilla](https://planet.mozilla.org/) to be up to date with the happenings in the community. Over time I became aware of the fact that, while some people hosted their pages or blogs on free services or their company/university domains and servers, others owned their domain names and servers used for the same purpose.
 

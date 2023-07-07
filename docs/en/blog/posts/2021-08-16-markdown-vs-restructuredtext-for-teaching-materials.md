@@ -1,5 +1,7 @@
 ---
 author: Vedran Miletić
+authors:
+  - vedranmiletic
 date: 2021-08-16
 tags:
   - restructuredtext
@@ -13,7 +15,9 @@ tags:
 
 Back in summer 2017. I wrote an article explaining [why we used Sphinx and reStructuredText to produce teaching materials](2017-07-29-why-we-use-restructuredtext-and-sphinx-static-site-generator-for-maintaining-teaching-materials.md) and not a wiki. In addition to recommending Sphinx as the solution to use, it was general praise for generating static HTML files from Markdown or reStructuredText.
 
-This summer I made the conversion of teaching materials from reStructuredText to Markdown. Unfortunately, the automated conversion using [Pandoc](https://pandoc.org/) didn't quite produce the result I wanted so I ended up cooking my own Python script that converted the specific dialect of reStructuredText that was used for writing the contents of [the group website](../../index.md) and fixing a myriad of inconsistencies in the writing style that accumulated over the years.
+This summer I made the conversion of teaching materials from reStructuredText to Markdown. Unfortunately, the automated conversion using [Pandoc](https://pandoc.org/) didn't quite produce the result I wanted so I ended up cooking my own Python script that converted the specific dialect of reStructuredText that was used for writing the contents of [the group website](../../../index.md) and fixing a myriad of inconsistencies in the writing style that accumulated over the years.
+
+<!-- more -->
 
 ## reStructuredText as the obvious choice for software documentation
 
@@ -43,7 +47,7 @@ Obviously, many of these tools weren't around when we switched to Sphinx back in
 
 ## Moving from reStructuredText to Markdown for teaching materials
 
-In my particular case, the straw that broke the camel's back and made me decide to convert [the teaching materials](../../hr/nastava/index.md) from reStructuredText to Markdown was the student contribution of [ZeroMQ](https://zeromq.org/) exercises for the [Distributed systems](../../hr/nastava/kolegiji/DS.md) course (not included yet). I asked the student to write reStructuredText but got the materials in Markdown so I can understand why that is. Let's say that the student wanted to do things properly in reStructedText and Sphinx. The procedure is this:
+In my particular case, the straw that broke the camel's back and made me decide to convert [the teaching materials](../../../hr/nastava/index.md) from reStructuredText to Markdown was the student contribution of [ZeroMQ](https://zeromq.org/) exercises for the [Distributed systems](../../../hr/nastava/kolegiji/DS.md) course (not included yet). I asked the student to write reStructuredText but got the materials in Markdown so I can understand why that is. Let's say that the student wanted to do things properly in reStructedText and Sphinx. The procedure is this:
 
 1. Create a Git clone of the repository.
 1. Open the folder in your preferred editor, say VS Code, notice it doesn't highlight rST out of the box. No problem, there should be an extension, right?
@@ -66,7 +70,7 @@ There are a number of other things I like:
 
 - [Material theme for MkDocs](https://squidfunk.github.io/mkdocs-material/) is awesome. It's a set of extensions in addition to a good-looking theme.
 - The Integrated Search feature is designed to "find-as-you-type" and provide a much better user experience.
-- Much shorter time to build the website. It takes 11 seconds to build [the group website](../../index.md) with MkDocs, while it took 37 seconds to build the older version of the same website with Sphinx.
+- Much shorter time to build the website. It takes 11 seconds to build [the group website](../../../index.md) with MkDocs, while it took 37 seconds to build the older version of the same website with Sphinx.
 - Built-in GitHub Pages deployment functionality. [You can do the same with Sphinx](https://alkaline-ml.com/2018-12-23-automate-gh-builds/), but it's much nicer to have it built-in and maintained.
 - Automatic building of the sitemap. (There's an extension for Sphinx that [does the same](https://github.com/jdillard/sphinx-sitemap).)
 

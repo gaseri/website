@@ -15,6 +15,8 @@ Hobbyists, activists, geeks, designers, engineers, etc have always tinkered with
 
 The free software movement is cited as both an inspiration and a model for open hardware. Free software practices have transformed our culture by making it easier for people to become involved in producing things from magazines to music, movies to games, communities to services. With advances in digital fabrication making it easier to manipulate materials, some now anticipate an analogous opening up of manufacturing to mass participation.
 
+<!-- more -->
+
 It is important to keep sharp open hardware's more transformational edges, on agendas such as dismantling intellectual property and releasing investment for alternative business models. Only through a mix of craft, politics, and the support of social movements, will open hardware fully realize its potential to democratize technology.
 
 There are numerous organizations and initiatives voiced and supported by the [Open Source Hardware Association](https://www.oshwa.org/) and a vast thriving community of supporters and technology enthusiasts that are doing to advance this core value. The Open Source Hardware Association aims to be the voice of the open hardware community, ensuring that technological knowledge is accessible to everyone, and encouraging the collaborative development of technology that serves education, environmental sustainability, and human welfare.

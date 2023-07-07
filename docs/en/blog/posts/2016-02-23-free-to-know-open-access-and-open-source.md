@@ -22,6 +22,8 @@ In June 2014, Elon Musk opened up all Tesla patents. In a [blog post](https://ww
 
 The movements that promote and cultivate this vibrancy are probably most frequently associated with terms "Open access" and "open source". In order to learn more about them, we Q&A-ed [Vedran Miletić](https://vedran.miletic.net/), the Rocker of Science -- researcher, developer and teacher, currently working in computational chemistry, and a free and open source software contributor and activist. You can read more of his thoughts on free software and related themes on his great blog, [Nudged](2015-09-14-what-is-the-price-of-open-source-fear-uncertainty-and-doubt.md) [Elastic](2015-12-13-on-having-leverage-and-using-it-for-pushing-open-source-software-adoption.md) [Band](2016-01-17-amd-and-the-open-source-community-are-writing-history.md). We hope you will join him, us, and Elon Musk in promoting free knowledge, cooperation and education.
 
+<!-- more -->
+
 > Open access and open source put individual freedom above profits.
 
 ## What is the difference between Open access and open source? Or can we just use the terms interchangeably?

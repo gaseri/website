@@ -1,5 +1,7 @@
 ---
 author: Vedran Miletić
+authors:
+  - vedranmiletic
 date: 2015-12-13
 tags:
   - cp2k
@@ -14,6 +16,8 @@ tags:
 Back in late August and early September, I attended [4th CP2K Tutorial](https://www.cecam.org/workshop-details/480) organized by CECAM in Zürich. I had the pleasure of meeting [Joost VandeVondele](https://www.nanosim.mat.ethz.ch/people/head/vjoost.html)'s [Nanoscale Simulations group](https://www.nanosim.mat.ethz.ch/) at [ETHZ](https://www.ethz.ch/) and working with them on improving [CP2K](https://www.cp2k.org/). It was both fun and productive; we overhauled the wiki homepage and introduced [acronyms page](https://www.cp2k.org/acronyms), among other things. During a coffee break, there was a discussion on the [JPCL viewpoint that speaks against open-source quantum chemistry software](https://pubs.acs.org/doi/abs/10.1021/acs.jpclett.5b01258), which I countered in [the previous blog post](2015-09-14-what-is-the-price-of-open-source-fear-uncertainty-and-doubt.md).
 
 But there is a story from the workshop which somehow remained untold, and I wanted to tell it at some point. One of the attendants, Valérie Vaissier, told me how she used proprietary quantum chemistry software during her Ph.D.; if I recall correctly, it was Gaussian. Eventually, she decided to learn CP2K and made the switch. She liked CP2K better than the proprietary software package because it is available free of charge, the reported bugs get fixed quicker, and the group of developers behind it is very enthusiastic about their work and open to outsiders who want to join the development.
+
+<!-- more -->
 
 She is now a postdoc in [Van Voorhis Group](https://vanvoorhisgroup.mit.edu/) at [MIT](https://web.mit.edu/). Interestingly enough, Professor Troy Van Voorhis happens to be one of the scientists behind [Q-Chem](https://www.q-chem.com/), a proprietary quantum chemistry software. I am sure most of us in academia, knowing MIT's reputation and having the utmost respect for the achievements of MIT's scientists, don't imagine having an interview for a position at MIT and acting like "I would like to continue using software I choose and this is my *condicio sine qua non*". I am also sure that we are even less likely to imagine an interview going like this if the software in the question was a direct competitor (in conventional economic terms) to the software your group leader is developing.
 

@@ -1,5 +1,7 @@
 ---
 author: Vedran Miletić
+authors:
+  - vedranmiletic
 date: 2015-07-03
 tags:
   - free and open-source software
@@ -12,6 +14,8 @@ tags:
 # Open-source magic all around the world
 
 Last week brought us two interesting events related to open-source movement: [2015 Red Hat Summit](https://www.redhat.com/summit/2015/resources/) (June 23-26, [Boston, MA](https://www.openstreetmap.org/way/29739137)) and [Skeptics in the pub](https://www.facebook.com/events/105693939772055/) (June 26, [Rijeka, Croatia](https://www.openstreetmap.org/way/358439113)).
+
+<!-- more -->
 
 ## 2015 Red Hat Summit
 

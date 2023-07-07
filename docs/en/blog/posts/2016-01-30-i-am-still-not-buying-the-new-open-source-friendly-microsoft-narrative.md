@@ -1,5 +1,7 @@
 ---
 author: Vedran Miletić
+authors:
+  - vedranmiletic
 date: 2016-01-30
 tags:
   - microsoft
@@ -18,6 +20,8 @@ Even though the open sourcing of a bunch of their software is a very nice move f
 All the projects they have open-sourced so far are not the core of their business. Their latest version of Windows is no more friendly to alternative operating systems than any version of Windows before it, and one could argue it is even *less* friendly due to more Secure Boot restrictions. Using Office still basically requires you to use Microsoft's formats and, in turn, accept their vendor lock-in.
 
 Put simply, I think all the projects Microsoft has opened up so far are a nice start, but they still have a long way to go to gain respect from the open-source community. What follows are three steps Microsoft could take in that direction.
+
+<!-- more -->
 
 ## Step 1: fully support OpenDocument and make it the default format in Office applications
 

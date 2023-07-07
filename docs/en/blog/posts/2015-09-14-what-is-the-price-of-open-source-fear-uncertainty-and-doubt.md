@@ -1,5 +1,7 @@
 ---
 author: Vedran Miletić
+authors:
+  - vedranmiletic
 date: 2015-09-14
 tags:
   - american chemical society
@@ -21,6 +23,8 @@ tags:
 Viewpoints are not detailed reviews of the topic, but instead, present the author's view on the state-of-the-art of a particular field.
 
 The first of two articles stands for open source and open data. The article describes Quantum Chemical Program Exchange (QCPE), which was used in the 1980s and 1990s for the exchange of quantum chemistry codes between researchers and is roughly equivalent to the modern-day [GitHub](https://github.com/). The second of two articles questions the open-source software development practice, advocating the usage and development of proprietary software. I will dissect and counter some of the key points from the second article below.
+
+<!-- more -->
 
 Just to be clear: I will not discuss the issues of Open Data and Open Access; they are very important and they deserve a separate post. I will focus solely on the use of [free and open-source software (FOSS)](https://en.wikipedia.org/wiki/Free_and_open-source_software) and proprietary software in computational chemistry research.
 

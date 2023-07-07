@@ -1,5 +1,7 @@
 ---
 author: Vedran Miletić
+authors:
+  - vedranmiletic
 date: 2017-09-24
 tags:
   - web server
@@ -16,6 +18,8 @@ Post theme song: [Mirror mirror](https://youtu.be/SVg8eP7KPNQ) by [Blind Guardia
 A mirror is a local copy of a website that's used to speed up access for the users residing in the area geographically close to it and reduce the load on the original website. [Content distribution networks (CDNs)](https://en.wikipedia.org/wiki/Content_delivery_network), which are a newer concept and perhaps more familiar to younger readers, serve the same purpose, but do it in a way that's transparent to the user; when using a mirror, the user will see explicitly which mirror is being used because the domain will be different from the original website, while, in case of CDNs, the domain will remain the same, and the DNS resolution (which is invisible to the user) will select a different server.
 
 Free and open-source software was distributed via (FTP) mirrors, usually residing in the universities, basically since its inception. [The story of Linux](https://en.wikipedia.org/wiki/Revolution_OS) mentions [a directory](ftp://ftp.funet.fi/pub/Linux/00Directory_info.txt) on `ftp.funet.fi` ([FUNET](https://en.wikipedia.org/wiki/FUNET) is the Finnish University and Research Network) where Linus Torvalds uploaded the sources, which was soon after [mirrored by Ted Ts'o on MIT's FTP server](https://linuxdevices.org/ted-tso-to-boost-the-linux-standards-base/). The [GNU Project](https://www.gnu.org/)'s history contains an analogous process of making local copies of the software for faster downloading, which was especially important in the times of pre-broadband Internet, and it [continues today](https://www.gnu.org/prep/ftp.html).
+
+<!-- more -->
 
 Many Linux distributions, including this author's favorite [Debian](https://www.debian.org/) and [Fedora](https://getfedora.org/) use mirroring (see [here](https://www.debian.org/mirror/list) and [here](https://mirrors.fedoraproject.org/)) to be more easily available to the users in various parts of the world. If you look carefully at those lists, you can observe that the universities and institutes host a significant number of mirrors, which is both a historical legacy and an important role of these research institutions today: the researchers and the students in many areas depend on free and open-source software for their work, and it's much easier (and faster!) if that software is downloadable locally.
 

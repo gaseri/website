@@ -1,5 +1,7 @@
 ---
 author: Vedran Miletić
+authors:
+  - vedranmiletic
 date: 2022-02-24
 tags:
   - archiving and compression
@@ -11,6 +13,8 @@ tags:
 # Don't use RAR
 
 I sometimes joke with my TA [Milan Petrović](https://milanxpetrovic.github.io/) that his usage of RAR does not imply that he will be driving a [rari](https://www.urbandictionary.com/define.php?term=rari). After all, he is not [Devito rapping^Wsinging Uh 😤](https://youtu.be/_uOoV0mtX3E). Jokes aside, if you search for "should I use RAR" or a similar phrase on your favorite search engine, you'll see articles like 2007 [Don't Use ZIP, Use RAR](https://blog.codinghorror.com/dont-use-zip-use-rar/) and 2011 [Why RAR Is Better Than ZIP & The Best RAR Software Available](https://www.makeuseof.com/tag/rar-zip-rar-software/).
+
+<!-- more -->
 
 So, why shouldn't we use RAR? The non-free license and Windows-centric aspects have already been addressed by [Kyle Cordes](https://kylecordes.com/) in the 2007 blog post [Why I do not use RAR](https://kylecordes.com/2007/no-rar). These reasons are still relevant; the [official versions](https://www.rarlab.com/rar_add.htm) of [rar](https://tracker.debian.org/pkg/rar) and [unrar](https://tracker.debian.org/pkg/unrar-nonfree) are still non-free. There is an [unofficial unrar](https://gitlab.com/bgermann/unrar-free) that is free and open-source software, but there is [no free and open-source rar](https://peazip.github.io/free-rar-create.html) as creating one is prohibited by the [RAR license](https://www.win-rar.com/winrarlicense.html).
 

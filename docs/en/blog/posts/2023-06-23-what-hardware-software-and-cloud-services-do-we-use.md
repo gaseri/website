@@ -1,5 +1,7 @@
 ---
 author: Vedran Miletić
+authors:
+  - vedranmiletic
 date: 2023-06-23
 tags:
   - academia
@@ -13,7 +15,9 @@ tags:
 
 # What hardware, software, and cloud services do we use?
 
-Our everyday [scientific](../projects.md) and [educational](../teaching/index.md) work relies heavily on hardware, software, and, in modern times, cloud services. The equipment that we will mention below is specific to our group; common services used by university and/or faculty employees will not be specifically mentioned here.
+Our everyday [scientific](../../projects.md) and [educational](../../teaching/index.md) work relies heavily on hardware, software, and, in modern times, cloud services. The equipment that we will mention below is specific to our group; common services used by university and/or faculty employees will not be specifically mentioned here.
+
+<!-- more -->
 
 ## Laptops
 

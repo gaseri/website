@@ -1,5 +1,7 @@
 ---
 author: Vedran Miletić
+authors:
+  - vedranmiletic
 date: 2015-06-18
 tags:
   - elon musk
@@ -14,6 +16,8 @@ tags:
 When [Linkin Park](https://www.linkinpark.com/) released their second album [Meteora](https://www.linkinpark.com/music), they had a quote on their site that went along the lines of
 
 > Musicians have their entire lives to come up with a debut album, and only a very short time afterward to release a follow-up.
+
+<!-- more -->
 
 ## Tea's follow-up
 

@@ -1,5 +1,7 @@
 ---
 author: Vedran Miletić
+authors:
+  - vedranmiletic
 date: 2022-11-01
 tags:
   - git
@@ -14,6 +16,8 @@ tags:
 As you can probably see, this website is built using the [Material theme](https://squidfunk.github.io/mkdocs-material/) for [MkDocs](https://www.mkdocs.org/), which we have been [happily using](2021-08-16-markdown-vs-restructuredtext-for-teaching-materials.md) for over one year after [using Sphinx](2017-07-29-why-we-use-restructuredtext-and-sphinx-static-site-generator-for-maintaining-teaching-materials.md) for many years prior to that. [GitHub Pages](https://pages.github.com/) offers [built-in support for Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll), but not for MkDocs and therefore it requires the manual building and deployment of our website. However, it automates many other things, including [HTTPS certificate provisioning on our domain](https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https) via [Let's Encrypt](https://letsencrypt.org/).
 
 There are [several somewhat](https://bluegenes.github.io/mkdocs-github-actions/) [related approaches](https://github.com/Tiryoh/actions-mkdocs) using [GitHub Actions](https://github.com/features/actions) for [automating the deployment](https://github.com/marketplace/actions/deploy-mkdocs) of MkDocs-generated sites, usually with the Material theme, to GitHub Pages. These guides are not only found on blogs written by enthusiasts; the official [Getting started section](https://squidfunk.github.io/mkdocs-material/getting-started/) of the Material for MkDocs documentation describes the usage of GitHub Actions for deployment and [provides a generic YAML file for that purpose](https://squidfunk.github.io/mkdocs-material/publishing-your-site/#with-github-actions).
+
+<!-- more -->
 
 Using the approaches mentioned above avoids the requirement to run the `build` and `gh-deploy` steps locally; GitHub Actions does both on GitHub's [CI/CD](https://resources.github.com/ci-cd/) servers, where the [free plan offers 2000 minutes of GitHub-hosted runners per month](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions#included-storage-and-minutes). As many sites build in less than a minute, this amount allows from 50 to 100 builds and deployments *per day*, which is quite a bit more than most sites require. Additionally, the repository layout remains the same as it would be if the build and deployment steps were done locally; the `main` branch contains the site source in Markdown and the `gh-pages` branch contains the site files that get built for serving.
 
