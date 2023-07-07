@@ -48,7 +48,7 @@ Finally, my favorite MediaWiki theme (*skin* in its terminology) is [Vector](htt
 Therefore, we opted to use [Sphinx](https://www.sphinx-doc.org/) and reStructuredText, as it was and still is a more powerful format than Markdown. We specifically cared about the [built-in admonitions](https://www.sphinx-doc.org/en/stable/rest.html#directives), which made it easier for us to convert the existing contents ([Python socket module lecture](../../hr/nastava/materijali/python-modul-socket.md) is a decent example). The advantages of Sphinx were and still are the following:
 
 - [Git](https://git-scm.com/)-based diff,
-- reduced attack surface: no web application, PHP, no database,
+- reduced attack surface: no web application, no PHP interpreter, no database,
 - very low amount of server maintenance required, can even be outsourced by dumping your content on e.g. [GitLab pages](https://docs.gitlab.com/ee/user/project/pages/index.html),
 - one can still have social share links by including e.g. [AddToAny](https://www.addtoany.com/) in a post-processing script after the compilation,
 - one can still have comments (our teaching materials will not) by including e.g. [Disqus](https://disqus.com/),
