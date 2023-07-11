@@ -60,6 +60,10 @@ Možemo jasno i nedvosmisleno uočiti sraslost pojma gaser i emojija Cool 😎. 
 
 Uskoro, stvari se rješavaju.
 
+## Zašto je web sjedište grupe tako često ažurirano, a u nastavnim materijalima na predmetu X unutar teme Y nedostaje odjeljak Z koji je zastupljen na predavanjima/vježbama?
+
+Ako smatrate da je u nastavnim materijalima potrebno neke sadržaje proširiti ili drugačije predstaviti, slobodno pretvorite vlastite bilješke s predavanja i/ili vježbi u [format Markdown](../povijest.md#markdown-mkdocs-i-material) i [pošaljite nam prijedlog promjena](../ljudi/kako-se-ukljuciti.md#ukljucivanje-u-nastavni-rad).
+
 ## Bojite li se `du -ha`?
 
 Ne bojimo se `du -ha` jer imamo oštrog `ps -a`; ako to ne bude dovoljno, uzet ćemo `top` u ruke i napraviti `killall`.
