@@ -140,7 +140,7 @@ Kako bismo preveli uvjetno grananje u MIPS asemblerski jezik, ovom primjeru mož
 
 #### Okrenuti uvjet naredbe *if* u MIPS-u
 
-Za početak, pretpostavimo da je varijabla `a` pohranjena u registru `$a0`. U ovom slučaju, koristit ćemo instrukcije uvjetnog grananja. Uvjet *if* naredbe je `a < 0`. Kako bismo okrenuli uvjet i provjerili je li `a >= 0`, koristit ćemo instrukciju `bgez` (engl. ***b**ranch if **g**reater than or **e**qual to **z**ero*) koja uspoređuje sadržaj registra `$a0` s nulom.
+Za početak, pretpostavimo da je varijabla `a` pohranjena u registru `$a0`. U ovom slučaju, koristit ćemo instrukcije uvjetnog grananja. Uvjet *if* naredbe je `a < 0`. Kako bismo okrenuli uvjet i provjerili je li `a >= 0`, koristit ćemo instrukciju `bgez` (engl. _**b**ranch if **g**reater than or **e**qual to **z**ero_) koja uspoređuje sadržaj registra `$a0` s nulom.
 
 Ako je sadržaj veći ili jednak nuli, program će skočiti na određenu oznaku, u ovom primjeru to je oznaka `granaj`. U suprotnom, izvršit će se sljedeća instrukcija `sub a0, $0, $a0` koja oduzima sadržaj registra `$a0` od nule i rezultat pohranjuje natrag u registar `$a0`. Time se postiže efekt apsolutne vrijednosti varijable `a`.
 
@@ -158,7 +158,7 @@ Nakon izvršavanja instrukcija unutar `if` bloka ili preskakanja bloka, program 
 
 #### Korištenje više oznaka i naredbi grananja
 
-U ovom slučaju razmatramo uvjet `a < 0` koristeći instrukciju `bltz` (engl. ***b**ranch if **l**ess **t**han **z**ero*) koja provjerava je li vrijednost registra `$a0` manja od nule. Ako je, program će skočiti na oznaku `granaj` i pohraniti apsolutnu vrijednost varijable `a` natrag u registar `$a0`.
+U ovom slučaju razmatramo uvjet `a < 0` koristeći instrukciju `bltz` (engl. _**b**ranch if **l**ess **t**han **z**ero_) koja provjerava je li vrijednost registra `$a0` manja od nule. Ako je, program će skočiti na oznaku `granaj` i pohraniti apsolutnu vrijednost varijable `a` natrag u registar `$a0`.
 
 ``` asm
     bltz   $a0, granaj   # ako je a0<0 skače na granaj
@@ -193,7 +193,7 @@ Primjetimo kako smo u ovom slučaju dobili više oznaka i naredbi grananja nego 
 
 **Rješenje:**
 
-Ovaj zadatak riješit ćemo na drugi način koristeći više oznaka i narebi grananja. Kako bismo provjerili uvjet `a0 > 0` koristimo instrukciju `bgtz` (engl. ***b**ranch if **g**reater **t**han **z**ero*. Ukoliko je uvjet ispunjen program skače na oznaku `blok1`. U tom bloku, vrijednost registra `$t0` se kopira u registar `$v0` pomoću instrukcije `move`. Nakon toga program skače na oznaku `dalje` i izvršavaju se naredbe izvan bloka *if* naredbe.
+Ovaj zadatak riješit ćemo na drugi način koristeći više oznaka i narebi grananja. Kako bismo provjerili uvjet `a0 > 0` koristimo instrukciju `bgtz` (engl. _**b**ranch if **g**reater **t**han **z**ero_). Ukoliko je uvjet ispunjen program skače na oznaku `blok1`. U tom bloku, vrijednost registra `$t0` se kopira u registar `$v0` pomoću instrukcije `move`. Nakon toga program skače na oznaku `dalje` i izvršavaju se naredbe izvan bloka *if* naredbe.
 
 ``` asm
     bltz   $a0, blok1
@@ -249,7 +249,7 @@ Ako nijedan od prethodnih uvjeta nije ispunjen, izvršava se blok `blok_else`. U
 
 U MIPS asemblerskom jeziku, tzv. [SET instrukcije](#instrukcije-usporedbe) omogućuju izračunavanje složenih uvjeta na temelju usporedbe vrijednosti registara. SET instrukcije imaju sličan format kao i uvjetno grananje, koristeći mnemonik "s" s dodanim uvjetom.
 
-Primjerice, instrukcija `slt $Rdest, $Rsrc1, $Rsrc2` (engl. ***s**et if **l**ess **t**hen*) uspoređuje vrijednosti registara `$Rsrc1` i `$Rsrc2` te rezultat (0 ili 1) pohranjuje u registr `$Rdest`. U ovom slučaju 1 pohranjuje u registar `$Rdest` ako je `Rsrc1 < $Rsrc2`.
+Primjerice, instrukcija `slt $Rdest, $Rsrc1, $Rsrc2` (engl. _**s**et if **l**ess **t**hen_) uspoređuje vrijednosti registara `$Rsrc1` i `$Rsrc2` te rezultat (0 ili 1) pohranjuje u registr `$Rdest`. U ovom slučaju 1 pohranjuje u registar `$Rdest` ako je `Rsrc1 < $Rsrc2`.
 
 !!! admonition "Zadatak"
     Sljedeći isječak koda u jeziku C++ pretvori u MIPS asemblerski jezik. Pretpostavi da je varijabla `a0` u istoimenom registru.
@@ -299,13 +299,13 @@ dalje:
     #...
 ```
 
-U ovome primjeru, instrukcija `sltz` (engl. ***s**et if **l**ess **t**han **z**ero*) provjerava je li sadržaj registra `$a0` manji od nule i rezultat pohranjuje u registar `$t1`. Sljedeća instrukcija `li` postavlja vrijednost 100 u registar `$t2`.
+U ovome primjeru, instrukcija `sltz` (engl. _**s**et if **l**ess **t**han **z**ero_) provjerava je li sadržaj registra `$a0` manji od nule i rezultat pohranjuje u registar `$t1`. Sljedeća instrukcija `li` postavlja vrijednost 100 u registar `$t2`.
 
-Instrukcija `sgt` (engl. ***s**et if **g**reater **t**hen*) uspoređuje sadržaj registra `$a0` s vrijednošću u registru `$t2`. Ako je sadržaj registra `$a0` veći od vrijednosti u registru `$t2`, rezultat će biti 1, inače je 0. Rezultat usporedbe pohranjuje u registar `$t0`.
+Instrukcija `sgt` (engl. _**s**et if **g**reater **t**hen_) uspoređuje sadržaj registra `$a0` s vrijednošću u registru `$t2`. Ako je sadržaj registra `$a0` veći od vrijednosti u registru `$t2`, rezultat će biti 1, inače je 0. Rezultat usporedbe pohranjuje u registar `$t0`.
 
 Sljedeća instrukcija `or` izvodi logičku operaciju ILI (engl. *OR*) između sadržaja registara `$t0` i `$t1`. Rezultat te operacije pohranjuje se natrag u registar `$t0`. Time se postiže da je vrijednost registra `$t0` različita od 0 samo ako je jedan od uvjeta (`$a0 < 0` ili `$a0 > 100`) ispunjen.
 
-Instrukcija `bnez` (engl. ***b**ranch if **n**ot **e**qual to **z**ero*) provjerava sadržaj registra `$t0` ako je različit od nule. U slučaju kada je `$t0` različit od nule, skočit će na oznaku `prvislucaj` i spremiti 1 u registar `$a0`.
+Instrukcija `bnez` (engl. _**b**ranch if **n**ot **e**qual to **z**ero_) provjerava sadržaj registra `$t0` ako je različit od nule. U slučaju kada je `$t0` različit od nule, skočit će na oznaku `prvislucaj` i spremiti 1 u registar `$a0`.
 
 U drugom slučaju, kada je `$t0` jednak nuli, izvršava se instrukcija `addi` koja pridodaje 1 vrijednosti u registru `$a0`. To znači da se vrijednost u registru `$a0` povećala za 1. Nakon toga, instrukcija bezuvjetnog grananja `j` izvodi skok na oznaku `dalje` i time se izvršavanje nastavlja od prve sljedeće naredbe koja se nalazi nakon oznake.
 
@@ -376,7 +376,7 @@ pocetak:
     syscall
 ```
 
-Koristit ćemo instrukciju `bltz` (engl. ***b**ranch if **l**ess **t**han **z**ero*) kako bismo usporedili vrijednost u registru `$a0` s nulom, `$a0 < 0`. Ako je ta vrijednost manja od nule, skočit ćemo na oznaku `pocetak` kako bismo ponovno zatražili unos broja od korisnika.
+Koristit ćemo instrukciju `bltz` (engl. _**b**ranch if **l**ess **t**han **z**ero_) kako bismo usporedili vrijednost u registru `$a0` s nulom, `$a0 < 0`. Ako je ta vrijednost manja od nule, skočit ćemo na oznaku `pocetak` kako bismo ponovno zatražili unos broja od korisnika.
 
 U slučaju da uvjet nije zadovoljen, postavit ćemo broj 1 u registar `$v0` kako bismo odabrali odgovarajući sistemski poziv za ispis broja.
 
