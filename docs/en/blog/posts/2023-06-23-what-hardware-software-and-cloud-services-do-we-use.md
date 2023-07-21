@@ -22,7 +22,7 @@ Our everyday [scientific](../../projects.md) and [educational](../../teaching/in
 ## Laptops
 
 - [Lenovo V15 G2-ALC](https://pcsupport.lenovo.com/us/en/products/laptops-and-netbooks/lenovo-v-series-laptops/v15-g2-alc) running [Garuda Linux](https://garudalinux.org/)
-- [HP 15-db0000](https://support.hp.com/us-en/product/hp-15-db0000-laptop-pc/20395843) running [Manjaro](https://manjaro.org/)
+- [HP 255 G7](https://support.hp.com/us-en/product/hp-255-g7-notebook-pc/24381324) running [Manjaro](https://manjaro.org/)
 
 ### Userland software
 
