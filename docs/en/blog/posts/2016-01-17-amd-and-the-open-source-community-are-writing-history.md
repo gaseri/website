@@ -5,8 +5,6 @@ authors:
 date: 2016-01-17
 tags:
   - amd
-  - radeon
-  - gpuopen
   - free and open-source software
   - firmware
   - gpu drivers

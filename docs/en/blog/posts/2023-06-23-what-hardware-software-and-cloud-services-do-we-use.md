@@ -9,7 +9,6 @@ tags:
   - scientific software
   - mozilla
   - web server
-  - radeon
   - amd
 ---
 
