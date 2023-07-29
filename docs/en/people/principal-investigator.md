@@ -291,6 +291,11 @@ Description: [home page](https://www.gromacs.org/), [Wikipedia page](https://en.
 
 Commits listed from [repository on GitLab](https://gitlab.com/gromacs/gromacs):
 
+- commit [`cd348c8aa928409650f92e4ffdbce2230595472a`](https://gitlab.com/gromacs/gromacs/-/commit/cd348c8aa928409650f92e4ffdbce2230595472a): Fixed source formatting artifacts/leftovers
+
+    ??? note
+        Used clang-format 11.0.1 on sources in `src/gromacs`.
+
 - commit [`8eda9038c579785ddf1dc83657b0c7bdeb98c714`](https://gitlab.com/gromacs/gromacs/-/commit/8eda9038c579785ddf1dc83657b0c7bdeb98c714): Renamed members of `{anonymous}::PositionCalculationTest::PositionTest` struct to avoid shadowing
 - commit [`045f95c1e4555df193b4822f5316f6a23c465beb`](https://gitlab.com/gromacs/gromacs/-/commit/045f95c1e4555df193b4822f5316f6a23c465beb): Renamed members of `{anonymous}::NeighborhoodSearchTestData::TestPosition` struct to avoid shadowing
 - commit [`3a2b0e78f75c8f6fab0e18953c8765655b90aec7`](https://gitlab.com/gromacs/gromacs/-/commit/3a2b0e78f75c8f6fab0e18953c8765655b90aec7): Renamed members of `{anonymous}::NeighborhoodSearchTestData::RefPair` struct to avoid shadowing
