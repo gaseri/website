@@ -208,7 +208,7 @@ Materijali stvoreni u okviru ovog online kolegija nastavit će se koristiti i ub
 
 **Inicijativa koja predlaže projekt:** InfUniri MPI
 
-**Mjesto i vrijeme provedbe projekta:** Rijeka, Hrvatska, od 20.12.2013. do 01.06.2014.
+**Mjesto i vrijeme provedbe projekta:** Rijeka, Hrvatska, od 20. 12. 2013. do 01. 06. 2014.
 
 **Znanstveno ili stručno područje projekta:** Tehničke znanosti
 
@@ -312,7 +312,7 @@ Ako koristite PWNS u svom radu, molimo vas da citirate barem radove \[4\] i \[5\
 
 **Dodatne informacije o kolegiju:** Kolegiji Računalne mreže 1 i Računalne mreže 2 spadaju među temeljne kolegije studija informatike i osnova su za mnoge kolegije koji slijede u nastavku studija, u koje spadaju Multimedijski sustavi, Dinamičke web aplikacije 1 i Dinamičke web aplikacije 2 s preddiplomskog studija informatike te Distribuirani sustavi, Upravljanje mrežnim sustavima, Upravljanje znanjem i Informacijska tehnologija i društvo s diplomskog studija informatike.
 
-**Trajanje projekta:** 06.02.2012. -- 29.06.2012.
+**Trajanje projekta:** 06. 02. 2012. -- 29. 06. 2012.
 
 **Voditelj projekta:** prof. dr. sc. Mario Radovan
 
@@ -374,15 +374,15 @@ Detaljne pripreme i zadaci s rješenjima za 15 sati laboratorijskih vježbi iz R
 
 ### Vremenski plan izvršenja projekta
 
-#### Faza 1. (06.02.2012. -- 24.02.2012.)
+#### Faza 1. (06. 02. 2012. -- 24. 02. 2012.)
 
 Priprema wiki sustava koji će se koristiti, izrada predložaka za predaju zadataka laboratorijskih vježbi i predložaka za predaju programskih zadataka; priprema uputa za instalaciju potrebne programske podrške za studente.
 
-#### Faza 2. (27.02.2012. -- 08.06.2012.)
+#### Faza 2. (27. 02. 2012. -- 08. 06. 2012.)
 
 Izrada materijala za pripremu laboratorijskih vježbi i pripadnih zadataka, izrada programskih zadataka, izvođenje laboratorijskih vježbi.
 
-#### Faza 3. (11.06.2012. -- 29.06.2012.)
+#### Faza 3. (11. 06. 2012. -- 29. 06. 2012.)
 
 Evaluacija postignutih rezultata od strane sudionika projekta i od strane studenata (anketa), planiranje budućih aktivnosti.
 
