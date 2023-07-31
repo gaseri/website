@@ -108,7 +108,7 @@ Pisana provjera znanja uključuje praktične zadatke s vježbi i nosi do maksima
 
 Završni ispit polaže se usmenim putem i uključuje prezentaciju seminarskog rada, teorijska pitanja s predavanja i praktične zadatke s vježbi. Ispit nosi udio od maksimalno 30 ocjenskih bodova, a smatra se položenim samo ako na njemu student postigne minimalno 50%-ni uspjeh (ispitni prag je 50% točno odgovorenih pitanja i uspješno riješenih zadataka).
 
-Na prethodno opisani način (pohađanje nastave, seminarski rad, pisana provjera znanja, završni ispit) studenti mogu skupiti 100 ocjenskih bodova.
+Na prethodno opisani način (aktivnost u nastavi, seminarski rad, pisana provjera znanja i završni ispit) studenti mogu skupiti 100 ocjenskih bodova.
 
 ## Ispitni rokovi
 

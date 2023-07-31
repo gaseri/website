@@ -22,14 +22,10 @@ Po dogovoru e-mailom.
 
 ## Izvođači i nastavna opterećenja (suradnici, asistenti, tehničar/laborant)
 
-**Titula i ime:** v. pred. dr. sc. Vedran Miletić (10P + 20V)
-
-**Adresa:** [Ulica Radmile Matejčić 2](https://www.openstreetmap.org/way/436306129), soba O-520
-
-**Telefon:** 051/584-717
-
-**E-mail:** <vmiletic@inf.uniri.hr>
-
+**Titula i ime:** v. pred. dr. sc. Vedran Miletić (10P + 20V)  
+**Adresa:** [Ulica Radmile Matejčić 2](https://www.openstreetmap.org/way/436306129), soba O-520  
+**Telefon:** 051/584-717  
+**E-mail:** <vmiletic@inf.uniri.hr>  
 **Web stranica:** [vedran.miletic.net](https://vedran.miletic.net/)
 
 ## Obavezna literatura
@@ -93,19 +89,19 @@ Vježbe se izvode na računalima u bloku od 4 sata prema rasporedu. Na vježbama
 
 Osim prisustvovanja klasičnoj nastavi na predavanjima i vježbama studenti su dužni koristiti **e-sustav za učenje Merlin** ([moodle.srce.hr/2018-2019/](https://moodle.srce.hr/2018-2019/)).
 
-### Seminar
+### Seminarski rad
 
 Seminarski rad podrazumijeva samostalnu izradu PowerPoint prezentacije na odabranu informatičku ili bioinformatičku temu o kojoj će se sadržaji prikupiti pretraživanjem weba. Bodovati će se kvaliteta, sadržaj i aktualnost obrađene teme (do maksimalnih 20 bodova).
 
-### Provjera znanja (kolokvij)
+### Pisana provjera znanja
 
-Kontrolna zadaća (kolokvij) uključivati će praktične zadatke s vježbi, student će moći skupiti maksimalnih 40 bodova.
+Pisana provjera znanja uključivati će praktične zadatke s vježbi, student će moći skupiti maksimalnih 40 bodova.
 
 ### Ispit
 
 Ispit je usmeni, te uključuje prezentaciju seminarskog rada, te teorijska pitanja s predavanja i praktična s vježbi. Ispit nosi udio od maksimalno 30 ocjenskih bodova, a smatra se položenim samo ako na njemu student postigne minimalno 50%-ni uspjeh (ispitni prag je 50% uspješno riješenih zadataka).
 
-Na prethodno opisani način (pohađanje nastave, seminar, kolokvij, ispit) studenti mogu skupiti 100 ocjenskih bodova.
+Na prethodno opisani način (pohađanje nastave, seminarski rad, pisana provjera znanja i ispit) studenti mogu skupiti 100 ocjenskih bodova.
 
 ## Ispitni rokovi
 
