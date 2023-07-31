@@ -22,7 +22,7 @@ Osim razvoja u skladu s vlastitim i suradničkim istraživačkim interesima i in
 
 **Znanstveno-nastavno zvanje:** Znanstveni suradnik, zaposlen na radnom mjestu višeg predavača
 
-**e-mail:** vmiletic@inf.uniri.hr
+**e-mail:** <vmiletic@inf.uniri.hr>
 
 #### IZVODITELJI PROJEKTA
 
@@ -35,7 +35,7 @@ Osim razvoja u skladu s vlastitim i suradničkim istraživačkim interesima i in
 **Zvanje:** Znanstveni suradnik, zaposlen na radnom mjestu višeg
 predavača
 
-**E-mail:** vmiletic@inf.uniri.hr
+**E-mail:** <vmiletic@inf.uniri.hr>
 
 **Uloga u projektu:** Voditelj projekta i izvoditelj projekta (nositelj
 kolegija i asistent)

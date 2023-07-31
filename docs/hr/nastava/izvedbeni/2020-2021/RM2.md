@@ -30,7 +30,7 @@ Nastavno opterećenje: 2 + 2 (2 + 1)
 
 v\. pred. dr. sc. Vedran Miletić
 
-E-mail: vmiletic@inf.uniri.hr  
+E-mail: <vmiletic@inf.uniri.hr>  
 Web stranica: [vedran.miletic.net](https://vedran.miletic.net/)  
 Ured: Ulica Radmile Matejčić 2, O-520  
 Vrijeme konzultacija: utorkom od 14 do 16 sati ili po dogovoru e-mailom

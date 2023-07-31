@@ -8,7 +8,7 @@ author: Vedran Miletić
 
 ## E-pošta
 
-Adrese e-pošte [članova osoblja](ljudi/index.md#osoblje) imaju sljedeći oblik: *ime.prezime@inf.uniri.hr*
+Adrese e-pošte [članova osoblja](ljudi/index.md#osoblje) imaju sljedeći oblik: `ime.prezime@inf.uniri.hr`
 
 ## Društvene mreže
 

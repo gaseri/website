@@ -18,7 +18,7 @@ Nastavno opterećenje: 2 + 2
 
 izv. prof. dr. sc. Božidar Kovačić
 
-E-mail: bkovacic@inf.uniri.hr  
+E-mail: <bkovacic@inf.uniri.hr>  
 Web stranica: [portal.uniri.hr/Portfelj/1506](https://portal.uniri.hr/Portfelj/1506)  
 Ured: Ulica Radmile Matejčić 2, O-414  
 Vrijeme konzultacija: utorkom od 10 do 12 sati ili po dogovoru e-mailom
@@ -27,7 +27,7 @@ Vrijeme konzultacija: utorkom od 10 do 12 sati ili po dogovoru e-mailom
 
 v\. pred. dr. sc. Vedran Miletić
 
-E-mail: vmiletic@inf.uniri.hr  
+E-mail: <vmiletic@inf.uniri.hr>  
 Web stranica: [vedran.miletic.net](https://vedran.miletic.net/)  
 Ured: Ulica Radmile Matejčić 2, O-520  
 Vrijeme konzultacija: utorkom od 12 do 14 sati ili po dogovoru e-mailom

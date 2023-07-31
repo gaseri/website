@@ -11,7 +11,7 @@ paginate: true
 
 # Pisanje i provođenje automatiziranih testova programskog koda i web aplikacija
 
-## doc. dr. sc. Vedran Miletić, vmiletic@inf.uniri.hr, [vedran.miletic.net](https://vedran.miletic.net/)
+## doc. dr. sc. Vedran Miletić, <vmiletic@inf.uniri.hr>, [vedran.miletic.net](https://vedran.miletic.net/)
 
 ### Fakultet informatike i digitalnih tehnologija Sveučilišta u Rijeci, akademska 2021./2022. godina
 

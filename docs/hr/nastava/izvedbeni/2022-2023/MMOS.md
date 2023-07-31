@@ -17,12 +17,12 @@ Bodovna vrijednost i način izvođenja nastave:
 - Broj sati (P+V+S): 30+30+0
 
 Nositelj predmeta: izv. prof. dr. sc. Božidar Kovačić  
-E-mail: bkovacic@inf.uniri.hr  
+E-mail: <bkovacic@inf.uniri.hr>  
 Ured: O-414  
 Vrijeme konzultacija: Utorkom od 10:00 do 12:00 uz prethodni dogovor e-mailom
 
 Asistent: Matea Turalija  
-E-mail: matea.turalija@inf.uniri.hr  
+E-mail: <matea.turalija@inf.uniri.hr>  
 Ured: O-410  
 Vrijeme konzultacija: Srijedom od 14:00 do 16:00 uz prethodni dogovor e-mailom
 

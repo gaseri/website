@@ -13,7 +13,7 @@
 **Titula i ime:** Dejan Ljubobratović, pred.  
 **Adresa:** [Ulica Radmile Matejčić 2](https://www.openstreetmap.org/way/436306129), soba O-522  
 **Telefon:** 051/584-724  
-**E-mail:** dejan.ljubobratovic@inf.uniri.hr  
+**E-mail:** <dejan.ljubobratovic@inf.uniri.hr>  
 **Web stranica:** [portal.uniri.hr](https://portal.uniri.hr/Portfelj/650)
 
 ## Vrijeme konzultacija

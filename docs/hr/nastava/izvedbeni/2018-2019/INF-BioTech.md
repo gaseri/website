@@ -13,7 +13,7 @@
 **Titula i ime:** doc. dr. sc. Sanja Čandrlić  
 **Adresa:** [Ulica Radmile Matejčić 2](https://www.openstreetmap.org/way/436306129), soba O-515  
 **Telefon:** 051/584-706  
-**E-mail:** sanjac@inf.uniri.hr  
+**E-mail:** <sanjac@inf.uniri.hr>  
 **Web stranica:** [portal.uniri.hr/Portfelj/Index/487](https://portal.uniri.hr/Portfelj/Index/487)
 
 ## Vrijeme konzultacija
@@ -28,7 +28,7 @@ Po dogovoru e-mailom.
 
 **Telefon:** 051/584-717
 
-**E-mail:** vmiletic@inf.uniri.hr
+**E-mail:** <vmiletic@inf.uniri.hr>
 
 **Web stranica:** [vedran.miletic.net](https://vedran.miletic.net/)
 

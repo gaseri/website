@@ -13,7 +13,7 @@
 **Titula i ime:** v. pred. dr. sc. Vedran Miletić  
 **Adresa:** [Ulica Radmile Matejčić 2](https://www.openstreetmap.org/way/436306129), soba O-520  
 **Telefon:** 051/584-717  
-**E-mail:** vmiletic@inf.uniri.hr  
+**E-mail:** <vmiletic@inf.uniri.hr>  
 **Web stranica:** [vedran.miletic.net](https://vedran.miletic.net/)
 
 ## Vrijeme konzultacija

@@ -11,7 +11,7 @@ paginate: true
 
 # Timski razvoj web aplikacija i upravljanje verzijama programskog koda
 
-## doc. dr. sc. Vedran Miletić, vmiletic@inf.uniri.hr, [vedran.miletic.net](https://vedran.miletic.net/)
+## doc. dr. sc. Vedran Miletić, <vmiletic@inf.uniri.hr>, [vedran.miletic.net](https://vedran.miletic.net/)
 
 ### Fakultet informatike i digitalnih tehnologija, akademska 2021./2022. godina
 

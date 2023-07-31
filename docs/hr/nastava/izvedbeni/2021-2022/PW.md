@@ -17,12 +17,12 @@ Bodovna vrijednost i način izvođenja nastave:
 - Broj sati (P+V+S): 30+30+0
 
 Nositelj predmeta: v. pred. dr. sc. Vedran Miletić  
-E-mail: vmiletic@inf.uniri.hr  
+E-mail: <vmiletic@inf.uniri.hr>  
 Ured: O-520  
 Vrijeme konzultacija: Utorkom od 12:00 do 14:00 uz prethodni dogovor e-mailom
 
 Asistent: Milan Petrović  
-E-mail: milan.petrovic@inf.uniri.hr  
+E-mail: <milan.petrovic@inf.uniri.hr>  
 Ured: O-522  
 Vrijeme konzultacija: Utorkom od 14:00 do 16:00 uz prethodni dogovor e-mailom
 

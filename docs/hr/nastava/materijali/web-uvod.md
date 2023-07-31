@@ -15,7 +15,7 @@ Studij: Preddiplomski studij informatike
 Modul: Razvoj programske potpore (RPP)  
 Godina i semestar: 3. godina, 5. semestar
 
-Nositelj: **doc. dr. sc. Vedran Miletić**, vmiletic@inf.uniri.hr, vedran.miletic.net
+Nositelj: **doc. dr. sc. Vedran Miletić**, <vmiletic@inf.uniri.hr>, vedran.miletic.net
 
 Asistent: **Milan Petrović, mag. inf.**, milan.petrovic@inf.uniri.hr
 

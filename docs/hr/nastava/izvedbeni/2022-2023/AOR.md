@@ -17,12 +17,12 @@ Bodovna vrijednost i način izvođenja nastave:
 - Broj sati (P+V+S): 30+30+0
 
 Nositelj predmeta: prof. dr. sc. Ivo Ipšić  
-E-mail: ivoi@inf.uniri.hr  
+E-mail: <ivoi@inf.uniri.hr>  
 Ured: O-514  
 Vrijeme konzultacija: četvrtkom 9:00-10:00
 
 Asistent: Matea Turalija  
-E-mail: matea.turalija@inf.uniri.hr  
+E-mail: <matea.turalija@inf.uniri.hr>  
 Ured: O-410  
 Vrijeme konzultacija: četvrtkom 12:00-13:00, najaviti se prije e-mailom
 
