@@ -116,4 +116,4 @@ abstract: |
     * [Open Source is Taking Over Europe!](https://itsfoss.com/open-source-adoption-europe/)
     * [Open Source Survey](https://opensourcesurvey.org/2017/)
 * Doba besplatnog tzv. akademskog softvera je završilo 2000-ih omasovljenjem korištenja interneta i dolaskom Weba 2.0
-    * [What is the price of open-source fear, uncertainty, and doubt?](https://gaseri.org/en/blog/2015-09-14-what-is-the-price-of-open-source-fear-uncertainty-and-doubt/)
+    * [What is the price of open-source fear, uncertainty, and doubt?](../../en/blog/posts/2015-09-14-what-is-the-price-of-open-source-fear-uncertainty-and-doubt.md)
