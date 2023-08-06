@@ -291,6 +291,7 @@ Description: [home page](https://www.gromacs.org/), [Wikipedia page](https://en.
 
 Commits listed from [repository on GitLab](https://gitlab.com/gromacs/gromacs):
 
+- commit [`163687662da0eb4fc444c41aac170649a94ae2f1`](https://gitlab.com/gromacs/gromacs/-/commit/163687662da0eb4fc444c41aac170649a94ae2f1): Replaced (const_)iterators with range-based for loops
 - commit [`cd348c8aa928409650f92e4ffdbce2230595472a`](https://gitlab.com/gromacs/gromacs/-/commit/cd348c8aa928409650f92e4ffdbce2230595472a): Fixed source formatting artifacts/leftovers
 
     ??? note
