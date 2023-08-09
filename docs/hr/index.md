@@ -12,7 +12,7 @@ author: Vedran Miletić
 
 ## Uvodna prezentacija
 
-[Svijetla pozadina](https://files.group.miletic.net/GASERI-Introductory-presentation-light-background.pdf){ .md-button } [Tamna pozadina](https://files.group.miletic.net/GASERI-Introductory-presentation-dark-background.pdf){ .md-button .md-button--primary }
+[Svijetla pozadina](../downloads/gaseri-introductory-presentation-light-background.pdf){ .md-button } [Tamna pozadina](../downloads/gaseri-introductory-presentation-dark-background.pdf){ .md-button .md-button--primary }
 
 ## Interesi
 

@@ -30,7 +30,7 @@ Iznimka je [kraj rujna, čitav listopad i početak studenog 2022. godine](https:
 
 ## Kako postati gaser?
 
-To je prilično dobro objasnio [DZIMI](https://www.instagram.com/dzimiyt_/) u istonaslovljenom [audiovizualnom uratku](https://files.group.miletic.net/DZIMI/KAKO%20POSTATI%20GASER-WxCHY1k8HKw.mp4).
+To je prilično dobro objasnio [DZIMI](https://www.instagram.com/dzimiyt_/) u istonaslovljenom [audiovizualnom uratku](https://youtu.be/7ksQqIOnpnc).
 
 ## Kako postati dio grupe GASERI?
 

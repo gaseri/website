@@ -82,8 +82,6 @@ paginate: true
 
 - we'll be using [a free GROMACS benchmark set](https://www.mpinat.mpg.de/grubmueller/bench) prepared by [Cartsen Kutzner](https://www.mpinat.mpg.de/grubmueller/kutzner)
     - credit: [Theoretical and Computational Biophysics Research Group of Helmut Grubmüller](https://www.mpinat.mpg.de/grubmueller), [Max Planck Institute for Multidisciplinary Sciences](https://www.mpinat.mpg.de/en)
-- mirrored by our group
-    - `https://files.group.miletic.net/Bura-HPC/`
     - we'll use `wget` or `curl` to download them to Bura
 
 ---
