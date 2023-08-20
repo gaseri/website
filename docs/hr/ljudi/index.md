@@ -25,8 +25,6 @@ author: Vedran Miletić
 ## Studenti
 
 - Dominik Kinkela
-- Erik Jermaniš
-- Valentin Kuharić
 - [Dorian Manjarić](https://manjaric.com/)
 - Marin Martuslović
 - [Luka Ljubojević](https://lukaljubojevic.github.io/web/)
@@ -46,6 +44,8 @@ author: Vedran Miletić
 
 ## Bivši studenti
 
+- [Erik Jermaniš](https://erikjermanis.me/)
+- [Valentin Kuharić](https://valentinkuharic.com/)
 - [Mia Doričić](https://miadoricic.github.io/)
 - [Kristijan Lenković](http://kristijan.lenkovic.com/)
 - [Edvin Močibob](https://edvin.me/)
