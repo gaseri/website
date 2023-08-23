@@ -14,12 +14,6 @@ paginate: true
 
 ---
 
-## Link to these notes
-
-### `miletic.net/dsc2023`
-
----
-
 ## FIDIT
 
 - founded in 2008. as Department of Informatics at UniRi
