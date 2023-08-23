@@ -4,6 +4,9 @@ author: Vedran Miletić
 
 # Zettlr workshop
 
+!!! info
+    The following materials were prepared by [Dr. Vedran](https://vedran.miletic.net/) [Miletić](https://www.miletic.net/) and [Matea Turalija](https://mateaturalija.github.io/) from [Faculty of Informatics and Digital Technologies](https://www.inf.uniri.hr/), [University of Rijeka](https://uniri.hr/) for the workshop offered at [Build Your Career Garden: Learning, Teaching, and Training Event](https://gradri.uniri.hr/dogadjanja/build-your-career-garden-learning-teaching-and-training-event/).
+
 Written teaching materials can have many forms: lecture notes, presentations, and even web sites. The authoring tools for the materials are still mostly tied to the specific form, but in the last decade the Markdown format has emerged as the solution that allows producing many forms of materials from the same content. This workshop presents a user-friendly approach to using Markdown in the production of teaching materials with open-source tools.
 
 [Markdown](https://daringfireball.net/projects/markdown/), according to [Wikipedia](https://en.wikipedia.org/wiki/Markdown), is a lightweight markup language for creating formatted text using a plain-text editor. It is [implemented in many applications](https://en.wikipedia.org/wiki/Markdown#Implementations), including Microsoft Teams, Discord, RStudio, Kanboard, and Discourse.
