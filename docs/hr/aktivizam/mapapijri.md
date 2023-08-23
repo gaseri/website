@@ -20,7 +20,7 @@ Općeniti je cilj skupine Mapapijri je pomoći članovima akademske zajednice i 
 
 - [Karlo Babić](https://karlo.observer/) (interesi: [Obsidian](https://obsidian.md/), [Jamstack](https://jamstack.org/), [GitHub Pages](https://pages.github.com/))
 - [Dejan Ljubobratović](https://www.rec.hr/) (interesi: [R Markdown](https://rmarkdown.rstudio.com/), [Jupyter Notebook](https://jupyter-notebook.readthedocs.io/), [Jupyter Book](https://jupyterbook.org/))
-- [Vedran Miletić](https://vedran.miletic.net/) (interesi: [Pandoc](https://pandoc.org/), [ConTeXt](https://wiki.contextgarden.net/), [MkDocs](https://www.mkdocs.org/))
+- [Vedran](https://vedran.miletic.net/) [Miletić](https://www.miletic.net/) (interesi: [Pandoc](https://pandoc.org/), [ConTeXt](https://wiki.contextgarden.net/), [MkDocs](https://www.mkdocs.org/))
 - [Milan Petrović](https://milanxpetrovic.github.io/) (interesi: [LaTeX](https://www.latex-project.org/), [Jekyll](https://jekyllrb.com/), [Docusaurus](https://docusaurus.io/))
 - [Matea Turalija](https://mateaturalija.github.io/) (interesi: [LaTeX](https://www.latex-project.org/), [HackMD](https://hackmd.io/), [MkDocs](https://www.mkdocs.org/))
 

@@ -67,7 +67,7 @@ Uživamo pričati o računanju široj publici. Organizirate li događaj usmjeren
 
 Mi smo interdisciplinarni tim koji čine profesori, docenti, poslijedoktorandi i asistenti sa Sveučilišta u Rijeci koji rade u različitim područjima znanosti i tehnike.
 
-- [dr. sc. Vedran Miletić](https://vedran.miletic.net/), Odjel za informatiku i Tehnički fakultet Sveučilišta u Rijeci
+- [dr. sc. Vedran](https://vedran.miletic.net/) [Miletić](https://www.miletic.net/), Odjel za informatiku i Tehnički fakultet Sveučilišta u Rijeci
 - [doc. dr. sc. Božidar Kovačić](https://portal.uniri.hr/Portfelj/1506), Odjel za informatiku Sveučilišta u Rijeci
 - [doc. dr. sc. Željko Svedružić](https://svedruziclab.github.io/principal-investigator.html), Odjel za biotehnologiju i Medicinski fakultet Sveučilišta u Rijeci
 - [izv. prof. dr. Kristijan Lenac](https://klenac.weebly.com/), Tehnički fakultet Sveučilišta u Rijeci

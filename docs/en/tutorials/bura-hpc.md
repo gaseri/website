@@ -10,7 +10,7 @@ paginate: true
 
 ## Using supercomputing resources at University of Rijeka for academic and industrial goals
 
-### Vedran Miletić, [Faculty of Informatics and Digital Technologies](https://www.inf.uniri.hr/), [University of Rijeka](https://uniri.hr/)
+### [Vedran](https://vedran.miletic.net/) [Miletić](https://www.miletic.net/), [Faculty of Informatics and Digital Technologies](https://www.inf.uniri.hr/), [University of Rijeka](https://uniri.hr/)
 
 ---
 

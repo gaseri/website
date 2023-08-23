@@ -19,7 +19,7 @@ host: |
 
 # C++ ekosustav jučer/danas/sutra
 
-## Vedran Miletić i Marin Jurjević
+## [Vedran](https://vedran.miletic.net/) [Miletić](https://www.miletic.net/) i Marin Jurjević
 
 ### 16. unConference IT zajednice Rijeka
 
@@ -29,7 +29,7 @@ host: |
 
 ## Predstavljanje predavača
 
-[Vedran Miletić](https://vedran.miletic.net/):
+[Vedran](https://vedran.miletic.net/) [Miletić](https://www.miletic.net/):
 
 - Docent, Fakultet informatike i digitalnih tehnologija Sveučilišta u Rijeci
 - Znanstvenik, računarstvo/biokemija

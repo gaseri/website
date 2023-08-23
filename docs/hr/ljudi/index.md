@@ -8,7 +8,7 @@ author: Vedran Miletić
 
 ## Osoblje
 
-- [dr. sc. Vedran Miletić](https://vedran.miletic.net/), docent, voditelj grupe
+- [dr. sc. Vedran](https://vedran.miletic.net/) [Miletić](https://www.miletic.net/), docent, voditelj grupe
 - [Milan Petrović](https://milanxpetrovic.github.io/), asistent
 - [Matea Turalija](https://mateaturalija.github.io/), asistent, studentica doktorskog studija (doktorand)
 

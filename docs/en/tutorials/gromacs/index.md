@@ -10,7 +10,8 @@ tags:
     The GROMACS tutorials that follow were written in Markdown by
     [Wes Barnett](https://github.com/wesbarnett) and were originally published
     in the tutorials section of his former website. The tutorials are presently
-    maintained by [Vedran Miletić](https://vedran.miletic.net/) and published in
+    maintained by [Vedran](https://vedran.miletic.net/)
+    [Miletić](https://www.miletic.net/) and published in
     the tutorials section of the [Group for Applications and Services on Exascale
     Research Infrastructure (GASERI) website](../../index.md).
 

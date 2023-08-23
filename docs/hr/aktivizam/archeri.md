@@ -28,7 +28,7 @@ Distribucije temeljene na Arch Linuxu pokazale su se dosad kao najbolji izbor za
 ### Grupa za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi (GASERI) i suradnici
 
 - [Luka Ljubojević](https://lukaljubojevic.github.io/web/) ([Arch Linux](https://archlinux.org/))
-- [Vedran Miletić](https://vedran.miletic.net/) ([Garuda Linux](https://garudalinux.org/))
+- [Vedran](https://vedran.miletic.net/) [Miletić](https://www.miletic.net/) ([Garuda Linux](https://garudalinux.org/))
 - [Patrik Nikolić](https://nikoli.ch/) ([Garuda Linux](https://garudalinux.org/))
 - [Milan Petrović](https://milanxpetrovic.github.io/) ([Manjaro](https://manjaro.org/))
 - [Matea Turalija](https://mateaturalija.github.io/) ([Manjaro](https://manjaro.org/))

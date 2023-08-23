@@ -17,7 +17,7 @@ abstract: |
 
 ![ChatGPT logo h:300px](https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg)
 
-## Vedran Miletić, [Faculty of Informatics and Digital Technologies](https://www.inf.uniri.hr/)
+## [Vedran](https://vedran.miletic.net/) [Miletić](https://www.miletic.net/), [Faculty of Informatics and Digital Technologies](https://www.inf.uniri.hr/)
 
 ### [Build Your Career Garden – Learning Teaching and Training event](https://gradri.uniri.hr/dogadjanja/build-your-career-garden-learning-teaching-and-training-event/), [Faculty of Civil Engineering](https://gradri.uniri.hr/), [University of Rijeka](https://uniri.hr/), 30th of March 2023
 

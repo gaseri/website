@@ -21,7 +21,7 @@ curriculum-vitae: |
 
 # Od Aleksandrijske knjižnice do programskih knjižnica na GitHubu
 
-## dr. sc. Vedran Miletić, Odjel za informatiku Sveučilišta u Rijeci
+## dr. sc. [Vedran](https://vedran.miletic.net/) [Miletić](https://www.miletic.net/), Odjel za informatiku Sveučilišta u Rijeci
 
 ### Otvoreni dan sveučilišnih odjela, 13. listopada 2020.
 

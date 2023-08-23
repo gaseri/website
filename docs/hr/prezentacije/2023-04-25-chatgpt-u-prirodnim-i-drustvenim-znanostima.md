@@ -15,7 +15,7 @@ abstract: |
 
 # ChatGPT u prirodnim i društvenim znanostima
 
-## Vedran Miletić, Fakultet informatike i digitalnih tehnologija
+## [Vedran](https://vedran.miletic.net/) [Miletić](https://www.miletic.net/), Fakultet informatike i digitalnih tehnologija
 
 ![FIDIT logo h:350px](https://upload.wikimedia.org/wikipedia/commons/1/14/FIDIT-logo.svg)
 
