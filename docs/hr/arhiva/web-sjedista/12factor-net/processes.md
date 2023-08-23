@@ -2,7 +2,7 @@
 author: Adam Wiggins
 ---
 
-!!! note
+!!! info
     Sadržaj u nastavku je prijevod stranice [VI. Processes](https://12factor.net/processes) na web sjedištu [The Twelve-Factor App](https://12factor.net/).
 
 ## VI. Procesi

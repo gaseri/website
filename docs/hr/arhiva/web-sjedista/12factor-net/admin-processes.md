@@ -2,7 +2,7 @@
 author: Adam Wiggins
 ---
 
-!!! note
+!!! info
     Sadržaj u nastavku je prijevod stranice [XII. Admin processes](https://12factor.net/admin-processes) na web sjedištu [The Twelve-Factor App](https://12factor.net/).
 
 ## XII. Administrativni procesi

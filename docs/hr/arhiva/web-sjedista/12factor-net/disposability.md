@@ -2,7 +2,7 @@
 author: Adam Wiggins
 ---
 
-!!! note
+!!! info
     Sadržaj u nastavku je prijevod stranice [IX. Disposability](https://12factor.net/disposability) na web sjedištu [The Twelve-Factor App](https://12factor.net/).
 
 ## IX. Jednokratna upotreba

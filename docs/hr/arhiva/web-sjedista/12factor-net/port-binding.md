@@ -2,7 +2,7 @@
 author: Adam Wiggins
 ---
 
-!!! note
+!!! info
     Sadržaj u nastavku je prijevod stranice [VII. Port binding](https://12factor.net/port-binding) na web sjedištu [The Twelve-Factor App](https://12factor.net/).
 
 ## VII. Povezivanje na vrata

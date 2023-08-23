@@ -2,7 +2,7 @@
 author: Adam Wiggins
 ---
 
-!!! note
+!!! info
     Sadržaj u nastavku je prijevod stranice [IV. Backing services](https://12factor.net/backing-services) na web sjedištu [The Twelve-Factor App](https://12factor.net/).
 
 ## IV. Potporne usluge

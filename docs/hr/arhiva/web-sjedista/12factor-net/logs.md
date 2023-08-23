@@ -2,7 +2,7 @@
 author: Adam Wiggins
 ---
 
-!!! note
+!!! info
     Sadržaj u nastavku je prijevod stranice [XI. Logs](https://12factor.net/logs) na web sjedištu [The Twelve-Factor App](https://12factor.net/).
 
 ## XI. Zapisnici

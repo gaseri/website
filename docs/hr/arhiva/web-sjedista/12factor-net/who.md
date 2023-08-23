@@ -2,7 +2,7 @@
 author: Adam Wiggins
 ---
 
-!!! note
+!!! info
     Sadržaj u nastavku je prijevod web sjedišta [The Twelve-Factor App](https://12factor.net/).
 
 Tko bi trebao pročitati ovaj dokument?

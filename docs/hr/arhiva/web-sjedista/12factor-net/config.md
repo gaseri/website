@@ -2,7 +2,7 @@
 author: Adam Wiggins
 ---
 
-!!! note
+!!! info
     Sadržaj u nastavku je prijevod stranice [III. Config](https://12factor.net/config) na web sjedištu [The Twelve-Factor App](https://12factor.net/).
 
 ## III. Konfiguracija

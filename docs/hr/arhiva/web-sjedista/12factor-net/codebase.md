@@ -2,7 +2,7 @@
 author: Adam Wiggins
 ---
 
-!!! note
+!!! info
     Sadržaj u nastavku je prijevod stranice [I. Codebase](https://12factor.net/codebase) na web sjedištu [The Twelve-Factor App](https://12factor.net/).
 
 ## I. Baza izvornog kôda

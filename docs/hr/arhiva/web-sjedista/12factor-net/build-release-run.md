@@ -2,7 +2,7 @@
 author: Adam Wiggins
 ---
 
-!!! note
+!!! info
     Sadržaj u nastavku je prijevod stranice [V. Build, release, run](https://12factor.net/build-release-run) na web sjedištu [The Twelve-Factor App](https://12factor.net/).
 
 ## V. Izgradnja, izdavanje, pokretanje

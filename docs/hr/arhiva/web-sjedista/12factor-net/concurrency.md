@@ -2,7 +2,7 @@
 author: Adam Wiggins
 ---
 
-!!! note
+!!! info
     Sadržaj u nastavku je prijevod stranice [VIII. Concurrency](https://12factor.net/concurrency) na web sjedištu [The Twelve-Factor App](https://12factor.net/).
 
 ## VIII. Konkurentnost
