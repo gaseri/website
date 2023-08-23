@@ -12,7 +12,7 @@ author: Vedran Miletić
 
 Social profiles:
 
-- [Twitter](https://twitter.com/mateaturalija)
+- [Professional website (GitHub Pages)](https://mateaturalija.github.io/)
 - [ORCID](https://orcid.org/0000-0002-0109-1245)
 - [Google Scholar](https://scholar.google.com/citations?user=C03KugcAAAAJ)
 - [GitHub](https://github.com/MateaTuralija)
