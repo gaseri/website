@@ -567,6 +567,7 @@ plugins:
       blog_toc: true
       post_url_date_format: yyyy-MM-dd
       post_url_format: "{date}-{slug}"
+      categories: false
   - search
   - social
   - tags:
