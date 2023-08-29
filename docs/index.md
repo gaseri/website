@@ -22,3 +22,4 @@ hide:
 
 - [Code optimization](en/teaching/courses/CO.md)
 - [GROMACS tutorials](en/tutorials/gromacs/index.md)
+- [Latest blog posts](en/blog/index.md)

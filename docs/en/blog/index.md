@@ -1,1 +1,1 @@
-# Latest posts
+# Latest blog posts
