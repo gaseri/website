@@ -1264,6 +1264,21 @@ Commits listed from [repository on GitHub](https://github.com/Python-Markdown/ma
     ??? note
         Testing an element's truth value will raise an exception in future versions.
 
+### RadeonTop
+
+Description: [home page](https://github.com/clbr/radeontop).
+
+Commits listed from [repository on GitHub](https://github.com/clbr/radeontop):
+
+- commit [`7b0fdb35f57936def4e215fcc672d66c631f1935`](https://github.com/clbr/radeontop/commit/7b0fdb35f57936def4e215fcc672d66c631f1935): Print "amdgpu not enabled" warning just once
+
+    ??? note
+        If printed in the getvram() function, it will appear in the main screen
+        and overlap with other elements, which is undesirable.
+
+- commit [`f202e366535c55bf857bc7310d34cda93d6139f9`](https://github.com/clbr/radeontop/commit/f202e366535c55bf857bc7310d34cda93d6139f9): Add support for VRAM size and usage reporting on amdgpu
+- commit [`f84fa2b759595297dd0cff0fc2b438e9d5345818`](https://github.com/clbr/radeontop/commit/f84fa2b759595297dd0cff0fc2b438e9d5345818): Add support for Polaris 11 and Polaris 10
+
 ### RDKit
 
 Description: [home page](https://www.rdkit.org/), [Wikipedia page](https://en.wikipedia.org/wiki/RDKit).
