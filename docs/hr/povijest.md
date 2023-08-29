@@ -10,7 +10,7 @@ author: Vedran Miletić
 
 U travnju 2008. godine, usporedno s osnivanjem [Odjela za informatiku](https://www.inf.uniri.hr/), predviđeno je uspostavljanje četiri laboratorija, među njima i **Laboratorija za računalne mreže** kao ustrojbene jedinice na **Katedri za mrežne sustave** koja je oformljena na **Zavodu za komunikacijske sustave**. Za voditelja Laboratorija predviđen je asistent Igor Jugo.
 
-Godinu dana kasnije na Odjelu je zaposlen Vedran Miletić na mjestu asistenta s namjerom da preuzme nastavu vježbi iz kolegija [Računalne mreže 1](nastava/kolegiji/RM1.md) i [Računalne mreže 2](nastava/kolegiji/RM2.md), a time i vodstvo Laboratorija namijenjenog za izvođenje laboratorijskih vježbi i brigu o unaprjeđenju praktične nastavne djelatnosti iz tih predmeta.
+Godinu dana kasnije na Odjelu je zaposlen [Vedran](https://vedran.miletic.net/) [Miletić](https://www.miletic.net/) na mjestu asistenta s namjerom da preuzme nastavu vježbi iz kolegija [Računalne mreže 1](nastava/kolegiji/RM1.md) i [Računalne mreže 2](nastava/kolegiji/RM2.md), a time i vodstvo Laboratorija namijenjenog za izvođenje laboratorijskih vježbi i brigu o unaprjeđenju praktične nastavne djelatnosti iz tih predmeta.
 
 ### Laboratorij za računalne mreže, paralelizaciju i simulaciju
 

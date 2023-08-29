@@ -314,9 +314,9 @@ Ako koristite PWNS u svom radu, molimo vas da citirate barem radove \[4\] i \[5\
 
 **Trajanje projekta:** 06. 02. 2012. -- 29. 06. 2012.
 
-**Voditelj projekta:** prof. dr. sc. Mario Radovan
+**Voditelj projekta:** prof. dr. sc. [Mario Radovan](https://fidit-rijeka.github.io/mario-radovan/)
 
-**Izvoditelji projekta:** Vedran Miletić (administracija wiki sustava MoinMoin, priprema uputa za instalaciju programske podrške za studente, rad na pripremama i zadacima za laboratorijske vježbe, priprema riješenih primjera za studente, priprema predloška za studentske seminarske radove), Ivan Ivakić (rad na zadacima za laboratorijske vježbe, priprema riješenih primjera za studente), Domagoj Margan (rad na zadacima za laboratorijske vježbe koji uključuju primjenu znanja vježbi iz kolegija Operacijski sustavi 1 i Operacijski sustavi 2)
+**Izvoditelji projekta:** [Vedran](https://vedran.miletic.net/) [Miletić](https://www.miletic.net/) (administracija wiki sustava MoinMoin, priprema uputa za instalaciju programske podrške za studente, rad na pripremama i zadacima za laboratorijske vježbe, priprema riješenih primjera za studente, priprema predloška za studentske seminarske radove), Ivan Ivakić (rad na zadacima za laboratorijske vježbe, priprema riješenih primjera za studente), Domagoj Margan (rad na zadacima za laboratorijske vježbe koji uključuju primjenu znanja vježbi iz kolegija Operacijski sustavi 1 i Operacijski sustavi 2)
 
 ### Ciljevi koji se postižu projektom
 

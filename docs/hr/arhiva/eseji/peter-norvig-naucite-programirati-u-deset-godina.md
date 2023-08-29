@@ -4,7 +4,7 @@ author: Peter Norvig
 
 # Naučite programirati u deset godina
 
-U nastavku je prijevod Tvrtka Bedekovića eseja [Teach Yourself Programming in Ten Years](https://norvig.com/21-days.html) autora [Petera Norviga](https://norvig.com/). Pravopisne i stilske popravke prijevoda izveo je dr. sc. Vedran Miletić.
+U nastavku je prijevod Tvrtka Bedekovića eseja [Teach Yourself Programming in Ten Years](https://norvig.com/21-days.html) autora [Petera Norviga](https://norvig.com/). Pravopisne i stilske popravke prijevoda izveo je [dr. sc. Vedran](https://vedran.miletic.net/) [Miletić](https://www.miletic.net/).
 
 ## Zašto se svi toliko žure?
 
