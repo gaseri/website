@@ -1,6 +1,6 @@
 # 😎 Group for apps and services on exascale research infrastructure (GASERI) website
 
-The group is interested in scientific software development, high-performance computers, cloud computing, and the use of free open-source software in the development of applications and services for supercomputers and cloud platforms, specifically in the application of exascale computing to solve problems in computational biochemistry and related fields. Visit [the group website](https://gaseri.org/en/) for more information.
+The group is interested in scientific software development, high-performance computers, cloud computing, and the use of free open-source software in the development of applications and services for supercomputers and cloud platforms, specifically in the application of exascale computing to solve problems in computational biochemistry and related fields. Visit [the group website](https://group.miletic.net/en/) for more information.
 
 ## License
 
@@ -70,7 +70,7 @@ To publish the changes, push them to GitHub:
 $ git push
 ```
 
-Wait a few minutes until [GitHub Pages](https://pages.github.com/) finishes building the new site, including the changes you just pushed. Visit [gaseri.org](https://gaseri.org/) to make sure that your changes are visible.
+Wait a few minutes until [GitHub Pages](https://pages.github.com/) finishes building the new site, including the changes you just pushed. Visit [group.miletic.net](https://group.miletic.net/) to make sure that your changes are visible.
 
 **Note:** The official MkDocs approach, which we *don't* use, is to push the built contents to GitHub using the [MkDocs's GitHub deploy command](https://www.mkdocs.org/user-guide/deploying-your-docs/) (`mkdocs gh-deploy`).
 

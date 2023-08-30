@@ -201,7 +201,7 @@ abstract: |
 ## How to play with the code
 
 - For non-developers: [vedran.miletic.net/#contact](https://vedran.miletic.net/#contact)
-    - **G**roup for **A**pplications and **S**ervices on **E**xascale **R**esearch **I**nfrastructure (GASERI, 😎): [gaseri.org](../../index.md)
+    - **G**roup for **A**pplications and **S**ervices on **E**xascale **R**esearch **I**nfrastructure (GASERI, 😎): [group.miletic.net](../../index.md)
 - For developers: official GROMACS code repository on Git**Lab**: [gitlab.com/gromacs/gromacs](https://gitlab.com/gromacs/gromacs)
     - Check`vm-weight-factor-expression` branch
 
