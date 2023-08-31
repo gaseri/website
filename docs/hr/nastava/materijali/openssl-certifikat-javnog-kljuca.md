@@ -382,145 +382,422 @@ Nakon spajanja mougće je unositi naredbe. Konkretno, ukoliko smo ostvarili HTTP
 
 Za primjer se možemo spojiti na HTTPS poslužitelj na domeni `example.group.miletic.net` naredbom:
 
-```
+``` shell
 $ openssl s_client -connect example.group.miletic.net:443
 CONNECTED(00000003)
-depth=2 O = Digital Signature Trust Co., CN = DST Root CA X3
+depth=2 C = US, O = Internet Security Research Group, CN = ISRG Root X1
 verify return:1
-depth=1 C = US, O = Let's Encrypt, CN = Let's Encrypt Authority X3
+depth=1 C = US, O = Let's Encrypt, CN = R3
 verify return:1
-depth=0 CN = miletic.net
+depth=0 CN = example.group.miletic.net
 verify return:1
 ---
 Certificate chain
-0 s:CN = miletic.net
-  i:C = US, O = Let's Encrypt, CN = Let's Encrypt Authority X3
-1 s:C = US, O = Let's Encrypt, CN = Let's Encrypt Authority X3
-  i:O = Digital Signature Trust Co., CN = DST Root CA X3
+ 0 s:CN = example.group.miletic.net
+   i:C = US, O = Let's Encrypt, CN = R3
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Aug  9 18:27:00 2023 GMT; NotAfter: Nov  7 18:26:59 2023 GMT
+ 1 s:C = US, O = Let's Encrypt, CN = R3
+   i:C = US, O = Internet Security Research Group, CN = ISRG Root X1
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Sep  4 00:00:00 2020 GMT; NotAfter: Sep 15 16:00:00 2025 GMT
+ 2 s:C = US, O = Internet Security Research Group, CN = ISRG Root X1
+   i:O = Digital Signature Trust Co., CN = DST Root CA X3
+   a:PKEY: rsaEncryption, 4096 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Jan 20 19:14:03 2021 GMT; NotAfter: Sep 30 18:14:03 2024 GMT
 ---
 Server certificate
 -----BEGIN CERTIFICATE-----
-MIIGNDCCBRygAwIBAgISA97SuFP8MdJDGngVxAaK1xqTMA0GCSqGSIb3DQEBCwUA
-MEoxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MSMwIQYDVQQD
-ExpMZXQncyBFbmNyeXB0IEF1dGhvcml0eSBYMzAeFw0xOTA1MjAxMDA2NTRaFw0x
-OTA4MTgxMDA2NTRaMBYxFDASBgNVBAMTC21pbGV0aWMubmV0MIIBIjANBgkqhkiG
-(...)
+MIIE/zCCA+egAwIBAgISBCZ5mZelKNKW6GBmJBs+iAZUMA0GCSqGSIb3DQEBCwUA
+MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD
+EwJSMzAeFw0yMzA4MDkxODI3MDBaFw0yMzExMDcxODI2NTlaMCQxIjAgBgNVBAMT
+GWV4YW1wbGUuZ3JvdXAubWlsZXRpYy5uZXQwggEiMA0GCSqGSIb3DQEBAQUAA4IB
+DwAwggEKAoIBAQCrxxsM7cYB+Oqps88IF0+iy3w0xGYS5u/zmBd5yWXuZkwfmpJ9
+M+4H+i4VYve08x/VTy6xZ6hJQr/jzJq3MEbCaPUoqWRpb0xLZCTJ3O1Gn6Qfwu9v
+NtC8aSe44tYYcEAstPXuj/cNjG4Dkudd1j68u8lbKBCgWvY39eGeFSNybo5pAQmk
+jKTJ19sFAZBIS5AgjDh6CmB0eRgmMI5gCxe5JKCA3z8UANMJ5zRHNWN8VNKgneFX
+0csT0zwwJJeO6jQAn8xsDGr3VLxeYNxGMcIJ3tnD42MejxzFkJDo2oa+ffHDHxqG
+aZsL4LIMRwjIklkrZi/6oTihLxBl9pf9FoczAgMBAAGjggIbMIICFzAOBgNVHQ8B
+Af8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB
+/wQCMAAwHQYDVR0OBBYEFGNOFYVWWqSUAsIWQqSll5o4AleXMB8GA1UdIwQYMBaA
+FBQusxe3WFbLrlAJQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcw
+AYYVaHR0cDovL3IzLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMu
+aS5sZW5jci5vcmcvMCQGA1UdEQQdMBuCGWV4YW1wbGUuZ3JvdXAubWlsZXRpYy5u
+ZXQwEwYDVR0gBAwwCjAIBgZngQwBAgEwggEEBgorBgEEAdZ5AgQCBIH1BIHyAPAA
+dgC3Pvsk35xNunXyOcW6WPRsXfxCz3qfNcSeHQmBJe20mQAAAYnbxEZ7AAAEAwBH
+MEUCIFFral5b+gCOTXd1Y4Rvjrpc8NKEv0GqinCR/Ky9J1BtAiEAlpHsePglrJbk
+DSKdQW2gvKA4uu45xL7rl5AQQ/kNKMgAdgDoPtDaPvUGNTLnVyi8iWvJA9PL0RFr
+7Otp4Xd9bQa9bgAAAYnbxEaDAAAEAwBHMEUCIG9KQZhLaBQQPvnqOAn8KUDOVurK
+VptEEP69j4v++jRMAiEAtGuFVOkbIa+0nVmGDf5DBeoUyVEi01s8vkxERN+eQWYw
+DQYJKoZIhvcNAQELBQADggEBAEntYka/0HRu3YVgFWseOrq/sNkjyE+kSJdCUStA
+h8SsqVuMz3/hj1FZk0d8tprfGCLR23s/3Jyo/qIEOl7XFl0wTrjQTyNl1jjJVe2+
+HY14QIQNhXH9TZrB7tYogAtcAyC7mkhUaMLLSEM6JO96RYCYow2vqqQiBU2jSW8n
+PcUrQx8lc2jXbkWboOc8IVXMvsTlThVl5YaKZXXcFrZHWNHZt1QosvUtcsKaxNOs
+WmtBuCf5MEEjSbFbwmbcUtHEfpd6mtlYsiUFrTf7L0K303SDwfS+tBUOqf8S7g4q
+RbXbf3Ky1FjEiz8aodnKRTO0AXsLbBTIsK/HrL8XjyRDQ24=
 -----END CERTIFICATE-----
-subject=CN = miletic.net
-
-issuer=C = US, O = Let's Encrypt, CN = Let's Encrypt Authority X3
-
+subject=CN = example.group.miletic.net
+issuer=C = US, O = Let's Encrypt, CN = R3
 ---
 No client certificate CA names sent
 Peer signing digest: SHA256
-Peer signature type: RSA
-Server Temp Key: ECDH, P-256, 256 bits
+Peer signature type: RSA-PSS
+Server Temp Key: X25519, 253 bits
 ---
-SSL handshake has read 3475 bytes and written 433 bytes
+SSL handshake has read 4539 bytes and written 407 bytes
 Verification: OK
 ---
-New, TLSv1.2, Cipher is ECDHE-RSA-AES256-GCM-SHA384
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
 Server public key is 2048 bit
-Secure Renegotiation IS supported
+This TLS version forbids renegotiation.
 Compression: NONE
 Expansion: NONE
 No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+---
+Post-Handshake New Session Ticket arrived:
 SSL-Session:
-    Protocol  : TLSv1.2
-    Cipher    : ECDHE-RSA-AES256-GCM-SHA384
-    Session-ID: F1D513CE8C25CE7B6055A68FBB67A71D3F2A37CFCBEAEAA2AC3054A91A0E6048
-    Session-ID-ctx:
-    Master-Key: 9991DF56B54564C72EEAE4F08B40146BC5CDCDB06A3F7CB1EA92588D3E829EC82005DE618DD9587942FB1CDC80176D69
+    Protocol  : TLSv1.3
+    Cipher    : TLS_AES_256_GCM_SHA384
+    Session-ID: 6726B67429BF086E4CCCF142D43FDBB9AAD525103AB8F55223E7721D0274F5EF
+    Session-ID-ctx: 
+    Resumption PSK: AA9E603E57C8F56EEFFE4797A64416B2E197D5BAF52F9232626EEEA0845650AD591AD1DE3C2D5CC07944BDB57A2426CD
     PSK identity: None
     PSK identity hint: None
     SRP username: None
-    TLS session ticket lifetime hint: 300 (seconds)
+    TLS session ticket lifetime hint: 7200 (seconds)
     TLS session ticket:
-    0000 - 5c 0a a8 4c c2 06 86 83-3b b5 83 10 4e 09 47 ea   \..L....;...N.G.
-    0010 - 31 ef da dd 9a f9 9e f5-35 a2 69 a4 64 dc 3d cd   1.......5.i.d.=.
-    0020 - 69 4d 7f 32 b8 59 18 37-57 3f ad 29 68 5e 5f 4c   iM.2.Y.7W?.)h^_L
-    0030 - b1 49 ef 4e 77 c2 b0 3a-94 5c e0 bd 60 2c d8 99   .I.Nw..:.\..`,..
-    0040 - 5c d3 92 ee 66 d5 07 68-0a eb 8e e2 e0 7b 63 fe   \...f..h.....{c.
-    0050 - 32 6f 1d b2 9e 0d b1 a3-31 d2 df 07 07 b7 33 fb   2o......1.....3.
-    0060 - 75 50 a7 31 b8 ba 27 ad-24 ae 29 4b 17 8f 91 37   uP.1..'.$.)K...7
-    0070 - c4 2b 3b e4 9b 6b c8 f1-75 c9 db 5a 52 f1 7f 4b   .+;..k..u..ZR..K
-    0080 - e3 6c 87 97 37 95 ca 4b-ca c4 ef cb 9b 00 dd b4   .l..7..K........
-    0090 - 50 b3 c4 a7 14 25 cc e8-0c 69 77 2e 1a ce 0a a0   P....%...iw.....
-    00a0 - 05 7d fe 0e fd 77 65 46-68 06 40 07 d0 cf 4e f4   .}...weFh.@...N.
-    00b0 - 19 58 86 37 09 f8 45 76-38 40 70 6b e8 16 83 ef   .X.7..Ev8@pk....
-    00c0 - 19 c2 8f c3 44 9f c9 df-19 6b 3f 87 4d 5e 24 ed   ....D....k?.M^$.
+    0000 - 1a ae af 52 1f 73 d0 63-c9 a6 bc 38 5a 25 c1 f3   ...R.s.c...8Z%..
+    0010 - e3 9d 0e 6a f0 29 0a e5-f6 87 b9 8b 44 00 e0 0c   ...j.)......D...
+    0020 - 36 39 e3 82 f2 73 72 cb-02 88 e8 e6 30 f2 31 6d   69...sr.....0.1m
+    0030 - 72 1e f5 0c 9b 19 53 0a-3e cc 3f 4b c2 1e 20 b5   r.....S.>.?K.. .
+    0040 - 47 c5 64 3c 4e 88 68 c9-46 5e 01 6a 66 ef 51 31   G.d<N.h.F^.jf.Q1
+    0050 - 3f e6 63 2c cf c3 c2 8c-7f 36 ba 3d e9 0b 1b fa   ?.c,.....6.=....
+    0060 - 1e bd ff ad 5d 54 ea 96-dc 5d 3d b3 75 82 68 37   ....]T...]=.u.h7
+    0070 - 77 45 1e 46 98 12 c6 c9-0a 2f 7c 94 24 8a 87 94   wE.F...../|.$...
+    0080 - d3 90 1f c3 88 e8 b5 8a-12 f0 9b f5 61 bb 24 46   ............a.$F
+    0090 - 2c f5 dc ed 76 05 e6 9a-e3 8f db 92 0e 9d 73 c4   ,...v.........s.
+    00a0 - 09 17 2d b1 c5 23 00 ba-10 56 78 bc e1 a1 8d 72   ..-..#...Vx....r
+    00b0 - 0a 2a ff 1e 73 0c a9 a3-fd d5 70 b6 78 84 fe 39   .*..s.....p.x..9
+    00c0 - 11 d9 07 39 ae 91 5c ad-c1 e4 54 96 64 78 40 65   ...9..\...T.dx@e
+    00d0 - 99 f2 94 0d be 9c 38 0a-e3 ad e0 5c 45 2d e5 76   ......8....\E-.v
+    00e0 - ae 37 52 f7 f1 8f e5 db-39 35 13 8d a9 db 9a a0   .7R.....95......
 
-    Start Time: 1560016165
+    Start Time: 1693473818
     Timeout   : 7200 (sec)
     Verify return code: 0 (ok)
     Extended master secret: no
+    Max Early Data: 0
 ---
+read R BLOCK
+---
+Post-Handshake New Session Ticket arrived:
+SSL-Session:
+    Protocol  : TLSv1.3
+    Cipher    : TLS_AES_256_GCM_SHA384
+    Session-ID: E3B857CB3885A36593984AB113FC661355E70959DD1A97BAFFE81FAF60BB7520
+    Session-ID-ctx: 
+    Resumption PSK: 7DC9FB1027C19A3D19A9FCAD0A47D4B5DCE6275FE2F88F30CE69136197AD7240E7F82A513B04C6BF6E09C68A65101D58
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 7200 (seconds)
+    TLS session ticket:
+    0000 - 1a ae af 52 1f 73 d0 63-c9 a6 bc 38 5a 25 c1 f3   ...R.s.c...8Z%..
+    0010 - 4c 0c 5c dd b9 a8 5d 46-fc aa c7 c2 5b cc 9e 44   L.\...]F....[..D
+    0020 - 93 6c f7 b3 c2 75 32 c7-c5 66 1f ce cc d4 03 d5   .l...u2..f......
+    0030 - 37 69 e6 cd d5 69 4c 9f-38 04 3d 1b b6 1c 3f 22   7i...iL.8.=...?"
+    0040 - 4f 59 ef de 65 99 a2 c3-dc 40 1a 0e ce 5a 9b e9   OY..e....@...Z..
+    0050 - 21 80 27 6a c4 3e 39 8b-f0 72 5b c7 42 04 e4 ef   !.'j.>9..r[.B...
+    0060 - 88 39 9e cd 04 a7 59 5a-83 68 d8 f1 ef b2 f1 a0   .9....YZ.h......
+    0070 - ca e0 f2 1b 60 20 b7 c3-9e b4 29 3f 51 57 05 c2   ....` ....)?QW..
+    0080 - 5c f1 8b 72 85 d2 d9 cd-1a 4e 25 1b c1 9c 42 22   \..r.....N%...B"
+    0090 - 89 c8 bd 37 ea ba bb 78-00 dd cb 3b 3a aa fe 93   ...7...x...;:...
+    00a0 - bf a6 f0 9c a6 e2 57 8e-4b 42 a8 2d ae fc bd e0   ......W.KB.-....
+    00b0 - 21 7c f0 42 9c 55 5c 9e-14 b9 97 10 6d 89 0a 6c   !|.B.U\.....m..l
+    00c0 - e6 f4 be 57 bb 6f 9a 46-e6 b2 50 b9 ef 6a 68 bd   ...W.o.F..P..jh.
+    00d0 - 9e 6a e3 e3 f1 df 69 54-10 59 d0 94 ba d6 bf 21   .j....iT.Y.....!
+    00e0 - 66 29 7c d4 0b f3 23 ac-e3 af e8 8f 46 89 67 72   f)|...#.....F.gr
+
+    Start Time: 1693473818
+    Timeout   : 7200 (sec)
+    Verify return code: 0 (ok)
+    Extended master secret: no
+    Max Early Data: 0
+---
+read R BLOCK
 ```
 
-Ovdje možemo primijetiti brojne informacije. Odmah na početku vidimo podatke o certifikatu (`CN = miletic.net`) i pripadnom lancu izdavatelja certifikata (`CN = Let's Encrypt Authority X3` i `CN = DST Root CA X3`). Navedeni su algoritmi koji se koriste za potpis hashiranog sadržaja (`SHA256`, `RSA`), broj bajtova koje poslanih i primljenih kod ostvarivanja veze (`3475` i `433`) i certifikat je označen kao valjan (`Verification: OK`). Slijede podaci o korištenoj verziji TLS-a/SSL-a (`TLSv1.2`), kombinaciji algoritama za šifriranje koja se koristi (`ECDHE-RSA-AES256-GCM-SHA384`), duljini ključa poslužitelja (`2048 bit`), kompresiji, [TLS ekstenziji Application-Layer Protocol Negotiation (ALPN)](https://www.keycdn.com/support/alpn) i drugim značajkama ostvarene veze. Na ovaj način opciju `s_client` možemo koristiti pri dijagnosticiranju problema sigurnih poslužitelja jer pokazuje brojne podatke koje ne vidimo kod normalnog korištenja web preglednika ili klijenata za elektroničku poštu.
+Prekid veze možemo izvesti kombinacijom tipki ++control+c++.
+
+Ovdje možemo primijetiti brojne informacije. Odmah na početku vidimo podatke o lancu izdavatelja certifikata (na dubini 0 `depth=0 CN = example.group.miletic.net`, na dubini 1 `depth=1 C = US, O = Let's Encrypt, CN = R3` i na dubini 2 `depth=2 C = US, O = Internet Security Research Group, CN = ISRG Root X1`). Svi certifikati su uspješno prošli provjeru valjanosti(`verify=1`).
+
+Zatim je ispisan certifikat poslužitelja (koji je u lancu na dubini 0) u formatu PEM (`-----BEGIN CERTIFICATE----- (...) -----END CERTIFICATE-----`) i podaci o subjektu (`subject=CN = example.group.miletic.net`) i izdavaču (`issuer=C = US, O = Let's Encrypt, CN = R3`).
+
+Navedeni su algoritmi koji se koriste za potpis hashiranog sadržaja (`SHA256`, `RSA-PSS`), broj bajtova koje poslanih i primljenih kod ostvarivanja veze (`4539` i `407`) i certifikat je označen kao valjan (`Verification: OK`).
+
+Slijede podaci o korištenoj verziji TLS-a/SSL-a (`TLSv1.3`), kombinaciji algoritama za šifriranje koja se koristi (`TLS_AES_256_GCM_SHA384`), duljini ključa poslužitelja (`2048 bit`), kompresiji, [TLS ekstenziji Application-Layer Protocol Negotiation (ALPN)](https://www.keycdn.com/support/alpn) i drugim značajkama ostvarene veze. Na ovaj način opciju `s_client` možemo koristiti pri dijagnosticiranju problema sigurnih poslužitelja jer pokazuje brojne podatke koje ne vidimo kod normalnog korištenja web preglednika ili klijenata za elektroničku poštu.
+
+Više o opciji `s_client` i parametrima koje prima moguće je naći u pripadnoj stranici priručnika `s_client(1ssl)`.
+
+Informacije iz certifikata moguće je ispisati korištenjem već ranije spomenute naredbe `openssl x509` i parametra `-text`:
+
+``` shell
+$ openssl s_client -connect example.group.miletic.net:443 | openssl x509 -noout -text
+depth=2 C = US, O = Internet Security Research Group, CN = ISRG Root X1
+verify return:1
+depth=1 C = US, O = Let's Encrypt, CN = R3
+verify return:1
+depth=0 CN = example.group.miletic.net
+verify return:1
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            04:26:79:99:97:a5:28:d2:96:e8:60:66:24:1b:3e:88:06:54
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = US, O = Let's Encrypt, CN = R3
+        Validity
+            Not Before: Aug  9 18:27:00 2023 GMT
+            Not After : Nov  7 18:26:59 2023 GMT
+        Subject: CN = example.group.miletic.net
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:ab:c7:1b:0c:ed:c6:01:f8:ea:a9:b3:cf:08:17:
+                    4f:a2:cb:7c:34:c4:66:12:e6:ef:f3:98:17:79:c9:
+                    65:ee:66:4c:1f:9a:92:7d:33:ee:07:fa:2e:15:62:
+                    f7:b4:f3:1f:d5:4f:2e:b1:67:a8:49:42:bf:e3:cc:
+                    9a:b7:30:46:c2:68:f5:28:a9:64:69:6f:4c:4b:64:
+                    24:c9:dc:ed:46:9f:a4:1f:c2:ef:6f:36:d0:bc:69:
+                    27:b8:e2:d6:18:70:40:2c:b4:f5:ee:8f:f7:0d:8c:
+                    6e:03:92:e7:5d:d6:3e:bc:bb:c9:5b:28:10:a0:5a:
+                    f6:37:f5:e1:9e:15:23:72:6e:8e:69:01:09:a4:8c:
+                    a4:c9:d7:db:05:01:90:48:4b:90:20:8c:38:7a:0a:
+                    60:74:79:18:26:30:8e:60:0b:17:b9:24:a0:80:df:
+                    3f:14:00:d3:09:e7:34:47:35:63:7c:54:d2:a0:9d:
+                    e1:57:d1:cb:13:d3:3c:30:24:97:8e:ea:34:00:9f:
+                    cc:6c:0c:6a:f7:54:bc:5e:60:dc:46:31:c2:09:de:
+                    d9:c3:e3:63:1e:8f:1c:c5:90:90:e8:da:86:be:7d:
+                    f1:c3:1f:1a:86:69:9b:0b:e0:b2:0c:47:08:c8:92:
+                    59:2b:66:2f:fa:a1:38:a1:2f:10:65:f6:97:fd:16:
+                    87:33
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                63:4E:15:85:56:5A:A4:94:02:C2:16:42:A4:A5:97:9A:38:02:57:97
+            X509v3 Authority Key Identifier: 
+                14:2E:B3:17:B7:58:56:CB:AE:50:09:40:E6:1F:AF:9D:8B:14:C2:C6
+            Authority Information Access: 
+                OCSP - URI:http://r3.o.lencr.org
+                CA Issuers - URI:http://r3.i.lencr.org/
+            X509v3 Subject Alternative Name: 
+                DNS:example.group.miletic.net
+            X509v3 Certificate Policies: 
+                Policy: 2.23.140.1.2.1
+            CT Precertificate SCTs: 
+                Signed Certificate Timestamp:
+                    Version   : v1 (0x0)
+                    Log ID    : B7:3E:FB:24:DF:9C:4D:BA:75:F2:39:C5:BA:58:F4:6C:
+                                5D:FC:42:CF:7A:9F:35:C4:9E:1D:09:81:25:ED:B4:99
+                    Timestamp : Aug  9 19:27:00.731 2023 GMT
+                    Extensions: none
+                    Signature : ecdsa-with-SHA256
+                                30:45:02:20:51:6B:6A:5E:5B:FA:00:8E:4D:77:75:63:
+                                84:6F:8E:BA:5C:F0:D2:84:BF:41:AA:8A:70:91:FC:AC:
+                                BD:27:50:6D:02:21:00:96:91:EC:78:F8:25:AC:96:E4:
+                                0D:22:9D:41:6D:A0:BC:A0:38:BA:EE:39:C4:BE:EB:97:
+                                90:10:43:F9:0D:28:C8
+                Signed Certificate Timestamp:
+                    Version   : v1 (0x0)
+                    Log ID    : E8:3E:D0:DA:3E:F5:06:35:32:E7:57:28:BC:89:6B:C9:
+                                03:D3:CB:D1:11:6B:EC:EB:69:E1:77:7D:6D:06:BD:6E
+                    Timestamp : Aug  9 19:27:00.739 2023 GMT
+                    Extensions: none
+                    Signature : ecdsa-with-SHA256
+                                30:45:02:20:6F:4A:41:98:4B:68:14:10:3E:F9:EA:38:
+                                09:FC:29:40:CE:56:EA:CA:56:9B:44:10:FE:BD:8F:8B:
+                                FE:FA:34:4C:02:21:00:B4:6B:85:54:E9:1B:21:AF:B4:
+                                9D:59:86:0D:FE:43:05:EA:14:C9:51:22:D3:5B:3C:BE:
+                                4C:44:44:DF:9E:41:66
+    Signature Algorithm: sha256WithRSAEncryption
+    Signature Value:
+        49:ed:62:46:bf:d0:74:6e:dd:85:60:15:6b:1e:3a:ba:bf:b0:
+        d9:23:c8:4f:a4:48:97:42:51:2b:40:87:c4:ac:a9:5b:8c:cf:
+        7f:e1:8f:51:59:93:47:7c:b6:9a:df:18:22:d1:db:7b:3f:dc:
+        9c:a8:fe:a2:04:3a:5e:d7:16:5d:30:4e:b8:d0:4f:23:65:d6:
+        38:c9:55:ed:be:1d:8d:78:40:84:0d:85:71:fd:4d:9a:c1:ee:
+        d6:28:80:0b:5c:03:20:bb:9a:48:54:68:c2:cb:48:43:3a:24:
+        ef:7a:45:80:98:a3:0d:af:aa:a4:22:05:4d:a3:49:6f:27:3d:
+        c5:2b:43:1f:25:73:68:d7:6e:45:9b:a0:e7:3c:21:55:cc:be:
+        c4:e5:4e:15:65:e5:86:8a:65:75:dc:16:b6:47:58:d1:d9:b7:
+        54:28:b2:f5:2d:72:c2:9a:c4:d3:ac:5a:6b:41:b8:27:f9:30:
+        41:23:49:b1:5b:c2:66:dc:52:d1:c4:7e:97:7a:9a:d9:58:b2:
+        25:05:ad:37:fb:2f:42:b7:d3:74:83:c1:f4:be:b4:15:0e:a9:
+        ff:12:ee:0e:2a:45:b5:db:7f:72:b2:d4:58:c4:8b:3f:1a:a1:
+        d9:ca:45:33:b4:01:7b:0b:6c:14:c8:b0:af:c7:ac:bf:17:8f:
+        24:43:43:6e
+```
+
+Parametrom `-noout` izbjegava se dodatno ispisivanje certifikata u formatu PEM.
 
 #### Server Name Indication
 
 [Server Name Indication](https://en.wikipedia.org/wiki/Server_Name_Indication) (SNI) je proširenje TLS-a kojim klijent navodi u procesu rukovanja ime poslužitelja na koji se povezuje, što dozvoljava da na jednoj IP adresi postoji više od jednog HTTPS poslužitelja. Kako gotovo sve novije implementacije TLS-a podržavaju SNI, njegova [uporaba je u porastu posljednjih godina](https://developer.akamai.com/blog/2017/10/20/encrypting-web-all-need-support-tls-sni-remaining-clients).
 
-Na istom poslužitelju na kojem je `example.group.miletic.net` su i [usluge i aplikacije koje je grupa razvila](https://apps.group.miletic.net/) `apps.group.miletic.net`. Iskoristimo parametar `-servername` da navedemo ime poslužitelja na koji se povezujemo:
+Iskoristimo parametar `-servername` da navedemo ime poslužitelja na koji se povezujemo. Za ilustraciju, usporedimo rezultat povezivanja na poslužitelj `mileticnet.github.io` bez navođenja parametra `-servername` s rezultatima izvođenja kad su navedene vrijednosti tog parametra `vedran.miletic.net`, odnosno `www.miletic.net`:
 
 ``` shell
-$ openssl s_client -connect example.group.miletic.net:443 -servername apps.group.miletic.net
-CONNECTED(00000003)
-depth=2 O = Digital Signature Trust Co., CN = DST Root CA X3
+$ openssl s_client -connect mileticnet.github.io:443
+CONNECTED(00000004)
+depth=2 C = US, O = DigiCert Inc, OU = www.digicert.com, CN = DigiCert Global Root CA
 verify return:1
-depth=1 C = US, O = Let's Encrypt, CN = R3
+depth=1 C = US, O = DigiCert Inc, CN = DigiCert TLS RSA SHA256 2020 CA1
 verify return:1
-depth=0 CN = apps.group.miletic.net
+depth=0 C = US, ST = California, L = San Francisco, O = "GitHub, Inc.", CN = *.github.io
 verify return:1
----
-Certificate chain
- 0 s:CN = apps.group.miletic.net
-   i:C = US, O = Let's Encrypt, CN = R3
- 1 s:C = US, O = Let's Encrypt, CN = R3
-   i:O = Digital Signature Trust Co., CN = DST Root CA X3
----
-Server certificate
------BEGIN CERTIFICATE-----
-MIIFKzCCBBOgAwIBAgISA8luzKRXoYhXtGaHLyfJn6byMA0GCSqGSIb3DQEBCwUA
-MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD
-EwJSMzAeFw0yMTAzMDkxMDAxNDRaFw0yMTA2MDcxMDAxNDRaMBUxEzARBgNVBAMT
-CnJ4ZG9jay5vcmcwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDjvGBq
-hsYUlahsp0t14GuW5OGZsqZMRth0CySQJicG++vGrcj7d5R1PGfDSsTHzYeKP1SQ
-w72Bu1bcm7E/oHqWQQbJgFrEtI6mlQ8tMbY9tF1ynE7SSMDzwXl3Ag4dHZoW2RIP
-xOcq//uBlzbw+vkbiggkWBO1012pPoxU13blUuWondjjC/2OUYEde10h6yzv7tno
-g/qI5Xl9uKeOK1LQHDBzeyIqkPlq0vRwTWIRDfACOl/bNVY1qE2MNFwvmYLzH8G2
-pS0n7/aHaYP+b6Ys5daPKR+7SGyFIGw2i5PCHjX0QC8nTKmO1a+MchEAIKSk9tDB
-4jODt+9VX0dvrW1RAgMBAAGjggJWMIICUjAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0l
-BBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYE
-FMV8yV46fxwn3KHu2p7XqfcSds5NMB8GA1UdIwQYMBaAFBQusxe3WFbLrlAJQOYf
-r52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL3IzLm8u
-bGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5jci5vcmcvMCUG
-A1UdEQQeMByCCnJ4ZG9jay5vcmeCDnd3dy5yeGRvY2sub3JnMEwGA1UdIARFMEMw
-CAYGZ4EMAQIBMDcGCysGAQQBgt8TAQEBMCgwJgYIKwYBBQUHAgEWGmh0dHA6Ly9j
-cHMubGV0c2VuY3J5cHQub3JnMIIBBQYKKwYBBAHWeQIEAgSB9gSB8wDxAHcARJRl
-LrDuzq/EQAfYqP4owNrmgr7YyzG1P9MzlrW2gagAAAF4FqZdyQAABAMASDBGAiEA
-5yJnraRlL6AEBfQYxjvTaVYtZHP6cp2WEqduYcC0zhwCIQDkMAqYPN7gQ2yREBD4
-SD0JFNbAH6RmowOhRY6btoH7HQB2APZclC/RdzAiFFQYCDCUVo7jTRMZM7/fDC8g
-C8xO8WTjAAABeBamXbcAAAQDAEcwRQIgR0kFwclJ/36jRMAsLPSxy+ZP1ZVhd5FD
-oWNA/0a6ID8CIQDZbHmc3qLlV+eNaFDLd/w0LsEfctDYyootev7ZyOYmdzANBgkq
-hkiG9w0BAQsFAAOCAQEAgzflds7We2BJvgRzX+gIguTbkxeFe0qqpoE4kxAMwqXu
-aKvIhHOGdjmAdIWBEsUxO5fkRn0FZx13UFtio9jJGWgynHCh9X/aZOZ6r69tIlJA
-vG/6ZVr+XZv60D4NgQWMDrHKbwG8RMsnX0BiQ3Eo0JjDcqn8gLS47cG720gmCAfH
-n2ufgLXWBUg2m4e4cjN7tPdZqlQdR8KKV/ssiUbDj8L/yOuxkjm8NYBMRUOKrMN5
-f4dnt69CcpNmTTcw6qENs3mcz5IYmVoB4PRD2DBQ0swsPIxcpViaHbcxEgfIIFFU
-xvZop7QEC07dsp1+T5+4WP4EWDHfpiuqxcJHnndjPg==
------END CERTIFICATE-----
-subject=CN = apps.group.miletic.net
-
-issuer=C = US, O = Let's Encrypt, CN = R3
 (...)
 ```
 
-Uočimo kako smo dobili drugi certifikat te je ime domene `example.group.miletic.net` bilo iskorišteno samo za otkrivanje IP adrese na koju će se `s_client` povezati.
+``` shell
+$ openssl s_client -connect mileticnet.github.io:443 -servername www.miletic.net
+CONNECTED(00000004)
+depth=2 C = US, O = Internet Security Research Group, CN = ISRG Root X1
+verify return:1
+depth=1 C = US, O = Let's Encrypt, CN = R3
+verify return:1
+depth=0 CN = www.miletic.net
+verify return:1
+(...)
+```
 
-Više o opciji `s_client` i parametrima koje prima moguće je naći u pripadnoj stranici priručnika `s_client(1ssl)`.
+``` shell
+$ openssl s_client -connect mileticnet.github.io:443 -servername vedran.miletic.net
+CONNECTED(00000004)
+depth=2 C = US, O = Internet Security Research Group, CN = ISRG Root X1
+verify return:1
+depth=1 C = US, O = Let's Encrypt, CN = R3
+verify return:1
+depth=0 CN = vedran.miletic.net
+verify return:1
+(...)
+```
+
+Dodatno se možemo uvjeriti da se radi o različitim certifikatima promatranjem njihovog ispisa u formatu PEM.
+
+Spojili smo se spojili na isti poslužitelj u sva tri slučaja, ali možemo uočiti razlike u vrijednosti zajedničkog imena (`CN =`) na dubini 0, što indicira da smo u svakom od povezivanja dobili različit certifikat. Uočimo kako je u posljednja dva slučaja ime domene `mileticnet.github.io` bilo iskorišteno samo za otkrivanje IP adrese na koju će se `s_client` povezati jer je odgovarajući certifikat zatražen putem vrijednosti navedene u parametru `-servername`; u prvom slučaju je ta vrijednost implicitno jednaka imenu poslužitelja na koji se povezujemo.
+
+Postoje i situacije u kojima više poslužitelja na jednoj adresi ima zajednički certifikat. Primjerice, na jednom od [računala grupe](../../../en/blog/posts/2023-06-23-what-hardware-software-and-cloud-services-do-we-use.md#cloud-services) nalaze se web sjedišta:
+
+- `apps.group.miletic.net`: [aplikacije i usluge](https://apps.group.miletic.net/) koje je grupa razvila i
+- `staging.group.miletic.net`: probna verzija [web sjedišta grupe](../../index.md).
+
+Povežimo se na prvi poslužitelj:
+
+``` shell
+$ openssl s_client -connect apps.group.miletic.net:443
+CONNECTED(00000004)
+depth=2 C = US, O = Internet Security Research Group, CN = ISRG Root X1
+verify return:1
+depth=1 C = US, O = Let's Encrypt, CN = R3
+verify return:1
+depth=0 CN = afrodite.miletic.net
+verify return:1
+(...)
+```
+
+Uočimo da je ovo ekvivalentno dodatnom navođenju parametra `-servername` s vrijednošću `apps.group.miletic.net` jer se ta vrijednost implicitno postavlja iz imena poslužitelja koji smo naveli u parametru `-connect`.
+
+``` shell
+$ openssl s_client -connect apps.group.miletic.net:443 -servername staging.group.miletic.net
+CONNECTED(00000004)
+depth=2 C = US, O = Internet Security Research Group, CN = ISRG Root X1
+verify return:1
+depth=1 C = US, O = Let's Encrypt, CN = R3
+verify return:1
+depth=0 CN = afrodite.miletic.net
+verify return:1
+(...)
+```
+
+Uočimo kako smo dobili certifikat s istom vrijednosti zajedničkog imena na dubini 0. Kako bismo se uvjerili da je navedeni certifikat valjan i za ime domene `apps.group.miletic.net` i za ime domene `staging.group.miletic.net`, iskoristimo ponovno naredbu `openssl x509` na način:
+
+``` shell
+$ openssl s_client -connect apps.group.miletic.net:443 -servername staging.group.miletic.net | openssl x509 -noout -text
+depth=2 C = US, O = Internet Security Research Group, CN = ISRG Root X1
+verify return:1
+depth=1 C = US, O = Let's Encrypt, CN = R3
+verify return:1
+depth=0 CN = afrodite.miletic.net
+verify return:1
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            04:74:e5:1e:0f:4f:8c:bb:7e:16:a0:f0:4a:85:8e:a8:60:14
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = US, O = Let's Encrypt, CN = R3
+        Validity
+            Not Before: Aug 22 15:54:17 2023 GMT
+            Not After : Nov 20 15:54:16 2023 GMT
+        Subject: CN = afrodite.miletic.net
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+                Modulus:
+                    00:c7:c3:75:04:67:15:a0:40:61:1f:d9:ac:48:a5:
+                    82:29:5c:56:c1:ed:b2:8d:04:ff:e1:ee:4f:ff:bb:
+                    78:51:e9:66:ba:da:5e:12:41:e9:a6:20:8f:41:d5:
+                    c7:23:64:b3:d1:80:16:6a:80:f8:9d:ba:fe:62:c0:
+                    e3:4d:a3:7d:2c:cf:eb:f8:3f:1d:bf:32:1e:31:2e:
+                    6f:da:8c:5e:cb:7c:3f:09:54:cd:35:17:38:a8:3d:
+                    98:52:b7:c4:67:f5:34:7e:4e:22:51:e1:9f:fc:c2:
+                    18:29:65:e0:2f:89:c5:a7:32:93:0a:24:f7:9e:e6:
+                    40:47:72:62:37:b6:62:27:47:cd:e8:e6:17:8f:3e:
+                    38:fb:e2:65:d9:91:f5:e6:f9:69:83:00:0a:37:cc:
+                    35:83:35:aa:45:4e:e2:2c:c0:45:fe:9e:e1:45:98:
+                    c5:36:12:e8:3e:fc:f6:08:57:5e:67:72:60:69:d9:
+                    7f:6b:1e:8f:64:9f:d0:b6:df:0d:42:c9:af:f1:68:
+                    89:57:aa:84:39:3c:55:c3:14:fb:75:f8:e5:c5:0a:
+                    5c:89:56:6f:fd:63:b7:be:e2:77:69:8a:3f:ee:eb:
+                    bb:3f:84:92:36:e7:68:ea:21:44:9f:0a:66:7b:d2:
+                    74:54:04:ce:75:ea:fb:1d:a3:4d:41:66:28:21:e4:
+                    02:bd
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                E6:2F:30:C4:68:70:E7:41:BE:43:74:2E:3A:62:C2:10:9F:BE:CE:96
+            X509v3 Authority Key Identifier: 
+                keyid:14:2E:B3:17:B7:58:56:CB:AE:50:09:40:E6:1F:AF:9D:8B:14:C2:C6
+
+            Authority Information Access: 
+                OCSP - URI:http://r3.o.lencr.org
+                CA Issuers - URI:http://r3.i.lencr.org/
+
+            X509v3 Subject Alternative Name: 
+                DNS:afrodite.miletic.net, DNS:apps.group.miletic.net, DNS:code.group.miletic.net, DNS:group.miletic.net, DNS:lab.miletic.net, DNS:staging.group.miletic.net
+            X509v3 Certificate Policies: 
+                Policy: 2.23.140.1.2.1
+
+(...)
+```
+
+Uočimo u dijelu `X509v3 Subject Alternative Name:` vrijednosti `DNS:apps.group.miletic.net` i `DNS:staging.group.miletic.net`, iz čega zaključujemo da oba poslužitelja koriste zajednički certifikat. U praksi se to nekad koristi, ali često se sreću i razdvojeni certifikati za pojedine poslužitelje.
 
 ### Poslužiteljska strana
 
