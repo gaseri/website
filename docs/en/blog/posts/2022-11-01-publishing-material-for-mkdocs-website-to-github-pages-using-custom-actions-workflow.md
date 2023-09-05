@@ -25,14 +25,14 @@ Since this summer, GitHub offers [publishing Pages using a custom Actions workfl
 
 Let's see how far we can get. Without going into details about the [syntax for GitHub Actions](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions), here is the [starter workflow](https://github.com/actions/starter-workflows) [configuration file](https://github.com/actions/starter-workflows/blob/main/pages/jekyll-gh-pages.yml) for deploying a Jekyll site to GitHub Pages:
 
-``` yaml hl_lines="1-2 33-37"
+``` yaml hl_lines="1-2 7 33-37"
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
 name: Deploy Jekyll with GitHub Pages dependencies preinstalled
 
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
+    branches: [$default-branch]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -64,7 +64,7 @@ jobs:
           source: ./
           destination: ./_site
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v2
 
   # Deployment job
   deploy:
@@ -83,7 +83,7 @@ The highlighted lines are Jekyll-specific. We can easily replace these lines wit
 
 In this case, since we want a drop-in replacement for Jekyll so that the remaining commands work perfectly, we will perform the MkDocs build using the `mkdocs.yml` configuration file in the current directory and write the built site output files into the `_site` directory.
 
-``` yaml hl_lines="1-2 33-45"
+``` yaml hl_lines="1-2 7 33-45"
 # Sample workflow for building and deploying a MkDocs site to GitHub Pages
 name: Deploy MkDocs with GitHub Pages dependencies preinstalled
 
@@ -132,7 +132,7 @@ jobs:
       - name: Build site (_site directory name is used for Jekyll compatiblity)
         run: mkdocs build --config-file ./mkdocs.yml --site-dir ./_site
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v2
 
   # Deployment job
   deploy:
