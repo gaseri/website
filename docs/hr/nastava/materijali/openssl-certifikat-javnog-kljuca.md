@@ -251,17 +251,24 @@ Lxnd4Be1X6IHPgMhxe4s00koDQgekZCqX3CeL4Zy4gOyiy5nVnXtRC1DcnmhADEA
 Opcijom `pkcs7` možemo ispisati podatke o certifikatu zapisanom u formatu PKCS #7 na način:
 
 ``` shell
-$ openssl pkcs7 -in mojcertifikat.pem.p7b -noout -print_certs
+$ openssl pkcs7 -print_certs -in mojcertifikat.pem.p7b -noout
 subject=C = AU, ST = Some-State, O = Internet Widgits Pty Ltd
-
 issuer=C = AU, ST = Some-State, O = Internet Widgits Pty Ltd
 ```
 
-#### PKCS #12
+Istom opcijom moguća je i pretvorba natrag u format PEM:
 
-Format PKCS#12, poznat i pod nazivom PFX, zapisuje u istu datoteku i privatni ključ i certifikat u binarnom obliku. Format je značajan zato što ga [koristi Microsoftov web poslužitelj Internet Information Services](https://www.ssls.com/knowledgebase/how-to-install-an-ssl-certificate-on-microsoft-iis7/) (kraće IIS, [službena web stranica](https://www.iis.net/)).
+``` shell
+$ openssl pkcs7 -print_certs -in mojcertifikat.pem.p7b -out novimojcertifikat.pem
+```
 
-Pretvorbu iz formata PEM u format PKCS#12 vršimo opcijom `pkcs12` na način:
+Pritom će datoteka `novimojcertifikat.pem` imati isti sadržaj kao `mojcertifikat.pem`.
+
+#### Standard PKCS #12
+
+[PKCS #12: Personal Information Exchange Syntax](https://en.wikipedia.org/wiki/PKCS_12), nasljednik Microsoftovog formata PFX, zapisuje u istu datoteku i privatni ključ i certifikat u binarnom obliku. Posljednja verzija 1.1 standardizirana je u [RFC-u 7292 pod naslovom PKCS #12: Personal Information Exchange Syntax v1.1](https://datatracker.ietf.org/doc/html/rfc7292). Iako je format PFX često kritiziran zbog svoje kompleksnosti, značajan je zato što ga [koristi Microsoftov web poslužitelj Internet Information Services](https://www.ssls.com/knowledgebase/how-to-install-an-ssl-certificate-on-microsoft-iis7/) (kraće IIS, [službena web stranica](https://www.iis.net/)).
+
+Pretvorbu iz formata PEM u format PKCS #12 vršimo opcijom `pkcs12` na način:
 
 ``` shell
 $ openssl pkcs12 -export -out kljuc-certifikat.pfx -inkey mojkljuc.pem -in mojcertifikat.pem
@@ -269,11 +276,25 @@ Enter Export Password:
 Verifying - Enter Export Password:
 ```
 
+Starije verziju IIS-a često ne podržavaju moderne kriptografske algoritme. Ukoliko stvaramo PFX datoteku za stariju verziju, možemo eksplicitno navesti kriptografske algoritme koje želimo koristiti parametrima `-macalg`, `-keypbe` i `-certpbe`:
+
+``` shell
+$ openssl pkcs12 -macalg SHA1 -keypbe PBE-SHA1-3DES -certpbe PBE-SHA1-3DES -export -out kljuc-certifikat.pfx -inkey mojkljuc.pem -in mojcertifikat.pem
+Enter Export Password:
+Verifying - Enter Export Password:
+```
+
+Više detalja moguće je pronaći na [odgovoru na pitanje u uvozu certifikata na StackOverflowu](https://stackoverflow.com/a/70383251).
+
 Ako imamo i certifikat autoriteta certifikata koji želimo uključiti u lanac certifikata, možemo ga dodati parametrom `-certfile` na način:
 
 ``` shell
 $ openssl pkcs12 -export -out kljuc-certifikat.pfx -inkey mojkljuc.pem -in mojcertifikat.pem -certfile DigiCertCA.crt
+Enter Export Password:
+Verifying - Enter Export Password:
 ```
+
+Dodatne primjere naredbi za pretvobu certifikata između različitih formata moguće je naći u [bazi znanja DigiCerta](https://knowledge.digicert.com/solution/SO26449.html).
 
 ## Certifikacijsko tijelo
 
