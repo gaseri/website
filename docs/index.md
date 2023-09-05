@@ -8,6 +8,10 @@ hide:
 
 ![GASERI animated logo](images/gaseri-logo-animated.webp)
 
+## 👩😎😎📹👨 Intervju [Vedrana](https://vedran.miletic.net/) [Miletića](https://www.miletic.net/) i [Matee Turalija](https://mateaturalija.github.io/) od strane Lane Miličević i Darijana Jelušića iz [IEEE studentskog ogranka](https://www.ieee.hr/ieeesection/studentski_ogranci/rijeka) Sveučilišta u Rijeci na studentskom podcastu [RiThinking STEM](https://youtu.be/cI7_4eXsHjY?list=PL6xC_tdJMOhfYRHKrgyeD2cyaD4FXDYRc)
+
+<iframe src="https://www.youtube.com/embed/cI7_4eXsHjY" title="YouTube video player" style="border: 1px solid black; width: 100%; height: 25rem" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## 🇭🇷 [Grupa za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi](hr/index.md)
 
 - Prijediplomski sveučilišni studij:
