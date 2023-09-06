@@ -13,25 +13,36 @@ Modul `cryptopgraphy` sastoji se od dva sloja:
 
 ## Kodiranje znakova
 
-Znakovni nizovi u Pythonu dizajnirani su da slijede svakdonevno poimanje pojma teksta. Primjerice, znakovni niz `"riječ"` je u Pythonu duljine 5 znakova, iako se posljednji znak u računalu kodira s 2 bajta (primjerice kod spremanja u datoteku ili slanja putem mreže) pa je duljina znakovnog niza 6 znakova.
+Znakovni nizovi u Pythonu (tip `str`) dizajnirani su da slijede svakodnevno poimanje pojma teksta. Primjerice, znakovni niz `"riječ"` je u Pythonu duljine 5 znakova. To je [novitet u Pythonu 3](https://portingguide.readthedocs.io/en/latest/strings.html).
+
+Želimo li znakovni niz spremiti u datoteku ili poslati putem mreže, vršimo pretvorbu u bajtovni niz (tip `bytes`). Pritom se posljednji znak u znakovnom nizu kodira korištenjem 2 bajta pa je duljina dobivenog bajtovnog niza 6 znakova.
 
 ``` python
-s = "riječ"
-print("Znakovni niz", s, "ima duljinu", len(s))
+#!/usr/bin/env python
 
-e = g.encode()
-print("Znakovni niz", e, "ima duljinu", len(e))
+s = "riječ"
+print("Znakovni niz", s, "je tipa", type(s), "i ima duljinu", len(s))
+
+e = s.encode()
+print("Bajtovni niz", e, "je tipa", type(e), "i ima duljinu", len(e))
+
+d = e.decode()
+print("Znakovni niz", d, "je tipa", type(d), "i ima duljinu", len(d), "i istovjetan je početnom", d == s)
 ```
+
+### Kodiranje znakova u obliku Base64
 
 Kodiranje u obliku Base64 dostupno je korištenjem modula `base64` ([dokumentacija](https://docs.python.org/3/library/base64.html)) koji je dio standardne biblioteke:
 
 ``` python
+#!/usr/bin/env python
+
 from base64 import b64encode, b64decode
 
-b = b64encode(e)
-print(b)
-d = b64decode(b)
-print(d)
+be = b64encode(e)
+print("Base64 kodiran bajtovni niz je", be)
+bd = b64decode(be)
+print("Dekodiran bajtovni niz je", bd, "i istovjetan je početnom", bd == e)
 ```
 
 !!! admonition "Zadatak"
@@ -55,18 +66,24 @@ Inicijalizacija se izvodi na način:
 from cryptography.fernet import Fernet
 
 key = Fernet.generate_key()
+print("Stvoreni Fernet ključ je", key, "tipa", type(key), "i duljine", len(key))
 f = Fernet(key)
 ```
 
 S tako inicijaliziranim modulom šifriranje se izvodi na način:
 
 ``` python
-encrypted_message = f.encrypt(b"""\
+message = """\
 Jezik, čist materinji jezik poznavati je prva i najglavnija dužnost svakog\
 pisca. Tko ga ne poznaje, može biti uman, odličan, zanimljiv čovjek, ali\
 dobar, uspješan pisac ― nikada. Pokažite mi na jednog jedinog većeg pisca u\
 stranom svijetu što griješi proti pravilima svog jezika.\
-""")
+"""
+encoded_message = message.encode()
+
+print("Kodirana poruka je", encoded_message)
+
+encrypted_message = f.encrypt(encoded_message)
 
 print("Šifrirana poruka je", encrypted_message)
 ```
@@ -77,6 +94,9 @@ Dešifriranje se vrši kodom:
 decrypted_message = f.decrypt(encrypted_message)
 
 print("Dešifrirana poruka je", decrypted_message)
+
+decoded_message = decrypted_message.decode()
+print("Dekodirana poruka je", decoded_message)
 ```
 
 !!! admonition "Zadatak"
@@ -232,18 +252,22 @@ print("Poruka je jednaka početnoj?" plaintext == short_message)
 Jedna od tipičnih primjena asimetričnog šifriranja je razmjena ključeva za simetrično šifriranje. Ključ za simetrično šifriranje se bira na jednoj strani:
 
 ``` python
+#!/usr/bin/env python
+
 symmetric_key = "MojPasFido25".encode()
 ```
 
 Kako simetrični ključ korišten unutar jedne sesije korisnik ne mora pamtiti, bolje ga je slučajno generirati:
 
 ``` python
+#!/usr/bin/env python
+
 import os
 
 symmetric_key_client = os.urandom(12)
 ```
 
-Neka su sad spremljeni tajni ključ u varijabli `private_key` i javni ključ u varijabli `public_key`. Na strani koja je generirala simetričn ključ on se šifrira javnim ključem:
+Neka su sad spremljeni tajni ključ u varijabli `private_key` i javni ključ u varijabli `public_key`. Na strani koja je generirala simetrični ključ on se šifrira javnim ključem:
 
 ``` python
 # public_key = ...
@@ -283,9 +307,12 @@ print("Dešifrirani simetrični ključ je", symmetric_key_decrypted)
 U situaciji kad je provedena razmjena ključeva mehanizmom opisanim iznad moguće je iskoristiti bilo koji od algoritama za šifriranje. Specijalno, ako za simetrično šifriranje želimo koristiti AES-GCM, onda ćemo to izvesti na način:
 
 ``` python
+#!/usr/bin/env python
+
 from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 
 aes_key = AESGCM.generate_key(bit_length=128)
+aesgcm = AESGCM(aes_key)
 
 print("AES ključ je", aes_key)
 ```
@@ -293,15 +320,19 @@ print("AES ključ je", aes_key)
 Nakon razmjene ključeva i druga strana bi imala isti ključ. Dodatno nam treba broj koji se koristi samo jednom (engl. number used once, kraće nonce):
 
 ``` python
+import os
+
 nonce = os.urandom(12)
 ```
 
 Taj broj možemo razmijeniti na isti način kao ključeve. Šifriranje zatim vršimo na način:
 
 ``` python
-msg = "Ako ljubav nije ludost, onda nije ni ljubav.".encode()
+msg = "Ako ljubav nije ludost, onda nije ni ljubav."
+encoded_msg = msg.encode()
+print("Kodirana poruka je", encoded_msg)
 
-encrypted_msg = aesgcm.encrypt(nonce, msg, None)
+encrypted_msg = aesgcm.encrypt(nonce, encoded_msg, None)
 print("Šifrirana poruka je", encrypted_msg)
 ```
 
@@ -309,7 +340,10 @@ Posljednji parametar su podaci koji se šalju bez šifriranja za kojima nemamo p
 
 ``` python
 decrypted_msg = aesgcm.decrypt(nonce, encrypted_msg, None)
-print("Dešifrirana poruka je", decrypted_msg)
+print("Dešifrirana poruka j", decrypted_msg)
+
+decoded_msg = decrypted_msg.decode()
+print("Dekodirana poruka je", decoded_msg)
 ```
 
 !!! admonition "Zadatak"
@@ -328,6 +362,8 @@ Autentifikaciju poruka je moguće vršiti temeljeno na hashiranju ili temeljeno 
 HMAC ([dokumentacija](https://cryptography.io/en/latest/hazmat/primitives/mac/hmac/)) inicijaliziramo za svaku poruku na način:
 
 ``` python
+#!/usr/bin/env python
+
 import os
 from cryptography.hazmat.primitives import hashes, hmac
 
@@ -361,6 +397,8 @@ h_provjera.verify(hash_poruke)
 CMAC ([dokumentacija](https://cryptography.io/en/latest/hazmat/primitives/mac/cmac/)) se također inicijalizira za svaku pojedinu poruku na način:
 
 ``` python
+#!/usr/bin/env python
+
 import os
 from cryptography.hazmat.primitives import cmac
 from cryptography.hazmat.primitives.ciphers.algorithms import AES
@@ -383,6 +421,7 @@ Poruka i njen CMAC šalju se drugoj strani koja ima ključ dobiven razmjenom klj
 ``` python
 c_provjera = cmac.CMAC(aes)
 c_provjera.update(poruka)
+
 c_provjera.verify(cmac_poruke)
 ```
 
@@ -401,6 +440,8 @@ Dvofaktorska autentifikacija uz standardnu zaporku koristi i jednokratnu zaporku
 Inicijalizacija HOTP-a ([dokumentacija](https://cryptography.io/en/latest/hazmat/primitives/twofactor/)) vrši se na način:
 
 ``` python
+#!/usr/bin/env python
+
 import os
 from cryptography.hazmat.primitives.twofactor.hotp import HOTP
 from cryptography.hazmat.primitives.hashes import SHA1
@@ -437,6 +478,8 @@ hotp.verify(hotp_value2, 75)
 Inicijalizacija TOTP-a ([dokumentacija](https://cryptography.io/en/latest/hazmat/primitives/twofactor/)) vrši se na način:
 
 ``` python
+#!/usr/bin/env python
+
 import os
 import time
 from cryptography.hazmat.primitives.twofactor.totp import TOTP
