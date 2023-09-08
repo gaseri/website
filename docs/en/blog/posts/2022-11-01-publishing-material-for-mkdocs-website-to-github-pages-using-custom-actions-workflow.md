@@ -79,9 +79,19 @@ jobs:
         uses: actions/deploy-pages@v2
 ```
 
-The highlighted lines are Jekyll-specific. We can easily replace these lines with the Python setup Action, the installation of MkDocs and Material for MkDocs (using pip), the installation of the optional dependencies required for the [generation of social cards](https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards/) (that is, [Pillow](https://python-pillow.org/) and [CairoSVG](https://cairosvg.org/)), the optional caching setup for the downloaded fonts and the generated social cards, and, finally, the MkDocs site build command.
+The highlighted lines are Jekyll-specific. We can easily replace these lines with:
+
+- the Python setup Action,
+- the installation, using [pip](https://pip.pypa.io/) and the `requirements.txt` file, of
+    - MkDocs with [extra internationalization support](https://www.mkdocs.org/user-guide/localizing-your-theme/#installation),
+    - the [Material for MkDocs framework](https://squidfunk.github.io/mkdocs-material/getting-started/#installation),
+    - the optional dependencies required for the [generation of social cards](https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards/), that is, [CairoSVG](https://cairosvg.org/), which will pull [Pillow](https://python-pillow.org/) as a dependency,
+- the optional caching setup for the downloaded fonts and the generated social cards, and, finally,
+- the MkDocs site build command.
 
 In this case, since we want a drop-in replacement for Jekyll so that the remaining commands work perfectly, we will perform the MkDocs build using the `mkdocs.yml` configuration file in the current directory and write the built site output files into the `_site` directory.
+
+The `.github/workflows/mkdocs-gh-pages.yml` file will look like:
 
 ``` yaml hl_lines="1-2 7 33-45"
 # Sample workflow for building and deploying a MkDocs site to GitHub Pages
@@ -120,10 +130,8 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
-      - name: Install MkDocs and Material for MkDocs
-        run: pip install mkdocs[i18n] mkdocs-material
-      - name: Install Pillow and CairoSVG (required for social card generation)
-        run: pip install pillow cairosvg
+      - name: Install required packages
+        run: pip install -r requirements.txt
       - name: Setup caching
         uses: actions/cache@v3
         with:
@@ -147,6 +155,14 @@ jobs:
         uses: actions/deploy-pages@v2
 ```
 
+We can see the mention of the `requirements.txt` file. It should reside in the root of the repository with the contents:
+
+``` text
+mkdocs[i18n]
+mkdocs-material
+cairosvg
+```
+
 And that's it! There is no more requirement for the `.nojekyll` file as Jekyll never gets ran in the build process. There is also no more separate `gh-pages` branch that the built files get pushed to, so there is also no more worry whether the site builds over time will add up to the [1 GB soft limit](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github#repository-size-limits).
 
 Finally, if you want to use a custom domain, having the `CNAME` file in the repository root or the `docs` subfolder will no longer have the desired effect; the domain has to be [configured through the repository settings or using the API](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#creating-a-custom-github-actions-workflow-to-publish-your-site).
@@ -156,3 +172,5 @@ Finally, if you want to use a custom domain, having the `CNAME` file in the repo
 **Updated on 2022-12-03:** changed caching to use `github.sha` instead of `github.ref`, enabling rebuilds of social cards when site contents change.
 
 **Updated on 2023-06-06:** rebased our additions on top of the [latest version](https://github.com/actions/starter-workflows/blob/main/pages/jekyll-gh-pages.yml) of `jekyll-gh-pages.yml` from [Starter Workflows](https://github.com/actions/starter-workflows). Changed Python version from 3.11 to the [latest stable 3.x](https://github.com/actions/setup-python/blob/main/docs/advanced-usage.md#using-the-python-version-input), which is 3.11 at the moment. However, using the current beta version of [Python 3.12](https://docs.python.org/3.12/whatsnew/3.12.html) already works well with `mkdocs-material`, so it's unlikely to cause issues even when 3.12 gets released and becomes the latest stable version.
+
+**Updated on 2023-09-08:** simplified the workflow to use the existing `requirements.txt` file instead of duplicating the package names in the `pip` command run.
