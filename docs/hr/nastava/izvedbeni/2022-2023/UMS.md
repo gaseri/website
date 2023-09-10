@@ -139,13 +139,13 @@ Donosi se na osnovu zbroja svih bodova prikupljenih tijekom izvođenja nastave p
 
 Redoviti:
 
-- 13\. veljače 2022.
-- 27\. veljače 2022.
+- 13\. veljače 2023.
+- 27\. veljače 2023.
 
 Izvanredni:
 
-- 27\. ožujka 2022.
-- 11\. rujna 2022.
+- 27\. ožujka 2023.
+- 11\. rujna 2023.
 
 ## RASPORED NASTAVE -- zimski (III) semestar ak. god. 2022./2023.
 
