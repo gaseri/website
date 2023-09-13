@@ -27,7 +27,7 @@ author: Vedran Miletić
 - Dominik Kinkela
 - [Dorian Manjarić](https://manjaric.com/)
 - Marin Martuslović
-- [Luka Ljubojević](https://lukaljubojevic.github.io/web/)
+- [Luka Ljubojević](https://lukaljubojevic.online/)
 
 ## Former staff
 
