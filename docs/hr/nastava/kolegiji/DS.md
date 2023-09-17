@@ -42,3 +42,5 @@ tags:
 - [Python modul mpi4py: upravljanje okolinom](../materijali/python-modul-mpi4py-upravljanje-okolinom.md)
 
 ### Asinkrono poručivanje u distribuiranim sustavima korištenjem biblioteke ZeroMQ
+
+- [Python modul PyZMQ: osnove](../materijali/python-modul-pyzmq-osnove.md)
