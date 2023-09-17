@@ -175,8 +175,537 @@ odj-o359-120.local
 odj-o359-121.local
 ```
 
+## Ansible playbook datoteke za instalaciju, konfiguraciju i održavanje računalnog praktikuma te pomoćne radnje prilikom održavanja nastave i ispita
+
+!!! note
+    [Ansible](https://www.ansible.com/) [playbook datoteke](https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_intro.html) u nastavku provjerene su korištenjem [Ansible Linta](https://ansible.readthedocs.io/projects/lint/) i [profila](https://ansible.readthedocs.io/projects/lint/profiles/) `production`.
+
+### Administratorske operacije u računalnom praktikumu
+
+#### Nadogradnja svih paketa operacijskog sustava
+
+``` yaml
+- name: All hosts up-to-date
+  hosts: o359
+  become: true
+
+  tasks:
+    - name: Full system upgrade
+      community.general.pacman:
+        update_cache: true
+        upgrade: true
+
+    - name: Run Pamac update including AUR packages
+      ansible.builtin.command: /usr/bin/pamac update --no-confirm --aur
+      register: pamac_update_aur
+      changed_when: pamac_update_aur.rc == 0
+
+    - name: Clean up afterwards
+      ansible.builtin.file:
+        path: /var/tmp/pamac-build-sensei
+        state: absent
+```
+
+#### Ponovno pokretanje računala
+
+``` yaml
+- name: Reboot student hosts
+  hosts: o359stud
+  become: true
+
+  tasks:
+    - name: Unconditionally reboot the machine
+      ansible.builtin.reboot:
+```
+
+#### Isključivanje računala
+
+``` yaml
+- name: Shut down student hosts
+  hosts: o359stud
+  become: true
+
+  tasks:
+    - name: Unconditionally shut down the machine
+      community.general.shutdown:
+```
+
+#### Dohvaćanje informacije o verziji UEFI firmwarea, odnosno BIOS-a
+
+``` yaml
+- name: Print UEFI firmware or BIOS version to standard output
+  hosts: o359
+  become: true
+
+  tasks:
+    - name: Print to stdout and filter
+      ansible.builtin.shell: set -o pipefail && dmidecode | grep Version
+      register: dmidecode_version
+      changed_when: false
+
+    - name: Prin information retrieved in previous task
+      ansible.builtin.debug:
+        var: dmidecode_version.stdout_lines
+```
+
+### Instalacija i konfiguracija Veyona
+
 !!! todo
     Ovdje treba dodatno opisati proces instalacije i konfiguracije [Veyona](https://veyon.io/).
+
+#### Instalacija softvera za studije na FIDIT-u
+
+``` yaml
+- name: Install software for courses at FIDIT
+  hosts: o359
+  become: true
+
+  tasks:
+    - name: Install npm and solidity
+      community.general.pacman:
+        name:
+          - emacs
+          - tree
+          - php
+          - xdebug
+          - jq
+          - siege
+          - npm
+          - python-cryptography
+          - docker
+          - docker-buildx
+          - docker-compose
+          - virt-manager
+          - qemu-full
+          - ansible
+          - ansible-lint
+          - python-django
+          - python-pylint
+          - mypy
+          - autopep8
+          - python-isort
+          - python-black
+          - flake8
+          - python-flake8-black
+          - python-flake8-docstrings
+          - python-flake8-isort
+          - python-pytest
+          - python-pytest-isort
+          - python-pytest-flake8
+          - python-mpi4py
+          - shadow
+          - jdk11-openjdk
+          - intellij-idea-community-edition
+        state: present
+
+    - name: Run Pamac update including AUR packages
+      ansible.builtin.command: /usr/bin/pamac build --no-confirm visual-studio-code-bin mozart2-bin emacs-oz-mode gns3-gui gns3-server ns3 simgrid solidity-bin
+      register: pamac_build
+      changed_when: pamac_build.rc == 0
+
+    - name: Clean up afterwards
+      ansible.builtin.file:
+        path: /var/tmp/pamac-build-sensei
+        state: absent
+```
+
+#### Instalacija softvera za kolegij INF-BioTech
+
+``` yaml
+- name: Install software for INF-BioTech course
+  hosts: o359
+  become: true
+
+  tasks:
+    - name: Install Open Babel with GUI, PyMOL, and Python packages
+      community.general.pacman:
+        name:
+          - openbabel
+          - wxwidgets-gtk3
+          - pymol
+          - python-matplotlib
+          - python-pandas
+          - python-scipy
+          - python-sympy
+        state: present
+
+    - name: Build and install Avogadro and UGENE
+      ansible.builtin.command: /usr/bin/pamac build --no-confirm avogadroapp ugene
+      register: pamac_build
+      changed_when: pamac_build.rc == 0
+
+    - name: Clean up afterwards
+      ansible.builtin.file:
+        path: /var/tmp/pamac-build-sensei
+        state: absent
+```
+
+#### Konfiguracija zadanog OS-a za pokretanje u GRUB-u
+
+``` yaml
+- name: Configure GRUB default
+  hosts: o359
+  become: true
+
+  tasks:
+    - name: Ensure GRUB boots Manjaro by default
+      ansible.builtin.lineinfile:
+        path: /etc/default/grub
+        regexp: '^GRUB_DEFAULT='
+        line: 'GRUB_DEFAULT=0'
+
+    - name: Make GRUB config
+      ansible.builtin.command: grub-mkconfig -o /boot/grub/grub.cfg
+      register: grub_mkconfig
+      changed_when: grub_mkconfig.rc == 0
+```
+
+#### Konfiguracija bilježenja vremena pristupa u datotečnom sustavu
+
+``` yaml
+- name: Enable atime in /etc/fstab
+  hosts: o359
+  become: true
+
+  tasks:
+    - name: Ensure SELinux is set to enforcing mode
+      ansible.builtin.lineinfile:
+        path: /etc/fstab
+        regexp: '^UUID=6797c252-79f2-4278-9563-1bb6a7bbe222'
+        line: 'UUID=6797c252-79f2-4278-9563-1bb6a7bbe222 /home ext4 defaults,strictatime 0 0 '
+```
+
+#### Konfiguracija Dockera
+
+``` yaml
+- name: Configure Docker
+  hosts: o359
+  become: true
+
+  tasks:
+    - name: Create data directory
+      ansible.builtin.file:
+        path: /home/data
+        state: directory
+        mode: '0755'
+
+    - name: Create directory for Docker data
+      ansible.builtin.file:
+        path: /home/data/docker
+        state: directory
+        mode: '0710'
+
+    - name: Create directory for Docker configuration
+      ansible.builtin.file:
+        path: /etc/docker
+        state: directory
+        mode: '0755'
+
+    - name: Configure Docker data path
+      ansible.builtin.copy:
+        content: |
+          {
+            "data-root": "/home/data/docker"
+          }
+        dest: /etc/docker/daemon.json
+        mode: '0755'
+
+    - name: Restart Docker daemon
+      ansible.builtin.systemd:
+        name: docker.service
+        state: restarted
+
+    - name: Remove existing docker data root
+      ansible.builtin.file:
+        path: /var/lib/docker
+        state: absent
+
+    - name: Enable socket for Docker daemon
+      ansible.builtin.systemd:
+        name: docker.socket
+        state: started
+        enabled: true
+```
+
+#### Konfiguracija libvirta
+
+``` yaml
+- name: Configure libvirt
+  hosts: o359
+  become: true
+
+  tasks:
+    - name: Create data directory
+      ansible.builtin.file:
+        path: /home/data
+        state: directory
+        mode: '0755'
+
+    - name: Destroy default libvirt pool
+      ansible.builtin.command: /usr/bin/virsh pool-destroy default
+      ignore_errors: true
+      register: virsh_pool_destroy
+      changed_when: virsh_pool_destroy.rc == 0
+
+    - name: Remove existing libvirt images in default pool directory
+      ansible.builtin.file:
+        path: /var/lib/libvirt/images
+        state: absent
+
+    - name: Delete default libvirt pool
+      ansible.builtin.command: /usr/bin/virsh pool-delete default
+      ignore_errors: true
+      register: virsh_pool_delete
+      changed_when: virsh_pool_delete.rc == 0
+
+    - name: Undefine default libvirt pool
+      ansible.builtin.command: /usr/bin/virsh pool-undefine default
+      ignore_errors: true
+      register: virsh_pool_undefine
+      changed_when: virsh_pool_undefine.rc == 0
+
+    - name: Create directory for libvirt images
+      ansible.builtin.file:
+        path: /home/data/libvirt/images
+        state: directory
+        mode: '0755'
+
+    - name: Define new default libvirt pool
+      ansible.builtin.command: /usr/bin/virsh pool-define-as default dir - - - - /home/data/libvirt/images
+      register: virsh_pool_define_as
+      changed_when: virsh_pool_define_as.rc == 0
+
+    - name: Build new default libvirt pool
+      ansible.builtin.command: /usr/bin/virsh pool-build default
+      register: virsh_pool_build
+      changed_when: virsh_pool_build.rc == 0
+
+    - name: Start new default libvirt pool
+      ansible.builtin.command: /usr/bin/virsh pool-start default
+      register: virsh_pool_start
+      changed_when: virsh_pool_start.rc == 0
+
+    - name: Autostart new default libvirt pool
+      ansible.builtin.command: /usr/bin/virsh pool-autostart default
+      register: virsh_pool_autostart
+      changed_when: virsh_pool_autostart.rc == 0
+
+    - name: Restart libvirt daemon
+      ansible.builtin.systemd:
+        name: libvirtd.service
+        state: restarted
+
+    - name: Enable socket for libvirt daemon
+      ansible.builtin.systemd:
+        name: libvirtd.socket
+        state: started
+        enabled: true
+```
+
+#### Konfiguracija zaporke korisnika s administratorskim ovlastima
+
+``` yaml
+- name: Change password for user sensei
+  hosts: o359
+  become: true
+
+  tasks:
+    - name: Change password for user sensei
+      ansible.builtin.user:
+        name: sensei
+        password: $6$o9vnobuw1GRKliS1$V1IzPOorSQFzdtc/FSlGhZzqLEtAPoH2sw8eJyYRJphrdCa8AS1UXuvgSgWdFzUu3Y9UQp11y7VkXP4sLUW9V1
+```
+
+#### Konfiguracija (običnog) korisnika
+
+``` yaml
+- name: Add user korisnik, amend user directory and skeleton with useful files
+  hosts: o359
+  become: true
+
+  tasks:
+    - name: Add user korisnik
+      ansible.builtin.user:
+        name: korisnik
+        comment: FIDIT korisnik
+        password: $6$CvycajZY8Z5mk0qC$AdU3seLtogi4XJGXa1MwRuBZ7pHiuLrQaricpAJ2Id5sqV1.UBoUS//yKGPxrK9nzgvmiiIJI2isGamrtGBGD.
+        shell: /bin/bash
+        groups: docker,libvirt
+        append: true
+
+    - name: Create configuration directory for SSH
+      ansible.builtin.file:
+        path: /home/korisnik/.ssh
+        state: directory
+        owner: korisnik
+        group: korisnik
+        mode: '0700'
+
+    - name: Add FIDIT authorized key
+      ansible.builtin.copy:
+        content: |
+          ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCxmpMTCt+Tc6T31WXou0RIjzrJwtvtR\
+          0eAcu1NMdACQv0SaOrcSPaXwT7mQJzaI1yHJuU0jGvA5mKEETPBIyZb63drWuqpsC0oCF\
+          YRUZ/drXv8EPyy+J/iPDAFGywetewuqMSzMG7BsePXVjRWgJUN3ZU2wDEeCndUjn5TMLg\
+          99UFueAUI3/o5G0HyeCR3PbzbSP4iVK+dr0yEs1q/2RfSwm2qABA7X1cY5x/Hf2MZx9rx\
+          rvzXMvkeYYnChsVjOtKTEuTKNOA+ylQ12o6FVNZrNNWD+gZrc5eI0yPwX3WPRkNKFG8h4\
+          pwz7zGSYQAR+SzcvNr8G+vqRW1eYvTPw/KwzreX4FhxDEYqYK8KouhQypZss8REPGP61j\
+          8gicHoSpdYq52TJhIEK0Z9tYV4zV1HdCoTKY81OVYew3V0P2ycgNJEfPVbg1nF2v3w3wK\
+          y9pvP0xELyQZDNjU8XtuPI6PLBoD3XPssJQY7Z7T4ZJ0OXw6dCzodlRhgXji0Og7IWCk=
+          fidit-korisnik
+        dest: /home/korisnik/.ssh/authorized_keys
+        owner: korisnik
+        group: korisnik
+        mode: '0600'
+
+    - name: Create configuration directory for SSH
+      ansible.builtin.file:
+        path: /etc/skel/.ssh
+        state: directory
+        mode: '0755'
+
+    - name: Add FIDIT authorized key
+      ansible.builtin.copy:
+        content: |
+          ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCxmpMTCt+Tc6T31WXou0RIjzrJwtvtR\
+          0eAcu1NMdACQv0SaOrcSPaXwT7mQJzaI1yHJuU0jGvA5mKEETPBIyZb63drWuqpsC0oCF\
+          YRUZ/drXv8EPyy+J/iPDAFGywetewuqMSzMG7BsePXVjRWgJUN3ZU2wDEeCndUjn5TMLg\
+          99UFueAUI3/o5G0HyeCR3PbzbSP4iVK+dr0yEs1q/2RfSwm2qABA7X1cY5x/Hf2MZx9rx\
+          rvzXMvkeYYnChsVjOtKTEuTKNOA+ylQ12o6FVNZrNNWD+gZrc5eI0yPwX3WPRkNKFG8h4\
+          pwz7zGSYQAR+SzcvNr8G+vqRW1eYvTPw/KwzreX4FhxDEYqYK8KouhQypZss8REPGP61j\
+          8gicHoSpdYq52TJhIEK0Z9tYV4zV1HdCoTKY81OVYew3V0P2ycgNJEfPVbg1nF2v3w3wK\
+          y9pvP0xELyQZDNjU8XtuPI6PLBoD3XPssJQY7Z7T4ZJ0OXw6dCzodlRhgXji0Og7IWCk=
+          fidit-korisnik
+        dest: /etc/skel/.ssh/authorized_keys
+        mode: '0644'
+
+    - name: Create directory for Konsole profiles
+      ansible.builtin.file:
+        path: /home/korisnik/.local/share/konsole
+        state: directory
+        owner: korisnik
+        group: korisnik
+        mode: '0755'
+
+    - name: Add FIDIT profile to Konsole
+      ansible.builtin.copy:
+        content: |
+          [General]
+          Command=/usr/bin/bash
+          Name=FIDIT
+        dest: /home/korisnik/.local/share/konsole/fidit.profile
+        owner: korisnik
+        group: korisnik
+        mode: '0644'
+
+    - name: Configure Konsole to have FIDIT profile as default
+      ansible.builtin.copy:
+        content: |
+          [Desktop Entry]
+          DefaultProfile=fidit.profile
+        dest: /home/korisnik/.config/konsolerc
+        owner: korisnik
+        group: korisnik
+        mode: '0600'
+
+    - name: Create directory for Konsole profiles
+      ansible.builtin.file:
+        path: /etc/skel/.local/share/konsole
+        state: directory
+        mode: '0755'
+
+    - name: Add FIDIT profile to Konsole
+      ansible.builtin.copy:
+        content: |
+          [General]
+          Command=/usr/bin/bash
+          Name=FIDIT
+        dest: /etc/skel/.local/share/konsole/fidit.profile
+        mode: '0644'
+
+    - name: Configure Konsole to have FIDIT profile as default
+      ansible.builtin.copy:
+        content: |
+          [Desktop Entry]
+          DefaultProfile=fidit.profile
+        dest: /etc/skel/.config/konsolerc
+        mode: '0644'
+```
+
+### Nastavničke operacije u računalnom praktikumu
+
+#### Odjava korisnika (`logout.yml`)
+
+``` yaml
+- name: Logout user korisnik
+  hosts: o359stud
+
+  tasks:
+    - name: Kill processes owned by user korisnik using loginctl
+      ansible.builtin.command: /usr/bin/loginctl --signal=KILL kill-user korisnik
+      ignore_unreachable: true
+      changed_when: true
+```
+
+#### Brisanje datoteka u kućnom direktoriju korisnika (`delete.yml`)
+
+``` yaml
+- name: Restore files in home directory of user korisnik to defaults
+  hosts: o359stud
+
+  tasks:
+    - name: Remove files in home directory of user korisnik
+      ansible.builtin.shell: rm -r /home/korisnik/{*,.[!.]*}
+      args:
+        executable: /bin/bash
+      ignore_errors: true
+      register: rm_home_korisnik
+      changed_when: true
+
+    - name: Copy files from /etc/skel to home directory of user korisnik
+      ansible.builtin.shell: cp -r /etc/skel/.[!.]* /home/korisnik
+      args:
+        executable: /bin/bash
+      changed_when: true
+
+    - name: Change permisions for SSH configuration directory
+      ansible.builtin.file:
+        path: /home/korisnik/.ssh
+        state: directory
+        mode: '0700'
+
+    - name: Change permisions for SSH authorized keys file
+      ansible.builtin.file:
+        path: /home/korisnik/.ssh/authorized_keys
+        state: file
+        mode: '0600'
+
+    - name: Change permisions for Konsole resource configuration
+      ansible.builtin.file:
+        path: /home/korisnik/.config/konsolerc
+        state: file
+        mode: '0600'
+```
+
+### Instalacija Confluent Platform korištenjem Dockera
+
+``` yaml
+- name: Install and run Confluent Platform via Docker
+  hosts: o359
+
+  tasks:
+    - name: Git checkout
+      ansible.builtin.git:
+        repo: 'https://github.com/confluentinc/cp-all-in-one.git'
+        dest: /home/korisnik
+        version: 7.3.0-post
+
+    - name: Docker compose
+      ansible.builtin.command: /usr/bin/docker-compose up -d -- build
+      args:
+        chdir: /home/korisnik/cp-all-in-one/cp-all-in-one/
+      changed_when: true
+```
 
 ## Ograničavanje pristupa Moodle testu na temelju IP adrese
 
