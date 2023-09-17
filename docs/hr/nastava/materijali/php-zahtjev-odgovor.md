@@ -368,6 +368,7 @@ Korištenjem varijabli iz polja `$_SERVER` možemo dohvatiti i druga zaglavlja H
 - korištenjem varijable `$_SERVER["HTTP_HOST"]` zaglavlje `Host` koje sadrži ime domaćina (u našem slučaju `localhost`); [više detalja o HTTP zaglavlju Host na MDN-u](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Host)
 - korištenjem varijable `$_SERVER["HTTP_USER_AGENT"]` zaglavlje `User-Agent` koje sadrži korisnički agent, odnosno ime i verziju web klijenta koji se koristi (u našem slučaju `curl/7.72.0`); [više detalja o HTTP zaglavlju User-Agent na MDN-u](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent)
 - korištenjem varijable `$_SERVER["HTTP_ACCEPT"]` zaglavlje `Accept` koje sadrži skup MIME tipova koje klijent prihvaća (u našem slučaju `*/*`, odnosno svi); [više detalja o HTTP zaglavlju Accept na MDN-u](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept)
+- korištenjem varijable `$_SERVER["HTTP_REFERER"]` zaglavlje `Referer` koje sadrži adresu s koje je resurs zatražen; [više detalja o HTTP zaglavlju Referer na MDN-u](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer)
 
 ### Provjera imena domaćina
 
@@ -629,6 +630,11 @@ $ curl -v http://localhost:8000/
 <p>Nejasan zahtjev. Podržani MIME tipovi su application/json, text/html i text/plain.</p>
 * Closing connection 0
 ```
+
+### Provjera adrese s koje je resurs zatražen
+
+!!! todo
+    Opisati formiranje odgovora prema zaglavlju `Referer` u HTTP zahtjevu.
 
 ### Provjera ostalih zaglavlja
 
