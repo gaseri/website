@@ -2,7 +2,7 @@
 author: Vedran Miletić
 ---
 
-# Principal investigator Dr. Vedran Miletić
+# Dr. Vedran Miletić, principal investigator
 
 > "Ideas are organic entities," someone has said. The very fact of their birth endows them with form, and that form is action. He in whose brain the most ideas are born accomplishes the most. From that cause a genius, chained to an official desk, must die or go mad, just as it often happens that a man of powerful constitution, and at the same time of sedentary life and simple habits, dies of an apoplectic stroke.
 >
@@ -10,7 +10,7 @@ author: Vedran Miletić
 
 -- [A Hero of Our Time](https://www.gutenberg.org/ebooks/913) by [Mikhail Iurevich Lermontov](https://novaonline.nvcc.edu/eli/evans/his241/notes/lermontov.html)
 
-[Vedran](https://vedran.miletic.net/) [Miletić](https://www.miletic.net/) is the principal investigator of the [Group for Applications and Services on Exascale Research Infrastructure (GASERI)](../index.md) and an assistant professor of computer science at [Faculty of Informatics and Digital Technology](https://www.inf.uniri.hr/), [University of Rijeka](https://uniri.hr/). More information is available in his [curriculum vitae](https://vedran.miletic.net/files/cv-vedran-miletic.pdf).
+[Dr. Vedran](https://vedran.miletic.net/) [Miletić](https://www.miletic.net/) is the principal investigator of the [Group for Applications and Services on Exascale Research Infrastructure (GASERI)](../index.md) and an assistant professor of computer science at [Faculty of Informatics and Digital Technology](https://www.inf.uniri.hr/), [University of Rijeka](https://uniri.hr/). More information is available in his [curriculum vitae](https://vedran.miletic.net/files/cv-vedran-miletic.pdf).
 
 ## Research
 
