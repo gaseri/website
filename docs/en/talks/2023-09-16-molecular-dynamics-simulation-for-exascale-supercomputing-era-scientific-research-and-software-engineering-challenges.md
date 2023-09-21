@@ -32,6 +32,8 @@ references:
 
 ![Computational Chemistry Day 2023 Logo](https://www.compchemday.org/wp-content/uploads/2023/04/CCD2023_Logo.png)
 
+Image source: [Computational Chemistry Day Logo](https://www.compchemday.org/)
+
 ---
 
 ## Faculty of Informatics and Digital Technologies (FIDIT)
@@ -127,7 +129,7 @@ references:
 
 ![DD cells](https://manual.gromacs.org/current/_images/dd-cells.png)
 
-Image source: [Parallelization (GROMACS Manual)](https://manual.gromacs.org/current/reference-manual/algorithms/parallelization-domain-decomp.html)
+Image source for both figures: [Parallelization (GROMACS Manual)](https://manual.gromacs.org/current/reference-manual/algorithms/parallelization-domain-decomp.html)
 
 ![bg right 70% DD triclinical](https://manual.gromacs.org/current/_images/dd-tric.png)
 
@@ -137,7 +139,7 @@ Image source: [Parallelization (GROMACS Manual)](https://manual.gromacs.org/curr
 
 ![MPMD PME width:950px](https://manual.gromacs.org/current/_images/mpmd-pme.png)
 
-Image source: [Parallelization (GROMACS Manual)](https://manual.gromacs.org/current/reference-manual/algorithms/parallelization-domain-decomp.html)
+Image source for both figures: [Parallelization (GROMACS Manual)](https://manual.gromacs.org/current/reference-manual/algorithms/parallelization-domain-decomp.html)
 
 This approachs still does not scale indefinitely. Is there an alternative?
 
@@ -155,7 +157,9 @@ This approachs still does not scale indefinitely. Is there an alternative?
 
 ## FlexFMM
 
-![FlexFMM Logo height:200px](https://www.mpinat.mpg.de/4371009/header_image-1676374403.webp)
+![FlexFMM Logo height:180px](https://www.mpinat.mpg.de/4371009/header_image-1676374403.webp)
+
+Image source: [Max Planck Institute for Multidisciplinary Sciences FlexFMM](https://www.mpinat.mpg.de/grubmueller/sppexa)
 
 - continuation of SPPEXA (2022 - 2025)
 - project partners:
@@ -167,13 +171,14 @@ This approachs still does not scale indefinitely. Is there an alternative?
 
 ## Our GROMACS developments: generalized FMM
 
-- molecular dynamics simulations are periodic
-- [simulation box types](https://manual.gromacs.org/current/reference-manual/algorithms/periodic-boundary-conditions.html#some-useful-box-types): cubic, rhombic dodecahedron
-- present design and implementation of the fast multipole method only supports cubic boxes
+- molecular dynamics simulations are periodic with various [simulation box types](https://manual.gromacs.org/current/reference-manual/algorithms/periodic-boundary-conditions.html#some-useful-box-types): cubic, rhombic dodecahedron; present design and implementation of the fast multipole method supports *only cubic* boxes
     - many useful applications (materials, interfaces) fit well into rectangular cuboid boxes, not cubic -> **Matea's PhD thesis research**
-    - it is possible to also support rhombic dodecahedron: ~30% less volume => ~30% less computation time per step required
 
 ![Cuboid height:200px](https://upload.wikimedia.org/wikipedia/commons/7/70/Cuboid_no_label.svg)
+
+Image source: [Wikimedia Commons File:Cuboid no label.svg](https://commons.wikimedia.org/wiki/File%3ACuboid_no_label.svg)
+
+- it is possible to also support rhombic dodecahedron: ~30% less volume => ~30% less computation time per step required
 
 ---
 
@@ -181,9 +186,11 @@ This approachs still does not scale indefinitely. Is there an alternative?
 
 ![NVIDIA Logo height:100px](https://upload.wikimedia.org/wikipedia/commons/a/a4/NVIDIA_logo.svg)
 
+Image source: [Wikimedia Commons File:NVIDIA logo.svg](https://commons.wikimedia.org/wiki/File%3ANVIDIA_logo.svg)
+
 - funded by NVIDIA, inspired by custom-silicon Anton 2 supercomputer's hardware and software architecture
 - heterogeneous parallelism presently uses NVIDIA/AMD/Intel GPUs with CUDA/SYCL, also use NVIDIA BlueField DPUs with DOCA
-- first publication came out last year: Turalija, M., Petrović, M. & Kovačić, B. [Towards General-Purpose Long-Timescale Molecular Dynamics Simulation on Exascale Supercomputers with Data Processing Units.](https://ieeexplore.ieee.org/document/9803537) in *2022 45th Jubilee International Convention on Information, Communication, and Electronic Technology (MIPRO)*, 300–306 (2022). [doi:10.23919/MIPRO55190.2022.9803537](https://doi.org/10.23919/MIPRO55190.2022.9803537)
+- first publication came out last year: Turalija, M., Petrović, M. & Kovačić, B. [Towards General-Purpose Long-Timescale Molecular Dynamics Simulation on Exascale Supercomputers with Data Processing Units](https://ieeexplore.ieee.org/document/9803537)
 - DOCA 2.0 improved RDMA support, which eases our efforts
 
 ---
@@ -192,7 +199,7 @@ This approachs still does not scale indefinitely. Is there an alternative?
 
 ![100 ps molecular dynamics simulation of water. width:700px](https://upload.wikimedia.org/wikipedia/commons/f/f4/MD_water.gif)
 
-- Figure source: [File:MD water.gif (Wikimedia Commons)](https://commons.wikimedia.org/wiki/File:MD_water.gif)
+Image source: [Wikimedia Commons File:MD water.gif](https://commons.wikimedia.org/wiki/File:MD_water.gif)
 
 ---
 
@@ -208,7 +215,7 @@ This approachs still does not scale indefinitely. Is there an alternative?
 
 ![A rectangular water box with ~32,000 water molecules is shown. width:900px](https://www.cell.com/cms/attachment/e85de1e5-aa83-4584-b94b-e201beafb7f6/gr1_lrg.jpg)
 
-- Figure source: Biophys. J. 116(6), 621–632 (2019). [doi:10.1016/j.bpj.2018.12.025](https://doi.org/10.1016/j.bpj.2018.12.025)
+Image source: Biophys. J. 116(6), 621–632 (2019). [doi:10.1016/j.bpj.2018.12.025](https://doi.org/10.1016/j.bpj.2018.12.025)
 
 ---
 
@@ -238,21 +245,25 @@ This approachs still does not scale indefinitely. Is there an alternative?
 
 ## Affiliation changes (1/2)
 
-- starting October, Matea will be working at Faculty of Medicine, University of Rijeka
-- PhD continuing as planned
+- starting October, Matea will be joining [Faculty of Medicine](https://medri.uniri.hr/), University of Rijeka
+- PhD topic staying as planned and presented here
 
-![Faculty of Medicine bg right](https://upload.wikimedia.org/wikipedia/commons/2/25/Medicinski_fakultet_Rijeka_0710_1.jpg)
+Image source: [Wikimedia Commons File:Medicinski fakultet Rijeka 0710 1.jpg](https://commons.wikimedia.org/wiki/File%3AMedicinski_fakultet_Rijeka_0710_1.jpg)
+
+![Faculty of Medicine bg right:60%](https://upload.wikimedia.org/wikipedia/commons/2/25/Medicinski_fakultet_Rijeka_0710_1.jpg)
 
 ---
 
 ## Affiliation changes (2/2)
 
-- several days ago, I started working at [Max Planck Computing and Data Facility](https://www.mpcdf.mpg.de/) in Garching near Munich, Germany
+- several days ago, I joined [Max Planck](https://www.mpg.de) [Computing and Data Facility](https://www.mpcdf.mpg.de/) in Garching near Munich, Germany as a part of [HPC Application Support Division](https://www.mpcdf.mpg.de/services/application-support)
 - focus areas:
     - improving functionality and performance of lambda dynamics (free energy calculations)
     - developing fast multipole method implementation
 
-![TUM Campus bg right](https://upload.wikimedia.org/wikipedia/commons/2/2e/110716031-TUM.JPG)
+Image source: [Wikimedia Commons File:110716031-TUM.JPG](https://commons.wikimedia.org/wiki/File%3A110716031-TUM.JPG)
+
+![TUM Campus bg right:40%](https://upload.wikimedia.org/wikipedia/commons/2/2e/110716031-TUM.JPG)
 
 ---
 
