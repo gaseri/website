@@ -295,17 +295,17 @@ $if(csl-refs)$
 \newlength{\cslentryspacingunit} % times entry-spacing
 \setlength{\cslentryspacingunit}{\parskip}
 \newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
- {% don't indent paragraphs
+{% don't indent paragraphs
   \setlength{\parindent}{0pt}
   % turn on hanging indent if param 1 is 1
   \ifodd #1
-  \let\oldpar\par
-  \def\par{\hangindent=\cslhangindent\oldpar}
+    \let\oldpar\par
+    \def\par{\hangindent=\cslhangindent\oldpar}
   \fi
   % set entry spacing
   \setlength{\parskip}{#2\cslentryspacingunit}
- }%
- {}
+}%
+{}
 \usepackage{calc}
 \newcommand{\CSLBlock}[1]{#1\hfill\break}
 \newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
@@ -326,20 +326,20 @@ $endif$
 \makeatletter
 \renewcommand*\l@chapter[2]{%
   \ifnum \c@tocdepth >\m@ne
-  \addpenalty{-\@highpenalty}%
-  \vskip 1.0em \@plus\p@
-  \setlength\@tempdima{1.5em}%
-  \begingroup
-  \parindent \z@ \rightskip \@pnumwidth
-  \parfillskip -\@pnumwidth
-  \leavevmode \bfseries
-  \advance\leftskip\@tempdima
-  \hskip -\leftskip
-  #1\nobreak\normalfont\leaders\hbox{\(\m@th
-    \mkern \@dotsep mu\hbox{.}\mkern \@dotsep
-    mu\)}\hfill\nobreak\hb@xt@\@pnumwidth{\hss #2}\par
-  \penalty\@highpenalty
-  \endgroup
+    \addpenalty{-\@highpenalty}%
+    \vskip 1.0em \@plus\p@
+    \setlength\@tempdima{1.5em}%
+    \begingroup
+    \parindent \z@ \rightskip \@pnumwidth
+    \parfillskip -\@pnumwidth
+    \leavevmode \bfseries
+    \advance\leftskip\@tempdima
+    \hskip -\leftskip
+    #1\nobreak\normalfont\leaders\hbox{\(\m@th
+      \mkern \@dotsep mu\hbox{.}\mkern \@dotsep
+      mu\)}\hfill\nobreak\hb@xt@\@pnumwidth{\hss #2}\par
+    \penalty\@highpenalty
+    \endgroup
   \fi}
 \makeatother
 
@@ -387,27 +387,27 @@ $endif$
 
 %%%%%%%%%%%%%%% PRVA UNUTARNJA STRANICA / FIRST INNER PAGE %%%%%%%%%%%%%%%%
 \begin{titlepage}
-    \fontsize{16pt}{20pt}\selectfont
-    \fontfamily{phv}\fontseries{mc}\selectfont
-    \newgeometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
-    \setlength{\intextsep}{0pt plus 0pt minus 0pt}
+  \fontsize{16pt}{20pt}\selectfont
+  \fontfamily{phv}\fontseries{mc}\selectfont
+  \newgeometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
+  \setlength{\intextsep}{0pt plus 0pt minus 0pt}
 
-    \begin{center}
-        {$sveučilište$} \\
-        {$fakultet$} \\
+  \begin{center}
+    {$sveučilište$} \\
+    {$fakultet$} \\
     {$studij$} \\
-        \vspace{3cm}
-        $autor$ \\
-        \vspace{2cm}
-        {\fontsize{22pt}{22pt}\selectfont\textbf{$naslov$}} \\
-        \vspace{2cm}
-        $vrsta$ \\
-        \vspace{5cm} % adjust this spacing if necessary
-        Mentor: $mentor$ \\ % Mentor/mentori
-        % Komentor: $komentor$ \\ % Komentor/komentori
-        \vfill{$mjesto$, $datum$}
-    \end{center}
-    \restoregeometry
+    \vspace{3cm}
+    $autor$ \\
+    \vspace{2cm}
+    {\fontsize{22pt}{22pt}\selectfont\textbf{$naslov$}} \\
+    \vspace{2cm}
+    $vrsta$ \\
+    \vspace{5cm} % adjust this spacing if necessary
+    Mentor: $mentor$ \\ % Mentor/mentori
+    % Komentor: $komentor$ \\ % Komentor/komentori
+    \vfill{$mjesto$, $datum$}
+  \end{center}
+  \restoregeometry
 \end{titlepage}
 
 %%%%%%%%%%%%%% DRUGA UNUTARNJA STRANICA / SECOND INNER PAGE %%%%%%%%%%%%%%%
