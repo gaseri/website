@@ -130,6 +130,32 @@ Za ilustraciju, slične uzorke vidimo na web stranici [roadmap.sh](https://roadm
 
 ---
 
+## Web standardi
+
+Osim temeljnih načela programskog inženjerstva na webu, također kroz vrijeme ostaju i web standardi.
+
+> Web standards are blueprints –or building blocks– of a consistent and harmonious digitally connected world.
+>
+> They are implemented in browsers, blogs, search engines, and other software that power our experience on the web.
+
+Izvor: [Web Standards](https://www.w3.org/standards/) ([W3C](https://www.w3.org/))
+
+Uz [standarde](https://www.w3.org/TR/), W3C nudi i brojne [stilske smjernice](https://www.w3.org/Provider/Style/), od kojih ćemo razmotriti najvažniju za nas na ovom predmetu.
+
+---
+
+## Stilska smjernica *Cool URIs don't change*
+
+> **File name extension.** This is a very common one. "cgi", even ".html" is something which will change. You may not be using HTML for that page in 20 years time, but you might want today's links to it to still be valid. (...)
+>
+> **Software mechanisms.** Look for "cgi", "exec" and other give-away "look what software we are using" bits in URIs. Anyone want to commit to using perl cgi scripts all their lives? Nope? Cut out the .pl. Read the server manual on how to do it.
+>
+> Disk name - gimme a break! But I've seen it.
+
+Izvor: [Cool URIs don't change.](https://www.w3.org/Provider/Style/URI) ([W3C](https://www.w3.org/))
+
+---
+
 ![Grgo Šipek bg 95% left:55%](https://upload.wikimedia.org/wikipedia/commons/9/94/Grgo_%C5%A0ipek_-_Gr%C5%A1e.jpg)
 
 ## Službena PW/DWA2 glazbena tema za vježbe
