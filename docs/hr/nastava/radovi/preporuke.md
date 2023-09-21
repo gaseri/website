@@ -219,6 +219,12 @@ $endif$
 \usepackage[croatian]{babel}
 \usepackage{ae}
 \usepackage[unicode]{hyperref}
+\hypersetup{%
+  pdftitle={$naslov$},
+  pdfsubject={$vrsta$},
+  pdfauthor={$autor$},
+  pdfkeywords={$for(ključne-riječi)$$ključne-riječi$; $endfor$}
+}
 \usepackage{mathptmx}
 \usepackage{amscd}
 \usepackage{amssymb}
