@@ -223,7 +223,7 @@ $endif$
   pdftitle={$naslov$},
   pdfsubject={$vrsta$},
   pdfauthor={$autor$},
-  pdfkeywords={$for(ključne-riječi)$$ključne-riječi$; $endfor$}
+  pdfkeywords={$for(ključne-riječi)$$ključne-riječi$$sep$; $endfor$}
 }
 \usepackage{mathptmx}
 \usepackage{amscd}
@@ -475,7 +475,7 @@ $sažetak$
 \vspace{1cm}
 \textbf{Ključne riječi}:
 $for(ključne-riječi)$
-$ključne-riječi$;
+$ključne-riječi$$sep$;
 $endfor$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
