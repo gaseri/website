@@ -366,23 +366,23 @@ $endif$
 
 %%%%%%%%%%%%%%%%%%%% NASLOVNICA / FRONT COVER PAGE %%%%%%%%%%%%%%%%%%%%%%%%
 % \begin{titlepage}
-%     \fontsize{16pt}{20pt}\selectfont
-%     \fontfamily{phv}\fontseries{mc}\selectfont
-%     \newgeometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
-%     \setlength{\intextsep}{0pt plus 0pt minus 0pt}
+%   \fontsize{16pt}{20pt}\selectfont
+%   \fontfamily{phv}\fontseries{mc}\selectfont
+%   \newgeometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
+%   \setlength{\intextsep}{0pt plus 0pt minus 0pt}
 
-%     \begin{center}
-%         {SVEUČILIŠTE U RIJECI} \\
-%         {NOSITELJ/NOSITELJI STUDIJA} \\
-%         \vspace{3cm}
-%         Ime i prezime autora \\
-%         \vspace{2cm}
-%         {\fontsize{22pt}{22pt}\selectfont\textbf{NASLOV DOKTORSKOGA RADA}} \\
-%         \vspace{2cm}
-%         DOKTORSKI RAD \\
-%         \vfill{Rijeka, godina.}
-%     \end{center}
-%     \restoregeometry
+%   \begin{center}
+%     {SVEUČILIŠTE U RIJECI} \\
+%     {NOSITELJ/NOSITELJI STUDIJA} \\
+%     \vspace{3cm}
+%     Ime i prezime autora \\
+%     \vspace{2cm}
+%     {\fontsize{22pt}{22pt}\selectfont\textbf{NASLOV DOKTORSKOGA RADA}} \\
+%     \vspace{2cm}
+%     DOKTORSKI RAD \\
+%     \vfill{Rijeka, godina.}
+%   \end{center}
+%   \restoregeometry
 % \end{titlepage}
 
 %%%%%%%%%%%%%%% PRVA UNUTARNJA STRANICA / FIRST INNER PAGE %%%%%%%%%%%%%%%%
