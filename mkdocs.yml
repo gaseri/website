@@ -2,10 +2,13 @@ site_name: GASERI
 site_description: Group for Apps and Services on Exascale Research Infrastructure is a research, development, and teaching unit at FIDIT, UniRi.
 site_author: Vedran Miletić
 site_url: https://group.miletic.net/
+
 copyright: Copyright 2011 – 2023, <a href="https://vedran.miletic.net/">Vedran</a> <a href="https://www.miletic.net/">Miletić</a> <i>et <a href="/en/people/">alii</a></i>; contents licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC-BY-NC-ND 4.0</a>, except teaching materials in Croatian under <a href="/hr/nastava/">/hr/nastava/materijali/</a>, teaching materials in English under <a href="/en/teaching/">/en/teaching/materials/</a>, and tutorials in English under <a href="/en/tutorials/gromacs/">/en/tutorials/</a>, which are licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a>. Source code available in <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories">GitHub repository</a> <a href="https://github.com/gaseri/website">gaseri/website</a>. Hosted on <a href="https://pages.github.com/">GitHub Pages</a> and deployed using a <a href="/en/blog/2022-11-01-publishing-material-for-mkdocs-website-to-github-pages-using-custom-actions-workflow/">custom</a> <a href="https://github.com/features/actions">GitHub Action</a>. Reachable as a <a href="https://community.torproject.org/onion-services/">Tor onion service</a> at <a href="http://vcwkbqby652dtqgbtbtr6ouvs6fu5abx5z45dmlug6dl55d6zcadsuqd.onion/">vcwkbqby652dtqgbtbtr6ouvs6fu5abx5z45dmlug6dl55d6zcadsuqd.onion</a>. <a href="#__consent">Change cookie settings</a>.
+
 repo_name: gaseri/website
 repo_url: https://github.com/gaseri/website/
 edit_uri: edit/main/docs/
+
 nav:
   - Services: https://www.miletic.net/
   - Group: index.md
@@ -461,6 +464,7 @@ nav:
       - Latest posts: en/blog/index.md
       - Tags: en/blog/tags.md
     - Very important information: en/very-important-information.md
+
 theme:
   name: material
   custom_dir: overrides
@@ -498,6 +502,7 @@ theme:
   font:
     text: Fira Sans
     code: Fira Mono
+
 extra:
   alternate:
     - name: Croatian
@@ -545,10 +550,12 @@ extra:
     - icon: fontawesome/brands/bitbucket
       link: https://bitbucket.org/gaseri
       name: GASERI on Bitbucket
+
 extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
 markdown_extensions:
   - admonition
   - attr_list
@@ -568,6 +575,7 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+
 plugins:
   - blog:
       blog_dir: en/blog
