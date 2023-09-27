@@ -125,19 +125,19 @@ Nastavni sadržaji i sve obavijesti vezane uz kolegij kao i ispitni termini nala
 
 | Datum | Predavanja (vrijeme i mjesto) | Seminari (vrijeme i mjesto) | Vježbe (vrijeme i mjesto) | Nastavnik |
 | ----- | ----------------------------- | --------------------------- | ------------------------- | --------- |  
-| 5. 10. 2022. | P1 (12:00 -- 15:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) |   |   | Dejan Ljubobratović, pred. |
-| 12. 10. 2022. | P2 (12:00 -- 15:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) |   |   | Dejan Ljubobratović, pred. |
-| 19. 10. 2022. | P3 (12:00 -- 15:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) |   |   | Dejan Ljubobratović, pred. |
-| 26. 10. 2022. | P4 (12:00 -- 15:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) |   |   | Dejan Ljubobratović, pred. |
-| 2. 11. 2022. | P5 (12:00 -- 15:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) |   |   | Dejan Ljubobratović, pred. |
-| 9. 11. 2022. | 1. test (12:00 -- 13:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) |   | V1 (13:00 -- 16:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) | Dejan Ljubobratović, pred. |
-| 16. 11. 2022. |   |   | V2 (12:00 -- 15:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) | Dejan Ljubobratović, pred. |
-| 23. 11. 2023. |   |   | V3 (12:00 -- 15:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) | Dejan Ljubobratović, pred. |
-| 30. 11. 2022. |   |   | V4 (12:00 -- 15:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) | Dejan Ljubobratović, pred. |
-| 7. 12. 2022. |   | S1 (15:00 -- 18:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) | V5 (12:00 -- 15:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) | Dejan Ljubobratović, pred. |
-| 14. 12. 2022. |   | S2 + S3 (12:00 -- 18:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) |   | Dejan Ljubobratović, pred. |
-| 21. 12. 2022. |   | S4 + S5 (12:00 -- 18:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) |   | Dejan Ljubobratović, pred. |
-| 11. 01. 2023. |   | 2. test (12:00 -- 13:00; Fakultet informatike i digitalnih tehnologija, računalna učionica O-350) |   | Dejan Ljubobratović, pred. |
+| 5. 10. 2022. | P1 (12:00 -- 15:00; Fakultet informatike i digitalnih tehnologija, računalni praktikum O-350) |   |   | Dejan Ljubobratović, pred. |
+| 12. 10. 2022. | P2 (12:00 -- 15:00; Fakultet informatike i digitalnih tehnologija, računalni praktikum O-350) |   |   | Dejan Ljubobratović, pred. |
+| 19. 10. 2022. | P3 (12:00 -- 15:00; Fakultet informatike i digitalnih tehnologija, računalni praktikum O-350) |   |   | Dejan Ljubobratović, pred. |
+| 26. 10. 2022. | P4 (12:00 -- 15:00; Fakultet informatike i digitalnih tehnologija, računalni praktikum O-350) |   |   | Dejan Ljubobratović, pred. |
+| 2. 11. 2022. | P5 (12:00 -- 15:00; Fakultet informatike i digitalnih tehnologija, računalni praktikum O-350) |   |   | Dejan Ljubobratović, pred. |
+| 9. 11. 2022. | 1. test (12:00 -- 13:00; Fakultet informatike i digitalnih tehnologija, računalni praktikum O-350) |   | V1 (13:00 -- 16:00; Fakultet informatike i digitalnih tehnologija, računalni praktikum O-350) | Dejan Ljubobratović, pred. |
+| 16. 11. 2022. |   |   | V2 (12:00 -- 15:00; Fakultet informatike i digitalnih tehnologija, računalni praktikum O-350) | Dejan Ljubobratović, pred. |
+| 23. 11. 2023. |   |   | V3 (12:00 -- 15:00; Fakultet informatike i digitalnih tehnologija, računalni praktikum O-350) | Dejan Ljubobratović, pred. |
+| 30. 11. 2022. |   |   | V4 (12:00 -- 15:00; Fakultet informatike i digitalnih tehnologija, računalni praktikum O-350) | Dejan Ljubobratović, pred. |
+| 7. 12. 2022. |   | S1 (15:00 -- 18:00; Fakultet informatike i digitalnih tehnologija, računalni praktikum O-350) | V5 (12:00 -- 15:00; Fakultet informatike i digitalnih tehnologija, računalni praktikum O-350) | Dejan Ljubobratović, pred. |
+| 14. 12. 2022. |   | S2 + S3 (12:00 -- 18:00; Fakultet informatike i digitalnih tehnologija, računalni praktikum O-350) |   | Dejan Ljubobratović, pred. |
+| 21. 12. 2022. |   | S4 + S5 (12:00 -- 18:00; Fakultet informatike i digitalnih tehnologija, računalni praktikum O-350) |   | Dejan Ljubobratović, pred. |
+| 11. 01. 2023. |   | 2. test (12:00 -- 13:00; Fakultet informatike i digitalnih tehnologija, računalni praktikum O-350) |   | Dejan Ljubobratović, pred. |
 
 **Napomena:** U slučaju pogoršane epidemiološke situacije uvjetovane pandemijom COVID-19 dio nastave (u obimu koji će ovisiti o trenutnoj situaciji) će se održati *on-line* u gore navedenim terminima.
 
@@ -145,29 +145,29 @@ Nastavni sadržaji i sve obavijesti vezane uz kolegij kao i ispitni termini nala
 
 |    | PREDAVANJA (tema predavanja) | Broj sati nastave | Mjesto održavanja |
 | -- | ---------------------------- | ----------------- | ----------------- |
-| P1 | Povijesni razvoj računala. Sklopovska i programska oprema | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
-| P2 | Povijesni razvoj interneta i operacijskih sustava. Znanstvena programska oprema | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
-| P3 | Superračunala. Trendovi i smjerovi razvoja informacijske i komunikacijske tehnologije | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
-| P4 | Intelektualno vlasništvo nad programskom opremom i podacima. Licenciranje | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
-| P5 | Računalna kemija, molekularno modeliranje i bioinformatika | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
+| P1 | Povijesni razvoj računala. Sklopovska i programska oprema | 3 | Fakultet informatike i digitalnih tehnologija, računalni praktikum O-350 |
+| P2 | Povijesni razvoj interneta i operacijskih sustava. Znanstvena programska oprema | 3 | Fakultet informatike i digitalnih tehnologija, računalni praktikum O-350 |
+| P3 | Superračunala. Trendovi i smjerovi razvoja informacijske i komunikacijske tehnologije | 3 | Fakultet informatike i digitalnih tehnologija, računalni praktikum O-350 |
+| P4 | Intelektualno vlasništvo nad programskom opremom i podacima. Licenciranje | 3 | Fakultet informatike i digitalnih tehnologija, računalni praktikum O-350 |
+| P5 | Računalna kemija, molekularno modeliranje i bioinformatika | 3 | Fakultet informatike i digitalnih tehnologija, računalni praktikum O-350 |
 |    | **Ukupan broj sati predavanja** | **15** |   |
 
 |    | SEMINARI (tema seminara) | Broj sati nastave | Mjesto održavanja |
 | -- | ------------------------ | ----------------- | ----------------- |
-| S1 | Predviđanje pristajanja molekula | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
-| S2 | Molekularna dinamika. Slobodna energija | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
-| S3 | Kvantitativna analiza odnosa strukture i aktivnosti molekule | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
-| S4 | Metode kvantne kemije | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
-| S5 | Pretraživanje i poravnanje sekvenci | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
+| S1 | Predviđanje pristajanja molekula | 3 | Fakultet informatike i digitalnih tehnologija, računalni praktikum O-350 |
+| S2 | Molekularna dinamika. Slobodna energija | 3 | Fakultet informatike i digitalnih tehnologija, računalni praktikum O-350 |
+| S3 | Kvantitativna analiza odnosa strukture i aktivnosti molekule | 3 | Fakultet informatike i digitalnih tehnologija, računalni praktikum O-350 |
+| S4 | Metode kvantne kemije | 3 | Fakultet informatike i digitalnih tehnologija, računalni praktikum O-350 |
+| S5 | Pretraživanje i poravnanje sekvenci | 3 | Fakultet informatike i digitalnih tehnologija, računalni praktikum O-350 |
 |    | **Ukupan broj sati seminara** | **15** |   |
 
 |    | VJEŽBE (tema vježbe) | Broj sati nastave | Mjesto održavanja |
 | -- | -------------------- | ----------------- | ----------------- |
-| V1 | Baze podataka i postojeća programska podrška u računalnoj kemiji, molekularnom modeliranju i bioinformatici | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
-| V2 | Obrada dokumenata koji sadrže kemijske molekularne formule i jednadžbe. Osnove programiranja: kontrolna struktura, simboličko i numeričko računanje | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
-| V3 | Crtanje strukturnih formula i računanje osnovnih svojstava molekula | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
-| V4 | Obrada strukturiranih podataka. Crtanje grafova | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
-| V5 | Rad s osnovnim funkcijama i postavljanje operacijskog sustava | 3 | Fakultet informatike i digitalnih tehnologija, računalna učionica O-350 |
+| V1 | Baze podataka i postojeća programska podrška u računalnoj kemiji, molekularnom modeliranju i bioinformatici | 3 | Fakultet informatike i digitalnih tehnologija, računalni praktikum O-350 |
+| V2 | Obrada dokumenata koji sadrže kemijske molekularne formule i jednadžbe. Osnove programiranja: kontrolna struktura, simboličko i numeričko računanje | 3 | Fakultet informatike i digitalnih tehnologija, računalni praktikum O-350 |
+| V3 | Crtanje strukturnih formula i računanje osnovnih svojstava molekula | 3 | Fakultet informatike i digitalnih tehnologija, računalni praktikum O-350 |
+| V4 | Obrada strukturiranih podataka. Crtanje grafova | 3 | Fakultet informatike i digitalnih tehnologija, računalni praktikum O-350 |
+| V5 | Rad s osnovnim funkcijama i postavljanje operacijskog sustava | 3 | Fakultet informatike i digitalnih tehnologija, računalni praktikum O-350 |
 |    | **Ukupan broj sati vježbi** | **15** |   |
 
 |     | ISPITNI TERMINI (završni ispit) |
