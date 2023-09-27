@@ -170,11 +170,11 @@ Nastavni sadržaji i sve obavijesti vezane uz kolegij kao i ispitni termini nala
 | V5 | Rad s osnovnim funkcijama i postavljanje operacijskog sustava | 3 | Fakultet informatike i digitalnih tehnologija, računalni praktikum O-350 |
 |    | **Ukupan broj sati vježbi** | **15** |   |
 
-|     | ISPITNI TERMINI (završni ispit) |
-| --- | ------------------------------- |
-| 1.  | **03. 02. 2023.** |
-| 2.  | **17. 02. 2023.** |
-| 3.  | **21. 06. 2023.** |
-| 4.  | **05. 07. 2023.** |
-| 5.  | **08. 09. 2023.** |
-| 6.  | **22. 09. 2023.** |
+|    | ISPITNI TERMINI (završni ispit) |
+| -- | ------------------------------- |
+| 1. | **03. 02. 2023.** |
+| 2. | **17. 02. 2023.** |
+| 3. | **21. 06. 2023.** |
+| 4. | **05. 07. 2023.** |
+| 5. | **08. 09. 2023.** |
+| 6. | **22. 09. 2023.** |
