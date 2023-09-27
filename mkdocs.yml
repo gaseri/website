@@ -25,6 +25,7 @@ nav:
           - O nastavi: hr/nastava/index.md
           - Izvedbeni planovi:
               - Akademska godina 2023./2024.:
+                  - Informatika za farmaceute (MedRi): hr/nastava/izvedbeni/2023-2024/INF-Pharma.md
                   - Infrastruktura za podatke velikog obujma: hr/nastava/izvedbeni/2023-2024/IPVO.md
                   - Računalne mreže: hr/nastava/izvedbeni/2023-2024/RM.md
                   - Upravljanje računalnim sustavima: hr/nastava/izvedbeni/2023-2024/URS.md
