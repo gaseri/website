@@ -117,6 +117,23 @@ Oko ovog pitanja u [javnom](https://sh.wikipedia.org/wiki/Dizela%C5%A1i) [diskur
 
 GASERI ne nude pristup putem [SSH](https://www.openssh.com/), već samo putem [SSHH..](https://youtu.be/Fs96WfdspEk)
 
+## Koristite li onda barem SSH klijent?
+
+Naravno. Kao dokaz prilažemo sadržaj naše konfiguracijske datoteke `.ssh/config`:
+
+``` shell
+$ cat .ssh/config
+Host 😎.miletic.net
+    RemoteCommand /usr/local/bin/gas
+```
+
+Ovdje je i sadržaj naše datoteke `.ssh/known_hosts`:
+
+``` shell
+$ cat .ssh/known_hosts
+kristina.host ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBLbqkvnOXPufdOKK1YJHK9br1xbCHeLt5bleW80QeHh0e4CzrBMZ4m6hKMViwHLWUledLuaqbArxxUiGenp25rY=
+```
+
 ## Sponzorira li vas [Caterpillar](https://www.caterpillar.com/)?
 
 Trenutno ne, ali smo uvijek otvoreni za suradnju. Primjerice, dobro bi nam došao [viličar](https://www.caterpillar.com/en/brands/cat-lift-trucks.html) za furati servere od laboratorija do podatkovnog centra i nazad.
