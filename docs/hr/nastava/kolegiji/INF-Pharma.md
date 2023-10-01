@@ -3,4 +3,4 @@ tags:
   - (kolegij) inf-pharma
 ---
 
-# Informatika za farmaceute (MedRi)
+# Informatika za farmaceute

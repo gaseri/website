@@ -10,6 +10,10 @@ Teaching materials are in Croatian, except [Code Optimization](courses/CO.md) fo
 
 ## Courses
 
+### Integrated undergraduate and graduate
+
+- [Informatics for Pharmacists](../../hr/nastava/kolegiji/INF-Pharma.md)
+
 ### Undergraduate
 
 - [Computer Networks](../../hr/nastava/kolegiji/RM.md)
@@ -31,7 +35,6 @@ Teaching materials are in Croatian, except [Code Optimization](courses/CO.md) fo
 ### Other
 
 - [Informatics (BioTech)](../../hr/nastava/kolegiji/INF-BioTech.md)
-- [Informatics for Pharmacists (MedRi)](../../hr/nastava/kolegiji/INF-Pharma.md)
 - [Computer Networks (RiTeh)](../../hr/nastava/kolegiji/RM-RiTeh.md)
 - [Code Optimization (YUFE)](courses/CO.md)
 

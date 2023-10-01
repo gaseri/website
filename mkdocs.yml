@@ -25,14 +25,14 @@ nav:
           - O nastavi: hr/nastava/index.md
           - Izvedbeni planovi:
               - Akademska godina 2023./2024.:
-                  - Informatika za farmaceute (MedRi): hr/nastava/izvedbeni/2023-2024/INF-Pharma.md
+                  - Informatika za farmaceute: hr/nastava/izvedbeni/2023-2024/INF-Pharma.md
                   - Infrastruktura za podatke velikog obujma: hr/nastava/izvedbeni/2023-2024/IPVO.md
                   - Računalne mreže: hr/nastava/izvedbeni/2023-2024/RM.md
                   - Upravljanje računalnim sustavima: hr/nastava/izvedbeni/2023-2024/URS.md
               - Akademska godina 2022./2023.:
                   - Arhitektura i organizacija računala: hr/nastava/izvedbeni/2022-2023/AOR.md
                   - Informatika (BioTech): hr/nastava/izvedbeni/2022-2023/INF-BioTech.md
-                  - Informatika za farmaceute (MedRi): hr/nastava/izvedbeni/2022-2023/INF-Pharma.md
+                  - Informatika za farmaceute: hr/nastava/izvedbeni/2022-2023/INF-Pharma.md
                   - Infrastruktura za podatke velikog obujma: hr/nastava/izvedbeni/2022-2023/IPVO.md
                   - Mrežni i mobilni operacijski sustavi: hr/nastava/izvedbeni/2022-2023/MMOS.md
                   - Optimizacija programskog koda: hr/nastava/izvedbeni/2022-2023/OPK.md
@@ -76,7 +76,7 @@ nav:
               - Distribuirani sustavi: hr/nastava/kolegiji/DS.md
               - Dinamičke web aplikacije 2: hr/nastava/kolegiji/DWA2.md
               - Informatika (BioTech): hr/nastava/kolegiji/INF-BioTech.md
-              - Informatika za farmaceute (MedRi): hr/nastava/kolegiji/INF-Pharma.md
+              - Informatika za farmaceute: hr/nastava/kolegiji/INF-Pharma.md
               - Infrastruktura za podatke velikog obujma: hr/nastava/kolegiji/IPVO.md
               - Komunikacijske mreže: hr/nastava/kolegiji/KM.md
               - Mrežni i mobilni operacijski sustavi: hr/nastava/kolegiji/MMOS.md
