@@ -14,17 +14,16 @@ hide:
 
 ## 🇭🇷 [Grupa za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi](hr/index.md)
 
-- Integrirani prijediplomski i diplomski sveučilišni studij: [Informatika za farmaceute](hr/nastava/kolegiji/INF-Pharma.md) ([izvedbeni](hr/nastava/izvedbeni/2022-2023/INF-Pharma.md))
-- Prijediplomski sveučilišni studij:
-    - zimski semestar: [Računalne mreže](hr/nastava/kolegiji/RM.md) ([izvedbeni](hr/nastava/izvedbeni/2022-2023/RM.md)), [Programiranje za web](hr/nastava/kolegiji/PW.md) ([izvedbeni](hr/nastava/izvedbeni/2022-2023/PW.md)), [Mrežni i mobilni operacijski sustavi](hr/nastava/kolegiji/MMOS.md) ([izvedbeni](hr/nastava/izvedbeni/2022-2023/MMOS.md))
-    - ljetni semestar: [Arhitektura i organizacija računala](hr/nastava/kolegiji/AOR.md) ([izvedbeni](hr/nastava/izvedbeni/2022-2023/AOR.md)), [Sigurnost informacijskih i komunikacijskih sustava](hr/nastava/kolegiji/SIKS.md), [Optimizacija programskog koda](hr/nastava/kolegiji/OPK.md) ([izvedbeni](hr/nastava/izvedbeni/2022-2023/OPK.md)), [Upravljanje računalnim sustavima](hr/nastava/kolegiji/URS.md) ([izvedbeni](hr/nastava/izvedbeni/2022-2023/URS.md))
-- Diplomski sveučilišni studij: [Infrastruktura za podatke velikog obujma](hr/nastava/kolegiji/IPVO.md) ([izvedbeni](hr/nastava/izvedbeni/2022-2023/IPVO.md)), [Upravljanje mrežnim sustavima](hr/nastava/kolegiji/UMS.md) ([izvedbeni](hr/nastava/izvedbeni/2022-2023/UMS.md))
-- Poslijediplomski sveučilišni doktorski studij: [Računalna biokemija i biofizika](hr/nastava/kolegiji/RBKBF.md)
+- Sveučilišni integrirani prijediplomski i diplomski [studij Farmacija](https://medri.uniri.hr/obrazovanje/studiji/integrirani-preddiplomski-i-diplomski-sveucilisni-studij/farmacija/): [Informatika za farmaceute](hr/nastava/kolegiji/INF-Pharma.md) ([izvedbeni](hr/nastava/izvedbeni/2023-2024/INF-Pharma.md))
+- Sveučilišni [prijediplomski studij Informatika](https://www.inf.uniri.hr/studiji/prijediplomski-studij): [Računalne mreže](hr/nastava/kolegiji/RM.md) ([izvedbeni](hr/nastava/izvedbeni/2023-2024/RM.md)), [Upravljanje računalnim sustavima](hr/nastava/kolegiji/URS.md) ([izvedbeni](hr/nastava/izvedbeni/2023-2024/URS.md))
+- Sveučilišni [diplomski studij Informatika](https://www.inf.uniri.hr/studiji/diplomski-studij): [Infrastruktura za podatke velikog obujma](hr/nastava/kolegiji/IPVO.md) ([izvedbeni](hr/nastava/izvedbeni/2023-2024/IPVO.md))
+- Sveučilišni poslijediplomski [doktorski studij Informatika](https://www.inf.uniri.hr/studiji/doktorski-studij): [Računalna biokemija i biofizika](hr/nastava/kolegiji/RBKBF.md)
 - [Teme završnih i diplomskih radova](hr/nastava/radovi/teme.md)
-- Predmeti na drugim studijima: [Informatika (BioTech)](hr/nastava/kolegiji/INF-BioTech.md) ([izvedbeni](hr/nastava/izvedbeni/2022-2023/INF-BioTech.md))
 
 ## 🇺🇸 [Group for Applications and Services on Exascale Research Infrastructure](en/index.md)
 
-- [Code optimization](en/teaching/courses/CO.md)
+- [Introductory presentation](en/introductory-presentation.md)
+- [Principal investigator](en/people/principal-investigator.md)
+- [Molecular dynamics simulation for exascale supercomputing era: scientific research and software engineering challenges](en/talks/2023-09-16-molecular-dynamics-simulation-for-exascale-supercomputing-era-scientific-research-and-software-engineering-challenges.md)
 - [GROMACS tutorials](en/tutorials/gromacs/index.md)
 - [Latest blog posts](en/blog/index.md)
