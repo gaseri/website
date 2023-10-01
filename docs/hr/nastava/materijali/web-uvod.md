@@ -122,7 +122,7 @@ Za ilustraciju, slične uzorke vidimo na web stranici [roadmap.sh](https://roadm
 📝 **Napomena:** Literatura nije fokusirana na neki jezik i okvir za razvoj web aplikacija jer se oni mijenjaju, dok temeljna načela programskog inženjerstva na webu ostaju.
 
 - [MDN Web Docs](https://developer.mozilla.org/) (slučajno pokriva i vježbe: [/Learn/Server-side/Django](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django))
-- Prezentacije (izrađene u [Marp](https://marp.app/)-u) i *vaše bilješke* s predavanja
+- Prezentacije (izrađene u [Marpu](https://marp.app/)) i *vaše bilješke* s predavanja
 - Fowler, M., Rice, D., Foemmel, M., Hieatt, E., Mee, R., Stafford, R. [Patterns of Enterprise Application Architecture](https://www.informit.com/store/patterns-of-enterprise-application-architecture-9780321127426). (Addison-Wesley, 2002).
 - McConnel, S. [Code Complete: A Practical Handbook of Software Construction](https://www.microsoftpressstore.com/store/code-complete-9780735619678). (Microsoft Press, 2004.)
 - Swartz, A. A Programmable Web: An Unfinished Work. (Morgan & Claypool Publishers, 2013.) [doi:10.2200/S00481ED1V01Y201302WBE005](https://doi.org/10.2200%2FS00481ED1V01Y201302WBE005)

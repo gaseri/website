@@ -63,7 +63,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 
 - datotečni sustav (engl. *file system*) je *sadržan* na particiji *sadrži* datoteke
 
-    - FAT{16,32} -- datira iz doba [MS-DOS](https://en.wikipedia.org/wiki/MS-DOS)-a; [FAT 32](https://en.wikipedia.org/wiki/File_Allocation_Table#FAT32) omogućuje veću veličinu datotečnog sustava i pojedine datoteke, limit 4 gigabajta za veličinu datoteke
+    - FAT{16,32} -- datira iz doba [MS-DOS-a](https://en.wikipedia.org/wiki/MS-DOS); [FAT 32](https://en.wikipedia.org/wiki/File_Allocation_Table#FAT32) omogućuje veću veličinu datotečnog sustava i pojedine datoteke, limit 4 gigabajta za veličinu datoteke
     - [NTFS](https://en.wikipedia.org/wiki/NTFS) kreće 1993. godine sa [Windows NT 3.1](https://en.wikipedia.org/wiki/Windows_NT_3.1)
 
         - jako dobar datotečni sustav

@@ -6,7 +6,7 @@ author: Vedran Miletić, Matea Turalija
 
 Do sada smo istraživali korištenje pojedinačnih instanci kontejnera koji se izvode na jednom glavnom računalu, slično kao što programer radi na jednoj usluzi neke aplikacije. Međutim, proizvodne aplikacije obično su mnogo složenije i sastoje se od više usluga, a ovaj model s jednim poslužiteljem neće funkcionirati za koordinaciju 10 ili 100 kontejnera i mrežnih veza između njih, a da ne spominjemo potrebu za osiguravanjem dostupnosti i skalabilnosti.
 
-[Docker Compose](https://docs.docker.com/compose/) ([GitHub](https://github.com/docker/compose)) je alat za definiranje i pokretanje višekontejnerskih aplikacija korištenjem Dockera, tzv. kompozicija (engl. *composition*). Usluge koje će se pokrenuti definiraju se korištenjem konfiguracije u obliku [YAML](https://yaml.org/). YAML je donekle srodan [JSON](https://www.json.org/)-u, ali je dizajniran kako bi bio čitljiv ljudima (slično kao [TOML](https://toml.io/)).
+[Docker Compose](https://docs.docker.com/compose/) ([GitHub](https://github.com/docker/compose)) je alat za definiranje i pokretanje višekontejnerskih aplikacija korištenjem Dockera, tzv. kompozicija (engl. *composition*). Usluge koje će se pokrenuti definiraju se korištenjem konfiguracije u obliku [YAML](https://yaml.org/). YAML je donekle srodan [JSON-u](https://www.json.org/), ali je dizajniran kako bi bio čitljiv ljudima (slično kao [TOML](https://toml.io/)).
 
 !!! tip
     [Službeno proširenje za Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) za Visual Studio Code, između ostalog, podržava i [korištenje Docker Composea](https://code.visualstudio.com/docs/containers/docker-compose).

@@ -85,7 +85,7 @@ init-pki complete; you may now create a CA or requests.
 Your newly created PKI dir is: /home/vedranm/pki
 ```
 
-Unutar upravo stvorenog direktorija `pki` nalaze se prazni direktoriji `private` i `reqs` te datoteka `openssl-easyrsa.cnf` s konfiguracijom [OpenSSL](https://www.openssl.org/)-a, koji Easy-RSA koristi za stvaranje ključeva, stvaranje zahtjeva za potpisivanjem certifikata i potpisivanje certifikata. Teoretski bismo mogli sve što radimo u nastavku napraviti i ručno pokrećući `openssl` više puta s različitim parametrima, ali to je vrlo nepraktično pa baš zbog toga postoji Easy-RSA koji to radi za nas.
+Unutar upravo stvorenog direktorija `pki` nalaze se prazni direktoriji `private` i `reqs` te datoteka `openssl-easyrsa.cnf` s konfiguracijom [OpenSSL-a](https://www.openssl.org/), koji Easy-RSA koristi za stvaranje ključeva, stvaranje zahtjeva za potpisivanjem certifikata i potpisivanje certifikata. Teoretski bismo mogli sve što radimo u nastavku napraviti i ručno pokrećući `openssl` više puta s različitim parametrima, ali to je vrlo nepraktično pa baš zbog toga postoji Easy-RSA koji to radi za nas.
 
 Kako se ne bi morali baviti metapodacima certifikata koje OpenSSL stvara, možemo koristiti datoteku `vars`. Primjer te datoteke na nekim distribucijama Linuxa postoji kao `vars.example` u `/usr/share/easy-rsa`, a mi ćemo je sami stvoriti neovisno o tom primjeru. Iz `vars.example` za nas su relevantne samo linije:
 

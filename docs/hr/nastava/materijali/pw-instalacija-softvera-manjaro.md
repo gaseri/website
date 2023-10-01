@@ -21,7 +21,7 @@ Ime paketa na [Garuda Linuxu](https://garudalinux.org/) je isto, a naredba za in
 
 ## Pythonovi pomoćni alati
 
-Preduvjet je instalacija [pip](https://pypi.org/project/pip/)-a i [Pylint](https://pylint.org/)-a.
+Preduvjet je instalacija [pipa](https://pypi.org/project/pip/) i [Pylinta](https://pylint.org/).
 
 Naredba za instalaciju na Manjaru je:
 
@@ -32,7 +32,7 @@ $ pamac install python-pip python-pylint
 
 Imena paketa na Garuda Linuxu su ista, a naredba za instalaciju je `sudo pacman -S`.
 
-Naredba za instalaciju na [Ubuntu WSL](https://ubuntu.com/wsl)-u i drugima je:
+Naredba za instalaciju na [Ubuntu WSL-u](https://ubuntu.com/wsl) i drugima je:
 
 ``` shell
 $ sudo apt install python-is-python3 python3-pip pylint

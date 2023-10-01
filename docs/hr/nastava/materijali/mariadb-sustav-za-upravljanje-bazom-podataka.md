@@ -4,7 +4,7 @@ author: Vedran Miletić
 
 # Konfiguracija sustava za upravljanje bazom podataka MariaDB
 
-[MariaDB](https://mariadb.org/) ([Wikipedia](https://en.wikipedia.org/wiki/MariaDB)) je sustav za upravljanje relacijskom bazom podataka, razvijan od strane zajednice i komercijalno podržan. Razvoj MariaDB-a započet je odvajanjem od [MySQL](https://www.mysql.com/)-a izvedenim od strane nekolicine izvornih programera MySQL-a zbog zabrinutosti oko njegove budućnosti povodom [akvizicije Suna od strane Oraclea](https://www.directionsmag.com/article/2357). Prvenstveni cilj stvaranja projekta neovisnog o Oracleu je želja da softvera ostane slobodan i otvorenog koda pod licencom GNU General Public License.
+[MariaDB](https://mariadb.org/) ([Wikipedia](https://en.wikipedia.org/wiki/MariaDB)) je sustav za upravljanje relacijskom bazom podataka, razvijan od strane zajednice i komercijalno podržan. Razvoj MariaDB-a započet je odvajanjem od [MySQL-a](https://www.mysql.com/) izvedenim od strane nekolicine izvornih programera MySQL-a zbog zabrinutosti oko njegove budućnosti povodom [akvizicije Suna od strane Oraclea](https://www.directionsmag.com/article/2357). Prvenstveni cilj stvaranja projekta neovisnog o Oracleu je želja da softvera ostane slobodan i otvorenog koda pod licencom GNU General Public License.
 
 MariaDB zadržava visok nivo kompatibilnosti s MySQL-om, ali proširuje njegovu funkcionalnost tako da nudi i značajke koje MySQL nema. [Kao i MySQL](https://www.mysql.com/cloud/), MariaDB je ponuđena i u obliku usluge u oblaku (drugim riječima, sustava koji netko drugi održava) pod imenom [SkySQL](https://mariadb.com/products/skysql/).
 

@@ -40,7 +40,7 @@ Tipovi problema na koje se često primjenjuju metode paralelnog računarstva (pr
 
 ## Razvoj paralelnih računala
 
-Evolucija računalnih sustava prema [AMD](https://en.wikipedia.org/wiki/Advanced_Micro_Devices)-u uključuje tri odvojene ere (preuzeto iz prezentacije [AMD Fusion Fund Overview](https://www.slideshare.net/AMD/amd-fusion-fund-media-presentation)):
+Evolucija računalnih sustava prema [AMD-u](https://en.wikipedia.org/wiki/Advanced_Micro_Devices) uključuje tri odvojene ere (preuzeto iz prezentacije [AMD Fusion Fund Overview](https://www.slideshare.net/AMD/amd-fusion-fund-media-presentation)):
 
 - **era jednojezgrenih sustava** traje otprilike do 2004.
 

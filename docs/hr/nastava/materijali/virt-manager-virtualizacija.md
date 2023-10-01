@@ -95,7 +95,7 @@ Ovaj program može biti slobodno distribuiran
 sukladno pravilima GNU General Public License.
 ```
 
-Možemo prepoznati [Pac-Man](https://en.wikipedia.org/wiki/Pac-Man)-a u obliku [ASCII arta](https://en.wikipedia.org/wiki/ASCII_art). Korištenjem parametra `--help`, odnosno `-h` možemo dobiti informacije o načinu korištenja:
+Možemo prepoznati [Pac-Mana](https://en.wikipedia.org/wiki/Pac-Man) u obliku [ASCII arta](https://en.wikipedia.org/wiki/ASCII_art). Korištenjem parametra `--help`, odnosno `-h` možemo dobiti informacije o načinu korištenja:
 
 ``` shell
 $ pacman --help

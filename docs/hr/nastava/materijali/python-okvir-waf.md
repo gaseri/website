@@ -9,7 +9,7 @@ author: Vedran Miletić
 
 [Sustavi za automatizaciju izgradnje softvera](https://en.wikipedia.org/wiki/Build_automation) (engl. *build automation system*) su aplikacije koje automatiziraju ili skriptiraju aktivnosti u procesu izgradnje softvera.
 
-Primjeri takvih alata su [Autotools](https://en.wikipedia.org/wiki/GNU_build_system), [CMake](https://en.wikipedia.org/wiki/CMake) [qmake](https://en.wikipedia.org/wiki/Qmake) (dio [Qt](https://en.wikipedia.org/wiki/Qt_(software))-a, [SCons](https://en.wikipedia.org/wiki/SCons)>__, [Waf](https://en.wikipedia.org/wiki/Waf) i drugi.
+Primjeri takvih alata su [Autotools](https://en.wikipedia.org/wiki/GNU_build_system), [CMake](https://en.wikipedia.org/wiki/CMake) [qmake](https://en.wikipedia.org/wiki/Qmake) (dio [Qt-a](https://en.wikipedia.org/wiki/Qt_(software))), [SCons](https://en.wikipedia.org/wiki/SCons)>__, [Waf](https://en.wikipedia.org/wiki/Waf) i drugi.
 
 Autotools i CMake rade tako da generiraju datoteku `./configure`, a ponekad i datoteku `Makefile`. Korisnik ih najčešće pokreće putem prethodno napravljenih skripti za kompajiranje programa, a za samu izgradnju koristi `make`.
 

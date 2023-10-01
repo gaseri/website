@@ -40,7 +40,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
     - iznimno moćan uređivač teksta, velike mogućnost prilagodbe i proširenja funkcionalnosti
     - podržava bojenje sintakse, kompletiranje naredbi i automatsko uvlačenje koda za desetke različitih programskih jezika
     - podržava UTF-8 i koristi ga kao zadani ako je on zadan sustavskim lokalnim i regionalnim postavkama; [više detalja o kodiranjima u Emacsu](https://www.emacswiki.org/emacs/ChangingEncodings)
-    - ne sadrži modove, za razliku od popularnog [Vim](https://en.wikipedia.org/wiki/Vim_(text_editor))-a
+    - ne sadrži modove, za razliku od popularnog [Vima](https://en.wikipedia.org/wiki/Vim_(text_editor))
     - [xkcd: Real Programmers](https://xkcd.com/378/)
 
 !!! admonition "Zadatak"

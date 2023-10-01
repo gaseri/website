@@ -101,7 +101,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
     - za datoteke: `rw-rw-rw-`, oktalno `666`
     - za direktorije: `rwxrwxrwx`, oktalno `777`
 
-- postupak računanja efektivnih dozvola dan je na [Wikipedijinoj stranici o umask](https://en.wikipedia.org/wiki/Umask)-u
+- postupak računanja efektivnih dozvola dan je na [Wikipedijinoj stranici o umasku](https://en.wikipedia.org/wiki/Umask)
 
 !!! admonition "Zadatak"
     - Druga često korištena vrijednost za umask je `077`. Objasnite njeno značenje.

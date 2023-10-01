@@ -13,7 +13,7 @@ Naši interesi za potencijalne buduće suradnje navedeni su i opisani na [strani
 ![GPU Education Center logo](../images/gpu-education-center-logo.png)
 
 !!! note
-    Naš status [Obrazovnog centra za grafičke procesore (bivšeg CUDA nastavnog centra)](https://developer.nvidia.com/higher-education-and-research) završio je 31. prosinca 2016. Ponosni smo što smo ostali u programu do njegovog samog kraja. Zahvaljujemo [NVIDIA](https://www.nvidia.com/)-i za svu pomoć i podršku! Nastavit ćemo podučavati [Paralelno programiranje na heterogenim sustavima](nastava/kolegiji/PPHS.md), koristiti [CUDA](https://developer.nvidia.com/cuda-zone)-u i [OpenCL](https://www.khronos.org/opencl/) (otvoreni standard za paralelno programiranje na heterogenim sustavima koji se sastoje od CPU-a, GPU-a, FPGA-a i potencijalno drugih vrsta čipova) u našem istraživanju te općenito promovirati računanje na grafičkim procesorima.
+    Naš status [Obrazovnog centra za grafičke procesore (bivšeg CUDA nastavnog centra)](https://developer.nvidia.com/higher-education-and-research) završio je 31. prosinca 2016. Ponosni smo što smo ostali u programu do njegovog samog kraja. Zahvaljujemo [NVIDIA-i](https://www.nvidia.com/) za svu pomoć i podršku! Nastavit ćemo podučavati [Paralelno programiranje na heterogenim sustavima](nastava/kolegiji/PPHS.md), koristiti [CUDA-u](https://developer.nvidia.com/cuda-zone) i [OpenCL](https://www.khronos.org/opencl/) (otvoreni standard za paralelno programiranje na heterogenim sustavima koji se sastoje od CPU-a, GPU-a, FPGA-a i potencijalno drugih vrsta čipova) u našem istraživanju te općenito promovirati računanje na grafičkim procesorima.
 
 !!! warning
     Sadržaj u nastavku smatra se zastarjelim.
@@ -22,7 +22,7 @@ Naši interesi za potencijalne buduće suradnje navedeni su i opisani na [strani
 
 Računalne platforme su sve heterogenije, s računalnom snagom koja je podijeljena na CPU i GPU. Istodobno, tečajevi i radionice računalnog programiranja i znanstvenog računarstva suštinski se predaju na isti način kao prije dva desetljeća. Svakako, postoji prostor za napredak.
 
-Godine 2012. osnovan je [CUDA nastavni centar](https://developer.nvidia.com/higher-education-and-research) na [Sveučilištu u Rijeci](https://uniri.hr/) u partnerstvu s [NVIDIA](https://www.nvidia.com/)-om. Naš cilj je pružiti platformu za edukaciju u domeni računanja na grafičkim procesorima koristeći CUDA-u. 2015. godine Centar je preimenovan u Obrazovni centar za grafičke procesore.
+Godine 2012. osnovan je [CUDA nastavni centar](https://developer.nvidia.com/higher-education-and-research) na [Sveučilištu u Rijeci](https://uniri.hr/) u partnerstvu s [NVIDIA-om](https://www.nvidia.com/). Naš cilj je pružiti platformu za edukaciju u domeni računanja na grafičkim procesorima koristeći CUDA-u. 2015. godine Centar je preimenovan u Obrazovni centar za grafičke procesore.
 
 ### Potražnja za računalnom snagom u mnogim granama znanosti i inženjerstva je sve veća
 

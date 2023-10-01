@@ -16,7 +16,7 @@ Recimo da imamo repozitorij u kojem postoje datoteke:
 
 - `program.py` koja sadrži program
 - `biblioteka.py` koja sadrži funkcije
-- `test_biblioteka.py` koja sadrži testove funkcija iz datoteke `biblioteka.py` koji se pokreću korištenjem [pytest](https://www.pytest.org/)-a
+- `test_biblioteka.py` koja sadrži testove funkcija iz datoteke `biblioteka.py` koji se pokreću korištenjem [pytesta](https://www.pytest.org/)
 
 Kako bismo uključili kontinuiranu integraciju, na GitLabu je potrebno u tom repozitoriju stvoriti datoteku `.gitlab-ci.yml` ([više detalja o formatu YAML](https://yaml.org/)) s postavkama za testiranje (`test:`) i pokretanje (`run:`). Moguće je koristiti predložak za Python koji GitLab nudi. U našem slučaju postavit ćemo da datoteka bude oblika:
 
