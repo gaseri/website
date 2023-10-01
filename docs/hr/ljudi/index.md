@@ -8,9 +8,9 @@ author: Vedran Miletić
 
 ## Osoblje
 
-- [dr. sc. Vedran](https://vedran.miletic.net/) [Miletić](https://www.miletic.net/), docent, voditelj grupe
-- [Milan Petrović](https://milanxpetrovic.github.io/), asistent
-- [Matea Turalija](https://mateaturalija.github.io/), asistent, studentica doktorskog studija (doktorand)
+- [dr. sc. Vedran](https://vedran.miletic.net/) [Miletić](https://www.miletic.net/), stručnjak za superračunalne aplikacije na [MPCDF-u](https://www.mpcdf.mpg.de/), docent na [FIDIT-u](https://www.inf.uniri.hr/), voditelj grupe
+- [Milan Petrović](https://milanxpetrovic.github.io/), asistent na [FIDIT-u](https://www.inf.uniri.hr/)
+- [Matea Turalija](https://mateaturalija.github.io/), asistent na [MedRiju](https://medri.uniri.hr/), studentica doktorskog studija (doktorand) na [FIDIT-u](https://www.inf.uniri.hr/)
 
 ## Suradnici
 

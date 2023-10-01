@@ -8,9 +8,9 @@ author: Vedran Miletić
 
 ## Staff
 
-- [Dr. Vedran](https://vedran.miletic.net/) [Miletić](https://www.miletic.net/), Assistant Professor, [Principal Investigator](principal-investigator.md)
-- [Milan Petrović](https://milanxpetrovic.github.io/), Research and Teaching Assistant
-- [Matea Turalija](https://mateaturalija.github.io/), Research and Teaching Assistant, [PhD Student](phd-students.md#matea-turalija)
+- [Dr. Vedran](https://vedran.miletic.net/) [Miletić](https://www.miletic.net/), HPC Application Expert at [MPCDF](https://www.mpcdf.mpg.de/), Assistant Professor at [FIDIT](https://www.inf.uniri.hr/), [Principal Investigator](principal-investigator.md) of the group
+- [Milan Petrović](https://milanxpetrovic.github.io/), Research and Teaching Assistant at [FIDIT](https://www.inf.uniri.hr/)
+- [Matea Turalija](https://mateaturalija.github.io/), Research and Teaching Assistant at [MedRi](https://medri.uniri.hr/), [PhD Student](phd-students.md#matea-turalija) at [FIDIT](https://www.inf.uniri.hr/)
 
 ## Collaborators
 
