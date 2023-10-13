@@ -207,3 +207,21 @@ Većina znanstvenih radova ima veći broj autora i sve je češća praksa da se 
 > 1. [Visualization](https://credit.niso.org/contributor-roles/visualization/): Preparation, creation and/or presentation of the published work, specifically visualization/data presentation.
 > 1. [Writing - original draft](https://credit.niso.org/contributor-roles/writing-original-draft/): Preparation, creation and/or presentation of the published work, specifically writing the initial draft (including substantive translation).
 > 1. [Writing - review & editing](https://credit.niso.org/contributor-roles/writing-review-editing/): Preparation, creation and/or presentation of the published work by those from the original research group, specifically critical review, commentary or revision – including pre- or post-publication stages.
+
+!!! question "Ispitna pitanja"
+    1. Objasnite što je intelektualno vlasništvo.
+    1. Navedite dvije vrste prava koje intelektualno vlasništvo poznaje.
+    1. Objasnite način funkcioniranja autorskog prava na softver.
+    1. Objasnite zašto se koristi akademsko licenciranje kod vlasničkog (znanstvenog) softvera.
+    1. Opišite licencu vlasničkog (znanstvenog) softvera po želji.
+    1. Opišite licencu slobodnog (znanstvenog) softvera po želji.
+    1. Objasnite način funkcioniranja softverskog patenta.
+    1. Objasnite način funkcioniranja zaštitnog znaka softvera.
+    1. Navedite dvije licence koje se koriste za podatke i navedite za koje podatke se koriste.
+    1. Navedite osnovno specifičnost autorskog prava kod znanstvenih radova.
+    1. Objasnite temeljnu razliku po pitanju autorskog prava kod znanstvenih radova u otvorenom pristupu u odnosu na uobičajeni pristup objavljivanju.
+    1. Navedite dva izdavača koji svoja izdanja temelje na otvorenom pristupu.
+    1. Opišite situaciju u kojoj se našao Aaron Swartz nakon preuzimanja radova na MIT-u.
+    1. Navedite tri varijante otvorenog pristupa.
+    1. Objasnite značaj Sci-Huba.
+    1. Opišite situaciju u kojoj se nalazi Alexandra Elbakayan povodom Elsevierove tužbe.

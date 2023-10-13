@@ -17,3 +17,7 @@ Marketinšku priču na stranu, autori operacijskih sustava današnjice razumiju 
 **Slika:** Windows 10 Product Family. (Slika preuzeta iz Techweezovog članka [Windows 10: A Bold New Direction For Microsoft](https://techweez.com/2015/01/22/microsoft-windows-10/).)
 
 Pored ovih uređaja i računalne opreme za podatkovne centre, računala su i pametni kućanski aparati, ADSL modemi, pomoćni uređaji za ljude s poteškoćama, sustavi za klimatizaciju zgrada, automobili i drugi.
+
+!!! question "Ispitna pitanja"
+    1. Opišite kako su računala postala sveprisutna i prožimajuća.
+    1. Navedite tri primjera uređaja koje danas smatramo računalima (osim osobnog računala).

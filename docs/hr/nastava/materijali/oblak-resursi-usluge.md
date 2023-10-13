@@ -21,3 +21,7 @@ Veći pružatelji usluga u oblaku osim osnovnih nude i puno dodatnih usluga. Za 
 - [Amazonovog AWS](https://aws.amazon.com/products/)
 - [Microsoft Azure](https://azure.microsoft.com/en-us/services/)
 - [Google Cloud](https://cloud.google.com/products/)
+
+!!! question "Ispitna pitanja"
+    1. Navedite resurse koje možemo zakupiti kod kupovanja računalnih resursa u oblaku.
+    1. Navedite tri pružatelja usluga računarstva u oblaku.

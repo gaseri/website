@@ -144,3 +144,10 @@ Pored toga, AMD opisuje razvoje heterogene arhitekture sustava kroz 4 etape (pre
 - **sustavska integracija** (2015. godina, Carrizo) -- GPU multitasking, specifično mogućnost da se izvede context switch između grafičkih i compute aplikacija; GPU pre-emption, specifično mogućnost da se zaustavi proces koji se dugo izvodi radi procesa koji će se izvoditi kraće, prioriteti izvođenja aplikacija
 
 Komercijalni čip koji sadrži CPU i GPU na jednom siliciju, zasnovan na heterogenoj sustavskoj arhitekturi, AMD naziva [APU](https://en.wikipedia.org/wiki/AMD_Accelerated_Processing_Unit). Intel i NVIDIA, unatoč tome što imaju vrlo slične čipove, zasad ovaj termin nisu prihvatili.
+
+!!! question "Ispitna pitanja"
+    1. Objasnite pojam paralelizacije izvođenja.
+    1. Objasnite što tvrdi Amdahlov zakon.
+    1. Objasnite što tvrdi Gustafsonov zakon.
+    1. Objasnite koju ulogu na superračunalima ima MPI i na kojem dijelu Bure se koristi.
+    1. Objasnite što je heterogeno kod heterogenog računarstva.

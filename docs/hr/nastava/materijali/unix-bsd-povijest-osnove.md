@@ -44,3 +44,10 @@ author: Vedran Miletić
 
 !!! tip
     Detaljniji pregled povijesti Unixa i operacijskih sustava sličnih Unixu moguće je pronaći na Wikipedijinoj stranici [History of Unix](https://en.wikipedia.org/wiki/History_of_Unix).
+
+!!! question "Ispitna pitanja"
+    1. Opišite početak BSD-a.
+    1. Objasnite zašto kažemo da je BSD značajan za razvoj interneta.
+    1. Opišite nastanak FreeBSD-a.
+    1. Navedite dva proizvoda koji se temelje na FreeBSD-u.
+    1. Objasnite zašto Apple macOS specifično vežemo uz BSD i općenito uz Unix.

@@ -62,3 +62,16 @@ Prema [Wikipediji](https://en.wikipedia.org/wiki/Quantum_chemistry):
 - primjenjuje kvantnu mehaniku za modeliranje kemijskih sustava (npr. atomi, molekule, **kemijske reakcije**)
 - izračunava [elektronsku strukturu](https://en.wikipedia.org/wiki/Electronic_structure) rješavanjem [Schrodingerove jednadžbe](https://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation)
 - [popis programa](https://en.wikipedia.org/wiki/List_of_quantum_chemistry_and_solid-state_physics_software)
+
+!!! question "Ispitna pitanja"
+    1. Opišite značenje pojma model u kolokvijalnom, fizikualnom i konceptualnom značenju.
+    1. Objasnite pojam skale u fizici.
+    1. Navedite koji se modeli i metode koriste na milimetarskoj i mikrometarskoj skali.
+    1. Navedite koji se modeli i metode koriste na milimetarskoj i mikrometarskoj skali.
+    1. Opišite čime se bavi molekularno modeliranje.
+    1. Opišite čime se bavi kemoinformatika.
+    1. Opišite čime se bavi molekularna mehanika.
+    1. Opišite čime se bavi kvantna kemija.
+    1. Objasnite za što je dodijeljena Nobelova nagrada za kemiju 1998. godine.
+    1. Objasnite za što je dodijeljena Nobelova nagrada za kemiju 2013. godine.
+    1. Navedite dva softvera u području računalne kemije.

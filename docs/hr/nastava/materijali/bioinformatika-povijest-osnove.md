@@ -17,3 +17,7 @@ Prema [Wikipediji](https://en.wikipedia.org/wiki/Bioinformatics):
 - [baze sekvenci](https://en.wikipedia.org/wiki/Sequence_database)
 
 [Bioinformatika](https://en.wikipedia.org/wiki/Bioinformatics) je interdisciplinarno područje znanosti koje se bavi razvojem metoda i softvera za razumijevanje bioloških podataka.
+
+!!! question "Ispitna pitanja"
+    1. Opišite čime se bavi bioinformatika.
+    1. Navedite dva softvera u području bioinformatike.

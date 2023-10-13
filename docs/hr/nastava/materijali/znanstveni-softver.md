@@ -14,3 +14,7 @@ Primjeri znanstvenih softvera:
 - [gem5](https://gem5.org/), softver za [simulaciju mikroprocesora](https://youtu.be/0K-v_N-WHKs)
 - [OpenFOAM](https://openfoam.org/), softver za [računalnu dinamike fluida](https://youtu.be/cSsbcuZvO1I)
 - [RxDock](https://rxdock.gitlab.io/), softver za [optimizaciju pristajanja malih molekula na proteine](https://youtu.be/_kmMTuzP-W4)
+
+!!! question "Ispitna pitanja"
+    1. Objasnite što je znanstveni softver.
+    1. Navedite dva primjera znanstvenog softvera.

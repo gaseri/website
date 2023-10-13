@@ -150,3 +150,16 @@ author: Vedran Miletić, Vanja Slavuj
     - Navedite barem dvije poznate Linux distribucije.
     - Što su X i X11? Koja je poznata implementacija X-a koja se danas koristi?
     - Čemu služe GNOME i KDE?
+
+!!! question "Ispitna pitanja"
+    1. Objasnite što je slobodni softver.
+    1. Navedite dva primjera slobodnog softvera (osim GNU-a).
+    1. Opišite kako je Richard Stallman pokrenuo GNU i FSF.
+    1. Navedite četiri slobode kojima Richard Stallman definira slobodni softver.
+    1. Objasnite pojam copylefta i navedite ime najpoznatije copyleft licence.
+    1. Opišite početak Linuxa.
+    1. Objasnite značaj GNU/Linuxa.
+    1. Opišite pojam distribucije Linuxa.
+    1. Navedite dvije distribucije Linuxa i njihovu ciljanu skupinu korisnika.
+    1. Opišite ulogu upravitelja paketa.
+    1. Objasnite čemu služe GNOME i KDE.

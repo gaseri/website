@@ -95,3 +95,17 @@ Pojam procesora se mijenjao tijekom godina, ali uvijek ima [aritmetičko-logičk
 ### Zlonamjerni softver
 
 [Zlonamjerni softver](https://en.wikipedia.org/wiki/Malware) je softver namjerno dizajniran da napravi štetu računalu ili računalnoj mreži.
+
+!!! question "Ispitna pitanja"
+    1. Objasnite što je računarstvo.
+    1. Navedite dvije discipline računarstva i objasnite čime se bave.
+    1. Objasnite zašto kažemo da računarstvo nije (isključivo) znanost o računalima.
+    1. Dajte primjer problema kakav neka disciplina računarstva rješava.
+    1. Objasnite što je informatika.
+    1. Opišite ulogu matične ploče računala.
+    1. Navedite dijelove koje osnovni procesor u računalu može imati.
+    1. Objasnite razliku između osnovnog i grafičkog procesora.
+    1. Objasnite razliku između (glavne) memorije i pohrane podataka.
+    1. Navedite dva primjera izvršnog softvera.
+    1. Objasnite razliku između izvršnog i sustavnog softvera.
+    1. Navedite dva primjera sustavnog softvera.

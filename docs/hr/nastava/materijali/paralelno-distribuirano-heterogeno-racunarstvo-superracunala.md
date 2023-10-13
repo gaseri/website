@@ -22,3 +22,9 @@ Primjeri izračuna u području računalne biokemije za koje se superračunalo ko
 - [Primary energy source of life from Birth of Planet Earth](https://youtu.be/NTgAok6n7I4)
 - [All-atom Molecular Dynamics Simulation of the Bacterial Cytoplasm](https://youtu.be/5JcFgj2gHx8)
 - [Developing a Complete In Silico Model of a Minimal Cell](https://youtu.be/vU-t7l6kZUE)
+
+!!! question "Ispitna pitanja"
+    1. Objasnite koje računalo je superračunalo i gdje možemo takva računala pronaći.
+    1. Objasnite zašto kažemo da razvoj osobnih računala pomaže razvoju superračunala.
+    1. Opišite način mjerenja performansi superračunala i ulogu liste TOP500 superračunala.
+    1. Navedite dvije države koje dominiraju TOP500 superračunala.

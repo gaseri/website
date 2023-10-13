@@ -36,3 +36,8 @@ author: Vedran Miletić
 
 !!! tip
     Detaljniji pregled povijesti Unixa i operacijskih sustava sličnih Unixu moguće je pronaći na Wikipedijinoj stranici [History of Unix](https://en.wikipedia.org/wiki/History_of_Unix).
+
+!!! question "Ispitna pitanja"
+    1. Opišite početak Unixa.
+    1. Navedite dvije grane razvoja Unixa i objasnite njihovu razliku.
+    1. Navedite dva komercijalna Unixa i tvrtke koje su ih prodavale (osim AT&T-a).

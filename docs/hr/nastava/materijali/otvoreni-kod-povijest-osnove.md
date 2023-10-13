@@ -230,3 +230,10 @@ author: Vedran Miletić, Vanja Slavuj
     - Što su bili Sun StarOffice i Oracle Open Office?
     - Kako je pokrenut projekt OpenOffice.org i projekti koji su mu prethodili?
     - Koji su ciljevi zaklade The Document Foundation?
+
+!!! question "Ispitna pitanja"
+    1. Objasnite razliku programa otvorenog koda i besplatnog programa.
+    1. Navedite dva projekta velikih kompanija koja su postali slobodni softveri.
+    1. Opišite kako je Netscape pokrenuo projekt Mozilla.
+    1. Opišite kako je StarOffice postao OpenOffice.org.
+    1. Opišite probleme zatvorenih formata i objasnite kako ih OpenDocument rješava.
