@@ -153,7 +153,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
     - Pokušajte napraviti provjeru datotečnog sustava `/usr`. Objasnite grešku koju vam sustav javlja.
     - Pokušajte napraviti provjeru datotečnog sustava `/`. Objasnite grešku koju vam sustav javlja.
 
-!!! admonition "Ponovimo!"
+!!! question "Pitanja za ponavljanje"
     - Čemu služi MBR?
     - Kakve mogućnosti nudi standardna particijska tablica?
     - Kako se imenuju diskovi u UNIX-like operacijskim sustavima? Koristite primjer sustava na kojem radimo

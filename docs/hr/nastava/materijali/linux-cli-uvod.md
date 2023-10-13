@@ -90,7 +90,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 
     (**Uputa:** koristite `man`.)
 
-!!! admonition "Ponovimo!"
+!!! question "Pitanja za ponavljanje"
     - Što je CLI?
     - Ispišite opći oblik naredbe u komandnoj liniji.
     - Čemu služi naredba `echo`?

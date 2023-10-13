@@ -157,7 +157,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 
     - Što se događa kada umjesto parametra `-R` koristite parametar `-r`? Isprobajte.
 
-!!! admonition "Ponovimo!"
+!!! question "Pitanja za ponavljanje"
     - Navedite po jedan primjer za jednokorijenski i višekorijenski operacijski sustav.
     - Što je FHS?
     - Prisjetite se koja je uloga pojedinih direktorija u datotečnom sustavu.

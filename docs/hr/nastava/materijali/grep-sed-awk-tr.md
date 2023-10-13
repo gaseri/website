@@ -329,7 +329,7 @@ Najčešće korišteni parametri naredbe `sed` su:
 
     - Uočite što se događa s izlazom naredbe `tail` ukoliko vaša datoteka ima više od jedne prazne linije na kraju.
 
-!!! admonition "Ponovimo!"
+!!! question "Pitanja za ponavljanje"
     - Što je `grep`?
     - Zašto kažemo da globalni izrazi nisu isto što i regularni izrazi? Objasnite.
     - Prisjetite se oznaka za regularne izraze.

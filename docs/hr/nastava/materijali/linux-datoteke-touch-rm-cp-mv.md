@@ -134,7 +134,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov, Anja Vrbanjac
         | `-m` | traženje stranica priručnika |
         | `-s` | traženje izvršnog koda |
 
-!!! admonition "Ponovimo!"
+!!! question "Pitanja za ponavljanje"
     - Prisjetite se naredbi za stvaranje, brisanje i kopiranje datoteka. Koja naredba može primiti više argumenata?
     - Koja se naredba koristi za pomicanje neke datoteke u datotečnom sustavu? Koja za preimenovanje? Objasnite.
     - Što su globovi?

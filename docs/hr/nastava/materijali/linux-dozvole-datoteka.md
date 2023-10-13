@@ -144,7 +144,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 !!! admonition "Dodatni zadatak"
     Zadatak iz *stvarnog* života: korištenjem ACL osmislite način da troje korisnika, `domargan`, `iivakic` i `vedranm`,dijelite jedan direktorij. Svaki od njih mora biti u mogućnosti u njemu stvarati datoteke i direktorije koje moraju kod stvaranja dobiti dozvolu čitanja i pisanja za sve troje.
 
-!!! admonition "Ponovimo!"
+!!! question "Pitanja za ponavljanje"
     - Što je informacijski čvor?
     - Objasnite razliku između različitih timestamp-ova u informacijskom čvoru.
     - Opišite način i svrhu korištenja čvrstih i simboličkih poveznica. Prisjetite se poglavlja o relativnom i apsolutnom referenciranju.

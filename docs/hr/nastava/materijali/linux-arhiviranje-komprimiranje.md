@@ -101,7 +101,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 !!! todo
     Ovdje nedostaje zadatak.
 
-!!! admonition "Ponovimo!"
+!!! question "Pitanja za ponavljanje"
     - Što je `tar`?
     - Koje stilove navođenja parametara poznajete?
     - Prisjetite se nekih ranijih naredbi koje smo obradili i provjerite koju vrstu navođenja parametara podržavaju.

@@ -129,7 +129,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov, Anja Vrbanjac
 !!! todo
     Ovdje bi trebalo dodati dodati i `&&`, `||`, `;`, `$()`, `true`, `false`.
 
-!!! admonition "Ponovimo!"
+!!! question "Pitanja za ponavljanje"
     - Što je `bash`, a što je shell?
     - Što su varijable ljuske?
     - Koje vrijednosti mogu imati varijable ljuske? Dokažite.

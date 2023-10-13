@@ -223,7 +223,7 @@ author: Vedran Miletić, Vanja Slavuj
 - The Document Foundation, LibreOffice, čišćenje ovisnosti o Javi, modernizacija korisničkog sučelja;
 - preporuka na temu: [After the Software Wars](https://keithcu.com/).
 
-!!! admonition "Ponovimo!"
+!!! question "Pitanja za ponavljanje"
     - Što je program otvorenog koda?
     - Kako je započeo LibreOffice?
     - Kako je standardiziran OpenDocument?

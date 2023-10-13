@@ -117,7 +117,7 @@ Mnogi programi dobivaju input od standardnog ulaza (engl. *standard input*), a u
     - Kopirajte datoteku u `program2.cpp`. Izmijenite datoteku `program2.cpp` tako da ispisuje "Pozdrav svijete".
     - Usporedite razliku između izlaza naredbe `diff` i `diff -u`.
 
-!!! admonition "Ponovimo!"
+!!! question "Pitanja za ponavljanje"
     - Što su cijevi i zašto su nam korisne?
     - Koje filtere najčešće koristimo uz cijevi? Koja je njihova uloga?
     - Prisjetite se parametara koje može primiti naredba `wc`.

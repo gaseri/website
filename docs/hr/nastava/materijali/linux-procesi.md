@@ -164,7 +164,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
     - U `top`-u, ograničite pogled samo na svoje procese. Poredajte ih po zauzeću memorije.
     - Pokušajte iz `top`-a poslati signal 9 ili 15 procesu `python` iz prethodnog zadatka. Ima li razlike?
 
-!!! admonition "Ponovimo!"
+!!! question "Pitanja za ponavljanje"
     - Postoji li razlika između poslova i procesa?
     - Kako dijelimo naredbe s obzirom na vrijeme njihova izvođenja? Dajte po jedan primjer za svaku skupinu.
     - Čime su identificirani poslovi, a čime procesi?

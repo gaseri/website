@@ -80,7 +80,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
         - `^K -> Cut Text` i `^U -> UnCut Text`,
         - `^W -> Where Is` (i varijante `^W^R`, `^W^Y`, `^W^V`, `^W^T`).
 
-!!! admonition "Ponovimo!"
+!!! question "Pitanja za ponavljanje"
     - Što je kodiranje znakova?
     - Što je UTF-8? A UTF-32?
     - Na što sve utječu lokalne i regionalne postavke sustava?

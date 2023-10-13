@@ -143,7 +143,7 @@ author: Vedran Miletić, Vanja Slavuj
 
 -- [Bob Young](https://www.zdnet.com/article/bob-young-talks-about-the-origins-of-red-hat/), CEO, [Red Hat Inc.](https://www.redhat.com/en/about/company) (citat preuzet iz Pattinson, H. M. (2005). [Mapping implemented strategies of bringing Internet-based software applications to market using storytelling research methods.](https://opus.lib.uts.edu.au/bitstream/10453/37359/2/02whole.pdf) PhD Thesis. University of Technology Sydney., str. 109)
 
-!!! admonition "Ponovimo!"
+!!! question "Pitanja za ponavljanje"
     - Što je slobodni softver?
     - Kada je započeo GNU projekt i koji je njegov cilj?
     - Što je Linux, a što GNU/Linux?
