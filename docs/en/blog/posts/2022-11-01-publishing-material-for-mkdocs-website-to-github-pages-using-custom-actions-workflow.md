@@ -159,8 +159,7 @@ We can see the mention of the `requirements.txt` file. It should reside in the r
 
 ``` text
 mkdocs[i18n]
-mkdocs-material
-cairosvg
+mkdocs-material[imaging]
 ```
 
 And that's it! There is no more requirement for the `.nojekyll` file as Jekyll never gets ran in the build process. There is also no more separate `gh-pages` branch that the built files get pushed to, so there is also no more worry whether the site builds over time will add up to the [1 GB soft limit](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github#repository-size-limits).
@@ -174,3 +173,5 @@ Finally, if you want to use a custom domain, having the `CNAME` file in the repo
 **Updated on 2023-06-06:** rebased our additions on top of the [latest version](https://github.com/actions/starter-workflows/blob/main/pages/jekyll-gh-pages.yml) of `jekyll-gh-pages.yml` from [Starter Workflows](https://github.com/actions/starter-workflows). Changed Python version from 3.11 to the [latest stable 3.x](https://github.com/actions/setup-python/blob/main/docs/advanced-usage.md#using-the-python-version-input), which is 3.11 at the moment. However, using the current beta version of [Python 3.12](https://docs.python.org/3.12/whatsnew/3.12.html) already works well with `mkdocs-material`, so it's unlikely to cause issues even when 3.12 gets released and becomes the latest stable version.
 
 **Updated on 2023-09-08:** simplified the workflow to use the existing `requirements.txt` file instead of duplicating the package names in the `pip` command run.
+
+**Updated on 2023-10-24:** updated `requirements.txt` to use the [extras](https://peps.python.org/pep-0508/#extras) for the installation of the [optional dependencies](https://squidfunk.github.io/mkdocs-material/plugins/requirements/image-processing/#dependencies).
