@@ -16,11 +16,12 @@ paginate: true
 
 ## FIDIT
 
-- founded in 2008. as Department of Informatics at UniRi
-- became **F**aculty of **I**nformatics and **Di**gital **T**echnologies in 2022.
-- research (computer vision, pattern recognition, natural language processing, machine translation, e-learning, digital transformation, parallel applications on supercomputers) and teaching
+- founded in 2008. as Dept. of Inf. at UniRi, became **F**aculty of **I**nformatics and **Di**gital **T**echnologies in 2022.
+- research (computer vision, pattern recognition, natural language processing, machine translation, e-learning, digital transformation, supercomputing) and teaching
 
-![FIDIT logo bg right:30% 90%](https://upload.wikimedia.org/wikipedia/commons/1/14/FIDIT-logo.svg)
+![FIDIT logo bg right:25% 90%](https://upload.wikimedia.org/wikipedia/commons/1/14/FIDIT-logo.svg)
+
+- Image source: [Wikimedia Commons File:FIDIT-logo.svg](https://commons.wikimedia.org/wiki/File:FIDIT-logo.svg)
 
 ---
 

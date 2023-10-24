@@ -42,22 +42,26 @@ curriculum-vitae: |
 
 ---
 
-![bg left 95%](https://upload.wikimedia.org/wikipedia/commons/6/64/Ancientlibraryalex.jpg)
-
 ## Knjižnica u Aleksandriji
 
 - Jedna od najvećih i najvažnijih knjižnica antičkog svijeta
 - Točan broj svitaka papirusa nije poznat
     - Procjenjuje se na stotine tisuća kad je fond bio najveći
 
----
+![bg left 95%](https://upload.wikimedia.org/wikipedia/commons/6/64/Ancientlibraryalex.jpg)
 
-![bg right 80%](https://upload.wikimedia.org/wikipedia/commons/6/62/Retrato_de_Julio_C%C3%A9sar_%2826724093101%29_%28cropped%29.jpg)
+Izvor slike: [Wikimedia Commons File:Ancientlibraryalex.jpg](https://commons.wikimedia.org/wiki/File:Ancientlibraryalex.jpg)
+
+---
 
 ## Uništenje knjižnice (1/3)
 
 - Postoji teorija da ju je spalio Julije Cezar 48. p.n.e. za vrijeme građanskog rata
     - Spalio je brodove u pristaništu i vatra se proširila na obližnje dijelove
+
+![bg right 80%](https://upload.wikimedia.org/wikipedia/commons/6/62/Retrato_de_Julio_C%C3%A9sar_%2826724093101%29_%28cropped%29.jpg)
+
+Izvor slike: [Wikimedia Commons File:Retrato de Julio César (26724093101) (cropped).jpg](https://commons.wikimedia.org/wiki/File:Retrato_de_Julio_C%C3%A9sar_(26724093101)_(cropped).jpg)
 
 ---
 
@@ -70,11 +74,13 @@ curriculum-vitae: |
 
 ---
 
-![bg right 95%](https://upload.wikimedia.org/wikipedia/commons/8/86/Alexandria_-_Pompey%27s_Pillar_-_view_of_ruins.JPG)
-
 ## Uništenje knjižnice (3/3)
 
 - Hram Serapejon naposlijetku srušen 391. n.e. odredbom pape Teofila I. Aleksandrijskog
+
+![bg right:55% 95%](https://upload.wikimedia.org/wikipedia/commons/8/86/Alexandria_-_Pompey%27s_Pillar_-_view_of_ruins.JPG)
+
+Izvor slike: [Wikimedia Commons File:Alexandria - Pompey's Pillar - view of ruins.JPG](https://commons.wikimedia.org/wiki/File:Alexandria_-_Pompey%27s_Pillar_-_view_of_ruins.JPG)
 
 ---
 
@@ -89,11 +95,13 @@ curriculum-vitae: |
 
 ---
 
-![bg right 95%](https://upload.wikimedia.org/wikipedia/commons/5/5e/Alexandria%27s_Bibliotheca.jpg)
-
 ## Bibliotheca Alexandrina
 
 - Služi istovremeno kao spomen i kao pokušaj obnove
+
+![bg right:60% 95%](https://upload.wikimedia.org/wikipedia/commons/5/5e/Alexandria%27s_Bibliotheca.jpg)
+
+Izvor slike: [Wikimedia Commons File:Alexandria's Bibliotheca.jpg](https://commons.wikimedia.org/wiki/File:Alexandria%27s_Bibliotheca.jpg)
 
 ---
 
@@ -109,17 +117,17 @@ curriculum-vitae: |
 
 ---
 
-![bg left 80%](https://upload.wikimedia.org/wikipedia/commons/5/51/Domesday-book-1804x972.jpg)
-
 ## Domesday Book
 
 - Inventar engleskih zemalja sastavljen od strane normanskih svećenika 1086. godine
 - 900 godina kasnije BBC izdao digitalnu verziju
     - Već 2001. godine postala nečitljiva (trajala 15 godina)
 
----
+![bg left 80%](https://upload.wikimedia.org/wikipedia/commons/5/51/Domesday-book-1804x972.jpg)
 
-![bg right 70%](https://upload.wikimedia.org/wikipedia/commons/6/63/Data_loss_of_image_file.JPG)
+Izvor slike: [Wikimedia Commons File:Domesday-book-1804x972.jpg](https://commons.wikimedia.org/wiki/File:Domesday-book-1804x972.jpg)
+
+---
 
 ## Uništenje arhiviranih podataka
 
@@ -127,6 +135,10 @@ curriculum-vitae: |
     - Oštećenja fizičkog medija na kojem su zapisani (diskovi, trake i dr.)
     - Greške u programskoj podršci koja s podacima radi
 - Ciljano djelovanje zlonamjernih aktera
+
+![bg right 70%](https://upload.wikimedia.org/wikipedia/commons/6/63/Data_loss_of_image_file.JPG)
+
+Izvor slike: [Wikimedia Commons File:Data loss of image file.JPG](https://commons.wikimedia.org/wiki/File:Data_loss_of_image_file.JPG)
 
 ---
 
@@ -138,8 +150,6 @@ curriculum-vitae: |
 
 ---
 
-![bg right 50%](https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Euclid_flowchart.svg/267px-Euclid_flowchart.svg.png)
-
 ## Programska poodrška
 
 - Ima zapisane postupke (algoritme) kao što su:
@@ -150,13 +160,19 @@ curriculum-vitae: |
     - Predviđanje putanje planeta oko Sunca
     - Abecedno nizanje popisa učenika
 
----
+![bg right:40% 60%](https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Euclid_flowchart.svg/267px-Euclid_flowchart.svg.png)
 
-![bg left 75%](https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Ogg_vorbis_libs_and_application_dia.svg/800px-Ogg_vorbis_libs_and_application_dia.svg.png)
+Izvor slike: [Wikimedia Commons File:Euclid flowchart.svg](https://commons.wikimedia.org/wiki/File:Euclid_flowchart.svg)
+
+---
 
 ## Programska knjižnica
 
 U računarstvu i informatici datoteke koje sadrže implementacije algoritama nazivamo programskim knjižnicama (engl. *software library*).
+
+![bg left 75%](https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Ogg_vorbis_libs_and_application_dia.svg/800px-Ogg_vorbis_libs_and_application_dia.svg.png)
+
+Izvor slike: [Wikimedia Commons File:Ogg vorbis libs and application dia.svg](https://commons.wikimedia.org/wiki/File:Ogg_vorbis_libs_and_application_dia.svg)
 
 ---
 
@@ -167,11 +183,13 @@ U računarstvu i informatici datoteke koje sadrže implementacije algoritama naz
 
 ---
 
-![bg right 70%](https://upload.wikimedia.org/wikipedia/commons/9/95/Font_Awesome_5_brands_github.svg)
-
 ## GitHub
 
 - Komercijalno uspješan sustav za pohranu, dijeljenje, označavanje i pretragu povijesti promjena izvornog kôda programske podrške
+
+![bg right 70%](https://upload.wikimedia.org/wikipedia/commons/9/95/Font_Awesome_5_brands_github.svg)
+
+Izvor slike: [Wikimedia Commons File:Font Awesome 5 brands github.svg](https://commons.wikimedia.org/wiki/File:Font_Awesome_5_brands_github.svg)
 
 ---
 

@@ -40,13 +40,15 @@ Image source: [Computational Chemistry Day Logo](https://www.compchemday.org/)
 
 - founded in 2008. as *Department of Informatics* at University of Rijeka
 - became *Faculty of Informatics and Digital Technologies* in 2022.
-- [several laboratories](https://www.inf.uniri.hr/znanstveni-i-strucni-rad/laboratoriji) and research groups; scientific interests:
+- [several labs](https://www.inf.uniri.hr/znanstveni-i-strucni-rad/laboratoriji) and groups; scientific interests:
     - computer vision, pattern recognition
     - natural language processing, machine translation
     - e-learning, digital transformation
     - **scientific software parallelization, high performance computing**
 
 ![FIDIT logo bg right:35% 95%](https://upload.wikimedia.org/wikipedia/commons/1/14/FIDIT-logo.svg)
+
+Image source: [Wikim. Comm. File:FIDIT-logo.svg](https://commons.wikimedia.org/wiki/File:FIDIT-logo.svg)
 
 ---
 

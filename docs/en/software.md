@@ -8,6 +8,8 @@ The group is participating in the [development](https://gitlab.com/gromacs/groma
 
 ![GROMACS logo](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Gmx_logo_blue.png/1280px-Gmx_logo_blue.png)
 
+Image source: [Wikimedia Commons File:Gmx logo blue.png](https://commons.wikimedia.org/wiki/File:Gmx_logo_blue.png)
+
 There are [occasional contributions](people/principal-investigator.md#open-source-software-contributions) to [other](https://www.cp2k.org/) [free](https://www.freebsd.org/) [and](https://www.kernel.org/) [open](https://llvm.org/)-[source](https://www.mesa3d.org/) [software](https://www.rdkit.org/) based on the requirements of the [research projects](projects.md) we work on and [courses](teaching/index.md#courses) we teach.
 
 ## Packaging

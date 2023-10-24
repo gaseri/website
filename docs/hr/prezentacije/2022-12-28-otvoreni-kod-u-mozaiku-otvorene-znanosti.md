@@ -15,7 +15,7 @@ abstract: |
 
 ## [Vedran](https://vedran.miletic.net/) [Miletić](https://www.miletic.net/), Fakultet informatike i digitalnih tehnologija
 
-![FIDIT logo h:400px](https://upload.wikimedia.org/wikipedia/commons/1/14/FIDIT-logo.svg)
+![FIDIT logo h:400px](https://upload.wikimedia.org/wikipedia/commons/1/14/FIDIT-logo.svg) Izvor slike: [Wikimedia Commons File:FIDIT-logo.svg](https://commons.wikimedia.org/wiki/File:FIDIT-logo.svg)
 
 ### Mutimir 2022 (Udruga Penkala), Hotel Matija Gubec, 28. prosinca 2022.
 
@@ -36,6 +36,8 @@ abstract: |
 ## Otvorena znanost
 
 ![File:Osc2021-unesco-open-science-no-gray.png](https://upload.wikimedia.org/wikipedia/commons/2/28/Osc2021-unesco-open-science-no-gray.png)
+
+Izvor slike: [Wikimedia Commons File:Osc2021-unesco-open-science-no-gray.png](https://commons.wikimedia.org/wiki/File:Osc2021-unesco-open-science-no-gray.png)
 
 ---
 

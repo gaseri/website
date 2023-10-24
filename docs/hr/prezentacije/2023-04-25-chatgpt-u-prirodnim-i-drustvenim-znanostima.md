@@ -17,7 +17,7 @@ abstract: |
 
 ## [Vedran](https://vedran.miletic.net/) [Miletić](https://www.miletic.net/), Fakultet informatike i digitalnih tehnologija
 
-![FIDIT logo h:350px](https://upload.wikimedia.org/wikipedia/commons/1/14/FIDIT-logo.svg)
+![FIDIT logo h:350px](https://upload.wikimedia.org/wikipedia/commons/1/14/FIDIT-logo.svg) Izvor slike: [Wikimedia Commons File:FIDIT-logo.svg](https://commons.wikimedia.org/wiki/File:FIDIT-logo.svg)
 
 ### Festival znanosti, Rijeka, Otvoreni dan, zgrada sveučilišnih odjela, 25. travnja 2023.
 
@@ -26,7 +26,7 @@ abstract: |
 ## Fakultet informatike i digitalnih tehnologija
 
 - osnovan 2008. godine kao Odjel za informatiku Sveučilišta u Rijeci
-- prešao u Fakultet informatike i digitalnih tehnologija 2022. godine
+- postao fakultet 2022. godine
 - [pet laboratorija](https://www.inf.uniri.hr/znanstveni-i-strucni-rad/laboratoriji) sastavljenih od istraživačkih grupa; znanstveni interesi:
     - računalni vid, raspoznavanje uzoraka
     - obrada prirodnog jezika, strojno prevođenje
@@ -34,6 +34,8 @@ abstract: |
     - paralelno programiranje na superračunalima
 
 ![FIDIT logo bg right:35% 90%](https://upload.wikimedia.org/wikipedia/commons/1/14/FIDIT-logo.svg)
+
+Izvor slike: [Wiki. Comm. File:FIDIT-logo.svg](https://commons.wikimedia.org/wiki/File:FIDIT-logo.svg)
 
 ---
 
@@ -89,6 +91,9 @@ abstract: |
 - Poznatiji proizvodi: [Gym](https://www.gymlibrary.dev/) ([Retro](https://openai.com/blog/gym-retro/)), [RoboSumo](https://github.com/openai/robosumo), [Debate Game](https://openai.com/research/debate), [Dactyl](https://openai.com/blog/learning-dexterity/), [DALL-E](https://openai.com/dall-e-2/)
 
 ![OpenAI logo h:150px](https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg)
+
+Izvor slike: [Wikimedia Commons File:OpenAI Logo.svg](https://commons.wikimedia.org/wiki/File:OpenAI_Logo.svg)
+
 
 ---
 

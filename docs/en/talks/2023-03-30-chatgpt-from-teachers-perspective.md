@@ -15,7 +15,7 @@ abstract: |
 
 # ChatGPT from teacher's perspective
 
-![ChatGPT logo h:300px](https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg)
+![ChatGPT logo h:300px](https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg) Image source: [Wikimedia Commons File:ChatGPT logo.svg](https://commons.wikimedia.org/wiki/File:ChatGPT_logo.svg)
 
 ## [Vedran](https://vedran.miletic.net/) [Miletić](https://www.miletic.net/), [Faculty of Informatics and Digital Technologies](https://www.inf.uniri.hr/)
 
@@ -34,6 +34,8 @@ abstract: |
     - parallel applications on supercomputers
 
 ![FIDIT logo bg right:35% 90%](https://upload.wikimedia.org/wikipedia/commons/1/14/FIDIT-logo.svg)
+
+Image source: [Wikim. Comm. File:FIDIT-logo.svg](https://commons.wikimedia.org/wiki/File:FIDIT-logo.svg)
 
 ---
 
@@ -83,6 +85,8 @@ abstract: |
 - it is known for: [Gym](https://www.gymlibrary.dev/) ([Retro](https://openai.com/research/gym-retro)), [RoboSumo](https://github.com/openai/robosumo), [Debate Game](https://debate-game.openai.com/), [Dactyl](https://openai.com/research/learning-dexterity), [DALL-E](https://openai.com/product/dall-e-2)
 
 ![OpenAI logo h:150px](https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg)
+
+Image source: [Wikimedia Commons File:OpenAI Logo.svg](https://commons.wikimedia.org/wiki/File:OpenAI_Logo.svg)
 
 ---
 
