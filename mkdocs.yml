@@ -589,3 +589,9 @@ plugins:
   - social
   - tags:
       tags_file: en/blog/tags.md
+  - rss:
+      match_path: en/blog/posts/.*
+      date_from_meta:
+        as_creation: date
+      categories:
+        - tags
