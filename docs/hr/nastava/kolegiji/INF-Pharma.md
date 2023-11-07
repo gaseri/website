@@ -44,6 +44,7 @@ tags:
 
 ### Obrada dokumenata i izrada prezentacija
 
+- [Suradnički uređivač teksta HackMD i jezik Markdown](../materijali/hackmd-markdown.md)
 - [Snimanje zvuka, videa i dijelova zaslona programom OBS Studio](../materijali/obs-studio-snimanje.md)
 
 ### Osnove programiranja i obrade podataka

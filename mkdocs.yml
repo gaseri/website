@@ -155,6 +155,7 @@ nav:
               - Kriptografija javnog ključa alatom GnuPG: hr/nastava/materijali/gnupg-kriptografija-javnog-kljuca.md
               - Pretraživanje i obrada tekstualnih datoteka: hr/nastava/materijali/grep-sed-awk-tr.md
               - Boot proces računala i učitavač GRUB: hr/nastava/materijali/grub-pokretanje-sustava.md
+              - Suradnički uređivač teksta HackMD i jezik Markdown: hr/nastava/materijali/hackmd-markdown.md
               - Pregled heterogene sustavske arhitekture: hr/nastava/materijali/hsa-pregled.md
               - HTTP klijent HTTPie: hr/nastava/materijali/httpie-http-klijent.md
               - Osnovni alati za konfiguraciju računalne mreže: hr/nastava/materijali/ifconfig-konfiguracija-mreznih-sucelja.md
@@ -567,6 +568,9 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight
   - pymdownx.keys
   - pymdownx.superfences:
