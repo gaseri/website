@@ -5,7 +5,7 @@ tags:
 
 # Arhitektura i organizacija računala
 
-## Vježbe
+## Predavanja i vježbe
 
 - [Instalacija i konfiguracija softvera za vježbe iz kolegija Arhitektura i organizacija računala](../materijali/aor-instalacija-softvera-windows-ubuntu.md)
 - [Zapis informacija u digitalnim sustavima](../materijali/zapis-informacija-u-digitalnim-sustavima.md)
