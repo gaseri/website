@@ -87,7 +87,7 @@ tags:
 - [Web poslužitelj nginx](../materijali/nginx-web-posluzitelj.md)
 - [Instalacija i konfiguracija wiki sustava DokuWiki](../materijali/dokuwiki-instalacija-web-aplikacije.md)
 - [Konfiguracija sustava za upravljanje bazom podataka MariaDB](../materijali/mariadb-sustav-za-upravljanje-bazom-podataka.md)
-- [Instalacija i konfiguracija sustava za upravljanje sadržajem Wordpress](../materijali/wordpress-instalacija-web-aplikacije.md)
+- [Instalacija i konfiguracija sustava za upravljanje sadržajem WordPress](../materijali/wordpress-instalacija-web-aplikacije.md)
 - [Konfiguracija sustava za upravljanje bazom podataka PostgreSQL](../materijali/postgresql-sustav-za-upravljanje-bazom-podataka.md)
 - [Distribuirano pretraživanje u realnom vremenu alatom ElasticSearch](../materijali/elasticsearch-distribuirano-pretrazivanje.md)
 - [Instalacija i konfiguracija wiki sustava MediaWiki](../materijali/mediawiki-instalacija-web-aplikacije.md)

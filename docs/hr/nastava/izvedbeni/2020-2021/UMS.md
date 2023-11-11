@@ -170,7 +170,7 @@ Nastava će se na predmetu odvijati u zimskom semestru prema sljedećem raspored
 | 5. | 2. 11. 2020. | 18:00 | online | **Početak izrade 2. eseja** | Z | v. pred. dr. sc. Vedran Miletić |
 | 6. | 9. 11. 2020. | 14:15--17:45 | O-365 | Virtualna privatna mreža alatom OpenVPN. Anonimne mreže Tor i I2P | P+V | v. pred. dr. sc. Vedran Miletić |
 | 7. | 16. 11. 2020. | 14:00 | online | **Rok za predaju 2. eseja** | Z | v. pred. dr. sc. Vedran Miletić |
-| 7. | 16. 11. 2020. | 14:15--17:45 | O-365 | Konfiguracija web poslužitelja nginx i korištenje interpretera PHP-a pomoću PHP-FPM-a. Konfiguracija sustava za upravljanje bazom podataka MariaDB. Instalacija i konfiguracija web aplikacija Dokuwiki i Wordpress na poslužitelju nginx. SSL/TLS certifikati autoriteta Let's Encrypt | P+V | v. pred. dr. sc. Vedran Miletić |
+| 7. | 16. 11. 2020. | 14:15--17:45 | O-365 | Konfiguracija web poslužitelja nginx i korištenje interpretera PHP-a pomoću PHP-FPM-a. Konfiguracija sustava za upravljanje bazom podataka MariaDB. Instalacija i konfiguracija web aplikacija DokuWiki i WordPress na poslužitelju nginx. SSL/TLS certifikati autoriteta Let's Encrypt | P+V | v. pred. dr. sc. Vedran Miletić |
 | 8. | 23. 11. 2020. | 14:15--17:45 | O-365 | Konfiguracija balansiranja opterećnja u nginxu. Posluživanje Node.js web aplikacija korištenjem proxya | P+V | v. pred. dr. sc. Vedran Miletić |
 | 9. | 23. 11. 2020. | 18:00 | online | **Objavljene ponuđene teme praktičnih radova** | Z | v. pred. dr. sc. Vedran Miletić |
 | 9. | 30. 11. 2020. | 14:15--17:45 | O-365 | Konfiguracija poslužiteljskih Java aplikacija za audiovizualne konferencije Jitsi Meet i Big Blue Button | P+V | v. pred. dr. sc. Vedran Miletić |
