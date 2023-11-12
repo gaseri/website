@@ -31,7 +31,9 @@ We use [Visual Studio Code](https://code.visualstudio.com/) for writing and edit
 
 ## Servers
 
-- [SuperMicro A+ Server 1013S-MTR](https://www.supermicro.com/en/Aplus/system/1U/1013/AS-1013S-MTR.cfm) running [Proxmox VE](https://www.proxmox.com/proxmox-ve) with several virtual machines, used for compute
+- [SuperMicro A+ Server 1013S-MTR](https://www.supermicro.com/en/Aplus/system/1U/1013/AS-1013S-MTR.cfm) with [AMD EPYC 7402P](https://www.amd.com/en/products/cpu/amd-epyc-7402P) running [Proxmox VE](https://www.proxmox.com/proxmox-ve) with several virtual machines, used for compute
+- [HP EliteDesk 405 G4 Desktop Mini PC](https://support.hp.com/en-us/product/details/hp-prodesk-405-g4-desktop-mini-pc/26673038) running [Arch Linux](https://archlinux.org/) with [GCC](https://gcc.gnu.org/), [Clang](https://clang.llvm.org/)/[LLVM](https://llvm.org/), [ccache](https://ccache.dev/), [CMake](https://cmake.org/), [Open MPI](https://www.open-mpi.org/), [Python](https://www.python.org/), and [Cython](https://cython.org/), used for development and testing of the [PKGBUILDS](https://wiki.archlinux.org/title/PKGBUILD) of the [Arch User Repository](https://wiki.archlinux.org/title/Arch_User_Repository) ([AUR](https://aur.archlinux.org/)) packages that we [(co-)maintain](../../software.md#packaging)
+- [HP EliteDesk 705 G2 Desktop Mini PC](https://support.hp.com/us-en/product/details/hp-elitedesk-705-g2-desktop-mini-pc/7633235) running [FreeBSD](https://www.freebsd.org/) with [Apache HTTP Server](https://httpd.apache.org/), [OpenSSL](https://www.openssl.org/), [PHP](https://www.php.net/), and [Tor](https://www.torproject.org/), used for hosting [apps.group.miletic.net](https://apps.group.miletic.net/) (web applications and services)
 - Custom server built with [ASRock FM2A88M-HD+](https://www.asrock.com/mb/AMD/FM2A88M-HD+/index.asp) and eight [Seagate IronWolf 8TB](https://www.seagate.com/products/nas-drives/ironwolf-hard-drive/) running [TrueNAS CORE](https://www.truenas.com/truenas-core/), used for storage
 
 ### Future changes
@@ -40,9 +42,11 @@ We plan to switch the storage server to [TrueNAS SCALE](https://www.truenas.com/
 
 ## Cloud services
 
-- ~~[Hetzner Cloud x86 VPS](https://www.hetzner.com/cloud) running [Arch Linux](https://archlinux.org/)~~[HP EliteDesk 705 G2 Desktop Mini PC](https://support.hp.com/us-en/product/details/hp-elitedesk-705-g2-desktop-mini-pc/7633235) running [FreeBSD](https://www.freebsd.org/) with [Apache HTTP Server](https://httpd.apache.org/), [OpenSSL](https://www.openssl.org/), [PHP](https://www.php.net/), and [Tor](https://www.torproject.org/), used for hosting [apps.group.miletic.net](https://apps.group.miletic.net/) (web applications and services)
+- ~~[Hetzner Cloud x86 VPS](https://www.hetzner.com/cloud) running [Arch Linux](https://archlinux.org/)~~
 - [GitHub Actions](https://github.com/features/actions), used for building, and [GitHub Pages](https://pages.github.com/), used for hosting [group.miletic.net](../../../index.md) (web site)
 - [HackMD](https://hackmd.io/), used for collaborative drafting of Markdown documents
 - [Overleaf](https://www.overleaf.com/), used for collaborative drafting of LaTeX documents
 
 **Updated on 2023-08-24:** replaced [cloud](https://en.wikipedia.org/wiki/Cloud_computing) with [on-prem](https://en.wikipedia.org/wiki/On-premises_software).
+
+**Updated on 2023-11-12:** listed [AUR](https://en.wikipedia.org/wiki/Arch_Linux#Arch_User_Repository_(AUR)) build server.
