@@ -356,7 +356,7 @@ nav:
               - Konfiguracija virtualne privatne mreže alatom WireGuard: hr/nastava/materijali/wireguard-virtualna-privatna-mreza.md
               - Filtriranje paketa: hr/nastava/materijali/wireshark-filtriranje-paketa.md
               - Snimanje prometa aplikacija: hr/nastava/materijali/wireshark-snimanje-prometa.md
-              - Instalacija i konfiguracija sustava za upravljanje sadržajem Wordpress: hr/nastava/materijali/wordpress-instalacija-web-aplikacije.md
+              - Instalacija i konfiguracija sustava za upravljanje sadržajem WordPress: hr/nastava/materijali/wordpress-instalacija-web-aplikacije.md
               - Upravljanje paketima: hr/nastava/materijali/yum-rpm-upravljanje-paketima-operacijskog-sustava.md
               - Zapis informacija u digitalnim sustavima: hr/nastava/materijali/zapis-informacija-u-digitalnim-sustavima.md
               - Datotečni sustav i upravitelj volumenima ZFS: hr/nastava/materijali/zfs-datotecni-sustav-upravitelj-volumenima.md
