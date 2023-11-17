@@ -1,3 +1,2 @@
 mkdocs[i18n]
-mkdocs-material[imaging]
-mkdocs-rss-plugin
+mkdocs-material[recommended, imaging]

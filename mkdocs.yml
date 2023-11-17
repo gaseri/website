@@ -593,6 +593,8 @@ plugins:
   - social
   - tags:
       tags_file: en/blog/tags.md
+  - minify:
+      minify_html: !ENV [CI, false]
   - rss:
       match_path: en/blog/posts/.*
       date_from_meta:

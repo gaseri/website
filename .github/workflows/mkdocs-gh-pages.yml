@@ -47,6 +47,8 @@ jobs:
           path: .cache
       - name: Build site (_site directory name is used for Jekyll compatiblity)
         run: mkdocs build --config-file ./mkdocs.yml --strict --site-dir ./_site
+        env:
+          CI: true
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
 
