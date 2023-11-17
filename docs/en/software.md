@@ -17,6 +17,10 @@ There are [occasional contributions](people/principal-investigator.md#open-sourc
 The group is actively co-maintaining several computational biochemisty packages in [Arch User Repository](https://wiki.archlinux.org/title/Arch_User_Repository) ([AUR](https://aur.archlinux.org/)), specifically:
 
 - [AmberTools](https://ambermd.org/AmberTools.php) -> [ambertools](https://aur.archlinux.org/packages/ambertools)
+- [GridDataFormats](https://www.mdanalysis.org/GridDataFormats/) -> [python-griddataformats](https://aur.archlinux.org/packages/python-griddataformats)
 - [GROMACS](https://www.gromacs.org/) -> [gromacs](https://aur.archlinux.org/packages/gromacs)
+- [GSD](https://gsd.readthedocs.io/) -> [python-gsd](https://aur.archlinux.org/packages/python-gsd)
 - [MDAnalysis](https://www.mdanalysis.org/) -> [python-mdanalysis](https://aur.archlinux.org/packages/python-mdanalysis)
+- [MDTraj](https://www.mdtraj.org/) -> [python-mdtraj](https://aur.archlinux.org/packages/python-mdtraj)
+- [MMTF](https://mmtf.rcsb.org/) -> [python-mmtf](https://aur.archlinux.org/packages/python-mmtf)
 - [RDKit](https://rdkit.org/) -> [rdkit](https://aur.archlinux.org/packages/rdkit)
