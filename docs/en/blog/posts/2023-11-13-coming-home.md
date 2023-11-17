@@ -154,6 +154,20 @@ drwxr-xr-x  3 root wheel 3 15 kol  00:25 /home
 
 The home directory is indeed in its proper place, great!
 
+!!! tip
+    When my user was created during installation, [pw(8)](https://man.freebsd.org/cgi/man.cgi?query=pw&sektion=8&format=html) set its home directory to `/home/vedran`, as can be easily seen from the relevant part of the `/etc/passwd` file:
+
+    ``` shell
+    # grep vedran /etc/passwd
+    vedran:*:1001:1001:Vedran Miletic:/home/vedran:/bin/tcsh
+    ```
+
+    Some software might choose to use the `/usr/home/vedran` path to access the user's home directory regardless of this setting. Of course, the configuration of such software should be updated with the correct path. However, until this configuration is updated, it could be useful to have a "reverse" symlink:
+
+    ``` shell
+    # ln -s /home /usr/home
+    ```
+
 ### Cleaning up after the move
 
 So, the move is done, but we still have to undo some of the preparatory work. Let's not forget to change that line in the OpenSSH daemon configuration file `/etc/ssh/sshd_config` back to
