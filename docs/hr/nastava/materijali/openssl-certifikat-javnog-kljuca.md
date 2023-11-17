@@ -945,3 +945,7 @@ $ curl -k https://localhost:49152/index.html
 ```
 
 Više o opciji `s_server` moguće je naći u pripadnoj stranici priručnika `s_server(1ssl)`.
+
+### Testiranje poslužitelja
+
+Web aplikacija [SSL Server Test](https://www.ssllabs.com/ssltest/index.html) omogućuje provođenje niza testova sigurnog poslužitelja za poznate propuste. Testiramo li ranije spomenuti poslužitelj [aplikacija i usluga](https://apps.group.miletic.net/) `apps.group.miletic.net`, dobit ćemo [SSL Report za taj poslužitelj](https://www.ssllabs.com/ssltest/analyze.html?d=apps.group.miletic.net) s ukupnom ocjenom i detaljnim objašnjenjem po kategorijama.
