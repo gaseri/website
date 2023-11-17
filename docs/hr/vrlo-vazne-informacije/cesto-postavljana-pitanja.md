@@ -32,6 +32,11 @@ Iznimka je [kraj rujna, čitav listopad i početak studenog 2022. godine](https:
 
 To je prilično dobro objasnio [DZIMI](https://www.instagram.com/dzimiyt_/) u istonaslovljenom [audiovizualnom uratku](https://youtu.be/7ksQqIOnpnc).
 
+Za one koji traže znanstveniji pristup problemu ili preferiraju pisani materijal pred audiovizualnim, [Maja Sokač](https://www.croris.hr/osobe/profil/41945) iz [Gimnazije Karlovac](https://www.gimnazija-karlovac.hr/) i [Petra Grba](https://www.croris.hr/osobe/profil/42980) iz [Srednje škola Duga Resa](http://ss-duga-resa.skole.hr/) pripremile su znanstveni rad [Reši, đuskati, gaser ili o srbizmima u komunikaciji mladih](https://www.croris.hr/crosbi/publikacija/prilog-skup/734912). Taj je rad dostupan na web sjedištu [Hrvatskoga društva za primijenjenu lingvistiku](https://hdpl.hdpl.hr/home) u dva oblika:
+
+- kao sažetak u [knjizi sažetaka](https://hdpl.hdpl.hr/abstracts) [Jezik u digitalnom okruženju, knjiga sažetaka s XXXV. međunarodnog znanstvenog skupa](https://www.hdpl.hr/upload/94623a870a857836d7fb2bfc684d1b1d7bb494cc.pdf#page=120) Hrvatskoga društva za primijenjenu lingvistiku, 2021. i
+- kao cjeloviti rad u [zborniku](https://hdpl.hdpl.hr/proceeding) [Jezik u digitalnom okruženju, zbornik radova s međunarodnoga znanstvenog skupa](https://www.hdpl.hr/upload/1ad89034ae67554d9e0ff7b298ac93597e54c446.pdf#page=118) Hrvatskoga društva za primijenjenu lingvistiku, 2022.
+
 ## Kako postati dio grupe GASERI?
 
 To je nešto manje važna informacija od one u odgovoru na prethodno pitanje pa se nalazi [na posebnoj stranici](../ljudi/kako-se-ukljuciti.md).
