@@ -198,7 +198,6 @@ author: Luka Vretenar
         naredbe;
     }
 
-
     if (uvjet1)
     {
         naredbe;

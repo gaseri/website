@@ -94,7 +94,6 @@ Izvor slike: [Wiki. Comm. File:FIDIT-logo.svg](https://commons.wikimedia.org/wik
 
 Izvor slike: [Wikimedia Commons File:OpenAI Logo.svg](https://commons.wikimedia.org/wiki/File:OpenAI_Logo.svg)
 
-
 ---
 
 ## ChatGPT

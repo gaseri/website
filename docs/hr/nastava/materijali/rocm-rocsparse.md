@@ -305,7 +305,6 @@ rocsparse_create_mat_descr(&descrA);
 rocsparse_mat_descr descrB;
 rocsparse_create_mat_descr(&descrB);
 
-
 rocsparse_int* dAptr = NULL;
 rocsparse_int* dAcol = NULL;
 double*        dAval = NULL;

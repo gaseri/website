@@ -1115,4 +1115,3 @@ Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primje
 
 !!! tip
     "Profesore, ja znam kako su drugi prepisali od mene i prihvaćam krivnju za to. Pošaljite nas svih na stegovno povjerenstvo jer prepisivanje nije u redu."
-

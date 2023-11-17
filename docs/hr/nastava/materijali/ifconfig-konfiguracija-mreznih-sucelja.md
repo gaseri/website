@@ -78,7 +78,6 @@ Pregled parametara za alat ifconfig:
 - `promisc` : postavljanje sučelja u promiskuitetan način rada
 - `-promisc` : vraćanje sučelja u normalan način rada
 
-
 ## Dodatak: alat ip
 
 !!! todo

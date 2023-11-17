@@ -75,7 +75,6 @@ int main()
 
   gpu_time_used = get_time_us_sync_device(); // in microseconds
 
-
   status = rocblas_sscal(handle, N, &alpha, dx, 1);
   if(status != rocblas_status_success)
   {
