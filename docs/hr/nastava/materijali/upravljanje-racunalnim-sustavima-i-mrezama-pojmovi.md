@@ -96,7 +96,7 @@ Upravitelj računalnih sustava i mreža, popularno zvan sistem admistrator, od m
 
 - [AdoredTV](https://adoredtv.com/)
 - [AnandTech](https://www.anandtech.com/)
-- [Coreteks](https://coreteks.tech/)
+- [Coreteks](https://www.youtube.com/@Coreteks)
 - [ExtremeTech](https://www.extremetech.com/)
 - [/g/ on 4chan](https://boards.4chan.org/g/)
 - [Hacker News (Y Combinator)](https://news.ycombinator.com/)

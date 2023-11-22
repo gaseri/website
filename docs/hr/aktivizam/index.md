@@ -53,7 +53,7 @@ Naše aktivnosti možete pratiti na stranicama [Riječke podružnice Hrvatske ud
 
 **Vrijeme:** 13. listopada 2020. u 14:00
 
-**Događaj:** [Otvoreni dan sveučilišnih odjela 2020](https://www.inf.uniri.hr/znanstveni-i-strucni-rad/dogadanja-info/otvoreni-dan)
+**Događaj:** [Otvoreni dan sveučilišnih odjela 2020](https://web.archive.org/web/20211104135021/https://www.inf.uniri.hr/znanstveni-i-strucni-rad/dogadanja-info/otvoreni-dan)
 
 #### Sažetak predavanja "Od Aleksandrijske knjižnice do programskih knjižnica na GitHubu"
 

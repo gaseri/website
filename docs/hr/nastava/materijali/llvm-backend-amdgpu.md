@@ -437,7 +437,7 @@ multiply_by_two:
         .amd_amdgpu_isa "amdgcn----gfx900"
 ```
 
-Iako nam neće trebati toliko detaljno poznavanje instrukcija, [čitava specifikacija pete generacije arhitekture GCN](https://rocmdocs.amd.com/en/latest/GCN_ISA_Manuals/testdocbook.html) dostupna je kao dio [službene dokumentacije ROCm-a](https://rocmdocs.amd.com/).
+Iako nam neće trebati toliko detaljno poznavanje instrukcija, [čitava specifikacija pete generacije arhitekture GCN](https://gpuopen.com/amd-isa-documentation/) dostupna je kao dio [prezentacija i priručnika AMD GPUOpena](https://gpuopen.com/learn/presentations/).
 
 ## Nivoi optimizacije
 

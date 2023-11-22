@@ -4,7 +4,7 @@ author: Mia Doričić, Vedran Miletić
 
 # rocSOLVER: ROCm-ov linear algebra SOLVER
 
-U nastavku koristimo kod iz repozitorija [rocSOLVER](https://github.com/ROCmSoftwarePlatform/rocSOLVER) ([službena dokumentacija](https://rocsolver.readthedocs.io/)).
+U nastavku koristimo kod iz repozitorija [rocSOLVER](https://github.com/ROCmSoftwarePlatform/rocSOLVER) ([službena dokumentacija](https://rocm.docs.amd.com/projects/rocSOLVER/en/latest/)).
 
 rocSOLVER je implementacija podskupa funkcija iz LAPACK (Linear Algebra PACKage) biblioteke, te je i dalje u stanju usavršavanja.
 Potrebno je instalirati i rocBLAS da bi funkcije bile uspješno odrađene.

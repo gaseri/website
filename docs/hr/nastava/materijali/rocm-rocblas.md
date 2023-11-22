@@ -4,7 +4,7 @@ author: Mia Doričić, Vedran Miletić
 
 # rocBLAS: ROCm Basic Linear Algebra Subprograms
 
-U nastavku koristimo kod iz repozitorija [rocBLAS](https://github.com/ROCmSoftwarePlatform/rocBLAS) ([službena dokumentacija](https://rocblas.readthedocs.io/)).
+U nastavku koristimo kod iz repozitorija [rocBLAS](https://github.com/ROCmSoftwarePlatform/rocBLAS) ([službena dokumentacija](https://rocm.docs.amd.com/projects/rocBLAS/en/latest/)).
 
 rocBLAS nudi za korištenje osnovne podprograme koji u domeni linearne algebre.
 
@@ -36,7 +36,7 @@ Preostale tipove podataka moguće je pronaći u [službenoj dokumentaciji u dije
 
 ## Funkcije
 
-Podržana su sva tri nivoa BLAS-a i pojedina proširenja. Čitav popis funkcija i njihov opis moguće je naći u službenoj dokumentaciji u dijelu [rocBLAS Functions](https://rocblas.readthedocs.io/en/master/functions.html#rocblas-functions).
+Podržana su sva tri nivoa BLAS-a i pojedina proširenja. Čitav popis funkcija i njihov opis moguće je naći u službenoj dokumentaciji u dijelu [rocBLAS API and Legacy BLAS Functions](https://rocm.docs.amd.com/projects/rocBLAS/en/latest/API_Reference_Guide.html#rocblas-api-and-legacy-blas-functions).
 
 ## Primjeri
 
@@ -376,7 +376,7 @@ int main()
 }
 ```
 
-Puno je pripreme prije i čišćenja nakon poziva funkcije `rocblas_sgemm()` ([dokumentacija](https://rocblas.readthedocs.io/en/master/functions.html#_CPPv413rocblas_sgemm14rocblas_handle17rocblas_operation17rocblas_operation11rocblas_int11rocblas_int11rocblas_intPKfPKf11rocblas_intPKf11rocblas_intPKfPf11rocblas_int)) koji čini srž programa pa analirajmo kod dio po dio.
+Puno je pripreme prije i čišćenja nakon poziva funkcije `rocblas_sgemm()` ([dokumentacija](https://rocm.docs.amd.com/projects/rocBLAS/en/latest/API_Reference_Guide.html#rocblas-xgemm-batched-strided-batched)) koji čini srž programa pa analirajmo kod dio po dio.
 
 Program počinje deklaracijom dvije varijable tipa `rocblas_operation` imena `transa` i `transb` čije su vrijednosti postavljene na `rocblas_operation_none` (nepromijenjena matrica) i `rocblas_operation_transpose` (transponirana matrica).
 

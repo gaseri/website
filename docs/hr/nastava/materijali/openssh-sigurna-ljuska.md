@@ -54,7 +54,7 @@ $ ssh student@example.group.miletic.net
 student@example.group.miletic.net's password:
 ```
 
-Korisničko ime se može navesti i kao vrijednost parametra `-l` [uz obavezni samozadovoljni izraz na licu jer naredba u tom obliku postanje manje čitljiva laicima](https://dilbert.com/strip/1995-06-24):
+Korisničko ime se može navesti i kao vrijednost parametra `-l` [uz obavezni samozadovoljni izraz na licu jer naredba u tom obliku postanje manje čitljiva laicima](https://web.archive.org/web/20230228143445/https://dilbert.com/strip/1995-06-24):
 
 ``` shell
 $ ssh -l student example.group.miletic.net

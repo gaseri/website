@@ -41,7 +41,7 @@ int main()
 }
 ```
 
-Biblioteka {fmt} [od verzije 6.0.0 nadalje](https://github.com/fmtlib/fmt/blob/master/ChangeLog.rst#600---2019-08-26) može oblikovati trajanje vremena u odgovarajućim vremenskim jedinicama (u ovom slučaju sekundama) pa je nepotrebno pozivati metodu `count()` i ručno navoditi jedinice. Kako bi biblioteka {fmt} oblikovala vrijeme u odgovarajućim jedinicama, dovoljno je uključiti zaglavlje `fmt/chrono.h` i izravno koristiti vrijednost tipa `std::chrono::duration<>` ([std::chrono::duration na cppreference.com](https://en.cppreference.com/w/cpp/chrono/duration)):
+Biblioteka {fmt} [od verzije 6.0.0 nadalje](https://github.com/fmtlib/fmt/blob/master/ChangeLog.md#600---2019-08-26) može oblikovati trajanje vremena u odgovarajućim vremenskim jedinicama (u ovom slučaju sekundama) pa je nepotrebno pozivati metodu `count()` i ručno navoditi jedinice. Kako bi biblioteka {fmt} oblikovala vrijeme u odgovarajućim jedinicama, dovoljno je uključiti zaglavlje `fmt/chrono.h` i izravno koristiti vrijednost tipa `std::chrono::duration<>` ([std::chrono::duration na cppreference.com](https://en.cppreference.com/w/cpp/chrono/duration)):
 
 ``` c++
 #include <fmt/format.h>

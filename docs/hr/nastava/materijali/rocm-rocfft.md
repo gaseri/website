@@ -4,7 +4,7 @@ author: Mia Doričić, Vedran Miletić
 
 # rocFFT: ROCm Fast Fourier Transforms
 
-U nastavku koristimo kod iz repozitorija [rocFFT](https://github.com/ROCmSoftwarePlatform/rocFFT) ([službena dokumentacija](https://rocfft.readthedocs.io/)).
+U nastavku koristimo kod iz repozitorija [rocFFT](https://github.com/ROCmSoftwarePlatform/rocFFT) ([službena dokumentacija](https://rocm.docs.amd.com/projects/rocFFT/en/latest/)).
 
 rocFFT je softverska biblioteka za računanje brzihi Fourierovih transformacija, te:
 
@@ -185,7 +185,7 @@ CHECK_HIP_ERR(hipMemcpy(it.gpu_buf, it.cpu_buf, total_bytes, hipMemcpyHostToDevi
 CHECK_HIP_ERR(hipStreamCreate(&(it.stream)));
 ```
 
-Također, stvara se `execution info` (za više informacija o ovom pojmu proučite [službenu dokumentaciju](https://rocfft.readthedocs.io/en/rocm-4.3.0/api.html#execution-info)).
+Također, stvara se `execution info` (za više informacija o ovom pojmu proučite [službenu dokumentaciju](https://rocm.docs.amd.com/projects/rocFFT/en/latest/api.html#execution-info)).
 
 Postavlja se tok, koji mora biti tipa hipStream_t (u suprotnom bi došlo do greške).
 
@@ -217,7 +217,7 @@ Veličina buffera koji radi se postavlja na 0, te se pokreće funkcija kojom se 
 }
 ```
 
-Nakon postavljanja plana, kreće `execution` koji koristi iste parametre za petlju `for`, te provodi funkciju `rocfft_execute()` (za više infromacija o ovoj funkciji pogledajte [službenu dokumentaciju ROCm biblioteka](https://rocmdocs.amd.com/en/latest/ROCm_Libraries/ROCm_Libraries.html#execution)):
+Nakon postavljanja plana, kreće `execution` koji koristi iste parametre za petlju `for`, te provodi funkciju `rocfft_execute()` (za više infromacija o ovoj funkciji pogledajte [službenu dokumentaciju ROCm biblioteka](https://rocm.docs.amd.com/en/latest/reference/gpu_libraries/math.html)):
 
 ```
 for(auto& it : ffts)

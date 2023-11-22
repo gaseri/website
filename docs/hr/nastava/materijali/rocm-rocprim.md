@@ -8,7 +8,7 @@ U nastavku koristimo kod iz repozitorija [rocPRIM](https://github.com/ROCmSoftwa
 
 ## Terminologija
 
-(Sastavljeno prema [rječniku pojmova u službenoj dokumentaciji](https://codedocs.xyz/ROCmSoftwarePlatform/rocPRIM/group__rocprim__glossary.html).)
+(Sastavljeno prema [rječniku pojmova u službenoj dokumentaciji](https://rocm.docs.amd.com/projects/rocPRIM/en/develop/glossary.html).)
 
 - Osnova (engl. *warp*) -- odnosi se na grupu niti koje se izvršavaju istovremeno na način jedna instrukcija na više niti (engl. *single instruction, multiple thread*, kraće SIMT). Također, za njih se kaže da su valna fronta (engl. *wavefront*) na AMD-ovim grafičkim procesorima.
 - Hardverska veličina osnove (engl. *hardware warp size*) -- odnosi se na broj niti u osnovi, i taj broj je zadan u hardveru. Na Nvidijinim grafičkim procesorima veličina osnove iznosi 32, a na AMD-ovim grafičkim procesorima temeljenim na arhitekturi GCN ekvivalentna veličina valne fronte iznosi 64. Na AMD-ovim grafičkim procesorima temeljenim na arhitekturi RDNA podržane su veličine 32 i 64.
@@ -186,7 +186,7 @@ std::vector<T> host_expected_output = get_expected_output<T>(host_input, block_s
 std::vector<T> host_output(size);
 ```
 
-Slijedi alokacija memorije uređaja. Potrebno je alocirati memoriju i za unos i za ispis. Putem `HIP_CHECK` provjeravamo hoće li alokacija biti uspješna. Alokaciju memorije za unos i ispis vršimo putem funkcije hipMalloc na sljedeći način (za više informacija o `hipMalloc()` možete pogledati [službenu dokumentaciju](https://rocmdocs.amd.com/en/latest/ROCm_API_References/HIP_API/Memory-Management.html)):
+Slijedi alokacija memorije uređaja. Potrebno je alocirati memoriju i za unos i za ispis. Putem `HIP_CHECK` provjeravamo hoće li alokacija biti uspješna. Alokaciju memorije za unos i ispis vršimo putem funkcije hipMalloc na sljedeći način (za više informacija o `hipMalloc()` možete pogledati [službenu dokumentaciju](https://docs.amd.com/projects/HIP/en/latest/.doxygen/docBin/html/group___memory.html)):
 
 ``` c++
 T * device_input;
@@ -207,7 +207,7 @@ HIP_CHECK(hipMalloc(&global_storage, (grid_size * sizeof(storage_type))));
 
 Ovdje se javlja prethodno definirana funkcija rocPRIM-a, `block_scan()`. Za više informacija pogledajte podnaslov *Block-wide*. Ponovno se, slično prethodnim koracima, putem `HIP_CHECK` traži provjera uspješne alokacije memorije hipMalloc.
 
-Pokreće se zrno koje koristi globalnu memoriju za pohranu (više informacija o funkciji `hipLaunchKernellGGL()` koja se koristi u ovom primjeru možete saznati u [službenoj dokumentaciji](https://rocmdocs.amd.com/en/latest/Programming_Guides/HIP-GUIDE.html)):
+Pokreće se zrno koje koristi globalnu memoriju za pohranu (više informacija o funkciji `hipLaunchKernellGGL()` koja se koristi u ovom primjeru možete saznati u [službenoj dokumentaciji](https://docs.amd.com/projects/HIP/en/latest/user_guide/hip_porting_guide.html)):
 
 ``` c++
 hipLaunchKernelGGL(

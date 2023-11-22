@@ -4,7 +4,7 @@ author: Mia Doričić, Vedran Miletić
 
 # rocSPARSE: ROCm SPARSE basic linear algebra subroutines
 
-U nastavku koristimo kod iz repozitorija [rocSPARSE](https://github.com/ROCmSoftwarePlatform/rocSPARSE) ([službena dokumentacija](https://rocsparse.readthedocs.io/)).
+U nastavku koristimo kod iz repozitorija [rocSPARSE](https://github.com/ROCmSoftwarePlatform/rocSPARSE) ([službena dokumentacija](https://rocm.docs.amd.com/projects/rocSPARSE/en/latest/)).
 
 rocSPARSE implementira podprograme bazične linearne algebre za rijetke matrice i vektore za GPU uređaje.
 
@@ -20,7 +20,7 @@ rocSPARSE implementira podprograme bazične linearne algebre za rijetke matrice 
 
 ## Formati pohranjivanja matrica
 
-Prema [službenoj dokumentaciji](https://rocsparse.readthedocs.io/en/master/usermanual.html#storage-formats)):
+Prema [službenoj dokumentaciji](https://rocm.docs.amd.com/projects/rocSPARSE/en/latest/basics.html#storage-formats):
 
 - Format COO (Coordinate storage) -- matrica COO će se sortirati prema indeksima redaka i indeksima stupaca po retku
 - Format CSR (Compressed Sparse Row storage) -- matrica CSR će se sortirati prema indeksima stupaca unutar svakog retka, te se svaki par indeksa mora pojaviti samo jednom
@@ -324,7 +324,7 @@ hipMemcpy(dx, hx.data(), sizeof(double) * n, hipMemcpyHostToDevice);
 ```
 
 Sljedeći korak je da pripremimo varijable potrebne za konverziju iz CSR u ELL format, a to su `dBcol` i `dBval`, i njih postavljamo na NULL vrijednost.
-Također, moramo odrediti i maksimalni broj ne-nul elemenata po redu, što nam je također potrebno za konverziju (za više informacija o korištenoj funkciji `rocsparse_csr2ell_width()` pogledajte [službenu dokumentaciju](https://rocsparse.readthedocs.io/en/master/usermanual.html#rocsparse-csr2ell)).
+Također, moramo odrediti i maksimalni broj ne-nul elemenata po redu, što nam je također potrebno za konverziju (za više informacija o korištenoj funkciji `rocsparse_csr2ell_width()` pogledajte [službenu dokumentaciju](https://rocm.docs.amd.com/projects/rocSPARSE/en/latest/conversion.html#rocsparse-csr2ell-width)).
 
 ``` c++
 rocsparse_int* dBcol = NULL;
@@ -334,7 +334,7 @@ rocsparse_int ell_width;
 rocsparse_csr2ell_width(handle, m, descrA, dAptr, descrB, &ell_width);
 ```
 
-Zatim, alociramo memoriju za ELL format za pohranu, te vršimo konverziju (za više informacija o korištenoj funkciji `rocsparse_dcsr2ell()` pogledajte [službenu dokumentaciju](https://rocsparse.readthedocs.io/en/master/usermanual.html#rocsparse-csr2ell)).
+Zatim, alociramo memoriju za ELL format za pohranu, te vršimo konverziju (za više informacija o korištenoj funkciji `rocsparse_dcsr2ell()` pogledajte [službenu dokumentaciju](https://rocm.docs.amd.com/projects/rocSPARSE/en/latest/conversion.html#rocsparse-csr2ell)).
 
 ``` c++
 hipMalloc((void**)&dBcol, sizeof(rocsparse_int) * ell_width * m);
@@ -343,7 +343,7 @@ hipMalloc((void**)&dBval, sizeof(double) * ell_width * m);
 rocsparse_dcsr2ell(handle, m, descrA, dAval, dAptr, dAcol, descrB, ell_width, dBval, dBcol);
 ```
 
-Oslobađamo memoriju koja je bila alocirana za CSR strukture, te kroz `for` petlju pozivamo funkciju `rocsparse_dellvm()`. Ta funkcija množi skalar `alfa` sa rijetkom matricom MxN u formatu ELL, i vektorom u gustom formatu, te dodaje rezultat drugom vektoru gustog formata koji se množi sa skalarom `beta` (za više informacija o ovoj funkciji pogledajte [službenu dokumentaciju](https://rocsparse.readthedocs.io/en/master/usermanual.html#rocsparse-ellmv))
+Oslobađamo memoriju koja je bila alocirana za CSR strukture, te kroz `for` petlju pozivamo funkciju `rocsparse_dellmv()`. Ta funkcija množi skalar `alfa` sa rijetkom matricom MxN u formatu ELL, i vektorom u gustom formatu, te dodaje rezultat drugom vektoru gustog formata koji se množi sa skalarom `beta` (za više informacija o ovoj funkciji pogledajte [službenu dokumentaciju](https://rocm.docs.amd.com/projects/rocSPARSE/en/latest/level2.html#rocsparse-ellmv))
 
 ``` c++
 hipFree(dAptr);

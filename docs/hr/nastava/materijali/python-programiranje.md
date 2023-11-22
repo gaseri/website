@@ -157,7 +157,7 @@ else:
 
 ## Biblioteka NumPy
 
-[NumPy](https://numpy.org/stable/user/) je biblioteka za programski jezik Python koja pruža podršku za rad s višedimenzionalnim nizovima i matricama, zajedno s kolekcijom matematičkih funkcija za rad s tim strukturama podataka. Iako u Pythonu imamo liste koje funkcioniraju kao nizovi, rad s njima je spor u odnosu na druge programske jezike. NumPy koristi objekt niza koji se naziva [`ndarray`](https://numpy.org/stable/reference/generated/numpy.ndarray.html#numpy.ndarray) i nudi mnogo funkcionalnosti koje olakšavaju rad s nizovima.
+[NumPy](https://numpy.org/doc/stable/user/) je biblioteka za programski jezik Python koja pruža podršku za rad s višedimenzionalnim nizovima i matricama, zajedno s kolekcijom matematičkih funkcija za rad s tim strukturama podataka. Iako u Pythonu imamo liste koje funkcioniraju kao nizovi, rad s njima je spor u odnosu na druge programske jezike. NumPy koristi objekt niza koji se naziva [`ndarray`](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray) i nudi mnogo funkcionalnosti koje olakšavaju rad s nizovima.
 
 Ako već imate instaliran Python i [pip](https://pip.pypa.io/en/stable/getting-started/), tada je instalacija NumPyja vrlo jednostavna:
 
@@ -256,7 +256,7 @@ Možete stvoriti niz s intervalom elemenata `np.arange(n)` ili niz s ravnomjerno
 !!! admonition "Zadatak"
     1. Kreirajte niz koji sadrži elemente u intervalu od 10 do 15 i ispišite ga na ekran. 
     2. Kreirajte niz koji sadrži elemente u intervalu od 2 do 8 s veličinom koraka 2 i ispišite ga na ekran.
-    3. Stvorite niz od 5 elemenata. Neka se ti elementi generiraju nasumično u rasponu od 50 do 100 ([`np.random.randint`](https://www.programiz.com/python-programming/numpy/random)). Zatim izračunajte zbroj svih elemenata niza ([`np.sum`](https://numpy.org/doc/stable/reference/generated/numpy.sum.html#numpy.sum)), srednju vrijednost ([`np.mean`](https://numpy.org/stable/reference/generated/numpy.ndarray.mean.html#numpy.ndarray.mean)) te razliku između najvećeg ([`np.max`](https://numpy.org/stable/reference/generated/numpy.ndarray.max.html#numpy.ndarray.max)) i najmanjeg ([`np.min`](https://numpy.org/stable/reference/generated/numpy.ndarray.min.html#numpy.ndarray.min)) elementa niza. Ispišite rezultate na ekran.
+    3. Stvorite niz od 5 elemenata. Neka se ti elementi generiraju nasumično u rasponu od 50 do 100 ([`np.random.randint`](https://www.programiz.com/python-programming/numpy/random)). Zatim izračunajte zbroj svih elemenata niza ([`np.sum`](https://numpy.org/doc/stable/reference/generated/numpy.sum.html#numpy.sum)), srednju vrijednost ([`np.mean`](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.mean.html#numpy.ndarray.mean)) te razliku između najvećeg ([`np.max`](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.max.html#numpy.ndarray.max)) i najmanjeg ([`np.min`](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.min.html#numpy.ndarray.min)) elementa niza. Ispišite rezultate na ekran.
 
 ### Pristup elementima niza
 

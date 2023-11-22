@@ -81,7 +81,7 @@ Kako je Linux softver otvorenog koda, realno je za očekivati da će svatko tko 
 
 > Kako odabrati Linux koji ”meni najviše odgovara?”
 
-Vrlo jednostavno: iskoristite [Distrochooser](https://distrochooser.de/en/) ili neki sličan alat, pročitajte neki od [brojnih](https://lifehacker.com/5889950/how-to-find-the-perfect-linux-distribution-for-you) [članaka](https://www.techradar.com/best/best-linux-distros) na temu pa odlučite, a možete i pitati članove lokalne grupe korisnika Linuxa [koje distribucije koriste i preporučaju](https://www.ri.linux.hr/aktivnosti/distribucije-linuxa/).
+Vrlo jednostavno: iskoristite [Distrochooser](https://distrochooser.de/en/) ili neki sličan alat, pročitajte neki od [brojnih](https://lifehacker.com/how-to-find-the-perfect-linux-distribution-for-you-5889950) [članaka](https://www.techradar.com/best/best-linux-distros) na temu pa odlučite, a možete i pitati članove lokalne grupe korisnika Linuxa [koje distribucije koriste i preporučaju](https://www.ri.linux.hr/aktivnosti/distribucije-linuxa/).
 
 > Nemojte misliti da je odabir Linux operativnog sustava jednostavan. Za razliku od Windowsa čija se srž niti kroz posljednjih deset godina nije osjetnije promijenila, kod Linuxa to nije tako. Prije nego što korisnik odluči koji će Linux OS koristiti potrebno je dobrano proučiti koji bi bio najprikladniji za ono što korisniku treba. Naravno da će pobornici Linuxa reći da je bez obzira na sve Linux ”bolji”, ali treba biti realan.
 
