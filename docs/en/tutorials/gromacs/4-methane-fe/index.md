@@ -2,7 +2,7 @@
 author: Wes Barnett, Vedran Miletić
 ---
 
-# GROMACS Tutorial 4 -- Methane Free Energy of Solvation
+# GROMACS tutorial 4: Methane free energy of solvation
 
 In this tutorial, I'll show you how to perform a free energy of solvation
 simulation using GROMACS, as well as how to calculate the free energy change

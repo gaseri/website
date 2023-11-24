@@ -2,7 +2,7 @@
 author: Wes Barnett, Vedran Miletić
 ---
 
-# GROMACS Tutorial 2 -- One Methane in Water
+# GROMACS tutorial 2: One methane in water
 
 In this tutorial, I'll show you how to create a system containing one OPLS
 methane in a box of TIP4PEW water.

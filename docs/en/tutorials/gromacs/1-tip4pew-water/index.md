@@ -2,7 +2,7 @@
 author: Wes Barnett, Vedran Miletić
 ---
 
-# GROMACS Tutorial 1 -- Water
+# GROMACS tutorial 1: Water
 
 In this introductory tutorial, I'll show you how to create a box of water and
 run a simple simulation on it with constant temperature and pressure. In the end,

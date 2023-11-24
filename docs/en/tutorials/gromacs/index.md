@@ -4,7 +4,7 @@ tags:
   - (tutorial) gromacs
 ---
 
-# GROMACS tutorials
+# GROMACS tutorials: overview
 
 !!! note
     The GROMACS tutorials that follow were written in Markdown by

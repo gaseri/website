@@ -2,7 +2,7 @@
 author: Wes Barnett, Vedran Miletić
 ---
 
-# GROMACS Tutorial 6 -- Excess Chemical Potential of Methane using Test Particle Insertion
+# GROMACS tutorial 6: Excess chemical potential of methane using test particle insertion
 
 In this tutorial, we'll be using test particle insertion (TPI) to calculate the excess
 chemical potential of methane solvation in water. Most users are unaware that

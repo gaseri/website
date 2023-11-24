@@ -2,7 +2,7 @@
 author: Wes Barnett, Vedran Miletić
 ---
 
-# GROMACS Tutorial 3 -- Several Methanes in Water
+# GROMACS tutorial 3: Several methanes in water
 
 In this tutorial, I'll show you how to create a system containing several OPLS
 methane in a box of TIP4PEW water and get the methane-methane potential of mean

@@ -2,7 +2,7 @@
 author: Wes Barnett, Vedran Miletić
 ---
 
-# GROMACS Tutorial 5 -- Methane-Methane PMF from Window Sampling
+# GROMACS tutorial 5: Methane-methane PMF from window sampling
 
 In this tutorial we'll be using window sampling, also sometimes known as
 [umbrella sampling](https://en.wikipedia.org/wiki/Umbrella_sampling), to extract
