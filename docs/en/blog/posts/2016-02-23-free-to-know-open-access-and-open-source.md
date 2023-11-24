@@ -11,7 +11,7 @@ tags:
   - tesla
 ---
 
-# Free to know -- Open access and open source
+# Free to know: Open access and open source
 
 !!! note
     Reposted from [Free to Know: Open access & open source](https://medium.com/@stemi.education/free-to-know-open-access-open-source-6474a4c7421a), originally posted by [STEMI education on Medium](https://medium.com/@stemi.education).
