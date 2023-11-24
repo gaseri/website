@@ -13,7 +13,7 @@ tags:
 
 # Open-source magic all around the world
 
-Last week brought us two interesting events related to open-source movement: [2015 Red Hat Summit](https://www.redhat.com/summit/2015/resources/) (June 23-26, [Boston, MA](https://www.openstreetmap.org/way/29739137)) and [Skeptics in the pub](https://www.facebook.com/events/105693939772055/) (June 26, [Rijeka, Croatia](https://www.openstreetmap.org/way/358439113)).
+Last week brought us two interesting events related to open-source movement: [2015 Red Hat Summit](https://www.redhat.com/en/about/press-releases/red-hat-announces-red-hat-summit-2015-industrys-premier-open-source-technology-event) (June 23-26, [Boston, MA](https://www.openstreetmap.org/way/29739137)) and [Skeptics in the pub](https://www.facebook.com/events/105693939772055/) (June 26, [Rijeka, Croatia](https://www.openstreetmap.org/way/358439113)).
 
 <!-- more -->
 
