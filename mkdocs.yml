@@ -288,6 +288,7 @@ nav:
               - Python -- općenite usluge operacijskog sustava -- vrijeme: hr/nastava/materijali/python-modul-time.md
               - Python -- međuprocesna komunikacija -- pozivanje udaljenih procedoura i modul XML-RPC: hr/nastava/materijali/python-modul-xmlrpc.md
               - Python modul PyZMQ -- osnove: hr/nastava/materijali/python-modul-pyzmq-osnove.md
+              - Python modul RDKit: hr/nastava/materijali/python-modul-rdkit.md
               - Rad s Python okvirom waf: hr/nastava/materijali/python-okvir-waf.md
               - Osnovna sintaksa programskog jezika Python: hr/nastava/materijali/python-osnove-sintakse.md
               - Programiranje i programski jezik Python: hr/nastava/materijali/python-programiranje.md

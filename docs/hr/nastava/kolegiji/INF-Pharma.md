@@ -38,6 +38,7 @@ tags:
 
 - [Baza bioaktivnih molekula ChEMBL](../materijali/chembl-baza-bioaktivnih-molekula.md)
 - [Format za unos formula molekula SMILES](../materijali/smiles-format.md)
+- [Python modul RDKit](../materijali/python-modul-rdkit.md)
 - [Vizualizacija i uređivanje molekula alatom Avogadro](../materijali/avogadro-vizualizacija-uredjivanje-molekula.md)
 - [Pretvorba formata alatom Open Babel](../materijali/open-babel-pretvorba-analiza-spremanje-podataka-molekula.md)
 - [Baza struktura proteina RCSB PDB](../materijali/pdb-baza-proteina.md)
