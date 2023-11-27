@@ -320,6 +320,7 @@ nav:
               - Simulacijski modeli redova čekanja: hr/nastava/materijali/simulator-ns3-redovi-cekanja.md
               - Simulacijski modeli TCP-ovih algoritama za upravljanje zagušenjem: hr/nastava/materijali/simulator-ns3-tcp-upravljanje-zagusenjem.md
               - Slaganje složenijih topologija u simulaciji računalnih mreža: hr/nastava/materijali/simulator-ns3-topologije.md
+              - Format za unos formula molekula SMILES: hr/nastava/materijali/smiles-format.md
               - Spam filter -- SpamAssassin: hr/nastava/materijali/spamassasin-spam-filter.md
               - Praćenje korištenja programskih sučelja sustava korištenjem alata strace i ltrace: hr/nastava/materijali/strace-ltrace-sucelja-operacijskog-sustava.md
               - IPsec alat strongSwan: hr/nastava/materijali/strongswan-ipsec.md
