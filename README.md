@@ -75,3 +75,5 @@ Wait a few minutes until [GitHub Pages](https://pages.github.com/) finishes buil
 **Note:** The official MkDocs approach, which we *don't* use, is to push the built contents to GitHub using the [MkDocs's GitHub deploy command](https://www.mkdocs.org/user-guide/deploying-your-docs/) (`mkdocs gh-deploy`).
 
 *That's all, folks!*
+
+[![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
