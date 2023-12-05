@@ -4,7 +4,7 @@ author: Vedran Miletić
 
 # Pretvorba formata alatom Open Babel
 
-Često nam u praksi trebaju različiti formati zapisa istih molekula za korištenje u različitim softverima za računalnu kemiju. Open Babel nam omogućuje pretvorbu između različitih formata.
+Često nam u praksi trebaju različiti formati zapisa istih molekula za korištenje u različitim softverima za računalnu kemiju. [Open Babel](https://openbabel.org/) nam omogućuje pretvorbu između različitih formata.
 
 Na lijevoj strani biramo ulazni format i ulaznu datoteku ili klikom na `Input below` izravni unos zapisa molekule.
 

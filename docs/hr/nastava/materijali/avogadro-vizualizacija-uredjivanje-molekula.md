@@ -4,7 +4,7 @@ author: Matea Turalija, Irena Hartmann, Vedran Miletić
 
 # Vizualizacija i uređivanje molekula alatom Avogadro
 
-[Avogadro](https://avogadro.cc/) je besplatan digitalni alat otvorenog koda namijenjen vizualizaciji, izradi i uređivanju molekula. Dizajniran je za korištenje na više platformi u računalnoj kemiji, modeliranju molekula, bioinformatici, znanosti materijala i srodnim područjima. Ovaj alat podržava uvoz različitih vrsta podataka specifičnih za kemiju, poput [Open Babela](https://openbabel.org/). Također omogućuje izravno učitavanje podataka iz [baza podataka proteina](pdb-baza-proteina.md) (engl. _**P**rotein **D**ata **B**ank_, PDB) i [kemijskih molekula](chembl-baza-bioaktivnih-molekula.md).
+[Avogadro](https://avogadro.cc/) je besplatan digitalni alat otvorenog koda namijenjen vizualizaciji, izradi i uređivanju molekula. Dizajniran je za korištenje na više platformi u računalnoj kemiji, modeliranju molekula, bioinformatici, znanosti materijala i srodnim područjima. Ovaj alat podržava uvoz različitih vrsta podataka specifičnih za kemiju, poput [Open Babela](open-babel-pretvorba-analiza-spremanje-podataka-molekula.md). Također omogućuje izravno učitavanje podataka iz [baza podataka proteina](pdb-baza-proteina.md) (engl. _**P**rotein **D**ata **B**ank_, PDB) i [kemijskih molekula](chembl-baza-bioaktivnih-molekula.md).
 
 Avogadro se može preuzeti ovdje <sourceforge.net/projects/avogadro/>, a detaljne upute za rad s programom mogu se pronaći na službenim stranicama [Avogadra](avogadro.cc/docs/).
 
