@@ -38,7 +38,7 @@ Nakon što ste izradili molekulu odaberite opciju `Save` ili `Save As` ovisno o 
 Ako želite izvesti molekulu u drugi format prikladnima za druge programe, u alatnoj traci odaberite `Export Molecule` i odaberite željeni format izvoza (npr. `.sdf`, `.pdb`, `.xyz` i sl.) i kliknite na `Export`.
 
 !!! warning "Datotečni format"
-        Prilikom spremanja ili izvoza datoteke, **nužno** je specificirati ekstenziju datoteke u njezinom imenu. Inače, može se pojaviti greška "Unable to find suitable file writer for the selected format".
+    Prilikom spremanja ili izvoza datoteke, **nužno** je specificirati ekstenziju datoteke u njezinom imenu. Inače, može se pojaviti greška "Unable to find suitable file writer for the selected format".
 
 !!! admonition "Zadatak"
     Nacrtajte složenije molekulske spojeve [jodne](https://pubchem.ncbi.nlm.nih.gov/compound/24345) i [sumporne kiseline](https://pubchem.ncbi.nlm.nih.gov/compound/1118) te ih spremite redom u formate `.sdf` i `.xyz`.
