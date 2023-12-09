@@ -6,7 +6,7 @@ author: Matea Turalija, Irena Hartmann, Vedran Miletić
 
 [Avogadro](https://avogadro.cc/) je besplatan digitalni alat otvorenog koda namijenjen vizualizaciji, izradi i uređivanju molekula. Dizajniran je za korištenje na više platformi u računalnoj kemiji, modeliranju molekula, bioinformatici, znanosti materijala i srodnim područjima. Ovaj alat podržava uvoz različitih vrsta podataka specifičnih za kemiju, poput [Open Babela](open-babel-pretvorba-analiza-spremanje-podataka-molekula.md). Također omogućuje izravno učitavanje podataka iz [baza podataka proteina](pdb-baza-proteina.md) (engl. _**P**rotein **D**ata **B**ank_, PDB) i [kemijskih molekula](chembl-baza-bioaktivnih-molekula.md).
 
-Avogadro se može preuzeti ovdje [Avogadro | sourceforge.net](https://sourceforge.net/projects/avogadro/), a detaljne upute za rad s programom mogu se pronaći na službenim stranicama [Avogadra](avogadro.cc/docs/).
+Avogadro se može preuzeti sa [stranice projekta na SourceForgeu](https://sourceforge.net/projects/avogadro/), a detaljne upute za rad s programom mogu se pronaći na [službenim stranicama Avogadra](https://avogadro.cc/docs/).
 
 ## Sučelje alata Avogadro
 
