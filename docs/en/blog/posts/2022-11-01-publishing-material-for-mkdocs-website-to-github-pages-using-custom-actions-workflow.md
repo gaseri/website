@@ -55,16 +55,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Setup Pages
-        uses: actions/configure-pages@v3
+        uses: actions/configure-pages@v4
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
           source: ./
           destination: ./_site
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
 
   # Deployment job
   deploy:
@@ -76,7 +76,7 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
 ```
 
 The highlighted lines are Jekyll-specific. We can easily replace these lines with:
@@ -123,11 +123,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Setup Pages
-        uses: actions/configure-pages@v3
+        uses: actions/configure-pages@v4
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.x'
       - name: Install required packages
@@ -140,7 +140,7 @@ jobs:
       - name: Build site (_site directory name is used for Jekyll compatiblity)
         run: mkdocs build --config-file ./mkdocs.yml --site-dir ./_site
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
 
   # Deployment job
   deploy:
@@ -152,7 +152,7 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
 ```
 
 We can see the mention of the `requirements.txt` file. It should reside in the root of the repository with the contents:
@@ -175,3 +175,5 @@ Finally, if you want to use a custom domain, having the `CNAME` file in the repo
 **Updated on 2023-09-08:** simplified the workflow to use the existing `requirements.txt` file instead of duplicating the package names in the `pip` command run.
 
 **Updated on 2023-10-24:** updated `requirements.txt` to use the [extras](https://peps.python.org/pep-0508/#extras) for the installation of the [optional dependencies](https://squidfunk.github.io/mkdocs-material/plugins/requirements/image-processing/#dependencies).
+
+**Updated on 2023-12-28:** bumped [Actions](https://github.com/actions) versions by rebasing our additions on top of the [latest version](https://github.com/actions/starter-workflows/blob/main/pages/jekyll-gh-pages.yml) of `jekyll-gh-pages.yml` from [Starter Workflows](https://github.com/actions/starter-workflows).
