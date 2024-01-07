@@ -43,7 +43,7 @@ Ove ideje su zakonski implementirane u [Defensive Patent License](https://www.de
 
 ## Aktivnosti
 
-Naše aktivnosti možete pratiti na stranicama [Riječke podružnice Hrvatske udruge Linux korisnika (HULK Rijeka)](https://www.ri.linux.hr/tag/openclass/) i [Odjela za informatiku Sveučilišta u Rijeci](https://www.inf.uniri.hr/znanstveni-i-strucni-rad/predavanja-i-radionice/open-class).
+Naše aktivnosti možete pratiti na stranicama [Riječke podružnice Hrvatske udruge Linux korisnika (HULK Rijeka)](https://www.ri.linux.hr/aktivnosti/#openclass) i [Odjela za informatiku Sveučilišta u Rijeci](https://www.inf.uniri.hr/znanstveni-i-strucni-rad/predavanja-i-radionice/open-class).
 
 ### Predavanje: Od Aleksandrijske knjižnice do programskih knjižnica na GitHubu
 
