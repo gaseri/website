@@ -472,11 +472,14 @@ Poslužitelj datoteka je dio gotovo svakog suvremenog poslovnog sustava. Bio taj
 
 **Opis teme:**
 
-...
+Računalne od samih početaka koriste brojne metode prevencije neovlaštenog kopiranja (piratstva), a od doba omasovljenja višeigračkih naslova i metode prevencije varanja. Kako vremenom napreduje znanje koje omogućuje zaobilaženje postojećih metoda prevencije, tako se razvijaju i nove metode prevencije koje je teže zaobići. Cilj rada je dati pregled povijesnog razvoja metoda i na primjeru vlastite aplikacije prikazati način rada metode prevencije neovlaštenog kopiranja i njeno zaobilaženje.
 
 **Literatura:**
 
-...
+1. [Digital rights management](https://en.wikipedia.org/wiki/Digital_rights_management)
+1. [Anti-tamper software](https://en.wikipedia.org/wiki/Anti-tamper_software)
+1. [Denuvo](https://en.wikipedia.org/wiki/Denuvo)
+1. [Console Hacking 2015: Liner Notes (fail0verflow)](https://fail0verflow.com/blog/2015/console-hacking-2015-liner-notes/)
 
 ### Pohrana podataka o molekulama u sustavu za upravljanje bazom podataka PostgreSQL {[UMS](../kolegiji/UMS.md)} [Josip Lukin, preneseno iz 2021/2022.]
 
@@ -486,7 +489,7 @@ Poslužitelj datoteka je dio gotovo svakog suvremenog poslovnog sustava. Bio taj
 
 **Opis teme:**
 
-...
+PostgreSQL se smatra najnaprednijim postojećim sustavom za upravljanje relacijskom bazom podataka otvorenog koda. Osim podrške za osnovne tipove podataka, omogućuje korištenje i valuta, nabrajanja, geometrijskih pojmova, mrežnih adresa, rezultata pretrage teksta, XML-a, JSON-a te brojnih drugih. Jedno od proširenja treće strane, dio projekta RDKit, omogućuje pohranu podataka o molekulama. Cilj rada je na primjeru razvoja vlastite aplikacije za rad s molekulama prikazati mogućnosti i način korištenja tog proširenja.
 
 **Literatura:**
 
@@ -494,19 +497,21 @@ Poslužitelj datoteka je dio gotovo svakog suvremenog poslovnog sustava. Bio taj
 1. [CREATE SCHEMA (PostgreSQL)](https://www.postgresql.org/docs/current/sql-createschema.html)
 1. [RDKit database cartridge](https://www.rdkit.org/docs/Cartridge.html)
 
-### Razvoj i implementacija sustava za trgovanje kriptovalutama {[UMS](../kolegiji/UMS.md)} [Ivan Modrić]
+### Automatizacija obrade i izvještavanja političkih trendova temeljem podataka s društvene mreže Reddit {[UMS](../kolegiji/UMS.md)} [Ivan Modrić]
 
-**Naslov na engleskom:** Development and implementation of cryptocurency trading system
+**Naslov na engleskom:** Automation of processing and reporting of political trends based on data from the Reddit social network
 
 **Područje teme:** Upravljanje aplikacijama i uslugama
 
 **Opis teme:**
 
-...
+Razvoj oblaku urođenih aplikacija omogućuje korištenje velikog broja usluga koje oblak nudi. U praksi to ubrzava razvoj jer značajno umanjuje broj komponenata aplikacije koje je potrebno samostalno razviti, što specijalno pomaže kod aplikacija koje rade analitiku podataka velikog obujma. Takve aplikacije karakteriziraju česte promjene zahtjeva po pitanju ulaznih podataka, načina obrade i izlaznih podataka pa je korištenje gotovih usluga u oblaku gdje je to moguće specijalno poželjno. Cilj rada je na primjeru razvoja aplikacije za obradu i izvještavanje o političkim trendovima na temelju podataka s društvene mreže Reddit opisati proces razvoja aplikacija koje koriste usluge u oblaku za rad s podacima velikog obujma.
 
 **Literatura:**
 
-...
+1. [Understanding cloud-native apps (Red Hat)](https://www.redhat.com/en/topics/cloud-native-apps)
+1. [What is Cloud Native? (AWS)](https://aws.amazon.com/what-is/cloud-native/)
+1. [What is Big Data Analytics? (Azure)](https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-big-data-analytics)
 
 ### Skalabilnost mikroservisa {[UMS](../kolegiji/UMS.md)} [Kristian Nekić, preneseno iz 2020/2021.]
 
@@ -532,11 +537,12 @@ Poslužitelj datoteka je dio gotovo svakog suvremenog poslovnog sustava. Bio taj
 
 **Opis teme:**
 
-...
+Suvremeni razvoj softvera karakterizira korištenje brojnih cjevovoda za testiranje i sigurnost aplikacija. U domeni sigurnosti, koriste se alati za statičku i dinamičku analizu koji prijavljuju svoje pronalaske problema razvojnim inženjerima kako bi ih ovi ispravili, a u nekim slučajevima i samu predlažu ispravke. Cilj rada je dati pregled alata koji se koriste za sigurnost aplikacija kod njihovog razvoja na vlastitim primjerima aplikacija s poznatim ranjivostima.
 
 **Literatura:**
 
-...
+1. [DevSecOps (GitLab)](https://about.gitlab.com/topics/devsecops/)
+1. [DevSecOps with GitHub Security](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/devsecops-in-github)
 
 ### Razvoj, mjerenje performansi i optimizacija višeplatformskih računalnih igara {[UMS](../kolegiji/UMS.md)} [Bruno Šavor]
 
@@ -546,11 +552,13 @@ Poslužitelj datoteka je dio gotovo svakog suvremenog poslovnog sustava. Bio taj
 
 **Opis teme:**
 
-...
+Razvoj igara je jedna od propulzivnih grana suvremenog razvoja softvera. S ciljem bržeg razvoja i mogućnosti korištenja gotovih elemenata, velik broj timova koji razvijaju igre odlučuje se za korištenje gotovih pogona kao što su Unity, Unreal Engine i Godot Engine. Cilj rada je odabrati pogon po želji studenta i u njemu prikazati proces razvoja višeplatformske računalne igre, uz mjerenje performansi prilikom izvođenja i korištenje optimizacijskih tehnika za poboljšanje performansi.
 
 **Literatura:**
 
-...
+1. [Unity Documentation](https://docs.unity.com/)
+1. [Unreal Engine Documentation](https://docs.unrealengine.com/)
+1. [Godot Engine Documentation](https://docs.godotengine.org/)
 
 ## Odabrane teme završnih radova akademske godine 2021./2022.
 
