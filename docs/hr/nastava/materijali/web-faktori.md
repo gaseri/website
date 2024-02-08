@@ -17,7 +17,7 @@ paginate: true
 
 ---
 
-![Finding a good reason for not doing a good job can be a full time job bg 95% left](https://www.monkeyuser.com/assets/images/2019/154-everyday-excuses.png)
+![Finding a good reason for not doing a good job can be a full time job bg 95% left](https://www.monkeyuser.com/2019/everyday-excuses/154-everyday-excuses.png)
 
 ## Svakodnevne isprike
 
@@ -161,7 +161,7 @@ Sustavi upravljanja zavisnostima:
 
 ---
 
-![test bg 68% left](https://www.monkeyuser.com/assets/images/2021/220-measure-twice-cut-once.png)
+![test bg 68% left](https://www.monkeyuser.com/2021/measure-twice-cut-once/220-measure-twice-cut-once.png)
 
 ## Mjeri dvaput, reži jednom
 

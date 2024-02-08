@@ -183,7 +183,7 @@ Prema [Wikipediji](https://en.wikipedia.org/wiki/Software_design_pattern):
 
 ---
 
-![Code by the rules bg 85% left](https://www.monkeyuser.com/assets/images/2017/62-design-patterns-bureaucracy.png)
+![Code by the rules bg 85% left](https://www.monkeyuser.com/2017/design-patterns-bureaucracy/62-design-patterns-bureaucracy.png)
 
 ## Uzorci dizajna - birokracija
 

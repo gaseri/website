@@ -128,7 +128,7 @@ Na koji način ćete osigurati:
 
 ---
 
-![Relax it's NPM bg 95% left:70%](https://www.monkeyuser.com/assets/images/2017/52-npm-delivery.png)
+![Relax it's NPM bg 95% left:70%](https://www.monkeyuser.com/2017/npm-delivery/52-npm-delivery.png)
 
 ## NPM isporuka
 
@@ -136,7 +136,7 @@ Izvor: [NPM Delivery](https://www.monkeyuser.com/2017/npm-delivery/) (MonkeyUser
 
 ---
 
-![Dependency hell is a colloquial term for the frustration of some software users who have installed software packages which have dependencies on specific versions of other software packages. --Wikipedia bg 77% left:70%](https://www.monkeyuser.com/assets/images/2021/226-update.png)
+![Dependency hell is a colloquial term for the frustration of some software users who have installed software packages which have dependencies on specific versions of other software packages. --Wikipedia bg 77% left:70%](https://www.monkeyuser.com/2021/update/226-update.png)
 
 ## Nadogradnja
 

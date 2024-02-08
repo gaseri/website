@@ -59,7 +59,7 @@ Nedavni primjeri: [Log4j](https://blog.cloudflare.com/inside-the-log4j2-vulnerab
 
 ---
 
-![Security bg 80% left](https://www.monkeyuser.com/assets/images/2017/24-security.png)
+![Security bg 80% left](https://www.monkeyuser.com/2017/security/24-security.png)
 
 ## Sigurnost
 

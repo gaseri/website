@@ -25,7 +25,7 @@ Možete li napraviti iste promjene na (produkcijskoj) verziji aplikacije, odnosn
 
 ---
 
-![Falling is just like flying bg 80% left:60%](https://www.monkeyuser.com/assets/images/2021/231-mixed-feelings.png)
+![Falling is just like flying bg 80% left:60%](https://www.monkeyuser.com/2021/mixed-feelings/231-mixed-feelings.png)
 
 ## Pomiješani osjećaji
 

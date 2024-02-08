@@ -102,7 +102,7 @@ class SmtpEmailProvider implements EmailProvider
 
 ---
 
-![Ready to use bg 95% left:55%](https://www.monkeyuser.com/assets/images/2021/225-reusable-components.png)
+![Ready to use bg 95% left:55%](https://www.monkeyuser.com/2021/reusable-components/225-reusable-components.png)
 
 ## Ponovno iskoristive komponente
 
@@ -159,7 +159,7 @@ for obj in objs:
 
 ---
 
-![There is a time consuming difference between running a feature and having a runnable feature bg 95% left:55%](https://www.monkeyuser.com/assets/images/2019/153-edge-cases.png)
+![There is a time consuming difference between running a feature and having a runnable feature bg 95% left:55%](https://www.monkeyuser.com/2019/edge-cases/153-edge-cases.png)
 
 ## Rubni slučajevi
 

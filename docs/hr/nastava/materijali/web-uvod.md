@@ -69,7 +69,7 @@ Izvor: [Who Killed the Desktop Application?](https://blog.codinghorror.com/who-k
 
 ---
 
-![Now you can explain your grandma what is that you are doing bg 95% left:55%](https://www.monkeyuser.com/assets/images/2017/61-web-app-visualized.png)
+![Now you can explain your grandma what is that you are doing bg 95% left:55%](https://www.monkeyuser.com/2017/web-app-visualized/61-web-app-visualized.png)
 
 ## Vizualizacija web aplikacije
 
@@ -222,7 +222,7 @@ $ php -S localhost:8000 -t public
 
 ---
 
-![It's all about making the wrong choice at the wrong time bg 95% left:55%](https://www.monkeyuser.com/assets/images/2021/208-masochism.png)
+![It's all about making the wrong choice at the wrong time bg 95% left:55%](https://www.monkeyuser.com/2021/masochism/208-masochism.png)
 
 ## Mazohizam
 

@@ -56,7 +56,7 @@ Kako je broj mogućih testova čak i za jednostavne softverske komponente prakti
 
 ---
 
-![The ultimate inspiration is the deadline bg 95% left:55%](https://www.monkeyuser.com/assets/images/2020/198-feature-complete.png)
+![The ultimate inspiration is the deadline bg 95% left:55%](https://www.monkeyuser.com/2020/feature-complete/198-feature-complete.png)
 
 ## Dovršen razvoj značajki softvera
 
@@ -224,7 +224,7 @@ Prema [Wikipediji](https://en.wikipedia.org/wiki/Eating_your_own_dog_food):
 
 ---
 
-![Or the illusion of choice bg 95% left:70%](https://www.monkeyuser.com/assets/images/2021/209-trolley-conundrum.png)
+![Or the illusion of choice bg 95% left:70%](https://www.monkeyuser.com/2021/trolley-conundrum/209-trolley-conundrum.png)
 
 ## Zagonetka trolejbusa
 
