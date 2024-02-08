@@ -97,7 +97,9 @@ Uz lokalno izvođenje testova, moguće je i korištenje poslužitelja za CI koji
 
 ---
 
-![GitLab workflow example extended](https://docs.gitlab.com/ee/ci/introduction/img/gitlab_workflow_example_extended_v12_3.png)
+![GitLab workflow example extended](https://docs.gitlab.com/ee/ci/pipelines/img/pipelines_graph_dependency_view_links_v13_12.png)
+
+Izvor slike: [CI/CD pipelines (GitLab)](https://docs.gitlab.com/ee/ci/pipelines/)
 
 ---
 
@@ -258,7 +260,7 @@ Izvor: [deployment pipeline](https://turnoff.us/geek/deployment-pipeline/) {turn
 
 ## Kontinuirano postavljanje
 
-![CI/CD flow](https://www.redhat.com/cms/managed-files/styles/wysiwyg_full_width/s3/ci-cd-flow-desktop_0.png?itok=QgBYmjA2)
+![CI/CD flow](https://www.redhat.com/rhdc/managed-files/ci-cd-flow-desktop_0.png)
 
 Izvor: [What is a CI/CD pipeline? (Red Hat Topics, Understanding DevOps)](https://www.redhat.com/en/topics/devops/what-cicd-pipeline)
 
