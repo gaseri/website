@@ -559,3 +559,16 @@ Nakon što su stvorene sve četiri datoteke s odgovarajućim imenima i sadržaje
 $ pandoc --template=predlozak.latex --top-level-division=part -F pandoc-crossref -C --bibliography=bibliografija.bib --csl=ieee-with-url.csl -o rad.pdf tekst.md
 (...)
 ```
+
+Kako bismo dobili verziju rada spremnu za ispis, potrebno je dodati zadatak nakon naslovne stranice. To možemo učiniti alatom [QPDF](https://qpdf.sourceforge.io/), koji instaliramo naredbom:
+
+``` shell
+$ sudo pacman -S qpdf
+(...)
+```
+
+Ako je zadatak spremljen u datoteci `zadatak.pdf`, a rad u datoteci `rad.pdf`, stvaranja verzije rada spremne za ispis izvest ćemo naredbom:
+
+``` shell
+$ qpdf --empty --pages rad.pdf 1 zadatak.pdf rad.pdf 2-z -- rad-print.pdf
+```
