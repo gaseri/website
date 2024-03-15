@@ -472,7 +472,7 @@ Poslužitelj datoteka je dio gotovo svakog suvremenog poslovnog sustava. Bio taj
 
 **Opis teme:**
 
-Računalne od samih početaka koriste brojne metode prevencije neovlaštenog kopiranja (piratstva), a od doba omasovljenja višeigračkih naslova i metode prevencije varanja. Kako vremenom napreduje znanje koje omogućuje zaobilaženje postojećih metoda prevencije, tako se razvijaju i nove metode prevencije koje je teže zaobići. Cilj rada je dati pregled povijesnog razvoja metoda i na primjeru vlastite aplikacije prikazati način rada metode prevencije neovlaštenog kopiranja i njeno zaobilaženje.
+Računalne igre od samih početaka koriste brojne metode prevencije neovlaštenog kopiranja (piratstva), a od doba omasovljenja višeigračkih naslova i metode prevencije varanja. Kako vremenom napreduje znanje koje omogućuje zaobilaženje postojećih metoda prevencije, tako se razvijaju i nove metode prevencije koje je teže zaobići. Cilj rada je dati pregled povijesnog razvoja metoda i na primjeru vlastite aplikacije prikazati način rada metode prevencije neovlaštenog kopiranja i njeno zaobilaženje.
 
 **Literatura:**
 
