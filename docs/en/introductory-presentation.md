@@ -4,7 +4,7 @@ theme: gaia
 class: gaia
 ---
 
-##### **GASERI** 😎
+##### **GASERI** 😎 (1)
 
 # **G**roup for **A**pplications and **S**ervices on **E**xascale **R**esearch **I**nfrastructure
 
@@ -12,7 +12,7 @@ class: gaia
 
 ---
 
-##### **GASERI** 😎
+##### **GASERI** 😎 (2)
 
 ## Exascale supercomputing is almost here
 
@@ -22,7 +22,7 @@ The performance is measured in terms of **floating-point operations per second**
 
 ---
 
-##### **GASERI** 😎
+##### **GASERI** 😎 (3)
 
 ## More FLOPS means more complexity
 
@@ -32,7 +32,7 @@ Modern HPCs use different types of accelerators such as GPUs and FPGAs, but also
 
 ---
 
-##### **GASERI** 😎
+##### **GASERI** 😎 (4)
 
 ## Scientific software for exascale era
 
@@ -44,7 +44,7 @@ The specific focus in the present is the improvement of **molecular dynamics sim
 
 ---
 
-##### **GASERI** 😎
+##### **GASERI** 😎 (5)
 
 ## GROMACS for the exascale era
 
@@ -56,9 +56,9 @@ We are extending the method to also support approx. **30% smaller rhombic dodeca
 
 ---
 
-##### **GASERI** 😎
+##### **GASERI** 😎 (6)
 
-## GROMACS for the exascale era
+## GROMACS for the exascale era (cont.)
 
 ### DPU offload of force reduction calculations in molecular dynamics simulations
 
@@ -68,7 +68,7 @@ In this **NVIDIA-supported project**, our goal is to use the commercial off-the-
 
 ---
 
-##### **GASERI** 😎
+##### **GASERI** 😎 (7)
 
 ## Contact
 

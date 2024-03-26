@@ -127,7 +127,7 @@ Tijekom semestra studenti će u grupama po dvoje ili troje odabrati projekt koji
 
 ### Ocjena iz kolegija
 
-#### Završni ispit
+#### Kontinuirani rad i završni ispit
 
 Kontinuiranim radom tijekom semestra na prethodno opisani način studenti mogu ostvariti najviše 70 ocjenskih bodova, a da bi mogli pristupiti završnom ispitu moraju ostvarili 50% i više bodova (minimalno 35).
 
