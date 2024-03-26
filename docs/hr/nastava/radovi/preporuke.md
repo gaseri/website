@@ -94,6 +94,31 @@ At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praese
 
 Poglavlje *Literatura* bez sadržaja mora biti posljednje jer služi kao mjesto gdje će biti umetnut generirani popis literature.
 
+Opcionalno, alatom [markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2) možemo provjeriti sintaksu dokumenta. Instaliramo ga naredbom:
+
+``` shell
+$ sudo pacman -S markdownlint-cli2
+(...)
+```
+
+Njegova konfiguracija istovjetna je biblioteci [markdownlint](https://github.com/DavidAnson/markdownlint) koju koristi i pohranjuje se u datoteci `.markdownlint.yaml`. Stvorimo tu datoteku tako da ima sadržaj:
+
+``` yaml
+default: true
+first-line-h1: false
+line-length: false
+```
+
+Provjeru vršimo pokretanjem naredbe `markdownlint-cli2` s imenom datoteke `tekst.md` kao argumentom:
+
+``` shell
+$ markdownlint-cli2 tekst.md
+markdownlint-cli2 v0.12.1 (markdownlint v0.33.0)
+Finding: tekst.md
+Linting: 1 file(s)
+Summary: 0 error(s)
+```
+
 #### Bibliografija (BibTeX)
 
 U Pandocovom dijalektu Markdowna sintaksa oblika `[@AutorGodina]` se koristi za citiranje izvora. Bibliografija se pohranjuje u datoteci `bibliografija.bib` u formatu BibTeX:
