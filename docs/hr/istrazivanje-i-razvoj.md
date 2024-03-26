@@ -50,7 +50,7 @@ kolegija i asistent)
 
 **Zvanje:** Studentica, demonstratorica
 
-**E-mail:** mia.doricic@student.uniri.hr
+**E-mail:** <mia.doricic@student.uniri.hr>
 
 **Uloga u projektu:** Pomoćnica u izradi zadataka za vježbe i domaće zadaće
 

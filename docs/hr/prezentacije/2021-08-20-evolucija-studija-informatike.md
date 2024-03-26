@@ -11,7 +11,7 @@ paginate: true
 
 # Evolucija studija informatike
 
-## v. pred. dr. sc. [Vedran](https://vedran.miletic.net/) [Miletić](https://www.miletic.net/), vmiletic@inf.uniri.hr
+## v. pred. dr. sc. [Vedran](https://vedran.miletic.net/) [Miletić](https://www.miletic.net/), <vmiletic@inf.uniri.hr>
 
 ### [vedran.miletic.net](https://vedran.miletic.net/) | [group.miletic.net](https://group.miletic.net/hr/)
 

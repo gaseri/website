@@ -17,7 +17,7 @@ Godina i semestar: 3. godina, 5. semestar
 
 Nositelj: **doc. dr. sc. Vedran Miletić**, <vmiletic@inf.uniri.hr>, vedran.miletic.net
 
-Asistent: **Milan Petrović, mag. inf.**, milan.petrovic@inf.uniri.hr
+Asistent: **Milan Petrović, mag. inf.**, <milan.petrovic@inf.uniri.hr>
 
 Fiksni termin za konzultacije: nakon predavanja, odnosno prije vježbi uživo u učionici ili na [sveučilišnom BBB-u: bigbluebutton.uniri.hr/b/ved-h7x-6vq](https://bbb.uniri.hr/b/ved-h7x-6vq)
 

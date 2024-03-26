@@ -12,7 +12,7 @@ Naziv doktorskog studija: [Sveučilišni poslijediplomski (doktorski) studij Inf
 - Ustanova, država: [Sveučilište u Rijeci](https://uniri.hr/), Hrvatska
 - Odjel/odsjek: [Fakultet informatike i digitalnih tehnologija](https://www.inf.uniri.hr/)
 - CV: [vedran.miletic.net](https://vedran.miletic.net/files/cv-vedran-miletic.pdf) i [group.miletic.net](../en/people/principal-investigator.md)
-- E-pošta: [vmiletic@inf.uniri.hr](mailto:vmiletic@inf.uniri.hr)
+- E-pošta: <vmiletic@inf.uniri.hr>
 
 ## Područja znanstveno-istraživačkog rada mentora
 

@@ -18,7 +18,7 @@ IPv4 adresa je 32 bitna logička adresa koja jasno određuje domaćina mreže. Z
 
 IP adresa je u osnovi binarni broj, međutim zbog lakšeg rada s adresama, one se bilježe brojevima decimalnog brojevnog sustava. Decimalne vrijednosti svakog od okteta mogu se kretati od 0 do 255, a u binarnom sustavu od 00000000 do 11111111. Od 8 bitova koji se nalaze unutar okteta moguće je dobiti 2ˆ8 = 256 različitih brojčanih vrijednosti, odnosno adresa. IPv6 verzija protokola predviđa 128-bitne adrese te se u tom slučaju može koristiti i heksadecimalni zapis, radi kraćeg oblika i jednostavnosti.
 
-Primjer IPv4 adrese domene www.inf.uniri.hr je 193.198.209.68, odnosno u binarnom zapisu 11000001.11000110.11010001.1000100
+Primjer IPv4 adrese domene `www.inf.uniri.hr` je 193.198.209.68, odnosno u binarnom zapisu 11000001.11000110.11010001.1000100.
 
 ## Mrežne klase i maska podmreže
 

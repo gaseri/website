@@ -21,7 +21,7 @@ Pritom resurs može biti HTML datoteka kao u primjeru, ali i bilo što drugo (np
 
 ### Protokoli HTTP i HTTPS
 
-[Hypertext Transfer Protocol (HTTP)](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) je aplikacijski protokol i temelj podatkovne komunikacije za WWW. Internet Engineering Task Force (IETF) i the World Wide Web Consortium (W3C) stoje iza njegovog razvijanja. HTTP radi na request-response paradigmi po kljent-poslužitelj modelu. Jedna HTTP sesija sastoji se od niza zahtjeva (klijent) i odgovora (poslužitelj).
+[Hypertext Transfer Protocol (HTTP)](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) je aplikacijski protokol i temelj podatkovne komunikacije za World Wide Web (WWW). Internet Engineering Task Force (IETF) i the World Wide Web Consortium (W3C) stoje iza njegovog razvijanja. HTTP radi na request-response paradigmi po kljent-poslužitelj modelu. Jedna HTTP sesija sastoji se od niza zahtjeva (klijent) i odgovora (poslužitelj).
 
 [Hypertext Transfer Protocol Secure (HTTPS)](https://en.wikipedia.org/wiki/HTTPS) je proširenje HTTP protokola SSL/TLS slojem. HTTPS se koristi za sigurnu komunikaciju preko računalne mreže. U srži TLS-a je korištenje privatnih i javnih ključeva te enkripcija podataka. HTTPS još podrazumijeva autentifikaciju i korištenje certifikata za dokazivanje identiteta.
 
