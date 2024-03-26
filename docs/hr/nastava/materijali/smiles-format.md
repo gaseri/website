@@ -61,4 +61,3 @@ Prstenaste strukture možemo kreirati korištenjem brojeva za identifikaciju otv
 
 !!! admonition "Zadatak"
     Koristeći PubChem nacrtajte sljedeće spojeve pomoću formata SMILES: [ciklooktan](https://en.wikipedia.org/wiki/Cyclooctane) i [benzen](https://en.wikipedia.org/wiki/Benzene).
-    

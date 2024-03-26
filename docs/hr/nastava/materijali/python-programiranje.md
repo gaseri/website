@@ -254,7 +254,7 @@ Osim stvaranja niza od već definiranog niza elemenata, možete jednostavno stvo
 Možete stvoriti niz s intervalom elemenata `np.arange(n)` ili niz s ravnomjerno raspoređenih intervala pri čemu ćete navesti prvi `n` i posljednji broj `m` te veličinu koraka `k`, `np.arange(n, m, k)`.
 
 !!! admonition "Zadatak"
-    1. Kreirajte niz koji sadrži elemente u intervalu od 10 do 15 i ispišite ga na ekran. 
+    1. Kreirajte niz koji sadrži elemente u intervalu od 10 do 15 i ispišite ga na ekran.
     2. Kreirajte niz koji sadrži elemente u intervalu od 2 do 8 s veličinom koraka 2 i ispišite ga na ekran.
     3. Stvorite niz od 5 elemenata. Neka se ti elementi generiraju nasumično u rasponu od 50 do 100 ([`np.random.randint`](https://www.programiz.com/python-programming/numpy/random)). Zatim izračunajte zbroj svih elemenata niza ([`np.sum`](https://numpy.org/doc/stable/reference/generated/numpy.sum.html#numpy.sum)), srednju vrijednost ([`np.mean`](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.mean.html#numpy.ndarray.mean)) te razliku između najvećeg ([`np.max`](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.max.html#numpy.ndarray.max)) i najmanjeg ([`np.min`](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.min.html#numpy.ndarray.min)) elementa niza. Ispišite rezultate na ekran.
 
