@@ -140,9 +140,9 @@ Sintaksa filtra kod prikaza uključuje: protokol, izraz1, izraz2, operator uspor
 
 | Riječ | Simbol | Značenje |
 | ----- | ------ | -------- |
-| `and` | `&&` | logičko AN |
+| `and` | `&&` | logičko AND |
 | `or` | `||` | logičko OR |
-| `xor` | `^^` | logičko XO |
+| `xor` | `^^` | logičko XOR |
 | `not` | `!` | logičko NO |
 
 ### Primjeri filtara kod prikaza
