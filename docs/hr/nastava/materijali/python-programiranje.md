@@ -111,12 +111,12 @@ Operatori usporedbe uspoređuju vrijednosti s obje strane operatora i određuju 
 
 | Operator | Opis | Primjer | Rezultat, `a = 5`; `b = 10` |
 | :------: | ---- | ------- | --------------------------- |
-| `==` | Usporedba jednakosti | `a == b` | False | True |
-| `!=` | Usporedba nejednakosti | `a != b` | True | False |
-| `>` | Strogo veće od | `a > b` | False | False |
-| `<` | Strogo manje od | `a < b` | True | False |
-| `>=` | Veće ili jednako od | `a >= b` | False | True |
-| `<=` | Manje ili jednako od | `a <= b` | True | True |
+| `==` | Usporedba jednakosti | `a == b` | False |
+| `!=` | Usporedba nejednakosti | `a != b` | True |
+| `>` | Strogo veće od | `a > b` | False |
+| `<` | Strogo manje od | `a < b` | True |
+| `>=` | Veće ili jednako od | `a >= b` | False |
+| `<=` | Manje ili jednako od | `a <= b` | True |
 
 ## Naredba `if`
 

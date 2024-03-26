@@ -90,17 +90,17 @@ Some of these instructions have an unsigned version, which can be obtained by ap
 
 | Service | Code in `$v0` | Arguments | Result |
 | ------- | ------------- | --------- | ------ |
-| print_int | 1 | `$a0` = integer |
-| print_float | 2 | `$f12` = float |
-| print_double | 3 | `$f12` = double |
-| print_string | 4 | `$a0` = string address |
+| print_int | 1 | `$a0` = integer | |
+| print_float | 2 | `$f12` = float | |
+| print_double | 3 | `$f12` = double | |
+| print_string | 4 | `$a0` = string address | |
 | read_int | 5 | | int to `$v0` |
 | read_float | 6 | | float to `$f0` |
 | read_double | 7 | | double to `$f0` |
-| read_string | 8 | `$a0` = cache address, `$a1` = buffer size |
+| read_string | 8 | `$a0` = cache address, `$a1` = buffer size | |
 | sbrk | 9 | | address in `$v0` |
-| exit | 10 | `$a0` = integer |
-| print_character | 11 | `$a0` = character |
+| exit | 10 | `$a0` = integer | |
+| print_character | 11 | `$a0` = character | |
 | read_character | 12 | | character (in `$v0`) |
 | open | 13 | `$a0` = filename, `$a1` = flags, `$a2` = mode | file descriptor (in `$v0`) |
 | read | 14 | `$a0` = file descriptor, `$a1` = buffer, `$a2` = count | bytes read (in `$v0`) |

@@ -272,7 +272,7 @@ Ukupno vrijeme izdavanja je 10 perioda pa je ukupno vrijeme izvođenja programa 
 |   | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
 | - | - | - | - | - | - | - | - | - |
 | IF | add | sub | mul | div | | | | |
-| ID | | add | sub | mul | div | | |
+| ID | | add | sub | mul | div | | | |
 | RR | | | add | sub | mul | div | | |
 | EX | | | | add | sub | mul | div | |
 | WB | | | | | add | sub | mul | div |
@@ -292,7 +292,7 @@ Ukupno vrijeme izdavanja je 10 perioda pa je ukupno vrijeme izvođenja programa 
 |   | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
 | - | - | - | - | - | - | - | - | - | - |
 | IF | add | sub | mul | div | | | | | |
-| ID | | add | sub | mul | div | div | div |  |
+| ID | | add | sub | mul | div | div | div | | |
 | RR | | | add | sub | mul | mul | mul | div | |
 | EX | | | | add | sub | n | n | mul | div |
 | WB | | | | | add | sub | n | n | mul |

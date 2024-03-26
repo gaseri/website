@@ -240,7 +240,7 @@ Uzmimo za primjer zapis 4-bitnih brojeva u svakom sustavu:
 | Broj | $-8$ | $-7$ | $-6$ | $-5$ | $-4$ | $-3$ | $-2$ | $-1$ | $0$ | $1$ | $2$ | $3$ | $4$ | $5$ | $6$ | $7$ | $8$ | $9$ | $10$ | $11$ | $12$ | $13$ | $14$ | $15$ |
 | :--: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | ---: | ---: | ---: | ---: | ---: | ---: |
 | Bez predznaka | | | | | | | | | $0000$ | $0001$ | $0010$ | $0011$ | $0100$ | $0101$ | $0110$ | $0111$ | $1000$ | $1001$ | $1010$ | $1011$ | $1100$ | $1101$ | $1110$ | $1111$ |
-| S predznakom | | $1111$ | $1110$ | $1101$ | $1100$ | $10111$ | $1010$ | $10001$ | $0000/1000$ | $0001$ | $0010$ | $0011$ | $0100$ | $0101$ | $0110$ | $0111$ |
+| S predznakom | | $1111$ | $1110$ | $1101$ | $1100$ | $10111$ | $1010$ | $10001$ | $0000/1000$ | $0001$ | $0010$ | $0011$ | $0100$ | $0101$ | $0110$ | $0111$ | | | | | | | | |
 | Dvojni komplement | $1000$ | $1001$ | $1010$ | $1011$ | $1100$ | $1101$ | $1110$ | $1111$ | $0000$ | $0001$ | $0010$ | $0011$ | $0100$ | $0101$ | $0110$ | $0111$ | | | | | | | | |
 
 Možemo primjetiti da brojevi bez predznaka obuhvaćaju raspon $[0, 15]$ u redovnom binarnom redoslijedu. Brojevi dvojnog komplementa obuhvaćaju raspon $[-8, 7]$. Nenegativni brojevi $[0, 7]$ dijele isto kodiranje kao i brojevi bez predznaka. Brojevi s predznakom obuhvaćaju raspon $[-7, 7]$. Pozitivni brojevi $[1, 7]$ također dijele isto kodiranje kao i brojevi bez predznaka. Negativni brojevi su simetrični, ali imaju postavljen bit predznaka. Nula je predstavljena i sa 0000 i sa 1000. Prema tome, $N$-bitni brojevi s predznakom predstavljaju samo $2^N-1$ cijelih brojeva zbog dvije reprezentacije zapisa nule.
