@@ -597,7 +597,8 @@ plugins:
       post_url_format: "{date}-{slug}"
       categories: false
   - search
-  - social
+  - social:
+      enabled: !ENV [CI, false]
   - tags:
       tags_file: en/blog/tags.md
   - minify:
