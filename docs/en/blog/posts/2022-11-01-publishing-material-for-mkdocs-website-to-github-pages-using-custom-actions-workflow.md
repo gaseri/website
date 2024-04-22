@@ -158,8 +158,7 @@ jobs:
 We can see the mention of the `requirements.txt` file. It should reside in the root of the repository with the contents:
 
 ``` text
-mkdocs[i18n]
-mkdocs-material[imaging]
+mkdocs-material[recommended, imaging]
 ```
 
 And that's it! There is no more requirement for the `.nojekyll` file as Jekyll never gets ran in the build process. There is also no more separate `gh-pages` branch that the built files get pushed to, so there is also no more worry whether the site builds over time will add up to the [1 GB soft limit](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github#repository-size-limits).
