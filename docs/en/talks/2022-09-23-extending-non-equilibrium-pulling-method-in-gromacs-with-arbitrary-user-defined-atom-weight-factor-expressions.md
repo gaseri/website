@@ -19,7 +19,7 @@ abstract: |
 
 ### 😎 Group for Applications and Services on Exascale Research Infrastructure, Faculty of Informatics and Digital Technologies, University of Rijeka
 
-#### [Third Infinity 2022](https://thirdinfinity.mpg.de/), [Max Planck Institute for Multidisciplinary Sciences](https://www.mpinat.mpg.de/en), Göttingen, 23rd of September 2022
+#### [Third Infinity](https://thirdinfinity.mpg.de/) [2022](https://thirdinfinity.mpg.de/2022/), [Max Planck Institute for Multidisciplinary Sciences](https://www.mpinat.mpg.de/en), Göttingen, 23rd of September 2022
 
 ---
 
