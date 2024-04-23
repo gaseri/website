@@ -77,8 +77,8 @@ Potrebno je registrirati korisnički račun na [GitHubu](https://github.com/).
 
 ### Potrebni softveri
 
-- [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/)
-- [Microsoft PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/)
+- [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/) (samo na Windowsima)
+- [Microsoft PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/) (samo na Windowsima)
 - [Visual Studio Code](https://code.visualstudio.com/)
     - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint), [Markdown Theme Kit](https://marketplace.visualstudio.com/items?itemName=ms-vscode.Theme-MarkdownKit) i [Word Count](https://marketplace.visualstudio.com/items?itemName=ms-vscode.wordcount)
 - [Python](https://www.python.org/)
@@ -87,26 +87,107 @@ Potrebno je registrirati korisnički račun na [GitHubu](https://github.com/).
 
 ---
 
-### Upute za instalaciju potrebnih softvera na operacijskom sustavu Windows, verzija 10 ili 11
+### Upute za instalaciju potrebnih softvera
 
-Preduvjeti za instalaciju potrebnih softvera:
+### Preduvjeti za instalaciju potrebnih softvera
 
-1. Instalirajte sve dostupne nadogradnje putem sustava [Windows Update](https://support.microsoft.com/en-us/windows/update-windows-3c5ae7fc-9fb6-9af1-1984-b5e0412c556a). To može potrajati i do nekoliko sati te može biti potrebno jedno ili više ponovnih pokretanja računala. Ovaj korak je nužan zato što softveri koje koristimo zahtijevaju relativno svježe podverzije Windowsa 10 ili 11.
-1. Putem [Microsoft Storea](https://apps.microsoft.com/home) instalirajte [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701) (ako već nije instaliran).
+=== "🪟 Windows"
+
+    1. Instalirajte sve dostupne nadogradnje putem sustava [Windows Update](https://support.microsoft.com/en-us/windows/update-windows-3c5ae7fc-9fb6-9af1-1984-b5e0412c556a). To može potrajati i do nekoliko sati te može biti potrebno jedno ili više ponovnih pokretanja računala. Ovaj korak je nužan zato što softveri koje koristimo zahtijevaju relativno svježe podverzije Windowsa 10 ili 11.
+    1. Putem [Microsoft Storea](https://apps.microsoft.com/home) instalirajte [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701) (ako već nije instaliran).
+
+=== "🐧 Linux"
+
+    !!! note
+        Upute u nastavku odnose se na [Linux Mint](https://linuxmint.com/), [Ubuntu](https://ubuntu.com/) i [Debian](https://www.debian.org/) [GNU/Linux](https://wiki.debian.org/DebianGnuLinux).
+
+    U terminalu upišite naredbu:
+
+    ``` shell
+    sudo apt update && sudo apt upgrade
+    ```
+
+    Po potrebi, ponovno pokrenite računalo.
 
 ---
 
-Iskoristit ćemo [Windows Package Manager](https://learn.microsoft.com/en-us/windows/package-manager/), koji pokrećemo naredbom `winget` u Terminalu, za jednostavnu instalaciju svih potrebnih softvera. Pokrenite Windows Terminal (putem [izbornika Start](https://support.microsoft.com/en-us/windows/open-the-start-menu-4ed57ad7-ed1f-3cc9-c9e4-f329822f5aeb)) i upišite redom naredbe:
+### Instalacija potrebnih softvera
+
+=== "🪟 Windows"
+
+    Iskoristit ćemo [Windows Package Manager](https://learn.microsoft.com/en-us/windows/package-manager/), koji pokrećemo naredbom `winget` u Terminalu, za jednostavnu instalaciju svih potrebnih softvera. Pokrenite Windows Terminal (putem [izbornika Start](https://support.microsoft.com/en-us/windows/open-the-start-menu-4ed57ad7-ed1f-3cc9-c9e4-f329822f5aeb)) i upišite redom naredbe u nastavku.
+
+    Skup pomoćnih alata [Microsoft PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/):
+
+    ``` shell
+    winget install --id Microsoft.PowerToys -e
+    ```
+
+=== "🐧 Linux"
+
+    Iskoristit ćemo [APT](https://en.wikipedia.org/wiki/APT_(software)), koji pokrećemo naredbom `apt` u terminalu, za jednostavnu instalaciju svih potrebnih softvera. U terminalu upišite redom naredbe:
+
+---
+
+Radno okruženje [Visual Studio Code](https://code.visualstudio.com/):
+
+=== "🪟 Windows"
+
+    ``` shell
+    winget install --id Microsoft.VisualStudioCode -e
+    ```
+
+=== "🐧 Linux"
+
+    ``` shell
+    curl -L -o code.deb 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64'
+    sudo apt install ./code.deb
+    ```
+
+Proširenja [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint), [Markdown Theme Kit](https://marketplace.visualstudio.com/items?itemName=ms-vscode.Theme-MarkdownKit) i [Word Count](https://marketplace.visualstudio.com/items?itemName=ms-vscode.wordcount):
 
 ``` shell
-winget install --id Microsoft.PowerToys -e
-winget install --id Microsoft.VisualStudioCode -e
 code --install-extension DavidAnson.vscode-markdownlint
 code --install-extension ms-vscode.Theme-MarkdownKit
 code --install-extension ms-vscode.wordcount
-winget install --id Python.Python.3.12 -e
-pip install mkdocs-material
-winget install --id Git.Git -e
 ```
+
+---
+
+[Python](https://www.python.org/):
+
+=== "🪟 Windows"
+
+    ``` shell
+    winget install --id Python.Python.3.12 -e
+    ```
+
+=== "🐧 Linux"
+
+    ``` shell
+    sudo apt install python-is-python3 python3-pip
+    ```
+
+[MkDocs](https://www.mkdocs.org/) i [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/):
+
+``` shell
+pip install mkdocs-material
+```
+
+---
+
+[Git](https://git-scm.com/):
+
+=== "🪟 Windows"
+
+    ``` shell
+    winget install --id Git.Git -e
+    ```
+
+=== "🐧 Linux"
+
+    ``` shell
+    sudo apt install git
+    ```
 
 U slučaju da imate pitanja, obratite se [Vedranu Miletiću putem e-maila](https://vedran.miletic.net/#contact).
