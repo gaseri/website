@@ -51,6 +51,24 @@ Nastavak i praktična strana predavanja [Zašto i kako izraditi web sjedište is
 
 Imati na javnom webu postavljeno vlastito sjedište slično onome kakvo ima [Matea Turalija](https://mateaturalija.github.io/).
 
+## Neishodi učenja
+
+- Kupnja i konfiguracija vlastite domene.
+- Optimizacija sadržaja za tražilice.
+- Dizajn web sjedišta.
+- Suradnički razvoj i verzioniranje.
+
+---
+
+## Sadržaj radionice
+
+- 24\. 4. 2024.
+    - Stvaranje projekta web sjedišta (Python, MkDocs)
+    - Pisanje web stranica u Markdownu (Visual Studio Code i proširenja markdownlint, Markdown Theme Kit i Word Count)
+- 8\. 5. 2024.
+    - Mogućnosti konfiguracija projekta web sjedišta (Material for MkDocs)
+    - Postavljanje sjedišta na web (Git, GitHub, GitHub Pages)
+
 ---
 
 ## Priprema za radionicu
