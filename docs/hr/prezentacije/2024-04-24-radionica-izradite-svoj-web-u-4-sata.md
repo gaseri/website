@@ -162,6 +162,8 @@ code --install-extension ms-vscode.wordcount
     winget install --id Python.Python.3.12 -e
     ```
 
+    Nakon ovog koraka zatvorite Terminal pa ga ponovno pokrenite prije nastavka.
+
 === "🐧 Linux"
 
     ``` shell
