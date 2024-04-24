@@ -191,3 +191,64 @@ pip install mkdocs-material
     ```
 
 U slučaju da imate pitanja, obratite se [Vedranu Miletiću putem e-maila](https://vedran.miletic.net/#contact).
+
+---
+
+## Osnovna literatura
+
+Visual Studio Code i proširenja:
+
+- [Basic Editing in Visual Studio Code](https://code.visualstudio.com/docs/editor/codebasics)
+- [Terminal Basics in Visual Studio Code](https://code.visualstudio.com/docs/editor/codebasics)
+- [Markdown and Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown)
+- [Collaborate on GitHub](https://code.visualstudio.com/docs/sourcecontrol/github)
+
+MkDocs i Material for MkDocs:
+
+- [Command Line Interface -- MkDocs](https://www.mkdocs.org/user-guide/cli/)
+- [Writing your docs -- MkDocs](https://www.mkdocs.org/user-guide/writing-your-docs/)
+- [Deploying your docs -- MkDocs](https://www.mkdocs.org/user-guide/deploying-your-docs/)
+- [Configuration -- MkDocs](https://www.mkdocs.org/user-guide/configuration/)
+- [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
+
+---
+
+## Sadržaj prvog dijela radionice
+
+- Stvaranje projekta web sjedišta (Python, MkDocs)
+- Pisanje web stranica u Markdownu (Visual Studio Code i proširenja markdownlint, Markdown Theme Kit i Word Count)
+
+---
+
+## Započinjanje projekta
+
+U (Windows) Terminalu:
+
+```
+mkdocs new mojnoviweb
+```
+
+U Visual Studio (VS) Code: izbornik `File` pa `Open Folder...` pa pronađite mapu `mojnoviweb` i otvorite ju.
+
+U VS Code ugrađenom terminalu:
+
+```
+mkdocs serve
+```
+
+pa ++ctrl++ i klik na `http://127.0.0.1:8000/` u izlazu naredbe za otvaranje pregleda weba.
+
+---
+
+## Pisanje Markdowna
+
+- [Writing with Markdown (Writing your docs -- MkDocs)](https://www.mkdocs.org/user-guide/writing-your-docs/#writing-with-markdown)
+- [Suradnički uređivač teksta HackMD i jezik Markdown](../nastava/materijali/hackmd-markdown.md#)
+- ([Zettlr workshop](../../en/tutorials/zettlr.md))
+
+---
+
+## Sadržaj drugog dijela radionice
+
+- Mogućnosti konfiguracija projekta web sjedišta (Material for MkDocs)
+- Postavljanje sjedišta na web (Git, GitHub, GitHub Pages)
