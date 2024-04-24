@@ -60,6 +60,15 @@ Imati na javnom webu postavljeno vlastito sjedište slično onome kakvo ima [Mat
 
 ---
 
+## CMS ili Jamstack?
+
+- sustav za upravljanje sadržajem (*content management systems*, CMS)
+    - [WordPress](https://wordpress.org/40-percent-of-web/), Shopify, Wix, Squarespace, [Joomla](https://www.joomla.org/), [Drupal](https://www.drupal.org/) i brojni drugi
+- generator statičkog web sjedišta, kolokvijalno Jamstack
+    - [Hugo](https://gohugo.io/), [Jekyll](https://jekyllrb.com/), [Docusaurus](https://docusaurus.io/), [MkDocs](https://www.mkdocs.org/) i brojni drugi
+
+---
+
 ## Sadržaj radionice
 
 - 24\. 4. 2024.
