@@ -89,7 +89,7 @@ Potrebno je registrirati korisnički račun na [GitHubu](https://github.com/).
 
 ### Upute za instalaciju potrebnih softvera
 
-### Preduvjeti za instalaciju potrebnih softvera
+#### Preduvjeti za instalaciju potrebnih softvera
 
 === "🪟 Windows"
 
@@ -111,7 +111,7 @@ Potrebno je registrirati korisnički račun na [GitHubu](https://github.com/).
 
 ---
 
-### Instalacija potrebnih softvera
+#### Naredbe za instalaciju potrebnih softvera
 
 === "🪟 Windows"
 
