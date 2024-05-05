@@ -1,12 +1,12 @@
 ---
 marp: true
+theme: default
+class: default
+paginate: true
 author: Vedran Miletić
 title: "Arhitekture web aplikacija: monolitna i uslužno orijentirana"
 description: Razvoj web aplikacija i usluga
 keywords: razvoj web aplikacija usluga
-theme: default
-class: _invert
-paginate: true
 ---
 
 # Arhitekture web aplikacija: monolitna i uslužno orijentirana

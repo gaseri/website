@@ -1,12 +1,12 @@
 ---
 marp: true
+theme: default
+class: default
+paginate: true
 author: Vedran Miletić
 title: Kontinuirana integracija i isporuka web aplikacija
 description: Razvoj web aplikacija i usluga
 keywords: razvoj web aplikacija usluga
-theme: default
-class: _invert
-paginate: true
 ---
 
 # Kontinuirana integracija i kontinuirana isporuka za web aplikacije

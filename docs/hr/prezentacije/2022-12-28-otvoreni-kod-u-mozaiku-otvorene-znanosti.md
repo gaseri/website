@@ -1,12 +1,11 @@
 ---
 marp: true
+theme: default
+class: default
 author: Vedran Miletić
 title: Otvoreni kod u mozaiku otvorene znanosti
 description: Predavanje na Mutimiru 2022 u organizaciji Udruge Penkala
 keywords: free software, open source, open science
-theme: default
-class: _invert
-paginate: true
 abstract: |
   U posljednjih 30-ak godina slobodni softver otvorenog kod prešao je velik put od prakse hobista i entuzijasta preko prvih industrijskih projekata koji su vremenom u suradnji IT tvrtki i zajednice razvili alate poput web preglednika Firefox i uredskog paketa LibreOffice pa do stanja integracije u IT rješenja u kojem je nezamislio obaviti išta na internetu bez korištenja nekog programa ili biblioteke otvorenog koda. Osim u industriju, prakse slobodnog sotvera otvorenog koda polako su se probile i u znanstvenu zajednicu pa se se kroz posljednjih 20-ak godina sve veći broj projekata odlučuje za otvoreno licenciranje (u nekom obliku) nauštrb tipičnog akademskog (besplatno korištenje u akademske svrhe i posebno licenciranje za komercijalnu upotrebu). Predavanje će govoriti o prednostima slobodnog softvera otvorenog koda iz akademske perspektive, dosadašnjim uspjesima i primjerima dobre prakse te ulozi otvorenog koda u pokretu otvorene znanosti.
 ---
@@ -20,6 +19,8 @@ abstract: |
 ### Mutimir 2022 (Udruga Penkala), Hotel Matija Gubec, 28. prosinca 2022.
 
 ---
+
+<!-- paginate: true -->
 
 ## Predstavljanje predavača
 

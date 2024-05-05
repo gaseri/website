@@ -1,12 +1,12 @@
 ---
 marp: true
+theme: default
+class: default
+paginate: true
 author: Vedran Miletić
 title: "Paradigme programiranja u web aplikacijama: proceduralna, objektno orijentirana, funkcijska"
 description: Razvoj web aplikacija i usluga
 keywords: razvoj web aplikacija usluga
-theme: default
-class: _invert
-paginate: true
 ---
 
 # Paradigme programiranja u web aplikacijama: proceduralna, objektno orijentirana, funkcijska

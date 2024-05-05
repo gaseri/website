@@ -1,12 +1,12 @@
 ---
 marp: true
+theme: default
+class: default
+paginate: true
 author: Vedran Miletić
 title: Prošlost, sadašnjost i budućnost weba kao platforme za razvoj aplikacija i usluga
 description: Razvoj web aplikacija i usluga
 keywords: razvoj web aplikacija usluga
-theme: default
-class: _invert
-paginate: true
 ---
 
 # Prošlost, sadašnjost i budućnost weba kao platforme za razvoj aplikacija i usluga

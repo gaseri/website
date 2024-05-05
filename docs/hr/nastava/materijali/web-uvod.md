@@ -1,12 +1,12 @@
 ---
 marp: true
+theme: default
+class: default
+paginate: true
 author: Vedran Miletić
 title: Programiranje za web / Dinamičke web aplikacije 2
 description: Razvoj web aplikacija i usluga
 keywords: razvoj web aplikacija usluga
-theme: default
-class: _invert
-paginate: true
 ---
 
 # Uvodno predavanje predmeta Programiranje za web

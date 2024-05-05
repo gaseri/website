@@ -1,12 +1,12 @@
 ---
 marp: true
+theme: default
+class: default
+paginate: true
 author: Vedran Miletić
 title: Pisanje i provođenje automatiziranih testova programskog koda i web aplikacija
 description: Razvoj web aplikacija i usluga
 keywords: razvoj web aplikacija usluga
-theme: default
-class: _invert
-paginate: true
 ---
 
 # Pisanje i provođenje automatiziranih testova programskog koda i web aplikacija

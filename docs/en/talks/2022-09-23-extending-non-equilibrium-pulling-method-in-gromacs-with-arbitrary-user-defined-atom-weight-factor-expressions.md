@@ -1,12 +1,12 @@
 ---
 marp: true
+theme: uncover
+class: default
+math: katex
 author: Vedran Miletić
 title: Extending Non-Equilibrium Pulling Method in GROMACS with Arbitrary User-Defined Atom Weight Factor Expressions
 description: Third Infinity 2022
 keywords: non-equilibrium molecular dynamics simulation
-theme: uncover
-class: _invert
-math: katex
 abstract: |
   Numerous non-equilibrium methods are used in modern molecular dynamics simulations. Specifically, non-equilibrium pulling can be used to simulate protein unfolding, ligand unbinding, and uniform flow as well as perform umbrella sampling. Recently, GRoningen MAchine for Chemical Simulations (GROMACS), a popular molecular dynamics simulation software package, introduced a transformation pull coordinate that allows arbitrary mathematical transformations of pull coordinates. This enables changing the pull direction, rate, and force during the simulation in a user-defined way. While these are generally useful, performing uniform flow simulation requires changing the force applied to the atoms of the pull group during the simulation. The extension of GROMACS we developed offers the ability to specify an arbitrary user-defined atom weight factor expression. This approach allows hard-coded smooth or non-smooth weighting of the pull group as a special case. This approach additionally allows the positions in $y$ and $z$ coordinates as well as the velocities in all three coordinates to affect weighting. The implementation is publicly available on GitLab and will be submitted for inclusion in a future version of GROMACS.
 ---

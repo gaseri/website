@@ -1,12 +1,11 @@
 ---
 marp: true
+theme: default
+class: default
 author: Vedran Miletić
 title: Znanost, tehnologija i obrazovanje nakon ChatGPT-a
 description: Predavanje na Rijeci tehnologije
 keywords: large language models, artificial intelligence, chatgpt
-theme: default
-class: _invert
-paginate: true
 curriculum-vitae: |
   Vedran Miletić radi kao docent na Fakultetu informatike i digitalnih tehnologija Sveučilišta u Rijeci, gdje je voditelj Grupe za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi te nositelj više kolegija iz područja infrastrukture suvremenog weba. Član je Centra za popularizaciju i promociju znanosti te Povjerenstva za superračunalne resurse Sveučilišta u Rijeci.
 
@@ -22,6 +21,8 @@ curriculum-vitae: |
 ### Rijeka tehnologije, zgrada sveučilišnih odjela, 1. veljače 2023.
 
 ---
+
+<!-- paginate: true -->
 
 ## Grupa za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi
 

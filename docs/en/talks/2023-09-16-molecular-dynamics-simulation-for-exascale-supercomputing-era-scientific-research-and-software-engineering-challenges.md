@@ -1,12 +1,11 @@
 ---
 marp: true
+theme: default
+class: default
 author: Vedran Miletić, Matea Turalija
 title: Molecular dynamics simulation for exascale supercomputing era -- scientific research and software engineering challenges
 description: Invited lecture at the Computational Chemistry Day in Zagreb, Croatia, 16th of September, 2023.
 keywords: molecular dynamics, simulation, exascale, supercomputing
-theme: default
-class: _invert
-paginate: true
 abstract: |
   The new era in supercomputers started last year with the arrival of the first batch of exascale supercomputers to the TOP500 list. Compared to the previous-generation petascale supercomputers, such computers require the use of much more complex software models and algorithms to make optimal use of all available computing resources. In the last ten years, several partnerships and projects have been launched to develop and adapt software for the "exascale era", examples of which are the German Software for Exascale Computing (SPPEXA), the American Exascale Computing Project (ECP), the European High-Performance Computing Joint Undertaking (EuropHPC JU), and Croatian High performance scalable algorithms for future heterogeneous distributed computing systems (HybridScale).
 
@@ -27,6 +26,8 @@ references:
 #### Invited lecture at the [Computational Chemistry Day](https://www.compchemday.org/) in Zagreb, Croatia, 16th of September, 2023.
 
 ---
+
+<!-- paginate: true -->
 
 ## First off, thanks to the organizers for the invitation
 

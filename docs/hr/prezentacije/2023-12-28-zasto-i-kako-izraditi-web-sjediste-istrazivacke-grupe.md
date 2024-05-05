@@ -1,12 +1,11 @@
 ---
 marp: true
+theme: default
+class: default
 author: Vedran Miletić
 title: Zašto i kako izraditi web sjedište istraživačke grupe
 description: Predavanje na Mutimiru 2023 u organizaciji Udruge Penkala
 keywords: web site, markdown, mkdocs, material for mkdocs
-theme: default
-class: _invert
-paginate: true
 abstract: |
   Postali ste novi voditelj istraživačke grupe, ili, zašto ne, (poslije)doktorand ste i njezin entuzijastični član, i želite poboljšati vidljivost vaše grupe među kolegama u području. Institucijska web sjedišta su često ograničena u formi i sadržaju, dok izrada vlastitog web sjedišta omogućuje oblikovanjei organizaciju sadržaja prema potrebi te postavljanje materijala po želji.
 ---
@@ -20,6 +19,8 @@ abstract: |
 ### Mutimir 2023 (Udruga Penkala), Hotel Matija Gubec, 28. prosinca 2023.
 
 ---
+
+<!-- paginate: true -->
 
 ![MPG logo h:250px](https://upload.wikimedia.org/wikipedia/en/9/9a/Max_Planck_Society_logo.svg)
 

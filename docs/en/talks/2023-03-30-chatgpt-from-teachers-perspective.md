@@ -1,12 +1,11 @@
 ---
 marp: true
+theme: default
+class: default
 author: Vedran Miletić
 title: ChatGPT from teacher's perspective
 description: Talk at Build Your Career Garden
 keywords: large language models, artificial intelligence, chatgpt
-theme: default
-class: _invert
-paginate: true
 curriculum-vitae: |
   Vedran Miletić is an assistant professor of computer science at Faculty of Informatics and Digital Technologies and the principal investigator of the Group for Applications and Services on Exascale Research Infrastructure. His group works on improving molecular dynamics simulation methods implemented in free and open-source software packages running on modern exascale supercomputers.
 abstract: |
@@ -22,6 +21,8 @@ abstract: |
 ### [Build Your Career Garden – Learning Teaching and Training event](https://gradri.uniri.hr/dogadjanja/build-your-career-garden-learning-teaching-and-training-event/), [Faculty of Civil Engineering](https://gradri.uniri.hr/), [University of Rijeka](https://uniri.hr/), 30th of March 2023
 
 ---
+
+<!-- paginate: true -->
 
 ## Faculty of Informatics and Digital Technologies
 

@@ -1,12 +1,12 @@
 ---
 marp: true
+theme: uncover
+class: default
+paginate: true
 author: Vedran Miletić
 title: Code optimization
-description: code optimization
+description: Course introduction
 keywords: code optimization
-theme: uncover
-class: _invert
-paginate: true
 ---
 
 # Code optimization: course introduction

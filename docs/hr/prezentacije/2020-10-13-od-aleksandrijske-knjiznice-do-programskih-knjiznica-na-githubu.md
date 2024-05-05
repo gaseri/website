@@ -1,12 +1,11 @@
 ---
 marp: true
+theme: default
+class: default
 author: Vedran Miletić
 title: Od Aleksandrijske knjižnice do programskih knjižnica na GitHubu
 description: Predavanje na Otvorenom danu sveučilišnih odjela 2020
 keywords: alexandria, github, archive program
-theme: default
-class: _invert
-paginate: true
 abstract: |
   Aleksandrijska knjižnica bila je jedna od najvećih i najvažnijih knjižnica antičkog svijeta. Točan broj svitaka papirusa koje je knjižnica imala nije poznat, ali procjenjuje se na desetke pa čak i stotine tisuća u doba kad je knjižnični fond bio najveći. Uništenje Aleksandrijske knjižnice često se pogrešno doživljava kao iznenadan događaj, dok je zapravo u pitanju bilo višestoljetno polagano propadanje. Već za dinastije Ptolemejevića provedena je čistka intelektualaca iz Aleksandrije, a zatim pod vlašću Rima opada financiranje i podrška knjižnici te s vremenom i brojnost njenih članova. Uništena je i naposlijetku srušena odredbom pape Teofila I. Aleksandrijskog 391. godine, no današnja Bibliotheca Alexandrina služi istovremeno kao spomen i kao pokušaj obnove. Stoljeće nakon uništenja Aleksandrijske knjižnice slijedi pad Zapadnog Rimskog Carstva i pogoršanje stanja u Zapadnoj Europi u demografskim, kulturološkim i ekonomskim terminima, doba koje Francesco Petrarca naziva mračnim, nasuprot svijetlom dobu klasične antike.
 
@@ -26,6 +25,8 @@ curriculum-vitae: |
 ### Otvoreni dan sveučilišnih odjela, 13. listopada 2020.
 
 ---
+
+<!-- paginate: true -->
 
 ## Pad Zapadnog Rimskog Carstva (1/2)
 

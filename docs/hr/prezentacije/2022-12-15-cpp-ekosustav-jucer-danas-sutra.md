@@ -1,12 +1,11 @@
 ---
 marp: true
+theme: default
+class: default
 author: Vedran Miletić, Marin Jurjević
 title: C++ ekosustav jučer/danas/sutra
 description: Predavanje na 16. unConferenceu IT zajednice Rijeka
 keywords: c++, isocpp, qt
-theme: default
-class: _invert
-paginate: true
 abstract: |
   Programski jezik C++, uz C, za mnoge je onaj koji su naučili na ranim godinama srednjoškolskog ili fakultetskog obrazovanja i potom rijetko kasnije koristili. Prevladavajuća je percepcija da je C++ težak za korištenje i nedovoljno bogat ugrađenom funkcionalnošću. Ipak, posljednje desetljeće donijelo je velike pomake naprijed kroz revizije standarda C++11/14/17/20 i njima potaknuta poboljšanja program-prevoditelja i razvojnih okolina. Predavanje će dati pregled stanja C++ ekosustava: gdje se primjenjuje, koji su softveri u njemu razvijeni, kojim se alatima programski inženjeri koriste, što donose novi standardi i koja je budućnost jezika u doba rasta programskih jezika Rust i Go.
 curriculum-vitae: |
@@ -26,6 +25,8 @@ host: |
 #### Predavaona prof. dr. sc. Pavle Dragojlovića O-028, Fakultet informatike i digitalnih tehnologija Sveučilišta u Rijeci, 15. prosinca 2022.
 
 ---
+
+<!-- paginate: true -->
 
 ## Predstavljanje predavača
 

@@ -1,12 +1,11 @@
 ---
 marp: true
+theme: default
+class: default
 author: Vedran Miletić, Matea Turalija
 title: Izradite svoj web u 4 sata! (radionica)
 description: Radionica u organizaciji Udruge Penkala
 keywords: web site, markdown, mkdocs, material for mkdocs
-theme: default
-class: _invert
-paginate: true
 abstract: |
   Najcitiraniji znanstvenici imaju svoje web stranice. U Americi preko 50% znanstvenika ima vlastite web stranice, neovisne o institutu ili sveučilištu na kojem rade.  Postanite i vi jedan od njih kroz radionicu gdje ćete u 4h korišteći Markdown izraditi osobne web stranice, web stranice vaše istraživačke i/ili pokrenuti svoj blog!
 ---
@@ -16,6 +15,8 @@ abstract: |
 Nastavak i praktična strana predavanja [Zašto i kako izraditi web sjedište istraživačke grupe](2023-12-28-zasto-i-kako-izraditi-web-sjediste-istrazivacke-grupe.md) s [Mutimira](https://udruga-penkala.hr/mutimir/) [2023](https://udruga-penkala.hr/mutimir2023/).
 
 ---
+
+<!--paginate: true -->
 
 ## Najava radionice
 

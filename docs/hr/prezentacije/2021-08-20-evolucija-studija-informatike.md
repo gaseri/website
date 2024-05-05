@@ -1,12 +1,11 @@
 ---
 marp: true
+theme: uncover
+class: invert
 author: Vedran Miletić
 title: Evolucija studija informatike
 description: evolucija studija informatike
 keywords: studij informatike
-theme: uncover
-class: invert
-paginate: true
 ---
 
 # Evolucija studija informatike
@@ -18,6 +17,8 @@ paginate: true
 #### IT Zajednica Rijeka, 20. kolovoza 2021. godine
 
 ---
+
+<!-- paginate: true -->
 
 ## Vedran Miletić
 

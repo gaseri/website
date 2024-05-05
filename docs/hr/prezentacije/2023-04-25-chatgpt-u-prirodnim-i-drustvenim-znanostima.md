@@ -1,12 +1,11 @@
 ---
 marp: true
+theme: default
+class: default
 author: Vedran Miletić
 title: ChatGPT u prirodnim i društvenim znanostima
 description: Predavanje na Festivalu znanosti
 keywords: large language models, artificial intelligence, chatgpt
-theme: default
-class: _invert
-paginate: true
 curriculum-vitae: |
   Vedran Miletić je docent u polju računarstva na Fakultetu informatike i digitalnih tehnologija, gdje vodi Grupu za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi. Njegova grupa radi na poboljšanju metoda simulacije molekulske dinamike u slobodnim softverima otvorenog koda namijenjenim za akademsku i industrijsku primjenu na modernim superračunalima.
 abstract: |
@@ -22,6 +21,8 @@ abstract: |
 ### Festival znanosti, Rijeka, Otvoreni dan, zgrada sveučilišnih odjela, 25. travnja 2023.
 
 ---
+
+<!-- paginate: true -->
 
 ## Fakultet informatike i digitalnih tehnologija
 

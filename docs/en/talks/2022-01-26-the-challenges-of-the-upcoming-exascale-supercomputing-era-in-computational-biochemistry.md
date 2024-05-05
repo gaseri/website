@@ -1,12 +1,11 @@
 ---
 marp: true
+theme: gaia
+class: gaia
 author: Vedran Miletić
 title: The challenges of the upcoming exascale supercomputing era in computational biochemistry
 description: Research Class
 keywords: GASERI, GROMACS
-theme: gaia
-class: gaia
-paginate: true
 abstract: |
   The beginning of the new era in supercomputers is expected in June 2022 with the arrival of the first batch of exascale supercomputers to the TOP500 list. Compared to existing petascale supercomputers, such computers require the use of more complex software models and algorithms to make optimal use of all available computing resources. In the last ten years, several partnerships and projects have been launched to develop and adapt software for the "exascale era", examples of which are the German Software for Exascale Computing (SPPEXA), the American Exascale Computing Project (ECP), the European European High-Performance Computing Joint Undertaking (EuropHPC JU), and Croatian High performance scalable algorithms for future heterogeneous distributed computing systems (HybridScale). Specifically, in the SPPEXA programme, progress has been made with adapting many software packages for the expected exascale supercomputer architectures, including the popular open-source molecular dynamics (MD) simulation software GROMACS.
 
@@ -22,6 +21,8 @@ abstract: |
 #### Research Class, FIDIT, UniRi, 26th January 2022
 
 ---
+
+<!-- paginate: true -->
 
 ## Stream and recording check
 

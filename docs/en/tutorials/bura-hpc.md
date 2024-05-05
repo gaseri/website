@@ -1,9 +1,11 @@
 ---
 marp: true
-author: Vedran Miletić
 theme: uncover
-class: _invert
-paginate: true
+class: default
+author: Vedran Miletić
+title: Bura HPC
+description: Using supercomputing resources at University of Rijeka for academic and industrial goals
+keywords: supercomputer, hpc
 ---
 
 # Bura HPC
@@ -13,6 +15,8 @@ paginate: true
 ### [Vedran](https://vedran.miletic.net/) [Miletić](https://www.miletic.net/), [Faculty of Informatics and Digital Technologies](https://www.inf.uniri.hr/), [University of Rijeka](https://uniri.hr/)
 
 ---
+
+<!-- paginate: true -->
 
 ## FIDIT
 

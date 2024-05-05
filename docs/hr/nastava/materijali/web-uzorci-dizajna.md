@@ -1,12 +1,12 @@
 ---
 marp: true
+theme: default
+class: default
+paginate: true
 author: Vedran Miletić
 title: Uzorci dizajna u web aplikacijama. Uzorci model-pogled-*
 description: Razvoj web aplikacija i usluga
 keywords: razvoj web aplikacija usluga
-theme: default
-class: _invert
-paginate: true
 ---
 
 # Uzorci dizajna u web aplikacijama. Uzorci model-pogled-*
