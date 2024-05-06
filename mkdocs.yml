@@ -466,6 +466,7 @@ nav:
               - Window sampling: en/tutorials/gromacs/5-umbrella/index.md
               - Test particle insertion: en/tutorials/gromacs/6-tpi/index.md
           - Bura HPC: en/tutorials/bura-hpc.md
+          - CMake - Cross-supercomputer Make: en/tutorials/cmake-cross-supercomputer-make.md
           - Zettlr: en/tutorials/zettlr.md
       - Blog:
           - Latest posts: en/blog/index.md
