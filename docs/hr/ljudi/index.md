@@ -30,7 +30,7 @@ author: Vedran Miletić
 - [Luka Ljubojević](https://lukaljubojevic.online/)
 
 !!! tip
-    Zainteresirani studenti [nam se mogu javiti](index.md#kako-se-ukljuciti).
+    Zainteresirani studenti [nam se mogu javiti](kako-se-ukljuciti.md).
 
 ## Bivše osoblje
 

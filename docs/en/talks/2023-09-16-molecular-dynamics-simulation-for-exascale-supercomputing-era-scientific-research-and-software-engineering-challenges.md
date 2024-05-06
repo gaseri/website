@@ -69,7 +69,7 @@ Image source: [Wikim. Comm. File:FIDIT-logo.svg](https://commons.wikimedia.org/w
 
 - Prof. Dr. [Branko Mikac](https://www.fer.unizg.hr/branko.mikac)'s optical network simulation group at FER, Department of Telecommunications
 - What to do after finishing the Ph.D. thesis? 🤔
-    - [NVIDIA CUDA Teaching Center](../../hr/partnerstva-i-suradnje.md#obrazovni-centar-za-grafičke-procesore-gpu-education-center-bivši-cuda-nastavni-centar-cuda-teaching-center) (later: GPU Education Center)
+    - [NVIDIA CUDA Teaching Center](../../hr/partnerstva-i-suradnje.md#obrazovni-centar-za-graficke-procesore-gpu-education-center-bivsi-cuda-nastavni-centar-cuda-teaching-center) (later: GPU Education Center)
     - research in late [Prof. Željko Svedružić](https://svedruziclab.github.io/principal-investigator.html)’s Biomolecular Structure and Function Group and Group (BioSFGroup)
 - postdoc in [Prof. Frauke Gräter](https://www.h-its.org/people/prof-dr-frauke-grater/)'s Molecular Biomechanics (MBM) group at Heidelberg Institute for Theoretical Studies (HITS)
     - collaboration with GROMACS molecular dynamics simulation software developers from KTH, MPI-NAT, UMich, CU, and others

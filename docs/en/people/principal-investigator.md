@@ -73,7 +73,7 @@ Finally, I stand for individual freedom which is constantly under threat from pe
 
 ## Past projects
 
-- [Development of the Code Optimization online course for YUFE virtual campus](../../hr/istrazivanje-i-razvoj.md#razvoj-online-kolegija-optimizacija-programskog-koda-code-optimization-na-sveucilistu-u-rijeci-u-akademskoj-20202021-i-20212022-godini), funded by the [University of Rijeka](https://uniri.hr/), timeframe 2020–2022
+- [Development of the Code Optimization online course for YUFE virtual campus](../../hr/istrazivanje-i-razvoj.md#razvoj-online-kolegija-optimizacija-programskog-koda-code-optimization-na-sveucilistu-u-rijeci-u-akademskim-godinama-20202021-i-20212022), funded by the [University of Rijeka](https://uniri.hr/), timeframe 2020–2022
 - [Modernization, modularization, and active maintenance of RxDock, a fast, versatile, and open-source program for docking ligands to proteins and nucleic acids](https://rxdock.gitlab.io/), funded by [RxTx Research](https://rxtxresearch.github.io/), timeframe 2019–2022
 - [Biochemistry on a supercomputer: development of new software, drug-design, and analysis of disease development on molecular level](https://svedruziclab.github.io/research.html#the-development-of-novel-bivalent-mechanism-based-inhibitors-of-membrane-embedded-protease-gamma-secretase) (reference number uniri-prirod-18-132), funded by the [University of Rijeka](https://uniri.hr/), timeframe 2019–2021
 - [Development of the International Education Program Veleri-OI IoT School](https://iot-school.veleri.hr/), funded by [European Social Fund](https://ec.europa.eu/social/main.jsp?catId=325&langId=en), timeframe 2018–2021
