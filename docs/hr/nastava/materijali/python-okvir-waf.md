@@ -11,7 +11,9 @@ author: Vedran Miletić
 
 Primjeri takvih alata su [Autotools](https://en.wikipedia.org/wiki/GNU_build_system), [CMake](https://en.wikipedia.org/wiki/CMake), [qmake](https://en.wikipedia.org/wiki/Qmake) (dio [Qt-a](https://en.wikipedia.org/wiki/Qt_(software))), [SCons](https://en.wikipedia.org/wiki/SCons), [Waf](https://en.wikipedia.org/wiki/Waf) i drugi.
 
-Autotools i CMake rade tako da generiraju datoteku `./configure`, a ponekad i datoteku `Makefile`. Korisnik ih najčešće pokreće putem prethodno napravljenih skripti za kompajiranje programa, a za samu izgradnju koristi `make`.
+Autotools rade tako da generiraju datoteku `./configure`, a ponekad i datoteku `Makefile`. Korisnik ih najčešće pokreće putem prethodno napravljenih skripti za kompajiranje programa, a za samu izgradnju koristi `make`.
+
+CMake zamjenuje `./configure`, a za izgradnju softvera koristi `make`, `ninja` ili srodan alat.
 
 [Waf](https://waf.io/) je okvir za konfiguraciju, prevođenje i instalaciju aplikacija. Za razliku od Autotools-a i CMake-a, Waf ne koristi `make`.
 
