@@ -147,6 +147,8 @@ Radno okruženje [Visual Studio Code](https://code.visualstudio.com/):
     winget install --id Microsoft.VisualStudioCode -e
     ```
 
+    Nakon ovog koraka zatvorite Terminal pa ga ponovno pokrenite prije nastavka.
+
 === "🐧 Linux"
 
     ``` shell
