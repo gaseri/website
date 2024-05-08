@@ -273,13 +273,24 @@ pa ++ctrl++ i klik na `http://127.0.0.1:8000/` u izlazu naredbe za otvaranje pre
 
 Preduvjeti:
 
+- postavljanje imena i e-maila u konfiguraciji Gita
 - stvaranje SSH ključa
 - dodavanje ključa na GitHub
 - provjera mogućnosti povezivanja
 - stvaranje repozitorija
 - povezivanje repozitorija
+- uključivanje GitHub Pages
 
-### Stvaranje SSH ključa
+---
+
+## Postavljanje imena i e-maila u konfiguraciji Gita
+
+``` shell
+git config --global user.name "Cool Gaser"
+git config --global user.email "cool@gaser.zg"
+```
+
+## Stvaranje SSH ključa
 
 U Terminalu pokrenite naredbu (pripazite da ne prepišete ključ koji već postoji):
 
@@ -291,7 +302,7 @@ ssh-keygen
 
 ## Dodavanje SSH ključa na GitHub
 
-### Na GitHubovom web sjedištu u web pregledniku
+Na GitHubovom web sjedištu u web pregledniku:
 
 1. Klik na svoj avatar u gornjem desnom uglu pa u izborniku s desne strane `Settings` pa u izborniku s lijeve strane `SSH and GPG keys` ili otvorite izravno <https://github.com/settings/keys>.
 1. GPG ključevi nam zasad nisu bitni. Klik na `New SSH key` ili otvorite izravno <https://github.com/settings/ssh/new>, postavite naslov u polju `Title` po želji, `Key type` neka bude `Authentication key` i u `Key` zalijepite izlaz naredbe:
