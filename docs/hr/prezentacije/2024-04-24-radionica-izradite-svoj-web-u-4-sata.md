@@ -76,8 +76,8 @@ Imati na javnom webu postavljeno vlastito sjedište slično onome kakvo ima [Mat
     - Stvaranje projekta web sjedišta (Python, MkDocs)
     - Pisanje web stranica u Markdownu (Visual Studio Code i proširenja markdownlint, Markdown Theme Kit i Word Count)
 - 8\. 5. 2024.
-    - Mogućnosti konfiguracija projekta web sjedišta (Material for MkDocs)
     - Postavljanje sjedišta na web (Git, GitHub, GitHub Pages)
+    - Mogućnosti konfiguracija projekta web sjedišta (Material for MkDocs)
 
 ---
 
@@ -238,7 +238,7 @@ MkDocs i Material for MkDocs:
 
 U (Windows) Terminalu:
 
-```
+``` shell
 mkdocs new mojnoviweb
 ```
 
@@ -246,7 +246,7 @@ U Visual Studio (VS) Code: izbornik `File` pa `Open Folder...` pa pronađite map
 
 U VS Code ugrađenom terminalu:
 
-```
+``` shell
 mkdocs serve
 ```
 
@@ -264,5 +264,152 @@ pa ++ctrl++ i klik na `http://127.0.0.1:8000/` u izlazu naredbe za otvaranje pre
 
 ## Sadržaj drugog dijela radionice
 
-- Mogućnosti konfiguracija projekta web sjedišta (Material for MkDocs)
 - Postavljanje sjedišta na web (Git, GitHub, GitHub Pages)
+- Mogućnosti konfiguracija projekta web sjedišta (Material for MkDocs)
+
+---
+
+## Postavljanje web sjedišta na GitHub
+
+Preduvjeti:
+
+- stvaranje SSH ključa
+- dodavanje ključa na GitHub
+- provjera mogućnosti povezivanja
+- stvaranje repozitorija
+- povezivanje repozitorija
+
+### Stvaranje SSH ključa
+
+U Terminalu pokrenite naredbu (pripazite da ne prepišete ključ koji već postoji):
+
+``` shell
+ssh-keygen
+```
+
+---
+
+## Dodavanje SSH ključa na GitHub
+
+### Na GitHubovom web sjedištu u web pregledniku
+
+1. Klik na svoj avatar u gornjem desnom uglu pa u izborniku s desne strane `Settings` pa u izborniku s lijeve strane `SSH and GPG keys` ili otvorite izravno <https://github.com/settings/keys>.
+1. GPG ključevi nam zasad nisu bitni. Klik na `New SSH key` ili otvorite izravno <https://github.com/settings/ssh/new>, postavite naslov u polju `Title` po želji, `Key type` neka bude `Authentication key` i u `Key` zalijepite izlaz naredbe:
+
+    ``` shell
+    cat .ssh/id_rsa.pub
+    ```
+
+---
+
+## Provjera mogućnosti povezivanja na GitHub
+
+U Terminalu:
+
+``` shell
+ssh -T git@github.com
+```
+
+U slučaju da je sve ispravno konfigurirano:
+
+``` text
+Hi coolgaser! You've successfully authenticated,
+but GitHub does not provide shell access.
+```
+
+---
+
+## Stvaranje repozitorija web sjedišta na GitHubu
+
+Klik na `+` gore desno pa `New repository` ili otvorite izravno <https://github.com/new>. Ime u polju `Repository name` postavite da bude oblika `vasekorisnickoime.github.io`, pri čemu na mjesto `vasekorisnickoime` umetnite svoje korisničko ime (npr. `coolgaser`).
+
+Repozitorij neka bude javan (`Public`), a pod `Initialize this repository:` ne uključujte ništa (ni `README`, ni `.gitignore`, ni licencu).
+
+---
+
+## Stvaranje lokalnog repozitorija i povezivanje s repozitorijem na GitHubu
+
+U VS Code terminalu *nakon otvaranja projekta* `mojnoviweb`:
+
+1. stvaranje lokalnog repozitorija:
+
+    ``` shell
+    git init
+    git add .
+    git commit -m "first commit"
+    git branch -M main
+    ```
+
+1. povezivanje s repozitorijem na GitHubu:
+
+    ``` shell
+    git remote add origin git@github.com:vasekorisnickoime/vasekorisnickoime.github.io.git
+    git push -u origin main 
+    ```
+
+1. priprema web sjedišta za prvo postavljanje
+
+    ``` shell
+    mkdocs gh-deploy
+    ```
+
+---
+
+## Uključivanje GitHub Pages
+
+1. Na stranici repozitorija odaberite karticu `Settings` pa u izborniku s lijeve strane `Pages`. Pod `Build and deployment`:
+
+    1. `Source` postavite na `Deploy from a branch`.
+    1. `Branch` postavite na `gh-pages` i zatim prisnite gumb `Save`.
+
+1. (Uočite da postoji i odjeljak `Custom domain`.)
+1. Otvorite u web pregledniku adresu:
+
+    ``` text
+    https://vasekorisnickoime.github.io/
+    ```
+
+---
+
+## Postavke značajki web sjedišta
+
+- [Boje](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/)
+- [Oblici pisma](https://squidfunk.github.io/mkdocs-material/setup/changing-the-fonts/)
+- [Jezik](https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/)
+- [Pretraga](https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search/)
+- [Zaglavlje](https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-header/)
+- [Podnožje](https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/)
+- [Oznake](https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/)
+
+---
+
+## Postavke značajki web sjedišta (nast.)
+
+- [Blog](https://squidfunk.github.io/mkdocs-material/setup/setting-up-a-blog/)
+- [Slike](https://squidfunk.github.io/mkdocs-material/reference/images/)
+- [Tablice](https://squidfunk.github.io/mkdocs-material/reference/data-tables/)
+- [Fusnote](https://squidfunk.github.io/mkdocs-material/reference/footnotes/)
+- [Matematika](https://squidfunk.github.io/mkdocs-material/reference/math/)
+- [Blokovi izvornog koda](https://squidfunk.github.io/mkdocs-material/reference/code-blocks/)
+- [Dijagrami](https://squidfunk.github.io/mkdocs-material/reference/diagrams/)
+
+---
+
+## Za one koji žele znati više
+
+- [Ikone](https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/)
+- [Navigacija](https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/)
+- [Analitika](https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-analytics/)
+- [Kartice za društvene mreže](https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards/)
+- [Povezivanje repozitorija](https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/)
+- [Komentari](https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/)
+- [Proširenja](https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/)
+- [Rešetke](https://squidfunk.github.io/mkdocs-material/reference/grids/)
+- [Opisi](https://squidfunk.github.io/mkdocs-material/reference/tooltips/)
+
+---
+
+## Zahvale
+
+- [Una Pale](https://www.una-pale.from.hr/) i [ostali aktivni članovi Udruge Penkala](https://udruga-penkala.hr/iza-penkale/)
+- [Martin Donath](https://github.com/squidfunk) (autor teme [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)) i čitava zajednica oko [MkDocsa](https://www.mkdocs.org/)
