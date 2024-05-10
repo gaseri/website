@@ -188,8 +188,7 @@ nav:
               - MIPS asembler: hr/nastava/materijali/mips-asembler.md
               - MIPS -- grananje i petlje: hr/nastava/materijali/mips-grananje-i-petlje.md
               - Dokumentiranje programa alatom MkDocs: hr/nastava/materijali/mkdocs-dokumentiranje-programa.md
-              - ? Instalacija i konfiguracija softvera za vježbe iz kolegija Mrežni i mobilni operacijski sustavi te Infrastruktura za podatke velikog obujma
-                : hr/nastava/materijali/mmos-instalacija-softvera-manjaro.md
+              - Instalacija i konfiguracija softvera za vježbe iz kolegija Mrežni i mobilni operacijski sustavi te Infrastruktura za podatke velikog obujma: hr/nastava/materijali/mmos-instalacija-softvera-manjaro.md
               - Osnovni pojmovi mrežnih operacijskih sustava: hr/nastava/materijali/mrezni-os-pojmovi.md
               - Nabavka, kompajliranje i instalacija softvera otvorenog koda: hr/nastava/materijali/nabavka-prevodjenje-instalacija-softvera-otvorenog-koda.md
               - BLAS i LAPACK: hr/nastava/materijali/netlib-blas-lapack.md
