@@ -38,13 +38,14 @@ jobs:
         run: pip install yamllint
       - name: Check MkDocs YAML configuration
         run: yamllint ./mkdocs.yml
+        continue-on-error: true
+      - name: Check Markdown files
+        uses: DavidAnson/markdownlint-cli2-action@v16
+        with:
+          globs: '**/*.md'
+        continue-on-error: true
       - name: Install required packages
         run: pip install -r requirements.txt
-      - name: Setup caching
-        uses: actions/cache@v4
-        with:
-          key: ${{ github.sha }}
-          path: .cache
       - name: Build site (_site directory name is used for Jekyll compatiblity)
         run: mkdocs build --config-file ./mkdocs.yml --strict --site-dir ./_site
         env:

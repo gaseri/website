@@ -1,9 +1,31 @@
 site_name: GASERI
-site_description: Group for Apps and Services on Exascale Research Infrastructure is a research, development, and teaching unit at FIDIT + MedRi.
+site_description: >-
+  Group for Apps and Services on Exascale Research Infrastructure is
+  a research, development, and teaching unit at FIDIT + MedRi.
 site_author: Vedran Miletić
 site_url: https://group.miletic.net/
 
-copyright: Copyright 2011 – 2024, <a href="https://vedran.miletic.net/">Vedran</a> <a href="https://www.miletic.net/">Miletić</a> <i>et <a href="/en/people/">alii</a></i>; contents licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC-BY-NC-ND 4.0</a>, except teaching materials in Croatian under <a href="/hr/nastava/">/hr/nastava/materijali/</a>, teaching materials in English under <a href="/en/teaching/">/en/teaching/materials/</a>, and tutorials in English under <a href="/en/tutorials/gromacs/">/en/tutorials/</a>, which are licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a>. Source code available in <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories">GitHub repository</a> <a href="https://github.com/gaseri/website">gaseri/website</a>. Hosted on <a href="https://pages.github.com/">GitHub Pages</a> and deployed using a <a href="/en/blog/2022-11-01-publishing-material-for-mkdocs-website-to-github-pages-using-custom-actions-workflow/">custom</a> <a href="https://github.com/features/actions">GitHub Action</a>. Reachable as a <a href="https://community.torproject.org/onion-services/">Tor onion service</a> at <a href="http://vcwkbqby652dtqgbtbtr6ouvs6fu5abx5z45dmlug6dl55d6zcadsuqd.onion/">vcwkbqby652dtqgbtbtr6ouvs6fu5abx5z45dmlug6dl55d6zcadsuqd.onion</a>. Infrastructure maintained by <a href="https://noc.miletic.net/">Miletic Family network operations center</a>. <a href="#__consent">Change cookie settings</a>.
+copyright: >-
+  Copyright 2011 – 2024, <a href="https://vedran.miletic.net/">Vedran</a>
+  <a href="https://www.miletic.net/">Miletić</a> <i>et
+  <a href="/en/people/">alii</a></i>; contents licensed under
+  <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC-BY-NC-ND
+  4.0</a>, except teaching materials in Croatian under
+  <a href="/hr/nastava/">/hr/nastava/materijali/</a>, teaching materials in
+  English under <a href="/en/teaching/">/en/teaching/materials/</a>, and
+  tutorials in English under
+  <a href="/en/tutorials/gromacs/">/en/tutorials/</a>, which are licensed under
+  <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a>.
+  Source code available in
+  <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories">GitHub repository</a>
+  <a href="https://github.com/gaseri/website">gaseri/website</a>.
+  Hosted on <a href="https://pages.github.com/">GitHub Pages</a> and deployed
+  using a <a href="/en/blog/2022-11-01-publishing-material-for-mkdocs-website-to-github-pages-using-custom-actions-workflow/">custom</a>
+  <a href="https://github.com/features/actions">GitHub Action</a>.
+  Reachable as a <a href="https://community.torproject.org/onion-services/">Tor onion service</a>
+  at <a href="http://vcwkbqby652dtqgbtbtr6ouvs6fu5abx5z45dmlug6dl55d6zcadsuqd.onion/">vcwkbqby652dtqgbtbtr6ouvs6fu5abx5z45dmlug6dl55d6zcadsuqd.onion</a>.
+  Infrastructure maintained by <a href="https://noc.miletic.net/">Miletic Family network operations center</a>.
+  <a href="#__consent">Change cookie settings</a>.
 
 repo_name: gaseri/website
 repo_url: https://github.com/gaseri/website/
@@ -530,12 +552,18 @@ extra:
         - icon: material/emoticon-sad-outline
           name: This page could be improved
           data: 0
-          note: Thanks for your feedback! Help us improve this page by using our <a href="https://github.com/gaseri/website/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">feedback form</a>.
+          note: >-
+            Thanks for your feedback! Help us improve this page by using our
+            <a href="https://github.com/gaseri/website/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">feedback form</a>.
     provider: google
     property: G-3CSW7LLM5F
   consent:
     title: Cookie consent
-    description: We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our website and whether users find what they're searching for. With your consent, you're helping us to make our website better.
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
   social:
     - icon: fontawesome/brands/telegram
       link: https://t.me/gaseri_org

@@ -1,1 +1,1 @@
-mkdocs-material[recommended, imaging]
+mkdocs-material[recommended,imaging]

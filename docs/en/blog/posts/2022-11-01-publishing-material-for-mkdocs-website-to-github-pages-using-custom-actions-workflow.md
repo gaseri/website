@@ -93,7 +93,7 @@ In this case, since we want a drop-in replacement for Jekyll so that the remaini
 
 The `.github/workflows/mkdocs-gh-pages.yml` file will look like:
 
-``` yaml hl_lines="1-2 7 33-45"
+``` yaml hl_lines="1-2 7 33-52"
 # Sample workflow for building and deploying a MkDocs site to GitHub Pages
 name: Deploy MkDocs with GitHub Pages dependencies preinstalled
 
@@ -130,15 +130,22 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
+      - name: Install yamllint
+        run: pip install yamllint
+      - name: Check MkDocs YAML configuration
+        run: yamllint ./mkdocs.yml
+        continue-on-error: true
+      - name: Check Markdown files
+        uses: DavidAnson/markdownlint-cli2-action@v16
+        with:
+          globs: '**/*.md'
+        continue-on-error: true
       - name: Install required packages
         run: pip install -r requirements.txt
-      - name: Setup caching
-        uses: actions/cache@v4
-        with:
-          key: ${{ github.sha }}
-          path: .cache
       - name: Build site (_site directory name is used for Jekyll compatiblity)
-        run: mkdocs build --config-file ./mkdocs.yml --site-dir ./_site
+        run: mkdocs build --config-file ./mkdocs.yml --strict --site-dir ./_site
+        env:
+          CI: true
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
@@ -155,10 +162,36 @@ jobs:
         uses: actions/deploy-pages@v4
 ```
 
-We can see the mention of the `requirements.txt` file. It should reside in the root of the repository with the contents:
+Two linters are used:
+
+- for `mkdocs.yml`, [yamllint](https://github.com/adrienverge/yamllint) configuration is in the file `.yamllint.yaml`. It should reside in the root of the repository and contain the following:
+
+    ``` yaml
+    extends: default
+
+    rules:
+      document-end:
+        present: false
+      document-start:
+        present: false
+      line-length:
+        level: warning
+        allow-non-breakable-inline-mappings: true
+    ```
+
+- for Markdown files, [markdownlint](https://github.com/DavidAnson/markdownlint) configuration is in the `.markdownlint.yaml`. It should also reside in the root of the repository and contain the following:
+
+    ``` json
+    {
+      "default": true,
+      "MD007": { "indent": 4 }
+    }
+    ```
+
+Finally, we can see the mention of the `requirements.txt` file. You guessed it, it should reside in the root of the repository as well and contain the following:
 
 ``` text
-mkdocs-material[recommended, imaging]
+mkdocs-material[recommended,imaging]
 ```
 
 And that's it! There is no more requirement for the `.nojekyll` file as Jekyll never gets ran in the build process. There is also no more separate `gh-pages` branch that the built files get pushed to, so there is also no more worry whether the site builds over time will add up to the [1 GB soft limit](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github#repository-size-limits).
@@ -176,3 +209,5 @@ Finally, if you want to use a custom domain, having the `CNAME` file in the repo
 **Updated on 2023-10-24:** updated `requirements.txt` to use the [extras](https://peps.python.org/pep-0508/#extras) for the installation of the [optional dependencies](https://squidfunk.github.io/mkdocs-material/plugins/requirements/image-processing/#dependencies).
 
 **Updated on 2023-12-28:** bumped [Actions](https://github.com/actions) versions by rebasing our additions on top of the [latest version](https://github.com/actions/starter-workflows/blob/main/pages/jekyll-gh-pages.yml) of `jekyll-gh-pages.yml` from [Starter Workflows](https://github.com/actions/starter-workflows).
+
+**Updated on 2024-05-12:** added [yamllint](https://github.com/adrienverge/yamllint) and [markdownlint](https://github.com/DavidAnson/markdownlint) steps.
