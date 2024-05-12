@@ -19,9 +19,6 @@ copyright: >-
   Source code available in
   <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories">GitHub repository</a>
   <a href="https://github.com/gaseri/website">gaseri/website</a>.
-  Hosted on <a href="https://pages.github.com/">GitHub Pages</a> and deployed
-  using a <a href="/en/blog/2022-11-01-publishing-material-for-mkdocs-website-to-github-pages-using-custom-actions-workflow/">custom</a>
-  <a href="https://github.com/features/actions">GitHub Action</a>.
   Reachable as a <a href="https://community.torproject.org/onion-services/">Tor onion service</a>
   at <a href="http://vcwkbqby652dtqgbtbtr6ouvs6fu5abx5z45dmlug6dl55d6zcadsuqd.onion/">vcwkbqby652dtqgbtbtr6ouvs6fu5abx5z45dmlug6dl55d6zcadsuqd.onion</a>.
   Infrastructure maintained by <a href="https://noc.miletic.net/">Miletic Family network operations center</a>.

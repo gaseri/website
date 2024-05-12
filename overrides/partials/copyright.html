@@ -1,0 +1,18 @@
+<div class="md-copyright">
+  {% if config.copyright %}
+    <div class="md-copyright__highlight">
+      {{ config.copyright }}
+    </div>
+  {% endif %}
+  {% if not config.extra.generator == false %}
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>. Hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener">
+      GitHub Pages
+    </a> using
+    <a href="/en/blog/2022-11-01-publishing-material-for-mkdocs-website-to-github-pages-using-custom-actions-workflow/">
+      our GitHub Actions workflow for MkDocs
+    </a>
+  {% endif %}
+</div>
