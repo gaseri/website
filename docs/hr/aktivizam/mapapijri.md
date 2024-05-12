@@ -16,6 +16,13 @@ LaTeX u svojih gotovo četiri desetljeća postojanja nije uspio pridobiti većin
 
 Općeniti je cilj skupine Mapapijri je pomoći članovima akademske zajednice i njihovim suradnicima iz industrije da uspješnije koriste mogućnosti Markdowna u svim područjima njegove primjene. Speficičan je cilj pomoći studentima na svim razinama studija da uspješno koriste Markdown u pisanju seminarskih, završnih, diplomskih, doktorskih, znanstvenih i stručnih radova, kao i za izradu postera i prezentacija.
 
+## Aktivnosti
+
+- [Zettlr workshop](../../en/tutorials/zettlr.md)
+- [Korištenje Pandocovog dijalekta Markdowna za pisanje završnih i diplomskih radova](../nastava/radovi/preporuke.md)
+- [Zašto i kako izraditi web sjedište istraživačke grupe (predavanje)](../prezentacije/2023-12-28-zasto-i-kako-izraditi-web-sjediste-istrazivacke-grupe.md)
+- [Izradite svoj web u 4 sata! (radionica)](../prezentacije/2024-04-24-radionica-izradite-svoj-web-u-4-sata.md)
+
 ## Sudionici i njihovi interesi
 
 - [Karlo Babić](https://karlo.observer/) (interesi: [Obsidian](https://obsidian.md/), [Jamstack](https://jamstack.org/), [GitHub Pages](https://pages.github.com/))
