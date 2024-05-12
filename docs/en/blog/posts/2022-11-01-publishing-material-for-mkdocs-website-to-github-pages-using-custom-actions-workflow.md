@@ -164,7 +164,7 @@ jobs:
 
 Two linters are used:
 
-- for `mkdocs.yml`, [yamllint](https://github.com/adrienverge/yamllint) configuration is in the file `.yamllint.yaml`. It should reside in the root of the repository and contain the following:
+- for `mkdocs.yml`, [yamllint](https://github.com/adrienverge/yamllint) configuration is in the `.yamllint.yaml` file. It should reside in the root of the repository and contain the following:
 
     ``` yaml
     extends: default
@@ -179,7 +179,7 @@ Two linters are used:
         allow-non-breakable-inline-mappings: true
     ```
 
-- for Markdown files, [markdownlint](https://github.com/DavidAnson/markdownlint) configuration is in the `.markdownlint.yaml`. It should also reside in the root of the repository and contain the following:
+- for Markdown files, [markdownlint](https://github.com/DavidAnson/markdownlint) configuration is in the `.markdownlint.json` file. It should also reside in the root of the repository and contain the following:
 
     ``` json
     {
@@ -188,7 +188,7 @@ Two linters are used:
     }
     ```
 
-Finally, we can see the mention of the `requirements.txt` file. You guessed it, it should reside in the root of the repository as well and contain the following:
+Finally, we can see the mention of the `requirements.txt` file. You guessed it, it should reside in the root of the repository as well. It should contain the following text:
 
 ``` text
 mkdocs-material[recommended,imaging]
