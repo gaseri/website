@@ -65,6 +65,30 @@ Možemo jasno i nedvosmisleno uočiti sraslost pojma gaser i emojija Cool 😎. 
 
 Uskoro, stvari se rješavaju.
 
+## Zašto se [Matea](../ljudi/index.md#osoblje) na doktoratu bavi ne-kockastim kutijama u simulaciji dinamike biomolekula?
+
+[Svijet je okrugao, a ne kockast.](https://www.mojedete.info/svijet-je-okrugao-a-ne-kockast-emina-hasanbegovic-7-razred/) Stoga i simulacije kretanja nekog dijela (živog) svijeta zahtijevaju podršku za ne-kockaste simulacijske kutije, odnosno riječima pjesnikinje [Nine](https://brainz.center/nina-jerinic-osvojila-drugu-nagradu-na-literarnom-konkursu/) [Jerinić](https://www.osstefandecanski.rs/%D0%B4%D0%B5%D1%87%D1%98%D0%B8-%D0%BB%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%80%D0%BD%D0%B8-%D0%BA%D0%BE%D0%BD%D0%BA%D1%83%D1%80%D1%81-%D1%81%D0%B2%D0%B5%D1%82-%D1%98%D0%B5-%D0%BE%D0%BA%D1%80%D1%83/):
+
+> Isključi internet, bar na nekoliko dana,
+> uživaj u proleću i mirisu jorgovana,
+> posadi kaktus, iako je bockast,
+> svet je okrugao, a ne kockast.
+>
+> Napravi sa drugovima kućicu za ptice,
+> dok šetaš kraj reke, nahrani ribice,
+> popni se na brdo, vikni na sav glas,
+> svet je okrugao, a ne kockast.
+>
+> Zasadi drvo jer kiseonik daje,
+> nek dečija igra u prirodi traje,
+> ne diraj ježa jer i on je bockast,
+> svet je okrugao, a ne kockast.
+>
+> I ne zaboravi, zemlja je okrugla,
+> pored sebe uvek imaj pravog druga,
+> telefon ne oseća, mirise ne širi,
+> u okruglom svetu najlepše se živi.
+
 ## Zašto je web sjedište grupe tako često ažurirano, a u nastavnim materijalima na predmetu X unutar teme Y nedostaje odjeljak Z koji je zastupljen na predavanjima/vježbama?
 
 Ako smatrate da je u nastavnim materijalima potrebno neke sadržaje proširiti ili drugačije predstaviti, slobodno pretvorite vlastite bilješke s predavanja i/ili vježbi u [format Markdown](../povijest.md#markdown-mkdocs-i-material) i [pošaljite nam prijedlog promjena](../ljudi/kako-se-ukljuciti.md#ukljucivanje-u-nastavni-rad).
