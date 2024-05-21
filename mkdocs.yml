@@ -597,6 +597,7 @@ markdown_extensions:
   - attr_list
   - def_list
   - footnotes
+  - md_in_html
   - meta
   - pymdownx.arithmatex:
       generic: true
