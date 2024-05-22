@@ -85,8 +85,7 @@ The highlighted lines are Jekyll-specific. We can easily replace these lines wit
 - the installation, using [pip](https://pip.pypa.io/) and the `requirements.txt` file, of
     - MkDocs with [extra internationalization support](https://www.mkdocs.org/user-guide/localizing-your-theme/#installation),
     - the [Material for MkDocs framework](https://squidfunk.github.io/mkdocs-material/getting-started/#installation),
-    - the optional dependencies required for the [generation of social cards](https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards/), that is, [CairoSVG](https://cairosvg.org/), which will pull [Pillow](https://python-pillow.org/) as a dependency,
-- the optional caching setup for the downloaded fonts and the generated social cards, and, finally,
+    - the optional dependencies required for the [generation of social cards](https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards/), that is, [CairoSVG](https://cairosvg.org/), which will pull [Pillow](https://python-pillow.org/) as a dependency, and, finally,
 - the MkDocs site build command.
 
 In this case, since we want a drop-in replacement for Jekyll so that the remaining commands work perfectly, we will perform the MkDocs build using the `mkdocs.yml` configuration file in the current directory and write the built site output files into the `_site` directory.
@@ -210,4 +209,4 @@ Finally, if you want to use a custom domain, having the `CNAME` file in the repo
 
 **Updated on 2023-12-28:** bumped [Actions](https://github.com/actions) versions by rebasing our additions on top of the [latest version](https://github.com/actions/starter-workflows/blob/main/pages/jekyll-gh-pages.yml) of `jekyll-gh-pages.yml` from [Starter Workflows](https://github.com/actions/starter-workflows).
 
-**Updated on 2024-05-12:** added [yamllint](https://github.com/adrienverge/yamllint) and [markdownlint](https://github.com/DavidAnson/markdownlint) steps.
+**Updated on 2024-05-12:** added [yamllint](https://github.com/adrienverge/yamllint) and [markdownlint](https://github.com/DavidAnson/markdownlint) steps. Removed caching as (Material for) MkDocs version is not pinned and therefore the site builds are not reproducible.
