@@ -29,6 +29,8 @@ We use [Mozilla](https://www.mozilla.org/) [Firefox](https://www.mozilla.org/fir
 
 We use [Visual Studio Code](https://code.visualstudio.com/) for writing and editing [Markdown](https://code.visualstudio.com/docs/languages/markdown) (to be processed by [MkDocs](https://www.mkdocs.org/) or [Pandoc](https://pandoc.org/)) and [LaTeX](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop), [C++ development](https://code.visualstudio.com/docs/languages/cpp), and [Python development](https://code.visualstudio.com/docs/languages/python).
 
+We use [Syncthing](https://syncthing.net/) for file synchronization and sharing.
+
 ## Servers
 
 - [SuperMicro A+ Server 1013S-MTR](https://www.supermicro.com/en/Aplus/system/1U/1013/AS-1013S-MTR.cfm) with [AMD EPYC 7402P](https://www.amd.com/en/products/cpu/amd-epyc-7402P) running [Proxmox VE](https://www.proxmox.com/proxmox-ve) with several virtual machines, used for compute
@@ -50,3 +52,5 @@ We plan to switch the storage server to [TrueNAS SCALE](https://www.truenas.com/
 **Updated on 2023-08-24:** replaced [cloud](https://en.wikipedia.org/wiki/Cloud_computing) with [on-prem](https://en.wikipedia.org/wiki/On-premises_software).
 
 **Updated on 2023-11-12:** listed [AUR](https://en.wikipedia.org/wiki/Arch_Linux#Arch_User_Repository_(AUR)) build server.
+
+**Updated on 2024-05-28:** listed [Syncthing](https://syncthing.net/).
