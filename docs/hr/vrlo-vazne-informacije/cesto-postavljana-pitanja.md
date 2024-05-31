@@ -146,6 +146,17 @@ Oko ovog pitanja u [javnom](https://sh.wikipedia.org/wiki/Dizela%C5%A1i) [diskur
 
 GASERI ne nude pristup putem [SSH](https://www.openssh.com/), već samo putem [SSHH..](https://youtu.be/Fs96WfdspEk).
 
+Za SSH uvijek možete koristiti odrediše `localhost`:
+
+``` shell
+$ ssh localhost
+$ hostname
+kristina
+$ cat /etc/hosts
+# Standard host addresses
+127.0.0.1  localhost kristina
+```
+
 ## Koristite li onda barem SSH klijent?
 
 Naravno. Kao dokaz prilažemo sadržaj naše konfiguracijske datoteke `.ssh/config`:
