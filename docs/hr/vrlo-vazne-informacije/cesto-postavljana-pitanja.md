@@ -37,6 +37,10 @@ Za one koji traže znanstveniji pristup problemu ili preferiraju pisani materija
 - kao sažetak u [knjizi sažetaka](https://hdpl.hdpl.hr/abstracts) [Jezik u digitalnom okruženju, knjiga sažetaka s XXXV. međunarodnog znanstvenog skupa](https://www.hdpl.hr/upload/94623a870a857836d7fb2bfc684d1b1d7bb494cc.pdf#page=120) Hrvatskoga društva za primijenjenu lingvistiku, 2021. i
 - kao cjeloviti rad u [zborniku](https://hdpl.hdpl.hr/proceeding) [Jezik u digitalnom okruženju, zbornik radova s međunarodnoga znanstvenog skupa](https://www.hdpl.hr/upload/1ad89034ae67554d9e0ff7b298ac93597e54c446.pdf#page=118) Hrvatskoga društva za primijenjenu lingvistiku, 2022.
 
+## Ide li GAS NA MAX?
+
+Svakako, [naš voditelj GASer](../ljudi/index.md#osoblje) je na dopustu zbog [usavršavanja NA MAX Plancku](https://www.mpcdf.mpg.de/services/application-support).
+
 ## Kako postati dio grupe GASERI?
 
 To je nešto manje važna informacija od one u odgovoru na prethodno pitanje pa se nalazi [na posebnoj stranici](../ljudi/kako-se-ukljuciti.md).
