@@ -39,7 +39,7 @@ Za one koji traže znanstveniji pristup problemu ili preferiraju pisani materija
 
 ## Ide li GAS NA MAX?
 
-Svakako, [naš voditelj GASer](../ljudi/index.md#osoblje) je na dopustu zbog [usavršavanja NA MAX Plancku](https://www.mpcdf.mpg.de/services/application-support).
+Svakako, [naš voditelj](../ljudi/index.md#osoblje) [GASer docent](hijerarhija-gasera.md#gaser-docent) je na dopustu zbog [usavršavanja NA MAX Plancku](https://www.mpcdf.mpg.de/services/application-support).
 
 ## Kako postati dio grupe GASERI?
 
