@@ -1280,7 +1280,7 @@ Oba datotečna sustava stavljaju naglasak na skaliranje, te na popravak nedostat
 1. Dawidek, Pawel Jakub, and Marshall Kirk McKusick. "porting the Solaris ZFS file system to the FreeBSD operating system." ; login:: the magazine of USENIX & SAGE 32.3 (2007): 19-24.
 1. [btrfs Wiki](https://btrfs.wiki.kernel.org/)
 1. Rodeh, Ohad, Josef Bacik, and Chris Mason. "BTRFS: The Linux B-tree filesystem." ACM Transactions on Storage (TOS) 9.3 (2013): 9.
-1. Heger, Dominique A.. "Workload Dependent Performance Evaluation of the Btrfs and ZFS Filesystems." CMG (2009).
+1. Heger, Dominique A. "Workload Dependent Performance Evaluation of the Btrfs and ZFS Filesystems." CMG (2009).
 
 ### Intelektualno vlasništvo nad softverom: licence i patenti (Intellectual property rights in software: licences and patents) {[OS1](../kolegiji/OS1.md)} [Milan Petrović]
 

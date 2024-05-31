@@ -192,7 +192,7 @@ $ docker run my-httpd:2.4-1
 [Fri May 08 23:33:45.732472 2020] [core:notice] [pid 1:tid 139777349747840] AH00094: Command line: 'httpd -D FOREGROUND'
 ```
 
-Uočimo kako upozorenja da `ServerName` nije postavljen više nema u izlazu. Kontejner možemo zaustaviti kao i ranije..
+Uočimo kako upozorenja da `ServerName` nije postavljen više nema u izlazu. Kontejner možemo zaustaviti kao i ranije.
 
 Samo ćemo spomenuti da postoji konfiguracijska naredba `ServerRoot` ([dokumentacija](https://httpd.apache.org/docs/2.4/mod/core.html#serverroot)) koja navodi putanju do konfiguracijskih datoteka (od kojih jednu upravo uređujemo) i log datoteka u kojima Apache bilježi zahtjeve koje je dobio i odgovore na njih. Tu putanju nećemo mijenjati.
 

@@ -144,7 +144,7 @@ Oko ovog pitanja u [javnom](https://sh.wikipedia.org/wiki/Dizela%C5%A1i) [diskur
 
 ## Nudite li pristup vašim poslužiteljima putem SSH?
 
-GASERI ne nude pristup putem [SSH](https://www.openssh.com/), već samo putem [SSHH..](https://youtu.be/Fs96WfdspEk)
+GASERI ne nude pristup putem [SSH](https://www.openssh.com/), već samo putem [SSHH..](https://youtu.be/Fs96WfdspEk).
 
 ## Koristite li onda barem SSH klijent?
 
