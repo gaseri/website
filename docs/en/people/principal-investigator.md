@@ -1224,7 +1224,7 @@ Description: [home page](https://we.phorge.it//), [Wikipedia page](https://en.wi
 
 Commits listed from [repository on Phorge](https://we.phorge.it/source/phorge/):
 
-- commit [`f8ffa393c4427f8b9026075e6dc490990a12df12`](https://gitlab.com/rxdock/rxdock/-/commit/569f2fe6df5401ce9b8d6780a487e570030e9a2a): Added cross-platform default fonts
+- commit [`f8ffa393c4427f8b9026075e6dc490990a12df12`](https://we.phorge.it/rPf8ffa393c4427f8b9026075e6dc490990a12df12): Added cross-platform default fonts
 
     ??? note
         Summary:
