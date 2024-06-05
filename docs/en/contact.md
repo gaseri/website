@@ -4,7 +4,8 @@ author: Vedran Miletić
 
 # Contact
 
-(This page is also available [in Croatian](../hr/kontakt.md).)
+!!! info
+    This page is also available [in Croatian](../hr/kontakt.md).
 
 ## E-mail
 

@@ -4,7 +4,8 @@ author: Vedran Miletić
 
 # People
 
-(This page is also available [in Croatian](../../hr/ljudi/index.md).)
+!!! info
+    This page is also available [in Croatian](../../hr/ljudi/index.md).
 
 ## Staff
 

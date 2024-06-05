@@ -638,3 +638,4 @@ plugins:
         as_creation: date
       categories:
         - tags
+  - meta-descriptions

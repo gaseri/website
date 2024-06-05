@@ -4,7 +4,8 @@ author: Vedran Miletić, Domagoj Margan, Andrea Toić
 
 # Vrlo važne informacije
 
-(Ova je stranica također dostupna [na engleskom jeziku](../../en/very-important-information.md).)
+!!! info
+    Ova je stranica također dostupna [na engleskom jeziku](../../en/very-important-information.md).
 
 ## Poezija
 

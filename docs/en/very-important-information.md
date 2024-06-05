@@ -4,7 +4,8 @@ author: Vedran Miletić
 
 # Very important information
 
-(This page is also available [in Croatian](../hr/vrlo-vazne-informacije/index.md).)
+!!! info
+    This page is also available [in Croatian](../hr/vrlo-vazne-informacije/index.md).
 
 ## Poetry
 

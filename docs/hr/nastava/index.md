@@ -4,7 +4,8 @@ author: Vedran Miletić
 
 # O nastavi
 
-(Ova je stranica također dostupna [na engleskom jeziku](../../en/teaching/index.md).)
+!!! info
+    Ova je stranica također dostupna [na engleskom jeziku](../../en/teaching/index.md).
 
 Nastavni materijali kolegija su na hrvatskom jeziku, osim [Optimizacije programskog koda](../../en/teaching/courses/CO.md) za studente iz [YUFE](https://uniri.hr/o-sveucilistu/yufe/) na engleskom. Planiramo u budućnosti ponuditi i druge nastavne materijale na engleskom jeziku, primarno za [dolazne Erasmus+ studente](https://uniri.hr/o-sveucilistu/medunarodna-suradnja-i-erasmus/mobilnost-studenata/).
 

@@ -4,7 +4,8 @@ author: Vedran Miletić
 
 # Kontakt
 
-(Ova je stranica također dostupna [na engleskom jeziku](../en/contact.md).)
+!!! info
+    Ova je stranica također dostupna [na engleskom jeziku](../en/contact.md).
 
 ## E-pošta
 

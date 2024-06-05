@@ -4,7 +4,8 @@ author: Vedran Miletić
 
 # Ljudi
 
-(Ova je stranica također dostupna [na engleskom jeziku](../../en/people/index.md).)
+!!! info
+    Ova je stranica također dostupna [na engleskom jeziku](../../en/people/index.md).
 
 ## Osoblje
 
