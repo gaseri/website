@@ -38,9 +38,10 @@ author: Vedran Miletić
     - [Darwin](https://support.apple.com/kb/TA25634), koji je srž otvorenog koda na kojoj je izgrađen vlasnički operacijski sustav Apple macOS
     - [Whatsapp](https://blog.whatsapp.com/1-million-is-so-2011) ([prije](https://blog.whatsapp.com/on-e-millio-n) [kupnje od strane Facebooka](https://investor.fb.com/investor-news/press-release-details/2014/Facebook-to-Acquire-WhatsApp/default.aspx))
 
-- globalno je manje popularan od Linuxa i Apple macOS-a
+- ukupno je manje popularan od Linuxa i Apple macOS-a, ali je vrlo korišten u pojedinim nišama
 
     - vrlo popularan kod pojedinih pružatelja internetskih usluga (vrlo rano dobio podršku za IPv6 zahvaljujući projektu [KAME](https://www.kame.net/)) i uređajima za pohranu podataka (uglavnom koriste derivat FreeBSD-a [TrueNAS](https://www.truenas.com/))
+    - korišten u specijaliziranim akademskim i industrijskim istraživanjima, npr. projekt [CHERI](https://freebsdfoundation.org/blog/freebsd-for-research-cheri-morello/) s [Odjela za računarstvo i tehnologiju](https://www.cst.cam.ac.uk/about) [Sveučilišta u Cambridgeu](https://www.cam.ac.uk/) u suradnji s tvrtkom [Arm](https://www.arm.com/architecture/cpu/morello), koji razvija sigurnosne tehnike u hardveru i sustavskom softveru
     - marginalan kod superračunala ([Brooks Davis - FreeBSD, Building a Computing Cluster](https://youtu.be/BpsRb9fJ4Ds) i [Brooks Davis: Porting HPC Tools to FreeBSD](https://youtu.be/BpsRb9fJ4Ds))
     - šaljiva predavanja na temu relativne (ne)popularnosti FreeBSD-a: [BSD is Dying, Jason Dixon, NYCBSDCon 2007](https://youtu.be/g7tvI6JCXD0) i [Jason Dixon Closing Remarks of DCBSDCon - BSD is Still Dying](https://youtu.be/YzXLwhkBe80), parodija na ["Netcraft now confirms: \*BSD is dying](https://everything2.com/title/BSD+is+dying), ima priču o povijesti Unixa od početka do doba FreeBSD-a
 
