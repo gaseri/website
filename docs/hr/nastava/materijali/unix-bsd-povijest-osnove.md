@@ -21,6 +21,14 @@ author: Vedran Miletić
 - 1989\. godine Keith Bostic predlaže zamjenu čitavog preostalog AT&T-evog koda otvorenim kodom i do 1991. ostaje šest datoteka za zamjenu
 - 1992\. [William](https://en.wikipedia.org/wiki/William_Jolitz) i [Lynne Jolitz](https://en.wikipedia.org/wiki/Lynne_Jolitz) pišu zamjene za šest datoteka, a na temelju njihovog rada od 1993. nadalje razvija se [FreeBSD](https://en.wikipedia.org/wiki/FreeBSD)
 - 1992\. također ide tužba [UNIX System Laboratories, Inc. (USL) v. Berkeley Software Design, Inc. (BSDi)](https://en.wikipedia.org/wiki/UNIX_System_Laboratories,_Inc._v._Berkeley_Software_Design,_Inc.) ([dokumentacija](https://www.bell-labs.com/usr/dmr/www/bsdi/bsdisuit.html)) koja nakon protutužbe od strane Sveučilišta u Berkeleyu i preuzimanja USL-a od strane Novella 1993. godine završava dogovorom koji paše obje strane (specijalno, Sveučilište u Berkeleyu ima autorsko pravo nad kodom na kojem se temelji FreeBSD)
+- početnu motivaciju za pretvorbu akademskog projekta Berkeleyevog Unixa u projekt slobodnog softvera otvorenog koda dobro opisuje danski programski inženjer [Poul-Henning Kamp](https://en.wikipedia.org/wiki/Poul-Henning_Kamp), jedan od utjecajnijih razvijatelja FreeBSD-a, u članku [Free and Open Source Software–and Other Market Failures](https://cacm.acm.org/practice/free-and-open-source-software-and-other-market-failures/):
+
+    > When the Unix revolution arrived in the mid- to late-1980s, everybody would try to sell you their “open Unix computer,” but everything from their product catalog to the sales force’s behavior screamed “vendor lock-in.” And that was on top of their products being pretty bad and overpriced in the first place, and everybody actively and deliberately trying to be incompatible with everybody else.
+    >
+    > (...)
+    >
+    > Out of that utter market failure came Minix, (Net/Free/Open)BSD, and Linux, at a median year of approximately 1991. I can absolutely guarantee that if we had been able to buy a reasonably priced and solid Unix for our 32-bit PCs—no strings attached—nobody would be running FreeBSD or Linux today, except possibly as an obscure hobby.
+
 - danas je osobito značajan zbog vrlo malo licenčnih ograničenja kod korištenja unutar vlasničkih hardvera i softvera, na njemu se temelje
 
     - [Netflix Open Connect](https://openconnect.netflix.com/en/appliances/#software)
