@@ -440,6 +440,9 @@ nav:
   - 🇺🇸 Contents in English:
       - About the group: en/index.md
       - Introductory presentation: en/introductory-presentation.md
+      - Blog:
+          - Latest posts: en/blog/index.md
+          - Tags: en/blog/tags.md
       - People:
           - People index: en/people/index.md
           - Principal investigator: en/people/principal-investigator.md
@@ -487,9 +490,6 @@ nav:
           - Bura HPC: en/tutorials/bura-hpc.md
           - CMake - Cross-supercomputer Make: en/tutorials/cmake-cross-supercomputer-make.md
           - Zettlr: en/tutorials/zettlr.md
-      - Blog:
-          - Latest posts: en/blog/index.md
-          - Tags: en/blog/tags.md
       - Very important information: en/very-important-information.md
 
 theme:
