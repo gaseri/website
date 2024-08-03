@@ -82,7 +82,7 @@ Image source: [Wikim. Comm. File:FIDIT-logo.svg](https://commons.wikimedia.org/w
     - also called high performance computer (HPC)
 - measure: **floating-point operations per second** (FLOPS)
     - PC -> teraFLOPS; Bura -> 100 teraFLOPS, Supek -> 1,2 petaFLOPS
-    - modern HPC -> 1 do 10 petaFLOPS, top 1194 petaFLOPS (~1,2 exaFLOPS)
+    - modern HPC -> 1 to 10 petaFLOPS, top 1194 petaFLOPS (~1,2 exaFLOPS)
     - future HPC -> 2+ exaFLOPS
 - nearly exponential growth of FLOPS over time (source: [Wikimedia Commons File:Supercomputers-history.svg](https://commons.wikimedia.org/wiki/File:Supercomputers-history.svg))
 
@@ -259,7 +259,7 @@ Image source: [Wikimedia Commons File:Medicinski fakultet Rijeka 0710 1.jpg](htt
 
 ## Affiliation changes (2/2)
 
-- several days ago, I joined [Max Planck](https://www.mpg.de) [Computing and Data Facility](https://www.mpcdf.mpg.de/) in Garching near Munich, Germany as a part of [HPC Application Support Division](https://www.mpcdf.mpg.de/services/application-support)
+- several days ago, I joined [Max Planck](https://www.mpg.de/) [Computing and Data Facility](https://www.mpcdf.mpg.de/) in Garching near Munich, Germany as a part of [HPC Application Support Division](https://www.mpcdf.mpg.de/services/application-support)
 - focus areas:
     - improving functionality and performance of lambda dynamics (free energy calculations)
     - developing fast multipole method implementation
