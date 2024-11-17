@@ -69,8 +69,8 @@ Some of these instructions have an unsigned version, which can be obtained by ap
 | `bgtz` | `bgtz, Rsrc1, label` | 000111 | Conditionally branch on the instruction at the label if contents of register `Rsrc1 > 0` |
 | `blez` | `blez, Rsrc1, label` | 000110 | Conditionally branch on the instruction at the label if contents of register `Rsrc1 <= 0` |
 | `bltz` | `bltz, Rsrc1, label` | pseudoinstruction | Conditionally branch on the instruction at the label if contents of register `Rsrc1 < 0` |
-| `jal` | `jal label` | 000011 | Unconditionally jump to the instruction at the label. Save the adress of the next instruction in register `$ra` |
-| `jr` | `jr Rsrc` | 001000 | Unconditionally jump to the instruction whoose adress is in register `Rsrc` |
+| `jal` | `jal label` | 000011 | Unconditionally jump to the instruction at the label. Save the address of the next instruction in register `$ra` |
+| `jr` | `jr Rsrc` | 001000 | Unconditionally jump to the instruction whoose address is in register `Rsrc` |
 
 ## Instructions for Loading and Saving Values
 
@@ -78,10 +78,10 @@ Some of these instructions have an unsigned version, which can be obtained by ap
 | ----------- | ------ | ------ | ----------- |
 | `move` | `move Rdest, Rsrc` | pseudoinstruction | Move the contents of `Rsrc` to `Rdest` |
 | `li` | `li Rdest, imm` | pseudoinstruction | Move the immediate value `imm` into register `Rdest` |
-| `la` | `la Rdest, addr` | pseudoinstruction | Load computed adress, not the contents of location, into register `Rdest` |
-| `lb` | `lb Rdest, addr` | 100000 | Load the byte at adress into register `Rdest` |
-| `lh` | `lh Rdest, addr` | 100001 | Load the 16-bit quantity (halfword) at adress into register `Rdest` |
-| `lw` | `lw Rdest, addr` | 100011 | Load the 32-bit quantity (word) at adress into register `Rdest` |
+| `la` | `la Rdest, addr` | pseudoinstruction | Load computed address, not the contents of location, into register `Rdest` |
+| `lb` | `lb Rdest, addr` | 100000 | Load the byte at address into register `Rdest` |
+| `lh` | `lh Rdest, addr` | 100001 | Load the 16-bit quantity (halfword) at address into register `Rdest` |
+| `lw` | `lw Rdest, addr` | 100011 | Load the 32-bit quantity (word) at address into register `Rdest` |
 | `sb` | `sb Rsrc, addr` | 101000 | Store the low byte from register `Rsrc` at `addr` |
 | `sh` | `sh Rsrc, addr` | 101001 | Store the low halfword from register `Rsrc` at `addr` |
 | `sw` | `sw Rsrc, addr` | 101011 | Store the word from register `Rsrc` at `addr` |
