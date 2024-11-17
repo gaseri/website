@@ -131,7 +131,7 @@ Some of these instructions have an unsigned version, which can be obtained by ap
 | ---- | ----------- |
 | .align | Align next data item on specified byte boundary |
 | .ascii | Store the string in the Data segment (without NULL terminator) |
-| .asciiz | Store the string in the Data segment and add NULL terminato |
+| .asciiz | Store the string in the Data segment and add NULL terminator |
 | .byte | Store listed values as 8 bit types |
 | .data | Subsequent items stored in Data segment at next available address |
 | .double | Store the listed values as double precision floating point |
