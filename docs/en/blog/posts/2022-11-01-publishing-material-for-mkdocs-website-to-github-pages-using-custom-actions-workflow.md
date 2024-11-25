@@ -135,7 +135,7 @@ jobs:
         run: yamllint ./mkdocs.yml
         continue-on-error: true
       - name: Check Markdown files
-        uses: DavidAnson/markdownlint-cli2-action@v17
+        uses: DavidAnson/markdownlint-cli2-action@v18
         with:
           globs: '**/*.md'
         continue-on-error: true
