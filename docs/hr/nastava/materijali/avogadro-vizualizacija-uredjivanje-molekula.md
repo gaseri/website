@@ -9,6 +9,7 @@ author: Matea Turalija, Irena Hartmann, Vedran Miletić
 Najnovija verzija alata, [Avogadro 2](https://www.openchemistry.org/projects/avogadro2/), predstavlja značajna poboljšanja u odnosu na [originalni Avogadro](https://avogadro.cc/). Umjesto nadogradnje postojećeg sustava, cijeli je kod nanovo napisan kako bi se riješili problemi vezani uz rad s većim skupovima podataka, nesavršenim korisničkim sučeljem i ograničenom primjenom.
 
 ![Avogadro 2](https://www.openchemistry.org/wp-content/uploads/2014/04/Avogadro2_256.png)
+
 Izvor slike: [Avogadro 2 (Open Chemistry)](https://www.openchemistry.org/projects/avogadro2/)
 
 [Modularni dizajn nove verzije](https://www.kitware.com/avogadro-2-and-open-chemistry/) omogućuje lakše korištenje različitih komponenti uz smanjenu međuovisnost s drugim alatima. Iako Avogadro 2 još uvijek ne nudi sve funkcionalnosti originalnog Avogadra, obje verzije mogu se koristiti istovremeno na istom operacijskom sustavu.
