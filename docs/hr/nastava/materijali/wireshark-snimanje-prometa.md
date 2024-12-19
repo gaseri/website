@@ -43,7 +43,7 @@ Hvatanje prometa može, potpuno analogno, biti zaustavljeno odabirom opcije `Sto
 
 Nakon zaustavljanja uhvaćeni promet moguće je spremiti u formatima [pcap](https://en.wikipedia.org/wiki/Pcap) (**p**acket **cap**ture), [pcapng](https://wiki.wireshark.org/Development/PcapNg) (**p**acket **cap**ture **n**ext **g**eneration) i [brojnim drugim](https://wiki.wireshark.org/FileFormatReference). Za osnovne potrebe spremanja uhvaćenog prometa formati pcap i pcapng su jednako dobri.
 
-!!! note
+!!! info
     Format pcap je izvorno razvijen od strane autora tcpdumpa i podržan od strane Wiresharka, a pcapng ga proširuje s dodatnim informacijama o paketima (detaljne informacije o oba formata moguće je pronaći [u repozitoriju pcapng/pcapng na GitHubu](https://github.com/pcapng/pcapng)).
 
 ## Kopiranje podataka o uhvaćenih paketima

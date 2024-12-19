@@ -19,7 +19,7 @@ U ovom dijelu bavit ćemo se primarno konfiguracijskim prozorom usmjerivača.
 
 ## Konfiguracija daemona alata Quagga unutar alata CORE
 
-!!! note
+!!! tip
     [Daemon](https://en.wikipedia.org/wiki/Daemon_(classical_mythology)) (latinska riječ, dolazi od grčke riječi *daimon*) je antički grčki i kasnije rimski pojam koji označava duha voditelja i [nema isto značenje kao pojam demon](https://owencyclops.com/wp-content/uploads/2019/05/web02signed.jpg). Kako su dvije riječi u engleskom jeziku vrlo slične, pojedini projekti slobodnog softvera otvorenog koda koji koriste daemone (na operacijskim sustavima sličnim Unixu daemon je pozadinski proces koji se koristi za implementaciju pojedinih usluga sustava) iskoristili su priliku za šalu s neupućenim korisnicima. Tako i [operacijski sustav FreeBSD](https://www.freebsd.org/) ima svoje daemone koji nude pojedine usluge sustava pa je [odabrao demona kao svoju maskotu](https://www.freebsd.org/art/). Taj odabir je barem jednom kod barem jednog korisnika [izazvao zabrinutost na temu moralne ispravnosti korištenja softvera koji se poistovjećuje s demonom](https://lists.debian.org/debian-project/2017/06/msg00004.html).
 
 [Daemon](https://en.wikipedia.org/wiki/Daemon_(computing)) (engl. *daemon*) je računalni program koji se izvršava kao proces u pozadini bez direktne interaktivne korisničke kontrole. Daemone alata Quagga unutar alata CORE konfiguriramo otvarajem konfiguracijskog prozora usmjerivača, unutar kojeg kliknemo na gumb `Services`. U prvom od ponuđenih stupaca nalazi se popis ponuđenih Quagga daemona; ostali stupci nam za sada nisu bitni. Željeni daemon možemo dovesti u funkciju klikom na njegovo ime, a prozoru za konfiguraciju tog daemona pristupamo klikom na ikonu ključa desno od imena daemona.

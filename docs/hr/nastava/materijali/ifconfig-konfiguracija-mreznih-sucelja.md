@@ -24,7 +24,7 @@ wlan0     Link encap:Ethernet  HWaddr 00:24:d6:0b:61:26
 
 Ifconfig se koristi za manipulaciju mrežnim sučeljima možemo određeno sučelje omogućiti ili onemogućiti za rad, te možemo određenom sučelju dodijeliti željenu IP adresu.
 
-!!! note
+!!! warning
     Alat `ifconfig` zahtijeva administratorske privilegije za manipuliranje postavkama mrežnih sučelja, odnosno ta funkcionalnost dostupna je samo `root` korisniku.
 
 Ukoliko želimo neaktivno sučelje omogućiti za rad (staviti sučelje u aktivno stanje), navodimo naziv sučelja iza kojeg slijedi `up`:

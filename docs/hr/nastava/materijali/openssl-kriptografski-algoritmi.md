@@ -91,7 +91,7 @@ OpenSSL 1.1.1a FIPS  20 Nov 2018
 
     Kada smo svjesni da imamo verziju OpenSSL-a za koju znamo da je ranjiva i na koji način, na nama je da odlučimo hoćemo li je nastaviti koristiti ili ne; može se dogoditi, primjerice, da nam ta ranjivost ne predstavlja problem jer se ona nalazi u implementaciji algoritma koji ne koristimo ili može biti slučaj da se kriptografijom na računalu bavimo isključivo u edukativne svrhe.
 
-!!! note
+!!! tip
     Specijalno, ako koristimo OpenSSL pakiran od strane neke distribucije Linuxa ili drugog operacijskog sustava sličnom Unixu, moguće je da verzija koju imamo uključuje zakrpe poznatih ranjivosti dodane od strane distributera. Štoviše, može se dogoditi da broj verzije sugerira da ranjivosti i dalje postoje, a da to nije slučaj te je potrebno detalje o zakrpanim ranjivostima dodatno provjeriti kod distributer. Primjerice, za Debian se [takve informacije za OpenSSL](https://security-tracker.debian.org/tracker/source-package/openssl) mogu naći u [Security Bug Trackeru](https://security-tracker.debian.org/).
 
 OpenSSL ima mnogo različitih naredbi. Listu postojećih naredbi možemo vidjeti opcijom `help`, čiji ispis započinje standardnim naredbama:

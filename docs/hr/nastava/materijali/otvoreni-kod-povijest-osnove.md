@@ -67,7 +67,7 @@ author: Vedran Miletić, Vanja Slavuj
 - 9\. studenog 2004. Firefox 1.0
 - 2\. srpnja 2005. Firefox ima 100 milijuna preuzimanja
 
-!!! note
+!!! info
     Neki od ovdje navedenih događaja zapisani su u [The Book of Mozilla](https://en.wikipedia.org/wiki/The_Book_of_Mozilla).
 
 ## StarOffice

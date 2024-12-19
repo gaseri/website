@@ -135,7 +135,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 
     **Napomena:** Ovisno o sigurnosnim ograničenjima sustava na kojem radite, obični korisnici ne mogu ni postavljati niceness na nižu vrijednost od one koju su prethodno postavili. Ovaj zadatak je zadan tako da uvijek bude rješiv.
 
-!!! note
+!!! info
     Prema [Wikipediji](https://en.wikipedia.org/wiki/Nice_(Unix)#Etymology):
 
     > The name "nice" comes from the fact that the program's purpose is to modify a process niceness value. The true priority, used to decide how much cpu time to concede to each process, is calculated by the kernel process scheduler from a combination of the different processes niceness values and other data, such as the amount of I/O done by each process.

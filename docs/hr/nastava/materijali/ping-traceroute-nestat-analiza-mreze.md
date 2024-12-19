@@ -438,7 +438,7 @@ Za informacije o ostalim parametrima proučite `man clockdiff`.
 
 `arping` je alat za slanje ARP REQUEST susjedinim domaćinima na mreži. `arping` koristimo navođenjem mrežnog sučelja (parametrom `-I`), te IP adrese domaćina kojem želimo poslati ARP zahtjev.
 
-!!! note
+!!! warning
     Alat `arping` zahtijeva administratorske privilegije, odnosno dostupan je samo `root` korisniku.
 
 Primjerice, želimo li poslati ARP zahtjev domaćinu na adresi 192.168.1.4 s mrežnog sučelja `wlan0`, radimo to na idući način:

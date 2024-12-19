@@ -12,7 +12,7 @@ Naši interesi za potencijalne buduće suradnje navedeni su i opisani na [strani
 
 ![GPU Education Center logo](../images/gpu-education-center-logo.png)
 
-!!! note
+!!! success
     Naš status [Obrazovnog centra za grafičke procesore (bivšeg CUDA nastavnog centra)](https://developer.nvidia.com/higher-education-and-research) završio je 31. prosinca 2016. Ponosni smo što smo ostali u programu do njegovog samog kraja. Zahvaljujemo [NVIDIA-i](https://www.nvidia.com/) za svu pomoć i podršku! Nastavit ćemo podučavati [Paralelno programiranje na heterogenim sustavima](nastava/kolegiji/PPHS.md), koristiti [CUDA-u](https://developer.nvidia.com/cuda-zone) i [OpenCL](https://www.khronos.org/opencl/) (otvoreni standard za paralelno programiranje na heterogenim sustavima koji se sastoje od CPU-a, GPU-a, FPGA-a i potencijalno drugih vrsta čipova) u našem istraživanju te općenito promovirati računanje na grafičkim procesorima.
 
 !!! warning

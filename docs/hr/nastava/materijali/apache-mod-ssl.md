@@ -132,7 +132,7 @@ Prve dvije vrste algoritma se u nekim podjelama šifrirarnika navode zajedno pa 
 - `!RC4` -- ne RC4
 - `!3DES` -- ne trostruki DES (bolji algoritmi od trostrukog DES-a su dozvoljeni)
 
-!!! note
+!!! info
     Za današnje standarde korištenje ovoliko širokog skupa šifrarnika (koji onda uključuje i neke slabe šifrarnike) ne bi bilo preporučeno. Popise preporučenih šifrarnika možete pročitati [na Remy van Elstovom blogu u članku Strong SSL Security on Apache2](https://raymii.org/s/tutorials/Strong_SSL_Security_On_Apache2.html) i [na Mozillinom wikiju u članku Security/Server Side TLS](https://wiki.mozilla.org/Security/Server_Side_TLS). Pored toga, Mozilla je razvila [generator konfiguracija SSL-a](https://ssl-config.mozilla.org/) koji je vrlo jednostavan za korištenje, a podržava i Apache.
 
 Naredbom `openssl ciphers` možemo provjeriti o kojim se točno šifrarnicima radi:
@@ -156,7 +156,7 @@ ADH-SEED-SHA            SSLv3 Kx=DH       Au=None Enc=SEED(128) Mac=SHA1
 SEED-SHA                SSLv3 Kx=RSA      Au=RSA  Enc=SEED(128) Mac=SHA1
 ```
 
-!!! note
+!!! info
     Skup algoritama za šifriranje čije korištenje se preporuča kod rada sa TLS/SSL certifikatima mijenja se iz godine u godinu kako se pronalaze sigurnosni propusti u njima i kako procesna moć računala raste pa je dobro kod postavljanja TLS-a/SSL-a provjeriti aktualne najbolje prakse, primjerice [one koje navodi Qualys SLL Labs](https://www.ssllabs.com/projects/best-practices/index.html), autor [SSL Server Testa](https://www.ssllabs.com/ssltest/index.html) i [SSL Client Testa](https://www.ssllabs.com/ssltest/viewMyClient.html).
 
 Naredba `SSLProtocol all -SSLv3` ([dokumentacija](https://httpd.apache.org/docs/2.4/mod/mod_ssl.html#sslprotocol)) definira dozvoljene verzije TLS-a i SSL-a. Vrijednost `all -SSLv3` uključuje TLSv1, TLSv1.1, TLSv1.2, TLSv1.3, a isključuje SSLv3.

@@ -344,7 +344,7 @@ ssl_key = /etc/mysql/conf.d/certs/client-key.pem
 ssl_ca = /etc/mysql/conf.d/certs/ca-cert.pem
 ```
 
-!!! note
+!!! info
     Umjesto u odjeljak `[mariadb]`, konfiguracijske smo naredbe mogli staviti u `[server]` ili `[mysqld]` koje poslužitelj čita kod pokretanja (detaljnije objašnjenje pojedinih odjeljaka moguće je [naći u dijelu službene dokumentacije Configuring MariaDB with Option Files](https://mariadb.com/kb/en/configuring-mariadb-with-option-files/#server-option-groups)), dok smo umjesto u odjeljak `[client-mariadb]` konfiguracijske naredbe mogli staviti u odjeljak `[client]` ([detalji](https://mariadb.com/kb/en/configuring-mariadb-with-option-files/#client-option-groups)).
 
 Pokrenimo ponovno poslužitelj tako da dodatno parametrom `-v` montiramo direktorij `/home/korisnik/mariadb-server-conf` na `/etc/mysql/conf.d`, iz kojeg će MariaDB poslužitelj čitati konfiguraciju:
@@ -385,7 +385,7 @@ Slično kao kod drugih softvera koji koriste TLS, možemo navesti dodatne postav
 - `ssl_cipher` ([dokumentacija](https://mariadb.com/docs/reference/mdb/system-variables/ssl_cipher/)), kojom navodimo popis šifrarnika koji će se koristiti
 - `tls_version` ([dokumentacija](https://mariadb.com/docs/reference/mdb/system-variables/tls_version/)), kojom navodimo verziju TLS-a koji će se koristiti (zahtijeva MariaDB 10.4 ili noviju)
 
-!!! note
+!!! tip
     Za generiranje adekvatnih sigurnosnih postavki možemo ponovno iskoristiti [Mozillin generator SSL konfiguracije](https://ssl-config.mozilla.org/) i kao poslužiteljski softver odabrati MySQL.
 
 ### Šifriranje podataka na odmoru

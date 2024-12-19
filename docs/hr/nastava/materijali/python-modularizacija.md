@@ -43,7 +43,7 @@ author: Vedran Miletić
 
 Python modul može biti jedna datoteka ili jedan direktorij.
 
-!!! note
+!!! info
     Mi ćemo se ovdje baviti samo slučajem kada se radi o modulu koji je jedna datoteka; studenti koje zanima situacija kada je u pitanju direktorij više informacija o tome mogu pronaći u [službenoj dokumentaciji](https://docs.python.org/3/tutorial/modules.html).
 
 Stvorimo u direktoriju dvije datoteke, datoteku `modul1.py` sadržaja

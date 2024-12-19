@@ -66,7 +66,7 @@ Kada bi implementirali pametne pokazivače bez korištenja predložaka, to bi za
 
 Potpuno je analogna stvar sa funkcijama; za svaku definiranu klasu (npr. `Node`) bilo bi potrebno definirati posebnu funkciju (npr. `CreateNodeObject()`) koja bi stvarala objekt i vraćala pokazivač na njega. Ponovno, moguće je definirati funkciju koja implementira načelo rada neovisno o klasi, strukturi ili tipu podataka, a onda se kod korištenja dobiva specijalizirana funkcija za tu klasu, strukturu ili tip podataka.
 
-!!! note
+!!! info
     Više informacija o ovim temama i poveznice na dodatnu literaturu možete naći Wikipedijinim stranicama o [metaprogramiranju korištenjem predložaka](https://en.wikipedia.org/wiki/Template_metaprogramming), [pametnim pokazivačima](https://en.wikipedia.org/wiki/Smart_pointer) i [sakupljanju smeća](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)).
 
 ### Povratni poziv funkcije

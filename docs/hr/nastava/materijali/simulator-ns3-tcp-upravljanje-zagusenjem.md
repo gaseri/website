@@ -47,7 +47,7 @@ U fazi [brzog oporavka](https://en.wikipedia.org/wiki/Slow-start#Fast_recovery) 
 
 TCP NewReno je poboljšana verzija Reno varijante TCP protokola. Eksperimentalno pokazuje bolje rezultate od Reno varijante u slučaju velikog broja grešaka. Kod Reno protokola brzo ponovno slanje događa se nakon primitka 3 ponovljena ACK te se čeka potvrda cijelog prozora slanja da bi se prozor pomaknuo na iduće pakete, dok NewReno za svaki ponovljeni ACK šalje još jedan novi (prethodno ne poslani) paket ne čekajući potvrdu cijelog prozora ubrzavajući time popunjavanje praznina u redosljedu paketa. Također za svaki ACK koji stigne smatra da idući paket u nizu fali te ga počinje slati (u fazi brzog ponovnog slanja). NewReno ima i jedan nedostatak, naime u slučaju da paketi stignu u pogrešnom redosljedu uz pomak veći od 3 paketa (u slijednom broju) smatra se da je paket izgubljen i ulazi se u fazu brzog ponovnog slanja. Pošto je takvo ponašanje uočeno dorađen je sa sustavom potvrđivanja paketa nakon što je primljen ponovljeni paket koji je bio van redosljeda tako što se sekventni brojevi uvećavaju te se šalju ACK paketi bez da je ponovljeno slanje svih ostalih paketa ukoliko je samo jedan paket van redosljeda.
 
-!!! note
+!!! info
     Na [Wikipedijinoj stranici s taksonomijom algoritama za upravljanje zagušenjem](https://en.wikipedia.org/wiki/Taxonomy_of_congestion_control) možete pročitati više o varijantama TCP-a koje postoje i njihovim svojstvima.
 
 ## Praćenje promjene veličine prozora zagušenja

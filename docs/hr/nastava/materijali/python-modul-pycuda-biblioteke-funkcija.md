@@ -203,7 +203,7 @@ print(nekvalitetni_slucajni)
 
 ### Generatori zasnovani sa Soboljevim nizovima
 
-!!! note
+!!! info
     Generatori `Sobol32`, `ScrambledSobol32`, `Sobol64` i `ScrambledSobol64` zasnovani su na [Soboljevim nizovima](https://en.wikipedia.org/wiki/Sobol_sequence). Više informacija o njima možete naći u [službenoj PyCUDA dokumentaciji](https://documen.tician.de/pycuda/array.html#pycuda.curandom.Sobol32RandomNumberGenerator).
 
 ### Aproksimativno računanje broja $\pi$ korištenjem Monte Carlo metode
