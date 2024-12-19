@@ -1,3 +1,17 @@
 # Latest blog posts
 
 ![GASERI logo with text](../../images/gaseri-logo-text.png)
+
+??? note "Blogroll"
+
+    - [brr](https://brr.fyi/)
+    - [CrysSITE Blog (Michał Sapka)](https://crys.site/blog/)
+    - [Daemonic Dispatches (Colin Percival)](https://www.daemonology.net/blog/)
+    - [delroth's homepage (Pierre Bourdon)](https://delroth.net/)
+    - [IT Notes (Stefano Marinelli)](https://it-notes.dragas.net/)
+    - [Dan Langille's Other Diary](https://dan.langille.org/)
+    - [GabMus's Dev Log (Gabriele Musco)](https://gabmus.org/)
+    - [Louwrentius](https://louwrentius.com/)
+    - [Tagebuch eines Interplanetaren Botschafters (Nicolai Hähnle)](https://nhaehnle.blogspot.com/)
+    - [Yet Another Me (Sergio Durigan Junior)](https://blog.sergiodj.net/)
+    - [CSpace blog (Chris Siebenmann)](https://utcc.utoronto.ca/~cks/space/blog/)
