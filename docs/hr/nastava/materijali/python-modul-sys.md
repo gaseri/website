@@ -6,7 +6,7 @@ author: Vedran Miletić
 
 - `module sys` ([službena dokumentacija](https://docs.python.org/3/library/sys.html)) nudi pristup objektima koje interpreter koristi i s kojima komunicira
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Pokrenite interpreter Pythona 3 u terminalu ili u razvojnom okruženju i učitajte modul `sys`.
 
     - Otkrijte kojeg su tipa objekti `sys.ps1` i `sys.ps2`.
@@ -35,7 +35,7 @@ author: Vedran Miletić
     - `argv[1]`, `argv[2]`, ... su redom prvi, drugi, ... argument naveden nakon imena skripte
     - primjerice, pokrenemo li Python skriptu na način `./program.py -x -z foo bar baz`, tada će `argv` biti sadržaja `['./program.py', '-x', '-z', 'foo', 'bar', 'baz']` pa će `argv[0]` biti `'./program.py'`, a `argv[1]`, `argv[2]`, ..., `argv[5]` redom `'-x'`, `'-z'`, `'foo'`, `'bar'`, `'baz'`
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napišite Python skriptu imena `zadatak-argv.py` koja će nakon što je iz naredbenog retka pozovemo s argumentom `corona` (`./zadatak-argv.py corona` ili `python3 zadatak-argv.py corona`) ispisati:
 
     - `Pozvali ste skriptu imena zadatak-argv.py s argumentom corona`, pri čemu su `zadatak-argv.py` i `corona` vrijednosti varijabli.
@@ -44,7 +44,7 @@ author: Vedran Miletić
 
     (**Uputa:** razmislite kako ćete iz `sys.version` izvući vrijednosti koje vam trebaju.)
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Modificirajte program iz prethodnog zadatka tako da:
 
     - U slučaju da korisnik unese nedozvoljnu vrijednost prvog argumenta skripta na standardni izlaz za greške ispisuje poruku o tome, a zatim završava izvođenje (izlazi iz interpretera) s izlaznim statusom 1.
@@ -52,7 +52,7 @@ author: Vedran Miletić
 
     (**Uputa:** Pogledajte u pomoći za funkciju `print()` kako ispisati sadržaj na standardni izlaz za greške).
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napišite vlastiti `cat`, odnosno Python skriptu imena `zadatak-cat.py` koja će nakon što je iz naredbenog retka pozovemo s argumentom imena datoteke ispisati sadržaj datoteke (primjerice, ako želimo ispisati sadržaj datoteke `/etc/fstab`, to ćemo napraviti pozivom `./zadatak-cat.py /etc/fstab` ili `python3 zadatak-cat.py /etc/fstab`). (**Uputa:** podsjetite se kako se čita sadržaj datoteke u Pythonu.)
 
     Omogućite da vaša naredba prima argument `-n` (npr. `./zadatak-cat.py -n /etc/fstab` ili `python3 zadatak-cat.py -n /etc/fstab`) i tada ispisuje broj linije uz svaku liniju koju ispiše, slično kako to radi naredba `cat` s parametrom `-n`. U slučaju da korisnik ne unese `-n`, naredba ispisuje samo sadržaj datoteke bez brojeva linija. (**Uputa:** podsjetite se kako se cijepa tekst po linijama da možete na svaku dodati broj.)
@@ -68,6 +68,6 @@ author: Vedran Miletić
 
     - `lsof -p pid` ispisuje popis datoteka koje je otvorio proces s PID-om `pid`
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Isprobajte funkciju `sys.stdout.write()` i objasnite na koji način radi različito od `print()`. Prima li više od jednog argumenta? Dodaje li znak za novi redak na kraju ispisa? Možete li ispisati listu, cijeli ili realan broj?
     - Otvorite u Python interpreteru proizvoljnu datoteku iz vašeg direktorija. Pronađite u popisu otvorenih datoteka na sustavu vaš proces, 3 osnovna opisnika i opisnik te datoteke.

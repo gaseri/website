@@ -91,7 +91,7 @@ $ core-gui-legacy .core/configs/sample1.imn
 
 Pokretanje emulacije vrši se kao i u situaciji kada slažemo vlastitu emulaciju.
 
-!!! caution
+!!! danger
     CORE omogućuje istovremeno pokretanje više sesija emulacije. U slučaju da vam to počne stvarati probleme (imate zaostale sesije emulacije koje ne možete uništiti korištnjem gumba `Shutdown` ili sl.), uvijek možete izvršiti ponovno pokretanje virtualne mašine, što će osigurati čišćenje svih pokrenutih sesija i riješiti problem.
 
 ## Emulacija mrežnog prometa korištenjem alata MGEN
@@ -111,7 +111,7 @@ U dijelu `Traffic options` moguće je postaviti način na koji se pokreću podat
 
 Stvaranje i konfiguriranje tokova moguće je prije i nakon pokretanja emulacije.
 
-!!! caution
+!!! warning
     Preporuča se korištenje varijante `Do not start traffic flows automatically`; tokove možete ručno pokrenuti nekoliko desetaka sekundi nakon pokretanja same emulacije kada su usmjerivači proveli proces usmjeravanja i svi čvorovi iz različitih mreža mogu međusobno komunicirati.
 
 ## Dodatak: emulacija mrežnog prometa korištenjem netcata

@@ -7,5 +7,5 @@ author: Vedran Miletić
 - `module xmlrpc.client` ([službena dokumentacija](https://docs.python.org/3/library/xmlrpc.client.html)) nudi funkcije klijentske strane
 - `module xmlrpc.server` ([službena dokumentacija](https://docs.python.org/3/library/xmlrpc.server.html)) nudi funkcije poslužiteljske strane
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio treba napisati u cijelosti.

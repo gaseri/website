@@ -22,7 +22,7 @@ author: Vedran Miletić
 
 - `multiprocessing.active_children()` vraća broj aktivnih procesa
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Definirajte funkciju `najveci_djelitelj(n)` koja prima kao argument prirodni broj `n` i traži najveći prirodni broj manji od `n` koji je njegov djelitelj. Funkcija redom isprobava brojeve manje od `n` i ispisuje na ekran poruku oblika `broj n, djelitelj d, ostatak r`; u trenutku kada je ostatak 0, funkcija završava sa izvođenjem (i ne vraća ništa).
     - Pokrenite tri procesa `p1`, `p2`, `p3` redom za brojeve 651929250, 421858921, 2188312. Pripazite da `(arg1,)` nije isto što i `(arg1)`.
     - U glavnom procesu "odspavajte" 5 sekundi, a zatim prekinite izvođenje `p2`, provjerite jesu li živi `p1` i `p3`, i one koji jesu pridružite na glavni proces.
@@ -34,7 +34,7 @@ author: Vedran Miletić
 
 - red može koristiti više procesa, i zbog mogućnosti različitog redanja za izvođenje na procesoru moguće je dobiti vrlo različite rezultate po pitanju poretka elemenata u konačnom rezultatu
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Modificirajte prethodni zadatak tako da u glavnom procesu inicijalizirate red čekanja i proslijedite ga kao argument funkcije svakom od procesa koji pokrećete. Svaki proces neka u red čekanja stavi uređeni par `(n, rj)`, pri čemu je `n` broj koji je prethodno dan kao prvi argument funkciji, a `rj` zadnji isprobani broj prije završetka izvođenja algoritma (drugim rječima, rješenje algoritma). U glavnom procesu izvedite primite rješenja i ispišite ih na ekran.
 
 - `multiprocessing.Pipe()`, međuprocesna komunikacija čije je sučelje slično dvosmjernoj cijevi, vraća uređeni par `conn1, conn2` koji predstavlja konekcije na obje strane cijevi
@@ -47,7 +47,7 @@ author: Vedran Miletić
 
 - može ga koristiti po jedan proces sa svake strane, u protivnom postoji rizik od iskrivljenja podataka
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Modificirajte prethodni zadatak tako da u glavnom procesu incijalizirate tri cijevi i proslijedite po jedan kraj jedne cijevi kao argument svakom od procesa koji pokrećete. Svaki proces neka u svoju cijev pošalje uređeni par `(n, rj)`, pri čemu je `n` broj koji je prethodno dan kao prvi argument funkciji, a `rj` zadnji isprobani broj prije završetka izvođenja algoritma (drugim rječima, rješenje algoritma). U glavnom procesu izvedite primite rješenja i ispišite ih na ekran.
 
 - `multiprocessing.Pool(n)`
@@ -62,7 +62,7 @@ author: Vedran Miletić
     - `it = pool.imap()`
     - `it = pool.imap_unordered()`
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Riješite prvi zadatak u ovom dijelu korištenjem objekta `multiprocessing.Pool`. Riješite problem na tri načina.
 
     - Iskoristite sinkroni poziv korištenjem tri poziva funkcije `apply()`.
@@ -82,5 +82,5 @@ author: Vedran Miletić
     - `m.RLock()`
     - `m.Semaphore()`
 
-!!! todo
+!!! quote "ToDo"
     Ovdje nedostaje objašnjenje i zadatak.

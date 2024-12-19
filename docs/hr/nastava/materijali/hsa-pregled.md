@@ -49,5 +49,5 @@ Heterogena sustavska arhitektura (engl. *Heterogeneous System Architecture*, HSA
 
         - javlja se kad više niti dijeli podatke u memoriji
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio treba dovršiti.

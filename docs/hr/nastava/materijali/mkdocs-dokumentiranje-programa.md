@@ -55,8 +55,8 @@ $ mkdocs build
 
 što će stvoriti direktorij `site` i u njemu HTML datoteke `index.html` i `lorem/index.html`, zbog čega ćemo moći imati lijepe URL-e `/` i `/lorem/` (respektivno). Ova naredba ima nekoliko parametara čiji je opis moguće dobiti parametrom `--help`, a istaknut ćemo samo parametar `--clean` koji će isprazniti direktorij `site` prije izgradnje sjedišta, što je korisno za brisanje datoteka pod starim imenima nakon preimenovanja.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Proučite upute za generiranje hijerarhije u navigaciji u dijelu [Writing your docs](https://www.mkdocs.org/user-guide/writing-your-docs/). Zatim generirajte dva nova dokumenta korištenjem Lorem Markdownuma i spremite ih u datoteke `lorem-est.md` i `lorem-qui.md` te sva tri dokumenta postavite u navigaciji pod 'Lorem Markdownum' s naslovima pojedinih dokumenata u skladu s naslovima koje je generator dao.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Proučite upute za konfiguraciju [Configuration](https://www.mkdocs.org/user-guide/configuration/) pa postavite ime autora, opis sjedišta i informacije o autorskom pravu, a zatim pogledajte izvorni kod stvorenog HTML-a te u njemu pronađite postavljene informacije. Uključite ekstenziju [SmartyPants](https://python-markdown.github.io/extensions/smarty/) te u nekom od dokumenata isprobajte navodnike te dvostruke i trostruke crtice da se uvjerite da radi.

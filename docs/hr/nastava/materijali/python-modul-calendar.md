@@ -30,10 +30,10 @@ author: Vedran Miletić
 
 - `calendar.HTMLCalendar` omogućuje ispis kalendara u HTML-u (koristi se analogno kao `TextCalendar`)
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napišite Python program koji radi kao `cal -3`, odnosno pita korisnika da unese godinu i mjesec, a zatim ispisuje 3 mjeseca: mjesec prije, navedeni mjesec i mjesec poslije. (Vaši ispisani mjeseci će ići vertikalno umjesto horizontalno kako ih ispisuje `cal -3`, zanemarite tu razliku.)
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napišite Python program koji korisnik poziva u naredbenom retku s argumentom godine (npr. `./program.py 2020`) i program ispisuje kalendar za tu godinu.
 
     - Poopćite program tako da ispisuje kalendare za više godina odjednom ako su argumenti navedeni odvojeni zarezima, npr. `./program.py 2019,2020,2021`.

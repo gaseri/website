@@ -40,7 +40,7 @@ Nad grafovima definiranim matricama incidencija možemo provesti niz algoritama 
 - `csg.depth_first_tree()` -- pretraživanje grafa u dubinu
 - `csg.minimum_spanning_tree()` -- izračun minimalnog razapinjućeg stabla grafa
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Definirajte `numpy` poljem idući graf:
 
     ```

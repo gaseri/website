@@ -106,7 +106,7 @@ Koristit ćemo iduće naredbe
 - `help <naredba>` -- pomoć o naredbi
 - `next`, `step`, `finish`, [...](https://beej.us/guide/bggdb/)
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Unutar funkcije ispis dodajte još jednu promjenu varijabli, a zatim još jedan ispis teksta po vlastitom izboru. Izvršite prevođenje koda s debug simbolima i pokrenite ga u alatu `gdb`.
 
         - Postavite tri breakpointa: funkcija ispis, postojeća linija koja sadrži `cout` unutar funkcije i linija koja sadrži `cout` koju ste sami dodali.
@@ -135,10 +135,10 @@ $ cuda-gdb --args python -m pycuda.debug zbrajanje_vektora.py
 (cuda-gdb) run
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Na primjeru za zbroj vektora isprobajte ovdje navedene specifične naredbe alata `cuda-gdb`.
 
 ## Otklanjanje curenja memorije
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio treba napisati u cijelosti.

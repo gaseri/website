@@ -232,7 +232,7 @@ Ukoliko je program uspješno došao do kraja, vraća se status uspješnog izvođ
 return rocblas_status_success;
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Promijenite kod da izvodi zbroj vektora umjesto množenja vektora skalarom.
     - Promijenite kod da izvodi množenje matrice i vektora umjesto množenja vektora skalarom.
 
@@ -636,5 +636,5 @@ CHECK_ROCBLAS_ERROR(rocblas_destroy_handle(handle));
 return EXIT_SUCCESS;
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Promijenite kod da radi s matricama dvostruke preciznosti umjesto jednostruke.

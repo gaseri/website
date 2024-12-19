@@ -19,7 +19,7 @@ author: Vedran Miletić
 
 - `dmesg` ispisuje poruke koje jezgra javlja tijekom rada
 
-!!! todo
+!!! quote "ToDo"
     Ovdje treba opisati ukratko kako je strukturirana Linux jezgra.
 
 ## Dohvaćanje informacija o hardveru
@@ -28,7 +28,7 @@ author: Vedran Miletić
 - naredba `lscpu` i datoteka `/proc/cpuinfo` daju informacije o procesorima
 - naredba `free` i datoteka `/proc/meminfo` daju informacije o memoriji
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Provjerite podržava li procesor na računalu proširenje fizičke adrese (engl. *Physical Address Extension*, PAE). Pročitajte na [Wikipedijinoj stranici o PAE](https://en.wikipedia.org/wiki/Physical_Address_Extension) čemu ta ekstenzija služi.
     - Pronađite način da alatom `free` ispišete veličinu slobodne i zauzete memorije u kilobajtima, a zatim pronađite te iste vrijednosti u `/proc/meminfo`.
 
@@ -37,7 +37,7 @@ author: Vedran Miletić
 - `lspcmcia` ispisuje informacije o uređajima povezanim putem PCMCIA sučelja (postoji na starijim laptopima)
 - `lshw` ispis informacija o svom hardveru u računalu (nije u standardnoj instalaciji većine distribucija)
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Saznajte više informacija o grafičkoj kartici (`VGA compatible controller`) na računalu:
 
     - `Device ID` i `Vendor ID`,
@@ -48,7 +48,7 @@ author: Vedran Miletić
 
 ## Moduli jezgre
 
-!!! todo
+!!! quote "ToDo"
     Ovdje treba objasniti način korištenja naredbi `modinfo`, `modprobe`, `insmod`, `rmmod`, `lsmod`.
 
 ## Parametri jezgre
@@ -74,7 +74,7 @@ Parametri:
 
 ## Kompajliranje jezgre
 
-!!! todo
+!!! quote "ToDo"
     Ovdje treba opisati `make menuconfig` i ostalo.
 
 ## Specfičnosti jezgre Arch Linuxa

@@ -37,7 +37,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 
     - konvencija je da se softver koji se instalira putem upravitelja paketima (sustav sličan Apple Store-u i Google Play-u) postavlja u `/usr`, a softver koji administrator instalira mimo upravitelja paketima u `/usr/local`
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Izlistajte sve obične i sakrivene direktorije i datoteke u vašem kućnom direktoriju.
     - Izlistajte sve direktorije u `/home` direktoriju. Što vidite?
     - Objasnite što se nalazi u sljedećim direktorijima:
@@ -62,7 +62,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
     - na sličan način kompletiraju se imena naredbi
     - na sličan način kompletiraju se nazivi parametara *nekih* naredbi (u novijm verzijama `bash` ljuske, datoteka `/etc/bash_completion` i direktorij `/etc/bash_completion.d`)
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Isprobajte sljedeće naredbe i objasnite što rade:
 
     - `cd`
@@ -84,7 +84,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 - `mkdir` stvara direktorij s danim imenom
 - `rmdir` briše (prazan) direktorij danog imena
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - U Vašem kućnom direktoriju napravite predloženu strukturu direktorija:
 
         ```
@@ -107,7 +107,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
     - Otiđite do svog kućnog direktorija i od tamo pokušajte izbrisati direktorij `15102012`. Zašto ga ne možete izbrisati?
     - Uđite u direktorij `Kolokvij` i iz njega pokušajte izbrisati direktorij `DZ`. Možete li to učiniti? Zašto?
 
-!!! admonition "Dodatni zadatak"
+!!! tip "Dodatni zadatak"
     - U svom kućnom direktoriju stvorite poddirektorij `trnoruzica`. Uđite u taj direktorij.
     - Stvorite direktorije `mikimaus` i `minimaus`.
     - Uđite u direktorij `mikimaus`.
@@ -127,7 +127,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
     - relativno referira na `radnidir`, radi samo kad se nalazimo u direktoriju `/home/vedran`
     - relativno referenciranje kreće od trenutnog direktorija i ide do traženog direktorija, nikad ne započinje znakom `/`
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Izlistajte kućni direktorij korisnika `prof`:
 
         - apsolutnim referenciranjem iz svojeg kućnog direktorija,
@@ -148,7 +148,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
     - izlista direktorij i njegove poddirektorije
     - na sličan način radi brisanje direktorija u kojem postoje poddirektoriji i datoteke
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Koristeći naredbu `ls` izlistajte rekurzivno svoj kućni direktorij.
     - Izlistajte rekurzivno sljedeće direktorije:
 

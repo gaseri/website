@@ -38,10 +38,10 @@ autogen_SD0
 
 One can observe the function name in the output. The resulting LLVM IR file can be compared wuth th source file with `llvm-diff` and there will be no difference since the pass only performs analysis (specifically, it finds functions and prints their names) without performing any transformation.
 
-!!! admonition "Assignment"
+!!! example "Assignment"
     Modify the optimization pass so that it also prints the the number of operands for each function and the function type (signature); the [API documentation of the Function class](https://llvm.org/doxygen/classllvm_1_1Function.html) is a good place to look for a way to obtain this information.
 
-!!! admonition "Assignment"
+!!! example "Assignment"
     Modify the optimization pass so that it also prints the number of times each function was called. Amend the `example-stress.ll` file with the function `manualgen_SD0` calling the function `autogen_SD0`:
 
     ``` llvm
@@ -53,10 +53,10 @@ One can observe the function name in the output. The resulting LLVM IR file can 
 
     and use this file to verify the correct number is printed
 
-!!! admonition "Assignment"
+!!! example "Assignment"
     Modify the optimization pass so that it also prints the number of usages (reads and writes) for each of the function arguments.
 
-!!! admonition "Assignment"
+!!! example "Assignment"
     Modify the optimization pass so that it also prints the number of instructions and then intersects  the instruction list (note that the instructions reside inside of the basic blocks). For each of the instructions, print the type and the operands, if any.
 
 Finally, before starting a specific project implemented using the LLVM libraries, you should read the [LLVM Programmer's Manual](https://llvm.org/docs/ProgrammersManual.html).

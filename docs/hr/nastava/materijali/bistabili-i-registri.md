@@ -54,7 +54,7 @@ $$W = B^n−1.$$
 
 Prema tome, najveći broj koji možemo zapisati u $16$-bitnom registru je $65535$.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     1. Što je bit, a što bajt?
     2. Što je bistabil, a što registar?
     3. Koji je dio računala izgrađen od bistabila?

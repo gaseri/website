@@ -4,7 +4,7 @@ author: Matko Abramović, Vedran Miletić
 
 # LDAP poslužitelj OpenLDAP
 
-!!! hint
+!!! info
     Za više informacija proučite [službenu dokumentaciju](https://www.openldap.org/doc/).
 
 [OpenLDAP](https://www.openldap.org/) je popularno programsko rješenje otvorenog koda za implementaciju [Lightweight Directory Access Protocol (LDAP)](https://ldap.com/learn-about-ldap/) servisa.

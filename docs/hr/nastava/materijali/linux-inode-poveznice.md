@@ -13,7 +13,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 - mtime, ctime, atime -- vrijeme promjene datoteke, vrijeme promjene inode-a i vrijeme zadnjeg pristupa
 - `stat` prikazuje metapodatke koje sadrži inode datoteke
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Stvorite neku datoteku naziva `vjezba1.txt`. Saznajte njezin inode broj, ID uređaja koji je sadrži te vremena.
     - Nadopišite u nju svoje ime i prezime. Usporedite inode broj i metapodatke sa onima iz prethodnog slučaja.
     - Ispišite njezin sadržaj na ekran i usporedite vremena prije i poslije ispisivanja.
@@ -35,7 +35,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
     $ ln test.txt test_poveznica.txt
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - U svom kućnom direktoriju stvorite direktorij pod nazivom `dir1` i u njemu:
 
         - još jedan direktorij pod nazivom `vjezba`, te
@@ -57,7 +57,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 
 - jedan od zanimljivih problema koji mogu nastati ako se simboličke poveznice pogrešno koriste je [petlja simboličkih poveznica](https://tuxdna.wordpress.com/2011/12/10/symlink-loop-is-still-an-unsolved-problem/)
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Stvorite u svom direktoriju tekstualnu datoteku `pepeljuga`, i upišite u nju sadržaj po želji.
 
         - Stvorite simboličku poveznicu na nju koja pristupa relativnim referenciranjem, nazovite je `princ`.

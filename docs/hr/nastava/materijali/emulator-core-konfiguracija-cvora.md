@@ -40,5 +40,5 @@ Unutar alata CORE konfiguracija **svih** daemona alata Quagga dana je u konfigur
 
 U alatu CORE daemone alata Quagga možemo konfigurirati i preko sučelja za konfiguraciju vtysh. Sučelju vtysh pristupamo desnim klikom na usmjerivač, zatim odaberemo Shell window izbornik u kojem se nalazi vtysh. Dobivamo pristup prozoru sa vtysh ljuskom s kojom komuniciramo unošenjem određenih naredbi, poput bash ljuske u Linuxu.
 
-!!! caution
+!!! warning
     Ukoliko vam vtysh javi poruku `WARNING: terminal is not fully functional`, pritisnite tipku `q` i zatim tipku `Enter`. Terminal je sasvim dovoljno funkcionalan za naše potrebe.

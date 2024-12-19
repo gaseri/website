@@ -59,7 +59,7 @@ Novu bilješku možete kreirati klikom na zelenu ikonicu *New note*.
 
 Naslove označavamo na način da ispred teksta stavimo oznaku `#`. Jedan znak `#` ispred naslova je glavni naslov, dva znaka `##` je naslov druge razine i tako dalje.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Napišite naslov `Suradnički uređivač teksta HackMD i jezik Markdown` s podnaslovom `Moje bilješke s vježbi`.
     - Isprobavanjem otkrijte koliko razina poglavlja podržava jezik Markdown.
 
@@ -75,7 +75,7 @@ Istovremeno podebljana i ukošena slova možemo dobiti korištenjem triju zvjezd
 
 Precrtana slova (eng. *strikethrough*) u tekstu označavaju se s dvije tilde `~~` (++alt-graph+1++) prije i nakon teksta.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napišite sljedeću rečenicu:
 
     > Ovo je primjer gdje ću koristiti **podebljana**, *ukošena*, ***istovremeno podebljana i ukošena*** te ~~precrtana~~ slova.
@@ -102,7 +102,7 @@ Za promjenu boje slova koristimo [HTML](https://en.wikipedia.org/wiki/HTML) tag 
 
 Citat se piše tako da se na početak retka stavi znak `>`.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napišite sljedeći citat:
 
     > Ja ne mogu nikoga ništa naučiti, ja ih samo mogu natjerati da misle.
@@ -138,7 +138,7 @@ Potvrdni okvir (engl. *checkbox*) dobijemo stavljajući znak `- [ ]`, odnosno `-
 - [x] za označeni potvrdni okvir
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napravite sljedeću listu:
 
     * jezik Markdown
@@ -167,7 +167,7 @@ Za umetanje online slika, dovoljno je u zagradu staviti link na sliku: `![Naziv 
 
 Da bi mogli prikazati neku naredbu ili specijalni znak, koristi se escape znak `\` ispred rezervirane riječi ili znaka.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napišite rečenicu koja će u izlazu Markdowna izgledati ovako:
 
     > Riječi možemo napisati \*ukošeno*, \*\*podebljano** ili \~\~precrtano~~.
@@ -215,7 +215,7 @@ Različita poravnanja teksta u tablicama dobivamo dodavanjem znaka ':' u dio tab
 - `:---:` centrirano poravnanje i
 - `---:` desno poravnanje.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Promijenite tablicu iz primjera tako da:
 
     - dodate još jedan redak s podacima po vašoj želji,
@@ -228,7 +228,7 @@ Različita poravnanja teksta u tablicama dobivamo dodavanjem znaka ':' u dio tab
 
 Markdown koristi jezik [LaTeX](https://www.latex-project.org/) za pisanje matematičkih formula. Da bi napisali matematičku formulu, koristimo znak `$` ukoliko je formula u tekstu ili `$$` za samostalnu formulu (u svom retku centrirano). Detaljnije o pisanju matematičkih formula imate na [Wikibooks stranici LaTeX/Mathematics](https://en.wikibooks.org/wiki/LaTeX/Mathematics).
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napišite sljedeće dvije rečenice:
 
     > Pitagorin poučak glasi: $c^2 = a^2 + b^2$.
@@ -243,7 +243,7 @@ Markdown koristi jezik [LaTeX](https://www.latex-project.org/) za pisanje matema
 
 Za pisanje kemijskih formula također koristimo jezik LaTeX i pritom koristimo simbole atoma kao `\text{}`, npr `\text{H}`.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napišite sljedeću kemijsku reakciju:
 
     > $\text{H}_2\text{S}\text{O}_4 + 2\text{Na}\text{O}\text{H} \to 2\text{H}_2\text{O} + \text{Na}^+ + \text{S}\text{O}_4^{2-}$.
@@ -254,7 +254,7 @@ Za pisanje kemijskih formula također koristimo jezik LaTeX i pritom koristimo s
 
 Markdown jezik podržava korištenje emoji simbola, na način da se emoji kod ubaci između znaka `:`. Popis emoji kodova možete pronaći na [GitHubu ikatyang/emoji-cheat-sheet](https://github.com/ikatyang/emoji-cheat-sheet).
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napišite sljedeće:
 
     > :information_source: [Jedna](../../vrlo-vazne-informacije/identitet.md) [vrlo](../../vrlo-vazne-informacije/hijerarhija-gasera.md) [važna](../../vrlo-vazne-informacije/index.md) [informacija](../../vrlo-vazne-informacije/cesto-postavljana-pitanja.md)!  
@@ -270,7 +270,7 @@ theme: solarized
 transition: fade
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Kreirajte novi dokument s naslovom "Moja prva prezentacija" koristeći `.yaml` zaglavlje iz prethodnog primjera.
 
 #### Teme prezentacije
@@ -310,7 +310,7 @@ Kroz prezentaciju se krećemo uobičajeno: strelicama lijevo desno ili razmaknic
 
 Za razliku od klasičnih prezentacija, u Markdownu možete imati i podslajdove ili sekcije. Njih u prezentaciji pregledavamo klikom na strelicu dole. Vrlo je korisno jer dodaje novu dimenziju prezentaciji. Podslajd kreiramo tako da slajd odvojimo s četiri `----` crtice umjesto tri `---` kao do sada.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napravite prezentaciju s barem 5 slajdova koja sadrži sljedeće elemente: formulu, tablicu, listu, emoji, link do neke web stranice, sliku i podslajd.
 
 Kada smo gotovi s izradom prezentacije možemo ju prikazati klikom na `Share` pa pod `Slide mode` odaberemo `Preview`.

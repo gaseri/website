@@ -76,7 +76,9 @@ Datoteka `mysite/settings.py`: Postavke/konfiguracija za Django projekt. Obratit
 
 Datoteka `mysite/urls.py`: Sadrži deklarirane URLove vezane za Django projekt, služi Django aplikaciji kao "kazalo sadržaja". Njegova uloga je 'kontroliranje' naše stranice/aplikacije. Pomoću njega 'pokazujemo/usmjeravamo' program na naše aplikacije.
 
-!!! warning "Osvježite si znanje regularnih izraza"
+!!! tip
+    Osvježite si znanje regularnih izraza prije nastavka.
+
     - [Regularni izrazi na kolegiju Operacijski sustavi](grep-sed-awk-tr.md#izdvajanje-linija-iz-tekstualnih-datoteka)
     - [Regularni izrazi i Python](https://docs.python.org/3/library/re.html#module-re)
 
@@ -88,14 +90,14 @@ Datoteka `manage.py`: Koristimo pri radu u terminalu za prosljeđivanje raznih n
 
 Započnimo s kreiranjem prve aplikacije. Za početak dodat ćemo aplikacije na naš projekt `mysite`, to činimo naredbom: `./manage.py startapp main`. Primijetit ćete da u direktoriju `mysite` je stvoren novi poddirektorij naziva `main`.
 
-!!! zadatak
+!!! example "Zadatak"
     Provjerite sadržaj direktorija `mysite/mysite` i direktorija `mysite/main` s naredbama `tree` i `ls`.
 
 ##### Lokalni poslužitelj za razvoj
 
 Pokrenimo sada naš lokalni poslužitelj (*eng.server*) na kojemu ćemo razvijati aplikaciju.
 
-!!! warning "Napomena za pokretanje lokalnog poslužitelja"
+!!! tip
     Za pokretanje poslužitelja koristite zasebni terminal. Poslužitelj aktivno radi za vrijeme razvoja i nije potrebno ponovno pokretati poslužitelj nakon svake promjene.
 
 U zasebnom terminalu za pokretanje poslužitelja koristi se naredba:
@@ -105,14 +107,14 @@ $ ./manage.py runserver
 (...)
 ```
 
-!!! zadatak
+!!! example "Zadatak"
     Provjerite rad poslužitelja posjetom adrese `http://127.0.0.1:8000/` u web pregledniku.
 
 Ovo je poslužitelj na kojem ćemo razvijati Django aplikacije.
 
 U terminalu možemo vidjeti HTTP zahtjeve na poslužitelj i statusni kod odgovora na njih.
 
-!!! zadatak
+!!! example "Zadatak"
     Provjerite ispis u terminalu prilikom osvježavanja stranice pritiskom na tipki ++control+r++ ili ++f5++.
 
 #### Dodatak: Čitanje dokumentacije i StackOverflow
@@ -149,7 +151,7 @@ Unutar Djanga koristi se djelomično izmijenjena terminologija. Stoga od sad nad
 
 U nastavku ovog poglavlja prikazano je kako kreirati Django aplikaciju za teksta na početnoj stranici. Za ovo nije potreban Model nego samo View u kojemu je definiran tekst koji želimo prikazati na stranici.
 
-!!! zadatak
+!!! example "Zadatak"
     Otvorite datoteku i provjerite što je zapisano u `mysite/mysite/url.py`.
 
 Za definiranje putanje na koju će Django primati HTTP zahtjeve iskoristit ćemo funkciju `django.urls.path()` ([dokumentacija](https://docs.djangoproject.com/en/3.2/ref/urls/#path)) i usmjerit ćemo na administratorsko sučelje ([dokumentacija](https://docs.djangoproject.com/en/3.2/ref/contrib/#admin)).
@@ -223,7 +225,7 @@ Stvoreni model se mapira na tablicu u bazi podataka. Baza poidataka je već stvo
 
 Ovime stvaramo novu tablicu u bazi podataka a zadana polja postaju stupci u toj tablici. Automatski se po defaultu kreira primarni ključ iz toga, ali po želji možemo i proizvoljno odrediti da neka od zadanih vrijednosti to bude.
 
-!!! zadatak
+!!! example "Zadatak"
     Otvorite `main/models.py` i definirajte klasu imena Predmet. U klasi definirajte stupce naziva:`predmet_naslov`, `predmet_sadrzaj` i `predmet_vrijeme_objave`. Njihovi tipovi neka budu `CharField()` koji ima zadan parametar `max_length` na `100`, `TextField()` i `DateTimeField()` koji ima naziv postavljen na `'date published'`.
 
 **Rješenje zadataka.** U datoteku `main/models.py` dodajemo:
@@ -235,7 +237,7 @@ class Predmet(models.Model):
     predmet_vrijeme_objave = models.DateTimeField('date published')
 ```
 
-!!! zadatak
+!!! example "Zadatak"
     Definirajte funkciju `__str__()` unutar klase `Predmet` koja vraća naziv predmeta `predmet_naziv`.
 
 **Rješenje zadataka.**  U datoteku `main/models.py` unutar klase `Predmet` dodajemo:
@@ -292,7 +294,7 @@ Migrations for 'main':
     - Create model Predmet
 ```
 
-!!! zadatak
+!!! example "Zadatak"
     Pročitajte sadržaj unutar datoteke `main\migrations\0001_initial.py`.
 
 Zatim unesimo naredbu `./manage.py migrate` da bi se migracija izvršila.
@@ -377,7 +379,7 @@ Password (again):
 
 Dodjelite proizvoljno ime i lozinku, mail adresu trenutno možemo ostaviti praznu.
 
-!!! zadatak
+!!! example "Zadatak"
     Posjetite na lokalnom serveru adresu `http://127.0.0.1:8000/admin/`.
 
 Idemo sada nadopuniti kod i povezati stvoreni model pomoću `mysite/main/admin.py`.
@@ -392,7 +394,7 @@ from .models import Predmet
 admin.site.register(Predmet)
 ```
 
-!!! zadatak
+!!! example "Zadatak"
     Osvježite stranicu na adresi `http://127.0.0.1:8000/admin/`.
 
 ## Relacije među modelima. Upiti
@@ -409,7 +411,7 @@ Relacije su detaljno opisane u [Djangovoj dokumnetaciji](https://docs.djangoproj
 
 Na prethodnim vježbama stvorili smo model koji sadržava klasu Predmet, dodajmo sada klasu Student koja će biti povezana s Predmetom relacijom ManyToMany.
 
-!!! zadatak
+!!! example "Zadatak"
     - Model iz Vježbi2 `main/models.py` nadopunite tako da stvorite novu klasu `Student`. Klasa student sadrži stupce naziva `student_ime`, `student_prezime`, `student_broj_xice` i `student_prvi_upis_predmeta`. Tipovi podataka neka budu `CharField()` za `student_ime` sa `max_length` na `25`, `student_prezime` sa `max_length` na `50`. Vrijednost `student_broj_xice` postavite na `CharField()` za `student_ime` sa `max_length` na `10`.
     - Dodajte vrijednost `student_predmeti` koja će biti povezan s klasom `Predmet`, tip veze neka bude `ManyToMany`. Unutar klase `Predmet` izmijenite vrijednost `predmet_vrijeme_objave` tako da joj postavite zadanu vrijednost na `timezone.now`. Nakon kreirane klase pokrenite naredbe `makemigrations` i `migrate`.
 
@@ -436,7 +438,7 @@ class Student(models.Model):
     student_predmeti = models.ManyToManyField(Predmet)
 ```
 
-!!! zadatak
+!!! example "Zadatak"
     Definirajte funkciju `__str__()` unutar klase Student koja vraća `student_broj_xice`. Zatim dodajte klasu `Student` unutar `main/admin.py` tako da ona postane vidljiva u admin panelu.
 
 **Rješenje zadatka.** U datoteci `main/models.py` unutar klase `Student` dodajemo:
@@ -460,7 +462,7 @@ Nakon što ste nadopunili `main/models.py` primjenite pripremu i nakon toga migr
 
 #### Many-to-one
 
-!!! zadatak
+!!! example "Zadatak"
     Definirajte klasu `Profesor` koja sadrži vrijednosti, `prof_ime` i `prof_prezime` koji su `CharField` duljine 30, zatim definirajte `prof_email` koji je tipa `EmailField`.
 
 Unutar klase zadajte funkciju `__str__()` koja vraća email adresu od profesora.
@@ -479,7 +481,7 @@ class Profesor(models.Model):
         return self.prof_email
 ```
 
-!!! zadatak
+!!! example "Zadatak"
     Izmijenite klasu `Predmet` tako da joj dodate nositelja, vrijednost `nositelj` neka bude tip veze One to many. Za definiranje veze koristite `ForeignKey`.
 
 Nakon kreirane klase pokrenite naredbe `makemigrations` i `migrate`.
@@ -501,7 +503,7 @@ class Predmet(models.Model):
 
 Student i Profesor povezat ćemo u klasi ZavrsniRad, na kojem radi student, dok mu je profesor mentor. Svaki završni rad ima Studenta koji ga piše i profesora koji mu je mentor. Ovo ćemo ostvariti vezama *one-to-one*.
 
-!!! zadatak
+!!! example "Zadatak"
     - Definirajte klasu `ZavrsniRad`. `ZavrsniRad` neka ima zadanog nositelja `mentor` koji je povezan sa `Profesor` pomoću `OneToOne` veze, dodatni parametar koje zadajete u definiciji veze je `primary_key=True`.
     - Klasu `ZavrsniRad` zatim povežite sa `Student`, tip veze neka bude `One-to-one`, dodatni parametri koje zadajete su `on_delete=models.CASCADE` i `primary_key=True`.
     - Zatim dodajte vrijednosti `rad_naslov` i `rad_zadatak` koji su CharField duljine 25 i 50 i bool vrijednost `rad_prvi_upis` koja po defaultu ima vrijednost `True`.
@@ -527,7 +529,7 @@ class ZavrsniRad(models.Model):
     rad_prvi_upis = models.BooleanField(default=True)
 ```
 
-!!! zadatak
+!!! example "Zadatak"
     Definirajte funkciju `__str__()` unutar klase `ZavrsniRad` koja vraća `student_broj_xice`. Zatim dodajte klasu `ZavrsniRad` unutar `main/admin.py` tako da ona postane vidljiva u admin panelu.
 
 **Rješenje zadatka.** Unutar klase `ZavrsniRad` u `main/models.py` dopunjavamo:
@@ -702,7 +704,7 @@ Nakon što su projekt i aplikacija unutar njega kreirani, potrebno ih je povezat
 
 Na ovim vježbama kreirati će se projekt naziva `vj4` unutar kojeg je stvorena aplikacija naziva `main`.
 
-!!! zadatak
+!!! example "Zadatak"
     Povežite kreiranu aplikaciju `main` s glavnim djelom aplikacije unutar `main/urls.py`.
 
 **Rješenje zadatka.** Datoteka `urls.py`:
@@ -722,7 +724,7 @@ urlpatterns = [
 
 Program smo usmjerili na `main/urls.py` koji trenutno ne postoji. Iz toga razloga, potrebno ga je stvoriti.
 
-!!! zadatak
+!!! example "Zadatak"
     Stvorite datoteku `main/urls.py`. Odmah importajte sve iz datoteke `main/views.py` i neka ime aplikacije bude zadano na `app_name = 'main'`.
     Zatim definirajte uzorak URL-a neka upućuje na `homepage`, odnosno na funkciju unutar `main/views.py` koja se zove `homepage`.
 
@@ -743,7 +745,7 @@ Definirali smo poveznice unutar datoteka `main/urls.py`. Sada je potrebno kreira
 
 ### Slanje zahtjeva
 
-!!! zadatak
+!!! example "Zadatak"
     Definirajte funkciju `homepage()` unutar `main/views.py` koja će vraćati HTTP odgovor na zahtjev. Za vraćanje HTTP odgovora koristite funkciju `HttpResponse` koju uvozite kodom `from django.http import HttpResponse`.
 
 **Rješenje zadatka.** U datoteci `main/views.py`:
@@ -759,7 +761,7 @@ def homepage(request):
 
 Pohranite sve promjene i pokrenite server.
 
-!!! zadatak
+!!! example "Zadatak"
     Definirajte funkciju `current_datetime()` unutar datoteke `main/views.py` koja će vraćati HTTP odgovor na zahtjev. Neka vrijednost koju funkcija vraća budu datum i trenutno vrijeme.
 
 **Rješenje zadatka.** U datoteci `main/views.py`:
@@ -778,7 +780,7 @@ def current_datetime(request):
 
 #### Vraćajne grešaka u odgovorima na zahtjeve
 
-!!! zadatak
+!!! example "Zadatak"
     Definirajte funkciju `not_found()` unutar `main/views.py`. Funkcija neka vraća `HttpResponseNotFound`. Vratite proizvoljni sadržaj odgovora.
 
 **Rješenje zadatka.** U datoteci `main/views.py`:
@@ -794,7 +796,7 @@ def not_found(request):
 
 U nastavku je prikazano kako se mogu dohvaćati vrijednosti iz baze podataka i kako ih možemo prikazivati na stranici.
 
-!!! zadatak
+!!! example "Zadatak"
     Kreirajte klasu `Student`, neka sadrži, ime prezime i broj xice kao atribute. Dodajte ju zatim unutar `admin.py` da bi se mogle unositi vrijednosti. Za kraj pokrenite naredbe za migraciju da se kreira baza.
 
 **Rješenje zadatka.** U datoteci `models.py`:
@@ -821,12 +823,12 @@ admin.site.register(Student)
 
 Nakon što je baza pomoću modela kreirana, potrebno je unijeti u nju vrijednosti da se može izvršiti tražene upite.
 
-!!! zadatak
+!!! example "Zadatak"
     Kreirajte administratora i dodajte u bazu podataka 5 studenata. Od 5 studenata, 3 neka imaju isto ime, primjerice: Marko, Marko, Marko, Ivan i Ana. Prezime i broj X-ice zadajte proizvoljno.
 
 Kada smo popunili bazu, idemo kreirati i upite.
 
-!!! zadatak
+!!! example "Zadatak"
     Definirajte funkciju koja u bazi pronalazi sve studente zadanog imena, listu pronađenih imena proslijedite funkciji `render`. Proslijeđena rješenja neka se prikazuju unutar `students.html`. Za početak, neka vaša funkcija vraća `render(request, 'students.html', context=context)`, a datoteku `students.html` ćemo stvoriti u nastavku rješavanja ovoga zadatka.
 
 U datoteci `views.py`:
@@ -856,12 +858,12 @@ Datoteka `students.html` ima sadržaj:
 </ul>
 ```
 
-!!! zadatak
+!!! example "Zadatak"
     Dodajte unutar datoteke `main/urls.py` putanju koja nas vodi na prethodno kreiranu funkciju i zatim provjerite prikaz rezultata na serveru.
 
 Idemo još prikazati ukupan broj studenata u našoj bazi. Ovaj broj ćemo zatim proslijediti funkciji `render()` koja će ispisati ukupan broj studenata u za to kreiranom HTML-u.
 
-!!! zadatak
+!!! example "Zadatak"
     Definirajte funkciju koja u bazi pronalazi ukupan broj studenata, broj studenata funkciji `render`. Proslijeđena rješenja neka se prikazuju unutar datoteke `index.html`. Dodajte grešku u slučaju da `Student` u bazi nije pronađen.
 
 **Rješenje zadatka.** U datoteci `views.py`:
@@ -1013,7 +1015,7 @@ Potrebno je još zadati putanju za predloške unutar `settings.py`.
 
 Za dodavanje putanje, pod `TEMPLATES` dodajte putanju do `templates` direktorija (`./templates`), odnosno `'DIRS': ['./templates'],`.
 
-!!! zadatak
+!!! example "Zadatak"
     Kreirajte administratora i dodajte u bazu podataka 3 izdavača. Sve vrijednosti proizvoljno zadajte. Provjerite ispis izdavača koji su dodani u bazu na adresi `http://127.0.0.1/main/publishers/`.
 
 #### Dinamičko filtriranje
@@ -1053,7 +1055,7 @@ urlpatterns = [
 
 I za zadnji dio potrebno je kreirati prikaz unutar `./templates` koji će nam prikazivati rezultate pretrage za zadanog izdavača.
 
-!!! zadatak
+!!! example "Zadatak"
     Kreirajte `books_by_publisher.html` unutar `./templates/main` koji će ispisati sve knjige od traženog izdavača. Neka se ispisuje samo naslov svake knjige.
 
 **Rješenje zadatka.**
@@ -1077,7 +1079,7 @@ Na današnjim vježbama radit će se generičko popunjavanje baze i obrasci.
 
 ### Postavljanje projekta
 
-!!! zadatak
+!!! example "Zadatak"
     Kreirajte projekt naziva `vj6` i unutar njega aplikaciju naziva `main`. Povežite aplikaciju sa projektom: dodajte aplikaciju unutar `settings.py` i putanju `main/urls.py` unutar `urls.py`, a zatim kreirajte `main/urls.py`.
 
 ### Generičko popunjavanje baze podataka
@@ -1123,7 +1125,7 @@ $ pip3 install factory_boy
 
 Kada je instaliran [paket factory_boy](https://pypi.org/project/factory-boy/), potrebno je kreirati klase koje će automatski popunjavati bazu sa tzv. *dummy data*, odnostno nasumično generiranim podacima koji će nam pojednostaviti proces popunjavanja baze nad kojom želimo izvršavati upite. Detaljnije o njegovoj funkcionalnosti možete pronaći u [službenoj dokumentaciji](https://factoryboy.readthedocs.io/).
 
-!!! zadatak
+!!! example "Zadatak"
     Unutar `vj6/main` stvorite datoteku `factory.py`
 
 Stvorena datoteka `vj6/main/factory.py` koristit će se kao predložak za popunjavanje modela definiranog unutar`vj6/main/models.py`. Primjetit ćete sličnost u stilu pisanja klasa. Dakle, potrebno je definirati klase, sukladno klasama koje su definirane unutar `vj6/main/models.py`.
@@ -1158,7 +1160,7 @@ class BookFactory(DjangoModelFactory):
     publication_date = factory.Faker("date_time")
 ```
 
-!!! zadatak
+!!! example "Zadatak"
     Nakon što su klase definirane unutar `factory.py`, isprobajte njihovu funkcionalnost. Prije pokretanja ljuske primjenite migraciju na bazu.
 
 ``` shell
@@ -1178,7 +1180,7 @@ $ ./manage.py shell
 >>> b.author
 ```
 
-!!! zadatak
+!!! example "Zadatak"
     Kreirajte administratnora, zatim unutar `admin.py` registrirajte modele `Book` i `Author`. Provjerite ako su podaci generirani sa `factory.py` uneseni u bazu.
 
 **Rješenje zadatka.** U datoteci `admin.py`:
@@ -1262,7 +1264,7 @@ class Command(BaseCommand):
 
 Svojstvo funkcije `handle()` je postavljeno na  `transaction.atomic`, što označava da ako je blok koda uspješno izvršen, promjene se pohranjuju u bazu podataka ([detaljnije objašnjenje o modulu transaction korištenom u prethodnom primjeru](https://docs.djangoproject.com/en/3.2/topics/db/transactions/)).
 
-!!! zadatak
+!!! example "Zadatak"
     Isprobajte funkcionalnost kreirane naredbe, a zatim provjerite ako su uneseni podaci unutar admin sučelja.
 
 ``` shell
@@ -1340,7 +1342,7 @@ Primjer naredbi `if` i `else`:
 {% endif %}
 ```
 
-!!! zadatak
+!!! example "Zadatak"
     Kreirajte direktorij `./templates` unutar kojeg će biti pohranjeni predlošci koji se koriste, npr. `base_generic.html`. Ne zaboravite definirati putanju unutar `settings.py`.
 
 **Rješenje zadatka.** Datoteka `./templates/base_generic.html`:
@@ -1409,7 +1411,7 @@ class BookList(ListView):
     model = Book
 ```
 
-!!! zadatak
+!!! example "Zadatak"
     Sukladno prethodnom primjeru kreirajte prikaz za sve autore unutar baze.
 
 ### CSS
@@ -1472,7 +1474,7 @@ li a {
 }
 ```
 
-!!! zadatak
+!!! example "Zadatak"
     Dopunite prikaz na autora tako da njegovo ime bude link. Link neka vodi na prikaz svih knjiga od odabranog autora. Za tu svrhu prvo je potrebno kreirati pretraživanje po traženom autoru, a zatim vratiti sve knjige koje su pronađene za traženog autora.
 
 **Rješenje zadatka.** Uredit ćemo datoteku `main/views.py` da bude oblika:
@@ -1529,7 +1531,7 @@ Izmjenimo i predložak za prikaz knjiga. Datoteka `book_list.html`:
 {% endblock %}
 ```
 
-!!! zadatak
+!!! example "Zadatak"
     Dopunite `style.css` tako da dodate obrub na elemente Knjige i Autora.
 
 **Rješenje zadatka.** U datoteku `style.css` dodajemo:
@@ -1556,7 +1558,7 @@ Izmjenimo i predložak za prikaz knjiga. Datoteka `book_list.html`:
 
 ### Sijanje (seeding)
 
-!!! zadatak
+!!! example "Zadatak"
     - Kreirajte projekt `vj9` i unutar njega aplikaciju `main`. Unutar modela u aplikaciji `main` kreirajte klasu `Student`. Klasa `Student` neka sadrži vrijednost `first_name`.
     - Provedite potrebne naredbe za migraciju.
     - Pokrenite `./manage.py shell` i kreirajte jednog studenta.
@@ -1568,7 +1570,7 @@ $ ./manage.py dumpdata main.Student --pk 1 --indent 4 > 0001_student.json
 (...)
 ```
 
-!!! zadatak
+!!! example "Zadatak"
     Izbrišite iz baze zapis studenta kojeg ste prethodno unjeli.
 
 **Rješenje zadatka.**
@@ -1579,7 +1581,7 @@ $ ./manage.py dumpdata main.Student --pk 1 --indent 4 > 0001_student.json
 
 Za uvoz podataka u bazu koristimo naredbu `loaddata`. Detaljnije o naredbi [loaddata](https://docs.djangoproject.com/en/3.2/ref/django-admin/#loaddata).
 
-!!! zadatak
+!!! example "Zadatak"
     Uvezite prethodno kreirani `0001_student.json` u bazu.
 
 #### Fixture
@@ -1748,7 +1750,7 @@ Unutar aplikacije `main` stvorite si direktorij `templates`, unutar kojeg kreira
 
 Posjetite `http://127.0.0.1:8000/accounts/` i `http://127.0.0.1:8000/accounts/login/`. Prilikom posjete `/accounts/login/` javila se greška `TemplateDoesNotExist at /accounts/login/`, gdje možemo vidjeti iz poruke `Exception Value: registration/login.html` da Django ne može pronaći traženi predložak.
 
-!!! zadatak
+!!! example "Zadatak"
     Unutar `templates/registration` stvorite `login.html`.
 
 #### Login
@@ -1901,7 +1903,7 @@ class Author(models.Model):
 
 Prije početka pisanja samih testova pokrenite si projekt koji smo radili na vježbama 6. Na Merlinu je dostupna arhiva s projektom ako ju nemate.
 
-!!! zadatak
+!!! example "Zadatak"
     Preuzmite i pokrenite projekt `vj6` zatim unutar aplikacije main kreirajte direktorij `tests`.
 
 Unutar direktorija `tests` nalaze se testovi kojima će se testirati `urls.py`, `views.py` i `models.py`.
@@ -1913,7 +1915,7 @@ $ ./manage.py test main.tests
 (...)
 ```
 
-!!! zadatak
+!!! example "Zadatak"
     Stvorite testne `.py` datoteke unutar `tests`  koje koristite za testiranje rada `urls.py`, `views.py` i `models.py`.
 
 ### Testiranje `urls.py`

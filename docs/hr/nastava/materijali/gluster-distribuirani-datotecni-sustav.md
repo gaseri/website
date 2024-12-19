@@ -4,7 +4,7 @@ author: Mario Zadravec, Vedran Miletić
 
 # Distribuirani datotečni sustav Gluster
 
-!!! hint
+!!! info
     Za više informacija proučite [službenu dokumentaciju](https://docs.gluster.org/).
 
 [GlusterFS](https://www.gluster.org/) je distribuirani datotečni sustav otvorenog koda koji se može nadograđivati za pohranjivanje nekoliko petabajta podataka. Sastoji se od dvije komponente: serverske i klijentske. Server sadrži datoteke u xfs formatu (ili nekom sličnom formatu) te time pruža velike brzine pristupa datotekama i veliku mogućnost paralelizacije. Datoteke se automatski raspodjeljuju po raznim serverima i time olakšavaju pristup različitim podacima od strane više klijenata. Klijenti samo zatraže datoteke te sam sustav pronalazi datoteku na najbližem i najmanje opterećenom serveru i preusmjerava klijenta na taj server. Time se izbjegavaju redovi čekanja u slučaju da veliki broj klijenata traži različite datoteke sa servera.

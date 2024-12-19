@@ -19,7 +19,7 @@ Dokumentacija svih funkcija koje koristimo u nastavku dana je u sklopu [pregleda
 - `Get_library_version()` -- vraća verziju MPI standarda koja se koristi kao niz znakova
 - `Get_processor_name()` -- vraća ime domaćina koji izvodi proces
 
-!!! todo
+!!! quote "ToDo"
     Ovdje nedostaje zadatak.
 
 ## Mjerači vremena
@@ -27,7 +27,7 @@ Dokumentacija svih funkcija koje koristimo u nastavku dana je u sklopu [pregleda
 - `Wtime()` -- vraća vrijeme operacijskog sustava kao vrijednost tipa `float`, ekvivalent funkciji `time()` unutar Python modula `time`
 - `Wtick()` -- vraća informacije o preciznosti mjerača vremena
 
-!!! todo
+!!! quote "ToDo"
     Ovdje nedostaje zadatak sa mjerenjem vremena izvođenja nekog algoritma.
 
 ## Baratanje pogreškama

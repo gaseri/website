@@ -6,7 +6,7 @@ author: Vedran Miletić
 
 - `LoadModule`
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Instalirajte PHP (paket `php`).
     - Provjerite je li se mijenjao sadržaj datoteke `/etc/httpd/conf/httpd.conf`.
     - Provjerite je li se mijenjao sadržaj direktorija `/etc/httpd/conf.d` i `/etc/httpd/modules`.
@@ -17,7 +17,7 @@ author: Vedran Miletić
 - `UseCanonicalName`
 - `ServerSignature`
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Promijenite ime poslužitelja u `infuniri-minion<broj>.uniri.hr:80`.
     - Promijenite mail adresu administratora u `infuniri-minion<broj>-admin@uniri.hr`.
     - Uključite korištenje kanonskog imena servera.

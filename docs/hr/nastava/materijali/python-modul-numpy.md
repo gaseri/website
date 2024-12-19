@@ -33,7 +33,7 @@ import numpy as np
 
     - `np.array.itemsize` -- veličina (u bajtovima) tipa podataka od kojih se polje sastoji
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Stvorite polje s vrijednostima
 
         ```
@@ -66,7 +66,7 @@ Tipovi podataka definirani unutar modula `numpy`; potrebno koristiti kad radite 
 
     Više informacija o tome možete naći u članku [64-Bit Programming Models: Why LP64?](https://unix.org/version2/whatsnew/lp64_wp.html).
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Stvorite polje nula oblika `(5, 5)` u kojem su elementi tipa `numpy.float32`.
     - Stvorite polje jedinica oblika `(1000, 1000)`. Pokušajte ga ispisati naredbom `print`. Što se dogodi?
 
@@ -87,7 +87,7 @@ a += b
 b *= 3
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Stvorite dva dvodimenzionalna polja `a` i `b` oblika `(3, 3)` s proizvoljnim vrijednostima, i to tako da prvo ima elemente tipa `numpy.float32`, a drugo elemente tipa `numpy.float64`.
     - Izračunajte `2 * a + b`, `cos(a)`, `sqrt(b)`. Uočite kojeg su tipa polja koja dobivate kao rezultate.
     - Množenje matrica izvodite funkcijom `numpy.dot()`; proučite njenu dokumentaciju i izvedite ju na svojim poljima.
@@ -99,7 +99,7 @@ b *= 3
     - korisno kod pretvorbe, primjerice, 64-bitnog `float` tipa u 32-bitni `float` tip
     - često ćemo koristiti kod Python koda koji prosljeđuje podatke u C/C++ kod
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Iskoristite dva dvodimenzionalna polja iz prethodnog zadatka da izračunajte `2 * a + b`, ali tako da pretvorite drugo u polje koje ima elementa tipa `numpy.float32`.
 
 - `numpy.round(polje, broj_decimala)` vraća polje s vrijednostima zaokruženim na navedeni broj decimala
@@ -107,14 +107,14 @@ b *= 3
     - korisno kod usporedbe decimalnih brojeva, zbog nepreciznog spremanja brojeva u računalu (naročito se vidi kod konverzije podataka tipa `numpy.float64` u podatke tipa `numpy.float32`)
     - [strip sa Saturday Morning Breakfast Cereal na istu temu](https://www.smbc-comics.com/comic/2008-03-16)
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Stvorite polje u kojem su sve vrijednosti jednake 9.45 tipa `float64` i pretvorite ga u polje tipa `float32` i rezultat spremite u novo polje. Uočavate li gubitak preciznosti?
     - Pretvorite dobiveno polje tipa `float32` u polje tipa `float64`. Je li rezultat jednak početnom polju?
     - Iskoristite round da na rezultirajućem polju tipa `float64` dobijete iste vrijednosti kao na početnom.
 
     **Napomena:** rezultat ovog zadatka uvelike ovisi o računalu na kojem radite.
 
-!!! hint
+!!! info
     Na temu aritmetike brojeva s pomičnim zarezom napisani su brojni radovi od kojih svakako vrijedi pročitati [What Every Computer Scientist Should Know About Floating-Point Arithmetic](https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html).
 
 ## Čitanje polja iz datoteka
@@ -137,7 +137,7 @@ matrica = np.loadtxt(podaci)
 podaci.close()
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Stvorite dvije datoteke, nazovite ih `matrica_a.txt` i `matrica_b.txt`. Matrica u prvoj datoteci neka bude oblika `(3, 5)`, a u drugoj datoteci oblika `(5, 4)`.
     - Izvršite čitanje podataka, a zatim izračunajte produkt dvaju matrica. Možete li izračunati oba produkta ili samo jedan? Objasnite zašto.
 
@@ -148,14 +148,14 @@ podaci.close()
 - `np.ogrid()`
 - `np.mgrid()`
 
-!!! todo
+!!! quote "ToDo"
     Ovdje nedostaje objašnjenje i zadatak.
 
 ## Indeksiranje, cijepanje i iteriranje polja
 
 Jednodimenzionalna i višedimenzionalna polja možemo indeksirati, cijepati, iterirati i manipulirati baš kao i liste i znakovne nizove.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Stvorite jednodimenzionalno polje `a` proizvoljnih cijelobrojnih vrijednosti veličine 10 te isprobajte iduće naredbe:
 
     - `a[3]`
@@ -166,7 +166,7 @@ Jednodimenzionalna i višedimenzionalna polja možemo indeksirati, cijepati, ite
     - `a[0] * a[2] -1`
     - `a[[0,0,2]] = [1,2,3]`
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Stvorite višedimenzionalno polje `a` proizvoljnih cijelobrojnih vrijednosti oblika (5,4) te isprobajte iduće naredbe:
 
     - `a[2]`
@@ -176,7 +176,7 @@ Jednodimenzionalna i višedimenzionalna polja možemo indeksirati, cijepati, ite
     - `a[::-2]`
     - `b[1:3, : ]`
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Stvorite jednodimenzionalno polje `a` proizvoljnih cijelobrojnih vrijednosti veličine 10 i listu `i = [1,3,5,9]` te isprobajte iduće naredbe:
 
     - `a[i]`
@@ -197,7 +197,7 @@ Oblik polja možemo mijenjati idućim funkcijama:
 - `np.array.reshape()` -- na mjestu vraća polje promjenjenog oblika
 - `np.array.resize()` -- promjena oblika polja
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Stvorite višedimenzionalno polje `a` proizvoljnih cijelobrojnih vrijednosti oblika (5,4). Učinite iduće:
 
     - Trajno promijenite oblik polja u (2,10).
@@ -214,7 +214,7 @@ Spajanje i razdvajanje polja možemo vršiti idućim funkcijama:
 - `np.hsplit()` -- horizontalno razdvajanje
 - `np.vsplit()` -- vertikalno razdvajanje
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Stvorite polje `a` oblika (2,4) proizvoljnih cjelobrojnih vrijednosti.
 
     - Funkcijom za horizontalno razdvajanje razdvojite `a` na dva jednaka dijela te rezultat spremite u `b`. Kojeg tipa podataka je `b`. Što sadrži?
@@ -238,7 +238,7 @@ True
 
 Kopiju možemo stvoriti funkcijom `np.array.copy()`.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Stvorite jednodimenzionalno polje `a` proizvoljnih cijelobrojnih vrijednosti veličine 10 te funkcijom stvorite objekt `a_kopija` koji je kopija objekta `a`.
     - Promjenite proizvoljnu vrijednost polja `a_copy` te nakon toga promijenite oblik proizvoljnom funkcijom za mijenjanje oblika.
     - Usporedite sadržaj i oblik polja `a` i `a_copy`. Što možete zaključiti? Je li promjena vrijednosti objekta `a_copy` utjecala na vrijednosti objekta `a`?

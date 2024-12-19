@@ -26,7 +26,7 @@ Ispod izbornika objekata nalaze se upute za navigaciju mišem, a ispod njih je o
 
 Najjednostavniji način učitavanja molekule je putem njezinog PDB koda. U [RCSB online bazi podataka proteina](https://www.rcsb.org/), možete pronaći strukturu proteina koju želite vizualizirati u PyMOL-u i očitati njezin PDB kod. Zatim, u konzolu za unos naredbi unesemo `fetch <PDB kod>` ili iz izbornika `File` odaberemo `Get PDB ...` te u prozoru unesemo PDB kod i odaberemo `download...`.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     U [RCSB online bazi podataka proteina](https://www.rcsb.org/) pronađite protein [hemoglobin](https://en.wikipedia.org/wiki/Hemoglobin) i njegov četveroznamenkasti PDB kod te ga učitajte u alatu PyMOL.
 
 U PyMOL-u možemo pod `File\Open...` otvarati kemijske spojeve u različitim formatima uključujući SDF te proteine u brojnim formatima uključujući PDB.
@@ -42,7 +42,7 @@ Za proučavanje modela koristimo miš za navigaciju:
 
 U kombinaciji sa (++ctrl++) i (++shift++) moguće su i druge akcije koje su ukratko opisane u oknu s uputama za navigaciju mišem.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Isprobajte funkcionalnosti navigacije mišem na prethodnom primjeru hemoglobina.
 
 ## Odabir dijelova molekule
@@ -62,7 +62,7 @@ Jednostavnije, tu opciju možemo mijenjati klikom na određeni element u oknu se
 
 Odaberemo sekvencu ostataka (engl. *residues*). U izborniku `Display` uključimo prikaz sekvenci `Sequence`. Povlačenjem miša po traci sekvenci biramo ostatke, molekule ili dijelove molekule.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Učitajte protein PDB koda `2GTL`. Iz liste ostataka odaberite molekulu `HEM` (na kraju liste), uvećajte sliku da vidite njezinu strukturu, a zatim ju obrišite.
 
 ## Izbornik objekata
@@ -82,7 +82,7 @@ Izbornik objekata nudi korištenje značajki za prikaz objekata. Svaki objekt im
 - `generate` pa `vacuum electrostatics` stvara prikaz pozitivno i negativno nabijenih dijelova proteina koji nam je koristan kod vizualne analize površine,
 - `compute` računa svojstva kao što su broj atoma, naboji, površina i težina.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Učitajte molekulu djelatne tvari lijeka naziva [diklofenak](https://en.wikipedia.org/wiki/Diclofenac). Uključite klasični prikaz pogodan za male molekule. Izračunajte broj atoma, površinu, masu i naboje unutar molekule.
 
 Opcijom `Show` (hrv. *prikaži*) omogućuje primjenu određenog grafičkog efekta na prikaz objekta:
@@ -95,7 +95,7 @@ Korištenjem `Label` (hrv. *oznaka*) možemo uključiti prikaz naziva atoma, rez
 
 Pod `Color` (hrv. *boja*) možemo detaljno konfigurirati način bojanja odabranih objekata.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     U primjeru iz prethodnog zadatka uključite prikaz naziva atoma te obojajte benzene po želji.
 
 Prikaz sekvence proteina uključujemo klikom na slovo `S` u donjem desnom dijelu ekrana. Slovo `F` prebacuje nas u prikaz preko čitavog ekrana.
@@ -104,14 +104,14 @@ Prikaz sekvence proteina uključujemo klikom na slovo `S` u donjem desnom dijelu
 
 PyMOL-ovu sesiju moguće je spremiti korištenjem opcije `File\Save Session`, odnosno `File\Save Session As...`.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Spremi primjer iz prethodnog zadatka u bilo kojem podržanom formatu.
 
 ## Izvoz
 
 Korištenjem stavke izbornika `File\Export Image As` moguće je izvesti prikaz iz PyMOL-a u sliku u formatu PNG. Korištenjem alata `Draw/Ray` moguće je dodatno dobiti sliku proizvoljno visoke rezolucije korištenjem [praćenja zraka svjetlosti](https://en.wikipedia.org/wiki/Ray_tracing_(graphics)) (engl. *ray tracing*). Taj pristup daje bolju kvalitetu prikaza od [renderiranja](https://en.wikipedia.org/wiki/Rendering_(computer_graphics)) (engl. *rendering*) koje se koristi za prikaz u PyMOL-u.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Učitajte protein SARS-CoV-2 spike glycoprotein (zatvoreno stanje). Označite na njemu ostatke 80 - 143 i obojite ih u boju magen[t](https://www.hrvatskitelekom.hr/magenta1)a. Uvećajte i prikažite taj dio molekule pa prikaz spremite u formatu `.png`.
 
     Ponovite izvoz, ali tako da koristite praćenje zraka i da je rezolucija najmanje [4K/UHD](https://youtu.be/FFhE2dDm_D0).
@@ -125,7 +125,7 @@ Dvije vrste spojeva koje možemo graditi su:
 - male molekule, ondnosno kemijski spojevi (kartica `Chemical`) i
 - peptidi, odnosno proteini (kartica `Protein`).
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Pomoću Buildera izradite ibuprofen i [stimulans](https://en.wikipedia.org/wiki/Stimulant) po vlastitom izboru.
 
     Pomoću Buildera izradite [tripeptide](https://en.wikipedia.org/wiki/Tripeptide) Lactotripeptides i Leupeptin te [oligopeptid](https://en.wikipedia.org/wiki/Oligopeptide) po vlastitom izboru.

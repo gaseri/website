@@ -63,7 +63,7 @@ Dokumentacija svih funkcija koje koristimo u nastavku dana je u sklopu [pregleda
     comm.Disconnect()
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Učinite da i dijete ranga 2 vrši razmjenu poruka s roditeljem. Dijete neka šalje array vrijednosti po vašem izboru veličine 6 tipa `np.int64`, a roditelj neka šalje array vrijednosti po vašem izboru veličine 8 tipa `np.float64`.
     - Povećajte broj djece sa 3 na 5.
 
@@ -116,10 +116,10 @@ Dokumentacija svih funkcija koje koristimo u nastavku dana je u sklopu [pregleda
     comm.Disconnect()
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Pretvorite ranije obrađeno računanje broja pi korištenjem Monte Carlo metode u varijantu koja koristi dinamičko upravljanje procesima.
 
 ### Primjeri koji uključuju korištenje modula scipy
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio treba napisati u cijelosti.

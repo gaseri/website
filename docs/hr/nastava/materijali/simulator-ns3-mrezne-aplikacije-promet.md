@@ -287,7 +287,7 @@ int main ()
 
 Usporedimo li AsciiTrace datoteke koje stvaraju UDP i TCP on-off aplikacije (dakle, datoteke `vjezba-udp-on-off-app-0-0.tr` i `vjezba-tcp-on-off-app-0-0.tr` te `vjezba-udp-on-off-app-1-0.tr` i `vjezba-tcp-on-off-app-1-0.tr`), vidjet ćemo da među njima postoji razlika.
 
-!!! todo
+!!! quote "ToDo"
     Ovdje je potrebno opisati razliku i prikazati na primjeru kako izgleda.
 
 ## Dodatak: složenije vjerojatnosne razdiobe i aplikacijsko programsko sučelje slučajne varijable

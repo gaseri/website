@@ -402,5 +402,5 @@ int main ()
 
 Nešto složeniji model grešaka je `BurstErrorModel` koji...
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio treba napisati u cijelosti.

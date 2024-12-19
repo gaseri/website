@@ -14,6 +14,6 @@ author: Vedran Miletić
 
 - `glob.iglob(pathname)` vraća popis datoteka koje se podudaraju s glob uzorkom `pathname` kao iterator koji je preferiran pred listom za korištenje u for petlji, npr. `for path in glob.iglob("/home/korisnik/Glazba/*.m4a"): (..)`
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Dohvatite sve datoteke u `/var/log` koje imaju nastavak `.log`.
     - Dohvatite sve datoteke u `/var/log` čije ime počinje malim slovom, a nastavak završava brojem (npr. `btmp.1`, `wtmp.1`, `dmesg.0`, `auth.log.1`).

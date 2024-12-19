@@ -4,7 +4,7 @@ author: Marina Miler, Vedran Miletić
 
 # Integracija simuliranih i stvarnih mreža
 
-!!! todo
+!!! quote "ToDo"
     Napiši bolje kad makneš viškove ispod.
 
 Već smo vidjeli da je [projekt ns-3](https://www.nsnam.org/) izgradio je robusnu jezgru simulatora, koja je uz to i dobro dokumentirana, jednostavna za korištenje i debagiranje, te pruža usluge čitavog simulacijskog tijeka, od konfiguriranja simulacije, pa sve do sakupljanja praćenih izvora (engl. *trace collection*) i analiza.
@@ -17,7 +17,7 @@ Još jedna značajka ovog simulatora je mogućnost ponovnog korištenja stvarnih
 
 ## Povijest
 
-!!! todo
+!!! quote "ToDo"
     Stavi negdje drugdje ovo i dva sljedeća dijela.
 
 Rad na [ns-3-u](https://en.wikipedia.org/wiki/Ns_(simulator)) započeo je 2004/2005. akademske godine. Tim kojeg je predvodio Tom Henderson sa Sveučilišta u Washingtonu, a čiji su ostali članovi George Riley sa Georgia Techa, Sally Floyd s International Computer Science Institute i Sumit Roy sa Sveučilišta u Washingtonu. Tim je uspio pridobiti finacijsku pomoć od američke [Nacionalne zaklade za znanost](https://www.nsf.gov/) (engl. *National Science Foundation*, kraće NSF), da stvori zamjenu za ns-2, pod imenom ns-3. U isto vrijeme, Planete research team na [INRIA Sophia Antipolis-u](https://www.inria.fr/), čiji su glavni članovi bili Mathieu Lacage i Walid Dabbous, počeo je istraživati zamjenu za ns-2 s početnim isticanjem IEEE 802.11 Wi-Fi modela. Lacargeov početni simulator bio je nazvan [Yet Another Network Simulator](https://hal.inria.fr/inria-00078318v2) (yans).

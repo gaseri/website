@@ -67,7 +67,7 @@ Disjunkcija je logička operacija koja djeluje na dvije ili više varijabli (izj
 | 1 | 0 | 1 |
 | 1 | 1 | 1 |
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     1. Koji je osnovni element u Booleovoj algebri? Koje je temeljno svojstvo logičke izjave?
     3. Smatra li se izjavom u logičkoj algebri rečenica: *Rijeka je najljepši grad na svijetu!* Obrazloži.
     4. Opiši osnovne logičke operacije.
@@ -77,7 +77,7 @@ Disjunkcija je logička operacija koja djeluje na dvije ili više varijabli (izj
 
 Složene logičke izraze dobit ćemo kombinacijom osnovnih logičkih operacija. Tada u takvom izrazu treba pripaziti da operacije nemaju isti prioritet izvođenja jer na njihov redoslijed može se utjecati pomoću zagrada, kao i u aritmetičkim zadacima u matematici. Stoga, ako postoje zagrade, prvo se rješava izraz unutar njih, sljedeći prioritet ima negacija, zatim konjunkcija i na kraju disjunkcija.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Putem tablice istinitosti provjerimo za koje vrijednosti $A$, $B$ i $C$ je izraz $\overline{A + B} \cdot \overline{C}$ istinit.
 
 **Rješenje:**
@@ -95,7 +95,7 @@ Složene logičke izraze dobit ćemo kombinacijom osnovnih logičkih operacija. 
 
 Iz tablice istinitosti vidimo da je izraz $\overline{A + B} \cdot \overline{C}$ istinit samo u slučaju kada su vrijednosti varijabli $A$, $B$ i $C$ jednake $0$.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     1. Napiši tablicu istinitosti za sljedeće logičke izraze: $A \cdot B + \overline{C} \cdot D$, $\overline{A \cdot B} + C$, $(A + B) + \overline{A} \cdot C$.
 
 ## Pretvaranje tablice istinitosti u logički izraz
@@ -143,7 +143,7 @@ Važno je naglasiti da je u KNF izraze pojedinih redaka nužno stavljati u zagra
 
 Ukoliko nam je zadana gotova tablica istinitosti i od nas se traži da odredimo njezin logički izraz možemo koristiti bilo koju od ove dvije normalne forme. Međutim, u tablici istinitosti može se dogoditi da se broj nula i jedinica u rezultatu razlikuje. Stoga će jedna forma biti mnogo učinkovitija od druge. Recimo da imamo tablicu s 4 varijable te kao vrijednosti varijable $Y$ imamo 12 jedinica i 4 nule, očigledno je kako će nam za njezino rješavanje KNF biti povoljnija. Isto vrijedi i obrnuto.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     1. Opiši postupak disjunktivne i konjunktivne normalne forme.
     2. Tablice istinitosti iz prethodnog zadatka pretvori u složene logičke izraze koristeći obje normalne forme.
 
@@ -234,7 +234,7 @@ U ovoj ćemo dokumentaciji spomenuti 8 osnovnih teorema koji će nam biti dovolj
 | T7 | de Morganov zakon | $\overline{A + B} = \overline{A} \cdot \overline{B}$ | $\overline{A \cdot B} = \overline{A} + \overline{B}$ |
 | T8 | | $A + \overline{A} \cdot B = A + B$ | $A \cdot (\overline{A} + B) = A \cdot B$ |
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Dokažimo 2. teorem idempotencije.
 
 **Rješenje:**
@@ -245,7 +245,7 @@ U ovoj ćemo dokumentaciji spomenuti 8 osnovnih teorema koji će nam biti dovolj
 4. $A \cdot 1 = A$ (jer je $1 + 1 = 1$)
 5. $A = A$ (1. aksiom)
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Dokažimo 6. teorem simplifikacije.
 
 **Rješenje:**
@@ -255,7 +255,7 @@ U ovoj ćemo dokumentaciji spomenuti 8 osnovnih teorema koji će nam biti dovolj
 3. $A \cdot 1 = A$ (2. aksiom)
 4. $A = A$ (1. aksiom)
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     1. Za što su nam potrebni aksiomi i teoremi?
     2. Opiši princip dualnosti.
     3. Dokaži de Morganov zakon.
@@ -264,7 +264,7 @@ U ovoj ćemo dokumentaciji spomenuti 8 osnovnih teorema koji će nam biti dovolj
 
 Pojednostavljenje složenih izraza primjenom [Aksioma](#aksiomi) i [Teorema](#teoremi) Booleove algebre nazivamo minimizacija. Prilikom njihovog korištenja u minimizaciji nije ih potrebno dokazivati.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Minimizirajmo logički izraz iz poglavlja [Konjunktivna normalna forma](#konjunktivna-normalna-forma).
 
 **Rješenje:**
@@ -275,7 +275,7 @@ Pojednostavljenje složenih izraza primjenom [Aksioma](#aksiomi) i [Teorema](#te
 
 Ovaj zadatak se mogao riješiti i korištenjem aksioma budući da su teoremi zasnovani na njima, no korištenjem teorema u manje koraka dođemo do istog rješenja.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Minimizirajmo logički izraz $(\overline{A} + B) + \overline{A}$ .
 
 **Rješenje:**
@@ -284,6 +284,6 @@ Ovaj zadatak se mogao riješiti i korištenjem aksioma budući da su teoremi zas
 2. $(\overline{A} + \overline{A}) + B$ (4. teorem)
 3. $\overline{A} + B$ (2. teorem)
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     1. Što je minimizacija?
     2. Minimiziraj sljedeći izraz: $\overline{A + B} \cdot (\overline{B} + A)$

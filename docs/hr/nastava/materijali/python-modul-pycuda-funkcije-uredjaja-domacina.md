@@ -60,12 +60,12 @@ matrix_sum(drv.Out(result_gpu), drv.In(a), drv.In(b), block=(20,20,1), grid=(1,1
 result_cpu = 7 * a + b
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Definirajte funkciju `kvadriraj(float x)` koja se izvodi na uređaju i kvadrira dani `x` tako da ga množi samim sobom.
     - Definirajte funkciju `potenciraj(float x, int n)` koja se izvodi na uređaju i potencira dani `x` tako da ga množi opetovano samim sobom unutar `for` petlje `n` puta.
     - Unutar zrna za množenje matrica na uređaju izračunajte postavite rezultat na 42. potenciju zbroja `a[i] + b[i]`. Isto napravite na domaćinu.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Definirajte funkciju uređaja koja vraća broj djelitelja danog prirodnog broja.
 
     Definirajte zrno koje prima 2 polja tipa `int` iste veličine; u prvo polje pohranite brojeve za koje će se određivati broj djelitelja; u drugo polje postavite sve vrijednosti na -1. Zrno u element u drugom polju upisuje broj djelitelja prirodnog broja koji se nalazi na istoj poziciji u prvom polju.

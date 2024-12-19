@@ -4,7 +4,7 @@ author: Luka Vretenar, Vedran Miletić
 
 # Automatizacija zadaća operacijskog sustava
 
-!!! hint
+!!! info
     Za dodatne primjere naredbi proučite [stranicu system/Timers na ArchWikiju](https://wiki.archlinux.org/title/Systemd/Timers) i [Chapter 24. Automating System Tasks](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/ch-automating_system_tasks) u [Red Hat Enterprise Linux 7 System Administrator's Guide](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/index).
 
 ## Systemd timer
@@ -16,7 +16,7 @@ author: Luka Vretenar, Vedran Miletić
     - datoteka `USLUGA.service`, definira samu uslugu ili naredbe za pokrenuti
 - za definirani mjerač vremena `USLUGA.timer` mora posojati i usluga istog imena `USLUGA.service`, u suprotnom vidjeti savjet na dnu stranice
 
-!!! hint
+!!! note
     Kroz sve primjere koristimo `USLUGA` kao naziv našeg para mjerača vremena i systemd usluge. Za vašu primjenu taj naziv će biti drugačiji.
 
 - omogućavanje i pokretanje mjerača vremena vršimo uz pomoć `systemctl` alata kao i za sve ostale vrste jedinki:
@@ -25,10 +25,10 @@ author: Luka Vretenar, Vedran Miletić
     - `systemctl start USLUGA.timer`
     - `systemctl stop USLUGA.timer`
 
-!!! hint
+!!! note
     Predefinirani sistemski mjerač vremenai se nalaze u direktoriju `/usr/lib/systemd/system`. Njih nećemo mijenjati, već ćemo u slučaju potrebe napraviti kopije u direktoriju `/etc/systemd/system` i svoje promjene izvoditi na kopijama.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Ispišite sve aktivne mjerače vremena na sustavu i pronađite njihove definicijske datoteke.
 
 ## Struktura systemd.timer datoteka
@@ -67,10 +67,10 @@ author: Luka Vretenar, Vedran Miletić
     - `hourly`, `daily`, `weekly`, `monthly`,
     - `2003-03-05 05:40`
 
-!!! hint
+!!! info
     Za više detalja o načinima specificiranja vremena pogledajte u man stranici `systemd.timer(5)` (naredba: `man 5 systemd.timer`).
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Iz datoteka mjerača vremena koje ste pronašli u prethodnom zadatku pročitajte i odredite koje usluge pokreću, koje su vrste ti mjerači vremena i u kojim vremenima pokreću te datoteke.
 
 - primjer:
@@ -106,8 +106,8 @@ author: Luka Vretenar, Vedran Miletić
     # ...
     ```
 
-!!! hint
+!!! tip
     U slučaju da `USLUGA.timer` i `DRUGAUSLUGA.service` datoteke nemaju isti naziv jedinke, potrebno je u datoteci `USLUGA.timer` pod sekcijom `[Timer]` eksplicitno navesti na koju jedinku se odnosi dodavanjem stavke `Unit=DRUGAUSLUGA.service`.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Izradite vlastiti mjerač vremena koji se sastoji od systemd usluge i mjerača vremena, čija je svrha svakih 2 minute pokrenuti naredbu `date >> /root/datoteka`.

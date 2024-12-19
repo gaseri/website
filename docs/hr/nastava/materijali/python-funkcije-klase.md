@@ -31,11 +31,11 @@ author: Vedran Miletić
     }
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Napišite funkciju `prosjek(lista)` koja ispisuje na ekran prosječnu vrijednost elemenata liste `(suma elemenata / broj elemenata)`. Pretpostavite da lista ima samo podatke tipova `int` i `float`.
     - Napišite funkciju `najduzi_niz_znakova(lista_nizova_znakova)` koja traži najduži niz znakova u listi nizova znakova i vraća ga. Pretpostavite da lista ima samo podatke tipa `str`.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Uzmite da sustav za e-učenje predanu domaću zadaću studenta Ivo Ivić sprema kao `ivo_ivic.tar.gz`. Napišite funkciju koja će na temelju liste predanih zadaća oblika
 
     ``` python
@@ -44,7 +44,7 @@ author: Vedran Miletić
 
     ispisati prezimena i imena studenata koji su predali zadaću. Pritom zanemarite hrvatske znakove, međutim pripazite da prezime i ime počinju velikim početnim slovom.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Definirajte funkciju `select_from(table, id)` kojoj se šalje "tablica" oblika
 
         ``` python
@@ -56,7 +56,7 @@ author: Vedran Miletić
 
 ## Generatori
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio treba napisati u cijelosti.
 
 ## Klase
@@ -88,14 +88,14 @@ author: Vedran Miletić
     };
     ```
 
-!!! todo
+!!! quote "ToDo"
     Ovdje treba dati opisati nasljeđivanje.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Definirajte klasu `Covjek` koja sadrži atribute `visina`, `tezina`, `dob` i `budnost` te funkciju `say_hello()`.
     - Definirajte klasu `Student` koja nasljeđuje klasu `Covjek` i dodaje atribute `fakultet` i `godina_studija`.
 
-!!! todo
+!!! quote "ToDo"
     Učini ovaj zadatak smislenim.
 
 - objekt je instanca klase
@@ -104,5 +104,5 @@ author: Vedran Miletić
 
     - promjenjiv uz redefiniranje metode `__init__()`
 
-!!! todo
+!!! quote "ToDo"
     Ovdje treba osmisliti primjere i zadatak.

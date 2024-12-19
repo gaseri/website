@@ -200,7 +200,7 @@ U Virtual Machine Manageru moguće je za pojedini virtualni stroj pronaći ovaj 
 
 ## virsh
 
-!!! hint
+!!! info
     Za dodatne primjere naredbi proučite [stranicu libvirt na ArchWikiju](https://wiki.archlinux.org/title/libvirt).
 
 [virsh](https://libvirt.org/manpages/virsh.html) je korisničko sučelje naredbenog retka za upravljanje virtualnim strojevima.
@@ -264,7 +264,7 @@ Nakon uređivanja XML dokumenta virtualni stroj stvaramo naredbom:
 $ virsh create moja-domena.xml
 ```
 
-!!! adomonition "Zadatak"
+!!! example "Zadatak"
     Stvorite novi virtualni stroj s 1 virtualnom procesorskom jezgrom i 2 gigabajta RAM-a, a zatim mu dodajte još jedan (prazan) tvrdi disk veličine 50 gigabajta.
 
 virsh podržava velik broj argumenata, a njihov popis i kratak opis možemo dobiti korištenjem argumenta `help`:

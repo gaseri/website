@@ -16,7 +16,7 @@ author: Vedran Miletić
 
 ### Primjer korištenja Etherneta
 
-!!! todo
+!!! quote "ToDo"
     Ovdje nedostaje primjer.
 
 ## ARP
@@ -44,7 +44,7 @@ author: Vedran Miletić
 
 ### Rješenje primjera korištenja IPv4
 
-!!! todo
+!!! quote "ToDo"
     Ovdje nedostaje rješenje primjera.
 
 ## ICMP
@@ -61,10 +61,10 @@ author: Vedran Miletić
 
 ## TCP
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio treba napisati.
 
 ## UDP
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio treba napisati.

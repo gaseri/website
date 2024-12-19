@@ -41,10 +41,10 @@ author: Vedran Miletić
     - interno izražen u danima, sekundama i mikrosekundama, ali može se zapisati u jedincama po želji
     - omogućuje brojne aritmetičke operacije: zbrajanje, oduzimanje, množenje i dijeljenje cijelim brojem i brojem s pomičnim zarezom, modulo dijeljenje i druge ([detaljnije](https://docs.python.org/3/library/datetime.html#timedelta-objects))
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Odredite koliko je dana prošlo od 1. siječnja 1970.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Neki od operacijskih sustava sličnih Unixu vrijeme spremaju kao 32-bitni cijeli broj pa će 19. siječnja 2038. u 03:14:07 po koordiniranom svjetskom vremenu doživjeti prelijevanje vrijednosti vremena (tzv. [Year 2038 problem](https://en.wikipedia.org/wiki/Year_2038_problem)). Odredite koliko još vremena (u sekundama) imamo do tada.
 
 - `datetime.tzinfo` i `datetime.timezone` služe klasama `datetime` i `time` za pohranu informacija o vremenskoj zoni kao što je odstupanje lokalnog vremena od [koordiniranog svjetskog vremena (Coordinated Universal Time, UTC)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
@@ -62,7 +62,7 @@ author: Vedran Miletić
 
     - bazu vremenskih zona [održava IANA](https://www.iana.org/time-zones)
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napišite program koji korisnika traži unos odmaka dvaju vremenskih zona između kojih će se vršiti pretvorba vremena. Korisnik unosi datum i vrijeme tako da redom unosi godinu, mjesec, dan, sat, minute i sekunde, a zatim navodi u kojoj od dvije vremenske zone je to vrijeme uneseno. Program pretvara to vrijeme u vrijeme u drugoj vremenskoj zoni. (Uputa: pretvorbu izvršite u dva koraka: prvo oduzmite odmak vremenske zone da dobijete vrijem po UTC-u, a zatim dodajte drugi odmak.)
 
 - formatiranje datuma i vremena ([popis kodova za formatiranje](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-format-codes))
@@ -93,5 +93,5 @@ author: Vedran Miletić
 
     - `time.strptime()` omogućuje formatiranje vremena
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Promijenite rješenje prethodnog zadatka tako da korisnik unosi vremena u obliku `2020-03-26 08:37:54` umjesto pojedinačnih unosa godina, mjeseca, dana, sati, minuta i sekundi (pritom nije potrebno baratati pogrešnim unosima) te da se rezultat pretvorbe ispisuje u obliku `Date: 26. March 2020. Time: 08.37.54`.

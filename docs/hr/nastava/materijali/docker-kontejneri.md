@@ -8,7 +8,7 @@ Razvoj aplikacija danas zahtijeva mnogo više od samog pisanja koda. Višestruki
 
 Docker je otvorena platforma za razvoj, implementaciju i pokretanje aplikacija. Pruža mogućnost pakiranja i pokretanja aplikacije u izoliranom okruženju koje se naziva spremnik ili kontejner (engl. *container*). Kontejneri sadrže sve što je potrebno za pokretanje aplikacije, tako da se ne morate oslanjati na ono što je trenutno instalirano na nekom računalu. Na taj način se mogu jednostavno dijeliti i možemo biti sigurni da će svi s kojima ih podijelimo dobiti isti kontejner koji radi na isti način. Ukratko, Docker omogućuje da se aplikacija izolira od svog okruženja, što omogućuje brzu implementaciju softvera i rješava problem *ali radi na mom računalu* koji se nekad javlja kod postavljanja aplikacije.
 
-!!! hint
+!!! info
     Za više informacija proučite [službenu dokumentaciju](https://docs.docker.com/).
 
 Formalno, možemo reći da je Docker skup alata za kontejnerizaciju (poznatu još i pod nazivom kontejnerska virtualizacija ili [virtualizacija na razini operacijskog sustava](https://en.wikipedia.org/wiki/Operating-system-level_virtualization), engl. *operating-system-level virtualization*) i dijeljenje aplikacija putem interneta (gdje mu je princip rada vrlo sličan Gitu). Sve je popularniji u svijetu, koristi ga vrlo veliki broj poslovnih subjekata i danas je dostupan kao paket u gotovo svim distribucijama Linuxa.
@@ -169,10 +169,10 @@ To generate this message, Docker took the following steps:
 
 Izlaz pokretanja kontejnera temeljenog na slici `hello-world` govori što se upravo dogodilo. Docker koji radi na vašem terminalu pokušao je pronaći sliku pod nazivom `hello-world`. Budući da ste tek započeli, nema slika pohranjenih lokalno (`Unable to find image 'hello-world:latest' locally`) pa Docker odlazi u svoj zadani Docker registar, Docker Hub, i traži sliku pod nazivom `hello-world`. Tamo pronalazi sliku, povlači je i zatim pokreće u kontejneru. Jedina funkcija `hello-world`-a je ispisati tekst koji vidite na vašem terminalu, nakon čega kontejner izlazi.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Pokrenite kontejner zasnovan na [slici Alpine Linuxa](https://hub.docker.com/_/alpine/). [Alpine Linux](https://alpinelinux.org/) je lagana distribucija Linuxa pa se brzo skida i pokreće.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Docker ima mogućnost pokretanja naredbe unutar kontejnera u interaktivnom terminalu korištenjem parametara `-i` i `-t`. Pokrenite naredbu `/bin/sh` unutar kontejnera Alpine Linuxa.
 
     Kada ste unutar kontejnera koji pokrenuli ljusku, možete isprobati nekoliko naredbi poput `ls -l`, `uname -a` i drugih, isprobajte ih. Imajte na umu da je Alpine Linux malena distribucija pa bi moglo nedostajati nekoliko naredbi. Izađite iz ljuske i kontejnera upisivanjem naredbe `exit`.
@@ -483,17 +483,17 @@ Poruke su iste kao i kod pokretanja naredbom `docker run` iznad.
 
 U sljedećem zadatku stvorite, izradite i pokrenite vlastitu Docker sliku u kontejneru.
 
-!!! adomonition "Zadatak"
+!!! example "Zadatak"
     Po uzoru na [zadatak s GitHuba](https://github.com/techno-tim/launchpad/tree/master/docker/custom-image) izradite vlastitu Docker sliku.
 
 U sljedećem zadatku izradit ćete jednostavnu web stranicu za e-trgovinu. Web stranica će koristiti API na uslugu proizvoda kako bi zatražila popis proizvoda za prikaz kupcu.
 
-!!! adomonition "Zadatak"
+!!! example "Zadatak"
     Napravite Docker sliku za [aplikaciju koja nudi uslugu proizvoda](https://github.com/jakewright/tutorials/tree/master/docker/02-docker-compose).
 
 U sljedećem zadatku izradit ćete Python aplikaciju koja će vam nuditi izbor filmova slučajnim odabirom.
 
-!!! adomonition "Zadatak"
+!!! example "Zadatak"
     Preuzmite [Python skriptu moviepickera](https://github.com/python-engineer/python-fun/tree/master/moviepicker) i napravite `Dockerfile` za Docker sliku koja će pokrenuti skriptu kod pokretanja u kontejneru.
 
 ## Primjer primjene

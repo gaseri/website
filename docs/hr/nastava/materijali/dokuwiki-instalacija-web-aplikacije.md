@@ -4,5 +4,5 @@ author: Vedran Miletić
 
 # Instalacija i konfiguracija wiki sustava DokuWiki
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio treba napisati u cijelosti.

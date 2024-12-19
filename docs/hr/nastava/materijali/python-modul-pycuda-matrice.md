@@ -65,7 +65,7 @@ print("GPU rezultat\n", result_gpu)
 print("CPU i GPU daju isti rezultat?\n", result_cpu == result_gpu.get())
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Prilagodite gornji kod tako da se zrnu prosljeđuje i veličina matrice koja se koristi u izračunu; za to trebate napraviti tri stvari:
 
     - U zrnu promijeniti kod da potpis bude `__global__ void zbroji_matrice (float *dest, float *a, float *b, int n)`,
@@ -84,7 +84,7 @@ print("CPU i GPU daju isti rezultat?\n", result_cpu == result_gpu.get())
 
     Međutim, radi jednostavnosti i boljih performansi, preferira se usklađivanje veličine polja i broja niti koje rade na tom polju ukoliko je moguće napraviti na danom problemu.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napišite program koji na dvije matrice matrica formata 10 * 10 element po element radi operaciju: $2 \cdot \sin(a) + 3 \cdot \cos(b) + 4$
 
     Ovu operaciju učinite device funkcijom i pozovite ju unutar zrna.
@@ -125,7 +125,7 @@ __global__ void mat_vec_mult (float *dest, float *mat, float *vec)
 }
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Promijenite veličinu matrice na `(16, 16)`, a veličinu vektora na 16.
     - Promijenite kod tako da se izvodi u 16 niti po x-u i 16 niti po y-u, i da se pritom redukcija (zbrajanje produkata) izvodi paralelno na način koji smo već ranije opisali.
 
@@ -203,15 +203,15 @@ result_cpu = np.matrix(a) * np.matrix(b)
     - `threadIdx.y * blockDim.x`,
     - `threadIdx.x`.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Prilagodite kod tako da množi matrice formata `(200, 200)` u 10 blokova po x koordinati i 10 blokova po y koordinati.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Modificiriajte program koji vrši jednoblokovno modificirano množenje matrica tako da umjesto produkta gdje je je element $(i, j)$ oblika $\sum_k a_{ik} \cdot b_{kj}$, on bude oblika $\sum_k 2 \cdot a_{ik}^{b_{kj}}$.
 
 ## Druge primjene matrica
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Računate prosječne vrijednosti temperature za određeno mjesto.
 
     Definirajte zrno koje prima tri argumenta, matricu tipa `float`, vektor tipa `int` i vektor tipa `float`.

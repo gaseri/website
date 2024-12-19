@@ -4,7 +4,7 @@ author: Petar Živković, Vedran Miletić
 
 # Distribuirani datotečni sustav Ceph
 
-!!! hint
+!!! info
     Za više informacija proučite [službenu dokumentaciju](https://docs.ceph.com/).
 
 [Ceph](https://ceph.com/) je platforma otvorenog koda za distribuirano spremanje podataka koju odlikuje otpornost na kvarove i koja je izuetno skalabilna ("na nivo eksabajta"). Ceph se sastoji od više razina.

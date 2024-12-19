@@ -20,7 +20,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov, Anja Vrbanjac
     $ mv datoteka1 datoteka2 # premješta datoteku1 u datoteku2 i preimenuje ih
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - U svom kućnom direktoriju napravite direktorij `zadatak1510` i uđite u njega.
     - U njemu napravite 3 datoteke: `vjezba1`, `vjezba2` i `vjezba3` jednom naredbom (linijom). Ispišite na ekran sadržaj datoteke `vjezba2`.
     - Izbrišite zatim datoteku `vjezba1`.
@@ -31,7 +31,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov, Anja Vrbanjac
 
     - kod naredbe `mv`, za razliku od `cp` i `rm`, nema potrebe za rekurzijom; radi se o preimenovanju
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - U Vašem kućnom direktoriju napravite predloženu strukturu direktorija:
 
         ```
@@ -45,7 +45,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov, Anja Vrbanjac
     - Izbrišite direktorij `Preddiplomski`.
     - Direktorij `Diplomski` preimenujte u `Dipl`.
 
-!!! admonition "Dodatni zadatak"
+!!! tip "Dodatni zadatak"
     Provjerite čemu služi i kako se koristi program [Midnight Commander](https://en.wikipedia.org/wiki/Midnight_Commander) (naredba `mc`).
 
 ## Glob uzorci
@@ -66,7 +66,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov, Anja Vrbanjac
 
 - `\` -- tzv. *prekidni znak*
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - U svom kućnom direktoriju stvorite poddirektorij `Zadatci` i u njemu datoteke `zadatak`, `zadatek`, `zadatuk`, `zadatak1`, `zadatak2`, `zadatakABC`, `zadatakabc`, `zadacnica`, `zadacnicA`, `zad3` i `dat05`.
     - Jednom naredbom, koristeći se glob-om, izlistajte samo:
 
@@ -111,7 +111,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov, Anja Vrbanjac
         - brisanje nađenih datoteka naredbom find: `find ... -exec rm {} \;` ili `find ... | xargs rm`
         - pretraživanje nađenih datoteka: `find ... -type f | xargs grep <izraz>`
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napišite naredbu `find` kojom u svom kućnom direktoriju tražite datoteke koje počinju sa `iz-`, čiji ste vi vlasnik i kojima je pristupano u zadnjih 30 dana.
 
 - `locate` pretražuje bazu datoteka za datoteku koja u imenu sadrži dani niz znakova
@@ -120,7 +120,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov, Anja Vrbanjac
     - rezultat pretraživanja je puna putanja do tražene datoteke
     - pretražuje brže jer stvara bazu imena datoteka koje postoje u datotećnom sustavu te nema potrebe pretraživati svaku datoteku koja postoji na datotečnom sustavu; baza se osvježava naredbom `updatedb`, na većini modernih distribucija se pokreće automatski na dnevnoj bazi
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Pronađite datoteku `os-release`.
 
 - `which` se koristi kada želimo saznati punu putanju do određene izvršne datoteke datoteke koja se nalazi u nekom od direktorija navedenom u varijabli okoline `PATH`

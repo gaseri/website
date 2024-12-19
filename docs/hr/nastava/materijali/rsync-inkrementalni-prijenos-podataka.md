@@ -12,8 +12,8 @@ $ rsync -a /podaci /backup-podataka
 
 Više detalja moguće je pronaći na [stranici rsync na ArchWikiju](https://wiki.archlinux.org/title/Rsync#As_a_backup_utility).
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Preuzmite zadnju verziju jezgre Linux u obliku izvornog koda s [The Linux Kernel Archives](https://www.kernel.org/) i raspakirajte ju. Izvedite backup tog direktorija korištenjem rsync-a i izmjerite koliko mu vremena treba. Izmijenite po želji sadržaje datoteka `README` i `MAINTAINTERS` pa ponovno pokrenite rsync i provjerite koliko mu vremena treba da izvede kopiranje.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napravite systemd uslugu i pripadni mjerač vremena koji će pokretati istu naredbu svakih 6 sati. Razmislite morate li putanje do direktorija navoditi kao apsolutne ili kao relativne.

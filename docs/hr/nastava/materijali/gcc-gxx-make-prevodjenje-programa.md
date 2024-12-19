@@ -14,12 +14,12 @@ author: Vedran Miletić
 - razvoj je započeo na [University of Illinois at Urbana-Champaign](https://illinois.edu/), danas ga dobrim dijelom sponzorira Apple
 - Clang podržava C, Objective-C (`clang`), C++ i Objective-C++ (`clang++`), a LLVM ima dodatke koji podržavaju i druge programske jezike
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Napišite u `emacs`-u "hello world" C++ program s pozdravom po vašem izboru i spremite ga kao `prog.cpp`.
     - Iskoristite `g++` ili `clang++` za prevođenje u izvršni kod. Pokrenite rezultirajući program.
     - Razmotrite rezultat s `hexdump`-om. Pronađite način da ga ispišete u kanonskom obliku.
 
-!!! admonition "Dodatni zadatak"
+!!! tip "Dodatni zadatak"
     - Prema uputama [Wikibooksove knjige o Fortranu](https://en.wikibooks.org/wiki/Fortran/Hello_world) složite program s istim pozdravom kao u prethodnom zadatku i spremite ga kao `prog.f`. Pripazite da imate uvlaku od 6 znakova u svakom retku.
     - Iskoristite `gfortran` za prevođenje u izvršni kod. Pokrenite rezultirajući program.
     - Razmotrite rezultat s `hexdump`-om i usporedite ga s programom iz prethodnog zadatka.
@@ -87,7 +87,7 @@ Program `ar` je arhiver, donekle sličan `tar`-u koji već poznajemo. On ovdje s
 
 Parametar `-L` kod `g++`-a navodi dodatnu putanju u kojoj treba tražiti biblioteke (pored predefiniranih na sustavu), a parametar `-l` navodi se jednom ili više puta zajedno s imenom biblioteke na koju je potrebno povezati program. Poredak parametara je značajan; više detalja ima [u komentaru Paula Pluzhnikova](https://groups.google.com/g/gnu.gcc.help/c/muvgXVAU6l0/m/fVpqbXYp7cEJ) na temu [linking problems and order](https://groups.google.com/g/gnu.gcc.help/c/muvgXVAU6l0/m/soh5AV77U3gJ) ([Google grupa gnu.gcc.help](https://groups.google.com/g/gnu.gcc.help/)).
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Modificirajte gornji primjer tako da biblioteka uključuje i datoteku `bibl3.cpp` sa dvjema funkcijama po vašem izboru čije se deklaracije navode u datoteci zaglavlja i koje se pozivaju u `mainprog.cpp`. Izvedite prevođenje programa sa statičkim povezivanjem.
 
 Dinamičko povezivanje u datotekama primjera izveli bismo na način:
@@ -108,13 +108,13 @@ Biblioteka u primjeru ima verziju `1.0`, što se vidi iz njezinog imena. Simboli
 
 Varijabla okoline `LD_LIBRARY_PATH` navodi dodatne putanje (pored onih predefiniranih na sustavu) u kojima je potrebno tražiti biblioteke.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Modificirajte gornji slučaj da biblioteka uključuje i datoteku `bibl3.cpp` sa dvjema funkcijama po vašem izboru čije se deklaracije navode u datoteci zaglavlja i koje se pozivaju u `mainprog.cpp`. Izvedite prevođenje programa s dinamičkim povezivanjem.
 
-!!! todo
+!!! quote "ToDo"
     Ovdje treba opisati parametre za GCC koji se odnose na linkanje, alate `ldd` i `readelf`, a primjer može biti s [Boost](https://en.wikipedia.org/wiki/Boost_(C++_libraries)) bibliotekama `filesystem` i `datetime`.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Usporedite međusobno dva programa i dvije biblioteke stvorene u prethodna dva zadatka.
 
     - Razmotrite veličinu datoteke i objasnite uzrok razlikama koje vidite.
@@ -128,7 +128,7 @@ Alat `make` "automatski" izgrađuje izvršne programe i bibliotečne datoteke iz
 - može raditi na temelju predefiniranih ciljeva na temelju imena datoteka, u slučaju da se Makefile ne koristi
 - postoje dvije inačice koje nisu 100% kompatibilne: [BSD Make i GNU Make](https://en.wikipedia.org/wiki/Make_(software)#Modern_versions)
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Prevedite prethodno napisani program uz pomoć `make`-a. Koju naredbu `make` pokreće? Koji parametar čini da je ime izvršne datoteke isto kao ime datoteke izvornog koda bez ekstenzije?
     - Objasnite što se dogodi kada ponovno pokušate napraviti prevođenje. Koji je razlog tome?
     - Što bi se dogodilo da preimenujete datoteku koja sadrži program u datoteku s ekstenzijom `.c`?
@@ -149,7 +149,7 @@ target [target ...]: [component ...]
   [command n]
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napišite jednostavan `Makefile` za prethodno napisani hello world program, koji sadrži:
 
     - cilj `doc` koji u datoteku README sprema tekst `Ovo je dokumentacija mojeg hello world programa`,
@@ -163,7 +163,7 @@ target [target ...]: [component ...]
 - zadavanje `VERSION = 3.2`, pozivanje sa `$(VERSION)`
 - nazivaju se i makroi, zbog mogućnosti ekspanzije: `WHATSNEW_FILE_NAME = NEWS-$(VERSION)`
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Modificirajte prethodno napisani `Makefile`, tako da se
 
     - izvršna datoteka programa generira s imenom oblika `ime-verzija`,

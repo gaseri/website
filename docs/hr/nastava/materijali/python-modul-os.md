@@ -28,10 +28,10 @@ author: Vedran Miletić
 - `os.getpid()` vraća PID procesa interpretera
 - `os.getppid()` vraća PID roditelja (PPID) procesa interpretera
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Provjerite u službenoj dokumentaciji za preostale funkcije istaknute iznad rade li na (nekim) operacijskim sustavima sličnim Unixu i/ili na Windowsima.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napravite program koji radi jednostavan login. Korisnika se pita da upiše korisničko ime, a onda se provjerava je li to korisničko ime isto kao ime korisnika kojem pripada proces. Ako je, ispisuje se PID procesa i PID roditelja procesa, a korisniku se nudi mogućnost unosa dva broja: prvi broj je PID procesa, a drugi je signal. Program zatim šalje uneseni signal procesu s PID-em koji je korisnik unio.
 
 - razlikujemo dva tipa korisničkih (UID) i grupnih ID-eva (GID)
@@ -54,10 +54,10 @@ author: Vedran Miletić
 - `os.getgroups()` dohvaća popis grupa korisnika
 - `os.setgroups(groups)` postavlja popis grupa korisnika na listu brojčanih vrijednosti `groups`
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Provjerite koji su stvarni UID i GID te efektivni UID i GID procesa, a zatim ih pokušajte promijeniti na vrijednost 0 (UID korisnika `root` i GID grupe `root` ili `wheel`). Objasnite zašto to možete ili ne možete napraviti.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Na temelju:
 
     - stvarnog UID-a i sadržaja datoteke `/etc/passwd`, te
@@ -70,7 +70,7 @@ author: Vedran Miletić
 - `os.chdir(path)` mijenja trenutni radni direktorij procesa u `path`
 - `os.listdir(path)` izlistava sadržaj direktorija, kao rezultat vraća listu znakovnih nizova koji su imena datoteka i poddirektorija
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Implementirajte naredbu `ls`, odnosno napravite Python program koji:
 
     - ako je pozvan bez argumenata, izlistava trenutni radni direktorij,
@@ -81,7 +81,7 @@ author: Vedran Miletić
     - opisnici datoteka koje ima svaki proces su `0` (standardni ulaz), `1` (standardni izlaz) i `2` (standardni izlaz za greške); npr. `os.ttyname(0)` vratit će ime terminala povezanog na standardni ulaz
     - otvaranjem datoteka funkcijom `open()` proces dobiva opisnike datoteka `3`, `4`, itd.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Provjerite imena terminala povezanih na opisnike datoteka `0`, `1`, `2` u situacijama:
 
     - kada je Python program pokrenut bez preusmjeravanja ulaza i izlaza,
@@ -93,7 +93,7 @@ author: Vedran Miletić
     - dohvaćanje vrijednosti pojedine varijable: `os.environ['IME_VARIJABLE']` ili `os.getenv('IME_VARIJABLE')`
     - dodavanje nove varijable i postavljanje njene vrijednosti: `os.environ['IME_VARIJABLE'] = 'vrijednost varijable'`
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Ispište prvo u ljusci, a zatim u Python programu vrijednosti varijabli `USER`, `SHELL`, `LANG`, `PPID`, `PWD`, `RANDOM` i `_`. Postoje li sve u oba slučaja i imaju li iste vrijednosti?
     - Postavite u programu varijablu okoline `KOLEGIJ` na vrijednost `Operacijski sustavi 2` i uvjerite se prvo da je zaista uspješno postavljena, a zatim provjerite je li postavljena i u ljusci nakon završetka izvođenja programa.
 
@@ -136,7 +136,7 @@ author: Vedran Miletić
     - `os.execlp('cal', 'cal', '-3', '5', '2020', {'TERM': 'vt52'})`
     - `os.execvp('cal', ['cal', '-3', '5', '2020'], {'TERM': 'vt52'})`
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Napišite Python skriptu koja pokreće `ls` na direktorij `/etc` tako da iskoristite varijantu funkcije `exec()` koja za traženje naredbe koristi varijablu okoline `$PATH`.
     - Napišite Python skriput koja pokreće `cal` da ispiše kalendar srpanj 2020. godine i to tako da se kod pokretanja okolina modificira tako da `$LANG` poprimi vrijednost `en_US.UTF-8`.
 
@@ -170,7 +170,7 @@ author: Vedran Miletić
         print("Proces dijete s PID-om", pid, "završio je izvođenje s izlaznim statusom", status)
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napišite Python skriptu koja radi `fork()` i u procesu djetetu pokreće proces koji izlistava trenutni direktorij, a zatim čeka na završetak procesa djeteta i ispisuje na ekran njegov izlazni status. Razmislite na koji ćete način osigurati da se naredba pokreće samo u procesu djetetu.
 
     (Vremenom ćemo naučiti koristiti elegantnije sučelje za baratanje potprocesima, u sklopu modula `subprocess`.)
@@ -203,10 +203,10 @@ author: Vedran Miletić
         - drugi `fork()` osigurava da proces prestaje biti voditelj sesije, kako ne bi bio spojen na upravljački terminal.
         - nakon svakog `fork()`-a prekida se izvođenja procesa roditelja (npr. pozivom funkcije `sys.exit()`), što se popularno naziva *fork off and die*
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napišite program koji izvodi dvostruki fork i postaje daemon, a zatim ga pokrenite i uvjerite se pregledom izlaza naredbe `pstree` da je `init` posvojio vaš pokrenuti proces.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Modificirajte kod koji radi dvostruki fork tako da proces koji je daemon čini sljedeće:
 
     - u kućnom direktoriju korisnika koji ga je pokrenuo ili u direktoriju `/tmp` (prema vašem izboru) otvara datoteku `mojdaemon.log` za zapisivanje,

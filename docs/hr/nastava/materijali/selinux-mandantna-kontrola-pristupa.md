@@ -4,10 +4,10 @@ author: Tina Maršić, Vedran Miletić
 
 # Mandantna kontrola pristupa korištenjem sustava SELinux
 
-!!! todo
+!!! quote "ToDo"
     Dodaj negdje da je SELinux zaštitio od [VENOM-a](https://venom.crowdstrike.com/) i nađi gdje [Paul Cormier to tvrdi](https://youtu.be/tekg8OjrfDM).
 
-!!! hint
+!!! info
     Za više informacija proučite [SELinux User's and Administrator's Guide](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/selinux_users_and_administrators_guide/index).
 
 - Diskrecijska kontrole pristupa -- ovlasti definirane na razini korisnika
@@ -60,19 +60,19 @@ author: Tina Maršić, Vedran Miletić
 - naredbe `ls`, `ps` i `id` primaju parametar `-Z` kojim prikazuju SELinux kontekst
 - naredba `stat` prikazuje SELinux kontekst bez dodatnih parametara
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Odredite korisnika, ulogu i tip za datoteke `/etc/hosts`, `/etc/profile` i `/etc/passwd`.
     - Pronađite u popisu procesa dva procesa u domeni `unconfined_t` te po jedan proces u domenama `init_t` i `kernel_t`.
     - Pronađite u popisu procesa jedan proces u domeni koja dosad nije spomenuta i pronađite u datotečnom sustavu barem jednu datoteku koja je pripadnog tipa.
 
 - naredbe `mv` i `cp` zadržavaju sigurnosni kontekst datoteke kod micanja, odnosno kopiranja
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Provjerite na koji način `mv` i `cp` zadržavaju sigurnosni kontekst datoteka.
 
 - naredba `chcon` služi za promjenu konteksta
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Stvorite datoteku u direktoriju korisnika koji nije `root`. Pronađite njezin kontekst, a zatim ga promijenite u `system_u:object_r:root_t:s0`.
 
 ## Načini rada SELinux-a
@@ -92,12 +92,12 @@ author: Tina Maršić, Vedran Miletić
 - naredbe `getenforce` i `setenforce` dohvaćaju i mijenjaju primjenu sigurnosnih pravila
 - datoteka `/etc/selinux/config` služi za konfiguraciju SELinuxa
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Provjerite status SELinuxa na sustavu. Specifično, pronađite je li uključen, koju sigurnosnu politiku koristi, primjenjuje li sigurnosna pravila, koji je kontekst trenutnog procesa i njegovog upravljačkog terminala.
     - Isključite primjenu sigurnosnih pravila, i provjerite da je to uspjelo.
     - Isključite SELinux kompletno, te ponovno pokrenite sustav. Stvorite datoteku proizvoljnog sadržaja i odredite njezin kontekst.
 
-!!! todo
+!!! quote "ToDo"
     Ovdje nedostaje neki zadatak koji će eksplicitno prikazati što SELinux blokira.
 
 ## Access Vector Cache poruke
@@ -118,7 +118,7 @@ author: Tina Maršić, Vedran Miletić
 
 - naredba `audit2allow` omogućuje dozvoljavanje onog što je bilo zabranjeno na temelju pripadne AVC poruke
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Pronađite broj pregleda i pogodaka AVC međuspremnika.
     - Pronađite sve neuspješne pristupe koji se odnose na korisnika `root`.
     - Dozvolite jedan od neuspješnih pristupa. (**Napomena:** ovo radimo samo za vježbu rada s alatom i općenito nije dobra sigurnosna praksa.)
@@ -129,7 +129,7 @@ author: Tina Maršić, Vedran Miletić
 - naredbom `semanage boolean -l` dohvaća se popis svih booleana
 - naredbe `getsebool` i `setsebool` dohvaćaju i mijenjaju boolean vrijednosti pojedine značajke
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Uvjerite se da u zadanim postavkama korisnik koji nije `root` može koristiti `ping`.
     - Pronađite značajku kojom korisniku možete onemogućiti korištenje `ping`-a, i iskoristite je da korisniku onemogućite korištenje pinga. Uvjerite se da je onemogućavanje bilo uspješno.
     - Pronađite AVC poruku koja potvrđuje da je korisniku bilo onemogućeno korištenje `ping`-a.
@@ -139,5 +139,5 @@ author: Tina Maršić, Vedran Miletić
 - naredbom `semanage login -a -s SELINUX_USER LOGIN_USER` moguće je dodati pravilo po kojemu se korisnik `LOGIN_USER` pridružuje SELinux korisniku `SELINUX_USER`
 - naredbom `semanage login -l` vrši se provjera pridruživanja korisnika SELinux korisnicima
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Stvorite novog korisnika `gost` i pridružite ga SELinux korisniku `xguest_u`. Prijavite se kao korisnik `gost` i pokušajte pokrenuti naredbe `su` i `sudo`.

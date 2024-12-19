@@ -63,7 +63,7 @@ author: Vedran Miletić, Vanja Slavuj
 
 - `mknod` stvara specijalne blok i specijalne znakovne datoteke (spominjemo radi potpunosti)
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Pronađite još tri primjera običnih datoteka i po još jedan primjer za svaku od ostalih vrsta datoteka. (**Uputa:** koristite rekurzivno izlistavanje.)
     - Ispitajte tip običnih datoteka koje ste pronašli.
 
@@ -91,7 +91,7 @@ author: Vedran Miletić, Vanja Slavuj
 
     - time ćemo se više baviti kad budemo radili modul `socket` u Pythonu
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Stvorite fifo datoteku pod nazivom `cijev1`. Pokrenite dva terminala.
 
     - U jednom terminalu pokrenite `cat < cijev1`, a u drugom `cat > cijev1`. Uočite da se ono što unesete u drugom terminalu ispisuje u prvom.

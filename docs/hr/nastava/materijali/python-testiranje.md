@@ -49,6 +49,6 @@ Uočimo kako smo eliminirali korištenje funkcije `print()` za ispis rezultata t
 
 Pokretanjem naredbe `pytest` u direktoriju u kojem se ova datoteka nalazi vrši se pokretanje svih funkcija čije ime počinje sa `test_` unutar svih datoteka čije ime počinje sa `test_` i na kraju se ispisuje statistika o tome koji testovi prolaze.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Promijenite konstantu `5` u testu u neku drugu konstantu. Prolazi li test?
     - Definirajte funkciju koja prima broj i vraća kvadrat tog broja. Definirajte test za nju s ulaznim podacima `3`, `15`, `24`.

@@ -35,7 +35,7 @@ U izvršnjoj ćeliji (engl. *execute cell*) napišimo i pokrenimo sljedeće:
 print("Hello, World!")
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Ispiši svoje ime [i](https://youtu.be/6LyLkcwIiqI) prezime na ekran.
 
 ## Komentari
@@ -69,7 +69,7 @@ varijabla = 5
 print(varijabla)
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Spremi svoje ime [i](https://youtu.be/6LyLkcwIiqI) godine u varijable te ispiši podatke na ekran. Na primjer, `Iva ima 25 godina`.
 
     Napomena: kada u funkciji `print()` želimo ispisati više varijabli odvojit ćemo ih zarezom.
@@ -101,7 +101,7 @@ Pored prethodno navedenih aritmetičkih postoje i skraćene verzije operatora pr
 | `//=` | `a //= b` | `a = a // b` | `a = 2` |
 | `=` | `a = b` | `a = b` | `a = 5` |
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     1. U varijable imena po izboru spremi dva broja te na ekran ispiši njihov zbroj i umnožak.
     2. Napiši zbroj i umnožak iz prethodnog zadatka koristeći se skraćenim verzijama operatora pridruživanja.
 
@@ -151,7 +151,7 @@ else:
     print("a je veće od b")
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     1. Ispišite "1" ako je `a` jednako `b`, "2" ako je `a` veće od `b`, inače ispišite "3". Dodijelite vrijednosti varijblama po želji.
     2. Ispišite "Uvjet je zadovoljen" ako je `a` jednako `b` ili ako je `c` jednako `d`. Dodijelite vrijednosti varijblama po želji.
 
@@ -248,12 +248,12 @@ print(d.size)
 
 Osim stvaranja niza od već definiranog niza elemenata, možete jednostavno stvoriti niz ispunjen nulama ili jedinicama pomoću `np.zeros(n)`, `np.ones(n)`, gdje je `n` broj elemenata niza.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Kreirajte nula niz od 5 elemenata i niz ispunjen jedinicama od 3 elementa te ih ispišite na ekran.
 
 Možete stvoriti niz s intervalom elemenata `np.arange(n)` ili niz s ravnomjerno raspoređenih intervala pri čemu ćete navesti prvi `n` i posljednji broj `m` te veličinu koraka `k`, `np.arange(n, m, k)`.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     1. Kreirajte niz koji sadrži elemente u intervalu od 10 do 15 i ispišite ga na ekran.
     2. Kreirajte niz koji sadrži elemente u intervalu od 2 do 8 s veličinom koraka 2 i ispišite ga na ekran.
     3. Stvorite niz od 5 elemenata. Neka se ti elementi generiraju nasumično u rasponu od 50 do 100 ([`np.random.randint`](https://www.programiz.com/python-programming/numpy/random)). Zatim izračunajte zbroj svih elemenata niza ([`np.sum`](https://numpy.org/doc/stable/reference/generated/numpy.sum.html#numpy.sum)), srednju vrijednost ([`np.mean`](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.mean.html#numpy.ndarray.mean)) te razliku između najvećeg ([`np.max`](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.max.html#numpy.ndarray.max)) i najmanjeg ([`np.min`](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.min.html#numpy.ndarray.min)) elementa niza. Ispišite rezultate na ekran.
@@ -262,7 +262,7 @@ Možete stvoriti niz s intervalom elemenata `np.arange(n)` ili niz s ravnomjerno
 
 Za dohvaćanje određenog elementa niza koristi se [indeksiranje](https://numpy.org/doc/stable/user/basics.indexing.html). Indeksi počinju s 0, što znači da prvi element niza ima indeks 0 (`niz[0]`), drugi indeks 1 (`niz[1]`) i tako dalje.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     1. Kreirajte niz koji sadrži elemente u intervalu od 1 do 10. Pristupite prvom i drugom elementu niza te ih zbrojite.
     2. Pomoću negativnog indeksiranja pristupite zadnjem elementu niza.
 
@@ -276,12 +276,12 @@ Elementima niza možemo pristupiti i momoću definiranog intervala od interesa:
 
 Za pristup elementima iz 2D nizova možemo koristiti cijele brojeve odvojene zarezima koji predstavljaju dimenziju i indeks elementa. Zamislite 2D nizove poput tablice s redovima i stupcima, gdje dimenzija predstavlja red, a indeks predstavlja stupac.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Kreirajte 2D niz oblika `[[1,2,3,4,5], [6,7,8,9,10]]` i pristupite drugom elementu prvog niza.
 
 Elementima iz 3D nizova također pristupamo pomoću cijelih brojeva odvojenih zarezima koji predstavljaju dimenzije i indeks elementa.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Kreirajte 3D niz oblika `[[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]]` i pristupite trećem elementu drugog podniza u prvom nizu.
 
 ## Biblioteka Matplotlib
@@ -305,7 +305,7 @@ plt.plot(xtocke, ytocke)
 plt.show()
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     1. Stvorite niz `godine` u intervalu od 1990. do tekuće godine i drugi niz `broj_radova` kojeg cete generirati slučajnim odabirom od 50 do 5 000. Neka je niz `broj_radova` iste veličine kao i niz `godine`. Nacrtajte grafički prikaz broja objavljenih radova po godinama.
     2. Izmjenite prethodini zadatak tako da grafičkom prikazu dodate odgovarajući [naslov](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.title.html) i [oznake](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.ylabel.html).
     3. Nacrtajte grafički prikaz broja objavljenih radova od 1980 do 2020 koji uključuju izraz "molecular dynamics" u naslovu, sažetku ili ključnim riječima. Analizu provedite korištenjem baze [Web of Science](https://www.webofknowledge.com/). Dodajte odgovarajući naslov i godine.

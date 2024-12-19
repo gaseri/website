@@ -4,7 +4,7 @@ author: Jovan Jokić, Vedran Miletić
 
 # IPsec alat strongSwan
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio treba pročistiti i vidjeti gdje dopuniti slikama/tablicama.
 
 IPSec je niz protokola za osiguravanje mrežnih veza, s velikim brojim detalja i varijacija koje vrlo brzo postanu enormne. Ovo je posebice slučaj prilikom međusobne suradnje, odn. funkcioniranja različitih sustava. U nastavku će se obraditi protokoli niže razine koji se koriste u IPv4 kontekstu (bez IPv6 konteksta), iz perspektive "bottom-up" (od dna prema gore). Problematika IPSec-a će se teoretski obraditi prvo, a zatim će ukratko biti popisane mogućnosti jedan od alata otvorenog koda koji implementira IPSec svitu protokola za operacijski sustav GNU/Linux.
@@ -124,5 +124,5 @@ Omogućavanje ekriptiranog tunelirajućeg režima rada je vrlo blizu tradicional
 
 Kao potomak projekta [FreeS/WAN](https://www.freeswan.org/) (uz [Openswan](https://www.openswan.org/)), strongSwan nastavlja biti izdan pod GPL licencom. Podržava liste opozvanih certifikata, kao i OCSP ("Online Certifikate Status Protocol") protokol. Jedinstvena mogućnost je upotreba X.509 atributnih certifikata za implementiranje shema prava pristupa baziranih za grupnom članstvu. StronSwan uredno surađuje s drugim IPSec implementacijama, uključujući različite IPSec VPN klijente koji rade na Microsoft Windows i Mac OS X operacijskim sustavima. StrongSwan 5.0 grana u potpunosti implementira IKEv2 ("Internet Key Exchange") protokol koji je definiran u RFC 5996. StrongSwan podržava IKEv1, te u potpunosti implementira IKEv2.
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio treba napisati.

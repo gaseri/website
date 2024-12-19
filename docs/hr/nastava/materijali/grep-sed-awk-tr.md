@@ -49,7 +49,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 - `(ab|cd)` -- predstavlja alternaciju tj. uzorak mora sadržavati ili niz `ab` ili `cd`
 - *puno više o regularnim izrazima čuti ćete na kolegijima Formalni jezici i jezični procesori 1 i 2*
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Stvorite datoteku `mjeseci.txt` u koju ćete, u svaki red posebno, zapisati sve mjesece u godini i sve dane u tjednu. Zatim iz nje izdvojite sljedeće linije:
 
         - sve koje sadrže slovo `a`;
@@ -84,7 +84,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
         - sadrže slovo `v`, nakon kojeg slijedi niz `ic` (koji se može ponavljati više puta), a iza kojeg odmah slijedi znak `@`;
         - su oblika `mail(broj<5)(broj>7)`.
 
-!!! admonition "Dodatni zadatak"
+!!! tip "Dodatni zadatak"
     Napravite datoteku `studenti.txt` u koju napišite popis studenata prisutnih na satu u formatu `Ime Prezime`, pri čemu je svaki student u svom redu te datoteke. Izdvojite iz nje:
 
     - sve studente kojima prezime počinje na `P`,
@@ -101,7 +101,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
     - `.` i `-` dobijemo kao `\\.` i `\\-` respektivno (jedan escape "pojede" ljuska, drugi se prosljeđuje grepu), a unutar zagrada `[]` escape nije potreban,
     - `\` dobijemo kao `\\\\`.
 
-!!! admonition "Dodatni zadatak"
+!!! tip "Dodatni zadatak"
     Iz datoteke `mjeseci.txt` u koju ste upisali nazive mjeseca u godini izdvojite:
 
     - sve mjesece koji sadrže slovo `a`,
@@ -146,7 +146,7 @@ Najčešće korišteni parametri naredbe `sed` su:
 
     - koristi se kada imamo više naredbi za `sed` prije prvog delimitatora (npr. `sed -e 's/a/A/' -e 's/e/E/'`)
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napravite datoteku `dani.txt` koja će sadržavati sve dane u tjednu (jedan ispod drugoga).
 
     - zamijenite riječ `utorak` sa `drugi`,
@@ -155,7 +155,7 @@ Najčešće korišteni parametri naredbe `sed` su:
 
     **Napomena:** poslije zadnjeg delimitatora dodajte `g`; `g s y` ne funkcionira, funkionira samo sa `s`.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Iz sustava MudRi preuzmite datoteku `receniceSED.txt` i sačuvajte ju u svom kućnom direktoriju. Zatim:
 
     - zamijenite svaku riječ koja počinje sa `an`, a završava na samoglasnik, sa rječju `BRAVO`. Možete li to učiniti?,
@@ -174,14 +174,14 @@ Najčešće korišteni parametri naredbe `sed` su:
 - zastavice se mogu kombinirati, no `/w` mora biti na posljednjem mjestu
 - u kombinaciji s `y` ne koristimo zastavice
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Koristite datoteku `receniceSED.txt` za sljedeći zadatak:
 
     - zamijenite svaku (osim prve!) riječ koja počinje sa `an` ili `An` a završava na suglasnik, sa rječju `BRAVO`. Možete li to sada učiniti?,
     - svako pojavljivanje znaka `a` ili `e` nakon njegova (ukupno) trećeg pojavljivanja zamijenite sa `SAMae`, a svaku pojavu `o` ili `i` sa `SAMoe`,
     - preuredite prvu naredbu tako da se na ekran ne ispisuje ništa osim promijenjenih linija, te da se samo izmjenjene linije upisuju u datoteku pod nazivom `receniceSED1.txt`.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napravite datoteku `drzave.txt` u kojoj upišite Hrvatska i nazive 6 zemalja s kojima graniči (svaku u svome redu). Zatim napravite sljedeće:
 
     - Sve nazive država koje počinju slovom `S` promijeniti u naziv sa `s`, upisati u datoteku `maledrzave.txt`, te prikazati promjene na ekranu.
@@ -200,13 +200,13 @@ Najčešće korišteni parametri naredbe `sed` su:
         - `sed '1,100 s/a/A/g'` -- zamjena 'a' sa 'A' vrši se u prvih 100 redaka (uočite da *nije* iskorišten znak ^)
         - `sed '21,$ s/a/A/g'` -- zamjena 'a' sa 'A' se vrši od 21. retka do kraja datoteke
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Napišite `sed` naredbu koja će prikazati sadržaj prvih 7 redaka datoteke `drzave.txt`.
     - Napišite `sed` naredbu koja će u datoteci pretražiti pojavljivanja uzorka `an` i ispisati broj redaka pojave uzoraka.
     - Napišite `sed` naredbu koja će u retcima koji završavaju slovom `n` mijenjati sva mala slova u velika slova.
     - Napišite naredbu kojom ćete u datoteci `drzave.txt` promijeniti svako `a` u `A`, te `s` u `S`, ali samo ako riječ u retku ima 8 slova.
 
-!!! admonition "Dodatni zadatak"
+!!! tip "Dodatni zadatak"
     - Stvorite datoteku `file1` proizvoljnog sadržaja.
     - Napišite `sed` naredbu koja će prikazati sadržaj prvih 7 redaka datoteke `file1`.
     - Napišite `sed` naredbu koja će u recima koji završavaju sa slovom `b` mijenjati sva mala slova u velika.
@@ -232,7 +232,7 @@ Najčešće korišteni parametri naredbe `sed` su:
 
         - `sed '11 q'` -- prekida se izvođenje nakon obrade 11. retka
 
-!!! admonition "Dodatni zadatak"
+!!! tip "Dodatni zadatak"
     Dopunite sljedeću tablicu sa izlazima na ekranu, s obzirom na oblik `sed` naredbe:
 
     | Sed parametri | Raspon | Naredb | Rezultat/ispis |
@@ -265,7 +265,7 @@ Najčešće korišteni parametri naredbe `sed` su:
 
 - `awk` obrađuje dokument liniju po liniju, a svakoj je riječi u liniji pridružena varijabla: prvoj $1, drugoj $2, itd.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napravite datoteku `recenice.txt` koja ima dva retka riječi. U prvom retku neka se nalaze riječi `voli`, `mrzi` i `putovati`, a u drugom `mrzi`, `kuhati`, `peglati` i `čitati`. Koristeći naredbu `awk` napravite rečenice od zadanih riječi, tako da se u svakom retku koriste samo 1. i 3. riječ.
 
     **Napomena:** ispis bi trebao izgledati ovako:
@@ -275,7 +275,7 @@ Najčešće korišteni parametri naredbe `sed` su:
     Moja prijateljica mrzi peglati.
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napravite datoteku `ucenici.txt` u koju ćete zapisati ime i prezime nekoliko vaših kolega, te dodajte po dvije ocjene za svakoga (od 1 do 5). Koristeći naredbu `awk` ispišite:
 
     - prezime i sve ocjene za svakog učenika u datoteci, ispis neka bude oblika:
@@ -304,7 +304,7 @@ Najčešće korišteni parametri naredbe `sed` su:
 
     - primjerice, može mijenjati sva velika slova u mala i obrnuto, slaže riječi u stupac i sl.
 
-!!! todo
+!!! quote "ToDo"
     Ovdje nedostaje zadatak.
 
 ## Ostali alati za manipulaciju prikazom datoteka
@@ -314,14 +314,14 @@ Najčešće korišteni parametri naredbe `sed` su:
     - osobito koristan za upotrebu kod ispisa veće količine podataka (`cat` bi prekrio nekoliko ekrana)
     - naziv `less` znači suprotno od `more`, starijeg alata iste namjene, za razliku od kojeg omogućuje scrollanje teksta i "prema gore" (`more` je omogućavao samo scrollanje "prema dolje")
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Otvorite pomoću programa `less` datoteku `/etc/passwd` i pronađite pojavljivanje riječi `bin` u istoj datoteci. Pronađite način da pomaknete na sljedeću pojavu traženog uzorka. (**Uputa:** pronađite u man stranici kako se radi `Search forward` i `Search backward`.)
     - Iskoristite naredbu `Examine` da bi otvorili i datoteku `/etc/group`.
 
 - `head` ispisuje početni dio datoteke (zaglavlje), primjerice prvih 10 linija
 - `tail` ispisuje završni dio datoteke (podnožje), primjerice zadnjih 25 linija
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Ukucajte naredbe `locale > postavke.txt` i `locale -m >> postavke.txt` u komandnu liniju, pa zatim iz datoteke `postavke.txt`:
 
         - ispišite posljednjih 7 linija,

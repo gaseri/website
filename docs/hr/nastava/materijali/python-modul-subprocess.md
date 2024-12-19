@@ -17,10 +17,10 @@ subprocess.getstatusoutput("ls -l") # vraća (0, "znakovni niz koji sadrži izla
 
 - uočimo razliku u navođenju naredbe i parametara u obliku liste kod `subprocess.call()` nasuprot navođenju naredbe i parametara u obliku znakovnog niza kod `subprocess.getoutput()` i `subprocess.getstatusoutput()`
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Usporedite poziv brisanja datoteke koja postoji naredbom `rm` s pozivom brisanja datoteke koja ne postoji u terminima izlaznog statusa.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Usporedite izlaz funkcije `os.listdir()` s izlazom naredbe `ls` dohvaćenim korištenjem sučelja koja nudi modul `subprocess`. Ima li razlike u datotekama koje su izlistane?
     - Izvedite čitanje sadržaja datoteke `/etc/group` korištenjem standardnih Python sučelja za rad sa datotekama, a zatim dohvaćanjem izlaza naredbe `cat` na tu datoteku. Ima li razlike u pročitanom sadržaju?
 
@@ -46,17 +46,17 @@ p2 = subprocess.Popen(["rm", "-i", "datotekaKojaPostoji"], stdin=subprocess.PIPE
 p2.communicate("y\n".encode())
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Korištenjem objekta subprocess.Popen:
 
     - naredbom `ps` dohvatite popis procesa svih korisnika, sa i bez terminala,
     - dohvatite poruku koju naredba `man` ispisuje kada je pokrećete bez argumenata (razmislite na koji izlaz man ispisuje tu poruku),
     - naredbom `rm` pokušajte interaktivno (parametar `-i`) izbrisati neku datoteku za koju nemate dozvolu, npr. `/etc/hosts` i dohvatite izlazni status koji dobivate.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napravite Python skriptu koja traži od korisnika imena triju datoteka. Datoteke se brišu interaktivnim načinom rada, a od korisnika se traži unos na standardni ulaz "kao da izravno radi s naredbom" (odnosno unosi `y` ako želi obrisati i `n` ako ne želi, a to se prosljeđuje naredbi putem metode `communicate()` objekta pridruženog procesu).
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Za stvaranje korisnika na Linuxu koristi se naredba `useradd`. Proučite pripadnu man stranicu, a zatim napišite Python skriptu koja, uz pretpostavku da imate odgovarajuće ovlasti:
 
     - stvara korisnike `student01`, `student02`, ..., `student99` s pripadnim kućnim direktorijima,

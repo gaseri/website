@@ -62,7 +62,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
     - korisnik može biti član više grupa
     - da bi korisnik mogao pristupiti datoteci koja pripada grupi `grupa`, dovoljno je da bude član grupe `grupa`
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Koje je značenje sljedećih dozvola kod naredbe `chmod ______ dat.txt`?
 
         - `go-rx`
@@ -78,7 +78,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
         - Pokušajte promijeniti njen sadržaj. Objasnite zašto to ne možete, bez obzira što ste u odgovarajućoj grupi.
         - Postavite dozvolu za sebe i ostale na čitanje i promjenu, a zatim grupi obrišite dozvolu promjene sadržaja i pokretanja datoteke.
 
-!!! admonition "Dodatni zadatak"
+!!! tip "Dodatni zadatak"
     - Postoje i posebni načini pristupa (engl. *special modes*), koji se dijele u tri grupe:
 
         - special execute,
@@ -103,7 +103,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 
 - postupak računanja efektivnih dozvola dan je na [Wikipedijinoj stranici o umasku](https://en.wikipedia.org/wiki/Umask)
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Druga često korištena vrijednost za umask je `077`. Objasnite njeno značenje.
     - Pronađite vrijednost umaska koji ostavlja sve dozvole korisniku, briše dozvolu čitanja grupi i briše dozvolu pokretanja ostalima.
 
@@ -131,17 +131,17 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 - `getfacl` čita ACL-e datoteke
 - `setfacl` postavlja ACL-e datoteke
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Korisniku `profesor` dodijelite na datoteci `dat1` mogućnost čitanja i pokretanja. Uočite kako ovo djeluje na obične dozvole grupe.
     - Grupi `disk` dodijelite na istoj datoteci mogućnost čitanja i pisanja. Uočite kako ovo djeluje na ACL masku.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Dodijelite direktoriju `dir1` zadanu ACL koja omogućuje čitanje, pisanje i pokretanje za korisniku `nobody`.
 
     - U kakvom su odnosu zadane i pristupne ACL tog direktorija? Impliciraju li zadane ACL pristupne ACL?
     - Uočite kako ovo djeluje na datoteke i direktorije koje u njemu stvarate. Objasnite zašto datoteke dobivaju `#effective:rw-`.
 
-!!! admonition "Dodatni zadatak"
+!!! tip "Dodatni zadatak"
     Zadatak iz *stvarnog* života: korištenjem ACL osmislite način da troje korisnika, `domargan`, `iivakic` i `vedranm`,dijelite jedan direktorij. Svaki od njih mora biti u mogućnosti u njemu stvarati datoteke i direktorije koje moraju kod stvaranja dobiti dozvolu čitanja i pisanja za sve troje.
 
 !!! question "Pitanja za ponavljanje"
@@ -168,7 +168,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 - `lsattr` izlistava trenutne atribute datoteka
 - `chattr` mijenja atribute datoteka
 
-!!! todo
+!!! quote "ToDo"
     Ovdje nedostaje zadatak.
 
 - prošireni atributi (engl. *extended attributes*)
@@ -176,5 +176,5 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
     - naredbe `getfattr` i `setfattr`
     - opisani u `attr(5)`
 
-!!! todo
+!!! quote "ToDo"
     Ovdje nedostaje objašnjenje i zadatak.

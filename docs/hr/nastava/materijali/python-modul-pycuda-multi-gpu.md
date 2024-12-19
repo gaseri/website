@@ -4,5 +4,5 @@ author: Vedran Miletić
 
 # Python modul PyCUDA: rad s više GPU-a
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio treba napisati.

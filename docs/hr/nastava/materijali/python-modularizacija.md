@@ -32,7 +32,7 @@ author: Vedran Miletić
     readline.parse_and_bind("tab: complete")
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Proučite dokumentaciju modula `random`, a zatim iskoristite funkcije koje nudi da bi generirali:
 
     - slučajan cijeli broj u rasponu $[1, 10]$,
@@ -72,7 +72,7 @@ a zatim pokrenimo datoteku `program1.py`. Konstrukt `if __name__ == '__main__'` 
 
 Da zaključimo, Python nam ovime omogućuje korištenje svakog našeg programa kao modula.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - U datoteci `modul1.py` dodajte još jednu funkciju, nazovite ju `moja_funkcija()` s argumentima `arg1` i `arg2` koja vraća `42 * arg1 + 24 * arg2`.
     - Stvorite datoteku `modul2.py`, u njoj definirajte funkciju `say_hello()` koja vraća niz znakova `"I just came to say hello, o-o-o-o-o"`.
     - U datoteci `program1.py` uključite drugi modul i pozovite obje funkcije.
@@ -159,6 +159,6 @@ print("Zbroj matrica a i b iznosi", matrix_gpu_ops.zbroj_matrica(a, b))
 
 Pri čemu možemo imati i neke druge vrijednosti.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Implementirajte množenje matrica, i pritom dodajte pripadnu dokumentaciju i testove.
     - Modificirajte odgovarajući dio koda tako da radi za druge formate matrica osim `(20, 20)`, odnosno da u ovisnosti o obliku matrice poziva odgovarajući broj niti po `x` i `y` koordinatama, a zatim prilagodite dokumentaciju i testove.

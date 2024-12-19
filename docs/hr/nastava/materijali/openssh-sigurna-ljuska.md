@@ -553,5 +553,5 @@ Vrijedi spomenuti da se za istu svrhu može koristiti i naredba `ssh-copy-id` ko
 
 ### Korištenje vanjske autentifikacije
 
-!!! todo
+!!! quote "ToDo"
     Ovdje treba objasniti kako se koriste druge vrste autentifikacije osim zaporki i ključeva (npr. LDAP).

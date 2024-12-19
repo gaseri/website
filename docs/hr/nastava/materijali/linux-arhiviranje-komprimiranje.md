@@ -55,7 +55,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
     $ tar -xvf naziv_arh.tar naziv_direktorija # izvlačenje jednog direktorija iz tar datoteke
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - U svom kućnom direktoriju stvorite datoteku `dat1.txt`, direktorij `Backup` i direktorij `Arhiviranje`, i u njemu niz od 5 tekstualnih datoteka, koje redom nazovite `tekst1.txt`, `tekst2.txt`, …, `tekst5.txt`.
     - Iz `~` u direktoriju `Backup` stvorite arhivu pod nazivom `6-datoteka.tar` koja sadrži sve gore navedene datoteke.
     - Izlistajte sadržaj te `tar` datoteke, bez izvlačenja datoteka iz `tar`-a i bez izlaska iz `~`.
@@ -81,14 +81,14 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
     - `xf` -- extract file, automatsko prepoznavanje kompresije
     - `xzf`, `xjf` i `xJf` rade raspakiravanje datoteka s odgovarajućom kompresijom
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - U direktoriju `Arhiviranje` stvorite poddirektorij `Pohrana`. Koristeći `bzip2` kompresiju stvorite arhivu `arhiva.tar.bz2` koja sadrži datoteke `tekst2.txt` i `tekst4.txt`, te direktorij `Pohrana`.
     - U svom kućnom direktoriju stvorite direktorij `dir-backup`, te raspakirajte arhivu `arhiva.tar.bz2` u taj direktorij bez kopiranja.
     - Izlaz naredbe `dmesg` zapišite u datoteku `izlaz.txt`. Kopirajte ju u datoteke `izlaz1.txt` i `izlaz2.txt`. (Naredba `dmesg` ispisuje poruke koje Linux jezgra javlja kod pokretanja sustava. U većini slučajeva radi se o porukama o hardveru, memoriji i procesima.)
     - Datoteku `izlaz1.txt` sažmite `gzip`-om, a datoteku `izlaz2.txt` `bzip2`-om.
     - Saznajte kako ispisati veličine dobivenih datoteka, te ih usporedite.
 
-!!! admonition "Dodatni zadatak"
+!!! tip "Dodatni zadatak"
     - Ispitajte koriste li se `xz` i `unxz` na isti način kao i `gzip`, odnosno `bzip2`.
     - Izlaz naredbe `dmesg` zapišite u datoteku `izlaz.txt`. Kopirajte ju u datoteke `izlaz1.txt` i `izlaz2.txt`.
     - Datoteku `izlaz1.txt` komprimirajte `gzip`-om, a datoteku `izlaz2.txt` `bzip2`-om.
@@ -98,7 +98,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 
 - `zip` i `unzip` služe za baratanje ZIP komprimiranim arhivama
 
-!!! todo
+!!! quote "ToDo"
     Ovdje nedostaje zadatak.
 
 !!! question "Pitanja za ponavljanje"

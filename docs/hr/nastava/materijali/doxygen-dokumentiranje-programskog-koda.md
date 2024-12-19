@@ -152,5 +152,5 @@ Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
 
 čime ćemo dobiti nekoliko privremenih datoteka (`refman.ind`, `refman.ilg`, `refman.toc`, `refman.out`, `refman.idx`, `refman.aux`), rezultirajući PDF (`refman.pdf`) i log datoteku s detaljima prevođenja iz LaTeX-a u PDF (`refman.log`).
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Deklarirajte klasu `PodcastPlayer` te metode `playEpisode(int episodeId, std::chrono::duration intervalToSkip)`, koja započinje emitiranje epizode podcasta s danim rednim brojem i to tako da preskoči dano vrijeme od početka, i `stop()`, koja zaustavlja emitiranje epizode koja se trenutno emitira. (Metode ne morate implementirati.) Dokumentirajte metode korištenjem Doxygena, a zatim izvedite generiranje dokumentacije. (*Uputa:* dokumentiranje klasa vrši se na isti način kao dokumentiranje funkcija, a primjer možete pronaći u dijelu Doxygenove dokumentacije [Documenting the code](https://www.doxygen.nl/manual/docblocks.html).)

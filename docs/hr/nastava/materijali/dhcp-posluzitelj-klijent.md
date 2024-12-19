@@ -77,7 +77,7 @@ samo na sučelju `eth0`. Ostali parametri naredbenog retka opisani su u man stra
 
 unutar koje se mogu nalaziti konfiguracijske naredbe isteka vremena (`timeout`), vremena prije ponovnog pokušaja (`retry`) i druge. Opis pojedinih konfiguracijskih naredbi dan je u man stranici `dhclient.conf(5)` (naredba `man 5 dhclient.conf`).
 
-!!! caution
+!!! danger
     Moguće je da `dhclient` kod pokretanja javi pogrešku oblika:
 
     ```

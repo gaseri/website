@@ -7,5 +7,5 @@ author: Vedran Miletić
 - `screen` i `tmux` se koriste za manipulaciju većeg broja virtualnih prozora u jednom fizičkom prozoru
 - `irssi` i `weechat` su IRC klijenti i odlične aplikacije za demonstraciju funkcionalnosti
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio treba napisati u cijelosti.

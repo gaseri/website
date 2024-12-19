@@ -530,7 +530,7 @@ $ curl -v http://example.group.miletic.net/
 
 ## Rad sa specifičnim značajkama protokola HTTP u alatu cURL
 
-!!! todo
+!!! quote "ToDo"
     Osvježiti primjerima koji koriste [httpbin.org](https://httpbin.org/).
 
 ### HTTP metoda GET

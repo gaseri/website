@@ -85,7 +85,7 @@ int main()
 }
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Promijenite kod primjera tako da:
 
     - koristi pogon za generiranje slučajnih brojeva `knuth_b` umjesto zadanog i 64-bitni Mersenneov Twister umjesto 32-bitnog,

@@ -82,10 +82,10 @@ result_gpu = pycuda.cumath.sin(a_gpu) + pycuda.cumath.cos(b_gpu)
 print("GPU rezultat\n", result_gpu.get())
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Promijenite kod da računa element po element rezultat oblika $\sqrt{e^a + \tan(b)}$.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Incijalizirate GPUArray sa 10 redaka i 5 stupaca u kojem ćemo retke tretirati kao vektore. Napišite kod koji vrši zbrajanje svakog vektora sa svakim vektorom a rezultat vraća kao GPUArray veličine $\binom{10}{2}$ redaka i 5 stupaca.
 
 ### Aproksimativno računanje broja $\pi$ kao sume niza
@@ -156,7 +156,7 @@ $$
     print("pi is approximately %.16f, error is approximately %.16f" % (pi, error))
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Modificirajte gornji primjer tako da dodate kod koji mjeri vrijeme izvođenja.
     - Usporedite vrijeme izvođenja algoritma na CPU-u i na GPU-u za 10^4^, 10^5^, 10^6^ iteracija; ukoliko neku od ovih veličina ne budete mogli izvesti zbog nedostatka memorije na GPU-u, zanemarite tu i sve veće. Opišite svoje zaključke.
 
@@ -188,7 +188,7 @@ print(nekvalitetni_slucajni)
     print("Normalna distribucija", kvalitetni_slucajni)
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Promijenite gornji primjer da koristi MRG32k3a generator umjesto XORWOW generatora i da se generiraju 32-bitni brojevi s pomičnim zarezom umjesto 64-bitnih.
     - Usporedite u terminu vremena izvođenja numpy generator koji se izvodi na CPU-u (funkcija `np.random.random()`) i PyCUDA MRG32k3a generator koji se izvodi na GPU-u kod generiranja:
 
@@ -302,11 +302,11 @@ Povećavajući $n$ dobivamo točniju aproksimaciju, a navedena metoda naziva se 
         print("pi is approximately %.16f, error is approximately %.16f" % (pi, error))
         ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Modificirajte primjer dan za Monte Carlo simulaciju da dodate kod koji mjeri vrijeme izvođenja.
     - Usporedite vrijeme izvođenja simulacije na CPU-u i na GPU-u za 10^4^, 10^5^, 10^6^, 10^7^, 10^8^, 10^9^ iteracija; ukoliko neku od ovih veličina ne budete mogli izvesti zbog nedostatka memorije na GPU-u, zanemarite tu i sve veće. Opišite svoje zaključke.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Usporedite vrijeme izvođenja programa i točnost aproksimacije pi korištenjem:
 
     - sumiranja elemenata niza,
@@ -314,7 +314,7 @@ Povećavajući $n$ dobivamo točniju aproksimaciju, a navedena metoda naziva se 
 
     na CPU-u i na GPU-u za 10^4^, 10^5^, 10^6^ iteracija. Opišite svoje zaključke.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Simulirajmo ekonomiju. Inicijalizirajte GPUArray veličine 200 elemenata koji predstavlja financijsko stanje 200 jediniki u ekonomiji koju simuliramo. Incijalizirajte vrijednosti elemenata na 10. Definirajte dvije operacije
 
     - porast_pad_ekonomije(), koji svačije financijsko stanje množi sa koeficijentom k koji se određuje kao slučajan broj u intervalu $[0.5, 1.5]$.

@@ -242,13 +242,13 @@ Commands:
 Run 'docker compose COMMAND --help' for more information on a command.
 ```
 
-!!! adomonition "Zadatak"
+!!! example "Zadatak"
     Napravite "kompoziciju" koja se sastoji od jednog kontejnera `website` koristeći [sliku web poslužitelja nginx](https://hub.docker.com/_/nginx/) i povežite ga mrežom s domaćinom na kojem se Docker izvodi tako da njegova vrata 80 budu dostupna na vratima koristeći se vratima 8080 na domaćinu. U pregledniku otvorite korijensku web stranicu upravo pokrenutog web poslužitelja.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napravite kompoziciju dva kontejnera imena po želji od kojih su oba temeljena na slici nginx, neka jedan bude dostupan na vratima 8081, a drugi na vratima 8082. Uvjerite se da možete otvoriti oba web sjedišta.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napravite kompoziciju dva kontejnera temeljena na slici nginx tako da su u zajedničkoj vlastitoj podmreži i postavite im IP adrese po želji. Van kompozicije pokrenite kontejner temeljen na [slici curlimages/curl](https://hub.docker.com/r/curlimages/curl) u istoj mreži i njime pristupite jednom, a zatim drugom web sjedištu.
 
 ## Pokretanje WordPressa korištenjem Docker Composea
@@ -416,11 +416,11 @@ services:
     image: "redis:alpine"
 ```
 
-!!! adomonition "Zadatak"
+!!! example "Zadatak"
     Promijenite kontejner tako da koristi Python 3.10 kao osnovnu sliku.
 
-!!! adomonition "Zadatak"
+!!! example "Zadatak"
     Promijenite korištena vrata na 8080. (*Uputa:* proučite [dokumentaciju sučelja naredbenog retka Flaska](https://flask.palletsprojects.com/en/2.0.x/cli/).)
 
-!!! adomonition "Zadatak"
+!!! example "Zadatak"
     Po uzoru na ovu kompoziciju, složite kompoziciju koja koristi službenu sliku za [php](https://hub.docker.com/_/php) i povezuje se na Redis.

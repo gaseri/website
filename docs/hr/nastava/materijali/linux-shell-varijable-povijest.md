@@ -18,7 +18,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov, Anja Vrbanjac
     - ime počinje znakom `$`, vrijednost se može ispisati naredbom `echo`
     - `$HOME`, `$PATH`, `$BASH`, `$BASH_VERSION`, `$COLUMNS`, `$USER`, `$GROUPS`, ...
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Što je točno sadržano u varijablama koje smo upravo vidjeli (`$HOME`, `$PATH`, `$BASH_VERSION`, `$COLUMNS`, `$USER`, `$GROUPS`)? Ispišite njihovu vrijednost na ekran i zaključite.
     - Što je sadržano u sljedećim varijablama:
 
@@ -45,7 +45,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov, Anja Vrbanjac
     $ echo $MOJA_VARIJABLA # dohvaćanje vrijednosti varijable MOJA_VARIJABLA
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Pridružite varijabli `IME` vrijednost svoga imena. Ispišite vrijednost te varijable na ekran.
     - Pridružite varijabli `STUDENT` vaše ime i prezime. Što se događa? Kako to izbjeći?
     - Radi li pridruživanje vrijednosti s razmacima oko znaka jednakosti? Probajte objasniti zašto.
@@ -90,7 +90,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov, Anja Vrbanjac
     $ echo $MOJA_VARIJABLA # ispisuje prazan redak jer varijabla nema vrijednost
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Objasnite zašto kod naredbe `unset` nismo koristili `$` pored naziva varijable.
     - Varijabli `TEXT_EDITOR` pridružite vrijednost kojom ćete pokrenuti Emacs alat. Pokrenite navedeni alat pomoću varijable kojoj ste upravo dodijelili vrijednost.
     - Varijabli `CRVENI_EDITOR` pridružite vrijednost `emacs --fg red` kojom se pokreće Emacs u crvenoj boji slova. Pokrenite Emacs tom varijablom.
@@ -105,7 +105,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov, Anja Vrbanjac
 - `!niz_znakova` ako postoji, pokreće posljednju naredbu koja na početku ima dani niz znakova
 - `^R` pretraživanje povijesti unatrag za specifičnom naredbom
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Pokrenite naredbu na petom mjestu u povijesti. Što se događa? Zašto?
     - Pokrenite posljednju naredbu u povijesti koja počinje s `emacs`.
     - Objasnite što radi `!!`, a što `!-2`.
@@ -120,13 +120,13 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov, Anja Vrbanjac
     - aliase naredbi (npr. `ls` može biti alias na `ls --color=auto`)
     - funkcije ljuske (npr. `_expand`)
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Pronađite još jedan primjer ugrađene naredbe, vanjske naredbe, aliasa i funkcije ljuske.
 
-!!! admonition "Dodatni zadatak"
+!!! tip "Dodatni zadatak"
     Proučite sintaksu i funkcionalnosti naredbe `alias`. Pronađite praktičnu primjenu ove naredbe.
 
-!!! todo
+!!! quote "ToDo"
     Ovdje bi trebalo dodati dodati i `&&`, `||`, `;`, `$()`, `true`, `false`.
 
 !!! question "Pitanja za ponavljanje"

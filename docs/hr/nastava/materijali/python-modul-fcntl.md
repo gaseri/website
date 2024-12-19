@@ -10,5 +10,5 @@ author: Vedran Miletić
 - `fcntl.ioctl()`
 - `fcntl.lockf()`
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio treba napisati u cijelosti.

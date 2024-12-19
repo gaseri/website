@@ -28,7 +28,7 @@ author: Vedran Miletić
     }
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napišite program u kojem korisnik unosi svoje ime i godinu rođenja, a zatim ga program pozdravlja sa `"bok <ime>"`. U novoj liniji se ispisuje `"<ime> je rođen <godina_rođenja> godine."`, a zatim se za taj broj određuje:
 
     - broj djeljitelja tog broja,
@@ -36,7 +36,7 @@ author: Vedran Miletić
     - produkt djeljitelja tog broja,
     - sumu kvadrata djeljitelja tog broja.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napravite "kalkulator" koji korištenjem *jedne* funkcije `input()` očekuje od korisnika unos *izraza* oblika:
 
     - `'24 + 8'` (zbroj),
@@ -85,7 +85,7 @@ author: Vedran Miletić
     # ovo se prečesto zaboravlja
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     S adrese `http://www.textfiles.com/art/dragon.txt` preuzmite u vaš kućni direktorij zmaja nacrtanog u ASCII artu. Pod Linuxom za to možete iskoristiti `wget` ili `curl`, a pod FreeBSD-om `fetch`.
 
     - Otvorite datoteku za čitanje.
@@ -131,7 +131,7 @@ author: Vedran Miletić
     datoteka.seek(-1, 2) # postavlja poziciju objekta pridruženog datoteci na predzadnji znak
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napišite program u kojem se korisniku dozvoljava unos proizvoljnih znakovnih nizova koji se zatim spremaju u datoteku `dat-unosi.txt`.
 
     - Ukoliko je uneseni znakovni niz oblika `"b.*"` u regex notaciji (počinje nulom, a zatim ima proizvoljne znakove), sprema se na početak datoteke i eventualno briše postojeći sadržaj.
@@ -139,5 +139,5 @@ author: Vedran Miletić
 
     Za isprobavanje koristite znakovne nizove različitih duljina. Što se događa kod unosa niza znakova veće duljine od sadržaja prvog retka datoteke ako niz počinje slovom `b`? Objasnite zašto.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napišite program koji učitava tekstualnu datoteku i tekst iz nje obrađuje na način da briše sve vokale i sve razmake duplira, te rezultat zapisuje u novu datoteku. Datoteku obrađujte liniju po liniju.

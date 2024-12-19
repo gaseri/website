@@ -70,7 +70,7 @@ point_in_space = ga.vec.make_float3(3.6, 5.4, 2.25)
 print_coordinates(point_in_space, block=(1,1,1), grid=(1,1))
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Na domaćinu definirajte tri točke u *ravnini* (točke će biti tipa `float2` i imati dvije koordinate). Izračunajte površinu trokuta koji te tri točke zatvaraju korištenjem formule:
 
     $$
@@ -79,7 +79,7 @@ print_coordinates(point_in_space, block=(1,1,1), grid=(1,1))
 
     Zrno se izvodi **bez korištenja paralelizacije**, dakle kut se računa u jednom bloku s jednom niti po bloku. Za provjeru, isti izračun izvedite na domaćinu.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Kosinus kuta dvaju vektora $a = (a_x, a_y)$ i $b = (b_x, b_y)$ računa se po formuli
 
     $$

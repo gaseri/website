@@ -6,7 +6,7 @@ author: Vedran Miletić
 
 ## Upravljački programi grafičkih procesora
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio treba napisati u cijelosti.
 
 KMS **Postavljanje rezolucije od strane jezgre** je značajka novijih verzija Linux jezgre (od 2009. godine). Ona ima čitav niz prednosti nad postavljanjem rezolucije u korisničkoj domeni, o čemu više detalja nude [Wikipedija](https://en.wikipedia.org/wiki/Mode_setting) i [Fedorin wiki](https://fedoraproject.org/wiki/Features/KernelModesetting).
@@ -17,12 +17,12 @@ TODO opiši user mode setting, atomic mode setting za AMD or so
 
 ### Dijelovi upravljačkog programa u korisničkom prostoru
 
-!!! todo
+!!! quote "ToDo"
     - OpenGL `glxinfo`
     - OpenCL `clinfo`
     - Vulkan `vulkaninfo`
 
 ## Upravljački programi zvučnih uređaja
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio treba napisati u cijelosti.

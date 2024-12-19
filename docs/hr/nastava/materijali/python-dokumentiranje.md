@@ -44,5 +44,5 @@ Važne značajke naše konvencije:
 - Redak `Vraća:` odmaknut je jednim praznim retkom od opisa posljednjeg argumenta.
 - Ispod retka `Vraća:` detaljno je opisano što funkcija vraća i kojeg tipa je to što vraća u kojem od mogućih slučajeva.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Dokumentirajte funkciju `pphs_podaci_na_studiju2()` po uzoru na funkciju `pphs_podaci_na_studiju()`, obavezno slijedeći našu konvenciju.

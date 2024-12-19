@@ -4,7 +4,7 @@ author: Vedran Miletić
 
 # Upravljanje paketima
 
-!!! hint
+!!! info
     Za više informacija proučite [Part III. Installing and Managing Software](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/part-installing_and_managing_software) u [Red Hat Enterprise Linux 7 System Administrator's Guide](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/index).
 
 - softverski paket (engl. *software package*)
@@ -25,7 +25,7 @@ author: Vedran Miletić
     - *"dependency hell"* (pakao međuovisnosti?)
     - najpoznatiji su [RPM Package Manager](https://rpm.org/), naredba `rpm`, i [dpkg](https://wiki.debian.org/Teams/Dpkg), naredba `dpkg`
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Proučite `rpm(8)` (notacija za `man 8 rpm`), specifično dio o naredbama za pretraživanje (engl. query, `rpm -q`).
 
     - Provjerite koji paketi koji u imenu sadrže niz znakova `python` su instalirani na sustavu. Ne zaboravite da ljuska Bash smatra `*` specijalnim znakom te ga je potrebno escapeati prefiksom `\`.
@@ -55,13 +55,13 @@ author: Vedran Miletić
     - upravitelj paketima više razine ima kopije jednog ili više popisa u lokalnom međuspremniku
     - naredbe `yum list` i `dnf list`
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Pronađite u `/etc` koju datoteku yum koristi za konfiguraciju i pročitajte u njoj koji direktorij yum koristi za međuspremnik. Provjerite njegov trenutni sadržaj.
     - Ispišite popis paketa iz lokalnog međuspremnika i prebrojite ih. Radi li se o instaliranim ili dostupnim paketima?
     - Provjerite postoji li u popisu paketa koji yum ispisuje paket `python3`.
     - Pronađite informacije o paketu `dosfstools`, specifično kolika mu je veličina i iz kojeg je repozitorija, a zatim popis paketa o kojima ovisi. (*Napomena:* Možda će vam trebati više od jedne naredbe.)
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Pronađite koji direktorij APT koristi za međuspremnik. Provjerite njegov trenutni sadržaj.
     - Pročitajte u statistikama koliko ukupno ima paketa u popisu u lokalnom međuspremniku.
     - Provjerite ima li u popisu paketa paket `python3.6`.
@@ -73,7 +73,7 @@ author: Vedran Miletić
 - `yum remove/erase paket` / `apt remove paket` -- briše paket sa sustava zajedno sa svim paketima koji o njemu ovise, a konfiguracijske datoteke paketa sprema u `.rpmsave` (`.dpkg-old`) u slučaju da su bile promijenjene od strane korisnika
 - `yum search paket` / `apt search paket` -- traži paket u popisima
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Instalirajte paket `nano`.
     - Pronađite i instalirajte paket koji sadrži [Liberation fonts](https://www.redhat.com/en/blog/liberation-fonts).
     - Izbrišite paket `wireshark`.

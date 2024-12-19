@@ -26,7 +26,7 @@ author: Luka Vretenar
     - `*` -- zamjenjuje nam više znakova u nazivu
     - `?` -- zamjenjuje nam jedan znak u nazivu
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Ispišite sadržaj direktorija `/usr/bin/` filtrirajući samo datoteke čiji naziv započinje znakom `b`.
 
 ### Pretraživanje datoteka u datotečnom sustavu
@@ -42,7 +42,7 @@ author: Luka Vretenar
 
 - Postoje različiti argumenti sa kojima možemo specificirati pretragu po veličini datoteke, vremenu izmjene itd. Za opise pojedinih argumenata konzultirati dokumentaciju naredbe.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Potražiti u direktoriju `/usr/share/` sve datoteke naziva `index.html`.
 
 ## Prava pristupa datotekama i upravljanje pravima
@@ -65,7 +65,7 @@ author: Luka Vretenar
     - `lukav` koji se pojavljuje drugi put, je naziv grupe korisnika
     - `74` je veličina datoteke u bajtovima
 
-!!! hint
+!!! tip
     `Linux` je višekorisnički sustav te omogućuje upravljanje vlasništvom datoteka za svakog korisnika, pored korisnika postoje i grupe korisnika koje također mogu biti vlasnici datoteka.
 
 - Niz koji definira prava pristupa možemo dalje podijeliti na četri segmenata:
@@ -89,7 +89,7 @@ author: Luka Vretenar
 
 - Svaki znak može biti zamjenjen sa `-`, u tom slučaju to pravo je onemogućeno na toj datoteci.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Koja su prava pristupa definirana i za koga za datoteku `primjer.txt` prikazanu u tekstu?
 
 ### Izmjena prava pristupa -- naredba `chmod`
@@ -114,7 +114,7 @@ author: Luka Vretenar
     $ chmod o-r primjer.txt
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - U komandnoj liniji izvršiti naredbu `touch prazna.txt`, koja kreira datoteku `prazna.txt`.
     - Provjeriti koja prava pristupa ima nova datoteka.
     - Dati svim ostalim korisnicima pravo čitanja iz datoteke.
@@ -173,7 +173,7 @@ author: Luka Vretenar
     - ispisuje datoteke zadanim redoslijedom u komandnu liniju
     - u slučaju da se pokrene bez argumenta, samo ponavlja unešeni tekst, unos se prekida sa ++control+d++
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Naredbom `less` pregledati sadržaj datoteke iz prethodnog zadatka.
     - Naredbom `tail` ispisati zadnje tri linije iz iste datoteke.
     - Ispisati sve sortirane linije iz datoteke.
@@ -193,7 +193,7 @@ author: Luka Vretenar
 
 - Pretraga je osjetljiva na mala i velika slova, u slučaju da želimo zanemariti veličinu slova potrebno je kao argument dodati `-i`.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - U datoteci iz koju smo kreirali sa `nano` pretražiti jednu od riječi ignorirajući velika i mala slova.
 
 ### Preusmjeravanje izlaza naredbi
@@ -212,6 +212,6 @@ author: Luka Vretenar
     $ cat dat1.txt dat2.txt > out.txt
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - U datoteku `dupla.txt` nadodati preusmjeravanjem sadržaj konkatenacije datoteke iz `nano` zadatka same sa sobom.
     - Iskoristite naredbu `cat` za izradu datoteke, izlaz naredbe preusmjerite u datoteku `izlaz.txt`. (Unos prekidate tipkama ++control+d++ na praznoj liniji)

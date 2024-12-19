@@ -40,7 +40,7 @@ Pozicijski brojevni sustav način je zapisivanja brojeva gdje vrijednost svake z
 
 U nastavku slijedi pregled najčešće korištenih brojevnih sustava: binarnog, oktalnog, dekadskog i heksadekadskog sustava. Svaki od ovih sustava ima svoje karakteristike i primjene, a poznavanje njihovog rada ključno je za razumijevanje računalnih sustava i tehnologija.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     1. Što je brojevni sustav?
     2. Objasni razliku između pozicijskih i nepozicijskih brojevnih sustava. Navedi primjere.
 
@@ -64,7 +64,7 @@ Raspišemo li gornji izraz dobijemo slijedeći oblik:
 
 $$Z_{(B)} = Z_{(N-1)} \cdot B^{N-1} + Z_{(N-2)} \cdot B^{N-2} + \ldots + Z_{(1)} \cdot B^{1} + Z_{(0)} \cdot B^{0}.$$
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Broj 1136, s težinskim vrijednostima baze 7, napiši u dekadskom obliku.
 
 **Rješenje:**
@@ -75,14 +75,14 @@ Dakle, broj $1136_{(7)}$ zapisan u brojevnom sustavu s bazom $7$ ima vrijednost 
 
 Ako imamo broj koji sadrži decimalne znamenke, nastavljamo s računanjem pomoću negativnih eksponenata. Svaka slijedeća decimalna znamenka ima eksponent koji je manji za $N-1$ u odnosu na prethodnu znamenku. To znači da prva znamenka iza decimalnog zareza predstavlja desetinke, druga predstavlja stotinke, treća predstavlja tisućinke itd.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Pretvori broj $5,24_{(8)}$ u dekadski oblik.
 
 **Rješenje:**
 
 $$5,24_{(8)} = 5 \cdot 8^{0} + 2 \cdot 8^{-1} + 4 \cdot 8^{-2} = 5,3125_{(10)}.$$
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     1. Pretvori broj $10110101_{(2)}$ u dekadski oblik.
     2. Pretvori broj $40,18_{(8)}$ u dekadski oblik.
 
@@ -94,7 +94,7 @@ Bitovi se koriste za kodiranje i prijenos informacija u računalima pa je stoga 
 
 Kako bismo neki broj zapisali u binarnom sustavu, koristimo postupak dijeljenja s brojem $2$. Prvo, broj dijelimo s $2$ i zapisujemo ostatak. Zatim, taj ostatak dijelimo sa $2$ i opet zapisujemo ostatak. Taj postupak ponavljamo sve dok kao rezultat ne dobijemo nulu. Na kraju, sve ostatke zapišemo obrnutim redoslijedom i dobijemo prikaz broja u binarnom brojevnom sustavu.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Pretvori broj $52_{(10)}$ u binarni oblik.
 
 **Rješenje:**
@@ -112,7 +112,7 @@ Dakle, broj $52_{(10)}$ zapisan u dekadskom sustavu ima vrijednost $110100_{(2)}
 
 Kada radimo s brojevima koji imaju decimalne znamenke, postupak pretvaranja u binarni zapis je nešto drugačiji. Prvo, odvajamo cijeli i decimalni dio. Cijeli dio pretvaramo u binarni zapis kao što smo već objasnili. Za pretvaranje decimalnog dijela, množimo ga s brojem $2$. Ako je rezultat jednak ili veći od $1$, zapisujemo $1$, a ako je manji od $1$, zapisujemo $0$. Potom ponavljamo postupak s decimalnim dijelom rezultata, sve dok ne dobijemo $0$ kao decimalni dio dekadskog broja ili do željenog broja decimala binarnog broja. Važno je zapamtiti da rezultat čitamo od **gore prema dolje**, što znači da je prva zapisana znamenka u bitu najviši bit, a posljednja zapisana znamenka najniži bit.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Pretvori broj $8,125_{(10)}$ u binarni zapis.
 
 **Rješenje:**
@@ -132,7 +132,7 @@ Kada radimo s brojevima koji imaju decimalne znamenke, postupak pretvaranja u bi
 
 Dakle, broj $8,125_{(10)}$ je $1000,001_{(2)}$ u binarnom zapisu.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Pretvori broj $6,74_{(10)}$ u binarni zapis s tri decimale.
 
 **Rješenje:**
@@ -151,7 +151,7 @@ Dakle, broj $8,125_{(10)}$ je $1000,001_{(2)}$ u binarnom zapisu.
 
 Dakle, broj $6,74_{(10)}$ je $110,101_{(2)}$ u binarnom zapisu.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     1. Pretvori broj $28_{(10)}$ u binarni zapis.
     2. Pretvori broj $42,32_{(10)}$ u binarni zapis s 5 decimalnih mjesta.
 
@@ -167,7 +167,7 @@ Kada je riječ o binarnom brojevnom sustavu, uobičajeno je da se predstavljanje
 
 Kada je riječ o negativnim brojevima, postoje tri načina njihovog prikazivanja. Prvi način je prikazivanje negativnog broja pomoću predznaka i veličine. U tom slučaju, krajnji lijevi bit predstavlja predznak broja (0 za pozitivan, 1 za negativan), a preostali bitovi predstavljaju veličinu broja. Preostala dva načina prikazivanja negativnih brojeva temelje se na korištenju komplementa broja.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Tehnikom predznaka i veličine napišite $-17_{(10)}$ u zapisu od $8$ bita.
 
 **Rješenje:**
@@ -195,7 +195,7 @@ $$z' = B^n - 1 - z.$$
 
 Umjesto korištenja komplicirane formule za izračun komplementa broja, postoji jednostavniji način zapisivanja pomoću invertiranja svake znamenke broja.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napišite broj $-17_{(10)}$ tehnikom predznaka i jediničnog komplementa u zapisu od $8$ bita.
 
 **Rješenje:**
@@ -217,7 +217,7 @@ $$z' = B^n - z.$$
 
 U ovom slučaju, negativni broj se dobiva tako da se uzme jedinični komplement broja i zbroji s $1$ ili puno jednostavnije, počevši s desne strane prepišemo sve znamenke do prve jedinice (uključujući prvu jedinicu), a ostalne znamenke invertiramo.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Tehnikom dvojnog komplementa prikaži broj $-12_{(10)}$ u zapisu od 8 bitova.
 
 **Rješenje:**

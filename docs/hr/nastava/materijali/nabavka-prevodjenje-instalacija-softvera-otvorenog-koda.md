@@ -24,7 +24,7 @@ Preuzimanje softvera podrazumijeva preuzimanje arhiva, za što se mogu koristiti
 
     - najčešće se instalacija u zadanim postavkama vrši u `/usr/local`, kako bi se ručno instalirani softver odvojio od onoga instaliranog pomoću upravitelja paketima koji ide u `/usr` (potrebno je imati dozvolu zapisivanja u taj direktorij -- u većini slučajeva to znači biti `root`)
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Na [službenim stranicama uređivača teksta GNU nano](https://www.nano-editor.org/) preuzmite arhivu s izvornim kodom.
     - Raspakirajte arhivu koju ste preuzeli, a zatim izvršite konfiguraciju i kompajliranje.
     - Pokušajte izvršiti instalaciju, da uočite što točno ne uspijeva.
@@ -32,12 +32,12 @@ Preuzimanje softvera podrazumijeva preuzimanje arhiva, za što se mogu koristiti
 
 - `./configure --prefix=<path>` omogućuje da se putanja `<path>` koristi kao mjesto za instalaciju umjesto predefinirane
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Na [službenim stranicama VLC media playera](https://www.videolan.org/) preuzmite arhivu s izvornim kodom.
     - Raspakirajte je i pokušajte izvršiti konfiguraciju. Objasnite što skripta za konfiguraciju ne nalazi na sustavu.
     - Ono što VLC-u nedostaje moguće je instalirati u proizvoljne direktorije, ali je potrebno odgovarajućim parametrom `--with-<biblioteka>` navesti gdje se nalazi. Napravite to za prve dvije nedostajuće biblioteke.
 
-!!! admonition "Dodatni zadatak"
+!!! tip "Dodatni zadatak"
     - Na [službenim stranicama uređivača teksta GNU nano](https://www.nano-editor.org/) moguće je GNU nano preuzeti i putem SVN-a.
     - Pronađite kako, a zatim izvršite kompajliranje po uputama koje su tamo navedene.
     - Pokrenite `nano` na isti način kao u prethodnom zadatku da se uvjerite da se zaista radi o različitoj verziji.

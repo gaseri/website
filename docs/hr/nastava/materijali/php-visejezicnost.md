@@ -500,5 +500,5 @@ $ curl -v -H "Accept-Language: de;q=0.9, fr;q=0.5" http://localhost:8000/
 
 Funkcije `gettext()` ([dokumentacija](https://www.php.net/manual/en/function.setlocale.php)) i `setlocale()` ([dokumentacija](https://www.php.net/manual/en/function.setlocale.php)) omogućuju prevođenje teksta.
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio treba napisati.

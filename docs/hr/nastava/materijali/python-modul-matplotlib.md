@@ -67,5 +67,5 @@ plt.pie(sizes, labels=labels, colors=colors)
 plt.show()
 ```
 
-!!! todo
+!!! quote "ToDo"
     Nedostaje zadatak.

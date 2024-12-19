@@ -8,7 +8,7 @@ author: Domagoj Margan, Vedran Miletić
 
 [Vatrozid](https://en.wikipedia.org/wiki/Firewall_(computing)) (engl. *firewall*) je uređaj ili aplikacija koja služi da dozvoli ili zabrani prijenos podataka mrežom na osnovu određenog skupa pravila. Najčešće se koristi za istovremeno dozvoljavanje legitimnog i onemogućavanje nelegitimnog pristupa izvana lokalnim mrežama (ili specifičnom domaćinu unutar mreže).
 
-!!! todo
+!!! quote "ToDo"
     Ovdje fali jedan paragraf objašnjenja procesa filtriranja.
 
 U praksi najčešće korišteni vatrozidi zasnovani na filterima paketa su

@@ -176,7 +176,7 @@ U slučaju kada uvjet nije ispunjen, nastavlja se izvršavanje sljedećih instru
 
 Primjetimo kako smo u ovom slučaju dobili više oznaka i naredbi grananja nego u prvom slučaju.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Prevedite sljedeći dio koda napisanog u C++ u asemblerski jezik arhitekture MIPS. Pretpostavite da su varijable `a0`, `v0`, `t0`, `t1` i `t2` u istoimenim registrima.
 
     ``` cpp
@@ -214,7 +214,7 @@ Ako uvjet `a0 > 0` nije ispunjen, program provjerava sljedeći uvjet `a0 == 0`. 
 
 Ako nijedan od prethodnih uvjeta nije ispunjen, izvršava se blok `blok_else`. U tom bloku, vrijednost registra `$t2` se kopira u registar `$v0`. Na kraju, program skače na oznaku `dalje` pri čemu se izvršavaju naredbe koje slijede izvan bloka *if* naredbe.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Sljedeći isječak koda u jeziku C++ pretvori u asembler za arhitekturu MIPS. Pretpostavi da su varijable `a0` i `v0` u istoimenim registrima.
 
     ``` cpp
@@ -251,7 +251,7 @@ U MIPS asemblerskom jeziku, tzv. [SET instrukcije](#instrukcije-usporedbe) omogu
 
 Primjerice, instrukcija `slt $Rdest, $Rsrc1, $Rsrc2` (engl. _**s**et if **l**ess **t**hen_) uspoređuje vrijednosti registara `$Rsrc1` i `$Rsrc2` te rezultat (0 ili 1) pohranjuje u registr `$Rdest`. U ovom slučaju 1 pohranjuje u registar `$Rdest` ako je `Rsrc1 < $Rsrc2`.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Sljedeći isječak koda u jeziku C++ pretvori u MIPS asemblerski jezik. Pretpostavi da je varijabla `a0` u istoimenom registru.
 
     ``` cpp
@@ -309,7 +309,7 @@ Instrukcija `bnez` (engl. _**b**ranch if **n**ot **e**qual to **z**ero_) provjer
 
 U drugom slučaju, kada je `$t0` jednak nuli, izvršava se instrukcija `addi` koja pridodaje 1 vrijednosti u registru `$a0`. To znači da se vrijednost u registru `$a0` povećala za 1. Nakon toga, instrukcija bezuvjetnog grananja `j` izvodi skok na oznaku `dalje` i time se izvršavanje nastavlja od prve sljedeće naredbe koja se nalazi nakon oznake.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Sljedeći isječak koda u jeziku C++ pretvori u MIPS asemblerski jezik. Pretpostavi da su varijable `a0` i `a1` u istoimenim registrima.
 
     ``` cpp
@@ -321,7 +321,7 @@ U drugom slučaju, kada je `$t0` jednak nuli, izvršava se instrukcija `addi` ko
     }
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napiši kod u asembleru MIPS koji odgovara isječku koda u C++. Program računa sumu prvih deset prirodnih brojeva. Pretpostavi da su varijable `a` i `i` u registrima `a0` i `t0`.
 
     ``` cpp
@@ -350,7 +350,7 @@ U drugom slučaju, kada je `$t0` jednak nuli, izvršava se instrukcija `addi` ko
 
 Najjednostavniji slučaj je petlja *do-while*, gdje uvjet petlje odgovara uvjetu grananja. U slučajevima petlji *while* i *for* koristimo sličan koncept kao i kod naredbe *if*, s okrenutim uvjetom ili više oznaka i skokova. Ako je uvjet ispunjen, tijelo petlje će se izvršiti. Za razliku od naredbe *if*, kod petlji imamo bezuvjetni skok na početak, odnosno provjeru uvjeta.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Sljedeći isječak koda u jeziku C++ pretvori u MIPS asemblerski jezik. Pretpostavi da je varijabla `a0` u istoimenom registru.
 
     ```cpp
@@ -382,7 +382,7 @@ U slučaju da uvjet nije zadovoljen, postavit ćemo broj 1 u registar `$v0` kako
 
 ### Petlja *while* u MIPS-u
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Sljedeći isječak koda u jeziku C++ pretvori u MIPS asemblerski jezik. Pretpostavi da su varijable `a0` i `t0` u istoimenim registrima.
 
     ``` cpp
@@ -433,7 +433,7 @@ dalje:
 
 ### Petlja *for* u MIPS-u
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Sljedeći isječak koda u jeziku C++ pretvori u MIPS asemblerski jezik. Pretpostavi da su varijable `a0` i `t0` u istoimenim registrima.
 
 ``` cpp
@@ -468,7 +468,7 @@ dalje:
 
 ### Složena petlja *for* u MIPS-u
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napiši program koji računa zbroj komponenti vektora $v$, $s = \sum_{i=0}^{n-1} v_i$.
 
 **Rješenje:**

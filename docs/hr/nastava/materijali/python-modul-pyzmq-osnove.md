@@ -8,7 +8,7 @@ Python modul PyZMQ ([repozitorij na GitHubu](https://github.com/zeromq/pyzmq), [
 
 U nastavku pratimo [prvo poglavlje](https://zguide.zeromq.org/docs/chapter1/) [zguidea](https://zguide.zeromq.org/).
 
-!!! todo
+!!! quote "ToDo"
 
     - Objasniti razlike između klasičnih utičnica i ZMQ-ovih utičnica.
     - Objasniti neke osnovne pojmove, npr. ZMQ kontekst.
@@ -75,7 +75,7 @@ Bitno je spomenuti da se parovi utičnica REQ-REP uvijek pojavljuju jedan iza dr
 
 Izvor: [zguide, poglavlje 1](https://zguide.zeromq.org/docs/chapter1/)
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
 
     1. Ako se poslužitelj sruši nakon što je primio zahtjev, ali prije nego li je poslao odgovor, hoće li komunikacija nastaviti ponovnim pokretanjem poslužitelja?
     2. Hoće li program raditi ako se spoji više klijenata? Pokrenite dva klijenta umjesto jednog.
@@ -161,7 +161,7 @@ Zadnjih nekoliko točaka o utičnicama PUB-SUB:
 - Ukoliko utičnice komuniciraju TCP protokolom i pretplatnik je spor, poruke će se gomilati u redu čekanja pošiljatelja.
 - Od ZeroMQ verzije 3.x, filtriranje se odvija kod pošiljatelja kada se koristi TCP ili IPC protokol. Kod EPGM protokola, filtriranje se odvija kod pretplatnika. U verziji ZeroMQ 2.x filtriranje se uvijek odvijalo kod pretplatnika.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
 
     1. Napravite poslužitelj koji će na vratima 5557 slati drukčije podatke, npr. stanje na cestama. Izmjenite klijent tako da se spaja na oba poslužitelja.
     2. Izmjenite program tako da klijenti pretplaćeni na poštanski broj 10000 uz prijašnje podatke dobivaju i količinu oborina. Pokrenite barem dva klijenta, jedan pretplaćen na poštanski broj 10000, a drugi ne.
@@ -282,7 +282,7 @@ Nekoliko opservacija o utičnicama PUSH-PULL i paralelnoj obradi:
 - Ventilatorova utičnica PUSH podjednako distribuira zadatke radnicima ako su oni spojeni prije nego li obrada započne. Drugim riječima, radnici su podjednako opterećeni.
 - Primateljeva utičnica PULL prima rezultate po mehanizmu pravednog redanja.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
 
     1. Napišite program koji izračunava zbroj kvadrata brojeva u rasponu od 1 do 500000 koristeći 2 radnika i to tako da ventilator šalje radnicima brojeve od 1 do 250000 i od 250000 do 500000 (respektivno). Radnici računaju zbroj kvadrata i primatelju javljaju rezultate koje su dobili. Primatelj prima oba rezultata i njihov zbroj ispisuje na ekran.
     2. Kako bi optimizirali zadatak 1. s ciljem smanjivanja prometa mrežom?

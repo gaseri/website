@@ -8,7 +8,7 @@ Ova značajka je dio [standarda MPI-2](https://www.mpi-forum.org/docs/mpi-2.0/mp
 
 Dokumentacija svih funkcija koje koristimo u nastavku dana je u sklopu [pregleda dostupne funkcionalnosti u mpi4py-u](https://mpi4py.readthedocs.io/en/stable/overview.html).
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio treba napisati u cijelosti.
 
 - `MPI.Win.Create()`

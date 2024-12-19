@@ -4,10 +4,10 @@ author: Vedran Miletić, Maja Grubišić
 
 # Instalacija operacijskih sustava Fedora i CentOS korištenjem instalacijskog alata Anaconda
 
-!!! hint
+!!! info
     Za više informacija proučite [Red Hat Enterprise Linux 7 Installation Guide](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/installation_guide/index).
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio je vrlo sirov i treba ga temeljito pročistiti i dopuniti.
 
 [Anaconda](https://fedoraproject.org/wiki/Anaconda) ([Wikipedia](https://en.wikipedia.org/wiki/Anaconda_(installer)), [službena dokumentacija](https://anaconda-installer.readthedocs.io/)) je instalacijski program koji koriste Fedora, Red Hat Enterprise Linux i neke druge distribucije, i napisana je u programskom jeziku Python. Ona dopušta korisniku instalaciju operativnog sustava na željeno računalo i takoder daje mogućnost nadogradnje postojeće instalacije starije verzije neke od distribucija.
@@ -117,5 +117,5 @@ U slučaju da korisnik odabere instalaciju Fedore, pokrenuti će se instalacijsk
 
 ## Uobičajena instalacija (Fedora Server)
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio treba napisati.

@@ -15,7 +15,7 @@ author: Luka Vretenar
 - Emulator komandne linije možete pronaći instaliran među ostalim aplikacijama na vašem sustavu.
 - U slučaju računala koje imate na vježbama, emulator komandne linije se naziva `Konsole`.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Pokrenite emulator komandne linije.
 
 - Pri pokretanju komandne linije dočekati će vas polje za unos (eng. `prompt`):
@@ -38,7 +38,7 @@ author: Luka Vretenar
     $ naredba -parametar argument1 argument2 ...
     ```
 
-!!! hint
+!!! tip
     Pri pisanju naziva naredbe, možemo na tipkovnici pritisnuti dva puta tipku `<Tab>` da dobijemo popis svih naredbi koji započinju unesenim slovima.
 
 - Svaka naredba može imati nijedan, jedan ili više parametara kao i nijedan, jedan ili više argumenata.
@@ -46,10 +46,10 @@ author: Luka Vretenar
 - Svi argumenti iza naziva naredbe moraju biti odvojeni praznim znakom.
 - Izvršavanje unesene naredbe izvodimo pritiskom tipke `Enter`.
 
-!!! hint
+!!! tip
     U slučaju da želimo prekinuti izvršavanje naredbe koja se odvija dugo ili se čini da se zamrznula, možemo to učiniti kombinacijom tipki ++control+c++.
 
-!!! hint
+!!! tip
     Za sve naredbe koje će biti spomenute može se pristupiti dokumentaciji u komandnoj liniji naredbom `man` dajući kao argument naziv aplikacije, iz dokumentacije izlazimo tipkom `q`.
 
 ## Datotečni sustav
@@ -103,7 +103,7 @@ author: Luka Vretenar
 - Putanje za direktorije i za datoteke se razlikuju po tome što putanja za direktorije završava znakom `/`.
 - Znak `/` se pored označavanja korjena datotečnog sustava koristi i za odvajanje direktorija u putanji.
 
-!!! hint
+!!! tip
     Kod pisanja putanji u komandnoj liniji, možemo dva puta pritisnuti tipku `<Tab>` na dipkovnici da dobijemo popis svih datoteka u putanji čije ime započinje unesenim znakovima.
 
 - Pored navedenih putanji u datotečnom sustavu postoje dodatne specijalne putanje:
@@ -115,17 +115,17 @@ author: Luka Vretenar
 
 - Moguće je iz prikazanih specijalnih putanji i navedenih oblika putanji graditi kompleksne putanje spajanjem znakom `/`.
 
-!!! hint
+!!! tip
     Znak `~` se naziva tilda i možete je na hrvatskoj tipkovnici dobiti kombinacijom tipki ++alt-graph+1++.
 
-!!! hint
+!!! tip
     Svaki korisnik na sustavu ima vlastiti home direktorij koji se nazali u `/home/korisnik` gdje je korisnik naziv korisnika. Pojedini korisnik može upravljati datotekama samo u vlastitom home direktoriju.
 
 ## Upravljanje direktorijima
 
 ### Ispis trenutne pozicije -- naredba `pwd`
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Ispišite putanju direktorija u kojem se trenutno nalazite uz pomoć naredbe `pwd`.
 
 ### Ispis sadržaja direktorija -- naredba `ls`
@@ -146,7 +146,7 @@ author: Luka Vretenar
     $ ls relativno/
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Ispišite sadržaj trenutnog direktorija u kojem se nalazite.
     - Ispišite sadržaj trenutnog direktorija uključujući i sakrivene datoteke.
     - Ispišite sadržaj direktorija koji se nalazi iznad vašeg home (`~`) direktorija.
@@ -170,7 +170,7 @@ author: Luka Vretenar
     - relativno, od trenutnog direktorija
     - apsolutno
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Postavite se u korjen datotečnog sustava.
     - Postavite se u direktorij `/usr/`.
     - Postavite se u direktorij `/usr/local/` relativnom putanjom.
@@ -181,7 +181,7 @@ author: Luka Vretenar
     - `..` da odemo u direktorij iznad
     - `~` da odemo u naš home direktorij
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Postavite se u vlasiti home direktorij.
     - Odite direktorij iznad onog u kojem se trenutno nalazite.
     - Provjerite trenutnu lokaciju sa `pwd`.
@@ -199,7 +199,7 @@ author: Luka Vretenar
 
 - Ukoliko se samo zada naziv direktorija, izraditi ćemo ga gdje se trenutno nalazimo u datotečnom sustavu.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Pozicionirajte se u vaš home direktorij.
     - Izradite direktorij `oi1`.
     - U direktoriju `oi1` izradite dva direktorija: `vjezbe` i `predavanja`.
@@ -216,7 +216,7 @@ author: Luka Vretenar
 
 - Važno je da je direktorij kojeg brišemo prazan, inače ga ne možemo obrisati naredbom `rmdir`!
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Pobrišite sve direktorije iz prethodnog zadatka.
     - Naredbom `ls` provjerite da su svi pobrisani.
 
@@ -233,7 +233,7 @@ author: Luka Vretenar
 
 - U većini slučajeva nepovratno briše zadanu datoteku!
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Prepisati i izvršiti naredbu `touch prazna.txt` u trenutnom direktoriju.
     - Provjeriti postojanje datoteke `prazna.txt` naredbom `ls`.
     - Pobrisati datoteku.
@@ -252,7 +252,7 @@ author: Luka Vretenar
     $ cp /put/do/izvor /put/do/destinacije/
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Kreirati praznu datoteku naredbom `touch prazna.txt` u trenutnom direktoriju.
     - Kopirati tu datoteku u isti direktorij pod nazivom `kopija.txt`.
     - Napraviti novi direktorij `pohrana` i iskopirati `prazna.txt` u njega.
@@ -268,7 +268,7 @@ author: Luka Vretenar
 
 - Naredbu `mv` koristimo i za preimenovanje datoteke ako radimo pomicanje u istom direktoriju pod drugo ime.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Kreirati praznu datoteku naredbom `touch prva.txt` u trenutnom direktoriju.
     - Preimenovati ju u `druga.txt`.
     - Premjestiti `druga.txt` u direktorij `pohrana` iz prethodnog zadatka.

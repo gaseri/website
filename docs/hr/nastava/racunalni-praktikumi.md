@@ -250,7 +250,7 @@ odj-o359-121.local
 
 ### Instalacija i konfiguracija Veyona
 
-!!! todo
+!!! quote "ToDo"
     Ovdje treba dodatno opisati proces instalacije i konfiguracije [Veyona](https://veyon.io/).
 
 #### Instalacija softvera za studije na FIDIT-u

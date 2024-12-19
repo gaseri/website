@@ -159,7 +159,7 @@ Sve konekcije koje traju dulje od jedne minute:
 $ awk 'NR > 4 && $9 > 60' conn.log
 ```
 
-!!! todo
+!!! quote "ToDo"
     Potrebno je dodati nekakav izlaz ovdje i osvježiti dio ispod u skladu s dodanim.
 
 IP adrese svih web servera koji šalju više od 1 MB podataka klijentu:
@@ -228,7 +228,7 @@ $ bro-cut host < http.log | sort | uniq -c | sort -n | tail -n 3
 297 download.windowsupdate.com
 ```
 
-!!! todo
+!!! quote "ToDo"
     Dodaj nekakve primjere sadržaja datoteka koje se spominju.
 
 Otvaranjem stranice konfiguratora usmjerivača Mikrotik koji se nalazi na adresi 192.168.13.254 i unosom korisničkih podataka, stvara se HTTP promet odnosno HTTP zahtjevi (npr. `GET`) i odgovori (npr. `200 OK`) koji stižu u toj komunikaciji, a uhvatio ih je Bro i zapisao u `http.log`. Iz niza zapisa u log datoteci, vidljivo je učitavanje početne stranice konfiguratora usmjerivača, odnosno datoteka koje čine tu stranicu.
@@ -243,7 +243,7 @@ Datoteka weird.log sadrži sve što je Bro smatrao "čudnim", odnosno greške ko
 
 ### Analiza prometa uhvaćenog alatom Wireshark
 
-!!! todo
+!!! quote "ToDo"
     Cross-linkaj na Wireshark.
 
 Kao što je već spomenuto, Bro može analizirati promet uhvaćen alatom Wireshark odnosno čitati .pcap datoteke.

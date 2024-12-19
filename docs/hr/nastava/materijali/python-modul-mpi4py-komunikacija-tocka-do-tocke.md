@@ -95,10 +95,10 @@ print("Proces ranga", rank, "poslao je poruku", sendmsg)
 print("Proces ranga", rank, "primio je poruku", recvmsg)
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Modficirajte program tako da poruke razmjenjuju tri procesa, i to tako da proces 0 šalje podatak tipa po vašoj želji i vrijednosti po vašoj želji procesu 1, proces 1 šalje isti podatak procesu 2, a proces 2 podatak šalje procesu 0.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napišite program koji se izvodi u tri procesa i koristi blokirajuću komunikaciju:
 
     - proces ranga 1 računa zbroj i produkt parnih prirodnih brojeva manjih ili jednakih 10 i rezultat šalje procesu ranga 0 kao listu koja sadrži dva elementa tipa `int` ili numpy polje od dva elementa tipa `numpy.int32`,
@@ -254,7 +254,7 @@ print("Proces ranga", rank, "poslao je poruku", sendmsg)
 print("Proces ranga", rank, "primio je poruku", recvmsg)
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napišite program koji se izvodi u tri procesa i koristi neblokirajuću komunikaciju:
 
     - proces ranga 1 računa zbroj i produkt parnih prirodnih brojeva manjih ili jednakih 10 i rezultat šalje procesu ranga 0
@@ -398,7 +398,7 @@ print("Proces ranga", rank, "primio je poruku", recvmsg)
         exit()
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Promijenite kod da su vektori veličine 6 elemenata umjesto 4, i izvedite kod u 6 procesa.
     - Dodajte još jedan vektor veličine 6 elemenata i izračunajte zbroj tri vektora umjesto zbroja dva vektora.
 
@@ -475,7 +475,7 @@ print("Proces ranga", rank, "primio je poruku", recvmsg)
         exit()
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Ponovno promijenite kod da su vektori veličine 6 elemenata umjesto 4, i izvedite kod u 6 procesa.
     - Dodajte još jedan vektor veličine 6 elemenata i izračunajte zbroj tri vektora umjesto zbroja dva vektora.
 
@@ -539,15 +539,15 @@ print("Proces ranga", rank, "primio je poruku", recvmsg)
         exit()
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napišite dvije varijante ovog programa. Prva varijanta neka koristi blokirajuću komunikaciju, a druga neblokirajuću. Obje varijante izvode se u četiri procesa.
 
     - Na procesu ranga 0 incijaliziraju se dva vektora veličine 6 elemenata. Po dva elementa svakog vektora šalju se procesima ranga 1, 2 i 3.
     - Procesi ranga 1, 2 i 3 vrše zbroj odgovarajućih elemenata vektora i rezultat šalju procesu ranga 0.
     - Proces ranga 0 prima rezultate od procesa ranga 1, 2 i 3 i vrši provjeru točnosti rješenja.
 
-!!! admonition "Dodatni zadatak"
+!!! tip "Dodatni zadatak"
     Napišite program koji koristi MPI za izračun zbroja kvadrata brojeva u rasponu od 1 do 500000 u 3 procesa korištenjem komunikacije točka-do točke, i to tako da proces ranga 0 šalje procesu ranga 1 i procesu ranga 2 liste koje sadrže brojeve od 1 do 250000 i od 250000 do 500000 (respektivno). Iskoristite blokirajuću komunikaciju. Procesi ranga 1 i 2 računaju zbroj kvadrata brojeva koje su dobili. Procesu ranga 0 procesi ranga 1 i 2 javljaju rezultate koje su dobili. Proces ranga 0 prima oba rezultata i njihov zbroj ispisuje na ekran.
 
-!!! admonition "Dodatni zadatak"
+!!! tip "Dodatni zadatak"
     Napišite program koji koristi MPI za izračun zbroja kubova brojeva u rasponu od 1 do 300000 u 6 procesa korištenjem komunikacije točka-do točke. Kod slanja iskoristite neblokirajuću komunikaciju. Raspon raspodijelite po procesima po želji. Proces ranga 0 je onaj kojem će preostalih pet procesa javiti svoje rezultate i koji će rezultate sumirati te ispisati na ekran. Ostali procesi neka ne ispisuju ništa.

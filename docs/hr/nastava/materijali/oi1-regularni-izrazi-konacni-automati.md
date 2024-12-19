@@ -35,7 +35,7 @@ author: Luka Vretenar
 - Uzorak koji odgovara određenom nizu znakova možemo specificirati kao točno taj niz znakova.
 - Ako pretražujemo tekst za niz `Dobar dan`, uzorak za traženje tog niza bi bio `Dobar dan`.
 
-!!! hint
+!!! tip
     Važno je paziti na mala i velika slova u uzorcima jer su regularni izrazi osjetljivi na veličinu slova.
 
 - Ako želimo zadati uzorak koji na određenom mjestu ima bilo koji znak, onda možemo koristiti specijalni znak `.`.
@@ -46,7 +46,7 @@ author: Luka Vretenar
     - `dacr`
     - i tako dalje za sve kombinacije dva znaka na mjestima gdje je `.`
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Zadan je tekst na dnu poglavlja.
     - Regularnim izrazom označiti sva pojavljivanja riječi `Perl`.
     - Regularnim izrazom označiti pojavljivanje sve riječi koje počinju sa `izraz` a završavaju bilo kojim slovom.
@@ -73,7 +73,7 @@ author: Luka Vretenar
     - `$` -- označava kraj linije
     - `\b` -- označava početak ili kraj riječi (gdje je riječ odvojena razmacima)
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Regularnim izrazom označiti izraz `(automate)` uključujući i zagrade.
     - Regularnim izrazom označiti izraz `Perl` koji se nalazi na početku linije.
 
@@ -83,13 +83,13 @@ author: Luka Vretenar
 - Da bi specificirali pretragu po jednom i drugom nizu koristimo simbol `|` kojem ih odvajamo.
 - Regularni izraz `jedan|dva` će nam pronaći nizove `jedan` i `dva`.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Regularnim izrazom označiti sve nizove `reg` i `izraz` u zadanom tekstu.
 
 - Ako želimo specificiratid da su pojedini podnizovi djelovi većeg niza koji tražimo, možemo grupirati pojedine višestruke izbore u odvojene grupe koristeći `(` i `)`.
 - Regularni izraz `gr(a|e)y` će nam pronaći nizove `gray` i `grey`.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Regularnim izrazom označiti sve nizove `ama` i `aka` grupirajući po slovu `m` ili `k` u zadanom tekstu.
 
 ### Klase znakova
@@ -99,7 +99,7 @@ author: Luka Vretenar
 - Klasom znakova definiramo da određeni znak u nizu možež biti jedan od znakova u toj klasi.
 - Regularni izraz `[Dd]obar dan` će nam pronaći nizove `Dobar dan` i `dobar dan`.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Pronaći sva velika slova u zadanom tekstu.
     - Pronaći sva velika slova i znamenke `0` i `1`.
     - Pronaći sve brojeve duljine `4` u tekstu, pronađeni niz ne smije biti sastavljen ododvojenih znakova.
@@ -109,7 +109,7 @@ author: Luka Vretenar
 - Ako želimo obrnuti znakove koje predstavlja klasa, koristimo znak `^` na početku klase.
 - Regularni izraz `[^0-9]` će nam pronaći sve znakove koji nisu znamenke `0123456789`.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Pronaći sve znamenke koji nisu `0`.
     - Pronaći sva slova koja nisu u rasponu od `a` do `j` i koja nisu znakovi `(` i `)`.
 
@@ -126,7 +126,7 @@ author: Luka Vretenar
 - Regularni izraz `[a-z]*` će nam pronaći sve nizove koji sadrže samo mala slova: `a`, `aa`, `ab`, `asdf`...
 - Regularni izraz `abc?` će pronaći nizove `ab` i `abc`.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Pronaći sve brojeve duljine jedan ili više koristeći klasu i ponavljanja.
     - Pronaći sve nizove velikih slova koristeći klasu i ponavljanja.
     - Pronaći sve riječi koji započinju velikim slovom i završavaju malim slovima.
@@ -138,7 +138,7 @@ author: Luka Vretenar
     - `{0,}` -- ekvivalentno `*`
     - `{m,n}` -- znak, klasa ili grupa se ponavlja najmanje `m` a najviše `n` puta
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Pronađi sve riječi koji su duljine veće od `8` znakova.
 
 ### Primjena u alatu `grep`
@@ -153,7 +153,7 @@ author: Luka Vretenar
 - Gdje je `regex` regularni izraz koji pretražujemo a `datoteka` naziv daoteke u kojoj pretražujemo.
 - Izlaz iz programa su sve linije koje sadrže tražene izraze.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Koristeći alat `egrep` pretraživati datoteku `/etc/passwd` iz komandne linije.
     - Pronaći sve linije koje imaju izraze `/var` ili `/bin`.
     - Pronaći sve linije koje počinju sa nizom slova duljim od `4`.
@@ -230,7 +230,7 @@ digraph finite_state_machine {
     - $q_0$ -- početno stanje u kojem se nalazi automat prije čitanja znakova
     - $F$ -- skup svih prihvatljivih stanja, stanja u kojima prihvaćamo pročitani niz kao ispravan
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Za konačni automat zadan matematičkom definicijom napraviti tablicu prijelaza i grafički prikaz:
 
     $$
@@ -278,7 +278,7 @@ digraph finite_state_machine {
 
 - Niz je ispravan i prihvaća se jer je završno stanje $A$ u skupu prihvatljivih stanja $F$.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Za konačni automat zadan matematičkom definicijom napraviti tablicu prijelaza i grafički prikaz:
 
     $$

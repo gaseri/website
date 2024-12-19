@@ -339,7 +339,7 @@ Obnavljanje se vrši u 9 koraka:
 
 ## Literatura
 
-!!! todo
+!!! quote "ToDo"
     Reference treba pročistiti i povezati u tekstu.
 
 1. <https://youtu.be/dTVDsPt7rmU>

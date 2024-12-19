@@ -52,7 +52,7 @@ Ovime smo stvorili bazen za pohranu podataka bez redundancije gdje se podaci zap
 $ sudo zpool create -m /mojezrcaljenje mirror /dev/vdc1 /dev/vdd1
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Osim zrcaljenja, dostupni su i RAID-Z nivoi `raidz`, `raidz2` i `raidz3`. Isprobajte kako rade i koliko diskova je potrebno u svakom od njih odvojiti za pohranu paritetnih podataka koja će osigurati nastavak rada u slučaju kvara.
 
 Dodatne uređaje moguće je dodati u postojeći bazen naredbom `zpool add`, kao samo novi uređaj ili kao dio mirrora. [Proširenje RAID-Z-a je u razvoju](https://arstechnica.com/gadgets/2021/06/raidz-expansion-code-lands-in-openzfs-master/) i još uvijek nije dostupno za korištenje.
@@ -71,7 +71,7 @@ Da je kompresija uspješno uključena možemo se uvjeriti naredbom:
 $ sudo zfs get compression
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Provjerite vrijednost omjera kompresije (varijabla `compressratio`) i razmislite je li kompresija učinkovita.
 
     Provjerite je li uključeno bilježenje vremena pristupa datotekama (varijabla `atime`).

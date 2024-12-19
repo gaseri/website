@@ -17,7 +17,7 @@ Zbrajanje u binarnom zapisu osnovna je aritmetička operacija koja se koristi u 
 | $1 + 1$ | $\mathbf{1}$ $0$ ($0$ pišemo, $1$ prenosimo dalje) |
 | $1 + 1 + 1$ | $\mathbf{1}$ $1$ ($1$ pišemo, $1$ prenosimo dalje) |
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Izračunaj u binarnom sustavu zbroj brojeva $1010001_{(2)}$ i $10101_{(2)}$.
 
 **Rješenje:**
@@ -48,21 +48,21 @@ $$1100110_{(2)} = 1 \cdot 2^6 + 1 \cdot 2^5 + 1 \cdot 2^2 + 1 \cdot 2^1 = 64 + 3
 
 Budući da je $81 + 21 = 102$, rezultat je očito točan.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     1. Zbrojite sljedeće binarne brojeve i provjerite dobivene rezultate: $010101_{(2)} + 101_{(2)}, 1110_{(2)} + 10101110_{(2)}$.
 
 ## Operacija oduzimanja
 
 Budući da s pomoću dvojnog komplementa često prikazujemo negativnu vrijednost broja, oduzimanje se svodi na zbrajanje s dvojnim komplementom umanjitelja.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Oduzmi brojeve $6_{(10)}$ i $3_{(10)}$.
 
 $$6-3 = 6 + (-3) = 110_{(2)} + 101_{(2)} = 𝟏011.$$
 
 Prvi bit $1$ je preljev (engl. *Overflow*) i zanemaruje se. Dakle, za $6-3$ dobili smo $011$ što je binarno $3$.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     2. Oduzmite sljedeće dekadske brojeve u binarnom obliku pomoću dvojnog komplementa i provjerite dobivene rezultate: $5 - 1$, $10 - 6$, $7 - 2$.
 
 ## Operacija množenja
@@ -76,7 +76,7 @@ Binarno množenje slično je množenju decimalnih brojeva. Budući da su samo bi
 | $1$ | $0$ | $1 \cdot 0 = 0$ |
 | $1$ | $1$ | $1 \cdot 1 = 1$ |
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Pomnožite $100_{(2)}$ i $011_{(2)}$ (množenje brojeva $4$ i $3$).
 
 **Rješenje:**
@@ -95,7 +95,7 @@ $$
 
 Provjerom dobivenog rezultata ($4 \cdot 3 = 12$) možemo se uvjeriti da je rezultat točan. Ista pravila množenja vrijede i za binarne brojeve s decimalnom točkom.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     1. Pomnožite brojeve $11011_{(2)}$ i $101_{(2)}$
     2. Pomnožite brojeve $1011.1_{(2)}$ i $110_{(2)}$
 
@@ -110,7 +110,7 @@ Algoritam za binarno dijeljenje također je sličan decimalnom dijeljenju, ali k
 | $0$ | $1$ | $0 : 1 = 0$ |
 | $1$ | $1$ | $1 : 1 = 1$ |
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Podjelite broj $100111_{(2)}$ s $11_{(2)}$.
 
 **Rješenje:**
@@ -131,7 +131,7 @@ $$
 \end{eqnarray*}
 $$
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     1. Podijelite broj $101011_{(2)}$ s brojem $10_{(2)}$.
     2. Podijelite broj $10010_{(2)}$ s brojem $11_{(2)}$.
     3. Podijelite broj $101011_{(2)}$ s brojem $101_{(2)}$.

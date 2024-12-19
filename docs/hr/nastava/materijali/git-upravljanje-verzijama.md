@@ -47,7 +47,7 @@ Globalna konfiguracija odnosi se na sve repozitorije i operira na datoteci `.git
 
 Lokalna konfiguracija odnosi se samo na trenutni repozitorij i operira na datoteci `.git/config` unutar repozitorija.
 
-!!! todo
+!!! quote "ToDo"
     Ovdje treba ubaciti uputu kako promijeniti origin.
 
 ## Sučelje naredbenog retka i grafička sučelja
@@ -84,37 +84,37 @@ Lokalna konfiguracija odnosi se samo na trenutni repozitorij i operira na datote
 
 ## Vraćanje promjena
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio treba napisati u cijelosti.
 
 ## Rad s oznakama
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio treba napisati u cijelosti.
 
 ## Grananje i spajanje
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio treba napisati u cijelosti.
 
 ## Rješavanje konflikata kod spajanja
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio treba napisati u cijelosti.
 
 ## Napredna konfiguracija
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio treba napisati u cijelosti prema [dijelu u knjizi Pro Git](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration)
 
 ## Atributi
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio treba napisati u cijelosti prema [dijelu u knjizi Pro Git](https://git-scm.com/book/en/v2/Customizing-Git-Git-Attributes).
 
 ## Zakačke
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio treba napisati u cijelosti prema [dijelu u knjizi Pro Git](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks).
 
 ## Ostali sustavi za upravljanje verzijama
@@ -138,7 +138,7 @@ Lokalna konfiguracija odnosi se samo na trenutni repozitorij i operira na datote
 - `pull` -- preuzima skupove promjena iz udaljenog repozitorija u lokalni repzitorij
 - `update` -- postavlja postojeću radnu kopiju na određenu reviziju iz lokalnog repozitorija
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Mercurial može klonirati i lokalne i udaljene repozitorije na isti način.
     - S poveznice `https://hg.python.org/cpython/` ili iz `/home/vedran/repositories/` izvršite kloniranje repozitorija `cpython`.
     - Postavite repozitorij na reviziju `f3d96d28a86e`. Objasnite razliku efekta naredbi `pull` i `update` u ovoj situaciji.

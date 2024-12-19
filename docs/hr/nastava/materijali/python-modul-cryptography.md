@@ -45,7 +45,7 @@ bd = b64decode(be)
 print("Dekodiran bajtovni niz je", bd, "i istovjetan je početnom", bd == e)
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Usporedite duljinu:
 
     1. znakovnog niza u Pythonu
@@ -99,7 +99,7 @@ decoded_message = decrypted_message.decode()
 print("Dekodirana poruka je", decoded_message)
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Šifrirajte poruku po želji ključem koji ćete generirati, a zatim pokušajte dešifrirati drugim ključem koji ćete generirati i objasnite zašto to možete ili ne možete učiniti.
 
 Fernetom je moguće šifrirati i dešifrirati korištenjem grupe ključeva. U tom slučaju će dešifriranje biti isprobano svakim od dostupnih ključeva. Primjerice, za dva ključa kod za inicijalizaciju je oblika:
@@ -238,10 +238,10 @@ print("Dešifrirana poruka je", plaintext)
 print("Poruka je jednaka početnoj?" plaintext == short_message)
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Isprobajte potpisati nekoliko poruka i usporedite dobivene potpise pa zatim provjerite koliko je dugačka najduža poruka koju možete potpisati, ako ograničenje postoji.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Isprobajte šifrirati nekoliko poruka i uvjerite se da su rezultati različiti, a zatim provjerite koliko je dugačka najduža poruka koju možete šifrirati, ako ograničenje postoji.
 
 !!! note
@@ -346,7 +346,7 @@ decoded_msg = decrypted_msg.decode()
 print("Dekodirana poruka je", decoded_msg)
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Zamijenite AES-GCM za AES-CCM i provjerite koristi li se na isti način.
     - Zamijenite AES-GCM za ChaCha20Poly1305 i proučite u dokumentaciji koje su razlike kod generiranja simetričnog ključa.
 
@@ -388,7 +388,7 @@ h_provjera.update(poruka)
 h_provjera.verify(hash_poruke)
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Iskoristite SHA1 umjesto SHA256 i usporedite duljinu sažetka.
     - Iskoristite MD5 umjesto SHA256 i usporedite duljinu, a zatim razmislite koliko bi vam pokušaja trebalo da pogodite točan MD5 hash neke poruke u situaciju u kojoj ne znate tajni ključ pa ga ne možete izračunati.
 
@@ -425,7 +425,7 @@ c_provjera.update(poruka)
 c_provjera.verify(cmac_poruke)
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Iskoristite neki drugi algoritam umjesto AES-a, npr. `TripleDES`, `Blowfish` ili `ChaCha20`.
 
 ## Dvofaktorska autentifikacija i jednokratne zaporke
@@ -469,7 +469,7 @@ hotp.verify(hotp_value1, 1)
 hotp.verify(hotp_value2, 75)
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Provjerite prolaze li HOTP vrijednosti provjeru kad su navedeni pogrešni redni brojevi.
     - Provjerite možete li generirati i provjeravati HOTP vrijednosti u proizvoljnom poretku.
 
@@ -513,6 +513,6 @@ totp.verify(totp_value1, time_moment1)
 totp.verify(totp_value2, time_moment2)
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Provjerite prolaze li TOTP vrijednosti provjeru kad su navedeni pogrešni vremenski intervali.
     - Provjerite možete li generirati i provjeravati TOTP vrijednosti za proizvoljni vremenski trenutak koji nije sadašnji. (Uputa: iskoristite funkcije `time.struct_time()` i `time.mktime()` za stvaranje vremenskog trenutka u adekvatnom obliku.)

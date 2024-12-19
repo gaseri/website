@@ -162,7 +162,7 @@ Optimizacija koda u asembleru je vrlo bitna, a korištenje registara može znatn
 
 ### Moj prvi "Hello World" program
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napišite program koji će ispisati Hello World! na ekran. Isprobajte program u simulatoru MARS.
 
 **Rješenje:**
@@ -193,7 +193,7 @@ Za završetak programa koristimo instrukciju `li $v0, 10` i `syscall` te je ovim
 
 ## Primjeri programa u MIPS asembleru
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napišite program koji će ispisati cjelobrojnu vrijednost 5 na ekran. Isprobajte program u simulatoru MARS i proučite sadržaj registara.
 
 **Rješenje:**
@@ -211,7 +211,7 @@ main:
 
 Za ispisivanje cjelobrojne vrijednosti $5$ na ekran nije nam potreban segment podataka. Stoga krećemo odmah s deklaracijom segmenta programa. Vrijednost broja $5$ spremili smo instrukcijom `li $a0, 5` u registar `$a0`. Važno je napomenuti da poziv funkcije `syscall` za ispisivanje na standardni izlaz zahtijeva da se vrijednost koju želimo ispisati nalazi u registru `$a0`, baš kao i kod ispisa "Hello World!" na ekran. Stoga, prije nego što se pozove ovaj sistemski poziv, vrijednost koju želimo ispisati treba biti pohranjena u registar `$a0` kako bi se ispis mogao izvršiti ispravno. Zatim slijede instrukcije za ispis na ekran i kraj programa.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napišite program koji zbraja brojeve 2 i 7 i ispisuje rezultat. Isprobajte program u simulatoru MARS i proučite sadržaj registara.
 
 **Rješenje:**
@@ -237,7 +237,7 @@ U idućem koraku ne smijemo zaboraviti pripremiti registar `a0` za ispis. Iskori
 
 Alternativno, mogli smo napisati i `add $a0, $a0, $a1` gdje bi se zbroj odmah pohranio u registar `$a0` i na taj način smanljili liniju koda programa. Potom slijede instrukcije za ispis na ekran i izlaz iz programa.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napišite program koji učitava dva cijela broja i ispisuje njihov zbroj. Isprobajte program u simulatoru MARS i proučite sadržaj registara.
 
 **Rješenje:**
@@ -270,7 +270,7 @@ Zatim učitavamo novu vrijednost i ponavljamo postupak. Nakon što su sve vrijed
 
 Nakon zbrajanja, opet koristimo instrukciju `move` kojom ćemo zbroj pohranjen u registru `$t1` premjestiti u `$a0` i ispišemo rezultat na ekran. Program je nakon ispisa gotov, stoga ga je potrebno uredno završiti instrukcijama za izlaz iz programa.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napišite program koji traži od korisnika unos visine s koje tijelo pada te izračunava kvadratnu brzinu slobodnog pada tijela s te visine. Isprobajte program u simulatoru MARS i postavite visinu na 5 m. Rješenje je tada $v^2 = 100\text{ m}^2/\text{s}^2$.
 
 **Rješenje:**
@@ -333,7 +333,7 @@ Korisnik u ovom djelu unosi visinu koja se prema formuli množi s `2`, kojeg smo
 
 Prije ispisa rezultata na ekran slijedi ispis teksta oznake `odgovor:`, a tek onda i sam rezultat množenja. Nakon toga uredno završavamo program naredbom za izlaz.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Modificirajte prethodni zadatak tako da uzmete za ubrzanje sile teže konstantu $9,81\text{ m/s}^2$, umjesto $10\text {m/s}^2$. Isprobajte program u simulatoru MARS.
 
 **Rješenje:**
@@ -383,7 +383,7 @@ Nakon prelaska na rad s float vrijednostima, morali smo izmijeniti neke instrukc
 
 Valja napomenuti da instrukcija za unos float vrijednosti ne sprema vrijednost u registar `$v0` već se za unos float vrijednosti koristi registar `$f0`, dok se za ispis vrijednosti onda koristi registar `$f12`. Na kraju ispisa konačnog rješenja uredno završavamo program naredbom za izlaz.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     1. Napiši program koji računa hipotezu trokuta Pitagorinim poučkom $c^2 = a^2 + b^2$. Neka je zadan pravokutan trokut s katetama $a = 5$ i $b = 2$. Program na kraju ispisuje vrijednost stranice $c$. Program provjerite simulatorom MARS.
     2. Napiši program koji će izračunati kinetičku energiju $E_k = \frac{m \cdot v^2}{2}$. Program pita korisnika da unese masu u kg i brzinu u m/s te ispisuje konačnu vrijednost kinetičke energije. Program provjerite simulatorom MARS.
     3. Napiši program koji će izračunati hidrostatski tlak u vodi $p = \rho \cdot g \cdot h$. Gustoća vode iznosi $\rho = 1000\text{ kg/m}^3$, ubrzanje sile teže uzmite da je $g = 9,81\text{ m/s}^2$, a dubinu vode $h$ unosi korisnik. Program provjerite simulatorom MARS.

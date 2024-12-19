@@ -35,7 +35,7 @@ author: Vedran Miletić
 - `locale.nl_langinfo(option)` (zahtijeva prethodni poziv `locale.setlocale()` jer ovisi o `locale.LC_*`) dohvaća informaciju o lokalnim postavkama u obliku niza znakova, npr. `option` postavljen na `locale.DAY_1` dohvaća lokalni naziv nedjelje (radi prema američkoj konvenciji o poretku dana u tjednu, a ne prema [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html)), a `locale.MON_1` dohvaća lokalni naziv siječnja; [čitav popis u službenoj dokumentaciji](https://docs.python.org/3/library/locale.html#locale.nl_langinfo)
 - `locale.localeconv()` (zahtijeva prethodni poziv `locale.setlocale()` jer ovisi o `locale.LC_*`) dohvaća popis svih konvencija koje lokalne postavke sadrže, npr. znak koji se koristi za decimalnu točku, odvajanje tisućica, valutu; [čitav popis u službenoj dokumentaciji](https://docs.python.org/3/library/locale.html#locale.localeconv)
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Saznajte nazive dana i mjeseci te konvencije vezane uz ispis brojeva prvo u hrvatskim, a onda američkim engleskim lokalnim postavkama.
 
 - `locale.strcoll(string1, string2)` vraća negativnu, pozitivnu ili vrijednost 0 ovisno o tome je li `string1` prije, poslije ili jednak `string2` (respektivno) ovisnu o lokalnoj postavci `LC_COLLATE`
@@ -45,7 +45,7 @@ author: Vedran Miletić
 - `locale.atof(string)` pretvara znakovni niz u broj s pomičnim zarezom ovisno o lokalnoj postavci `LC_NUMERIC`
 - `locale.atoi(string)` pretvara znakovni niz u cijeli broj ovisno o lokalnoj postavci `LC_NUMERIC`
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Prvo u hrvatskoj, a zatim u američkoj engleskoj lokalnoj postavci:
 
     - usporedite znakovne nizove Cunj, Čabar, Ćićarija i Dubrovnik i odredite koji po abecedi dolaze prije, a koji poslije,

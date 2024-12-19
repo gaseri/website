@@ -57,7 +57,7 @@ Atomi i veze se crtaju pomoću miša, a osnovne su funkcije:
 - lijevi klik na vezu: promjena broja veza između povezanih atoma
 - desni klik: brisanje odabranog atoma ili veze.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     1. Pomoću Avogadro alata za crtanje molekula nacrtajte [metanol](https://pubchem.ncbi.nlm.nih.gov/compound/887).
     1. Promijenite strukturu molekule tako da između ugljika i kisika dodate dvostruku vezu. Prepoznajte molekulu koja nastaje nakon ove promjene.
     1. Daljnjom izmjenom prethodne molekule oblikujte ju u [kisikov fluorid](https://pubchem.ncbi.nlm.nih.gov/compound/24547).
@@ -66,8 +66,8 @@ Atomi i veze se crtaju pomoću miša, a osnovne su funkcije:
 
 Spremiti molekulu možemo odabirom opcija u alatnoj traci `Save` ili `Save As` ovisno o tome želimo li spremiti postojeću datoteku ili stvoriti novu. Zatim, odaberemo željeni format datoteke (npr. `.cml`) te kliknemo na `Save`.
 
-!!! warning "Datotečni format"
-    Prilikom spremanja ili izvoza datoteke, **nužno** je specificirati ekstenziju datoteke u njezinom imenu. Inače, može se pojaviti greška oblika `Unable to find a suitable file reader for the selected file`.
+!!! danger
+    Prilikom spremanja ili izvoza datoteke, **nužno je odabrati datotečni format** navođenjem ekstenzije datoteke u njezinom imenu. Inače, može se pojaviti greška oblika `Unable to find a suitable file reader for the selected file`.
 
 Ako želimo izvesti molekulu u drugi format prikladnima za druge programe, u alatnoj traci odaberemo `Export Molecule...` i izaberemo željeni format izvoza (npr. `.pdb`) te kliknemo na `Export`.
 
@@ -91,7 +91,7 @@ Svaki format ima specifične prednosti ovisno o vrsti projekta i potrebama simul
 
 Sliku molekule možemo spremiti na način da u izborniku `File` pod `Export` odaberemo `Graphics...`.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     1. Spremite prethodno nacrtanu molekulu kisikovog fluorida u format `.cml`. Ponovo ju otvorite kako biste se uvjerili da je struktura dobro spremljena.
     1. Nacrtajte molekulu [joda](https://pubchem.ncbi.nlm.nih.gov/compound/24345) i izvezite ju u format `.sdf`.
     1. Nacrtajte molekulu [sumporne kiseline](https://pubchem.ncbi.nlm.nih.gov/compound/1118) i spremite ju u slikovnu datoteku formata PNG.
@@ -111,7 +111,7 @@ Osnovne funkcije navigacije pomoću miša su:
 - srednji klik + povlačenje: rotiranje i uvećavanje molekule
 - srednji dvoklik: centrira i optimalno uveća molekulu.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Koristeći Avogadro alat za crtanje molekula nacrtajte [triksan](https://pubchem.ncbi.nlm.nih.gov/compound/8081). Koristeći alat za navigaciju, rotirajte i uvećajte prikaz molekule.
 
 ## Alat za odabir
@@ -146,7 +146,7 @@ Osnovne funkcije alata za manipulaciju pomoću miša su:
 
 Ako želite poništiti svoje prilagodbe, idite na izbornik `Edit` na gornjoj traci i odaberite `Undo Change Atom Position` ili kraće kombinacijom tipki ++ctrl+z++.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     1. Alatom za manipulaciju uredite molekulu triksana iz prethodnog primjera tako da udaljite vodikove atome na veće udaljenosti od ugljikovih atoma.
     1. Alatom za odabir označite bilo koji par susjednih atoma kisika i ugljika. Zatim, alatom za manipulacijom, udaljite i rotirajte odabrani par. Ponovite postupak za sve ostale parove kisika i ugljika.
 
@@ -154,7 +154,7 @@ Ako želite poništiti svoje prilagodbe, idite na izbornik `Edit` na gornjoj tra
 
 U mnogim slučajevima prilikom crtanja molekula njezina geometrija možda nije ispravna ili ne izgleda potpuno savršeno. Da biste to ispravili potrebno je u izbornik `Extensions` odabrati `Optimize Geometry` ili jednostavno koristiti kombinaciju tipki ++ctrl+alt+o++. Na ovaj način postižemo realističan prikaz molekule.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Optimizirajte prethodnu molekulu triksana i spremite ju u slikovnu datoteku formata PNG.
 
 ## Uvoz i generiranje molekula
@@ -165,14 +165,14 @@ U Avogadru molekule možemo dobiti na brži i jednostavniji način od crtanja. N
 
 Uvoz molekula putem njihova imena možemo dobiti tako da ood `File` u `Import` odaberemo `Download by Name...` te upišemo željeno ime molekule, npr. `aspirin`.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Koristeći Avogadro uvezite molekule [alanina](https://pubchem.ncbi.nlm.nih.gov/compound/5950) i [kofeina](https://pubchem.ncbi.nlm.nih.gov/compound/2519) putem njihova imena.
 
 ### Uvoz iz baze molekula
 
 Avogadro omogućuje jednostavan uvoz molekula iz vanjskih baza podataka poput [PubChema](https://pubchem.ncbi.nlm.nih.gov/). Ovaj način omogućuje brzo preuzimanje molekula u različitim formatima koji se zatim mogu otvoriti i analizirati unutar Avogadra.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     1. Na web stranici PubChem pronđite molekulu saharina i preuzmite njezinu `.sdf` datoteku. Otvorite ju i prikažite u programu Avogadro.
     1. Na istoj web stranci pronađite molekulu diklofenak i preuzmite ju na računalo. Otvorite ju i prikažite u programu Avogadro. Istražite koji je popularni naziv molekule.
 
@@ -180,7 +180,7 @@ Avogadro omogućuje jednostavan uvoz molekula iz vanjskih baza podataka poput [P
 
 [Format SMILES](smiles-format.md) omogućuje izgradnju 3D molekula putem niza teksta. U izborniku `Build`, pod opciju `Insert`, odaberite `SMILES...`. Unesite željeni SMILES tekst i pritisnite `OK`.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Prisjetite se [formata SMILES](smiles-format.md) te pomoću njega generirajte sliku [ciklooktana](https://pubchem.ncbi.nlm.nih.gov/compound/9266) i [izopropanola](https://pubchem.ncbi.nlm.nih.gov/compound/Isopropyl-Alcohol) u formatu PNG.
 
 ## Alat za mjerenje
@@ -193,14 +193,14 @@ Izvor slike: [Measure Tool (Avogadro documentation)](https://two.avogadro.cc/doc
 
 Alat omogućuje odabir do četiri atoma za mjerenje. Klikom na dva atoma, računa se udaljenosti između odabranih atoma. Ako odaberemo najmanje tri atoma, izračunat će se kut između njih, koristeći drugi atom kao vrh. Kod odabira četiri atoma, alat određuje dihedralni kut. Lijevim klikom na prikaz resetira se odabir prethodno odabranih atoma.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Uvezite molekulu [kofeina](https://pubchem.ncbi.nlm.nih.gov/compound/2519) putem njezina imena i odredite duljinu veze, kuteve i dihedrale bilo koja četiri susjedna atoma po izboru.
 
 ## Vrste prikaza molekula
 
 Avogadro dolazi opremljen različitim vrstama prikaza molekula koji pomažu u molekulskoj interpretaciji. U okviru `Display Types` s lijeve strane platna za crtanje možemo odabrati različite reprezentacije molekula od kojih su nam najkorisnije `Ball and Stick`, `Van der Waals Spheres` i `Wireframe`.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Uvezite molekulu [kisikovog difluorida](https://pubchem.ncbi.nlm.nih.gov/compound/24547) putem imena i prikažite je pomoću reprezentacije molekula korištenjem Van der Waalsovih sfera. Spremite je u slikovnu datoteku formata PNG.
 
 ## Avogadro 1
@@ -230,7 +230,7 @@ Alatna traka organizirana je u drugačijem rasporedu, s drugačijim stilom ikoni
 - alat mjerenja (*engl.* [Measure Tool](https://avogadro.cc/docs/tools/measure-tool/))
 - alat poravnanja (*engl.* [Align Tool](https://avogadro.cc/docs/tools/align-tool/)).
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     1. Koristeći Avogadro alat za crtanje molekula nacrtajte [butan](https://pubchem.ncbi.nlm.nih.gov/compound/7843).
     1. Alatom za navigaciju, rotirajte i uvećajte prikaz nacrtane molekule.
     1. Alatom za manipulaciju, rotirajte i razmaknite vodikove atome na veće udaljenosti od ugljikovih atoma.

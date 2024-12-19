@@ -8,5 +8,5 @@ Kako bismo omogućili međusobnu komunikaciju više od dva računala putem mrež
 
 Skup alata [bridge-utils](https://wiki.linuxfoundation.org/networking/bridge) ([izvorni kod](https://git.kernel.org/pub/scm/network/bridge/bridge-utils.git/)) sadrži alat `brctl` koji nam omogućuje premošćenje mrežnih adaptera. Detaljne upute što sve `brctl` nudi mogu se naći na [Debianovom](https://wiki.debian.org/BridgeNetworkConnections), odnosno [Archevom wikiju](https://wiki.archlinux.org/title/Network_bridge). Maleni dio funkcionalnosti koji je nama značajan da bi filtriranje paketa na veznom sloju radilo izložit ćemo u dijelu gdje je opisano filtriranje paketa na veznom sloju.
 
-!!! todo
+!!! quote "ToDo"
     Napiši detaljnije o premošćenju.

@@ -55,7 +55,7 @@ Dokumentacija svih funkcija koje koristimo u nastavku dana je u sklopu [pregleda
         newcomm.Free()
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Stvorite grupu procesa koja sadrži samo procese iz grupe COMM_WORLD koji imaju parni rang. Iskoristite novu grupu da bi stvorili novi komunikator. (**Uputa:** iskoristite `Group.Incl()`, `Group.Range_incl()`  ili `Group.Excl()`.)
 
 - `comm.Split(color, key)` -- dijeli komunikator prema boji i ključu
@@ -81,7 +81,7 @@ Dokumentacija svih funkcija koje koristimo u nastavku dana je u sklopu [pregleda
     newcomm.Free()
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Iskoristite `Comm.Split()` da bi razdijelili `COMM_WORLD` u dva dijela.
     - Prvi dio neka sadrži procese s parnim rangom iz `COMM_WORLD` u uzlaznom poretku.
     - Drugi dio neka sadrži procese s neparnim rangom iz `COMM_WORLD` u silaznom poretku.

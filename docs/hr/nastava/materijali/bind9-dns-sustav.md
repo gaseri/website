@@ -4,7 +4,7 @@ author: Ivona Bjelobradić, Vedran Miletić
 
 # DNS sustav BIND9
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio je vrlo sirov i treba ga temeljito pročistiti i dopuniti.
 
 [Domenski sustav imena](https://hr.wikipedia.org/wiki/Sustav_domenskih_imena) (engl. Domain Name System, kraće DNS) je distribuirani hijerarhijski sustav Internet poslužitelja u kojem se nalaze informacije povezane s nazivima domena, tj. o povezanosti IP adresa i njihovih logičkih (simboličkih) imena. Važnost DNS sustava se očituje u tome što ne moramo pamtiti IP adrese web stranica nego koristimo logička imena, npr. umjesto IP adrese `108.61.208.98` pisat ćemo `example.group.miletic.net`.
@@ -23,7 +23,7 @@ BIND softver se sastoji od 3 dijela:
 
 ## Konfiguracija
 
-!!! todo
+!!! quote "ToDo"
     Ovdje treba citirati [upute na Server Worldu za Fedoru 28](https://www.server-world.info/en/note?os=Fedora_28&p=dns&f=1) ili osvježiti za novije verzije Fedore i citirati odgovarajući izvor.
 
 Konfiguracija se nalazi u datoteci `/etc/named.conf` sadržaja
@@ -368,7 +368,7 @@ Received 44 bytes from 10.1.5.3#53 in 47 ms
 
 Više o alatima `host` i `dig` moguće je pronaći u nixCraftovom članku [Linux / UNIX: DNS Lookup Command](https://www.cyberciti.biz/faq/unix-linux-dns-lookup-command/).
 
-!!! todo
+!!! quote "ToDo"
     Ovdje treba dodati ili barem spomenuti `arpaname`, `delv`, `nslookup` i `nsupdate`.
 
 ## Datoteka `resolv.conf`

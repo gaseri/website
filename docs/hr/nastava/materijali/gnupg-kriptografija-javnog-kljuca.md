@@ -469,7 +469,7 @@ Instalacija SKS Keyservera i njegova konfiguracija opisana je na više izvora je
 
 ## Literatura
 
-!!! todo
+!!! quote "ToDo"
     Reference treba pročistiti i povezati u tekstu.
 
 1. [Key server (cryptographic)](https://en.wikipedia.org/wiki/Key_server_(cryptographic)), siječanj 2013.

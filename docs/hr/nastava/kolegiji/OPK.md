@@ -8,7 +8,7 @@ tags:
 !!! info
     Ova je stranica također dostupna [na engleskom jeziku](../../../en/teaching/courses/CO.md).
 
-!!! todo
+!!! quote "ToDo"
     Literatura: Allen I. Holub, [Compiler Design in C](https://holub.com/compiler/), 1990.
 
 ## Vježbe

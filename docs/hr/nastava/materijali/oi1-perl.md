@@ -39,10 +39,10 @@ author: Luka Vretenar
         ./skripta.pl
         ```
 
-!!! hint
+!!! tip
     Znak `#` na početku linije nam ujedno označava i komentar u kodu. Linije koje započinju tim znakom će biti ignorirane od strane `perl` interpretera pri izvršavanju skripte.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Napravite novu skriptu naziva `prva.pl` i u nju zapišite:
 
         ``` perl
@@ -150,7 +150,7 @@ author: Luka Vretenar
     print("dvostruka vrijednost unesenog broja je ", $dvostruko);
     ```
 
-!!! admonition "Primjer"
+!!! info "Primjer"
     - Program za pretvaranje metara u kilometre i obrnuto:
 
         ``` perl
@@ -167,7 +167,7 @@ author: Luka Vretenar
 
         ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Napiši skriptu koja učitava dva broja, zbroji ih i ispiše rezultat.
 
 ## Logička grananja
@@ -217,10 +217,10 @@ author: Luka Vretenar
 - Uvjet se sastoji od logičkog izraza koji može imati jednu ili dvije varijable i neki od logičkih operacija između njih.
 - Najčešće provjeravamu jednakost vrijednosti dvije varijable logičkim izrazom za jednakost `==`.
 
-!!! hint
+!!! tip
     `==` nije isto što i znak za dodjeljivanje vrijednosti varijable `=`.
 
-!!! admonition "Primjer"
+!!! info "Primjer"
     - Primjer provjere jednakosti unesenih brojeva.
 
         ``` perl
@@ -262,7 +262,7 @@ author: Luka Vretenar
     }
     ```
 
-!!! admonition "Primjer"
+!!! info "Primjer"
     - Odbrojavanje do nule:
 
         ``` perl
@@ -292,10 +292,10 @@ author: Luka Vretenar
         print("Točno!\n");
         ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Napiši program koji koristi `until` petlju za ispis prvih 10 brojeva silazno (10-1).
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Napiši program koji koristi `while` petlju za ispis prvih 10 brojeva uzlazno (1-10).
 
 ## Regularni izrazi
@@ -318,7 +318,7 @@ author: Luka Vretenar
 
 - Unutar ograda regularnog izraza `/` i `/` mogu se nalaziti i nazivi varijabla čije vrijednosti želimo koristiti u regularnom izrazu.
 
-!!! admonition "Pažnja!"
+!!! warning
     - Operater `=~` se može promijeniti vrijednost varijable nad kojom se primjenjuje. U slučaju pretrage niza regularnim izrazom, rezultat operacije je logičko točno ili netočno, ako regularni izraz koristimo za substituciju onda se mjenja sama vrijednost varijable.
 
 ### Pretraga teksta
@@ -326,7 +326,7 @@ author: Luka Vretenar
 - Regularne izraze u `perl`-u možemo, u najjednostavnijem obliku, koristiti za pretragu određenih vrijednosti u nekom tekstu.
 - U tom slučaju regularni izraz poprima oblik `/regex/mod`, gdje je `regex` naš regularni izraz a `mod` može biti prazan ili sadržavati specijalan znak `i` kojim definiramo neosjetljivost na mala i velika slova.
 
-!!! admonition "Primjer"
+!!! info "Primjer"
     - Pronalaženje određenog niza teksta u liniji pročitanoj sa ulaza:
 
         ``` perl
@@ -377,7 +377,7 @@ author: Luka Vretenar
     print($string);
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Dana je vrijednost varijable `$var = "abc123abc";`
     - Koje su vrijednosti `$var` nakon slijedećih zamjena?
     - Provjeri pomoću `perl` skripte, zasebno za svaku zamjenu.
@@ -398,7 +398,7 @@ author: Luka Vretenar
     print($string);
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Dana je vrijednost varijable `$var = "abc123abc";`
     - Koje su vrijednosti `$var` nakon slijedećih prijevoda?
     - Provjeri pomoću `perl` skripte, zasebno za svaki prijevod.
@@ -409,7 +409,7 @@ author: Luka Vretenar
 
 ## Dodatni zadaci
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Pronađi grešku/e u slijedećem kodu:
 
         ``` perl
@@ -423,7 +423,7 @@ author: Luka Vretenar
             print("Nisi unio broj 17.\n");
         ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Napiši skriptu koja provjerava je li korisnik unio pravilan e-mail.
     - Pretpostaviti ćemo da je pravilan e-mail oblika `tekst.tekst@inf.uniri.hr`, gdje je `tekst` bilo koji niz znakova i znamenki.
     - Ispisati `e-mail ispravan` u slučaju da je, u suprotnom ispisati `neispravan e-mail`.

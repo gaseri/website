@@ -102,7 +102,7 @@ author: Vedran Miletić
     sock.bind('socket1') # ovu datoteku će biti potrebno ručno izbrisati nakon završetka izvođenja programa
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Napišite komunikaciju klijenta i poslužitelja tako da klijent pošalje podatak koji korisnik unese (umjesto fiksnog niza znakova pokazanog u primjeru).
     - Dodajte zatim još jedan unos podataka i izvedite dva slanja na strani klijenta i dva primanja na strani poslužitelja.
 
@@ -153,11 +153,11 @@ author: Vedran Miletić
     sock.close()
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Preradite kod tako da korisnik na strani klijenta unosi dva broja koja se zatim odvojeno šalju poslužitelju; poslužitelj ih prima i ispisuje njihov zbroj. Pripazite kojeg tipa su podaci kojima baratate i izvedite konverziju gdje je potrebno.
     - Preradite kod tako da poslužitelj klijentu šalje zbroj koji onda klijent ispisuje.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napišite poslužiteljsku i klijentsku stranu aplikacije za dvosmjernu komunikaciju koristeći datagramske utičnice. Na klijentskoj strani korisnik unosi niz znakova.
 
     - U slučaju da niz znakova počinje znakom `0`, poslužitelj kao odgovor vraća ostatak niza.

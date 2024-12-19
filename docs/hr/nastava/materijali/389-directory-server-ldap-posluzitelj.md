@@ -4,7 +4,7 @@ author: Ivo Bujan, Vedran Miletić
 
 # LDAP poslužitelj 389 Directory Server
 
-!!! hint
+!!! info
     Za više informacija proučite [Red Hat Directory Server Documentation](https://access.redhat.com/articles/5705531).
 
 [389 Directory Server](https://directory.fedoraproject.org/) (prethodno nazvan Fedora Directory Server) je [Lightweight Directory Access Protocol (LDAP)](https://ldap.com/learn-about-ldap/) poslužitelj razvijen od strane organizacije [Red Hat](https://www.redhat.com/), a kao projekt podržan od strane zajednice okupljene oko [projekta Fedora](https://fedoraproject.org/). Ime je dobio po portu 389 preko kojega putuje LDAP promet.

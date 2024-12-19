@@ -4,7 +4,7 @@ author: Vedran Miletić
 
 # Praćenje događaja operacijskog sustava
 
-!!! hint
+!!! info
     Za dodatne primjere naredbi proučite [stranicu system/Journal na ArchWikiju](https://wiki.archlinux.org/title/Systemd/Journal) i [Chapter 23. Viewing and Managing Log Files](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/ch-viewing_and_managing_log_files) u [Red Hat Enterprise Linux 7 System Administrator's Guide](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/index).
 
 - log datoteke sadrže informacije o operacijskom sustavu: jezgri, uslugama i aplikacijama
@@ -17,7 +17,7 @@ author: Vedran Miletić
     - datoteka `xyz.log` postaje `xyz.log.1` ili `xyz.log-20140326`
     - stvara se nova prazna datoteka `xyz.log`
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Izdvojite iz `/var/log/messages` poruke koje se odnose na `ntpd`.
     - Pronađite u `/var/log/yum.log` podatke o nekoliko zadnjih paketa koje ste instalirali.
 
@@ -28,7 +28,7 @@ author: Vedran Miletić
     - `$` -- globalne naredbe
     - `$ModLoad`
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - U konfiguracijskoj datoteci `rsyslog.conf` uključite file sync.
     - Proučite `man rsyslog.conf` i pronađite način da stvorite datoteku `/var/log/mojzapis.log` koja koristi [RFC 3339](https://datatracker.ietf.org/doc/html/rfc3339) vremenske pečate.
 
@@ -37,7 +37,7 @@ author: Vedran Miletić
     - `<PRIORITY>` je jedan od `debug`, `info`, `notice`, `warning`, `err`, `crit`, `alert`, and `emerg`.
 - nakon svake promjene potrebno je ponovno pokrenuti uslugu `rsyslog`
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Uključite zapisivanje poruka s `debug` prioritetom koje ispisuje `syslog` facility.
     - Isključite zapisivanje `authpriv` poruka.
     - Promijenite u `/etc/ssh/sshd_config` postavku da `rsyslog` koristi `auth` facility umjesto `authpriv`, a zatim stvorite novu direktivu u kojoj će se sve `auth` poruke spremati u `/var/log/mojauth.log`.
@@ -51,7 +51,7 @@ author: Vedran Miletić
     - direktiva `rotate BROJ` čini da se čuva `BROJ` rotiranih datoteka, odnosno da log datoteka prođe `BROJ` rotiranja prije brisanja
     - direktiva `mail ADRESA` omogućuje slanje log datoteke mailom na adresu `ADRESA` kod rotacije neposredno prije brisanja
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Uključite kompresiju rotiranih log datoteka.
     - Učinite da se log datoteke rotiraju mjesečno, te da se čuva zadnjih 6 datoteka.
     - Za `/var/log/mojauth.log` postavite dnevno rotiranje, te čuvanje zadnjih 3 datoteke. Datoteka za log neka se stvara s dozvolama `rw-rw---`.
@@ -70,7 +70,7 @@ author: Vedran Miletić
 - `journalctl -o OBLIK` prikazuje izlaz u obliku ispisa `OBLIK`, pri čemu `OBLIK` može biti `verbose`, `export`, `json`, ...
 - `journalctl -f` prati poruke kako nastaju
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Usporedite zadnjih 40 unosa u `verbose` i `json` obliku.
     - Pratite poruke kako nastaju dok korištenjem upravitelja obrišete pa instalirate paket GNU nano.
 
@@ -78,5 +78,5 @@ author: Vedran Miletić
 - `journalctl -b` prikazuje poruke od zadnjeg pokretanja
 - `journalctl --since=OD --until=DO` prikazuje poruke u vremenskom rasponu od `OD` do `DO`, pri čemu su `OD` i `DO` oblika `"2013-3-16 23:59:59"`
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Prikažite samo poruke prioriteta `warning` ili višeg u rasponu od 1. listopada 2014. 10 ujutro do 1. prosinca 2014. 10 ujutro.

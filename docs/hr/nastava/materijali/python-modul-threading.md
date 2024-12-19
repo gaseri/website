@@ -76,7 +76,7 @@ author: Vedran Miletić
     print("Je li nit t4 je pokrenuta?", t4.start())
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Definirajte funkciju `countdown_to_zero(n)` koja prima kao argument prirodni broj `n` i radi odbrojavanje, odnosno u `while` petlji smanjue broj za 1 sve dok ne dođe do nule.
     - Pokrenite tri niti `t1`, `t2`, `t3` redom za brojeve 651929250, 421858921, 2188312. Pripazite da i ovdje `(arg1,)` nije isto što i `(arg1)`.
     - U glavnom procesu "odspavajte" 5 sekundi, a zatim provjerite jesu li živi `t1`, `t2` i `t3`, i one koji jesu pridružite na glavni proces.
@@ -176,12 +176,12 @@ author: Vedran Miletić
     print("Vrijednost je", x)
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napišite program koji računa zbroj prvih 500000 prirodnih brojeva u dvije procesne niti; definirajte globalnu varijablu zbroj, i učinite jedna procesna nit u globalnu varijablu zbraja brojeve od 1 do 250000, a druga od 250001 do 500000.
 
     Izvedite program bez zaključavanja, s običnim zaključavanjem i s višestrukim zaključavanjem. Ima li ovdje potrebe za višestrukim zaključavanjem? Objasnite zašto.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Analizirajte vrijeme potrebno za izvođenje programa za sljedeće varijante.
 
     - Promijenite program iz prethodnog zadatka da računa produkt brojeva u danom rasponu umjesto zbroja. Usporedite vrijeme izvođenja tog programa i programa iz prethodnog zadatka.
@@ -251,7 +251,7 @@ author: Vedran Miletić
     print("Vrijednost je", x)
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Knjižnica nudi tri knjige:
 
     - Marko Marulić: Judita, 5 komada
@@ -298,10 +298,10 @@ author: Vedran Miletić
     t2.join()
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Pečete [Ledolette s nadjevom od marelica](https://www.ledo.hr/hr/proizvodi/tijesta/slatka-tijesta/ledolette-s-nadjevom-od-marelica) koji zahtijevaju dvije minute za vađenje iz Ledo škrinje i otpakiravanje i 20 minuta u pećnici. Napravite dvije procesne niti, od kojih jedna pokreće funkciju `odmrzavanje(n)`, gdje `n` broj minuta koje se Ledolette pripremaju za stavljanje u pećnicu, i drugu koja pokreće funkciju `pecnica(n)`, gdje je `n` broj minuta koje se kroasani peku u pećnici. Iskoristite `time.sleep()` s praktično upotrebljivim vrijednostima u sekundama da simulirate čekanje. Pokrenite istovremeno obje niti, ali učinite da druga nit čeka na događaj odmrzavanja kroasana koji prva nit postavlja.
 
-!!! admonition "Dodatni zadatak"
+!!! tip "Dodatni zadatak"
     Napišite program koji vrši zbroj kubova brojeva u rasponu od 1 do 300000 u 3 niti i raspodijelite tako da 1. nit računa raspon od 1 do 100000, 2. nit od 100001 do 200000, 3. nit od 200001 do 300000. Iskoristite višenitnosti i varijablu u koju ćete spremiti zbroj učinite dijeljenom; iskoristite zaključavanje kod promjene varijable u svakoj od niti; napravite događaj koji postavlja 3. nit u trenutku kad završi s izvođenjem, i učinite da na njega čekaju preostale dvije niti.
 
 ## Brojači
@@ -321,7 +321,7 @@ author: Vedran Miletić
     t.start() # ispisuje "Tko čeka, dočeka" nakon 10 sekundi
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Kuhate čaj i treba vam 1 minuta da zavrije voda, a istovremeno u pećnici koja ima pokvaren timer pečete kolačiće madelaine koji će biti taman kako treba za 2 minute. Napravite program sa dva timera, svaki sa pripadnom funkcijom, od kojih će jedna ispisati na ekran `"Voda spremna za čaj!"`, a druga `"Kolačići madelaine taman kako treba!"` u odgovarajućim trenucima.
 
 ## Barijere
@@ -359,10 +359,10 @@ author: Vedran Miletić
     t2.join()
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Dodajte dijeljenu barijeru u obje funkcije prethodnog zadatka tako da se po završetku izrade čaja, odnosno kolačića, čeka na onu drugu stranu, a zatim na ekran ispiše:
 
     > I čim sam prepoznao okus u lipov čaj namočena komada madelaine, koji mi je svake nedjelje davala tetka Leonie (tada još doduše nisam znao razlog, zbog koga me ta uspomena tako usrećivala, nego sam to otkriće morao odgoditi za mnogo poslije), odmah se pojavi i stara, siva kuća na ulicu, u kojoj je bila njena soba, pa se kao pozorišni dekor pridruži malom paviljonu, koji je gledao na vrt, a koji su na njenoj stražnjoj strani nadogradili za moje roditelje (i baš to je bio onaj krnji komad, koji sam do sad jedini vidio); a s kućom se pojavi i grad. Trg, kamo su me slali prije ručka, ulice, kojima sam trčao od jutra do večeri, po svakom vremenu, i šetnje, na koje smo odlazili, kad je bilo lijepo vrijeme. I kao što se dešava u onoj igri, kojom se Japanci zabavljaju uranjajući u porculansku zdjelu punu vode komadiće do tad bezlična papira, koji se tek što je umočen, isteže, savija, bojadiše, diferencira, pretvara u cvijeće, kuće i određene osobe, koje je moguće prepoznati, tako je i sad sve cvijeće iz našeg vrta, iz Swannova perivoja, tako su svi lopoči s Vivonne, oni dobri seoski ljudi, njihovi mali domovi, crkva i cio Combray sa svojom okolinom, tako je sve što ima oblik i čvrstoću, i grad i vrtovi, izašlo iz moje čaše čaja.
 
-!!! admonition "Dodatni zadatak"
+!!! tip "Dodatni zadatak"
     Napišite program koji vrši zbroj kvadrata brojeva u rasponu od 1 do 500000 u 3 niti (raspodijelite po želji). Iskoristite višenitnosti i varijablu u koju ćete spremiti zbroj učinite dijeljenom; iskoristite zaključavanje kod promjene varijable u svakoj od niti; napravite dijeljenu barijeru između tri niti tako da niti čekaju jedna na drugu i istovremeno završavaju izvođenje.

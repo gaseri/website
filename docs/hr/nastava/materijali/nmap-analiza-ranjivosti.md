@@ -4,5 +4,5 @@ author: Vedran Miletić
 
 # Analiza ranjivosti računalne mreže
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio treba napisati u cijelosti.

@@ -46,7 +46,7 @@ $ cvlc -vvv /home/iva/stream/sintel_trailer-1080p.mp4 'standard{access=http,mux=
 
 Output/izlaz:
 
-!!! todo
+!!! quote "ToDo"
     Izlaz je potrebno ponovno snimiti.
 
 Na klijent računalu pokrećemo naredbu:
@@ -57,7 +57,7 @@ $ cvlc http://192.168.0.104:8080
 
 i dobivamo sljedeći output/izlaz u VLC media playeru u terminalu:
 
-!!! todo
+!!! quote "ToDo"
     Izlaz je potrebno ponovno snimiti.
 
 Ukoliko upišemo `vlc` ili `nvlc` umjesto `cvlc`, dobivamo i VLC-ovo grafičko sučelje ili ncurses sučelje (respektivno). Parametrom `--sout` možemo odlučiti kamo će se spremiti sadržaj preuzet strujanjem:

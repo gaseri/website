@@ -196,7 +196,7 @@ Emacs u standardnoj distribuciji ima `python.el` koji mu omogućuje [napredno ba
 - `python-send-region`, `C-c C-r`: Run the selected code in the Python interpreter
 - `python-describe-symbol`, `C-c C-f`: Get help on a Python symbol (Better than visiting the slow Python website, right?)
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napišite "hello world" program u Pythonu s pozdravom po želji, a zatim ga modificirajte kako je opisano.
 
     - Pokušajte spomenuti način ispisati i varijable tipa `int` i `float`.
@@ -214,7 +214,7 @@ a = 5 # varijabla a će dinamički postati tipa int
 dir() # vraća popis atributa i metoda tipa int
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     U Pythonu se varijabli može pridružiti vrijednost kompleksnog broja na nekoliko načina, a najjednostavniji je `a = 2+3j` (naravno, vrijednosti 2 i 3 mogu se zamijeniti bilo kojim `int` ili `float` brojevima).
 
     - Pronađite način da ispište realni i imaginarni dio kompleksnog broja.
@@ -317,7 +317,7 @@ dir() # vraća popis atributa i metoda tipa int
     }
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napišite program koji ispisuje:
 
     - sve neparne brojeve u rasponu od 1 do 101 (uključujući 101),
@@ -343,7 +343,7 @@ dir() # vraća popis atributa i metoda tipa int
 - `str.lower()`
 - `str.upper()`
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Neka je `a = "AndrewKoenig"`.
 
     - Isprobajte čemu je jednako, pa objasnite zašto za iduće podnizove:
@@ -358,7 +358,7 @@ dir() # vraća popis atributa i metoda tipa int
 
     - Pretvorite `a` u listu (korištenjem funkcije `list()`) i spremite je u varijablu `b`. Dobivate li iste rezultate kada tražite podliste?
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Neka je `a = "Miami 2 Ibiza"`.
 
     - Pretvorite `a` u listu (korištenjem funkcije `list()`) i spremite je u varijablu `b`.
@@ -372,7 +372,7 @@ dir() # vraća popis atributa i metoda tipa int
 - `list.pop()` miče element s kraja liste
 - `list.insert()` ubacuje element u listu na određeno mjesto
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Neka je `a = [1, "Bok", [24, 7, 365], ["Da", "Ne"]]`.
 
     - Isprobajte čemu je jednako, pa objasnite zašto za iduće podliste:

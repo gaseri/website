@@ -132,7 +132,7 @@ Konfiguracijska datoteka `user-data` je u formatu YAML, ali `cloud-init` je pril
 
 Za više primjera konfiguracije proučite odjeljak [Cloud config examples](https://cloudinit.readthedocs.io/en/latest/reference/examples.html) u [službenoj dokumentaciji cloud-inita](https://cloudinit.readthedocs.io/en/latest/reference/index.html). Za značenje pojedinih ključeva proučite odjeljak [Module reference](https://cloudinit.readthedocs.io/en/latest/reference/modules.html), a za način korištenja parametara naredbenog retka odjeljak [CLI commands](https://cloudinit.readthedocs.io/en/latest/reference/cli.html).
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Istražite kako možete korištenjem cloud-inita stvoriti datoteku `fidit.txt` sa sadržajem `najjači fakultet` u korisničkom direktoriju te pokrenuti naredbu `ping -c 3 example.group.miletic.net`.
 
 ## Alat `cloud-localds`
@@ -190,5 +190,5 @@ Preuzmimo `cloudimg` Arch Linuxa s [nekog od službenih izvora](https://geo.mirr
 
 Nakon pokretanja Arch Linuxa moći ćemo se prijaviti s postavljenim korisničkim imenom i zaporkom.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Nakon uspješne prijave proučite [informacije o mjestu gdje se nalaze zapisnici u često postavljanim pitanjima](https://cloudinit.readthedocs.io/en/latest/reference/faq.html#where-are-the-logs) i provjerite sadržaj logova za upozorenjima i greškama.

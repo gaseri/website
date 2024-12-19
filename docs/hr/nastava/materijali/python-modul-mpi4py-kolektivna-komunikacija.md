@@ -79,7 +79,7 @@ comm.Bcast(msg, root=0)
 print("Nakon broadcasta proces ranga", rank, "ima vrijednost varijable", msg)
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Prilagodite kod primjera tako da se broadcastom šalje lista s 4 podliste s po 4 elementa, odnosno polje oblika (4, 4), u oba slučaja s proizvoljnim vrijednostima.
     - Učinite da nakon broadcasta proces ranga 2 promijeni vrijednost elementa na poziciji (1, 1) tako da je uveća za 5, i zatim napravite broadcast s njega svim ostalima.
     - Inicijalizirajte na procesu ranga 1 polje formata (5, 15) kodom `np.array([list(range(x, x + 15)) for x in range(5)])` i napravite broadcast s njega svim ostalima (pripazite na tip polja u koje primate). Učinite da svaki od procesa po primitku polja ispisuje na ekran vrijednost na koordinati (rang, rang).
@@ -133,7 +133,7 @@ comm.Scatter(sendmsg, recvmsg, root=0)
 print("Proces ranga", rank, "ima vrijednost poruke za slanje", sendmsg, "primljena poruka", recvmsg)
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Modificirajte kod tako da se izvodi u 5 procesa, a scatter se vrši nad matricom proizvoljnih vrijednosti koja ima 5 redaka i 4 stupca zapisanom u obliku liste, odnosno numpy polja.
     - Učinite da svaki od procesa posljednji element u primljenom retku matrice postavlja na vrijednost 0, a zatim ispisuje taj redak na ekran.
 
@@ -199,7 +199,7 @@ comm.Allgather(sendmsg, recvmsg2)
 print("Proces ranga", rank, "ima vrijednost prve primljene poruke", recvmsg1, "i druge primljene poruke", recvmsg2)
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Promijenite program da se izvodi u 5 procesa, i to tako da svaki od procesa inicijalizira listu, odnosno polje, duljine 4 u kojem je prvi element njegov rang, a ostali elementi su slučajne vrijednosti u rasponu od 0.0 do 1.0.
     - Napravite operaciju gather sa korijenskim procesom ranga 3, te operaciju allgather. Svi procesi neka oba rezultata ispišu na ekran.
 
@@ -265,7 +265,7 @@ comm.Allreduce(sendmsg, recvmsg2, op=MPI.SUM)
 print("Proces ranga", rank, "ima vrijednost prve primljene poruke", recvmsg1, "i druge primljene poruke", recvmsg2)
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Promijenite kod tako da:
 
     - na glavnom procesu se inicijalizira lista ili polje slučajnih vrijednosti, koje se raspršuju (scatter) na sve procese,
@@ -318,7 +318,7 @@ comm.Alltoall(sendmsg, recvmsg)
 print("Proces ranga", rank, "ima vrijednost poslane poruke", sendmsg, "vrijednost primljene poruke", recvmsg)
 ```
 
-!!! todo
+!!! quote "ToDo"
     Ovdje nedostaje zadatak.
 
 ## Primjeri korištenja kolektivne komunikacije
@@ -383,14 +383,14 @@ print("Proces ranga", rank, "ima vrijednost poslane poruke", sendmsg, "vrijednos
         print("Zbroj vektora a i b iznosi", zbroj_vektor)
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Promijenite kod da su vektori veličine 6 elemenata umjesto 4, i izvedite kod u 6 procesa.
     - Dodajte još jedan vektor veličine 6 elemenata i izračunajte zbroj tri vektora umjesto zbroja dva vektora.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Učinite da program umjesto zbroja vektora računa produkt vektora po elementima, odnosno vektor u kojem je svaki element produkt elemenata u vektorima s pripadnim indeksom.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Za matrice `a` i `b` moguće je odrediti njihov zbroj na način:
 
     ``` python
@@ -565,7 +565,7 @@ skalarni_produkt = a[0] * b[0] + a[1] * b[1] + ... a[n] * b[n]
         print("Skalarni produkt je", skalarni_produkt)
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Dodajte kod za još dvije redukcije:
 
     - prva neka nalazi najmanju vrijednost među dobivenim produktima,
@@ -629,7 +629,7 @@ skalarni_produkt = a[0] * b[0] + a[1] * b[1] + ... a[n] * b[n]
         print("iznosi\n", y)
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Proširite navedeni kod da umjesto produkta matrice i vektora računa produkt dvaju matrica.
 
 ### Aproksimativno računanje broja $\pi$ kao sume niza
@@ -751,7 +751,7 @@ $$
         print("pi is approximately %.16f, error is approximately %.16f" % (pi, error))
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Modificirajte gornji primjer tako da dodate kod koji mjeri vrijeme izvođenja za svaki od procesa.
     - Usporedite vrijeme izvođenja algoritma za 2, 3, 4 procesa kad svaki proces izvodi 10^4^, 10^5^, 10^6^ iteracija. Opišite svoje zaključke.
 
@@ -835,11 +835,11 @@ Povećavajući $n$ dobivamo točniju aproksimaciju, a navedena metoda naziva se 
         print("pi is approximately %.16f, error is approximately %.16f" % (pi, error))
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Modificirajte primjer dan za Monte Carlo simulaciju da dodate kod koji mjeri vrijeme izvođenja za svaki od procesa.
     - Usporedite vrijeme izvođenja simulacije za 2, 3, 4 procesa kad svaki proces izvodi 10^4^, 10^5^, 10^6^ iteracija. Opišite svoje zaključke.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Usporedite vrijeme izvođenja programa i točnost aproksimacije pi korištenjem:
 
     - sumiranja elemenata niza,
@@ -847,7 +847,7 @@ Povećavajući $n$ dobivamo točniju aproksimaciju, a navedena metoda naziva se 
 
     za 2, 3, 4 procesa kad svaki proces izvodi 10^4^, 10^5^, 10^6^ iteracija. Opišite svoje zaključke.
 
-!!! admonition "Dodatni zadatak"
+!!! tip "Dodatni zadatak"
     Napišite program koji koristi MPI za izračun zbroja kvadrata brojeva u rasponu od 1 do 500000 u 4 procesa korištenjem kolektivne komunikacije tipa scatter-reduce. Raspodijelite po želji; za to morate napraviti listu oblika
 
     ``` python
@@ -859,5 +859,5 @@ Povećavajući $n$ dobivamo točniju aproksimaciju, a navedena metoda naziva se 
 
     odnosno potrebno je da ima 4 podliste od kojih će savka biti dana odgovarajućem procesu. Svi procesi računaju zbroj kvadrata brojeva koje su dobili. Nakon završetka obrade na procesu ranga 0 sakupite rezultate i to tako da izvršite redukciju korištenjem sumiranja.
 
-!!! admonition "Dodatni zadatak"
+!!! tip "Dodatni zadatak"
     Napišite program koji koristi MPI za izračun zbroja kubova brojeva u rasponu od 1 do 300000 u 6 procesa korištenjem kolektivne komunikacije tipa scatter-reduce. Na procesu ranga 0 inicijalizirajte listu pojedinih raspona i raspodijelite je procesima koji kubiraju dobivene brojeve i zbrajaju ih. Nakon završetka obrade na procesu ranga 0 izvedite redukciju sumiranjem i na procesu ranga 0 ispišite rezultat na ekran. Ostali procesi neka ne ispisuju ništa.

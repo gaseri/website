@@ -277,7 +277,7 @@ vidimo da je osnova ideja vrlo slična. Ostatak simulacije je identičan uobiča
 
 ### Primjeri simulacija
 
-!!! todo
+!!! quote "ToDo"
     Dodaj poveznice na dokumentaciju funkcija koje se koriste.
 
 Simulacije kreiramo uobičajeno te je jedina razlika integracija nekog od Click usmjerivača unutar kreirane simulacije.  Ponovno koristimo jedan u nizu pomagača, ovaj puta je to `ClickInternetStackHelper` te koristimo tri metode nad instancom tog pomagača.

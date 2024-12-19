@@ -71,7 +71,7 @@ Dokumentacija svih funkcija koje koristimo u nastavku dana je u sklopu [pregleda
     fh.Close()
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Promijenite veličinu polja na 100 umjesto 10 i usporedite dobivene datoteke naredbom `hexdump`.
     - Pokrenite program na 6 procesa umjesto 4 i usporedite dobivene datoteke naredbom `hexdump`.
     - MPI nudi funkcije za neblokirajuće zapisivanje datoteka: `MPI_FILE_WRITE_AT_ALL_BEGIN` (`MPI.File.Write_at_all_begin()` u mpi4py) započinje, a `MPI_FILE_WRITE_AT_ALL_END` (`MPI.File.Write_at_all_end()` u mpi4py) završava zapisivanje. Iskoristite te funkcije umjesto blokirajućih, a zatim pronađite i iskoristite funkcije za neblokirajuće čitanje datoteka.

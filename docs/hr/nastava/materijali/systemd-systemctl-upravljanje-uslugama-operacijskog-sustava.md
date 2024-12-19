@@ -4,7 +4,7 @@ author: Luka Vretenar, Vedran Miletić
 
 # Upravljanje uslugama operacijskog sustava
 
-!!! hint
+!!! info
     Za dodatne primjere naredbi proučite [stranicu systemd na ArchWikiju](https://wiki.archlinux.org/title/Systemd) i [Chapter 10. Managing Services with systemd](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/chap-managing_services_with_systemd) u [Red Hat Enterprise Linux 7 System Administrator's Guide](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/index).
 
 - moderni operacijski sustavi bazirani na jezgri Linux koriste [systemd](https://systemd.io/) za upravljane procesima, specifično pokretanje usluga kod podizanje sustava
@@ -24,7 +24,7 @@ Skup programa koji se naziva systemd zapravo sadrži veći broj međusobno povez
 - alata `systemctl`, za pregled i upravljanje stanjima definiranih usluga
 - alata `journalctl`, za pregled sustavskih događaja i događaja vezanih za pojedinu uslugu
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Proučite na [systemdovim stranicama na freedesktop.org-u](https://www.freedesktop.org/wiki/Software/systemd/) dio *Spelling* koji govori o imenovanju alata, a zatim pokušajte objasniti zašto se osnovni alat za upravljanje `systemd`-om naziva `systemctl`.
 
 ## Pokretanje sustava
@@ -52,7 +52,7 @@ Kada se za init koristi SysVinit vrijedi:
 - ostale naredbe su u `/etc/rc.local`
 - poveznice na usluge po razinama pokretanja su u `/etc/rc[0123456].d/`
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Pokreće li se usluga `apache2` u razinama pokretanja 1, 2 i 3?
     - Pokreće li se usluga `postgresql` prije ili nakon procesa `exim4` u razinama pokretanja 3 i 5?
 
@@ -76,17 +76,17 @@ U općem slučaju `systemd` podiže sustav u stanje `default.target` koji tipič
 
 Maredbom `systemctl isolate TARGET` moguće je prebaciti sustav u željeni cilj pokretanja.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Provjerite koji je cilj pokretanja trenutno aktivan na sustavu. Prebacite se u cilj pokretanja `multi-user.target`, a zatim usporedite popis procesa. Prebacite se u cilj pokretanja `reboot.target` da provjerite radi li ono što očekujete.
 
 - sve konfiguracijske datoteke i datoteke koje opisuju usluge se nalaze u direktorijima `/lib/systemd` i `/etc/systemd`
     - systemd prvo traži datoteku u `/lib/systemd`, a onda u `/etc/systemd`, što omogućuje nadjačavanje sustavske verzije datoteke u `/lib/systemd` s vlastitom, prilagođenom verzijom u `/etc/systemd`
     - specijalno, usluge se nalaze u direktorijima `/lib/systemd/system` i `/etc/systemd/system`
 
-!!! hint
+!!! info
     Podsjetimo se da već desetak godina većina distribucija Linuxa [spaja prvi i drugi nivo hijerarhije datotečnog sustava](https://www.freedesktop.org/wiki/Software/systemd/TheCaseForTheUsrMerge/), odnosno da su direktoriji `/bin`, `/lib` (`/lib64`) i `/sbin` samo simboličke poveznice na `/usr/bin`, `/usr/lib` (`/usr/lib64`) i `/usr/sbin`. Posljedično, putanje `/lib/systemd/system` i `/usr/lib/systemd/system` su ekvivalentne.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Instalirajte Apache ga nemate već instaliranog. Apachejeva usluga naziva se `http.service`; prvo pronađite tu datoteke na datotečnom sustavu, a zatim je kopirajte na mjesto na kojem ćete je moći uređivati tako da systemd koristi uređenu verziju, a izvorna verzija ostane sačuvana drugdje na datotečnom sustavu.
 
 ## Upravljanje pojedinom uslugom
@@ -100,11 +100,11 @@ Baratanje pojedinom uslugom razlikuje se u situaciji kada se koristi SysVinit od
 - `/etc/init.d/usluga status` ispisuje stanje usluge, ekvivalentno `service usluga status`
 - naredba `service --status-all` prikazuje status svih usluga
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Provjerite status usluga `ntpd` i `ntpdate`, a zatim ih zaustavite i ponovno pokrenite.
     - Naredba `netstat -a` daje, između ostalog, popis otvorenih lokalnih portova (konekcije u stanju `LISTEN`). Otkrijte koje su to usluge u našem slučaju. Ima li `ntpd` u popisu nakon zaustavljanja daemona?
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Iskoristite `yum` da bi instalirali `vsftpd`, a zatim ga pokrenite. Iskoristite `ftp` dostupan na računalu na kojem radite da bi se povezali na poslužitelj (sama prijava vam neće raditi; to zasad zanemarite).
 
 ### Systemd naredba `systemctl`
@@ -118,7 +118,7 @@ Baratanje pojedinom uslugom razlikuje se u situaciji kada se koristi SysVinit od
 
 Pregled svih praćenih usluga i njihovih stanja se vrši pokretanjem alata `systemctl`.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Pronađite dva poslužiteljska programa (izuzev Apacheja) po želji iz [Category:Servers na ArchWikiju](https://wiki.archlinux.org/title/Category:Servers). Instalirajte ih i isprobajte mogu li se pokrenuti i zaustaviti.
 
 ## Upravljanje uslugama pojedinog cilja pokretanja
@@ -132,7 +132,7 @@ Baratanje uslugama cilja ili razine pokretanja razlikuje se u situaciji kada se 
 - `chkconfig usluga on --level 2345` uključuje uslugu za pokretanje u razinama 2, 3, 4 i 5
 - `chkconfig usluga off --level 01` isključuje uslugu za pokretanje u razinama 0 i 1
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Uključite uslugu `vsftpd` u runlevelima 3, 4 i 5.
 
 ### Upravljanje uslugama citalja pokretanja korištenjem Sytemda
@@ -145,5 +145,5 @@ Baratanje uslugama cilja ili razine pokretanja razlikuje se u situaciji kada se 
 
 Usluge su implementirane kao *service units*, npr. `acpid.service`, `sshd.service`. Detaljnu specifikaciju moguće je pronaći u man stranici `systemd.service(5)`.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Uredite Apachejevu systemd uslugu tako da opis umjesto `Apache Web Server` bude `Apache HTTP Server` i da se pokreće tek nakon što se računalo poveže na internet (**uputa:** provjerite popis ciljeva i pronađite cilj koji to osigurava).

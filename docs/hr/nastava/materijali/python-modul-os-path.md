@@ -14,7 +14,7 @@ author: Vedran Miletić
 - `os.path.exists(path)` vraća `True` ako putanja `path` postoji
 - `os.path.realpath(path)` vraća putanju do datoteke u kanonskom obliku: ako je `path` simbolička poveznica, slijedi tu simboličku poveznicu; ako je rezultat opet simbolička poveznica, slijedi je i tako redom dok ne dođe do odredišta koje nije simbolička poveznica
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Stvorite u direktoriju u kojem ćete pokrenuti Python skriptu dvije simboličke poveznice: prva je imena `lnkhosts` na datoteku `/etc/hosts`, a druga je `nema-dat` na `/tmp/nepostojeca-datoteka`. U Python skripti prvo saznajte apsolutne putanje do stvorenih poveznica, a zatim provjerite postoje li vaše poveznice i postoje li datoteke na koje pokazuju.
 
 - `os.path.getatime(path)` dohvaća zadnje vrijeme pristupa datoteci kao varijablu tipa `float` u kojoj je zapisan broj sekundi od epohe
@@ -26,7 +26,7 @@ author: Vedran Miletić
 - `os.path.isdir(path)` vraća `True` ako je `path` putanja do direktorija ili simbolička poveznica na direktorij
 - `os.path.islink(path)` vraća `True` ako je `path` putanja simboličke poveznice
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Saznajte posljednje vrijeme pristupa, vrijeme promjene metapodataka i veličinu datoteke `/etc/hosts`, a zatim i simboličke poveznice `lnkhosts`. Uvjerite se da se zaista radi o datoteci i simboličkoj poveznici.
 
 - `os.path.expanduser(path)` zamjenjuje `~` ili `~guido` putanjom do korisničkog direktorija trenutnog korisnika, odnosno korisnika `guido` (ako taj korisnik postoji); npr. `os.path.expanduser("~")` vratit će `"/home/korisnik"`

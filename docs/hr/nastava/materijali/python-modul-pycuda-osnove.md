@@ -65,7 +65,7 @@ Hello world primjer izgradit ćemo u nekoliko koraka:
     print("Pozdrav s CPU-a!")
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Unutar istog modula s izvornim kodom definirajte još jednu funkciju i nazovite je `my_hello()` koja pozdravlja na francuskom (`"Salutations avec le GPU!"`). Dohvatite je u Pythonu i pozovite na isti način kao `hello()`.
     - Unutar funkcije `my_hello()` inicijalizirajte dvije varijable, `var1` tipa `int` vrijednosti `480` i `var2` tipa `float` vrijednosti `2.075`. Proučite dio koji se odnosi na C unutar [Wikipedijine stranice za printf](https://en.wikipedia.org/wiki/Printf_format_string) i učinite da ispisuje i `Vrijednost varijable var1 je <vrijednost var1>, a vrijednost varijable var2 <vrijednost var2>.`
     - Varirajte brojeve u uređenoj trojci `block` i uređenom paru `grid` za vašu funkciju, stavite primjerice 2 ili 3 umjesto 1 na nekim mjestima. Što uočavate?

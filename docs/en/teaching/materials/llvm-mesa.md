@@ -160,7 +160,7 @@ ICD loader properties
 
 We can see LLVM 13.0.1 mentioned in several places. Clang and LLVM are used by Clover for compiling the OpenCL C code to assembly code for the gfx1030 processor, which is a part of the Radeon RX 6800 GPU. The resulting assembly code is then linked with [libclc](https://libclc.llvm.org/) that contains the implementations of the fundamental OpenCL C data types and functions. Finally, the resulting code after linking is executed by RadeonSI on the Radeon 6800 GPU.
 
-!!! admonition "Assignment"
+!!! example "Assignment"
     Compare the output of `clinfo` on your machine to the output shown above. (If you do not posses a GPU with an OpenCL driver, use [Portable Computing Language](http://portablecl.org/) ([GitHub](https://github.com/pocl/pocl)) to run OpenCL on the CPU.)
 
 ### Using the environment variables
@@ -384,10 +384,10 @@ amdhsa.version:
 
 Common GCN and RDNA assembly instructions can be divided into two groups, scalar (names starting with `s_`) and vector (names starting with `v_`). Scalar instructions use scalar general-purpose registers (SGPRs, named `s1`, `s2` etc.), while vector instructions use (VGPRs, named `v1`, `v2` etc.).
 
-!!! admonition "Assignment"
+!!! example "Assignment"
     The assembly code above contains, among other, the assembly code produced by from the OpenCL C code lines `int i = get_global_id(0);` and `c[i] = a[i] + b[i];`. Figure out which lines in the assembly code correspond to each of the two lines and classify them as scalar or vector instructions.
 
-!!! admonition "Assignment"
+!!! example "Assignment"
     Modify the OpenCL C kernel to compute the sum of the three vectors instead of two and compile it into the assembly code. Compare the two resulting assembly codes in terms of code size and register usage.
 
 !!! tip
@@ -651,5 +651,5 @@ For example, llc -mcpu=mycpu -mattr=+feature1,-feature2
 !!! tip
     A good starting point for further study of AMDGPU backend is [Tom Stellard](https://www.stellard.net/tom/blog/)'s [A Detailed Look at the R600 Backend](https://llvm.org/devmtg/2013-11/#talk7) ([slides](https://llvm.org/devmtg/2013-11/slides/Stellard-R600.pdf), [recording](https://youtu.be/hz1jFSi1fEY?list=PL_R5A0lGi1AA4GNONa4vof63jalYbs-MG)), presented at [2013 LLVM Developers' Meeting](https://llvm.org/devmtg/2013-11/). While focused on R600 and not GCN, many of the points made in the talk still hold.
 
-!!! admonition "Assignment"
+!!! example "Assignment"
     Use Clang to compile the OpenCL C code from the previous example to LLVM intermediate representation and then use `llc` to compile it for `gfx700`, `fiji`, and `gfx1030` processors. Compare the resulting assembly codes in terms of the code size, types of instructions used as well as register pressure.

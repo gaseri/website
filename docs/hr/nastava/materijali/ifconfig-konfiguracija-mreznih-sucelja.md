@@ -80,15 +80,15 @@ Pregled parametara za alat ifconfig:
 
 ## Dodatak: alat ip
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio još nije napisan.
 
 ## Dodatak: alat iwconfig
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio još nije napisan.
 
 ## Dodatak: alat iw
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio još nije napisan.

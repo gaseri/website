@@ -14,7 +14,7 @@ Mi ćemo se fokusirati na [ebtables](https://ebtables.netfilter.org/), koji je, 
 
 ## Način rada alata ebtables
 
-!!! caution
+!!! danger
     Ebtables radi samo na premoštenim mrežnim adapterima (engl. *bridged network adapter*). Unutar CORE-a, ebtables radi samo na čvorovima tipa `router` i složenijim jer čvorovi tipa `switch` nemaju ljusku. Iskoristit ćemo čvorove tipa `router` da stvorimo svojevrsni preklopnik (engl. *switch*) koji ima ljusku. Prvo ćemo u konfiguraciji čvora (desni klik na čvor pa `Configure`) pod `Services` isključiti Quaggine usluge `OSPFv2`, `OSPFv3` i `zebra` te `IPForward`. Zatim ćemo prilagoditi sve adrese da budu dio iste mreže.
 
     Primjerice, stvorili smo emulaciju mreže oblika `n1 -- n2 -- n3` gdje su `n1` i `n3` čvorovi tipa `pc`, a n2 je čvor tipa `router` s isključenim navedenim uslugama. CORE će stvoriti dvije mreže (n1 -- n2 s adresama 10.0.0.0/24 i n2 -- n3 s adresama 10.0.1.0/24), a mi ćemo prilagoditi postavke n2 i n3 tako da i oni budu dio mreže 10.0.0.0/24. Konkretno, postavit ćemo da `n2` na sučelju prema `n3` ima adresu 10.0.0.2, a `n3` ima adresu 10.0.0.11.

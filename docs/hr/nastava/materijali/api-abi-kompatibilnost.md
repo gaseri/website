@@ -17,7 +17,7 @@ Kompatibilnost na razini izvornog koda tiče se aplikacijskog programskog sučel
 - promjena potpisa određene funkcije promjenom broja ili tipa parametera,
 - promjena poretka članova strukture ili klase.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Razmotrite biblioteku koja ima API
 
     ``` c++
@@ -32,5 +32,5 @@ Kompatibilnost na razini izvornog koda tiče se aplikacijskog programskog sučel
 
 ## Binarna kompatibilnost
 
-!!! hint
+!!! info
     Za više detalja proučite [Binary Compatibility Issues With C++](https://techbase.kde.org/Policies/Binary_Compatibility_Issues_With_C++) i [Building Applications with the Linux Standard Base](https://wiki.linuxfoundation.org/en/Book).

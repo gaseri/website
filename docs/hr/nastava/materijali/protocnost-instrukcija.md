@@ -114,7 +114,7 @@ $$
 TP_{\text{P}} = \frac{TP_{\text{S}}}{n_\text{PS}} + t_L
 $$
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Procesor sekvencijalne izvebe (bez protočne strukture) ima trajanje periode 25 ns, a svaki registar protočnog segmenta ima vrijeme latencije 1 ns.
 
     1. Koliko je trajanje periode za protočnu verziju istog procesora s 5 protočnih segmenata?
@@ -125,12 +125,12 @@ $$
 1. Za 5 protočnih segmenata: $TP = \frac{25\text{ ns}}{5} + 1\text{ ns} = 6\text{ ns}$
 2. Za 50 protočnih segmenata: $TP = \frac{25\text{ ns}}{50} + 1\text{ ns} = 1,5\text{ ns}$
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Usporedi i prokomentiraj dobivene rezultate. Povećavaju li se performanse linearno s povećanjem broja protočnih segmenata?
 
 Ako se vrijeme obrade u protočnim segmentima ne može jednoliko rasporediti, trajanje periode procesora će ovisiti o vremenu obrade najsporijeg protočnog segmenta. Pogledajmo sljedeći primjer.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Neki procesor bez protočne strukture i trajanja periode 25 ns podjeljen je na protočne segmente s vremenima obrade 5, 7, 3, 6 i 4 ns. Ako je latencija registra protočnog segmenta 1 ns, koliko je trajanje periode novog procesora?
 
 **Rješenje:**
@@ -143,7 +143,7 @@ Dijeljenjem u protočne segmente mijenja se zapravo i latencija jedne instrukcij
 
 $$L = n_{PS} \cdot T$$
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Kolika je latencija protočne strukture iz primjera 1 i 2?
 
 **Rješenje:**
@@ -152,7 +152,7 @@ Trajanje periode za procesor s 5 protočnih segmenata je 6 ns, a za 50 protočni
 
 U drugom primjeru trajanje periode je 8 ns s 5 protočnih segmenata pa je latencija 40 ns.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Usporedi i prokomentiraj dobivene rezultate. Koliko je sada realno vrijeme izvršavanja instrukcija?
 
 ## Hazardi u instrukcijskoj protočnoj strukturi
@@ -223,7 +223,7 @@ Primjerice ako imamo program koji ima 5 instrukcija i 4 protočna segmenta, tada
 
 U slučaju kada imamo mjehuriće u protočnoj strukturi možemo crtati dijagram protočnih segmenata ili možemo koristiti metodu razdvajanja vremena izvođenja u dva dijela. U tom slučaju vrijeme izvođenja se dijeli na latenciju protočne strukture i vrijeme izdavanja svih naredbi programa. Naredba je izdana kada je prešla iz segmenta PR u segment EX. Vrijeme izvođenja programa je u tom slučaju jednako zbroju latencije protočne strukture i vremena izdavanja svih naredbi umanjenjih za 1. Također, potrebno je znati i latenciju svake instrukcije, a to je vrijeme između izdavanja naredbe i izdavanja naredbe ovisne o njoj.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Koliko je vrijeme izvođenja sljedećeg programa, na procesoru protočne strukture iz prethodnog primjera?
 
     ``` asm
@@ -240,7 +240,7 @@ U našem primjeru vrijeme latencije protočne strukture je 5 perioda s obzirom d
 
 Ukupno vrijeme izdavanja je sada 6 perioda, a latencija ove protočne strukture je 5 pa je ukupno vrijeme izvođenja programa 6 + 5 - 1 = 10 perioda.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Koliko je vrijeme izvođenja sljedećeg programa (u periodama), na procesoru sa 7 protočnih segmenata i latencijom instrukcija grananja 5 perioda, a ostalih instrukcija 2 periode? Pretpostavi da uvjet grananja nije ispunjen.
 
     ``` asm
@@ -257,7 +257,7 @@ Kao i u prethodnom primjeru, pretpostavimo da se prva instrukcija `bne` zadaje u
 
 Ukupno vrijeme izdavanja je 10 perioda pa je ukupno vrijeme izvođenja programa 7 + 10 - 1 = 16 perioda.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Nacrtajte dijagram protočne strukture za sljedeći isječak programa:
 
     ``` asm
@@ -277,7 +277,7 @@ Ukupno vrijeme izdavanja je 10 perioda pa je ukupno vrijeme izvođenja programa 
 | EX | | | | add | sub | mul | div | |
 | WB | | | | | add | sub | mul | div |
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Nacrtajte dijagram protočne strukture s 5 segmenata iz prethodnih primjera za sljedeći isječak programa:
 
     ``` asm
@@ -297,7 +297,7 @@ Ukupno vrijeme izdavanja je 10 perioda pa je ukupno vrijeme izvođenja programa 
 | EX | | | | add | sub | n | n | mul | div |
 | WB | | | | | add | sub | n | n | mul |
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Nacrtajte dijagram protočne strukture za sljedeći isječak programa. Pretpostavite da uvijet granjanja nije ispunjen.
 
     ``` asm
@@ -307,7 +307,7 @@ Ukupno vrijeme izdavanja je 10 perioda pa je ukupno vrijeme izvođenja programa 
     div $r12, $r13, $r14
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Odredite vrijeme izvođenja sljedećeg programskog odsječka na procesoru s 5 protočnih segmenata, ako je trajanje periode 2 ns. Pretpostavite da uvjet grananja nije ispunjen.
 
     ``` asm
@@ -326,7 +326,7 @@ mul - n + 8
 
 Ukupno vrijeme izdavanja je 9 perioda, latencija ove protočne strukture je 5 pa je ukupno vrijeme izvođenja programa 9 + 5 - 1 = 13 perioda, odnosno 13 $\cdot$ 2 ns = 26 ns.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Odredite vrijeme izvođenja sljedećeg programskog odsječka na procesoru s 5 protočnih segmenata. Može li se smanjiti vrijeme izvođenja tog segmenta promjenom redosljeda izvršavanja instrukcija, a da se rezultat ne promjeni? Ako da, napišite preoblikovani niz instrukcija i izračunajte vrijeme izvođenja.
 
     ``` asm

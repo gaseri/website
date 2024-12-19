@@ -4,5 +4,5 @@ author: Vedran Miletić
 
 # Programiranje aplikacija za heterogene sustave korištenjem tehnologije OpenCL
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio treba napisati.

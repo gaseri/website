@@ -105,7 +105,7 @@ find_min(drv.Out(result_gpu), drv.In(a), block=(16,1,1), grid=(1,1))
 result_cpu = min(a)
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Promijenite kod primjera tako da umjesto traženja minimuma traži maksimum i dodajte `printf` na odgovarajuće mjesto kako bi vidjeli vrijednosti varijabli `idx`, `active` i elemenata u polju `cache` s kojima ta nit radi.
     - Promijenite kod primjera tako da umjesto traženja minimuma, odnosno maksimuma, vrši zbrajanje.
 
@@ -137,7 +137,7 @@ __global__ void some_kernel(...)
 some_kernel(..., block=(1,1,1), grid=(1,1), shared=32)
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Promijenite kod primjera koji traži minimalnu vrijednost u vektoru da koristi dinamičku umjesto statičke alokacije.
 
 !!! note
@@ -210,7 +210,7 @@ find_min(drv.Out(result_gpu), drv.In(mid_result_gpu), block=(4,1,1), grid=(1,1))
 result_cpu = min(a)
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Modificirajte gornji kod da izračuna srednju vrijednost umjesto da traži minimum.
     - Učinite da se kod izvodi na vektoru veličine 512 u 16 blokova.
 
@@ -270,7 +270,7 @@ __global__ void compute_norm (float *dest, float *src)
 }
 ```
 
-!!! todo
+!!! quote "ToDo"
     Ovdje nedostaje zadatak.
 
 Python kod za skalarni produkt je oblika
@@ -315,5 +315,5 @@ __global__ void compute_scalar_product (float *dest, float *src1, float *src2)
 }
 ```
 
-!!! todo
+!!! quote "ToDo"
     Ovdje nedostaje zadatak.

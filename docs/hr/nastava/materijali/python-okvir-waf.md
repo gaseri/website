@@ -37,7 +37,7 @@ Da bi iskoristili Waf na svojem projektu, postupak je vrlo jednostavan:
     - `$ ./waf configure`
     - `$ ./waf build`
 
-!!! todo
+!!! quote "ToDo"
     Ovdje nedostaje zadatak.
 
 Faze izgradnje softvera su:

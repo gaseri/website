@@ -26,7 +26,7 @@ molekula = Chem.MolFromSmiles('CCCC')
 Draw.MolToImage(molekula)
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     U Python programskom jeziku nacrtajte sljedeće kemijske spojeve: [aceton](https://en.wikipedia.org/wiki/Acetone), [benzen](https://en.wikipedia.org/wiki/Benzene) i [aspirin](https://en.wikipedia.org/wiki/Aspirin).
 
 Želimo li nacrtati dvije molekule jednu do druge, morat ćemo kreirati SMILES listu u kojoj ćemo pohraniti SMILES zapis molekula. Zatim ćemo pomoću petlje `for` kreirati slike molekula. To možemo postići na sljedeći način:
@@ -45,7 +45,7 @@ for smiles in smiles_list:
 Draw.MolsToGridImage(m_list, molsPerRow=2)
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     1. Nacrtajte četiri aminokiseline [glicin](https://en.wikipedia.org/wiki/Glycine), [fenilalanin](https://en.wikipedia.org/wiki/Phenylalanine), [histidin](https://en.wikipedia.org/wiki/Histidine) i [cistein](https://en.wikipedia.org/wiki/Cysteine) tako da se nalaze na istoj slici poredane jedna ispod druge.
     2. Prilagodite prethodni zadatak tako da imate dva retka, svaki s dvije slike molekula.
 
@@ -119,7 +119,7 @@ print("Broj atoma u molekuli:", broj_atoma_u_molekuli)
 print("Broj valentnih elektrona:", valentni_elektroni)
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Nacrtajte [mravlju kiselinu](https://en.wikipedia.org/wiki/Formic_acid) (metanska kiselina) te ispišite na ekran molarnu masu i broj atoma u molekuli te broj valentnih elektrona.
 
 ## Pohrana slikovne datoteke
@@ -145,5 +145,5 @@ slika = Draw.MolToImage(molekula)
 slika.save("slika2.png", size=(500,500))
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Nacrtajte molekulu djelatne tvari lijeka naziva [diklofenak](https://en.wikipedia.org/wiki/Diclofenac). Pronađite o kojoj je djelatnoj tvari riječ i njezin popularni naziv. Sliku molekule, veličine 600x400 točaka, pohranite tako da se na samoj slici ispod nacrtane molekule nalazi i naziv lijeka. Koristite argument `legend` za ispis naziva lijeka ispod slike.

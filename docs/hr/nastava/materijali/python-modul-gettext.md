@@ -30,7 +30,7 @@ author: Vedran Miletić
 - `gettext.ngettext(singular, plural, n)` dohvaća prijevod poruka `singular` i `plural` u množini u odgovarajućem obliku za `n`
 - `gettext.dngettext(domain, singular, plural, n)`  dohvaća prijevod poruka `singular` i `plural` u množini u odgovarajućem obliku za `n` u navedenoj domeni `domain` umjesto u trenutnoj globalnoj domeni
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     (Zasad još uvijek ne znamo stvoriti potrebnu `.mo` datoteku; to ćemo napraviti u idućem zadatku.)
 
     Napišite Python program koji koristi tekstualnu domenu `mljekara` i ispisuje četiri poruke koje imaju mogućnost prevođenja:
@@ -97,5 +97,5 @@ author: Vedran Miletić
 
     - datoteka `messages.mo` se zatim naziva `kalendar.mo` i stavlja u `hr/LC_MESSAGES` unutar direktorija s lokalizacijama (npr. `/home/korisnik/locale/hr/LC_MESSAGES/kalendar.mo`)
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Za program iz prethodnog zadatka napravite MO datoteku s hrvatskim prijevodom, nazovite ju na odgovarajući način i postavite na odgovarajuće mjesto. Vežite direktorij s lokalizacijama na domenu. Uvjerite se da se kod pokretanja programa zaista koriste prijevodi iz MO datoteke.

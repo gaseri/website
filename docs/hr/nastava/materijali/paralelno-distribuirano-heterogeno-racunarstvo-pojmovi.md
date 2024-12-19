@@ -67,7 +67,7 @@ Evolucija računalnih sustava prema [AMD-u](https://en.wikipedia.org/wiki/Advanc
 
 ### Arhitektura distribuiranih sustava
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio treba napisati.
 
 [Cluster dio Bure](https://cnrm.uniri.hr/hr/bura/) je primjer distribuiranog sustava sastavljenog od više računala povezanih mrežom.
@@ -131,7 +131,7 @@ Iako **heterogeno računarstvo** (engl. *heterogeneous computing*) ne počinje s
 
 ### Tehnologije NVIDIA Compute Unified Device Architecture (CUDA) i OpenCL
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio treba napisati.
 
 ### Sadašnjost i budućnost heterogenih sustava

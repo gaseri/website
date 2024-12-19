@@ -20,7 +20,7 @@ author: Vedran Miletić
 
     - potrebno je navesti odjeljak slučaju kad istoimena stranica postoji u više odjeljaka
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Usporedite `man` stranice imena `kill` u navedena tri odjeljka ako postoje. Po čemu se razlikuju? Što svaka od njih opisuje?
     - Pratite pozive u sustav koje radi naredba `kill` kada:
 

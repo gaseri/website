@@ -28,7 +28,7 @@ author: Vedran Miletić
 
 - `select.poll()` vraća objekt koji na koji se mogu registrirati opisnici datoteka, a zatim se može koristiti za ispitivanje spremnosti na određenu operaciju
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Prisjetite se da `mkfifo` stvara imenovane cijevi. Iskoristite ga da stvorite imenovanu cijev `mojacijev1`, zatim zapisujte u nju `cat`-om proizvoljan sadržaj (`cat > mojacijev1`).
 
     - Otvorite istu imenovanu cijev kao datoteku za čitanje u Pythonu i iskoristite `read()` za čitanje sadržaja. Uočite kako `read()` čeka ako nema sadržaja za pročitati.

@@ -26,6 +26,6 @@ author: Vedran Miletić, Kristijan Lenković
     - Koristi se varijabli kod polja deklariranih unutar niti
     - Ponekad, ovisno o prevoditelju, može se koristiti i kod polja
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Deklarirajte varijablu `pi` tipa float **u konstantnoj memoriji** i postavite ju na vrijednost `3.14159`.
     - Definirajte zrno `pi_zapisi(float *polje)`. Unutar modula, ali van zrna, definirajte polje `pi_polje` tipa float veličine 200 elemenata **u globalnoj memoriji**, u koje će svaka od niti zrna `pi_zapisi()` upisati vrijednost konstante `pi`. Pokrenite izvođenje zrna sa 20 niti po bloku i 10 blokova. (**Uputa:** za provjeru točnosti koda možete iskoristiti `printf()`.)

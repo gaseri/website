@@ -61,13 +61,13 @@ author: Vedran Miletić, Kristijan Lenković
     print("CPU i GPU daju isti rezultat?\n", result_cpu == result_gpu)
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Prilagodite kod primjera tako da računa zbroj oblika $2a + b$.
     - Prilagodite kod primjera tako da računa zbroj oblika $2a + b + 3c$.
 
 ## Nit, blok i rešetka
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Prilagodite kod prethodnog primjera tako da vektori imaju 500 elemenata (umjesto 400).
 
 Zrna se pokreću na rešetci. Rešetka se sastoji od **blokova**, koji se sastoje od **niti**.
@@ -93,7 +93,7 @@ Svaki od dva bloka sada ima 250 niti i one pokrivaju čitav vektor od 500 kompon
 zbroj_vektora(drv.Out(result_gpu), drv.In(a), drv.In(b), block=(250,1,1), grid=(2,1))
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Provjerite možete li se s dva bloka izvesti zbrajanje vektora od 3000 elemenata. (**Napomena:** čim je zadano ovako, vjerojatno ne možete.)
     - Izvedite zbrajanje vektora od 3000 elemenata u 3 bloka.
 
@@ -138,5 +138,5 @@ Atomične bitovne operacije su:
 - `atomicOr()`
 - `atomicXor()`
 
-!!! todo
+!!! quote "ToDo"
     Ovdje nedostaje objašnjenje i zadatak.

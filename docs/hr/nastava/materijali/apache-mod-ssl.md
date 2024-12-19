@@ -6,7 +6,7 @@ author: Vedran Miletić
 
 Modul [mod_ssl](https://httpd.apache.org/docs/2.4/mod/mod_ssl.html) implementira podršku za SSLv3 i TLSv1.x u Apacheju (SSLv2 više nije podržan jer se smatra nesigurnim) koji se koriste kod ostvarivanja HTTPS veza. Za izvođenje kriptografskih algoritama koristi se [OpenSSL](https://www.openssl.org/).
 
-!!! hint
+!!! info
     Više detalja o SSL-u i TLS-u u Apacheju moguće je pronaći u službenoj dokumentaciji u dijelu [Apache SSL/TLS Encryption](https://httpd.apache.org/docs/2.4/ssl/)
 
 ## Stvaranje i postavljanje certifikata i privatnog ključa
@@ -114,7 +114,7 @@ Morat ćemo konfigurirati `DocumentRoot` i za HTTPS poslužitelj. Dohvatimo konf
 $ docker run --rm httpd:2.4 cat /usr/local/apache2/conf/extra/httpd-ssl.conf > my-httpd-ssl.conf
 ```
 
-!!! todo
+!!! quote "ToDo"
     Nedostaje kratak opis sadržaja datoteke.
 
 Uredimo datoteku; uočimo da u njoj postoji niz konfiguracijskih naredbi koje počinju nizom slova `SSL` i određuju način rada SSL-a. Naredbom `SSLCipherSuite HIGH:MEDIUM:!MD5:!RC4:!3DES` ([dokumentacija](https://httpd.apache.org/docs/2.4/mod/mod_ssl.html#sslciphersuite)) navode se dozvoljeni šifrarnici. Podsjetimo se da se kod SSL-a koriste četiri vrste šifrarnika:
@@ -224,7 +224,7 @@ $ curl -k https://172.17.0.2/
 <html><body><h1>Radi!</h1></body></html>
 ```
 
-!!! hint
+!!! info
     U praksi je ponekad moguće automatizirati čitav ovdje opisani postupak. Naime, Apache [od verzije 2.4.30 nadalje](https://blog.des.no/2021/10/lets-encrypt-apache-mod-md/) sadrži [mod_md](https://httpd.apache.org/docs/2.4/mod/mod_md.html) koji dohvaća certifikate s [besplatnog i otvorenog](https://letsencrypt.org/about/) [autoriteta certifikata Let's Encrypt](https://letsencrypt.org/) za domene navedene pod konfiguracijskom naredbom `MDomain`. Nažalost, taj postupak ovdje ne možemo koristiti jer Let's Encrypt zahtijeva da imamo registrirane domene na internetu kako bi mogao izdati certifikat za njih. Pored toga, čak i kad možemo automatizirati postavljanje certifikata, dobro je znati kako čitav postupak izgleda kako bismo se mogli snaći u situacijama kad neki dio tog automatiziranog postupka zakaže.
 
 ## Server Name Indication

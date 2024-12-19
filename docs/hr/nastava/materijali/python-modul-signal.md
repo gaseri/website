@@ -79,10 +79,10 @@ author: Vanja Slavuj, Vedran Miletić
         pass
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Proširite kod primjera tako da ignorira SIGCONT, a da nakon primanja SIGINT-a ispiše `Primljen SIGINT, nastavljam izvođenje`. Uvjerite se da se zaista program ne može zaustaviti kombinacijom tipki ++control+c++ (`^C`) koja šalje SIGINT.
 
-!!! admonition "Dodatni zadatak"
+!!! tip "Dodatni zadatak"
     Napišite program koji hvata signal SIGKILL, čeka na pristizanje signala, te po pristizanju signala KILL na zaslon ispisuje poruku o identifikatoru signala i završava izvođenje. Uočite što se događa i pokušajte objasniti zbog čega.
 
 - modul `signal` nudi funkcije za rad s upravljačem, među kojima su i:
@@ -92,10 +92,10 @@ author: Vanja Slavuj, Vedran Miletić
     - `signal.strsignal(sig)` -- vraća puni naziv signala čiji je identifikator sig (koristi se od verzije Pythona 3.8)
     - `signal.valid_signals()` -- vraća popis signala koji su definirani u OS-u (koristi se od verzije Pythona 3.8)
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napišite program koji uz odgovarajuću poruku korisniku čeka pristizanje jednog od prvih 5 definiranih signala sustava (kojeg ćete poslati naredbom `kill` iz drugog terminala). Program nudi korisniku mogućnost provjere je li za uneseni cjelobrojni identifikator signala definiran upravljač i o tome obavještava korisnika.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napišite program koji na zaslon ispisuje vlastiti PID i čeka pristizanje signala SIGHUP, SIGINT ili SIGTERM (kojeg ćete poslati naredbom `kill` iz drugog terminala). Za pristigli signal HUP, program na zaslon ispisuje poruku o pristiglom broju signala i prekida svoje izvršavanje. Za pristigli signal INT, program ga ignorira i nastavlja čekati novi signal. Za pristigli signal TERM, program se ponaša onako kako je zadano tim signalom.
 
 - rad sa signalima trebao bi slijediti pravila standarda POSIX
@@ -110,8 +110,8 @@ author: Vanja Slavuj, Vedran Miletić
     - `signal.alarm(time)` -- funkcija koja zahtjeva slanje signala `SIGALRM` nekom procesu nakon `time` sekundi
     - `signal.SIGALRM` -- varijabla koja definira signal za mjerenje vremena (engl. *timer*)
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Izmijenite programski kod rješenja prethodnog zadatka na sljedeći način: ako korisnik ne pošalje signal unutar 15 sekundi, programu se automatski šalje alarm; po aktivaciji alarma, program na zaslon ispusuje trenutno vrijeme i poruku o neaktivnosti te završava izvođenje.
 
-!!! admonition "Dodatni zadatak"
+!!! tip "Dodatni zadatak"
     Napiši program koji nakon pokretanja na zaslon ispisuje poruku `Proces-roditelj započinje`, stvara proces-dijete i čeka na njegov dovršetak. Proces-dijete započinje izvođenje uz odgovarajući poruku i PID na zaslonu te nudi korisniku unos opcije `A` za zaustavljanje njegova izvođenja (signal `TSTP`) ili `B` za završavanje izvođenja (signal `TERM`) uz zapis stoga u datoteku `backup_stog.txt`. U slučaju zaustavljanja procesa-djeteta, postavlja se alarm od 15 sekundi (koji se pokreće jednom kada se iz drugog terminala signalom nastavi njegovo izvođenje), a proces-dijete osluškuje signale. Kada alarm stigne, program radi isto što i opcijom `B` ranijeg izbornika. Kada proces-dijete završi svoje izvođenje, proces roditelj završava izvođenje (uz odgovarajuću poruku).

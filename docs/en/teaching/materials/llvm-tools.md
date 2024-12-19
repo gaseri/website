@@ -107,7 +107,7 @@ Resource pressure by instruction:
 
 We can observe the prediction of 1.25 instructions per cycle on average during the program exection (`IPC`) (higher is better) and the approximately 50% usage of arithmetic logic units (ALUs) in the `Resource pressure` section (lower is better).
 
-!!! admonition "Assignment"
+!!! example "Assignment"
     Compare the instructions per cycle and resurce pressure when `control_flow.c` is executed on AMD Jaguar and AMD Piledriver CPUs.
 
 ## lli
@@ -119,7 +119,7 @@ $ ./bin/lli ir-examples/ll/switch.ll
 1.2 + 1.4 = 2.6
 ```
 
-!!! admonition "Assignment"
+!!! example "Assignment"
     Modify the `switch.c` file so that it sums three numbers instead of two. Compile to LLVM IR and compare the resulting file with the `switch.ll` from the repository. Check if the resulting file can be executed with `lli`.
 
 ## llvm-diff
@@ -130,7 +130,7 @@ $ ./bin/lli ir-examples/ll/switch.ll
 $ ./bin/llvm-diff example1.ll example2.ll
 ```
 
-!!! admonition "Assignment"
+!!! example "Assignment"
     Use `diff` and then `llvm-diff` to compare the two LLVM IR files from the previous assignment. Observe what `llvm-diff` takes into account that `diff` does not.
 
 ## llvm-stress
@@ -328,7 +328,7 @@ BB:
 
 It is also possible to specify the `-seed` parameter with the value used for seeding the random generator.
 
-!!! admonition "Assignment"
+!!! example "Assignment"
     Check if the results of the subsequent runs of `llvm-stress` are the same (you can use `llvm-diff` to compare the files). Check if the result changes when different seed values are specified. (**Hint:** Rename functions if necessary for comparison.)
 
 ## opt
@@ -770,10 +770,10 @@ $ ./bin/opt example-stress-size8.ll -S -passes adce -time-passes -o example-stre
    0.0003 (100.0%)   0.0000 (100.0%)   0.0003 (100.0%)   0.0003 (100.0%)  Total
 ```
 
-!!! admonition "Assignment"
+!!! example "Assignment"
     Check the behaviour of this optimization pass on other files created by `llvm-stress`. I partocular, check whether a similar amount of code is deleted and try to explain why or why not by inspecting the files.
 
-!!! admonition "Assignment"
+!!! example "Assignment"
     Many optimization passes are not applicable to many situations. Pick any file created by `llvm-stress` and find two optimization passes that modify the code and two that do not (i.e. the code is invariant in relation to these optimizations).
 
 Optimizations are generally noncommutative, that is, the [order of optimization passes is important](https://llvm.org/docs/Frontend/PerformanceTips.html#pass-ordering). For example, consider the following optimization of  the`example-stress.ll` file in which loop unrolling is performed first, and code sinking second:
@@ -831,5 +831,5 @@ in function autogen_SD0:
     <   br i1 %Cmp41, label %CF82.backedge, label %CF89
 ```
 
-!!! admonition "Assignment"
+!!! example "Assignment"
     Check whether two optimizations that were changing the code chosen in the last assignment can be performed on that code in any order.

@@ -39,7 +39,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 
     - operacijski sustavi slični Unixu osjetljivi su na velika i mala slova
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Ispišite na ekranu svoje ime i prezime.
     - *Jednom naredbom* ispišite svoje ime i prezime u jednom redu, a u drugom redu ispišite grad iz kojeg dolazite.
     - Na ekran ispišite sljedeće: Došao je do "Hemingway-a", ali nije nastavio dalje.
@@ -51,7 +51,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 - `cal` prikazuje kalendar za određenu godinu i u određenom obliku
     - ovdje ćemo isprobati korištenje argumenata i parametara naredbe
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Ispišite na ekranu kalendar za tekuću godinu.
     - Ispišite na ekranu kalendar za 2004. godinu.
     - Ispišite na ekranu julijanski kalendar za 3. mjesec 2004. godine.
@@ -59,7 +59,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 
 - `date` ispisuje datum u određenom formatu
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Na ekranu ispišite današnji datum oblika *DanUTjednu, Mjesec Dan Godina* (npr. `Ponedjeljak, Rujan 05 2013.`).
 
 ## Naredbe `ls` i `cat`
@@ -82,7 +82,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 - `^C`, odnosno ++control+c++ služi za prekid izvođenja većine naredbi ([više informacija](https://en.wikipedia.org/wiki/Control-C))
 - `^D`, odnosno ++control+d++ kraj rada, izlaz iz terminala ([više informacija](https://en.wikipedia.org/wiki/Control-D))
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Saznajte imena svih datoteka koje postoje u vašem direktoriju (uključujući i skrivene).
     - Ispišite sadržaj datoteke `.bash_logout` na ekran.
     - Ispišite sadržaj datoteke `.profile` na ekran, ali tako da ispišete i brojeve linija.

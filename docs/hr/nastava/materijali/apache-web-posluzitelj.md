@@ -4,7 +4,7 @@ author: Vedran Miletić
 
 # Osnovna konfiguracija web poslužitelja Apache HTTP Server
 
-!!! hint
+!!! info
     Uputa za Apache HTTP Server na internetu [ima](https://www.linode.com/docs/guides/web-servers/apache-tips-and-tricks/) [na](https://opensource.com/article/18/2/how-configure-apache-web-server) [pretek](https://blog.apnic.net/2020/04/07/the-wrong-certificate-apache-lets-encrypt-and-openssl/). Za temeljit uvod povrh ovih vježbi preporučam službenu dokumentaciju posljednje dvije verzije [Red Hat Enterprise Linuxa](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux), i to:
 
     - za verziju 8: [Chapter 1. Setting up the Apache HTTP web server](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/deploying_different_types_of_servers/setting-apache-http-server_deploying-different-types-of-servers) u [Deploying different types of servers](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/deploying_different_types_of_servers/index) ili
@@ -196,7 +196,7 @@ Uočimo kako upozorenja da `ServerName` nije postavljen više nema u izlazu. Kon
 
 Samo ćemo spomenuti da postoji konfiguracijska naredba `ServerRoot` ([dokumentacija](https://httpd.apache.org/docs/2.4/mod/core.html#serverroot)) koja navodi putanju do konfiguracijskih datoteka (od kojih jednu upravo uređujemo) i log datoteka u kojima Apache bilježi zahtjeve koje je dobio i odgovore na njih. Tu putanju nećemo mijenjati.
 
-!!! hint
+!!! info
     Više informacija o osnovnim poslužiteljskim konfiguracijskim naredbama postoji u [službenoj dokumentaciji Apacheja](https://httpd.apache.org/docs/2.4/) u dijelu [Server-Wide Configuration](https://httpd.apache.org/docs/2.4/server-wide.html).
 
 ## Dodavanje datoteka za posluživanje
@@ -293,7 +293,7 @@ $ curl http://172.17.0.2/
 <html><body><h1>Radi!</h1></body></html>
 ```
 
-!!! hint
+!!! info
     Osim `DocumentRoot`-a, Apache na mnogim instalacijama poslužuje i korisničke direktorije (putanja `/~korisnik/`, primjerice [/~natasah/ na www.inf.uniri.hr](https://www.inf.uniri.hr/~natasah/)). Time se ovdje nećemo baviti, ali ćemo spomenuti da se posluživanje korisničkih direktorija konfigurira pomoću naredbe `UserDir` ([dokumentacija](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html#userdir)) iz modula [mod_userdir](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html).
 
 ## Uključivanje modula

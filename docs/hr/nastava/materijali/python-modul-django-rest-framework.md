@@ -59,7 +59,7 @@ $ ./manage.py migrate
 (...)
 ```
 
-!!! zadatak
+!!! example "Zadatak"
     Registrirajte kreirani model `Korisnik` unutar `admin.py`. Pokrenite server i provjerite prikaz unutar admin sučelja a zatim unesite podatke za 3 korisnika.
 
 **Rješenje zadatka.**
@@ -186,5 +186,5 @@ $ http -a admin:admin http://127.0.0.1:8000/korisnici/
 (...)
 ```
 
-!!! zadatak
+!!! example "Zadatak"
     Kreirajte model Vozilo koje će sadržavati polja *model* i *godina_proizvodnje*. A zatim kreirajte serializer koji će vraćati podatke o modelima vozila koja su upisana u bazu podataka.

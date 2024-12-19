@@ -17,7 +17,7 @@ author: Vedran Miletić
     - sadrže: `attr/`, `auxv`, `cgroup`, `clear_refs`, `cmdline`, `comm`, `coredump_filter`, `cpuset`, `cwd`, `environ`, `exe`, `fd/`, `fdinfo/`, `io`, `latency`, `limits`, `loginuid`, `maps`, `mem`, `mountinfo`, `mounts`, `mountstats`, `net/`, `oom_adj`, `oom_score`, `pagemap`, `personality`, `root`, `sched`, `schedstat`, `sessionid`, `smaps`, `stack`, `stat`, `statm`, `status`, `syscall`, `task/`, `wchan`
     - `sed "s/\x00/\n/g"` zamjenjuje ASCII znak null s novim retkom, vrlo korisno za pregledavanje ovih datoteka
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Saznajte PID svoje instance `bash` ljuske i PID instance koju je pokrenuo netko od preostalih studenata. Pronađite njihove direktorije unutar `procfs`-a.
     - Razmotrite dozvole. Objasnite kojem korisniku i kojoj grupi su dodijeljene datoteke.
     - Usporedite što informacije koje možete saznati o svakom od tih procesa. Jesu li vam sve informacije dostupne?
@@ -29,7 +29,7 @@ author: Vedran Miletić
 
     - sve datoteke, direktoriji i simboličke poveznice kojima imena oblika `/proc/[a-z]*`
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Pronađite informacije o ACPI podršci hardvera na kojem radite, specifično:
 
     - ima li procesor podršku za baratanje energijom,
@@ -40,7 +40,7 @@ Procfs: sučelje sysctl
 - direktorij `/proc/sys` osim informacija, omogućuje i dinamičko mijenanje parametara sustava
 - [Sysctl sučelje](https://en.wikipedia.org/wiki/Sysctl) (naredba `sysctl`) omogućuje čitanje i promjenu parametara sustava
 
-!!! todo
+!!! quote "ToDo"
     Ovdje nedostaje zadatak.
 
 ## Sysfs
@@ -49,5 +49,5 @@ Procfs: sučelje sysctl
 
     - `/sys` != `/proc/sys`
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Pronađite informacije koje ste ranije očitali pomoću alata `lspci` unutar `/sys/devices/`. (**Uputa:**  pronađite poddirektorij koji se odnosi na mrežnu karticu.)

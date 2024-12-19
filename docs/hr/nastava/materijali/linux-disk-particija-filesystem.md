@@ -36,7 +36,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
     - `/dev/sdb5` -- prva logička particija drugog diska
     - `/dev/sdd6` -- druga logička particija četvrtog diska
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Što znamo o sljedećim particijama diska:
 
     - `/dev/sdf7`,
@@ -55,7 +55,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
     - `/dev/sd*`, `/dev/sr*` i `/dev/st*` postoje i pod nazivom oblika `/dev/sg*`
     - dio softverskog paketa `sg3-utils` (ne dolazi u zadanoj instalaciji većine distribucija)
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Saznajte koje particije postoje na računalu na kojem radite. Jesu li one primarne, sekundarne ili logičke?
     - Saznajte ima li računalo na kojem radite CD/DVD uređaj. Možete li izbaciti ladicu? ;-)
 
@@ -104,7 +104,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
     $ umount /home
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Saznajte koje su particije trenutno montirane i koji datotečni sustav imaju na sebi.
     - Provjerite poklapaju li se informacije koje ste dobili na bilo koji način sa sadržajem datoteka `/etc/mtab` i `/etc/fstab`. (**Uputa:** da bi razumijeli prvi stupac `/etc/fstab` proučite [stranicu o UUID na Wikipediji](https://en.wikipedia.org/wiki/UUID).)
 
@@ -130,7 +130,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 - `du` ispisuje koliko na disku zauzima određeni direktorij/datoteka
 - `df` ispisuje slobodan prostor na datotečnom sustavu
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Ispišite veličinu koju direktorij `/usr` zauzima na datotečnom sustavu na kojem se nalazi, i to na način da se vrijednost ispisuju u `MiB`, `GiB` za sve datoteke, a ne samo direktorije.
     - Pronađite način da ispišete ukupan zauzeti i slobodan prostor na svim particijma.
 
@@ -147,7 +147,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 
 - `mkfs` je naredba za stvaranje datotečnog sustava na particiji (spominjemo radi potpunosti)
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Pokušajte napraviti provjeru datotečnog sustava particije `/dev/sda3`. Objasnite grešku koje vam sustav javlja.
     - Pokušajte napraviti provjeru datotečnog sustava `/boot`. Objasnite upozorenje i grešku koju vam sustav javlja.
     - Pokušajte napraviti provjeru datotečnog sustava `/usr`. Objasnite grešku koju vam sustav javlja.

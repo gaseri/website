@@ -51,7 +51,7 @@ author: Vedran Miletić
     $ mpirun -np 2 python3 hello.py
     ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Pokrenite kod tako da se izvodi u 8 procesa.
     - Učinite da procesi s parnim identifikatorom ispisuju i `Ja sam proces sa parnim identifikatorom`, a procesi s neparnim identifikatorom ispisuju `Ja sam proces s neparnim identifikatorom`.
     - Dodajte da procesi s neparnim identifikatorom pored toga ispisuju i `Kvadrat mog identifikatora iznosi` te kvadrat svog identifikatora.

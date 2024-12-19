@@ -10,7 +10,7 @@ Brojne preporuke u vezi zaporki postoje, primjerice [upute i najbolje prakse ame
 
 Današnja (super)računala i računalni resursi u oblaku omogućuju [brzo razbijanje jednostavnih zaporki](https://irontechsecurity.com/how-long-does-it-take-a-hacker-to-brute-force-a-password/), a procjenu vremena probijanja pojedinih zaporki moguće je dobiti na [stranici How Secure Is My Password? na Security.org](https://www.security.org/how-secure-is-my-password/).
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     U KeePassXC-u stvorite novu bazu zaporki u korištenjem formata [KDBX 4.0](https://keepass.info/help/kb/kdbx_4.html). U bazi stvorite dvije grupe po želji; u prvoj stvorite jednu stavku, a u drugoj dvije. Svakoj stvorenoj stavci dodajte oznake, a na barem jednoj dodajte vrijeme isteka i URL na koji se odnosi.
 
     Kod stvaranja lozinki iskoristite ugrađeni generator i pronađite potrebne postavke da se provjera zaporke na stranici *How Secure Is My Password?* zeleni. Uvjerite se da:
@@ -19,5 +19,5 @@ Današnja (super)računala i računalni resursi u oblaku omogućuju [brzo razbij
     - vrijeme trajanja zaporke može isteći,
     - unose je moguće filtrirati po nazivu i oznakama.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Proučite u [službenoj dokumentaciji KeeePassXC-a](https://keepassxc.org/docs/) odjeljak o [dodavanju TOTP-a](https://keepassxc.org/docs/KeePassXC_GettingStarted#_adding_totp_to_an_entry). Za aplikaciju po želji uključite dvofaktorsku autentifikaciju.

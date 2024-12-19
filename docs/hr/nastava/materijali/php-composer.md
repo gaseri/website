@@ -8,5 +8,5 @@ author: Vedran Miletić
 
 [Packgist](https://packagist.org/) je repozitorij paketa koji Composer koristi.
 
-!!! todo
+!!! quote "ToDo"
     Ovaj dio treba napisati.

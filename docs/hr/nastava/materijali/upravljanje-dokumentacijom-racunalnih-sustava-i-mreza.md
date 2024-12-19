@@ -22,7 +22,7 @@ Primjerice, MkDocs i [tema Material for MkDocs](https://squidfunk.github.io/mkdo
 
 Za rad s dokumentacijom koristit ćemo [Markdown](https://commonmark.org/help/) i online uređivač [HackMD](https://hackmd.io/) ili desktop uređivač [Visual Studio Code](https://code.visualstudio.com/).
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Unutar Visual Studio Codea instalirajte proširenje [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) (`DavidAnson.vscode-markdownlint`). Stvorite novi Markdown dokument, a zatim pronađite način da izazovete barem pet različitih upozorenja od strane markdownlinta kršenjem stilskih pravila tekstom u dokumentu.
 
 #### reStructuredText
@@ -73,7 +73,7 @@ U [službenoj dokumentaciji](https://mermaid.js.org/intro/) moguće je pronaći 
 
 Vrijedi dodati i da ranije spomenuta [tema Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) [integrira podršku za Mermaid](https://squidfunk.github.io/mkdocs-material/reference/diagrams/).
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Modificirajte primjer dijagrama tako da ima uključuje još jedan web poslužitelj i sustav za slanje elektroničke pošte.
 
 #### Graphviz

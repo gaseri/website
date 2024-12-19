@@ -72,12 +72,12 @@ $ make -j 2
 $ make -j 2 check
 ```
 
-!!! admonition "Assignment"
+!!! example "Assignment"
     Find out what is the latest released version of LLVM, download it instead of the one used above, and build it.
 
 If you have many CPU cores, you can increase the number of parallel compile jobs by setting the `-j` parameter of the `make` command to a number larger than 2, for example the number of cores. This will make `make` make (!) the code faster, ideally several times faster.
 
-!!! admonition "Assignment"
+!!! example "Assignment"
     Find out how many CPU cores you have and check if increasing the number of jobs speeds up the build process.
 
 Alternatively, LLVM can also be [obtained from GitHub](https://github.com/llvm/llvm-project.git) using [Git](https://git-scm.com/). In that case, the branch `release/16.x` should be used. The rest of the process is pretty similar:
@@ -93,7 +93,7 @@ $ make -j 2
 $ make -j 2 check
 ```
 
-!!! admonition "Assignment"
+!!! example "Assignment"
     Find out what is the latest release branch of LLVM, check out that branch instead of the one used above, and build LLVM.
 
 ## The overview of the LLVM architecture

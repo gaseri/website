@@ -115,12 +115,12 @@ Imena dvaju tehnologija koje omogućuju [virtualizaciju upravitelja ulaznim/izla
 
 Obje tehnologije proširenje su postojećih tehnologija za hardverski potpomognutu virtualizaciju.
 
-!!! todo
+!!! quote "ToDo"
     Ovdje treba dodati opise za [Intel VT-c](https://en.wikipedia.org/wiki/X86_virtualization#Network_virtualization_(VT-c)) i [SR-IOV](https://en.wikipedia.org/wiki/Single-root_input/output_virtualization).
 
 #### QEMU i KVM
 
-!!! hint
+!!! info
     Za dodatne primjere naredbi proučite [stranicu QEMU na ArchWikiju](https://wiki.archlinux.org/title/QEMU).
 
 Kako bismo pokrenuli QEMU kao običan korisnik, moramo biti član grupe `kvm`. U slučaju da to nismo, možemo svojeg korisnika (npr. u primjeru `korisnik`) dodati u tu grupu naredbom:
@@ -157,7 +157,7 @@ Ovom naredbom smo pokrenuli QEMU koji stvara virtualni stroj arhitekture x86_64 
 
 Više detalja možemo pronaći u man stranici `qemu(1)` (naredba `man 1 qemu`) ili u [dijelu Invocation službene dokumentacije](https://www.qemu.org/docs/master/system/invocation.html).
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Provedite instalaciju Arch Linuxa prema [službenom vodiču na ArchWikiju](https://wiki.archlinux.org/title/Installation_guide) (koji je [DistroTube](https://distro.tube/) prezentirao [audiovizualnom obliku](https://youtu.be/PQgyW10xD8s)) ili [korištenjem pomoćne biblioteke archinstall](https://wiki.archlinux.org/title/Archinstall) (za koju također postoje DistroTubeove [upute u audiovizualnom obliku](https://youtu.be/leQbSsu-7F4)) pa ponovno pokrenite virtualnu mašinu, ali sada bez instalacijskog medija.
     - Ponovno pokrenite virtualnu mašinu, ali tako da joj date na korištenje samo jednu procesorsku jezgru i samo 2 GB radne memorije.
 
@@ -222,11 +222,11 @@ Virtualna primjena je slika virtualnog stroja namijenjena pokretanju na određen
 
 [Open Virtualization Format (OVF)](https://www.dmtf.org/standards/ovf) je otvoreni standard za pakiranje i distribuciju virtualnih primjena i općenitog softvera za virtualne strojeve.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Preuzmite [virtualnu primjenu Windows 11 razvojnog okruženja](https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/) za VirtualBox.
     - Pokrenite virtualnu primjenu u VirtualBoxu.
 
 ### Vagrant
 
-!!! todo
+!!! quote "ToDo"
     Opisati [Vagrant](https://www.vagrantup.com/) s primjerima korištenja Archevih `.box` datoteka za libvirt i VirtualBox (mogu se preuzeti kao [artefakti poslova](https://gitlab.archlinux.org/archlinux/arch-boxes/-/jobs/artifacts/master/browse/output?job=build:secure) u [repozitoriju archlinux/arch-boxes](https://gitlab.archlinux.org/archlinux/arch-boxes/) na [Archevom GitLabu](https://gitlab.archlinux.org/)).

@@ -78,7 +78,7 @@ int main() {
 }
 ```
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Dopunite primjer tako da inicijalizirate još jednu matricu `B` od 4 retka i 2 stupca pa izračunajte produkt te matrice i matrice `A`. Transponirajte matricu `B` pa izračunajte produkt matrice `A` i matrice dobivene transponiranjem `B`.
     - Dohvatite prvi stupac matrice `B` u vektor i izračunajte njegovu normu, a zatim dohvatite oba stupca matrice `B` u dva vektora i izračunajte njihov skalarni produkt.
 
@@ -88,7 +88,7 @@ Operatori na poljima (neka su `array1` i `array2` polja istog oblika, a `s1` ska
 - usporedbe: `array1 < array2`, `array1 => array2`, `array2 > s1` itd. (rezultat usporedbe je polje elemenata tipa `bool`)
 - funkcije: `array1.abs()`, `array1.log()`, `array1.pow(array2)`, `array1.pow(s1)` itd.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Inicijalizirajte dva polja i dvije matrice s elementima iste vrijednosti pa usporedite rezultate korištenja aritmetičkih operatora `+` i `*`.
 
 ## Rijetke matrice
@@ -120,6 +120,6 @@ Aritmetički operatori (`spmat1` i `spmat2` rijetke matrice, `s1` skalar, `dm1` 
 - množenje rijetkih matrica gustim matricama i vektorima: `spmat1 * dm1`, `spmat1 * dv1`
 - transponiranje: `spmat1.transpose()`
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Napravite program koji inicijalizira gustu matricu s 2000 redaka i 2000 stupaca i elementima tipa `double`. Za vrijeme dok se program izvodi izmjerite zauzeće memorije, korištenjem `top`-a (stupac RES) ili `ps`-a (stupac RSS).
     - Napravite program koji inicijalizira rijetku matricu s 2000 redaka i 2000 stupaca i elementima tipa `double`. Postavite vrijednosti svih elemenata na dijagonali. Za vrijeme dok se program izvodi izmjerite zauzeće memorije, a zatim usporedite s prethodnim slučajem.

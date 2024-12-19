@@ -116,7 +116,7 @@ koristi 'pacman {-h --help}' sa operacijom za dostupne opcije
 
 Detaljne informacije o načinu korištenja moguće je pronaći na [stranici pacman na ArchWikiju](https://wiki.archlinux.org/title/Pacman). [Službeni repozitoriji](https://wiki.archlinux.org/title/Official_repositories) Arch Linuxa sadrže [više od 14 000 paketa](https://archlinux.org/packages/).
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     U virtualnom stroju instalirajte HTTP poslužitelj Nginx. Pokrenite pripadnu uslugu, a zatim iskoristite Firefox ili cURL kako biste se uvjerili da poslužitelj ispravno radi. Naposlijetku, (po)maknite zadanu datoteku `index.html` i na njenom mjestu stvorite novu datoteku sa sadržajem po vašoj želji.
 
 ### Instalacija paketa na temelju opisa u Arch User Repositoryju (AUR-u)
@@ -221,14 +221,14 @@ mkdocs, version 1.4.2 from /usr/lib/python3.10/site-packages/mkdocs (Python 3.10
 
 Stvaranjem više kopija slike Arch Linuxa i ponavljanjem postupka možemo stvoriti više virtualnih strojeva. Svaka slika se može koristiti samo za jedan virtualni stroj.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Stvorite još jedan virtualni stroj pa u njemu instalirajte HTTP poslužitelj Apache.
 
 ## Složenije topologije u oblaku
 
 ### Web poslužitelji i baza podataka
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Stvorite tri virtualna stroja. Na prvom virtualnom stroju instalirajte MariaDB poslužitelj (paket `mariadb-server`). Stvorite bazu i u njoj barem jednu tablicu sa stupcima po želji te je popunite podacima po želji. Omogućite pristup sa zaporkom *udaljenom* korisniku imena po želji (ime domaćina `'%'` omogućit će pristup s bilo koje adrese, razmislite je li vam to u interesu).
 
     Naposlijetku, kako biste učinili da se MariaDB veže i na adrese do kojih je moguće doći izvana, promijenite postavku `bind-address` u datoteci `/etc/mysql/mariadb.conf.d/50-server.cnf` iz vezivanja na lokalnu adresu:
@@ -260,7 +260,7 @@ Stvaranjem više kopija slike Arch Linuxa i ponavljanjem postupka možemo stvori
 
 ### Balansiranje opterećenja web poslužitelja
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Dodajte još jedan virtualni stroj i na njemu instalirajte HAProxy (paket `haproxy`). Dopunite datoteku `/etc/haproxy/haproxy.cfg` sadržajem:
 
     ``` haproxy
@@ -277,7 +277,7 @@ Stvaranjem više kopija slike Arch Linuxa i ponavljanjem postupka možemo stvori
 
 ### Odvojena distribucija statičkih resursa
 
-!!! adomonition "Zadatak"
+!!! example "Zadatak"
     Na dva virtualna stroja koji imaju HTTP poslužitelj Apache i modul za PHP promijenite format poslanih podataka da bude JSON.
 
     Dodajte još jedan virtualni stroj koji ćete koristiti za distribuciju statičkih sadržaja (HTML, CSS, fontovi, JavaScript, slike, audiovizualne datoteke itd.). Na njemu postavite HTTP poslužitelj Apache (ovaj put bez dodavanja interpretera skriptnih jezika) tako da poslužuje datoteku `index.html` oblika:

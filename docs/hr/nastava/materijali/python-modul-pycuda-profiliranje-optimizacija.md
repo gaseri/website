@@ -42,14 +42,14 @@ method=[ memcpyDtoH ] gputime=[ 1.472 ] cputime=[ 21.000 ]
 
 Vidimo da je zbog jačeg grafičkog procesora vrijeme izvođenja pojedinih funkcije manje, tako da bi najjednostavnija metoda optimizacije bila "pokrenite kod na jačem grafičkom procesoru".
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Promijenite kod da zbraja dva vektora veličine 800 elemenata i usporedite vrijeme izvođenja. Specijalno, kakvo je zauzeće?
     - Promijenite kod da zbraja dva vektora veličine 1600 elemenata i usporedite vrijeme izvođenja kad:
 
         - imate dva bloka veličine 800 elemenata, i
         - imate četiri bloka veličine 400 elemenata. Koja od dvije varijante daje bolji rezultat?
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Napišite kod koji množi matricu veličine (2048, 2084) s vektorom veličine 2048:
 
     - u 128 blokova s po 32 niti,

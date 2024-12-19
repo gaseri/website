@@ -633,7 +633,7 @@ $ curl -v http://localhost:8000/
 
 ### Provjera adrese s koje je resurs zatražen
 
-!!! todo
+!!! quote "ToDo"
     Opisati formiranje odgovora prema zaglavlju `Referer` u HTTP zahtjevu.
 
 ### Provjera ostalih zaglavlja

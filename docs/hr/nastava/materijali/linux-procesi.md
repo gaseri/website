@@ -22,13 +22,13 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 - `fg` vraća posao s danim brojem u foreground
 - `bg` nastavlja izvođenje posla s danim brojem u backgroundu
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Pokrenite, a zatim zaustavite u izvođenju i stavite u background, redom `cat` bez argumenata, `grep` s jednim argumentom i `tail -f .bashrc`.
     - Vratite u foreground posao s rednim brojem 2.
     - Prekinite izvođenje posla broj 1.
     - Saznajte može li naredba `jobs` izlistati i broj procesa. (**Uputa:** `man jobs` ne postoji; vidite možete li na neki način pogrešno upotrijebiti naredbu da vam baci grešku i na ekran ispiše pomoć kod korištenja.)
 
-!!! admonition "Dodatni zadatak"
+!!! tip "Dodatni zadatak"
     - Pokrenite sljedeću naredbu: `emacs -nw dat1.txt &`. Što se dogodilo?
     - Probajte tipkati neki tekst. Što se događa?
     - Vratite pokrenuti Emacs u foreground. Što uočavate?
@@ -75,7 +75,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
     - PID procesa je 2
     - više informacija ima u man stranicama `kthread_bind(9)`, `kthread_run(9)`, `kthread_stop(9)`, `kthread_create(9)`, `kthread_should_stop(9)`
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Pronađite u popisu procesa `python`. (Naravno, to će biti moguće samo ako je sustav prethodno pripremljen za rješavanje zadatka.)
 
     - Otkrijte ime ili user ID korisnika kojem proces pripada.
@@ -104,13 +104,13 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 
 - `killall -<n> ime_naredbe` šalje signal `n` svim pokrenutim instancama naredbe sa zadanim imenom (koje može biti i regularni izraz)
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Pokrenite dva terminala u kojima ste povezani na poslužitelj.
     - U jednom terminalu pokrenite `less .bashrc`, a iz drugog pošaljite signal 15 tom procesu.
     - Ponovno pokrenite `less .bashrc`, ali mu sada pošaljite signal 9. Uočite razliku. Objasnite zašto ne možete koristiti PID iz prethodnog dijela zadatka.
     - Pokušajte poslati signal 9 ili 15 procesu `python` iz prethodnog zadatka, a onda objasnite zašto to ne možete.
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     - Pokrenite tri terminala. U dva terminala pokrenite `emacs`. U barem jednom od njih počnite pisati nešto, ali nemojte to spremiti.
     - Pošaljite svim pokrenutim `emacs`-ima signal 15. Objasnite zbog čega javlja da nekima od njih to nije moguće učiniti.
     - Usporedite to sa situacijom kada pošaljete signal 9. Što javlja `emacs` kod prekida izvođenja u jednom, a što u drugom slučaju?
@@ -127,7 +127,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 - `nice` mijenja niceness u odnosu na zadani, koristi se kod pokretanja procesa
 - `ionice` za razliku od nicenessa, koji kontrolira prioritet kod redanja za obradu od strane procesora, ioniceness kontrolira prioritet redanja za korištenje ulaza i izlaza (primjerice, čitanje i zapisivanje na diskove)
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Pokrenite dva terminala.
 
     - U jednom terminalu pokrenite `sleep 30s` s nicenessom postavljenim na 10.
@@ -157,7 +157,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 
     - na većini distribucija nije u zadanoj instalaciji, ali ima kultni status među tzv. hardcore geekovima (spominjemo radi potpunosti)
 
-!!! admonition "Zadatak"
+!!! example "Zadatak"
     Pokrenite tri terminala.
 
     - U jednom terminalu pokrenite `cat`, a u drugom `grep` s jednim argumentom.

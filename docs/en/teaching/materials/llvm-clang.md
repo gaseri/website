@@ -95,7 +95,7 @@ For convenience, Clang also provides `clang++` command which is equivalent to `c
 $ ./bin/clang++ example2.cpp -o example2
 ```
 
-!!! admonition "Assignment"
+!!! example "Assignment"
     Select the C or the C++ example and modify it to include other code, e.g. value assignments to variables and control flow (`if`, `for`, or `while`). Pay attention to Clang's reporting of errors and warnings during compilation.
 
 Although Clang is an excellent compiler for practical applications (including large applications such as [LibreOffice](https://wiki.documentfoundation.org/Development/Building_LibreOffice_with_Clang) and [Linux](https://docs.kernel.org/kbuild/llvm.html)), from now on we will focus on using Clang to translate the source code into assembly code or the LLVM intermediate representation (IR). In both case,  Clang will produce the output code after the specified compilation stage, but will not link it to libraries. Therefore, Clang will not create an executable file as it has done so far and we will focus on studying the results by reading the output instead of executing it.
@@ -200,7 +200,7 @@ Optimization level can be specified by using some variant of the `-O` parameter:
 > - `-O` -- Equivalent to `-O1`.
 > - `-O4` and higher -- Currently equivalent to `-O3`.
 
-!!! admonition "Assignment"
+!!! example "Assignment"
     Add some dead code of your choice to the example and find out which optimization levels eliminate it.
 
 Other targets can be specified using the `-target` parameter. To compile the code for MIPS on GNU/Linux:
@@ -269,10 +269,10 @@ $.str:
     .text
 ```
 
-!!! admonition "Assignment"
+!!! example "Assignment"
     Find out if the choice of the operating system and the environment affects the resulting assembly code.
 
-!!! admonition "Assignment"
+!!! example "Assignment"
     Find out if this code can be compiled to assembly code for ARM CPUs, RISC-V CPUs, AMD HD2XXX-HD6XXX and GCN GPUs, and WebAssembly.
 
 Finally, we can compile the C++ source code the same way:
@@ -424,10 +424,10 @@ attributes #1 = { "frame-pointer"="all" "no-trapping-math"="true" "stack-protect
 !3 = !{!"clang version 16.0.3 (https://github.com/llvm/llvm-project.git da3cd333bea572fb10470f610a27f22bcb84b08c)"}
 ```
 
-!!! admonition "Assignment"
+!!! example "Assignment"
     Find out if the LLVM IR differs for different taget processors and, if it does, in what way.
 
-!!! admonition "Assignment"
+!!! example "Assignment"
     Compare the LLVM IR produced by different optimization levels and see if you can observe the optimizations performed.
 
 From now on, we will treat Clang's code generation as a black box and modify only the optimization steps in LLVM. A good starting point to delve into the inner workings of Clang's code generation is the [LLVM Target-Independent Code Generator section](https://llvm.org/docs/CodeGenerator.html) contained in the the official documentation.
