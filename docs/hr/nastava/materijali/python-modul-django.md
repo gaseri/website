@@ -240,7 +240,7 @@ class Predmet(models.Model):
 !!! example "Zadatak"
     Definirajte funkciju `__str__()` unutar klase `Predmet` koja vraća naziv predmeta `predmet_naziv`.
 
-**Rješenje zadataka.**  U datoteku `main/models.py` unutar klase `Predmet` dodajemo:
+**Rješenje zadataka.** U datoteku `main/models.py` unutar klase `Predmet` dodajemo:
 
 ``` python
 def __str__(self):
@@ -469,7 +469,7 @@ Unutar klase zadajte funkciju `__str__()` koja vraća email adresu od profesora.
 
 Nakon kreirane klase pokrenite naredbe `makemigrations` i `migrate`.
 
-**Rješenje zadatka.**  U datoteci `main/models.py`:
+**Rješenje zadatka.** U datoteci `main/models.py`:
 
 ``` python
 class Profesor(models.Model):

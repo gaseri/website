@@ -182,7 +182,7 @@ Nastava će se na predmetu odvijati u ljetnom semestru prema sljedećem raspored
 | 10. | 3. 5. 2023. | 14:00--15:30 i 16:00--17:30 | O-365 | Postavljanje sustava imena domena i sustava upravljanja pisačima | P10 i V10 | doc. dr. sc. Vedran Miletić |
 | 11. | 10. 5. 2023. | 14:00--15:30 i 16:00--17:30 | O-365 | Postavljanje mrežnih datotečnih sustava | P11 i V11 | doc. dr. sc. Vedran Miletić |
 | 12. | 17. 5. 2023. | 14:00--15:30 i 16:00--17:30 | O-365 | Postavljanje upravitelja poslovima na računalnom sustavu | P12 i V12 | doc. dr. sc. Vedran Miletić |
-| 13. | 24. 5. 2023. | 14:00--15:30 i 16:00--17:30 | O-365 | **2. test na Merlinu**  | P13 i V13 | doc. dr. sc. Vedran Miletić |
+| 13. | 24. 5. 2023. | 14:00--15:30 i 16:00--17:30 | O-365 | **2. test na Merlinu** | P13 i V13 | doc. dr. sc. Vedran Miletić |
 | 14. | 31. 5. 2023. | 14:00--15:30 i 16:00--17:30 | O-365 | Automatizacija infrastrukture i infrastruktura u obliku koda | P14 i V14 | doc. dr. sc. Vedran Miletić |
 | 15. | 7. 6. 2023. | 14:00--15:30 i 16:00--17:30 | O-365 | Primjer postavljanja mrežne usluge na računalnom sustavu | P15 i V15 | doc. dr. sc. Vedran Miletić |
 

@@ -170,7 +170,7 @@ Nastava će se na predmetu odvijati u ljetnom semestru prema sljedećem raspored
 | 8. | 22. travnja 2021. | 17:30--19:30 | online | *Laboratorijska vježba 7:* Postavljanje datoteka putem HTTP-a, višejezičnost i kodiranje u HTTP-u | V | v. pred. dr. sc. Vedran Miletić |
 | 9. | 29. travnja 2021. | 17:30--19:30 | online | *Laboratorijska vježba 8:* HTTP autentifikacija, postavljanje i obrada kolačića | V | v. pred. dr. sc. Vedran Miletić |
 | 10. | 6. svibnja 2021. | 17:30--19:30 | online | **Online test na Merlinu** | I | v. pred. dr. sc. Vedran Miletić |
-| 11. | 13. svibnja 2021. | 17:30--19:30 | online | *Laboratorijska vježba 9:*  Konfiguracija HTTP poslužitelja | V | v. pred. dr. sc. Vedran Miletić |
+| 11. | 13. svibnja 2021. | 17:30--19:30 | online | *Laboratorijska vježba 9:* Konfiguracija HTTP poslužitelja | V | v. pred. dr. sc. Vedran Miletić |
 | 12. | 20. svibnja 2021. | 17:30--19:30 | online | *Laboratorijska vježba 10:* Sigurni web poslužitelj | V | v. pred. dr. sc. Vedran Miletić |
 | 13. | 27. svibnja 2021. | 17:30--19:30 | online | *Laboratorijska vježba 11:* Sigurnost virtualne privatne mreže tipa točka-do-točke | V | v. pred. dr. sc. Vedran Miletić |
 | 15. | 10. lipnja 2021. | 17:30--19:30 | online | *Laboratorijska vježba 12:* Sigurnost virtualne privatne mreže korištenjem certifikacijskog tijela | V | v. pred. dr. sc. Vedran Miletić |

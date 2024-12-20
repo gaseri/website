@@ -685,7 +685,7 @@ class SmartWindow extends Window {
 }
 ```
 
-🙋 **Pitanje:**  Moramo li ponavljati nasljeđivanje za svaki pametni uređaj?
+🙋 **Pitanje:** Moramo li ponavljati nasljeđivanje za svaki pametni uređaj?
 
 ---
 

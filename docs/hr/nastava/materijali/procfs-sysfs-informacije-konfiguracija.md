@@ -50,4 +50,4 @@ Procfs: sučelje sysctl
     - `/sys` != `/proc/sys`
 
 !!! example "Zadatak"
-    Pronađite informacije koje ste ranije očitali pomoću alata `lspci` unutar `/sys/devices/`. (**Uputa:**  pronađite poddirektorij koji se odnosi na mrežnu karticu.)
+    Pronađite informacije koje ste ranije očitali pomoću alata `lspci` unutar `/sys/devices/`. (**Uputa:** pronađite poddirektorij koji se odnosi na mrežnu karticu.)
