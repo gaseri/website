@@ -14,7 +14,7 @@ Osim sa stvarnim čvorovima i mrežnim sučeljima, Wireshark radi i sa emulirani
 
 ## Upoznavanje sa sučeljem Wiresharka
 
-!!! note
+!!! info
     Studenti koji žele znati više, ili iz bilo kojeg razloga preferiraju video lekcije pred klasičnim tekstualnim, mogu materijale naći u [službenoj Wireshark dokumentaciji](https://www.wireshark.org/docs/) koja uključuje i nešto video materijala.
 
 Nakon pokretanja Wiresharka, pojaviti će se grafičko sučelje s nizom korisničkih opcija i mogućnosti. Grafičko sučelje sastoji se od pet glavnih djelova:

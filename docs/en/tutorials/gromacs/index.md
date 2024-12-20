@@ -6,7 +6,7 @@ tags:
 
 # GROMACS tutorials: overview
 
-!!! note
+!!! info
     The GROMACS tutorials that follow were written in Markdown by
     [Wes Barnett](https://github.com/wesbarnett) and were originally published
     in the tutorials section of his former website. The tutorials are presently

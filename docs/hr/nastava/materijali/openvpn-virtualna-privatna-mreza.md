@@ -18,7 +18,7 @@ Nakon povezivanja OpenVPN klijenta s OpenVPN poslužiteljem (koje opisujemo u na
 
 ## Statički ključ
 
-!!! note
+!!! info
     Ovaj dio je složen prema članku [Static Key Mini-HOWTO](https://openvpn.net/community-resources/static-key-mini-howto/) koji je dio [službene dokumentacije OpenVPN-a namijenjene za zajednicu](https://openvpn.net/community-resources/).
 
 OpenVPN podržava dva načina rada: statički ključ kod kojeg klijent i poslužitelj koriste dijeljeni statički tajni ključ te sigurnosni mehanizam javnog ključa kod kojeg poslužitelj ima vlastiti autoritet certifikata koji koristi za provjeru valjanosti certifikata klijenata koji se žele povezati. Prvi način rada je jednostavniji, ali podržava samo rad točka-do-točke s jednim poslužiteljem i jednim klijentom. Drugi način rada je složeniji, ali podržava povezivanje više klijenata na jedan poslužitelj (i međusobno, ako poslužitelj tako konfigurira). Statičkim ključem se bavimo sada, a sigurnosnim mehanizmom javnog ključa u idućem dijelu.

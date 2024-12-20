@@ -50,7 +50,7 @@ int main() {
 }
 ```
 
-U ovom primjeru koristimo *if-else* naredbu za ispisivanje različitih poruka ovisno o odnosu između dvije varijable, `a` i `b`. Ako je uvjet `a < b` ispunjen, ispisuje se prva poruka, dok se u suprotnom ispisuje druga poruka. Ovaj koncept omogućava programu da dinamički odabere između različitih mogućnosti na temelju određenih uvjeta.
+U ovom primjeru koristimo naredbu *if-else* za ispisivanje različitih poruka ovisno o odnosu između dvije varijable, `a` i `b`. Ako je uvjet `a < b` ispunjen, ispisuje se prva poruka, dok se u suprotnom ispisuje druga poruka. Ovaj koncept omogućava programu da dinamički odabere između različitih mogućnosti na temelju određenih uvjeta.
 
 ### Petlje
 
@@ -120,7 +120,7 @@ Nakon izvršenja tijela petlje, provjerava se uvjet `(i <= 10)`. Ako je uvjet is
 
 Programi se obično izvršavaju slijedno, slijedeći redoslijed instrukcija. Međutim, ponekad želimo da program donese odluke i promijeni svoje ponašanje ovisno o određenim uvjetima. U takvim situacijama koristimo grananje.
 
-Jedan od najčešćih načina grananja je korištenje *if-else* naredbi. Unutar *if* bloka, određeni blok koda izvršava se samo ako je uvjet istinit. U slučaju da uvjet nije istinit, program preskače taj blok i prelazi na sljedeći dio koda u *else* bloku.
+Jedan od najčešćih načina grananja je korištenje naredbi *if-else*. Unutar *if* bloka, određeni blok koda izvršava se samo ako je uvjet istinit. U slučaju da uvjet nije istinit, program preskače taj blok i prelazi na sljedeći dio koda u *else* bloku.
 
 ### Jednostavno grananje naredbom *if* u MIPS-u
 
@@ -140,7 +140,7 @@ Kako bismo preveli uvjetno grananje u MIPS asemblerski jezik, ovom primjeru mož
 
 #### Okrenuti uvjet naredbe *if* u MIPS-u
 
-Za početak, pretpostavimo da je varijabla `a` pohranjena u registru `$a0`. U ovom slučaju, koristit ćemo instrukcije uvjetnog grananja. Uvjet *if* naredbe je `a < 0`. Kako bismo okrenuli uvjet i provjerili je li `a >= 0`, koristit ćemo instrukciju `bgez` (engl. _**b**ranch if **g**reater than or **e**qual to **z**ero_) koja uspoređuje sadržaj registra `$a0` s nulom.
+Za početak, pretpostavimo da je varijabla `a` pohranjena u registru `$a0`. U ovom slučaju, koristit ćemo instrukcije uvjetnog grananja. Uvjet naredbe *if* je `a < 0`. Kako bismo okrenuli uvjet i provjerili je li `a >= 0`, koristit ćemo instrukciju `bgez` (engl. _**b**ranch if **g**reater than or **e**qual to **z**ero_) koja uspoređuje sadržaj registra `$a0` s nulom.
 
 Ako je sadržaj veći ili jednak nuli, program će skočiti na određenu oznaku, u ovom primjeru to je oznaka `granaj`. U suprotnom, izvršit će se sljedeća instrukcija `sub a0, $0, $a0` koja oduzima sadržaj registra `$a0` od nule i rezultat pohranjuje natrag u registar `$a0`. Time se postiže efekt apsolutne vrijednosti varijable `a`.
 
@@ -183,36 +183,35 @@ Primjetimo kako smo u ovom slučaju dobili više oznaka i naredbi grananja nego 
     if (a0 > 0) {
         v0 = t0;
     }
-    else if (a == 0){
+    else if (a == 0) {
         v0 = t1;
     }
-    else{
+    else {
         v0 = t2;
     }
     ```
 
-**Rješenje:**
+??? success "Rješenje"
+    Ovaj zadatak riješit ćemo na drugi način koristeći više oznaka i narebi grananja. Kako bismo provjerili uvjet `a0 > 0` koristimo instrukciju `bgtz` (engl. _**b**ranch if **g**reater **t**han **z**ero_). Ukoliko je uvjet ispunjen program skače na oznaku `blok1`. U tom bloku, vrijednost registra `$t0` se kopira u registar `$v0` pomoću instrukcije `move`. Nakon toga program skače na oznaku `dalje` i izvršavaju se naredbe izvan bloka naredbe *if*.
 
-Ovaj zadatak riješit ćemo na drugi način koristeći više oznaka i narebi grananja. Kako bismo provjerili uvjet `a0 > 0` koristimo instrukciju `bgtz` (engl. _**b**ranch if **g**reater **t**han **z**ero_). Ukoliko je uvjet ispunjen program skače na oznaku `blok1`. U tom bloku, vrijednost registra `$t0` se kopira u registar `$v0` pomoću instrukcije `move`. Nakon toga program skače na oznaku `dalje` i izvršavaju se naredbe izvan bloka *if* naredbe.
+    ``` asm
+        bltz   $a0, blok1
+        beqz   $a0, blok2
+    blok_else:
+        move   $v0, $t2
+        b      dalje
+    blok1:
+        move   $v0, $t0
+        b      dalje
+    blok2:
+        move   $v0, $t1
+    dalje:
+        #...
+    ```
 
-``` asm
-    bltz   $a0, blok1
-    beqz   $a0, blok2
-blok_else:
-    move   $v0, $t2
-    b      dalje
-blok1:
-    move   $v0, $t0
-    b      dalje
-blok2:
-    move   $v0, $t1
-dalje:
-    #...
-```
+    Ako uvjet `a0 > 0` nije ispunjen, program provjerava sljedeći uvjet `a0 == 0`. U slučaju da je uvjet istinit, program skače na blok instrukcija označen kao `blok2`. U tom bloku, vrijednost registra `$t1` se kopira u registar `$v0`, a zatim program skače na oznaku `dalje`.
 
-Ako uvjet `a0 > 0` nije ispunjen, program provjerava sljedeći uvjet `a0 == 0`. U slučaju da je uvjet istinit, program skače na blok instrukcija označen kao `blok2`. U tom bloku, vrijednost registra `$t1` se kopira u registar `$v0`, a zatim program skače na oznaku `dalje`.
-
-Ako nijedan od prethodnih uvjeta nije ispunjen, izvršava se blok `blok_else`. U tom bloku, vrijednost registra `$t2` se kopira u registar `$v0`. Na kraju, program skače na oznaku `dalje` pri čemu se izvršavaju naredbe koje slijede izvan bloka *if* naredbe.
+    Ako nijedan od prethodnih uvjeta nije ispunjen, izvršava se blok `blok_else`. U tom bloku, vrijednost registra `$t2` se kopira u registar `$v0`. Na kraju, program skače na oznaku `dalje` pri čemu se izvršavaju naredbe koje slijede izvan bloka naredbe *if*.
 
 !!! example "Zadatak"
     Sljedeći isječak koda u jeziku C++ pretvori u asembler za arhitekturu MIPS. Pretpostavi da su varijable `a0` i `v0` u istoimenim registrima.
@@ -263,51 +262,50 @@ Primjerice, instrukcija `slt $Rdest, $Rsrc1, $Rsrc2` (engl. _**s**et if **l**ess
     }
     ```
 
-**Rješenje:**
+??? success "Rješenje"
+    Uvjet grananja možemo unaprijed izračunati. Tada možemo koristiti naredbe uvjetnog grananja kao da je u C++ ovakav kod:
 
-Uvjet grananja možemo unaprijed izračunati. Tada možemo koristiti naredbe uvjetnog grananja kao da je u C++ ovakav kod:
+    ``` cpp
+    bool t = a0 < 0 || a0 > 100;
+    if (t != 0) {
+        a0 = 1;
+    }
+    else {
+        a0++;
+    }
+    ```
 
-``` cpp
-bool t = a0 < 0 || a0 > 100;
-if (t != 0) {
-    a0 = 1;
-}
-else {
-    a0++;
-}
-```
+    Uvjet grananja pohranjujemo u varijablu `t` koja je tipa `bool`. Sada je varijabla `t` postala rezultat ispitivanja istinitosti uvjeta `a0 < 0 || a0 > 100`. Vrijednost koja će se pohraniti u varijablu `t` biti će ili `true` ili `false`, ovisno o istinitosti uvjeta.
 
-Uvjet grananja pohranjujemo u varijablu `t` koja je tipa `bool`. Sada je varijabla `t` postala rezultat ispitivanja istinitosti uvjeta `a0 < 0 || a0 > 100`. Vrijednost koja će se pohraniti u varijablu `t` biti će ili `true` ili `false`, ovisno o istinitosti uvjeta.
+    Uvjet koji se provjerava je `t != 0`, što znači da će se blok koda naredbe *if* izvršiti ako je vrijednost varijable `t` različita od nule, odnosno ako je uvjet istinit.
 
-Uvjet koji se provjerava je `t != 0`, što znači da će se blok koda *if* naredbe izvršiti ako je vrijednost varijable `t` različita od nule, odnosno ako je uvjet istinit.
+    U suprotnom, ako uvjet nije ispunjen (vrijednost varijable `t` je nula) izvršit će se blok koda unutar `else` dijela.
 
-U suprotnom, ako uvjet nije ispunjen (vrijednost varijable `t` je nula) izvršit će se blok koda unutar `else` dijela.
+    Prevođenjem ovoga primjera u asemblerski, dobiti ćemo kod programa koji će izgledati ovako:
 
-Prevođenjem ovoga primjera u asemblerski, dobiti ćemo kod programa koji će izgledati ovako:
+    ``` asm
+        sltz   $t1, $a0          # t1 = a0 < 0
+        li     $t2, 100          # t2 = 100
+        sgt    $t0, $a0, $t2     # t0 = a0 > 100
+        or     $t0, $t0, $t1     # t0 = t0 || t1
+        bnez   $t0, prvislucaj   # t0 ≠ 0
+        addi   $a0, $a0, 1       # a0 = a0 + 1 (a0++)
+        j      dalje
+    prvislucaj:
+        li     $a0, 1            # a0 = 1
+    dalje:
+        #...
+    ```
 
-``` asm
-    sltz   $t1, $a0          # t1 = a0 < 0
-    li     $t2, 100          # t2 = 100
-    sgt    $t0, $a0, $t2     # t0 = a0 > 100
-    or     $t0, $t0, $t1     # t0 = t0 || t1
-    bnez   $t0, prvislucaj   # t0 ≠ 0
-    addi   $a0, $a0, 1       # a0 = a0 + 1 (a0++)
-    j      dalje
-prvislucaj:
-    li     $a0, 1            # a0 = 1
-dalje:
-    #...
-```
+    U ovome primjeru, instrukcija `sltz` (engl. _**s**et if **l**ess **t**han **z**ero_) provjerava je li sadržaj registra `$a0` manji od nule i rezultat pohranjuje u registar `$t1`. Sljedeća instrukcija `li` postavlja vrijednost 100 u registar `$t2`.
 
-U ovome primjeru, instrukcija `sltz` (engl. _**s**et if **l**ess **t**han **z**ero_) provjerava je li sadržaj registra `$a0` manji od nule i rezultat pohranjuje u registar `$t1`. Sljedeća instrukcija `li` postavlja vrijednost 100 u registar `$t2`.
+    Instrukcija `sgt` (engl. _**s**et if **g**reater **t**hen_) uspoređuje sadržaj registra `$a0` s vrijednošću u registru `$t2`. Ako je sadržaj registra `$a0` veći od vrijednosti u registru `$t2`, rezultat će biti 1, inače je 0. Rezultat usporedbe pohranjuje u registar `$t0`.
 
-Instrukcija `sgt` (engl. _**s**et if **g**reater **t**hen_) uspoređuje sadržaj registra `$a0` s vrijednošću u registru `$t2`. Ako je sadržaj registra `$a0` veći od vrijednosti u registru `$t2`, rezultat će biti 1, inače je 0. Rezultat usporedbe pohranjuje u registar `$t0`.
+    Sljedeća instrukcija `or` izvodi logičku operaciju ILI (engl. *OR*) između sadržaja registara `$t0` i `$t1`. Rezultat te operacije pohranjuje se natrag u registar `$t0`. Time se postiže da je vrijednost registra `$t0` različita od 0 samo ako je jedan od uvjeta (`$a0 < 0` ili `$a0 > 100`) ispunjen.
 
-Sljedeća instrukcija `or` izvodi logičku operaciju ILI (engl. *OR*) između sadržaja registara `$t0` i `$t1`. Rezultat te operacije pohranjuje se natrag u registar `$t0`. Time se postiže da je vrijednost registra `$t0` različita od 0 samo ako je jedan od uvjeta (`$a0 < 0` ili `$a0 > 100`) ispunjen.
+    Instrukcija `bnez` (engl. _**b**ranch if **n**ot **e**qual to **z**ero_) provjerava sadržaj registra `$t0` ako je različit od nule. U slučaju kada je `$t0` različit od nule, skočit će na oznaku `prvislucaj` i spremiti 1 u registar `$a0`.
 
-Instrukcija `bnez` (engl. _**b**ranch if **n**ot **e**qual to **z**ero_) provjerava sadržaj registra `$t0` ako je različit od nule. U slučaju kada je `$t0` različit od nule, skočit će na oznaku `prvislucaj` i spremiti 1 u registar `$a0`.
-
-U drugom slučaju, kada je `$t0` jednak nuli, izvršava se instrukcija `addi` koja pridodaje 1 vrijednosti u registru `$a0`. To znači da se vrijednost u registru `$a0` povećala za 1. Nakon toga, instrukcija bezuvjetnog grananja `j` izvodi skok na oznaku `dalje` i time se izvršavanje nastavlja od prve sljedeće naredbe koja se nalazi nakon oznake.
+    U drugom slučaju, kada je `$t0` jednak nuli, izvršava se instrukcija `addi` koja pridodaje 1 vrijednosti u registru `$a0`. To znači da se vrijednost u registru `$a0` povećala za 1. Nakon toga, instrukcija bezuvjetnog grananja `j` izvodi skok na oznaku `dalje` i time se izvršavanje nastavlja od prve sljedeće naredbe koja se nalazi nakon oznake.
 
 !!! example "Zadatak"
     Sljedeći isječak koda u jeziku C++ pretvori u MIPS asemblerski jezik. Pretpostavi da su varijable `a0` i `a1` u istoimenim registrima.
@@ -358,27 +356,26 @@ Najjednostavniji slučaj je petlja *do-while*, gdje uvjet petlje odgovara uvjetu
     do {
         cin >> a0;
     } while (a0 < 0)
-        
+
     cout >> a0;
     ```
 
-**Rješenje:**
+??? success "Rješenje"
+    Program traži od korisnika unos broja, sve dok je taj broj manji od 0. Započnimo postavljanjem broja 5 u registar `$v0` kako bismo odabrali odgovarajući sistemski poziv za unos broja. Nakon toga, premjestimo vrijednost iz registra `$v0`, koju je korisnik unio, u registar `$a0` kako bismo je spremili za daljnje korištenje, odnosno ispis.
 
-Program traži od korisnika unos broja, sve dok je taj broj manji od 0. Započnimo postavljanjem broja 5 u registar `$v0` kako bismo odabrali odgovarajući sistemski poziv za unos broja. Nakon toga, premjestimo vrijednost iz registra `$v0`, koju je korisnik unio, u registar `$a0` kako bismo je spremili za daljnje korištenje, odnosno ispis.
+    ``` asm
+    pocetak:
+        li     $v0, 5        # unos broja
+        syscall
+        move   $a0, $v0      # a0 = v0
+        bltz   $a0, pocetak  # skoči na oznaku pocetak ako je $a0 < 0
+        li     $v0, 1        # ispis
+        syscall
+    ```
 
-``` asm
-pocetak:
-    li     $v0, 5        # unos broja
-    syscall
-    move   $a0, $v0      # a0 = v0
-    bltz   $a0, pocetak  # skoči na oznaku pocetak ako je $a0 < 0
-    li     $v0, 1        # ispis 
-    syscall
-```
+    Koristit ćemo instrukciju `bltz` (engl. _**b**ranch if **l**ess **t**han **z**ero_) kako bismo usporedili vrijednost u registru `$a0` s nulom, `$a0 < 0`. Ako je ta vrijednost manja od nule, skočit ćemo na oznaku `pocetak` kako bismo ponovno zatražili unos broja od korisnika.
 
-Koristit ćemo instrukciju `bltz` (engl. _**b**ranch if **l**ess **t**han **z**ero_) kako bismo usporedili vrijednost u registru `$a0` s nulom, `$a0 < 0`. Ako je ta vrijednost manja od nule, skočit ćemo na oznaku `pocetak` kako bismo ponovno zatražili unos broja od korisnika.
-
-U slučaju da uvjet nije zadovoljen, postavit ćemo broj 1 u registar `$v0` kako bismo odabrali odgovarajući sistemski poziv za ispis broja.
+    U slučaju da uvjet nije zadovoljen, postavit ćemo broj 1 u registar `$v0` kako bismo odabrali odgovarajući sistemski poziv za ispis broja.
 
 ### Petlja *while* u MIPS-u
 
@@ -395,41 +392,40 @@ U slučaju da uvjet nije zadovoljen, postavit ćemo broj 1 u registar `$v0` kako
     }
     ```
 
-**Rješenje:**
+??? success "Rješenje"
+    Ako je `a > 2` program se nastavlja od tijela petlje, inače skače na naredbu iza petlje:
 
-Ako je `a > 2` program se nastavlja od tijela petlje, inače skače na naredbu iza petlje:
+    ``` asm
+        li    $t0, 0
+        li    $v0, 5
+        syscall
+        move  $a0, $v0
+        li    $t1, 2
+    uvjet:
+        bgt   $a0, $t1, petlja
+        j     dalje
+    petlja:
+        addi  $t0, $t0, 1
+        sub   $a0, $a0, $t1
+        j     uvjet
+    dalje:
+    ```
 
-``` asm
-    li    $t0, 0
-    li    $v0, 5
-    syscall
-    move  $a0, $v0
-    li    $t1, 2
-uvjet:
-    bgt   $a0, $t1, petlja
-    j     dalje
-petlja:
-    addi  $t0, $t0, 1
-    sub   $a0, $a0, $t1
-    j     uvjet
-dalje:
-```
+    U drugom slučaju koristit ćemo okrenut uvjet. Kada je `a ≤ 2` preskačemo tijelo petlje:
 
-U drugom slučaju koristit ćemo okrenut uvjet. Kada je `a ≤ 2` preskačemo tijelo petlje:
-
-``` asm
-    li   $t0, 0
-    li   $v0, 5
-    syscall
-    move $a0, $v0
-    li   $t1, 2
-uvjet:
-    ble  $a0, $t1, dalje
-    addi $t0, $t0, 1
-    sub  $a0, $a0, $t1
-    j    uvjet
-dalje:
-```
+    ``` asm
+        li   $t0, 0
+        li   $v0, 5
+        syscall
+        move $a0, $v0
+        li   $t1, 2
+    uvjet:
+        ble  $a0, $t1, dalje
+        addi $t0, $t0, 1
+        sub  $a0, $a0, $t1
+        j    uvjet
+    dalje:
+    ```
 
 ### Petlja *for* u MIPS-u
 
@@ -442,98 +438,96 @@ for (int a0 = 1; a0 <= t0; a0++) {
 }
 ```
 
-**Rješenje:**
+??? success "Rješenje"
+    Petlja *for* je ekvivalentna petlji *while*, ako ju zapišemo na ovaj način:
 
-Petlja *for* je ekvivalentna petlji *while*, ako ju zapišemo na ovaj način:
+    ``` cpp
+    int a0 = 1;
+    while (a0 <= t0) {
+        t = t0*a0;
+        a0++;
+    }
+    ```
 
-``` cpp
-int a0 = 1;
-while (a0 <= t0) {
-    t = t0*a0;
-    a0++;
-}
-```
+    Stoga, rješenje možemo zapisati na ovaj način:
 
-Stoga, rješenje možemo zapisati na ovaj način:
-
-``` asm
-    li    $a0, 1
-uvjet:
-    bgt   $a0, $t0, dalje
-    mul   $t0, $t0, $a0
-    addi  $a0, $a0, 1
-    j     uvjet
-dalje:
-```
+    ``` asm
+        li    $a0, 1
+    uvjet:
+        bgt   $a0, $t0, dalje
+        mul   $t0, $t0, $a0
+        addi  $a0, $a0, 1
+        j     uvjet
+    dalje:
+    ```
 
 ### Složena petlja *for* u MIPS-u
 
 !!! example "Zadatak"
     Napiši program koji računa zbroj komponenti vektora $v$, $s = \sum_{i=0}^{n-1} v_i$.
 
-**Rješenje:**
+??? success "Rješenje"
+    Pretpostavimo da je varijabla `s` u registru `$s0`, `i` u registru `$t0`, `v` u registru`v0` i varjabla `n` u registru `$t1`.
 
-Pretpostavimo da je varijabla `s` u registru `$s0`, `i` u registru `$t0`, `v` u registru`v0` i varjabla `n` u registru `$t1`.
+    Varijabla `v` je pokazivač na polje, sadrži adresu prvog člana polja.
 
-Varijabla `v` je pokazivač na polje, sadrži adresu prvog člana polja.
+    ``` cpp
+    int s = 0;
+    for (int i = 0; i < n; i++) {
+        s = s + v[i];
+    }
+    ```
 
-``` cpp
-int s = 0;
-for (int i = 0; i < n; i++) {
-    s = s + v[i];
-}
-```
+    Prvo pretvorimo petlju *for* u petlju *while*:
 
-Prvo pretvorimo *for* petlju u *while* petlju:
+    ```cpp
+    int s = 0;
+    int i = 0;
+    while (i < n) {
+        s = s + v[i];
+        i++;
+    }
+    ```
 
-```cpp
-int s = 0;
-int i = 0;
-while (i < n) {
-    s = s + v[i];
-    i++;
-}
-```
+    Novost je da imamo unutar petlje operator uglatih zagrada `[ ]` za pristupanje elementima niza iz memorije na odgovarajućoj adresi. Za pristup određenom elementu niza, izračunavamo adresu elementa koristeći početnu adresu niza `v` i pomak od $\text{i} \cdot \text{sizeof(int)}$. Ovdje se $\text{sizeof(int)}$ koristi za određivanje veličine jednog elementa niza u bajtovima. Drugim riječima. ako imamo `v[3]`, to znači da želimo pristupiti četvrtom elementu niza `v`. Adresa tog elementa je $\text{v} + 3 \cdot \text{sizeof(int)}$.
 
-Novost je da imamo unutar petlje operator uglatih zagrada `[ ]` za pristupanje elementima niza iz memorije na odgovarajućoj adresi. Za pristup određenom elementu niza, izračunavamo adresu elementa koristeći početnu adresu niza `v` i pomak od $\text{i} \cdot \text{sizeof(int)}$. Ovdje se $\text{sizeof(int)}$ koristi za određivanje veličine jednog elementa niza u bajtovima. Drugim riječima. ako imamo `v[3]`, to znači da želimo pristupiti četvrtom elementu niza `v`. Adresa tog elementa je $\text{v} + 3 \cdot \text{sizeof(int)}$.
+    Nakon dohvaćanja vrijednosti elementa `v[i]`, dodajemo je trenutnoj vrijednosti varijable `s` kako bismo sumirali sve elemente niza. To se postiže izrazom `s = s + v[i]`. Nakon svake iteracije petlje, vrijednost `i` se povećava za 1, što omogućava prolazak kroz sve elemente niza. Na kraju izvođenja petlje, varijabla `s` će sadržavati zbroj svih elemenata niza.
 
-Nakon dohvaćanja vrijednosti elementa `v[i]`, dodajemo je trenutnoj vrijednosti varijable `s` kako bismo sumirali sve elemente niza. To se postiže izrazom `s = s + v[i]`. Nakon svake iteracije petlje, vrijednost `i` se povećava za 1, što omogućava prolazak kroz sve elemente niza. Na kraju izvođenja petlje, varijabla `s` će sadržavati zbroj svih elemenata niza.
+    Sada ćemo raspisat elemente polja kako bi nam lakše bilo pretvoriti u asmembler:
 
-Sada ćemo raspisat elemente polja kako bi nam lakše bilo pretvoriti u asmembler:
+    ```cpp
+    int s = 0;
+    int i = 0;
+    int *v1 = v;      // inicijalizacija pokazivača v1 na početak niza v
+    for (i < n) {
+        s = s + *v1;  // dodavanje vrijednosti koju pokazuje v1 na varijablu s
+        v1++;         // pomicanje pokazivača v1 na sljedeći element niza
+        i++;
+    }
+    ```
 
-```cpp
-int s = 0;
-int i = 0;
-int *v1 = v;      // inicijalizacija pokazivača v1 na početak niza v
-for (i < n) {
-    s = s + *v1;  // dodavanje vrijednosti koju pokazuje v1 na varijablu s
-    v1++;         // pomicanje pokazivača v1 na sljedeći element niza
-    i++;
-}
-```
+    Ono sto u C++ znači uvećavanje za 1, to u asmembleru, posebno u ovom kontekstu, znači uvećavanje za veličinu tipa podatka na kojeg pointer pokazuje. Ovdje imamo pokazivač na integer, a to znači da će adresa na koju pokazuje biti povećana za veličinu tipa podataka integer, što je u ovom slučaju 4 bajta.
 
-Ono sto u C++ znači uvećavanje za 1, to u asmembleru, posebno u ovom kontekstu, znači uvećavanje za veličinu tipa podatka na kojeg pointer pokazuje. Ovdje imamo pokazivač na integer, a to znači da će adresa na koju pokazuje biti povećana za veličinu tipa podataka integer, što je u ovom slučaju 4 bajta.
+    Prilikom uvećavanja pokazivača, asembler neće automatski voditi računa o veličini podataka, već je na programeru da osigura pravilno uvećanje adrese za ispravan pristup elementima niza.
 
-Prilikom uvećavanja pokazivača, asembler neće automatski voditi računa o veličini podataka, već je na programeru da osigura pravilno uvećanje adrese za ispravan pristup elementima niza.
+    ```mips
+        li   $s0, 0          # int s = 0
+        li   $t0, 0          # int i = 0
+        move $v1, $v0        # v1 = v
+    uvjet:
+        bge  $t0, $t1, dalje
+        lw   $t3, 0($v1)     # tmp = *v1
+        add  $s0, $s0, $t3   # s = s + tmp
+        addi $v1, $v1, 4     # v1++ zbraja 4
+        addi $t0, $t0, 1     # i++
+        j    uvjet
+        dalje:
+    ```
 
-```mips
-    li   $s0, 0          # int s = 0
-    li   $t0, 0          # int i = 0
-    move $v1, $v0        # v1 = v
-uvjet:
-    bge  $t0, $t1, dalje
-    lw   $t3, 0($v1)     # tmp = *v1
-    add  $s0, $s0, $t3   # s = s + tmp
-    addi $v1, $v1, 4     # v1++ zbraja 4
-    addi $t0, $t0, 1     # i++
-    j    uvjet
-    dalje:
-```
+    Program koristi petlju za prolazak kroz sve komponente vektora `v`. Na početku se registri `$s0` i `$t0` inicijaliziraju na 0, što predstavlja početne vrijednosti za varijable `s` i `i`. Također, sadržaj registra `$v0` se prenosi u registar `$v1` kako bi se sačuvala adresa vektora `v`.
 
-Program koristi petlju za prolazak kroz sve komponente vektora `v`. Na početku se registri `$s0` i `$t0` inicijaliziraju na 0, što predstavlja početne vrijednosti za varijable `s` i `i`. Također, sadržaj registra `$v0` se prenosi u registar `$v1` kako bi se sačuvala adresa vektora `v`.
+    Unutar petlje se koristi instrukcija `bge` koja provjerava uvjet `i >= n`. Ako je uvjet ispunjen, program skoči na oznaku `dalje` i izlazi iz petlje. U suprotnom, izvršavaju se instrukcije unutar petlje.
 
-Unutar petlje se koristi instrukcija `bge` koja provjerava uvjet `i >= n`. Ako je uvjet ispunjen, program skoči na oznaku `dalje` i izlazi iz petlje. U suprotnom, izvršavaju se instrukcije unutar petlje.
+    Unutar petlje se koristi instrukcija `lw` (engl. *load word*) za učitavanje vrijednosti koju pokazuje registar `$v1` u registar `$t3`. Ta se vrijednost zatim dodaje na trenutni zbroj u registru `$s0` pomoću `add`. Adresa vektora `v` se povećava za 4 bajta, a brojač `i` za 1 pomoću instrukcije `addi`. Na kraju se skoči na oznaku `uvjet` kako bi se ponovo provjerio uvjet i izvršile instrukcije u petlji.
 
-Unutar petlje se koristi instrukcija `lw` (engl. *load word*) za učitavanje vrijednosti koju pokazuje registar `$v1` u registar `$t3`. Ta se vrijednost zatim dodaje na trenutni zbroj u registru `$s0` pomoću `add`. Adresa vektora `v` se povećava za 4 bajta, a brojač `i` za 1 pomoću instrukcije `addi`. Na kraju se skoči na oznaku `uvjet` kako bi se ponovo provjerio uvjet i izvršile instrukcije u petlji.
-
-Nakon završetka petlje, program nastavlja izvršavati instrukcije koje slijede nakon petlje, označene oznakom `dalje`.
+    Nakon završetka petlje, program nastavlja izvršavati instrukcije koje slijede nakon petlje, označene oznakom `dalje`.

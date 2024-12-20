@@ -36,5 +36,5 @@ Prosječna instalacija Linuxa na desktopu imat će od par stotina do dvije tisu�
 
 Nakon ponovnog pokretanja računala i izbacivanja instalacijskog medija, pokrenut će se GRUB na disku računala i ponuditi opciju pokretanja Debiana te eventualno memtest86+-a i Windowsa.
 
-!!! note
+!!! info
     Vrlo popularna distribucija Linuxa [Ubuntu](https://ubuntu.com/) je derivat Debiana, ali ne koristi isti softver za instalaciju operacijskog sustava. Više o instalaciji Ubuntua možete pronaći u službenim tutorialima za [Desktop](https://ubuntu.com/tutorials/install-ubuntu-desktop) (omogućuje i [isprobavanje prije instalacije](https://ubuntu.com/tutorials/try-ubuntu-before-you-install)) i [Server](https://ubuntu.com/tutorials/install-ubuntu-server).

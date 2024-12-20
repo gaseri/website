@@ -123,7 +123,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov, Anja Vrbanjac
 !!! example "Zadatak"
     Pronađite još jedan primjer ugrađene naredbe, vanjske naredbe, aliasa i funkcije ljuske.
 
-!!! tip "Dodatni zadatak"
+!!! bug "Dodatni zadatak"
     Proučite sintaksu i funkcionalnosti naredbe `alias`. Pronađite praktičnu primjenu ove naredbe.
 
 !!! quote "ToDo"

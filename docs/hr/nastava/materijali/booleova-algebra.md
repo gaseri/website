@@ -67,8 +67,9 @@ Disjunkcija je logička operacija koja djeluje na dvije ili više varijabli (izj
 | 1 | 0 | 1 |
 | 1 | 1 | 1 |
 
-!!! example "Zadatak"
-    1. Koji je osnovni element u Booleovoj algebri? Koje je temeljno svojstvo logičke izjave?
+!!! question "Pitanja za ponavljanje"
+    1. Koji je osnovni element u Booleovoj algebri?
+    2. Koje je temeljno svojstvo logičke izjave?
     3. Smatra li se izjavom u logičkoj algebri rečenica: *Rijeka je najljepši grad na svijetu!* Obrazloži.
     4. Opiši osnovne logičke operacije.
     5. Što se prikazuje tablicom istinitosti?
@@ -80,20 +81,19 @@ Složene logičke izraze dobit ćemo kombinacijom osnovnih logičkih operacija. 
 !!! example "Zadatak"
     Putem tablice istinitosti provjerimo za koje vrijednosti $A$, $B$ i $C$ je izraz $\overline{A + B} \cdot \overline{C}$ istinit.
 
-**Rješenje:**
+??? success "Rješenje"
+    | $A$ | $B$ | $C$ | ${A + B}$ | $\overline{A + B}$ | $\overline{C}$ | $\overline{A + B} \cdot \overline{C}$ |
+    | :-: | :-: | :-: | :-------: | :----------------: | :------------: | :-----------------------------------: |
+    | 0 | 0 | 0 | 0 | 1 | 1 | **1** |
+    | 0 | 0 | 1 | 0 | 1 | 0 | **0** |
+    | 0 | 1 | 0 | 1 | 0 | 1 | **0** |
+    | 0 | 1 | 1 | 1 | 0 | 0 | **0** |
+    | 1 | 0 | 0 | 1 | 0 | 1 | **0** |
+    | 1 | 0 | 1 | 1 | 0 | 0 | **0** |
+    | 1 | 1 | 0 | 1 | 0 | 1 | **0** |
+    | 1 | 1 | 1 | 1 | 0 | 0 | **0** |
 
-| $A$ | $B$ | $C$ | ${A + B}$ | $\overline{A + B}$ | $\overline{C}$ | $\overline{A + B} \cdot \overline{C}$ |
-| :-: | :-: | :-: | :-------: | :----------------: | :------------: | :-----------------------------------: |
-| 0 | 0 | 0 | 0 | 1 | 1 | **1** |
-| 0 | 0 | 1 | 0 | 1 | 0 | **0** |
-| 0 | 1 | 0 | 1 | 0 | 1 | **0** |
-| 0 | 1 | 1 | 1 | 0 | 0 | **0** |
-| 1 | 0 | 0 | 1 | 0 | 1 | **0** |
-| 1 | 0 | 1 | 1 | 0 | 0 | **0** |
-| 1 | 1 | 0 | 1 | 0 | 1 | **0** |
-| 1 | 1 | 1 | 1 | 0 | 0 | **0** |
-
-Iz tablice istinitosti vidimo da je izraz $\overline{A + B} \cdot \overline{C}$ istinit samo u slučaju kada su vrijednosti varijabli $A$, $B$ i $C$ jednake $0$.
+    Iz tablice istinitosti vidimo da je izraz $\overline{A + B} \cdot \overline{C}$ istinit samo u slučaju kada su vrijednosti varijabli $A$, $B$ i $C$ jednake $0$.
 
 !!! example "Zadatak"
     1. Napiši tablicu istinitosti za sljedeće logičke izraze: $A \cdot B + \overline{C} \cdot D$, $\overline{A \cdot B} + C$, $(A + B) + \overline{A} \cdot C$.
@@ -237,28 +237,28 @@ U ovoj ćemo dokumentaciji spomenuti 8 osnovnih teorema koji će nam biti dovolj
 !!! example "Zadatak"
     Dokažimo 2. teorem idempotencije.
 
-**Rješenje:**
-
-1. $A + A = A$
-2. $A \cdot 1 + A \cdot 1 = A$ (1. aksiom)
-3. $A \cdot (1 + 1) = A$ (4. aksiom)
-4. $A \cdot 1 = A$ (jer je $1 + 1 = 1$)
-5. $A = A$ (1. aksiom)
+??? success "Rješenje"
+    1. $A + A = A$
+    2. $A \cdot 1 + A \cdot 1 = A$ (1. aksiom)
+    3. $A \cdot (1 + 1) = A$ (4. aksiom)
+    4. $A \cdot 1 = A$ (jer je $1 + 1 = 1$)
+    5. $A = A$ (1. aksiom)
 
 !!! example "Zadatak"
     Dokažimo 6. teorem simplifikacije.
 
-**Rješenje:**
+??? success "Rješenje"
+    1. $A \cdot B + A \cdot \overline{B} = A$
+    2. $A \cdot (B + \overline{B}) = A$ (4. aksiom)
+    3. $A \cdot 1 = A$ (2. aksiom)
+    4. $A = A$ (1. aksiom)
 
-1. $A \cdot B + A \cdot \overline{B} = A$
-2. $A \cdot (B + \overline{B}) = A$ (4. aksiom)
-3. $A \cdot 1 = A$ (2. aksiom)
-4. $A = A$ (1. aksiom)
-
-!!! example "Zadatak"
+!!! question "Pitanja za ponavljanje"
     1. Za što su nam potrebni aksiomi i teoremi?
     2. Opiši princip dualnosti.
-    3. Dokaži de Morganov zakon.
+
+!!! example "Zadatak"
+    Dokaži de Morganov zakon.
 
 ## Minimizacija
 
@@ -267,23 +267,23 @@ Pojednostavljenje složenih izraza primjenom [Aksioma](#aksiomi) i [Teorema](#te
 !!! example "Zadatak"
     Minimizirajmo logički izraz iz poglavlja [Konjunktivna normalna forma](#konjunktivna-normalna-forma).
 
-**Rješenje:**
-
-1. $Y = (A + B) \cdot (\overline{A} + B)$
-2. $Y = (B + A) \cdot (B + \overline{A})$ (3. aksiom)
-3. $Y = B$ (6. teorem)
+??? success "Rješenje"
+    1. $Y = (A + B) \cdot (\overline{A} + B)$
+    2. $Y = (B + A) \cdot (B + \overline{A})$ (3. aksiom)
+    3. $Y = B$ (6. teorem)
 
 Ovaj zadatak se mogao riješiti i korištenjem aksioma budući da su teoremi zasnovani na njima, no korištenjem teorema u manje koraka dođemo do istog rješenja.
 
 !!! example "Zadatak"
-    Minimizirajmo logički izraz $(\overline{A} + B) + \overline{A}$ .
+    Minimizirajmo logički izraz $(\overline{A} + B) + \overline{A}$.
 
-**Rješenje:**
+??? success "Rješenje"
+    1. $(\overline{A} + B) + \overline{A}$
+    2. $(\overline{A} + \overline{A}) + B$ (4. teorem)
+    3. $\overline{A} + B$ (2. teorem)
 
-1. $(\overline{A} + B) + \overline{A}$
-2. $(\overline{A} + \overline{A}) + B$ (4. teorem)
-3. $\overline{A} + B$ (2. teorem)
+!!! question "Pitanja za ponavljanje"
+    1. Što je minimizacija?
 
 !!! example "Zadatak"
-    1. Što je minimizacija?
-    2. Minimiziraj sljedeći izraz: $\overline{A + B} \cdot (\overline{B} + A)$
+    Minimiziraj sljedeći izraz: $\overline{A + B} \cdot (\overline{B} + A)$.

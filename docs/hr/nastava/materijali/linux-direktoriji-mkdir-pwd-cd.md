@@ -107,7 +107,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
     - Otiđite do svog kućnog direktorija i od tamo pokušajte izbrisati direktorij `15102012`. Zašto ga ne možete izbrisati?
     - Uđite u direktorij `Kolokvij` i iz njega pokušajte izbrisati direktorij `DZ`. Možete li to učiniti? Zašto?
 
-!!! tip "Dodatni zadatak"
+!!! bug "Dodatni zadatak"
     - U svom kućnom direktoriju stvorite poddirektorij `trnoruzica`. Uđite u taj direktorij.
     - Stvorite direktorije `mikimaus` i `minimaus`.
     - Uđite u direktorij `mikimaus`.

@@ -13,7 +13,7 @@ tags:
 
 # Free to know: Open access and open source
 
-!!! note
+!!! info
     Reposted from [Free to Know: Open access & open source](https://medium.com/@stemi.education/free-to-know-open-access-open-source-6474a4c7421a), originally posted by [STEMI education on Medium](https://medium.com/@stemi.education).
 
 ## Q&A with Vedran Miletić

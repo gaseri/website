@@ -82,7 +82,7 @@ author: Vanja Slavuj, Vedran Miletić
 !!! example "Zadatak"
     Proširite kod primjera tako da ignorira SIGCONT, a da nakon primanja SIGINT-a ispiše `Primljen SIGINT, nastavljam izvođenje`. Uvjerite se da se zaista program ne može zaustaviti kombinacijom tipki ++control+c++ (`^C`) koja šalje SIGINT.
 
-!!! tip "Dodatni zadatak"
+!!! bug "Dodatni zadatak"
     Napišite program koji hvata signal SIGKILL, čeka na pristizanje signala, te po pristizanju signala KILL na zaslon ispisuje poruku o identifikatoru signala i završava izvođenje. Uočite što se događa i pokušajte objasniti zbog čega.
 
 - modul `signal` nudi funkcije za rad s upravljačem, među kojima su i:
@@ -113,5 +113,5 @@ author: Vanja Slavuj, Vedran Miletić
 !!! example "Zadatak"
     Izmijenite programski kod rješenja prethodnog zadatka na sljedeći način: ako korisnik ne pošalje signal unutar 15 sekundi, programu se automatski šalje alarm; po aktivaciji alarma, program na zaslon ispusuje trenutno vrijeme i poruku o neaktivnosti te završava izvođenje.
 
-!!! tip "Dodatni zadatak"
+!!! bug "Dodatni zadatak"
     Napiši program koji nakon pokretanja na zaslon ispisuje poruku `Proces-roditelj započinje`, stvara proces-dijete i čeka na njegov dovršetak. Proces-dijete započinje izvođenje uz odgovarajući poruku i PID na zaslonu te nudi korisniku unos opcije `A` za zaustavljanje njegova izvođenja (signal `TSTP`) ili `B` za završavanje izvođenja (signal `TERM`) uz zapis stoga u datoteku `backup_stog.txt`. U slučaju zaustavljanja procesa-djeteta, postavlja se alarm od 15 sekundi (koji se pokreće jednom kada se iz drugog terminala signalom nastavi njegovo izvođenje), a proces-dijete osluškuje signale. Kada alarm stigne, program radi isto što i opcijom `B` ranijeg izbornika. Kada proces-dijete završi svoje izvođenje, proces roditelj završava izvođenje (uz odgovarajuću poruku).

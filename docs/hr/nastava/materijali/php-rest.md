@@ -86,7 +86,7 @@ Korištenjem HTTP metoda i URI-ja možemo izvesti sve četiri navedene radnje na
 
 REST ne definira način pohrane podataka i prepušta to implementaciji. Podaci mogu biti pohranjeni u relacijskoj bazi, nerelacijskoj bazi ili datoteci, a mi ćemo ih pohranjivati u datoteci radi jednostavnosti.
 
-!!! note
+!!! info
     Implementacija koju koristimo u nastavku ne koristi gotove komponente (npr. [Symfony](https://symfony.com/)) i okvire (npr. [Lumen](https://lumen.laravel.com/)) jer je naš cilj ovdje razumijeti kako radi HTTP i kako implementirati REST, a ne razviti veliku praktično primjenjivu aplikaciju koju je kasnije potrebno održavati i proširivati. Primjer sličnog pristupa tumačenju pojmova u domeni weba je [Shopifyjev](https://www.shopify.com/) članak [How to Build a Web App with and without Rails Libraries](https://shopify.engineering/building-web-app-ruby-rails) u okviru kojeg je dan prikaz implementacije aplikacije u [jeziku Ruby](https://www.ruby-lang.org/) bez korištenja [okvira Rails](https://rubyonrails.org/).
 
 ## Čitanje podataka
@@ -126,7 +126,7 @@ Mi, naravno, ne možemo biti sigurni da će ta datoteka uvijek postojati pa ćem
 
 Ako datoteka ne postoji, popis osoba mogli bismo inicijalizirati na prazno polje. U tom slučaju bi prva osoba koju kasnije dodamo bila postavljena u polje kao element na indeksu 0 i imala isti taj broj kao identifikator za dohvaćanje putem URL-a. Kako ljudi intuitivno preferiraju brojati od 1, dodat ćemo u to polje proizvoljni element da zauzme indeks 0 pa će prva kasnije dodana osoba biti postavljena na indeks 1. Kako element na indeksu 0 nećemo koristiti, njegov nam sadržaj nije bitan pa možemo iskoristiti vrijednost `NULL`.
 
-!!! note
+!!! tip
     Uočimo da prazno polje, vrijednost `NULL` i polje koje sadrži vrijednost `NULL` nisu iste vrijednosti: prvo je polje bez elemenata, drugo nije polje, a treće je polje s jednim elementom; tip tog elementa ne mijenja činjenicu da polje ima element.
 
 Kod u datoteci `index.php` je oblika:

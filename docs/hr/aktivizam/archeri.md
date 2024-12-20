@@ -4,7 +4,7 @@ author: Vedran Miletić
 
 # Archeri
 
-!!! note
+!!! info
     Zbog svojeg lokalnog karaktera, naša je skupina navedena kao ["neslužbena" hrvatska zajednica korisnika Arch Linuxa](https://wiki.archlinux.org/title/International_communities#Croatian). Otvoreni smo za primanje novih članova i eventualno formiranje "službene" hrvatske zajednice, naravno, ako se pokaže da za time postoji interes.
 
 ## Motivacija

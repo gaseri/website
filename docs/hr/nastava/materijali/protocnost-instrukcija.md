@@ -120,10 +120,9 @@ $$
     1. Koliko je trajanje periode za protočnu verziju istog procesora s 5 protočnih segmenata?
     2. Koliko bi bilo da je procesor podjeljen na 50 protočnih segmenata?
 
-**Rješenje:**
-
-1. Za 5 protočnih segmenata: $TP = \frac{25\text{ ns}}{5} + 1\text{ ns} = 6\text{ ns}$
-2. Za 50 protočnih segmenata: $TP = \frac{25\text{ ns}}{50} + 1\text{ ns} = 1,5\text{ ns}$
+??? success "Rješenje"
+    1. Za 5 protočnih segmenata: $TP = \frac{25\text{ ns}}{5} + 1\text{ ns} = 6\text{ ns}$
+    2. Za 50 protočnih segmenata: $TP = \frac{25\text{ ns}}{50} + 1\text{ ns} = 1,5\text{ ns}$
 
 !!! example "Zadatak"
     Usporedi i prokomentiraj dobivene rezultate. Povećavaju li se performanse linearno s povećanjem broja protočnih segmenata?
@@ -133,9 +132,8 @@ Ako se vrijeme obrade u protočnim segmentima ne može jednoliko rasporediti, tr
 !!! example "Zadatak"
     Neki procesor bez protočne strukture i trajanja periode 25 ns podjeljen je na protočne segmente s vremenima obrade 5, 7, 3, 6 i 4 ns. Ako je latencija registra protočnog segmenta 1 ns, koliko je trajanje periode novog procesora?
 
-**Rješenje:**
-
-Najduži protočni segment ima vrijeme obrade 7 ns. Uz latenciju registra od 1 ns ukupno trajanje periode stoga je 8 ns.
+??? success "Rješenje"
+    Najduži protočni segment ima vrijeme obrade 7 ns. Uz latenciju registra od 1 ns ukupno trajanje periode stoga je 8 ns.
 
 ## Latencija protočne strukture
 
@@ -146,9 +144,8 @@ $$L = n_{PS} \cdot T$$
 !!! example "Zadatak"
     Kolika je latencija protočne strukture iz primjera 1 i 2?
 
-**Rješenje:**
-
-Trajanje periode za procesor s 5 protočnih segmenata je 6 ns, a za 50 protočnih segmenata 1,5 ns. Vrijeme latencije u prvom slučaju je tada 30 ns, a u drugom 75 ns.
+??? success "Rješenje"
+    Trajanje periode za procesor s 5 protočnih segmenata je 6 ns, a za 50 protočnih segmenata 1,5 ns. Vrijeme latencije u prvom slučaju je tada 30 ns, a u drugom 75 ns.
 
 U drugom primjeru trajanje periode je 8 ns s 5 protočnih segmenata pa je latencija 40 ns.
 
@@ -234,11 +231,10 @@ U slučaju kada imamo mjehuriće u protočnoj strukturi možemo crtati dijagram 
     or $r10, $r11, $r4
     ```
 
-**Rješenje:**
+??? success "Rješenje"
+    U našem primjeru vrijeme latencije protočne strukture je 5 perioda s obzirom da imamo 5 protočnih segmenata. Sada moramo izračunati vrijeme izdavanja svih ovih naredbi. Možemo pretpostaviti da je vrijeme izdavanja prve instrukcije neki trenutak $n$. Stoga je vrijeme izdavanja sljedeće instrukcije $n+1$ budući da nemamo hazarde vezane uz prvu instrukciju. Međutim instukcija `mul` ovisi o rezultatu instrukcije `add`. Sada mora isteći vrijeme latencije instrukcije `add` prije nego se može izdati naredba `mul`. U primjeru procesora kakvog promatramo nareba se može izdati 3 periode nakon naredbe o kojoj ovisi (ako se radi o instrukciji koja nije grananje). Prema tome, naredba `mul` se može izdati u $n+3$. `srl` ovisi o `add`, ali čeka na `mul` pa se izdaje u $n+4$. `or` ovisi o `sub` i najranije se može izdati 3 periode kasnije od trenutka kad je izdana naredba `sub`, a to bi onda bilo u $n+4$. Dakle, u tom trenutku `or` više ne ovidi o prethodnim pa se izdaje u $n+5$.
 
-U našem primjeru vrijeme latencije protočne strukture je 5 perioda s obzirom da imamo 5 protočnih segmenata. Sada moramo izračunati vrijeme izdavanja svih ovih naredbi. Možemo pretpostaviti da je vrijeme izdavanja prve instrukcije neki trenutak $n$. Stoga je vrijeme izdavanja sljedeće instrukcije $n+1$ budući da nemamo hazarde vezane uz prvu instrukciju. Međutim instukcija `mul` ovisi o rezultatu instrukcije `add`. Sada mora isteći vrijeme latencije instrukcije `add` prije nego se može izdati naredba `mul`. U primjeru procesora kakvog promatramo nareba se može izdati 3 periode nakon naredbe o kojoj ovisi (ako se radi o instrukciji koja nije grananje). Prema tome, naredba `mul` se može izdati u $n+3$. `srl` ovisi o `add`, ali čeka na `mul` pa se izdaje u $n+4$. `or` ovisi o `sub` i najranije se može izdati 3 periode kasnije od trenutka kad je izdana naredba `sub`, a to bi onda bilo u $n+4$. Dakle, u tom trenutku `or` više ne ovidi o prethodnim pa se izdaje u $n+5$.
-
-Ukupno vrijeme izdavanja je sada 6 perioda, a latencija ove protočne strukture je 5 pa je ukupno vrijeme izvođenja programa 6 + 5 - 1 = 10 perioda.
+    Ukupno vrijeme izdavanja je sada 6 perioda, a latencija ove protočne strukture je 5 pa je ukupno vrijeme izvođenja programa 6 + 5 - 1 = 10 perioda.
 
 !!! example "Zadatak"
     Koliko je vrijeme izvođenja sljedećeg programa (u periodama), na procesoru sa 7 protočnih segmenata i latencijom instrukcija grananja 5 perioda, a ostalih instrukcija 2 periode? Pretpostavi da uvjet grananja nije ispunjen.
@@ -251,11 +247,10 @@ Ukupno vrijeme izdavanja je sada 6 perioda, a latencija ove protočne strukture 
     mul $r10, $r5, $r8
     ```
 
-**Rješenje:**
+??? success "Rješenje"
+    Kao i u prethodnom primjeru, pretpostavimo da se prva instrukcija `bne` zadaje u trenutku $n$. Instrukcija `div` će se izdati tek nakon što istekne latencija instrukcije grananja pa će se izdati u trenutku $n+5$. `add` ne ovisi o rezultatu `div` pa se može izdati u prvoj sljedećoj periodi u trenutku $n+6$. `sub` ovisi o `div` pa se ne može izdati prije $n+7$. `mul` ovisi i o `sub` i o `add` pa se izdaje u trenutku $n+9$.
 
-Kao i u prethodnom primjeru, pretpostavimo da se prva instrukcija `bne` zadaje u trenutku $n$. Instrukcija `div` će se izdati tek nakon što istekne latencija instrukcije grananja pa će se izdati u trenutku $n+5$. `add` ne ovisi o rezultatu `div` pa se može izdati u prvoj sljedećoj periodi u trenutku $n+6$. `sub` ovisi o `div` pa se ne može izdati prije $n+7$. `mul` ovisi i o `sub` i o `add` pa se izdaje u trenutku $n+9$.
-
-Ukupno vrijeme izdavanja je 10 perioda pa je ukupno vrijeme izvođenja programa 7 + 10 - 1 = 16 perioda.
+    Ukupno vrijeme izdavanja je 10 perioda pa je ukupno vrijeme izvođenja programa 7 + 10 - 1 = 16 perioda.
 
 !!! example "Zadatak"
     Nacrtajte dijagram protočne strukture za sljedeći isječak programa:
@@ -267,15 +262,14 @@ Ukupno vrijeme izdavanja je 10 perioda pa je ukupno vrijeme izvođenja programa 
     div $r12, $r13, $r14
     ```
 
-**Rješenje:**
-
-|   | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
-| - | - | - | - | - | - | - | - | - |
-| IF | add | sub | mul | div | | | | |
-| ID | | add | sub | mul | div | | | |
-| RR | | | add | sub | mul | div | | |
-| EX | | | | add | sub | mul | div | |
-| WB | | | | | add | sub | mul | div |
+??? success "Rješenje"
+    |   | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+    | - | - | - | - | - | - | - | - | - |
+    | IF | add | sub | mul | div | | | | |
+    | ID | | add | sub | mul | div | | | |
+    | RR | | | add | sub | mul | div | | |
+    | EX | | | | add | sub | mul | div | |
+    | WB | | | | | add | sub | mul | div |
 
 !!! example "Zadatak"
     Nacrtajte dijagram protočne strukture s 5 segmenata iz prethodnih primjera za sljedeći isječak programa:
@@ -287,15 +281,14 @@ Ukupno vrijeme izdavanja je 10 perioda pa je ukupno vrijeme izvođenja programa 
     div $r12, $r13, $r14
     ```
 
-**Rješenje:**
-
-|   | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
-| - | - | - | - | - | - | - | - | - | - |
-| IF | add | sub | mul | div | | | | | |
-| ID | | add | sub | mul | div | div | div | | |
-| RR | | | add | sub | mul | mul | mul | div | |
-| EX | | | | add | sub | n | n | mul | div |
-| WB | | | | | add | sub | n | n | mul |
+??? success "Rješenje"
+    |   | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+    | - | - | - | - | - | - | - | - | - | - |
+    | IF | add | sub | mul | div | | | | | |
+    | ID | | add | sub | mul | div | div | div | | |
+    | RR | | | add | sub | mul | mul | mul | div | |
+    | EX | | | | add | sub | n | n | mul | div |
+    | WB | | | | | add | sub | n | n | mul |
 
 !!! example "Zadatak"
     Nacrtajte dijagram protočne strukture za sljedeći isječak programa. Pretpostavite da uvijet granjanja nije ispunjen.
@@ -317,14 +310,13 @@ Ukupno vrijeme izdavanja je 10 perioda pa je ukupno vrijeme izvođenja programa 
     mul $r12, $r13, $r14
     ```
 
-**Rješenje:**
+??? success "Rješenje"
+    `add` - n  
+    `beq` - n + 3  
+    `sub` - n + 7  
+    `mul` - n + 8
 
-add - n  
-beq - n + 3  
-sub - n + 7  
-mul - n + 8
-
-Ukupno vrijeme izdavanja je 9 perioda, latencija ove protočne strukture je 5 pa je ukupno vrijeme izvođenja programa 9 + 5 - 1 = 13 perioda, odnosno 13 $\cdot$ 2 ns = 26 ns.
+    Ukupno vrijeme izdavanja je 9 perioda, latencija ove protočne strukture je 5 pa je ukupno vrijeme izvođenja programa 9 + 5 - 1 = 13 perioda, odnosno 13 $\cdot$ 2 ns = 26 ns.
 
 !!! example "Zadatak"
     Odredite vrijeme izvođenja sljedećeg programskog odsječka na procesoru s 5 protočnih segmenata. Može li se smanjiti vrijeme izvođenja tog segmenta promjenom redosljeda izvršavanja instrukcija, a da se rezultat ne promjeni? Ako da, napišite preoblikovani niz instrukcija i izračunajte vrijeme izvođenja.
@@ -336,27 +328,26 @@ Ukupno vrijeme izdavanja je 9 perioda, latencija ove protočne strukture je 5 pa
     srl $r4, $r8, $r12
     ```
 
-**Rješenje:**
+??? success "Rješenje"
+    `add` - n  
+    `sub` - n + 3  
+    `mul` - n + 4  
+    `srl` - n + 7
 
-add - n  
-sub - n + 3  
-mul - n + 4  
-srl - n + 7
+    Ukupno vrijeme izdavanja je 8 perioda, latencija je 5 pa je ukupno vrijeme izvođenja programa 8 + 5 - 1 = 12 perioda.
 
-Ukupno vrijeme izdavanja je 8 perioda, latencija je 5 pa je ukupno vrijeme izvođenja programa 8 + 5 - 1 = 12 perioda.
+    Nakon izmjene redosljeda instrukcija:
 
-Nakon izmjene redosljeda instrukcija:
+    ``` asm
+    add $r3, $r4, $r5w
+    mul $r8, $r9, $r10
+    sub $r7, $r3, $r9
+    srl $r4, $r8, $r12
+    ```
 
-``` asm
-add $r3, $r4, $r5w
-mul $r8, $r9, $r10
-sub $r7, $r3, $r9
-srl $r4, $r8, $r12
-```
+    `add` - n  
+    `mul` - n + 1  
+    `sub` - n + 3  
+    `srl` - n + 4
 
-add - n  
-mul - n + 1  
-sub - n + 3  
-srl - n + 4
-
-Ukupno vrijeme izdavanja je 5 perioda, latencija je 5 pa je ukupno vrijeme izvođenja programa 5 + 5 - 1 = 9 perioda.
+    Ukupno vrijeme izdavanja je 5 perioda, latencija je 5 pa je ukupno vrijeme izvođenja programa 5 + 5 - 1 = 9 perioda.

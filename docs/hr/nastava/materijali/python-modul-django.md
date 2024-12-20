@@ -228,24 +228,26 @@ Ovime stvaramo novu tablicu u bazi podataka a zadana polja postaju stupci u toj 
 !!! example "Zadatak"
     Otvorite `main/models.py` i definirajte klasu imena Predmet. U klasi definirajte stupce naziva:`predmet_naslov`, `predmet_sadrzaj` i `predmet_vrijeme_objave`. Njihovi tipovi neka budu `CharField()` koji ima zadan parametar `max_length` na `100`, `TextField()` i `DateTimeField()` koji ima naziv postavljen na `'date published'`.
 
-**Rješenje zadataka.** U datoteku `main/models.py` dodajemo:
+??? success "Rješenje"
+    U datoteku `main/models.py` dodajemo:
 
-``` python
-class Predmet(models.Model):
-    predmet_naslov = models.CharField(max_length=100)
-    predmet_sadrzaj = models.TextField()
-    predmet_vrijeme_objave = models.DateTimeField('date published')
-```
+    ``` python
+    class Predmet(models.Model):
+        predmet_naslov = models.CharField(max_length=100)
+        predmet_sadrzaj = models.TextField()
+        predmet_vrijeme_objave = models.DateTimeField('date published')
+    ```
 
 !!! example "Zadatak"
     Definirajte funkciju `__str__()` unutar klase `Predmet` koja vraća naziv predmeta `predmet_naziv`.
 
-**Rješenje zadataka.** U datoteku `main/models.py` unutar klase `Predmet` dodajemo:
+??? success "Rješenje"
+    U datoteku `main/models.py` unutar klase `Predmet` dodajemo:
 
-``` python
-def __str__(self):
-    return self.predmet_naslov
-```
+    ``` python
+    def __str__(self):
+        return self.predmet_naslov
+    ```
 
 Službena [Django dokumentacija](https://docs.djangoproject.com/en/3.2/ref/models/fields/) o svim poljima unutar modela.
 
@@ -415,89 +417,90 @@ Na prethodnim vježbama stvorili smo model koji sadržava klasu Predmet, dodajmo
     - Model iz Vježbi2 `main/models.py` nadopunite tako da stvorite novu klasu `Student`. Klasa student sadrži stupce naziva `student_ime`, `student_prezime`, `student_broj_xice` i `student_prvi_upis_predmeta`. Tipovi podataka neka budu `CharField()` za `student_ime` sa `max_length` na `25`, `student_prezime` sa `max_length` na `50`. Vrijednost `student_broj_xice` postavite na `CharField()` za `student_ime` sa `max_length` na `10`.
     - Dodajte vrijednost `student_predmeti` koja će biti povezan s klasom `Predmet`, tip veze neka bude `ManyToMany`. Unutar klase `Predmet` izmijenite vrijednost `predmet_vrijeme_objave` tako da joj postavite zadanu vrijednost na `timezone.now`. Nakon kreirane klase pokrenite naredbe `makemigrations` i `migrate`.
 
-**Rješenje zadatka.** Uredit ćemo datoteku `main/models.py` tako da bude oblika:
+??? success "Rješenje"
+    Uredit ćemo datoteku `main/models.py` tako da bude oblika:
 
-``` python
-from django.db import models
-from django.utils import timezone
-
-
-class Predmet(models.Model):
-    predmet_naslov = models.CharField(max_length=100)
-    predmet_sadrzaj = models.TextField()
-    predmet_vrijeme_objave = models.DateTimeField(default=timezone.now)
-
-    def __str__(self):
-        return self.predmet_naslov
+    ``` python
+    from django.db import models
+    from django.utils import timezone
 
 
-class Student(models.Model):
-    student_ime = models.CharField(max_length=25)
-    student_prezime = models.CharField(max_length=50)
-    student_broj_xice = models.CharField(max_length=10)
-    student_predmeti = models.ManyToManyField(Predmet)
-```
+    class Predmet(models.Model):
+        predmet_naslov = models.CharField(max_length=100)
+        predmet_sadrzaj = models.TextField()
+        predmet_vrijeme_objave = models.DateTimeField(default=timezone.now)
+
+        def __str__(self):
+            return self.predmet_naslov
+
+
+    class Student(models.Model):
+        student_ime = models.CharField(max_length=25)
+        student_prezime = models.CharField(max_length=50)
+        student_broj_xice = models.CharField(max_length=10)
+        student_predmeti = models.ManyToManyField(Predmet)
+    ```
 
 !!! example "Zadatak"
     Definirajte funkciju `__str__()` unutar klase Student koja vraća `student_broj_xice`. Zatim dodajte klasu `Student` unutar `main/admin.py` tako da ona postane vidljiva u admin panelu.
 
-**Rješenje zadatka.** U datoteci `main/models.py` unutar klase `Student` dodajemo:
+??? success "Rješenje"
+    U datoteci `main/models.py` unutar klase `Student` dodajemo:
 
-``` python
-def __str__(self):
-    return self.student_broj_xice
-```
+    ``` python
+    def __str__(self):
+        return self.student_broj_xice
+    ```
 
-U datoteci `main/admin.py`:
+    U datoteci `main/admin.py`:
 
-``` python
-from django.contrib import admin
-from .models import *
+    ``` python
+    from django.contrib import admin
+    from .models import *
 
-model_list = [Predmet, Student]
-admin.site.register(model_list)
-```
+    model_list = [Predmet, Student]
+    admin.site.register(model_list)
+    ```
 
-Nakon što ste nadopunili `main/models.py` primjenite pripremu i nakon toga migraciju s naredbama `makemigrations` i `migrate`. Provjerite radi li vam sve tako da posjetite `http://127.0.0.1:8000/admin/`.
+    Nakon što ste nadopunili `main/models.py` primjenite pripremu i nakon toga migraciju s naredbama `makemigrations` i `migrate`. Provjerite radi li vam sve tako da posjetite `http://127.0.0.1:8000/admin/`.
 
 #### Many-to-one
 
 !!! example "Zadatak"
-    Definirajte klasu `Profesor` koja sadrži vrijednosti, `prof_ime` i `prof_prezime` koji su `CharField` duljine 30, zatim definirajte `prof_email` koji je tipa `EmailField`.
+    - Definirajte klasu `Profesor` koja sadrži vrijednosti, `prof_ime` i `prof_prezime` koji su `CharField` duljine 30, zatim definirajte `prof_email` koji je tipa `EmailField`.
+    - Unutar klase zadajte funkciju `__str__()` koja vraća email adresu od profesora.
+    - Nakon kreirane klase pokrenite naredbe `makemigrations` i `migrate`.
 
-Unutar klase zadajte funkciju `__str__()` koja vraća email adresu od profesora.
+??? success "Rješenje"
+    U datoteci `main/models.py`:
 
-Nakon kreirane klase pokrenite naredbe `makemigrations` i `migrate`.
+    ``` python
+    class Profesor(models.Model):
+        prof_ime = models.CharField(max_length=30)
+        prof_prezime = models.CharField(max_length=30)
+        prof_email = models.EmailField()
 
-**Rješenje zadatka.** U datoteci `main/models.py`:
-
-``` python
-class Profesor(models.Model):
-    prof_ime = models.CharField(max_length=30)
-    prof_prezime = models.CharField(max_length=30)
-    prof_email = models.EmailField()
-
-    def __str__(self):
-        return self.prof_email
-```
+        def __str__(self):
+            return self.prof_email
+    ```
 
 !!! example "Zadatak"
-    Izmijenite klasu `Predmet` tako da joj dodate nositelja, vrijednost `nositelj` neka bude tip veze One to many. Za definiranje veze koristite `ForeignKey`.
+    - Izmijenite klasu `Predmet` tako da joj dodate nositelja, vrijednost `nositelj` neka bude tip veze One to many. Za definiranje veze koristite `ForeignKey`.
+    - Nakon kreirane klase pokrenite naredbe `makemigrations` i `migrate`.
 
-Nakon kreirane klase pokrenite naredbe `makemigrations` i `migrate`.
+??? success "Rješenje"
+    U datoteci `main/models.py`:
 
-**Rješenje zadatka.** U datoteci `main/models.py`:
+    ``` python
+    class Predmet(models.Model):
+        predmet_naslov = models.CharField(max_length=100)
+        predmet_sadrzaj = models.TextField()
+        predmet_vrijeme_objave = models.DateTimeField(default=timezone.now)
+        predmet_nositelj = models.ForeignKey(Profesor, on_delete=models.CASCADE)
 
-``` python
-class Predmet(models.Model):
-    predmet_naslov = models.CharField(max_length=100)
-    predmet_sadrzaj = models.TextField()
-    predmet_vrijeme_objave = models.DateTimeField(default=timezone.now)
-    predmet_nositelj = models.ForeignKey(Profesor, on_delete=models.CASCADE)
-
-    def __str__(self):
-        return self.predmet_naslov
-```
+        def __str__(self):
+            return self.predmet_naslov
+    ```
 
 #### One-to-one
 
@@ -509,41 +512,43 @@ Student i Profesor povezat ćemo u klasi ZavrsniRad, na kojem radi student, dok 
     - Zatim dodajte vrijednosti `rad_naslov` i `rad_zadatak` koji su CharField duljine 25 i 50 i bool vrijednost `rad_prvi_upis` koja po defaultu ima vrijednost `True`.
     - Nakon kreirane klase pokrenite naredbe `makemigrations` i `migrate`.
 
-**Rješenje zadatka.** U datoteci `main/models.py`:
+??? success "Rješenje"
+    U datoteci `main/models.py`:
 
-``` python
-class ZavrsniRad(models.Model):
-    mentor = models.OneToOneField(
-        Profesor,
-        on_delete=models.CASCADE,
-    )
+    ``` python
+    class ZavrsniRad(models.Model):
+        mentor = models.OneToOneField(
+            Profesor,
+            on_delete=models.CASCADE,
+        )
 
-    student = models.OneToOneField(
-        Student,
-        on_delete=models.CASCADE,
-        primary_key=True,
-    )
+        student = models.OneToOneField(
+            Student,
+            on_delete=models.CASCADE,
+            primary_key=True,
+        )
 
-    rad_naslov = models.CharField(max_length=50)
-    rad_zadatak = models.CharField(max_length=50)
-    rad_prvi_upis = models.BooleanField(default=True)
-```
+        rad_naslov = models.CharField(max_length=50)
+        rad_zadatak = models.CharField(max_length=50)
+        rad_prvi_upis = models.BooleanField(default=True)
+    ```
 
 !!! example "Zadatak"
     Definirajte funkciju `__str__()` unutar klase `ZavrsniRad` koja vraća `student_broj_xice`. Zatim dodajte klasu `ZavrsniRad` unutar `main/admin.py` tako da ona postane vidljiva u admin panelu.
 
-**Rješenje zadatka.** Unutar klase `ZavrsniRad` u `main/models.py` dopunjavamo:
+??? success "Rješenje"
+    Unutar klase `ZavrsniRad` u `main/models.py` dopunjavamo:
 
-``` python
-def __str__(self):
-    return 'Završni rad studenta s brojem X-ice {}'.format(self.student.student_broj_xice)
-```
+    ``` python
+    def __str__(self):
+        return 'Završni rad studenta s brojem X-ice {}'.format(self.student.student_broj_xice)
+    ```
 
-U `main/admin.py` samo dopunjavamo `model_list` na način:
+    U `main/admin.py` samo dopunjavamo `model_list` na način:
 
-``` python
-model_list = [Predmet, Student, ZavrsniRad]
-```
+    ``` python
+    model_list = [Predmet, Student, ZavrsniRad]
+    ```
 
 Korištenje naredbe `./manage.py`:
 
@@ -707,17 +712,18 @@ Na ovim vježbama kreirati će se projekt naziva `vj4` unutar kojeg je stvorena 
 !!! example "Zadatak"
     Povežite kreiranu aplikaciju `main` s glavnim djelom aplikacije unutar `main/urls.py`.
 
-**Rješenje zadatka.** Datoteka `urls.py`:
+??? success "Rješenje"
+    Datoteka `urls.py`:
 
-``` python
-from django.contrib import admin
-from django.urls import path, include
+    ``` python
+    from django.contrib import admin
+    from django.urls import path, include
 
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('main/', include('main.urls')),
-]
-```
+    urlpatterns = [
+        path('admin/', admin.site.urls),
+        path('main/', include('main.urls')),
+    ]
+    ```
 
 !!! warning
     Potrebno je povezati novostvorenu aplikaciju `main` i unutar `setting.py`. Unutar`INSTALLED_APPS` potrebno je dodati `MainConfig` iz `apps.py` koja se nalazi unutar aplikacije `main`.
@@ -725,21 +731,22 @@ urlpatterns = [
 Program smo usmjerili na `main/urls.py` koji trenutno ne postoji. Iz toga razloga, potrebno ga je stvoriti.
 
 !!! example "Zadatak"
-    Stvorite datoteku `main/urls.py`. Odmah importajte sve iz datoteke `main/views.py` i neka ime aplikacije bude zadano na `app_name = 'main'`.
-    Zatim definirajte uzorak URL-a neka upućuje na `homepage`, odnosno na funkciju unutar `main/views.py` koja se zove `homepage`.
+    - Stvorite datoteku `main/urls.py`. Odmah importajte sve iz datoteke `main/views.py` i neka ime aplikacije bude zadano na `app_name = 'main'`.
+    - Zatim definirajte uzorak URL-a neka upućuje na `homepage`, odnosno na funkciju unutar `main/views.py` koja se zove `homepage`.
 
-**Rješenje zadatka.** Datoteka `main/urls.py`:
+??? success "Rješenje"
+    Datoteka `main/urls.py`:
 
-``` python
-from django.urls import path
-from . import views
+    ``` python
+    from django.urls import path
+    from . import views
 
-app_name = 'main'
+    app_name = 'main'
 
-urlpatterns = [
-    path('homepage', views.homepage, name='homepage'),
-]
-```
+    urlpatterns = [
+        path('homepage', views.homepage, name='homepage'),
+    ]
+    ```
 
 Definirali smo poveznice unutar datoteka `main/urls.py`. Sada je potrebno kreirati funkciju `homepage()` unutar `main/views.py` koju smo pozvali unutar `main/urls.py`.
 
@@ -748,49 +755,52 @@ Definirali smo poveznice unutar datoteka `main/urls.py`. Sada je potrebno kreira
 !!! example "Zadatak"
     Definirajte funkciju `homepage()` unutar `main/views.py` koja će vraćati HTTP odgovor na zahtjev. Za vraćanje HTTP odgovora koristite funkciju `HttpResponse` koju uvozite kodom `from django.http import HttpResponse`.
 
-**Rješenje zadatka.** U datoteci `main/views.py`:
+??? success "Rješenje"
+    U datoteci `main/views.py`:
 
-``` python
-from django.shortcuts import render
-from django.http import HttpResponse
-## Create your views here.
+    ``` python
+    from django.shortcuts import render
+    from django.http import HttpResponse
+    ## Create your views here.
 
-def homepage(request):
-    return HttpResponse('<html><body><strong>Homepage</strong> i još neki tekst na homepage.</body></html>')
-```
+    def homepage(request):
+        return HttpResponse('<html><body><strong>Homepage</strong> i još neki tekst na homepage.</body></html>')
+    ```
 
-Pohranite sve promjene i pokrenite server.
+    Pohranite sve promjene i pokrenite server.
 
 !!! example "Zadatak"
     Definirajte funkciju `current_datetime()` unutar datoteke `main/views.py` koja će vraćati HTTP odgovor na zahtjev. Neka vrijednost koju funkcija vraća budu datum i trenutno vrijeme.
 
-**Rješenje zadatka.** U datoteci `main/views.py`:
+??? success "Rješenje"
+    U datoteci `main/views.py`:
 
-``` python
-from django.shortcuts import render
-from django.http import HttpResponse
-import datetime
-## Create your views here.
+    ``` python
+    from django.shortcuts import render
+    from django.http import HttpResponse
+    import datetime
+    ## Create your views here.
 
-def current_datetime(request):
-    now = datetime.datetime.now()
-    html = '<html><body>Trenutno vrijeme: {}.</body></html>'.format(now)
-    return HttpResponse(html)
-```
+    def current_datetime(request):
+        now = datetime.datetime.now()
+        html = '<html><body>Trenutno vrijeme: {}.</body></html>'.format(now)
+        return HttpResponse(html)
+    ```
 
 #### Vraćajne grešaka u odgovorima na zahtjeve
 
 !!! example "Zadatak"
     Definirajte funkciju `not_found()` unutar `main/views.py`. Funkcija neka vraća `HttpResponseNotFound`. Vratite proizvoljni sadržaj odgovora.
 
-**Rješenje zadatka.** U datoteci `main/views.py`:
+??? success "Rješenje"
+    U datoteci `main/views.py`:
 
-``` python
-from django.http import HttpResponse, HttpResponseNotFound
+    ``` python
+    from django.http import HttpResponse, HttpResponseNotFound
 
-def not_found(request):
-    return HttpResponseNotFound('<h1>Page not found</h1>')
-```
+    def not_found(request):
+        return HttpResponseNotFound('<h1>Page not found</h1>')
+    ```
 
 ### Vraćanje zapisa iz baze
 
@@ -799,27 +809,28 @@ U nastavku je prikazano kako se mogu dohvaćati vrijednosti iz baze podataka i k
 !!! example "Zadatak"
     Kreirajte klasu `Student`, neka sadrži, ime prezime i broj xice kao atribute. Dodajte ju zatim unutar `admin.py` da bi se mogle unositi vrijednosti. Za kraj pokrenite naredbe za migraciju da se kreira baza.
 
-**Rješenje zadatka.** U datoteci `models.py`:
+??? success "Rješenje"
+    U datoteci `models.py`:
 
-``` python
-class Student(models.Model):
-    ime = models.CharField(max_length=25)
-    prezime = models.CharField(max_length=50)
-    broj_xice = models.CharField(max_length=10)
+    ``` python
+    class Student(models.Model):
+        ime = models.CharField(max_length=25)
+        prezime = models.CharField(max_length=50)
+        broj_xice = models.CharField(max_length=10)
 
-    def __str__(self):
-        return str(self.broj_xice)
-```
+        def __str__(self):
+            return str(self.broj_xice)
+    ```
 
-U datoteci `admin.py`:
+    U datoteci `admin.py`:
 
-``` python
-from django.contrib import admin
-from main.models import *
+    ``` python
+    from django.contrib import admin
+    from main.models import *
 
-## Register your models here.
-admin.site.register(Student)
-```
+    ## Register your models here.
+    admin.site.register(Student)
+    ```
 
 Nakon što je baza pomoću modela kreirana, potrebno je unijeti u nju vrijednosti da se može izvršiti tražene upite.
 
@@ -866,31 +877,33 @@ Idemo još prikazati ukupan broj studenata u našoj bazi. Ovaj broj ćemo zatim 
 !!! example "Zadatak"
     Definirajte funkciju koja u bazi pronalazi ukupan broj studenata, broj studenata funkciji `render`. Proslijeđena rješenja neka se prikazuju unutar datoteke `index.html`. Dodajte grešku u slučaju da `Student` u bazi nije pronađen.
 
-**Rješenje zadatka.** U datoteci `views.py`:
+??? success "Rješenje"
+    U datoteci `views.py`:
 
-``` python
-def detail(request):
-    try:
-        num_students = Student.objects.all().count()
+    ``` python
+    def detail(request):
+        try:
+            num_students = Student.objects.all().count()
 
-        context = {'num_students': num_students}
+            context = {'num_students': num_students}
 
-    except Student.DoesNotExist:
-        raise Http404('Student does not exist')
+        except Student.DoesNotExist:
+            raise Http404('Student does not exist')
 
-    return render(request, 'detail.html', context=context)
-```
+        return render(request, 'detail.html', context=context)
+    ```
 
-``` html
-{% block content %}
-<h1>Dobrodosli na UNIRI</h1>
+    Datoteka: `detail.html`:
+    ``` html
+    {% block content %}
+    <h1>Dobrodosli na UNIRI</h1>
 
-<p>Na faxu je upisano:</p>
-<ul>
-    <li><strong>Studenata:</strong> {{ num_students }}</li>
-</ul>
-{% endblock %}
-```
+    <p>Na faxu je upisano:</p>
+    <ul>
+        <li><strong>Studenata:</strong> {{ num_students }}</li>
+    </ul>
+    {% endblock %}
+    ```
 
 ## Izrada generičkih pogleda
 
@@ -1058,18 +1071,17 @@ I za zadnji dio potrebno je kreirati prikaz unutar `./templates` koji će nam pr
 !!! example "Zadatak"
     Kreirajte `books_by_publisher.html` unutar `./templates/main` koji će ispisati sve knjige od traženog izdavača. Neka se ispisuje samo naslov svake knjige.
 
-**Rješenje zadatka.**
-
-``` html
-{% block content %}
-    <h2>Books list: </h2>
-    <ul>
-        {% for book in object_list %}
-            <li>Book title: {{ book.title }}</li>
-        {% endfor %}
-    </ul>
-{% endblock %}
-```
+??? success "Rješenje"
+    ``` html
+    {% block content %}
+        <h2>Books list: </h2>
+        <ul>
+            {% for book in object_list %}
+                <li>Book title: {{ book.title }}</li>
+            {% endfor %}
+        </ul>
+    {% endblock %}
+    ```
 
 Pokrenite server i provjerite pretraživanje po izdavaču.
 
@@ -1183,18 +1195,19 @@ $ ./manage.py shell
 !!! example "Zadatak"
     Kreirajte administratnora, zatim unutar `admin.py` registrirajte modele `Book` i `Author`. Provjerite ako su podaci generirani sa `factory.py` uneseni u bazu.
 
-**Rješenje zadatka.** U datoteci `admin.py`:
+??? success "Rješenje"
+    U datoteci `admin.py`:
 
-``` python
-from django.contrib import admin
+    ``` python
+    from django.contrib import admin
 
-from main.models import *
+    from main.models import *
 
-models_list = [Author, Book]
+    models_list = [Author, Book]
 
-## Register your models here.
-admin.site.register(models_list)
-```
+    ## Register your models here.
+    admin.site.register(models_list)
+    ```
 
 #### Kreiranje naredbe u `manage.py`
 
@@ -1345,34 +1358,35 @@ Primjer naredbi `if` i `else`:
 !!! example "Zadatak"
     Kreirajte direktorij `./templates` unutar kojeg će biti pohranjeni predlošci koji se koriste, npr. `base_generic.html`. Ne zaboravite definirati putanju unutar `settings.py`.
 
-**Rješenje zadatka.** Datoteka `./templates/base_generic.html`:
+??? success "Rješenje"
+    Datoteka `./templates/base_generic.html`:
 
-``` html
-<!DOCTYPE html>
-<html lang="en">
+    ``` html
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
-</head>
+    <head>
+    </head>
 
-<body>
-    <h1>My library</h1>
-    <div id="sidebar">
-        {% block sidebar %}
-        <ul>
-            <li><a href="/main">Home</a></li>
-            <li><a href="/main/books">Books</a></li>
-            <li><a href="/main/authors">Authors</a></li>
-        </ul>
-        {% endblock %}
-    </div>
+    <body>
+        <h1>My library</h1>
+        <div id="sidebar">
+            {% block sidebar %}
+            <ul>
+                <li><a href="/main">Home</a></li>
+                <li><a href="/main/books">Books</a></li>
+                <li><a href="/main/authors">Authors</a></li>
+            </ul>
+            {% endblock %}
+        </div>
 
-    <div class="content">
-        {% block content %}
-        {% endblock %}
-    </div>
-</body>
-</html>
-```
+        <div class="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </body>
+    </html>
+    ```
 
 #### Nasljeđivanje u predlošcima
 
@@ -1477,82 +1491,84 @@ li a {
 !!! example "Zadatak"
     Dopunite prikaz na autora tako da njegovo ime bude link. Link neka vodi na prikaz svih knjiga od odabranog autora. Za tu svrhu prvo je potrebno kreirati pretraživanje po traženom autoru, a zatim vratiti sve knjige koje su pronađene za traženog autora.
 
-**Rješenje zadatka.** Uredit ćemo datoteku `main/views.py` da bude oblika:
+??? success "Rješenje"
+    Uredit ćemo datoteku `main/views.py` da bude oblika:
 
-``` python
-from django.shortcuts import get_object_or_404
-from django.views.generic import ListView
-from main.models import Author, Book
+    ``` python
+    from django.shortcuts import get_object_or_404
+    from django.views.generic import ListView
+    from main.models import Author, Book
 
-class AuthorBookList(ListView):
-    template_name = 'main/book_list.html'
+    class AuthorBookList(ListView):
+        template_name = 'main/book_list.html'
 
-    def get_queryset(self):
-        self.author = get_object_or_404(Author, name=self.kwargs['author'])
-        return Book.objects.filter(author=self.author)
-```
+        def get_queryset(self):
+            self.author = get_object_or_404(Author, name=self.kwargs['author'])
+            return Book.objects.filter(author=self.author)
+    ```
 
-Potrebno je dodati putanju unutar `views.py`. Datoteka `main/views.py` je oblika:
+    Potrebno je dodati putanju unutar `views.py`. Datoteka `main/views.py` je oblika:
 
-``` python
-path('<author>', AuthorBookList.as_view())
-```
+    ``` python
+    path('<author>', AuthorBookList.as_view())
+    ```
 
-Zatim je potrebno izmjeniti predložak, odnosno dodati linkove koji vode na autore. Datoteka `author_list.html`:
+    Zatim je potrebno izmjeniti predložak, odnosno dodati linkove koji vode na autore. Datoteka `author_list.html`:
 
-``` html
-{% extends "base_generic.html" %}
-{% block content %}
-<h2>Books</h2>
-{% for book in book_list %}
-    <div class="book">
-        <h4>{{ book.title }}</h4>
-        <p>Author: <a href="{{book.author}}"> {{book.author}}</a></p>
-        <p>{{ book.abstract }}</p>
-    </div>
-{% endfor %}
-{% endblock %}
-```
+    ``` html
+    {% extends "base_generic.html" %}
+    {% block content %}
+    <h2>Books</h2>
+    {% for book in book_list %}
+        <div class="book">
+            <h4>{{ book.title }}</h4>
+            <p>Author: <a href="{{book.author}}"> {{book.author}}</a></p>
+            <p>{{ book.abstract }}</p>
+        </div>
+    {% endfor %}
+    {% endblock %}
+    ```
 
-Izmjenimo i predložak za prikaz knjiga. Datoteka `book_list.html`:
+    Izmjenimo i predložak za prikaz knjiga. Datoteka `book_list.html`:
 
-``` html
-{% extends "base_generic.html" %}
-{% block content %}
-<h2>Authors</h2>
-{% for author in author_list %}
-    <div class="author">
-        <h4>{{author.name}}</h4>
-        <p>City: {{author.city}}</p>
-        <p>Country: {{author.country}}</p>
-        <p><a href="{{author.name}}"> All books by {{author.name}}</a></p>
-    </div>
-{% endfor %}
-{% endblock %}
-```
+    ``` html
+    {% extends "base_generic.html" %}
+    {% block content %}
+    <h2>Authors</h2>
+    {% for author in author_list %}
+        <div class="author">
+            <h4>{{author.name}}</h4>
+            <p>City: {{author.city}}</p>
+            <p>Country: {{author.country}}</p>
+            <p><a href="{{author.name}}"> All books by {{author.name}}</a></p>
+        </div>
+    {% endfor %}
+    {% endblock %}
+    ```
 
 !!! example "Zadatak"
     Dopunite `style.css` tako da dodate obrub na elemente Knjige i Autora.
 
-**Rješenje zadatka.** U datoteku `style.css` dodajemo:
+??? success "Rješenje"
+    U datoteku `style.css` dodajemo:
 
-``` css
-.book {
-    border-color: cyan;
-    border-style: double;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-}
+    ``` css
+    .book {
+        border-color: cyan;
+        border-style: double;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
 
-.author {
-    border-color: olive;
-    border-style: double;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-}
-```
+    .author {
+        border-color: olive;
+        border-style: double;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+    ```
 
 ## Sijanje i migracije
 
@@ -1573,11 +1589,10 @@ $ ./manage.py dumpdata main.Student --pk 1 --indent 4 > 0001_student.json
 !!! example "Zadatak"
     Izbrišite iz baze zapis studenta kojeg ste prethodno unjeli.
 
-**Rješenje zadatka.**
-
-``` python
->>> Student.objects.filter(pk=1).delete()
-```
+??? success "Rješenje"
+    ``` python
+    >>> Student.objects.filter(pk=1).delete()
+    ```
 
 Za uvoz podataka u bazu koristimo naredbu `loaddata`. Detaljnije o naredbi [loaddata](https://docs.djangoproject.com/en/3.2/ref/django-admin/#loaddata).
 

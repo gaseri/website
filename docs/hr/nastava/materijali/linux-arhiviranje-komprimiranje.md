@@ -88,7 +88,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
     - Datoteku `izlaz1.txt` sažmite `gzip`-om, a datoteku `izlaz2.txt` `bzip2`-om.
     - Saznajte kako ispisati veličine dobivenih datoteka, te ih usporedite.
 
-!!! tip "Dodatni zadatak"
+!!! bug "Dodatni zadatak"
     - Ispitajte koriste li se `xz` i `unxz` na isti način kao i `gzip`, odnosno `bzip2`.
     - Izlaz naredbe `dmesg` zapišite u datoteku `izlaz.txt`. Kopirajte ju u datoteke `izlaz1.txt` i `izlaz2.txt`.
     - Datoteku `izlaz1.txt` komprimirajte `gzip`-om, a datoteku `izlaz2.txt` `bzip2`-om.

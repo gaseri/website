@@ -22,7 +22,7 @@ Korištenje Docker Composea u osnovi je proces od tri koraka:
 - Definiranje usluge koje čine aplikaciju u `docker-compose.yml` kako bi se mogle zajedno izvoditi u izoliranom okruženju.
 - Pokretanje naredbe `docker-compose up` koja pokreće cijelu aplikaciju.
 
-!!! note
+!!! tip
     Docker Compose krenuo je kao samostalni alat `docker-compose`, ali je u posljednjim verzijama postao dio osnovnog Dockera kao podnaredba `compose` koja ima svoje podnaredbe. Stoga, naredbu za pokretanje `docker-compose up` moguće je pisati i kao `docker compose up`, a analogno vrijedi i za ostale naredbe.
 
 Datoteka `docker-compose.yml` koju Docker Compose koristi može biti oblika:

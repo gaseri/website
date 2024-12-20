@@ -40,7 +40,7 @@ Recimo da na raspolaganju imamo raspon adresa 192.198.25.0/24. Ako trebamo podmr
 
 Stoga postoji mogućnost definiranja različitih mrežnih maski za svaku podmrežu. To znači da prvoj mreži dodijelimo 7 bitova jer je 2^6 = 64 < 120 < 2^7 = 128, sljedećoj 5 bitova (2^5 = 32 IP adrese), marketingu također 5 bitova, upravi 4 bita i šefu tvrtke 2 bita. Dok ostale neiskorištene bitove možemo pripojiti mrežnom dijelu.
 
-!!! note
+!!! tip
     U varijabilnim mrežama vrlo je bitno da podmrežavanje započnemo od najvećih mreža, jer će nam to kasnije olakšati dodavanje novih računala ukoliko se ukaže potreba za time.
 
 - U našem primjeru mreža za goste imat ćemo raspon od 192.198.25.1 do 192.198.25.126 s mrežnom podmaskom /25. Kada stavimo 7 bitova za adrese domaćina, proširujemo mrežni dio na 25 bitova.
@@ -121,7 +121,7 @@ Najveća podmreža mora imati dovoljno adresa za 28 domaćina i jedan usmjeriva�
 - podmreža oko n6: 10.0.5.96/27 (raspon adresa domaćina je od 10.0.5.97 do 10.0.5.126)
 - podmreža n1 -- n2: 10.0.5.128/27
 
-!!! note
+!!! tip
     Ukoliko stvorimo ovakvu mrežu unutar CORE-a i zatim postavimo adrese i duljine prefiksa na n1 i n2, kod kasnijeg dodavanja domaćina i povezivanja istih na n3, n4, n5 i n6 CORE će automatski dodijeliti adrese domaćinima u rasponu odgovarajućih podmreža određenih prema postavljenim adresama na usmjerivačima.
 
 ### Primjer 2

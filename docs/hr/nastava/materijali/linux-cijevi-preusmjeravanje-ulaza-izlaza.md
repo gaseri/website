@@ -87,7 +87,7 @@ Mnogi programi dobivaju input od standardnog ulaza (engl. *standard input*), a u
     - U datoteku `studenti1.txt` dodajte `John Terry`, `Arsen Dedic` i `Mile Kekin`. Zatim uz korištenje cijevi izdvojite sve studente kojima prezime na drugom mjestu ima slovo `e`, te rezultat nadopišite u datoteku `studenti-izdvojeni.txt`.
     - Izvedite `ls` tako da kao argument proslijedite nepostojeći direktorij. Radi li preusmjeravanje izlaza? Zašto? Probajte isto s `man`-om čiji je argument nepostojeća naredba.
 
-!!! tip "Dodatni zadatak"
+!!! bug "Dodatni zadatak"
     Koja je razlika između `cat > tekst1.txt` i `cat >> tekst1.txt`
 
     - ukoliko datoteka ne postoji,

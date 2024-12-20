@@ -546,8 +546,8 @@ print("Proces ranga", rank, "primio je poruku", recvmsg)
     - Procesi ranga 1, 2 i 3 vrše zbroj odgovarajućih elemenata vektora i rezultat šalju procesu ranga 0.
     - Proces ranga 0 prima rezultate od procesa ranga 1, 2 i 3 i vrši provjeru točnosti rješenja.
 
-!!! tip "Dodatni zadatak"
+!!! bug "Dodatni zadatak"
     Napišite program koji koristi MPI za izračun zbroja kvadrata brojeva u rasponu od 1 do 500000 u 3 procesa korištenjem komunikacije točka-do točke, i to tako da proces ranga 0 šalje procesu ranga 1 i procesu ranga 2 liste koje sadrže brojeve od 1 do 250000 i od 250000 do 500000 (respektivno). Iskoristite blokirajuću komunikaciju. Procesi ranga 1 i 2 računaju zbroj kvadrata brojeva koje su dobili. Procesu ranga 0 procesi ranga 1 i 2 javljaju rezultate koje su dobili. Proces ranga 0 prima oba rezultata i njihov zbroj ispisuje na ekran.
 
-!!! tip "Dodatni zadatak"
+!!! bug "Dodatni zadatak"
     Napišite program koji koristi MPI za izračun zbroja kubova brojeva u rasponu od 1 do 300000 u 6 procesa korištenjem komunikacije točka-do točke. Kod slanja iskoristite neblokirajuću komunikaciju. Raspon raspodijelite po procesima po želji. Proces ranga 0 je onaj kojem će preostalih pet procesa javiti svoje rezultate i koji će rezultate sumirati te ispisati na ekran. Ostali procesi neka ne ispisuju ništa.

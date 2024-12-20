@@ -62,14 +62,13 @@ $ ./manage.py migrate
 !!! example "Zadatak"
     Registrirajte kreirani model `Korisnik` unutar `admin.py`. Pokrenite server i provjerite prikaz unutar admin sučelja a zatim unesite podatke za 3 korisnika.
 
-**Rješenje zadatka.**
+??? success "Rješenje"
+    ``` python
+    from django.contrib import admin
+    from .models import Korisnik
 
-``` python
-from django.contrib import admin
-from .models import Korisnik
-
-admin.site.register(Korisnik)
-```
+    admin.site.register(Korisnik)
+    ```
 
 ## Postavljanje Django REST frameworka
 

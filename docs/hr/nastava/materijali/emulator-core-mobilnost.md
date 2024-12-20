@@ -65,5 +65,5 @@ $ns_ at 20.0 "$node_(2) setdest 200.0 100.0 30.0"
 
 Ukoliko nam platno nije dovoljno veliko za naše potrebe, možemo ga povećati putem opcije izbornika `Canvas/Size/scale...` ([dokumentacija](https://coreemu.github.io/core/gui.html#canvas-menu)).
 
-!!! note
+!!! info
     Postoje i drugi načini skriptiranja mobilnosti koje nećemo koristiti, a više detalja o njima moguće je pronaći [u dijelu o skriptiranju mobilnosti u službenoj dokumentacijiemulatora CORE](https://coreemu.github.io/core/gui.html#mobility-scripting).

@@ -62,7 +62,7 @@ Primjere konfiguracijskih datoteka za svaki daemon možemo pronaći u direktorij
 
 ## Sintaksa i naredbe Quagga konfiguracijskih datoteka
 
-!!! note
+!!! tip
     Službena dokumentacija Quagge, specifično njen [dio o parametrima mrežnih sučelja](https://www.nongnu.org/quagga/docs/docs-multi/Link-Parameters-Commands.html), koristi zapis u kojem su rasponi brojeva omeđeni šiljastim zagradama. To nije indikacija sintakse kako se pišu konfiguracijske naredbe, npr. unos u dokumentaciji `metric <0-4294967295>` znači da su ispravne konfiguracijske naredba `metric 0`, `metric 1`, ..., `metric 4294967295`.
 
 Općenite naredbe:

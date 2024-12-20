@@ -47,7 +47,7 @@ Hello world primjer izgradit ćemo u nekoliko koraka:
     hello = mod.get_function("hello")
     ```
 
-!!! note
+!!! tip
     Uočite dvostruki znak `\` unutar funkcije `hello()` koji je potreban obzirom da se kod unosi kao znakovni niz. U složenijim primjerima odvajat ćemo kod za CPU i kod za GPU i neće biti potrebe za dupliranjem tog znaka.
 
 - izvođenje koda na GPU-u ([dokumentacija koja objašnjava pozivanje funkcija](https://documen.tician.de/pycuda/driver.html#pycuda.driver.Function))

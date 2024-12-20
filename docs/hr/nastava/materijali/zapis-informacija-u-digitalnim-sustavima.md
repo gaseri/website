@@ -67,20 +67,18 @@ $$Z_{(B)} = Z_{(N-1)} \cdot B^{N-1} + Z_{(N-2)} \cdot B^{N-2} + \ldots + Z_{(1)}
 !!! example "Zadatak"
     Broj 1136, s težinskim vrijednostima baze 7, napiši u dekadskom obliku.
 
-**Rješenje:**
+??? success "Rješenje"
+    $$1136_{(7)} = 1 \cdot 7^3 + 1 \cdot 7^2 + 3 \cdot 7^1 + 6 \cdot 7^0 = 343 + 49 + 21 + 6 = 419_{(10)}.$$
 
-$$1136_{(7)} = 1 \cdot 7^3 + 1 \cdot 7^2 + 3 \cdot 7^1 + 6 \cdot 7^0 = 343 + 49 + 21 + 6 = 419_{(10)}.$$
-
-Dakle, broj $1136_{(7)}$ zapisan u brojevnom sustavu s bazom $7$ ima vrijednost $419_{(10)}$ u dekadskom brojevnom sustavu.
+    Dakle, broj $1136_{(7)}$ zapisan u brojevnom sustavu s bazom $7$ ima vrijednost $419_{(10)}$ u dekadskom brojevnom sustavu.
 
 Ako imamo broj koji sadrži decimalne znamenke, nastavljamo s računanjem pomoću negativnih eksponenata. Svaka slijedeća decimalna znamenka ima eksponent koji je manji za $N-1$ u odnosu na prethodnu znamenku. To znači da prva znamenka iza decimalnog zareza predstavlja desetinke, druga predstavlja stotinke, treća predstavlja tisućinke itd.
 
 !!! example "Zadatak"
     Pretvori broj $5,24_{(8)}$ u dekadski oblik.
 
-**Rješenje:**
-
-$$5,24_{(8)} = 5 \cdot 8^{0} + 2 \cdot 8^{-1} + 4 \cdot 8^{-2} = 5,3125_{(10)}.$$
+??? success "Rješenje"
+    $$5,24_{(8)} = 5 \cdot 8^{0} + 2 \cdot 8^{-1} + 4 \cdot 8^{-2} = 5,3125_{(10)}.$$
 
 !!! example "Zadatak"
     1. Pretvori broj $10110101_{(2)}$ u dekadski oblik.
@@ -97,59 +95,56 @@ Kako bismo neki broj zapisali u binarnom sustavu, koristimo postupak dijeljenja 
 !!! example "Zadatak"
     Pretvori broj $52_{(10)}$ u binarni oblik.
 
-**Rješenje:**
+??? success "Rješenje"
+    |    | Ostatak |
+    | -: | ------: |
+    | $52 : 2 = 26$ | $0$ |
+    | $26 : 2 = 13$ | $0$ |
+    | $13 : 2 = 6$ | $1$ |
+    | $6 : 2 = 3$ | $0$ |
+    | $3 : 2 = 1$ | $1$ |
+    | $1 : 2 = 0$ | $1$ |
 
-|    | Ostatak |
-| -: | ------: |
-| $52 : 2 = 26$ | $0$ |
-| $26 : 2 = 13$ | $0$ |
-| $13 : 2 = 6$ | $1$ |
-| $6 : 2 = 3$ | $0$ |
-| $3 : 2 = 1$ | $1$ |
-| $1 : 2 = 0$ | $1$ |
-
-Dakle, broj $52_{(10)}$ zapisan u dekadskom sustavu ima vrijednost $110100_{(2)}$ u binarnom brojevnom sustavu.
+    Dakle, broj $52_{(10)}$ zapisan u dekadskom sustavu ima vrijednost $110100_{(2)}$ u binarnom brojevnom sustavu.
 
 Kada radimo s brojevima koji imaju decimalne znamenke, postupak pretvaranja u binarni zapis je nešto drugačiji. Prvo, odvajamo cijeli i decimalni dio. Cijeli dio pretvaramo u binarni zapis kao što smo već objasnili. Za pretvaranje decimalnog dijela, množimo ga s brojem $2$. Ako je rezultat jednak ili veći od $1$, zapisujemo $1$, a ako je manji od $1$, zapisujemo $0$. Potom ponavljamo postupak s decimalnim dijelom rezultata, sve dok ne dobijemo $0$ kao decimalni dio dekadskog broja ili do željenog broja decimala binarnog broja. Važno je zapamtiti da rezultat čitamo od **gore prema dolje**, što znači da je prva zapisana znamenka u bitu najviši bit, a posljednja zapisana znamenka najniži bit.
 
 !!! example "Zadatak"
     Pretvori broj $8,125_{(10)}$ u binarni zapis.
 
-**Rješenje:**
+??? success "Rješenje"
+    |    | Ostatak |
+    | -: | ------: |
+    | $8 : 2 = 4$ | $0$ |
+    | $4 : 2 = 2$ | $0$ |
+    | $2 : 2 = 1$ | $0$ |
+    | $1 : 2 = 0$ | $1$ |
 
-|    | Ostatak |
-| -: | ------: |
-| $8 : 2 = 4$ | $0$ |
-| $4 : 2 = 2$ | $0$ |
-| $2 : 2 = 1$ | $0$ |
-| $1 : 2 = 0$ | $1$ |
+    |    | Ostatak |
+    | -: | ------: |
+    | $0,125 \cdot 2 = 0,25$ | $0$ |
+    | $0,25 \cdot 2 = 0,5$ | $0$ |
+    | $0,5 \cdot 2 = 1,0$ | $1$ |
 
-|    | Ostatak |
-| -: | ------: |
-| $0,125 \cdot 2 = 0,25$ | $0$ |
-| $0,25 \cdot 2 = 0,5$ | $0$ |
-| $0,5 \cdot 2 = 1,0$ | $1$ |
-
-Dakle, broj $8,125_{(10)}$ je $1000,001_{(2)}$ u binarnom zapisu.
+    Dakle, broj $8,125_{(10)}$ je $1000,001_{(2)}$ u binarnom zapisu.
 
 !!! example "Zadatak"
     Pretvori broj $6,74_{(10)}$ u binarni zapis s tri decimale.
 
-**Rješenje:**
+??? success "Rješenje"
+    |    | Ostatak |
+    | -: | ------: |
+    | $6 : 2 = 3$ | $0$ |
+    | $3 : 2 = 1$ | $1$ |
+    | $1 : 2 = 0$ | $1$ |
 
-|    | Ostatak |
-| -: | ------: |
-| $6 : 2 = 3$ | $0$ |
-| $3 : 2 = 1$ | $1$ |
-| $1 : 2 = 0$ | $1$ |
+    |    | Ostatak |
+    | -: | ------: |
+    | $0,74 \cdot 2 = 1,48$ | $1$ |
+    | $0,48 \cdot 2 = 0,96$ | $0$ |
+    | $0,96 \cdot 2 = 1,92$ | $1$ |
 
-|    | Ostatak |
-| -: | ------: |
-| $0,74 \cdot 2 = 1,48$ | $1$ |
-| $0,48 \cdot 2 = 0,96$ | $0$ |
-| $0,96 \cdot 2 = 1,92$ | $1$ |
-
-Dakle, broj $6,74_{(10)}$ je $110,101_{(2)}$ u binarnom zapisu.
+    Dakle, broj $6,74_{(10)}$ je $110,101_{(2)}$ u binarnom zapisu.
 
 !!! example "Zadatak"
     1. Pretvori broj $28_{(10)}$ u binarni zapis.
@@ -170,12 +165,11 @@ Kada je riječ o negativnim brojevima, postoje tri načina njihovog prikazivanja
 !!! example "Zadatak"
     Tehnikom predznaka i veličine napišite $-17_{(10)}$ u zapisu od $8$ bita.
 
-**Rješenje:**
-
-|    |    |
-| -: | -: |
-| $+17$ | $00010001$ |
-| $-17$ | $10001100$ |
+??? success "Rješenje"
+    |    |    |
+    | -: | -: |
+    | $+17$ | $00010001$ |
+    | $-17$ | $10001100$ |
 
 ### Komplement broja
 
@@ -198,14 +192,13 @@ Umjesto korištenja komplicirane formule za izračun komplementa broja, postoji 
 !!! example "Zadatak"
     Napišite broj $-17_{(10)}$ tehnikom predznaka i jediničnog komplementa u zapisu od $8$ bita.
 
-**Rješenje:**
+??? success "Rješenje"
+    |    |    |
+    | -: | -: |
+    | $+17$ | $00010001$ |
+    | $-17$ | $11101110$ |
 
-|    |    |
-| -: | -: |
-| $+17$ | $00010001$ |
-| $-17$ | $11101110$ |
-
-Možemo primjetiti kako se u zapisu jediničnog komplementa invertirala svaka znamenka broja $-17_{(10)}$.
+    Možemo primjetiti kako se u zapisu jediničnog komplementa invertirala svaka znamenka broja $-17_{(10)}$.
 
 Jedinični komplement se najčešće koristi kod računalnih sustava za provjeru ispravnosti prijenosa podataka.
 
@@ -220,12 +213,11 @@ U ovom slučaju, negativni broj se dobiva tako da se uzme jedinični komplement 
 !!! example "Zadatak"
     Tehnikom dvojnog komplementa prikaži broj $-12_{(10)}$ u zapisu od 8 bitova.
 
-**Rješenje:**
-
-|    |    |   |
-| -: | -: | - |
-| $+12$ | $00001100$ | Broj $+12$ u zapisu od 8 bita. |
-| $-12$ | $11110100$ | Prepišemo sve znamenke do prve jedinice (i prvu jedinicu), a ostalne znamenke invertiramo. |
+??? success "Rješenje"
+    |    |    |   |
+    | -: | -: | - |
+    | $+12$ | $00001100$ | Broj $+12$ u zapisu od 8 bita. |
+    | $-12$ | $11110100$ | Prepišemo sve znamenke do prve jedinice (i prvu jedinicu), a ostalne znamenke invertiramo. |
 
 Svaki od ova tri načina ima svoje prednosti i nedostatke. Prednost korištenja predznaka i veličine je da se broj može jednostavno pretvoriti u drugi brojevni sustav, dok prednost korištenja dvojnog komplementa je brzina matematičkih operacija. U konačnici, odabir načina prikazivanja negativnih brojeva ovisi o primjeni, ali i osobnim preferencijama. Svaki sustav binarnog prikaza brojeva ima svoja ograničenja prikaza brojeva u određenom rasponu, što može utjecati na odabir načina prikaza negativnih brojeva:
 

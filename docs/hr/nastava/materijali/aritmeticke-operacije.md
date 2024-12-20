@@ -20,33 +20,32 @@ Zbrajanje u binarnom zapisu osnovna je aritmetička operacija koja se koristi u 
 !!! example "Zadatak"
     Izračunaj u binarnom sustavu zbroj brojeva $1010001_{(2)}$ i $10101_{(2)}$.
 
-**Rješenje:**
+??? success "Rješenje"
+    U prvom koraku ćemo nadopuniti broj nulama tako da imaju jednak broj znamenaka:
 
-U prvom koraku ćemo nadopuniti broj nulama tako da imaju jednak broj znamenaka:
+    |   |    |
+    | - | -: |
+    | | $1010001$ |
+    | $+$ | $0010101$ |
 
-|   |    |
-| - | -: |
-| | $1010001$ |
-| $+$ | $0010101$ |
+    Zatim zbrojimo binarne brojeve imajući na umu tablicu zbrajanja jednoznamenkastih binarnih brojeva:
 
-Zatim zbrojimo binarne brojeve imajući na umu tablicu zbrajanja jednoznamenkastih binarnih brojeva:
+    |   |   |
+    | - | - |
+    | | $010001$ - prijenos |
+    | | $1010001$ |
+    | $+$ | $0010101$ |
+    | | $1100110$ - rezultat |
 
-|   |   |
-| - | - |
-| | $010001$ - prijenos |
-| | $1010001$ |
-| $+$ | $0010101$ |
-| | $1100110$ - rezultat |
+    Rezultat možemo provjeriti pretvaranjem brojeva i rezultata u dekadski sustav:
 
-Rezultat možemo provjeriti pretvaranjem brojeva i rezultata u dekadski sustav:
+    $$1010001_{(2)} = 1 \cdot 2^6 + 1 \cdot 2^4 + 1 \cdot 2^0 = 64 + 16 + 1 = 81_{(2)},$$
 
-$$1010001_{(2)} = 1 \cdot 2^6 + 1 \cdot 2^4 + 1 \cdot 2^0 = 64 + 16 + 1 = 81_{(2)},$$
+    $$10101_{(2)} = 1 \cdot 2^4 + 1 \cdot 2^2 + 1 \cdot 2^0 = 16 + 4 + 1 = 21_{(2)},$$
 
-$$10101_{(2)} = 1 \cdot 2^4 + 1 \cdot 2^2 + 1 \cdot 2^0 = 16 + 4 + 1 = 21_{(2)},$$
+    $$1100110_{(2)} = 1 \cdot 2^6 + 1 \cdot 2^5 + 1 \cdot 2^2 + 1 \cdot 2^1 = 64 + 32 + 4 + 2 = 102_{(2)}.$$
 
-$$1100110_{(2)} = 1 \cdot 2^6 + 1 \cdot 2^5 + 1 \cdot 2^2 + 1 \cdot 2^1 = 64 + 32 + 4 + 2 = 102_{(2)}.$$
-
-Budući da je $81 + 21 = 102$, rezultat je očito točan.
+    Budući da je $81 + 21 = 102$, rezultat je očito točan.
 
 !!! example "Zadatak"
     1. Zbrojite sljedeće binarne brojeve i provjerite dobivene rezultate: $010101_{(2)} + 101_{(2)}, 1110_{(2)} + 10101110_{(2)}$.
@@ -58,9 +57,10 @@ Budući da s pomoću dvojnog komplementa često prikazujemo negativnu vrijednost
 !!! example "Zadatak"
     Oduzmi brojeve $6_{(10)}$ i $3_{(10)}$.
 
-$$6-3 = 6 + (-3) = 110_{(2)} + 101_{(2)} = 𝟏011.$$
+??? success "Rješenje"
+    $$6 - 3 = 6 + (-3) = 110_{(2)} + 101_{(2)} = 𝟏011.$$
 
-Prvi bit $1$ je preljev (engl. *Overflow*) i zanemaruje se. Dakle, za $6-3$ dobili smo $011$ što je binarno $3$.
+    Prvi bit $1$ je preljev (engl. *Overflow*) i zanemaruje se. Dakle, za $6-3$ dobili smo $011$ što je binarno $3$.
 
 !!! example "Zadatak"
     2. Oduzmite sljedeće dekadske brojeve u binarnom obliku pomoću dvojnog komplementa i provjerite dobivene rezultate: $5 - 1$, $10 - 6$, $7 - 2$.
@@ -79,21 +79,20 @@ Binarno množenje slično je množenju decimalnih brojeva. Budući da su samo bi
 !!! example "Zadatak"
     Pomnožite $100_{(2)}$ i $011_{(2)}$ (množenje brojeva $4$ i $3$).
 
-**Rješenje:**
+??? success "Rješenje"
+    Pomnožimo krajnje lijevu znamenku množitelja $011$ sa svim znamenkama množenika $100$. Ponavljamo isti postupak za sve sljedeće znamenke množitelja pri tome pazeći da dobiveni rezultat pišemo u novi red s jednim pomaknutim mjestom u desno. Nakon toga, redove zbrojimo koristeći pravila binarnog zbrajanja kako bismo dobili konačni rezultat, odnosno umnožak.
 
-Pomnožimo krajnje lijevu znamenku množitelja $011$ sa svim znamenkama množenika $100$. Ponavljamo isti postupak za sve sljedeće znamenke množitelja pri tome pazeći da dobiveni rezultat pišemo u novi red s jednim pomaknutim mjestom u desno. Nakon toga, redove zbrojimo koristeći pravila binarnog zbrajanja kako bismo dobili konačni rezultat, odnosno umnožak.
+    $$
+    \begin{eqnarray*}
+    \underline{100 \cdot 011}\\
+    \hspace{-0.9cm}000\\
+    \hspace{-0.6cm} 100\\
+    \underline{\hspace{-0.45cm}+100}\\
+    \hspace{-0.3cm}1100
+    \end{eqnarray*}
+    $$
 
-$$
-\begin{eqnarray*}
-\underline{100 \cdot 011}\\
-\hspace{-0.9cm}000\\
-\hspace{-0.6cm} 100\\
-\underline{\hspace{-0.45cm}+100}\\
-\hspace{-0.3cm}1100
-\end{eqnarray*}
-$$
-
-Provjerom dobivenog rezultata ($4 \cdot 3 = 12$) možemo se uvjeriti da je rezultat točan. Ista pravila množenja vrijede i za binarne brojeve s decimalnom točkom.
+    Provjerom dobivenog rezultata ($4 \cdot 3 = 12$) možemo se uvjeriti da je rezultat točan. Ista pravila množenja vrijede i za binarne brojeve s decimalnom točkom.
 
 !!! example "Zadatak"
     1. Pomnožite brojeve $11011_{(2)}$ i $101_{(2)}$
@@ -113,23 +112,22 @@ Algoritam za binarno dijeljenje također je sličan decimalnom dijeljenju, ali k
 !!! example "Zadatak"
     Podjelite broj $100111_{(2)}$ s $11_{(2)}$.
 
-**Rješenje:**
+??? success "Rješenje"
+    Usporedimo dijeljenik $100111$ s dijeliteljem $11$. Kako je dijeljenik veći od dijelitelja, možemo uzeti prva tri lijeva bita dijeljenika i podijeliti ga s $11$ te zapisati rezultat na vrhu kao kvocjent, baš kao i kod decimalnog dijeljenja. Zatim oduzimamo rezultat od znamenke, zapišemo razliku ispod i spustimo sljedeću znamenku dijeljenika te ponavljamo postupak do kraja. Dakle, dijelimo na sljedeći način:
 
-Usporedimo dijeljenik $100111$ s dijeliteljem $11$. Kako je dijeljenik veći od dijelitelja, možemo uzeti prva tri lijeva bita dijeljenika i podijeliti ga s $11$ te zapisati rezultat na vrhu kao kvocjent, baš kao i kod decimalnog dijeljenja. Zatim oduzimamo rezultat od znamenke, zapišemo razliku ispod i spustimo sljedeću znamenku dijeljenika te ponavljamo postupak do kraja. Dakle, dijelimo na sljedeći način:
-
-$$
-\begin{eqnarray*}
-\underline{100111 : 11 = 1101}\\
-\hspace{-2.1cm}\underline{- 11}\\
-\hspace{-1.45cm}11\\
-\hspace{-1.8cm}\underline{- 11}\\
-\hspace{-1.15cm}01\\
-\hspace{-1.3cm}\underline{- 0}\\
-\hspace{-1.1cm}011\\
-\hspace{-1.2cm}\underline{- 11}\\
-\hspace{-0.6cm}0
-\end{eqnarray*}
-$$
+    $$
+    \begin{eqnarray*}
+    \underline{100111 : 11 = 1101}\\
+    \hspace{-2.1cm}\underline{- 11}\\
+    \hspace{-1.45cm}11\\
+    \hspace{-1.8cm}\underline{- 11}\\
+    \hspace{-1.15cm}01\\
+    \hspace{-1.3cm}\underline{- 0}\\
+    \hspace{-1.1cm}011\\
+    \hspace{-1.2cm}\underline{- 11}\\
+    \hspace{-0.6cm}0
+    \end{eqnarray*}
+    $$
 
 !!! example "Zadatak"
     1. Podijelite broj $101011_{(2)}$ s brojem $10_{(2)}$.

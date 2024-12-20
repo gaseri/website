@@ -10,7 +10,7 @@ During the course we will use [LLVM](https://llvm.org/), which is a well-known o
 
 Furthermore we will also use the [Visual Studio Code](https://code.visualstudio.com/) as the integrated development enviroment. However, the use of any development enviroment for C++ is acceptable, including [Qt Creator](https://www.qt.io/product/development-tools), [CLion](https://www.jetbrains.com/clion/), [CodeLite](https://codelite.org/), [NetBeans](https://netbeans.apache.org/), and [Eclipse](https://www.eclipse.org/).
 
-!!! note
+!!! tip
     The commands below assume that the [Unix-like](https://en.wikipedia.org/wiki/Unix-like) operating system is used, which includes Linux, FreeBSD, macOS, illumOS, and many others, but not Windows. To get a Unix-like environment on Windows 10 and newer, it is recommended to use the [Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install), [Windows Terminal](https://docs.microsoft.com/en-us/windows/terminal/install), and [Visual Studio Code Remote - WSL](https://code.visualstudio.com/docs/remote/wsl) extension.
 
 First, install the [C/C++ Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack), which will install [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) and [CMake](https://marketplace.visualstudio.com/items?itemName=twxs.cmake) extensions. More details about these extensions can be found in the [C/C++ for Visual Studio Code](https://code.visualstudio.com/docs/languages/cpp) guide.

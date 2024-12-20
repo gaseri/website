@@ -55,5 +55,5 @@ Uzorak `PERIODIC` očekuje parametre `rate` (učestalost slanja paketa u termini
 
 Primjerice, naredba `PERIODIC [10.0 1024]` slati će 10 paketa veličine 1024 bajta po sekundi, a naredba `PERIODIC [0.2 3400]` poslat će po jedan paket veličine 3400 bajta svakih 5 sekundi.
 
-!!! note
+!!! tip
     Kod odabira predloška prometa unutar CORE-a se zapravo samo koriste različite predefinirane naredbe MGEN-a i zatim je moguće te naredbe dodatno prilagoditi svojim potrebama.

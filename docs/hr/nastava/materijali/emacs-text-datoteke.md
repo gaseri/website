@@ -26,7 +26,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 
     - osim Unicode kodiranja, ISO-8859-2 je kodiranje koje sadrži Hrvatske znakove
 
-!!! tip "Dodatni zadatak"
+!!! bug "Dodatni zadatak"
     Naredba `iconv` se koristi se za konverziju između različitih kodiranja. Mi ćemo od sada nadalje koristiti samo UTF-8, ali se u praksi često sreću datoteke kodirane i drugim kodnim stranicama.
 
     Proučite `man` stranicu naredbe `iconv`, a zatim je isprobajte kod prebacivanja datoteke iz `UTF-8` kodiranja u `UTF-7`, `UTF-16`, `ISO-8859-2`.
@@ -58,7 +58,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
     - Pozicionirajte se u neki redak datoteke `mjeseci2.txt` i otkrijte broj linije u kojoj se trenutno nalazite.
     - Pronađite u datoteci string `anj` i zamijenite ga sa rječju `ZAMJENA`.
 
-!!! tip "Dodatni zadatak"
+!!! bug "Dodatni zadatak"
     - Otvorite u Emacsu datoteku nazvanu `moj_program.cpp`. Uočite u koji način rada (mode) vas postavlja.
     - Unesite kod hello world C++ programa i spremite ga, a zatim ponovno spremite datoteku pod imenom `moj_program2.cpp`.
     - Otvorite obje datoteke istovremeno i prebacite se iz jedne u drugu.
@@ -66,10 +66,10 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 
     (**Napomena:** Vremenom ćemo naučiti kako koristiti program-prevoditelj za prevođenje C++ programa na Linuxu.)
 
-!!! tip "Dodatni zadatak"
+!!! bug "Dodatni zadatak"
     - Proučite program Vi IMproved (naredba `vim`).
 
-!!! tip "Dodatni zadatak"
+!!! bug "Dodatni zadatak"
     - Pokrenite GNU nano (naredba `nano`), koji je vrlo jednostavan uređivač teksta, zamjena za nekoć popularni `pico`.
     - Isprobajte u GNU nano-u iduću funkcionalnost:
 

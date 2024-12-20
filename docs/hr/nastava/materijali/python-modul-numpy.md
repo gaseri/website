@@ -4,7 +4,7 @@ author: Vedran Miletić, Domagoj Margan
 
 # Rad s Python modulom numpy
 
-!!! note
+!!! info
     Ovaj dio je sastavljen prema [NumPy tutorialu](https://numpy.org/doc/stable/user/quickstart.html).
 
 Uključivanje modula `numpy` najčešće se vrši naredbom:
@@ -58,7 +58,7 @@ Tipovi podataka definirani unutar modula `numpy`; potrebno koristiti kad radite 
 - `numpy.float32` -- pandan C/C++ tipu `float`
 - `numpy.float64` -- pandan C/C++ tipu `double`
 
-!!! note
+!!! tip
     Duljina tipova podataka `int` i `long` u C/C++-u varira ovisno o tome koristi li se 32-bitni ili 64-bitni operacijski sustav. Na većini platformi danas koriste se dva modela:
 
     - ILP32 -- `int`, `long` i pointer su duljine 32 bita,

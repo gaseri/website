@@ -84,7 +84,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
         - sadrže slovo `v`, nakon kojeg slijedi niz `ic` (koji se može ponavljati više puta), a iza kojeg odmah slijedi znak `@`;
         - su oblika `mail(broj<5)(broj>7)`.
 
-!!! tip "Dodatni zadatak"
+!!! bug "Dodatni zadatak"
     Napravite datoteku `studenti.txt` u koju napišite popis studenata prisutnih na satu u formatu `Ime Prezime`, pri čemu je svaki student u svom redu te datoteke. Izdvojite iz nje:
 
     - sve studente kojima prezime počinje na `P`,
@@ -101,7 +101,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
     - `.` i `-` dobijemo kao `\\.` i `\\-` respektivno (jedan escape "pojede" ljuska, drugi se prosljeđuje grepu), a unutar zagrada `[]` escape nije potreban,
     - `\` dobijemo kao `\\\\`.
 
-!!! tip "Dodatni zadatak"
+!!! bug "Dodatni zadatak"
     Iz datoteke `mjeseci.txt` u koju ste upisali nazive mjeseca u godini izdvojite:
 
     - sve mjesece koji sadrže slovo `a`,
@@ -206,7 +206,7 @@ Najčešće korišteni parametri naredbe `sed` su:
     - Napišite `sed` naredbu koja će u retcima koji završavaju slovom `n` mijenjati sva mala slova u velika slova.
     - Napišite naredbu kojom ćete u datoteci `drzave.txt` promijeniti svako `a` u `A`, te `s` u `S`, ali samo ako riječ u retku ima 8 slova.
 
-!!! tip "Dodatni zadatak"
+!!! bug "Dodatni zadatak"
     - Stvorite datoteku `file1` proizvoljnog sadržaja.
     - Napišite `sed` naredbu koja će prikazati sadržaj prvih 7 redaka datoteke `file1`.
     - Napišite `sed` naredbu koja će u recima koji završavaju sa slovom `b` mijenjati sva mala slova u velika.
@@ -232,7 +232,7 @@ Najčešće korišteni parametri naredbe `sed` su:
 
         - `sed '11 q'` -- prekida se izvođenje nakon obrade 11. retka
 
-!!! tip "Dodatni zadatak"
+!!! bug "Dodatni zadatak"
     Dopunite sljedeću tablicu sa izlazima na ekranu, s obzirom na oblik `sed` naredbe:
 
     | Sed parametri | Raspon | Naredb | Rezultat/ispis |

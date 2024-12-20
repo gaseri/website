@@ -3,7 +3,6 @@
 ![GASERI logo with text](../../images/gaseri-logo-text.png)
 
 ??? note "Blogroll"
-
     - [brr](https://brr.fyi/)
     - [CrysSITE Blog (Michał Sapka)](https://crys.site/blog/)
     - [Daemonic Dispatches (Colin Percival)](https://www.daemonology.net/blog/)

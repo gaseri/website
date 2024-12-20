@@ -150,22 +150,20 @@ author: Luka Vretenar
     print("dvostruka vrijednost unesenog broja je ", $dvostruko);
     ```
 
-!!! info "Primjer"
-    - Program za pretvaranje metara u kilometre i obrnuto:
+- Primjer programa za pretvaranje metara u kilometre i obrnuto:
 
-        ``` perl
-        #!/usr/bin/perl
-        print("Unesite vrijednost udaljenosti za pretvoriti: ");
-        $udaljenost = <STDIN>;
-        chomp($udaljenost);
+    ``` perl
+    #!/usr/bin/perl
+    print("Unesite vrijednost udaljenosti za pretvoriti: ");
+    $udaljenost = <STDIN>;
+    chomp($udaljenost);
 
-        $metri = $udaljenost * 1000;
-        $kilometri = $udaljenost / 1000;
+    $metri = $udaljenost * 1000;
+    $kilometri = $udaljenost / 1000;
 
-        print("$udaljenost kilometara = $metri metara\n");
-        print("$udaljenost metara = $kilometri kilometara\n");
-
-        ```
+    print("$udaljenost kilometara = $metri metara\n");
+    print("$udaljenost metara = $kilometri kilometara\n");
+    ```
 
 !!! example "Zadatak"
     - Napiši skriptu koja učitava dva broja, zbroji ih i ispiše rezultat.
@@ -220,28 +218,27 @@ author: Luka Vretenar
 !!! tip
     `==` nije isto što i znak za dodjeljivanje vrijednosti varijable `=`.
 
-!!! info "Primjer"
-    - Primjer provjere jednakosti unesenih brojeva.
+- Primjer provjere jednakosti unesenih brojeva:
 
-        ``` perl
-        #!/usr/bin/perl
-        print("Unesite broj: ");
-        $broj1 = <STDIN>;
-        chomp($broj1);
+    ``` perl
+    #!/usr/bin/perl
+    print("Unesite broj: ");
+    $broj1 = <STDIN>;
+    chomp($broj1);
 
-        print("Unesite drugi broj: ");
-        $broj2 = <STDIN>;
-        chomp($broj2);
+    print("Unesite drugi broj: ");
+    $broj2 = <STDIN>;
+    chomp($broj2);
 
-        if ($broj1 == $broj2)
-        {
-            print("Uneseni brojevi su jednaki.\n");
-        }
-        else
-        {
-            print("Uneseni brojevi nisu jednaki.\n");
-        }
-        ```
+    if ($broj1 == $broj2)
+    {
+        print("Uneseni brojevi su jednaki.\n");
+    }
+    else
+    {
+        print("Uneseni brojevi nisu jednaki.\n");
+    }
+    ```
 
 ### Petlje `while`, `until`
 
@@ -262,35 +259,34 @@ author: Luka Vretenar
     }
     ```
 
-!!! info "Primjer"
-    - Odbrojavanje do nule:
+- Primjer odbrojavanja do nule:
 
-        ``` perl
-        #!/usr/bin/perl
-        $brojac = 10;
-        while ($brojac >= 0)
-        {
-            print($brojac, "\n");
-            $brojac = $brojac - 1;
-        }
-        ```
+    ``` perl
+    #!/usr/bin/perl
+    $brojac = 10;
+    while ($brojac >= 0)
+    {
+        print($brojac, "\n");
+        $brojac = $brojac - 1;
+    }
+    ```
 
-    - Čitanje ulaza dok nije pročitan ispravan broj:
+- Primjer čitanja ulaza dok nije pročitan ispravan broj:
 
-        ``` perl
-        #!/usr/bin/perl
-        print("Koliko iznosi 17 plus 26? ");
+    ``` perl
+    #!/usr/bin/perl
+    print("Koliko iznosi 17 plus 26? ");
+    $broj = <STDIN>;
+    chomp($broj);
+
+    while ($broj != 43)
+    {
+        print("Krivo! Pokušaj ponovo: ");
         $broj = <STDIN>;
         chomp($broj);
-
-        while ($broj != 43)
-        {
-            print("Krivo! Pokušaj ponovo: ");
-            $broj = <STDIN>;
-            chomp($broj);
-        }
-        print("Točno!\n");
-        ```
+    }
+    print("Točno!\n");
+    ```
 
 !!! example "Zadatak"
     - Napiši program koji koristi `until` petlju za ispis prvih 10 brojeva silazno (10-1).
@@ -326,26 +322,25 @@ author: Luka Vretenar
 - Regularne izraze u `perl`-u možemo, u najjednostavnijem obliku, koristiti za pretragu određenih vrijednosti u nekom tekstu.
 - U tom slučaju regularni izraz poprima oblik `/regex/mod`, gdje je `regex` naš regularni izraz a `mod` može biti prazan ili sadržavati specijalan znak `i` kojim definiramo neosjetljivost na mala i velika slova.
 
-!!! info "Primjer"
-    - Pronalaženje određenog niza teksta u liniji pročitanoj sa ulaza:
+- Primjer pronalaženja određenog niza teksta u liniji pročitanoj sa ulaza:
 
-        ``` perl
-        #!/usr/bin/perl
-        $recenica = "Svaka prava ptica leti.";
+    ``` perl
+    #!/usr/bin/perl
+    $recenica = "Svaka prava ptica leti.";
 
-        print("Sto moram traziti? ");
-        $trazi = <STDIN>;
-        chomp($trazi);
+    print("Sto moram traziti? ");
+    $trazi = <STDIN>;
+    chomp($trazi);
 
-        if ($recenica =~ /$trazi/)
-        {
-            print("Našao sam $trazi u $recenica.\n");
-        }
-        else
-        {
-            print("Nisam pronašao.\n");
-        }
-        ```
+    if ($recenica =~ /$trazi/)
+    {
+        print("Našao sam $trazi u $recenica.\n");
+    }
+    else
+    {
+        print("Nisam pronašao.\n");
+    }
+    ```
 
 ### Substitucija teksta
 

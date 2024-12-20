@@ -140,7 +140,7 @@ some_kernel(..., block=(1,1,1), grid=(1,1), shared=32)
 !!! example "Zadatak"
     Promijenite kod primjera koji traži minimalnu vrijednost u vektoru da koristi dinamičku umjesto statičke alokacije.
 
-!!! note
+!!! warning
     Zbog određenih problema na koje smo naišli prilikom korištenja dinamičke alokacije dijeljene memorije odavde nadalje koristit ćemo statičku alokaciju.
 
 ## Paralelna redukcija korištenjem više od jednog bloka

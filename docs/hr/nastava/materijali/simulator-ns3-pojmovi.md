@@ -88,7 +88,7 @@ Mrežni simulator ns-3 je implementiran u cijelosti u programskom jeziku [C++](h
 
 Simulator ns-3 sastoji se od više desetaka modula od kojih ćemo ovdje koristiti tek nekoliko osnovnih (u osnovnom dijelu vježbi koristiti ćemo samo pet: `core`, `network`, `point-to-point`, `internet`, `applications`). Modul je skup nekoliko modela koji imaju određeno zajedničko svojstvo (pored navedenih modula dobar primjer je `wifi` koji okuplja modele koji se tiču komponenata mreža tipa WiFi 802.11). Bez obzira na vrlo sličan izgovor, pojmovi modula i modela imaju bitno različito značenje.
 
-!!! note
+!!! info
     Službena dokumentacija mrežnog simulatora ns-3 organizirana je u tri dokumenta:
 
     - [ns-3 Tutorial](https://www.nsnam.org/docs/tutorial/html/) opisuje kako započeti s radom i pisanjem jednostavnih simulacija i odlična je nadopuna ovih materijala,
@@ -135,5 +135,5 @@ ns-3 ima nekoliko istaknutih klasa koje su sadržane u gotovo svakoj simulaciji.
 
 Pored ovih postoji i niz drugih pomoćnih klasa. Svaka klasa predstavlja neku od fizičkih (primjerice kabel kojim putuje signal) ili softverskih komponenti računalne mreže (primjerice UDP protokol).
 
-!!! note
+!!! info
     Pored već spomenute literature koja će vam pomoći, najkorisnija će vam biti [ns-3 API dokumentacija](https://www.nsnam.org/docs/doxygen/) koja sadrži opis svih objekata i metoda koje ti objekti podržavaju. Kroz vježbe će biti dane brojne poveznice na pojedine dijelove te dokumentacije.

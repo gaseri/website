@@ -45,7 +45,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov, Anja Vrbanjac
     - Izbrišite direktorij `Preddiplomski`.
     - Direktorij `Diplomski` preimenujte u `Dipl`.
 
-!!! tip "Dodatni zadatak"
+!!! bug "Dodatni zadatak"
     Provjerite čemu služi i kako se koristi program [Midnight Commander](https://en.wikipedia.org/wiki/Midnight_Commander) (naredba `mc`).
 
 ## Glob uzorci

@@ -301,7 +301,7 @@ author: Vedran Miletić
 !!! example "Zadatak"
     Pečete [Ledolette s nadjevom od marelica](https://www.ledo.hr/hr/proizvodi/tijesta/slatka-tijesta/ledolette-s-nadjevom-od-marelica) koji zahtijevaju dvije minute za vađenje iz Ledo škrinje i otpakiravanje i 20 minuta u pećnici. Napravite dvije procesne niti, od kojih jedna pokreće funkciju `odmrzavanje(n)`, gdje `n` broj minuta koje se Ledolette pripremaju za stavljanje u pećnicu, i drugu koja pokreće funkciju `pecnica(n)`, gdje je `n` broj minuta koje se kroasani peku u pećnici. Iskoristite `time.sleep()` s praktično upotrebljivim vrijednostima u sekundama da simulirate čekanje. Pokrenite istovremeno obje niti, ali učinite da druga nit čeka na događaj odmrzavanja kroasana koji prva nit postavlja.
 
-!!! tip "Dodatni zadatak"
+!!! bug "Dodatni zadatak"
     Napišite program koji vrši zbroj kubova brojeva u rasponu od 1 do 300000 u 3 niti i raspodijelite tako da 1. nit računa raspon od 1 do 100000, 2. nit od 100001 do 200000, 3. nit od 200001 do 300000. Iskoristite višenitnosti i varijablu u koju ćete spremiti zbroj učinite dijeljenom; iskoristite zaključavanje kod promjene varijable u svakoj od niti; napravite događaj koji postavlja 3. nit u trenutku kad završi s izvođenjem, i učinite da na njega čekaju preostale dvije niti.
 
 ## Brojači
@@ -364,5 +364,5 @@ author: Vedran Miletić
 
     > I čim sam prepoznao okus u lipov čaj namočena komada madelaine, koji mi je svake nedjelje davala tetka Leonie (tada još doduše nisam znao razlog, zbog koga me ta uspomena tako usrećivala, nego sam to otkriće morao odgoditi za mnogo poslije), odmah se pojavi i stara, siva kuća na ulicu, u kojoj je bila njena soba, pa se kao pozorišni dekor pridruži malom paviljonu, koji je gledao na vrt, a koji su na njenoj stražnjoj strani nadogradili za moje roditelje (i baš to je bio onaj krnji komad, koji sam do sad jedini vidio); a s kućom se pojavi i grad. Trg, kamo su me slali prije ručka, ulice, kojima sam trčao od jutra do večeri, po svakom vremenu, i šetnje, na koje smo odlazili, kad je bilo lijepo vrijeme. I kao što se dešava u onoj igri, kojom se Japanci zabavljaju uranjajući u porculansku zdjelu punu vode komadiće do tad bezlična papira, koji se tek što je umočen, isteže, savija, bojadiše, diferencira, pretvara u cvijeće, kuće i određene osobe, koje je moguće prepoznati, tako je i sad sve cvijeće iz našeg vrta, iz Swannova perivoja, tako su svi lopoči s Vivonne, oni dobri seoski ljudi, njihovi mali domovi, crkva i cio Combray sa svojom okolinom, tako je sve što ima oblik i čvrstoću, i grad i vrtovi, izašlo iz moje čaše čaja.
 
-!!! tip "Dodatni zadatak"
+!!! bug "Dodatni zadatak"
     Napišite program koji vrši zbroj kvadrata brojeva u rasponu od 1 do 500000 u 3 niti (raspodijelite po želji). Iskoristite višenitnosti i varijablu u koju ćete spremiti zbroj učinite dijeljenom; iskoristite zaključavanje kod promjene varijable u svakoj od niti; napravite dijeljenu barijeru između tri niti tako da niti čekaju jedna na drugu i istovremeno završavaju izvođenje.

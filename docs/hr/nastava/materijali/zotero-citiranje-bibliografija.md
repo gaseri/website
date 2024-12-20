@@ -24,7 +24,7 @@ Zatim je potrebno instalirati dodatak za web preglednik koji koristite, čiju po
 
 ## Korištenje samostalne aplikacije Zotero
 
-!!! note
+!!! info
     Zotero ima i službeni [Quick Start Guide](https://www.zotero.org/support/quick_start_guide).
 
 Kako bi mogli upravljati našom bazom citata potrebno je prvo pokrenuti aplikaciju Zotero sa naše radne površine.

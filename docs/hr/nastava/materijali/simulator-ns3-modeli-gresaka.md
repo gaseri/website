@@ -13,7 +13,7 @@ Gubitkom paketa zbog grešaka bavimo se u ovoj vježbi; u idućoj vježbi baviti
 
 Model grešaka paketa (ns-3 klasa `ErrorModel`) opisuje način na koji će biti odlučeno koji će paketa u određenom uzorku biti označeni kao iskrivljeni te biti odbačeni prilikom primitka.
 
-!!! note
+!!! tip
     Implementacija grešaka paketa je donekle specifična. `ErrorModel` radi tako da paket označava kao iskrivljen umjesto da mijenja vrijednosti bitova, s ciljem povećanja efikasnosti i time brzine izvođenja simulacije.
 
     Kao što je već rečeno, također s ciljem povećanja efikasnosti, ns-3 prilikom simulacije u zadanim postavkama uopće ne računa CRC paketa, već se svim paketima CRC postavlja na vrijednost 0, a provjera ispravnosti se vrši na temelju `ErrorModel`-a. U slučaju da `ErrorModel` nije dio simulacije, svi se paketi smatraju ispravnima.
@@ -125,7 +125,7 @@ devices.Get (0)->TraceConnectWithoutContext ("PhyTxBegin", MakeCallback (&PhyTxL
 
 Ovdje funkcija `MakeCallback()` radi povratni poziv od reference na funkciju koja joj se proslijedi kao argument.
 
-!!! note
+!!! tip
     Funkcija `TraceConnectWithoutContext()` **vrši** provjeru je li niz znakova koji prima kao prvi argument (u našem slučaju `"PhyTxBegin"`) ispravan, i korisniku to signalizira na način da vraća `true` ako je, i `false` ako nije. Zbog toga program neće prekinuti izvođenje ako je uneseni niz znakova neispravan. Dakle, ako želite biti sigurni da se povezivanje zaista dogodilo, možete to provjeriti na način:
 
 ``` c++
@@ -272,7 +272,7 @@ int main ()
 
 ta poruka biti prikazana. Uočimo da razliku čini količina logginga uključena pozivom funkcije `LogComponentEnable()`. Ovo omogućuje fino razdvajanje poruka koje pojedina komponenta ispisuje na ekran, što olakšava rad s većim simulacijama.
 
-!!! note
+!!! info
     Više o loggingu možete pronaći u [službenoj dokumentaciji](https://www.nsnam.org/docs/manual/html/logging-asserts.html).
 
 ## Model učestalosti grešaka paketa

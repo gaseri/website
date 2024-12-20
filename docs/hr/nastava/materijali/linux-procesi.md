@@ -28,7 +28,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
     - Prekinite izvođenje posla broj 1.
     - Saznajte može li naredba `jobs` izlistati i broj procesa. (**Uputa:** `man jobs` ne postoji; vidite možete li na neki način pogrešno upotrijebiti naredbu da vam baci grešku i na ekran ispiše pomoć kod korištenja.)
 
-!!! tip "Dodatni zadatak"
+!!! bug "Dodatni zadatak"
     - Pokrenite sljedeću naredbu: `emacs -nw dat1.txt &`. Što se dogodilo?
     - Probajte tipkati neki tekst. Što se događa?
     - Vratite pokrenuti Emacs u foreground. Što uočavate?

@@ -28,7 +28,7 @@ Zend Engine v3.4.0, Copyright (c) Zend Technologies
     with Zend OPcache v7.4.11, Copyright (c), by Zend Technologies
 ```
 
-!!! note
+!!! warning
     Vidimo da koristimo verziju 7.4.11 koja nije [posljednja izdana](https://www.php.net/downloads.php) i zbog toga je [službeno nepodržana](https://www.php.net/releases/index.php), ali je dovoljno nova za potrebe učenja. U praktičnoj primjeni za posluživanje web aplikacija je dobro koristiti posljednju verziju s neke od [aktivno podržanih grana izdanja](https://www.php.net/supported-versions.php).
 
 Mi ćemo u nastavku koristiti tek neke od značajki ovog sučelja i zbog toga ćemo spomenuti kako se koristi tek nekolicina parametara. Pregled svih parametara i njihovog načina korištenja moguće je pronaći u man stranici `php(1)` (naredba `man 1 php`) ili u [PHP-ovom priručniku](https://www.php.net/manual/en/index.php) u [odjeljku Using PHP from the command line](https://www.php.net/manual/en/features.commandline.php).

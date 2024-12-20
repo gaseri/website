@@ -847,7 +847,7 @@ Povećavajući $n$ dobivamo točniju aproksimaciju, a navedena metoda naziva se 
 
     za 2, 3, 4 procesa kad svaki proces izvodi 10^4^, 10^5^, 10^6^ iteracija. Opišite svoje zaključke.
 
-!!! tip "Dodatni zadatak"
+!!! bug "Dodatni zadatak"
     Napišite program koji koristi MPI za izračun zbroja kvadrata brojeva u rasponu od 1 do 500000 u 4 procesa korištenjem kolektivne komunikacije tipa scatter-reduce. Raspodijelite po želji; za to morate napraviti listu oblika
 
     ``` python
@@ -859,5 +859,5 @@ Povećavajući $n$ dobivamo točniju aproksimaciju, a navedena metoda naziva se 
 
     odnosno potrebno je da ima 4 podliste od kojih će savka biti dana odgovarajućem procesu. Svi procesi računaju zbroj kvadrata brojeva koje su dobili. Nakon završetka obrade na procesu ranga 0 sakupite rezultate i to tako da izvršite redukciju korištenjem sumiranja.
 
-!!! tip "Dodatni zadatak"
+!!! bug "Dodatni zadatak"
     Napišite program koji koristi MPI za izračun zbroja kubova brojeva u rasponu od 1 do 300000 u 6 procesa korištenjem kolektivne komunikacije tipa scatter-reduce. Na procesu ranga 0 inicijalizirajte listu pojedinih raspona i raspodijelite je procesima koji kubiraju dobivene brojeve i zbrajaju ih. Nakon završetka obrade na procesu ranga 0 izvedite redukciju sumiranjem i na procesu ranga 0 ispišite rezultat na ekran. Ostali procesi neka ne ispisuju ništa.

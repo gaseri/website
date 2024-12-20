@@ -189,7 +189,7 @@ matrix_mult(drv.Out(result_gpu), drv.In(a), drv.In(b), block=(20,20,1), grid=(1,
 result_cpu = np.matrix(a) * np.matrix(b)
 ```
 
-!!! note
+!!! tip
     Kada se izvodi zrno koje radi sa višedimenzionalnim poljem i više blokova u svakoj od dimenzija:
 
     - svaki blok po `y`-u sadrži `gridDim.x` blokova po `x`-u,

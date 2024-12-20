@@ -19,7 +19,7 @@ author: Vedran Miletić
     - Iskoristite `g++` ili `clang++` za prevođenje u izvršni kod. Pokrenite rezultirajući program.
     - Razmotrite rezultat s `hexdump`-om. Pronađite način da ga ispišete u kanonskom obliku.
 
-!!! tip "Dodatni zadatak"
+!!! bug "Dodatni zadatak"
     - Prema uputama [Wikibooksove knjige o Fortranu](https://en.wikibooks.org/wiki/Fortran/Hello_world) složite program s istim pozdravom kao u prethodnom zadatku i spremite ga kao `prog.f`. Pripazite da imate uvlaku od 6 znakova u svakom retku.
     - Iskoristite `gfortran` za prevođenje u izvršni kod. Pokrenite rezultirajući program.
     - Razmotrite rezultat s `hexdump`-om i usporedite ga s programom iz prethodnog zadatka.

@@ -72,7 +72,7 @@ Naredbom `nvvp` pokrećemo NVIDIA Visual Profiler. On je namijenjen za profilira
 
 Zatim, `Next >` i na idućoj stranici `Finish`.
 
-!!! note
+!!! warning
     Ukoliko radite na udaljenom računalu, `nvvp` vam neće moći na ispravan način prikazati pomoć; iskoristite [kopiju iste dokumentacije dostupnu putem weba](https://docs.nvidia.com/cuda/profiler-users-guide/index.html).
 
 ## Optimizacija

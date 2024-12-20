@@ -78,7 +78,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
         - Pokušajte promijeniti njen sadržaj. Objasnite zašto to ne možete, bez obzira što ste u odgovarajućoj grupi.
         - Postavite dozvolu za sebe i ostale na čitanje i promjenu, a zatim grupi obrišite dozvolu promjene sadržaja i pokretanja datoteke.
 
-!!! tip "Dodatni zadatak"
+!!! bug "Dodatni zadatak"
     - Postoje i posebni načini pristupa (engl. *special modes*), koji se dijele u tri grupe:
 
         - special execute,
@@ -141,7 +141,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
     - U kakvom su odnosu zadane i pristupne ACL tog direktorija? Impliciraju li zadane ACL pristupne ACL?
     - Uočite kako ovo djeluje na datoteke i direktorije koje u njemu stvarate. Objasnite zašto datoteke dobivaju `#effective:rw-`.
 
-!!! tip "Dodatni zadatak"
+!!! bug "Dodatni zadatak"
     Zadatak iz *stvarnog* života: korištenjem ACL osmislite način da troje korisnika, `domargan`, `iivakic` i `vedranm`,dijelite jedan direktorij. Svaki od njih mora biti u mogućnosti u njemu stvarati datoteke i direktorije koje moraju kod stvaranja dobiti dozvolu čitanja i pisanja za sve troje.
 
 !!! question "Pitanja za ponavljanje"

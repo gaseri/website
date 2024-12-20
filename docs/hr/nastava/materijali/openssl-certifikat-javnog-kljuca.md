@@ -4,7 +4,7 @@ author: Domagoj Margan, Vedran Miletić
 
 # Certifikat javnog ključa, certifikacijska tijela i sigurni poslužitelj
 
-!!! note
+!!! info
     Skup algoritama za šifriranje čije korištenje se preporuča kod rada sa TLS/SSL certifikatima mijenja se iz godine u godinu kako se pronalaze sigurnosni propusti u njima i kako procesna moć računala raste pa je dobro kod postavljanja TLS-a/SSL-a provjeriti aktualne najbolje prakse, primjerice [one koje navodi Qualys SLL Labs](https://www.ssllabs.com/projects/best-practices/index.html), autor [SSL Server Testa](https://www.ssllabs.com/ssltest/index.html) i [SSL Client Testa](https://www.ssllabs.com/ssltest/viewMyClient.html).
 
 ## Certifikat javnog ključa

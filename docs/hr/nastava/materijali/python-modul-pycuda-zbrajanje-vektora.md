@@ -33,7 +33,7 @@ author: Vedran Miletić, Kristijan Lenković
     result_gpu = np.zeros_like(a)
     ```
 
-!!! note
+!!! warning
     Pripazite na usklađenost Pythonovih `numpy` tipova podataka sa C-ovim tipovima podataka koji se koriste u kernelu (ovdje je to `numpy.float32` s `float`). [Potpun popis](https://wiki.tiker.net/PyCuda/FrequentlyAskedQuestions/#how-do-i-specify-the-correct-types-when-calling-and-preparing-pycuda-functions) može se naći među često postavljanim pitanjima u vezi PyCUDA-e.
 
 - izvođenje koda na GPU-u ([službena dokumentacija](https://documen.tician.de/pycuda/driver.html#pycuda.driver.Function))
@@ -97,7 +97,7 @@ zbroj_vektora(drv.Out(result_gpu), drv.In(a), drv.In(b), block=(250,1,1), grid=(
     - Provjerite možete li se s dva bloka izvesti zbrajanje vektora od 3000 elemenata. (**Napomena:** čim je zadano ovako, vjerojatno ne možete.)
     - Izvedite zbrajanje vektora od 3000 elemenata u 3 bloka.
 
-!!! note
+!!! warning
     GPU-i zasnovani na Tesla arhitekturi podržavaju maksimalno 512 niti po bloku, dok GPU-i zasnovani na arhitekturama Fermi, Keppler i Maxwell podržavaju maksimalno 1024 niti po bloku.
 
 Sposobnosti GPU uređaja možemo saznati pomoću idućeg koda

@@ -90,9 +90,9 @@ Struktura asemblerskog programa prikazanog ispod, općenito je podijeljena u dva
         .data        # deklaracija data segmenta (statički podaci)
 labela:
         .asciiz "Hello World!"
-        .text        # deklaracija text segmenta (kôd programa) 
-        .globl main  # početak programa, treba biti globalan 
-main: 
+        .text        # deklaracija text segmenta (kôd programa)
+        .globl main  # početak programa, treba biti globalan
+main:
                      # korisnički programski kôd
 ```
 
@@ -165,223 +165,217 @@ Optimizacija koda u asembleru je vrlo bitna, a korištenje registara može znatn
 !!! example "Zadatak"
     Napišite program koji će ispisati Hello World! na ekran. Isprobajte program u simulatoru MARS.
 
-**Rješenje:**
+??? success "Rješenje"
+    ``` asm
+    ## Program ispisuje pozdrav na ekran.
 
-``` asm
-## Program ispisuje pozdrav na ekran.
+        .data                   # deklaracija segmenta podataka
+    pozdrav:
+        .asciiz "Hello World!"  # niz bajtova koji odgovara ASCII kodu teksta Hello World! sprema se na adresu s labelom pozdrav
+        .text                   # deklaracija text segmenta
+        .globl main
+    main:
+        la    $a0, pozdrav      # učita adresu labele pozdrav u registar $a0
+        li    $v0, 4            # postavljanje koda (4) sustava za ispisivanje teksta
+        syscall                 # poziv sustava za ispisivanje teksta
+        li    $v0, 10           # postavljanje koda (10) sustava za izlazak iz programa
+        syscall                 # poziv sustava za izlazak iz programa
+    ```
 
-    .data                   # deklaracija segmenta podataka
-pozdrav: 
-    .asciiz "Hello World!"  # niz bajtova koji odgovara ASCII kodu teksta Hello World! sprema se na adresu s labelom pozdrav
-    .text                   # deklaracija text segmenta
-    .globl main
-main:
-    la    $a0, pozdrav      # učita adresu labele pozdrav u registar $a0
-    li    $v0, 4            # postavljanje koda (4) sustava za ispisivanje teksta
-    syscall                 # poziv sustava za ispisivanje teksta
-    li    $v0, 10           # postavljanje koda (10) sustava za izlazak iz programa
-    syscall                 # poziv sustava za izlazak iz programa
-```
+    Program koristi `.data` i `.text` segmente, gdje se u `.data` deklarira oznaka `pozdrav:` koja sadrži string "Hello World!". U ovom djelu program sprema se niz bajtova u `pozdrav:` koji odgovaraju [ASCII](https://hr.wikipedia.org/wiki/ASCII) kodu teksta "Hello World!".
 
-Program koristi `.data` i `.text` segmente, gdje se u `.data` deklarira oznaka `pozdrav:` koja sadrži string "Hello World!". U ovom djelu program sprema se niz bajtova u `pozdrav:` koji odgovaraju [ASCII](https://hr.wikipedia.org/wiki/ASCII) kodu teksta "Hello World!".
+    U `.text` segmentu upisuju se instrukcije programa. Prvo se deklarira glavni program direktivom `.global main` i oznaka početka main funkcije `main:`. Za ispis stringa na ekran, prvo ga je potrebno spremiti u registar `$a0` i to činimo sljedećom instrukcijom: `la $a0, pozdrav`.
 
-U `.text` segmentu upisuju se instrukcije programa. Prvo se deklarira glavni program direktivom `.global main` i oznaka početka main funkcije `main:`. Za ispis stringa na ekran, prvo ga je potrebno spremiti u registar `$a0` i to činimo sljedećom instrukcijom: `la $a0, pozdrav`.
+    Kako bismo ispisali string na ekran koristit ćemo sistemski poziv. Prvo spremimo kod `4` u registar `$v0` instrukcijom: `li $v0,4` i pozovemo `syscall`. Tim instrukcijama pozivamo operacijski sustav da ispiše string na ekran.
 
-Kako bismo ispisali string na ekran koristit ćemo sistemski poziv. Prvo spremimo kod `4` u registar `$v0` instrukcijom: `li $v0,4` i pozovemo `syscall`. Tim instrukcijama pozivamo operacijski sustav da ispiše string na ekran.
-
-Za završetak programa koristimo instrukciju `li $v0, 10` i `syscall` te je ovime program gotov.
+    Za završetak programa koristimo instrukciju `li $v0, 10` i `syscall` te je ovime program gotov.
 
 ## Primjeri programa u MIPS asembleru
 
 !!! example "Zadatak"
     Napišite program koji će ispisati cjelobrojnu vrijednost 5 na ekran. Isprobajte program u simulatoru MARS i proučite sadržaj registara.
 
-**Rješenje:**
+??? success "Rješenje"
+    ``` asm
+        .text
+        .global main
+    main:
+        li    $a0, 5    # učitavanje cjelobrojne vrijednosti 5 u registar $a0
+        li    $v0, 1    # postavljanje koda (1) sustava za ispisivanje cjelobrojne vrijednosti
+        syscall
+        li    $v0, 10   # exit
+        syscall
+    ```
 
-``` asm
-    .text
-    .global main
-main:
-    li    $a0, 5    # učitavanje cjelobrojne vrijednosti 5 u registar $a0
-    li    $v0, 1    # postavljanje koda (1) sustava za ispisivanje cjelobrojne vrijednosti
-    syscall
-    li    $v0, 10   # exit
-    syscall
-```
-
-Za ispisivanje cjelobrojne vrijednosti $5$ na ekran nije nam potreban segment podataka. Stoga krećemo odmah s deklaracijom segmenta programa. Vrijednost broja $5$ spremili smo instrukcijom `li $a0, 5` u registar `$a0`. Važno je napomenuti da poziv funkcije `syscall` za ispisivanje na standardni izlaz zahtijeva da se vrijednost koju želimo ispisati nalazi u registru `$a0`, baš kao i kod ispisa "Hello World!" na ekran. Stoga, prije nego što se pozove ovaj sistemski poziv, vrijednost koju želimo ispisati treba biti pohranjena u registar `$a0` kako bi se ispis mogao izvršiti ispravno. Zatim slijede instrukcije za ispis na ekran i kraj programa.
+    Za ispisivanje cjelobrojne vrijednosti $5$ na ekran nije nam potreban segment podataka. Stoga krećemo odmah s deklaracijom segmenta programa. Vrijednost broja $5$ spremili smo instrukcijom `li $a0, 5` u registar `$a0`. Važno je napomenuti da poziv funkcije `syscall` za ispisivanje na standardni izlaz zahtijeva da se vrijednost koju želimo ispisati nalazi u registru `$a0`, baš kao i kod ispisa "Hello World!" na ekran. Stoga, prije nego što se pozove ovaj sistemski poziv, vrijednost koju želimo ispisati treba biti pohranjena u registar `$a0` kako bi se ispis mogao izvršiti ispravno. Zatim slijede instrukcije za ispis na ekran i kraj programa.
 
 !!! example "Zadatak"
     Napišite program koji zbraja brojeve 2 i 7 i ispisuje rezultat. Isprobajte program u simulatoru MARS i proučite sadržaj registara.
 
-**Rješenje:**
+??? success "Rješenje"
+    ``` asm
+    # Program koji zbraja brojeve 2 i 7, sprema rezultat u registar $t0 i ispisuje rezultat.
+        .text
+        .globl main
+    main:
+        li    $a0, 2        # spremanje cjelobrojne vrijednosti 2 u registar $a0
+        li    $a1, 7        # spremanje cjelobrojne vrijednosti 7 u registar $a1
+        add   $t0, $a0, $a1 # zbroj dvaju brojeva i spremanje u registar $t0
+        move  $a0, $t0      # kopiranje sadržaja registra $t0 u $a0, pripremanje registra $a0 za ispis zbroja
+        li    $v0, 1        # ispis na ekran
+        syscall
+        li    $v0, 10       # exit
+        syscall
+    ```
 
-``` asm
-# Program koji zbraja brojeve 2 i 7, sprema rezultat u registar $t0 i ispisuje rezultat.
-    .text
-    .globl main
-main:
-    li    $a0, 2        # spremanje cjelobrojne vrijednosti 2 u registar $a0
-    li    $a1, 7        # spremanje cjelobrojne vrijednosti 7 u registar $a1
-    add   $t0, $a0, $a1 # zbroj dvaju brojeva i spremanje u registar $t0
-    move  $a0, $t0      # kopiranje sadržaja registra $t0 u $a0, pripremanje registra $a0 za ispis zbroja
-    li    $v0, 1        # ispis na ekran
-    syscall
-    li    $v0, 10       # exit
-    syscall
-```
+    Prije same aritmetičke operacije zbrajanja prvo moramo pohraniti vrijednosti 2 i 7 u neke registre. U ovom primjeru to su registri `$a0` i `$a1`. Zatim slijedi instrukcija zbrajanja `add` koja zbroj brojeva pohranjenih u registrima `$a0` i `$a1` sprema u registar `$t0`.
 
-Prije same aritmetičke operacije zbrajanja prvo moramo pohraniti vrijednosti 2 i 7 u neke registre. U ovom primjeru to su registri `$a0` i `$a1`. Zatim slijedi instrukcija zbrajanja `add` koja zbroj brojeva pohranjenih u registrima `$a0` i `$a1` sprema u registar `$t0`.
+    U idućem koraku ne smijemo zaboraviti pripremiti registar `a0` za ispis. Iskoristit ćemo instrukciju micanja podataka `move`, kako bi premjestili vrijednost iz registra `t0` u registar `a0`. Ovo je neizbježno učiniti jer bi se u suprotnom umjesto zbroja ispisala vrijednost $2$.
 
-U idućem koraku ne smijemo zaboraviti pripremiti registar `a0` za ispis. Iskoristit ćemo instrukciju micanja podataka `move`, kako bi premjestili vrijednost iz registra `t0` u registar `a0`. Ovo je neizbježno učiniti jer bi se u suprotnom umjesto zbroja ispisala vrijednost $2$.
-
-Alternativno, mogli smo napisati i `add $a0, $a0, $a1` gdje bi se zbroj odmah pohranio u registar `$a0` i na taj način smanljili liniju koda programa. Potom slijede instrukcije za ispis na ekran i izlaz iz programa.
+    Alternativno, mogli smo napisati i `add $a0, $a0, $a1` gdje bi se zbroj odmah pohranio u registar `$a0` i na taj način smanljili liniju koda programa. Potom slijede instrukcije za ispis na ekran i izlaz iz programa.
 
 !!! example "Zadatak"
     Napišite program koji učitava dva cijela broja i ispisuje njihov zbroj. Isprobajte program u simulatoru MARS i proučite sadržaj registara.
 
-**Rješenje:**
+??? success "Rješenje"
+    ``` asm
+    # Program učitava dva cijela broja i ispisuje njihov zbroj
 
-``` asm
-# Program učitava dva cijela broja i ispisuje njihov zbroj
+        .text
+        .globl main
+    main:
+        li      $v0, 5        # postavljanje koda (5) sustava za unos cjelobrojne vrijednosti prvog broja
+        syscall
+        move    $t0, $v0      # spremamo prvi broj u registar $t0
+        li      $v0, 5        # učitavanje drugog broja
+        syscall
 
-    .text
-    .globl main
-main: 
-    li      $v0, 5        # postavljanje koda (5) sustava za unos cjelobrojne vrijednosti prvog broja
-    syscall
-    move    $t0, $v0      # spremamo prvi broj u registar $t0
-    li      $v0, 5        # učitavanje drugog broja
-    syscall
+        add     $t1, $v0, $t0 # zbroj
+        move    $a0, $t1      # priprema za ispis zbroja
+        li      $v0, 1        # ispis
+        syscall
+        li      $v0, 10       # exit
+        syscall
+    ```
 
-    add     $t1, $v0, $t0 # zbroj
-    move    $a0, $t1      # priprema za ispis zbroja
-    li      $v0, 1        # ispis
-    syscall
-    li      $v0, 10       # exit
-    syscall
-```
+    U ovom zadatku, program treba omogućiti korisniku unos dva cijela broja putem sučelja te ih zbrojiti i ispisati na ekran.
 
-U ovom zadatku, program treba omogućiti korisniku unos dva cijela broja putem sučelja te ih zbrojiti i ispisati na ekran.
+    Za učitavanje cijelog broja koristimo sistemski poziv s kodom $5$, a unesena vrijednost se sprema u registar `$v0`. Kako bismo zadržali ovu vrijednost za daljnje korištenje, moramo ju premjestiti u neki drugi registar, npr. `$t0`. Ako to ne bismo učinili, pri novom učitavanju broja, prethodno unesena vrijednost bi se izgubila.
 
-Za učitavanje cijelog broja koristimo sistemski poziv s kodom $5$, a unesena vrijednost se sprema u registar `$v0`. Kako bismo zadržali ovu vrijednost za daljnje korištenje, moramo ju premjestiti u neki drugi registar, npr. `$t0`. Ako to ne bismo učinili, pri novom učitavanju broja, prethodno unesena vrijednost bi se izgubila.
+    Zatim učitavamo novu vrijednost i ponavljamo postupak. Nakon što su sve vrijednosti učitane i pohranjene u registre možemo ih zbrojiti. U registar `$t1` pohranjen je zbroj vrijednosti koje su pohranjene u registrima `$v0` i `$t0`.
 
-Zatim učitavamo novu vrijednost i ponavljamo postupak. Nakon što su sve vrijednosti učitane i pohranjene u registre možemo ih zbrojiti. U registar `$t1` pohranjen je zbroj vrijednosti koje su pohranjene u registrima `$v0` i `$t0`.
-
-Nakon zbrajanja, opet koristimo instrukciju `move` kojom ćemo zbroj pohranjen u registru `$t1` premjestiti u `$a0` i ispišemo rezultat na ekran. Program je nakon ispisa gotov, stoga ga je potrebno uredno završiti instrukcijama za izlaz iz programa.
+    Nakon zbrajanja, opet koristimo instrukciju `move` kojom ćemo zbroj pohranjen u registru `$t1` premjestiti u `$a0` i ispišemo rezultat na ekran. Program je nakon ispisa gotov, stoga ga je potrebno uredno završiti instrukcijama za izlaz iz programa.
 
 !!! example "Zadatak"
     Napišite program koji traži od korisnika unos visine s koje tijelo pada te izračunava kvadratnu brzinu slobodnog pada tijela s te visine. Isprobajte program u simulatoru MARS i postavite visinu na 5 m. Rješenje je tada $v^2 = 100\text{ m}^2/\text{s}^2$.
 
-**Rješenje:**
+??? success "Rješenje"
+    ``` asm
+    # Program izracunava kvadratnu brzinu slobodnog pada tijela
 
-``` asm
-# Program izracunava kvadratnu brzinu slobodnog pada tijela 
+        .data
+    visina:
+        .asciiz "Upiši visinu na kojoj se tijelo nalazi u metrima: "
+    odgovor:
+        .asciiz "Kvadratna brzina tijela pri padu je: "
+    konstanta:
+        .word 10    # ubrzanje sile teže, g = 10 m/s^2
 
-    .data
-visina:
-    .asciiz "Upiši visinu na kojoj se tijelo nalazi u metrima: "
-odgovor:
-    .asciiz "Kvadratna brzina tijela pri padu je: "
-konstanta:
-    .word 10    # ubrzanje sile teže, g = 10 m/s^2
+        .text
+        .globl main
+    main:
+        la $a0, visina     # spremanje adrese teksta u registar $a0
+        li $v0, 4          # ispis teksta na ekran
+        syscall
+        li $v0, 5          # učitavanje visine tijela
+        syscall
 
-    .text
-    .globl main
-main:
-    la $a0, visina     # spremanje adrese teksta u registar $a0
-    li $v0, 4          # ispis teksta na ekran
-    syscall
-    li $v0, 5          # učitavanje visine tijela
-    syscall
+        # Izračun kvadrata brzine tijela pri padu
+        lw $t0, konstanta    # spremanje broja 10 u registar $t0
+        li $t1, 2            # učitavanje broja 2 u registar $t1
+        mul $t2, $v0, $t1    # t2=visina*2
+        mul $t0, $t2, $t0    # t0=t2*10 (g=10 m/s^2)
 
-    # Izračun kvadrata brzine tijela pri padu
-    lw $t0, konstanta    # spremanje broja 10 u registar $t0
-    li $t1, 2            # učitavanje broja 2 u registar $t1
-    mul $t2, $v0, $t1    # t2=visina*2
-    mul $t0, $t2, $t0    # t0=t2*10 (g=10 m/s^2)
+        # Ispis rezultata na ekran
+        la $a0, odgovor
+        li $v0, 4
+        syscall
+        move $a0, $t0
+        li $v0, 1
+        syscall
 
-    # Ispis rezultata na ekran
-    la $a0, odgovor
-    li $v0, 4
-    syscall
-    move $a0, $t0
-    li $v0, 1
-    syscall
+        li $v0, 10            # exit
+        syscall
+    ```
 
-    li $v0, 10            # exit
-    syscall
-```
+    Slobodni pad opisuje jednoliko ubrzano kretanje tijela pod utjecajem Zemljine privlačne sile, poznate i kao sila teža. Ubrzanje tijela u slobodnom padu iznosi približno $9,81\text{ m/s}^2$, što uzrokuje da se brzina pada povećava dok tijelo prelazi sve veće puteve:
 
-Slobodni pad opisuje jednoliko ubrzano kretanje tijela pod utjecajem Zemljine privlačne sile, poznate i kao sila teža. Ubrzanje tijela u slobodnom padu iznosi približno $9,81\text{ m/s}^2$, što uzrokuje da se brzina pada povećava dok tijelo prelazi sve veće puteve:
+    $$
+    v=\sqrt{2gh}
+    $$
 
-$$
-v=\sqrt{2gh}
-$$
+    Radi jednostavnosti u ovom zadatku računamo kvadratnu brzinu:
 
-Radi jednostavnosti u ovom zadatku računamo kvadratnu brzinu:
+    $$v^2 = 2 \cdot g \cdot h,$$
 
-$$v^2 = 2 \cdot g \cdot h,$$
+    pri čemu $v$ označava brzinu, $h$ visinu na kojoj se tijelo nalazi, a $g$ je ubrzanje sile teže kojeg smo zaokružili na $10\text{ m/s}^2$.
 
-gdje $v$ označava brzinu, $h$ visinu na kojoj se tijelo nalazi, a $g$ je ubrzanje sile teže kojeg smo zaokružili na $10\text{ m/s}^2$.
+    Program započinjemo deklaracijom segmenta podataka u kojeg ćemo pohraniti adrese na kojima se tekst s uputama za korisnika nalazi. Koristimo oznaku `visina:` u koju pohranjujemo adresu teksta "Upiši visinu na kojoj se tijelo nalazi u metrima: ". Zatim oznaka `odgovor:` ima adresu teksta "Kvadratna brzina tijela pri padu je: ". Na kraju je definirana oznaka `konstanta:` s adresom do pohranjene vrijednosti 10 u memoriji i predstavlja ubrzanje sile teže. Direktiva `.word` rezervira točno 4 bajta u radnoj memoriji, koliko je i potrebno za pohranu cjelobrojne vrijednosti.
 
-Program započinjemo deklaracijom segmenta podataka u kojeg ćemo pohraniti adrese na kojima se tekst s uputama za korisnika nalazi. Koristimo oznaku `visina:` u koju pohranjujemo adresu teksta "Upiši visinu na kojoj se tijelo nalazi u metrima: ". Zatim oznaka `odgovor:` ima adresu teksta "Kvadratna brzina tijela pri padu je: ". Na kraju je definirana oznaka `konstanta:` s adresom do pohranjene vrijednosti 10 u memoriji i predstavlja ubrzanje sile teže. Direktiva `.word` rezervira točno 4 bajta u radnoj memoriji, koliko je i potrebno za pohranu cjelobrojne vrijednosti.
+    Nadalje, definiramo text segment, a ispod njega glavni program. Prvo moramo ispisati uputu korisniku koja se nalazi na adresi koju predstavlja oznaka `visina:`. Nakon ispisa uputa korisniku slijedi unos visine tijela.
 
-Nadalje, definiramo text segment, a ispod njega glavni program. Prvo moramo ispisati uputu korisniku koja se nalazi na adresi koju predstavlja oznaka `visina:`. Nakon ispisa uputa korisniku slijedi unos visine tijela.
+    Korisnik u ovom djelu unosi visinu koja se prema formuli množi s `2`, kojeg smo prethodno spremili u registar `$t1` i konstantom koja iznosi `10`. Vrijednost 10 je pohranjena u radnoj memoriji stoga ju je potrebno pohraniti u neki rgistar, u ovom primjeru to je registar `$t0` i to činimo instrukcijom `lw` (engl. *Load Word*). Nakon toga slijede instrukcije umnoška i spremanje konačnog rezultata u registar `$t0`.
 
-Korisnik u ovom djelu unosi visinu koja se prema formuli množi s `2`, kojeg smo prethodno spremili u registar `$t1` i konstantom koja iznosi `10`. Vrijednost 10 je pohranjena u radnoj memoriji stoga ju je potrebno pohraniti u neki rgistar, u ovom primjeru to je registar `$t0` i to činimo instrukcijom `lw` (engl. *Load Word*). Nakon toga slijede instrukcije umnoška i spremanje konačnog rezultata u registar `$t0`.
-
-Prije ispisa rezultata na ekran slijedi ispis teksta oznake `odgovor:`, a tek onda i sam rezultat množenja. Nakon toga uredno završavamo program naredbom za izlaz.
+    Prije ispisa rezultata na ekran slijedi ispis teksta oznake `odgovor:`, a tek onda i sam rezultat množenja. Nakon toga uredno završavamo program naredbom za izlaz.
 
 !!! example "Zadatak"
     Modificirajte prethodni zadatak tako da uzmete za ubrzanje sile teže konstantu $9,81\text{ m/s}^2$, umjesto $10\text {m/s}^2$. Isprobajte program u simulatoru MARS.
 
-**Rješenje:**
+??? success "Rješenje"
+    ``` asm
+        .data
+    visina:
+        .asciiz "Upiši visinu na kojoj se tijelo nalazi u metrima: "
+    odgovor:
+        .asciiz "Kvadratna brzina tijela pri padu je: "
+    konstanta:
+        .float 9.81
+    broj:
+        .float 2
 
-``` asm
-    .data
-visina: 
-    .asciiz "Upiši visinu na kojoj se tijelo nalazi u metrima: "
-odgovor: 
-    .asciiz "Kvadratna brzina tijela pri padu je: "
-konstanta: 
-    .float 9.81
-broj:
-    .float 2
-    
-    .text
-    .globl main
-main:
-    # ispis uputa korisniku i unos visine
-    la $a0, visina
-    li $v0, 4
-    syscall
-    li $v0, 6
-    syscall
+        .text
+        .globl main
+    main:
+        # ispis uputa korisniku i unos visine
+        la $a0, visina
+        li $v0, 4
+        syscall
+        li $v0, 6
+        syscall
 
-    # učitavanje brojeva u registre
-    l.s $f1, broj
-    l.s $f2, konstanta
-    
-    # instrukcije množenja
-    mul.s $f0, $f0, $f1    # f0 = visina*2
-    mul.s $f12, $f0, $f2   # f12 = f0*9,81
+        # učitavanje brojeva u registre
+        l.s $f1, broj
+        l.s $f2, konstanta
 
-    # ispis rezultata na ekran
-    la $a0, odgovor
-    li $v0, 4     # ispis uputa korisniku na ekran
-    syscall
-    li $v0, 2     # ispis rezultata
-    syscall
-    li $v0, 10    # exit
-    syscall
-```
+        # instrukcije množenja
+        mul.s $f0, $f0, $f1    # f0 = visina*2
+        mul.s $f12, $f0, $f2   # f12 = f0*9,81
 
-Obzirom da ćemo u programu koristiti float vrijednosti brojeva, moramo koristiti posebne float registre za njihovu pohranu. MIPS ne podržava množenje različitih tipova podataka pa ako želimo množiti konstantu tipa float sa cjelobrojnim brojem 2, moramo 2 spremiti kao float vrijednost.
+        # ispis rezultata na ekran
+        la $a0, odgovor
+        li $v0, 4     # ispis uputa korisniku na ekran
+        syscall
+        li $v0, 2     # ispis rezultata
+        syscall
+        li $v0, 10    # exit
+        syscall
+    ```
 
-Nakon prelaska na rad s float vrijednostima, morali smo izmijeniti neke instrukcije. Na primjer, umjesto uobičajene instrukcije za učitavanje vrijednosti u registar sada koristimo instrukciju `l.s`. Također, instrukcija za množenje se sada naziva `mul.s`.
+    Obzirom da ćemo u programu koristiti float vrijednosti brojeva, moramo koristiti posebne float registre za njihovu pohranu. MIPS ne podržava množenje različitih tipova podataka pa ako želimo množiti konstantu tipa float sa cjelobrojnim brojem 2, moramo 2 spremiti kao float vrijednost.
 
-Valja napomenuti da instrukcija za unos float vrijednosti ne sprema vrijednost u registar `$v0` već se za unos float vrijednosti koristi registar `$f0`, dok se za ispis vrijednosti onda koristi registar `$f12`. Na kraju ispisa konačnog rješenja uredno završavamo program naredbom za izlaz.
+    Nakon prelaska na rad s float vrijednostima, morali smo izmijeniti neke instrukcije. Na primjer, umjesto uobičajene instrukcije za učitavanje vrijednosti u registar sada koristimo instrukciju `l.s`. Također, instrukcija za množenje se sada naziva `mul.s`.
+
+    Valja napomenuti da instrukcija za unos float vrijednosti ne sprema vrijednost u registar `$v0` već se za unos float vrijednosti koristi registar `$f0`, dok se za ispis vrijednosti onda koristi registar `$f12`. Na kraju ispisa konačnog rješenja uredno završavamo program naredbom za izlaz.
 
 !!! example "Zadatak"
     1. Napiši program koji računa hipotezu trokuta Pitagorinim poučkom $c^2 = a^2 + b^2$. Neka je zadan pravokutan trokut s katetama $a = 5$ i $b = 2$. Program na kraju ispisuje vrijednost stranice $c$. Program provjerite simulatorom MARS.

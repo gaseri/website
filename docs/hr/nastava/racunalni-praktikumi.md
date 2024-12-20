@@ -177,7 +177,7 @@ odj-o359-121.local
 
 ## Ansible playbook datoteke za instalaciju, konfiguraciju i održavanje računalnog praktikuma te pomoćne radnje prilikom održavanja nastave i ispita
 
-!!! note
+!!! info
     [Ansible](https://www.ansible.com/) [playbook datoteke](https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_intro.html) u nastavku provjerene su korištenjem [Ansible Linta](https://ansible.readthedocs.io/projects/lint/) i [profila](https://ansible.readthedocs.io/projects/lint/profiles/) `production`.
 
 ### Administratorske operacije u računalnom praktikumu

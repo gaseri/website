@@ -4,7 +4,7 @@ author: Vedran Miletić
 
 # Rad s Python okvirom waf
 
-!!! note
+!!! info
     Materijali su složeni prema [Waf Booku](https://waf.io/book/). Osim tog izvora, za više detalja proučite [Waf API dokumentaciju](https://waf.io/apidocs/).
 
 [Sustavi za automatizaciju izgradnje softvera](https://en.wikipedia.org/wiki/Build_automation) (engl. *build automation system*) su aplikacije koje automatiziraju ili skriptiraju aktivnosti u procesu izgradnje softvera.

@@ -219,7 +219,7 @@ if ($_SERVER["REQUEST_METHOD"] == "DELETE") {
 }
 ```
 
-!!! note
+!!! danger
     Moguće je da ova varijanta programa još uvijek ima sigurnosnih propusta koji bi omogućili brisanje datoteke `index.php` uz korištenje naprednijih trikova, ali uzmimo da je za naše potrebe dovoljno dobra.
 
 Funkcija `unlink()` vratit će `true` ako je brisanje bilo uspješno, a `false` ako nije, primjerice zato što datoteka ne postoji ili zato što proces PHP-ovog ugrađenog poslužitelja nema pravo brisanja datoteke jer njene dozvole pristupa to zabranjuju. Zanemarimo do daljnjega probleme s dozvolama pa imamo kod oblika:

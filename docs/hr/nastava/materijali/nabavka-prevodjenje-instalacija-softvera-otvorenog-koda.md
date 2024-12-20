@@ -37,7 +37,7 @@ Preuzimanje softvera podrazumijeva preuzimanje arhiva, za što se mogu koristiti
     - Raspakirajte je i pokušajte izvršiti konfiguraciju. Objasnite što skripta za konfiguraciju ne nalazi na sustavu.
     - Ono što VLC-u nedostaje moguće je instalirati u proizvoljne direktorije, ali je potrebno odgovarajućim parametrom `--with-<biblioteka>` navesti gdje se nalazi. Napravite to za prve dvije nedostajuće biblioteke.
 
-!!! tip "Dodatni zadatak"
+!!! bug "Dodatni zadatak"
     - Na [službenim stranicama uređivača teksta GNU nano](https://www.nano-editor.org/) moguće je GNU nano preuzeti i putem SVN-a.
     - Pronađite kako, a zatim izvršite kompajliranje po uputama koje su tamo navedene.
     - Pokrenite `nano` na isti način kao u prethodnom zadatku da se uvjerite da se zaista radi o različitoj verziji.
