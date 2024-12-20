@@ -617,6 +617,8 @@ markdown_extensions:
       alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.caret
+  - pymdownx.mark
   - pymdownx.tilde
 
 plugins:

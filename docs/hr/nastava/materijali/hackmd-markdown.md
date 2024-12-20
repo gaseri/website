@@ -4,7 +4,7 @@ author: Matea Turalija, Dejan Ljubobratović
 
 # Suradnički uređivač teksta HackMD i jezik Markdown
 
-[Markdown](https://daringfireball.net/projects/markdown/) je jednostavan jezik za pisanje oblikovanog teksta korištenjem čistog teksta. Njegova osnova karakteristika je jednostavnost i lakoća upotrebe, čineći ga time popularnim alatom za oblikovanje i uređivanje teksta bez potrebe za naprednim tehničkim vještinama. Najčešće se koristi za [pisanje znanstvenih članaka](https://jaantollander.com/post/scientific-writing-with-markdown/), README datoteka i objava na forumima. Više detalja o Markdownu moguće je pronaći na [Wikipedijinoj stranici Markdown](https://en.wikipedia.org/wiki/Markdown).
+[Markdown](https://daringfireball.net/projects/markdown/) je jednostavan jezik za pisanje oblikovanog teksta korištenjem čistog teksta. Njegova osnovna karakteristika je jednostavnost i lakoća upotrebe, čineći ga time popularnim alatom za oblikovanje i uređivanje teksta bez potrebe za naprednim tehničkim vještinama. Najčešće se koristi za [pisanje znanstvenih članaka](https://jaantollander.com/post/scientific-writing-with-markdown/), [README datoteka](https://github.com/gaseri/website/blob/main/README.md) i objava na forumima. Više detalja o Markdownu moguće je pronaći na [Wikipedijinoj stranici Markdown](https://en.wikipedia.org/wiki/Markdown).
 
 Datoteke napisane u Markdownu obično koriste ekstenzije kao što su `.md` ili `.markdown`. Na primjer, `primjer.md` je naziv tipične datoteke sa sadržajem u obliku Markdown.
 
@@ -33,7 +33,7 @@ Online:
 
 ### Kreiranje računa i prijava
 
-Posjetite web stranicu [hackmd.io](https://hackmd.io/) i registrirate se putem ekrana za registraciju. Unesite svoju željenu e-mail adresu i slijedite upute za kreiranje novog korisničkog računa.
+Posjetite web stranicu [hackmd.io](https://hackmd.io/) i registrirajte se putem ekrana za registraciju. Unesite svoju željenu e-mail adresu i slijedite upute za kreiranje novog korisničkog računa.
 
 Možete koristiti i druge servise za prijavu poput Google ili GitHub računa.
 
@@ -43,7 +43,7 @@ Kada se prijavite nalazit ćete se u vlastitom radnom prostoru (engl. *My worksp
 
 Novu bilješku možete kreirati klikom na zelenu ikonicu *New note*.
 
-[Sučelje HackMD](https://hackmd.io/c/tutorials/%2Fs%2Ftutorials)-a sastoji se od više ekrana, koji služe za:
+[Sučelje HackMD](https://hackmd.io/c/tutorials/%2Fs%2Ftutorials)-a sastoji se od izbornika i traka s alatima, koji služe za:
 
 - uređivanje,
 - pregled,
@@ -53,9 +53,9 @@ Novu bilješku možete kreirati klikom na zelenu ikonicu *New note*.
 - pretragu bilješki,
 - dijeljenje...
 
-### Uređivanje teksta
+## Uređivanje teksta
 
-#### Naslovi
+### Naslovi
 
 Naslove označavamo na način da ispred teksta stavimo oznaku `#`. Jedan znak `#` ispred naslova je glavni naslov, dva znaka `##` je naslov druge razine i tako dalje.
 
@@ -63,24 +63,30 @@ Naslove označavamo na način da ispred teksta stavimo oznaku `#`. Jedan znak `#
     - Napišite naslov `Suradnički uređivač teksta HackMD i jezik Markdown` s podnaslovom `Moje bilješke s vježbi`.
     - Isprobavanjem otkrijte koliko razina poglavlja podržava jezik Markdown.
 
-#### Podebljano, kurziv i precrtano
+### Jednostavno oblikovanje teksta
 
-Jednostavno oblikovanje teksta poput korištenja kurziva, podebljanih ili precrtanih riječi pomaže istaknuti važne koncepte unutar dokumenta i učiniti ga čitljivijim.
+Jednostavno oblikovanje teksta poput korištenja kurziva i podebljanih riječi pomaže istaknuti važne koncepte unutar dokumenta i učiniti ga čitljivijim.
 
-Podebljana slova (engl. *bold*) u tekstu označavaju se dvjema zvjezdicama `**` prije i nakon riječi. Neki uređivači Markdowna uz zvjezdicu podržavaju i korištenje donjih crta `_` i `__` (engl. *underscore*).
+| Primjer (Markdown kod) | Prikaz rezultata | Opis |
+| ---------------------- | ---------------- | ---- |
+| `**Bold**` | **Bold** | Podebljani tekst |
+| `*Italic*` | *Italic* | Ukošeni tekst |
+| `***Bold and Italic***` | ***Bold and Italic*** | Istovremeno podebljan i ukošen tekst |
+| `Super^script^` | Super^script^ | Nadpis ili eksponent |
+| `Sub~script~` | Sub~script~ | Podpis ili indeks |
+| `~~Crossed~~` | ~~Crossed~~ | Precrtani tekst. Znak tilda `~`: (++alt-graph+1++) |
+| `==Highlight==` | ==Highlight== | Istaknuta slova (Podrška u nekim alatima) |
 
-Ukošena slova (engl. *italic*) u tekstu označavaju se jednom zvjezdicom `*` prije i nakon riječi.
+Također možete primijeniti stil s alatne trake na vrhu područja za uređivanje.
 
-Istovremeno podebljana i ukošena slova možemo dobiti korištenjem triju zvjezdica `***` ili kombinacijom s donjim crtama `**_`, `__*`.
-
-Precrtana slova (eng. *strikethrough*) u tekstu označavaju se s dvije tilde `~~` (++alt-graph+1++) prije i nakon teksta.
+Izbjegavajte previše stilova odjednom kako biste održali jednostavnost i čistoću dokumenta.
 
 !!! example "Zadatak"
-    Napišite sljedeću rečenicu:
+    Koristeći tablicu s primjerima, isprobajte različite načine oblikovanja teksta u jeziku Markdown. Napišite sljedeću rečenicu:
 
-    > Ovo je primjer gdje ću koristiti **podebljana**, *ukošena*, ***istovremeno podebljana i ukošena*** te ~~precrtana~~ slova.
+    > Ovo je primjer gdje ću koristiti **podebljan**, *ukošen*, ***istovremeno podebljan i ukošen*** te ==istaknuti== tekst.
 
-#### Komentar
+### Komentar
 
 Ukoliko želimo u dokumentu imati komentar koji se neće prikazivati u oblikovanom tekstu, koristimo sljedeću sintaksu:
 
@@ -89,16 +95,16 @@ Ukoliko želimo u dokumentu imati komentar koji se neće prikazivati u oblikovan
 ``` markdown
 <!--
 Ovaj tekst se
-neće vidjetu u izlazu,
+neće vidjeti u izlazu,
 to je moj komentar.
 -->
 ```
 
-#### Boja slova
+### Boja slova
 
 Za promjenu boje slova koristimo [HTML](https://en.wikipedia.org/wiki/HTML) tag `font color` na primjer: `<font color="yellow"> Žuti tekst </font>`.
 
-#### Citiranje
+### Citiranje
 
 Citat se piše tako da se na početak retka stavi znak `>`.
 
@@ -109,7 +115,7 @@ Citat se piše tako da se na početak retka stavi znak `>`.
 
     -- Sokrat
 
-#### Numerirane i nenumerirane liste
+### Numerirane i nenumerirane liste
 
 Numeriranu listu dobijemo stavljajući redne brojeve prije svakog retka:
 
@@ -151,30 +157,30 @@ Potvrdni okvir (engl. *checkbox*) dobijemo stavljajući znak `- [ ]`, odnosno `-
         3. Zettlr
             * offline uređivač
 
-#### Linkovi
+### Linkovi
 
 Za umetanje linka koristi se sljedeća sintaksa:`[Naziv linka](http://gaseri.org)`.
 
 Ukoliko ne želimo koristiti posebni tekst kao link onda je dovoljno unijeti adresu web stranice unutar znakova `<` i `>`, a Markdown će automatski kreirati link: `<http://gaseri.org>`.
 
-#### Umetanje slika
+### Umetanje slika
 
-Za umetanje slike s računala dovoljno kliknuti na *Insert image* ikonicu na alatnoj traci. Takvo ubacivanje slike u nekim markdown uređivačima napravit će gomilu ružnog koda. Zato se preporučuje korištenje online slika.
+Za umetanje slike s računala dovoljno je kliknuti na *Insert image* ikonicu na alatnoj traci. Takvo ubacivanje slike u nekim markdown uređivačima napravit će gomilu ružnog koda. Zato se preporučuje korištenje online slika.
 
 Za umetanje online slika, dovoljno je u zagradu staviti link na sliku: `![Naziv slike](https://group.miletic.net/images/gaseri-logo-animated.webp)`.
 
-#### Escape znak
+### Escape znak
 
 Da bi mogli prikazati neku naredbu ili specijalni znak, koristi se escape znak `\` ispred rezervirane riječi ili znaka.
 
 !!! example "Zadatak"
     Napišite rečenicu koja će u izlazu Markdowna izgledati ovako:
 
-    > Riječi možemo napisati \*ukošeno*, \*\*podebljano** ili \~\~precrtano~~.
+    > Riječi možemo napisati \*ukošeno\*, \*\*podebljano\*\* ili \~\~precrtano\~\~.
 
-#### Navođenje dijelova koda
+### Navođenje dijelova koda
 
-Da bi mogli napisati dijelove koda koristimo oznaku `` ` `` (++alt-graph+7++) na početku i na kraju citiranog koda. Ako želimo da se prikaže više linija koda, koristiti ćemo tri oznake `` ``` `` ili tri tilde `~~~` na početku i na kraju citiranog koda.
+Dijelove koda pišemo koristeći oznaku `` ` `` (++alt-graph+7++) na početku i na kraju citiranog koda. Ako želimo da se prikaže više linija koda, koristiti ćemo tri oznake `` ``` `` na početku i na kraju citiranog koda.
 
 Ukoliko želimo da se kod formatira za određeni programski jezik, pored tri oznake na početku koda napisat ćemo skraćenicu programskog jezika, primjerice `` ``` python``. Primjer:
 
@@ -185,7 +191,7 @@ for i in [1, 2, 3, 4]:
 ```
 ````
 
-#### Tablice
+### Tablice
 
 Tablice se kreiraju korištenjem okomitih crta (++alt-graph+w++). Ispod zaglavlja potrebno je staviti crtice `-`:
 
@@ -207,7 +213,7 @@ Za tablice bez zaglavlja ostavljamo prvi redak praznim. Širine ćelija će se a
 | 2 | Ira | $8D |
 ```
 
-##### Poravnavanje tablica
+#### Poravnavanje tablica
 
 Različita poravnanja teksta u tablicama dobivamo dodavanjem znaka ':' u dio tablice sa crticama:
 
@@ -224,7 +230,7 @@ Različita poravnanja teksta u tablicama dobivamo dodavanjem znaka ':' u dio tab
     - stupce s imenom i prezimenom poravnate centrirano te
     - stupac s oznakom poravnate lijevo.
 
-#### Matematičke formule
+### Matematičke formule
 
 Markdown koristi jezik [LaTeX](https://www.latex-project.org/) za pisanje matematičkih formula. Da bi napisali matematičku formulu, koristimo znak `$` ukoliko je formula u tekstu ili `$$` za samostalnu formulu (u svom retku centrirano). Detaljnije o pisanju matematičkih formula imate na [Wikibooks stranici LaTeX/Mathematics](https://en.wikibooks.org/wiki/LaTeX/Mathematics).
 
@@ -250,9 +256,9 @@ Za pisanje kemijskih formula također koristimo jezik LaTeX i pritom koristimo s
 
     Za strelicu koristite oznaku `\to`.
 
-#### Emoji
+### Emoji
 
-Markdown jezik podržava korištenje emoji simbola, na način da se emoji kod ubaci između znaka `:`. Popis emoji kodova možete pronaći na [GitHubu ikatyang/emoji-cheat-sheet](https://github.com/ikatyang/emoji-cheat-sheet).
+Jezik Markdown podržava korištenje emoji simbola, na način da se emoji kod ubaci između znaka `:`. Popis emoji kodova možete pronaći na [GitHubu ikatyang/emoji-cheat-sheet](https://github.com/ikatyang/emoji-cheat-sheet).
 
 !!! example "Zadatak"
     Napišite sljedeće:
@@ -261,7 +267,7 @@ Markdown jezik podržava korištenje emoji simbola, na način da se emoji kod ub
     > Ja jako :heart: učiti Markdown korištenjem materijala s :sunglasses: web stranica.  
     > I zato sam :star_struck:.
 
-### Izrada prezentacije
+## Izrada prezentacije
 
 Slajdovi u prezentaciji odvajaju se s tri crtice `---`, ali obavezno mora biti jedan prazan redak prije i nakon njih. Pod `Customize slides options` unosimo osnovne postavke naše prezentacije u obliku [YAML](https://yaml.org/) preslikavanja:
 
@@ -273,7 +279,7 @@ transition: fade
 !!! example "Zadatak"
     Kreirajte novi dokument s naslovom "Moja prva prezentacija" koristeći `.yaml` zaglavlje iz prethodnog primjera.
 
-#### Teme prezentacije
+### Teme prezentacije
 
 Možemo birati između desetak osnovnih tema (engl. *theme*):
 
@@ -291,7 +297,7 @@ Možemo birati između desetak osnovnih tema (engl. *theme*):
 | `blood` | Dark background, thick white text, red links |
 | `moon` | Dark blue background, thick grey text, blue links |
 
-#### Prijelazi između slajdova
+### Prijelazi između slajdova
 
 Možemo birati između šest osnovnih prijelaza (engl. *transition*):
 
@@ -306,9 +312,11 @@ Možemo birati između šest osnovnih prijelaza (engl. *transition*):
 
 Kroz prezentaciju se krećemo uobičajeno: strelicama lijevo desno ili razmaknicom, a možemo i mišem na način da kliknemo na strelicu pri dnu slajda.
 
-#### Podslajd
+### Podslajd
 
-Za razliku od klasičnih prezentacija, u Markdownu možete imati i podslajdove ili sekcije. Njih u prezentaciji pregledavamo klikom na strelicu dole. Vrlo je korisno jer dodaje novu dimenziju prezentaciji. Podslajd kreiramo tako da slajd odvojimo s četiri `----` crtice umjesto tri `---` kao do sada.
+Za razliku od klasičnih prezentacija, u Markdownu možete imati i podslajdove ili sekcije. Njih u prezentaciji pregledavamo klikom na strelicu dolje. Vrlo je korisno jer dodaje novu dimenziju prezentaciji.
+
+Podslajd kreiramo tako da slajd odvojimo s četiri `----` crtice umjesto tri `---` kao do sada.
 
 !!! example "Zadatak"
     Napravite prezentaciju s barem 5 slajdova koja sadrži sljedeće elemente: formulu, tablicu, listu, emoji, link do neke web stranice, sliku i podslajd.
