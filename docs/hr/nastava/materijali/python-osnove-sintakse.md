@@ -54,10 +54,10 @@ author: Vedran Miletić
 
 - [Povijesni razvoj Pythona](https://en.wikipedia.org/wiki/History_of_Python):
 
-    - 1991. verzija 0.9.0, Guido von Rossum na alt.sources,
-    - 1994. verzija 1.0, 1995. 1.2, 1996. 1.4, ...,
-    - 2000. verzije 1.6 i 2.0, Python razvojni tim napušta [CNRI](https://en.wikipedia.org/wiki/Corporation_for_National_Research_Initiatives), interes za Python u zajednici otvorenog koda raste,
-    - 2008. verzija 3.0 poznata kao [Python 3000 ili kraće Py3k](https://en.wikipedia.org/wiki/History_of_Python#Version_3.0), nekompatibilna s verzijom 2.0, promjene u sintaksi, izbačeni zastarjeli dijelovi.
+    - 1991\. verzija 0.9.0, Guido von Rossum na alt.sources,
+    - 1994\. verzija 1.0, 1995. 1.2, 1996. 1.4, ...,
+    - 2000\. verzije 1.6 i 2.0, Python razvojni tim napušta [CNRI](https://en.wikipedia.org/wiki/Corporation_for_National_Research_Initiatives), interes za Python u zajednici otvorenog koda raste,
+    - 2008\. verzija 3.0 poznata kao [Python 3000 ili kraće Py3k](https://en.wikipedia.org/wiki/History_of_Python#Version_3.0), nekompatibilna s verzijom 2.0, promjene u sintaksi, izbačeni zastarjeli dijelovi.
 
 - Python 2 i Python 3 danas:
 

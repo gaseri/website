@@ -112,7 +112,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 - liste kontrole pristupa (engl. *Access Control Lists*, ACL) proširuju mogućnosti dozvola
 
     - skup aplikacija za manipuliranje proširenim dozvolama
-    - 1998. specifikacija poznata pod imenom POSIX.1e "draft 17"
+    - 1998\. specifikacija poznata pod imenom POSIX.1e "draft 17"
 
 - vrste ACL-a (dvije podjele)
 
