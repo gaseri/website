@@ -2,6 +2,13 @@
 
 ![GASERI logo with text](../../images/gaseri-logo-text.png)
 
+??? abstract "About"
+    Greetings, wanderer.
+
+    We are [Vedran](https://vedran.miletic.net/) and [Matea](https://mateaturalija.github.io/), two academics who are enthusiastic about scientific research, especially in the field of computational chemistry, and open-source software, especially Linux, Python, FreeBSD, LaTeX, and Markdown. We sometimes write about these and related topics on this blog.
+
+    Enjoy your stay.
+
 ??? note "Blogroll"
     - [brr](https://brr.fyi/)
     - [CrysSITE Blog (Michał Sapka)](https://crys.site/blog/)
