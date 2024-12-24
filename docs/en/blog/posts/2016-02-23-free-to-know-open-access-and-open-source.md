@@ -13,6 +13,14 @@ tags:
 
 # Free to know: Open access and open source
 
+---
+
+![yellow and black come in we're open sign](https://unsplash.com/photos/-kr8XPYuSI8/download?w=1920)
+
+Photo source: [Álvaro Serrano (@alvaroserrano) | Unsplash](https://unsplash.com/photos/yellow-and-black-come-in-were-open-sign--kr8XPYuSI8)
+
+---
+
 !!! info
     Reposted from [Free to Know: Open access & open source](https://medium.com/@stemi.education/free-to-know-open-access-open-source-6474a4c7421a), originally posted by [STEMI education on Medium](https://medium.com/@stemi.education).
 

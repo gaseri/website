@@ -13,6 +13,14 @@ tags:
 
 # Mirroring free and open-source software matters
 
+---
+
+![gold and silver steel wall decor](https://unsplash.com/photos/tszceVXBPos/download?w=1920)
+
+Photo source: [Tuva Mathilde Løland (@tuvaloland) | Unsplash](https://unsplash.com/photos/gold-and-silver-steel-wall-decor-tszceVXBPos)
+
+---
+
 Post theme song: [Mirror mirror](https://youtu.be/SVg8eP7KPNQ) by [Blind Guardian](https://www.blind-guardian.com/)
 
 A mirror is a local copy of a website that's used to speed up access for the users residing in the area geographically close to it and reduce the load on the original website. [Content distribution networks (CDNs)](https://en.wikipedia.org/wiki/Content_delivery_network), which are a newer concept and perhaps more familiar to younger readers, serve the same purpose, but do it in a way that's transparent to the user; when using a mirror, the user will see explicitly which mirror is being used because the domain will be different from the original website, while, in case of CDNs, the domain will remain the same, and the DNS resolution (which is invisible to the user) will select a different server.

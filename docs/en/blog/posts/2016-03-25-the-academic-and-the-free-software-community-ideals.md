@@ -13,6 +13,14 @@ tags:
 
 # The academic and the free software community ideals
 
+---
+
+![book lot on black wooden shelf](https://unsplash.com/photos/zeH-ljawHtg/download?w=1920)
+
+Photo source: [Giammarco Boscaro (@giamboscaro) | Unsplash](https://unsplash.com/photos/book-lot-on-black-wooden-shelf-zeH-ljawHtg)
+
+---
+
 Today I vaguely remembered there was one occasion in 2006 or 2007 when some guy from the academia doing something with Java and Unicode posted on some mailing list related to the free and open-source software about a tool he was developing. What made it interesting was that **the tool was open source, and he filed a patent on the algorithm**.
 
 <!-- more -->

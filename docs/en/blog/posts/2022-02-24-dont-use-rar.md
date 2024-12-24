@@ -12,6 +12,14 @@ tags:
 
 # Don't use RAR
 
+---
+
+![a large white tank](https://unsplash.com/photos/o4mmo5S-55k/download?w=1920)
+
+Photo source: [Tim Mossholder (@ctimmossholder) | Unsplash](https://unsplash.com/photos/a-large-white-tank-o4mmo5S-55k)
+
+---
+
 I sometimes joke with my TA [Milan Petrović](https://milanxpetrovic.github.io/) that his usage of RAR does not imply that he will be driving a [rari](https://www.urbandictionary.com/define.php?term=rari). After all, he is not [Devito rapping^Wsinging Uh 😤](https://youtu.be/_uOoV0mtX3E). Jokes aside, if you search for "should I use RAR" or a similar phrase on your favorite search engine, you'll see articles like 2007 [Don't Use ZIP, Use RAR](https://blog.codinghorror.com/dont-use-zip-use-rar/) and 2011 [Why RAR Is Better Than ZIP & The Best RAR Software Available](https://www.makeuseof.com/tag/rar-zip-rar-software/).
 
 <!-- more -->

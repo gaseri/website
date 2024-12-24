@@ -13,6 +13,14 @@ tags:
 
 # Fly away, little bird
 
+---
+
+![macro-photography blue, brown, and white sparrow on branch](https://unsplash.com/photos/SzcO_chuZoE/download?w=1920)
+
+Photo source: [Vincent van Zalinge (@vincentvanzalinge) | Unsplash](https://unsplash.com/photos/macro-photography-blue-brown-and-white-sparrow-on-branch-SzcO_chuZoE)
+
+---
+
 The last day of July happened to be the day that [Domagoj Margan](https://domargan.net/), a former student teaching assistant and a great friend of mine, set up his own [DigitalOcean](https://www.digitalocean.com/) [droplet](https://www.digitalocean.com/products/droplets/) running a web server and serving his professional website on his own domain `domargan.net`. For a few years, I was helping him by providing space on the server I owned and maintained, and I was always glad to do so. Let me explain why.
 
 <!-- more -->

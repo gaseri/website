@@ -12,6 +12,14 @@ tags:
 
 # Coming `/home`
 
+---
+
+![brown wooden chair beside white wall](https://unsplash.com/photos/eJ6HREYjLr8/download?w=1920)
+
+Photo source: [Julian Hochgesang (@julianhochgesang) | Unsplash](https://unsplash.com/photos/brown-wooden-chair-beside-white-wall-eJ6HREYjLr8)
+
+---
+
 FreeBSD [14.0-RELEASE](https://www.freebsd.org/releases/14.0R/) annoucement is [immiment](https://www.freebsd.org/releases/14.0R/schedule/). Due to faster (re)boot and related improvements by [Colin Percival](https://www.tarsnap.com/about.html), this version [made headlines](https://www.theregister.com/2023/08/29/freebsd_boots_in_25ms/) in tech media even before it got released, which got me interested in trying it out on some of our machines. I installed the [first beta](https://lists.freebsd.org/archives/freebsd-current/2023-September/004614.html) on one of [our servers](2023-06-23-what-hardware-software-and-cloud-services-do-we-use.md#servers) and shortly afterward [reported](https://lists.freebsd.org/archives/freebsd-current/2023-September/004635.html) an [upgrade bug](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=273661), which got fixed during the beta cycle and was shipped as an [errata](https://www.freebsd.org/security/advisories/FreeBSD-EN-23:12.freebsd-update.asc) in [13.2-RELEASE-p4](https://www.freebsd.org/releases/13.2R/errata/) and [12.4-RELEASE-p6](https://www.freebsd.org/releases/12.4R/errata/).
 
 I was following the subsequent pre-releases with great interest as well. The final FreeBSD 14.0-RELEASE brings [Clang](https://clang.llvm.org/)/[LLVM](https://llvm.org/) 16.0 (which we use in [scientific software development](../../software.md) and [course teaching](../../teaching/courses/CO.md)), [OpenSSL](https://www.openssl.org/) 3.0, [OpenZFS](https://openzfs.org/) 2.2, [Lua configuration](https://cgit.freebsd.org/src/commit/?id=3cb2f5f369ec) support in the [boot loader](https://man.freebsd.org/cgi/man.cgi?query=loader&sektion=8&format=html), [upgraded WireGuard](https://cgit.freebsd.org/src/commit/?id=744bfb213144) in the [kernel wg driver](https://man.freebsd.org/cgi/man.cgi?query=wg&sektion=4&format=html), and plenty of [other changes](https://www.freebsd.org/releases/14.0R/relnotes/) that are relevant to our usage. I found it well worth the time it took to go through these changes and learn what to expect from the release.

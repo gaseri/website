@@ -15,6 +15,14 @@ tags:
 
 # Joys and pains of interdisciplinary research
 
+---
+
+![white and black coffee maker](https://unsplash.com/photos/g8Xg4wx0WDo/download?w=1920)
+
+Photo source: [Trnava University (@trnavskauni) | Unsplash](https://unsplash.com/photos/white-and-black-coffee-maker-g8Xg4wx0WDo)
+
+---
+
 In 2012 University of Rijeka became [NVIDIA](https://www.nvidia.com/) [GPU Education Center](https://developer.nvidia.com/education_centers) (back then it was called CUDA Teaching Center). For non-techies: NVIDIA is a company producing graphical processors (GPUs), the computer chips that draw 3D graphics in games and the effects in modern movies. In the last couple of years, NVIDIA and other manufacturers allowed the usage of GPUs for general computations, so one can use them to do really fast multiplication of large matrices, finding paths in graphs, and other mathematical operations.
 
 <!-- more -->

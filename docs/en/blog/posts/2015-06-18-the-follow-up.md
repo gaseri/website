@@ -13,6 +13,14 @@ tags:
 
 # The follow-up
 
+---
+
+![people watching concert](https://unsplash.com/photos/Jb7TLs6fW_I/download?w=1920)
+
+Photo source: [Andre Benz (@trapnation) | Unsplash](https://unsplash.com/photos/people-watching-concert-Jb7TLs6fW_I)
+
+---
+
 When [Linkin Park](https://www.linkinpark.com/) released their second album [Meteora](https://www.linkinpark.com/music), they had a quote on their site that went along the lines of
 
 > Musicians have their entire lives to come up with a debut album, and only a very short time afterward to release a follow-up.

@@ -13,6 +13,14 @@ tags:
 
 # My perspective after two years as a research and teaching assistant at FIDIT
 
+---
+
+![human statues near white building](https://unsplash.com/photos/5mVcKZlQbGw/download?w=1920)
+
+Photo source: [Darran Shen (@darranshen) | Unsplash](https://unsplash.com/photos/human-statues-near-white-building-5mVcKZlQbGw)
+
+---
+
 My employment as a [research and teaching assistant](../../people/index.md#staff) at [Faculty of Informatics and Digital Technologies](https://www.inf.uniri.hr/) (FIDIT for short), [University of Rijeka](https://uniri.hr/) (UniRi) ended last month with the expiration of the time-limited contract I had. This moment has marked almost two full years I spent in this institution and I think this is a good time to take a look back at everything that happened during that time. Inspired by the [recent](2023-06-10-should-i-do-a-phd.md) [posts](2023-07-28-alumni-meeting-2023-at-hits-and-the-reminiscence-of-the-postdoc-years.md) by the [PI](../../people/principal-investigator.md) of [my group](../../index.md), I decided to write my perspective on the time that I hope is just the beginning of my academic career.
 
 <!-- more -->

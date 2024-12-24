@@ -15,6 +15,14 @@ tags:
 
 # AMD and the open-source community are writing history
 
+---
+
+![a close up of a cpu chip on top of a motherboard](https://unsplash.com/photos/mnMVFdKwSuw/download?w=1920)
+
+Photo source: [Andrew Dawes (@andrewdawes) | Unsplash](https://unsplash.com/photos/a-close-up-of-a-cpu-chip-on-top-of-a-motherboard-mnMVFdKwSuw)
+
+---
+
 Over the last few years, [AMD](https://www.amd.com/) has slowly been walking the path towards having fully [open](https://www.phoronix.com/scan.php?page=news_item&px=ODg5Nw) [source](https://www.phoronix.com/scan.php?page=news_item&px=OTQzNQ) [drivers](https://www.phoronix.com/scan.php?page=news_item&px=AMD-Two-More-Open-Linux-Devs) on Linux. AMD did not walk alone, they got help from [Red](https://www.phoronix.com/scan.php?page=news_item&px=MTc2NTY) [Hat](https://www.phoronix.com/scan.php?page=news_item&px=Red-Hat-Hiring-Fedora-Work), [SUSE](https://www.phoronix.com/scan.php?page=news_item&px=SUSE-Hiring-Another-Gfx-Dev), and probably others. Phoronix also mentions [PathScale](https://www.phoronix.com/scan.php?page=news_item&px=MTcwNDI), but I have been told on Freenode channel #radeon this is not the case and found no trace of their involvement.
 
 AMD finally [publically unveiled](https://youtu.be/eXCXJoRsgJc) the GPUOpen initiative on the 15th of December 2015. The story was covered on [AnandTech](https://www.anandtech.com/show/9853/amd-gpuopen-linux-open-source), [Maximum PC](https://www.maximumpc.com/amd-rtg-summit-gpuopen-and-software/), [Ars Technica](https://arstechnica.com/information-technology/2015/12/amd-embraces-open-source-to-take-on-nvidias-gameworks/), [Softpedia](https://news.softpedia.com/news/amd-going-open-source-with-amdgpu-linux-driver-and-gpuopen-tools-497663.shtml), and others. For the open-source community that follows the development of Linux graphics and computing stack, this announcement comes as hardly surprising: Alex Deucher and Jammy Zhou [presented plans regarding amdgpu on XDC2015](https://youtu.be/lXi0ByVTFyY) in September 2015. Regardless, public announcement in mainstream media proves that AMD is serious about GPUOpen.

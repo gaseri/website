@@ -13,6 +13,14 @@ tags:
 
 # I am still not buying the new-open-source-friendly-Microsoft narrative
 
+---
+
+![black framed window](https://unsplash.com/photos/VQazfQoNo6o/download?w=1920)
+
+Photo source: [Patrick Bellot (@pbellot) | Unsplash](https://unsplash.com/photos/black-framed-window-VQazfQoNo6o)
+
+---
+
 This week Microsoft [released Computational Network Toolkit (CNTK) on GitHub](https://blogs.microsoft.com/ai/microsoft-releases-cntk-its-open-source-deep-learning-toolkit-on-github/), after [open sourcing Edge's JavaScript engine last month](https://blogs.windows.com/msedgedev/2015/12/05/open-source-chakra-core/) and a whole bunch of projects before that.
 
 Even though the open sourcing of a bunch of their software is a very nice move from Microsoft, I am still not convinced that they have changed to the core. I am sure there are parts of the company who believe that free and open source is the way to go, but it still looks like a change just on the periphery.

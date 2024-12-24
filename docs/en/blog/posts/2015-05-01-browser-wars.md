@@ -13,6 +13,14 @@ tags:
 
 # Browser wars
 
+---
+
+![brown fox on snow field](https://unsplash.com/photos/xUUZcpQlqpM/download?w=1920)
+
+Photo source: [Ray Hennessy (@rayhennessy) | Unsplash](https://unsplash.com/photos/brown-fox-on-snow-field-xUUZcpQlqpM)
+
+---
+
 Last week in Rijeka we held [Science festival 2015](https://www.mojarijeka.hr/otvoren-13-festival-znanosti-s-temom-sunce/). This is the (hopefully not unlucky) 13th instance of the festival that started in 2003. Popular science events were organized in 18 cities in Croatia.
 
 I was invited to give a popular lecture at the [University departments open day](https://www.math.uniri.hr/hr/component/content/article/13-hr/novosti/404-otvornei-dan-2015.html), which is a part of the festival. This is the second time in a row that I got invited to give popular lecture at the open day. In 2014 I talked about The Perfect Storm in information technology caused by the fall of economy during [2008-2012 Great Recession](https://en.wikipedia.org/wiki/Great_Recession) and the simultaneous rise of low-cost, high-value open-source solutions. Open source completely changed the landscape of information technology in just a few years.

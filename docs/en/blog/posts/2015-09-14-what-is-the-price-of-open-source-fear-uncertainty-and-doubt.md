@@ -15,6 +15,14 @@ tags:
 
 # What is the price of open-source fear, uncertainty, and doubt?
 
+---
+
+![turned on red open LED signage](https://unsplash.com/photos/lD-xTvjCgJo/download?w=1920)
+
+Photo source: [j (@janicetea) | Unsplash](https://unsplash.com/photos/turned-on-red-open-led-signage-lD-xTvjCgJo)
+
+---
+
 [The Journal of Physical Chemistry Letters (JPCL)](https://pubs.acs.org/journal/jpclcd), published by [American Chemical Society](https://www.acs.org/), recently put out two Viewpoints discussing open-source software:
 
 1. [Open Source and Open Data Should Be Standard Practices](https://pubs.acs.org/doi/abs/10.1021/acs.jpclett.5b00285) by [J. Daniel Gezelter](https://chemistry.nd.edu/people/j-daniel-gezelter/), and

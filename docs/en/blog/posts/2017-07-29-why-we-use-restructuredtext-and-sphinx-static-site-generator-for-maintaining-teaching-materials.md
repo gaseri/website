@@ -15,6 +15,14 @@ tags:
 
 # Why we use reStructuredText and Sphinx static site generator for maintaining teaching materials
 
+---
+
+![open book lot](https://unsplash.com/photos/Oaqk7qqNh_c/download?w=1920)
+
+Photo source: [Patrick Tomasso (@impatrickt) | Unsplash](https://unsplash.com/photos/open-book-lot-Oaqk7qqNh_c)
+
+---
+
 Yesterday I was asked by [Edvin Močibob](https://edvin.me/), a friend and [a former student teaching assistant of mine](../../people/index.md#former-students), the following question:
 
 > You seem to be using [Sphinx](https://www.sphinx-doc.org/) for your [teaching materials](../../../hr/nastava/index.md), right? As far as I can see, it doesn't have an online WYSIWYG editor. I would be interested in comparison of your solution with e.g. [MediaWiki](https://www.mediawiki.org/).

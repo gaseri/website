@@ -10,6 +10,14 @@ tags:
 
 # Celebrating Graphics and Compute Freedom Day
 
+---
+
+![stack of white and brown ceramic plates](https://unsplash.com/photos/E00p5ySEHmM/download?w=1920)
+
+Photo source: [Elena Mozhvilo (@miracleday) | Unsplash](https://unsplash.com/photos/stack-of-white-and-brown-ceramic-plates-E00p5ySEHmM)
+
+---
+
 Hobbyists, activists, geeks, designers, engineers, etc have always tinkered with technologies for their purposes (in early personal computing, for example). And social activists have long advocated the power of giving tools to people. An open hardware movement driven by these restless innovators is creating ingenious versions of all sorts of technologies, and freely sharing the know-how through the Internet and more recently through social media. Open-source software and more recently hardware is also encroaching upon centers of manufacturing and can empower serious business opportunities and projects.
 
 The free software movement is cited as both an inspiration and a model for open hardware. Free software practices have transformed our culture by making it easier for people to become involved in producing things from magazines to music, movies to games, communities to services. With advances in digital fabrication making it easier to manipulate materials, some now anticipate an analogous opening up of manufacturing to mass participation.

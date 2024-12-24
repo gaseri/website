@@ -15,6 +15,14 @@ tags:
 
 # Alumni Meeting 2023 at HITS and the reminiscence of the postdoc years
 
+---
+
+![a fountain in the middle of a town square](https://unsplash.com/photos/xaWRyEnLk10/download?w=1920)
+
+Photo source: [Jahanzeb Ahsan (@jahan_photobox) | Unsplash](https://unsplash.com/photos/a-fountain-in-the-middle-of-a-town-square-xaWRyEnLk10)
+
+---
+
 This month we had [Alumni Meeting 2023](https://alumni2023.h-its.org/) at the [Heidelberg Institute for Theoretical Studies](https://www.h-its.org/), or HITS for short. I was very glad to attend this whole-day event and reconnect with my former colleagues as well as [researchers](https://www.h-its.org/research/mbm/) [currently](https://www.h-its.org/research/mcm/) [working](https://www.h-its.org/research/ccc/) in the area of computational biochemistry at HITS. After all, this is the place and the institution where I worked for more than half of my time as a postdoc, where I started regularly [contributing code](../../people/principal-investigator.md#gromacs) to [GROMACS](https://www.gromacs.org/) molecular dynamics simulator, and published some of [my best papers](../../people/principal-investigator.md#research-papers-in-journals).
 
 <!-- more -->

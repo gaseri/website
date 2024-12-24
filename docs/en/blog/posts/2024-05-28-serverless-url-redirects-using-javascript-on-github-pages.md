@@ -13,6 +13,14 @@ tags:
 
 # Serverless URL redirects using JavaScript on GitHub Pages
 
+---
+
+![a computer screen with a logo on it](https://unsplash.com/photos/UYsBCu9RP3Y/download?w=1920)
+
+Photo source: [Lautaro Andreani (@lautaroandreani) | Unsplash](https://unsplash.com/photos/a-computer-screen-with-a-logo-on-it-UYsBCu9RP3Y)
+
+---
+
 As many readers of this blog are already aware, we make great use of [GitHub Pages](2023-06-23-what-hardware-software-and-cloud-services-do-we-use.md#cloud-services) for [hosting](2022-11-01-publishing-material-for-mkdocs-website-to-github-pages-using-custom-actions-workflow.md) this website and [several](https://www.miletic.net/) [others](https://fidit-rijeka.github.io/elarsportal/). In particular, after [FIDIT's inf2 server](2017-07-22-enabling-http2-https-and-going-https-only-on-inf2.md) was finally decomissioned, Pages was the obvious choice for replacing the remaining services it offered.
 
 Since the number and variety of applications and services hosted on inf2 server grew and diminished organically over time, what remained afterward was a collection of complex, but unrelated link hierarchies that had to be redirected to new locations (remember that [Cool URIs don't change](https://www.w3.org/Provider/Style/URI)).

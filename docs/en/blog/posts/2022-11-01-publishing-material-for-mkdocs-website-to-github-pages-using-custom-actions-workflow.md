@@ -13,6 +13,14 @@ tags:
 
 # Publishing (Material for) MkDocs website to GitHub Pages using custom Actions workflow
 
+---
+
+![blue and black penguin plush toy](https://unsplash.com/photos/UT8LMo-wlyk/download?w=1920)
+
+Photo source: [Roman Synkevych (@synkevych) | Unsplash](https://unsplash.com/photos/blue-and-black-penguin-plush-toy-UT8LMo-wlyk)
+
+---
+
 As you can probably see, this website is built using the [Material theme](https://squidfunk.github.io/mkdocs-material/) for [MkDocs](https://www.mkdocs.org/), which we have been [happily using](2021-08-16-markdown-vs-restructuredtext-for-teaching-materials.md) for over one year after [using Sphinx](2017-07-29-why-we-use-restructuredtext-and-sphinx-static-site-generator-for-maintaining-teaching-materials.md) for many years prior to that. [GitHub Pages](https://pages.github.com/) offers [built-in support for Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll), but not for MkDocs and therefore it requires the manual building and deployment of our website. However, it automates many other things, including [HTTPS certificate provisioning on our domain](https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https) via [Let's Encrypt](https://letsencrypt.org/).
 
 There are [several somewhat](https://bluegenes.github.io/mkdocs-github-actions/) [related approaches](https://github.com/Tiryoh/actions-mkdocs) using [GitHub Actions](https://github.com/features/actions) for [automating the deployment](https://github.com/marketplace/actions/deploy-mkdocs) of MkDocs-generated sites, usually with the Material theme, to GitHub Pages. These guides are not only found on blogs written by enthusiasts; the official [Getting started section](https://squidfunk.github.io/mkdocs-material/getting-started/) of the Material for MkDocs documentation describes the usage of GitHub Actions for deployment and [provides a generic YAML file for that purpose](https://squidfunk.github.io/mkdocs-material/publishing-your-site/#with-github-actions).

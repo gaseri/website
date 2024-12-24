@@ -14,6 +14,14 @@ tags:
 
 # What hardware, software, and cloud services do we use?
 
+---
+
+![green and black computer motherboard](https://unsplash.com/photos/8yN3T4XDJ70/download?w=1920)
+
+Photo source: [Patrik Kernstock (@pkernstock) | Unsplash](https://unsplash.com/photos/green-and-black-computer-motherboard-8yN3T4XDJ70)
+
+---
+
 Our everyday [scientific](../../projects.md) and [educational](../../teaching/index.md) work relies heavily on hardware, software, and, in modern times, cloud services. The equipment that we will mention below is specific to our group; common services used by university and/or faculty employees will not be specifically mentioned here.
 
 <!-- more -->
