@@ -28,6 +28,10 @@ Druga su najjača institucija na Balkanu, odmah nakon [unuka Bake Praseta](https
 
 Iznimka je [kraj rujna, čitav listopad i početak studenog 2022. godine](https://www.index.hr/magazin/clanak/baki-prasetu-vracen-youtube-kanal-s-preko-dva-milijuna-pratitelja/2409371.aspx) dok je [Baki Prasetu bio ugašen kanal](https://n1info.hr/showbiz/baki-prasetu-ugasen-youtube-kanal-s-vise-od-2-milijuna-pratitelja/) i njegovi su unuci bili nešto slabije organizirani pa su tada GASERI bili najjača institucija na Balkanu.
 
+## Ide li GAS NA MAX?
+
+Svakako, [naš voditelj](../ljudi/index.md#osoblje) [GASer docent](hijerarhija-gasera.md#gaser-docent) je na dopustu zbog [usavršavanja NA MAX Plancku](https://www.mpcdf.mpg.de/services/application-support).
+
 ## Kako postati gaser?
 
 To je prilično dobro objasnio [DZIMI](https://www.instagram.com/dzimiyt_/) u istonaslovljenom [audiovizualnom uratku](https://youtu.be/7ksQqIOnpnc).
@@ -36,10 +40,6 @@ Za one koji traže znanstveniji pristup problemu ili preferiraju pisani materija
 
 - kao sažetak u [knjizi sažetaka](https://hdpl.hdpl.hr/abstracts) [Jezik u digitalnom okruženju, knjiga sažetaka s XXXV. međunarodnog znanstvenog skupa](https://www.hdpl.hr/upload/94623a870a857836d7fb2bfc684d1b1d7bb494cc.pdf#page=120) Hrvatskoga društva za primijenjenu lingvistiku, 2021. i
 - kao cjeloviti rad u [zborniku](https://hdpl.hdpl.hr/proceeding) [Jezik u digitalnom okruženju, zbornik radova s međunarodnoga znanstvenog skupa](https://www.hdpl.hr/upload/1ad89034ae67554d9e0ff7b298ac93597e54c446.pdf#page=118) Hrvatskoga društva za primijenjenu lingvistiku, 2022.
-
-## Ide li GAS NA MAX?
-
-Svakako, [naš voditelj](../ljudi/index.md#osoblje) [GASer docent](hijerarhija-gasera.md#gaser-docent) je na dopustu zbog [usavršavanja NA MAX Plancku](https://www.mpcdf.mpg.de/services/application-support).
 
 ## Kako postati dio grupe GASERI?
 
