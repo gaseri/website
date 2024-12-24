@@ -45,6 +45,14 @@ Za one koji traže znanstveniji pristup problemu ili preferiraju pisani materija
 
 To je nešto manje važna informacija od one u odgovoru na prethodno pitanje pa se nalazi [na posebnoj stranici](../ljudi/kako-se-ukljuciti.md).
 
+## Kako se naziv GASERI prevodi na engleski?
+
+Kako se radi o kratici, ne prevodi se i ostaje [GASERI](../../en/index.md) 😎.
+
+## Kako se riječ gaseri prevodi na engleski?
+
+Trentno nemamo službenu informaciju od autora hrvatsko-engleskog rječnika, Hrvatska TV serija [Sram](https://sram.hr/) u engleskim titlovima koristi prijevod [*clout chasers*](https://www.urbandictionary.com/define.php?term=Clout%20Chaser).
+
 ## Može li si ozbiljna institucija dozvoliti da ima emoji kao logo?
 
 Razmotrimo tvrtku [Hugging Face](https://huggingface.co/), autore [Transformersa](https://huggingface.co/transformers), skupa predtreniranih modela za strojno učenje koji ima [68 tisuća zvjezdica na GitHubu](https://github.com/huggingface/transformers). Dosad su [primili 160 milijuna dolara investicija](https://www.crunchbase.com/organization/hugging-face), [procijenjena vrijednost tvrtke iznosi 2 milijarde dolara](https://www.forbes.com/sites/kenrickcai/2022/05/09/the-2-billion-emoji-hugging-face-wants-to-be-launchpad-for-a-machine-learning-revolution/), a njihovo web sjedište ima [19.4 milijuna pogleda mjesečno](https://www.similarweb.com/website/huggingface.co/).
