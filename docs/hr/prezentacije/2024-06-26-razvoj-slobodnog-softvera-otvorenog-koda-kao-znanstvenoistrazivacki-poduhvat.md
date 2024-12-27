@@ -55,7 +55,7 @@ section.finale h2 {
 - [Petra Mrša](https://apuri.uniri.hr/nastavnik/petra-mrsa/), [Dijana Protić](https://apuri.uniri.hr/dijana-protic/) (APURi): [razvoj platforme za agregaciju digitalnih audiovizualnih umjetničkih djela CubeCommons](https://cubecommons.ca/)
 - brojne druge suradnje manjeg opsega: [izv. prof. dr. sc. Kristijan Lenac](https://klenac.weebly.com/) (RiTeh), doc. dr. sc. Benedikt Perak (FFRi)
 
-![bg right:25%](https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb) <!-- https://unsplash.com/photos/a-computer-screen-with-a-bunch-of-text-on-it-1LLh8k2_YFk -->
+![bg right:25%](https://unsplash.com/photos/1LLh8k2_YFk/download?w=1920) <!-- https://unsplash.com/photos/a-computer-screen-with-a-bunch-of-text-on-it-1LLh8k2_YFk -->
 
 ---
 
@@ -67,7 +67,7 @@ section.finale h2 {
 - Motivacija, izvedba i utjecaj
 - Zaključak i idući koraci
 
-![bg left](https://images.unsplash.com/photo-1569017388730-020b5f80a004?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb) <!-- https://unsplash.com/photos/open-led-signage-4kCGEB7Kt4k -->
+![bg left](https://unsplash.com/photos/4kCGEB7Kt4k/download?w=1920) <!-- https://unsplash.com/photos/open-led-signage-4kCGEB7Kt4k -->
 
 ---
 
@@ -81,7 +81,7 @@ section.finale h2 {
     - Berkeley Software Distribution (BSD)
 - Microsoftova vizija: Windowsi kao univerzalno sučelje između različitog hardvera i različitog softvera
 
-![bg right:40%](https://images.unsplash.com/photo-1506399558188-acca6f8cbf41?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb) <!-- https://unsplash.com/photos/img-ix-mining-rig-inside-white-and-gray-room-klWUhr-wPJ8 -->
+![bg right:40%](https://unsplash.com/photos/klWUhr-wPJ8/download?w=1920) <!-- https://unsplash.com/photos/img-ix-mining-rig-inside-white-and-gray-room-klWUhr-wPJ8 -->
 
 ---
 
@@ -96,7 +96,7 @@ section.finale h2 {
 - Netscape/Mozilla 1998., preteča Firefoxa
     - otvoreni kod (engl. *open source*)
 
-![bg left:25%](https://images.unsplash.com/photo-1597733336794-12d05021d510?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb) <!-- https://unsplash.com/photos/purple-and-blue-light-digital-wallpaper-8bghKxNU1j0 -->
+![bg left:25%](https://unsplash.com/photos/8bghKxNU1j0/download?w=1920) <!-- https://unsplash.com/photos/purple-and-blue-light-digital-wallpaper-8bghKxNU1j0 -->
 
 ---
 
@@ -104,7 +104,7 @@ section.finale h2 {
 
 > I often compare open source to science. To where science took this whole notion of developing ideas in the open and improving on other peoples' ideas and making it into what science is today and the incredible advances that we have had. And I compare that to witchcraft and alchemy, where openness was something you didn't do.
 
-![bg right:40%](https://unsplash.com/photos/iS1NV9yN0Lg/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MXx8bGludXglMjBwZW5ndWlufGVufDB8fHx8MTcxOTMwMDczNnwy) <!-- https://unsplash.com/photos/penguins-on-brown-rock-formation-iS1NV9yN0Lg -->
+![bg right:40%](https://unsplash.com/photos/iS1NV9yN0Lg/download?w=1920) <!-- https://unsplash.com/photos/penguins-on-brown-rock-formation-iS1NV9yN0Lg -->
 
 ## Video: [Truth Happens Remix](https://youtu.be/5EkkMfjetEY)
 
@@ -119,7 +119,7 @@ section.finale h2 {
 - godinu kasnije IBM je za 34 milijarde dolara kupio [Red Hat](https://www.redhat.com/), tada vodeću kompaniju za razvoj slobodnog operacijskog sustava za poslovne korisnike temeljenog na jezgri Linux
     - financijske institucije, zdravstvo, [superračunala](https://cnrm.uniri.hr/bura/) i dr.
 
-![bg right:20%](https://unsplash.com/photos/BV49ACKmMtY/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8OXx8b3BlbiUyMGNvZGV8ZW58MHx8fHwxNzE5Mjk3NzA2fDI) <!-- https://unsplash.com/photos/purple-and-white-love-neon-light-signage-BV49ACKmMtY -->
+![bg right:20%](https://unsplash.com/photos/BV49ACKmMtY/download?w=1920) <!-- https://unsplash.com/photos/purple-and-white-love-neon-light-signage-BV49ACKmMtY -->
 
 ---
 
@@ -139,7 +139,7 @@ section.finale h2 {
     - modeliranje i simulacija stvarnih sustava u računalu
 - može se dijeliti među znanstvenicima kao znanstveni rezultati ili komercijalizirati
 
-![bg left:40%](https://unsplash.com/photos/pwcKF7L4-no/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MXx8bGFib3JhdG9yeXxlbnwwfHx8fDE3MTkyOTI5NjV8Mg) <!-- https://unsplash.com/photos/refill-of-liquid-on-tubes-pwcKF7L4-no -->
+![bg left:40%](https://unsplash.com/photos/pwcKF7L4-no/download?w=1920) <!-- https://unsplash.com/photos/refill-of-liquid-on-tubes-pwcKF7L4-no -->
 
 ---
 
@@ -152,7 +152,7 @@ section.finale h2 {
     - kompetitivna cijena za komercijalno korištenje u industriji
 - slobodne, odnosno otvorene licence
 
-![bg right:35%](https://unsplash.com/photos/OQMZwNd3ThU/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8OHx8bGljZW5zZSUyMGFncmVlbWVudHxlbnwwfHx8fDE3MTkzMDIyNzl8Mg) <!-- https://unsplash.com/photos/man-writing-on-paper-OQMZwNd3ThU -->
+![bg right:35%](https://unsplash.com/photos/OQMZwNd3ThU/download?w=1920) <!-- https://unsplash.com/photos/man-writing-on-paper-OQMZwNd3ThU -->
 
 ---
 
@@ -168,7 +168,7 @@ section.finale h2 {
     - [MIT License](https://en.wikipedia.org/wiki/MIT_License)
     - [BSD Licenses](https://en.wikipedia.org/wiki/BSD_licenses): najpopularnija Simplified BSD (FreeBSD) License
 
-![bg left:35%](https://unsplash.com/photos/ZYBl6VnUd_0/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MzN8fG9wZW4lMjBzb3VyY2V8ZW58MHx8fHwxNzE5MjkwNzc5fDI) <!-- https://unsplash.com/photos/green-and-white-open-signage-ZYBl6VnUd_0 -->
+![bg left:35%](https://unsplash.com/photos/ZYBl6VnUd_0/download?w=1920) <!-- https://unsplash.com/photos/green-and-white-open-signage-ZYBl6VnUd_0 -->
 
 ---
 
@@ -180,7 +180,7 @@ section.finale h2 {
     - razlozi su dobro poznati: financiranje, organizacija, povijesni razlozi (prof. Ivan Đikić, prof. Gordan Lauc i brojni drugi)
 - kroz razvoj znanstvenog softvera moguće je jače se povezati sa zapadnim kolegama i manje ovisiti o financiranju od strane MZO RH (HrZZ)
 
-![bg right:20%](https://unsplash.com/photos/6gSyEKq4Pvg/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8Nnx8d2VzdHxlbnwwfHx8fDE3MTkzMTQyNzF8MA) <!-- https://unsplash.com/photos/north-east-west-and-south-wall-decor-6gSyEKq4Pvg -->
+![bg right:20%](https://unsplash.com/photos/6gSyEKq4Pvg/download?w=1920) <!-- https://unsplash.com/photos/north-east-west-and-south-wall-decor-6gSyEKq4Pvg -->
 
 ---
 
@@ -190,7 +190,7 @@ section.finale h2 {
 - automatizacija repetitivne obrade podataka -> **softver**
     - naravno, softver može i više od toga (!)
 
-![bg left:55%](https://unsplash.com/photos/F49x0Vct5Lo/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NHx8dG9vbHxlbnwwfHx8fDE3MTkzMTQzOTZ8Mg) <!-- https://unsplash.com/photos/assorted-hand-tools-on-wall-F49x0Vct5Lo -->
+![bg left:55%](https://unsplash.com/photos/F49x0Vct5Lo/download?w=1920) <!-- https://unsplash.com/photos/assorted-hand-tools-on-wall-F49x0Vct5Lo -->
 
 ---
 
@@ -200,7 +200,7 @@ section.finale h2 {
 - modeliranje i simulacije umjesto teško dostupnih, sporih ili skupih eksperimenata u procesu istraživanja
     - većina objavljenih radova kombinira eksperimentalne i simulacijske metode, prilagođava ih po potrebi
 
-![bg right](https://unsplash.com/photos/PBtfsP3eEZ4/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NXx8c21hcnQlMjBob21lfGVufDB8fHx8MTcxOTI4NDAzMnwy) <!-- https://unsplash.com/photos/person-holding-black-iphone-4-PBtfsP3eEZ4 -->
+![bg right](https://unsplash.com/photos/PBtfsP3eEZ4/download?w=1920) <!-- https://unsplash.com/photos/person-holding-black-iphone-4-PBtfsP3eEZ4 -->
 
 ---
 
@@ -213,7 +213,7 @@ section.finale h2 {
 - ~= daljnji razvoj postojećih (slobodnih) znanstvenih softvera
 - slobodni softver je zbog toga posebno prikladan za razvoj znanstvenog softvera
 
-![bg left:50%](https://unsplash.com/photos/sqWiX2-BxLg/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTI0fHxnaWFudHxlbnwwfHx8fDE3MTkzMTUyODl8Mg) <!-- https://unsplash.com/photos/a-woman-standing-next-to-a-statue-of-a-woman-sqWiX2-BxLg -->
+![bg left:50%](https://unsplash.com/photos/sqWiX2-BxLg/download?w=1920) <!-- https://unsplash.com/photos/a-woman-standing-next-to-a-statue-of-a-woman-sqWiX2-BxLg -->
 
 ---
 
@@ -225,7 +225,7 @@ section.finale h2 {
     - gotove biblioteke treće strane koje se mogu iskoristiti su lakše za pronaći u popularnijim programskim jezicima
 - razvojno okruženje: Microsoft Visual Studio (VS) Code, JetBrains PyCharm ili sl.
 
-![bg right:40%](https://unsplash.com/photos/fZP5-34c91Q/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTF8fHNjaWVudGlmaWMlMjBjb21wdXRpbmd8ZW58MHx8fHwxNzE5MzE4Mjg4fDA) <!-- https://unsplash.com/photos/a-black-and-white-photo-of-the-top-of-a-tower-fZP5-34c91Q -->
+![bg right:40%](https://unsplash.com/photos/fZP5-34c91Q/download?w=1920) <!-- https://unsplash.com/photos/a-black-and-white-photo-of-the-top-of-a-tower-fZP5-34c91Q -->
 
 ---
 
@@ -236,7 +236,7 @@ section.finale h2 {
 - ista osoba može biti i korisnik i programer: jezici kao Python drastično su smanjili razinu potrebnih znanja za započeti razvoj softvera
 - zajedno ulažu vrijeme i trud => softver usklađen s potrebama
 
-![bg left](https://unsplash.com/photos/5fNmWej4tAA/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8Mnx8c2NpZW50aWZpYyUyMGNvbXB1dGluZ3xlbnwwfHx8fDE3MTkzMTgyODh8MA) <!-- https://unsplash.com/photos/person-holding-pencil-near-laptop-computer-5fNmWej4tAA -->
+![bg left](https://unsplash.com/photos/5fNmWej4tAA/download?w=1920) <!-- https://unsplash.com/photos/person-holding-pencil-near-laptop-computer-5fNmWej4tAA -->
 
 ---
 
@@ -247,7 +247,7 @@ section.finale h2 {
     - automatsko testiranje kod dodavanja promjena
     - mogućnost praćenja prijavljenih problema, planova razvoja, ...
 
-![bg right](https://unsplash.com/photos/842ofHC6MaI/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8M3x8Z2l0aHVifGVufDB8fHx8MTcxOTMxODkyOXwy) <!-- https://unsplash.com/photos/a-close-up-of-a-text-description-on-a-computer-screen-842ofHC6MaI -->
+![bg right](https://unsplash.com/photos/842ofHC6MaI/download?w=1920) <!-- https://unsplash.com/photos/a-close-up-of-a-text-description-on-a-computer-screen-842ofHC6MaI -->
 
 ---
 
@@ -258,13 +258,13 @@ section.finale h2 {
 - kad domaća supperračunala postanu premala: [The European High Performance Computing Joint Undertaking (EuroHPC JU)](https://eurohpc-ju.europa.eu/)
 - alternativa: računala u oblaku ([Amazon Web Services](https://aws.amazon.com/), [Google Cloud Platform](https://cloud.google.com/), [Microsoft Azure](https://azure.microsoft.com/))
 
-![bg left](https://unsplash.com/photos/rvfm_b1C6lc/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8Mnx8b2xkJTIwaGFyZHdhcmV8ZW58MHx8fHwxNzE5Mzg4NTU4fDI) <!-- https://unsplash.com/photos/an-old-computer-sitting-on-the-floor-next-to-a-wall-rvfm_b1C6lc -->
+![bg left](https://unsplash.com/photos/rvfm_b1C6lc/download?w=1920) <!-- https://unsplash.com/photos/an-old-computer-sitting-on-the-floor-next-to-a-wall-rvfm_b1C6lc -->
 
 ---
 
 ## Treba li razvijati softver u skladu sa svojim znanstveno-istraživačkim potrebama?
 
-![bg](https://unsplash.com/photos/tYVkjjMYFBo/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8OXx8c29mdHdhcmUlMjBkZXNpZ258ZW58MHx8fHwxNzE5MzE4NzUyfDI)
+![bg](https://unsplash.com/photos/tYVkjjMYFBo/download?w=1920) <!-- https://unsplash.com/photos/person-writing-on-dry-erase-board-tYVkjjMYFBo -->
 
 ---
 
@@ -273,7 +273,7 @@ section.finale h2 {
 - iz znanstvene perspektive, upitan doprinos
 - iz praktične perspektive, gubitak vremena i pogrešno uloženi trud
 
-![bg left:60%](https://unsplash.com/photos/wD1LRb9OeEo/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzE5MzE4NjU3fA) <!-- https://unsplash.com/photos/three-men-sitting-while-using-laptops-and-watching-man-beside-whiteboard-wD1LRb9OeEo -->
+![bg left:60%](https://unsplash.com/photos/wD1LRb9OeEo/download?w=1920) <!-- https://unsplash.com/photos/three-men-sitting-while-using-laptops-and-watching-man-beside-whiteboard-wD1LRb9OeEo -->
 
 ---
 
@@ -282,7 +282,7 @@ section.finale h2 {
 - uključivanje u razvoj postaje "penjanje na ramena divova"
 - odlična prilika za povezivanje i suradnju sa znanstvenicima koji razvijaju i koriste taj softver
 
-![bg right:60%](https://unsplash.com/photos/wMRIcT86SWU/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8Nnx8Y29uZmVyZW5jZXxlbnwwfHx8fDE3MTkyNTM5NDV8Mg) <!-- https://unsplash.com/photos/people-sitting-on-chair-in-front-of-table-wMRIcT86SWU -->
+![bg right:60%](https://unsplash.com/photos/wMRIcT86SWU/download?w=1920) <!-- https://unsplash.com/photos/people-sitting-on-chair-in-front-of-table-wMRIcT86SWU -->
 
 ---
 
@@ -292,7 +292,7 @@ section.finale h2 {
 - odabrati jezik i licencu, iskoristiti što više gotovih biblioteka treće strane
 - moguće je uključiti suradnike i podijeliti posao (i zasluge)
 
-![bg left](https://unsplash.com/photos/2jTu7H9l6JA/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NjJ8fHNvZnR3YXJlfGVufDB8fHx8MTcxOTMyMTY2N3wy) <!-- https://unsplash.com/photos/green-and-black-audio-mixer-2jTu7H9l6JA -->
+![bg left](https://unsplash.com/photos/2jTu7H9l6JA/download?w=1920) <!-- https://unsplash.com/photos/green-and-black-audio-mixer-2jTu7H9l6JA -->
 
 ---
 
@@ -305,7 +305,7 @@ section.finale h2 {
     - ima javne metrike broja pogleda
     - može se citirati pomoću DOI
 
-![bg right:40%](https://unsplash.com/photos/3XisDwg6jAE/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NHx8Z2l0aHViJTIwc3RhcnN8ZW58MHx8fHwxNzE5MzMzMjY3fDI) <!-- https://unsplash.com/photos/white-and-brown-elephant-figurine-3XisDwg6jAE -->
+![bg right:40%](https://unsplash.com/photos/3XisDwg6jAE/download?w=1920) <!-- https://unsplash.com/photos/white-and-brown-elephant-figurine-3XisDwg6jAE -->
 
 ---
 
@@ -315,7 +315,7 @@ section.finale h2 {
     - rast posjećenosti dokumentacije i rast broja poveznica na nju utječe na rast važnosti web sjedišta autora, grupa i sveučilišta
     - spontani nalaznici mogu doprinijeti softveru i postaju potencijalni suradnici u znanstvenim projektima
 
-![bg left:40%](https://unsplash.com/photos/yeB9jDmHm6M/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MzR8fHNlYXJjaHxlbnwwfHx8fDE3MTkzMjYxNzV8MA) <!-- https://unsplash.com/photos/smartphone-showing-google-site-yeB9jDmHm6M -->
+![bg left:40%](https://unsplash.com/photos/yeB9jDmHm6M/download?w=1920) <!-- https://unsplash.com/photos/smartphone-showing-google-site-yeB9jDmHm6M -->
 
 ---
 
@@ -326,7 +326,7 @@ section.finale h2 {
 - korisnici rado citiraju softver koji koriste iz zahvalnosti što im je besplatno dostupan i što ga mogu prilagoditi svojim potrebama
     - rad koji opisuje softver može lako imati 10x ili 100x više citata od prosječnog rada neke grupe
 
-![bg right:40%](https://unsplash.com/photos/hy116XBXS6g/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8OHx8Y2l0YXRpb258ZW58MHx8fHwxNzE5MzM0ODQxfDI&force=true) <!-- https://unsplash.com/photos/a-close-up-of-a-book-with-writing-on-it-hy116XBXS6g -->
+![bg right:40%](https://unsplash.com/photos/hy116XBXS6g/download?w=1920) <!-- https://unsplash.com/photos/a-close-up-of-a-book-with-writing-on-it-hy116XBXS6g -->
 
 ---
 
@@ -342,7 +342,7 @@ section.finale h2 {
 - [Orange](https://orangedatamining.com/)
 - [PyTorch](https://pytorch.org/)
 
-![bg left](https://unsplash.com/photos/DYHx6h3lMdY/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MjJ8fHNjaWVuY2V8ZW58MHx8fHwxNzE5MzAzNDUxfDI) <!-- https://unsplash.com/photos/a-ferris-wheel-lit-up-at-night-with-colorful-lights-DYHx6h3lMdY -->
+![bg left](https://unsplash.com/photos/DYHx6h3lMdY/download?w=1920) <!-- https://unsplash.com/photos/a-ferris-wheel-lit-up-at-night-with-colorful-lights-DYHx6h3lMdY -->
 
 ---
 
@@ -352,7 +352,7 @@ section.finale h2 {
     - u DE/FR se ljude zapošljava na radna mjesta za poslijedoktorande, istraživače i znanstvenike koji su članovi osoblja, ali nisu voditelji grupa
     - kako RH slijedi zapadne trendove, realno je očekivati da će se pravni okvir na neki način kretati u tom smjeru
 
-![bg right:35%](https://unsplash.com/photos/j06gLuKK0GM/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTl8fGxhd3xlbnwwfHx8fDE3MTkzMzU1OTl8Mg) <!-- https://unsplash.com/photos/gold-and-silver-round-frame-magnifying-glass-j06gLuKK0GM -->
+![bg right:35%](https://unsplash.com/photos/j06gLuKK0GM/download?w=1920) <!-- https://unsplash.com/photos/gold-and-silver-round-frame-magnifying-glass-j06gLuKK0GM -->
 
 ---
 
@@ -366,13 +366,13 @@ section.finale h2 {
     - teško je biti bolji od nekog postojećeg rješenja na kojem više grupa radi desetljećima i koje ima velik broj korisnika
     - bolje je ući u nišu koja nije bila pokrivena ili se otvorila napretkom u znanosti (npr. šira primjena umjetne inteligencije)
 
-![bg](https://unsplash.com/photos/OxHPDs4WV8Y/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzE5Mzg4MzU3fA)
+![bg](https://unsplash.com/photos/OxHPDs4WV8Y/download?w=1920) <!-- https://unsplash.com/photos/polyhedral-wall-OxHPDs4WV8Y -->
 
 ---
 
 ## [Open Playground](https://youtu.be/oDzecz8F4yI)
 
-![bg right](https://unsplash.com/photos/GlQawc9OMyI/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NXx8cGxheWdyb3VuZHxlbnwwfHx8fDE3MTkzMDc4NjB8Mg) <!-- https://unsplash.com/photos/orange-and-black-playground-slide-GlQawc9OMyI -->
+![bg right](https://unsplash.com/photos/GlQawc9OMyI/download?w=1920) <!-- https://unsplash.com/photos/orange-and-black-playground-slide-GlQawc9OMyI -->
 
 ---
 
