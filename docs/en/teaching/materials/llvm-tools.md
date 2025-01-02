@@ -12,7 +12,7 @@ In addition to the use of LLVM via the Clang compiler and the Mesa 3d graphics l
 - [llvm-stress](#llvm-stress), the random generator of files containing LLVM intermediate representation
 - [opt](#opt), the LLVM optimizer
 
-We will be working with files containing the LLVM intermediate representation (IR). Many LLVM IR examples are available in the [VirtualMachine/ir-examples repository on GitHub](https://github.com/Virtual-Machine/ir-examples) that we obtained earlier. We will use both the [C source code](https://github.com/Virtual-Machine/ir-examples/tree/master/c) and the [LLVM IR source code](https://github.com/Virtual-Machine/ir-examples/tree/master/ll) from that repository.
+We will be working with files containing the LLVM intermediate representation (IR). Many LLVM IR examples are available in the [VirtualMachine/ir-examples repository on GitHub](https://github.com/Virtual-Machine/ir-examples) that we obtained earlier. We will use both [the C source code](https://github.com/Virtual-Machine/ir-examples/tree/master/c) and [the LLVM IR source code](https://github.com/Virtual-Machine/ir-examples/tree/master/ll) from that repository.
 
 In the following examples we will place the `ir-examples` directory  in the `builddir` directory of the `llvm-project`. Once placed in the `builddir` directory, we can achieve this using cURL:
 
@@ -776,7 +776,7 @@ $ ./bin/opt example-stress-size8.ll -S -passes adce -time-passes -o example-stre
 !!! example "Assignment"
     Many optimization passes are not applicable to many situations. Pick any file created by `llvm-stress` and find two optimization passes that modify the code and two that do not (i.e. the code is invariant in relation to these optimizations).
 
-Optimizations are generally noncommutative, that is, the [order of optimization passes is important](https://llvm.org/docs/Frontend/PerformanceTips.html#pass-ordering). For example, consider the following optimization of  the`example-stress.ll` file in which loop unrolling is performed first, and code sinking second:
+Optimizations are generally noncommutative, that is, [the order of optimization passes](https://llvm.org/docs/Frontend/PerformanceTips.html#pass-ordering) is important. For example, consider the following optimization of  the`example-stress.ll` file in which loop unrolling is performed first, and code sinking second:
 
 ``` shell
 $ ./bin/opt example-stress.ll -S -passes loop-unroll,sink -o example-stress-loop-unroll-sink.ll

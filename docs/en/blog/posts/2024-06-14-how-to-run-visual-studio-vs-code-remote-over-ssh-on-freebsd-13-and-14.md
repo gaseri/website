@@ -20,7 +20,7 @@ Photo source: [Lemon Pepper Pictures (@lemonpepperpictures) | Unsplash](https://
 
 ---
 
-[FreeBSD](https://www.freebsd.org/) [Ports](https://www.freebsd.org/ports/) provide [editors/vscode](https://ports.freebsd.org/cgi/ports.cgi?query=vscode&stype=name&sektion=editors) with the latest stable version of [Visual Studio Code](https://code.visualstudio.com/) and the FreeBSD Foundation provides an [excellent guide](https://freebsdfoundation.org/resource/how-to-use-vs-code-on-freebsd/) how to install and use it. Unfortunately, the latest stable version of [Visual Studio Code Remote - SSH](https://code.visualstudio.com/docs/remote/ssh) still [does not officially support FreeBSD](https://github.com/microsoft/vscode-remote-release/issues/727), but [only Linux, Windows, and macOS](https://code.visualstudio.com/docs/remote/ssh#_system-requirements).
+[FreeBSD](https://www.freebsd.org/) [Ports](https://www.freebsd.org/ports/) provide [editors/vscode](https://ports.freebsd.org/cgi/ports.cgi?query=vscode&stype=name&sektion=editors) with the latest stable version of [Visual Studio Code](https://code.visualstudio.com/) and the FreeBSD Foundation provides [an excellent guide](https://freebsdfoundation.org/resource/how-to-use-vs-code-on-freebsd/) how to install and use it. Unfortunately, the latest stable version of [Visual Studio Code Remote - SSH](https://code.visualstudio.com/docs/remote/ssh) still [does not officially support FreeBSD](https://github.com/microsoft/vscode-remote-release/issues/727), but [only Linux, Windows, and macOS](https://code.visualstudio.com/docs/remote/ssh#_system-requirements).
 
 <!-- more -->
 

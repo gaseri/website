@@ -169,7 +169,7 @@ Image source: [Wikimedia Commons File:OpenAI Logo.svg](https://commons.wikimedia
 ## Future outlook
 
 - [GPT-3 -> GPT-4](https://www.pcmag.com/news/the-new-chatgpt-what-you-get-with-gpt-4-vs-gpt-35) transition
-    - already a part of a [released product](https://openai.com/product/gpt-4) called ChatGPT+
+    - already a part of [a released product](https://openai.com/product/gpt-4) called ChatGPT+
     - [used by Bing](https://blogs.bing.com/search/march_2023/Confirmed-the-new-Bing-runs-on-OpenAI%E2%80%99s-GPT-4)
 - non-English language models likely to improve soon
     - within months, maybe a year or two

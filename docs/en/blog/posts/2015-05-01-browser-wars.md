@@ -27,7 +27,7 @@ I was invited to give a popular lecture at the [University departments open day]
 
 <!-- more -->
 
-The talk was well received, but unfortunately was not recorded. However, I was invited to repeat it at [Rikon](https://www.rikonrijeka.com/) 2014, and we have the [recording from there posted on YouTube](https://youtu.be/EE2cZSeqB3k). The recording is in Croatian, but the [Truth Happens Remix video](https://youtu.be/5EkkMfjetEY) I play during the talk is in English. I also have to credit [Jim Whitehurst's TEDx talk on Economics of the Information Revolution](https://youtu.be/6ag8DiOWG1I) for inspiration.
+The talk was well received, but unfortunately was not recorded. However, I was invited to repeat it at [Rikon](https://www.rikonrijeka.com/) 2014, and we have [the recording from there posted on YouTube](https://youtu.be/EE2cZSeqB3k). The recording is in Croatian, but [the Truth Happens Remix video](https://youtu.be/5EkkMfjetEY) I play during the talk is in English. I also have to credit [Jim Whitehurst's TEDx talk on Economics of the Information Revolution](https://youtu.be/6ag8DiOWG1I) for inspiration.
 
 ## University departments open day 2015
 
@@ -37,7 +37,7 @@ The talk covered the rise of NCSA [Mosaic](https://en.wikipedia.org/wiki/Mosaic_
 
 There is an interesting image on Wikimedia Commons that shows [browser market share over time, from 1996 to 2009](https://commons.wikimedia.org/wiki/File:Browser_Wars_%28en%29.svg). This timeframe only shows Mozilla Firefox biting into Internet Explorer's market share, so Google Chrome is not shown.
 
-The talk has been recorded and will be^W^W [has been uploaded to YouTube](https://youtu.be/pz73gD1H-s4) as soon as I get a hold of the recording. In the meantime, you can take a look at the [2012 version of the epic Mozilla Story video](https://youtu.be/Q1n2q_YSZUE) I played during the talk (for die-hard fans of Mozilla I will note that 2011 version is also [available](https://youtu.be/tDDVAErOI5U)).
+The talk has been recorded and will be^W^W [has been uploaded to YouTube](https://youtu.be/pz73gD1H-s4) as soon as I get a hold of the recording. In the meantime, you can take a look at [the 2012 version of the epic Mozilla Story video](https://youtu.be/Q1n2q_YSZUE) I played during the talk (for die-hard fans of Mozilla I will note that 2011 version is also [available](https://youtu.be/tDDVAErOI5U)).
 
 ## Article in the Universitas newspaper
 

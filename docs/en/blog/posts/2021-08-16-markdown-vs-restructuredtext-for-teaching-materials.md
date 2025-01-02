@@ -55,7 +55,7 @@ Obviously, many of these tools weren't around when we switched to Sphinx back in
 
 ## Moving from reStructuredText to Markdown for teaching materials
 
-In my particular case, the straw that broke the camel's back and made me decide to convert [the teaching materials](../../../hr/nastava/index.md) from reStructuredText to Markdown was the student contribution of [ZeroMQ](https://zeromq.org/) exercises for the [Distributed systems](../../../hr/nastava/kolegiji/DS.md) course (~~not included yet~~ they are [here](../../../hr/nastava/materijali/python-modul-pyzmq-osnove.md)). I asked the student to write reStructuredText, but got the materials in Markdown.
+In my particular case, the straw that broke the camel's back and made me decide to convert [the teaching materials](../../../hr/nastava/index.md) from reStructuredText to Markdown was the student contribution of [ZeroMQ](https://zeromq.org/) exercises for [the Distributed Systems course](../../../hr/nastava/kolegiji/DS.md) (~~not included yet~~ they are [here](../../../hr/nastava/materijali/python-modul-pyzmq-osnove.md)). I asked the student to write reStructuredText, but got the materials in Markdown.
 
 Let's try to understand why that happened. Let's say that the student wanted to do things properly in reStructedText and Sphinx. The procedure is this:
 

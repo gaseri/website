@@ -24,7 +24,7 @@ I sometimes joke with my TA [Milan Petrović](https://milanxpetrovic.github.io/)
 
 <!-- more -->
 
-So, why shouldn't we use RAR? The non-free license and Windows-centric aspects have already been addressed by [Kyle Cordes](https://kylecordes.com/) in the 2007 blog post [Why I do not use RAR](https://kylecordes.com/2007/no-rar). These reasons are still relevant; the [official versions](https://www.rarlab.com/rar_add.htm) of [rar](https://tracker.debian.org/pkg/rar) and [unrar](https://tracker.debian.org/pkg/unrar-nonfree) are still non-free. There is an [unofficial unrar](https://gitlab.com/bgermann/unrar-free) that is free and open-source software, but there is [no free and open-source rar](https://peazip.github.io/free-rar-create.html) as creating one is prohibited by the [RAR license](https://www.win-rar.com/winrarlicense.html).
+So, why shouldn't we use RAR? The non-free license and Windows-centric aspects have already been addressed by [Kyle Cordes](https://kylecordes.com/) in the 2007 blog post [Why I do not use RAR](https://kylecordes.com/2007/no-rar). These reasons are still relevant; [the official versions](https://www.rarlab.com/rar_add.htm) of [rar](https://tracker.debian.org/pkg/rar) and [unrar](https://tracker.debian.org/pkg/unrar-nonfree) are still non-free. There is [an unofficial unrar](https://gitlab.com/bgermann/unrar-free) that is free and open-source software, but there is [no free and open-source rar](https://peazip.github.io/free-rar-create.html) as creating one is prohibited by [the RAR license](https://www.win-rar.com/winrarlicense.html).
 
 Let's address what else is new in the last 15 years and why the arguments for using RAR over open archiving and compression formats are long obsolete.
 

@@ -27,7 +27,7 @@ Yesterday I was asked by [Edvin Močibob](https://edvin.me/), a friend and [a fo
 
 > You seem to be using [Sphinx](https://www.sphinx-doc.org/) for your [teaching materials](../../../hr/nastava/index.md), right? As far as I can see, it doesn't have an online WYSIWYG editor. I would be interested in comparison of your solution with e.g. [MediaWiki](https://www.mediawiki.org/).
 
-While the [advantages](https://www.sitepoint.com/7-reasons-use-static-site-generator/) and [disadvantages](https://www.sitepoint.com/7-reasons-not-use-static-site-generator/) of static site generators, when compared to content management systems, have been [written about](https://www.stevestreeting.com/2016/06/12/converting-this-blog-from-wordpress-to-hugo/) and [discussed](https://news.ycombinator.com/item?id=896634) already, I will outline our reasons for the choice of Sphinx below. Many of the points have probably already been presented elsewhere.
+While [the advantages](https://www.sitepoint.com/7-reasons-use-static-site-generator/) and [the disadvantages](https://www.sitepoint.com/7-reasons-not-use-static-site-generator/) of static site generators, when compared to content management systems, have been [written about](https://www.stevestreeting.com/2016/06/12/converting-this-blog-from-wordpress-to-hugo/) and [discussed](https://news.ycombinator.com/item?id=896634) already, I will outline our reasons for the choice of Sphinx below. Many of the points have probably already been presented elsewhere.
 
 <!-- more -->
 
@@ -57,7 +57,7 @@ Finally, my favorite MediaWiki theme (*skin* in its terminology) is [Vector](htt
 
 ## Going static, going reStructured
 
-Therefore, we opted to use [Sphinx](https://www.sphinx-doc.org/) and reStructuredText, as it was and still is a more powerful format than Markdown. We specifically cared about the [built-in admonitions](https://www.sphinx-doc.org/en/stable/rest.html#directives), which made it easier for us to convert the existing contents ([Python socket module lecture](../../../hr/nastava/materijali/python-modul-socket.md) is a decent example). The advantages of Sphinx were and still are the following:
+Therefore, we opted to use [Sphinx](https://www.sphinx-doc.org/) and reStructuredText, as it was and still is a more powerful format than Markdown. We specifically cared about [the built-in admonitions](https://www.sphinx-doc.org/en/stable/rest.html#directives), which made it easier for us to convert the existing contents ([Python socket module lecture](../../../hr/nastava/materijali/python-modul-socket.md) is a decent example). The advantages of Sphinx were and still are the following:
 
 - [Git](https://git-scm.com/)-based diff,
 - reduced attack surface: no web application, no PHP interpreter, no database,

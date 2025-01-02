@@ -4,7 +4,7 @@ author: Vedran Miletić
 
 # The Clang compiler
 
-[Clang](https://clang.llvm.org/) is a compiler for C-like programming languages, including C, C ++, Objective C/C++, OpenCL C, and CUDA C/C++. It is part of the [LLVM project](https://llvm.org/).
+[Clang](https://clang.llvm.org/) is a compiler for C-like programming languages, including C, C ++, Objective C/C++, OpenCL C, and CUDA C/C++. It is part of [the LLVM project](https://llvm.org/).
 
 Before continuing, let us make sure that Clang has been successfully compiled:
 
@@ -377,7 +377,7 @@ _GLOBAL__sub_I_example2.cpp:            # @_GLOBAL__sub_I_example2.cpp
     .addrsig_sym _ZSt4cout
 ```
 
-Note the presence of the [C++ symbol name mangling](https://en.wikipedia.org/wiki/Name_mangling#C++), e.g. `_ZSt4cout` is the mangled name of `std::cout`. For demangling the less obvious mangled names, LLVM provides the [llvm-cxxfilt](https://llvm.org/docs/CommandGuide/llvm-cxxfilt.html) symbol name demangler:
+Note the presence of [the C++ symbol name mangling](https://en.wikipedia.org/wiki/Name_mangling#C++), e.g. `_ZSt4cout` is the mangled name of `std::cout`. For demangling the less obvious mangled names, LLVM provides the [llvm-cxxfilt](https://llvm.org/docs/CommandGuide/llvm-cxxfilt.html) symbol name demangler:
 
 ``` shell
 $ ./bin/llvm-cxxfilt _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
@@ -401,7 +401,7 @@ target datalayout = "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16
 target triple = "x86_64-unknown-linux-gnu"
 
 @.str = private unnamed_addr constant [14 x i8] c"hello, world\0A\00", align 1
-
+[
 ; Function Attrs: noinline nounwind optnone uwtable
 define dso_local i32 @main() #0 {
   %1 = alloca i32, align 4
@@ -430,4 +430,4 @@ attributes #1 = { "frame-pointer"="all" "no-trapping-math"="true" "stack-protect
 !!! example "Assignment"
     Compare the LLVM IR produced by different optimization levels and see if you can observe the optimizations performed.
 
-From now on, we will treat Clang's code generation as a black box and modify only the optimization steps in LLVM. A good starting point to delve into the inner workings of Clang's code generation is the [LLVM Target-Independent Code Generator section](https://llvm.org/docs/CodeGenerator.html) contained in the the official documentation.
+From now on, we will treat Clang's code generation as a black box and modify only the optimization steps in LLVM. A good starting point to delve into the inner workings of Clang's code generation is [the LLVM Target-Independent Code Generator section](https://llvm.org/docs/CodeGenerator.html) contained in [the official documentation](https://llvm.org/docs/).

@@ -17,7 +17,7 @@ First, install the [C/C++ Extension Pack](https://marketplace.visualstudio.com/i
 
 ## Building the LLVM compiler infrastructure from source
 
-Hereafter we will more or less follow the directions of [Getting started with the LLVM System](https://llvm.org/docs/GettingStarted.html) from the [Getting Started/Tutorials section](https://llvm.org/docs/GettingStartedTutorials.html).
+Hereafter we will more or less follow the directions of [Getting started with the LLVM System](https://llvm.org/docs/GettingStarted.html) from [the Getting Started/Tutorials section](https://llvm.org/docs/GettingStartedTutorials.html).
 
 It is possible to download the LLVM source code from its [releases page](https://releases.llvm.org/). We'll be using the latest patch release from the latest series that is available. At the time of the start of the course, this is [release 16.0.3](https://releases.llvm.org/download.html#16.0.3). We'll download the source code from the [LLVM 16.0.3 release on GitHub](https://github.com/llvm/llvm-project/releases/tag/llvmorg-16.0.3):
 
@@ -25,7 +25,7 @@ It is possible to download the LLVM source code from its [releases page](https:/
 $ curl -OL https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-16.0.3.tar.gz
 ```
 
-This is the complete source code achive for all tools and libraries. The same page also provides the binaries as well as the separate source code archives for the [tools and libraries produced by the LLVM sub-projects](https://llvm.org/):
+This is the complete source code achive for all tools and libraries. The same page also provides the binaries as well as the separate source code archives for [the tools and libraries produced by the LLVM sub-projects](https://llvm.org/):
 
 - LLVM core libraries,
 - Clang compiler and its tools,
@@ -53,7 +53,7 @@ LLVM, Clang, and related projects use [CMake for building](https://llvm.org/docs
 $ cd llvm-project-llvmorg-16.0.3
 ```
 
-If Visual Studio Code is used for the development, this is the project directory that should be opened in it. Afterwards, the [integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal) can be used for running the comamnds.
+If Visual Studio Code is used for the development, this is the project directory that should be opened in it. Afterwards, [the integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal) can be used for running the comamnds.
 
 ``` shell
 $ mkdir builddir
@@ -98,7 +98,7 @@ $ make -j 2 check
 
 ## The overview of the LLVM architecture
 
-While LLVM is building, let's take a look at the LLVM architecture. [Chris Lattner](https://www.nondot.org/sabre/), the main author of LLVM, wrote the [LLVM](https://www.aosabook.org/en/llvm.html) chapter of [The Architecture of Open Source Applications](https://aosabook.org/en/index.html) book. To follow the code described in the chapter, open the following files in the `llvm-project-16.0.3/llvm-16.0.3` directory:
+While LLVM is building, let's take a look at the LLVM architecture. [Chris Lattner](https://www.nondot.org/sabre/), the main author of LLVM, wrote [the LLVM chapter](https://www.aosabook.org/en/llvm.html) of [The Architecture of Open Source Applications](https://aosabook.org/en/index.html) book. To follow the code described in the chapter, open the following files in the `llvm-project-16.0.3/llvm-16.0.3` directory:
 
 - `include/llvm/Analysis/InstructionSimplify.h`
 - `lib/Analysis/InstructionSimplify.cpp`

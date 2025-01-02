@@ -4,7 +4,7 @@ author: Vedran Miletić
 
 # Implementing an analysis and transformation pass in the LLVM compiler infrastructure
 
-The LLVM documentation contains the [Getting Started/Tutorials section](https://llvm.org/docs/GettingStartedTutorials.html), which offers two [tutorials](https://llvm.org/docs/tutorial/index.html), one on implementing a language frontend and the other on building a just-in-time (JIT) compiler. While the latter tutorial [covers optimization](https://llvm.org/docs/tutorial/BuildingAJIT2.html), it does so in a specific context that is not required here.
+The LLVM documentation contains [the Getting Started/Tutorials section](https://llvm.org/docs/GettingStartedTutorials.html), which offers two [tutorials](https://llvm.org/docs/tutorial/index.html), one on implementing a language frontend and the other on building a just-in-time (JIT) compiler. While the latter tutorial [covers optimization](https://llvm.org/docs/tutorial/BuildingAJIT2.html), it does so in a specific context that is not required here.
 
 We will follow [The LLVM Compiler Framework and Infrastructure Tutorial](https://llvm.org/pubs/2004-09-22-LCPCLLVMTutorial.html) presented by Chris Lattner and Vikram Adve at the LCPC'04 Mini Workshop on Compiler Research Infrastructures in Septembed 2004. Although the presentation is somewhat a bit older, the information in it remains quite relevant and is a good complement to the documentation available on LLVM.
 
@@ -17,7 +17,7 @@ The LLVM documentation contains the guidance for writing a pass in the two follo
 
 Since the legacy pass manager will eventually be removed from LLVM and given that the new pass manager is much easier to use requires less boilerplate code, we will follow ths last guide.
 
-The `HelloWorldPass` described in the [Basic code required](https://llvm.org/docs/WritingAnLLVMNewPMPass.html#basic-code-required) section is already a part of the LLVM source code and it got compiled when we initially set up the development environment. We will be modifying it from now on, but first let's use `llvm-stress` to create the file containing LLVM IR that will be used to test the pass:
+The `HelloWorldPass` described in [the Basic code required section](https://llvm.org/docs/WritingAnLLVMNewPMPass.html#basic-code-required) is already a part of the LLVM source code and it got compiled when we initially set up the development environment. We will be modifying it from now on, but first let's use `llvm-stress` to create the file containing LLVM IR that will be used to test the pass:
 
 ``` shell
 $ ./bin/llvm-stress -o example-stress.ll
@@ -39,7 +39,7 @@ autogen_SD0
 One can observe the function name in the output. The resulting LLVM IR file can be compared wuth th source file with `llvm-diff` and there will be no difference since the pass only performs analysis (specifically, it finds functions and prints their names) without performing any transformation.
 
 !!! example "Assignment"
-    Modify the optimization pass so that it also prints the the number of operands for each function and the function type (signature); the [API documentation of the Function class](https://llvm.org/doxygen/classllvm_1_1Function.html) is a good place to look for a way to obtain this information.
+    Modify the optimization pass so that it also prints the the number of operands for each function and the function type (signature); [the API documentation of the Function class](https://llvm.org/doxygen/classllvm_1_1Function.html) is a good place to look for a way to obtain this information.
 
 !!! example "Assignment"
     Modify the optimization pass so that it also prints the number of times each function was called. Amend the `example-stress.ll` file with the function `manualgen_SD0` calling the function `autogen_SD0`:
