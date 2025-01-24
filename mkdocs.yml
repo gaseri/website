@@ -453,11 +453,6 @@ nav:
       - Software: en/software.md
       - Jobs: en/jobs.md
       - Contact: en/contact.md
-      - Talks:
-          - The challenges of the upcoming exascale supercomputing era in computational biochemistry: en/talks/2022-01-26-the-challenges-of-the-upcoming-exascale-supercomputing-era-in-computational-biochemistry.md
-          - Extending Non-Equilibrium Pulling Method in GROMACS with Arbitrary User-Defined Atom Weight Factor Expressions: en/talks/2022-09-23-extending-non-equilibrium-pulling-method-in-gromacs-with-arbitrary-user-defined-atom-weight-factor-expressions.md
-          - ChatGPT from teacher's perspective: en/talks/2023-03-30-chatgpt-from-teachers-perspective.md
-          - Molecular dynamics simulation for exascale supercomputing era -- scientific research and software engineering challenges: en/talks/2023-09-16-molecular-dynamics-simulation-for-exascale-supercomputing-era-scientific-research-and-software-engineering-challenges.md
       - Teaching:
           - About the teaching: en/teaching/index.md
           - Courses:
@@ -491,6 +486,11 @@ nav:
           - Bura HPC: en/tutorials/bura-hpc.md
           - CMake - Cross-supercomputer Make: en/tutorials/cmake-cross-supercomputer-make.md
           - Zettlr: en/tutorials/zettlr.md
+      - Talks:
+          - The challenges of the upcoming exascale supercomputing era in computational biochemistry: en/talks/2022-01-26-the-challenges-of-the-upcoming-exascale-supercomputing-era-in-computational-biochemistry.md
+          - Extending Non-Equilibrium Pulling Method in GROMACS with Arbitrary User-Defined Atom Weight Factor Expressions: en/talks/2022-09-23-extending-non-equilibrium-pulling-method-in-gromacs-with-arbitrary-user-defined-atom-weight-factor-expressions.md
+          - ChatGPT from teacher's perspective: en/talks/2023-03-30-chatgpt-from-teachers-perspective.md
+          - Molecular dynamics simulation for exascale supercomputing era -- scientific research and software engineering challenges: en/talks/2023-09-16-molecular-dynamics-simulation-for-exascale-supercomputing-era-scientific-research-and-software-engineering-challenges.md
       - Very important information: en/very-important-information.md
 
 theme:
