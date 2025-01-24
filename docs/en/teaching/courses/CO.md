@@ -10,6 +10,11 @@ tags:
 
 - [Course introduction](../materials/opt-intro.md)
 
+## Lectures
+
+- [Course materials](https://www.cl.cam.ac.uk/teaching/2021/OptComp/materials.html)
+- [Lecture slides](https://www.cl.cam.ac.uk/teaching/2021/OptComp/slides.html)
+
 ## Exercises
 
 - [Developing with the LLVM compiler infrastructure](../materials/llvm-development.md)

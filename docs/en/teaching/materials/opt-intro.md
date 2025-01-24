@@ -136,7 +136,7 @@ keywords: code optimization
 
 ## Presentations
 
-- For lectures we will be reusing the presentations authored by Timothy Jones, Tom Stuart, and Alan Mycroft (University of Cambridge) for the Optimising Compilers course
+- For lectures we will be reusing [the presentations](https://www.cl.cam.ac.uk/teaching/2021/OptComp/slides.html) authored by Timothy Jones, Tom Stuart, and Alan Mycroft (University of Cambridge) for the [Optimising Compilers](https://www.cl.cam.ac.uk/teaching/2021/OptComp/) course
     - special thanks to Domagoj Stolfa (Univ. Cambridge, [www.cst.cam.ac.uk/people/ds815](https://www.cst.cam.ac.uk/people/ds815)) for initiating this partnership
 
 ---
