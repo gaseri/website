@@ -144,17 +144,24 @@ keywords: code optimization
 ## Required software for written commentary and homework
 
 - Visual Studio Code ([code.visualstudio.com](https://code.visualstudio.com/))
-    - Markdown editing: `ms-vscode.wordcount`, `DavidAnson.vscode-markdownlint`
+    - Markdown editing: `oliverkovacs.word-count`, `DavidAnson.vscode-markdownlint`
     - graph drawing, either:
         - [Mermaid](https://mermaid.js.org/) preview: `bierner.markdown-mermaid`
         - [Graphviz](https://graphviz.org/) preview: `tintinweb.graphviz-interactive-preview`
 
 ---
 
+## Windows-specific required software
+
+- Windows Subsystem for Linux (WSL) ([docs.microsoft.com/en-us/windows/wsl/install](https://docs.microsoft.com/en-us/windows/wsl/install))
+- distribution: [AlmaLinux OS 9](https://apps.microsoft.com/detail/9p5rwlm70sn9) or [CentOS Stream 9](https://sigs.centos.org/altimages/wsl-images/)
+- Windows Terminal ([learn.microsoft.com/en-us/windows/terminal/](https://learn.microsoft.com/en-us/windows/terminal/))
+- VS Code [Remote Development](https://code.visualstudio.com/docs/remote/remote-overview) WSL extension `ms-vscode-remote.remote-wsl`
+
+---
+
 ## Additional required software for project development
 
-- If you're on Windows, install:
-    - Windows Subsystem for Linux (WSL) ([docs.microsoft.com/en-us/windows/wsl/install](https://docs.microsoft.com/en-us/windows/wsl/install))
-    - Windows Terminal ([learn.microsoft.com/en-us/windows/terminal/](https://learn.microsoft.com/en-us/windows/terminal/))
-    - VS Code [Remote Development](https://code.visualstudio.com/docs/remote/remote-overview) extension `ms-vscode-remote.remote-wsl`
-- VS Code C++ extension: `ms-vscode.cpptools`
+- VS Code [C++ Extension Pack](https://code.visualstudio.com/docs/languages/cpp): `ms-vscode.cpptools-extension-pack`
+- VS Code [clangd](https://clangd.llvm.org/) extension: `llvm-vs-code-extensions.vscode-clangd`
+- VS Code [MLIR](https://mlir.llvm.org/) extension: `llvm-vs-code-extensions.vscode-mlir`
