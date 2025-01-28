@@ -15,18 +15,6 @@ curriculum-vitae: |
   [Vedran Miletić](https://vedran.miletic.net/) je zaposlen kao docent u polju računarstva na Fakultetu informatike i digitalnih tehnologija, gdje vodi Grupu za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi. Član je Centra za popularizaciju i promociju znanosti te Povjerenstva za superračunalne resurse Sveučilišta u Rijeci. Trenutno je na dopustu zbog znanstvenog usavršavanja na Računarskom i podatkovnom postrojenju Max Plancka, gdje se bavi poboljšanjem metoda simulacije molekulske dinamike u slobodnim softverima otvorenog koda namijenjenim za akademsku i industrijsku primjenu na modernim superračunalima. Posljednjih dva destljeća aktivno radi na promociji korištenja slobodnosoftverskih rješenja kroz javna predavanja, radionice i organizaciju proslava Dana slobode dokumenata te rado ističe [What is the price of open-source fear, uncertainty, and doubt?](https://group.miletic.net/en/blog/2015-09-14-what-is-the-price-of-open-source-fear-uncertainty-and-doubt/) kao svoj najbolji neznanstveni rad.
 ---
 
-<style>
-section {
-   font-family: "Fira Sans", sans-serif;
-}
-code {
-   font-family: "Fira Mono", monospace;
-}
-section.finale h2 {
-  text-align: center;
-}
-</style>
-
 # Razvoj slobodnog softvera otvorenog koda kao znanstvenoistraživački poduhvat – motivacija, izvedba i utjecaj
 
 ## [Vedran](https://vedran.miletic.net/) [Miletic](https://www.miletic.net/), HPC application expert, MPCDF, MPG; docent i voditelj grupe (na dopustu), FIDIT, UniRi
@@ -375,8 +363,6 @@ section.finale h2 {
 ![bg right](https://unsplash.com/photos/GlQawc9OMyI/download?w=1920) <!-- https://unsplash.com/photos/orange-and-black-playground-slide-GlQawc9OMyI -->
 
 ---
-
-<!-- class: finale -->
 
 ## Hvala na pažnji!
 

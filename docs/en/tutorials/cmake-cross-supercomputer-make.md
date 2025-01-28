@@ -11,15 +11,6 @@ abstract: |
   "CMake is the ubiquitous free and open-source cross-platform build system for C, C++, CUDA, Fortran, and other languages. Recently, CMake introduced support for AMD's C++ Heterogeneous-Compute Interface for Portability (HIP), which enables compilation AMD's and NVIDIA's GPUs from a single source. The focus of the talk will be the usage of CMake for building HPC applications written in C++, CUDA, and HIP for execution on MPG's supercomputers: Cobra, Raven, and (upcoming) Viper."
 ---
 
-<style>
-section {
-   font-family: "Fira Sans", sans-serif;
-}
-code {
-   font-family: "Fira Mono", monospace;
-}
-</style>
-
 # [CMake](https://cmake.org/) - **C**ross-supercomputer **Make**
 
 ## [Vedran](https://vedran.miletic.net/) [Miletic](https://www.miletic.net/), HPC application expert, MPCDF*
@@ -103,7 +94,7 @@ Image source: [Wikimedia Commons File:Cmake.svg](https://commons.wikimedia.org/w
 
 ---
 
-## Is CMake close to that ideal?
+## Is CMake close to that ideal? (1/2)
 
 - cross-platform open-source build system for Linux, macOS, FreeBSD, Windows, and other operating systems
 - built on top of a "native" build system (e.g. GNU Make, BSD Make, MSBuild, Ninja), so users can continue using tools they are familiar with
@@ -113,7 +104,7 @@ Image source: [Wikimedia Commons File:Cmake.svg](https://commons.wikimedia.org/w
 
 ---
 
-## Is CMake close to that ideal? (cont.)
+## Is CMake close to that ideal? (2/2)
 
 - automated tracking of dependencies between files (dependency checking can be by-passed with `/fast` targets)
 - progress indicators (useful for projects that suddenly don't build as quickly as they did previously!)
@@ -162,7 +153,7 @@ Image source: [Wikimedia Commons File:Cmake.svg](https://commons.wikimedia.org/w
 
 ---
 
-## Hello, world!
+## Hello, world! (1/2)
 
 A very simple `CMakeLists.txt` file:
 
@@ -187,7 +178,7 @@ $ cmake .
 
 ---
 
-## Hello, world! (cont.)
+## Hello, world! (2/2)
 
 Generates a `Makefile`:
 
@@ -225,7 +216,7 @@ $ make
 
 ---
 
-## CMake recipes for direct use
+## CMake recipes for direct use (1/6)
 
 ``` shell
 module load git/2.43
@@ -247,7 +238,7 @@ cd ..
 
 ---
 
-## CMake recipes for direct use (cont.)
+## CMake recipes for direct use (2/6)
 
 ### [Third-party libraries](https://gitlab.mpcdf.mpg.de/mpcdf/training/cmake-recipes/-/tree/main/01_third_party_libraries)
 
@@ -268,7 +259,7 @@ Much more detail can be found in:
 
 ---
 
-## CMake recipes for direct use (cont.)
+## CMake recipes for direct use (3/6)
 
 ## Skipped in the interest of time, but useful
 
@@ -281,7 +272,7 @@ Much more detail can be found in:
 
 ---
 
-## CMake recipes for direct use (cont.)
+## CMake recipes for direct use (4/6)
 
 ## [CTest](https://gitlab.mpcdf.mpg.de/mpcdf/training/cmake-recipes/-/tree/main/08_ctest)
 
@@ -297,7 +288,7 @@ Notable testing frameworks for C++: [Doctest](https://github.com/doctest/doctest
 
 ---
 
-## CMake recipes for direct use (cont.)
+## CMake recipes for direct use (5/6)
 
 ## [Install](https://gitlab.mpcdf.mpg.de/mpcdf/training/cmake-recipes/-/tree/main/09_install)
 
@@ -319,7 +310,7 @@ cd ..
 
 ---
 
-## CMake recipes for direct use (cont.)
+## CMake recipes for direct use (6/6)
 
 ## [Presets](https://gitlab.mpcdf.mpg.de/mpcdf/training/cmake-recipes/-/blob/main/10_presets)
 
