@@ -4,16 +4,47 @@ author: Vedran Miletić
 
 # Developing with the LLVM compiler infrastructure
 
-During the course we will use [LLVM](https://llvm.org/), which is a well-known open-source compiler and toolchain. It is distributed under the [Apache License 2.0 with LLVM Exceptions](https://llvm.org/docs/DeveloperPolicy.html#new-llvm-project-license-framework). Due to its popularity, there are various LLVM programs and libraries are packaged for many operating systems, including [Debian GNU/Linux](https://tracker.debian.org/pkg/llvm-defaults), [Arch Linux](https://archlinux.org/packages/extra/x86_64/llvm/), and [FreeBSD](https://www.freshports.org/devel/llvm/). Therefore we could install LLVM from the operating system repository, although this would later prevent us from modifying its source code.
+During the course we will use [LLVM](https://llvm.org/), which is a well-known open-source compiler and toolchain. It is distributed under the [Apache License 2.0 with LLVM Exceptions](https://llvm.org/docs/DeveloperPolicy.html#new-llvm-project-license-framework). Due to its popularity, various LLVM programs and libraries are packaged for many operating systems, including [Fedora](https://packages.fedoraproject.org/pkgs/llvm/), [Debian GNU/Linux](https://tracker.debian.org/pkg/llvm-defaults), [Arch Linux](https://archlinux.org/packages/extra/x86_64/llvm/), and [FreeBSD](https://www.freshports.org/devel/llvm/). Therefore we could install LLVM from the operating system repository, although this would later prevent us from modifying its source code.
 
 ## Setting up the integrated development environment
 
 Furthermore we will also use the [Visual Studio Code](https://code.visualstudio.com/) as the integrated development enviroment. However, the use of any development enviroment for C++ is acceptable, including [Qt Creator](https://www.qt.io/product/development-tools), [CLion](https://www.jetbrains.com/clion/), [CodeLite](https://codelite.org/), [NetBeans](https://netbeans.apache.org/), and [Eclipse](https://www.eclipse.org/).
 
-!!! tip
-    The commands below assume that the [Unix-like](https://en.wikipedia.org/wiki/Unix-like) operating system is used, which includes Linux, FreeBSD, macOS, illumOS, and many others, but not Windows. To get a Unix-like environment on Windows 10 and newer, it is recommended to use the [Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install), [Windows Terminal](https://docs.microsoft.com/en-us/windows/terminal/install), and [Visual Studio Code Remote - WSL](https://code.visualstudio.com/docs/remote/wsl) extension.
-
 First, install the [C/C++ Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack), which will install [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) and [CMake](https://marketplace.visualstudio.com/items?itemName=twxs.cmake) extensions. More details about these extensions can be found in the [C/C++ for Visual Studio Code](https://code.visualstudio.com/docs/languages/cpp) guide.
+
+## Installing packages required for building LLVM
+
+!!! tip
+    The commands below assume that the [Unix-like](https://en.wikipedia.org/wiki/Unix-like) operating system is used, which includes [Linux](https://fedoraproject.org/), [FreeBSD](https://www.freebsd.org/), [macOS](https://www.apple.com/macos/), [illumOS](https://illumos.org/), and many others, but not [Windows](https://www.microsoft.com/windows/).
+
+    To get a Unix-like environment on Windows 10 and newer, it is recommended to use the [Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install) together with [Windows Terminal](https://docs.microsoft.com/en-us/windows/terminal/install) and [Visual Studio Code Remote - WSL](https://code.visualstudio.com/docs/remote/wsl) extension. While almost any distribution supported by WSL will support building LLVM, we recommend using RHEL-compatible [AlmaLinux OS 9](https://almalinux.org/blog/almalinux-9-now-available/) that is [available in the Microsoft Store](https://wiki.almalinux.org/documentation/wsl.html) or, if you are feeling adventurous, [CentOS Stream 9](https://www.centos.org/stream9/) that [requires manual image download](https://sigs.centos.org/altimages/wsl-images/) from one of [its official mirrors](https://www.centos.org/download/mirrors/).
+
+=== "🎩 Fedora/CentOS/RHEL"
+
+    Assuming [Red Hat Enterprise Linux 9](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/packaging_and_distributing_software/assembly_new-features-in-rhel-9_packaging-and-distributing-software#con_dynamic-build-dependencies_assembly_new-features-in-rhel-9), [CentOS Stream 9](https://www.centos.org/stream9/), [Fedora 34](https://docs.fedoraproject.org/en-US/quick-docs/fedora-and-red-hat-enterprise-linux/), or newer:
+
+    ```
+    dnf builddep llvm
+    ```
+
+=== "🏹 Arch Linux"
+
+    ```
+    curl -O https://gitlab.archlinux.org/archlinux/packaging/packages/llvm/-/raw/main/PKGBUILD
+    makepg -s PKGBUILD
+    ```
+
+=== "🦎 openSUSE/SLES"
+
+    ```
+    zypper source-install llvm19
+    ```
+
+=== "🍥 Debian GNU/Linux Mint"
+
+    ```
+    apt build-dep llvm-toolchain-19
+    ```
 
 ## Building the LLVM compiler infrastructure from source
 
