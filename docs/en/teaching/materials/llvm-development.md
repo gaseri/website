@@ -19,10 +19,10 @@ First, install the [C/C++ Extension Pack](https://marketplace.visualstudio.com/i
 
 Hereafter we will more or less follow the directions of [Getting started with the LLVM System](https://llvm.org/docs/GettingStarted.html) from [the Getting Started/Tutorials section](https://llvm.org/docs/GettingStartedTutorials.html).
 
-It is possible to download the LLVM source code from its [releases page](https://releases.llvm.org/). We'll be using the latest patch release from the latest series that is available. At the time of the start of the course, this is [release 16.0.3](https://releases.llvm.org/download.html#16.0.3). We'll download the source code from the [LLVM 16.0.3 release on GitHub](https://github.com/llvm/llvm-project/releases/tag/llvmorg-16.0.3):
+It is possible to download the LLVM source code from its [releases page](https://releases.llvm.org/). We'll be using the latest patch release from the latest series that is available. At the time of the start of the course, this is [release 19.1.7](https://releases.llvm.org/download.html#19.1.7). We'll download the source code from the [LLVM 19.1.7 release on GitHub](https://github.com/llvm/llvm-project/releases/tag/llvmorg-19.1.7):
 
 ``` shell
-$ curl -OL https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-16.0.3.tar.gz
+$ curl -OL https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-19.1.7.tar.gz
 ```
 
 This is the complete source code achive for all tools and libraries. The same page also provides the binaries as well as the separate source code archives for [the tools and libraries produced by the LLVM sub-projects](https://llvm.org/):
@@ -44,13 +44,13 @@ Although all of these tools are interesting in their own way, most of them will 
 We'll be following [Building LLVM with CMake](https://llvm.org/docs/CMake.html) from [LLVM documentation](https://llvm.org/docs/), section [User Guides](https://llvm.org/docs/UserGuides.html). Now it's time to unpack the source code tarballs.
 
 ``` shell
-$ tar xzf llvmorg-16.0.3.tar.gz
+$ tar xzf llvmorg-19.1.7.tar.gz
 ```
 
 LLVM, Clang, and related projects use [CMake for building](https://llvm.org/docs/CMake.html). Most notably, it does not support building in the source tree, so it's necessary to start by creating a directory:
 
 ``` shell
-$ cd llvm-project-llvmorg-16.0.3
+$ cd llvm-project-llvmorg-19.1.7
 ```
 
 If Visual Studio Code is used for the development, this is the project directory that should be opened in it. Afterwards, [the integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal) can be used for running the comamnds.
@@ -80,12 +80,12 @@ If you have many CPU cores, you can increase the number of parallel compile jobs
 !!! example "Assignment"
     Find out how many CPU cores you have and check if increasing the number of jobs speeds up the build process.
 
-Alternatively, LLVM can also be [obtained from GitHub](https://github.com/llvm/llvm-project.git) using [Git](https://git-scm.com/). In that case, the branch `release/16.x` should be used. The rest of the process is pretty similar:
+Alternatively, LLVM can also be [obtained from GitHub](https://github.com/llvm/llvm-project.git) using [Git](https://git-scm.com/). In that case, the branch `release/19.x` should be used. The rest of the process is pretty similar:
 
 ``` shell
 $ git clone https://github.com/llvm/llvm-project.git
 $ cd llvm-project
-$ git checkout release/16.x
+$ git checkout release/19.x
 $ mkdir builddir
 $ cd builddir
 $ cmake -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=ON -DLLVM_ENABLE_PROJECTS=clang ../llvm
@@ -98,7 +98,7 @@ $ make -j 2 check
 
 ## The overview of the LLVM architecture
 
-While LLVM is building, let's take a look at the LLVM architecture. [Chris Lattner](https://www.nondot.org/sabre/), the main author of LLVM, wrote [the LLVM chapter](https://www.aosabook.org/en/llvm.html) of [The Architecture of Open Source Applications](https://aosabook.org/en/index.html) book. To follow the code described in the chapter, open the following files in the `llvm-project-16.0.3/llvm-16.0.3` directory:
+While LLVM is building, let's take a look at the LLVM architecture. [Chris Lattner](https://www.nondot.org/sabre/), the main author of LLVM, wrote [the LLVM chapter](https://www.aosabook.org/en/llvm.html) of [The Architecture of Open Source Applications](https://aosabook.org/en/index.html) book. To follow the code described in the chapter, open the following files in the `llvm-project-llvmorg-19.1.7/llvm` directory:
 
 - `include/llvm/Analysis/InstructionSimplify.h`
 - `lib/Analysis/InstructionSimplify.cpp`
