@@ -2,7 +2,9 @@
 author: Vedran Miletić
 authors:
   - vedranmiletic
-date: 2022-11-01
+date:
+  created: 2022-11-01
+  updated: 2024-05-12
 tags:
   - git
   - web server

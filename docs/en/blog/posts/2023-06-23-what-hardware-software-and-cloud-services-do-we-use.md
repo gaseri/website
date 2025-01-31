@@ -2,7 +2,9 @@
 author: Vedran Miletić
 authors:
   - vedranmiletic
-date: 2023-06-23
+date:
+  created: 2023-06-23
+  updated: 2024-05-28
 tags:
   - academia
   - free and open-source software
