@@ -135,11 +135,18 @@ keywords: code optimization
 
 ---
 
-## Presentations
+## Presentation slides
 
-- For lectures we will be reusing [the presentations](https://www.cl.cam.ac.uk/teaching/2021/OptComp/slides.html) authored by [Timothy Jones](https://www.cl.cam.ac.uk/~tmj32/), [Tom Stuart](https://tomstu.art/about), and [Alan Mycroft](https://www.cl.cam.ac.uk/~am21/) (University of Cambridge) for the [Optimising Compilers](https://www.cl.cam.ac.uk/teaching/2021/OptComp/) course
+- For lectures, we will be reusing [the presentation slides](https://www.cl.cam.ac.uk/teaching/2021/OptComp/slides.html) authored by [Timothy Jones](https://www.cl.cam.ac.uk/~tmj32/), [Tom Stuart](https://tomstu.art/about), and [Alan Mycroft](https://www.cl.cam.ac.uk/~am21/) (University of Cambridge) for the [Optimising Compilers](https://www.cl.cam.ac.uk/teaching/2021/OptComp/) course
     - this is done with permission (and encouragement) from the authors
     - special thanks to Domagoj Stolfa (Univ. Cambridge, [www.cst.cam.ac.uk/people/ds815](https://www.cst.cam.ac.uk/people/ds815)) for initiating this partnership
+
+---
+
+## Other course materials
+
+- For "on paper" assignments, we will be reusing [the exercise sheets](https://www.cl.cam.ac.uk/teaching/2021/OptComp/materials.html) from the same group of authors
+- For LLVM-related exercises, in addition to [the official documentation](https://llvm.org/docs/), we will be linking to various required and optional reading materials as the need comes up
 
 ---
 
@@ -172,4 +179,4 @@ keywords: code optimization
 ## Additional required software for project development (2/2)
 
 - VS Code [MLIR](https://mlir.llvm.org/) extension: `llvm-vs-code-extensions.vscode-mlir`
-- VS Code [LLVM Language](https://llvm.org/docs/LangRef.html) extensions: `RReverser.llvm` and `revng.llvm-ir`
+- VS Code [LLVM Language](https://llvm.org/docs/LangRef.html) extensions: `RReverser.llvm`, `revng.llvm-ir`
