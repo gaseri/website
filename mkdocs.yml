@@ -632,8 +632,7 @@ plugins:
   - search
   - social:
       enabled: !ENV [CI, false]
-  - tags:
-      tags_file: en/blog/tags.md
+  - tags
   - minify:
       minify_html: !ENV [CI, false]
   - rss:
