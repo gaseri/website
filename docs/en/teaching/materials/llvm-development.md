@@ -59,15 +59,17 @@ $ curl -OL https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-19.1.7
 This is the complete source code achive for all tools and libraries. The same page also provides the binaries as well as the separate source code archives for [the tools and libraries produced by the LLVM sub-projects](https://llvm.org/):
 
 - LLVM core libraries,
-- Clang compiler and its tools,
-- compiler-rt runtime library,
-- Flang compiler,
-- libclc OpenCL library,
-- libcxx C++ standard library and its application binary interface,
-- lld linker,
-- lldb debugger
-- OpenMP library for Clang and Flang,
-- Polly high-level loop and data-locality optimizations infrastructure, and
+- [Clang compiler](https://clang.llvm.org/) and [its](https://clang-analyzer.llvm.org/) [tools](https://clang.llvm.org/docs/ClangTools.html),
+- [compiler-rt runtime library](https://compiler-rt.llvm.org/),
+- [Flang compiler](https://flang.llvm.org/),
+- [libclc OpenCL library](https://libclc.llvm.org/),
+- [libcxx C++ standard library](https://libcxx.llvm.org/) and [its application binary interface](https://libcxxabi.llvm.org/),
+- [libc C standard library](https://libc.llvm.org/),
+- [LLD linker](https://lld.llvm.org/),
+- [LLDB debugger](https://lldb.llvm.org/),
+- [MLIR language](https://mlir.llvm.org/),
+- [OpenMP library](https://openmp.llvm.org/) for Clang and Flang,
+- [Polly high-level loop and data-locality optimizations infrastructure](https://polly.llvm.org/), and
 - test suite.
 
 Although all of these tools are interesting in their own way, most of them will not be used here. In particular, we will be using Clang to demonstrate the compile process.
