@@ -17,6 +17,7 @@ We will be working with files containing the LLVM intermediate representation (I
 In the following examples we will place the `ir-examples` directory  in the `builddir` directory of the `llvm-project`. Once placed in the `builddir` directory, we can achieve this using cURL:
 
 ``` shell
+$ cd builddir
 $ curl -OL https://github.com/Virtual-Machine/ir-examples/archive/refs/heads/master.zip
 $ unzip master.zip
 $ mv ir-examples-master ir-examples

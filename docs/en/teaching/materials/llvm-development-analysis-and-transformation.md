@@ -20,6 +20,7 @@ Since the legacy pass manager will eventually be removed from LLVM and given tha
 The `HelloWorldPass` described in [the Basic code required section](https://llvm.org/docs/WritingAnLLVMNewPMPass.html#basic-code-required) is already a part of the LLVM source code and it got compiled when we initially set up the development environment. We will be modifying it from now on, but first let's use `llvm-stress` to create the file containing LLVM IR that will be used to test the pass:
 
 ``` shell
+$ cd builddir
 $ ./bin/llvm-stress -o example-stress.ll
 ```
 

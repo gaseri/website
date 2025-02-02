@@ -74,41 +74,47 @@ This is the complete source code achive for all tools and libraries. The same pa
 
 Although all of these tools are interesting in their own way, most of them will not be used here. In particular, we will be using Clang to demonstrate the compile process.
 
-We'll be following [Building LLVM with CMake](https://llvm.org/docs/CMake.html) from [LLVM documentation](https://llvm.org/docs/), section [User Guides](https://llvm.org/docs/UserGuides.html). Now it's time to unpack the source code tarballs.
+We'll be following [Building LLVM with CMake](https://llvm.org/docs/CMake.html) from [LLVM documentation](https://llvm.org/docs/), section [User Guides](https://llvm.org/docs/UserGuides.html). Now it's time to unpack the source code tarballs and enter the source directory.
 
 ``` shell
 $ tar xzf llvmorg-19.1.7.tar.gz
-```
-
-LLVM, Clang, and related projects use [CMake for building](https://llvm.org/docs/CMake.html). Most notably, it does not support building in the source tree, so it's necessary to start by creating a directory:
-
-``` shell
 $ cd llvm-project-llvmorg-19.1.7
 ```
 
 If Visual Studio Code is used for the development, this is the project directory that should be opened in it. Afterwards, [the integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal) can be used for running the comamnds.
 
+LLVM, Clang, and related projects use [CMake](https://cmake.org/) for [building](https://llvm.org/docs/CMake.html). Most notably, it does not support building in the source tree, so it's necessary to start by creating a directory:
+
 ``` shell
 $ mkdir builddir
-$ cd builddir
 ```
 
-There are [many CMake and LLVM-related variables](https://llvm.org/docs/CMake.html#options-and-variables) that can be specified at build time. We'll use only three of them, one CMake and two LLVM-related, specifically:
+CMake is invoked using `cmake` command ([documentation](https://cmake.org/cmake/help/latest/manual/cmake.1.html)). The required parameters are:
 
-- `-DCMAKE_BUILD_TYPE=Release` sets the build mode to release (instead of the default debug), which results in smaller file size of the built binaries
-- `-DBUILD_SHARED_LIBS=ON` enables dynamic linking of libraries, which singificantly reduces memory requirements for building and results in smaller file size of the built binaries
-- `-DLLVM_ENABLE_PROJECTS=clang` enables building of Clang alongside LLVM
+- `-S` with path to source directory,
+- `-B` with path to build directory.
+
+There are [many CMake and LLVM-related variables](https://llvm.org/docs/CMake.html#options-and-variables) that can be specified at build time. We'll use only three of them, two LLVM-specific and one CMake-generic, namely:
+
+- `-D BUILD_SHARED_LIBS=ON` enables dynamic linking of libraries, which singificantly reduces memory requirements for building and results in smaller file size of the built binaries,
+- `-D LLVM_ENABLE_PROJECTS=clang` enables building of Clang alongside LLVM,
+- `-D CMAKE_BUILD_TYPE=Release` ([documentation](https://cmake.org/cmake/help/latest/envvar/CMAKE_BUILD_TYPE.html)) sets the build mode to release (instead of the default debug), which results in smaller file size of the built binaries.
+
+Optionally, one might also want to specify:
+
+- `-D CMAKE_CXX_COMPILER_LAUNCHER=ccache` ([documentation](https://cmake.org/cmake/help/latest/envvar/CMAKE_LANG_COMPILER_LAUNCHER.html)), which enables [the ccache compiler cache](https://ccache.dev/) and results in faster rebuilds,
+- `-G Ninja`, which enables [the Ninja build system](https://ninja-build.org/) instead of [GNU Make](https://www.gnu.org/software/make/) and results in faster builds.
 
 ``` shell
-$ cmake -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=ON -DLLVM_ENABLE_PROJECTS=clang ../llvm
-$ make -j 2
-$ make -j 2 check
+$ cmake -S llvm -B builddir -D BUILD_SHARED_LIBS=ON -D LLVM_ENABLE_PROJECTS=clang -D CMAKE_BUILD_TYPE=Release
+$ cmake --build builddir --parallel 2
+$ cmake --build builddir --parallel 2 --target check
 ```
 
 !!! example "Assignment"
     Find out what is the latest released version of LLVM, download it instead of the one used above, and build it.
 
-If you have many CPU cores, you can increase the number of parallel compile jobs by setting the `-j` parameter of the `make` command to a number larger than 2, for example the number of cores. This will make `make` make (!) the code faster, ideally several times faster.
+If you have many CPU cores, you can increase the number of parallel compile jobs by setting the `--parallel` (`-j` for short) parameter of the `cmake` command to a number larger than 2, for example the number of cores. This will make `cmake`-launched (Ninja or) Make make (!) the code faster, ideally several times faster.
 
 !!! example "Assignment"
     Find out how many CPU cores you have and check if increasing the number of jobs speeds up the build process.
@@ -120,10 +126,9 @@ $ git clone https://github.com/llvm/llvm-project.git
 $ cd llvm-project
 $ git checkout release/19.x
 $ mkdir builddir
-$ cd builddir
-$ cmake -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=ON -DLLVM_ENABLE_PROJECTS=clang ../llvm
-$ make -j 2
-$ make -j 2 check
+$ cmake -S llvm -B builddir -D BUILD_SHARED_LIBS=ON -D LLVM_ENABLE_PROJECTS=clang -D CMAKE_BUILD_TYPE=Release
+$ cmake --build builddir --parallel 2
+$ cmake --build builddir --parallel 2 --target check
 ```
 
 !!! example "Assignment"

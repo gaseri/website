@@ -9,6 +9,7 @@ author: Vedran Miletić
 Before continuing, let us make sure that Clang has been successfully compiled:
 
 ``` shell
+$ cd builddir
 $ ./bin/clang --version
 clang version 16.0.3 (https://github.com/llvm/llvm-project.git da3cd333bea572fb10470f610a27f22bcb84b08c)
 Target: x86_64-unknown-linux-gnu

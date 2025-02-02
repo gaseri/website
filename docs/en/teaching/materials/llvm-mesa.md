@@ -188,7 +188,7 @@ __kernel void vector_add(__global const int *a, __global const int *b, __global 
 }
 ```
 
-Save this kernel in a file named `vecadd.cl`. In order to compile it, we will use the following parameters we have not used before:
+Save this kernel in a file named `vecadd.cl` under `builddir`. In order to compile it, we will use the following parameters we have not used before:
 
 - `-x cl` tells Clang to treat the input file as being written in OpenCL ([documentation](https://clang.llvm.org/docs/CommandGuide/clang.html#cmdoption-x))
 - `-D cl_clang_storage_class_specifiers` enables the usage of the OpenCL C [storage-class specifiers/qualifiers](https://www.khronos.org/registry/OpenCL/sdk/1.2/docs/man/xhtml/storageQualifiers.html) (`typedef`, `static`, and `extern`; `auto` and `register` are not supported) ([documentation](https://clang.llvm.org/docs/CommandGuide/clang.html#cmdoption-d-macroname))
@@ -196,6 +196,7 @@ Save this kernel in a file named `vecadd.cl`. In order to compile it, we will us
 - `-include clc/clc.h` includes the `clc/clc.h` file ([documentation](https://clang.llvm.org/docs/CommandGuide/clang.html#cmdoption-include))
 
 ``` shell
+$ cd builddir
 $ ./bin/clang -x cl vecadd.cl -S -target amdgcn--amdhsa -D cl_clang_storage_class_specifiers -isystem libclc/generic/include -include clc/clc.h
 ```
 
