@@ -17,11 +17,16 @@ The LLVM documentation contains the guidance for writing a pass in the two follo
 
 Since the legacy pass manager will eventually be removed from LLVM and given that the new pass manager is much easier to use requires less boilerplate code, we will follow ths last guide.
 
-The `HelloWorldPass` described in [the Basic code required section](https://llvm.org/docs/WritingAnLLVMNewPMPass.html#basic-code-required) is already a part of the LLVM source code and it got compiled when we initially set up the development environment. We will be modifying it from now on, but first let's use `llvm-stress` to create the file containing LLVM IR that will be used to test the pass:
+The `HelloWorldPass` described in [the Basic code required section](https://llvm.org/docs/WritingAnLLVMNewPMPass.html#basic-code-required) is already a part of the LLVM source code and it got compiled when we initially set up the development environment. We will be modifying it from now on, but first let's get into our build directory:
 
 ``` shell
-$ cd builddir
-$ ./bin/llvm-stress -o example-stress.ll
+cd builddir
+```
+
+and use `llvm-stress` to create the file containing LLVM IR that will be used to test the pass:
+
+``` shell
+./bin/llvm-stress -o example-stress.ll
 ```
 
 The pass implemented in the `HelloWorldPass` class is registered as `helloworld` in the `llvm/lib/Passes/PassRegistry.def` file:
@@ -33,7 +38,12 @@ FUNCTION_PASS("helloworld", HelloWorldPass())
 so it can be called by adding the parameter `-passes` with the value `helloworld` to `opt`:
 
 ``` shell
-$ ./bin/opt example-stress.ll -S -passes helloworld -o example-stress-opt.ll
+./bin/opt example-stress.ll -S -passes helloworld -o example-stress-opt.ll
+```
+
+which prints:
+
+``` text
 autogen_SD0
 ```
 

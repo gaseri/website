@@ -53,7 +53,7 @@ Hereafter we will more or less follow the directions of [Getting started with th
 It is possible to download the LLVM source code from its [releases page](https://releases.llvm.org/). We'll be using the latest patch release from the latest series that is available. At the time of the start of the course, this is [release 19.1.7](https://releases.llvm.org/download.html#19.1.7). We'll download the source code from the [LLVM 19.1.7 release on GitHub](https://github.com/llvm/llvm-project/releases/tag/llvmorg-19.1.7):
 
 ``` shell
-$ curl -OL https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-19.1.7.tar.gz
+curl -OL https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-19.1.7.tar.gz
 ```
 
 This is the complete source code achive for all tools and libraries. The same page also provides the binaries as well as the separate source code archives for [the tools and libraries produced by the LLVM sub-projects](https://llvm.org/):
@@ -77,8 +77,8 @@ Although all of these tools are interesting in their own way, most of them will 
 We'll be following [Building LLVM with CMake](https://llvm.org/docs/CMake.html) from [LLVM documentation](https://llvm.org/docs/), section [User Guides](https://llvm.org/docs/UserGuides.html). Now it's time to unpack the source code tarballs and enter the source directory.
 
 ``` shell
-$ tar xzf llvmorg-19.1.7.tar.gz
-$ cd llvm-project-llvmorg-19.1.7
+tar xzf llvmorg-19.1.7.tar.gz
+cd llvm-project-llvmorg-19.1.7
 ```
 
 If Visual Studio Code is used for the development, this is the project directory that should be opened in it. Afterwards, [the integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal) can be used for running the comamnds.
@@ -86,7 +86,7 @@ If Visual Studio Code is used for the development, this is the project directory
 LLVM, Clang, and related projects use [CMake](https://cmake.org/) for [building](https://llvm.org/docs/CMake.html). Most notably, it does not support building in the source tree, so it's necessary to start by creating a directory:
 
 ``` shell
-$ mkdir builddir
+mkdir builddir
 ```
 
 CMake is invoked using `cmake` command ([documentation](https://cmake.org/cmake/help/latest/manual/cmake.1.html)). The required parameters are:
@@ -106,9 +106,9 @@ Optionally, one might also want to specify:
 - `-G Ninja`, which enables [the Ninja build system](https://ninja-build.org/) instead of [GNU Make](https://www.gnu.org/software/make/) and results in faster builds.
 
 ``` shell
-$ cmake -S llvm -B builddir -D BUILD_SHARED_LIBS=ON -D LLVM_ENABLE_PROJECTS=clang -D CMAKE_BUILD_TYPE=Release
-$ cmake --build builddir --parallel 2
-$ cmake --build builddir --parallel 2 --target check
+cmake -S llvm -B builddir -D BUILD_SHARED_LIBS=ON -D LLVM_ENABLE_PROJECTS=clang -D CMAKE_BUILD_TYPE=Release
+cmake --build builddir --parallel 2
+cmake --build builddir --parallel 2 --target check
 ```
 
 !!! example "Assignment"
@@ -122,13 +122,13 @@ If you have many CPU cores, you can increase the number of parallel compile jobs
 Alternatively, LLVM can also be [obtained from GitHub](https://github.com/llvm/llvm-project.git) using [Git](https://git-scm.com/). In that case, the branch `release/19.x` should be used. The rest of the process is pretty similar:
 
 ``` shell
-$ git clone https://github.com/llvm/llvm-project.git
-$ cd llvm-project
-$ git checkout release/19.x
-$ mkdir builddir
-$ cmake -S llvm -B builddir -D BUILD_SHARED_LIBS=ON -D LLVM_ENABLE_PROJECTS=clang -D CMAKE_BUILD_TYPE=Release
-$ cmake --build builddir --parallel 2
-$ cmake --build builddir --parallel 2 --target check
+git clone https://github.com/llvm/llvm-project.git
+cd llvm-project
+git checkout release/19.x
+mkdir builddir
+cmake -S llvm -B builddir -D BUILD_SHARED_LIBS=ON -D LLVM_ENABLE_PROJECTS=clang -D CMAKE_BUILD_TYPE=Release
+cmake --build builddir --parallel 2
+cmake --build builddir --parallel 2 --target check
 ```
 
 !!! example "Assignment"

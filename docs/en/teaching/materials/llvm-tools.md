@@ -14,19 +14,24 @@ In addition to the use of LLVM via the Clang compiler and the Mesa 3d graphics l
 
 We will be working with files containing the LLVM intermediate representation (IR). Many LLVM IR examples are available in the [VirtualMachine/ir-examples repository on GitHub](https://github.com/Virtual-Machine/ir-examples) that we obtained earlier. We will use both [the C source code](https://github.com/Virtual-Machine/ir-examples/tree/master/c) and [the LLVM IR source code](https://github.com/Virtual-Machine/ir-examples/tree/master/ll) from that repository.
 
-In the following examples we will place the `ir-examples` directory  in the `builddir` directory of the `llvm-project`. Once placed in the `builddir` directory, we can achieve this using cURL:
+In the following examples we will place the `ir-examples` directory  in the `builddir` directory of the `llvm-project`. Once placed in the `builddir` directory:
 
 ``` shell
-$ cd builddir
-$ curl -OL https://github.com/Virtual-Machine/ir-examples/archive/refs/heads/master.zip
-$ unzip master.zip
-$ mv ir-examples-master ir-examples
+cd builddir
+```
+
+we can achieve this using cURL:
+
+``` shell
+curl -OL https://github.com/Virtual-Machine/ir-examples/archive/refs/heads/master.zip
+unzip master.zip
+mv ir-examples-master ir-examples
 ```
 
 or Git:
 
 ``` shell
-$ git clone https://github.com/Virtual-Machine/ir-examples.git
+git clone https://github.com/Virtual-Machine/ir-examples.git
 ```
 
 ## llvm-mca
@@ -36,7 +41,10 @@ $ git clone https://github.com/Virtual-Machine/ir-examples.git
 It takes assembly as the input. For example, to predict the performance of `test1.c` when executed on [AMD Jaguar microarchitecture](https://en.wikipedia.org/wiki/Jaguar_(microarchitecture)) CPUs, we should use `llvm-mca` with the `-mcpu` parameter set to `btver2` (for what it's worth, `btver1` is [AMD Bobcat](https://en.wikipedia.org/wiki/Bobcat_(microarchitecture)), while `bdver1`, `bdver2`, `bdver3`, and `bdver4` are [AMD](https://www.amd.com/en/processors) [Bulldozer](https://en.wikipedia.org/wiki/Bulldozer_(microarchitecture)), [Piledriver](https://en.wikipedia.org/wiki/Piledriver_(microarchitecture)), [Steamroller](https://en.wikipedia.org/wiki/Steamroller_(microarchitecture)), and [Excavator](https://en.wikipedia.org/wiki/Excavator_(microarchitecture)) (respectively)):
 
 ``` shell
-$ ./bin/clang ir-examples/c/test1.c -O2 -target x86_64-unknown-unknown -S -o - | ./bin/llvm-mca -mcpu=btver2
+./bin/clang ir-examples/c/test1.c -O2 -target x86_64-unknown-unknown -S -o - | ./bin/llvm-mca -mcpu=btver2
+```
+
+``` text
 warning: found a return instruction in the input assembly sequence.
 note: program counter updates are ignored.
 Iterations:        100
@@ -113,10 +121,17 @@ We can observe the prediction of 1.25 instructions per cycle on average during t
 
 ## lli
 
-[lli](https://llvm.org/docs/CommandGuide/lli.html) is the interpreter that enables direct execution of the programs written in LLVM IR:
+[lli](https://llvm.org/docs/CommandGuide/lli.html) is the interpreter that enables direct execution of the programs written in LLVM IR.
+
+For example, running `switch.ll` from `ir-examples/ll` directory:
 
 ``` shell
-$ ./bin/lli ir-examples/ll/switch.ll
+./bin/lli ir-examples/ll/switch.ll
+```
+
+will print:
+
+``` text
 1.2 + 1.4 = 2.6
 ```
 
@@ -128,7 +143,7 @@ $ ./bin/lli ir-examples/ll/switch.ll
 [llvm-diff](https://llvm.org/docs/CommandGuide/llvm-diff.html) is the structural comparison tool for LLVM IR files. Usage:
 
 ``` shell
-$ ./bin/llvm-diff example1.ll example2.ll
+./bin/llvm-diff example1.ll example2.ll
 ```
 
 !!! example "Assignment"
@@ -138,8 +153,10 @@ $ ./bin/llvm-diff example1.ll example2.ll
 
 [llvm-stress](https://llvm.org/docs/CommandGuide/llvm-stress.html) is the random LLVM IR generator.
 
+Generated output can be saved into a file using `-o` parameter:
+
 ``` shell
-$ ./bin/llvm-stress -o example-stress.ll
+./bin/llvm-stress -o example-stress.ll
 ```
 
 The file `example-stress.ll` contains:
@@ -303,7 +320,7 @@ CF84:                                             ; preds = %CF87
 If we desire a smaller example file, we can specify the number of desired instructions using the `-size` parameter:
 
 ``` shell
-$ ./bin/llvm-stress -size 8 -o example-stress-size8.ll
+./bin/llvm-stress -size 8 -o example-stress-size8.ll
 ```
 
 The file `example-stress-size8.ll` contains:
@@ -339,7 +356,12 @@ It is also possible to specify the `-seed` parameter with the value used for see
 Availables passes can be printed using the `-print-passes` parameter:
 
 ``` shell
-$ ./bin/opt -print-passes
+./bin/opt -print-passes
+```
+
+They are:
+
+``` text
 Module passes:
   always-inline
   attributor
@@ -670,20 +692,25 @@ Loop analyses:
   pass-instrumentation
 ```
 
-Without any parameters `opt` will output bitcode:
+Running `opt` without any parameters and an LLVM IR file in the argument:
 
 ``` shell
-$ ./bin/opt example-stress-size8.ll
+./bin/opt example-stress-size8.ll
+```
+
+will (avoid to) output bitcode:
+
+``` text
 WARNING: You're attempting to print out a bitcode file.
 This is inadvisable as it may cause display problems. If
 you REALLY want to taste LLVM bitcode first-hand, you
 can force output with the `-f' option.
 ```
 
-To get LLVM IR as the output, `-S` parameter should be used:
+To get LLVM IR as the output instead of bitcode, `-S` parameter should be used, and adding `-o` will save the output to a file:
 
 ``` shell
-$ ./bin/opt example-stress-size8.ll -S -o example-stress-size8-opt.ll
+./bin/opt example-stress-size8.ll -S -o example-stress-size8-opt.ll
 ```
 
 The `example-stress-size8-opt.ll` file contains the same contents as `example-stress-size8.ll` since no optimization passes were specified:
@@ -710,7 +737,7 @@ BB:
 An interesting pass to try is Aggressive Dead Code Elimination (ADCE) ([documentation](https://llvm.org/docs/Passes.html#adce-aggressive-dead-code-elimination)). It is enabled by adding `-passes` parameter with the value `adce`:
 
 ``` shell
-$ ./bin/opt example-stress-size8.ll -S -passes adce -o example-stress-size8-adce.ll
+./bin/opt example-stress-size8.ll -S -passes adce -o example-stress-size8-adce.ll
 ```
 
 The contents file `example-stress-size8-adce.ll` are visibly different from `example-stress-size8.ll`:
@@ -730,10 +757,15 @@ BB:
 }
 ```
 
-Using `llvm-diff` we can see that 4 allocations were removed:
+Using `llvm-diff` on the example files:
 
 ``` shell
-$ ./bin/llvm-diff example-stress.ll example-stress-opt.ll
+./bin/llvm-diff example-stress.ll example-stress-opt.ll
+```
+
+we can see that 4 allocations were removed:
+
+``` text
 in function autogen_SD0:
   in block %BB:
     in instruction store to %A4 / store to %A4:
@@ -747,7 +779,12 @@ in function autogen_SD0:
 Adding the parameter `-time-passes` will cause `opt` to print the pass execution timing report after the optimization is finished:
 
 ``` shell
-$ ./bin/opt example-stress-size8.ll -S -passes adce -time-passes -o example-stress-size8-adce.ll
+./bin/opt example-stress-size8.ll -S -passes adce -time-passes -o example-stress-size8-adce.ll
+```
+
+The report looks like:
+
+``` text
 ===-------------------------------------------------------------------------===
                       ... Pass execution timing report ...
 ===-------------------------------------------------------------------------===
@@ -780,19 +817,24 @@ $ ./bin/opt example-stress-size8.ll -S -passes adce -time-passes -o example-stre
 Optimizations are generally noncommutative, that is, [the order of optimization passes](https://llvm.org/docs/Frontend/PerformanceTips.html#pass-ordering) is important. For example, consider the following optimization of  the`example-stress.ll` file in which loop unrolling is performed first, and code sinking second:
 
 ``` shell
-$ ./bin/opt example-stress.ll -S -passes loop-unroll,sink -o example-stress-loop-unroll-sink.ll
+./bin/opt example-stress.ll -S -passes loop-unroll,sink -o example-stress-loop-unroll-sink.ll
 ```
 
 and the optimization where code sinking is performed first, and loop unrolling second:
 
 ``` shell
-$ ./bin/opt example-stress.ll -S -passes sink,loop-unroll -o example-stress-sink-loop-unroll.ll
+./bin/opt example-stress.ll -S -passes sink,loop-unroll -o example-stress-sink-loop-unroll.ll
 ```
 
-The results of these optimizations are different:
+The results of these optimizations can be compared with `llvm-diff`:
 
 ``` shell
 ./bin/llvm-diff example-stress-loop-unroll-sink.ll example-stress-sink-loop-unroll.ll
+```
+
+and observed to be different:
+
+``` llvm
 in function autogen_SD0:
   in block %CF:
     >   %I15 = insertelement <4 x i32> zeroinitializer, i32 %3, i32 0

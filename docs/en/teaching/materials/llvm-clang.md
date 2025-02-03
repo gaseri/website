@@ -6,11 +6,21 @@ author: Vedran Miletić
 
 [Clang](https://clang.llvm.org/) is a compiler for C-like programming languages, including C, C ++, Objective C/C++, OpenCL C, and CUDA C/C++. It is part of [the LLVM project](https://llvm.org/).
 
-Before continuing, let us make sure that Clang has been successfully compiled:
+Before continuing, let us make sure that we are in the build directory because we are going to execute all commands from there.
 
 ``` shell
-$ cd builddir
-$ ./bin/clang --version
+cd builddir
+```
+
+Let's check that Clang has been successfully compiled:
+
+``` shell
+./bin/clang --version
+```
+
+The output should look like:
+
+``` text
 clang version 16.0.3 (https://github.com/llvm/llvm-project.git da3cd333bea572fb10470f610a27f22bcb84b08c)
 Target: x86_64-unknown-linux-gnu
 Thread model: posix
@@ -35,13 +45,18 @@ int main(void)
 can be compiled to `example1` executable file using the `clang` command and `-o` parameter:
 
 ``` shell
-$ ./bin/clang example1.c -o example1
+./bin/clang example1.c -o example1
 ```
 
-Executing gives:
+Executing:
 
 ``` shell
-$ ./example1
+./example1
+```
+
+gives:
+
+``` text
 Hello from C
 ```
 
@@ -58,10 +73,15 @@ int main()
 }
 ```
 
-using the analogous command will fail:
+using the analogous command:
 
 ``` shell
-$ ./bin/clang example2.cpp -o example2
+./bin/clang example2.cpp -o example2
+```
+
+will fail with:
+
+``` text
 /usr/bin/ld: /tmp/example-4609c2.o: in function `main':
 example2.cpp:(.text+0x6): undefined reference to `std::cout'
 /usr/bin/ld: example2.cpp:(.text+0x19): undefined reference to `std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)'
@@ -74,26 +94,31 @@ clang-13: error: linker command failed with exit code 1 (use -v to see invocatio
 The failure occurs at the linking stage; Clang treats the the source file language as C-like instead of specifically C++ and therefore does not link the resulting executable to the C++ standard library. This can be done manually by using the `-l` parameter:
 
 ``` shell
-$ ./bin/clang example2.cpp -o example2 -l stdc++
+./bin/clang example2.cpp -o example2 -l stdc++
 ```
 
 Although this approach almost always work, the recommended method is to specify C++ as the source file language using the `-x` parameter and let Clang take care of linking the standard library:
 
 ``` shell
-$ ./bin/clang example2.cpp -o example2 -x c++
+./bin/clang example2.cpp -o example2 -x c++
 ```
 
-Executing `example2` shows that the compilation was successful:
+Executing `example2` like:
 
 ``` shell
-$ ./example2
+./example2
+```
+
+shows that the compilation was successful:
+
+``` text
 Hello from C++
 ```
 
 For convenience, Clang also provides `clang++` command which is equivalent to `clang -x c++`. Therefore the C++ source file can also be compiled with:
 
 ``` shell
-$ ./bin/clang++ example2.cpp -o example2
+./bin/clang++ example2.cpp -o example2
 ```
 
 !!! example "Assignment"
@@ -106,7 +131,7 @@ Although Clang is an excellent compiler for practical applications (including la
 When we run Clang with the `-S` parameter, it will translate the C/C++ source code into the assembly code (for the x86-64 architecture) and output that code into the file with the same name as the input file and the extension `.s`:
 
 ``` shell
-$ ./bin/clang example1.c -S
+./bin/clang example1.c -S
 ```
 
 The file `example1.s` contains the following assembly code:
@@ -148,10 +173,15 @@ main:                                   # @main
     .addrsig_sym printf
 ```
 
-The output file name can be specified using the `-o` parameter. Specifying `-` as the name prints the resulting assembly code to the standard output:
+The output file name can be specified using the `-o` parameter. Specifying `-` as the name like:
 
 ``` shell
-$ ./bin/clang example1.c -S -o -
+./bin/clang example1.c -S -o -
+```
+
+prints the resulting assembly code to the standard output:
+
+``` text
     .text
     .file   "example1.c"
     .globl  main                            # -- Begin function main
@@ -207,7 +237,7 @@ Optimization level can be specified by using some variant of the `-O` parameter:
 Other targets can be specified using the `-target` parameter. To compile the code for MIPS on GNU/Linux:
 
 ``` shell
-$ ./bin/clang example1.c -S -target mips-unknown-linux-gnu
+./bin/clang example1.c -S -target mips-unknown-linux-gnu
 ```
 
 The resulting `example1.s` contains:
@@ -279,7 +309,7 @@ $.str:
 Finally, we can compile the C++ source code the same way:
 
 ``` shell
-$ ./bin/clang example2.cpp -S
+./bin/clang example2.cpp -S
 ```
 
 The resulting assembly file `example2.s` is slightly more complicated:
@@ -378,10 +408,17 @@ _GLOBAL__sub_I_example2.cpp:            # @_GLOBAL__sub_I_example2.cpp
     .addrsig_sym _ZSt4cout
 ```
 
-Note the presence of [the C++ symbol name mangling](https://en.wikipedia.org/wiki/Name_mangling#C++), e.g. `_ZSt4cout` is the mangled name of `std::cout`. For demangling the less obvious mangled names, LLVM provides the [llvm-cxxfilt](https://llvm.org/docs/CommandGuide/llvm-cxxfilt.html) symbol name demangler:
+Note the presence of [the C++ symbol name mangling](https://en.wikipedia.org/wiki/Name_mangling#C++), e.g. `_ZSt4cout` is the mangled name of `std::cout`. For demangling the less obvious mangled names, LLVM provides the [llvm-cxxfilt](https://llvm.org/docs/CommandGuide/llvm-cxxfilt.html) symbol name demangler.
+
+Executing `llvm-cxxfilt` with the mangled name as the argument:
 
 ``` shell
-$ ./bin/llvm-cxxfilt _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+./bin/llvm-cxxfilt _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+```
+
+will print the demangled name:
+
+``` text
 std::basic_ostream<char, std::char_traits<char> >& std::operator<<<std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)
 ```
 
@@ -390,7 +427,7 @@ std::basic_ostream<char, std::char_traits<char> >& std::operator<<<std::char_tra
 Just like assembly, Clang can output the LLVM intermediate representation (IR), which is more convenient for the study of optimization (i.e. analysis and transformation) passes. To produce LLVM IR, we will use `-emit-llvm` parameter in addition to the `-S` parameter:
 
 ``` shell
-$ ./clang example1.c -S -emit-llvm
+./clang example1.c -S -emit-llvm
 ```
 
 This will create the `example1.ll` file containing:

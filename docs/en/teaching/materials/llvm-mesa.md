@@ -31,14 +31,20 @@ Generations of the [Radeon DNA (RDNA)](https://en.wikipedia.org/wiki/RDNA_(micro
 We will start by running [clinfo](https://github.com/Oblomov/clinfo), a simple OpenCL program that prints out all known properties of all OpenCL platforms and devices in the system. Using the `--version` parameter we'll make sure that the `clinfo` command is working properly and that a recent version is being used:
 
 ``` shell
-$ clinfo --version
+clinfo --version
+```
+
+``` text
 clinfo version 3.0.21.02.21
 ```
 
 When `--list` parameter is specified, `clinfo` will print the list of OpenCL platforms and devices on each of the platforms:
 
 ``` shell
-$ clinfo --list
+clinfo --list
+```
+
+``` text
 Platform #0: Clover
  `-- Device #0: AMD Radeon RX 6800 (SIENNA_CICHLID, DRM 3.44.0, 5.16.12-zen1-1-zen, LLVM 13.0.1)
 ```
@@ -46,7 +52,10 @@ Platform #0: Clover
 We can see that we have only one platform (Clover) and only one device (Radeon RX 6800, 2nd generation RDNA GPU codenamed [Sienna Cichild](https://videocardz.com/newz/amd-sienna-cichlid-confirmed-as-navi-21-navy-flounder-is-navi-22)). Running `clinfo` command without parameters will make it print the platform and device properties:
 
 ``` shell
-$ clinfo
+clinfo
+```
+
+``` text
 Number of platforms                               1
   Platform Name                                   Clover
   Platform Vendor                                 Mesa
@@ -188,7 +197,13 @@ __kernel void vector_add(__global const int *a, __global const int *b, __global 
 }
 ```
 
-Save this kernel in a file named `vecadd.cl` under `builddir`. In order to compile it, we will use the following parameters we have not used before:
+Save this kernel in a file named `vecadd.cl` under `builddir`. Get into the directory:
+
+``` shell
+cd builddir
+```
+
+In order to compile it, we will use the following parameters we have not used before:
 
 - `-x cl` tells Clang to treat the input file as being written in OpenCL ([documentation](https://clang.llvm.org/docs/CommandGuide/clang.html#cmdoption-x))
 - `-D cl_clang_storage_class_specifiers` enables the usage of the OpenCL C [storage-class specifiers/qualifiers](https://www.khronos.org/registry/OpenCL/sdk/1.2/docs/man/xhtml/storageQualifiers.html) (`typedef`, `static`, and `extern`; `auto` and `register` are not supported) ([documentation](https://clang.llvm.org/docs/CommandGuide/clang.html#cmdoption-d-macroname))
@@ -196,8 +211,7 @@ Save this kernel in a file named `vecadd.cl` under `builddir`. In order to compi
 - `-include clc/clc.h` includes the `clc/clc.h` file ([documentation](https://clang.llvm.org/docs/CommandGuide/clang.html#cmdoption-include))
 
 ``` shell
-$ cd builddir
-$ ./bin/clang -x cl vecadd.cl -S -target amdgcn--amdhsa -D cl_clang_storage_class_specifiers -isystem libclc/generic/include -include clc/clc.h
+./bin/clang -x cl vecadd.cl -S -target amdgcn--amdhsa -D cl_clang_storage_class_specifiers -isystem libclc/generic/include -include clc/clc.h
 ```
 
 !!! tip
@@ -401,7 +415,12 @@ Common GCN and RDNA assembly instructions can be divided into two groups, scalar
 The list of supported architectures can be obtained using the `--version` parameter:
 
 ``` shell
-$ ./bin/llc --version
+./bin/llc --version
+```
+
+Supported architectured are listed under `Registered Targets`:
+
+``` text
 LLVM (http://llvm.org/):
   LLVM version 16.0.3
   Optimized build.
@@ -456,6 +475,11 @@ Each architecture generation has a number of processors. [The official documenta
 
 ``` shell
 ./bin/llc -march=amdgcn -mattr=help
+```
+
+The available processors and features are:
+
+``` text
 Available CPUs for this target:
 
   bonaire     - Select the bonaire processor.
