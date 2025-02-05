@@ -40,7 +40,7 @@ tags:
 
 - [Osnovni pojmovi upravljanja računalnim sustavima i mrežama](../materijali/upravljanje-racunalnim-sustavima-i-mrezama-pojmovi.md)
 - [Upravljanje dokumentacijom računalnih sustava i mreža](../materijali/upravljanje-dokumentacijom-racunalnih-sustava-i-mreza.md)
-- [Upravljanje dokumentacijom računalnih sustava i mreža](../materijali/upravljanje-zaporkama.md)
+- [Upravljanje zaporkama](../materijali/upravljanje-zaporkama.md)
 - [Instalacija operacijskog sustava Debian korištenjem instalacijskog alata Debian-Installer](../materijali/debian-installer-instalacija-operacijskog-sustava.md)
 - [Instalacija operacijskih sustava Fedora i CentOS korištenjem instalacijskog alata Anaconda](../materijali/anaconda-instalacija-operacijskog-sustava.md)
 - [Automatizacija konfiguracije i održavanja sustava alatom Ansible](../materijali/ansible-automatizacija-konfiguracije-odrzavanja-sustava.md)
@@ -50,10 +50,12 @@ tags:
 - [Datotečni sustavi Procfs i Sysfs](../materijali/procfs-sysfs-informacije-konfiguracija.md)
 - [Upravljački programi hardvera](../materijali/upravljacki-programi-hardvera.md)
 - [Virtualizacija korištenjem KVM-a i QEMU-a](../materijali/kvm-virtualizacija.md)
-- [Konfiguracija cloud slike korištenjem cloud-inita](../materijali/cloud-init-konfiguracija-cloud-slike.md)
 - [Virtualizacija korištenjem Virtual Machine Managera](../materijali/virt-manager-virtualizacija.md)
 - [Virtualizacija korištenjem libvirta](../materijali/libvirt-virtualizacija.md)
+- [Konfiguracija cloud slike korištenjem cloud-inita](../materijali/cloud-init-konfiguracija-cloud-slike.md)
 - [Kontejnerizacija alatom Docker](../materijali/docker-kontejneri.md)
+- [Inkrementalni prijenos podataka korištenjem rsynca](../materijali/rsync-inkrementalni-prijenos-podataka.md)
+- [Datotečni sustav i upravitelj volumenima ZFS](../materijali/zfs-datotecni-sustav-upravitelj-volumenima.md)
 - [Mrežni datotečni sustav NFS](../materijali/nfs-mrezni-datotecni-sustav.md)
 - [Distribuirani datotečni sustav Gluster](../materijali/gluster-distribuirani-datotecni-sustav.md)
 - [Distribuirani datotečni sustav Ceph](../materijali/ceph-distribuirani-datotecni-sustav.md)
@@ -68,6 +70,7 @@ tags:
 - [Upravljanje uslugama operacijskog sustava](../materijali/systemd-systemctl-upravljanje-uslugama-operacijskog-sustava.md)
 - [Praćenje događaja operacijskog sustava](../materijali/systemd-journalctl-pracenje-dogadjaja-operacijskog-sustava.md)
 - [Automatizacija zadaća operacijskog sustava](../materijali/systemd-timer-automatizacija-zadaca-operacijskog-sustava.md)
+- [Analiza upravitelja operacijskog sustava](../materijali/systemd-analyze-analiza-operacijskog-sustava.md)
 - [Prevođenje C, C++ i Fortran programa u izvršni kod](../materijali/gcc-gxx-make-prevodjenje-programa.md)
 - [Nabavka, kompajliranje i instalacija softvera otvorenog koda](../materijali/nabavka-prevodjenje-instalacija-softvera-otvorenog-koda.md)
 - [Binarna kompatibilnost i kompatibilnost na razini izvornog koda](../materijali/api-abi-kompatibilnost.md)
@@ -76,6 +79,7 @@ tags:
 
 ### Upravljanje mrežnim stogom operacijskog sustava i mrežnim uslugama
 
+- [Ograničavanje pristupa uslugama vatrozidom nftables](../materijali/nftables-filtriranje-paketa.md)
 - [DNS sustav BIND9](../materijali/bind9-dns-sustav.md)
 - [DHCP i DNS poslužitelj dnsmasq](../materijali/dnsmasq-dhcp-dns-posluzitelj.md)
 - [Pokretanje računala putem mrežnog sučelja](../materijali/pxe-pokretanje-racunala-putem-mreznog-sucelja.md)
@@ -99,4 +103,3 @@ tags:
 - [Zerconf NSS/mDNS sustav Avahi](../materijali/avahi-zeroconf.md)
 - [Strujanje multimedijskog sadržaja alatom VLC](../materijali/vlc-strujanje-multimedijskog-sadrzaja.md)
 - [OpenWrt](../materijali/openwrt-ugradbeni-softver-za-bezicne-mrezne-usmjerivace.md)
-- [Inkrementalni prijenos podataka korištenjem rsynca](../materijali/rsync-inkrementalni-prijenos-podataka.md)
