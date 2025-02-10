@@ -15,8 +15,8 @@ hide:
     ---
 
     - Kolegij [Informatika za farmaceute](hr/nastava/kolegiji/INF-Pharma.md) na sveučilišnom integriranom prijediplomskom i diplomskom [studiju Farmacija](https://medri.uniri.hr/obrazovanje/studiji/integrirani-preddiplomski-i-diplomski-sveucilisni-studij/farmacija/)
+    - Kolegij [Upravljanje računalnim sustavima](hr/nastava/kolegiji/URS.md) na sveučilišnom [prijediplomskom studiju Informatika](https://www.inf.uniri.hr/studiji/prijediplomski-studij)
     - Kolegij [Računalna biokemija i biofizika](hr/nastava/kolegiji/RBKBF.md) na sveučilišnom poslijediplomskom [doktorskom studiju Informatika](https://www.inf.uniri.hr/studiji/doktorski-studij)
-    - [Teme završnih i diplomskih radova](hr/nastava/radovi/teme.md)
 
 - ## 🇺🇸 [Group for Applications and Services on Exascale Research Infrastructure](en/index.md)
 
