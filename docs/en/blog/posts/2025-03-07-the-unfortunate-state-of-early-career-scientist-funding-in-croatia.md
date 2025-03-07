@@ -22,6 +22,8 @@ Over the last couple of weeks, there has been a lot of discussion about [scienti
 
 While science funding in the US is an important and interesting topic, I would like to say a couple of words regarding science funding that hits closer to home, namely in Croatia. Earlier this week, [the Croatian Science Foundation (HrZZ)](https://hrzz.hr/) closed the project call for [Installation Research Projects UIP-2025-02](https://hrzz.hr/financiranje/zatvoreni-natjecaji/). This was the first project call of this type after 5 years, which is possibly the reason why the usual range of eligible scientists with a maximum of 7 years after obtaining the PhD degree was extended to a maximum of 10 years after it. The call still requires a minimum of 2 years of experience after the degree.
 
+<!-- more -->
+
 ## Full disclosure
 
 I [formerly worked](../../people/principal-investigator.md) as a senior lecturer and an assistant professor at [the University of Rijeka (UniRi)](https://uniri.hr/), where I tried to apply for funding from the Croatian Science Foundation (HrZZ) twice:
