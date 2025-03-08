@@ -31,7 +31,7 @@ I [formerly worked](../../people/principal-investigator.md) as a senior lecturer
 - IP-CORONA-2020-04 with [Martina Ašenbrener Katić](https://portal.uniri.hr/Portfelj/987), [Željko Svedružić](https://svedruziclab.github.io/principal-investigator.html), and [Patrik Nikolić](https://nikoli.ch/);
 - IP-2022-10 with [Davide Mercadante](https://lab.mercadante.net/) and [Matea Turalija](https://mateaturalija.github.io/).
 
-Both project proposals were unsuccessful. (Given that I no longer work at UniRi, it should be obvious that these failures had consequences, but that is a topic for another blog post.) During the time that I was applying, there was no call for early-career researchers (UIP) from HrZZ, and I was ineligible for the subsequent [NPOO](https://fondovieu.gov.hr/) calls.
+Both project proposals were unsuccessful. (Given that I no longer work at UniRi, it should be obvious that these failures had consequences, but that is a topic for another blog post.) During the time that I was applying, there was no call for early-career researchers (UIP) from HrZZ, and I was ineligible for the two subsequent [the National Recovery and Resilience Plan (NPOO)](https://planoporavka.gov.hr/) calls: [NPOO.C3.2.R2-I1.06](https://fondovieu.gov.hr/pozivi/57) and [NPOO.C3.2.R3-I1.04](https://fondovieu.gov.hr/pozivi/73).
 
 Note that I am not trying to claim it should have been otherwise, and, regardless of the quality of my submissions, I believe the points made below still stand on their merit.
 
