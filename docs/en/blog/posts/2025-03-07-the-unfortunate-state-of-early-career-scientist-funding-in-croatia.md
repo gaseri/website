@@ -20,20 +20,9 @@ Photo source: [Markus Spiske (@markusspiske) | Unsplash](https://unsplash.com/ph
 
 Over the last couple of weeks, there has been a lot of discussion about [scientific research funding in the US](https://www.nature.com/articles/d41586-025-00608-z). There are many changes, and it remains to be seen what will come out of it in the end. If some of the new policies stick around for a longer time, I have no doubt they will inspire discussions and considerations in the rest of the world, including Europe, as many of them in the US tend to do.
 
-While science funding in the US is an important and interesting topic, I would like to say a couple of words regarding science funding that hits closer to home, namely in Croatia. Earlier this week, [the Croatian Science Foundation (HrZZ)](https://hrzz.hr/) closed the project call for [Installation Research Projects UIP-2025-02](https://hrzz.hr/financiranje/zatvoreni-natjecaji/). This was the first project call of this type after 5 years, which is possibly the reason why the usual range of eligible scientists with a maximum of 7 years after obtaining the PhD degree was extended to a maximum of 10 years after it. The call still requires a minimum of 2 years of experience after the degree.
+While science funding in the US is an important and interesting topic, I would like to say a couple of words regarding science funding that hits closer to home, namely in Croatia. Earlier this week, [the Croatian Science Foundation (HrZZ)](https://hrzz.hr/o-zakladi/) closed the project call for [Installation Research Projects](https://hrzz.hr/programi/istrazivacki-programi/) [UIP-2025-02](https://hrzz.hr/zatvoreni-natjecaji-ip-uip-i-dok/). This was the first project call of this type after 5 years, which is possibly the reason why the usual range of eligible scientists with a maximum of 7 years after obtaining the PhD degree was extended to a maximum of 10 years after it. The call still requires a minimum of 2 years of experience after the degree.
 
 <!-- more -->
-
-## Full disclosure
-
-I [formerly worked](../../people/principal-investigator.md) as a senior lecturer and an assistant professor at [the University of Rijeka (UniRi)](https://uniri.hr/), where I tried to apply for funding from the Croatian Science Foundation (HrZZ) twice:
-
-- IP-CORONA-2020-04 with [Martina Ašenbrener Katić](https://portal.uniri.hr/Portfelj/987), [Željko Svedružić](https://svedruziclab.github.io/principal-investigator.html), and [Patrik Nikolić](https://nikoli.ch/);
-- IP-2022-10 with [Davide Mercadante](https://lab.mercadante.net/) and [Matea Turalija](https://mateaturalija.github.io/).
-
-Both project proposals were unsuccessful. (Given that I no longer work at UniRi, it should be obvious that these failures had consequences, but that is a topic for another blog post.) During the time that I was applying, there was no call for early-career researchers (UIP) from HrZZ, and I was ineligible for the two subsequent [the National Recovery and Resilience Plan (NPOO)](https://planoporavka.gov.hr/) calls: [NPOO.C3.2.R2-I1.06](https://fondovieu.gov.hr/pozivi/57) and [NPOO.C3.2.R3-I1.04](https://fondovieu.gov.hr/pozivi/73).
-
-Note that I am not trying to claim it should have been otherwise, and, regardless of the quality of my submissions, I believe the points made below still stand on their merit.
 
 ## Number of scientists in Croatia
 
@@ -78,3 +67,14 @@ This phenomenon has been repeatedly observed by my colleagues in other fields an
 -- [Ramona Ščuric (Srednja.hr)](https://www.srednja.hr/faks/nina-je-prva-zena-dobitnica-nagrade-za-matematiku-u-hrvatskoj-moramo-razbijati-stereotipe/), translation and emphasis mine
 
 It is unfortunately not every two to three years anymore, but actually double that time. When the funding is so sparse, the Croatian academic community risks losing talented individuals to other professions or countries where their work might be better supported. This phenomenon, known as the *brain drain*, poses a significant threat to the country's scientific and economic progress. Moreover, when good proposals are left unfunded, or not even submitted due to a low chance of success, the country misses out on innovations that could improve lives and drive development in other areas.
+
+## Full disclosure
+
+I [formerly worked](../../people/principal-investigator.md) as a senior lecturer and an assistant professor at [the University of Rijeka (UniRi)](https://uniri.hr/), where I tried to apply for funding from [the Croatian Science Foundation (HrZZ)](https://hrzz.hr/) twice:
+
+- [IP-CORONA](https://hrzz.hr/otvoren-natjecaj-upravljanje-zaraznim-bolestima-uzrokovanim-koronavirusima-te-drustvenim-i-obrazovnim-aspektima-pandemije-ip-corona-2020-04/)-[2020](https://hrzz.hr/zatvoren-natjecaj-ip-corona-2020-04/)-[04](https://hrzz.hr/rezultati-natjecaja-ip-corona-2020-04/) with [Martina Ašenbrener Katić](https://portal.uniri.hr/Portfelj/987), [Željko Svedružić](https://svedruziclab.github.io/principal-investigator.html), and [Patrik Nikolić](https://nikoli.ch/);
+- [IP](https://hrzz.hr/otvoren-natjecaj-ip-2022-10/)-[2022](https://hrzz.hr/zatvoreni-natjecaji-ip-2022-10-i-ipch-2022-10/)-[10](https://hrzz.hr/rezultati-natjecaja-ip-2022-10/) with [Davide Mercadante](https://lab.mercadante.net/) and [Matea Turalija](https://mateaturalija.github.io/).
+
+Both project proposals were unsuccessful. (Given that I no longer work at UniRi, it should be obvious that these failures had consequences, but that is a topic for another blog post.) During the time that I was applying, there was no call for early-career researchers (UIP) from HrZZ, and I was ineligible for the two subsequent [the National Recovery and Resilience Plan (NPOO)](https://planoporavka.gov.hr/) calls: [NPOO.C3.2.R2-I1.06](https://fondovieu.gov.hr/pozivi/57) and [NPOO.C3.2.R3-I1.04](https://fondovieu.gov.hr/pozivi/73).
+
+Note that I am not trying to claim it should have been otherwise, and, regardless of the quality of my submissions, I believe the points made above still stand on their merit.
