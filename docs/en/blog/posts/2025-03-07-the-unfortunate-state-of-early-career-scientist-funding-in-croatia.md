@@ -70,7 +70,7 @@ It is unfortunately not every two to three years anymore, but actually double th
 
 ## Full disclosure
 
-I [formerly worked](../../people/principal-investigator.md) as a senior lecturer and an assistant professor at [the University of Rijeka (UniRi)](https://uniri.hr/), where I tried to apply for funding from [the Croatian Science Foundation (HrZZ)](https://hrzz.hr/) twice:
+After [completing the postdoc at Heidelberg Institute for Theoretical Studies](2023-07-28-alumni-meeting-2023-at-hits-and-the-reminiscence-of-the-postdoc-years.md) and returning to Croatia, I [formerly worked](../../people/principal-investigator.md) as a senior lecturer and an assistant professor at [the University of Rijeka (UniRi)](https://uniri.hr/), where I tried to apply for funding from [the Croatian Science Foundation (HrZZ)](https://hrzz.hr/) twice:
 
 - [IP-CORONA](https://hrzz.hr/otvoren-natjecaj-upravljanje-zaraznim-bolestima-uzrokovanim-koronavirusima-te-drustvenim-i-obrazovnim-aspektima-pandemije-ip-corona-2020-04/)-[2020](https://hrzz.hr/zatvoren-natjecaj-ip-corona-2020-04/)-[04](https://hrzz.hr/rezultati-natjecaja-ip-corona-2020-04/) with [Martina Ašenbrener Katić](https://portal.uniri.hr/Portfelj/987), [Željko Svedružić](https://svedruziclab.github.io/principal-investigator.html), and [Patrik Nikolić](https://nikoli.ch/);
 - [IP](https://hrzz.hr/otvoren-natjecaj-ip-2022-10/)-[2022](https://hrzz.hr/zatvoreni-natjecaji-ip-2022-10-i-ipch-2022-10/)-[10](https://hrzz.hr/rezultati-natjecaja-ip-2022-10/) with [Davide Mercadante](https://lab.mercadante.net/) and [Matea Turalija](https://mateaturalija.github.io/).
