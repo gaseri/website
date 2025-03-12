@@ -4,7 +4,7 @@ date: 2016-12-14
 tags:
   - amd
   - free and open-source software
-  - gpu drivers
+  - gpu computing
   - firmware
 ---
 

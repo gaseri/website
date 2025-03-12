@@ -8,7 +8,6 @@ tags:
   - scientific software
   - gromacs
   - amd
-  - gpu drivers
   - gpu computing
   - systemd
 ---

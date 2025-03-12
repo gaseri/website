@@ -7,7 +7,6 @@ tags:
   - amd
   - free and open-source software
   - firmware
-  - gpu drivers
   - intel
   - nvidia
   - gpu computing

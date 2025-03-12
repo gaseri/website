@@ -5,7 +5,6 @@ authors:
 date: 2017-09-24
 tags:
   - web server
-  - file server
   - free and open-source software
   - academia
   - decentralization

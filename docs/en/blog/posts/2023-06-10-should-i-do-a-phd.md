@@ -12,6 +12,7 @@ tags:
   - gromacs
   - amd
   - intel
+  - firmware
 ---
 
 # Should I do a Ph.D.?

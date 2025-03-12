@@ -6,6 +6,7 @@ date: 2015-09-14
 tags:
   - american chemical society
   - cp2k
+  - ethz
   - nwchem
   - q-chem
   - free and open-source software
