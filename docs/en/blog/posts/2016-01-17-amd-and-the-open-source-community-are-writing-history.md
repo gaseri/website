@@ -10,6 +10,7 @@ tags:
   - intel
   - nvidia
   - gpu computing
+  - linux
 ---
 
 # AMD and the open-source community are writing history

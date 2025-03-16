@@ -8,6 +8,9 @@ tags:
   - free and open-source software
   - academia
   - decentralization
+  - linux
+  - debian
+  - red hat
 ---
 
 # Mirroring free and open-source software matters

@@ -12,6 +12,9 @@ tags:
   - free and open-source software
   - scientific software
   - software licensing
+  - linux
+  - debian
+  - red hat
 ---
 
 # What is the price of open-source fear, uncertainty, and doubt?
