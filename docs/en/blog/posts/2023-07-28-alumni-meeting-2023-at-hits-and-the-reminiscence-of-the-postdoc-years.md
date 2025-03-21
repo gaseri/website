@@ -10,6 +10,7 @@ tags:
   - amd
   - gpu computing
   - systemd
+  - red hat
 ---
 
 # Alumni Meeting 2023 at HITS and the reminiscence of the postdoc years
@@ -63,7 +64,7 @@ This work was presented in [two European LLVM Developers' Meetings](../../people
 
 ### Miscellaneous activities
 
-I was also a system administrator for our group supercomputer, which included teaching system administration during the last few weeks before I left.
+I was also a system administrator for our group supercomputer, which included teaching system administration during the last few weeks before I left. This was, in a nutshell, a slightly customized and time-intensive version of [the Computer System Administration course](../../../hr/nastava/kolegiji/URS.md), covering [Red Hat Enterprise Linux](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux)/[CentOS](https://www.centos.org/), [FreeIPA](https://www.freeipa.org/), [systemd](https://systemd.io/), [firewalld](https://firewalld.org/), and [Slurm](https://slurm.schedmd.com/). I enjoy teaching this material very much and I taught it in many different settings and various forms over the years.
 
 Finally, we also had some time for fun activities which you could barely count as work. The one that comes to mind is when our group participated in recording of this Floppy Keys video, narrated by [group](https://www.biophysics.org/profiles/frauke-graeter) [leaders](https://lemkelab.com/the-team/about-edward-lemke/) and [Davide Mercadante](https://lab.mercadante.net/):
 

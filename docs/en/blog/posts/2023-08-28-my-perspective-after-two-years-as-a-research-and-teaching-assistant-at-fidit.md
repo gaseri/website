@@ -9,6 +9,8 @@ tags:
   - gromacs
   - markdown
   - mkdocs
+  - systemd
+  - red hat
 ---
 
 # My perspective after two years as a research and teaching assistant at FIDIT

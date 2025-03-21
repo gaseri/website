@@ -12,6 +12,7 @@ tags:
   - mozilla
   - web server
   - amd
+  - c++
 ---
 
 # What hardware, software, and cloud services do we use?

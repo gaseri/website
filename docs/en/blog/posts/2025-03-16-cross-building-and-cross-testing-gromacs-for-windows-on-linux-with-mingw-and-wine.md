@@ -10,6 +10,7 @@ tags:
   - debian
   - red hat
   - free and open-source software
+  - c++
 ---
 
 # Cross-building and cross-testing GROMACS for Windows on Linux with MinGW and Wine
