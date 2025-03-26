@@ -18,7 +18,7 @@ Nakon postavljanja virtualizacijskog hardvera računala, potrebno je na operacij
 Nakon instalacije virtualizacijskog softvera na operacijskom sustavu, potrebno je preuzeti ISO sliku za instalaciju distribucije kompatibilne s [Red Hat Enterprise Linuxom](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux) **9** (i to baš verzijom *9*, ne 10 i ne ni 8):
 
 - [najpopularniji](https://linuxiac.com/rocky-linux-is-the-most-preferred-enterprise-linux-distribution/) izbor: [Rocky Linux](https://rockylinux.org/)
-- druge mogućnosti: [AlmaLinux OS](https://almalinux.org/) i [CentOS Stream](https://centos.org/)
+- druge mogućnosti: [AlmaLinux OS](https://almalinux.org/) i [CentOS Stream](https://www.centos.org/)
 
 Sve navedene distribucije omogućuju korištenje [Red Hat Ansible Automation Platforme](https://www.redhat.com/en/technologies/management/ansible), koja je zastupljena u dijelu vježbi.
 

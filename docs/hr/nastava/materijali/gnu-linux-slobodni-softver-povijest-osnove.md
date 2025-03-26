@@ -87,11 +87,11 @@ author: Vedran Miletić, Vanja Slavuj
         - primarno namijenjena krajnim korisnicima, velik naglasak na uključivanje popularnih desktop aplikacija
         - na njoj se zasniva [Linux Mint](https://www.linuxmint.com/)
 
-    - [Fedora](https://getfedora.org/), započela 2003.
+    - [Fedora](https://fedoraproject.org/), započela 2003.
 
         - osnova joj je distribucija [Red Hat Linux](https://en.wikipedia.org/wiki/Red_Hat_Linux), čiji je rauzvoj započeo 1994. i čiji je nasljednik upravo Fedora
         - primarno namijenjena Linux entuzijastima, velik naglasak na slobodu softvera i nove značajke
-        - na njoj se zasnivaju [Red Hat Enterprise Linux](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux) i [CentOS](https://centos.org/), namijenjene poslovnim korisnicima
+        - na njoj se zasnivaju [Red Hat Enterprise Linux](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux) i [CentOS](https://www.centos.org/), namijenjene poslovnim korisnicima
 
     - [Arch Linux](https://archlinux.org/), započeo 2002.
 

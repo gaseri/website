@@ -22,7 +22,7 @@ Izlaskom [Fedore 18](https://fedoraproject.org/wiki/Releases/18/FeatureList) Ana
 
 Periodički, približno svakih 3 do 5 godina, Red Hat uzima tehnologiju razvijenu u suradnji sa zajednicom i od nje gradi operacijski sustav [Red Hat Enterprise Linux (RHEL)](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux) koji će moći [biti podržan zakrpama softvera približno 10 godina nakon izlaska](https://access.redhat.com/support/policy/updates/errata). Red Hat naplaćuje podršku za Enterprise Linux i zbog toga polaže pravo na svoj zaštitni znak, no sam softver je besplatan (i slobodan i otvorenog koda).
 
-[CentOS](https://centos.org/) je RHEL koji ima drugačiju robnu marku (engl. *branding*), što omogućuje neograničenu distribuciju bez kršenja Red Hatovog autorskog prava (engl. *copyright*) i zaštitnog znaka (engl. *trademark*). CentOS cilja na poslovne i akademske korisnike koji nemaju potrebu ili želju za plaćanjem Red Hatove podrške, a sam nudi podršku bez naknade (i bez garancija) od strane zajednice okupljene oko projekta.
+[CentOS](https://www.centos.org/) je RHEL koji ima drugačiju robnu marku (engl. *branding*), što omogućuje neograničenu distribuciju bez kršenja Red Hatovog autorskog prava (engl. *copyright*) i zaštitnog znaka (engl. *trademark*). CentOS cilja na poslovne i akademske korisnike koji nemaju potrebu ili želju za plaćanjem Red Hatove podrške, a sam nudi podršku bez naknade (i bez garancija) od strane zajednice okupljene oko projekta.
 
 Dokumentacija koju vrijedi konzultirati je:
 
@@ -44,8 +44,8 @@ Dokumentacija koju vrijedi konzultirati je:
 
 Da bi mogli koristiti operacijski sustav, moramo ga instalirati. To ćemo na vježbama učiniti *dva puta*, i to redom koristeći instalacijske medije:
 
-1. [Fedora Server](https://getfedora.org/en/server/), uobičajena instalacija u grafičkom okruženju.
-1. [Fedora Workstation](https://getfedora.org/en/workstation/), živa instalacija u grafičkom okruženju.
+1. [Fedora Server](https://fedoraproject.org/en/server/), uobičajena instalacija u grafičkom okruženju.
+1. [Fedora Workstation](https://fedoraproject.org/en/workstation/), živa instalacija u grafičkom okruženju.
 
 Instalacije ćemo vršiti u KVM/QEMU virtualnoj mašini koja koristi klasični BIOS ili UEFI.
 
