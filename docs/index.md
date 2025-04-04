@@ -35,8 +35,8 @@ hide:
 
     - [Dr. Vedran](https://vedran.miletic.net/) [Miletić](https://www.miletic.net/), our [Principal Investigator](en/people/principal-investigator.md), is now working as an HPC Application Expert at [Max Planck](https://www.mpg.de/) [Computing and Data Facility](https://www.mpcdf.mpg.de/).
     - [Milan Petrović](https://milanxpetrovic.github.io/) remained a Research and Teaching Assistant at [Faculty of Informatics and Digital Technologies](https://www.inf.uniri.hr/), where he is a part of [SemTechLab](https://www.inf.uniri.hr/znanstveni-i-strucni-rad/laboratoriji/semtechlab).
-    - [Matea Turalija](https://mateaturalija.github.io/), our [PhD Student](en/people/phd-students.md#matea-turalija), moved to [Faculty of Medicine](https://medri.uniri.hr/), where she is working as a Research and Teaching Assistant at [Department of Bioinformatics and Staff and Student Development](https://medri.uniri.hr/fakultet/ustroj/zavodi-i-katedre/medicinska-informatika/).
-    - [Students](en/people/index.md#former-students) defended their theses, finished their studies, and now work in various companies in Croatia and abroad.
+    - [Matea Turalija](https://mateaturalija.github.io/), our [PhD Student](en/people/phd-students.md#matea-turalija), moved to [Faculty of Medicine](https://medri.uniri.hr/), where she is working as a Research and Teaching Assistant at [Department of Biomedical Informatics](https://medri.uniri.hr/fakultet/ustroj/zavodi-i-katedre/medicinska-informatika/).
+    - [Students](en/people/index.md#former-students) defended [their theses](hr/nastava/radovi/teme.md), finished their studies, and now work in various companies in Croatia and abroad.
 
     We are grateful to our collaborators for their support over the last twelve years, including both the last three years of GASERI and [the prior nine years of CNPSLab](hr/povijest.md#laboratorij-za-racunalne-mreze-paralelizaciju-i-simulaciju).
 
