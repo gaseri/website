@@ -28,8 +28,8 @@ Naziv doktorskog studija: [Sveučilišni poslijediplomski (doktorski) studij Inf
 
 ## Voditeljstvo i suradnja na tekućim projektima
 
-- voditelj projekta [DPU offload of force reduction calculations in molecular dynamics simulations](../en/projects.md#dpu-offload-of-force-reduction-calculations-in-molecular-dynamics-simulations) (financiran od strane tvrtke NVIDIA)
-- suradnik na projektu [National Competence Centres in the framework of EuroHPC (EuroCC)](../en/projects.md#national-competence-centres-in-the-framework-of-eurohpc-eurocc) (financiran u okviru EU programa Horizon 2020)
+- voditelj projekta [DPU offload of force reduction calculations in molecular dynamics simulations](../en/projects/index.md#dpu-offload-of-force-reduction-calculations-in-molecular-dynamics-simulations) (financiran od strane tvrtke NVIDIA)
+- suradnik na projektu [National Competence Centres in the framework of EuroHPC (EuroCC)](../en/projects/index.md#national-competence-centres-in-the-framework-of-eurohpc-eurocc) (financiran u okviru EU programa Horizon 2020)
 
 ## Važniji radovi (u posljednjih 5 godina)
 

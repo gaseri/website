@@ -448,7 +448,13 @@ nav:
           - People index: en/people/index.md
           - Principal investigator: en/people/principal-investigator.md
           - PhD students: en/people/phd-students.md
-      - Projects: en/projects.md
+      - Projects:
+          - Projects index: en/projects/index.md
+          - Project proposals:
+              - Project proposals index: en/projects/proposals/index.md
+              - COVIDOCK:
+                  - Application form: en/projects/proposals/covidock/application-form.md
+                  - Financial plan: en/projects/proposals/covidock/financial-plan.md
       - Publications: en/publications.md
       - Software: en/software.md
       - Jobs: en/jobs.md

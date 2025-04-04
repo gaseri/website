@@ -25,7 +25,7 @@ Photo source: [Patrik Kernstock (@pkernstock) | Unsplash](https://unsplash.com/p
 
 ---
 
-Our everyday [scientific](../../projects.md) and [educational](../../teaching/index.md) work relies heavily on hardware, software, and, in modern times, cloud services. The equipment that we will mention below is specific to our group; common services used by university and/or faculty employees will not be specifically mentioned here.
+Our everyday [scientific](../../projects/index.md) and [educational](../../teaching/index.md) work relies heavily on hardware, software, and, in modern times, cloud services. The equipment that we will mention below is specific to our group; common services used by university and/or faculty employees will not be specifically mentioned here.
 
 <!-- more -->
 
