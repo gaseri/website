@@ -262,14 +262,14 @@ Therefore, six SuperMicro 2023US-TR4 servers will be obtained and then independe
 
 The molecular docking platform supporting the research requires two servers for the compound database and one for the docking server and its web interface. The compound database will be running in a multi-instance configuration supporting both load balancing (distribution of workloads across multiple nodes) and failover (automatic switching to a standby instance upon the failure of one of the instances).
 
-SuperMicro 2023US-TR4 can be customized to fit the requirements of the compound database and docking server (it's the same server used for the GPUs above which simplifies the rack configuration). To house these nodes, we require a rack such as Dell NetShelter SX 42U. To connect these nodes to the network, we require an Ethernet switch such as Cisco WS-C2960X-24PS-L. To connect these nodes to the power source, we require two power strips of German type with surge protection such as Intellinet 714006 19\" 1.5U Rackmount 7-Output Power PDU.
+SuperMicro 2023US-TR4 can be customized to fit the requirements of the compound database and docking server (it's the same server used for the GPUs above which simplifies the rack configuration). To house these nodes, we require a rack such as Dell NetShelter SX 42U. To connect these nodes to the network, we require an Ethernet switch such as Cisco WS-C2960X-24PS-L. To connect these nodes to the power source, we require two power strips of German type with surge protection such as Intellinet 714006 19" 1.5U Rackmount 7-Output Power PDU.
 
 **New equipment costs:**
 
 - SuperMicro 2023US-TR4: 3 nodes x 8150 EUR (an offer including just one example of a possible customization for the requested configuration from Senetic is attached; the availability and the pricing of the components is expected to vary in the coming months) = 24450 EUR
 - Dell NetShelter SX 42U (an offer from Senetic is attached): 1200 EUR
 - Cisco WS-C2960X-24PS-L (an offer from Senetic is attached): 1000 EUR
-- Intellinet 714006 19\" 1.5U Rackmount 7-Output Power PDU (a price listing from Senetic is attached): 2 x (239,74 kn / 7,606435 kn per EUR) = 63,04 EUR
+- Intellinet 714006 19" 1.5U Rackmount 7-Output Power PDU (a price listing from Senetic is attached): 2 x (239,74 kn / 7,606435 kn per EUR) = 63,04 EUR
 - **Total:** 26 713,04
 
 #### Recording equipment (new equipment)
