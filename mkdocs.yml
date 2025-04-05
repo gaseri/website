@@ -465,6 +465,7 @@ nav:
               - Code optimization: en/teaching/courses/CO.md
           - Materials:
               - The Clang compiler: en/teaching/materials/llvm-clang.md
+              - The OpenMP offloading with the Clang compiler: en/teaching/materials/llvm-clang-offload.md
               - Implementing an analysis and transformation pass in the LLVM compiler infrastructure: en/teaching/materials/llvm-development-analysis-and-transformation.md
               - Developing with the LLVM compiler infrastructure: en/teaching/materials/llvm-development.md
               - The LLVM intermediate representation: en/teaching/materials/llvm-intermediate-representation.md

@@ -72,7 +72,7 @@ This is the complete source code achive for all tools and libraries. The same pa
 - [Polly high-level loop and data-locality optimizations infrastructure](https://polly.llvm.org/), and
 - test suite.
 
-Although all of these tools are interesting in their own way, most of them will not be used here. In particular, we will be using Clang to demonstrate the compile process.
+Although all of these tools are interesting in their own way, most of them will not be used here. In particular, we will be using Clang and several libraries to demonstrate the compile process of codes written in [C](https://www.c-language.org/), [C++](https://isocpp.org/), [OpenCL](https://www.khronos.org/opencl/) C, and C with [OpenMP](https://www.openmp.org/).
 
 We'll be following [Building LLVM with CMake](https://llvm.org/docs/CMake.html) from [LLVM documentation](https://llvm.org/docs/), section [User Guides](https://llvm.org/docs/UserGuides.html). Now it's time to unpack the source code tarballs and enter the source directory.
 
@@ -96,9 +96,10 @@ CMake is invoked using `cmake` command ([documentation](https://cmake.org/cmake/
 
 There are [many CMake and LLVM-related variables](https://llvm.org/docs/CMake.html#options-and-variables) that can be specified at build time. We'll use only three of them, two LLVM-specific and one CMake-generic, namely:
 
-- `-D BUILD_SHARED_LIBS=ON` enables dynamic linking of libraries, which singificantly reduces memory requirements for building and results in smaller file size of the built binaries,
+- `-D CMAKE_BUILD_TYPE=Release` ([documentation](https://cmake.org/cmake/help/latest/envvar/CMAKE_BUILD_TYPE.html)) sets the build mode to release (instead of the default debug), which results in smaller file size of the built binaries,
 - `-D LLVM_ENABLE_PROJECTS=clang` enables building of Clang alongside LLVM,
-- `-D CMAKE_BUILD_TYPE=Release` ([documentation](https://cmake.org/cmake/help/latest/envvar/CMAKE_BUILD_TYPE.html)) sets the build mode to release (instead of the default debug), which results in smaller file size of the built binaries.
+- `-D LLVM_ENABLE_RUNTIMES='openmp;offload'` enables building of OpenMP runtime with offloading,
+- `-D BUILD_SHARED_LIBS=ON` enables dynamic linking of libraries, which singificantly reduces memory requirements for building (though this is [only recommended for use when developing LLVM](https://llvm.org/docs/CMake.html#llvm-related-variables), which we are).
 
 Optionally, one might also want to specify:
 
@@ -106,7 +107,7 @@ Optionally, one might also want to specify:
 - `-G Ninja`, which enables [the Ninja build system](https://ninja-build.org/) instead of [GNU Make](https://www.gnu.org/software/make/) and results in faster builds.
 
 ``` shell
-cmake -S llvm -B builddir -D BUILD_SHARED_LIBS=ON -D LLVM_ENABLE_PROJECTS=clang -D CMAKE_BUILD_TYPE=Release
+cmake -S llvm -B builddir -D CMAKE_BUILD_TYPE=Release -D LLVM_ENABLE_PROJECTS=clang -D LLVM_ENABLE_RUNTIMES='openmp;offload' -D BUILD_SHARED_LIBS=ON
 cmake --build builddir --parallel 2
 cmake --build builddir --parallel 2 --target check
 ```
@@ -126,7 +127,7 @@ git clone https://github.com/llvm/llvm-project.git
 cd llvm-project
 git checkout release/19.x
 mkdir builddir
-cmake -S llvm -B builddir -D BUILD_SHARED_LIBS=ON -D LLVM_ENABLE_PROJECTS=clang -D CMAKE_BUILD_TYPE=Release
+cmake -S llvm -B builddir -D CMAKE_BUILD_TYPE=Release -D LLVM_ENABLE_PROJECTS=clang -D LLVM_ENABLE_RUNTIMES='openmp;offload' -D BUILD_SHARED_LIBS=ON
 cmake --build builddir --parallel 2
 cmake --build builddir --parallel 2 --target check
 ```
