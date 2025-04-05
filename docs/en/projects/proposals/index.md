@@ -9,7 +9,7 @@ author: Vedran Miletić
 - [Application form](covidock/application-form.md)
 - [Financial plan](covidock/financial-plan.md)
 
-While the project proposal failed to atract funding, the preliminary findings were subsequently published in [2020](../../publications.md#2020) and [2021](../../publications.md) conference papers.
+While the project proposal failed to atract funding, the preliminary findings were subsequently published in [2020](../../publications.md#2020) and [2021](../../publications.md#2021) conference papers.
 
 ## Intelligent Design of Enzymes using GROMACS-powered Automated Simulations (IDEGAS)
 
