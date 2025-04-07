@@ -18,6 +18,8 @@ ln -s ../runtimes/runtimes-bins/openmp/runtime/src/libomp.so
 cd ..
 ```
 
+## Compiling basic OpenMP programs
+
 We'll use the examples from [the OpenMP Application Programming Interface Examples book, Version 5.2.2 (April 2024)](https://www.openmp.org/wp-content/uploads/openmp-examples-5.2.2-final.pdf). Since copying code from PDF tends to be a suboptimal experience, we'll use [the examples from GitHub repository](https://github.com/OpenMP/Examples/tree/v5.2.2), specifically `devices/sources/target.1.c`:
 
 ``` c
@@ -111,6 +113,8 @@ SYMBOL TABLE:
 0000000000000000         *UND*  0000000000000000 __kmpc_for_static_fini
 ```
 
+## Compiling OpenMP programs with offloading
+
 While offloading symbols are present, no images for a target architectures are present:
 
 ``` shell
@@ -176,6 +180,8 @@ producer        openmp
 
 !!! tip
     [The related question](https://openmp.llvm.org/SupportAndFAQ.html#q-can-openmp-offloading-compile-for-multiple-architectures) in the [LLVM/OpenMP FAQ](https://openmp.llvm.org/SupportAndFAQ.html) explains this in more details and covers non-AMD architectures.
+
+## Target architecture feature specification for OpenMP offloading
 
 Enabling a feature, such as [HSA XNACK](https://niconiconi.neocities.org/tech-notes/xnack-on-amd-gpus/), can be specified after the architecture, separated by a colon:
 
