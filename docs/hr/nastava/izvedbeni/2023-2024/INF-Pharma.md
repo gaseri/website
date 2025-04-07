@@ -78,8 +78,8 @@ Ocjenjivanje studenata vrši se primjenom ECTS (A-E) i brojčanog sustava (1-5).
 
 Od ukupno 100 bodova, tijekom nastave student može ostvariti 70 bodova, a na završnom ispitu 30 bodova. Završnom ispitu mogu pristupiti oni studenti koji su tijekom nastave ostvarili najmanje 35 bodova. Studenti koji su tijekom nastave ostvarili manje od 35 bodova nemaju pravo izići na završni ispit (konačna ocjena F).
 
-|   | Vrsta provjere | Najveći broj bodova |
-| - | -------------- | ------------------- |
+|     | Vrsta provjere | Najveći broj bodova |
+| --- | -------------- | ------------------- |
 | Kontinuirana provjera znanja | 1. test | 20 |
 |   | 2. test | 20 |
 | Seminarski rad | Prezentacija seminarskog rada | 30 |
@@ -143,8 +143,8 @@ Nastavni sadržaji i sve obavijesti vezane uz kolegij kao i ispitni termini nala
 
 ### Popis predavanja, seminara i vježbi:
 
-|    | PREDAVANJA (tema predavanja) | Broj sati nastave | Mjesto održavanja |
-| -- | ---------------------------- | ----------------- | ----------------- |
+|     | PREDAVANJA (tema predavanja) | Broj sati nastave | Mjesto održavanja |
+| --- | ---------------------------- | ----------------- | ----------------- |
 | P1 | Povijesni razvoj računala. Sklopovska i programska oprema | 3 | Fakultet informatike i digitalnih tehnologija, računalni praktikum O-357 |
 | P2 | Povijesni razvoj interneta i operacijskih sustava. Znanstvena programska oprema | 3 | Fakultet informatike i digitalnih tehnologija, računalni praktikum O-357 |
 | P3 | Superračunala. Trendovi i smjerovi razvoja informacijske i komunikacijske tehnologije | 3 | Fakultet informatike i digitalnih tehnologija, računalni praktikum O-366 |
@@ -152,8 +152,8 @@ Nastavni sadržaji i sve obavijesti vezane uz kolegij kao i ispitni termini nala
 | P5 | Računalna kemija, molekularno modeliranje i bioinformatika | 3 | Fakultet informatike i digitalnih tehnologija, računalni praktikum O-366 |
 |    | **Ukupan broj sati predavanja** | **15** |   |
 
-|    | SEMINARI (tema seminara) | Broj sati nastave | Mjesto održavanja |
-| -- | ------------------------ | ----------------- | ----------------- |
+|     | SEMINARI (tema seminara) | Broj sati nastave | Mjesto održavanja |
+| --- | ------------------------ | ----------------- | ----------------- |
 | S1 | Predviđanje pristajanja molekula | 3 | Fakultet informatike i digitalnih tehnologija, računalni praktikum O-359 |
 | S2 | Molekularna dinamika. Slobodna energija | 3 | Fakultet informatike i digitalnih tehnologija, računalni praktikum O-359 |
 | S3 | Kvantitativna analiza odnosa strukture i aktivnosti molekule | 3 | Fakultet informatike i digitalnih tehnologija, računalni praktikum O-359 |
@@ -161,8 +161,8 @@ Nastavni sadržaji i sve obavijesti vezane uz kolegij kao i ispitni termini nala
 | S5 | Pretraživanje i poravnanje sekvenci | 3 | Fakultet informatike i digitalnih tehnologija, računalni praktikum O-359 |
 |    | **Ukupan broj sati seminara** | **15** |   |
 
-|    | VJEŽBE (tema vježbe) | Broj sati nastave | Mjesto održavanja |
-| -- | -------------------- | ----------------- | ----------------- |
+|     | VJEŽBE (tema vježbe) | Broj sati nastave | Mjesto održavanja |
+| --- | -------------------- | ----------------- | ----------------- |
 | V1 | Baze podataka i postojeća programska podrška u računalnoj kemiji, molekularnom modeliranju i bioinformatici | 3 | Fakultet informatike i digitalnih tehnologija, računalni praktikum O-365 |
 | V2 | Obrada dokumenata koji sadrže kemijske molekularne formule i jednadžbe. Osnove programiranja: kontrolna struktura, simboličko i numeričko računanje | 3 | Fakultet informatike i digitalnih tehnologija, računalni praktikum O-359 |
 | V3 | Crtanje strukturnih formula i računanje osnovnih svojstava molekula | 3 | Fakultet informatike i digitalnih tehnologija, računalni praktikum O-365 |
@@ -170,8 +170,8 @@ Nastavni sadržaji i sve obavijesti vezane uz kolegij kao i ispitni termini nala
 | V5 | Rad s osnovnim funkcijama i postavljanje operacijskog sustava | 3 | Fakultet informatike i digitalnih tehnologija, računalni praktikum O-365 |
 |    | **Ukupan broj sati vježbi** | **15** |   |
 
-|    | ISPITNI TERMINI (završni ispit) |
-| -- | ------------------------------- |
+|     | ISPITNI TERMINI (završni ispit) |
+| --- | ------------------------------- |
 | 1. | **05. 02. 2024.** |
 | 2. | **19. 02. 2024.** |
 | 3. | **24. 06. 2024.** |

@@ -8,8 +8,8 @@ author: Vedran Miletić, Martina Ašenbrener Katić, Željko Svedružić, Patrik
 - **PI's full name:** Martina Ašenbrener Katić
 - **Call:** IP-CORONA-2020-04
 
-|   |    |
-| - | -: |
+|  |  |
+| --- | ---: |
 | | Total months 1 - 18 |
 | **1. Research costs** CATEGORY | |
 | Materials SUBCATEGORY | 0,00 |

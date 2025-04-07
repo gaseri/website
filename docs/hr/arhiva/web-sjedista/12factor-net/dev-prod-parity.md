@@ -22,8 +22,8 @@ Povijesno gledano, postojale su značajne praznine između razvoja (razvijatelj 
 
 Sumirajući gore navedeno u tablicu:
 
-|   | Tradicionalna aplikacija | Dvanaestofaktorska aplikacija |
-| - | ------------------------ | ----------------------------- |
+|     | Tradicionalna aplikacija | Dvanaestofaktorska aplikacija |
+| --- | ------------------------ | ----------------------------- |
 | Vrijeme između postavljanja | Tjedni | Sati |
 | Autori kôda i implementatori kôda | Različiti ljudi | Isti ljudi |
 | Razvojna i produkcijska okruženja | Divergentna | Što je moguće sličnija |

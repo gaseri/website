@@ -10,8 +10,8 @@ Aritmetičke operacije su neizostavan dio našeg svakodnevnog života, a upoznaj
 
 Zbrajanje u binarnom zapisu osnovna je aritmetička operacija koja se koristi u digitalnim sustavima. Ova operacija se izvodi na dva binarna broja, gdje se svaki bit zbraja s odgovarajućim bitom drugog broja, uz eventualni prijenos iz prethodnog stupca. Prilikom zbrajanja koristit ćemo sljedeću tablicu zbrajanja binarnih brojeva:
 
-|    |   |
-| -: | - |
+|  |  |
+| ---: | --- |
 | $0 + 0$ | $0$ |
 | $0 + 1$ | $1$ |
 | $1 + 1$ | $\mathbf{1}$ $0$ ($0$ pišemo, $1$ prenosimo dalje) |
@@ -23,15 +23,15 @@ Zbrajanje u binarnom zapisu osnovna je aritmetička operacija koja se koristi u 
 ??? success "Rješenje"
     U prvom koraku ćemo nadopuniti broj nulama tako da imaju jednak broj znamenaka:
 
-    |   |    |
-    | - | -: |
+    |  |  |
+    | --- | ---: |
     | | $1010001$ |
     | $+$ | $0010101$ |
 
     Zatim zbrojimo binarne brojeve imajući na umu tablicu zbrajanja jednoznamenkastih binarnih brojeva:
 
-    |   |   |
-    | - | - |
+    |  |  |
+    | --- | --- |
     | | $010001$ - prijenos |
     | | $1010001$ |
     | $+$ | $0010101$ |

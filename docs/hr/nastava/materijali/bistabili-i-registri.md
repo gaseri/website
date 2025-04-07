@@ -26,8 +26,8 @@ Krajem 20. stoljeća, s porastom popularnosti računala, tradicionalne mjerne je
 
 Međutim, kako računala rade s potencijama broja $2$ prirodnije bi bilo da kilobajt označava točno $2^{10}$ bajtova ($1024$ bajta), a ne $1000$ bajtova. Stoga je u siječnju 1999. godine [Međunarodna elektrotehnička komisija](https://en.wikipedia.org/wiki/International_Electrotechnical_Commission) (IEC) uvela binarne prefikse za količine podataka. Prema tome, kilobajt i dalje označava $1000$ bajtova, a $1024$ bajta označava kibibajt (oznaka KiB). Slijedi pregled izvedenih mjernih jedinica za količinu podataka:
 
-| Binarna jedinica |     |   | Dekadska jedinica |     |   |
-| :--------------: | :-: | - | :---------------: | :-: | - |
+| Binarna jedinica |       |     | Dekadska jedinica |       |     |
+| :--------------: | :---: | --- | :---------------: | :---: | --- |
 | *Ime* | *Simbol* | *Količina podataka* | *Ime* | *Simbol* | *Količina podataka* |
 | kibibajt | KiB | $1,024$ B $= 2^{10}$ B | kilobajt | kB | $10^3$ B |
 | mebibajt | MiB | $1,048,576$ B $= 2^{20}$ B | megabajt | MB | $10^6$ B |

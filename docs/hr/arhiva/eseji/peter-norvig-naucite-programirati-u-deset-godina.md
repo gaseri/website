@@ -64,8 +64,8 @@ Slobodno kupite tu Java knjigu; vjerojatno će vam biti od neke koristi. Ali ne�
 
 Približna trajanja raznih operacija na tipičnom 1GHz PC-u na ljeto 2001. godine:
 
-|   |   |
-| - | - |
+|  |  |
+| --- | --- |
 | izvrši jednu naredbu | 1 nanosekunda = (1/1 000 000 000) sekunda |
 | dohvati riječ iz L1 priručne memorije | 2 nanosekunde |
 | dohvati riječ iz glavne memorije | 10 nanosekundi |

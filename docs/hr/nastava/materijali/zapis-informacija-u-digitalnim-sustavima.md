@@ -96,8 +96,8 @@ Kako bismo neki broj zapisali u binarnom sustavu, koristimo postupak dijeljenja 
     Pretvori broj $52_{(10)}$ u binarni oblik.
 
 ??? success "Rješenje"
-    |    | Ostatak |
-    | -: | ------: |
+    |      | Ostatak |
+    | ---: | ------: |
     | $52 : 2 = 26$ | $0$ |
     | $26 : 2 = 13$ | $0$ |
     | $13 : 2 = 6$ | $1$ |
@@ -113,15 +113,15 @@ Kada radimo s brojevima koji imaju decimalne znamenke, postupak pretvaranja u bi
     Pretvori broj $8,125_{(10)}$ u binarni zapis.
 
 ??? success "Rješenje"
-    |    | Ostatak |
-    | -: | ------: |
+    |      | Ostatak |
+    | ---: | ------: |
     | $8 : 2 = 4$ | $0$ |
     | $4 : 2 = 2$ | $0$ |
     | $2 : 2 = 1$ | $0$ |
     | $1 : 2 = 0$ | $1$ |
 
-    |    | Ostatak |
-    | -: | ------: |
+    |      | Ostatak |
+    | ---: | ------: |
     | $0,125 \cdot 2 = 0,25$ | $0$ |
     | $0,25 \cdot 2 = 0,5$ | $0$ |
     | $0,5 \cdot 2 = 1,0$ | $1$ |
@@ -132,14 +132,14 @@ Kada radimo s brojevima koji imaju decimalne znamenke, postupak pretvaranja u bi
     Pretvori broj $6,74_{(10)}$ u binarni zapis s tri decimale.
 
 ??? success "Rješenje"
-    |    | Ostatak |
-    | -: | ------: |
+    |      | Ostatak |
+    | ---: | ------: |
     | $6 : 2 = 3$ | $0$ |
     | $3 : 2 = 1$ | $1$ |
     | $1 : 2 = 0$ | $1$ |
 
-    |    | Ostatak |
-    | -: | ------: |
+    |      | Ostatak |
+    | ---: | ------: |
     | $0,74 \cdot 2 = 1,48$ | $1$ |
     | $0,48 \cdot 2 = 0,96$ | $0$ |
     | $0,96 \cdot 2 = 1,92$ | $1$ |
@@ -166,8 +166,8 @@ Kada je riječ o negativnim brojevima, postoje tri načina njihovog prikazivanja
     Tehnikom predznaka i veličine napišite $-17_{(10)}$ u zapisu od $8$ bita.
 
 ??? success "Rješenje"
-    |    |    |
-    | -: | -: |
+    |  |  |
+    | ---: | ---: |
     | $+17$ | $00010001$ |
     | $-17$ | $10001100$ |
 
@@ -193,8 +193,8 @@ Umjesto korištenja komplicirane formule za izračun komplementa broja, postoji 
     Napišite broj $-17_{(10)}$ tehnikom predznaka i jediničnog komplementa u zapisu od $8$ bita.
 
 ??? success "Rješenje"
-    |    |    |
-    | -: | -: |
+    |  |  |
+    | ---: | ---: |
     | $+17$ | $00010001$ |
     | $-17$ | $11101110$ |
 
@@ -214,8 +214,8 @@ U ovom slučaju, negativni broj se dobiva tako da se uzme jedinični komplement 
     Tehnikom dvojnog komplementa prikaži broj $-12_{(10)}$ u zapisu od 8 bitova.
 
 ??? success "Rješenje"
-    |    |    |   |
-    | -: | -: | - |
+    |  |  |  |
+    | ---: | ---: | --- |
     | $+12$ | $00001100$ | Broj $+12$ u zapisu od 8 bita. |
     | $-12$ | $11110100$ | Prepišemo sve znamenke do prve jedinice (i prvu jedinicu), a ostalne znamenke invertiramo. |
 
@@ -229,8 +229,8 @@ Svaki od ova tri načina ima svoje prednosti i nedostatke. Prednost korištenja 
 
 Uzmimo za primjer zapis 4-bitnih brojeva u svakom sustavu:
 
-| Broj | $-8$ | $-7$ | $-6$ | $-5$ | $-4$ | $-3$ | $-2$ | $-1$ | $0$ | $1$ | $2$ | $3$ | $4$ | $5$ | $6$ | $7$ | $8$ | $9$ | $10$ | $11$ | $12$ | $13$ | $14$ | $15$ |
-| :--: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Broj  | $-8$ | $-7$ | $-6$ | $-5$ | $-4$ | $-3$ | $-2$ | $-1$ | $0$  | $1$  | $2$  | $3$  | $4$  | $5$  | $6$  | $7$  | $8$  | $9$  | $10$ | $11$ | $12$ | $13$ | $14$ | $15$ |
+| :---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | Bez predznaka | | | | | | | | | $0000$ | $0001$ | $0010$ | $0011$ | $0100$ | $0101$ | $0110$ | $0111$ | $1000$ | $1001$ | $1010$ | $1011$ | $1100$ | $1101$ | $1110$ | $1111$ |
 | S predznakom | | $1111$ | $1110$ | $1101$ | $1100$ | $10111$ | $1010$ | $10001$ | $0000/1000$ | $0001$ | $0010$ | $0011$ | $0100$ | $0101$ | $0110$ | $0111$ | | | | | | | | |
 | Dvojni komplement | $1000$ | $1001$ | $1010$ | $1011$ | $1100$ | $1101$ | $1110$ | $1111$ | $0000$ | $0001$ | $0010$ | $0011$ | $0100$ | $0101$ | $0110$ | $0111$ | | | | | | | | |

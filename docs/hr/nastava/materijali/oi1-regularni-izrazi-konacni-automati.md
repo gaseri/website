@@ -248,8 +248,8 @@ digraph finite_state_machine {
 
 - Iz zadane matematičke definicije konstruiramo tablicu prijelaza:
 
-    |   |   | a | b |   |
-    | - | - | - | - | - |
+    |     |     | a   | b   |     |
+    | --- | --- | --- | --- | --- |
     | > | S | A | A | 0 |
     |   | A | S | A | 1 |
 

@@ -60,8 +60,8 @@ flowchart LR
 
 Izvođenje slijeda instrukcija u vremenu, tj. programa u instrukcijskoj protočnoj strukturi možemo prikazati pomoću Ganttovog dijagrama. Na osi $x$ imamo vrijeme izvođenja koje je u ovom slučaju za svaki segment jednako i to je jedna perioda izvođenja, a na osi $y$ je redni broj instrukcije:
 
-|   |   |   |   |   |   |   |
-| - | - | - | - | - | - | - |
+|  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- |
 | instrukcija i-1 | pribavi | izvrši | | | | |
 | instrukcija i | | pribavi | izvrši | | | |
 | instrukcija i+1 | | | pribavi | izvrši | | |
@@ -90,8 +90,8 @@ MEM je odgovoran za pristup memoriji. Tijekom ove faze, mikroprocesor izvodi ope
 
 WB služi za pisanje rezultata instrukcije natrag na odgovarajuće odredište, obično u registar ili memorijsku lokaciju. Završava izvršenje instrukcije i ažurira stanje sutava na temelju izračunatog rezultata. Također upravlja svim potrebnim ažuriranjima statusa ili kontrolnih registara mikroprocesora. Primjerice, može ažurirati programsko brojilo da pokazuje na sljedeću instrukciju koju treba dohvatiti ili modificirati oznake statusa na temelju rezultata instrukcije.
 
-|   |   |   |   |   |   |   |   |   |
-| - | - | - | - | - | - | - | - | - |
+|  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | IF | ID | EX | MEM | WB | | | | |
 | | IF | ID | EX | MEM | WB | | | |
 | | | IF | ID | EX | MEM | WB | | |
@@ -181,8 +181,8 @@ U ovakvoj situaciji instukcija oduzimanja ne može napredovati dalje od faze pri
 
 Ako imamo procesor koji ima faze dohvaćanja instrukcija, dekodiranje instrukcija, čitanja operanda iz registra, izvršavanja operacija i zapisa rezultata u registar. Onda možemo prikazati napredovanje instrukcija `add` i `sub` kroz protočnu strukturu:
 
-|   | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
-| - | - | - | - | - | - | - | - | - |
+|     | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | IF | add | sub | | | | | | |
 | ID | | add | sub | | | | | |
 | RR | | | add | sub | sub | sub | | |
@@ -199,8 +199,8 @@ U 5, 6 i 7 periodi može se primjetiti da smo imali u nekim segmentima tzv. *No 
 
 U protočnoj strukturi, upravljački hazard se javlja tijekom izvršavanja instrukcija koje uključuju grananje ili druge instrukcije koje mijenjaju sadržaj programskog brojila PC u fazi izvršavanja. Primjerice, to može uključivati instrukcije pozivanja potprograma ili povratka iz potprograma gdje instrukcija grananja računa adresu sljedeće instrukcije. U tom slučaju faza dohvaćanja sljedeće instrukcije ne može se izvršiti dok nije poznat ishod instrukcije grananja.
 
-|   | 1 | 2 | 3 | 4 |  5  |
-| - | - | - | - | - | :-: |
+|     | 1   | 2   | 3   | 4   | 5     |
+| --- | --- | --- | --- | --- | :---: |
 | IF | b | n | n | n | sljedeća instrukcija |
 | ID | | b | n | n | n |
 | RR | | | b | n | n |
@@ -263,8 +263,8 @@ U slučaju kada imamo mjehuriće u protočnoj strukturi možemo crtati dijagram 
     ```
 
 ??? success "Rješenje"
-    |   | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
-    | - | - | - | - | - | - | - | - | - |
+    |     | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   |
+    | --- | --- | --- | --- | --- | --- | --- | --- | --- |
     | IF | add | sub | mul | div | | | | |
     | ID | | add | sub | mul | div | | | |
     | RR | | | add | sub | mul | div | | |
@@ -282,8 +282,8 @@ U slučaju kada imamo mjehuriće u protočnoj strukturi možemo crtati dijagram 
     ```
 
 ??? success "Rješenje"
-    |   | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
-    | - | - | - | - | - | - | - | - | - | - |
+    |     | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   |
+    | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
     | IF | add | sub | mul | div | | | | | |
     | ID | | add | sub | mul | div | div | div | | |
     | RR | | | add | sub | mul | mul | mul | div | |

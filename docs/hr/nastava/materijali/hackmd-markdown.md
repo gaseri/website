@@ -206,8 +206,8 @@ Tablice se kreiraju korištenjem okomitih crta (++alt-graph+w++). Ispod zaglavlj
 Za tablice bez zaglavlja ostavljamo prvi redak praznim. Širine ćelija će se automatski prilagođavati širini teksta:
 
 ``` markdown
-|   |   |   |
-| - | - | - |
+|  |  |  |
+| --- | --- | --- |
 | 1 | Ivo | $4A |
 | 5 | Eva | $M5 |
 | 2 | Ira | $8D |
@@ -283,8 +283,8 @@ transition: fade
 
 Možemo birati između desetak osnovnih tema (engl. *theme*):
 
-|   |   |
-| - | - |
+|  |  |
+| --- | --- |
 | `black` | Black background, white text, blue links (default) |
 | `white` | White background, black text, blue links |
 | `league` | Gray background, white text, blue links |
@@ -301,8 +301,8 @@ Možemo birati između desetak osnovnih tema (engl. *theme*):
 
 Možemo birati između šest osnovnih prijelaza (engl. *transition*):
 
-|   |   |
-| - | - |
+|  |  |
+| --- | --- |
 | `none` | Switch backgrounds instantly |
 | `fade` | Cross fade — default for background transitions |
 | `slide` | Slide between backgrounds — default for slide transitions |

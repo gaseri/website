@@ -22,8 +22,8 @@ author: Vedran Miletić, Martina Ašenbrener Katić, Željko Svedružić, Patrik
 
 ### Principal Investigator (name, address, e-mail)
 
-|   |   |
-| - | - |
+|  |  |
+| --- | --- |
 | Full name | Martina Ašenbrener Katić |
 | University/Institution | University of Rijeka Department of Informatics |
 | Address | Radmile Matejčić 2, 51000 Rijeka, Croatia |
@@ -32,8 +32,8 @@ author: Vedran Miletić, Martina Ašenbrener Katić, Željko Svedružić, Patrik
 
 ### Project Proposal
 
-|   |   |
-| - | - |
+|  |  |
+| --- | --- |
 | Title | SARS-CoV-2 high-throughput virtual screening campaign and target protein inhibitors drug design |
 | Keywords | database modeling, high-throughput virtual screening, molecular dynamics, high performance computing |
 | Research field | Computational and medicinal chemistry |
