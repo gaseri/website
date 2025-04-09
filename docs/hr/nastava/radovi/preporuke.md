@@ -16,6 +16,8 @@ Završni i diplomski radovi su akademski radovi, a prilikom pisanja akademskih r
 
 Za više informacija slijedite poveznice u tekstu iznad i proučite [mrežne stranice Akademsko pisanje](https://www.akademsko-pisanje.uniri.hr/) ili [preuzmite knjižicu Akademsko pisanje u formatu PDF](../../../downloads/knjizica-akademsko-pisanje.pdf).
 
+Dodatno, vrijedi proučiti i rad [Helmuta](https://www.mpinat.mpg.de/grubmueller/helmut) [Grubmüllera](https://www.mpinat.mpg.de/grubmueller) pod naslovom [Scientific Writing: The Art of Programming Brains](https://www.mpinat.mpg.de/631838/guidelines_english.pdf), dio zbirke [Helmut's Scientific Writing Guidelines](https://www.mpinat.mpg.de/631836/scientifc-writing).
+
 ## Softverski alati
 
 Za pisanje radova koristite [LibreOffice](https://www.libreoffice.org/) i format [OpenDocument](https://opendocumentformat.org/). Ako preferirate pisanje markupa umjesto korištenja alata tipa [WYSIYG](https://en.wikipedia.org/wiki/WYSIWYG), umjesto LibreOfficea i OpenDocumenta možete koristiti neki od sljedećih alata i formata:
