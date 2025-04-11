@@ -135,7 +135,7 @@ Nemamo službenu potvrdu, ali nagađamo da bi to mogao biti [Arch Linux](https:/
 
 > Ova \[mala\] ​je ko Pacman, jede sve bombonice
 
-``` shell
+``` shell-session
 $ pacman --version
 
  .--.                  Pacman v6.0.2 - libalpm v13.0.2
@@ -160,7 +160,7 @@ GASERI ne nude pristup putem [SSH](https://www.openssh.com/), već samo putem [S
 
 Za SSH uvijek možete koristiti odredište `localhost`:
 
-``` shell
+``` shell-session
 $ ssh localhost
 $ hostname
 kristina
@@ -173,7 +173,7 @@ $ cat /etc/hosts
 
 Naravno. Kao dokaz prilažemo sadržaj naše konfiguracijske datoteke `.ssh/config`:
 
-``` shell
+``` shell-session
 $ cat .ssh/config
 Host 😎.miletic.net
     RemoteCommand /usr/local/bin/gas
@@ -181,7 +181,7 @@ Host 😎.miletic.net
 
 Ovdje je i sadržaj naše datoteke `.ssh/known_hosts`:
 
-``` shell
+``` shell-session
 $ cat .ssh/known_hosts
 kristina.host ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBLbqkvnOXPufdOKK1YJHK9br1xbCHeLt5bleW80QeHh0e4CzrBMZ4m6hKMViwHLWUledLuaqbArxxUiGenp25rY=
 ```
