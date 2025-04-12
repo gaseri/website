@@ -33,7 +33,7 @@ Naposlijetku, imamo još tri opcije:
 
 Složimo jednostavnu bežičnu mrežu `wlan1` u kojoj se nalaze domaćin `n2` i računalo `n3`. Postavimo doseg čvorova na 300 piksela (450 metara) i IPv4 podmrežu na 192.168.10.0/24. Topologija mreže je oblika
 
-```
+``` text
 n2 ----- wlan1 ----- n3
 ```
 
@@ -60,7 +60,7 @@ From 192.168.10.10 icmp_seq=42 Destination Host Unreachable
 
 Nakon vraćanja čvorova u međusobni doseg izlaz postaje
 
-```
+``` shell-session
 From 192.168.10.10 icmp_seq=312 Destination Host Unreachable
 From 192.168.10.10 icmp_seq=313 Destination Host Unreachable
 From 192.168.10.10 icmp_seq=314 Destination Host Unreachable

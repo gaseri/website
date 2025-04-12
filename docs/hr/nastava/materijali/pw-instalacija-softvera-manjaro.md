@@ -12,7 +12,7 @@ Nakon što preuzimete i instalirate VS Code, pokrenite ga, zatim kraticom ++cont
 
 Specijalno, na [Manjaru](https://manjaro.org/), popularnom derivatu [Arch Linuxa](https://archlinux.org/), možete instalirati [službeni VS Code binary](https://aur.archlinux.org/packages/visual-studio-code-bin) iz AUR-a:
 
-```
+``` shell
 $ pamac build visual-studio-code-bin
 (...)
 ```
@@ -25,7 +25,7 @@ Preduvjet je instalacija [pipa](https://pypi.org/project/pip/) i [Pylinta](https
 
 Naredba za instalaciju na Manjaru je:
 
-```
+``` shell
 $ pamac install python-pip python-pylint
 (...)
 ```

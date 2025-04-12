@@ -52,7 +52,7 @@ Osim spremanja uhvaćenih paketa u datoteku, moguće je prikaz paketa kopirati k
 
 - u obliku čistog teksta (`As Plain Text`):
 
-    ```
+    ``` text
     No. Time            Source              Destination         Protocol    Length  Info
     11  10.121072728    00:00:00_aa:00:00   Broadcast           ARP         42      Who has 10.0.0.1? Tell 10.0.0.20
     12  10.121098296    00:00:00_aa:00:01   00:00:00_aa:00:00   ARP         4       10.0.0.1 is at 00:00:00:aa:00:01

@@ -120,7 +120,7 @@ Kod slanja zahtjeva, nismo naveli metodu pa cURL koristi zadanu metodu GET ([vi�
 
 Uočimo da su se u terminalu gdje je poslužitelj pokrenut pojavile linije:
 
-```
+``` shell-session
 [Mon Nov  2 11:41:35 2020] [::1]:52708 Accepted
 [Mon Nov  2 11:41:35 2020] [::1]:52708 [200]: GET /
 [Mon Nov  2 11:41:35 2020] [::1]:52708 Closing
@@ -165,7 +165,7 @@ code.url { background-color: #eeeeee; font-family:monospace; padding:0 2px;}
 
 Uočimo da smo dobili odgovor koji sadrži HTML datoteku s porukom da stranica nije pronađena i da taj odgovor ima HTTP statusni kod [404 Not Found](https://http.cat/404) ([više detalja o HTTP statusnom kodu 404 Not Found na MDN-u](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)). Na strani poslužitelja su poruke sad oblika:
 
-```
+``` shell-session
 [Mon Nov  2 11:46:35 2020] [::1]:52710 Accepted
 [Mon Nov  2 11:46:35 2020] [::1]:52710 [404]: (null) /moja-stranica.html - No such file or directory
 [Mon Nov  2 11:46:35 2020] [::1]:52710 Closing
@@ -204,7 +204,7 @@ $ curl -v http://localhost:8000/moja-stranica.html
 
 Vidimo da smo uspješno primili statičnu datoteku s HTML-om. Na strani poslužitelja poruke su oblika:
 
-```
+``` shell-session
 [Mon Nov  2 22:43:48 2020] [::1]:52772 Accepted
 [Mon Nov  2 22:43:48 2020] [::1]:52772 [200]: (null) /moja-stranica.html
 [Mon Nov  2 22:43:48 2020] [::1]:52772 Closing
@@ -372,7 +372,7 @@ $ curl -v -X POST http://localhost:8000/
 
 Na strani web poslužitelja također vidimo da odgovori na zahtjeve imaju statusni kod [200 OK](https://http.cat/200):
 
-```
+``` shell-session
 [Mon Nov  2 22:57:35 2020] [::1]:52786 Accepted
 [Mon Nov  2 22:57:35 2020] [::1]:52786 [200]: GET /proba
 [Mon Nov  2 22:57:35 2020] [::1]:52786 Closing

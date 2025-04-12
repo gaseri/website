@@ -98,7 +98,7 @@ $ sudo yum update && sudo yum install ceph-deploy
 
 Sada moram za svaki čvor dodati hostname u `/etc/hosts`.
 
-```
+``` ini
 (...)
 192.168.72.129  node1
 192.168.72.130  node2
@@ -141,7 +141,7 @@ $ ssh-copy-id ceph@node3
 
 Te na kraju modificiram datoteku `~/.ssh/config` admin čvora tako da se logira na korisnike `ceph` ostalih čvorova:
 
-```
+``` apacheconf
 Host node1
   User ceph
 Host node2

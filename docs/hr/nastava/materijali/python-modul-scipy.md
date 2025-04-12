@@ -20,7 +20,7 @@ import scipy.sparse.csgraph as csg
 
 Podmodul `sparse.csgraph` nudi niz funkcija za izvršavanje algoritama nad grafovima definiranim matricom incidencije. Matricu incidencije implementiramo funkcijama za rad s poljima `numpy` modula. Rezultate dobivene u vrijednosti `numpy` matrica možemo prikazsti i pretvoriti u polja funkcijom `toarray()`. Primjerice, jednostavan potpuni graf s četiri vrha možemo definirati kao iduće polje:
 
-```
+``` text
 0 1 1 1
 1 0 1 1
 1 1 0 1
@@ -43,7 +43,7 @@ Nad grafovima definiranim matricama incidencija možemo provesti niz algoritama 
 !!! example "Zadatak"
     Definirajte `numpy` poljem idući graf:
 
-    ```
+    ``` text
          (0)--------(3)
         /   \
        /     \

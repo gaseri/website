@@ -37,7 +37,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
     - tri broja -- user, group, others
     - primjerice, dozvole `644`, `755`, `600`
 
-        ```
+        ``` text
             6  4  4
            /   |   \
         User Group Others # User -- broj 6 označava da korisnik ima dozvole za čitanje(r) i pisanje(w)

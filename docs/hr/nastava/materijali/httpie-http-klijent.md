@@ -166,7 +166,7 @@ Odredite HTTP metodu i URI te kliknite na Ajax zahtjev. Primjerice,
 
 - za metodu **GET**:
 
-    ```
+    ``` text
     https://jsonplaceholder.typicode.com/users/2
     ```
 
@@ -175,7 +175,7 @@ Odredite HTTP metodu i URI te kliknite na Ajax zahtjev. Primjerice,
 
 - za metodu **POST**:
 
-    ```
+    ``` text
     https://jsonplaceholder.typicode.com/users
     ```
 
@@ -183,7 +183,7 @@ Odredite HTTP metodu i URI te kliknite na Ajax zahtjev. Primjerice,
 
 - za metodu **PUT**:
 
-    ```
+    ``` text
     https://jsonplaceholder.typicode.com/users/1
     ```
 
@@ -191,7 +191,7 @@ Odredite HTTP metodu i URI te kliknite na Ajax zahtjev. Primjerice,
 
 - za metodu **DELETE**:
 
-    ```
+    ``` text
     https://jsonplaceholder.typicode.com/users/5
     ```
 
@@ -232,7 +232,7 @@ Koristeći se podacima s JSONPlaceholder-a dostupnog na adresi `https://jsonplac
 
 **URI**:
 
-```
+``` text
 # ovdje pišete URI koji ste koristili
 ```
 
@@ -248,7 +248,7 @@ Koristeći se podacima s JSONPlaceholder-a dostupnog na adresi `https://jsonplac
 
 **URI**:
 
-```
+``` text
 # ovdje pišete URI koji ste koristili
 ```
 
@@ -264,7 +264,7 @@ Koristeći se podacima s JSONPlaceholder-a dostupnog na adresi `https://jsonplac
 
 **URI**:
 
-```
+``` text
 # ovdje pišete URI koji ste koristili
 ```
 
@@ -280,7 +280,7 @@ Koristeći se podacima s JSONPlaceholder-a dostupnog na adresi `https://jsonplac
 
 **URI**:
 
-```
+``` text
 # ovdje pišete URI koji ste koristili
 ```
 
@@ -298,7 +298,7 @@ Koristeći se Public API-jem izlistajte sve kategorije koje se nude.
 
 **URI**:
 
-```
+``` text
 # ovdje pišete URI koji ste koristili
 ```
 
@@ -320,7 +320,7 @@ Provjerite je li spremljena snimka web sjedišta `gaseri.org`.
 
 **URI**:
 
-```
+``` text
 # ovdje pišete URI koji ste koristili
 ```
 
@@ -338,7 +338,7 @@ Koristeći se Cat Facts API-jem saznajte nekoliko činjenica o mačkama.
 
 **URI**:
 
-```
+``` text
 # ovdje pišete URI koji ste koristili
 ```
 
@@ -362,7 +362,7 @@ Koristeći se podacima HTTPbin-a na adresi: `https://httpbin.org/`
 
 **URI**:
 
-```
+``` text
 # ovdje pišete URI koji ste koristili
 ```
 
@@ -378,7 +378,7 @@ Koristeći se podacima HTTPbin-a na adresi: `https://httpbin.org/`
 
 **URI**:
 
-```
+``` text
 # ovdje pišete URI koji ste koristili
 ```
 
@@ -396,13 +396,13 @@ Koristeći se podacima HTTPbin-a na adresi: `https://httpbin.org/`
 
 **URI**:
 
-```
+``` text
 # ovdje pišete URI koji ste koristili
 ```
 
 **Odgovor statusnog koda**:
 
-```
+``` text
 # ovdje pišete odgovor koji ste zaprimili
 ```
 
@@ -412,13 +412,13 @@ Koristeći se podacima HTTPbin-a na adresi: `https://httpbin.org/`
 
 **URI**:
 
-```
+``` text
 # ovdje pišete URI koji ste koristili
 ```
 
 **Odgovor statusnog koda**:
 
-```
+``` text
 # ovdje pišete odgovor koji ste zaprimili
 ```
 

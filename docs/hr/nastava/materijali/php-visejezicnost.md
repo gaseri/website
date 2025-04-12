@@ -27,6 +27,9 @@ Pokrenimo interaktivni način rada interpretera PHP-a korištenjem parametra `--
 
 ``` shell
 $ php -a
+```
+
+``` tcshcon
 Interactive mode enabled
 
 php > $arr1 = ["moja vrijednost", 1, 3.5, true];
@@ -51,7 +54,7 @@ Array
 
 Možemo se uvjeriti i da uspješno dohvaćamo pojedine vrijednosti iz polja na način koji smo naveli:
 
-```
+``` tcshcon
 php > echo $arr1[0];
 moja vrijednost
 php > echo $arr2["broj"];
@@ -182,8 +185,8 @@ $ curl -v -H "Accept-Language: de, hr" http://localhost:8000/
 
 Evidentno je da kod iznad ne podržava odabir jezika oblika `hr-HR, en;q=0.9, de-AT;q=0.7, *;q=0.5`, a možemo se u to uvjeriti i slanjem zahtjeva:
 
-```
-curl -v -H "Accept-Language: hr-HR, en;q=0.9, de-AT;q=0.7, *;q=0.5" http://localhost:8000/
+``` shell
+$ curl -v -H "Accept-Language: hr-HR, en;q=0.9, de-AT;q=0.7, *;q=0.5" http://localhost:8000/
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET / HTTP/1.1

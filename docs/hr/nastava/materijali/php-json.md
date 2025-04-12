@@ -153,7 +153,7 @@ print_r($person);
 
 Prvi parametar funkcije `json_decode()` je znakovni niz koji sadrži zapis podataka u obliku JSON, a drugi postavljamo na vrijednost `true` jer želimo kao rezultat pretvorbe uvijek dobiti polje. Naime, zadana vrijednost drugog parametra je `null` i kod te vrijednosti možemo dobiti polje ili [objekt](https://www.php.net/manual/en/language.oop5.php) ovisno o postavljenim [vrijednostima zastavica](https://www.php.net/manual/en/json.constants.php). (Moguće je i kod ove funkcije [koristiti zastavice](https://www.php.net/manual/en/function.json-decode.php#refsect1-function.json-decode-parameters) na sličan način kao kod funkcije `json_encode()`, ali nam one neće trebati.) Uvjerimo se pokretanjem koda da smo dekodiranjem JSON-a dobili polje s danim podacima:
 
-```
+``` text
 Array
 (
     [firstName] => Ivan

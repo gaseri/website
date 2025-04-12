@@ -67,7 +67,7 @@ $ curl -v http://localhost:8000/grafit
 
 Isti kod vidimo na strani poslužitelja:
 
-```
+``` shell-session
 [Mon Nov  2 23:28:59 2020] [::1]:52808 Accepted
 [Mon Nov  2 23:28:59 2020] [::1]:52808 [206]: GET /grafit
 [Mon Nov  2 23:28:59 2020] [::1]:52808 Closing
@@ -166,7 +166,7 @@ $ curl -v -L http://localhost:8000/grafiti
 
 Na strani poslužitelja poruke su oblika:
 
-```
+``` shell-session
 [Mon Nov  2 23:38:20 2020] [::1]:52822 Accepted
 [Mon Nov  2 23:38:20 2020] [::1]:52822 [302]: GET /grafiti
 [Mon Nov  2 23:38:20 2020] [::1]:52822 Closing
@@ -278,7 +278,7 @@ $ curl -v -X POST http://localhost:8000/grafit
 
 Odgovarajuća poruka na strani poslužitelja je oblika:
 
-```
+``` shell-session
 [Tue Nov  3 08:54:07 2020] [::1]:52918 Accepted
 [Tue Nov  3 08:54:07 2020] [::1]:52918 [400]: POST /grafit
 [Tue Nov  3 08:54:07 2020] [::1]:52918 Closing
@@ -355,7 +355,7 @@ curl: (52) Empty reply from server
 
 Kako metoda CONNECT nije implementirana, na strani poslužitelja imamo poruku o neispravnom HTTP zahtjevu:
 
-```
+``` shell-session
 [Wed Dec 30 19:44:37 2020] [::1]:52244 Accepted
 [Wed Dec 30 19:44:37 2020] [::1]:52244 Invalid request (Malformed HTTP request)
 [Wed Dec 30 19:44:37 2020] [::1]:52244 Closing

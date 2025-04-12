@@ -39,7 +39,7 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 
 Ovdje ćemo odgovoriti [Yes](https://knowyourmeme.com/memes/yes-chad) (`yes`), odnosno da vjerujemo otisku ključa i da želimo nastaviti povezivanje.
 
-```
+``` shell-session
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added 'example.group.miletic.net,135.181.105.39' (ECDSA) to the list of known hosts.
 korisnik@example.group.miletic.net's password:
@@ -252,7 +252,7 @@ $ touch moj-ssh-server/etc/ssh/sshd_config
 
 U proizvoljnom uređivaču teksta uredimo datoteku `moj-ssh-server/etc/ssh/sshd_config` tako da popišemo ključeve kao parametre konfiguracijske naredbe `HostKey` (DSA ključeve ne navodimo jer se smatraju nesigurnima):
 
-```
+``` apacheconf
 HostKey /home/korisnik/moj-ssh-server/etc/ssh/ssh_host_rsa_key
 HostKey /home/korisnik/moj-ssh-server/etc/ssh/ssh_host_ecdsa_key
 HostKey /home/korisnik/moj-ssh-server/etc/ssh/ssh_host_ed25519_key
@@ -282,7 +282,7 @@ Cannot bind any address.
 !!! warning
     Ukoliko privatni SSH ključevi imaju dozvolu čitanja od strane grupe i ostalih korisnika, `sshd` će kod pokretanja upozoriti na to i odbiti pokrenuti poslužitelj:
 
-    ```
+    ``` shell-session
     debug1: sshd version OpenSSH_8.2, OpenSSL 1.1.1f  31 Mar 2020
     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
@@ -313,7 +313,7 @@ Cannot bind any address.
 
     Rješenje je maknuti dozvole grupi i ostalima:
 
-    ```
+    ``` shell
     chmod go-rwx moj-ssh-server/etc/ssh/*_key
     ```
 
@@ -321,13 +321,13 @@ Cannot bind any address.
 
 Vidimo da ne možemo koristiti vrata 22, koja su zadana vrata SSH poslužitelja. Iskoristimo neka od vrata čiji je broj veći od 1024 i koja možemo koristiti po želji. Uredimo konfiguracijsku datoteku `moj-ssh-server/etc/ssh/sshd_config` tako da joj pored već navedenih ključeva dodamo i konfiguracijsku naredbu `Port`:
 
-```
+``` apacheconf
 Port 4022
 ```
 
 Želimo konfigurirati takav poslužitelj da se na njega možemo prijaviti kako bismo ga mogli isprobati od početka do kraja. Pritom ćemo se prijavljivati s vlastitim korisničkim imenom i zaporkom na lokalnom računalu na kojem radimo (prazne zaporke nisu dozvoljene u zadanim postavkama; ako nemate postavljenu zaporku, postavite je naredbom `passwd`). Samo korijenski korisnik može čitati datoteku sa zaporkama korisnika na sustavu. Kako bismo se mogli prijaviti s vlastitim korisničkim imenom i zaporkom na računalu na kojem radimo kad je SSH poslužitelj pokrenut od strane običnog korisnika, moramo uključiti podršku za podsustav [pluggable authentication modules (PAM)](https://en.wikipedia.org/wiki/Pluggable_authentication_module), dostupan i običnim korisnicima konfiguracijskom naredbom:
 
-```
+``` apacheconf
 UsePAM yes
 ```
 
@@ -382,7 +382,7 @@ Connection to localhost closed.
 !!! warning
     Nakon odjave klijenta OpenSSH poslužitelj će završiti izvođenje s greškom oblika:
 
-    ```
+    ``` shell-session
     debug1: do_cleanup
     debug1: temporarily_use_uid: 1000/1000 (e=1000/1000)
     debug1: restore_uid: (unprivileged)
@@ -541,7 +541,7 @@ Environment:
 
 Provjerimo li popis poruka na poslužiteljskoj strani, vidjet ćemo među njima poruke oblika:
 
-```
+``` shell-session
 debug1: trying public key file /home/korisnik/.ssh/authorized_keys
 debug1: fd 4 clearing O_NONBLOCK
 debug1: /home/korisnik/.ssh/authorized_keys:1: matching key found: ECDSA SHA256:RxwLKEToEpbyclxu7kQQQ29RhfKCTOQkbJ13VR/G0uU

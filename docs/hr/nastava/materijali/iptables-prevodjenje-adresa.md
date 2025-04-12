@@ -49,7 +49,7 @@ Neki od najvažnijih parametara u alatu `iptables` koje koristimo pri prevođenj
 
 Na mreži na slici računala n1, n2 i n3 ostvaruju vezu sa domaćinom n7 i računalom n9 putem usmjerivača n5, n6, n8 i preklopnika n4. Mrežna sučelja usmjerivača n5 su eth0 prema n6 i eth1 prema n4. Adresa usmjerivača n5 na sučelju eth0 je 10.0.3.1, a na sučelju eth1 je 192.168.4.1. Adrese n1, n2 i n3 su redom 192.168.4.20, 192.168.4.21 i 192.168.4.22, a adrese n7 i n9 su redom 10.0.2.10 i 10.0.0.20.
 
-```
+``` text
     n1             n7
      \             /
       \           /

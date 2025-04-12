@@ -53,7 +53,7 @@ int main ()
 
 Prevođenje i pokretanje izvodimo na način
 
-``` bash
+``` shell
 $ g++ program1.cpp -o program1
 $ ./program1
 ```
@@ -85,7 +85,7 @@ Debug simboli sadrže informacije o:
 
 Dakle, pokretanje pomoću alata `gdb` vršimo na način
 
-``` bash
+``` shell
 $ g++ -g program1.cpp -o program1_debug
 $ gdb program1_debug
 ```
@@ -127,7 +127,7 @@ Specifične naredbe alata `cuda-gdb` su
 
 Modul PyCUDA se može koristiti u kombinaciji s alatom `cuda-gdb` prema [službenim uputama](https://wiki.tiker.net/PyCuda/FrequentlyAskedQuestions/#is-it-possible-to-use-cuda-gdb-with-pycuda). Iskoristimo primjer koji vrši zbrajanje vektora; alat pokrećemo naredbom
 
-``` bash
+``` shell
 $ cuda-gdb --args python -m pycuda.debug zbrajanje_vektora.py
 ...
 (cuda-gdb) break vector_sum

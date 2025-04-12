@@ -25,7 +25,7 @@ LDAP koristi pojednostavljene metode kodiranja "open directory access" protokola
 
 Svaki zapis sastoji se od seta atributa, a svaki atribut ima ime (identifikator) i jednu ili više vrijednosti. Svaki zapis ima jedinstveni ključ po kojemu se razlikuje od svih drugih. Taj ključ se naziva Distinguished name (DN). Atributi se definiraju shemom. Primjer strukture LDAP‐a je sljedeći:
 
-```
+``` ldif
 dn: cn=Marko Laca,dc=testzone,dc=local
 cn: Marko Laca
 givenName: Marko
@@ -52,7 +52,7 @@ Pošto instalacija OS nije tema ovog seminara prelazimo samo na dijelove bitne z
 
 Prvo je potrebno promijenit hostname računala koje će biti LDAP server na način da odgovara domenskom zapisu. Prilikom instalacije Fedora hostname postavlja na `localhost`, a za naše potrebe moramo ga promijeniti u `<ime_racunala>.<domena>.local`, tj. u `ldap.testzone.local`. To radimo tako da u datoteku `/etc/sysconfig/network` dodamo:
 
-```
+``` shell
 HOSTNAME=ldap.testzone.local
 ```
 
@@ -61,7 +61,7 @@ Također je potrebno dodati novu liniju u `/etc/hosts`, a koja mora sadržavati 
 Zadnji korak prije same instalacije 389 Directory Servera je dodavanje novog korisnika koji će biti potreban kasnije:
 
 ``` shell
-# useradd -s /sbin/nologin ldapuser
+sudo useradd -s /sbin/nologin ldapuser
 ```
 
 ### Sama instalacija
@@ -69,13 +69,13 @@ Zadnji korak prije same instalacije 389 Directory Servera je dodavanje novog kor
 Instalaciju se pokreće sa samo jednom naredbom:
 
 ``` shell
-# yum install 389-ds.
+sudo yum install 389-ds
 ```
 
 Nakon toga kreće preuzimanje podataka po čijem je završetku potrebno pokrenuti instalacijsku skriptu (super user):
 
 ``` shell
-# setup-ds-admin.pl.
+sudo setup-ds-admin.pl
 ```
 
 Skripta prvo provjerava moguće probleme ili nedostatke na računalu (potrebno ih je riješiti prije nastavka instalacije). U slučaju virtualnog računala RAM, procesor i NIC nisu standardni, nemaju identifikaciju, ali bez obzira na to može se nastaviti.
@@ -93,13 +93,13 @@ Slijedi izrada administracijskog korisničkog računa, potvrda domene koja je pr
 Nakon toga je pokrenuti servis:
 
 ``` shell
-# service dirsrv start
+sudo service dirsrv start
 ```
 
 ili
 
 ``` shell
-# systemctl start dirsrv.target
+sudo systemctl start dirsrv.target
 ```
 
 ## Administracija
@@ -107,7 +107,7 @@ ili
 389 Directory Server imenik je moguće administrirati pomoću grafičkog sučelja (konzole, naredba `389-console`) ili pomoću sučelja naredbenog retka. Nije potrebno posebno isticati kako je GUI sučelje puno elegantnije od podužih LDAP naredbi koje nisu nimalo jednostavne niti lake za zapamtiti. Samu konzolu pozivamo jednostavnom naredbom:
 
 ``` shell
-# /usr/bin/389-console
+sudo /usr/bin/389-console
 ```
 
 Konzola dozvoljava administraciju servera imenika (LDAP) i administracijskog servera. U oba slučaja u postavke se ulazi, kao i u postavke drugih elemenata, dvostrukim klikom. Osnovne radnje zajedničke za oba servera su pokretanje, zaustavljanje, resetiranje te izdavanje certifikata. Server imenika, uz to, ima i elegantno riješenu izradu sigurnosnih kopija, te vraćanje sustava na staro stanje iz istih. U nativnom izdanju LDAP metode izrade sigurnosnih kopija i vraćanje na staro stanje su puno kompliciranije.
@@ -131,24 +131,24 @@ Primjera radi, isti ovaj postupak obavljen putem command line sučelja izgleda o
 - stvaranje korisnika
 
     ``` shell
-    # useradd test1
+    sudo useradd test1
     ```
 
 - migriranje korisnika u LDAP
 
     ``` shell
-    # grep root /etc/passwd > /etc/openldap/passwd.test1
+    sudo grep root /etc/passwd | tee /etc/openldap/passwd.test1
     ```
 
 - pretvaranje postojeć zaporke u ldif format
 
     ``` shell
-    # /usr/share/openldap/migration/migrate_passwd.pl /etc/openldap/passwd.test1 /etc/openldap/test1.ldif
+    sudo /usr/share/openldap/migration/migrate_passwd.pl /etc/openldap/passwd.test1 /etc/openldap/test1.ldif
     ```
 
 - izmijena datoteke `root.ldif` ako želimo novu grupu, 'cn', inače izmijena `/etc/openldap/test1.ldif`
 
-    ```
+    ``` ldif
     #1 dn: uid=test1,ou=People,dc=testzone,dc=local
     #2 uid: test1
     #3 cn: Manager
@@ -157,7 +157,7 @@ Primjera radi, isti ovaj postupak obavljen putem command line sučelja izgleda o
 
 - stvaranje ldif datoteke `/etc/openldap/testzone.local.ldif` za domenu
 
-    ```
+    ``` ldif
     #dn: dc=testzone,dc=local
     #dc: testzone
     #description: LDAP Admin
@@ -173,7 +173,10 @@ Primjera radi, isti ovaj postupak obavljen putem command line sučelja izgleda o
 - uvođenje korisnika u stvorenu domenu
 
     ``` shell
-    # ldapadd -x -D "cn=Manager,dc=testzone,dc=local" -W -f /etc/openldap/test1.ldif
+    sudo ldapadd -x -D "cn=Manager,dc=testzone,dc=local" -W -f /etc/openldap/test1.ldif
+    ```
+
+    ``` shell-session
     Enter LDAP Password:
     adding new entry "uid=test1,ou=People,dc=testzone,dc=local"
     ```
@@ -189,62 +192,62 @@ Prije same konfiguracije 389 imenika potrebno je stvoriti certifikate korištenj
 1. Stvoriti privemene lokacije za certifikate:
 
     ``` shell
-    # mkdir /tmp/ldap
-    # mkdir /tmp/admingui
+    mkdir /tmp/ldap
+    mkdir /tmp/admingui
     ```
 
 1. Stvoriti Certificate Authority (CA) za imenik (u direktoriju `/tmp/ldap`):
 
     ``` shell
-    # openssl genrsa -des3 -out ca.key 4096
-    # openssl req -new -x509 -days 365 -key ca.key -out ca.crt
+    openssl genrsa -des3 -out ca.key 4096
+    openssl req -new -x509 -days 365 -key ca.key -out ca.crt
     ```
 
 1. Stvoriti Server key (u direktoriju `/tmp/ldap`):
 
     ``` shell
-    # openssl genrsa -des3 -out server.key 4096
-    # openssl req -new -key server.key -out server.csr
+    openssl genrsa -des3 -out server.key 4096
+    openssl req -new -key server.key -out server.csr
     ```
 
 1. Ovjeriti serverski certifikat (`server.csr`) koristeći Certificate Authority iz drugog koraka:
 
     ``` shell
-    # openssl x509 -req -days 365 -in server.csr -CA ca.crt -CAkey ca.key -set_serial 01 -out server.crt
+    openssl x509 -req -days 365 -in server.csr -CA ca.crt -CAkey ca.key -set_serial 01 -out server.crt
     ```
 
 1. Stvoriti Certificate Authority (CA) za administracijsko sučelje (u direktoriju `/tmp/admingui`):
 
     ``` shell
-    # openssl genrsa -des3 -out ca.key 4096
-    # openssl req -new -x509 -days 365 -key ca.key -out ca.crt
+    openssl genrsa -des3 -out ca.key 4096
+    openssl req -new -x509 -days 365 -key ca.key -out ca.crt
     ```
 
 1. Stvoriti Server key (u direktoriju `/tmp/admingui`):
 
     ``` shell
-    # openssl genrsa -des3 -out server.key 4096
-    # openssl req -new -key server.key -out server.csr
+    openssl genrsa -des3 -out server.key 4096
+    openssl req -new -key server.key -out server.csr
     ```
 
 1. Ovjeriti serverski certifikat (`server.csr`) koristeći Certificate Authority iz petog koraka:
 
     ``` shell
-    # openssl x509 -req -days 365 -in server.csr -CA ca.crt -CAkey ca.key -set_serial 01 -out server.crt
+    openssl x509 -req -days 365 -in server.csr -CA ca.crt -CAkey ca.key -set_serial 01 -out server.crt
     ```
 
 1. Pretvoriti certifikate u format pkcs12 koji koristi 389 Directory Server (u direktoriju `/tmp/ldap`):
 
     ``` shell
-    # openssl pkcs12 -export -in server.crt -inkey server.key -out server.p12 -nodes -name "DS-Server-Cert"
-    # openssl pkcs12 -export -in ca.crt -inkey ca.key -out ca.p12 -nodes -name "DS-Cert"
+    openssl pkcs12 -export -in server.crt -inkey server.key -out server.p12 -nodes -name "DS-Server-Cert"
+    openssl pkcs12 -export -in ca.crt -inkey ca.key -out ca.p12 -nodes -name "DS-Cert"
     ```
 
 1. Pretvoriti certifikate u format pkcs12 koji koristi 389 imenik (u direktoriju `/tmp/admingui`):
 
     ``` shell
-    # openssl pkcs12 -export -in server.crt -inkey server.key -out server.p12 -nodes -name "Admin-Server-Cert"
-    # openssl pkcs12 -export -in ca.crt -inkey ca.key -out ca.p12 -nodes -name "Admin-Cert"
+    openssl pkcs12 -export -in server.crt -inkey server.key -out server.p12 -nodes -name "Admin-Server-Cert"
+    openssl pkcs12 -export -in ca.crt -inkey ca.key -out ca.p12 -nodes -name "Admin-Cert"
     ```
 
 ### Unos SSL certifikata
@@ -302,7 +305,7 @@ Radnje se odvijaju na klijent računalu (u ovom slučaju Ubuntu 12.10), a koraci
 1. Dodati LDAP korisnički račun kao standardnog korisnika na računalo:
 
     ``` shell
-    # sudo adduser
+    sudo adduser
     ```
 
     Lozinka koja se koristi uz korisnika se ne koristi, ali preporučeno je zabilježiti je i osigurati snagu iste.
@@ -310,18 +313,18 @@ Radnje se odvijaju na klijent računalu (u ovom slučaju Ubuntu 12.10), a koraci
 1. Instalirati `ldap‐utils` i `libpam‐ldap`:
 
     ``` shell
-    # sudo apt-get install ldap-utils libpam-ldap
+    sudo apt-get install ldap-utils libpam-ldap
     ```
 
 1. Napraviti sigurnosnu kopiju datoteke `/etc/pam_ldap.conf`:
 
     ``` shell
-    # sudo cp /etc/pam_ldap.conf /etc/pam_ldap.conf.bak
+    sudo cp /etc/pam_ldap.conf /etc/pam_ldap.conf.bak
     ```
 
 1. Otvoriti datoteku `/etc/pam_ldap.conf` i zakomentirati sve što se nalazi u datoteci (dodati # na početak svake linije) te na početak dodati:
 
-    ```
+    ``` ldif
     host ldap.testzone.local
     base ou=Users,dn=ldap,dn=testzone,dn=local
     ldap_version 3
@@ -334,13 +337,13 @@ Radnje se odvijaju na klijent računalu (u ovom slučaju Ubuntu 12.10), a koraci
 1. Napraviti sigurnosnu kopiju datoteke `/etc/pam.d/common‐auth`:
 
     ``` shell
-    # sudo cp /etc/pam.d/common-auth /etc/pam.d/common-auth.bak
+    sudo cp /etc/pam.d/common-auth /etc/pam.d/common-auth.bak
     ```
 
 1. Otvoriti datoteku `/etc/pam.d/common‐auth` i iznad linije `auth required pam_unix.so` dodati:
 
-    ``` shell
-    # auth sufficient pam_ldap.so debug
+    ``` ini
+    auth sufficient pam_ldap.so debug
     ```
 
     Redoslijed je bitan zbog toga što se pam metode čitaju od vrha prema dnu.

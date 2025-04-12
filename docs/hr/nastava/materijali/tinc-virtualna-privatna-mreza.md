@@ -164,7 +164,7 @@ $ sudo nano /etc/tinc/linesvpn/tinc-up
 
 Sadržaj datoteke `tinc-up`:
 
-``` bash
+``` sh
 #!/bin/sh
 ifconfig $INTERFACE 10.0.0.1 netmask 255.255.255.0
 ```
@@ -175,7 +175,7 @@ $ sudo nano /etc/tinc/linesvpn/tinc-down
 
 Sadržaj datoteke `tinc-down`:
 
-``` bash
+``` sh
 #!/bin/sh
 ifconfig $INTERFACE down
 ```
@@ -220,7 +220,7 @@ Kao i na serveru `lines`, `narciss`-ov privatni ključ spremljen je u datoteci `
 $ sudo nano /etc/tinc/myvpn/tinc-up
 ```
 
-``` bash
+``` sh
 #!/bin/sh
 ifconfig $INTERFACE 10.0.0.2 netmask 255.255.255.0
 ```
@@ -229,7 +229,7 @@ ifconfig $INTERFACE 10.0.0.2 netmask 255.255.255.0
 $ sudo nano /etc/tinc/linesvpn/tinc-down
 ```
 
-```
+``` sh
 #!/bin/sh
 ifconfig $INTERFACE down
 ```

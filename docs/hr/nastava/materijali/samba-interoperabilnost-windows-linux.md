@@ -32,12 +32,12 @@ Navest ću i neke od alata koje Samba nudi:
 Instalacija paketa:
 
 ``` shell
-# dnf install samba
+sudo dnf install samba
 ```
 
 Stvara se konfiguracijski smb.conf file koji može sadržavati više dijelova. Primjer jednog takvog bazičnog file-a je:
 
-```
+``` ini
 [global]
   workgroup = studenti
 [test]
@@ -52,14 +52,14 @@ Svi pripadnici grupe studenti mogu koristiti direktorij tmp koji se nalazi na Sa
 Tu vidimo zadnji dio, koji definira put do direktorija koji dijelimo, komentar te dozvolu za čitanje i pisanje, te za goste bez passworda. Također je potrebno napraviti taj direktorij u samom sustavu, kako ne bismo tu postavili put na nešto što ne postoji. To se može napraviti jednostavno naredbom mkdir. Zatim ću unutra napraviti tekstualnu datoteku `test.txt` koji ću zapravo pokušati podijeliti sa Windowsima:
 
 ``` shell
-# touch /srv/samba/share/test.txt
+touch /srv/samba/share/test.txt
 ```
 
 Za pokretanje Sambe potrebno je aktivirati oba daemona:
 
 ``` shell
-# systemctl restart smbd.service
-# systemctl restart nmbd.service
+sudo systemctl restart smbd.service
+sudo systemctl restart nmbd.service
 ```
 
 Nakon toga spremni smo na korištenje Sambe, te se korisnici mogu spojiti sa drugih računala. U Windowsima, da bismo vidjeli dijeljenu mapu, potrebno je otići u Computer -> Network i tu vidimo da je prikazano naše računalo, klikom na njega vidimo mapu `share` i u njoj tekstualnu datoteku `test.txt`.

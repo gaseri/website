@@ -194,7 +194,7 @@ ChatGPT "zna":
 
 ## Primjer pitanja koje ChatGPT može odgovoriti
 
-```
+``` text
 Razvijate aplikaciju koja koristi šalje kodove za dvofaktorsku autentifikaciju
 SMS-om i e-mailom. Programer početnik je krenuo implementirati funkcionalnost
 tako da jedna klasa radi oba slanja, ali voditelj tima ga je zaustavio
@@ -215,7 +215,7 @@ jer to krši SOLID načelo
 
 ## Primjer pitanja na koje ChatGPT ne može odgovoriti
 
-```
+``` text
 Na poveznici
 
 https://github.com/laravel/framework/blob/9.x/src/Illuminate/Testing/TestComponent.php

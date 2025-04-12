@@ -64,7 +64,7 @@ PXE konfiguraciju ću prikazat na praktičnom primjeru koristeći Ubuntu 12.04 s
 
 Pokrenuti terminal te upisati sljedeće naredbe kako bi instaliri potrebne pakete.
 
-```
+``` shell
 sudo apt-get install isc-dhcp-server
 sudo apt-get install tftpd-hpa
 sudo apt-get install apache2
@@ -80,7 +80,7 @@ apache2 peket u ovom slučaju se koristi za instalaciju OS-a na klijent računal
 
 Da bi naš Ubuntu server radio kao DHCP server potrebno je konfigurirati DHCP protokol te pokrenuti servis. Konfiguracijska datoteka je `/etc/dhcp/dhcpd.conf`. U datoteci već postoje određeni zapisi koji su uglavnom komentari, možete ih ili ostavit i dodat sljedeće ili samo dodat sljedeće:
 
-```
+``` nginx
 allow bootp;
 allow booting;
 default-lease-time 600;
@@ -95,18 +95,33 @@ S ovim omogućujemo da DHCP dodjeljuje adrese s podmreže 192.168.0.0 i s net ma
 
 Također potrebno je podesiti koji mrežni uređaj će se koristit za primanje podataka za DHCP server, u datoteci `/etc/default/isc-dhcp-server` potrebno je upisati mrežnu komponentu u INTERFACE rubriku:
 
-```
+``` ini
 INTERFACE="eth0"
 ```
 
 Da bi servisi radili s novim postavkama potrebno je napraviti restart servisa.
 
 ``` shell
-# service isc-dhcp-server restart
+sudo service isc-dhcp-server restart
+```
+
+``` shell-session
 *isc-dhcp-server start/running, process 7231
-# service dhcpd-hpa restart
+```
+
+``` shell
+sudo service dhcpd-hpa restart
+```
+
+``` shell-session
 *dhcpd-hpa start/running, process 7242
-# service apache2 restart
+```
+
+``` shell
+sudo service apache2 restart
+```
+
+``` shell-session
 *[OK]
 ```
 
@@ -116,13 +131,13 @@ Budući da koristimo virtualnu mašinu moguće je u operativnom sustavu u kojem 
 
 1. Prvi korak: kopiranje s cd-a
 
-```
+``` shell
 cp -r /media/"Ubuntu 12.04.1 LTS i386"/* /var/www/ubuntu/
 ```
 
 1. Drugi korak: priprema Packet.gz datoteke
 
-```
+``` shell
 cd /var/www/ubuntu/dists/precise/restricted/binary-i386/
 gunzip -c Packages.gz > Package
 ```
@@ -131,7 +146,7 @@ gunzip -c Packages.gz > Package
 
 Da bi sustav znao koje datoteke mora instalirati i gdje se nalaze potrebno je pripremiti datoteke koje će klijent preuzeti prilikom pokretanja s TFTP protokolom.
 
-```
+``` shell
 cp -r /var/www/ubuntu/install/netboot/* /var/lib/tftpboot/
 ```
 
@@ -141,7 +156,7 @@ U slučaju da instaliramo sustav s interneta potrebno je s interneta preuzet `ne
 
 Ubuntu PXE instalacija moguća je pomoću datoteka sa server računala ili preuzimanjem s interneta. U ovom slučaju radimo instalaciju pomoću datoteka sa server računala. Pa je potrebno urediti kickstart datoteku koja će uputiti instalaciju na lokaciju na serveru. Za instalaciju prilikom koje se sustav instalira s interneta ovaj korak se može preskočit. U datoteku `/var/www/ks.cfg` je potrebno dodati:
 
-```
+``` shell
 install
 url --url http://192.168.0.1/ubuntu
 ```
@@ -152,7 +167,7 @@ Da bi sustav uputili na lokalnu instalaciju također je potrebno PXE konfiguraci
 
 U datoteci `/var/lib/tftpboot/ubuntu-installer/i386/boot-screens/txt.cfg` protrebno je promjeniti append red:
 
-```
+``` text
 default install
 label install
         menu label ^Install

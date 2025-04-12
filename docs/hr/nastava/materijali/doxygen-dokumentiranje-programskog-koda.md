@@ -32,7 +32,7 @@ $ doxygen -g
 
 stvorit ćemo datoteku `Doxyfile` sa zadanom konfiguracijom. U njoj ne moramo mijenjati ništa, samo se uvjerimo se da značka `FILE_PATTERNS` uključuje `*.h`
 
-```
+``` ini
 FILE_PATTERNS          = *.c \
                          *.cc \
                          *.cxx \

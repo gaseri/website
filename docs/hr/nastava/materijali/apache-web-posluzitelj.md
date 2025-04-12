@@ -54,7 +54,7 @@ Status: Downloaded newer image for httpd:2.4
 
 Vidimo da je Docker javio da lokalno nemamo sliku kontejnera i zatim povukao nekoliko slojeva (kontejneri su višeslojni kako bi se lakše višestruko iskorištavalo pojedine dijelove kontejnera). Ako želimo samo povlačenje slike na temelju koje se može stvarati kontejnere, izvest ćemo ga naredbom `docker pull`. Pokretanje Apacheja vidimo u porukama:
 
-```
+``` shell-session
 AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
 AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
 [Thu May 07 23:25:00.371329 2020] [mpm_event:notice] [pid 1:tid 139777378702464] AH00489: Apache/2.4.43 (Unix) configured -- resuming normal operations
@@ -63,7 +63,7 @@ AH00558: httpd: Could not reliably determine the server's fully qualified domain
 
 Prekid izvođenja, kao i u većini drugih softvera na operacijskim sustavima sličnim Unixu, vršimo kombinacijom tipki Control + C (`^C`). Vidjet ćemo poruku:
 
-```
+``` shell-session
 [Thu May 07 23:33:30.363896 2020] [mpm_event:notice] [pid 1:tid 139777378702464] AH00491: caught SIGTERM, shutting down
 ```
 
@@ -87,7 +87,7 @@ Content-Type: text/html
 
 Umjesto stranice `It works!` stavit ćemo kasnije vlastiti sadržaj u kontejner. Uočimo da na strani poslužitelja Apache ispisuje zahtjeve u obliku:
 
-```
+``` shell-session
 172.17.0.1 - - [08/May/2020:15:18:10 +0000] "GET / HTTP/1.1" 200 45
 ```
 

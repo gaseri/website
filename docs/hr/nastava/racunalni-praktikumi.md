@@ -713,24 +713,24 @@ Moodleova aktivnost `Test` u pripadnim `Postavkama` sadrži odjeljak `Dodatna og
 
 ### O-350/351
 
-``` ip
+``` text
 193.198.209.231
 ```
 
 ### O-359
 
-``` ip
+``` text
 193.198.209.234
 ```
 
 ### O-365
 
-``` ip
+``` text
 193.198.209.232
 ```
 
 ### O-366/367
 
-``` ip
+``` text
 193.198.209.233
 ```

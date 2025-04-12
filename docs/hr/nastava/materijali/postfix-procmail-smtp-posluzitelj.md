@@ -28,7 +28,7 @@ $ telnet localhost 25
 
 Ukoliko MTA, već postoji, ispis koji ćemo dobiti je oblika:
 
-```
+``` shell-session
 Trying 127.0.0.1...
 Connected to localhost.
 Escape character is '^]'.
@@ -40,7 +40,7 @@ U ovom slučaju u četvrtoj liniji jasno je vidljivo da je trenutno instaliran `
 Postfix instaliramo naredbom
 
 ``` shell
-# yum install postfix
+sudo yum install postfix
 ```
 
 Korisniku se nudi nekoliko izbornika u kojima odabiremo neke od predefiniranih konfiguracija, za potrebe ovog rada koristit ćemo predložak "local only". Također je potrebno postaviti "mail-name", odnosno domenu (dio mail adrese iza znaka *@*). Postavljena vrijednost koju ćemo koristiti je *localhost.loc*.
@@ -53,7 +53,7 @@ $ telnet localhost 25
 
 ispisuje:
 
-```
+``` shell-session
 Trying 127.0.0.1...
 Connected to localhost.
 Escape character is '^]'.
@@ -79,7 +79,7 @@ $ telnet localhost 25
 
 Upišimo sada nekoliko naredbi primajući interaktivno odgovor:
 
-```
+``` shell-session
 mail from: root@localhost.loc
 250 2.1.0 Ok
 rcpt to: ivan@localhost.loc
@@ -90,7 +90,7 @@ data
 
 Nakon toga pišemo tijelo poruke. Primjerice:
 
-```
+``` shell-session
 To: ivan@localhost.loc
 From: root@localhost.loc
 Subject: Naslov
@@ -100,7 +100,7 @@ Ovo je tekst poruke
 
 Poruku, kako je navedeno završavamo sa novim retkom i točkom (.).
 
-```
+``` shell-session
 .
 250 2.0.0 Ok: queued as B162E2E0AF
 quit
@@ -115,7 +115,7 @@ $ mail
 
 čime bi se trebalo ispisati nešto slično sljedećem tekstu ovisno naravno o samim testnim podacima:
 
-```
+``` shell-session
 Mail version 8.1.2 01/15/2001.  Type ? for help.
 "/var/mail/ivan": 1 message 1 new
 >N  1 root@localhost.lo  Sat Jan 19 16:35   15/543   naslov
@@ -124,7 +124,7 @@ Mail version 8.1.2 01/15/2001.  Type ? for help.
 
 Ukucavši `1` možemo pročitati taj mail i očekivani ispis je:
 
-```
+``` shell-session
 Message 1:
 From root@localhost.loc  Sat Jan 19 16:35:33 2013
 X-Original-To: ivan@localhost.loc
@@ -143,61 +143,61 @@ Osnovna konfiguracija podešena je automatski s obzirom da smo koristili predlo�
 
 U datoteci `/etc/postfix/main.cf` imamo redom
 
-```
+``` ini
 myhostname = Ivan-debian
 ```
 
 može biti proizvoljno ime, zatim
 
-```
+``` ini
 alias_maps = hash:/etc/aliases
 ```
 
 mapa aliasa (alternativnih imena), zatim
 
-```
+``` ini
 alias_database = hash:/etc/aliases
 ```
 
 baza aliasa. Aliase koristimo da bi imali nekoliko mogućih naziva za istu mail adresu.
 
-```
+``` ini
 myorigin = /etc/mailname
 ```
 
 domena koja se dodaje, zatim
 
-```
+``` ini
 mydestination = localhost.loc, Ivan-debian.dummy.porta.siemens.net, localhost.dummy.porta.siemens.net, localhost
 ```
 
 predefinirana odredišta za localhost, može se definirati mnogo aliasa, svi koji su navedeni impliciraju slanje na lokalno računalo, bez prosljeđivanja na neka druga, zatim
 
-```
+``` ini
 relayhost =
 ```
 
 autorizirane ne-lokalne domene, zatim
 
-```
+``` ini
 mynetworks = 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128
 ```
 
 autoriziranje na osnovu IP adrese i pripadajuće maske u [CIDR notaciji](https://en.wikipedia.org/wiki/CIDR_notation), zatim
 
-```
+``` ini
 mailbox_command = procmail -a "$EXTENSION"
 ```
 
 pozivanje procmail servisa i prosljeđivanje parametra mailboxa, zatim
 
-```
+``` ini
 mailbox_size_limit = 0
 ```
 
 ograničenje veličine mailboxa, 0 znači neograničeno, zatim
 
-```
+``` ini
 recipient_delimiter = +
 ```
 

@@ -224,7 +224,7 @@ result_cpu = np.matrix(a) * np.matrix(b)
 
     (**Primjer::** u slučaju kad bi imali tri mjesta i matricu od 5 stupaca, matrica može biti oblika:
 
-    ```
+    ``` text
     2.3    6.2    24.8   5.6   2.2
     22.7   8.3    16.5   0     0
     31.7   23.2   1.4    2.5   0
@@ -232,7 +232,7 @@ result_cpu = np.matrix(a) * np.matrix(b)
 
     a pripadni vektor je tada oblika
 
-    ```
+    ``` text
     5
     3
     4

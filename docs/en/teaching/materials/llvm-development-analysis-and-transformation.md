@@ -31,7 +31,7 @@ and use `llvm-stress` to create the file containing LLVM IR that will be used to
 
 The pass implemented in the `HelloWorldPass` class is registered as `helloworld` in the `llvm/lib/Passes/PassRegistry.def` file:
 
-``` cpp
+``` c++
 FUNCTION_PASS("helloworld", HelloWorldPass())
 ```
 
@@ -43,7 +43,7 @@ so it can be called by adding the parameter `-passes` with the value `helloworld
 
 which prints:
 
-``` text
+``` shell-session
 autogen_SD0
 ```
 

@@ -163,7 +163,7 @@ Za obrnuto razlaganje mrežne adrese se pišu obrnutim redoslijedom, primjerice 
 
 Definiranje datoteke zone pomoću kojih server razlaže IP adrese preko imena domene za unutarnju zonu vrši se unutar datoteke `/var/named/server.world.lan` sadržaja
 
-```
+``` zone
 $ORIGIN server.world
 $TTL 86400
 @ IN SOA dns.server.world. root.server.world. (
@@ -184,7 +184,7 @@ dns IN A   192.168.1.238
 
 Postavljanje zona za obrnuto razlaganje vrši se unutar datoteke `/var/named/238.1.168.192.db` sadržaja
 
-```
+``` zone
 $TTL 86400
 @ IN SOA dns.server.world. root.server.world. {
     2013121801 ; serial
@@ -377,7 +377,7 @@ Ukoliko u datoteci `/etc/resolv.conf` promijenimo IP adresu nameservera na neku 
 
 U sljedećem primjeru smo ubacili adresu lokalnog DNS servera (127.0.0.1), te zakomentirali vanjski DNS server (192.168.1.1)
 
-```
+``` ini
 domain dummy.porta.siemens.net
 search dummy.porta.siemens.net
 # nameserver 192.168.1.1

@@ -33,7 +33,7 @@ $6$0123456789abcdef$dShpkpJZaM1mate.CGJEnCIUr5OnqlKLzqgErqxukBdgGMteNCAMRA/3WWVZ
 
 RSA ključ ćemo izgenerirati naredbom `ssh-keygen` ([dokumentacija](https://man.openbsd.org/ssh-keygen.1)) na način:
 
-```
+``` shell
 $ ssh-keygen
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/vedranm/.ssh/id_rsa): id_rsa_gaser
@@ -59,7 +59,7 @@ The key's randomart image is:
 
 Uzmimo da je dobiveni tajni ključ oblika:
 
-``` ssh
+``` pem
 -----BEGIN OPENSSH PRIVATE KEY-----
 b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABlwAAAAdzc2gtcn
 NhAAAAAwEAAQAAAYEA3QVIX75B1KT0+NY5OEzU22/G2eOJh/AbF22bJKm+VY3CQ+0uTcmg
@@ -102,7 +102,7 @@ AqTpVNxXq9EF9lbLFcIL9zuwET6TwmsH+7Zao3SVGmWuZIsDr94O/fi8MffGP7n0NnrO6V
 
 dok je javni ključ oblika:
 
-``` ssh
+``` text
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDdBUhfvkHUpPT41jk4TNTbb8bZ44mH8BsXbZskqb5VjcJD7S5NyaB3vI7r0vKz3Vkd1PeV3M
 FZTnn2YH/RFmyQ5G2nL/XQRgzRXBKHNU4oSOsDGnW4Xpuis0+PE+ODRTB9qNIVCpM31J2v1AT5DUp393Lgda1yBFMlmk74sUIsWV2HCAy2UgD5
 pOr5z5hYopIBodQc0rq6y3PgzyYuQwBZRAWiCbAVIYEmToUmdBO6bqY+yHE3KG+WF/x+CP58vX3dVgVV9x/XkIerc0RxjMeAHUd+fMYQJ9BqFW

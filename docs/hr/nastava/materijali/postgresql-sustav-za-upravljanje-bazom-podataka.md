@@ -76,15 +76,14 @@ Microsoft Access, Microsoft Excel, kao i s većinom open-source aplikacija (npr.
 
 PosgreSQL se može instalirati na gotov svim platformama te na većini novijih Unix kompatibilnih platformi. Na CentOS-u to činimo naredbom
 
-```
+``` shell
 yum install postgresql-server
 ```
 
 Zatim pokrećemo uslugu naredbom
 
-```
+``` shell
 service postgresql start
-
 ```
 
 Nakon instalacije, incijalno podešavanje vršimo naredbom
@@ -105,13 +104,16 @@ $ psql testnabaza
 Ukoliko je logiranje na bazu bilo uspješno, trebalo bi se prikazati:
 
 ``` shell
-# testnabaza=#
+testnabaza=#
 ```
 
 Bazu je moguće testirati jednostavnim upitom:
 
 ``` shell
-# testnabaza=# SELECT current_date;
+testnabaza=# SELECT current_date;
+```
+
+``` shell-session
 # date
 ------------
 2018-01-20
@@ -121,8 +123,8 @@ Bazu je moguće testirati jednostavnim upitom:
 Naredbe koje počinju s ključnim znakom "\" su ugrađene od strane PostgreSQL-a. Dvije najčešće naredbe koje se koriste su:
 
 ``` shell
-# testnabaza=> \h -> kao help za naredbe jezika SQL
-# testnabaza=> \q -> za izlaz iz PostgreSQL-a
+testnabaza=> \h # kao help za naredbe jezika SQL
+testnabaza=> \q # za izlaz iz PostgreSQL-a
 ```
 
 Mnoge naredbe koje rade u ostalim SQL okruženjima kao funkcije i procedure rade i na PostgreSQL-u, primjerice: `SELECT FROM`, `INSERT INTO`, `DELETE FROM`.
@@ -140,7 +142,7 @@ u kojem će biti spremljeni svi podatci. Može se koristiti bilo koji direktorij
 najčešće se koristi /usr/local/pgsql/data ili /var/lib/pgsql/data. Kako bi se inicirala grupa baze
 podataka koristi se naredba initdb. Odabir lokacije se u sustavu određuje naredbom:
 
-```
+``` shell
 postgres$ initdb -D /var/lib/postgresql
 ```
 
@@ -150,11 +152,7 @@ on bude zaštićen od neautoriziranog pristupa. Iz tog će razloga initdb odbija
 osim PostgreSQL korisniku.
 Dok je sadržaj direktorija siguran, po osnovnim postavkama autorizacije klijenta
 dozvoljeno je spojiti se na bazu podataka i čak postati administrator. Zato se preporučuje
-korištenje jedne od ovih opcija:
-
-```
-initdb's -W, --pwprompt ili --pwfile za dodjeljivanje lozinke administratoru baze podataka.
-```
+korištenje jedne od opcija `-W`, `--pwprompt` ili `--pwfile` za dodjeljivanje lozinke administratoru baze podataka.
 
 ## Pokretanje poslužitelja
 
@@ -178,7 +176,7 @@ Postoji mogućnosti javljanja grešaka prilikom pokretanja servera te prilikom s
 
 Prilikom podizanja servera moguće je javljanje sljedeće pogreške:
 
-```
+``` shell-session
 LOG: could not bind IPv4 socket: Address already in use
 HINT: Is another postmaster already running on port 5555? If not, wait a few seconds and retry.
 FATAL: could not create TCP/IP listen socket
@@ -190,7 +188,7 @@ Moguće su još neke greške: primjerice zauzetost adrese ili ograničenje na do
 
 Prilikom pristupa na server moguće je javljanje greške:
 
-```
+``` shell-session
 psql: could not connect to server: Connection refused
 Is the server running on host "server.proba.com" and accepting TCP/IP connections on port 5432?
 ```
@@ -214,81 +212,81 @@ Prvi je korak provjera je li podignut SSH server na istoj mašini na kojoj je i 
 Po završetku provjere, uspostavlja se spajanje sa klijentske strane naredbom:
 
 ``` shell
-# ssh -L 3333:proba_server.com:5432 netko@ proba_server.com
+ssh -L 3333:proba_server.com:5432 netko@ proba_server.com
 ```
 
 Za localhost:
 
 ``` shell
-# psql -h localhost -p 3333 postgres
+psql -h localhost -p 3333 postgres
 ```
 
 ## Uloge i prava
 
 PostgreSQL upravlja dozvolama za pristup bazi podataka koristeći koncept uloga (engl. *roles*). Uloga može biti ili korisnik baze podataka ili grupa korisnika. To mogu biti vlasnici objekata baze podataka (tablica) i mogu dodjeljivati prava za objekte u drugim ulogama. Koncept uloga obuhvaća koncept korisnika i grupa. Za kreiranje uloga koristi se SQL naredba `CREATE ROLE`:
 
-``` shell
-# CREATE ROLE ime;
+``` sql
+CREATE ROLE ime;
 ```
 
 Za brisanje uloge koristi se SQL naredba `DROP ROLE`:
 
-``` shell
-# DROP ROLE ime;
+``` sql
+DROP ROLE ime;
 ```
 
 Za kreiranje i brisanje korisnika koristi se shell naredbe `createuser` i `dropuser` (korisnik je uloga koja ima pravo logina):
 
-```
+``` shell
 postgres$ createuser ime
 postgres$ dropuser ime
 ```
 
 Kako bi se pregledale postojeće uloge potrebno je ispisati tablicu `pg_roles`, to možemo učiniti idućim SQL upitom:
 
-``` shell
-# SELECT rolname FROM pg_roles;
+``` sql
+SELECT rolname FROM pg_roles;
 ```
 
 Uloga može imati više osobina koje će definirati njene privilegije i komunicirati sa sustavom za autorizaciju klijenta.
 
 Samo uloge koje imaju LOGIN osobinu mogu biti korištene kao inicijalne uloge za konekciju na bazu podataka. Takve uloge su korisnici baze podataka. Koristi se jedna od dvije međusobno ekvivalentne naredbe:
 
-``` shell
-# CREATE ROLE ime LOGIN;
-# CREATE USER ime;
+``` sql
+CREATE ROLE ime LOGIN;
+CREATE USER ime;
 ```
 
 Superkorisnik baze podataka zaobilazi sve provjere dozvola. Uvijek se preporučuje da se najveći dio posla obavlja sa ulogom koja nije superkorisnik. Za kreiranje novog superkorisnika, koristi se naredba:
 
-``` shell
-# CREATE ROLE ime SUPERUSER;
+``` sql
+CREATE ROLE ime SUPERUSER;
 ```
 
 Uloga bi morala imati dozvolu za kreiranje baze (osim za superkorisnika). Koristi se naredba:
 
-``` shell
-# CREATE ROLE ime CREATEDB;
+``` sql
+CREATE ROLE ime CREATEDB;
 ```
 
 Uloga bi morala imati dozvolu za kreiranje drugih uloga (osim za superkorisnika). Naredba:
 
-``` shell
-# CREATE ROLE ime PASSWORD 'string';
+``` sql
+CREATE ROLE ime PASSWORD 'string';
 ```
 
 Prilikom stvaranja objekta, dodjeljuje mu se vlasnik i najčešće je to uloga koja ga je stvorila. Za najveći broj objekata, ta uloga je jedini vlasnik (ili superkorisnik) i jedino ona može raditi operacije nad njim. Kako bi se dozvolilo drugim ulogama da je koriste, moraju im se dodijeliti prava (privilegije). Postoji nekoliko vrsta prava: SELECT, INSERT, UPDATE, DELETE, RULE, REFERENCES, TRIGGER, CREATE, TEMPORARY, EXECUTE, i USAGE.
 
 Ukoliko se želi dodijeliti pravo, koristi se naredba GRANT. Primjer:
 
-``` shell
-# GRANT UPDATE ON ime_tablice TO ime_uloge;
+``` sql
+GRANT UPDATE ON ime_tablice TO ime_uloge;
 ```
 
 Naredba PUBLIC se koristi za davanje prava svakoj ulozi u sustavu. Naredba ALL daje sva moguća prava ulozi nad nekim objektom. Za micanje svih prava se koristi REVOKE naredba:
 
-``` shell
-# REVOKE ALL ON ime_tablice FROM PUBLIC;
+``` sql
+REVOKE ALL ON ime_tablice FROM PUBLIC;
 ```
 
 ## Pohrana rezervnih kopija
@@ -298,7 +296,7 @@ Razlikujemo 3 moguća načina backupa sustava: SQL dump, backup datoteke sustava
 SQL dump označava generiranje tekstualne datoteke sa SQL naredbama na način da se o uvođenju na server ponovo kreira baza onakva kakva je bila u trenutku izvršenja SQL dumpa. PostgreSQL za ovu svrhu koristi pomoćni program `pg_dump`. Osnovna je naredba:
 
 ``` shell
-# pg_dump bpime > outfile
+pg_dump bpime > outfile
 ```
 
 Backup datoteke sustava označava direktno kopiranje datoteka koje PostgreSQL koristi za smještanje podataka u bazu. Za ovaj je backup značajno da server mora biti ugašen kako bi se dobio uporabljiv backup. Također, nije moguće backup-ovati samo određene dijelove baze.
@@ -306,21 +304,21 @@ Backup datoteke sustava označava direktno kopiranje datoteka koje PostgreSQL ko
 Primjer je korištenja backup-a datoteke sustava sljedeći:
 
 ``` shell
-# tar -cf backup.tar /usr/local/pgsql/data
+tar -cf backup.tar /usr/local/pgsql/data
 ```
 
 Treći je način on-line backup i point-in-time recovery (PITR). PostgreSQL neprestano održava write ahead log (WAL) u pg_xlog/ direktoriju. Log opisuje svaku promjenu nad bazom i osnovni je razlog njegova postojanja sigurnost. Moguće je kombinirati backup datoteke sustava i backup WAL datoteka. Ukoliko je backup potreban, radi se restore backup-a, a potom se ponavljenjem događaja baza dovodi do posljednjeg stanja. U situacijama u kojima se zahtjeva visoka pouzdanost, ova je metoda najbolja. Njome je moguće obnoviti cijelu grupu baze podataka, no ne i podgrupe.
 
 Prvi je korak backup-a baze provjera je li WAL arhiviranje omogućeno i funkcionira li ispravno. Spajamo se na bazu te unosimo sljedeću naredbu (kao superkorisnik):
 
-``` shell
-# SELECT pg_start_backup('label');
+``` sql
+SELECT pg_start_backup('label');
 ```
 
 Pritom je 'label' ime pod kojim ćemo spremiti ovu operaciju izvršavanja backup-a. Pri izvođenju backup-a koriste se alati kao što su tar ili cpio. Ponovno se izvodi spajanje na bazu, kao superkorisnik, te se daje naredba:
 
-``` shell
-# SELECT pg_stop_backup();
+``` sql
+SELECT pg_stop_backup();
 ```
 
 Po završetku arhiviranja WAL segmenata datoteke kao redovne aktivnosti baze, proces je završen.

@@ -104,7 +104,7 @@ $ clang -target mips -S kernel.cl
 
 Datoteka `kernel.s` je sada sadržaja:
 
-```
+``` asm
         .text
         .abicalls
         .option pic0

@@ -293,7 +293,7 @@ int main ()
 
 Želimo stvoriti linearnu topologiju od tri čvora oblika
 
-```
+``` text
 n1 ------ n2 ------ n3
 ```
 

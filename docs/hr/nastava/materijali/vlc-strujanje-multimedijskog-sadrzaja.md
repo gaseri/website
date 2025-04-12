@@ -16,13 +16,13 @@ VLC je razvijen da bude prenosiv na različite platforme te se može prevesti i 
 Za instalaciju VLC-a je potrebno pokrenuti nekoliko repositorija, Epel, Remi and RPMFusion. Nakon toga, provjeravamo dostupnost VLC playera naredbom:
 
 ``` shell
-# yum --enablerepo=remi-test info vlc
+sudo yum --enablerepo=remi-test info vlc
 ```
 
 Ako je dostupan, instaliramo ga pomoću naredbe:
 
 ``` shell
-# yum --enablerepo=remi install vlc
+sudo yum --enablerepo=remi install vlc
 ```
 
 Zatim, pokrećemo kao normalan user (ne root), naredbom:
@@ -102,20 +102,20 @@ Ako većina klijenata do kojih želim doprijeti koristi operacijski sustav Windo
 
 Primjerice, za Windows Media Video version 1, bitrate 512 with MP3 audio and ASFH muxer over MMSH protocol (`mmsh://192.168.0.10:30001`) parametri su:
 
-```
+``` text
 '#transcode{vcodec=WMV1,vb=512,scale=1,acodec=mp3,ab=64}:std{access=mmsh,mux=asfh,dst=192.168.0.104:30001}'
 ```
 
 Za DivX version 3, bitrate 1024 with Dolby Digital AC3 audio and ASFH muxer over MMSH protocol (`mmsh://192.168.0.10:30001`) parametri su:
 
-```
+``` text
 '#transcode{vcodec=DIV3,vb=1024,acodec=a52,ab=512}:std{access=mmsh,mux=asfh,dst=192.168.0.104:30001}'
 ```
 
 Za MPEG-4 with marquee filter, bitrate 1024 with MP3 audio and OGG muxer over HTTP protocol (`http://192.168.0.10:30001`) parametri su:
 
-```
-'#transcode{vcodec=mp4v,sfilter=marq,vb=1024,acodec=mp3,ab=512}:std{access=http,mux=ogg,dst=192.168.0.104:30001}
+``` text
+'#transcode{vcodec=mp4v,sfilter=marq,vb=1024,acodec=mp3,ab=512}:std{access=http,mux=ogg,dst=192.168.0.104:30001}'
 ```
 
 ## Upravljanje VLC-om putem web sučelja

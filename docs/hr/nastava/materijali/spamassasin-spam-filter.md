@@ -11,12 +11,12 @@ author: Ivan Ivakić, Vedran Miletić
 Vrlo jednostavno:
 
 ``` shell
-# yum install spamassassin
+sudo yum install spamassassin
 ```
 
 Zanimljivo je pri kraju instalacije primjetiti:
 
-```
+``` shell-session
 SpamAssassin Mail Filter Daemon: disabled, see /etc/default/spamassassin
 ```
 
@@ -25,25 +25,25 @@ SpamAssassin Mail Filter Daemon: disabled, see /etc/default/spamassassin
 Nadalje, nije poželjno da nam se Spam filter pokreće sa root privilegijama pa ćemo mu dodijeliti specifičnog korisnika i grupu te ograničiti djelovanje na određene datoteke i direktorije. Dodajmo novu grupu sa ID-ijem 5001 i nazovimo ju spamd
 
 ``` shell
-# groupadd -g 5001 spamd
+sudo groupadd -g 5001 spamd
 ```
 
 Dodajmo novog korisnika `spamd` u grupu `spamd`, definiramo da ne postoji login za tog korisnika i postavljamo kućni direktorij na `/var/lib/spamassassin`
 
 ``` shell
-# useradd -u 5001 -g spamd -s /sbin/nologin -d /var/lib/spamassassin spamd
+sudo useradd -u 5001 -g spamd -s /sbin/nologin -d /var/lib/spamassassin spamd
 ```
 
 Kreiramo sam kućni direktorij korisnika
 
 ``` shell
-# mkdir /var/lib/spamassassin
+sudo mkdir /var/lib/spamassassin
 ```
 
 Dodjeljujemo vlasnička prava korisniku `spamd` iz grupe `spamd` nad direktorijem `/var/lib/spamassassin`
 
 ``` shell
-# chown spamd:spamd /var/lib/spamassassin
+sudo chown spamd:spamd /var/lib/spamassassin
 ```
 
 Nakon što smo obavili pripreme možemo krenuti na samu konfiguraciju osnovnih postavki.
@@ -52,7 +52,7 @@ Nakon što smo obavili pripreme možemo krenuti na samu konfiguraciju osnovnih p
 
 Otvorivši datoteku `/etc/default/spamassassin` prvo što ćemo primjetiti je vjerojatno:
 
-``` shell
+``` ini
 # Change to one to enable spamd
 ENABLED=0
 ```
@@ -61,33 +61,33 @@ pa promijenimo ovu `0` (nulu) u `1`. Time smo uključili spam deamon.
 
 Radi jednostavnosti definirajmo jednu varijablu `HOME` i dodijelimo joj vrijednost kućnog direktorija `spamd` korisnika.
 
-```
+``` ini
 HOME="/var/lib/spamassassin"
 ```
 
 Promijenimo sada još:
 
-```
+``` ini
 OPTIONS="--create-prefs --max-children 5 --username spamd --helper-home-dir ${HOME} -s ${HOME}/spamd.log"
 ```
 
 Ovime dodjeljujemo korisnika `spamd`, definiramo kućni direktorij i definiramo lokaciju datoteke `spamd.log` koja će sadržavati log podatke. Zatim definiramo gdje će se pratiti [PID](https://en.wikipedia.org/wiki/Process_identifier) opcijom
 
-```
-PIDFILE="${HOME}/spamd.pid
+``` ini
+PIDFILE="${HOME}/spamd.pid"
 ```
 
 ## Pravila filtriranja
 
 Krenimo sada na definiranje pravila filtriranja u datoteci `/etc/spamassassin/local.cf`:
 
-```
+``` ini
 rewrite_header Subject *****UPOZORENJE SPAM*****
 ```
 
 Ovime definiramo modifikaciju zaglavlja da bi prepoznali spam poruke.
 
-```
+``` ini
 report_safe 1
 ```
 
@@ -99,26 +99,26 @@ Ovime definiramo izgled filtrirane poruke, uobičajena vrijednost je 1. Postoje 
 
 Uključimo još i Bayesov klasifikator i podesimo ga na samoučenje.
 
-```
+``` ini
 use_bayes 1
 bayes_auto_learn 1
 ```
 
 Podešavanje "osjetljivosti" filtera radimo na idući način:
 
-```
+``` ini
 required_score 2.0
 ```
 
 čime kažemo koliku minimalnu ocjenu treba postići određena poruka da bi bila klasificirana kao spam poruka. Nakon toga možemo pokrenuti spamassasin daemon proces:
 
 ``` shell
-# systemctl start spamassasin
+sudo systemctl start spamassasin
 ```
 
 i ukoliko smo sve podesili kako treba ispis će biti oblika:
 
-```
+``` shell-session
 Starting SpamAssassin Mail Filter Daemon: spamd.
 ```
 
@@ -128,13 +128,13 @@ Za kraj je potrebno Postfixu dati do znanja da imamo novi spam filter i da ga ž
 
 Otvorimo stoga datoteku drugu konfiguracijsku datoteku Postfixa `/etc/postfix/master.cf` te liniju:
 
-```
+``` ini
 smtp inet n -- -- -- -- smtpd
 ```
 
 promijenimo u
 
-```
+``` ini
 smtp inet n -- -- -- -- smtpd -o content_filter=spamassassin
 ```
 
@@ -142,7 +142,7 @@ smtp inet n -- -- -- -- smtpd -o content_filter=spamassassin
 
 Preostaje još samo definirati vanjsku aplikaciju za filtriranje što činimo dodavanjem sljedećih linija na kraj datoteke:
 
-```
+``` ini
 spamassassin unix -- n n -- -- pipe
 user=spamd argv=/usr/bin/spamc -f -e
 /usr/sbin/sendmail -oi -f ${sender} ${recipient}
@@ -151,5 +151,5 @@ user=spamd argv=/usr/bin/spamc -f -e
 Nakon toga valja ponovno učitati postavke postfixa da bi se promjene primjenile.
 
 ``` shell
-# systemctl reload postfix
+sudo systemctl reload postfix
 ```

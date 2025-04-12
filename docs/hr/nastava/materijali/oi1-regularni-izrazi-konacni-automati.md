@@ -163,7 +163,7 @@ author: Luka Vretenar
 
 ### Tekst za vježbe
 
-```
+``` text
 Porijeklo regularnih izraza leži u teoriji automata i teoriji formalnih jezika, pri čemu su oboje discipline teoretskog računarstva.
 Ove discipline proučavaju modele računanja (automate) te načine opisa i klasifikacije formalnih jezika.
 Matematičar Stephen Kleene je 1950-ih opisao ove modele koristeći matematičku notaciju zvanu regularni skupovi.

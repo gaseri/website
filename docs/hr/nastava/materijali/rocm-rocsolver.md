@@ -184,7 +184,7 @@ size_t size_piv = size_t(std::min(M, N));
 
 Vrši se alokacija memorije, a zatim kopiraju podatci na GPU.
 
-```
+``` c++
 double *dA, *dIpiv;
 hipMalloc(&dA, sizeof(double)*size_A);
 hipMalloc(&dIpiv, sizeof(double)*size_piv);
@@ -194,13 +194,13 @@ hipMemcpy(dA, hA.data(), sizeof(double)*size_A, hipMemcpyHostToDevice);
 
 Sljedeći korak je korištenje rocSOLVER funkcije `rocsolver_dgeqrf()` koja računa QR faktorizaciju na GPU.
 
-```
+``` c++
 rocsolver_dgeqrf(handle, M, N, dA, lda, dIpiv);
 ```
 
 Vraćamo podatke i rezultate natrag na procesor nakon što inicijaliziramo polje u koje ćemo spremiti podatke.
 
-```
+``` c++
 std::vector<double> hIpiv(size_piv);
 hipMemcpy(hA.data(), dA, sizeof(double)*size_A, hipMemcpyDeviceToHost);
 hipMemcpy(hIpiv.data(), dIpiv, sizeof(double)*size_piv, hipMemcpyDeviceToHost);
@@ -208,7 +208,7 @@ hipMemcpy(hIpiv.data(), dIpiv, sizeof(double)*size_piv, hipMemcpyDeviceToHost);
 
 Nakon svih ovih koraka rezultati su pohranjeni u `hA` i `hIpiv`. Ispis ovih rezultata izvršiti ćemo na ovaj način:
 
-```
+``` c++
 printf("R = [\n");
 for (size_t i = 0; i < M; ++i) {
   printf("  ");
@@ -224,7 +224,7 @@ Kao završni korak u funkciji `main()` moramo počistiti kod, te oslobađamo mem
 
 Ako pogledamo funkciju koju smo na početku koda spomenuli, ona izgleda ovako:
 
-```
+``` c++
 void get_example_matrix(std::vector<double>& hA,
                         rocblas_int& M,
                         rocblas_int& N,
@@ -248,7 +248,7 @@ void get_example_matrix(std::vector<double>& hA,
 
 Kao početak, postavljamo konstantne vrijednosti matrice, te broj redaka, stupaca i vodeću dimenziju.
 
-```
+``` c++
 const double A[3][3] = { {  12, -51,   4},
                          {   6, 167, -68},
                          {  -4,  24, -41} };
@@ -262,12 +262,11 @@ Po pravilu, rocSOLVER matrice moraju biti pohranjene u formatu stupac po stupac 
 
 Taj format ćemo, u ovom slučaju, postići tako da nećemo koristiti klasičnu metodu za dohvaćanje vrijednosti matrice na mjestu `(i, j)`, već ćemo vodeću dimenziju pomnožiti sa brojem stupaca, i zbrojiti taj iznos sa brojem redaka. Time kopiramo 2D polje (matricu `A`) u `hA`, 1D polje, postavljeno u formatu stupac po stupac.
 
-```
+``` c++
 hA.resize(size_t(lda) * N);
-  for (size_t i = 0; i < M; ++i) {
-    for (size_t j = 0; j < N; ++j) {
-      hA[i + j*lda] = A[i][j];
-    }
+for (size_t i = 0; i < M; ++i) {
+  for (size_t j = 0; j < N; ++j) {
+    hA[i + j*lda] = A[i][j];
   }
 }
 ```

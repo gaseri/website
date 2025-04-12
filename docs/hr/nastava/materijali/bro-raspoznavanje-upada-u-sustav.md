@@ -89,8 +89,11 @@ $ make install
 Nakon instalacije, potrebno je postaviti putanju do Bro-a:
 
 ``` shell
-# export PATH=/usr/local/bro/bin:$PATH
-# bro -v
+export PATH=/usr/local/bro/bin:$PATH
+bro -v
+```
+
+``` shell-session
 bro version 2.2-75
 ```
 
@@ -108,8 +111,10 @@ Za upravljanje jednom instancom Bro-a lokalnog hosta potrebno je izmijeniti sadr
 Pokretanje BroControl ljuske (kako bi mogao pratiti promet, korisnik mora pokrenuti BroControl kao root):
 
 ``` shell
-# broctl
+sudo broctl
+```
 
+``` tcshcon
 Welcome to BroControl 1.2-3
 
 Type "help" for help.
@@ -119,7 +124,7 @@ Type "help" for help.
 
 Kod prvog korištenja BroControl ljuske, naredbom install će se izvesti inicijalna konfiguracija:
 
-```
+``` tcshcon
 [BroControl] > install
 removing old policies in /usr/share/bro/.site ... done.
 creating policy directories ... done.
@@ -135,7 +140,7 @@ Ukoliko nakon toga dođe do modificiranja BroControla kao što je promjena konfi
 
 Bro instanca se pokreće naredbom start, a zaustavlja sa stop:
 
-```
+``` tcshcon
 [BroControl] > start
 starting bro ...
 [BroControl] > status

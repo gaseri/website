@@ -42,7 +42,7 @@ Stvorimo korisnika koji će se koristiti za replikaciju:
 CREATE USER 'victorglushkov'@'%' IDENTIFIED BY 'h4k3r1n3c3pr0b1t10v0';
 ```
 
-```
+``` shell-session
 Query OK, 0 rows affected (0.000 sec)
 ```
 
@@ -52,7 +52,7 @@ Uočimo da smo korisniku omogućili pristup od bilo kuda navođenjem znaka posto
 GRANT REPLICATION SLAVE ON *.* TO 'victorglushkov'@'%';
 ```
 
-```
+``` shell-session
 Query OK, 0 rows affected (0.000 sec)
 ```
 
@@ -80,7 +80,7 @@ U nastavku uzimamo da je korisnik koji pristupa bazi podataka na primarnom poslu
 FLUSH TABLES WITH READ LOCK;
 ```
 
-```
+``` shell-session
 Query OK, 0 rows affected (0.001 sec)
 ```
 
@@ -88,7 +88,7 @@ Query OK, 0 rows affected (0.001 sec)
 SHOW MASTER STATUS;
 ```
 
-```
+``` shell-session
 +--------------------+----------+--------------+------------------+
 | File               | Position | Binlog_Do_DB | Binlog_Ignore_DB |
 +--------------------+----------+--------------+------------------+
@@ -110,7 +110,7 @@ Otključajmo tablice SQL upitom `UNLOCK TABLES` ([dokumentacija](https://mariadb
 UNLOCK TABLES;
 ```
 
-```
+``` shell-session
 Query OK, 0 rows affected (0.001 sec)
 ```
 
@@ -139,7 +139,7 @@ CHANGE MASTER TO
   MASTER_USE_GTID = slave_pos;
 ```
 
-```
+``` shell-session
 Query OK, 0 rows affected (0.001 sec)
 ```
 
@@ -160,7 +160,7 @@ Pokrenimo repliku SQL upitom `START SLAVE` ([dokumentacija](https://mariadb.com/
 START SLAVE;
 ```
 
-```
+``` shell-session
 Query OK, 0 rows affected (0.001 sec)
 ```
 
@@ -170,7 +170,7 @@ Uvjerimo se da je replikacija uspješno pokrenuta SQL upitom `SHOW SLAVE STATUS`
 SHOW SLAVE STATUS\G
 ```
 
-```
+``` shell-session
 *************************** 1. row ***************************
                Slave_IO_State: Waiting for master to send event
                   Master_Host: db01.example.com

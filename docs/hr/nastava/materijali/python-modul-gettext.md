@@ -45,6 +45,9 @@ author: Vedran Miletić
     ``` shell
     $ xgettext kalendar.py
     $ cat messages.po
+    ```
+
+    ``` po
     # SOME DESCRIPTIVE TITLE.
     # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
     # This file is distributed under the same license as the PACKAGE package.
@@ -72,7 +75,7 @@ author: Vedran Miletić
     - u ovoj datoteci je nužno postaviti jezik na hrvatski promjenom `"Language: \n"` u `"Language: hr\n"` i kodiranje na UTF-8 promjenom `"Content-Type: text/plain; charset=CHARSET\n"` u `"Content-Type: text/plain; charset=UTF-8\n"`, a ostala polja bi bilo dobro popuniti
     - prijevodi se zatim upisuju pod `msgstr ""` na način
 
-        ```
+        ``` po
         #: kalendar.py:7 kalendar.py:12
         msgid "Print a calendar"
         msgstr "Ispis kalendara"

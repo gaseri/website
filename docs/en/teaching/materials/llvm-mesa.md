@@ -34,7 +34,7 @@ We will start by running [clinfo](https://github.com/Oblomov/clinfo), a simple O
 clinfo --version
 ```
 
-``` text
+``` shell-session
 clinfo version 3.0.21.02.21
 ```
 
@@ -44,7 +44,7 @@ When `--list` parameter is specified, `clinfo` will print the list of OpenCL pla
 clinfo --list
 ```
 
-``` text
+``` shell-session
 Platform #0: Clover
  `-- Device #0: AMD Radeon RX 6800 (SIENNA_CICHLID, DRM 3.44.0, 5.16.12-zen1-1-zen, LLVM 13.0.1)
 ```
@@ -55,7 +55,7 @@ We can see that we have only one platform (Clover) and only one device (Radeon R
 clinfo
 ```
 
-``` text
+``` shell-session
 Number of platforms                               1
   Platform Name                                   Clover
   Platform Vendor                                 Mesa
@@ -420,7 +420,7 @@ The list of supported architectures can be obtained using the `--version` parame
 
 Supported architectured are listed under `Registered Targets`:
 
-``` text
+``` shell-session
 LLVM (http://llvm.org/):
   LLVM version 16.0.3
   Optimized build.
@@ -479,7 +479,7 @@ Each architecture generation has a number of processors. [The official documenta
 
 The available processors and features are:
 
-``` text
+``` shell-session
 Available CPUs for this target:
 
   bonaire     - Select the bonaire processor.

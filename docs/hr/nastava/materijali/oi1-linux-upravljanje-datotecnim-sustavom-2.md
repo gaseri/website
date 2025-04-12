@@ -53,7 +53,7 @@ author: Luka Vretenar
 - Za provjeru vlasništva i prava nad pojedinom datotekom možemo iskoristiti naredbu `ls -l`.
 - Primjer dobivenog izlaza:
 
-    ```
+    ``` shell-session
     drwxr-xr-x 2 lukav lukav 4096 Nov  9 22:38 direktorij
     -rw-r--r-- 1 lukav lukav   74 Nov  9 22:38 primjer.txt
     ```
@@ -70,7 +70,7 @@ author: Luka Vretenar
 
 - Niz koji definira prava pristupa možemo dalje podijeliti na četri segmenata:
 
-    ```
+    ``` shell-session
     d rwx rwx rwx
     ```
 

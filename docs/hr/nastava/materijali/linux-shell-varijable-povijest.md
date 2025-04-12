@@ -55,21 +55,28 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov, Anja Vrbanjac
 - operacijski sustavi slični Unixu imaju mehanizam prijenosa okoline svim procesima djeci koje je stvorio neki proces roditelj
 - vrijednost varijable definirane u ljusci neće se naslijediti u nekoj skripti ljuske; **primjer:**
 
-    ``` shell
-    # u promptu pišemo:
-    $ VAR1=1
-    $ emacs pr1.sh
+    - u promptu pišemo:
 
-    # unutar skripte pr1.sh pišemo
+        ``` shell
+        $ VAR1=1
+        $ emacs pr1.sh
+        ```
 
-    #! /bin/bash
-    echo "Vrijednost varijable je $VAR1"
-    VAR1=2
-    echo "Vrijednost varijable je $VAR1"
+    - unutar skripte `pr1.sh` pišemo:
 
-    $ chmod +x pr1.sh # označimo skriptu za pokretanje
-    $ ./pr1.sh # pokrećemo skriptu
-    ```
+        ``` bash
+        #!/bin/bash
+        echo "Vrijednost varijable je $VAR1"
+        VAR1=2
+        echo "Vrijednost varijable je $VAR1"
+        ```
+
+    - pokrećemo:
+
+        ``` shell
+        $ chmod +x pr1.sh # označimo skriptu za pokretanje
+        $ ./pr1.sh # pokrećemo skriptu
+        ```
 
 - da varijabla ljuske postane [varijabla okoline](https://en.wikipedia.org/wiki/Environment_variable) (engl. *environment variable*) potrebno je napraviti izvoz (engl. *export*)
 

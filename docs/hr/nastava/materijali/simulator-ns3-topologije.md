@@ -10,7 +10,7 @@ Topologije mreža koje srećemo u praksi najčešće nisu jednostavne kao ovdje 
 
 Najjednostavnija topologija zvijezde koja nije istovremeno i linearna je oblika "zvijezde s tri kraka", odnosno
 
-```
+``` text
            n3
            /
           /
@@ -32,7 +32,7 @@ NodeContainer nodes24 (allNodes.Get (1), allNodes.Get (3));
 
 Nešto složeniji primjer bila bi proširena zvijezda oblika
 
-```
+``` text
                     n4 ----- n5
                     /
                    /
@@ -64,7 +64,7 @@ NodeContainer nodes67 (allNodes.Get (5), allNodes.Get (6));
 
 Još jedan vrlo zanimlji primjer topologije zvijezde je
 
-```
+``` text
     n4  n3
      \  /
       \/
@@ -93,7 +93,7 @@ Instalacija point-to-point veza, postavljanje IP adresa i instalacija aplikacija
 
 Topologija bučice (engl. *dumbell*) je vrlo često korištena podvrsta zvjezdaste topologije, zbog čega ćemo je detaljnije analizirati. U općenitom slučaju ona se sastoji od dva usmjerivača povezana vezom tipa točka-do-točke na koje su zatim povezani domaćini. Najjednostavniji primjer topologije bučice je ona koja ima dva usmjerivača (označenih s `n2` i `n3`) s po dva domaćina.
 
-```
+``` text
 n1 ----\              /---- n5
         \            /
         n3 -------- n4
@@ -159,7 +159,7 @@ Modul `point-to-point-layout` pomaže nam u stvaranju topologija sa više čvoro
 
 Kao što smo već vidjeli, topologija bučice ima jednu središnju vezu, a na svakom od krajnjih čvorova određeni broj čvorova povezanih na krajnji čvor. Broj čvorova da desne i lijeve strane bučice ne mora biti isti.
 
-```
+``` text
     n4  n3       n8   n9
      \  /         \   /
       \/           \ /
@@ -171,7 +171,7 @@ n5 -- n1 ---------- n2 -- n10
 
 Kod toplogije rešetke susjedni čvorovi povezani su tako da tvore rešetkastu strukturu.
 
-```
+``` text
 n11 -- n12 -- n13 -- n14
  |      |      |      |
  |      |      |      |
@@ -183,7 +183,7 @@ n31 -- n32 -- n33 -- n34
 
 Topologija zvijezde stvara se na način koji smo već spomenuli; na jedan središnji čvor povežemo najmanje tri čvora tako da izgledom podsjećaju na zvijezdu.
 
-```
+``` text
     n4  n3
      \  /
       \/

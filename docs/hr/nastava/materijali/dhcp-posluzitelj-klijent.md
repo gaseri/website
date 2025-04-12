@@ -80,7 +80,7 @@ unutar koje se mogu nalaziti konfiguracijske naredbe isteka vremena (`timeout`),
 !!! danger
     Moguće je da `dhclient` kod pokretanja javi pogrešku oblika:
 
-    ```
+    ``` shell-session
     System has not been booted with systemd as init system (PID 1). Can't operate.
     Failed to connect to bus: Host is down
     ```
@@ -136,7 +136,7 @@ DHCP klijenti koji zatraže IP adresu od poslužitelja dobit će adresu u raspon
 
 Stvorimo jednostavnu mrežu u kojoj se nalaze dva računala n1 i n2 s DHCP klijentima i domaćin n4 s DHCP poslužiteljem vezani preklopnikom n3. Mreža ima raspon adresa 172.16.25.0/24 i DHCP poslužitelj će imati adresu 172.16.25.1, a klijentima će dinamički dodjeljivati adrese od 172.16.25.20 do 172.16.249. Mreža ima topologiju oblika
 
-```
+``` text
 n1
  \
   \

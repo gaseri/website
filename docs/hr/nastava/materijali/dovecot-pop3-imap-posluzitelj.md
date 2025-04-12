@@ -11,7 +11,7 @@ author: Ivan Ivakić, Vedran Miletić
 Jednostavno pokrenimo sljedeću naredbu u terminalu:
 
 ``` shell
-# yum install dovecot
+sudo yum install dovecot
 ```
 
 ## Osnovna konfiguracija
@@ -20,7 +20,7 @@ Dovecot će većinu stvari konfigurirati pri instalaciji, no možda nije loše u
 
 Otvorimo datoteku `/etc/dovecot/dovecot.conf` i pronađimo sljedeće linije:
 
-``` shell
+``` ini
 # Log file to use for error messages, instead of sending them to syslog.
 # /dev/stderr can be used to log into stderr.
 log_path = /var/dovecot/debug/log
@@ -29,24 +29,24 @@ log_path = /var/dovecot/debug/log
 Navedimo proizvoljnu putanju do datoteke (paziti pritom da direktoriji i sama datoteka postoje) te ponovno pokrenimo dovecot servis.
 
 ``` shell
-# systemctl restart dovecot
+sudo systemctl restart dovecot
 ```
 
 Ukoliko sve prođe u redu dobit ćemo poruku:
 
-```
+``` shell-session
 Restarting IMAP/POP3 mail server: dovecot.
 ```
 
 a ukoliko postoji greška u konfiguracijskoj datoteci nešto slično:
 
-```
+``` shell-session
 Can't open log file /var/dovecot/debug: Is a directory failed!
 ```
 
 Primjetimo da se uglavnom javi i u čemu je problem što uvelike pomaže pri uspješnom konfiguriranju. Linije koje nas potom zanimaju su postavljanje protokola i definiranje putanja do `inbox`-ova koje ćemo koristiti. Za potrebe testiranja kreirao sam novog korisnika `test` sa istom šifrom `test`.
 
-``` shell
+``` ini
 # Protocols we want to be serving: imap imaps pop3 pop3s managesieve
 # If you only want to use dovecot-auth, you can set this to "none".
 #protocols = imap imaps
@@ -55,25 +55,25 @@ protocols = imap imaps
 
 Dodajmo u protokole `pop3`:
 
-```
+``` ini
 protocols = imap imaps pop3
 ```
 
 Sljedeće što treba učiniti je postaviti putanje do inboxova, prije svega treba pronaći na kojoj su "fizičkoj" lokaciji mailovi pa potom pronaći liniju u konfiguracijskoj datoteci Dovecota te ju uputiti na prethodno pronađenu lokaciju:
 
-```
+``` ini
 mail_location = /var/mail/%u
 ```
 
 Primjetite `%u` koji dinamički označava korisničko ime (engl. **u**ser). Mogućih opcija je još nekoliko, primjerice ako bi htjeli imati više domena sa više korisnika koristili bi konfiguraciju sličniju sljedećoj:
 
-```
+``` ini
 mail_location = /var/%d/mail/%u
 ```
 
 ili pak:
 
-```
+``` ini
 mail_location = /%h/var/mail/%d/%n
 ```
 
@@ -81,7 +81,7 @@ ukoliko bi htjeli referencirati na home direktorij (`%h`) koristeći i domenu (`
 
 Podesimo još mogućnost autentificiranja lozinkama u plain text obliku u liniji:
 
-```
+``` ini
 disable_plaintext_auth = no
 ```
 
@@ -106,7 +106,7 @@ $ telnet localhost 110
 
 će nas spojiti na POP3 pri čemu ćemo dobiti ispis:
 
-```
+``` shell-session
 Trying 127.0.0.1...
 Connected to localhost.
 Escape character is '^]'.
@@ -117,30 +117,30 @@ Prijavimo se kao `test`, dohvatimo inbox te pročitajmo prvu poruku.
 
 Ključna riječ `user` nakon koje slijedi korisničko ime:
 
-```
+``` shell-session
 user test
 +OK
 ```
 
 Ključna riječ `pass` nakon koje slijedi lozinka
 
-```
+``` shell-session
 pass test
 +OK Logged in.
 ```
 
 Primjer pogrešne naredbe
 
-```
+``` shell-session
 dummy-naredba
 -ERR Unknown command: DUMMY-NAREDBA
 ```
 
 Ključna riječ `list` koja ispisuje broj poruka i pripadajuće veličine
 
-```
- list
- +OK 3 messages:
+``` shell-session
+list
++OK 3 messages:
 1 632
 2 666
 3 681
@@ -149,7 +149,7 @@ Ključna riječ `list` koja ispisuje broj poruka i pripadajuće veličine
 
 Ključna riječ `retr` nakon koje slijedi id poruke koju želimo dohvatiti
 
-```
+``` shell-session
 retr 1
 +OK 632 octets
 ```

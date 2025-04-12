@@ -29,7 +29,7 @@ Potrebna su podešenja tri konfiguracijske datoteke za podešavanje NFS servera:
 
 Datoteka `/etc/exports` je u obliku:
 
-```
+``` ini
 directory machine1(option11,option12)
 ```
 
@@ -40,7 +40,7 @@ Directory označava onaj direktorij koji želimo dijeliti. Machine 1 je klijent 
 
 Primjer takve datoteke:
 
-```
+``` ini
 /export/shared *(rw)
 ```
 
@@ -65,8 +65,8 @@ Zatim oblikujemo datoteku sa dozvolama:
 Dodajemo onoliko IP adresa u svaki red koliko ima klijenata kojima želimo dopustiti pristup. Stvaram direktorij koji sam gore naveo da želim dijeliti i startam daemon:
 
 ``` shell
-# systemctl restart nfs-kernel-server.service
-# showmount -e
+sudo systemctl restart nfs-kernel-server.service
+sudo showmount -e
 ```
 
 ## Konfiguracija klijenta
@@ -75,7 +75,7 @@ Za uspostavu klijenta potrebni su portmapper, rpc.statd i rpc.lockd, i moraju bi
 
 U datoteci `/etc/fstab` imamo:
 
-```
+``` ini
 192.168.32.128:/export/shared /mnt/home
 ```
 

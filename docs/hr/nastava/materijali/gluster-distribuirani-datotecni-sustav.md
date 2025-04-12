@@ -65,7 +65,7 @@ Kako bismo mogli najbolje iskoristiti mogućnost redundancije datoteka u svrhu n
 
 GlusterFS ćemo postaviti na tri računala, od čega će 2 računala biti serveri sa repozitorijem podataka dok će treće računalo biti klijentsko računalo. Ako bismo imali tri računala, mogli bismo ih mrežno povezati te vidjeti kako GlusterFS radi u realnom okruženju. Budući da nemamo tri računala, koristiti ćemo tri virtualne mašine sa operativnim sustavom Fedora 20. Nakon što sva tri računala uključimo, svakome dodijelimo IP adresu te im pomoću DNS-a dodijelimo smislena imena. U ovom slučaju su nam IP adrese i imena domaćina koja ćemo unijeti u datoteku `/etc/hosts`:
 
-```
+``` ini
 192.168.255.243 HOST1
 192.168.255.247 HOST2
 192.168.255.242 CLIENT
@@ -74,7 +74,7 @@ GlusterFS ćemo postaviti na tri računala, od čega će 2 računala biti server
 Potrebno je pripaziti na postavke vatrozida kako bi nam računala mogla neometano komunicirati međusobno. Na svakom računalu omogućimo neometani pristup sa ostalih računala pomoću naredbe:
 
 ``` shell
-# iptables -I INPUT -p all -s 192.168.255.247 -j ACCEPT
+sudo iptables -I INPUT -p all -s 192.168.255.247 -j ACCEPT
 ```
 
 Naravno, mijenjamo IP adrese ostalih dva računala kako bismo omogućili pristup sa pravih IP adresa. Nakon što smo dozvolili vanjski pristup, potrebno je instalirati potrebne pakete programa. Kao prvo, potrebno je instalirati paket FUSE koji nam omogućava kreiranje sustava za dijeljenje podataka. Nakon toga, na serveru je potrebno instalirati sljedeće pakete: `glusterfs`, `glusterfs-cli`, `glusterfs-fuse`, `glusterfs-libs` i `glusterfs-server`.
@@ -82,32 +82,52 @@ Naravno, mijenjamo IP adrese ostalih dva računala kako bismo omogućili pristup
 Slijedi nam pokretanje glusterd servisa na oba servera kako bismo mogli upravljati kreiranim particijama. Pokrećemo ih naredbom:
 
 ``` shell
-# /etc/init.d/glusterd start
+sudo /etc/init.d/glusterd start
 ```
 
 na oba servera. Nakon što su servisi pokrenuti, potrebno je povezati servere kako bi oni međusobno znali komunicirati. Na prvom serveru pokrenemo naredbu
 
 ``` shell
-# gluster peer probe 192.168.255.247
+sudo gluster peer probe 192.168.255.247
+```
+
+``` shell-session
 peer probe: success
-# gluster peer status
+```
+
+``` shell
+sudo gluster peer status
+```
+
+``` shell-session
 Number of Peers: 1
 ```
 
 i time mu pridružujemo drugi server da bi radili zajedno. Ako pokušamo dodati taj server na kojem radimo (IP adresa 192.168.255.243), dobit ćemo poruku da server ne mora dodavati svoju IP adresu u listu.
 
 ``` shell
-# gluster peer probe 192.168.255.243
+sudo gluster peer probe 192.168.255.243
+```
+
+``` shell-session
 peer probe: success: on localhost not needed
 ```
 
 Nakon što su serveri povezani u bazen pohrane (engl. *storage pool*), možemo upravljati cijelim klasterom servera sa jednog računala. Kako bismo kreirali dvoje particije veličine 100 MB, svaku na jednom serveru, unosimo sljedeću naredbu:
 
 ``` shell
-# gluster volume create test-volume HOST1:/exp3 HOST2:/exp4 force
-volume create: test-volume: success: please start the volume to access data
-# gluster volume info
+sudo gluster volume create test-volume HOST1:/exp3 HOST2:/exp4 force
+```
 
+``` shell-session
+volume create: test-volume: success: please start the volume to access data
+```
+
+```shell
+sudo gluster volume info
+```
+
+``` shell-session
 Volume Name: test-volume
 Type: Distribute
 Volume ID: 6662735e-7463-4513-822b-70eb7988075c
@@ -122,22 +142,31 @@ Brick2: HOST2:/exp4
 Iz slike je vidljivo da smo na prvom serveru kreirali mapu `/exp3` i na drugom serveru mapu `/exp4` te ih spojili i jednu koja će se prikazivati na klijentskom računalu i imati veličinu 200 MB. Prije toga smo pokrenuli i naredbu:
 
 ``` shell
-# gluster volume create test-volume-replika replica 2 HOST1:/exp1 HOST2:/exp2 force
+sudo gluster volume create test-volume-replika replica 2 HOST1:/exp1 HOST2:/exp2 force
 ```
 
 i kreirali nove dvije mape, svaka kapaciteta 100MB koje rade paralelno te se klijentu prikazuje mapa veličine 100MB. Svi podaci koju stavljamo u tu mapu se kopiraju na oba servera te time držimo rezervnu kopiju svih podataka. Ako jedan od servera prestane funkcionirati, klijent će i dalje moći pristupiti svojim podacima. Sljedi nam samo pokretanje tih particija sljedećim naredbama:
 
 ``` shell
-# gluster volume start test-volume
+sudo gluster volume start test-volume
+```
+
+``` shell-session
 volume start: test-volume: success
-# gluster volume start test-volume-replika
+```
+
+``` shell
+sudo gluster volume start test-volume-replika
+```
+
+``` shell-session
 volume start: test-volume: success
 ```
 
 Postoje još tri načina kreiranja particija: striped volume, distributed striped volume i distributed replicated volume. Striped volume omogućava podacima da se razdjele na manje djelove te tako postave na servere. Distributed striped volume isto tako dijeli podatke na manje dijelove ali ih može postaviti na više brickova na serverima. Jedini uvjet je da broj brickova bude umnožak broja strijepva (manjih dijelova). Distributed replicated volume je sličan repliciranom, ali može imati kombinacije brickova na koje se pohranjuju podaci i onih brickova na kojima se čuvaju kopije. Naredbom
 
 ``` shell
-# gluster volume create test-volume replica 2 server1:/exp1 server1:/exp3 server2:/exp2 server2:/exp4"
+sudo gluster volume create test-volume replica 2 server1:/exp1 server1:/exp3 server2:/exp2 server2:/exp4"
 ```
 
 kreiramo dvije kombinacije brickova, `server1:/exp1` i `server1:/exp3` te `server2:/exp2` i `server2:/exp4`. Tako svi podaci koji se postavljaju u mapu exp1 budu replicirani u mapu exp3 na istom serveru.
@@ -145,8 +174,8 @@ kreiramo dvije kombinacije brickova, `server1:/exp1` i `server1:/exp3` te `serve
 U daljnjem primjeru pokazati ćemo samo prva dva načina, distribuirani i replicirani. Kako bismo kreirane particije mogli vidjeti na klijentovom računalu, moramo na klijentovo računalo instalirati sljedeće pakete: `fuse`, `fuse-libs`, `glusterfs-core`, `glusterfs-rdma` i `glusterfs-fuse`. Nakon instalacije paketa, na klijentovom računalu naredbom mount označavamo naziv particije na serveru te naziv mape koju ćemo i sami vidjeti na klijentovom računalu.
 
 ``` shell
-# mount -t glusterfs HOST1:/test-volume-replika /replika
-# mount -t glusterfs HOST1:/test-volume /bricked
+sudo mount -t glusterfs HOST1:/test-volume-replika /replika
+sudo mount -t glusterfs HOST1:/test-volume /bricked
 ```
 
 Ovime smo na klijentovom računalu kreirali mape `/bricked` i `/replika` koje nam predstavljaju skup svih podataka koji su razdijeljeni po serverima. Ako u mapi `/bricked` kreiramo npr. mapu `testni`, ona će se kreirati na jednom od servera, u ovom slučaju na prvom serveru u mapi `/exp3`.
@@ -156,15 +185,20 @@ Ako pak u mapi `/replika` kreiramo datoteku `test.txt`, ona će se kopirati na o
 Ovo je prikaz dva osnovna načina rada GlusterFS-a, no što ako želimo mijenjati broj brickova na nekom serveru kako bismo povećali dodijeljeni diskovni prostor. To možemo uraditi sljedećom naredbom na prvom serveru:
 
 ``` shell
-# gluster volume add-brick test-volume HOST1:/exp5 force
+sudo gluster volume add-brick test-volume HOST1:/exp5 force
+```
+
+``` shell-session
 volume add-brick: success
 ```
 
 Ovime smo dodali dodatni brick veličine 100 MB na prvom serveru te time klijentov dostupan prostor povećali na 300 MB. Naredba `gluster volume info` nam prikazuje novi dodani brick.
 
 ``` shell
-# gluster volume info
+sudo gluster volume info
+```
 
+``` shell-session
 Volume Name: test-volume
 Type: Distribute
 Volume ID: 6662735e-7463-4513-822b-70eb7988075c

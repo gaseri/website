@@ -53,7 +53,7 @@ Naively trying to compile this code will result in linking errors due to missing
 ./bin/clang target.1.c
 ```
 
-``` text
+``` shell-session
 /usr/bin/ld: /lib/x86_64-linux-gnu/Scrt1.o: in function `_start':
 (.text+0x17): undefined reference to `main'
 /usr/bin/ld: /tmp/target-7a0854.o: in function `vec_mult':
@@ -74,7 +74,7 @@ The symbols in the generated `target.1.o` file can be inspected using [llvm-objd
 ./bin/llvm-objdump --syms target.1.o
 ```
 
-``` text
+``` shell-session
 target.1.o:     file format elf64-x86-64
 
 SYMBOL TABLE:
@@ -95,7 +95,7 @@ There is a notable lack of `__omp_`- and `__kmpc_`-prefixed symbols, which would
 ./bin/llvm-objdump --syms target.1.o
 ```
 
-``` text
+``` shell-session
 target.1.o:     file format elf64-x86-64
 
 SYMBOL TABLE:
@@ -121,7 +121,7 @@ While offloading symbols are present, no images for a target architectures are p
 ./bin/llvm-objdump --offloading target.1.o
 ```
 
-``` text
+``` shell-session
 target.1.o:     file format elf64-x86-64
 ```
 
@@ -139,7 +139,7 @@ After printing the list of offloading images, we can see that the one for GFX942
 ./bin/llvm-objdump --offloading target.1.o
 ```
 
-``` text
+``` shell-session
 target.1.o:     file format elf64-x86-64
 
 OFFLOADING IMAGE [0]:
@@ -159,7 +159,7 @@ It is possible to generate code for multiple offload architectures, which result
 ./bin/llvm-objdump --offloading target.1.o
 ```
 
-``` text
+``` shell-session
 target.1.o:     file format elf64-x86-64
 
 OFFLOADING IMAGE [0]:
@@ -193,7 +193,7 @@ Enabling a feature, such as [HSA XNACK](https://niconiconi.neocities.org/tech-no
 vmiletic@atlas:~/workspace/llvm-project/builddir$ ./bin/llvm-objdump --offloading target.1.o
 ```
 
-``` text
+``` shell-session
 target.1.o:     file format elf64-x86-64
 
 OFFLOADING IMAGE [0]:

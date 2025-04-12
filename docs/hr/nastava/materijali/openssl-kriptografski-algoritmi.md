@@ -107,7 +107,7 @@ enc               engine            errstr            gendsa
 
 Slijedi lista naredbi za hashiranje:
 
-```
+``` shell-session
 Message Digest commands (see the `dgst' command for more details))
 blake2b512        blake2s256        gost              md2
 md4               md5               rmd160            sha1
@@ -117,7 +117,7 @@ sha256            sha3-224          sha3-256          sha3-384
 
 Naposlijetku je lista naredbi za šifriranje:
 
-```
+``` shell-session
 Cipher commands (see the `enc' command for more details))
 aes-128-cbc       aes-128-ecb       aes-192-cbc       aes-192-ecb
 aes-256-cbc       aes-256-ecb       aria-128-cbc      aria-128-cfb
@@ -213,7 +213,7 @@ Zaporka koju ukucate se ne prikazuje ni u obliku zvjezdica ili točaka kako ne b
 
 Ovdje vršimo šifriranje tekstualne datoteke `datoteka.txt` u `datoteka.txt.enc` korištenjem algoritma Blowfish u obliku CBC (parametar `-bf-cbc`). Novije verzije OpenSSL-a uz izvršavanje traženog šifriranja će dati upozorenje:
 
-```
+``` shell-session
 *** WARNING : deprecated key derivation used.
 Using -iter or -pbkdf2 would be better.
 ```

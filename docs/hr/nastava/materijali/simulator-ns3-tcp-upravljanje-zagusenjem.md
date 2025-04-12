@@ -244,12 +244,23 @@ $ gnuplot
 
 Nakon pokretanja gnuplota omogućen nam je unos naredbi. Pretpostavimo da su podaci o veličini prozora spremljeni u datoteku `cwnd-graph.txt`, a želimo kao izlaz dobiti datoteku `cwnd-graph.png`. To možemo ostvariti idućim nizom naredbi.
 
-```
+``` tcshcon
 gnuplot> set terminal png size 640,480
 gnuplot> set output "cwnd-graph.png"
 gnuplot> plot "cwnd-data.txt" using 1:2 title 'Congestion Window' with linespoints
 gnuplot> exit
 ```
+
+Alternativno, stvorimo datoteku `cwnd-instructions.gnuplot` sadržaja:
+
+``` gnuplot
+set terminal png size 640,480
+set output "cwnd-graph.png"
+plot "cwnd-data.txt" using 1:2 title 'Congestion Window' with linespoints
+exit
+```
+
+I zatim možemo naredbom `gnuplot cwnd-instructions.gnuplot` nacrtati graf.
 
 ## Dodatak: korištenje funkcionalnosti simulatora za crtanje grafova
 

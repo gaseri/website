@@ -10,7 +10,7 @@ U nastavku je prijevod Tvrtka Bedekovića eseja [Teach Yourself Programming in T
 
 Uđite u bilo koju knjižaru, i vidjet ćete naslove kao *Naučite Javu u 7 dana* uz beskonačne varijacije koje nude učenje Visual Basica, Windowsa, Interneta i ostalog u nekoliko dana ili sati. Napravio sam [sljedeći upit](https://www.amazon.com/exec/obidos/search-handle-url/ix=books&rank=%2Bfeaturedrank&fqp=power%01pubdate%3A%20after%201992%20and%20title%3A%20days%20and%0D%20%28title%3A%20learn%20or%20title%3A%20teach%20yourself%29&sz=25&pg=1/ref=s_b_np) na [Amazonu](https://www.amazon.com/):
 
-```
+``` text
 pubdate: after 1992 and title: days and (title: learn or title: teach yourself)
 ```
 

@@ -25,19 +25,23 @@ author: Luka Vretenar
 
     - pokretanje direktnim pozivanjem `perl` interpretera:
 
-        ``` perl
+        ``` shell
         perl skripta.pl
         ```
 
     - dodjeljivanjem prava za pokretanje skripti te pokretanje skripte kao zasebnu aplikaciju na `Linux`-u:
 
-        ``` perl
-        # prvo datoteci dodijelimo prava pokretanja
-        chmod u+x skripta.pl
+        - prvo datoteci dodijelimo prava pokretanja:
 
-        # pokrenemo skriptu
-        ./skripta.pl
-        ```
+            ``` shell
+            chmod u+x skripta.pl
+            ```
+
+        - pokrenemo skriptu:
+
+            ``` shell
+            ./skripta.pl
+            ```
 
 !!! tip
     Znak `#` na početku linije nam ujedno označava i komentar u kodu. Linije koje započinju tim znakom će biti ignorirane od strane `perl` interpretera pri izvršavanju skripte.

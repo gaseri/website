@@ -89,7 +89,7 @@ Unutar upravo stvorenog direktorija `pki` nalaze se prazni direktoriji `private`
 
 Kako se ne bi morali baviti metapodacima certifikata koje OpenSSL stvara, možemo koristiti datoteku `vars`. Primjer te datoteke na nekim distribucijama Linuxa postoji kao `vars.example` u `/usr/share/easy-rsa`, a mi ćemo je sami stvoriti neovisno o tom primjeru. Iz `vars.example` za nas su relevantne samo linije:
 
-```
+``` sh
 #set_var EASYRSA_REQ_COUNTRY    "US"
 #set_var EASYRSA_REQ_PROVINCE   "California"
 #set_var EASYRSA_REQ_CITY       "San Francisco"
@@ -102,7 +102,7 @@ Kako se ne bi morali baviti metapodacima certifikata koje OpenSSL stvara, možem
 
 Prepoznajemo metapodatke X.509 certifikata i postavku veličine ključa. Odkomentirati ćemo linije i postavit ćemo vrijednosti. U direktoriju `pki` stvorimo datoteku `vars` sadržaja:
 
-```
+``` sh
 set_var EASYRSA_REQ_COUNTRY    "HR"
 set_var EASYRSA_REQ_PROVINCE   "Primorje-Gorski Kotar County"
 set_var EASYRSA_REQ_CITY       "Rijeka"
@@ -438,7 +438,7 @@ Fri May 29 00:03:16 2020 Initialization Sequence Completed
 
 Klijent se povezao na poslužitelj i zauzeo je adrese 172.21.0.5 i 172.21.0.6. Općenito se u ovoj varijanti adrese pojedinim klijenatim koji se povezuju na poslužitelj dodjeljuju ovisno o poretku kojim se klijenti povežu. Uočimo da je i poslužitelj napisao poruku o novom klijentu:
 
-```
+``` shell-session
 Fri May 29 00:03:15 2020 127.0.0.1:36623 peer info: IV_VER=2.4.7
 Fri May 29 00:03:15 2020 127.0.0.1:36623 peer info: IV_PLAT=linux
 Fri May 29 00:03:15 2020 127.0.0.1:36623 peer info: IV_PROTO=2

@@ -63,7 +63,7 @@ MAC adresa je logično podijeljena na dva dijela. Prva 24 bita predstavljaju naz
 
 Vidjeli smo već kako unutar alata CORE čvorovi tipa `ethernet switch` povezuju čvorove u jednu podmrežu, a čvorovi tipa `router` omogućuju povezivanje različitih podmreža. Konkretno, mreža oblika
 
-```
+``` text
           n3
            |
            |
@@ -99,7 +99,7 @@ Stvaranje podmreža je trivijalan problem kada imamo praktički neograničen bro
 
 Uzmimo da su nam na raspolaganju adrese u rasponu 10.0.5.0/24 i da je zadana mreža oblika
 
-```
+``` text
 n3              n4
  \              /
   \            /
@@ -128,7 +128,7 @@ Najveća podmreža mora imati dovoljno adresa za 28 domaćina i jedan usmjeriva�
 
 Uzmimo opet da su nam na raspolaganju adrese u rasponu 10.0.5.0/24 i da je zadana mreža oblika
 
-```
+``` text
 n3              n4
  \              /
   \            /

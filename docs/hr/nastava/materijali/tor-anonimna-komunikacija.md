@@ -84,7 +84,7 @@ Postupak postavljanja middle relay-a je vrlo jednostavan, potrebno je:
 1. Nakon toga je još potrebno samo restartati Tor naredbom: sudo service tor restart
 1. Za provjeru da li proces uspješno obavljen potrebno je pronaći log datoteku u /var/log/tor/ te ukoliko u datoteci piše:
 
-    ```
+    ``` shell-session
     Self-testing indicates your ORPort is reachable from the outside. Excellent.
     ```
 

@@ -23,26 +23,26 @@ First, install the [C/C++ Extension Pack](https://marketplace.visualstudio.com/i
 
     Assuming [Red Hat Enterprise Linux 9](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/packaging_and_distributing_software/assembly_new-features-in-rhel-9_packaging-and-distributing-software#con_dynamic-build-dependencies_assembly_new-features-in-rhel-9), [CentOS Stream 9](https://www.centos.org/stream9/), [Fedora 34](https://docs.fedoraproject.org/en-US/quick-docs/fedora-and-red-hat-enterprise-linux/), or newer:
 
-    ```
+    ``` shell
     dnf builddep llvm
     ```
 
 === "🏹 Arch Linux"
 
-    ```
+    ``` shell
     curl -O https://gitlab.archlinux.org/archlinux/packaging/packages/llvm/-/raw/main/PKGBUILD
     makepg -s PKGBUILD
     ```
 
 === "🦎 openSUSE/SLES"
 
-    ```
+    ``` shell
     zypper source-install llvm19
     ```
 
 === "🍥 Debian GNU/Linux Mint"
 
-    ```
+    ``` shell
     apt build-dep llvm-toolchain-19
     ```
 

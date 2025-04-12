@@ -20,7 +20,7 @@ Let's check that Clang has been successfully compiled:
 
 The output should look like:
 
-``` text
+``` shell-session
 clang version 16.0.3 (https://github.com/llvm/llvm-project.git da3cd333bea572fb10470f610a27f22bcb84b08c)
 Target: x86_64-unknown-linux-gnu
 Thread model: posix
@@ -56,7 +56,7 @@ Executing:
 
 gives:
 
-``` text
+``` shell-session
 Hello from C
 ```
 
@@ -64,7 +64,7 @@ Therefore, the compilation and the execution were successful.
 
 Trying to compile the C++ source file `example2.cpp` containing:
 
-``` cpp
+``` c++
 #include <iostream>
 
 int main()
@@ -81,7 +81,7 @@ using the analogous command:
 
 will fail with:
 
-``` text
+``` shell-session
 /usr/bin/ld: /tmp/example-4609c2.o: in function `main':
 example2.cpp:(.text+0x6): undefined reference to `std::cout'
 /usr/bin/ld: example2.cpp:(.text+0x19): undefined reference to `std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)'
@@ -111,7 +111,7 @@ Executing `example2` like:
 
 shows that the compilation was successful:
 
-``` text
+``` shell-session
 Hello from C++
 ```
 
@@ -181,7 +181,7 @@ The output file name can be specified using the `-o` parameter. Specifying `-` a
 
 prints the resulting assembly code to the standard output:
 
-``` text
+``` shell-session
     .text
     .file   "example1.c"
     .globl  main                            # -- Begin function main
@@ -418,7 +418,7 @@ Executing `llvm-cxxfilt` with the mangled name as the argument:
 
 will print the demangled name:
 
-``` text
+``` shell-session
 std::basic_ostream<char, std::char_traits<char> >& std::operator<<<std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)
 ```
 

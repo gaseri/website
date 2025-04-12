@@ -34,7 +34,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov, Anja Vrbanjac
 !!! example "Zadatak"
     - U Vašem kućnom direktoriju napravite predloženu strukturu direktorija:
 
-        ```
+        ``` text
         studentXY ------ Studij --------- Preddiplomski -------- DINP.txt
                                    |                        |
                                    |----- Pravilnik.txt     |--- Raspored.txt

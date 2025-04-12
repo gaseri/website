@@ -64,7 +64,7 @@ author: Vanja Slavuj, Vedran Miletić
     - ignorirati -- koristi se predefinirani upravljač `signal.SIG_IGN` koji ignorira primljeni signal
     - obraditi tako da on izvršava zadanu (engl. *default*) zadaću -- koristi se predefinirani upravljač `signal.SIG_DFL` koji provodi zadanu funkciju primanja signala
 
-    ```
+    ``` python
     import os
     import signal
 

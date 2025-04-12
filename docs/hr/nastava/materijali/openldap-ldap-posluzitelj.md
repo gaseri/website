@@ -20,7 +20,7 @@ Sam zapis tekstualne baze na disku nalazi se kao struktura direktorija u stablu 
 Instalacija paketa OpenLDAP-a vrši se pomoću naredbe:
 
 ``` shell
-# apt-get install slapd ldap-utils
+sudo apt-get install slapd ldap-utils
 ```
 
 te se korisnika prilikom instalacije traži da unese lozinku za administratora u LDAP imeniku.
@@ -30,7 +30,7 @@ te se korisnika prilikom instalacije traži da unese lozinku za administratora u
 Nakon što se program uspješno instalirao, potrebno ga je konfigurirati. Konfiguraciju pokrećemo naredbom:
 
 ``` shell
-# dpkg-reconfigure slapd
+sudo dpkg-reconfigure slapd
 ```
 
 te nam se otvara prozor za konfiguriranje paketa.
@@ -47,7 +47,7 @@ Nakon toga su još tri pitanja: želimo li da se baza podataka ukloni kada se uk
 
 Nakon što smo postavili početnu konfiguraciju, možemo pretražiti koje podatke za sada imamo u svome imeniku. No, kako bi vidjeli rezultate za ovu domenu koju smo naveli moramo navesti bazu u datoteci `/etc/ldap/ldap.conf`. Ime domene se piše s oznakom `dc`. Tako se i ime razdvaja ako je odvojeno točkom.
 
-```
+``` apacheconf
 BASE    dc=local
 URI     ldap://localhost
 
@@ -66,7 +66,7 @@ te ćemo vidjeti našu organizaciju.
 
 U imeniku možemo dodavati organizacijske jedinice te sam se ja odlučio nadodati organizacijsku jedinicu grupa i organizacijsku jedinicu ljudi. Kako bi mogli nadodati te organizacijske jedinice, moramo ih prvo zapisati u LDIF datoteci u određenom formatu gdje napišemo kojoj organizaciji ih želimo pridružiti, njezino ime i klasu koja je organizacijska jedinica.
 
-```
+``` ldif
 dn: ou=People,dc=local
 ou: People
 objectClass: organizationalUnit
@@ -86,7 +86,7 @@ gdje kažemo koju akciju želimo napraviti (`add`), kojoj organiziciji radimo pr
 
 Nakon toga možemo nadodati neku grupu i korisnika, primjerice ovakvom LDIF datotekom:
 
-```
+``` ldif
 dn: cn=matko,ou=group,dc=local
 cn: matko
 gidNumber: 20000
@@ -117,7 +117,7 @@ $ ldapsearch -x gidNumber=30000
 
 možemo pretražiti koji korisnici pripadaju toj grupi te dobiti informacije o tim korisnicima kao i o samoj grupi. Izlaz naredbe `ldapsearch` je oblika:
 
-``` shell
+``` ldif
 # extended LDIF
 #
 # LDAPv3
@@ -156,7 +156,7 @@ gidNumber: 30000
 
 Također možemo modificirati podatke nekog već dodanog korisnika kako bi ga priključili nekoj drugoj grupi ili mu promjenili neke osobne podatke. Zapis u LDIF datoteci tada je drugačijeg formata. Moramo navesti za kojeg korisnika želimo mijenjati podatke, napisati tip promjene (dodavanje nove karakteristike, brisanje karakteristike ili izmjena postojeće karakteristike) te ovisno o tomu reći za koju karakteristiku to radimo i vrijednost koju želimo upisati.
 
-```
+``` ldif
 dn: uid=toni,ou=people,dc=local
 changetype: modify
 replace: gidNumber

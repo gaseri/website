@@ -192,7 +192,7 @@ U ljusci klijenta MariaDB dostupne su nam naredbe jezika SQL i brojne druge spec
 SHOW AUTHORS;
 ```
 
-```
+``` shell-session
 +--------------------------------+---------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
 | Name                           | Location                              | Comment                                                                                                                                 |
 +--------------------------------+---------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
@@ -212,7 +212,7 @@ Primjenom parametra `DATABASES` ([dokumentacija](https://mariadb.com/kb/en/show-
 SHOW DATABASES;
 ```
 
-```
+``` shell-session
 +--------------------+
 | Database           |
 +--------------------+
@@ -230,7 +230,7 @@ Naposlijetku, moguće je prikazati globalne varijable ili varijable trenutne ses
 SHOW GLOBAL VARIABLES LIKE 'have_ssl';
 ```
 
-```
+``` shell-session
 +---------------+----------+
 | Variable_name | Value    |
 +---------------+----------+
@@ -367,7 +367,7 @@ Zatim iskoristimo naredbu `SHOW` za prikaz vrijednosti globalne varijable `have_
 SHOW GLOBAL VARIABLES LIKE 'have_ssl';
 ```
 
-```
+``` shell-session
 +---------------+-------+
 | Variable_name | Value |
 +---------------+-------+
@@ -419,7 +419,7 @@ $ mkdir mariadb-server-conf/encryption
 
 Stvorimo u tom direktoriju datoteku `keyfile` u kojoj su u svakom retku identifikator ključa (cijeli broj), znak točke sa zarezom i ključ:
 
-```
+``` shell-session
 1;1cece9bfd9e0263da50bcf02d088b12889cf1eddeb7f8ffdd719b9ab23359be2
 2;df8762cdcd39d0e095a538ecad06ca94f55f805cc76841ed304ec26e4f46d2a0
 11;6bf495bc15a970f8e51b7be49e0ebad5b74fc8febccd1ff45e259ca82e35a973
@@ -475,7 +475,7 @@ Zaustavimo i pokrenimo ponovno poslužitelj kako bi učitao nove postavke pa se 
 CREATE DATABASE mojabaza;
 ```
 
-```
+``` shell-session
 Query OK, 1 row affected (0.000 sec)
 ```
 
@@ -485,7 +485,7 @@ Odaberimo je za korištenje naredbom `USE` ([dokumentacija](https://mariadb.com/
 USE mojabaza;
 ```
 
-```
+``` shell-session
 Database changed
 ```
 
@@ -495,7 +495,7 @@ Uočimo kako nam piše ime baze unutar uglatih zagrada gdje je ranije pisalo `(n
 CREATE TABLE names ( id int PRIMARY KEY, str varchar(50) ) ENCRYPTED=YES;
 ```
 
-```
+``` shell-session
 Query OK, 0 rows affected (0.004 sec)
 ```
 
@@ -505,7 +505,7 @@ Ubacimo i nešto podataka u tablicu SQL upitom `INSERT` ([dokumentacija](https:/
 INSERT INTO names VALUES (1, 'Tomislav');
 ```
 
-```
+``` shell-session
 Query OK, 1 row affected (0.001 sec)
 ```
 
@@ -513,7 +513,7 @@ Query OK, 1 row affected (0.001 sec)
 INSERT INTO names VALUES (2, 'Arijana');
 ```
 
-```
+``` shell-session
 Query OK, 1 row affected (0.001 sec)
 ```
 
@@ -523,7 +523,7 @@ Uvjerimo se da su podaci u tablici SQL upitom `SELECT` ([dokumentacija](https://
 SELECT * FROM names;
 ```
 
-```
+``` shell-session
 +----+----------+
 | id | str      |
 +----+----------+
@@ -539,7 +539,7 @@ Ova tablica i svi uneseni podaci su šifrirani korištenjem ključa s identifika
 SHOW SESSION VARIABLES LIKE 'innodb_default_encryption_key_id';
 ```
 
-```
+``` shell-session
 +----------------------------------+-------+
 | Variable_name                    | Value |
 +----------------------------------+-------+
@@ -554,7 +554,7 @@ Korištenje ključa različitog od zadanog možemo postaviti kod stvaranja tabli
 CREATE TABLE surnames ( id int PRIMARY KEY, str varchar(50) ) ENCRYPTED=YES ENCRYPTION_KEY_ID=2;
 ```
 
-```
+``` shell-session
 Query OK, 0 rows affected (0.004 sec)
 ```
 
@@ -564,7 +564,7 @@ Ponovno, ubacimo nešto podataka da imamo s čime raditi kasnije:
 INSERT INTO surnames VALUES (1, 'Lasić');
 ```
 
-```
+``` shell-session
 Query OK, 1 row affected (0.001 sec)
 ```
 
@@ -572,7 +572,7 @@ Query OK, 1 row affected (0.001 sec)
 INSERT INTO surnames VALUES (2, 'Rebić');
 ```
 
-```
+``` shell-session
 Query OK, 1 row affected (0.001 sec)
 ```
 
@@ -580,7 +580,7 @@ Query OK, 1 row affected (0.001 sec)
 INSERT INTO surnames VALUES (3, 'Kutleša');
 ```
 
-```
+``` shell-session
 Query OK, 1 row affected (0.001 sec)
 ```
 
@@ -590,7 +590,7 @@ Uvjerimo se ponovno da su podaci u tablici:
 SELECT * FROM surnames;
 ```
 
-```
+``` shell-session
 +----+----------+
 | id | str      |
 +----+----------+
@@ -630,7 +630,7 @@ Stvorimo korisnika sa svojim imenom koji će se prijavljivati s lokalnog računa
 CREATE USER 'ivanzhegalkin'@'localhost' IDENTIFIED BY 'ne3pr0v4lj1v4t4jn4l0z1nka';
 ```
 
-```
+``` shell-session
 Query OK, 0 rows affected (0.000 sec)
 ```
 
@@ -659,7 +659,7 @@ Pokušamo li sada pristupiti bazi `mojabaza` od ranije, uočit ćemo kako to ne 
 USE mojabaza;
 ```
 
-```
+``` shell-session
 ERROR 1044 (42000): Access denied for user 'ivanzhegalkin'@'localhost' to database 'mojabaza'
 ```
 
@@ -681,7 +681,7 @@ Dodijeljene privilegije mogu prikazati naredbom `SHOW GRANTS` ([dokumentacija](h
 SHOW GRANTS FOR 'ivanzhegalkin'@'localhost';
 ```
 
-```
+``` shell-session
 +----------------------------------------------------------------------------------------------------------------------+
 | Grants for ivanzhegalkin@localhost                                                                                   |
 +----------------------------------------------------------------------------------------------------------------------+
@@ -698,7 +698,7 @@ Privilegija `USAGE` ne omogućuje ništa specijalno, već samo označava da kori
 GRANT SHOW DATABASES ON *.* TO 'ivanzhegalkin'@'localhost';
 ```
 
-```
+``` shell-session
 Query OK, 0 rows affected (0.000 sec)
 ```
 
@@ -708,7 +708,7 @@ Kako bismo bili sigurni da su naše promjene privilegija aktivne, moramo sprati 
 FLUSH PRIVILEGES;
 ```
 
-```
+``` shell-session
 Query OK, 0 rows affected (0.000 sec)
 ```
 
@@ -718,7 +718,7 @@ Uočimo promjenu kod izlaza naredbe `SHOW GRANTS`:
 SHOW GRANTS FOR 'ivanzhegalkin'@'localhost';
 ```
 
-```
+``` shell-session
 +-------------------------------------------------------------------------------------------------------------------------------+
 | Grants for ivanzhegalkin@localhost                                                                                            |
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -733,7 +733,7 @@ Uvjerimo se kao obični korisnik da smo zaista dobili privilegiju pregledavanja 
 SHOW DATABASES;
 ```
 
-```
+``` shell-session
 +--------------------+
 | Database           |
 +--------------------+
@@ -751,7 +751,7 @@ Kako se čitanje podataka iz baze vrši naredbom `SELECT`, pravo čitanja podata
 GRANT SELECT ON mojabaza.* to 'ivanzhegalkin'@'localhost';
 ```
 
-```
+``` shell-session
 Query OK, 0 rows affected (0.000 sec)
 ```
 
@@ -759,7 +759,7 @@ Query OK, 0 rows affected (0.000 sec)
 FLUSH PRIVILEGES;
 ```
 
-```
+``` shell-session
 Query OK, 0 rows affected (0.000 sec)
 
 ```
@@ -768,7 +768,7 @@ Query OK, 0 rows affected (0.000 sec)
 SHOW GRANTS FOR 'ivanzhegalkin'@'localhost';
 ```
 
-```
+``` shell-session
 +-------------------------------------------------------------------------------------------------------------------------------+
 | Grants for ivanzhegalkin@localhost                                                                                            |
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -784,7 +784,7 @@ Uvjerimo se kao obični korisnik da zaista imamo privilegije pregledavanja tabli
 USE mojabaza;
 ```
 
-```
+``` shell-session
 Reading table information for completion of table and column names
 You can turn off this feature to get a quicker startup with -A
 
@@ -795,7 +795,7 @@ Database changed
 SHOW TABLES;
 ```
 
-```
+``` shell-session
 +--------------------+
 | Tables_in_mojabaza |
 +--------------------+
@@ -809,7 +809,7 @@ SHOW TABLES;
 DESCRIBE names;
 ```
 
-```
+``` shell-session
 +-------+-------------+------+-----+---------+-------+
 | Field | Type        | Null | Key | Default | Extra |
 +-------+-------------+------+-----+---------+-------+
@@ -823,7 +823,7 @@ DESCRIBE names;
 DESCRIBE surnames;
 ```
 
-```
+``` shell-session
 +-------+-------------+------+-----+---------+-------+
 | Field | Type        | Null | Key | Default | Extra |
 +-------+-------------+------+-----+---------+-------+
@@ -837,7 +837,7 @@ DESCRIBE surnames;
 SELECT * FROM names;
 ```
 
-```
+``` shell-session
 +----+----------+
 | id | str      |
 +----+----------+
@@ -851,7 +851,7 @@ SELECT * FROM names;
 SELECT * FROM surnames;
 ```
 
-```
+``` shell-session
 +----+----------+
 | id | str      |
 +----+----------+
@@ -868,7 +868,7 @@ Uvjerimo se i da nismo dobili druge privilegije:
 INSERT INTO names VALUES (5, 'Marko');
 ```
 
-```
+``` shell-session
 ERROR 1142 (42000): INSERT command denied to user 'ivanzhegalkin'@'localhost' for table 'names'
 ```
 
@@ -876,7 +876,7 @@ ERROR 1142 (42000): INSERT command denied to user 'ivanzhegalkin'@'localhost' fo
 DROP TABLE surnames;
 ```
 
-```
+``` shell-session
 ERROR 1142 (42000): DROP command denied to user 'ivanzhegalkin'@'localhost' for table 'surnames'
 ```
 

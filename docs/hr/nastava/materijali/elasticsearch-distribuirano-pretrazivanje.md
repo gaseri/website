@@ -23,7 +23,7 @@ Upravo je to cilj zadatka koji je napravljen pomoću dvije virtualne mašine na 
 Nakon pokretana mašina pokrenemo instance ElasticSearcha koje postaju dostupne preko IP adresa mašine i vrata koji se dodjeli toj instanci ElasticSearch-a, a on se nalazi u rasponu većem od 9200. Po defautu u konfiguraciji za ElasticSearch instance ta vrata su 9201.
 
 ``` shell
-# ./bin/elasticsearch
+sudo ./bin/elasticsearch
 ```
 
 Svaka od instacni dobije random ime (koje je bas cool) te onda ranije pokrenuta instanca postaje master i prilikom pokretanja svake iduce dobije informaciju o toj drugo pokrenutoj, kao i novo pokrenuta o master instanci.
@@ -32,7 +32,7 @@ Pristup instanci search-a moguć je preko adrese 10.211.55.13:9201 odnosno 10.21
 
 ElasticSearch ima jako puno mogućnosti. Od pregleda clustera, nodova u clusteru, zdravlja i trenutnog stanja i statusa clustera raznih query-a te searcha koji je ostvariv naredbom:
 
-```
+``` text
 10.211.55.13:9201/_search?pretty
 ```
 

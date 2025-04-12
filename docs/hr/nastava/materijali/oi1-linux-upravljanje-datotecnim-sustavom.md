@@ -20,7 +20,7 @@ author: Luka Vretenar
 
 - Pri pokretanju komandne linije dočekati će vas polje za unos (eng. `prompt`):
 
-    ```
+    ``` shell-session
     korisnik@racunalo:~$
     ```
 
@@ -61,7 +61,7 @@ author: Luka Vretenar
 
 - Vrh stabla datotečnog sustava označavamo znakom `/` i nazivamo korjenom (eng. `root`).
 
-    ```
+    ``` shell-session
     /
     ├── bin
     ├── boot
@@ -88,14 +88,14 @@ author: Luka Vretenar
 
 - U slučaju da zadajemo put relativno, od direktorija u kokjem se nalazimo, zapisujemo ga:
 
-    ```
+    ``` shell-session
     put/do/direktorija/
     put/do/datoteke
     ```
 
 - Kada imamo apsolutni put od korjena `/`:
 
-    ```
+    ``` shell-session
     /apsolutni/put/do/direktorija/
     /apsolutni/put/do/datoteke
     ```

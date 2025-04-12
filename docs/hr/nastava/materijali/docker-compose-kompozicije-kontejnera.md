@@ -372,7 +372,7 @@ Uočimo kako se povezivanje na Redis događa korištenjem imena domaćina `mojre
 
 Jasno je vidljivo iz naredbi `import` da ova aplikacija za svoj rad zahtijeva Python module `flask` i `redis` (podsjetimo se da je modul `time` [dio](https://docs.python.org/3/library/time.html) [standardne biblioteke](https://docs.python.org/3/library/index.html)). Stvorimo datoteku `requirements.txt` koju će [pip](https://pip.pypa.io/) koristiti za preuzimanje potrebnih modula:
 
-```
+``` text
 flask
 redis
 ```

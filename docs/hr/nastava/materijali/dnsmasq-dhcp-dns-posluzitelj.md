@@ -11,7 +11,7 @@ author: Kristian Skender, Vedran Miletić
 Na samome početku, dnsmasq moramo instalirati na operativni sustav, u našem slučaju Linux Ubuntu, to izvršavamo naredbom:
 
 ``` shell
-# apt-get install dnsmasq
+sudo apt-get install dnsmasq
 ```
 
 Dnsmasq je automatski konfiguriran i pokrenut nakon instalacije. Da bi testirali jednostavni DNS server upisujemo iduću naredbu za bilo koju željenu web stranicu:
@@ -22,7 +22,7 @@ $ dig 9gag.com @localhost
 
 U "Answer section" možemo pronaći IP adresu na kojoj se tražena stranica nalazi.
 
-```
+``` shell-session
 ; <<>> DiG 9.11.4-4-Debian <<>> 9gag.com @localhost
 ;; global options: +cmd
 ;; Got answer:
@@ -102,18 +102,18 @@ Nazivi `eth1` i `eth2` nisu potrebni, ali ako radimo mnogo napredniju konfigurac
 
 Nakon konfiguriranja dnsmasq.conf datoteke, iduće što moramo napraviti je da DHCP klijent nadoda lokalnu adresu poznatoj DNS adresi u datoteci `/etc/resolv.conf`. U navedenu datoteku upisujemo:
 
-```
+``` ini
 nameserver 127.0.0.1
 ```
 
 Ovo omogućuje da svi upiti budu poslani na dnsmasq prije nego li budu riješeni na vanjskom DNS-u. Nakon ove rekonfiguracije mrežu je potrebno restartati da bi se nove postavke prihvatile. Restartamo je preko naredbe:
 
 ``` shell
-# /etc/init.d/dnsmasq restart
+sudo /etc/init.d/dnsmasq restart
 ```
 
 DHCPCD teži za pisanje preko datoteke `/etc/resolv.conf` po defaultnim postavkama, stoga ako koristimo DHCP dobra ideja je zaštiti `/etc/resolv.conf` datoteku. Da bi ju zaštitili, u datoteku `/etc/dhcpcd.conf` nadodajemo:
 
-```
+``` ini
 nohook resolv.conf
 ```

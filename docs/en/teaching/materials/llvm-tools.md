@@ -44,7 +44,7 @@ It takes assembly as the input. For example, to predict the performance of `test
 ./bin/clang ir-examples/c/test1.c -O2 -target x86_64-unknown-unknown -S -o - | ./bin/llvm-mca -mcpu=btver2
 ```
 
-``` text
+``` shell-session
 warning: found a return instruction in the input assembly sequence.
 note: program counter updates are ignored.
 Iterations:        100
@@ -131,7 +131,7 @@ For example, running `switch.ll` from `ir-examples/ll` directory:
 
 will print:
 
-``` text
+``` shell-session
 1.2 + 1.4 = 2.6
 ```
 
@@ -361,7 +361,7 @@ Availables passes can be printed using the `-print-passes` parameter:
 
 They are:
 
-``` text
+``` shell-session
 Module passes:
   always-inline
   attributor
@@ -700,7 +700,7 @@ Running `opt` without any parameters and an LLVM IR file in the argument:
 
 will (avoid to) output bitcode:
 
-``` text
+``` shell-session
 WARNING: You're attempting to print out a bitcode file.
 This is inadvisable as it may cause display problems. If
 you REALLY want to taste LLVM bitcode first-hand, you
@@ -765,7 +765,7 @@ Using `llvm-diff` on the example files:
 
 we can see that 4 allocations were removed:
 
-``` text
+``` shell-session
 in function autogen_SD0:
   in block %BB:
     in instruction store to %A4 / store to %A4:
@@ -784,7 +784,7 @@ Adding the parameter `-time-passes` will cause `opt` to print the pass execution
 
 The report looks like:
 
-``` text
+``` shell-session
 ===-------------------------------------------------------------------------===
                       ... Pass execution timing report ...
 ===-------------------------------------------------------------------------===

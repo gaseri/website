@@ -70,7 +70,7 @@ $ ss -l | grep 6379
 
 Mi bismo htjeli da sluša na svim adresama kako bismo mu mogli pristupiti s drugog virutalnog stroja, dakle trebamo postaviti adresu na 0.0.0.0 za IPv4 i :: za IPv6. Uočimo u konfiguracijskoj datoteci `/etc/redis/redis.conf` konfiguracijsku naredbu `bind`:
 
-```
+``` ini
 ################################## NETWORK #####################################
 
 # By default, if no "bind" configuration directive is specified, Redis listens
@@ -118,19 +118,19 @@ protected-mode yes
 
 Redis poslužitelj već predviđa da će korisnicima u nekim slučajevima odgovarati da poslužitelj sluša na svim mrežnim sučeljima i dovoljno je zakomentirati liniju tako da bude oblika:
 
-```
+``` ini
 # bind 127.0.0.1 ::1
 ```
 
 Dodatno ćemo isključiti zaštićeni način rada promjenom linije `protected-mode` iz:
 
-```
+``` ini
 protected-mode yes
 ```
 
 u
 
-```
+``` ini
 protected-mode no
 ```
 

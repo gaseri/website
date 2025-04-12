@@ -139,7 +139,7 @@ Neki od najvažnijih parametara u alatu `ebtables` koje koristimo pri filtriranj
 
 Na mreži na slici računala n1, n2 i n3 ostvaruju vezu sa domaćinima n7 i n10 i računalom n9 putem usmjerivača n5 i n6 te preklopnika n4 i n8. Adresa usmjerivača n5 na sučelju prema n4 je 10.0.0.1, a na sučelju prema n6 je 10.0.1.1. IPv4 adrese n1, n2 i n3 su redom 10.0.0.20, 10.0.0.21 i 10.0.0.22, a adrese n7, n10 i n9 su redom 10.0.2.20, 10.0.3.20 i 10.0.3.21. Za potrebe zadatka pretpostavimo da je međusobna komunikacija između svih čvorova moguća. Vatrozid postoji na usmjerivaču n5 i na računalu n1.
 
-```
+``` text
     n1             n7   n10
      \             /    /
       \           /    /

@@ -36,7 +36,7 @@ import numpy as np
 !!! example "Zadatak"
     - Stvorite polje s vrijednostima
 
-        ```
+        ``` text
         9 13 5
         1 11 7
         3 7 2
@@ -121,7 +121,7 @@ b *= 3
 
 Imamo li datoteku `podaci.txt` sadržaja
 
-```
+``` text
 2.4   5.6     29
 2     824919  11
 27.3  6.1429  9.1

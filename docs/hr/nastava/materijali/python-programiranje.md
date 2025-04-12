@@ -21,7 +21,7 @@ Motivacija:
 
 Ukoliko nemate instaliranu jezgru IPythona, možete je instalirati naredbom:
 
-``` bash
+``` shell
 pip install -U ipykernel
 ```
 
@@ -161,7 +161,7 @@ else:
 
 Ako već imate instaliran Python i [pip](https://pip.pypa.io/en/stable/getting-started/), tada je instalacija NumPyja vrlo jednostavna:
 
-``` bash
+``` shell
 $ pip install numpy
 ```
 

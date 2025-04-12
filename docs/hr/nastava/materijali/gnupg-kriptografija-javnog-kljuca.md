@@ -37,12 +37,12 @@ Datoteke se kriptiraju pomoću asimetričnog para enkripcijskih para ključeva k
 Postupak stvaranja para enkripcijskih ključeva započinje naredbom:
 
 ``` shell
-# gpg --gen-key
+sudo gpg --gen-key
 ```
 
 Ovom naredbom stvara se direktorij `.gnupg` unutar kojega se pohranjuju ključevi, konfiguracijske datoteke i slično. Nakon što odaberemo vrstu ključa, duljinu u bitovima, valjanost ključa, ime, e-mail adresu i lozinku, stvoren je par ključeva. Ključ se generira uz pomoć slučajnih vrijednosti koje program skuplja iz ugrađenog generatora slučajnih brojeva. Sigurnost ključa može se povećati unošenjem slučajnih znakova preko tipkovnice.
 
-```
+``` shell-session
 public and secret key created and signed.
 gpg: checking the trustdb
 gpg: 3 marginal(s) needed, 1 complete(s) needed, PGP trust model
@@ -57,7 +57,13 @@ Vidimo redom: javni ključ, 2048-bitni RSA ključ, ID ključa, otisak ključa ko
 
 Sljedeća naredba omogućava nam ispis svih generiranih ključeva, ovdje provjeravamo je li ključ ispravno unesen u bazu:
 
+``` shell
+sudo gpg --list-keys
 ```
+
+``` shell-session
+/root/.gnupg/pubring.gpg
+----------------------------
 pub 2048D/E2A80315 2013-01-15 [expired: 2013-01-16]
 uid Ema Matijevic (Enki) <astaroth.sf@gmail.com>
 
@@ -93,13 +99,13 @@ sub 2048R/E02CC32F 2013-01-29
 Generirani ključ može se ispisati naredbom:
 
 ``` shell
-# gpg --armor --export user_id
+sudo gpg --armor --export user_id
 ```
 
 što u našem slučaju postaje:
 
 ``` shell
-# gpg --armor --export 7FABF75D
+sudo gpg --armor --export 7FABF75D
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 Version: GnuPG v1.4.12 (GNU/Linux)
 mQENBFEINLkBCACmzOJSmN8l5yieUPs5xf6OVS9y692ZaLxPl/rXgZR+BQV5zG1f
@@ -134,13 +140,13 @@ bgaQ9IxvXiUJMiMPAd4p65NdocqVyZ5iE1//7Q==
 Naredba --armor (ili kraće --a) određuje hoće li ključ biti zapisan u tekstualnom ili binarnom obliku. Još jedan slučaj je eksportiranje u datoteku, npr.:
 
 ``` shell
-# gpg --export Ema > ema_javni.gpg
+sudo gpg --export Ema | tee ema_javni.gpg
 ```
 
 Za učitavanje ključeva u program (tj. u bazu podataka javnih ključeva) iz datoteke koristimo naredbu:
 
 ``` shell
-# gpg --import ime_datoteke
+sudo gpg --import ime_datoteke
 ```
 
 gdje `ime_datoteke` označava datoteku u kojoj se nalaze željeni ključevi. Ako se izostavi, program će ključ čitati sa standardnog ulaza.
@@ -148,25 +154,25 @@ gdje `ime_datoteke` označava datoteku u kojoj se nalaze željeni ključevi. Ako
 Fingerprint naredba ispisuje otisak pohranjenih ključeva. To je jedan od načina kako se može provjeriti autentičnost primljenog ključa.
 
 ``` shell
-# gpg --fingerprint
+sudo gpg --fingerprint
 ```
 
 Prije korištenja uvezenog javnog ključa, potrebno ga je potpisati:
 
 ``` shell
-# gpg --sign-key user_id
+sudo gpg --sign-key user_id
 ```
 
 Datoteku je moguće kriptirati naredbom (u ovom slučaju Viktor je primatelj datoteke):
 
 ``` shell
-# gpg --recipient Viktor --armor --encrypt ema_test.asc
+sudo gpg --recipient Viktor --armor --encrypt ema_test.asc
 ```
 
 Viktor tada može dekriptirati datoteku naredbom:
 
 ``` shell
-# gpg --decrypt ema_test.asc
+sudo gpg --decrypt ema_test.asc
 You need a passphrase to unlock the secret key for
 user: "ema (test) "
 2048-bit RSA key, ID 48B4D021, created 2013-01-15 (main key ID 95860D54)
@@ -176,7 +182,7 @@ Enter passphrase:
 Sljedećom naredbom možemo deekriptirati poruku u .txt datoteku.
 
 ``` shell
-# gpg --decrypt ema_test.asc > ema_file.txt
+sudo gpg --decrypt ema_test.asc | tee ema_file.txt
 ```
 
 ### Rad s poslužiteljem ključeva
@@ -186,19 +192,19 @@ Naredbe koje koristimo kako bi komunicirali sa poslužiteljem ključeva su sljed
 - Slanje ključeva na poslužitelj:
 
     ``` shell
-    # gpg --send-keys key/user_id --keyserver hkp://mykeyserver
+    sudo gpg --send-keys key/user_id --keyserver hkp://mykeyserver
     ```
 
 - Primanje ključeva sa poslužitelja:
 
     ``` shell
-    # gpg --recv-keys key/user_id --keyserver hkp://mykeyserver
+    sudo gpg --recv-keys key/user_id --keyserver hkp://mykeyserver
     ```
 
 - Pretraga ključeva na poslužitelju:
 
     ``` shell
-    # gpg --search-keys key/user_id --keyserver hkp://mykeyserver
+    sudo gpg --search-keys key/user_id --keyserver hkp://mykeyserver
     ```
 
 ## Poslužitelji ključeva i način konfiguracije
@@ -210,12 +216,12 @@ Poslužitelji ključeva (engl. *keyservers*) koriste se za distribuciju javnih k
 [Synchronising Key Server (SKS)](https://github.com/SKS-Keyserver/sks-keyserver) je OpenPGP poslužitelj čiji je cilj jednostavnost implementacije, decentraliziranost i vrlo pouzdana sinkronizacija. Slijedi nekoliko osnovnih koraka instalacije i konfiguriranja poslužitelja SKS:
 
 ``` shell
-# yum install sks -y
+sudo yum install sks -y
 ```
 
 Prva naredba je jasna, radi se o instalaciji poslužitelja, poslije toga potrebno je konfigurirati/stvoriti datoteku `/etc/sks/sksconf` i unijeti odgovarajuće podatke, za potrebe ovog primjera promijenjen je samo `hostname` koji je postavljen na `localhost`. Sadržaj datoteke je:
 
-``` shell
+``` yaml
 # Debug Level 4 is default (maximum is 10)
 debug level: 4
 # Set the hostname of this server
@@ -238,7 +244,7 @@ initial_stat:
 
 Sljedeća konfiguracijska datoteka je `/etc/sks/membership`, ona sadrži sve SKS čvorove (hostname i portove) s kojima želimo uspostaviti komunikaciju.
 
-``` shell
+``` ini
 # List of other keyservers to peer with
 sks.pkqs.net               11370
 keys.keysigning.org        11370 # Jonathan Oxer <jon@oxer.com.au> 0x64011A8B
@@ -251,26 +257,30 @@ zimmermann.mayfirst.org    11370
 S obzirom da ne možemo početi sa praznom bazom ključeva, još jedan važan korak je kreiranje dump direktorija, gdje će biti sadržani svi ključevi.
 
 ``` shell
-# mkdir /srv/sks/dump
-# ls /srv/sks/dump
+sudo mkdir /srv/sks/dump
+sudo ls /srv/sks/dump
+```
+
+``` shell-session
 clean.log ema.pgp fastbuild.log gmon.out KDB rijeka.pgp Rijeka.pgp
 ```
 
 Potrebno je pokrenuti skriptu sks_build.sh u root direktoriju SKS poslužitelja.
 
 ``` shell
-# cd /srv/sks
+cd /srv/sks
+sudo ./sks_build.sh
 ```
 
 Pokrećemo SKS bazu podataka:
 
 ``` shell
-# service sks-db start
+sudo service sks-db start
 ```
 
 Ako dobijemo sljedeću poruku, znamo da smo imali puno sreće pri konfiguraciji i pokretanju baze poslužitelja:
 
-```
+``` shell-session
 Starting the SKS Database Server: [  OK  ]
 ```
 
@@ -279,14 +289,17 @@ Starting the SKS Database Server: [  OK  ]
 U ovom poglavlju prikazana je komunikacija između običnog korisnika i administratora prijavljenih na istom računalu. Svaki korisnik je generirao svoj par ključeva, te je prikazana jednostavna međusobna razmjena. Kako bi se bolje vidjelo koji korisnik raspolaže s kojim ključevima, izlistan je popis. U komunikaciji korisnik ema poslao je administratoru ključ `Branko Bobic`, a primio je od administratora ključ `Ivan Ivic`.
 
 ``` shell
-# locate gpg.conf
+sudo locate gpg.conf
+```
+
+``` shell-session
 /home/ema/.gnupg/gpg.conf
 /root/.gnupg/gpg.conf
 ```
 
 U dvjema konfiguracijskim datotekama potrebno je staviti redak:
 
-```
+``` shell-session
 keyserver hkp://localhost
 ```
 
@@ -329,7 +342,10 @@ gpg: imported: 1 (RSA: 1)
 Kao korisnik `root` imamo sljedeće:
 
 ``` shell
-# gpg --list-keys
+sudo gpg --list-keys
+```
+
+``` shell-session
 /root/.gnupg/pubring.gpg
 ------------------------
 pub 2048D/E2A80315 2013-01-15 [expired: 2013-01-16]
@@ -358,11 +374,21 @@ sub 2048R/53A7BCF4 2013-01-29
 pub 2048R/7FABF75D 2013-01-29
 uid Ema Matijevic <ema@gmail.com>
 sub 2048R/A3787563 2013-01-29
+```
 
-# gpg --send-keys 05F06AD8
+``` shell
+sudo gpg --send-keys 05F06AD8
+```
+
+``` shell-sesion
 gpg: sending key 05F06AD8 to hkp server localhost
+```
 
-# gpg --recv-keys 7DF90C27
+``` shell
+sudo gpg --recv-keys 7DF90C27
+```
+
+``` shell-session
 gpg: requesting key 7DF90C27 from hkp server localhost
 gpg: key 7DF90C27: public key "Branko Bobic (Branko Kljuc) <bbobic@ema.com>" imported
 gpg: Total number processed: 1
@@ -373,7 +399,7 @@ gpg: imported: 1 (RSA: 1)
 
 S obzirom da je komunikacija preko provjerenih, stabilnih i ažurnih poslužitelja najčešća, odabrala sam jedan takav poslužitelj: [MIT PGP Public Key Server](https://pgp.mit.edu/). U konfiguracijskim datotekama `gpg.conf` potrebno je uključiti redak:
 
-```
+``` shell-session
 keyserver hkp://pgp.mit.edu
 ```
 
@@ -417,7 +443,10 @@ gpg: imported: 1 (RSA: 1)
 Kao korisnik `root` imamo:
 
 ``` shell
-# gpg --list-keys
+sudo gpg --list-keys
+```
+
+``` shell-session
 /root/.gnupg/pubring.gpg
 ------------------------
 pub 2048D/E2A80315 2013-01-15 [expired: 2013-01-16]
@@ -454,8 +483,13 @@ sub 2048R/464878E5 2013-01-29
 pub 2048R/2BDF2221 2013-01-29
 uid Viktor V <viktor@email.com>
 sub 2048R/E02CC32F 2013-01-29
+```
 
-# gpg --send-key 2BDF2221
+``` shell
+sudo gpg --send-key 2BDF2221
+```
+
+``` shell-session
 gpg: sending key 2BDF2221 to hkp server pgp.mit.edu
 ```
 

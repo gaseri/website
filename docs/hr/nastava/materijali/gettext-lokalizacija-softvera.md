@@ -16,20 +16,20 @@ Proces prevodenja softvera koji koriste [GNU gettext](https://www.gnu.org/softwa
 
 Jedna PO datoteka se odnosi na jedan jezik i struktura joj je sljedeća:
 
-```
+``` po
 prazan prostor
 # komentari prevoditelja
 #. komentari programera
 #: reference na programski kod
 #, zastavica...
 #| msgid prethodni-neprevedeni-string
-msgid neprevedeni-string
-msgstr prevedeni-string
+msgid "neprevedeni-string"
+msgstr "prevedeni-string"
 ```
 
 pri čemu su komentari neobavezni. Enkodiranje je specificirano unutar PO datoteke, i defaultno je UTF-8. Ako ga želite promijeniti morate tako naznačiti u zaglavlju PO datoteke. Postoje i različiti specijalizirani uredivači PO datoteka od kojih su neki Gtranslator, Lokalize, Poedit, Virtaal. Da bi mogli prevoditi Anacondu uz pomoć PO datoteke potrebno je prvo preuzeti kod Anaconde na računalo s repozitorija, što činimo pomoću Git-a naredbom:
 
-```
+``` shell
 git clone git://git.fedorahosted.org/git/anaconda.git
 ```
 
@@ -39,7 +39,7 @@ Specifikacija PO dokumenta se nalazi na vrhu dokumenta i sadrži podatke o vlasn
 
 Nakon lokalnih izmjena na POT dokumentu dokument vraćamo u repozitorij pomoću git push naredbe. Bilo kakve promjene trebaju proći pregled/recenziju što činimo slanjem izmjenjenog dokumenta na anaconda-devel-list:
 
-```
+``` shell
 git send-email --to anaconda-patches@lists.fedorahosted.org --suppress-from --compose <patch files here>
 ```
 

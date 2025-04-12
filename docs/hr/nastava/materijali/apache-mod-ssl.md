@@ -103,7 +103,7 @@ $ curl -k https://172.17.0.2/
 
 Vidimo da HTTPS poslužitelj odgovara na upit, ali ne sadržajem datoteke `index.html` koji smo se nadali dobiti. Na strani poslužitelja ispisuju se poruke o pogreškama:
 
-```
+``` shell-session
 [Sun May 10 17:02:56.688057 2020] [authz_core:error] [pid 9:tid 140698145773312] [client 172.17.0.1:54160] AH01630: client denied by server configuration: /usr/local/apache2/htdocs/
 172.17.0.1 - - [10/May/2020:17:02:56 +0000] "GET / HTTP/1.1" 403 199
 ```

@@ -61,7 +61,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 
     - Napravite datoteku `adrese1.txt` i u nju upišite sljedeće e-mail adrese (svaka u svome retku):
 
-        ```
+        ``` text
         peric.hrvoje@mail.net
         nekiMail@inet.hr
         mail1@t-com.net
@@ -270,7 +270,7 @@ Najčešće korišteni parametri naredbe `sed` su:
 
     **Napomena:** ispis bi trebao izgledati ovako:
 
-    ```
+    ``` text
     Moja prijateljica voli putovati.
     Moja prijateljica mrzi peglati.
     ```
@@ -280,19 +280,19 @@ Najčešće korišteni parametri naredbe `sed` su:
 
     - prezime i sve ocjene za svakog učenika u datoteci, ispis neka bude oblika:
 
-        ```
+        ``` text
         Učenik Prezime ima ocjena1 iz prvog predmeta, te ocjena2 iz drugog predmeta.
         ```
 
     - ime i prvu ocjenu za svakog učenika, te zbroj ocjena, ispis neka bude oblika:
 
-        ```
+        ``` text
         Učenik Ime ima ocjena1 iz prvog predmeta, a zbroj ocjena mu iznosi zbrojOcjena.
         ```
 
     - ime, prezime, te prosječnu ocjenu za svakog studenta, ispis neka bude oblika:
 
-        ```
+        ``` text
         Učenik Ime Prezime ima prosječnu ocjenu prosječnaOcjena.
         ```
 

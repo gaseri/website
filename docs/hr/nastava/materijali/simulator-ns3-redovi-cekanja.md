@@ -162,7 +162,7 @@ int main ()
 
 Razmotrimo već ranije spomenutu topologiju bučice oblika
 
-```
+``` text
 n1 ----\              /---- n5
         \            /
         n3 -------- n4

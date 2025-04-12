@@ -215,7 +215,7 @@ Provjerimo zaglavlja (naredba `curl -I`) na:
 
 Primjer u [Apache HTTP Serveru](https://httpd.apache.org/) s uključenim [mod_headers](https://httpd.apache.org/docs/2.4/mod/mod_headers.html):
 
-``` apache
+``` apacheconf
 <IfModule mod_headers.c>
     Header set Cache-Control "max-age=84600, public"
 </IfModule>
@@ -239,7 +239,7 @@ HTTP zaglavlje `Expires` ([dokumentacija na MDN-u](https://developer.mozilla.org
 
 Primjer postavki koje generiraju zaglavlje `Expires` u web poslužitelju [Apache HTTP Server](https://httpd.apache.org/) koji koristi [mod_expires](https://httpd.apache.org/docs/2.4/mod/mod_expires.html):
 
-``` apache
+``` apacheconf
 ExpiresByType text/html "access plus 1 seconds"
 ExpiresByType image/x-icon "access plus 2592000 seconds"
 ExpiresByType image/gif "access plus 2592000 seconds"
@@ -381,7 +381,7 @@ Više detalja na MDN-u:
 
 Primjer u [Apache HTTP Serveru](https://httpd.apache.org/) s uključenim [mod_deflate](https://httpd.apache.org/docs/2.4/mod/mod_deflate.html):
 
-``` apache
+``` apacheconf
 <IfModule mod_deflate.c>
     AddOutputFilterByType DEFLATE application/javascript
     AddOutputFilterByType DEFLATE application/x-javascript
@@ -440,7 +440,7 @@ Prevencija hotlinkanja odnosi se na ograničavanje skupa prihvatljivih [HTTP ref
 
 Primjer korištenjem Apache HTTP Servera i modula [mod_rewrite](https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html):
 
-``` apache
+``` apacheconf
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteCond %{HTTP_REFERER} !^http://(.+\.)?example\.com/ [NC]
@@ -465,13 +465,13 @@ Izvor: [HTTP/2: A Fast, Secure Bedrock for the Future of SEO (Moz Blog)](https:/
 
 Apache HTTP Server [podržava HTTP/2](https://httpd.apache.org/docs/2.4/howto/http2.html) korištenjem [mod_http2](https://httpd.apache.org/docs/2.4/mod/mod_http2.html). Za HTTP/2 preko TLS-a ("HTTPS") konfiguracija je oblika:
 
-``` apache
+``` apacheconf
 Protocols h2 http/1.1
 ```
 
 Sve varijante HTTP/2 ("HTTPS" i "HTTP"):
 
-``` apache
+``` apacheconf
 Protocols h2 h2c http/1.1
 ```
 

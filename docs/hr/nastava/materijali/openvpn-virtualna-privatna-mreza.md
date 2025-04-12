@@ -85,7 +85,7 @@ ed89fa055a72dc20e9df748844030008
 
 Ovaj će ključ biti korišten na klijentskoj i na poslužiteljskoj strani za generiranje dva ključa: ključ za računanje koda autentifikacije poruke korištenjem hashiranja i ključ za šifriranje i dešifriranje. Konfigurirajmo poslužitelj, stvorimo datoteku imena `server.ovpn` sadržaja:
 
-```
+``` squid
 dev tun
 ifconfig 172.20.0.1 172.20.0.2
 secret static.key
@@ -130,7 +130,7 @@ $ ip address show
 
 Poslužitelj će slušati za povezivanje klijenata sve do prekida kombinacijom tipki Control + C (^C), nakon čega će ispisati:
 
-```
+``` shell-session
 Tue May 19 19:54:19 2020 event_wait : Interrupted system call (code=4)
 Tue May 19 19:54:19 2020 /usr/bin/ip addr del dev tun0 local 172.20.0.1 peer 172.20.0.1
 Tue May 19 19:54:19 2020 SIGINT[hard,] received, process exiting
@@ -210,7 +210,7 @@ $ ip address show
 
 Klijent će raditi sve do prekida kombinacijom tipki Control + C (^C), nakon čega će ispisati:
 
-```
+``` shell-session
 Tue May 19 19:54:15 2020 event_wait : Interrupted system call (code=4)
 Tue May 19 19:54:15 2020 /usr/bin/ip addr del dev tun1 local 172.20.0.2 peer 172.20.0.1
 Tue May 19 19:54:15 2020 SIGINT[hard,] received, process exiting
@@ -228,7 +228,7 @@ $ openvpn --genkey --secret static-direction1.key 1
 
 Tada bismo u konfiguraciji klijenta i poslužitelja imali dvije naredbe:
 
-```
+``` squid
 secret static-direction0.key 0
 secret static-direction1.key 1
 ```

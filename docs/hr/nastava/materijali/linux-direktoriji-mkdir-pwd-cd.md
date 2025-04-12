@@ -87,7 +87,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 !!! example "Zadatak"
     - U Vašem kućnom direktoriju napravite predloženu strukturu direktorija:
 
-        ```
+        ``` text
         studentXY ---------- Ispiti ------------- Ispit1 -------- 15102012
                   |                        |
                   |                        |----- Ispit2

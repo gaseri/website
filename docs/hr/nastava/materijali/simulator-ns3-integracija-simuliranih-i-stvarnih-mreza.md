@@ -183,13 +183,13 @@ $ ./waf --run tap-csma-virtual-machine
 Simulacija će trajati 10 minuta, ako je prije ne prekinemo s ++control+c++. Ako u lijevi terminal upišemo:
 
 ``` shell
-# ping -c 4 10.0.0.2
+ping -c 4 10.0.0.2
 ```
 
 šaljemo pakete od lijevog kontejnera prema desnom, koji ima adresu 10.0.0.2, a zatim od desnog prema lijevom na adresi 10.0.0.1.
 
 ``` shell
-# ping -c 4 10.0.0.1
+ping -c 4 10.0.0.1
 ```
 
 Kada mijenjamo vrijednost zadržavanja paketa, te ovisno o tome šaljemo li pakete s jednog kontejnera na drugi u isto vrijeme ili nakon što završi slanje jednog kontejnera, mijenja se vrijednost vremena i odbacivanja paketa pri slanju.

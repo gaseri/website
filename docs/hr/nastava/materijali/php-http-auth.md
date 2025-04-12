@@ -156,6 +156,9 @@ Interpreter jezika PHP od [verzije 5.1.0](https://www.php.net/releases/5_1_0.php
 
 ``` shell
 $ php -a
+```
+
+``` tcshcon
 Interactive mode enabled
 
 php > echo base64_decode("aXZhbmhvcnZhdDptMGphemFwMHJrYQ==");
@@ -164,7 +167,7 @@ ivanhorvat:m0jazap0rka
 
 Zatim izvedimo kodiranje funkcijom `base64_encode()` ([dokumentacija](https://www.php.net/manual/en/function.base64-encode.php)):
 
-```
+``` tcshcon
 php > echo base64_encode("ivanhorvat:m0jazap0rka");
 aXZhbmhvcnZhdDptMGphemFwMHJrYQ==
 ```
