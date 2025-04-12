@@ -206,7 +206,7 @@ OpenSSH koristi [četiri algoritma javnog ključa](https://security.stackexchang
 - [ECDSA](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm),
 - [Ed25519](https://ed25519.cr.yp.to/) ([Edwards-curve Digital Signature Algorithm (EdDSA)](https://en.wikipedia.org/wiki/EdDSA)).
 
-OpenSSH alat `ssh-keygen` služi za generiranje domaćinskih (poslužiteljskih) i korisničkih (klijentskih) ključeva; bez parametara `ssh-keygen` će generirati korisničke ključeve. Pozabavimo se prvo generiranje domaćinskih ključeva, što ćemo napraviti dodavanjem parametra `-A`:
+OpenSSH alat `ssh-keygen` služi za generiranje domaćinskih (poslužiteljskih, engl. *[host](../../vrlo-vazne-informacije/cesto-postavljana-pitanja.md#nudite-li-pristup-vasim-posluziteljima-putem-ssh)*) i korisničkih (klijentskih, engl. *user*) ključeva; bez parametara `ssh-keygen` će generirati korisničke ključeve. Pozabavimo se prvo generiranje domaćinskih ključeva, što ćemo napraviti dodavanjem parametra `-A`:
 
 ``` shell
 $ ssh-keygen -A
