@@ -9,6 +9,7 @@ author: Vedran Miletić
 - ulaz s tipkovnice prima se kao znakovni niz, potrebno je napraviti pretvorbu u odgovarajući tip podataka
 
     ``` python
+    #!/usr/bin/env python
     ulaz = input("Unesite cijeli broj: ") # ulaz je tipa str
     x = int(ulaz) # x je tipa int
     print("Unijeli ste " + str(x) + ".")
@@ -51,6 +52,7 @@ author: Vedran Miletić
 - za otvaranje tekstualne datoteke koristi se `open()`, čiji je prvi argument apsolutna ili relativna putanja do datoteke, a drugi argument način (`"r"`, `"r+"`, `"w"`, `"a"`)
 
     ``` python
+    #!/usr/bin/env python
     datoteka = open("dragon.txt", "r")
     ```
 
@@ -73,6 +75,7 @@ author: Vedran Miletić
 - za čitanje tekstualne datoteke koristi se `read()`, `readline()` ili `readlines()`
 
     ``` python
+    #!/usr/bin/env python
     datoteka.read() # čitav sadržaj datoteke
     datoteka.readline() # jedna linija datoteke
     datoteka.readlines() # sve linije datoteke u listi
@@ -81,6 +84,7 @@ author: Vedran Miletić
 - za zatvaranje tekstualne datoteke koristi se `close()`
 
     ``` python
+    #!/usr/bin/env python
     datoteka.close()
     # ovo se prečesto zaboravlja
     ```
@@ -96,6 +100,7 @@ author: Vedran Miletić
 - za zapisivanje u tekstualnu datoteku koristi se `write()`
 
     ``` python
+    #!/usr/bin/env python
     # potrebno je prethodno stvoriti datoteku mojtekst.txt
     datoteka = open("mojtekst.txt", "w")
     datoteka.write("Nova linija\n") # zapisuje sadržaj na trenutnoj poziciji objekta pridruženog datoteci
@@ -121,12 +126,14 @@ author: Vedran Miletić
 - trenutnu poziciju u tekstualnoj datoteci daje `tell()`
 
     ``` python
+    #!/usr/bin/env python
     datoteka.tell() # trenutna poziciju objekta pridruženog datoteci
     ```
 
 - za kretanje kroz tekstualnu datoteku koristi se `seek()`, a pozicija se može navesti u odnosu na: početak datoteke (0), trenutnu poziciju objekta (1), kraj datoteke (2)
 
     ``` python
+    #!/usr/bin/env python
     datoteka.seek(0, 6) # postavlja poziciju objekta pridruženog datoteci na sedmi znak
     datoteka.seek(-1, 2) # postavlja poziciju objekta pridruženog datoteci na predzadnji znak
     ```

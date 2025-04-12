@@ -96,7 +96,7 @@ author: Vedran Miletić
     - kod Pythona 2 potrebno eksplicitno navesti u drugom retku zaglavlja
 
         ``` python
-        #!/usr/bin/env python
+        #!/usr/bin/env python2
         # -*- coding: utf-8 -*-
         ```
 
@@ -108,6 +108,7 @@ author: Vedran Miletić
 - dinamički tipovi (engl. *dynamic typing*) -- nema deklaracije tipa varijable, određuje se prema pridruženoj vrijednosti
 
     ``` python
+    #!/usr/bin/env python
     a = 3
     b = "rijec"
     ```
@@ -123,6 +124,7 @@ author: Vedran Miletić
     - objektno orijentiran jezik: svaka varijabla je *objekt*
 
     ``` python
+    #!/usr/bin/env python
     type() # vraća tip (klasu) objekta
     ```
 
@@ -153,6 +155,7 @@ author: Vedran Miletić
 - "hello world": funkcija `print()` vrši ispis na ekran
 
     ``` python
+    #!/usr/bin/env python
     print("Pozdrav Rijeci")
     ```
 
@@ -171,6 +174,7 @@ author: Vedran Miletić
 - sustav pomoći `help()` --  interpreter ima u sebi ugrađenu dokumentaciju
 
     ``` python
+    #!/usr/bin/env python
     help(xyz) # pomoć za funkciju xyz()
     help("xyz") # pomoć na temu xyz
     ```
@@ -210,8 +214,9 @@ Emacs u standardnoj distribuciji ima `python.el` koji mu omogućuje [napredno ba
 - funkcija `dir()` vraća popis atributa i metoda
 
 ``` python
+#!/usr/bin/env python
 a = 5 # varijabla a će dinamički postati tipa int
-dir() # vraća popis atributa i metoda tipa int
+dir(a) # vraća popis atributa i metoda tipa int
 ```
 
 !!! example "Zadatak"
@@ -234,6 +239,7 @@ dir() # vraća popis atributa i metoda tipa int
 - naredbe `if` i `else`
 
     ``` python
+    #!/usr/bin/env python
     if x < 0:
       print("Negative")
     elif x == 0:
@@ -274,6 +280,7 @@ dir() # vraća popis atributa i metoda tipa int
 - naredba `for`
 
     ``` python
+    #!/usr/bin/env python
     for x in range(2, 7):
       print(x, x**2)
     ```
@@ -295,6 +302,7 @@ dir() # vraća popis atributa i metoda tipa int
 - naredba `while`
 
     ``` python
+    #!/usr/bin/env python
     x = 0
     while x < 5:
       x += 1
@@ -333,6 +341,7 @@ dir() # vraća popis atributa i metoda tipa int
 - podnizovi znakovnih nizova rade po pravilu "početak uključen, kraj isključen"
 
     ``` python
+    #!/usr/bin/env python
     a[i] # i-ti znak u nizu; ista sintaksa kao C++
     a[i:j] # znakovi od i-tog do j-tog
     a[i:j:k] # svaki k-ti znak od i-tog do j-tog

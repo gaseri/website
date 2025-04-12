@@ -18,7 +18,7 @@ author: Luka Vretenar
 - Programske skripte moraju započeti sa posebnom linijom koja definira da želimo skriptu izvršiti kao `perl` program:
 
     ``` perl
-    #!/usr/bin/perl
+    #!/usr/bin/env perl
     ```
 
 - `Perl` skriptu možemo pokrenuti na dva načina, ako pretpostavimo da se naša skripta naziva `skripta.pl`:
@@ -50,7 +50,7 @@ author: Luka Vretenar
     - Napravite novu skriptu naziva `prva.pl` i u nju zapišite:
 
         ``` perl
-        #!/usr/bin/perl
+        #!/usr/bin/env perl
         print("Hello world!\n");
         ```
 
@@ -157,7 +157,7 @@ author: Luka Vretenar
 - Primjer programa za pretvaranje metara u kilometre i obrnuto:
 
     ``` perl
-    #!/usr/bin/perl
+    #!/usr/bin/env perl
     print("Unesite vrijednost udaljenosti za pretvoriti: ");
     $udaljenost = <STDIN>;
     chomp($udaljenost);
@@ -225,7 +225,7 @@ author: Luka Vretenar
 - Primjer provjere jednakosti unesenih brojeva:
 
     ``` perl
-    #!/usr/bin/perl
+    #!/usr/bin/env perl
     print("Unesite broj: ");
     $broj1 = <STDIN>;
     chomp($broj1);
@@ -266,7 +266,7 @@ author: Luka Vretenar
 - Primjer odbrojavanja do nule:
 
     ``` perl
-    #!/usr/bin/perl
+    #!/usr/bin/env perl
     $brojac = 10;
     while ($brojac >= 0)
     {
@@ -278,7 +278,7 @@ author: Luka Vretenar
 - Primjer čitanja ulaza dok nije pročitan ispravan broj:
 
     ``` perl
-    #!/usr/bin/perl
+    #!/usr/bin/env perl
     print("Koliko iznosi 17 plus 26? ");
     $broj = <STDIN>;
     chomp($broj);
@@ -329,7 +329,7 @@ author: Luka Vretenar
 - Primjer pronalaženja određenog niza teksta u liniji pročitanoj sa ulaza:
 
     ``` perl
-    #!/usr/bin/perl
+    #!/usr/bin/env perl
     $recenica = "Svaka prava ptica leti.";
 
     print("Sto moram traziti? ");
@@ -412,7 +412,7 @@ author: Luka Vretenar
     - Pronađi grešku/e u slijedećem kodu:
 
         ``` perl
-        #!/usr/bin/python
+        #!/usr/bin/env python
         $value = <STDIN>
         if ($value = 17)
         {

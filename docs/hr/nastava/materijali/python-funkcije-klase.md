@@ -9,8 +9,10 @@ author: Vedran Miletić
 - funkcija ima `def` i opcionalno `return`, moguće je zadati podrazumijevane vrijednosti argumenata
 
     ``` python
+    #!/usr/bin/env python
     def funkcija1(arg1, arg2=0):
       return 2 * arg1 + arg2
+
     def funkcija2(arg1=1, arg2=0):
       print("Rezultat: ", 2 * arg1 + arg2)
     ```
@@ -65,6 +67,7 @@ author: Vedran Miletić
 - `class` se koristi za definiranje klase
 
     ``` python
+    #!/usr/bin/env python
     class Iznos:
       broj = 0
       slovima = "nula"

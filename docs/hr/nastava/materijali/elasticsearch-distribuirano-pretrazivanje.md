@@ -43,7 +43,7 @@ Ideja krajnjeg faliovera ostvarena je UNIX cron servisom te skriptom koja se poz
 Skripta:
 
 ``` bash
-#!/bin/bash
+#!/usr/bin/env bash
 # Simple SHELL script for Linux and UNIX system monitoring with
 # ping command
 # -------------------------------------------------------------------------

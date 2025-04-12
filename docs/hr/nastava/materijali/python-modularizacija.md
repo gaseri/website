@@ -14,6 +14,7 @@ author: Vedran Miletić
     - popis konstanti i funkcija dobijemo s `dir(ime_modula)`
 
     ``` python
+    #!/usr/bin/env python
     import math
     ```
 
@@ -27,6 +28,7 @@ author: Vedran Miletić
 - kompletiranje imena slično `bash`-u
 
     ``` python
+    #!/usr/bin/env python
     import readline
     import rlcompleter
     readline.parse_and_bind("tab: complete")
@@ -49,8 +51,9 @@ Python modul može biti jedna datoteka ili jedan direktorij.
 Stvorimo u direktoriju dvije datoteke, datoteku `modul1.py` sadržaja
 
 ``` python
+#!/usr/bin/env python
 def funkcija():
-   return 42
+    return 42
 
 varijabla = "paralelno i distribuirano programiranje"
 ```
@@ -58,6 +61,7 @@ varijabla = "paralelno i distribuirano programiranje"
 i datoteku `program1.py` sadržaja
 
 ``` python
+#!/usr/bin/env python
 import modul1
 
 if __name__ == "__main__":
@@ -94,6 +98,7 @@ __global__ void matrix_sum (float *dest, float *a, float *b)
 Datoteka `matrix_gpu_ops.py` je sadržaja
 
 ``` python
+#!/usr/bin/env python
 import pycuda.autoinit
 import pycuda.driver as drv
 import pycuda.gpuarray as ga
@@ -136,6 +141,7 @@ def produkt_matrica(a, b):
 Datoteka `test_matrix_gpu_ops.py` je oblika
 
 ``` python
+#!/usr/bin/env python
 import matrix_gpu_ops
 import numpy as np
 
@@ -149,6 +155,7 @@ def test_zbroj_matrica():
 Naposlijetku, datoteka `program.py` u kojoj koristimo napisanu funkciju je oblika
 
 ``` python
+#!/usr/bin/env python
 import matrix_gpu_ops
 import numpy as np
 
