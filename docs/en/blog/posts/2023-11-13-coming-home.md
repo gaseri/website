@@ -64,15 +64,21 @@ Interesting bit of history and a cool anecdote to remember for [operating](../..
 
 I started to wonder if this change was also made while performing an `upgrade` via [freebsd-update(8)](https://man.freebsd.org/cgi/man.cgi?query=freebsd-update&sektion=8&format=html), but it expectedly turned out that it was not.
 
-``` shell
-% ls -ld /home
+``` tcsh
+ls -ld /home
+```
+
+``` tcshcon
 lrwxr-xr-x  1 root wheel 11  7 tra   2023 /home -> usr/home
 ```
 
 Since I made sure to keep the pre-upgrade ZFS snapshot (that's fairly easy when you normally run [zfs-destroy(8)](https://openzfs.github.io/openzfs-docs/man/master/8/zfs-destroy.8.html) on old snapshots only when disk usage becomes a problem), there was little worry that the machine would be put in a nonrecoverable state. Let's see if `/usr/home` can simply be moved to `/home`.
 
-``` shell
-% doas zfs rename zroot/usr/home zroot/home
+``` tcsh
+doas zfs rename zroot/usr/home zroot/home
+```
+
+``` tcshcon
 Password:
 cannot unmount '/usr/home': pool or dataset is busy
 ```
@@ -83,8 +89,11 @@ Of course not. That was a bit too optimistic, wasn't it? Even for ZFS.
 
 It is impossible to perform this operation without unmounting the filesystem first, and unmounting can't be done on a busy filesystem. A busy filesystem in this case means a busy home directory, and a busy home directory in general means user processes running, be it session processes or per-user daemons. As a consequence, all regular users have to be logged out and all of their processes should be killed before the move can happen. Logging out is easy, killing session processes too, so let's check which daemons are running for my user.
 
-``` shell
-% grep vedran /etc/rc.conf
+``` tcsh
+grep vedran /etc/rc.conf
+```
+
+``` ini
 syncthing_home="/home/vedran/.config/syncthing"
 syncthing_user="vedran"
 syncthing_group="vedran"
@@ -92,8 +101,11 @@ syncthing_group="vedran"
 
 No wonder [Syncthing](https://syncthing.net/) is running, it is a very simple and useful file synchronization tool. Let's make sure it is stopped so it does not try to access its configuration directory via the `/home -> /usr/home` symlink while we are moving the home directory.
 
-``` shell
-% doas service syncthing stop
+``` tcsh
+doas service syncthing stop
+```
+
+``` tcshcon
 Password:
 Stopping syncthing.
 Waiting for PIDS: 34480.
@@ -101,20 +113,23 @@ Waiting for PIDS: 34480.
 
 One can now log out as a regular user and log in as `root` on the display and the keyboard attached to the system, if any. As this particular machine is headless and without an input device, I opted to log in as `root` via SSH. To do this, one has to replace the line in the OpenSSH daemon configuration file `/etc/ssh/sshd_config`. Instead of
 
-``` aconf
+``` apacheconf
 #PermitRootLogin no
 ```
 
 there should be
 
-``` aconf
+``` apacheconf
 PermitRootLogin yes
 ```
 
 Of course, after changing the configuration, one should also activate the changes using the [service(8)](https://man.freebsd.org/cgi/man.cgi?query=service&sektion=8&format=html) command:
 
-``` shell
-% doas service sshd reload
+``` tcsh
+doas service sshd reload
+```
+
+``` tcshcon
 Password:
 Performing sanity check on sshd configuration.
 ```
@@ -123,40 +138,58 @@ Performing sanity check on sshd configuration.
 
 It looks like we can finally log in as `root` and perform the move. Let's first get the existing symlink out of the way.
 
-``` shell
-# rm /home
+``` tcsh
+rm /home
 ```
 
 ZFS is smart enough to unmount and mount on filesystem rename so running just [zfs-rename(8)](https://openzfs.github.io/openzfs-docs/man/master/8/zfs-rename.8.html) should do the whole job for us.
 
-``` shell
-# zfs rename zroot/usr/home zroot/home
+``` tcsh
+zfs rename zroot/usr/home zroot/home
 ```
 
 That went with issues, good! Let's use [zfs-get(8)](https://openzfs.github.io/openzfs-docs/man/master/8/zfs-get.8.html) to see what we got.
 
-``` shell
-# zfs get mountpoint zroot/home
+``` tcsh
+zfs get mountpoint zroot/home
+```
+
+``` tcshcon
 NAME        PROPERTY    VALUE        SOURCE
 zroot/home  mountpoint  /zroot/home  inherited from zroot
-# ls /zroot
+```
+
+``` tcsh
+ls /zroot
+```
+
+``` tcshcon
 home
 ```
 
 Honestly, `/zroot` is not exactly the place where we want the `home` directory to be. Let's fix that using [zfs-set(8)](https://openzfs.github.io/openzfs-docs/man/master/8/zfs-set.8.html).
 
-``` shell
-# zfs set mountpoint=/home zroot/home
-# zfs get mountpoint zroot/home
+``` tcsh
+zfs set mountpoint=/home zroot/home
+zfs get mountpoint zroot/home
+```
+
+``` tcshcon
 NAME        PROPERTY    VALUE       SOURCE
 zroot/home  mountpoint  /home       local
-# ls /zroot
+```
+
+``` tcsh
+ls /zroot
 ```
 
 It looks like that worked. Is the home directory finally where it should be?
 
-``` shell
-# ls -ld /home
+``` tcsh
+ls -ld /home
+```
+
+``` tcshcon
 drwxr-xr-x  3 root wheel 3 15 kol  00:25 /home
 ```
 
@@ -165,35 +198,38 @@ The home directory is indeed in its proper place, great!
 !!! tip
     When my user was created during installation, [pw(8)](https://man.freebsd.org/cgi/man.cgi?query=pw&sektion=8&format=html) set its home directory to `/home/vedran`, as can be easily seen from the relevant part of the `/etc/passwd` file:
 
-    ``` shell
-    # grep vedran /etc/passwd
+    ``` tcsh
+    grep vedran /etc/passwd
+    ```
+
+    ``` unixconfig
     vedran:*:1001:1001:Vedran Miletic:/home/vedran:/bin/tcsh
     ```
 
     Some software might choose to use the `/usr/home/vedran` path to access the user's home directory regardless of this setting. Of course, the configuration of such software should be updated with the correct path. However, until this configuration is updated, it could be useful to have a "reverse" symlink:
 
-    ``` shell
-    # ln -s /home /usr/home
+    ``` tcsh
+    ln -s /home /usr/home
     ```
 
 ### Cleaning up after the move
 
 So, the move is done, but we still have to undo some of the preparatory work. Let's not forget to change that line in the OpenSSH daemon configuration file `/etc/ssh/sshd_config` back to
 
-``` aconf
+``` apacheconf
 #PermitRootLogin no
 ```
 
 and reload the service
 
-``` shell
-# service sshd reload
+``` tcsh
+service sshd reload
 ```
 
 Of course, it also would be useful to get Syncthing running again.
 
-``` shell
-# service syncthing start
+``` tcsh
+service syncthing start
 ```
 
 And that's it! That's what I like about FreeBSD (and ZFS), there is absolutely no need to reinstall the operating system just to get all the latest and greatest [directory hierarchy](https://docs.freebsd.org/en/books/handbook/basics/#dirstructure) conventions from 14.0-RELEASE applied. To the contrary, the required changes can be done fairly easily in an existing installation that was upgraded from 13.2-RELEASE or 12.4-RELEASE.
