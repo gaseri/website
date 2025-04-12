@@ -30,18 +30,29 @@ Recent [effort by Gleb Popov and Dima Panov](https://cgit.freebsd.org/ports/comm
 
 Let's start with enabling Linuxulator and installing the required packages:
 
-``` shell
-% doas sysrc linux_enable="YES"
-% doas service linux start
-% doas pkg install linux-rl9-libsigsegv
+``` tcsh
+doas sysrc linux_enable="YES"
+doas service linux start
+doas pkg install linux-rl9-libsigsegv
 ```
 
-Note that installing [devel/linux-rl9-libsigsegv](https://www.freshports.org/devel/linux-rl9-libsigsegv/) will automatically pull [emulators/linux_base-rl9](https://www.freshports.org/emulators/linux_base-rl9/) as a dependancy. After installing it, we should make sure that Linuxulator works correctly (using `uname`) and check that `bash` also got installed successfully:
+Note that installing [devel/linux-rl9-libsigsegv](https://www.freshports.org/devel/linux-rl9-libsigsegv/) will automatically pull [emulators/linux_base-rl9](https://www.freshports.org/emulators/linux_base-rl9/) as a dependancy. After installing it, we should make sure that Linuxulator works correctly (using `uname`):
 
-``` shell
-% /compat/linux/usr/bin/uname -a
+``` tcsh
+/compat/linux/usr/bin/uname -a
+```
+
+``` tcshcon
 Linux gaser 5.15.0 FreeBSD 14.1-RELEASE releng/14.1-n267679-10e31f0946d8 GENERIC x86_64 x86_64 x86_64 GNU/Linux
-% /compat/linux/usr/bin/bash --version
+```
+
+We should also check that `bash` got installed successfully:
+
+``` tcsh
+/compat/linux/usr/bin/bash --version
+```
+
+``` tcshcon
 GNU bash, version 5.1.8(1)-release (x86_64-redhat-linux-gnu)
 Copyright (C) 2020 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
@@ -53,7 +64,10 @@ There is NO WARRANTY, to the extent permitted by law.
 On the client side, you should adjust OpenSSH's config file to use Linuxulator's `bash`, for example:
 
 ``` shell
-$ cat ~/.ssh/config
+cat ~/.ssh/config
+```
+
+``` apacheconf
 Host example.group.miletic.net
     RemoteCommand /compat/linux/usr/bin/bash
 ```

@@ -40,8 +40,7 @@ Kojom god temom da se bavite, svakako koristite slobodne softvere otvorenog koda
 Na [Arch Linuxu](https://archlinux.org/) i [distribucijama temeljenim na Archu](https://wiki.archlinux.org/title/Arch-based_distributions) (kao što su [Manjaro](https://manjaro.org/), [Garuda Linux](https://garudalinux.org/) i [EndeavourOS](https://endeavouros.com/)) potrebno je instalirati grupe paketa [texlive](https://archlinux.org/groups/x86_64/texlive/) i [texlive-lang](https://archlinux.org/groups/x86_64/texlive-lang/) te pakete [pandoc-cli](https://archlinux.org/packages/extra/x86_64/pandoc-cli/) i [pandoc-crossref](https://archlinux.org/packages/extra/x86_64/pandoc-crossref/). To možemo učiniti naredbom:
 
 ``` shell
-$ sudo pacman -S pandoc-cli pandoc-crossref texlive texlive-lang
-(...)
+sudo pacman -S pandoc-cli pandoc-crossref texlive texlive-lang
 ```
 
 ### Stvaranje potrebnih datoteka
@@ -99,8 +98,7 @@ Poglavlje *Literatura* bez sadržaja mora biti posljednje jer služi kao mjesto 
 Opcionalno, alatom [markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2) možemo provjeriti sintaksu dokumenta. Instaliramo ga naredbom:
 
 ``` shell
-$ sudo pacman -S markdownlint-cli2
-(...)
+sudo pacman -S markdownlint-cli2
 ```
 
 Njegova konfiguracija istovjetna je biblioteci [markdownlint](https://github.com/DavidAnson/markdownlint) koju koristi i pohranjuje se u datoteci `.markdownlint.yaml`. Stvorimo tu datoteku tako da ima sadržaj:
@@ -114,7 +112,10 @@ line-length: false
 Provjeru vršimo pokretanjem naredbe `markdownlint-cli2` s imenom datoteke `tekst.md` kao argumentom:
 
 ``` shell
-$ markdownlint-cli2 tekst.md
+markdownlint-cli2 tekst.md
+```
+
+``` shell-session
 markdownlint-cli2 v0.12.1 (markdownlint v0.33.0)
 Finding: tekst.md
 Linting: 1 file(s)
@@ -580,7 +581,10 @@ Ovu datoteku nije potrebno mijenjati.
 Stil citiranja [IEEE with URL](https://citationsy.com/styles/ieee-with-url) koji ćemo koristiti može se preuzeti iz repozitorija [citation-style-language/styles](https://github.com/citation-style-language/styles) na GitHubu pomoću cURL-a:
 
 ``` shell
-$ curl -O https://raw.githubusercontent.com/citation-style-language/styles/master/ieee-with-url.csl
+curl -O https://raw.githubusercontent.com/citation-style-language/styles/master/ieee-with-url.csl
+```
+
+``` shell-session
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100 14576  100 14576    0     0  71280      0 --:--:-- --:--:-- --:--:-- 71450
@@ -593,19 +597,17 @@ Ovu datoteku također nije potrebno mijenjati.
 Nakon što su stvorene sve četiri datoteke s odgovarajućim imenima i sadržajem u trenutnom direktoriju, prevođenje rada u format PDF korištenjem Pandoca (i LaTeX-a, kojeg će Pandoc pozvati za nas) izvodimo naredbom:
 
 ``` shell
-$ pandoc --template=predlozak.latex --top-level-division=part -F pandoc-crossref -C --bibliography=bibliografija.bib --csl=ieee-with-url.csl -o rad.pdf tekst.md
-(...)
+pandoc --template=predlozak.latex --top-level-division=part -F pandoc-crossref -C --bibliography=bibliografija.bib --csl=ieee-with-url.csl -o rad.pdf tekst.md
 ```
 
 Kako bismo dobili verziju rada spremnu za ispis, potrebno je dodati zadatak nakon naslovne stranice. To možemo učiniti alatom [QPDF](https://qpdf.sourceforge.io/), koji instaliramo naredbom:
 
 ``` shell
-$ sudo pacman -S qpdf
-(...)
+sudo pacman -S qpdf
 ```
 
 Ako je zadatak spremljen u datoteci `zadatak.pdf`, a rad u datoteci `rad.pdf`, stvaranja verzije rada spremne za ispis izvest ćemo naredbom:
 
 ``` shell
-$ qpdf --empty --pages rad.pdf 1 zadatak.pdf rad.pdf 2-z -- rad-print.pdf
+qpdf --empty --pages rad.pdf 1 zadatak.pdf rad.pdf 2-z -- rad-print.pdf
 ```

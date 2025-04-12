@@ -69,7 +69,7 @@ After some minutes, the build process produces a bunch of executable files for W
 file crossbuild/bin/gmx.exe
 ```
 
-``` text
+``` shell-session
 crossbuild/bin/gmx.exe: PE32+ executable (console) x86-64, for MS Windows, 20 sections
 ```
 
@@ -97,7 +97,7 @@ cd crossbuild
 wine bin/gmx.exe
 ```
 
-``` text
+``` shell-session
 it looks like wine32 is missing, you should install it.
 multiarch needs to be enabled first.  as root, please
 execute "dpkg --add-architecture i386 && apt-get update &&
@@ -158,7 +158,7 @@ That adds MinGW's compiler libraries under `/usr/lib/gcc/x86_64-w64-mingw32/14-w
 wine bin/gmx.exe
 ```
 
-``` text
+``` shell-session
 it looks like wine32 is missing, you should install it.
 multiarch needs to be enabled first.  as root, please
 execute "dpkg --add-architecture i386 && apt-get update &&
@@ -223,7 +223,7 @@ The new misc binary format is disabled by default:
 update-binfmts --display
 ```
 
-```
+``` shell-session
 wine (disabled):
  package = wine
  type = magic
@@ -246,7 +246,7 @@ Afterwards, it is shown as enabled:
 update-binfmts --display
 ```
 
-```
+``` shell-session
 wine (enabled):
  package = wine
  type = magic
@@ -269,7 +269,7 @@ Running `gmx.exe` like one would run a Linux ELF file now works:
 bin/gmx.exe
 ```
 
-```
+``` shell-session
 it looks like wine32 is missing, you should install it.
 multiarch needs to be enabled first.  as root, please
 execute "dpkg --add-architecture i386 && apt-get update &&
@@ -320,7 +320,7 @@ cd ..
 cmake --build crossbuild --target check
 ```
 
-```
+``` shell-session
 [1/80] Generating git version information
 [1/3] Running all tests except physical validation
 Test project /home/vedranmiletic/workspace/gromacs/crossbuild
@@ -404,7 +404,7 @@ GROMACS can be run with:
 DISPLAY=:0.0 wine bin/gmx.exe
 ```
 
-```
+``` shell-session
 it looks like wine32 is missing, you should install it.
 multiarch needs to be enabled first.  as root, please
 execute "dpkg --add-architecture i386 && apt-get update &&
@@ -450,7 +450,7 @@ GROMACS reminds you: "Or (horrors!) use Berendsen!" (Justin Lemkul)
 
 Notice the absence of lines regarding the failure to create a window:
 
-```
+``` shell-session
 0050:err:winediag:nodrv_CreateWindow Application tried to create a window, but no driver could be loaded.
 0050:err:winediag:nodrv_CreateWindow L"The explorer process failed to start."
 0050:err:systray:initialize_systray Could not create tray window
@@ -462,7 +462,7 @@ After enabling Wine binfmt_misc, the command looks like:
 DISPLAY=:0.0 bin/gmx.exe
 ```
 
-```
+``` shell-session
 it looks like wine32 is missing, you should install it.
 multiarch needs to be enabled first.  as root, please
 execute "dpkg --add-architecture i386 && apt-get update &&

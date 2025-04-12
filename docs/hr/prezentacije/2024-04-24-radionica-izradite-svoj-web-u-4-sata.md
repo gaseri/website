@@ -323,7 +323,7 @@ ssh -T git@github.com
 
 U slučaju da je sve ispravno konfigurirano:
 
-``` text
+``` shell-session
 Hi coolgaser! You've successfully authenticated,
 but GitHub does not provide shell access.
 ```
