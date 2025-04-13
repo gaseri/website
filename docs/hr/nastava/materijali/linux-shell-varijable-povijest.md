@@ -64,7 +64,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov, Anja Vrbanjac
 
     - unutar skripte `pr1.sh` pišemo:
 
-        ``` bash
+        ``` sh
         #!/bin/sh
         echo "Vrijednost varijable je $VAR1"
         VAR1=2
