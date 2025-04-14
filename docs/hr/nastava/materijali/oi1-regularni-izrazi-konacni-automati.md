@@ -147,7 +147,7 @@ author: Luka Vretenar
 - Alat `grep` podržava proširene regularne izraze i možemo ga pozvati slijedećom naredbom:
 
     ``` shell
-    $ egrep "regex" datoteka
+    egrep "regex" datoteka
     ```
 
 - Gdje je `regex` regularni izraz koji pretražujemo a `datoteka` naziv daoteke u kojoj pretražujemo.

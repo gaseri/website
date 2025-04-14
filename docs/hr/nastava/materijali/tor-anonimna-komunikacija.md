@@ -56,13 +56,16 @@ Most (engl. *bridge*) je čvor koji [nije javno naveden kao dio Tor mreže](http
 Tor radi kao usluga operacijskog sutava. Pokrećemo ga naredbom:
 
 ``` shell
-$ sudo systemctl start tor.service
+sudo systemctl start tor.service
 ```
 
 Tor će tada započeti sakupljati podatke o relejima, što možemo vidjeti u izvještaju statusa:
 
 ``` shell
-$ systemctl status tor.service
+systemctl status tor.service
+```
+
+``` shell-session
 I learned some more directory information, but not enough to build a circuit: We have no usable consensus.
 Bootstrapped 10%: Loading relay descriptors
 Bootstrapped 20%: Loading relay descriptors

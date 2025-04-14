@@ -9,7 +9,10 @@ author: Vedran Miletić
 Korištenjem već ranije spomenutog LLVM-ovog alata llc možemo saznati koje su podržane ciljne arhitekture.
 
 ``` shell
-$ llc --version
+llc --version
+```
+
+``` shell-session
 LLVM (http://llvm.org/):
   LLVM version 11.0.0
 
@@ -76,7 +79,10 @@ Generacije arhitekture RDNA su redom:
 Popis podržanih procesora i značajki možemo također dobiti korištenjem naredbe llc.
 
 ``` shell
-$ llc -march=amdgcn -mattr=help
+llc -march=amdgcn -mattr=help
+```
+
+``` shell-session
 Available CPUs for this target:
 
   bonaire     - Select the bonaire processor.
@@ -244,7 +250,7 @@ For example, llc -mcpu=mycpu -mattr=+feature1,-feature2
 Prevedimo kod:
 
 ``` shell
-$ clang -target amdgcn -S kernel.cl
+clang -target amdgcn -S kernel.cl
 ```
 
 Zadani procesor je `gfx600`, odnosno `tahiti` (Radeon serija HD 7900). Dobiveni kod je oblika:
@@ -312,7 +318,7 @@ Promotrimo funkciju `multiply_by_two`. Vidimo niz skalarnih (prefix `s_`) i vekt
 Usporedimo dobiveni kod za grafički procesor `gfx803`, odnosno `fiji` (Radeon R9 Fury).
 
 ``` shell
-$ clang -target amdgcn -mcpu=gfx803 -S kernel.cl
+clang -target amdgcn -mcpu=gfx803 -S kernel.cl
 ```
 
 ``` ca65
@@ -377,7 +383,7 @@ Uočimo kako je instrukcija `v_add_f32_e32` ostala ista, ali kako su instrukcije
 U nastavku ćemo koristiti grafički procesor `gfx900` (Radeon RX Vega). Vega uvodi nove instrukcije za rad s globalnom memorijom `global_load_dword` i `global_store_dword`:
 
 ``` shell
-$ clang -target amdgcn -mcpu=gfx900 -S kernel.cl
+clang -target amdgcn -mcpu=gfx900 -S kernel.cl
 ```
 
 ``` ca65
@@ -446,7 +452,7 @@ Clang [podržava 4 nivoa optimizacije](https://developers.redhat.com/blog/2019/0
 Iskoristimo nivo optimizacije `-O0`:
 
 ``` shell
-$ clang -target amdgcn -mcpu=gfx900 -O0 -S kernel.cl
+clang -target amdgcn -mcpu=gfx900 -O0 -S kernel.cl
 ```
 
 Rezultirajući kod je oblika:
@@ -550,7 +556,7 @@ multiply_by_two:
 Optimizacija koju imamo iznad slična je `-O1` i višim nivoima:
 
 ``` shell
-$ clang -target amdgcn -mcpu=gfx900 -O1 -S kernel.cl
+clang -target amdgcn -mcpu=gfx900 -O1 -S kernel.cl
 ```
 
 Rezultirajući kod je oblika:
@@ -629,7 +635,7 @@ __kernel void a_b_c()
 Prevođenjem ovog koda s uključenim optimizacijama nećemo dobiti ništa konkretno jer će program prevoditelj uočiti da se varijabla `c` nigdje ne koristi i eliminirati je, a zatim eliminirati varijable `a` i `b`. Iskoristimo parametar `-O0`:
 
 ``` shell
-$ clang -target amdgcn -mcpu=gfx900 -O0 -S kernel.cl
+clang -target amdgcn -mcpu=gfx900 -O0 -S kernel.cl
 ```
 
 Dobivamo kod:

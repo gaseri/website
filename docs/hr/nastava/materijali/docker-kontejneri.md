@@ -57,8 +57,10 @@ Volumen
 U ovom dijelu naučit ćete kako preuzeti slike i pokrenuti kontejnere, ali i o izlolaciji samih kontejnera. Možete provjeriti je li Docker instaliran i prikupiti neke informacije o trenutnoj verziji pomoću sljedeće naredbe:
 
 ``` shell
-$ docker version
+docker version
+```
 
+``` shell-session
 Client:
  Version:           20.10.17
  API version:       1.41
@@ -92,8 +94,10 @@ Server:
 Također postoji brz i jednostavan način da vidite koliko je Docker kontejnera trenutno pokrenuto i vidite neke od Dockerovih konfiguriranih opcija:
 
 ``` shell
-$ docker info
+docker info
+```
 
+``` shell-session
 Client:
  Context:    default
  Debug Mode: false
@@ -108,36 +112,38 @@ Server:
  Images: 0
  Server Version: 20.10.17
  Storage Driver: overlay2
-...
+(...)
 ```
 
 Korištenje `docker` sastoji se od prosljeđivanja niza opcija, naredbi i praćenih argumentima. Sintaksa ima ovaj oblik:
 
 ``` shell
-$ docker <opcija> <naredba> <argumenti>
+docker <opcija> <naredba> <argumenti>
 ```
 
 Da biste vidjeli sve dostupne podnaredbe, upišite:
 
 ``` shell
-$ docker
+docker
+```
 
-...
+``` shell-session
+(...)
 Options:
   -v, --version            Print version information and quit
-...
+(...)
 
 Management Commands:
   network     Manage networks
   volume      Manage volumes
-...
+(...)
 
 Commands:
   build       Build an image from a Dockerfile
   create      Create a new container
   history     Show the history of an image
   images      List images
-...
+(...)
 ```
 
 ### Pokretanje kontejnera `hello-world`
@@ -145,8 +151,10 @@ Commands:
 Kao i sa svim tehničkim stvarima, *hello world* dobro je mjesto za početak. Upišite donju naredbu da preuzmete sliku iz Docker huba koja će kreirati kontejner `hello-world`:
 
 ``` shell
-$ docker run hello-world
+docker run hello-world
+```
 
+``` shell-session
 Unable to find image 'hello-world:latest' locally
 latest: Pulling from library/hello-world
 2db29710123e: Pull complete
@@ -164,7 +172,7 @@ To generate this message, Docker took the following steps:
     executable that produces the output you are currently reading.
  4. The Docker daemon streamed that output to the Docker client, which sent it
     to your terminal.
-...
+(...)
 ```
 
 Izlaz pokretanja kontejnera temeljenog na slici `hello-world` govori što se upravo dogodilo. Docker koji radi na vašem terminalu pokušao je pronaći sliku pod nazivom `hello-world`. Budući da ste tek započeli, nema slika pohranjenih lokalno (`Unable to find image 'hello-world:latest' locally`) pa Docker odlazi u svoj zadani Docker registar, Docker Hub, i traži sliku pod nazivom `hello-world`. Tamo pronalazi sliku, povlači je i zatim pokreće u kontejneru. Jedina funkcija `hello-world`-a je ispisati tekst koji vidite na vašem terminalu, nakon čega kontejner izlazi.
@@ -182,14 +190,16 @@ Izlaz pokretanja kontejnera temeljenog na slici `hello-world` govori što se upr
 Sada ste spremni za instaliranje slika s Dockerom. Ako trebate tražiti željeni softver putem Dockera, možete koristiti sljedeću sintaksu naredbe:
 
 ``` shell
-$ docker search <name>
+docker search <name>
 ```
 
 Na primjer, pokušajmo pretražiti python, koji je popularan programski jezik opće namjene:
 
 ``` shell
-$ docker search python
+docker search python
+```
 
+``` shell-session
 NAME                                DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
 python                              Python is an interpreted, interactive, objec…   7939      [OK]
 pypy                                PyPy is a fast, compliant alternative implem…   335       [OK]
@@ -223,14 +233,16 @@ Kao što vidite, postoji jedna službena slika za python, jednostavno nazvana py
 Nakon što znate koju sliku želite preuzeti, možete upotrijebiti sljedeću sintaksu kako biste uputili Docker za preuzimanje željenog softvera:
 
 ``` shell
-$ docker image pull <name>
+docker image pull <name>
 ```
 
 Na primjer, preuzmimo python:
 
 ``` shell
-$ docker image pull python
+docker image pull python
+```
 
+``` shell-session
 Using default tag: latest
 latest: Pulling from library/python
 23858da423a6: Pull complete
@@ -252,8 +264,10 @@ Izlaz na gornjoj snimci zaslona pokazuje da je Docker uspio pronaći i preuzeti 
 Popis svih instaliranih Docker slika možemo dobiti naredbom:
 
 ``` shell
-$ docker images
+docker images
+```
 
+``` shell-session
 REPOSITORY    TAG       IMAGE ID       CREATED         SIZE
 python        latest    e285995a3494   7 days ago      921MB
 hello-world   latest    feb5d9fea6a5   12 months ago   13.3kB
@@ -264,13 +278,13 @@ hello-world   latest    feb5d9fea6a5   12 months ago   13.3kB
 Kada je slika preuzeta Docker kontejner pokrećemo koristeći sljedeću sintaksu naredbe:
 
 ``` shell
-$ docker container run <name>
+docker container run <name>
 ```
 
 Pokrenimo Docker kontejner na temelju prethodne slike.
 
 ``` shell
-$ docker container run python
+docker container run python
 ```
 
 Prethodnoj naredbi možemo dodati nastavke `ls -l`. Obratite tada pozornost na izlaz narebe.
@@ -278,16 +292,20 @@ Prethodnoj naredbi možemo dodati nastavke `ls -l`. Obratite tada pozornost na i
 Upravljanje kontejnerima vršimo naredbom `docker container`. Za provjeru kontejnera u stanju rada, koristite sljedeću naredbu:
 
 ``` shell
-$ docker container list
+docker container list
+```
 
+``` shell-session
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
 ```
 
 Možemo koristiti i naredbu `docker ps` za istu stvar ili `ls` umjesto `list`. Vidimo da nema aktivnih kontejnera. Dodamo li parametar `-a` (`--all`), bit će prikazani svi kontejneri:
 
 ``` shell
-$ docker container ls -a
+docker container ls -a
+```
 
+``` shell-session
 CONTAINER ID   IMAGE         COMMAND     CREATED          STATUS                      PORTS     NAMES
 761f298e9ecb   python        "python3"   5 minutes ago    Exited (0) 5 minutes ago              quizzical_pare
 415b131fe935   hello-world   "/hello"    20 minutes ago   Exited (0) 20 minutes ago             intelligent_babbage
@@ -298,8 +316,10 @@ Primijetite da `STATUS` stupac pokazuje da su prikazani kontejneri izašli prije
 Za prikaz posljednjeg kontejnera kojeg ste stvorili, dodajte mu parametar -l:
 
 ``` shell
-$ docker container ls -l
+docker container ls -l
+```
 
+``` shell-session
 CONTAINER ID   IMAGE     COMMAND     CREATED          STATUS                      PORTS     NAMES
 761f298e9ecb   python    "python3"   6 minutes ago   Exited (0) 6 minutes ago             quizzical_pare
 ```
@@ -307,9 +327,11 @@ CONTAINER ID   IMAGE     COMMAND     CREATED          STATUS                    
 Ponovo upišimo naredbu:
 
 ``` shell
-$ docker info
+docker info
+```
 
-...
+``` shell-session
+(...)
 Server:
  Containers: 2
   Running: 0
@@ -318,7 +340,7 @@ Server:
  Images: 2
  Server Version: 20.10.17
  Storage Driver: overlay2
-...
+(...)
 ```
 
 Sada možemo vidjeti da imamo dva kontejnera i dvije slike.
@@ -332,13 +354,13 @@ docker start 415b131fe935
 Za zaustavljanje kontejnera koji radi upotrijebite `docker stop`, nakon čega slijedi ID ili njegov naziv. Ovaj put ćemo koristiti naziv koji je Docker dodijelio kontejneru, a to je `intelligent_babbage`:
 
 ``` shell
-$ docker stop intelligent_babbage
+docker stop intelligent_babbage
 ```
 
 Nakon što odlučite da vam kontejner više ne treba, uklonite ga pomoću naredbe `docker rm`, opet koristeći ID kontejnera ili ime.
 
 ``` shell
-$ docker rm intelligent_babbage
+docker rm intelligent_babbage
 ```
 
 ### Izolacija Docker kontejnera
@@ -348,14 +370,14 @@ Pokrenite nekoliko naredbi `docker container run` za Alpine kontejner. Naredba `
 Ovo je ključni sigurnosni koncept u svijetu Docker kontejnera! Iako je svaka `docker container run` naredba koristila istu `alpine` sliku, svako izvršenje bilo je zaseban, izoliran kontejner. Svaki kontejner ima zaseban datotečni sustav i radi u drugom prostoru imena; prema zadanim postavkama kontejner nema načina za interakciju s drugim kontejnerima, čak ni s onima iz iste slike. Pokušajmo još jednu vježbu da naučimo više o izolaciji.
 
 ``` shell
-$ docker container run -it alpine /bin/ash
+docker container run -it alpine /bin/ash
 ```
 
 `/bin/ash` je još jedna vrsta ljuske dostupna na `alpine` slici. Nakon što se kontejner pokrene i kada ste u naredbenom retku kontejnera, upišite sljedeće naredbe:
 
 ``` shell
-$ echo "hello world" > hello.txt
-$ ls
+echo "hello world" > hello.txt
+ls
 ```
 
 Prva `echo` naredba stvara datoteku pod nazivom `hello.txt` s riječima `hello world` unutar nje. Druga naredba daje vam popis datoteka u direktoriju i trebala bi prikazati vašu novostvorenu datoteku `hello.txt`. Sada upišite `exit` da napustite ovaj kontejner.
@@ -363,7 +385,7 @@ Prva `echo` naredba stvara datoteku pod nazivom `hello.txt` s riječima `hello w
 Da pokažete kako izolacija funkcionira, pokrenite sljedeće:
 
 ``` shell
-$ docker container run alpine ls
+docker container run alpine ls
 ```
 
 To je ista `ls` naredba koju smo koristili unutar interaktivne ljuske kontejnera, ali ovaj put, primijetite da nedostaje datoteka `hello.txt`. To je izolacija. Naredba je pokrenuta u novoj i zasebnoj instanci, iako se temelji na istoj slici.
@@ -375,8 +397,10 @@ Sada nam ostaje odgovoriti na pitanje: "Kako se vratiti do kontejnera koji sadr�
 Još jednom pokrenite naredbu `docker container ls` na način:
 
 ``` shell
-$ docker container ls -a
+docker container ls -a
+```
 
+``` shell-session
 CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS                      PORTS     NAMES
 36fd29a3e1c0   alpine    "ls"                     4 minutes ago    Exited (0) 4 minutes ago              awesome_wu
 091a118b96c4   alpine    "/bin/ash"               5 minutes ago    Exited (0) 5 minutes ago              ecstatic_grothendieck
@@ -390,7 +414,7 @@ Kontejner u kojem smo stvorili datoteku `hello.txt` isti je onaj u kojem smo kor
 Možemo upotrijebiti nešto drugačiju naredbu kako bismo rekli Dockeru da pokrene ovu specifičnu instancu kontejnera.
 
 ``` shell
-$ docker container start <kontejner ID>
+docker container start <kontejner ID>
 ```
 
 Savjet: Umjesto upotrebe punog ID-a kontejnera, možete upotrijebiti samo prvih nekoliko znakova, sve dok su dovoljni za jedinstveni ID kontejnera. Dakle, mogli bismo jednostavno upotrijebiti `091a` za identifikaciju kontejnera u gornjem primjeru, budući da nijedan drugi kontejner na ovom popisu ne počinje ovim znakovima.
@@ -398,8 +422,10 @@ Savjet: Umjesto upotrebe punog ID-a kontejnera, možete upotrijebiti samo prvih 
 Sada ponovno upotrijebite `docker container ls` naredbu za popis aktivnih kontejnera.
 
 ``` shell
-$ docker container ls
+docker container ls
+```
 
+``` shell-session
 CONTAINER ID   IMAGE     COMMAND      CREATED          STATUS              PORTS     NAMES
 091a118b96c4   alpine    "/bin/ash"   10 minutes ago   Up About a minute             ecstatic_grothendieck
 ```
@@ -407,7 +433,7 @@ CONTAINER ID   IMAGE     COMMAND      CREATED          STATUS              PORTS
 Primijetite da ovaj put naš kontejner još uvijek radi. Ovaj put koristili smo `ash shell` tako da umjesto jednostavnog izlaska na način na koji je `/bin/sh` učinio ranije, `ash` čeka naredbu. Možemo poslati naredbu u kontejner da se pokrene pomoću naredbe `exec`:
 
 ``` shell
-$ docker container exec <kontejner ID> ls
+docker container exec <kontejner ID> ls
 ```
 
 Ovaj put dobivamo popis direktorija i prikazuje našu datoteku `hello.txt` jer smo koristili instancu kontejnera u kojoj smo stvorili tu datoteku. Sada počinjete uviđati neke od važnih koncepata kontejnera. U sljedećoj vježbi radit ćemo s aplikacijama koje se sastoje od skupa kontejnera pomoću Docker Composea.
@@ -417,14 +443,20 @@ Ovaj put dobivamo popis direktorija i prikazuje našu datoteku `hello.txt` jer s
 Baratanje kontejnerima vršimo naredbom `docker container`. Provjerimo ponovno popis pokrenutih kontejnera naredbom `docker container list`:
 
 ``` shell
-$ docker container list
+docker container list
+```
+
+``` shell-session
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
 ```
 
 Vidimo da ih nema. Dodamo li parametar `-a` (`--all`), bit će prikazani svi kontejneri:
 
 ``` shell
-$ docker container list -a
+docker container list -a
+```
+
+``` shell-session
 CONTAINER ID        IMAGE               COMMAND              CREATED             STATUS                     PORTS               NAMES
 1e470c81b80a        httpd               "hello"              12 minutes ago      Exited (0) 3 minutes ago                       eager_mcnulty
 ```
@@ -432,21 +464,30 @@ CONTAINER ID        IMAGE               COMMAND              CREATED            
 Među njima je i kontejner koji smo stvorili pokretanjem slike `hello-world`. Pokrenimo ga naredbom `docker container start` korištenjem ID-a:
 
 ``` shell
-$ docker container start 1e470c81b80a
+docker container start 1e470c81b80a
+```
+
+``` shell-session
 1e470c81b80a
 ```
 
 ili korištenjem imena:
 
 ``` shell
-$ docker container start eager_mcnulty
+docker container start eager_mcnulty
+```
+
+``` shell-session
 eager_mcnulty
 ```
 
 Kako god smo izveli pokretanje, uvjerimo se da je pokrenut naredbom `docker ps`:
 
 ``` shell
-$ docker ps
+docker ps
+```
+
+``` shell-session
 CONTAINER ID        IMAGE               COMMAND              CREATED             STATUS              PORTS               NAMES
 1e470c81b80a        httpd               "hello"              14 minutes ago      Up 6 seconds        80/tcp              eager_mcnulty
 ```
@@ -454,7 +495,10 @@ CONTAINER ID        IMAGE               COMMAND              CREATED            
 Naposlijetku, naredbom `docker logs` pročitajmo poruke koje je kontejner ispisao nakon pokretanja:
 
 ``` shell
-$ docker logs eager_mcnulty
+docker logs eager_mcnulty
+```
+
+``` shell-session
 Hello from Docker!
 This message shows that your installation appears to be working correctly.
 
@@ -468,8 +512,13 @@ executable that produces the output you are currently reading.
 to your terminal.
 
 To try something more ambitious, you can run an Ubuntu container with:
-$ docker run -it ubuntu bash
+```
 
+``` shell
+docker run -it ubuntu bash
+```
+
+``` shell-session
 Share images, automate workflows, and more with a free Docker ID:
 https://hub.docker.com/
 
@@ -507,39 +556,39 @@ Ideja jest da se napravi mali OS koji će se moći pokrenuti na svakoj mašini g
 Proces kreće s instaliravanjem Docker alata na mašinu, što je već i učinjeno. Sljedeći korak jest pokretanje samog dockera i prijavljivanje na online repozitorij. Iskoristite postojeći račun sa github-a za izradu docker repozitorija. Odaberimo `sinatru` za sustav koji ćemo prilagoditi svojim potrebama:
 
 ``` shell
-$ docker pull training/sinatra
+docker pull training/sinatra
 ```
 
 Sljedeći korak jest pokretanje preuzetog sustava i izvršavanje željenih izmjena u sustavu, instaliravanje i brisanje paketa i sl. Uzmimo za primjer `json` i još neke dodatne alate:
 
 ``` shell
-$ docker run -t -i training/sinatra /bin/bash
-$ gem install json
-$ sudo apt-get install git
+docker run -t -i training/sinatra /bin/bash
+gem install json
+sudo apt-get install git
 ```
 
 Dodatno je preuzet repozitorij s Bitbucket-a koji je napravljen na distribuiranim sustavima:
 
 ``` shell
-$ git clone https://lbrumnic@bitbucket.org/lbrumnic/ds_projekt.git
+git clone https://lbrumnic@bitbucket.org/lbrumnic/ds_projekt.git
 ```
 
 Izlaskom iz trenutne slike, vrši se `commit` napravljenih izmjena prema trenutnom kontejneru koji se kreirao pokretanjem slike:
 
 ``` shell
-$ docker commit 79de9d702c2e lukabrumnic/sinatraluka
+docker commit 79de9d702c2e lukabrumnic/sinatraluka
 ```
 
 Svaki kontejner pri pokretanju dobije svoj individualni `id` koje se može provjeriti naredbom:
 
 ``` shell
-$ docker ps
+docker ps
 ```
 
 Na kraju se slika `push-a` na online repozitorij:
 
 ``` shell
-$ docker push lukabrumnic/sinatraluka
+docker push lukabrumnic/sinatraluka
 ```
 
 U sljedećem koraku sljedi testiranje napravljenih izmjena, a to ćemo napraviti tako da se podigne novi virtualni stroj sa sutavom `Fedora 20`. Na njemu se ulogirajte u svoj Docker repozitorij, preuzmite traženu sliku i provjerite ima li instaliran `json` na njoj.
@@ -547,9 +596,9 @@ U sljedećem koraku sljedi testiranje napravljenih izmjena, a to ćemo napraviti
 `Fedora 20` ima Docker u službenom repozitoriju paketa stoga je dovoljno instalirati paket `docker-io`. Nakon instalacije paketa, vrši se `login` na docker repozitorij. Zatim se preuzima željeni `image` te se istog pokreće.
 
 ``` shell
-$ docker login
-$ docker pull lukabrumnic/sinatraluka
-$ docker run -t -i lukabrumnic/sinatraluka /bin/bash
+docker login
+docker pull lukabrumnic/sinatraluka
+docker run -t -i lukabrumnic/sinatraluka /bin/bash
 ```
 
 Provjeru da je riječ o istom `image-u` nalazimo u `home` direktoriju gdje smo preuzeli repozitorij sa Bitbucket-a.
@@ -559,25 +608,25 @@ Provjeru da je riječ o istom `image-u` nalazimo u `home` direktoriju gdje smo p
 Od ostalih primjena postoji mogućnost pokretanja `daemon` aplikacije u pozadini čime se zapravo pokreće novi kontejner u kojem se neka aplikacije vrti. Još jedna korisna mogućnost je pokretanje web aplikacija u Dockeru. Uzmimo primjer:
 
 ``` shell
-$ docker run -d -P training/webapp python app.py
+docker run -d -P training/webapp python app.py
 ```
 
 Aplikacija se pokrene na portu 49153 no može se ručno podesiti da se aplikacije izvršavaju na željenom portu. Na primjer:
 
 ``` shell
-$ docker run -d -p 5000:5000 training/webapp python app.py
+docker run -d -p 5000:5000 training/webapp python app.py
 ```
 
 Dodatno se još može specificirati i sučelje na kojemu će se pokrenuti aplikacija. Po zadanom će se vezati specificirani port na sva sučelja, no to se može ograničiti. Primjerice:
 
 ``` shell
-$ docker run -d -p 127.0.0.1:5000:5000 training/webapp python app.py
+docker run -d -p 127.0.0.1:5000:5000 training/webapp python app.py
 ```
 
 Također se mogu pokrenuti u pozadini i izvršavati određene aktivnosti bez smetnje za klijenta.
 
 ``` shell
-$ docker run -d -p ubuntu:14.04 /bin/sh -c "while true; do echo hello world; sleep 1; done"
+docker run -d -p ubuntu:14.04 /bin/sh -c "while true; do echo hello world; sleep 1; done"
 ```
 
 ## Konfiguracija

@@ -40,7 +40,10 @@ Apache možemo instalirati kao i svaki drugi program i pokretati kao i svaki dru
 Apache se na Docker Hubu naziva [httpd](https://hub.docker.com/_/httpd), a zbog svoje popularnosti spada među [službene slike](https://hub.docker.com/search?type=image&image_filter=official) za koje se [garantira redovitost sigurnosnih nadogradnji](https://docs.docker.com/docker-hub/official_images/). Pokretanje kontejnera `httpd` izvodimo naredbom `docker run`:
 
 ``` shell
-$ docker run httpd:2.4
+docker run httpd:2.4
+```
+
+``` shell-session
 Unable to find image 'httpd:2.4' locally
 2.4: Pulling from library/httpd
 54fec2fa59d0: Pull complete
@@ -72,9 +75,18 @@ Ponovimo pokretanje koje smo izveli iznad naredbom `docker run` i uočimo da se 
 Ostavimo sada kontejner pokrenutim i napravimo u drugom terminalu cURL-om HTTP zahtjeve GET i HEAD na tu adresu kako bismo se uvjerili da poslužitelj radi i da je zaista u pitanju Apache 2.4:
 
 ``` shell
-$ curl http://172.17.0.2/
+curl http://172.17.0.2/
+```
+
+``` shell-session
 <html><body><h1>It works!</h1></body></html>
-$ curl -I http://172.17.0.2/
+```
+
+``` shell
+curl -I http://172.17.0.2/
+```
+
+``` shell-session
 HTTP/1.1 200 OK
 Date: Fri, 08 May 2020 15:18:10 GMT
 Server: Apache/2.4.43 (Unix)
@@ -98,7 +110,7 @@ U ovom zapisu oblika Common Log Format polja su redom, odvojena razmakom: ime il
 Poslužitelj sad možemo zaustaviti jer želimo prije ponovnog pokretanja učiniti što od nas traži upozorenje `AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message`. Dohvatimo Apachejevu konfiguracijsku datoteku iz kontejnera:
 
 ``` shell
-$ docker run --rm httpd:2.4 cat /usr/local/apache2/conf/httpd.conf > my-httpd.conf
+docker run --rm httpd:2.4 cat /usr/local/apache2/conf/httpd.conf > my-httpd.conf
 ```
 
 Uočimo da ovdje imamo novi parametar `--rm` koji Dockeru kaže da izbriše stvoreni kontejner nakon što završi izvođenje. Također, uočimo da uz ime kontejnera navodimo i naredbu koju želimo pokrenuti unutar kontejnera (umjesto zadane naredbe `httpd`), a to je ovdje `cat /usr/local/apache2/conf/httpd.conf`. Izlaz te naredbe spremamo u `my-httpd.conf`. Proučimo tu datoteku (možemo je ispisati korištenjem naredbe `cat` ili otvoriti u uređivaču teksta po želji):
@@ -174,7 +186,10 @@ COPY ./my-httpd.conf /usr/local/apache2/conf/httpd.conf
 Ova datoteka kaže da će novi Docker kontejneri nastajati iz slike `httpd:2.4` u koju je dodatno kopirana datoteka `./my-httpd.conf` na mjesto `/usr/local/apache2/conf/httpd.conf`. Izgradimo novu sliku naredbom `docker build` na način:
 
 ``` shell
-$ docker build -t "my-httpd:2.4-1" .
+docker build -t "my-httpd:2.4-1" .
+```
+
+``` shell-session
 Sending build context to Docker daemon  27.14kB
 Step 1/2 : FROM httpd:2.4
 ---> b2c2ab6dcf2e
@@ -187,7 +202,10 @@ Successfully tagged my-httpd:2.4-1
 Ovdje su ime `my-httpd` i verzija `2.4-1` proizvoljni, ali `.` nakon imena i verzije je vrlo važna jer označava trenutni direktorij u kojem se nalaze `Dockerfile` i ostale datoteke. Sada pokrenimo kontejner na temelju stvorene slike:
 
 ``` shell
-$ docker run my-httpd:2.4-1
+docker run my-httpd:2.4-1
+```
+
+``` shell-session
 [Fri May 08 23:33:45.732132 2020] [mpm_event:notice] [pid 1:tid 139777349747840] AH00489: Apache/2.4.43 (Unix) configured -- resuming normal operations
 [Fri May 08 23:33:45.732472 2020] [core:notice] [pid 1:tid 139777349747840] AH00094: Command line: 'httpd -D FOREGROUND'
 ```
@@ -251,8 +269,8 @@ Kako nam više neće trebati pristup direktoriju `/usr/local/apache2/htdocs`, ve
 Direktorij `/var/www/html` trenutno ne postoji u kontejneru. Stvorimo ga prvo van kontejnera i napunimo sadržajem:
 
 ``` shell
-$ mkdir -p www/html
-$ echo '<html><body><h1>Radi!</h1></body></html>' > www/html/index.html
+mkdir -p www/html
+echo '<html><body><h1>Radi!</h1></body></html>' > www/html/index.html
 ```
 
 Kopiranje direktorija u kontejner izvest ćemo isto kao kopiranje konfiguracijske datoteke, dodavanjem naredbe `COPY` u `Dockerfile`:
@@ -266,7 +284,10 @@ COPY ./www /var/www
 Izgradimo novu sliku naredbom `docker build` na način:
 
 ``` shell
-$ docker build -t "my-httpd:2.4-2" .
+docker build -t "my-httpd:2.4-2" .
+```
+
+``` shell-session
 Sending build context to Docker daemon   25.6kB
 Step 1/3 : FROM httpd:2.4
 ---> b2c2ab6dcf2e
@@ -281,7 +302,10 @@ Successfully tagged my-httpd:2.4-2
 Verziju smo postavili na `2.4-2` čisto da bude različita od prethodne i da imamo povijest promjena za kasnije pregledavanje. Sada pokrenimo kontejner na temelju stvorene slike:
 
 ``` shell
-$ docker run my-httpd:2.4-2
+docker run my-httpd:2.4-2
+```
+
+``` shell-session
 [Sun May 10 15:39:27.908202 2020] [mpm_event:notice] [pid 1:tid 140585480324224] AH00489: Apache/2.4.43 (Unix) configured -- resuming normal operations
 [Sun May 10 15:39:27.908547 2020] [core:notice] [pid 1:tid 140585480324224] AH00094: Command line: 'httpd -D FOREGROUND
 ```
@@ -289,7 +313,10 @@ $ docker run my-httpd:2.4-2
 Uvjerimo se da radi:
 
 ``` shell
-$ curl http://172.17.0.2/
+curl http://172.17.0.2/
+```
+
+``` shell-session
 <html><body><h1>Radi!</h1></body></html>
 ```
 
@@ -394,7 +421,10 @@ kojom ćemo omogućiti korištenje protokola HTTP/2 za sadržaj šifriran TLS-om
 Nakon što izgradimo kontejner s novom konfiguracijskom datotekom, možemo se cURL-om uvjeriti da HTTP/2 radi:
 
 ``` shell
-$ curl --http2 -I http://172.17.0.2/
+curl --http2 -I http://172.17.0.2/
+```
+
+``` shell-session
 HTTP/1.1 101 Switching Protocols
 Upgrade: h2c
 Connection: Upgrade

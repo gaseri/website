@@ -25,7 +25,10 @@ if ($_SERVER["REQUEST_URI"] == "/grafit") {
 Uvjerimo se da naše usmjeravanje zahtjeva upućenih na putanju `/grafit` radi ispravno:
 
 ``` shell
-$ curl http://localhost:8000/grafit
+curl http://localhost:8000/grafit
+```
+
+``` shell-session
 <p>Uvijek me uhvate kad šaram grafite po z
 ```
 
@@ -45,7 +48,10 @@ if ($_SERVER["REQUEST_URI"] == "/grafit") {
 Uvjerimo se da se statusni kod odgovora promijenio:
 
 ``` shell
-$ curl -v http://localhost:8000/grafit
+curl -v http://localhost:8000/grafit
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET /grafit HTTP/1.1
@@ -86,7 +92,10 @@ header("PHP-Mascot: ElePHPant");
 Uvjerimo se da je korisnički agent saznao koja je PHP-ova maskota:
 
 ``` shell
-$ curl -v http://localhost:8000/
+curl -v http://localhost:8000/
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET / HTTP/1.1
@@ -125,7 +134,10 @@ if ($_SERVER["REQUEST_URI"] == "/grafit") {
 Uvjerimo se da preusmjeravanje radi korištenjem cURL-ovog parametra `--location`, odnosno `-L` koji će učiniti da cURL ponovi HTTP zahtjev na novoj lokaciji navedenoj u zaglavlju `Location`:
 
 ``` shell
-$ curl -v -L http://localhost:8000/grafiti
+curl -v -L http://localhost:8000/grafiti
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET /grafiti HTTP/1.1
@@ -201,7 +213,10 @@ header("Location: http://$name:$port/grafit");
 Uvjerimo se da sada u zaglavlju `Location` nalazi cjeloviti URL:
 
 ``` shell
-$ curl -v -L http://localhost:8000/grafiti
+curl -v -L http://localhost:8000/grafiti
+```
+
+``` shell-session
 (...)
 < Location: http://localhost:8000/grafit
 < Content-Type: text/html; charset=UTF-8
@@ -233,7 +248,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 Uvjerimo se da provjera metode radi:
 
 ``` shell
-$ curl -X POST http://localhost:8000/
+curl -X POST http://localhost:8000/
+```
+
+``` shell-session
 <p>Hello, post-world!</p>
 ```
 
@@ -256,7 +274,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && $_SERVER["REQUEST_URI"] == "/grafit"
 Lako ćemo se uvjeriti da se postavljeni statusni kod javlja u HTTP odgovoru:
 
 ``` shell
-$ curl -v -X POST http://localhost:8000/grafit
+curl -v -X POST http://localhost:8000/grafit
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > POST /grafit HTTP/1.1
@@ -302,7 +323,10 @@ if ($_SERVER["REQUEST_METHOD"] == "HEAD") {
 Napravimo HTTP zahtjev HEAD cURL-om da se uvjerimo da naš poslužitelj radi kako treba:
 
 ``` shell
-$ curl -v -X HEAD http://localhost:8000/
+curl -v -X HEAD http://localhost:8000/
+```
+
+``` shell-session
 Warning: Setting custom HTTP method to HEAD with -X/--request may not work the
 Warning: way you want. Consider using -I/--head instead.
 *   Trying ::1:8000...
@@ -323,7 +347,13 @@ Warning: way you want. Consider using -I/--head instead.
 <
 * Closing connection 0
 
-$ curl -I http://localhost:8000/
+```
+
+``` shell
+curl -I http://localhost:8000/
+```
+
+``` shell-session
 HTTP/1.1 200 OK
 Host: localhost:8000
 Date: Wed, 30 Dec 2020 18:41:43 GMT
@@ -340,7 +370,10 @@ Vidimo zaglavlja među kojima je i naše prilagođeno zaglavlje `Moj-Head`, a ti
 Zahtjev HTTP metodom CONNECT izvršit će samo spajanje na poslužitelj i pritom ne očekuje nikakav odgovor ([više detalja o HTTP metodi CONNECT na MDN-u](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/CONNECT)). Zbog toga HTTP poslužitelji uglavnom uopće ne implementiraju metodu CONNECT, što je u skladu sa standardom ([odjeljak 4.3.6. pod naslovom CONNECT u RFC-u 7231 pod naslovom Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content](https://datatracker.ietf.org/doc/html/rfc7231#section-4.3.6)). Bez obzira kakav kod imali u datoteci `index.php`, odgovor na zahtjev tom metodom bit će prazan:
 
 ``` shell
-$ curl -v -X CONNECT http://localhost:8000/
+curl -v -X CONNECT http://localhost:8000/
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > CONNECT / HTTP/1.1
@@ -389,7 +422,10 @@ if ($_SERVER["HTTP_HOST"] == "www.inf.rm.miletic.net") {
 Kod korištenja cURL-a zaglavlja poslana u HTTP zahtjevu navodimo parametrom `--header`, odnosno `-H`. Isprobajmo različite vrijednosti zaglavlja `Host`:
 
 ``` shell
-$ curl -v -H 'Host: www.riteh.rm.miletic.net' http://localhost:8000/
+curl -v -H 'Host: www.riteh.rm.miletic.net' http://localhost:8000/
+```
+
+``` shell-session
 *   Trying 127.0.0.1:8000...
 * connect to 127.0.0.1 port 8000 failed: Veza odbijena
 *   Trying ::1:8000...
@@ -410,7 +446,13 @@ $ curl -v -H 'Host: www.riteh.rm.miletic.net' http://localhost:8000/
 <p>Ovo je Tehnički fakultet.</p>
 * Closing connection 0
 
-$ curl -v -H 'Host: www.inf.rm.miletic.net' http://localhost:8000/
+```
+
+``` shell
+curl -v -H 'Host: www.inf.rm.miletic.net' http://localhost:8000/
+```
+
+``` shell-session
 *   Trying 127.0.0.1:8000...
 * connect to 127.0.0.1 port 8000 failed: Veza odbijena
 *   Trying ::1:8000...
@@ -431,7 +473,13 @@ $ curl -v -H 'Host: www.inf.rm.miletic.net' http://localhost:8000/
 <p>Ovo je Fakultet informatike i digitalnih tehnologija.</p>
 * Closing connection 0
 
-$ curl -v -H 'Host: www.inf.uniri.hr' http://localhost:8000/
+```
+
+``` shell
+curl -v -H 'Host: www.inf.uniri.hr' http://localhost:8000/
+```
+
+``` shell-session
 *   Trying 127.0.0.1:8000...
 * connect to 127.0.0.1 port 8000 failed: Veza odbijena
 *   Trying ::1:8000...
@@ -456,7 +504,10 @@ $ curl -v -H 'Host: www.inf.uniri.hr' http://localhost:8000/
 U slučaju da ne navedemo zaglavlje `Host`, ono će imati vrijednost imena domene i vrata koja smo naveli u URL-u (u našem slučaju `localhost:8000`) pa će poslužitelj poslati očekivani odgovor:
 
 ``` shell
-$ curl -v http://localhost:8000/
+curl -v http://localhost:8000/
+```
+
+``` shell-session
 *   Trying 127.0.0.1:8000...
 * connect to 127.0.0.1 port 8000 failed: Veza odbijena
 *   Trying ::1:8000...
@@ -546,7 +597,10 @@ Uočimo da kod JSON-a za imenovanje polja i navođenje njihovih vrijednosti kori
 Zatražimo cURL-om prvo JSON navođenjem odgovarajuće vrijednosti zaglavlja `Accept`:
 
 ``` shell
-$ curl -v -H "Accept: application/json" http://localhost:8000/
+curl -v -H "Accept: application/json" http://localhost:8000/
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET / HTTP/1.1
@@ -569,7 +623,10 @@ $ curl -v -H "Accept: application/json" http://localhost:8000/
 Zatim zatražimo HTML pa čisti tekst:
 
 ``` shell
-$ curl -v -H "Accept: text/html" http://localhost:8000/
+curl -v -H "Accept: text/html" http://localhost:8000/
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET / HTTP/1.1
@@ -588,7 +645,13 @@ $ curl -v -H "Accept: text/html" http://localhost:8000/
 <p>Ivan Horvat (Informatika)</p>
 * Closing connection 0
 
-$ curl -v -H "Accept: text/plain" http://localhost:8000/
+```
+
+``` shell
+curl -v -H "Accept: text/plain" http://localhost:8000/
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET / HTTP/1.1
@@ -611,7 +674,10 @@ Ivan,Horvat,Informatika
 Uočimo da smo u sva tri slučaja dobili očekivane odgovore. Provjerimo da u slučaju da ne navedemo neku od te tri vrijednosti zaglavlja `Accept` u zahtjevu, poslužitelj odgovara porukom o pogrešci:
 
 ``` shell
-$ curl -v http://localhost:8000/
+curl -v http://localhost:8000/
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET / HTTP/1.1
@@ -659,7 +725,10 @@ U slučaju da provjera autorizacije ne prođe uspješno, odgovor ima statusni ko
 Uvjerimo se da ova provjera zaglavlja radi ispravno:
 
 ``` shell
-$ curl -v -H "Najjaci-Fakultet: MIT" http://localhost:8000/
+curl -v -H "Najjaci-Fakultet: MIT" http://localhost:8000/
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET / HTTP/1.1
@@ -679,7 +748,13 @@ $ curl -v -H "Najjaci-Fakultet: MIT" http://localhost:8000/
 <p>Na ovoj stranici nema ništa.</p>
 * Closing connection 0
 
-$ curl -v -H "Najjaci-Fakultet: Odjel za informatiku" http://localhost:8000/
+```
+
+``` shell
+curl -v -H "Najjaci-Fakultet: Odjel za informatiku" http://localhost:8000/
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET / HTTP/1.1

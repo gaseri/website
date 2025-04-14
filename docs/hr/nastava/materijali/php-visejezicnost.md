@@ -26,7 +26,7 @@ Vrijednosti elemenata prvog polja možemo dohvatiti na način `$arr1[0]`,  `$arr
 Pokrenimo interaktivni način rada interpretera PHP-a korištenjem parametra `--interactive`, odnosno `-a` te definirajmo ta dva polja `$arr1` i `$arr2` kao iznad, a zatim provjerimo njihov sadržaj funkcijom ispisa `print_r()` ([dokumentacija](https://www.php.net/manual/en/function.print-r.php)):
 
 ``` shell
-$ php -a
+php -a
 ```
 
 ``` tcshcon
@@ -93,7 +93,10 @@ if (in_array("hr", $languages_trimmed)) {
 Isprobajmo odabir jezika:
 
 ``` shell
-$ curl -v -H "Accept-Language: en,es,pt" http://localhost:8000/
+curl -v -H "Accept-Language: en,es,pt" http://localhost:8000/
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET / HTTP/1.1
@@ -114,7 +117,13 @@ $ curl -v -H "Accept-Language: en,es,pt" http://localhost:8000/
 <p>Hello, world!</p>
 * Closing connection 0
 
-$ curl -v -H "Accept-Language: hr, ru" http://localhost:8000/
+```
+
+``` shell
+curl -v -H "Accept-Language: hr, ru" http://localhost:8000/
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET / HTTP/1.1
@@ -135,7 +144,13 @@ $ curl -v -H "Accept-Language: hr, ru" http://localhost:8000/
 <p>Pozdrav, svijete!</p>
 * Closing connection 0
 
-$ curl -v -H "Accept-Language: de, fr" http://localhost:8000/
+```
+
+``` shell
+curl -v -H "Accept-Language: de, fr" http://localhost:8000/
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET / HTTP/1.1
@@ -159,7 +174,10 @@ $ curl -v -H "Accept-Language: de, fr" http://localhost:8000/
 Dobit ćemo odogovor na hrvatskom čak i u slučaju da je hrvatski jezik naveden u `Accept-Language` na nekom mjestu osim prvog:
 
 ``` shell
-$ curl -v -H "Accept-Language: de, hr" http://localhost:8000/
+curl -v -H "Accept-Language: de, hr" http://localhost:8000/
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET / HTTP/1.1
@@ -186,7 +204,10 @@ $ curl -v -H "Accept-Language: de, hr" http://localhost:8000/
 Evidentno je da kod iznad ne podržava odabir jezika oblika `hr-HR, en;q=0.9, de-AT;q=0.7, *;q=0.5`, a možemo se u to uvjeriti i slanjem zahtjeva:
 
 ``` shell
-$ curl -v -H "Accept-Language: hr-HR, en;q=0.9, de-AT;q=0.7, *;q=0.5" http://localhost:8000/
+curl -v -H "Accept-Language: hr-HR, en;q=0.9, de-AT;q=0.7, *;q=0.5" http://localhost:8000/
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET / HTTP/1.1
@@ -235,7 +256,10 @@ if (in_array("hr", $languages_trimmed) || in_array("hr-HR", $languages_trimmed) 
 Isprobajmo kod:
 
 ``` shell
-$ curl -v -H "Accept-Language: hr-HR, en, de-AT" http://localhost:8000/
+curl -v -H "Accept-Language: hr-HR, en, de-AT" http://localhost:8000/
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET / HTTP/1.1
@@ -286,7 +310,10 @@ if (in_array("hr", $languages_trimmed) || in_array("hr-HR", $languages_trimmed) 
 Isprobajmo kod navođenjem danske varijante engleskog jezika koja službeno ne postoji:
 
 ``` shell
-$ curl -v -H "Accept-Language: en-DK, de-AT" http://localhost:8000/
+curl -v -H "Accept-Language: en-DK, de-AT" http://localhost:8000/
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET / HTTP/1.1
@@ -436,7 +463,10 @@ echo "<p>Poslani popis jezika nije prihvatljiv.</p>\n";
 Isprobajmo kod:
 
 ``` shell
-$ curl -v -H "Accept-Language: en;q=0.6, hr;q=0.8" http://localhost:8000/
+curl -v -H "Accept-Language: en;q=0.6, hr;q=0.8" http://localhost:8000/
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET / HTTP/1.1
@@ -457,7 +487,13 @@ $ curl -v -H "Accept-Language: en;q=0.6, hr;q=0.8" http://localhost:8000/
 <p>Pozdrav, svijete!</p>
 * Closing connection 0
 
-$ curl -v -H "Accept-Language: ru, en;q=0.6, hr;q=0.8" http://localhost:8000/
+```
+
+``` shell
+curl -v -H "Accept-Language: ru, en;q=0.6, hr;q=0.8" http://localhost:8000/
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET / HTTP/1.1
@@ -478,7 +514,13 @@ $ curl -v -H "Accept-Language: ru, en;q=0.6, hr;q=0.8" http://localhost:8000/
 <p>Привет мир!</p>
 * Closing connection 0
 
-$ curl -v -H "Accept-Language: de;q=0.9, fr;q=0.5" http://localhost:8000/
+```
+
+``` shell
+curl -v -H "Accept-Language: de;q=0.9, fr;q=0.5" http://localhost:8000/
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET / HTTP/1.1

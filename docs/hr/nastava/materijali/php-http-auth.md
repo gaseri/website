@@ -27,7 +27,10 @@ U slučaju da provjera autorizacije ne prođe uspješno, odgovor ima statusni ko
 Uvjerimo se da ova rudimentarna provjera autorizacije radi ispravno:
 
 ``` shell
-$ curl -v -H "Authorization: Ruski haker" http://localhost:8000/
+curl -v -H "Authorization: Ruski haker" http://localhost:8000/
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET / HTTP/1.1
@@ -47,7 +50,13 @@ $ curl -v -H "Authorization: Ruski haker" http://localhost:8000/
 <p>Nemate pravo pristupa.</p>
 * Closing connection 0
 
-$ curl -v -H "Authorization: Basic YWxhZGRpbjpvcGVuc2VzYW1l" http://localhost:8000/
+```
+
+``` shell
+curl -v -H "Authorization: Basic YWxhZGRpbjpvcGVuc2VzYW1l" http://localhost:8000/
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET / HTTP/1.1
@@ -100,7 +109,10 @@ U HTTP zaglavlju `WWW-Authenticate` navodimo tip autentifikacije koji se koristi
 Napravimo zahtjev:
 
 ``` shell
-$ curl -v http://localhost:8000/
+curl -v http://localhost:8000/
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET / HTTP/1.1
@@ -124,7 +136,10 @@ $ curl -v http://localhost:8000/
 Uočimo zaglavlje `WWW-Authenticate` u odgovoru koje ima sadržaj opisan iznad. U cURL-u se možemo prijaviti korištenjem parametra `--user`, odnosno `-u` na način:
 
 ``` shell
-$ curl -v -u ivanhorvat:m0jazap0rka http://localhost:8000/
+curl -v -u ivanhorvat:m0jazap0rka http://localhost:8000/
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 * Server auth using Basic with user 'ivanhorvat'
@@ -155,7 +170,7 @@ Kako se ne radi o šifriranju, već o jednostavnom kodiranju, lako je znakovni n
 Interpreter jezika PHP od [verzije 5.1.0](https://www.php.net/releases/5_1_0.php) nadalje omogućuje korištenje interaktivnog načina rada koji je primarno namijenjen za brzo isprobavanje kako manji dijelovi koda rade, što je vrlo korisno i u procesu učenja. Pokrenimo interaktivni način rada interpretera PHP-a korištenjem parametra `--interactive`, odnosno `-a` te izvedimo Base64 dekodiranje:
 
 ``` shell
-$ php -a
+php -a
 ```
 
 ``` tcshcon

@@ -13,8 +13,7 @@ Alternativno, Docker i Docker Compose je moguće koristiti na Windowsima 10 i 11
 Provjerite je li sustav ažuran pomoću sljedeće naredbe:
 
 ``` shell
-$ pamac upgrade -a
-(...)
+pamac upgrade -a
 ```
 
 Nakon instalacije nadogradnji ponovno pokrenite sustav ako je potrebno (tj. ako je nadograđena jezgra).
@@ -22,8 +21,7 @@ Nakon instalacije nadogradnji ponovno pokrenite sustav ako je potrebno (tj. ako 
 Instalirajte Docker sljedećom naredbom:
 
 ``` shell
-$ pamac install docker
-(...)
+pamac install docker
 ```
 
 Zatim ćete dobit upit želite li nastaviti s instalacijom, odaberite potvrdno.
@@ -31,13 +29,16 @@ Zatim ćete dobit upit želite li nastaviti s instalacijom, odaberite potvrdno.
 Nakon što je instalacija dovršena, uključite pokretanje usluge Dockera korištenjem mrežne utičnice:
 
 ``` shell
-$ sudo systemctl enable --now docker.socket
+sudo systemctl enable --now docker.socket
 ```
 
 Pokušajte pokrenuti kontejner temeljen na slici `hello-world` naredbom `docker run` i uočite grešku:
 
 ``` shell
-$ docker run hello-world
+docker run hello-world
+```
+
+``` shell-session
 docker: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/create": dial unix /var/run/docker.sock: connect: permission denied.
 See 'docker run --help'.
 ```
@@ -45,13 +46,13 @@ See 'docker run --help'.
 Zatim dodajte svog korisnika u grupu `docker` koja ima pravo pokretanja kontejnera:
 
 ``` shell
-$ sudo usermod -aG docker $USER
+sudo usermod -aG docker $USER
 ```
 
 Kontejnere ćete moći pokretati nakon ponovne prijave. Najjednostavniji način da se odjavite je:
 
 ``` shell
-$ loginctl kill-user $USER
+loginctl kill-user $USER
 ```
 
 ## Docker Compose
@@ -59,6 +60,5 @@ $ loginctl kill-user $USER
 Instalirajte Docker Compose sljedećom naredbom:
 
 ``` shell
-$ pamac install docker-compose
-(...)
+pamac install docker-compose
 ```

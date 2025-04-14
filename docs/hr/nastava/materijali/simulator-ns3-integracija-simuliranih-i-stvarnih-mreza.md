@@ -85,99 +85,102 @@ Postoji mogućnost simuliranja mreže i korištenja "pravih" domaćina. Najčeš
 Ovdje ćemo koristiti [Linux kontejnere](https://linuxcontainers.org/) (lxc) i pratiti [upute s ns-3-evog Wikija](https://www.nsnam.org/wiki/HOWTO_Use_Linux_Containers_to_set_up_virtual_networks). Da bi koristili kontejnere, najprije treba instalirati potrebne alate. To činimo pomoću sljedeće linije koda:
 
 ``` shell
-$ sudo yum install lxc bridge-utils tunctl
+sudo yum install lxc bridge-utils tunctl
 ```
 
 Pogledajmo konfiguraciju lijevog i desnog kontejnera na putanji `~/repos/ns-3-allinone/ns-3-dev`:
 
 ``` shell
-$ less src/tap-bridge/examples/lxc-left.conf
-$ less src/tap-bridge/examples/lxc-right.conf
+less src/tap-bridge/examples/lxc-left.conf
+less src/tap-bridge/examples/lxc-right.conf
 ```
 
 Prije stvaranja kontejnera, trebamo storiti mostove. Mostovi su "signalne putanje" po kojima će paketi izlaziti iz kontejnera.
 
 ``` shell
-$ sudo brctl addbr br-left
-$ sudo brctl addbr br-right
+sudo brctl addbr br-left
+sudo brctl addbr br-right
 ```
 
 Moramo kreirati tap uređaje koje ns-3 koristi za primanje paketa sa mostova.
 
 ``` shell
-$ sudo tunctl -t tap-left
-$ sudo tunctl -t tap-right
+sudo tunctl -t tap-left
+sudo tunctl -t tap-right
 ```
 
 Prije dodavanja tap uređaja, moramo podesiti njihovu IP adresu na 0.0.0.0 i postaviti ih.
 
 ``` shell
-$ sudo ifconfig tap-left 0.0.0.0 promisc up
-$ sudo ifconfig tap-right 0.0.0.0 promisc up
+sudo ifconfig tap-left 0.0.0.0 promisc up
+sudo ifconfig tap-right 0.0.0.0 promisc up
 ```
 
 Sada dodajemo tap uređaje koje smo upravo stvorili njihovim mostovima, dodajemo IP adrese mostovima i postavljamo ih.
 
 ``` shell
-$ sudo brctl addif br-left tap-left
-$ sudo ifconfig br-left up
-$ sudo brctl addif br-right tap-right
-$ sudo ifconfig br-right up
+sudo brctl addif br-left tap-left
+sudo ifconfig br-left up
+sudo brctl addif br-right tap-right
+sudo ifconfig br-right up
 ```
 
 Provjerimo jesmo li dobro postavili mostove i tap uređaje:
 
 ``` shell
-$ sudo brctl show
+sudo brctl show
 ```
 
 Trebamo se pobrinuti da kernel ima isključeno ethernet filtriranje.
 
 ``` shell
-$ cd /proc/sys/net/bridge
-$ sudo -s
-# for f in bridge-nf-*; do echo 0 > $f; done
-# exit
-$ cd -
+cd /proc/sys/net/bridge
+sudo -s
+for f in bridge-nf-*; do echo 0 > $f; done
+exit
+cd -
 ```
 
 Sada možemo pokrenuti kontejnere, a pritom je prvi korak stvaranje kontejnera. Najprije ćemo stvoriti lijevi, a zatim desni kontejner.
 
 ``` shell
-$ sudo lxc-create -n left -f lxc-left.conf
-$ sudo lxc-create -n right -f lxc-right.conf
+sudo lxc-create -n left -f lxc-left.conf
+sudo lxc-create -n right -f lxc-right.conf
 ```
 
 Sljedećom naredbom ispisujemo stvorene kontejnere.
 
 ``` shell
-$ sudo lxc-ls
+sudo lxc-ls
+```
+
+``` shell-session
 left right
 ```
 
 Pokrenimo kontejner za lijevog domaćina. Upišimo u terminal sljedeće:
 
 ``` shell
-$ sudo lxc-start -n left /bin/bash
+sudo lxc-start -n left /bin/bash
 ```
 
 U novi terminal upisujemo naredbu:
 
 ``` shell
-$ sudo lxc-start -n right /bin/bash
+sudo lxc-start -n right /bin/bash
 ```
 
 U još jedan terminal upisujemo:
 
 ``` shell
-$ ./waf configure --enable-examples --enable-tests --enable-sudo
-$ ./waf build
+./waf configure --enable-examples --enable-tests --enable-sudo
+./waf build
 ```
 
 Pokrenimo simulaciju.
 
 ``` shell
-$ ./waf --run tap-csma-virtual-machine
+./waf --run tap-csma-virtual-machine
 ```
 
 Simulacija će trajati 10 minuta, ako je prije ne prekinemo s ++control+c++. Ako u lijevi terminal upišemo:

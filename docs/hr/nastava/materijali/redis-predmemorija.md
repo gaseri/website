@@ -11,13 +11,13 @@ author: Vedran Miletić
 Na Ubuntuu Redis instaliramo naredbom:
 
 ``` shell
-$ sudo apt install redis
+sudo apt install redis
 ```
 
 Nakon instalacije uvjerimo se da se Redis poslužitelj pokrenuo naredbom:
 
 ``` shell
-$ systemctl status redis-server.service
+systemctl status redis-server.service
 ```
 
 ## Povezivanje klijentom i osnovne operacije
@@ -25,7 +25,7 @@ $ systemctl status redis-server.service
 Povežimo se na Redis poslužitelj klijentom naredbenog retka `redis-cli` ([dokumentacija](https://redis.io/topics/rediscli)):
 
 ``` shell
-$ redis-cli
+redis-cli
 ```
 
 Uočimo da se Redis klijent povezao na adresu 127.0.0.1 i vrata 6379 (to ćemo kasnije koristiti kad se budemo povezivali iz interpretera programskog jezika).
@@ -65,7 +65,7 @@ Kasnije ćemu ovu promjenu postavki trajno zapisati u konfiguracijskoj datoteci.
 Uočimo da Redis poslužitelj sluša samo na localhost adresi (127.0.0.1 za IPv4, ::1 za IPv6). Ako nemamo povjerenja u Redis klijent, možemo se u to uvjeriti naredbom ljuske `ss` (alat sličan `netstat`-u i moderna zamjena za isti) na način:
 
 ``` shell
-$ ss -l | grep 6379
+ss -l | grep 6379
 ```
 
 Mi bismo htjeli da sluša na svim adresama kako bismo mu mogli pristupiti s drugog virutalnog stroja, dakle trebamo postaviti adresu na 0.0.0.0 za IPv4 i :: za IPv6. Uočimo u konfiguracijskoj datoteci `/etc/redis/redis.conf` konfiguracijsku naredbu `bind`:
@@ -137,7 +137,7 @@ protected-mode no
 Ponovno pokrenim poslužitelj:
 
 ``` shell
-$ sudo systemctl restart redis-server.service
+sudo systemctl restart redis-server.service
 ```
 
 ## Pristup sa drugog poslužitelja
@@ -145,13 +145,13 @@ $ sudo systemctl restart redis-server.service
 Na računalu (ili više njih) s web poslužiteljem i interpreterom programskog jezika instalirajmo klijent kojim ćemo provjeriti da je pristup omogućen:
 
 ``` shell
-$ sudo apt install redis-tools
+sudo apt install redis-tools
 ```
 
 Povežimo se na poslužitelj navođenjem njegove IP adrese korištenjem parametra `-h` ([dokumentacija](https://redis.io/topics/rediscli#host-port-password-and-database)). Ako je Redis poslužitelj na adresi 192.168.122.34, naredba je oblika:
 
 ``` shell
-$ redis-cli -h 192.168.122.34
+redis-cli -h 192.168.122.34
 ```
 
 Nakon povezivanja uvjerimo se da možemo dohvatiti ranije postavljenu vrijednost:
@@ -164,7 +164,10 @@ Nakon povezivanja uvjerimo se da možemo dohvatiti ranije postavljenu vrijednost
 Klijentske biblioteke za pristup Redisu iz PHP-a su [Predis](https://github.com/predis/predis/wiki) ([GitHub](https://github.com/predis/predis), [Packagist](https://packagist.org/packages/predis/predis)) i [PhpRedis](https://github.com/phpredis/phpredis). Možemo se lako uvjeriti da Ubuntu nudi obje za instalaciju:
 
 ``` shell
-$ sudo apt search predis
+sudo apt search predis
+```
+
+``` shell-session
 Sorting... Done
 Full Text Search... Done
 golang-github-stvp-tempredis-dev/focal 0.0~git20160122.0.83f7aae-2 all
@@ -180,7 +183,7 @@ php-nrk-predis/focal 1.0.0-1 amd64
 Instalirat ćemo Predis jer je nešto jednostavniji za korištenje:
 
 ``` shell
-$ sudo apt install php-nrk-predis
+sudo apt install php-nrk-predis
 ```
 
 Uredimo `index.php` tako da bude oblika:

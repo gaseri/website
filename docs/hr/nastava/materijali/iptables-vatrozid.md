@@ -168,13 +168,13 @@ Za svaki navedeni primjer generiranjem odgovarajućeg prometa (korištenjem MGEN
 Generiranjem odgovarajućeg prometa (dva toka prema TCP vratima 80 na n1, od kojih je jedan s n10, a drugi s, primjerice, n7) i hvatanjem prometa putem alata Wireshark (na mrežnom sučelju na n1) ispitajmo stanje veze. Uočimo kako n1 trenutno može uspostaviti HTTP vezu sa svim preostalim čvorovima u mreži. Pokrenemo ljusku na n1 te upišemo:
 
 ``` shell
-# iptables -A INPUT -p tcp -s 10.0.4.10 --dport 80 -m state --state NEW,ESTABLISHED -j ACCEPT
+iptables -A INPUT -p tcp -s 10.0.4.10 --dport 80 -m state --state NEW,ESTABLISHED -j ACCEPT
 ```
 
 Zatim ponovno upišemo u ljusku na n1:
 
 ``` shell
-# iptables -A INPUT -p tcp -s 0.0.0.0/0 --dport 80 -j REJECT
+iptables -A INPUT -p tcp -s 0.0.0.0/0 --dport 80 -j REJECT
 ```
 
 Generiranjem odgovarajućeg prometa i hvatanjem prometa putem alata Wireshark kao iznad ispitajmo stanje veze. Uočimo kako sada n1 može uspostaviti HTTP vezu samo sa n10.
@@ -186,13 +186,13 @@ Pretpostavimo da je vatrozidu usmjerivača n5 na FORWARD lancu zadan cilj DROP. 
 Postavimo prvo zadani cilj DROP na lancu FORWARD. Na n5 pokrenimo:
 
 ``` shell
-# iptables -P FORWARD DROP
+iptables -P FORWARD DROP
 ```
 
 Generiranjem odgovarajućeg prometa i hvatanjem prometa putem alata Wireshark ispitajmo stanje veze. Uočimo kako se preko n5 trenutno ne može uspostaviti veza između nikoja dva čvora u mrežama spojenim na suprotna sučelja usmjerivača n5. Pokrenemo ljusku na usmjerivaču n5 te upišemo:
 
 ``` shell
-# iptables -A FORWARD -s 0.0.0.0/0 -d 192.168.4.22 -j ACCEPT
+iptables -A FORWARD -s 0.0.0.0/0 -d 192.168.4.22 -j ACCEPT
 ```
 
 Generiranjem odgovarajućeg prometa i hvatanjem prometa putem alata Wireshark ispitajmo stanje veze. Uočimo da sada možemo poslati pakete računalu n3 sa bilo kojeg domaćina ili računala u mreži. Također uočimo da na pošiljatelje paketa za n3 ne može stići nikakav povratni paket sa n3.
@@ -204,7 +204,7 @@ Generiranjem odgovarajućeg prometa i hvatanjem prometa putem alata Wireshark is
 Generiranjem odgovarajućeg prometa i hvatanjem prometa putem alata Wireshark ispitajmo stanje veze. Uočimo da možemo uspostaviti komunikaciju sa postojećim čvorovima iz 192.168.4.0/24 od strane ostatka mreže. Pokrenemo ljusku na usmjerivaču n5 te upišemo:
 
 ``` shell
-# iptables -A FORWARD -d 192.168.4.0/24 -j DROP
+iptables -A FORWARD -d 192.168.4.0/24 -j DROP
 ```
 
 Generiranjem odgovarajućeg prometa i hvatanjem prometa putem alata Wireshark ispitajmo stanje veze. Uočimo da sada više ne možemo slati pakete prema 192.168.4.0/24 od strane ostatka mreže. Također, uočimo da računala n1, n2 i n3 mogu slati pakete prema ostatku mreže, no ne mogu primiti nikakav povratni paket.
@@ -216,7 +216,7 @@ Generiranjem odgovarajućeg prometa i hvatanjem prometa putem alata Wireshark is
 Generiranjem odgovarajućeg prometa i hvatanjem prometa putem alata Wireshark ispitajmo stanje veze. Uočimo da je za n1 moguće poslati TCP pakete domaćinu n7, kao i bilo kojem drugom čvoru na mreži. Pokrenemo ljusku na n1 te upišemo:
 
 ``` shell
-# iptables -A OUTPUT -p tcp -d 10.0.2.10 -j DROP
+iptables -A OUTPUT -p tcp -d 10.0.2.10 -j DROP
 ```
 
 Generiranjem odgovarajućeg prometa i hvatanjem prometa putem alata Wireshark ispitajmo stanje veze. Uočimo kako sada više računalo n1 ne može poslati TCP pakete domaćinu n7, no može bilo kojem drugom čvoru. Računalo n1 od domaćina n7 dobiva poruku `"Connection refused"`.
@@ -228,7 +228,7 @@ Generiranjem odgovarajućeg prometa i hvatanjem prometa putem alata Wireshark is
 Uporabom alata `ping` i hvatanjem prometa putem alata Wireshark ispitajmo stanje veze. Uočimo kako računalo n1 može primiti ICMP poruku od bilo kojeg čvora u mreži, a bilo koji čvor u mreži može dobiti odgovor na ICMP poruku poslanu n1. Pokrenemo ljusku na n1 te upišemo:
 
 ``` shell
-# iptables -A INPUT -p icmp --icmp-type echo-request -j DROP
+iptables -A INPUT -p icmp --icmp-type echo-request -j DROP
 ```
 
 Uporabom alata `ping` i hvatanjem prometa putem alata Wireshark ispitajmo stanje veze. Uočimo kako n1 i dalje prima ICMP poruke, no čvorovi koji su poslali ICMP poruku više ne dobivaju odgovor od n1.
@@ -240,7 +240,7 @@ Uporabom alata `ping` i hvatanjem prometa putem alata Wireshark ispitajmo stanje
 Generiranjem odgovarajućeg prometa i hvatanjem prometa putem alata Wireshark ispitajmo stanje veze. Uočimo kako n1 može poslati poruku s odredišnim vratima 25 na bilo koji čvor u mreži (za primanje poruke, čvor primatelj mora imati otvorena vrata 25). Pokrenemo ljusku na n1 te upišemo:
 
 ``` shell
-# iptables -A OUTPUT -p tcp --dport 25 -j DROP
+iptables -A OUTPUT -p tcp --dport 25 -j DROP
 ```
 
 Generiranjem odgovarajućeg prometa i hvatanjem prometa putem alata Wireshark ispitajmo stanje veze. Uočimo kako poruke s odredišnim vratima 25 računalo n1 više ne može poslati niti jednom čvoru u mreži te na svaki poslani paket dobiva odgovor `"Connection timed out"`.

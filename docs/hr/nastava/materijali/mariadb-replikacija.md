@@ -71,7 +71,7 @@ bind-address            = 0.0.0.0
 Nakon promjena postavki pokrenimo ponovno poslužitelj:
 
 ``` shell
-$ sudo systemctl restart mariadb
+sudo systemctl restart mariadb
 ```
 
 U nastavku uzimamo da je korisnik koji pristupa bazi podataka na primarnom poslužitelju i na replikama `ivanzhegalkin`, a baza podataka `mojabaza`. Zaključajmo tablice za promjene SQL upitom `FLUSH` ([dokumentacija](https://mariadb.com/kb/en/flush/)) tako da prvo spremimo sve podatke u tablice, a potom ih zaključamo:
@@ -101,7 +101,7 @@ Zapamtimo ime datoteke `master1-bin.000096` i mjesto u njoj `568` koji će nam t
 Iskoristimo u novom terminalu naredbu ljuske `mariadb-dump` ([dokumentacija](https://mariadb.com/kb/en/mariadb-dump/)) za spremanje podataka iz baze `mojabaza` u datoteku `mojabaza-dump.sql` koja će sadržavati niz SQL upita kojima će se stvoriti baza iste strukture s istim podacima na drugom mjestu. Naredba je oblika:
 
 ``` shell
-$ mariadb-dump -u ivanzhegalkin -p mojabaza > mojabaza-dump.sql
+mariadb-dump -u ivanzhegalkin -p mojabaza > mojabaza-dump.sql
 ```
 
 Otključajmo tablice SQL upitom `UNLOCK TABLES` ([dokumentacija](https://mariadb.com/kb/en/lock-tables/)):
@@ -121,7 +121,7 @@ Na replici postavit ćemo `server_id` na vrijednost različitu od one na primarn
 Iskoristimo MariaDB klijent `mariadb` ([dokumentacija](https://mariadb.com/kb/en/mariadb-command-line-client/)) za uvoz podataka iz datoteke:
 
 ``` shell
-$ mariadb -u ivanzhegalkin -p mojabaza < mojabaza-dump.sql
+mariadb -u ivanzhegalkin -p mojabaza < mojabaza-dump.sql
 ```
 
 Nakon uvoza podataka povežimo repliku na primarni poslužitelj SQL upitom `CHANGE MASTER TO` ([dokumentacija](https://mariadb.com/kb/en/change-master-to/)):

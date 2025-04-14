@@ -20,7 +20,7 @@ Mail poslužitelj koji ćemo konfigurirati sastoji se od četiri komponente:
 Uvjerimo se za početak da MTA nije već instaliran.
 
 ``` shell
-$ telnet localhost 25
+telnet localhost 25
 ```
 
 !!! tip
@@ -48,7 +48,7 @@ Korisniku se nudi nekoliko izbornika u kojima odabiremo neke od predefiniranih k
 Provjerimo uspješnost instalacije sa:
 
 ``` shell
-$ telnet localhost 25
+telnet localhost 25
 ```
 
 ispisuje:
@@ -65,7 +65,10 @@ gdje sada vidimo `Postfix` što govori da je instalacija prošla uspješno. Uz t
 Ispišimo ju sa:
 
 ``` shell
-$ cat /var/log/mail.info
+cat /var/log/mail.info
+```
+
+``` shell-session
 Jan 19 14:56:46 Ivan-debian postfix/master[4817]: daemon started -- version 2.7.1, configuration /etc/postfix
 Jan 19 14:56:58 Ivan-debian postfix/smtpd[4875]: connect from localhost[127.0.0.1]
 Jan 19 14:57:06 Ivan-debian postfix/smtpd[4875]: disconnect from localhost[127.0.0.1]
@@ -74,7 +77,7 @@ Jan 19 14:57:06 Ivan-debian postfix/smtpd[4875]: disconnect from localhost[127.0
 Pokušajmo sada poslati testni mail sljedećim slijedom naredbi i teksta. Spajanje na SMTP telnetom:
 
 ``` shell
-$ telnet localhost 25
+telnet localhost 25
 ```
 
 Upišimo sada nekoliko naredbi primajući interaktivno odgovor:
@@ -110,7 +113,7 @@ quit
 Ukoliko je sve prošlo u redu, možemo provjeriti mailbox tako da kao korisnik `ivan` upišemo naredbu:
 
 ``` shell
-$ mail
+mail
 ```
 
 čime bi se trebalo ispisati nešto slično sljedećem tekstu ovisno naravno o samim testnim podacima:

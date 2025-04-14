@@ -126,7 +126,7 @@ Obje tehnologije proširenje su postojećih tehnologija za hardverski potpomognu
 Kako bismo pokrenuli QEMU kao običan korisnik, moramo biti član grupe `kvm`. U slučaju da to nismo, možemo svojeg korisnika (npr. u primjeru `korisnik`) dodati u tu grupu naredbom:
 
 ``` shell
-$ sudo usermod -a -G kvm korisnik
+sudo usermod -a -G kvm korisnik
 ```
 
 Nakon pokretanja naredbe potrebna je odjava i ponovna prijava da bi postavka imala utjecaja.
@@ -134,7 +134,7 @@ Nakon pokretanja naredbe potrebna je odjava i ponovna prijava da bi postavka ima
 Za stvaranje slika diskova za QEMU-ove virtualne strojeve iskoristit ćemo [QEMU-e pomoćne alate](https://www.qemu.org/docs/master/tools/index.html), specifično naredbu `qemu-img` ([dokumentacija](https://www.qemu.org/docs/master/tools/qemu-img.html)). Parametrom `-f` naznačit ćemo da želimo sliku tipa qcow2, što je druga verzija [formata QEMU Copy On Write](https://www.linux-kvm.org/page/Qcow2) ([više detalja na Wikipediji](https://en.wikipedia.org/wiki/Qcow)). Za stvaranje slike diska veličine 50 gigabajta, naredba je oblika:
 
 ``` shell
-$ qemu-img create -f qcow2 moj-disk.qcow2 50G
+qemu-img create -f qcow2 moj-disk.qcow2 50G
 ```
 
 Više informacija o korištenju alata `qemu-img` moguće je pronaći u [odjeljku Creating a hard disk image stranice QEMU na ArchWikiju](https://wiki.archlinux.org/title/QEMU#Creating_a_hard_disk_image).
@@ -142,7 +142,7 @@ Više informacija o korištenju alata `qemu-img` moguće je pronaći u [odjeljku
 Recimo da smo odlučili instalirati [Arch Linux](https://archlinux.org/download/) na taj disk. Nakon preuzimanja instalacijskog medija `archlinux-2023.04.01-x86_64.iso`, instalaciju Arch Linuxa unutar QEMU-a možemo pokrenuti naredbom:
 
 ``` shell
-$ qemu-system-x86_64 -accel kvm -cpu host -smp 2 -m 4096 -drive file=moj-disk.qcow2 -cdrom archlinux-2023.04.01-x86_64.iso -boot once=d
+qemu-system-x86_64 -accel kvm -cpu host -smp 2 -m 4096 -drive file=moj-disk.qcow2 -cdrom archlinux-2023.04.01-x86_64.iso -boot once=d
 ```
 
 Ovom naredbom smo pokrenuli QEMU koji stvara virtualni stroj arhitekture x86_64 (dakle, iste kao domaćin pa ne vrši emulaciju) i:

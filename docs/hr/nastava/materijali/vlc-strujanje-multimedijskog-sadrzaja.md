@@ -28,7 +28,7 @@ sudo yum --enablerepo=remi install vlc
 Zatim, pokrećemo kao normalan user (ne root), naredbom:
 
 ``` shell
-$ vlc
+vlc
 ```
 
 ## Strujanje
@@ -40,8 +40,7 @@ Pomoću naredbe `cvlc` pokrećemo VLC unutar terminala, zatim s modulom `STANDAR
 Pomoću opcije `dst` određujemo na kojoj adresi i kojem portu se klijent može povezati. 192.168.104 je IP adresa računala. Naredba koju upisujemo na server računalu:
 
 ``` shell
-$ cvlc -vvv /home/iva/stream/sintel_trailer-1080p.mp4 'standard{access=http,mux=ogg,dst=192.168.104:8080}'
-
+cvlc -vvv /home/iva/stream/sintel_trailer-1080p.mp4 'standard{access=http,mux=ogg,dst=192.168.104:8080}'
 ```
 
 Output/izlaz:
@@ -52,7 +51,7 @@ Output/izlaz:
 Na klijent računalu pokrećemo naredbu:
 
 ``` shell
-$ cvlc http://192.168.0.104:8080
+cvlc http://192.168.0.104:8080
 ```
 
 i dobivamo sljedeći output/izlaz u VLC media playeru u terminalu:
@@ -63,7 +62,7 @@ i dobivamo sljedeći output/izlaz u VLC media playeru u terminalu:
 Ukoliko upišemo `vlc` ili `nvlc` umjesto `cvlc`, dobivamo i VLC-ovo grafičko sučelje ili ncurses sučelje (respektivno). Parametrom `--sout` možemo odlučiti kamo će se spremiti sadržaj preuzet strujanjem:
 
 ``` shell
-$ nvlc http:// 192.168.104:8080 --sout=file/ogg: sintel_trailer-1080p.ogg
+nvlc http:// 192.168.104:8080 --sout=file/ogg: sintel_trailer-1080p.ogg
 ```
 
 Pomoću VLC-a možemo spremiti stream na disk, a da bi to napravili koristimo VLC-ov Stream Output. Spomenuto možemo učiniti koristeći grafičko sučelje i VLC-ov record button ili putem Linux-ove komandne linije parametrom `--sout file/muxer:stream.xyz`, gdje je `muxer` jedan od podržanih formata. Format za spremanje streamova možemo mijenjati, podržani formati su:
@@ -91,7 +90,7 @@ Razlikujemo nekoliko metoda streaminga:
 Standardan UDP streaming istog videa u avi formatu iz direktorija `/home/iva/stream/` sa brojem UDP porta 1234:
 
 ``` shell
-$ cvlc -vvv /home/iva/stream/sintel.avi --sout #std{access=udp, mux=ts, dst=:1234}'
+cvlc -vvv /home/iva/stream/sintel.avi --sout #std{access=udp, mux=ts, dst=:1234}'
 ```
 
 Više detalja o strujanju u VLC-u može se pronaći na VideoLAN-ovom wikiju u dijelu dokumentacije [Streaming HowTo](https://wiki.videolan.org/Documentation:Streaming_HowTo): [Command Line Examples](https://wiki.videolan.org/Documentation:Streaming_HowTo/Command_Line_Examples), [Receive and Save a Stream](https://wiki.videolan.org/Documentation:Streaming_HowTo/Receive_and_Save_a_Stream) i [Advanced streaming with samples, multiple files streaming, using multicast in streaming](https://wiki.videolan.org/Documentation:Streaming_HowTo/Advanced_streaming_with_samples,_multiple_files_streaming,_using_multicast_in_streaming).

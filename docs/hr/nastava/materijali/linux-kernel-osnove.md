@@ -56,7 +56,10 @@ author: Vedran Miletić
 Kao i programi u korisničkom prostoru, jezgra operacijskog sustava može primati [različite parametre jezgre](https://wiki.archlinux.org/title/Kernel_parameters) kod pokretanja. Parametre pokrenute jezgre operacijskog sustava možemo pronaći u datoteci `/proc/cmdline`:
 
 ``` shell
-$ cat /proc/cmdline
+cat /proc/cmdline
+```
+
+``` shell-session
 BOOT_IMAGE=/boot/vmlinuz-linux root=UUID=950382f8-aeef-4f3d-baea-6030a38707f0 rw net.ifnames=0 console=tty1 console=ttyS0 rootflags=compress-force=zstd
 ```
 
@@ -97,20 +100,26 @@ Kod nadogradnje svih paketa naredbom `pacman -Syu`, moguće je da će među nado
 Za ilustraciju korištenja vrste jezgre koja nije zadana prijeći ćemo na dugotrajnu instalacijom paketa `linux-lts`:
 
 ``` shell
-$ sudo pacman -S linux-lts
+sudo pacman -S linux-lts
 ```
 
 Nakon instalacije, ali i ponovnog pokretanja uvjerit ćemo se da se novoinstalirana varijanta jezgra ne koristi:
 
 ``` shell
-$ uname -a
+uname -a
+```
+
+``` shell-session
 Linux ares.miletic.net 5.17.5-arch1-1 #1 SMP PREEMPT Wed, 27 Apr 2022 20:56:11 +0000 x86_64 GNU/Linux
 ```
 
 Uvjerimo se da su slika jezgre i [početni datotečni sustav za RAM](https://wiki.archlinux.org/title/Arch_boot_process#initramfs) za pakete linux i linux-lts na mjestu:
 
 ``` shell
-$ ls /boot
+ls /boot
+```
+
+``` shell-session
 efi  grub  initramfs-linux-fallback.img  initramfs-linux-lts-fallback.img  initramfs-linux-lts.img  initramfs-linux.img  vmlinuz-linux  vmlinuz-linux-lts
 ```
 
@@ -121,19 +130,19 @@ Iako pokretanje nove verzije jezgre operacijskog sustava nominalno zahtijeva pon
 Prvi korak je instalacija paketa `kexec-tools`:
 
 ``` shell
-$ sudo pacman -S kexec-tools
+sudo pacman -S kexec-tools
 ```
 
 Ako je instalirana nova verzija jezgre, alat `kexec` je može pripremiti za pokretanje korištenjem parametra `-l` na način:
 
 ``` shell
-$ kexec -l /boot/vmlinuz-linux --initrd=/boot/initramfs-linux.img --reuse-cmdline
+kexec -l /boot/vmlinuz-linux --initrd=/boot/initramfs-linux.img --reuse-cmdline
 ```
 
 Pokretanje nove verzije jezgre uz zaustavljanje svih usluga i odmontiranje svih datotečnih sustava vrši se korištenjem systemdove naredbe `systemctl kexec`:
 
 ``` shell
-$ sudo systemctl kexec
+sudo systemctl kexec
 ```
 
 Više detalja moguće je pronaći na [stranici kexec na ArchWikiju](https://wiki.archlinux.org/title/Kexec).

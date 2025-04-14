@@ -11,11 +11,9 @@ Na današnjim vježbama raditi ćemo sa bibliotekom `djangorestframework` ([slu�
 Za početak rada potrebno je stvoriti novi projekt i unutar njega aplikaciju.
 
 ``` shell
-$ django-admin startproject vj11
-(...)
-$ cd vj11
-$ django-admin startapp main
-(...)
+django-admin startproject vj11
+cd vj11
+django-admin startapp main
 ```
 
 Nakon što ste kreirali aplikaciju, povežite ju sa projektom i kreirajte administratora.
@@ -29,8 +27,7 @@ INSTALLED_APPS = [
 ```
 
 ``` shell
-$ ./manage.py createsuperuser --username admin
-(...)
+./manage.py createsuperuser --username admin
 ```
 
 ## Kreiranje modela
@@ -53,10 +50,8 @@ class Korisnik(models.Model):
 Nakon kreiranog modela potrebno je izvršiti migracije:
 
 ``` shell
-$ ./manage.py makemigrations
-(...)
-$ ./manage.py migrate
-(...)
+./manage.py makemigrations
+./manage.py migrate
 ```
 
 !!! example "Zadatak"
@@ -75,8 +70,7 @@ $ ./manage.py migrate
 Instalacija biblioteke `djangorestframework`:
 
 ``` shell
-$ pip3 install djangorestframework
-(...)
+pip3 install djangorestframework
 ```
 
 Pod instalirane aplikacije potrebno je dodati i `rest_framework`.
@@ -96,8 +90,7 @@ Prvi korak u kreiranju Web API-ja je pružanje načina srijalizacije instanci u 
 Sljedeći korak je kreiranje datoteke `serializers.py` unutar aplikacije `main`. Tu datoteku ćemo koristiti za prikaz podataka.
 
 ``` shell
-$ touch ./main/serializers.py
-(...)
+touch ./main/serializers.py
 ```
 
 ``` python
@@ -171,18 +164,15 @@ urlpatterns = [
 ## Testiranje
 
 ``` shell
-$ ./manage.py runserver
-(...)
+./manage.py runserver
 ```
 
 ``` shell
-$ pip3 install httpie
-(...)
+pip3 install httpie
 ```
 
 ``` shell
-$ http -a admin:admin http://127.0.0.1:8000/korisnici/
-(...)
+http -a admin:admin http://127.0.0.1:8000/korisnici/
 ```
 
 !!! example "Zadatak"

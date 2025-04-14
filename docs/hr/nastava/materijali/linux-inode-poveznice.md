@@ -32,7 +32,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 - `ln datoteka poveznica` stvara čvrstu poveznicu na datoteku, koja ovisi o inode broju; **primjer:**
 
     ``` shell
-    $ ln test.txt test_poveznica.txt
+    ln test.txt test_poveznica.txt
     ```
 
 !!! example "Zadatak"
@@ -52,7 +52,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 - `ln -s datoteka poveznica` stvara simboličku poveznicu na datoteku, koja ovisi o imenu datoteke, slično shortcutima; **primjer:**
 
     ``` shell
-    $ ln -s test.txt test_simbolicka_poveznica.txt
+    ln -s test.txt test_simbolicka_poveznica.txt
     ```
 
 - jedan od zanimljivih problema koji mogu nastati ako se simboličke poveznice pogrešno koriste je [petlja simboličkih poveznica](https://tuxdna.wordpress.com/2011/12/10/symlink-loop-is-still-an-unsolved-problem/)

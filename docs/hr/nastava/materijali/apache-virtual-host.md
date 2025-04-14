@@ -11,7 +11,10 @@ Konfiguracijska naredba `<VirtualHost>` ([dokumentacija](https://httpd.apache.or
 Ilustracije radi, promotrimo web sjedišta `www.math.uniri.hr`, `www.phy.uniri.hr` i `www.biotech.uniri.hr`.
 
 ``` shell
-$ curl -v -I http://www.phy.uniri.hr/hr/
+curl -v -I http://www.phy.uniri.hr/hr/
+```
+
+``` shell-session
 *   Trying 193.198.209.33:80...
 * Connected to www.phy.uniri.hr (193.198.209.33) port 80 (#0)
 > HEAD /hr/ HTTP/1.1
@@ -23,7 +26,13 @@ $ curl -v -I http://www.phy.uniri.hr/hr/
 < HTTP/1.1 200 OK
 (...)
 
-$ curl -v -I http://www.math.uniri.hr/hr/
+```
+
+``` shell
+curl -v -I http://www.math.uniri.hr/hr/
+```
+
+``` shell-session
 *   Trying 193.198.209.33:80...
 * Connected to www.math.uniri.hr (193.198.209.33) port 80 (#0)
 > HEAD /hr/ HTTP/1.1
@@ -35,7 +44,13 @@ $ curl -v -I http://www.math.uniri.hr/hr/
 < HTTP/1.1 200 OK
 (...)
 
-$ curl -v -I http://www.biotech.uniri.hr/hr/
+```
+
+``` shell
+curl -v -I http://www.biotech.uniri.hr/hr/
+```
+
+``` shell-session
 *   Trying 193.198.209.33:80...
 * Connected to www.biotech.uniri.hr (193.198.209.33) port 80 (#0)
 > HEAD /hr/ HTTP/1.1
@@ -51,7 +66,10 @@ $ curl -v -I http://www.biotech.uniri.hr/hr/
 Uočimo da se ova tri web sjedišta nalaze na istoj IP adresi (193.198.209.33) i istim vratima (80), ali poslužitelj zna točno koji sadržaj mora isporučiti u odgovoru zahvaljujući vrijednosti zaglavlja `Host` ([više detalja o HTTP zaglavlju Host na MDN-u](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Host)) u svakom od HTTP zahtjeva. Vrijednost tog zaglavlja se može postaviti u cURL-u kod slanja HTTP zahtjeva:
 
 ``` shell
-$ curl --header "Host: www.math.uniri.hr" http://www.biotech.uniri.hr/hr/
+curl --header "Host: www.math.uniri.hr" http://www.biotech.uniri.hr/hr/
+```
+
+``` shell-session
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="hr-hr" lang="hr-hr" >
 <head>
@@ -67,15 +85,15 @@ $ curl --header "Host: www.math.uniri.hr" http://www.biotech.uniri.hr/hr/
 Recimo da imamo dvije domene, `prometej.rm.miletic.net` i `epimetej.rm.miletic.net` te da želimo na njih postaviti dva različita web sjedišta. Stvorimo sadržaj tih web sjedišta:
 
 ``` shell
-$ mkdir -p www/{epimetej,prometej}/html
-$ echo '<html><body><h1>Epimetej</h1></body></html>' > www/epimetej/html/index.html
-$ echo '<html><body><h1>Prometej</h1></body></html>' > www/prometej/html/index.html
+mkdir -p www/{epimetej,prometej}/html
+echo '<html><body><h1>Epimetej</h1></body></html>' > www/epimetej/html/index.html
+echo '<html><body><h1>Prometej</h1></body></html>' > www/prometej/html/index.html
 ```
 
 Apache koji koristimo već dolazi s konfiguracijskom datotekom za virtualne domaćine koju možemo prilagoditi i uključiti. Dohvatimo tu datoteku:
 
 ``` shell
-$ docker run --rm httpd:2.4 cat /usr/local/apache2/conf/extra/httpd-vhosts.conf > my-httpd-vhosts.conf
+docker run --rm httpd:2.4 cat /usr/local/apache2/conf/extra/httpd-vhosts.conf > my-httpd-vhosts.conf
 ```
 
 Uredimo tu datoteku; uočimo da su nam konfiguracijske naredbe `ServerAdmin`, `ServerName` i `DocumentRoot` već poznate, samo se nalaze unutar bloka naredbi `<VirtualHost>`:
@@ -187,7 +205,10 @@ COPY ./my-httpd-vhosts.conf /usr/local/apache2/conf/extra/httpd-vhosts.conf
 Izgradimo sliku i pokrenimo Docker kontejner:
 
 ``` shell
-$ docker build -t "my-httpd:2.4-3" .
+docker build -t "my-httpd:2.4-3" .
+```
+
+``` shell-session
 Sending build context to Docker daemon  54.78kB
 Step 1/4 : FROM httpd:2.4
 ---> b2c2ab6dcf2e
@@ -199,8 +220,13 @@ Step 4/4 : COPY ./my-httpd-vhosts.conf /usr/local/apache2/conf/extra/httpd-vhost
 ---> 7839a9247066
 Successfully built 7839a9247066
 Successfully tagged my-httpd:2.4-3
+```
 
-$ docker run my-httpd:2.4-3
+``` shell
+docker run my-httpd:2.4-3
+```
+
+``` shell-session
 [Sun May 10 22:09:41.239474 2020] [mpm_event:notice] [pid 1:tid 139624574960768] AH00489: Apache/2.4.43 (Unix) configured -- resuming normal operations
 [Sun May 10 22:09:41.239504 2020] [core:notice] [pid 1:tid 139624574960768] AH00094: Command line: 'httpd -D FOREGROUND'
 ```
@@ -208,17 +234,35 @@ $ docker run my-httpd:2.4-3
 Uvjerimo se da nam virtualni domaćini rade:
 
 ``` shell
-$ curl --header "Host: prometej.rm.miletic.net" http://172.17.0.2/
+curl --header "Host: prometej.rm.miletic.net" http://172.17.0.2/
+```
+
+``` shell-session
 <html><body><h1>Prometej</h1></body></html>
-$ curl --header "Host: epimetej.rm.miletic.net" http://172.17.0.2/
+```
+
+``` shell
+curl --header "Host: epimetej.rm.miletic.net" http://172.17.0.2/
+```
+
+``` shell-session
 <html><body><h1>Epimetej</h1></body></html>
 ```
 
 Uvjerimo se da nam zadani virtualni domaćin hvata sve zahtjeve koji ne pašu na ova dva iznad:
 
 ``` shell
-$ curl http://172.17.0.2/
+curl http://172.17.0.2/
+```
+
+``` shell-session
 <html><body><h1>Radi!</h1></body></html>
-$ curl --header "Host: atlas.rm.miletic.net" http://172.17.0.2/
+```
+
+``` shell
+curl --header "Host: atlas.rm.miletic.net" http://172.17.0.2/
+```
+
+``` shell-session
 <html><body><h1>Radi!</h1></body></html>
 ```

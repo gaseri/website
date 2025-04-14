@@ -48,7 +48,7 @@ author: Vedran Miletić
 - spremimo li navedeni kod u datoteku `hello.py` pokretanje u 2 procesa se izvodi naredbom
 
     ``` shell
-    $ mpirun -np 2 python3 hello.py
+    mpirun -np 2 python3 hello.py
     ```
 
 !!! example "Zadatak"

@@ -208,14 +208,20 @@ U Virtual Machine Manageru moguće je za pojedini virtualni stroj pronaći ovaj 
 Uvjerimo se da je instaliran pokretanjem naredbe `virsh` s parametrom `--version`, odnosno `-v`:
 
 ``` shell
-$ virsh -v
+virsh -v
+```
+
+``` shell-session
 7.10.0
 ```
 
 Korištenjem argumenta `nodeinfo` moguće je dobiti informacije o domaćinu na kojem je libvirt pokrenut, a korištenjem naredbe `nodememstats` o zauzeću memorije na domaćinu:
 
 ``` shell
-$ virsh nodeinfo
+virsh nodeinfo
+```
+
+``` shell-session
 CPU model:           x86_64
 CPU(s):              32
 CPU frequency:       3400 MHz
@@ -224,8 +230,13 @@ Core(s) per socket:  8
 Thread(s) per core:  2
 NUMA cell(s):        2
 Memory size:         32780200 KiB
+```
 
-$ virsh nodememstats
+``` shell
+virsh nodememstats
+```
+
+``` shell-session
 total  :             32780200 KiB
 free   :              1481684 KiB
 buffers:               115852 KiB
@@ -235,17 +246,28 @@ cached :             22103936 KiB
 Baratanje pojedinim virtualnim strojevima možemo izvesti argumentima `start` i `shutdown`, koji pokreću virtualni, odnosno šalju mu signal za isključivanje:
 
 ``` shell
-$ virsh start ubuntu20.04
-Domain 'ubuntu20.04' started
+virsh start ubuntu20.04
+```
 
-$ shutdown ubuntu20.04
+``` shell-session
+Domain 'ubuntu20.04' started
+```
+
+``` shell
+shutdown ubuntu20.04
+```
+
+``` shell-session
 Domain 'ubuntu20.04' is being shutdown
 ```
 
 Nama je virsh zanimljiv za brzo stvaranje velikog broja virtualnih strojeva sa sličnim postavkama. Iskoristit ćemo XML zapis domene od ranije, koji smo mogli dobiti i argumentom `dumpxml` na način:
 
 ``` shell
-$ virsh dumpxml ubuntu20.04
+virsh dumpxml ubuntu20.04
+```
+
+``` shell-session
 <domain type='kvm' id='1'>
   <name>ubuntu20.04</name>
 ...
@@ -261,7 +283,7 @@ Taj XML dokument je zapis postojećeg virtualnog stroja koji je jedinstven pa ć
 Nakon uređivanja XML dokumenta virtualni stroj stvaramo naredbom:
 
 ``` shell
-$ virsh create moja-domena.xml
+virsh create moja-domena.xml
 ```
 
 !!! example "Zadatak"
@@ -270,7 +292,10 @@ $ virsh create moja-domena.xml
 virsh podržava velik broj argumenata, a njihov popis i kratak opis možemo dobiti korištenjem argumenta `help`:
 
 ``` shell
-$ virsh help
+virsh help
+```
+
+``` shell-session
 Grouped commands:
 
     Domain Management (help keyword 'domain'):

@@ -15,7 +15,10 @@ Ping je vrlo jednostavno za koristiti. Najjednostavniji oblik korištenja je kor
 Ukoliko želimo provjeriti je li domaćin example dostupan na mreži group.miletic.net jednostavno iza naredbe pišemo ime domaćina i mrežu kojoj pripada:
 
 ``` shell
-$ ping example.group.miletic.net
+ping example.group.miletic.net
+```
+
+``` shell-session
 PING example.group.miletic.net (193.198.209.42) 56(84) bytes of data.
 64 bytes from 193.198.209.42: icmp_seq=1 ttl=56 time=3.48 ms
 64 bytes from 193.198.209.42: icmp_seq=2 ttl=56 time=3.44 ms
@@ -33,7 +36,10 @@ Ping bez dodatnih argumenata šalje ICMP zahtjeve u beskonačnost, pa je slanje 
 Ukoliko je potrebno, umjesto imena domaćina možemo pisati njegovu IP adresu:
 
 ``` shell
-$ ping 193.198.209.42
+ping 193.198.209.42
+```
+
+``` shell-session
 PING 193.198.209.42 (193.198.209.42) 56(84) bytes of data.
 64 bytes from 193.198.209.42: icmp_seq=1 ttl=56 time=3.48 ms
 64 bytes from 193.198.209.42: icmp_seq=2 ttl=56 time=3.61 ms
@@ -49,13 +55,16 @@ Uvođenjem dodatnih parametara, možemo manipulirati načinom i učestalosti sla
 Za slanje u određenom intervalu (svakih n sekundi), koristimo parametar `-i`, te broj sekundi. Ping bez argumenata zahtjev šalje u intervalima od 1 sekunde. Moguće je smanjiti taj interval, npr. na pola sekunde:
 
 ``` shell
-$ ping -i 0.5 example.group.miletic.net
+ping -i 0.5 example.group.miletic.net
 ```
 
 Želimo li poslati određen broj zahtjeva (umjesto da sami prekidamo slanje kombinacijom tipki ++control+c++), koristimo parametar `-c` i broj paketa. Primjerice, ako želimo poslati 3 zahtjeva:
 
 ``` shell
-$ ping -c 3 example.group.miletic.net
+ping -c 3 example.group.miletic.net
+```
+
+``` shell-session
 PING example.group.miletic.net (193.198.209.42) 56(84) bytes of data.
 64 bytes from 193.198.209.42: icmp_seq=1 ttl=56 time=3.82 ms
 64 bytes from 193.198.209.42: icmp_seq=2 ttl=56 time=3.45 ms
@@ -69,13 +78,16 @@ rtt min/avg/max/mdev = 3.454/4.545/6.354/1.290 ms
 Također, parametrom `-w` možemo odrediti ukupno vrijeme u kojem želimo da se zahtjevi šalju. Nakon određenog broja sekundi slanje se prekida (u našem primjeru 3 sekunde).
 
 ``` shell
-$ ping -w 3 example.group.miletic.net
+ping -w 3 example.group.miletic.net
 ```
 
 Ako ne želimo vidjeti informacije o svakom poslanom zahtjevu posebno, možemo uključiti 'tihi' način rada parametrom `-q`; u tom slučaju prikazat će se samo završni izvještaj.
 
 ``` shell
-$ ping -q -c 10 example.group.miletic.net
+ping -q -c 10 example.group.miletic.net
+```
+
+``` shell-session
 PING example.group.miletic.net (193.198.209.42) 56(84) bytes of data.
 
 --- example.group.miletic.net ping statistics ---
@@ -86,7 +98,10 @@ rtt min/avg/max/mdev = 3.472/3.931/5.105/0.540 ms
 Parametrom `-s` možemo mijenjati veličinu paketa kojeg šaljemo. Zadana veličina paketa je 56 bajta. Veličini koju odredimo se dodaje još 28 byteova, zbog veličine zaglavlja paketa (u nastavku kolegija naučit ćemo zašto baš 28 bajta). U primjeru šaljemo pakete čije je tijelo veličine 200 bajta, što zajedno sa zaglavljem čini ukupno 228 bajta.
 
 ``` shell
-$ ping -s 200 example.group.miletic.net
+ping -s 200 example.group.miletic.net
+```
+
+``` shell-session
 PING example.group.miletic.net (193.198.209.42) 200(228) bytes of data.
 208 bytes from 193.198.209.42: icmp_seq=1 ttl=56 time=3.49 ms
 208 bytes from 193.198.209.42: icmp_seq=2 ttl=56 time=3.75 ms
@@ -113,7 +128,10 @@ Alati `traceroute` i `tracepath` prate putanju kretanja paketa od slanja do odre
 `tracepath` koristimo navođenjem imena ili IP adrese čvora u mreži. Primjerice, želimo li pratiti putanju kretanja paketa s privatnog domaćina (T-Com ISP) do poslužitelja example:
 
 ``` shell
-$ tracepath example.group.miletic.net
+tracepath example.group.miletic.net
+```
+
+``` shell-session
  1:  host.lan                                         0.191ms pmtu 1500
  1:  dsldevice.lan                                        84.268ms
  1:  dsldevice.lan                                        95.075ms
@@ -134,7 +152,10 @@ $ tracepath example.group.miletic.net
 Ukoliko želimo vidjeti putanju kretanja isključivo po IP adresama, koristimo parametar `-n`:
 
 ``` shell
-$ tracepath -n example.group.miletic.net
+tracepath -n example.group.miletic.net
+```
+
+``` shell-session
  1:  192.168.1.2                                           0.209ms pmtu 1500
  1:  192.168.1.1                                          14.326ms
  1:  192.168.1.1                                         300.088ms
@@ -155,7 +176,7 @@ $ tracepath -n example.group.miletic.net
 Također, ako želimo vidjeti ispis i imena domaćina/gatewaya i njihovih IP adresa, koristimo parametar `-b`:
 
 ``` shell
-$ tracepath -b example.group.miletic.net
+tracepath -b example.group.miletic.net
 ```
 
 Pregled parametara za alat `tracepath`:
@@ -172,7 +193,10 @@ Alat `netstat` pruža nam raznolike informacije o konfiguraciji i aktivnostima n
 Kako bi vidjeli informacije i statistike vezane uz pojednino mrežno sučelje na našem računalu, koristimo parametar `-i`:
 
 ``` shell
-$ netstat -i
+netstat -i
+```
+
+``` shell-session
 Kernel Interface table
 Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
 eth0       1500 0         0      0      0 0             0      0      0      0 BMU
@@ -189,7 +213,10 @@ U ovoj tablici stupci koje možemo sa sadašnjim znanjem čitati su redom:
 Ukoliko želimo detaljniji prikaz informacija o sučeljima, potrebno je nadodati parametar `-e`:
 
 ``` shell
-$ netstat -ie
+netstat -ie
+```
+
+``` shell-session
 Kernel Interface table
 eth0      Link encap:Ethernet  HWaddr 00:26:9e:78:3e:36
           UP BROADCAST MULTICAST  MTU:1500  Metric:1
@@ -221,7 +248,10 @@ wlan0     Link encap:Ethernet  HWaddr 00:24:d6:0b:61:26
 Za prikaz routing tablice, koristimo parametar `-r`:
 
 ``` shell
-$ netstat -r
+netstat -r
+```
+
+``` shell-session
 Kernel IP routing table
 Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
 192.168.1.0     *               255.255.255.0   U         0 0          0 wlan0
@@ -232,7 +262,10 @@ default         dsldevice.lan   0.0.0.0         UG        0 0          0 wlan0
 Dodamo li i parametar `-n`, dobit ćemo prikaz IP adresa umjesto imena domaćina i mreža:
 
 ``` shell
-$ netstat -rn
+netstat -rn
+```
+
+``` shell-session
 Kernel IP routing table
 Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
 192.168.1.0     *               255.255.255.0   U         0 0          0 wlan0
@@ -243,7 +276,10 @@ Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
 Parametrom `-t` možemo pregledati aktivne TCP konekcije (otvorene utičnice). Dodatkom parametra `-a` (all), prikazujemo i poslužitelje:
 
 ``` shell
-$ netstat -ta
+netstat -ta
+```
+
+``` shell-session
 Active Internet connections (servers and established)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State
 tcp        0      0 *:http                  *:*                     LISTEN
@@ -264,7 +300,10 @@ tcp6       0      0 localhost:postgres      [::]:*                  LISTEN
 Također, moguće je vidjeti i UDP konekcije (otvorene utičnice), parametrom `-u`:
 
 ``` shell
-$ netstat -ua
+netstat -ua
+```
+
+``` shell-session
 Active Internet connections (servers and established)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State
 udp        0      0 *:domain                *:*
@@ -284,7 +323,10 @@ udp6       0      0 localhost:58156         localhost:58156         ESTABLISHED
 Za detaljan prikaz svih otvorenih utičnica, koristimo kombinaciju parametara `-utae`:
 
 ``` shell
-$ netstat -utae
+netstat -utae
+```
+
+``` shell-session
 Active Internet connections (servers and established)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode
 tcp        0      0 *:http                  *:*                     LISTEN      root       14299
@@ -317,7 +359,10 @@ udp6       0      0 localhost:58156         localhost:58156         ESTABLISHED 
 Otvorene utičnice možemo parametrom `-l` filtrirati samo na one koje slušaju, tj. na one koje su u stanju `LISTEN`:
 
 ``` shell
-$ netstat -l
+netstat -l
+```
+
+``` shell-session
 Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State
 tcp        0      0 *:http                  *:*                     LISTEN
@@ -369,7 +414,10 @@ unix  2      [ ACC ]     SEQPACKET  LISTENING     7563     /run/udev/control
 Parametrom `-s` prikazuje se skup statistika za pojedine protokole:
 
 ``` shell
-$ netstat -s
+netstat -s
+```
+
+``` shell-session
 Ip:
     228437 total packets received
     8393 with invalid addresses
@@ -427,7 +475,10 @@ Za više informacija proučite `man netstat`.
 Alatom `clockdiff` možemo mjeriti satnu razliku između domaćina na mreži, koristeći ICMP TIMESTAMP pakete. `clockdiff` koristimo navođenjem imena ili IP adrese domaćina.
 
 ``` shell
-$ clockdiff example.group.miletic.net
+clockdiff example.group.miletic.net
+```
+
+``` shell-session
 ...................................................
 host=example.group.miletic.net rtt=15(0)ms/15ms delta=-2844ms/-2843ms Wed Jun 13 20:21:57 2012
 ```
@@ -444,7 +495,10 @@ Za informacije o ostalim parametrima proučite `man clockdiff`.
 Primjerice, želimo li poslati ARP zahtjev domaćinu na adresi 192.168.1.4 s mrežnog sučelja `wlan0`, radimo to na idući način:
 
 ``` shell
-# arping -I wlan0 192.168.1.4
+arping -I wlan0 192.168.1.4
+```
+
+``` shell-session
 ARPING 192.168.1.4 from 192.168.1.2 wlan0
 Unicast reply from 192.168.1.4 [00:0F:EA:54:B7:2C]  2.306ms
 Unicast reply from 192.168.1.4 [00:0F:EA:54:B7:2C]  1.591ms
@@ -456,7 +510,10 @@ Received 3 response(s)
 Parametrom `-c` određujemo količinu poslanih ARP zahtjeva. Nakon određenog broj poslanih zahtjeva, slanje se prekida:
 
 ``` shell
-# arping -c 3 -I wlan0 192.168.1.4
+arping -c 3 -I wlan0 192.168.1.4
+```
+
+``` shell-session
 ARPING 192.168.1.4 from 192.168.1.2 wlan0
 Unicast reply from 192.168.1.4 [00:0F:EA:54:B7:2C]  2.176ms
 Unicast reply from 192.168.1.4 [00:0F:EA:54:B7:2C]  1.476ms

@@ -26,7 +26,10 @@ OpenVPN podržava dva načina rada: statički ključ kod kojeg klijent i posluž
 Uvjerimo se prvo da imamo instaliran OpenVPN i saznajmo o kojoj se verziji radi pokretanjem naredbe `openvpn` s parametrom `--version`:
 
 ``` shell
-$ openvpn --version
+openvpn --version
+```
+
+``` shell-session
 OpenVPN 2.4.9 [git:makepkg/9b0dafca6c50b8bb+] x86_64-pc-linux-gnu [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [PKCS11] [MH/PKTINFO] [AEAD] built on Apr 20 2020
 library versions: OpenSSL 1.1.1g  21 Apr 2020, LZO 2.10
 Originally developed by James Yonan
@@ -37,7 +40,10 @@ Compile time defines: enable_async_push=no enable_comp_stub=no enable_crypto=yes
 Naredba ima brojne parametre čiji se popis može dobiti korištenjem parametra `--help`:
 
 ``` shell
-$ openvpn --help
+openvpn --help
+```
+
+``` shell-session
 OpenVPN 2.4.9 [git:makepkg/9b0dafca6c50b8bb+] x86_64-pc-linux-gnu [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [PKCS11] [MH/PKTINFO] [AEAD] built on Apr 20 2020
 
 General Options:
@@ -54,13 +60,16 @@ Tunnel Options:
 Detaljniji opis svakog od pojedinih parametara dan je u man stranici `openvpn(8)` (naredba `man 8 openvpn`). Za početak generirajmo statički ključ:
 
 ``` shell
-$ openvpn --genkey --secret static.key
+openvpn --genkey --secret static.key
 ```
 
 Uvjerimo se da je ključ ispravno generiran:
 
 ``` shell
-$ cat static.key
+cat static.key
+```
+
+``` shell-session
 # 2048 bit OpenVPN static key
 #
 -----BEGIN OpenVPN Static key V1-----
@@ -98,7 +107,10 @@ Zatim konfiguriramo IP adresu (`ifconfig`) poslužitelja (`172.20.0.1`) i klijen
 Naposlijetku navodimo ime datoteke u kojoj se nalazi tajni ključ koji će se koristiti (`secret static.key`). Pokrenimo poslužitelj:
 
 ``` shell
-$ sudo openvpn --config server.ovpn
+sudo openvpn --config server.ovpn
+```
+
+``` shell-session
 Tue May 19 19:51:32 2020 disabling NCP mode (--ncp-disable) because not in P2MP client or server mode
 Tue May 19 19:51:32 2020 OpenVPN 2.4.9 [git:makepkg/9b0dafca6c50b8bb+] x86_64-pc-linux-gnu [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [PKCS11] [MH/PKTINFO] [AEAD] built on Apr 20 2020
 Tue May 19 19:51:32 2020 library versions: OpenSSL 1.1.1g  21 Apr 2020, LZO 2.10
@@ -117,7 +129,10 @@ Primijetimo upozorenje u vezi korištenja nesigurnog šifrarnika `WARNING: INSEC
 Provjerimo popis mrežnih sučelja na računalu naredbom `ip address show` ili `ifconfig` pa uočimo da je stvoreno jedno novo sučelje `tun0`:
 
 ``` shell
-$ ip address show
+ip address show
+```
+
+``` shell-session
 (...)
 10: tun0: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 100
     link/none
@@ -150,7 +165,10 @@ Prva linija postavlja da se radi o klijentu koji se povezuje na poslužitelj (`r
 Uočimo da treća linija s konfiguracijskom naredbom `ifconfig` ima obrnute adrese od iste konfiguracijske naredbe na poslužitelju, odnosno prvo je sada klijentska adresa (`172.20.0.2`), a onda poslužiteljska (`172.20.0.1`). Pokrenimo klijent:
 
 ``` shell
-$ sudo openvpn --config client.ovpn
+sudo openvpn --config client.ovpn
+```
+
+``` shell-session
 [sudo] lozinka za vedranm:
 Tue May 19 19:51:49 2020 disabling NCP mode (--ncp-disable) because not in P2MP client or server mode
 Tue May 19 19:51:49 2020 OpenVPN 2.4.9 [git:makepkg/9b0dafca6c50b8bb+] x86_64-pc-linux-gnu [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [PKCS11] [MH/PKTINFO] [AEAD] built on Apr 20 2020
@@ -180,7 +198,10 @@ secret static.key
 Pokretanje klijenta je sada uspješno:
 
 ``` shell
-$ sudo openvpn --config client.ovpn
+sudo openvpn --config client.ovpn
+```
+
+``` shell-session
 Tue May 19 19:52:48 2020 disabling NCP mode (--ncp-disable) because not in P2MP client or server mode
 Tue May 19 19:52:48 2020 OpenVPN 2.4.9 [git:makepkg/9b0dafca6c50b8bb+] x86_64-pc-linux-gnu [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [PKCS11] [MH/PKTINFO] [AEAD] built on Apr 20 2020
 Tue May 19 19:52:48 2020 library versions: OpenSSL 1.1.1g  21 Apr 2020, LZO 2.10
@@ -197,7 +218,10 @@ Tue May 19 19:52:48 2020 UDP link remote: [AF_INET6]::1:1194
 Pokretanje klijenta stvorilo je još jedno mrežno sučelje naziva `tun1`:
 
 ``` shell
-$ ip address show
+ip address show
+```
+
+``` shell-session
 (...)
 11: tun1: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 100
     link/none
@@ -219,11 +243,11 @@ Tue May 19 19:54:15 2020 SIGINT[hard,] received, process exiting
 Ostvarili smo vezu klijenta i poslužitelja osnovnom konfiguracijom. Moguće je stvoriti konfiguraciju kod koje se koriste dva statička ključa na klijentskoj i poslužiteljskoj strani, svaki u jednom smjeru. U tom slučaju kod generiranja navodimo vrijednost smjera (`direction`) 0 ili 1.
 
 ``` shell
-$ openvpn --genkey --secret static-direction0.key 0
+openvpn --genkey --secret static-direction0.key 0
 ```
 
 ``` shell
-$ openvpn --genkey --secret static-direction1.key 1
+openvpn --genkey --secret static-direction1.key 1
 ```
 
 Tada bismo u konfiguraciji klijenta i poslužitelja imali dvije naredbe:

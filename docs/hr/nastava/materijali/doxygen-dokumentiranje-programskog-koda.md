@@ -27,7 +27,7 @@ Neki od projekata koji koriste Doxygen za generiranje dokumentacije aplikacijsko
 Za primjer korištenja Doxygena, naredbom
 
 ``` shell
-$ doxygen -g
+doxygen -g
 ```
 
 stvorit ćemo datoteku `Doxyfile` sa zadanom konfiguracijom. U njoj ne moramo mijenjati ništa, samo se uvjerimo se da značka `FILE_PATTERNS` uključuje `*.h`
@@ -119,7 +119,10 @@ int zbroji(int a, int b) { return a + b; }
 Pokrenimo generiranje dokumentacije Doxygenom:
 
 ``` shell
-$ doxygen
+doxygen
+```
+
+``` shell-session
 Doxygen version used: 1.8.20
 Searching for include files...
 Searching for example files...
@@ -135,8 +138,11 @@ Searching INPUT for files to process...
 U direktoriju `html` dobit ćemo izgrađenu dokumentaciju koju možemo krenuti pregledavati otvaranjem datoteke `index.html`, a u direktoriju `latex` dobit ćemo dokumentaciju pisanu u LaTeX-u koju, ako imamo instaliran [pdfLaTeX](https://www.tug.org/applications/pdftex/) i sve potrebne pakete, možemo izgraditi naredbom `make` na način:
 
 ``` shell
-$ cd latex
-$ make
+cd latex
+make
+```
+
+``` shell-session
 rm -f *.ps *.dvi *.aux *.toc *.idx *.ind *.ilg *.log *.out *.brf *.blg *.bbl refman.pdf
 pdflatex refman
 This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex)

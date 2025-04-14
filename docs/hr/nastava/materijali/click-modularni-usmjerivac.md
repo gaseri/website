@@ -11,7 +11,7 @@ Click je napisan u programskom jeziku C++ i dostupan je kao otvoreni kod pod mod
 Click pokrećemo naredbom `click` i navođenjem konfiguracijske datoteke. Primjerice, za konfiguracijsku datoteku `mojrouter.click` naredba bi bila oblika:
 
 ``` shell
-$ click mojrouter.click
+click mojrouter.click
 ```
 
 U nekim konfiguracijama Click će se nastaviti izvoditi sve dok ga ne prekinemo. Naime, radi se o usmjerivaču koji je osmišljen da nakon inicijalizacije konfiguracije radi usmjeravanje i prosljeđivanje paketa dokle god mu se ne kaže da radi drugačije. Prekid rada Clicka ćemo izvesti kombinacijom tipki ++control+c++, što terminali često prikazuju kao `^C`.
@@ -52,7 +52,10 @@ RandomSource(64) -> Tee(2);
 Pokušamo li navedeni kod spremiti u datoteku `randomsrc-tee.click` i pokrenuti u Clicku, dobit ćemo poruku o grešci.
 
 ``` shell
-$ click randomsrc-tee.click
+click randomsrc-tee.click
+```
+
+``` shell-session
 foo.click:1: ‘Tee@2 :: Tee’ output 0 unused
 ```
 
@@ -74,7 +77,7 @@ t[1] -> ToIPSummaryDump(paketi.txt);
 Navedeni kod spremamo u datoteku `randomsrc-tee-dump.click` i pokrećemo naredbom:
 
 ``` shell
-$ click randomsrc-tee-dump.click
+click randomsrc-tee-dump.click
 ```
 
 Pokretanjem Clicka uočit ćemo da ovaj put nema grešaka te će obje izlazne datoteke biti stvorene i ispunjene sadržajem. Kada Click završi generiranje 1000 paketa i njihovo zapisivanje u obje datoteke, nastavit će se izvoditi (i čekati na nove pakete iz elementa `RandomSource`) sve dok ga ne prekinemo.

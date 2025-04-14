@@ -93,7 +93,7 @@ disable_plaintext_auth = no
 Testirajmo možemo li uspješno poslati mail sljedećom naredbom:
 
 ``` shell
-$ echo "Ovo je mail samom sebi" | mail -s "Dovecot naslov" ivan
+echo "Ovo je mail samom sebi" | mail -s "Dovecot naslov" ivan
 ```
 
 Pregledajmo inbox kao i ranije naredbom `mail` i potvrdimo primitak gore navedenog maila.
@@ -101,7 +101,7 @@ Pregledajmo inbox kao i ranije naredbom `mail` i potvrdimo primitak gore naveden
 Dalje trebamo testirati jesu li POP3 i IMAP serveri pokrenuti i rade li kako treba, a za to ćemo ponovno koristiti `telnet`.
 
 ``` shell
-$ telnet localhost 110
+telnet localhost 110
 ```
 
 će nas spojiti na POP3 pri čemu ćemo dobiti ispis:

@@ -11,13 +11,13 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov, Anja Vrbanjac
 - `cp` kopira datoteku danog imena u datoteku drugog danog imena; **primjer:**
 
     ``` shell
-    $ cp datoteka1 datoteka2 # kopira datoteke (prvu u drugu)
+    cp datoteka1 datoteka2 # kopira datoteke (prvu u drugu)
     ```
 
 - `mv` preimenuje (miče) datoteku danog imena; **primjer:**
 
     ``` shell
-    $ mv datoteka1 datoteka2 # premješta datoteku1 u datoteku2 i preimenuje ih
+    mv datoteka1 datoteka2 # premješta datoteku1 u datoteku2 i preimenuje ih
     ```
 
 !!! example "Zadatak"

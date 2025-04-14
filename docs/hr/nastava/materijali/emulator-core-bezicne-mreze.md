@@ -42,7 +42,10 @@ n2 ----- wlan1 ----- n3
 Za vrijeme izvođenja emulacije čvorove je moguće pomicati po želji pa ćemo, ako dovoljno odmaknemo čvorove, nakon nekog vremena vidjeti izlaz oblika
 
 ``` shell
-# ping 192.168.10.20
+ping 192.168.10.20
+```
+
+``` shell-session
 PING 192.168.10.20 (192.168.10.20) 56(84) bytes of data.
 64 bytes from 192.168.10.20: icmp_seq=1 ttl=64 time=0.118 ms
 64 bytes from 192.168.10.20: icmp_seq=2 ttl=64 time=0.077 ms

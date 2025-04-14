@@ -216,7 +216,10 @@ echo '<p>Hello, world!</p>\n';
 Uočite kako HTTP poslužitelj nije dio koda. Pokreće se na način:
 
 ``` shell
-$ php -S localhost:8000 -t public
+php -S localhost:8000 -t public
+```
+
+``` shell-session
 [...] PHP 8.0.8 Development Server (http://localhost:8000) started
 ```
 

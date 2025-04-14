@@ -11,7 +11,10 @@ author: Domagoj Margan, Vedran Miletić
 Ukoliko ga koristimo bez argumenata, ifconfig ispisuje informacije o trenutno aktivnim mrežnim sučeljima, baš kao i `netstat -ie`. Ako želimo ispis informacija o točno određenom mrežnom sučelju, kao argument navodimo naziv tog sučelja. Primjerice, prikaz informacija za mrežno sučelje `wlan0` (bežična mrežna kartica) radimo na način:
 
 ``` shell
-# ifconfig wlan0
+ifconfig wlan0
+```
+
+``` shell-session
 wlan0     Link encap:Ethernet  HWaddr 00:24:d6:0b:61:26
           inet addr:192.168.1.2  Bcast:192.168.1.255  Mask:255.255.255.0
           inet6 addr: fe80::224:d6ff:fe0b:6126/64 Scope:Link
@@ -30,43 +33,43 @@ Ifconfig se koristi za manipulaciju mrežnim sučeljima možemo određeno sučel
 Ukoliko želimo neaktivno sučelje omogućiti za rad (staviti sučelje u aktivno stanje), navodimo naziv sučelja iza kojeg slijedi `up`:
 
 ``` shell
-# ifconfig eth0 up
+ifconfig eth0 up
 ```
 
 Prisjetimo se da se sučelje `eth0` odnosi na Ethernet karticu. Analogno tome, aktivo sučelje možemo staviti u neaktivno stanje, navođenjem argumenta `down`:
 
 ``` shell
-# ifconfig eth0 down
+ifconfig eth0 down
 ```
 
 Sučeljima možemo dodjeljivati IP adrese, navođenjem naziva sučelja, te željene adrese. Primjerice, sučelju wlan0 dodjeljujemo adresu 192.168.1.10 naredbom
 
 ``` shell
-# ifconfig wlan0 192.168.1.10
+ifconfig wlan0 192.168.1.10
 ```
 
 Također, možemo mijenjati i maske podmreže, navođenjem naziva sučelja, argumenta `netmask` i željene maske. Primjerice, sučelju eth0 stavljamo masku 255.255.255.0 naredbom
 
 ``` shell
-# ifconfig eth0 netmask 255.255.255.0
+ifconfig eth0 netmask 255.255.255.0
 ```
 
 Svakom sučelju možemo argumentom `mtu` odrediti i MTU (ukoliko postavimo valjanu vrijednost). Za ethernet sučelja vrijednost je 1500; želimo li recimo, sučelju eth0 promijeniti vrijednost MTU na 1000, to ćemo učiniti naredbom
 
 ``` shell
-# ifconfig eth0 mtu 1000
+ifconfig eth0 mtu 1000
 ```
 
 Kada sučelje (mrežna kartica) primi paket, provjerava je taj paket namjenjen namjenjen njemu. Ukoliko nije, sučelje odbacuje paket. Argumentom `promisc` moguće je postaviti sučelje u 'promiskuitetan' način rada, tj. odrediti da sučelje prima sve pakete bez obzira jesu li paketi namjenjeni njemu.
 
 ``` shell
-# ifconfig eth0 promisc
+ifconfig eth0 promisc
 ```
 
 Za vraćanje sućelja u normalan način rada, koristimo `-promisc`:
 
 ``` shell
-# ifconfig eth0 -promisc
+ifconfig eth0 -promisc
 ```
 
 Pregled parametara za alat ifconfig:

@@ -306,10 +306,19 @@ keyserver hkp://localhost
 Kao korisnik `ema` imamo sljedeće:
 
 ``` shell
-$ gpg --send-keys 7DF90C27
+gpg --send-keys 7DF90C27
+```
+
+``` shell-session
 gpg: sending key 7DF90C27 to hkp server localhost
 
-$ gpg --list-keys
+```
+
+``` shell
+gpg --list-keys
+```
+
+``` shell-session
 /home/ema/.gnupg/pubring.gpg
 ----------------------------
 pub 2048D/2A10AEC9 2013-01-15
@@ -332,7 +341,13 @@ pub 2048R/7DF90C27 2013-01-29
 uid Branko Bobic (Branko Kljuc) <bbobic@ema.com>
 sub 2048R/464878E5 2013-01-29
 
-$ gpg --recv-keys 05F06AD8
+```
+
+``` shell
+gpg --recv-keys 05F06AD8
+```
+
+``` shell-session
 gpg: requesting key 05F06AD8 from hkp server localhost
 gpg: key 05F06AD8: public key "Ivan Ivic (Proba) <ivan@ivan.com>" imported
 gpg: Total number processed: 1
@@ -406,7 +421,10 @@ keyserver hkp://pgp.mit.edu
 Kao korisnik `ema` sad imamo:
 
 ``` shell
-$ gpg --list-keys
+gpg --list-keys
+```
+
+``` shell-session
 /home/ema/.gnupg/pubring.gpg
 ----------------------------
 pub 2048D/2A10AEC9 2013-01-15
@@ -433,7 +451,13 @@ pub 2048R/05F06AD8 2013-01-29
 uid Ivan Ivic (Proba) <ivan@ivan.com>
 sub 2048R/52C6FF36 2013-01-29
 
-$ gpg --recv-key 2BDF2221
+```
+
+``` shell
+gpg --recv-key 2BDF2221
+```
+
+``` shell-session
 gpg: requesting key 2BDF2221 from hkp server pgp.mit.edu
 gpg: key 2BDF2221: public key "Viktor V <viktor@email.com>" imported
 gpg: Total number processed: 1

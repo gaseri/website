@@ -19,9 +19,9 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
     - podržava sva tri stila parametara; sljedeće naredbe su ekvivalentne
 
         ``` shell
-        $ tar -c tekst.txt # System V stil
-        $ tar c tekst.txt # BSD stil
-        $ tar --create tekst.txt # GNU dugački stil
+        tar -c tekst.txt # System V stil
+        tar c tekst.txt # BSD stil
+        tar --create tekst.txt # GNU dugački stil
         ```
 
     - osnovni parametri su `-Acdtrux`, u šali se ponekad čita kao "acid trucks"
@@ -30,29 +30,29 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 - stvaranje `tar` arhive vrši se pomoću parametra `-c`:
 
     ``` shell
-    $ tar -cvf naziv_arh.tar naziv_dir/ # c = create, v = verbose, f = file; v je opcionalan
-    $ tar -cvf naziv_arh1.tar naziv_dat
+    tar -cvf naziv_arh.tar naziv_dir/ # c = create, v = verbose, f = file; v je opcionalan
+    tar -cvf naziv_arh1.tar naziv_dat
     ```
 
 - izvlačenje datoteka iz `tar` arhive radi se pomoću parametra `-x` (`untar` ne postoji):
 
     ``` shell
-    $ tar -xvf naziv_arh.tar # x = extract
+    tar -xvf naziv_arh.tar # x = extract
     ```
 
 - izlistavanje datoteka u `tar` arhivi:
 
     ``` shell
-    $ tar -tvf naziv_arh.tar
+    tar -tvf naziv_arh.tar
     ```
 
 - ostale mogućnosti `tar`-a:
 
     ``` shell
-    $ tar -rvf naziv_arh.tar adresa/nove/Dat # dodavanje jedne datoteke u tar datoteku
-    $ tar -rvf naziv_arh.tar adresa/novog/Dir/ # dodavanje jednog direktorija u tar datoteku
-    $ tar -xvf naziv_arh.tar naziv_datoteke # izvlačenje jedne datoteke iz tar datoteke
-    $ tar -xvf naziv_arh.tar naziv_direktorija # izvlačenje jednog direktorija iz tar datoteke
+    tar -rvf naziv_arh.tar adresa/nove/Dat # dodavanje jedne datoteke u tar datoteku
+    tar -rvf naziv_arh.tar adresa/novog/Dir/ # dodavanje jednog direktorija u tar datoteku
+    tar -xvf naziv_arh.tar naziv_datoteke # izvlačenje jedne datoteke iz tar datoteke
+    tar -xvf naziv_arh.tar naziv_direktorija # izvlačenje jednog direktorija iz tar datoteke
     ```
 
 !!! example "Zadatak"

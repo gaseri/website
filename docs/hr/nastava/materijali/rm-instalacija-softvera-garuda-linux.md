@@ -19,15 +19,13 @@ Instalacija softvera na Arch Linuxu je centralizirana, slično kao što su na dr
 Svakako prije instalacije paketa u nastavku instalirajte sve dostupne nadogradnje. U terminalu upišite prvo
 
 ``` shell
-$ garuda-update
-(...)
+garuda-update
 ```
 
 pa, kad vas sustav to pita, unesite vašu zaporku. Ova naredba je specifična za Garuda Linux; Na ostalim derivatima Arch Linuxa možete instalaciju svih dostupnih nadogradnji izvesti naredbom
 
 ``` shell
-$ sudo pacman -Syu
-(...)
+sudo pacman -Syu
 ```
 
 Obje će naredbe osvježiti popis dostupnih paketa, a time i njihovih nadogradnji, pa zatim instalirati dostupne nadogradnje.
@@ -35,8 +33,7 @@ Obje će naredbe osvježiti popis dostupnih paketa, a time i njihovih nadogradnj
 U nastavku za instalaciju softvera uz Pacman koristimo i [Paru](https://github.com/Morganamilo/paru), koji omogućuje instalaciju programa koji nisu pakirani iz njhovog izvornog koda. Njegove popise dostupnih softvera osvježite naredbom
 
 ``` shell
-$ paru
-(...)
+paru
 ```
 
 !!! note
@@ -45,14 +42,13 @@ $ paru
 ## Generator mrežnog prometa MGEN
 
 ``` shell
-$ paru -S mgen
+paru -S mgen
 ```
 
 Je li instalacija bila uspješna isprobat ćemo narebom:
 
 ``` shell
-$ mgen
-(...)
+mgen
 ```
 
 MGEN će vjerojatno javiti pogreške oko datoteke ili direktorija koje ne može otvoriti unutar funkcije `GPSSubscribe()` oblika `GPSSubscribe(): fopen() error: No such file or directory`. Te nam pogreške nisu važne jer se unatoč njima MGEN pokreće i uredno radi.
@@ -64,15 +60,13 @@ Instalirajmo prvo softvere koje CORE zahtijeva.
 ### Instalacija preduvjeta
 
 ``` shell
-$ paru -S tkimg
-(...)
+paru -S tkimg
 ```
 
 ### Preuzimanje i instalacija
 
 ``` shell
-$ paru -S core
-(...)
+paru -S core
 ```
 
 Između ponuđenih verzija `1) core` i `2) core-git` odaberite `1) core`.
@@ -82,14 +76,13 @@ Između ponuđenih verzija `1) core` i `2) core-git` odaberite `1) core`.
 Sada možemo pokrenuti CORE daemon naredbom (ovu naredbu moramo ponoviti svaki put kad ponovno pokrenemo računalo):
 
 ``` shell
-$ sudo systemctl start core-daemon.service
+sudo systemctl start core-daemon.service
 ```
 
 Uvjerimo se da se usluga `core-daemon` zaista i pokrenula:
 
 ``` shell
-$ systemctl status core-daemon.service
-(...)
+systemctl status core-daemon.service
 ```
 
 ### Provjera instalacije CORE-a
@@ -97,8 +90,7 @@ $ systemctl status core-daemon.service
 Je li instalacija bila uspješna provjerit ćemo naredbom:
 
 ``` shell
-$ core-gui-legacy --version
-(...)
+core-gui-legacy --version
 ```
 
 CORE bi morao javiti da je verzija 8.2.0.
@@ -108,22 +100,19 @@ Grafičko sučelje alata CORE pokrećemo naredbom `core-gui-legacy` ili ikonom i
 ## OpenSSH te osnovni alati za analizu i konfiguraciju računalne mreže
 
 ``` shell
-$ sudo pacman -S openssh inetutils net-tools iproute2 traceroute iw wireless_tools
-(...)
+sudo pacman -S openssh inetutils net-tools iproute2 traceroute iw wireless_tools
 ```
 
 ## Alati za premošćenje i filtriranje paketa bridgectl, ebtables, iptables i nftables
 
 ``` shell
-$ sudo pacman -S bridge-utils iptables-nft nftables
-(...)
+sudo pacman -S bridge-utils iptables-nft nftables
 ```
 
 ## Usmjernik quagga
 
 ``` shell
-$ sudo pacman -S quagga
-(...)
+sudo pacman -S quagga
 ```
 
 Ukoliko dođe greška `Failed to write file: '...' operation not permitted`, zanemarite je.
@@ -131,29 +120,25 @@ Ukoliko dođe greška `Failed to write file: '...' operation not permitted`, zan
 ## Alat za dinamičku dodjela IP adresa ISC DHCP
 
 ``` shell
-$ sudo pacman -S dhclient dhcp
-(...)
+sudo pacman -S dhclient dhcp
 ```
 
 ## Analizator mrežnog prometa Wireshark
 
 ``` shell
-$ sudo pacman -S wireshark-qt
-(...)
+sudo pacman -S wireshark-qt
 ```
 
 Zatim dodajte svog korisnika u grupu `wireshark` koja ima pravo hvatanja paketa:
 
 ``` shell
-$ sudo usermod -aG wireshark $(whoami)
-(...)
+sudo usermod -aG wireshark $(whoami)
 ```
 
 Ako koristite ljusku `fish`, ova će naredba javiti grešku u sintaksi. Ispravan oblik naredbe za ljusku `fish` je:
 
 ``` shell
-$ sudo usermod -aG wireshark (whoami)
-(...)
+sudo usermod -aG wireshark (whoami)
 ```
 
 (U naredbama iznad ne morate ništa mijenjati jer naredba `whoami` vraća ime vašeg korisnika.)
@@ -161,15 +146,13 @@ $ sudo usermod -aG wireshark (whoami)
 ## Alat za crtanje grafova Gnuplot
 
 ``` shell
-$ sudo pacman -S gnuplot
-(...)
+sudo pacman -S gnuplot
 ```
 
 ## Razvojno okruženje Visual Studio Code
 
 ``` shell
-$ sudo pacman -S visual-studio-code-bin
-(...)
+sudo pacman -S visual-studio-code-bin
 ```
 
 Visual Studio Code uključuje podršku za [Markdown](https://code.visualstudio.com/docs/languages/markdown) i [PHP](https://code.visualstudio.com/docs/languages/php).
@@ -185,15 +168,13 @@ U dijelu `Extensions` također instalirajte [PHP Extension Pack](https://marketp
 ## HTTP klijent cURL i sučelje Curlie
 
 ``` shell
-$ sudo pacman -S curl curlie
-(...)
+sudo pacman -S curl curlie
 ```
 
 ## HTTP poslužitelj za razvoj aplikacija, testiranje i edukaciju PHP built-in web server, proširenje Xdebug i JSON procesor jq
 
 ``` shell
-$ sudo pacman -S php xdebug jq
-(...)
+sudo pacman -S php xdebug jq
 ```
 
 ### Provjera instalacije PHP-a
@@ -211,8 +192,7 @@ phpinfo();
 Pokrenite [ugrađeni terminal](https://code.visualstudio.com/docs/editor/integrated-terminal) putem izbornika `Terminal\New Terminal` ili kombinacije tipki ++control+shift+grave++. U njemu pokrenite ugrađeni poslužitelj PHP-ovog interpretera na adresi lokalnog domaćina `127.0.0.1`:
 
 ``` shell
-$ php -S 127.0.0.1:8080 -t public
-(...)
+php -S 127.0.0.1:8080 -t public
 ```
 
 Korištenjem web preglednika otvorite adresu `http://127.0.0.1:8080/` i uvjerite se da ste dobili informacije o PHP-u. Uočite da vam se u terminalu prikazuje svaki HTTP zahtjev i statusni kod odgovora na njega; ta nam je značajka vrlo korisna za učenje rada web poslužitelja.
@@ -220,6 +200,5 @@ Korištenjem web preglednika otvorite adresu `http://127.0.0.1:8080/` i uvjerite
 ## HTTP tester i benchmark alat Siege
 
 ``` shell
-$ sudo pacman -S siege
-(...)
+sudo pacman -S siege
 ```

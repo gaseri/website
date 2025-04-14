@@ -236,8 +236,10 @@ int main ()
 Gnuplot pokrećemo naredbom `gnuplot` u komandnoj liniji.
 
 ``` shell
-$ gnuplot
+gnuplot
+```
 
+``` shell-session
         G N U P L O T
 (...)
 ```
@@ -322,7 +324,7 @@ plotFile.close ();
 Gnuplot kao ulaz prima `.plt` datoteku koja definira koji će objekti biti nacrtani i na koji način. *U komandnoj liniji* u direktoriju gdje se nalazi `plot2d.plt` pokrećemo naredbu
 
 ``` shell
-$ gnuplot plot2d.plt
+gnuplot plot2d.plt
 ```
 
 čime u istom direktoriju nastaje datoteka `plot2d.png`, u kojoj se nalazi graf koji prikazuje promjenu veličine prozora zagušenja u ovisnosti o vremenu.

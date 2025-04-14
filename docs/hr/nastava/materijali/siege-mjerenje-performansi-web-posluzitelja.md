@@ -16,7 +16,10 @@ Uzmimo za testiranje [web aplikaciju za ispis IP adrese i korisničkog agenta](h
 Pokrenemo li Siege bez parametara, radit će do prekida kombinacijom tipki ++control+c++:
 
 ``` shell
-$ siege https://apps.group.miletic.net/ip/
+siege https://apps.group.miletic.net/ip/
+```
+
+``` shell-session
 ^C
 ```
 
@@ -40,7 +43,7 @@ $ siege https://apps.group.miletic.net/ip/
 Želimo li ograničiti vrijeme mjerenja performansi, primjerice na 10 sekundi, iskoristit ćemo parametar `--time`, odnosno `-t`:
 
 ``` shell
-$ siege -t 10s https://apps.group.miletic.net/ip/
+siege -t 10s https://apps.group.miletic.net/ip/
 ```
 
 ``` json
@@ -63,7 +66,7 @@ $ siege -t 10s https://apps.group.miletic.net/ip/
 Parametrom `--concurrent`, odnosno `-c` možemo navesti broj istovremenih korisnika čije opterećenje će biti generirano. Postavimo taj broj na 100:
 
 ``` shell
-$ siege -c 100 -t 10s https://apps.group.miletic.net/ip/
+siege -c 100 -t 10s https://apps.group.miletic.net/ip/
 ```
 
 ``` json
@@ -92,7 +95,7 @@ Ako ne navedemo ništa, Siege će generirati zahtjeve 10 istovremenih korisnika,
 Po potrebi parametrom `--header`, odnosno `-H` možemo navesti zaglavlje koje će biti poslano u zahtjevu. Primjerice, možemo od web aplikacije zatražiti slanje odgovora u obliku JSON navođenjem zaglavlja Accept i pripadnog MIME tipa na način:
 
 ``` shell
-$ siege -t 10s -H 'Accept: application/json' https://apps.group.miletic.net/ip/
+siege -t 10s -H 'Accept: application/json' https://apps.group.miletic.net/ip/
 ```
 
 ``` json
@@ -121,7 +124,7 @@ Siege možemo na isti način koristiti i na web poslužiteljima pokrenutim na lo
 Primjerice, ako imamo pokrenut PHP-ov ugrađeni web poslužitelj na vratima 8000, onda ćemo mu pristupiti naredbom:
 
 ``` shell
-$ siege -c 10 http://localhost:8000/
+siege -c 10 http://localhost:8000/
 ```
 
 ``` json
@@ -146,7 +149,10 @@ PHP-ov ugrađeni web poslužitelj u zadanim postavkama ne koristi konkurentnost 
 Od verzije PHP-a 7.4.0 nadalje moguće je PHP-ov ugrađeni web poslužitelj pokrenuti u više procesa koji se pritom nazivaju radnicima (engl. *workers*). To možemo izvesti je postaviti varijablu okoline `PHP_CLI_SERVER_WORKERS` ([dokumentacija](https://www.php.net/manual/en/features.commandline.webserver.php)) na broj veći od 1 kod pokretanja ugrađenog web poslužitelja, primjerice 10 na način:
 
 ``` shell
-$ PHP_CLI_SERVER_WORKERS=10 php -S localhost:8000 -t public
+PHP_CLI_SERVER_WORKERS=10 php -S localhost:8000 -t public
+```
+
+``` shell-session
 [351093] [Mon Nov  1 20:00:37 2021] PHP 7.4.25 Development Server (http://localhost:8000) started
 [351092] [Mon Nov  1 20:00:37 2021] PHP 7.4.25 Development Server (http://localhost:8000) started
 [351094] [Mon Nov  1 20:00:37 2021] PHP 7.4.25 Development Server (http://localhost:8000) started
@@ -163,7 +169,7 @@ $ PHP_CLI_SERVER_WORKERS=10 php -S localhost:8000 -t public
 Pokretanjem Siegea s većim brojem konkurentnih korisnika, npr. 100, možemo uočiti da je broj obrađenih zahjeva nešto veći:
 
 ``` shell
-$ siege -c 100 -t 10s http://localhost:8000/
+siege -c 100 -t 10s http://localhost:8000/
 ```
 
 ``` json
@@ -188,7 +194,7 @@ $ siege -c 100 -t 10s http://localhost:8000/
 Apache HTTP Server može baratati s više korisnika pa možemo varirati broj korisnika ovisno o snazi računala na kojemu radimo. Ako Apache je pokrenut upotrebom Dockera, Siege s 50 istovremenih korisnika ćemo pokrenuti na način:
 
 ``` shell
-$ siege -c 50 http://172.17.0.2/
+siege -c 50 http://172.17.0.2/
 ```
 
 ## Složenije mogućnosti korištenja

@@ -99,28 +99,37 @@ Osim toga, TINC ima sljedeće značajke:
 Kao praktični primjer, na vlastiti laptop (`narciss`) i server (`lines`) postavit ću VPN pomoću Tinc-a, prateći pritom Tinc-ovu [službenu dokumentaciju](https://www.tinc-vpn.org/documentation/). Oba računala koriste operativni sustav Debian GNU/Linux:
 
 ``` shell
-$ uname -a
+uname -a
+```
+
+``` shell-session
 Linux narciss 3.16.0-4-amd64 #1 SMP Debian 3.16.7-ckt20-1+deb8u3 (2016-01-17) x86_64 GNU/Linux
-$ uname -a
+```
+
+``` shell
+uname -a
+```
+
+``` shell-session
 Linux lines 3.16.0-4-amd64 #1 SMP Debian 3.16.7-ckt11-1+deb8u5 (2015-10-09) x86_64 GNU/Linux
 ```
 
 Za početak je na oba računala potrebno instalirati aplikaciju tinc koja je dostupna u Debian službenom repozitoriju:
 
 ``` shell
-$ sudo apt-get install tinc
+sudo apt-get install tinc
 ```
 
 Na serveru (`lines`) kreirat ćemo direktorije za konfiguraciju pomoću komande:
 
 ``` shell
-$ sudo mkdir -p /etc/tinc/linesvpn/hosts
+sudo mkdir -p /etc/tinc/linesvpn/hosts
 ```
 
 Zatim je potrebno kreirati i konfigurirati Tinc postavke u datoteci `tinc.conf` na slijedeći način:
 
 ``` shell
-$ sudo nano /etc/tinc/linesvpn/tinc.conf
+sudo nano /etc/tinc/linesvpn/tinc.conf
 ```
 
 Postavke moraju sadržavati:
@@ -136,7 +145,7 @@ U gornjem primjeru, direktorij `linesvpn` je ime VPN mreže koja će se međusob
 Zatim, kreiramo datoteku s postavkama za server (lines) s detaljnim informacijama:
 
 ``` shell
-$ sudo nano /etc/tinc/linesvpn/hosts/lines
+sudo nano /etc/tinc/linesvpn/hosts/lines
 ```
 
 Datoteka sadrži:
@@ -151,7 +160,7 @@ Ime datoteke mora odgovarati imenu specificiranom u datoteci `tinc.conf`. Polje 
 Zatim je potrebno generirati privatni i javni ključ:
 
 ``` shell
-$ sudo tincd -n myvpn -K4096
+sudo tincd -n myvpn -K4096
 ```
 
 Ova komanda generira 4096-bitni privatni i javni ključ za server lines. Privatni ključ biti će spremljen u `/etc/tinc/linesvpn/rsa_key.priv`, a javni nadodan u datoteku `/etc/tinc/linesvpn/hosts/lines`.
@@ -159,7 +168,7 @@ Ova komanda generira 4096-bitni privatni i javni ključ za server lines. Privatn
 Na kraju, potrebno je konfigurirati skripte koje se pokreću kada se servis Tinc pali i gasi:
 
 ``` shell
-$ sudo nano /etc/tinc/linesvpn/tinc-up
+sudo nano /etc/tinc/linesvpn/tinc-up
 ```
 
 Sadržaj datoteke `tinc-up`:
@@ -170,7 +179,7 @@ ifconfig $INTERFACE 10.0.0.1 netmask 255.255.255.0
 ```
 
 ``` shell
-$ sudo nano /etc/tinc/linesvpn/tinc-down
+sudo nano /etc/tinc/linesvpn/tinc-down
 ```
 
 Sadržaj datoteke `tinc-down`:
@@ -183,14 +192,14 @@ ifconfig $INTERFACE down
 Izvršimo iduću komandu da se skripte mogu pokretati:
 
 ``` shell
-$ sudo chmod 755 /etc/tinc/linesvpn/tinc-*
+sudo chmod 755 /etc/tinc/linesvpn/tinc-*
 ```
 
 Na sličan način konfigurira se i klijent (`narciss`):
 
 ``` shell
-$ sudo mkdir -p /etc/tinc/linesvpn
-$ sudo nano /etc/tinc/linesvpn/tinc.conf
+sudo mkdir -p /etc/tinc/linesvpn
+sudo nano /etc/tinc/linesvpn/tinc.conf
 ```
 
 ``` ini
@@ -203,7 +212,7 @@ ConnectTo = lines
 Za razliku od servera lines, nadodaje se polje `ConnectTo` obzirom da će klijent `narciss` inicirati VPN konekciju na server lines.
 
 ``` shell
-$ sudo nano /etc/tinc/linesvpn/hosts/narciss
+sudo nano /etc/tinc/linesvpn/hosts/narciss
 ```
 
 ``` ini
@@ -211,13 +220,13 @@ Subnet = 10.0.0.2/32
 ```
 
 ``` shell
-$ sudo tincd -n myvpn -K4096
+sudo tincd -n myvpn -K4096
 ```
 
 Kao i na serveru `lines`, `narciss`-ov privatni ključ spremljen je u datoteci `/etc/tinc/linesvpn/rsa_key.priv`, a `narciss`-ov javni ključ je dodan konfiguracijskoj datoteki `/etc/tinc/linesvpn/hosts/narciss`.
 
 ``` shell
-$ sudo nano /etc/tinc/myvpn/tinc-up
+sudo nano /etc/tinc/myvpn/tinc-up
 ```
 
 ``` sh
@@ -226,7 +235,7 @@ ifconfig $INTERFACE 10.0.0.2 netmask 255.255.255.0
 ```
 
 ``` shell
-$ sudo nano /etc/tinc/linesvpn/tinc-down
+sudo nano /etc/tinc/linesvpn/tinc-down
 ```
 
 ``` sh
@@ -235,7 +244,7 @@ ifconfig $INTERFACE down
 ```
 
 ``` shell
-$ sudo chmod 755 /etc/tinc/linesvpn/tinc-*
+sudo chmod 755 /etc/tinc/linesvpn/tinc-*
 ```
 
 Po završetku, datoteke unutar direktorija `/etc/tinc/linesvpn/hosts` potrebno je međusobno kopirati među računalima. Dakle datoteku `/etc/tinc/linesvpn/hosts/narciss` na klijentu `narciss` potrebno je kopirati u direktorij `/etc/tinc/linesvpn/hosts` na serveru lines, a datoteku `/etc/tinc/linesvpn/hosts/lines` sa servera `lines`, potrebno je kopirati u direktorij `/etc/tinc/linesvpn/hosts` na klijentu `narciss`.
@@ -243,7 +252,7 @@ Po završetku, datoteke unutar direktorija `/etc/tinc/linesvpn/hosts` potrebno j
 Na kraju, pokrenemo tinc prvo na serveru `lines`, a zatim na klijentu `narciss`:
 
 ``` shell
-$ sudo tincd -n linesvpn
+sudo tincd -n linesvpn
 ```
 
 Nakon izvršene komande, računala narciss i lines bi trebala moći normalno međusobno komunicirati preko VPN adresa koje su im dodijeljene (10.0.0.1 -- `lines` i 10.0.0.2 -- `narciss`).

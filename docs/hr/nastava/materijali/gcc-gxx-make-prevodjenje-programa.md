@@ -77,10 +77,10 @@ Povezivanje (engl. *linking*) podrazumijeva povezivanje s bibliotečnim datoteka
 Statičko povezivanje u gornjem primjeru izveli bismo na način:
 
 ``` shell
-$ g++ -c bibl1.cpp bibl2.cpp
-$ ar rcs libbibl.a bibl1.o bibl2.o
-$ g++ -static -o mainprog mainprog.cpp -L. -lbibl
-$ ./mainprog
+g++ -c bibl1.cpp bibl2.cpp
+ar rcs libbibl.a bibl1.o bibl2.o
+g++ -static -o mainprog mainprog.cpp -L. -lbibl
+./mainprog
 ```
 
 Program `ar` je arhiver, donekle sličan `tar`-u koji već poznajemo. On ovdje služi za stvaranje statičke biblioteke, datoteke s ekstenzijom `.a`.
@@ -93,13 +93,13 @@ Parametar `-L` kod `g++`-a navodi dodatnu putanju u kojoj treba tražiti bibliot
 Dinamičko povezivanje u datotekama primjera izveli bismo na način:
 
 ``` shell
-$ g++ -fPIC -c bibl1.cpp bibl2.cpp
-$ g++ -shared -Wl,-soname,libbibl.so.1 -o libbibl.so.1.0 bibl1.o bibl2.o
-$ ln -sf libbibl.so.1.0 libbibl.so
-$ ln -sf libbibl.so.1.0 libbibl.so.1
-$ g++ -o mainprog -L. mainprog.cpp -lbibl
-$ export LD_LIBRARY_PATH=.
-$ ./mainprog
+g++ -fPIC -c bibl1.cpp bibl2.cpp
+g++ -shared -Wl,-soname,libbibl.so.1 -o libbibl.so.1.0 bibl1.o bibl2.o
+ln -sf libbibl.so.1.0 libbibl.so
+ln -sf libbibl.so.1.0 libbibl.so.1
+g++ -o mainprog -L. mainprog.cpp -lbibl
+export LD_LIBRARY_PATH=.
+./mainprog
 ```
 
 Parametar `-fPIC` osigurava da je strojni kod koji GCC stvara prevođenjem [neovisan o o položaju u memoriji](https://en.wikipedia.org/wiki/Position-independent_code), što omogućava dijeljenje istog od većeg broja programa.

@@ -22,14 +22,20 @@ Napravimo kopiju preuzete slike koju ćemo koristiti kod stvaranja virtualnog st
 Slika ima zadanu veličinu diska od 2 GiB, pri čemu se prazan prostor samo navodi, a zapravo ne zauzima gotovo ništa. Ta će nam veličina za praktične potrebe biti premalena pa je možemo povećati korištenjem [QEMU-ovih pomoćnih alata](https://www.qemu.org/docs/master/tools/index.html), specifično `qemu-img` ([dokumentacija](https://www.qemu.org/docs/master/tools/qemu-img.html)). Primjerice, za povećanje *na* veličinu od 25 GiB naredba je oblika:
 
 ``` shell
-$ qemu-img resize moja-arch-linux-slika.img 25G
+qemu-img resize moja-arch-linux-slika.img 25G
+```
+
+``` shell-session
 image resized
 ```
 
 Alternativno, sliku možemo povećati *za* danu veličinu, npr. 30 GiB na način:
 
 ``` shell
-$ qemu-img resize moja-arch-linux-slika.img +30G
+qemu-img resize moja-arch-linux-slika.img +30G
+```
+
+``` shell-session
 image resized
 ```
 
@@ -56,7 +62,10 @@ Zasad nećemo koristiti drugu sliku koja sadrži `cloudimg` (kratica od **cloud*
 QEMU/KVM u zadanim postavkama mreže (prevođenje mrežnih adresa, engl. *network address translation*, kraće NAT) dodjeljuje svim virtualnim strojevima adrese u rasponu 192.168.122.0/24. Naredbom `ip addr` unutar virtualnog stroja možemo provjeriti koja je adresa dodijeljena tom stroju:
 
 ``` shell
-$ ip addr
+ip addr
+```
+
+``` shell-session
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
     inet 127.0.0.1/8 scope host lo
@@ -72,7 +81,10 @@ $ ip addr
 Na virtualni stroj možemo se povezati OpenSSH-om korištenjem korisničkog imena `arch` i zaporke koju smo postavili na način:
 
 ``` shell
-$ ssh arch@192.168.122.147
+ssh arch@192.168.122.147
+```
+
+``` shell-session
 arch@192.168.122.147's password:
 ```
 
@@ -85,8 +97,10 @@ Za instalaciju softvera u virtualnom stroju koristimo upravitelj paketa [pacman]
 Pokretanjem naredbe `pacman` s parametrom `--version` možemo saznati informacije o dostupnoj verziji pacmana:
 
 ``` shell
-$ pacman --version
+pacman --version
+```
 
+``` shell-session
  .--.                  Pacman v6.0.2 - libalpm v13.0.2
 / _.-' .-.  .-.  .-.   Copyright (C) 2006-2021 Pacman Development Team
 \  '-. '-'  '-'  '-'   Copyright (C) 2002-2006 Judd Vinet
@@ -98,7 +112,10 @@ sukladno pravilima GNU General Public License.
 Možemo prepoznati [Pac-Mana](https://en.wikipedia.org/wiki/Pac-Man) u obliku [ASCII arta](https://en.wikipedia.org/wiki/ASCII_art). Korištenjem parametra `--help`, odnosno `-h` možemo dobiti informacije o načinu korištenja:
 
 ``` shell
-$ pacman --help
+pacman --help
+```
+
+``` shell-session
 upotreba:  pacman <operacija> [...]
 operacije:
     pacman {-h --help}
@@ -126,16 +143,18 @@ Osim službenih repozitorija, Arch Linux sadrži [gotovo 90 000 opisa paketa](ht
 Za primjer, izgradit ćemo i instalirati paket [mkdocs](https://aur.archlinux.org/packages/mkdocs). Klikom na poveznicu `View PKGBUILD` na toj stranici i zatim na poveznicu `plain` otkrivamo URL `https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=mkdocs` s kojeg možemo preuzeti PKGBUILD.
 
 ``` shell
-$ mkdir mkdocs
-$ cd mkdocs
-$ curl -o PKGBUILD "https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=mkdocs"
-(...)
+mkdir mkdocs
+cd mkdocs
+curl -o PKGBUILD "https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=mkdocs"
 ```
 
 Pakete izgrađujemo korištenjem naredbe `makepkg` na način:
 
 ``` shell
-$ makepkg
+makepkg
+```
+
+``` shell-session
 ==> Making package: mkdocs 1.4.2-1 (nedjelja, 16. travnja 2023. 22:06:06 CEST)
 ==> Checking runtime dependencies...
 ==> Missing dependencies:
@@ -164,56 +183,73 @@ Više detalja o naredbi `makepkg` moguće je pronaći na [stranici makepkg na Ar
 Potrebne pakete koji postoje u službenom repozitoriju ćemo od tamo i instalirati:
 
 ``` shell
-$ sudo pacman -S python-babel python-ghp-import python-importlib-metadata python-jinja python-livereload python-markupsafe python-watchdog
-$ sudo pacman -S python-hatchling python-pathspec python-build python-installer python-wheel
+sudo pacman -S python-babel python-ghp-import python-importlib-metadata python-jinja python-livereload python-markupsafe python-watchdog
+sudo pacman -S python-hatchling python-pathspec python-build python-installer python-wheel
 ```
 
 Za preostala tri paketa [python-mergedeep](https://aur.archlinux.org/packages/python-mergedeep), [python-mdx-gh-links](https://aur.archlinux.org/packages/python-mdx-gh-links) i [python-pyyaml-env-tag](https://aur.archlinux.org/packages/python-pyyaml-env-tag), preuzet ćemo PKGBUILD-ove iz AUR-a i na temelju njih:
 
 ``` shell
-$ mkdir python-mergedeep
-$ cd python-mergedeep
-$ curl -o PKGBUILD "https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=python-mergedeep"
-(...)
-$ makepkg
+mkdir python-mergedeep
+cd python-mergedeep
+curl -o PKGBUILD "https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=python-mergedeep"
+makepkg
+```
+
+``` shell-session
 (...)
 ==> Finished making: python-mergedeep 1.3.4-2
-$ cd ..
 ```
 
 ``` shell
-$ mkdir python-mdx-gh-links
-$ cd python-mdx-gh-links
-$ curl -o PKGBUILD "https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=python-mdx-gh-links"
-(...)
-$ makepkg
+cd ..
+```
+
+``` shell
+mkdir python-mdx-gh-links
+cd python-mdx-gh-links
+curl -o PKGBUILD "https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=python-mdx-gh-links"
+makepkg
+```
+
+``` shell-session
 (...)
 ==> Finished making: python-mdx-gh-links 0.2-1
-$ cd ..
 ```
 
 ``` shell
-$ mkdir python-pyyaml-env-tag
-$ cd python-pyyaml-env-tag
-$ curl -o PKGBUILD "https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=python-pyyaml-env-tag"
-(...)
-$ makepkg
+cd ..
+```
+
+``` shell
+mkdir python-pyyaml-env-tag
+cd python-pyyaml-env-tag
+curl -o PKGBUILD "https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=python-pyyaml-env-tag"
+makepkg
+```
+
+``` shell-session
 (...)
 ==> Finished making: python-pyyaml-env-tag 0.1-1
-$ cd ..
+```
+
+``` shell
+cd ..
 ```
 
 Instalaciju lokalno izgrađenih paketa vršimo narebom `pacman` s parametrom `--upgrade`, odnosno `-U` na način
 
 ``` shell
-$ sudo pacman -U python-mergedeep/python-mergedeep-1.3.4-2-any.pkg.tar.zst python-mdx-gh-links/python-mdx-gh-links-0.2-1-any.pkg.tar.zst python-pyyaml-env-tag/python-pyyaml-env-tag-0.1-1-any.pkg.tar.zst
-(...)
+sudo pacman -U python-mergedeep/python-mergedeep-1.3.4-2-any.pkg.tar.zst python-mdx-gh-links/python-mdx-gh-links-0.2-1-any.pkg.tar.zst python-pyyaml-env-tag/python-pyyaml-env-tag-0.1-1-any.pkg.tar.zst
 ```
 
 Nakon instalacije ta tri paketa moguće je uspješno izgraditi paket mkdocs korištenjem naredbe `makepkg` pa ga instalirati na sličan način naredbom `pacman` s parametrom `-U`. Uvjerimo se da je instalacija bila uspješna pokretanjem naredbe `mkdocs` s parametrom `--version`:
 
 ``` shell
-$ mkdocs --version
+mkdocs --version
+```
+
+``` shell-session
 mkdocs, version 1.4.2 from /usr/lib/python3.10/site-packages/mkdocs (Python 3.10)
 ```
 

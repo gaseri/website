@@ -35,7 +35,10 @@ else {
 Provjerimo dobiveni sadržaj u situaciji kad se kompresija ne koristi:
 
 ``` shell
-$ curl -v http://localhost:8000/
+curl -v http://localhost:8000/
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET / HTTP/1.1
@@ -58,7 +61,10 @@ $ curl -v http://localhost:8000/
 Zatražimo cURL-om komprimirani sadržaj korištenjem parametra `--compressed` koji će za nas navesti podržane formate kodiranja sadržaja u zaglavlju Accept-Encoding:
 
 ``` shell
-$ curl -v --compressed http://localhost:8000/
+curl -v --compressed http://localhost:8000/
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET / HTTP/1.1

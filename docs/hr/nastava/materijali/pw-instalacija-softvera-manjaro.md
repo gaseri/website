@@ -13,8 +13,7 @@ Nakon što preuzimete i instalirate VS Code, pokrenite ga, zatim kraticom ++cont
 Specijalno, na [Manjaru](https://manjaro.org/), popularnom derivatu [Arch Linuxa](https://archlinux.org/), možete instalirati [službeni VS Code binary](https://aur.archlinux.org/packages/visual-studio-code-bin) iz AUR-a:
 
 ``` shell
-$ pamac build visual-studio-code-bin
-(...)
+pamac build visual-studio-code-bin
 ```
 
 Ime paketa na [Garuda Linuxu](https://garudalinux.org/) je isto, a naredba za instalaciju je `paru -S`.
@@ -26,8 +25,7 @@ Preduvjet je instalacija [pipa](https://pypi.org/project/pip/) i [Pylinta](https
 Naredba za instalaciju na Manjaru je:
 
 ``` shell
-$ pamac install python-pip python-pylint
-(...)
+pamac install python-pip python-pylint
 ```
 
 Imena paketa na Garuda Linuxu su ista, a naredba za instalaciju je `sudo pacman -S`.
@@ -35,8 +33,7 @@ Imena paketa na Garuda Linuxu su ista, a naredba za instalaciju je `sudo pacman 
 Naredba za instalaciju na [Ubuntu WSL-u](https://ubuntu.com/wsl) i drugima je:
 
 ``` shell
-$ sudo apt install python-is-python3 python3-pip pylint
-(...)
+sudo apt install python-is-python3 python3-pip pylint
 ```
 
 ## Django
@@ -44,29 +41,25 @@ $ sudo apt install python-is-python3 python3-pip pylint
 Naredba za instalaciju [Djanga](https://www.djangoproject.com/) na Manjaru je:
 
 ``` shell
-$ pamac install python-django
-(...)
+pamac install python-django
 ```
 
 Na Ubuntu WSL-u i drugima instalacija Djanga vrši se korištenjem pip-a:
 
 ``` shell
-$ pip3 install Django
-(...)
+pip3 install Django
 ```
 
 ili
 
 ``` shell
-$ python3 -m pip install Django
-(...)
+python3 -m pip install Django
 ```
 
 Alternativno, na Ubuntu WSL-u i drugima moguća je i instalacija pakirane verzije Djanga na Ubuntu WSL-u, ali se to ne preporuča jer je verzija znatno starija od trenutne aktualne:
 
 ``` shell
-$ sudo apt install python3-django
-(...)
+sudo apt install python3-django
 ```
 
 ## HTTPie
@@ -74,27 +67,23 @@ $ sudo apt install python3-django
 Naredba za instalaciju [HTTPie]-a na Manjaru je:
 
 ``` shell
-$ pamac install httpie
-(...)
+pamac install httpie
 ```
 
 Na Ubuntu WSL-u i drugima instalacija HTTPie-a, kao i Djanga, vrši se korištenjem pip-a:
 
 ``` shell
-$ pip3 install httpie
-(...)
+pip3 install httpie
 ```
 
 ili
 
 ``` shell
-$ python3 -m pip install httpie
-(...)
+python3 -m pip install httpie
 ```
 
 Alternativno, na Ubuntu WSL-u i drugima moguća je i instalacija pakirane verzije HTTPie-a na Ubuntu WSL-u, ali se, kao i kod Djanga, to ne preporuča jer je verzija znatno starija od trenutne aktualne:
 
 ``` shell
-$ sudo apt install httpie
-(...)
+sudo apt install httpie
 ```

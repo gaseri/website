@@ -199,7 +199,10 @@ Array
 Van interpretera PHP-a, odnosno u ljusci operacijskog sustava možemo iskoristiti programski alat jq ([službena stranica](https://stedolan.github.io/jq/), [dokumentacija](https://stedolan.github.io/jq/manual/)) za obradu JSON-a slično kao što za obradu običnog teksta koristimo `sed`. Željeni ispis dobivamo naredbom `jq` s filterom ulaza `.` koji kopira ulaz na izlaz bez da mijenja njegov sadržaj, ali ga pritom lijepo oblikuje:
 
 ``` shell
-$ echo '{"moj kljuc":"moja vrijednost","broj":8,"drugi broj":3.5,"je li istina":true}' | jq .
+echo '{"moj kljuc":"moja vrijednost","broj":8,"drugi broj":3.5,"je li istina":true}' | jq .
+```
+
+``` shell-session
 {
   "moj kljuc": "moja vrijednost",
   "broj": 8,

@@ -45,7 +45,10 @@ Promatrajući vrijednost ključa `services,` uočavamo da ćemo u ovom slučaju 
 Povucimo slike argumentom `pull` ([dokumentacija](https://docs.docker.com/engine/reference/commandline/compose_pull/)):
 
 ``` shell
-$ docker-compose pull
+docker-compose pull
+```
+
+``` shell-session
 [+] Running 12/12
  ⠿ mojredis Pulled                                                         21.1s
    ⠿ a2abf6c4d29d Pull complete                                            17.3s
@@ -64,7 +67,10 @@ $ docker-compose pull
 Stvaranje kontejnera na temelju preuzetih slika i njihovo pokretanje ćemo izvesti argumentom `up` ([dokumentacija](https://docs.docker.com/engine/reference/commandline/compose_up/)):
 
 ``` shell
-$ docker-compose up
+docker-compose up
+```
+
+``` shell-session
 [+] Running 2/0
 ⠿ Container docker-mojhttpd-1  Created                                   0.0s
 ⠿ Container docker-mojredis-1  Created                                   0.0s
@@ -90,7 +96,7 @@ docker-mojredis-1  | 1:M 03 Jan 2022 22:26:37.088 * Ready to accept connections
 
 Izvođenje, kao i inače, prekidamo kombinacijom tipki ++control+c++:
 
-``` shell
+``` shell-session
 ^CGracefully stopping... (press Ctrl+C again to force)
 [+] Running 2/2
  ⠿ Container docker-mojhttpd-1  Stopped                                     1.2s
@@ -101,7 +107,10 @@ canceled
 Želimo li pokrenuti kompoziciju kontejnera u pozadini, dodat ćemo parametar `--detach`, odnosno `-d`:
 
 ``` shell
-$ docker-compose up -d
+docker-compose up -d
+```
+
+``` shell-session
 [+] Running 2/2
  ⠿ Container docker-mojredis-1  Started                                   0.3s
  ⠿ Container docker-mojhttpd-1  Started                                   0.3s
@@ -110,7 +119,10 @@ $ docker-compose up -d
 Argumentom `ps` dobit ćemo popis pokrenutih procesa u pojedinim kontejnerima ([dokumentacija](https://docs.docker.com/engine/reference/commandline/compose_ps/)):
 
 ``` shell
-$ docker-compose ps
+docker-compose ps
+```
+
+``` shell-session
 NAME                 COMMAND                  SERVICE             STATUS              PORTS
 docker-mojhttpd-1   "httpd-foreground"       mojhttpd            running             80/tcp
 docker-mojredis-1   "docker-entrypoint.s…"   mojredis            running             6379/tcp
@@ -119,7 +131,10 @@ docker-mojredis-1   "docker-entrypoint.s…"   mojredis            running      
 Želimo li više informacija, primjerice koliko je točno procesa pokrenuo web poslužitelj, koliko se dugo izvode i koji su im identifikatori, ispisat ćemo ih argumentom `top`, ponovno razdvojene po pojedinim kontejnerima ([dokumentacija](https://docs.docker.com/engine/reference/commandline/compose_top/)):
 
 ``` shell
-$ docker-compose top
+docker-compose top
+```
+
+``` shell-session
 docker-mojhttpd-1
 UID    PID      PPID     C    STIME   TTY   TIME       CMD
 root   870026   869946   0    23:34   ?     00:00:00   httpd -DFOREGROUND
@@ -135,7 +150,10 @@ UID   PID      PPID     C    STIME   TTY   TIME       CMD
 Argumentom `logs` dobit ćemo uvid u zapisnike pojedinih kontejnera ([dokumentacija](https://docs.docker.com/engine/reference/commandline/compose_logs/)):
 
 ``` shell
-$ docker-compose logs
+docker-compose logs
+```
+
+``` shell-session
 docker-mojhttpd-1  | AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.18.0.2. Set the 'ServerName' directive globally to suppress this message
 docker-mojhttpd-1  | AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.18.0.2. Set the 'ServerName' directive globally to suppress this message
 docker-mojhttpd-1  | [Sun Oct 16 17:19:59.639291 2022] [mpm_event:notice] [pid 1:tid 140373418044736] AH00489: Apache/2.4.54 (Unix) configured -- resuming normal operations
@@ -176,7 +194,10 @@ docker-mojredis-1  | 1:M 16 Oct 2022 17:22:00.647 * Ready to accept connections
 Zustavljanje izvođenja izvodimo argumentom `stop` ([dokumentacija](https://docs.docker.com/engine/reference/commandline/compose_stop/))
 
 ``` shell
-$ docker-compose stop
+docker-compose stop
+```
+
+``` shell-session
 [+] Running 2/2
  ⠿ Container docker-mojredis-1  Stopped                                     0.2s
  ⠿ Container docker-mojhttpd-1  Stopped                                     1.2s
@@ -185,7 +206,10 @@ $ docker-compose stop
 Argumentom `down` ([dokumentacija](https://docs.docker.com/engine/reference/commandline/compose_down/)) zaustavljamo i uklanjamo kontejnere, mreže, volumene i slike koje je stvorio `up`.
 
 ``` shell
-$ docker-compose down
+docker-compose down
+```
+
+``` shell-session
 [+] Running 3/3
  ⠿ Container docker-mojredis-1  Removed                                     0.3s
  ⠿ Container docker-mojhttpd-1  Removed                                     1.2s
@@ -195,8 +219,10 @@ $ docker-compose down
 Naredba podržava još argumenata, o kojima možemo saznati više proučavanjem [službene dokumentacije](https://docs.docker.com/engine/reference/commandline/compose/) ili korištenjem parametra `--help`:
 
 ``` shell
-$ docker-compose --help
+docker-compose --help
+```
 
+``` shell-session
 Usage:  docker compose [OPTIONS] COMMAND
 
 Docker Compose

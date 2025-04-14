@@ -17,7 +17,7 @@ sudo apt-get install dnsmasq
 Dnsmasq je automatski konfiguriran i pokrenut nakon instalacije. Da bi testirali jednostavni DNS server upisujemo iduću naredbu za bilo koju željenu web stranicu:
 
 ``` shell
-$ dig 9gag.com @localhost
+dig 9gag.com @localhost
 ```
 
 U "Answer section" možemo pronaći IP adresu na kojoj se tražena stranica nalazi.

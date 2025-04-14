@@ -33,7 +33,10 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && $_SERVER["PATH_INFO"] == "/profil") {
 Kako ljuska tretira `?` i `&` kao posebne znakove, URL je kod izvođenja zahtjeva potrebno staviti pod navodnike na način:
 
 ``` shell
-$ curl -v "http://localhost:8000/profil?ime=Ivan&prezime=Horvat"
+curl -v "http://localhost:8000/profil?ime=Ivan&prezime=Horvat"
+```
+
+``` shell-session
 *   Trying 127.0.0.1:8000...
 * TCP_NODELAY set
 * Connected to localhost (127.0.0.1) port 8000 (#0)
@@ -57,7 +60,10 @@ $ curl -v "http://localhost:8000/profil?ime=Ivan&prezime=Horvat"
 Vrijednosti pojedinih GET varijabli mogu sadržavati znak razmaka. U tom slučaju je potrebno znak razmaka kodirati znakom plusa (`+`; [više detalja o kodiranju znakova u URL-ima na MDN-u](https://developer.mozilla.org/en-US/docs/Glossary/percent-encoding)) na način:
 
 ``` shell
-$ curl -v "http://localhost:8000/profil?ime=Ivan+Tomislav&prezime=Horvat"
+curl -v "http://localhost:8000/profil?ime=Ivan+Tomislav&prezime=Horvat"
+```
+
+``` shell-session
 *   Trying 127.0.0.1:8000...
 * connect to 127.0.0.1 port 8000 failed: Veza odbijena
 *   Trying ::1:8000...
@@ -96,7 +102,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && $_SERVER["REQUEST_URI"] == "/profil"
 Ovdje putanja ne sadrži upit pa nam `$_SERVER["REQUEST_URI"]` ostaje `/profil` pa ne moramo koristiti `$_SERVER["PATH_INFO"]`. Zahtjev izvodimo na način:
 
 ``` shell
-$ curl -v -X POST -d "ime=Ivan" -d "prezime=Horvat" http://localhost:8000/profil
+curl -v -X POST -d "ime=Ivan" -d "prezime=Horvat" http://localhost:8000/profil
+```
+
+``` shell-session
 Note: Unnecessary use of -X or --request, POST is already inferred.
 *   Trying 127.0.0.1:8000...
 * TCP_NODELAY set
@@ -145,11 +154,26 @@ if ($_SERVER["REQUEST_URI"] == "/profil" && $_SERVER["REQUEST_METHOD"] == "POST"
 Uvjerimo se da smo uhvatili sve situacije kad u zahtjevu nedostaje neka od varijabli:
 
 ``` shell
-$ curl -X POST http://localhost:8000/profil
+curl -X POST http://localhost:8000/profil
+```
+
+``` shell-session
 <p>Niste poslali ime ili prezime.</p>
-$ curl -X POST -d "ime=Ivan" http://localhost:8000/profil
+```
+
+``` shell
+curl -X POST -d "ime=Ivan" http://localhost:8000/profil
+```
+
+``` shell-session
 <p>Niste poslali ime ili prezime.</p>
-$ curl -X POST -d "prezime=Horvat" http://localhost:8000/profil
+```
+
+``` shell
+curl -X POST -d "prezime=Horvat" http://localhost:8000/profil
+```
+
+``` shell-session
 <p>Niste poslali ime ili prezime.</p>
 ```
 

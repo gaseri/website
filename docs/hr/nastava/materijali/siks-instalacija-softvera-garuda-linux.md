@@ -18,15 +18,13 @@ Instalacija softvera na Arch Linuxu je centralizirana, slično kao što su na dr
 Svakako prije instalacije paketa u nastavku instalirajte sve dostupne nadogradnje. U terminalu upišite prvo
 
 ``` shell
-$ garuda-update
-(...)
+garuda-update
 ```
 
 pa, kad vas sustav to pita, unesite vašu zaporku. Ova naredba je specifična za Garuda Linux; Na ostalim derivatima Arch Linuxa možete instalaciju svih dostupnih nadogradnji izvesti naredbom
 
 ``` shell
-$ sudo pacman -Syu
-(...)
+sudo pacman -Syu
 ```
 
 Obje će naredbe osvježiti popis dostupnih paketa, a time i njihovih nadogradnji, pa zatim instalirati dostupne nadogradnje.
@@ -34,85 +32,73 @@ Obje će naredbe osvježiti popis dostupnih paketa, a time i njihovih nadogradnj
 ## Skup alata za kriptografiju i SSL/TLS OpenSSL i Python modul pyOpenSSL
 
 ``` shell
-$ sudo pacman -S openssl python-pyopenssl
-(...)
+sudo pacman -S openssl python-pyopenssl
 ```
 
 ## Skup alata za upravljanje autoritetom certifikata easy-rsa
 
 ``` shell
-$ sudo pacman -S easy-rsa
-(...)
+sudo pacman -S easy-rsa
 ```
 
 ## Python modul pyca/cryptography
 
 ``` shell
-$ sudo pacman -S python-cryptography
-(...)
+sudo pacman -S python-cryptography
 ```
 
 ## Alat za instalaciju Python paketa pip
 
 ``` shell
-$ sudo pacman -S python-pip
-(...)
+sudo pacman -S python-pip
 ```
 
 ## Alat za statičku analizu Python koda Pylint
 
 ``` shell
-$ sudo pacman -S python-pylint
-(...)
+sudo pacman -S python-pylint
 ```
 
 ## IPython jezgra za Jupyter
 
 ``` shell
-$ sudo pacman -S python-ipykernel
-(...)
+sudo pacman -S python-ipykernel
 ```
 
 ## HTTP klijent cURL
 
 ``` shell
-$ sudo pacman -S curl
-(...)
+sudo pacman -S curl
 ```
 
 ## Sustav za virtualizaciju na razini operacijskog sustava Docker
 
 ``` shell
-$ sudo pacman -S docker docker-compose
-(...)
+sudo pacman -S docker docker-compose
 ```
 
 Zatim dodajte svog korisnika u grupu `docker` koja ima pravo pokretanja kontejnera:
 
 ``` shell
-$ sudo usermod -aG docker $(whoami)
-(...)
+sudo usermod -aG docker $(whoami)
 ```
 
 Ako koristite ljusku `fish`, ova će naredba javiti grešku u sintaksi. Ispravan oblik naredbe za ljusku `fish` je:
 
 ``` shell
-$ sudo usermod -aG docker (whoami)
-(...)
+sudo usermod -aG docker (whoami)
 ```
 
 ### Uključivanje pokretanja daemona korištenjem aktivacije utičnice
 
 ``` shell
-$ sudo systemctl enable --now docker.socket
-(...)
+sudo systemctl enable --now docker.socket
 ```
 
 ### Provjera instalacije
 
 ``` shell
-$ sudo docker run hello-world
-(...)
+sudo docker run hello-world
 ```
 
 Nakon odjave i ponovne prijave bit će moguće pokretati Docker kontejnere i kao običan korisnik, bez naredbe sudo.
@@ -120,8 +106,7 @@ Nakon odjave i ponovne prijave bit će moguće pokretati Docker kontejnere i kao
 ## Razvojno okruženje Visual Studio Code
 
 ``` shell
-$ sudo pacman -S visual-studio-code-bin
-(...)
+sudo pacman -S visual-studio-code-bin
 ```
 
 Visual Studio Code uključuje podršku za [Markdown](https://code.visualstudio.com/docs/languages/markdown) i osnovnu podršku za [Python](https://code.visualstudio.com/docs/languages/python).
@@ -147,8 +132,7 @@ print("hello, world")
 Pokretanje vršimo gumbom `Run Python File in Terminal` u gornjem desnom dijelu `Editor Groups`-a ili iz ugrađenog terminala (izbornik `Terminal` pa `New Terminal` ili kombinacija tipki ++control+shift+`++) naredbom:
 
 ``` shell
-$ python hello.py
-(...)
+python hello.py
 ```
 
 Dodatni terminal možemo dobiti gumbom `New Terminal` ili `Split Terminal` u gornjem desnom dijelu `Panel`-a, pri čemu je ovaj drugi način preferiran u situaciji kad se istovremeno pokreću klijentska i poslužiteljska mrežna aplikacija.

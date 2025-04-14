@@ -82,7 +82,10 @@ OpenSSL je na većini distribucija Linuxa i drugih operacijskih sustava sličnih
 Aplikaciju naredbenog retka pokrećemo upisivanjem naredbe `openssl` uz odgovarajuće parametre i argumente. Kako bi provjerili koja je verzija OpenSSL-a instaliranja na sustavu, koristimo opciju `version`:
 
 ``` shell
-$ openssl version
+openssl version
+```
+
+``` shell-session
 OpenSSL 1.1.1a FIPS  20 Nov 2018
 ```
 
@@ -97,7 +100,10 @@ OpenSSL 1.1.1a FIPS  20 Nov 2018
 OpenSSL ima mnogo različitih naredbi. Listu postojećih naredbi možemo vidjeti opcijom `help`, čiji ispis započinje standardnim naredbama:
 
 ``` shell
-$ openssl help
+openssl help
+```
+
+``` shell-session
 Standard commands
 asn1parse         ca                ciphers           cms
 crl               crl2pkcs7         dgst              dhparam
@@ -136,21 +142,30 @@ Hashiranje je proces preslikavanja skupa podataka proizvoljne veličine na skup 
 Hashiranje datoteke izvršava se pomoću opcije `dgst`, uz navođenje željenog algoritma. Primjerice, pogledajmo hashiranje tekstualne datoteke `datoteka.txt` koja sadrži izraz `Hashiraj me!` algoritmom MD5.
 
 ``` shell
-$ openssl dgst -md5 datoteka.txt
+openssl dgst -md5 datoteka.txt
+```
+
+``` shell-session
 MD5(datoteka.txt)= bc838dd8ab805767036cbf99d5abd2b4
 ```
 
 Za usporedbu, pogledajmo i hashiranje iste datoteke algoritmom SHA-1.
 
 ``` shell
-$ openssl dgst -sha1 datoteka.txt
+openssl dgst -sha1 datoteka.txt
+```
+
+``` shell-session
 SHA1(datoteka.txt)= d18fe411b275397fba802b307460d108483f626d
 ```
 
 Također, moguće je hashirati sadržaj izravno sa standardnog ulaza. Primjerice, za hashiranje algoritmom SM3 naredba bi bila oblika:
 
 ``` shell
-$ echo "Hashiraj me!" | openssl dgst -sm3
+echo "Hashiraj me!" | openssl dgst -sm3
+```
+
+``` shell-session
 (stdin)= f89e882b9c22d590f0f0a813f7352cfd857370151f96ad8cc45869274d8b981c
 ```
 
@@ -161,20 +176,26 @@ Više o dostupnim parametrima hashiranja možemo saznati naredbom `openssl help 
 Osim šifriranja i dešifriranja, kao jednostavan uvodni primjer vrijedi spomenuti da OpenSSL podržava kodiranje i dekodiranje po shemi [Base64](https://en.wikipedia.org/wiki/Base64). Za Base64 kodiranje sadržaja datoteke, koristimo `-base64` opciju, uz parametar `enc`, te `-in` za ulaznu datoteku. Primjerice, za datoteku `datoteka.txt` sadržaja `Omnium rerum principia parva sunt.` naredba je oblika:
 
 ``` shell
-$ openssl enc -base64 -in datoteka.txt
+openssl enc -base64 -in datoteka.txt
+```
+
+``` shell-session
 T21uaXVtIHJlcnVtIHByaW5jaXBpYSBwYXJ2YSBzdW50Lgo=
 ```
 
 Ukoliko želimo kodirani sadržaj spremiti u drugu datoteku, dodajemo parametar `-out` i naziv datoteke:
 
 ``` shell
-$ openssl enc -base64 -in datoteka.txt -out datoteka.txt.enc
+openssl enc -base64 -in datoteka.txt -out datoteka.txt.enc
 ```
 
 Također je moguće kodirati tekstualni string izravno iz ljuske, primjerice korištenjem cijevi na način:
 
 ``` shell
-$ echo "Prima enim sequentem honestum est in secundis tertiisque consistere." | openssl enc -base64
+echo "Prima enim sequentem honestum est in secundis tertiisque consistere." | openssl enc -base64
+```
+
+``` shell-session
 UHJpbWEgZW5pbSBzZXF1ZW50ZW0gaG9uZXN0dW0gZXN0IGluIHNlY3VuZGlzIHRl
 cnRpaXNxdWUgY29uc2lzdGVyZS4K
 ```
@@ -182,7 +203,10 @@ cnRpaXNxdWUgY29uc2lzdGVyZS4K
 Obrnuto, moguće je dekodirati kodirani znakovni niz izravno iz ljuske naredbom oblika:
 
 ``` shell
-$ echo "UHJpbWEgZW5pbSBzZXF1ZW50ZW0gaG9uZXN0dW0gZXN0IGluIHNlY3VuZGlzIHRlcnRpaXNxdWUgY29uc2lzdGVyZS4K" | openssl enc -base64 -d
+echo "UHJpbWEgZW5pbSBzZXF1ZW50ZW0gaG9uZXN0dW0gZXN0IGluIHNlY3VuZGlzIHRlcnRpaXNxdWUgY29uc2lzdGVyZS4K" | openssl enc -base64 -d
+```
+
+``` shell-session
 Prima enim sequentem honestum est in secundis tertiisque consistere.
 ```
 
@@ -193,7 +217,10 @@ Prima enim sequentem honestum est in secundis tertiisque consistere.
 Ukoliko želimo šifrirati datoteku bez da koristimo ključeve ili certifikate, možemo to učiniti samo pomoću tajne zaporke i odabira željenog algoritma šifriranja. Algoritme možemo pregledati već spomenutom naredbom `openssl help` obraćajući pažnju na dio `Cipher commands` ili naredbom `openssl enc -ciphers`:
 
 ``` shell
-$ openssl enc -ciphers
+openssl enc -ciphers
+```
+
+``` shell-session
 Supported ciphers:
 -aes-128-cbc               -aes-128-cfb               -aes-128-cfb1
 -aes-128-cfb8              -aes-128-ctr               -aes-128-ecb
@@ -204,7 +231,10 @@ Supported ciphers:
 Pri svakom šifriranju, potrebno je upisati i potvrditi zaporku kojom ćemo zaštititi naše datoteke. Uz parametar šifriranja `enc`, te uz parametar željenog algoritma šifriranja, koristimo `-in` za ulaznu datoteku, te `-out` za izlaznu datoteku:
 
 ``` shell
-$ openssl enc -bf-cbc -in datoteka.txt -out datoteka.txt.enc
+openssl enc -bf-cbc -in datoteka.txt -out datoteka.txt.enc
+```
+
+``` shell-session
 enter bf-cbc encryption password:
 Verifying - enter bf-cbc encryption password:
 ```
@@ -223,7 +253,10 @@ Ovo nije ovisno o korištenom algoritmu šifriranja i njegovom obliku, primjeric
 Pri šifriranju možemo birati hoćemo li dodatno enkodirati podatke iz datoteke shemom Base64. Ukoliko ne enkodiramo, rezultat će umjesto šifriranog sadržaja u tekstualnoj datoteci biti šifrirana binarna datoteka. Dodatno Base64 enkodiranje je nužno želimo li šifrirani sadržaj datoteke poslati elektorničkom poštom ili u situaciji gdje želimo imati šifrirani sadržaj u tekstualnom obliku. U tom slučaju dodajemo parametar `-a`, dok je ostatak sintakse naredbe isti:
 
 ``` shell
-$ openssl enc -aes-192-ecb -a -in datoteka.txt -out datoteka.txt.enc
+openssl enc -aes-192-ecb -a -in datoteka.txt -out datoteka.txt.enc
+```
+
+``` shell-session
 enter aes-192-ecb encryption password:
 Verifying - enter aes-192-ecb encryption password:
 ```
@@ -233,7 +266,10 @@ Ovdje vršimo šifriranje tekstualne datoteke datoteka.txt u datoteka.txt.enc ko
 Dešifriranje šifrirane datoteke vrši se na sličan način kao šifriranje (uz obavezno navođenje istog algoritma u istom obliku), no koristeći `-d` parametar. Parametar `-a` je opcionalan, ovisno o tome jesmo li prethodno Base64 enkodirali sadržaj datoteke:
 
 ``` shell
-$ openssl enc -aes-192-ecb -a -d -in datoteka.txt.enc
+openssl enc -aes-192-ecb -a -d -in datoteka.txt.enc
+```
+
+``` shell-session
 enter aes-192-ecb decryption password:
 ```
 
@@ -244,21 +280,30 @@ Više o dostupnim parametrima šifriranja i Base64 kodiranja možemo saznati nar
 Koristeći opciju `passwd`, možemo stvoriti hashirane zaporke koje su kompatibilne s datotekama `/etc/passwd` i `/etc/shadow` na Linuxu i drugim operacijskim sustavima sličnim Unixu.
 
 ``` shell
-$ openssl passwd Tajna
+openssl passwd Tajna
+```
+
+``` shell-session
 vteVctKq72PqU
 ```
 
 Pokrenemo li naredbu više puta, uočit ćemo da je rezultat uglavnom različit.
 
 ``` shell
-$ openssl passwd Tajna
+openssl passwd Tajna
+```
+
+``` shell-session
 2cr2FTlyj3TIg
 ```
 
 Razlog tome je soljenje (engl. *salting*) zaporke koje uz samu zaporku kao ulazni podatak za hashiranje dodaje i dodatne slučajne znakove, takozvanu sol (engl. *salt*). Specijalno, zadani algoritam [crypt](https://en.wikipedia.org/wiki/Crypt_(Unix)) (parametar `-crypt`) koristi sol (parametar `-salt`) duljine dva znaka i, ako parametar eksplicitno ne navedemo (kako smo napravili u primjerima iznad), sol se slučajno generira.
 
 ``` shell
-$ openssl passwd -salt OI Tajna
+openssl passwd -salt OI Tajna
+```
+
+``` shell-session
 OIOp/K0E64/6o
 ```
 
@@ -267,10 +312,18 @@ Uočimo da su prva dva znaka u izlazu upravo sol, pa hashiranja gdje sol nije bi
 Osim crypta, podržani algoritmi su i BSD-ov password algorithm 1 (parametar `-1`), Apachejeva varijanta istog algoritma apr1 (parametar `-apr1`), AIX-ova varijanta istog algoritma AIX MD5 (parametar `-aixmd5`) duljine soli do 8 znakova te [algoritmi zasnovani na SHA256 i SHA512 čiji je autor Ulrich Drepper](https://www.akkadia.org/drepper/SHA-crypt.txt) (parametri `-5` i `-6`, respektivno) duljine soli do 16 znakova.
 
 ``` shell
-$ openssl passwd -apr1 -salt mojasol1 Tajna
-$apr1$mojasol1$8WViPLbkVe9uEismjXvYL0
+openssl passwd -apr1 -salt mojasol1 Tajna
+```
 
-$ openssl passwd -5 -salt mojasolduga16znk Tajna
+``` shell-session
+$apr1$mojasol1$8WViPLbkVe9uEismjXvYL0
+```
+
+``` shell
+openssl passwd -5 -salt mojasolduga16znk Tajna
+```
+
+``` shell-session
 $5$mojasolduga16znk$6DR9NnCHR/RQRU2wVOUKeATv2l8xG4.1127EkHrl/O1
 ```
 

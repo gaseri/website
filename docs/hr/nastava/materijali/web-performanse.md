@@ -480,7 +480,7 @@ Protocols h2 h2c http/1.1
 ## HTTP/2 demo na example.group.miletic.net
 
 ``` shell
-$ curl -I http://example.group.miletic.net/
+curl -I http://example.group.miletic.net/
 ```
 
 ``` http
@@ -493,7 +493,7 @@ Last-Modified: Wed, 25 Aug 2021 14:52:01 GMT
 ```
 
 ``` shell
-$ curl -I --http2 http://example.group.miletic.net/
+curl -I --http2 http://example.group.miletic.net/
 ```
 
 ``` http

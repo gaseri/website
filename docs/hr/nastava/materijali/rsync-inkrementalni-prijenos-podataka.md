@@ -7,7 +7,7 @@ author: Vedran Miletić
 [rsync](https://rsync.samba.org/) je alat otvorenog koda za efikasan inkrementalni prijenos podataka. Vrlo je koristan kao alat za izradu sigurnosne kopije podataka. Kod korištenja za backup, vrlo važni parametar je `--archive`, odnosno `-a` koji čuva metapodatke o datotekama:
 
 ``` shell
-$ rsync -a /podaci /backup-podataka
+rsync -a /podaci /backup-podataka
 ```
 
 Više detalja moguće je pronaći na [stranici rsync na ArchWikiju](https://wiki.archlinux.org/title/Rsync#As_a_backup_utility).

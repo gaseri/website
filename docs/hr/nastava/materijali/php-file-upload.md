@@ -11,7 +11,7 @@ Jedna od funkcionalnosti HTTP poslužitelja je primanje datoteka koje korisnici 
 Slično kako na poslužitelj metodom POST šaljemo podatke, [možemo i postavljati datoteke](https://www.php.net/manual/en/features.file-upload.post-method.php). U cURL-u to činimo parametrom `--form`, odnosno `-F`, koji se za postavljanje datoteke imena `pokloni.txt` pod ključem `popis_poklona` na poslužitelj na adresi `http://localhost:8000/` koristi na način:
 
 ``` shell
-$ curl -F 'popis_poklona=@pokloni.txt' http://localhost:8000/
+curl -F 'popis_poklona=@pokloni.txt' http://localhost:8000/
 ```
 
 Na poslužiteljskoj strani u PHP-ovom polju `$_FILES` ([dokumentacija](https://www.php.net/manual/en/reserved.variables.files.php)) pojavit će se unos pod ključem `"popis_poklona"` koji predstavlja datoteku `pokloni.txt`. Iskoristit ćemo funkciju `move_uploaded_file()` ([dokumentacija](https://www.php.net/manual/en/function.move-uploaded-file.php)) da pomaknemo postavljenu datoteku s njezinog privremenog mjesta na mjesto na kojem želimo da bude. Trebat će nam i funkcija `getcwd()` ([dokumentacija](https://www.php.net/manual/en/function.getcwd.php)) kojom ćemo dohvatiti radni direktorij ugrađenog web poslužitelja u koji ćemo datoteke i spremati. Kod poslužitelja je sad oblika:
@@ -31,7 +31,10 @@ Nakon uspješnog postavljanja datoteke poslužitelj će postaviti statusni kod o
 Ovdje smo operatorom konkatenacije (znak točke, `.`) ([dokumentacija](https://www.php.net/manual/en/language.operators.string.php)) spojili dijelove putanje. Primjerice, ako varijabla `$webroot` ima vrijednost `/home/ahilej/public`, onda `"/home/ahilej/public" . "/" . "popis.txt"` postaje `"/home/ahilej/public/popis.txt"`. Postavimo datoteku na poslužitelj:
 
 ``` shell
-$ curl -v -F 'popis_poklona=@pokloni.txt' http://localhost:8000/
+curl -v -F 'popis_poklona=@pokloni.txt' http://localhost:8000/
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > POST / HTTP/1.1
@@ -87,7 +90,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 Postavimo datoteku `pokloni.txt` u direktorij `datoteke-za-djeda-mraza` unutar radnog direktorija web poslužitelja naredbom:
 
 ``` shell
-$ curl -v -F 'popis_poklona=@pokloni.txt' http://localhost:8000/datoteke-za-djeda-mraza/
+curl -v -F 'popis_poklona=@pokloni.txt' http://localhost:8000/datoteke-za-djeda-mraza/
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > POST /datoteke-za-djeda-mraza/ HTTP/1.1
@@ -151,7 +157,10 @@ if ($_SERVER["REQUEST_METHOD"] == "PUT" && $_SERVER["REQUEST_URI"] == "/upload")
 U cURL-u ćemo zahtjeve HTTP metodom PUT izvesti korištenjem parametra `--upload-file`, odnosno `-T`.
 
 ``` shell
-$ curl -v -T pokloni.txt http://localhost:8000/upload
+curl -v -T pokloni.txt http://localhost:8000/upload
+```
+
+``` shell-session
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying ::1:8000...

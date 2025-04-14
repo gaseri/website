@@ -38,7 +38,7 @@ Avahi je dio većine poznatih distribucija GNU/Linuxa, štoviše Avahi je već i
 Avahi se pokreće prilikom podizanja Linuxa, da bi se uvjerili u to upisujemo u treminal:
 
 ``` shell
-$ sudo update-rc.d avahi-daemon defaults
+sudo update-rc.d avahi-daemon defaults
 ```
 
 ## Oglašavanje usluge
@@ -60,7 +60,7 @@ Dalje, kreiramo datoteku `/etc/avahi/services/afpd.service` koje će specificira
 Nakon svega, ponovno pokrenemo Avahi:
 
 ``` shell
-$ sudo /etc/init.d/avahi-daemon restart
+sudo /etc/init.d/avahi-daemon restart
 ```
 
 Nakon svih ovih koraka, prilikom pokretanja aplikacije Avahi Zeroconf browser (naredba `avahi-discover`) instalirane unutar sustava, dobijemo sljedeće.

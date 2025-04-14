@@ -9,7 +9,7 @@ author: Vedran Miletić
 Da bi mjerili brzinu izvođenja zrna i operacija kopiranja memorije s domaćina na uređaj i obrnuto, koristimo **profiler** (engl. *profiler*). [PyCUDA podržava profiliranje](https://wiki.tiker.net/PyCuda/FrequentlyAskedQuestions/#is-it-possible-to-profile-cuda-code-with-pycuda), i ono se uključuje postavljanjem varijable okoline `CUDA_PROFILE` na vrijednost `1`, što možemo učiniti na način:
 
 ``` shell
-$ CUDA_PROFILE=1 python program.py
+CUDA_PROFILE=1 python program.py
 ```
 
 Uzmemo li da je `program.py` sada kod koji zbraja dva vektora, datoteka `cuda_profile_0.log` koju dobivamo kao izlaz je sadržaja:

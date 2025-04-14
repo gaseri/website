@@ -9,7 +9,10 @@ author: Matea Turalija, Vedran Miletić
 U primjerima u nastavku za to koristimo HTTPie pomoću naredbe `httpie`. Osim toga, alat je dostupan pomoću naredbi `http` i `https`:
 
 ``` shell
-$ httpie
+httpie
+```
+
+``` shell-session
 usage: httpie [-h] [--debug] [--traceback] [--version] {plugins} ...
 httpie: error: Please specify one of these: 'plugins'
 
@@ -38,7 +41,7 @@ Web API koji poštuje REST ograničenja kažemo da je *RESTful*.
 Resursima (podacima) se pristupa pomoću jedinstvenih identifikatora resursa (engl. *Uniform Resource Identifiera*, kraće URI). Recimo, možemo imati RESTful web servis koji putem URI-ja `https://jsonplaceholder.typicode.com/users` korištenjem HTTP metode GET
 
 ``` shell
-$ httpie GET https://jsonplaceholder.typicode.com/users
+httpie GET https://jsonplaceholder.typicode.com/users
 ```
 
 omogućuje dohvaćanje popisa svih korisnika koji je oblika:
@@ -98,7 +101,7 @@ omogućuje dohvaćanje popisa svih korisnika koji je oblika:
 Za usporedbu, putem URI-ja `/users/5` može se dohvatiti korisnik s identifikatorom 5
 
 ``` shell
-$ httpie GET https://jsonplaceholder.typicode.com/users/5
+httpie GET https://jsonplaceholder.typicode.com/users/5
 ```
 
 i primljeni odgovor će biti oblika:

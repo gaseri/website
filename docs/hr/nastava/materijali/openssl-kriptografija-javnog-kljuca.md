@@ -11,7 +11,10 @@ author: Domagoj Margan, Vedran Miletić
 Za generiranje RSA ključa koristimo opciju `genrsa`:
 
 ``` shell
-$ openssl genrsa
+openssl genrsa
+```
+
+``` shell-session
 Generating RSA private key, 2048 bit long modulus (2 primes)
 ................+++++
 ................................+++++
@@ -50,7 +53,10 @@ Ovdje generiramo 2048-bitni ključ koji ispisujemo na standardni izlaz. Veća ve
 Ukoliko želimo spremiti ključ u posebnu izlaznu datoteku, koristimo parametar `-out`. Također možemo navesti veličinu ključa koju želimo:
 
 ``` shell
-$ openssl genrsa -out mojkljuc.pem 1024
+openssl genrsa -out mojkljuc.pem 1024
+```
+
+``` shell-session
 openssl genrsa -out mojkljuc.pem 1024
 Generating RSA private key, 1024 bit long modulus (2 primes)
 .................................+++++
@@ -61,7 +67,10 @@ e is 65537 (0x010001)
 Ovime smo generirali 1024-bitni ključ i spremili ga u datoteku `mojkljuc.pem`. Želimo li osigurati naš ključ, možemo ga šifrirati i zaštititi lozinkom. Dodajemo parametar željenog algoritma za šifriranje:
 
 ``` shell
-$ openssl genrsa -camellia256 -out mojkljuc.pem 4096
+openssl genrsa -camellia256 -out mojkljuc.pem 4096
+```
+
+``` shell-session
 Generating RSA private key, 4096 bit long modulus (2 primes)
 ........+++++
 .....................+++++
@@ -77,7 +86,10 @@ Ovime smo generirali 4096-bitni ključ i spremili ga u datoteku `mojkljuc.pem`, 
 Kako bi generirali pripadni javni ključ našeg privatnog RSA ključa, koristimo opciju `rsa` s parametrom `-pubout`:
 
 ``` shell
-$ openssl rsa -in mojkljuc.pem -pubout
+openssl rsa -in mojkljuc.pem -pubout
+```
+
+``` shell-session
 Enter pass phrase for mojkljuc.pem:
 writing RSA key
 -----BEGIN PUBLIC KEY-----
@@ -91,7 +103,10 @@ im00OOWKyVh0EWrT9wIDAQAB
 Kao i dosad, parametrom `-out` možemo ključ pohraniti u datoteku umjesto ispisivanja na standardni izlaz:
 
 ``` shell
-$ openssl rsa -in mojkljuc.pem -out javnikljuc.pem -pubout
+openssl rsa -in mojkljuc.pem -out javnikljuc.pem -pubout
+```
+
+``` shell-session
 Enter pass phrase for mojkljuc.pem:
 writing RSA key
 ```
@@ -103,7 +118,10 @@ Opcija `rsa` ima i druge parametre koji omogućuju, primjerice, konverziju forma
 OpenSSL omogućuje mjerenje brzine stvaranja tajnih i javnih RSA ključeva opcijom `speed rsa`:
 
 ``` shell
-$ openssl speed rsa
+openssl speed rsa
+```
+
+``` shell-session
 Doing 512 bits private rsa's for 10s: 276416 512 bits private RSA's in 9.98s
 Doing 512 bits public rsa's for 10s: 4679174 512 bits public RSA's in 9.98s
 Doing 1024 bits private rsa's for 10s: 130765 1024 bits private RSA's in 9.98s
@@ -139,7 +157,10 @@ Specijalno se može mjeriti brzina stvaranja tajnih i javnih RSA ključeva dulji
 Generiranje DSA ključeva izvodi se putem opcije `dsaparam` i opcije `gendsa` u dva koraka. Pokažimo stvaranje 1024-bitnog ključa u datoteci `dsakljuc.pem`. Prvo stvaramo datoteku s parametrima algoritma DSA opcijom `dsaparam`:
 
 ``` shell
-$ openssl dsaparam -out dsaparam.pem 1024
+openssl dsaparam -out dsaparam.pem 1024
+```
+
+``` shell-session
 Generating DSA parameters, 1024 bit long prime
 This could take some time
 ..+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*
@@ -149,7 +170,10 @@ This could take some time
 Zatim stvaramo tajni ključ naredbom `gendsa`:
 
 ``` shell
-$ openssl gendsa dsaparam.pem
+openssl gendsa dsaparam.pem
+```
+
+``` shell-session
 Generating DSA key, 1024 bits
 -----BEGIN DSA PRIVATE KEY-----
 MIIBuwIBAAKBgQDOhyPo/H/ULvcuw3KiY1L19ccVUbn98x6/nlP9sW6npmVTfdcz
@@ -168,14 +192,20 @@ UNABQps6Jm6Kf1gz8Lhi
 Dodamo li parametar `-out`, ključ će umjesto ispisivanja na standardni izlaz biti pohranjen u datoteku:
 
 ``` shell
-$ openssl gendsa -out dsakljuc.pem dsaparam.pem
+openssl gendsa -out dsakljuc.pem dsaparam.pem
+```
+
+``` shell-session
 Generating DSA key, 1024 bits
 ```
 
 Ovih dva koraka moguće je svesti na jedan korištenjem parametra `-genkey` opcije `dsaparam`.
 
 ``` shell
-$ openssl dsaparam -out dsakljuc.pem -genkey 1024
+openssl dsaparam -out dsakljuc.pem -genkey 1024
+```
+
+``` shell-session
 Generating DSA parameters, 1024 bit long prime
 This could take some time
 ...+.......+...+....+..+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*
@@ -185,7 +215,10 @@ This could take some time
 Kako bi generirali pripadni javni ključ našeg privatnog DSA ključa, koristimo opciju `dsa` s parametrom `-pubout` analogno primjeru za RSA:
 
 ``` shell
-$ openssl dsa -in dsakljuc.pem -pubout
+openssl dsa -in dsakljuc.pem -pubout
+```
+
+``` shell-session
 read DSA key
 writing DSA key
 -----BEGIN PUBLIC KEY-----
@@ -205,7 +238,10 @@ gdwQ8Xo2lO727g==
 Također analogno primjeru za RSA, parametrom `-out` možemo ključ pohraniti u datoteku umjesto ispisivanja na standardni izlaz:
 
 ``` shell
-$ openssl dsa -in dsakljuc.pem -out javnidsakljuc.pem -pubout
+openssl dsa -in dsakljuc.pem -out javnidsakljuc.pem -pubout
+```
+
+``` shell-session
 read DSA key
 writing DSA key
 ```
@@ -217,7 +253,10 @@ Opcija `dsa` ima i druge parametre vrlo slične već opisanoj opciji `rsa`.
 OpenSSL omogućuje mjerenje brzine potpisivanja DSA ključevima i provjere potpisa opcijom `speed dsa`:
 
 ``` shell
-$ openssl speed dsa
+openssl speed dsa
+```
+
+``` shell-session
 Doing 512 bits sign dsa's for 10s: 192335 512 bits DSA signs in 9.99s
 Doing 512 bits verify dsa's for 10s: 325914 512 bits DSA verify in 10.00s
 Doing 1024 bits sign dsa's for 10s: 110027 1024 bits DSA signs in 9.99s
@@ -241,19 +280,22 @@ Specijalno se može mjeriti brzina stvaranja tajnih i javnih DSA ključeva dulji
 Za generiranje ključeva algoritmom eliptične krivulje, koristi se opcija `ecparam` s parametrima `-name` i `-genkey`. Pokažimo stvaranje ključa u datototeci `krivulja.pem` korištenjem eliptične krivulje `sect571r1`.
 
 ``` shell
-$ openssl ecparam -out parametri.pem -name sect571r1
+openssl ecparam -out parametri.pem -name sect571r1
 ```
 
 Time smo generirali datoteku s parametrima eliptičke krivulje. Ako želimo uz parametre generirati i ključ, koristimo i parametar `-genkey`.
 
 ``` shell
-$ openssl ecparam -out krivuljakljuc.pem -name sect571r1 -genkey
+openssl ecparam -out krivuljakljuc.pem -name sect571r1 -genkey
 ```
 
 Uočimo kako smo generirali parametre i ključ u istom koraku te da prethodno generirane parametre nismo iskoristili. Opcijom `-name` određujemo krivulju, te je nužno navesti željeni algoritam. Listu možemo vidjeti navođenjem `ecparam -list_curves`:
 
 ``` shell
-$ openssl ecparam -list_curves
+openssl ecparam -list_curves
+```
+
+``` shell-session
   secp112r1 : SECG/WTLS curve over a 112 bit prime field
   secp112r2 : SECG curve over a 112 bit prime field
   secp128r1 : SECG curve over a 128 bit prime field
@@ -292,7 +334,10 @@ $ openssl ecparam -list_curves
 Kako bi generirali pripadni javni ključ našeg privatnog ključa eliptičke krivoljke, koristimo opciju `ec` s parametrom `-pubout` analogno primjerima za RSA i DSA:
 
 ``` shell
-$ openssl ec -in krivuljakljuc.pem -pubout
+openssl ec -in krivuljakljuc.pem -pubout
+```
+
+``` shell-session
 read EC key
 writing EC key
 -----BEGIN PUBLIC KEY-----
@@ -314,7 +359,10 @@ OpenSSL omogućuje mjerenje brzine potpisivanja ECDSA ključevima i provjere pot
 Parametri Diffie-Hellmanove razmjene ključeva generiraju se opcijom `dhparam` i navođenjem broja bitova:
 
 ``` shell
-$ openssl dhparam 2048
+openssl dhparam 2048
+```
+
+``` shell-session
 Generating DH parameters, 2048 bit long safe prime, generator 2
 This is going to take a long time
 ....................................................................................................+.......................................................+............................................................+...............++*++*++*++*
@@ -331,7 +379,10 @@ TaHER4aLNUNk2SzAOpWQx8TNem9nHQq54wIBAg==
 Parametrom `-out` možemo umjesto na standardni izlaz parametre zapisati u datoteku koju želimo:
 
 ``` shell
-$ openssl dhparam -out parametri.pem 2048
+openssl dhparam -out parametri.pem 2048
+```
+
+``` shell-session
 Generating DH parameters, 2048 bit long safe prime, generator 2
 This is going to take a long time
 .................................................................................................................................+.....+..........................................................................................................................+...........................................................++*++*++*++*
@@ -352,13 +403,16 @@ Grupa opcija `genpkey`, `pkeyparam` i `pkey` nudi alternativu gornjim opcijama i
 Ako se želimo osigurati da se stvorena hashirana datoteka neće mijenjati bez naše dozvole, možemo je potpisati našim privatnim ključem. Koristimo opcije `-sign` za potpisivanje i `-out` za izlaznu datoteku. Potpisana datoteka bit će `datoteka.txt.sha1`.
 
 ``` shell
-$ openssl dgst -sha1 -sign mojkljuc.pem -out datoteka.txt.sha1 datoteka.txt
+openssl dgst -sha1 -sign mojkljuc.pem -out datoteka.txt.sha1 datoteka.txt
 ```
 
 Za provjeru potpisane hash datoteke, potrebna je originalna datoteka iz koje je stvoren hash, potpisana hash datoteka i javni ključ potpisatelja. Koristimo parametar `-verify` za javni ključ, te `-signature` za potpisanu hash datoteku.
 
 ``` shell
-$ openssl dgst -sha1 -verify javnikljuc.pem -signature datoteka.txt.sha1 datoteka.txt
+openssl dgst -sha1 -verify javnikljuc.pem -signature datoteka.txt.sha1 datoteka.txt
+```
+
+``` shell-session
 Verified OK
 ```
 
@@ -367,13 +421,13 @@ Verified OK
 Šifriranje i dešifriranje korištenjem RSA ključeva vršimo naredbom `rsautl`. Za šifriranje dodajemo parametar `-encrypt` i koristimo javni ključ (opcija `-pubin`) u datoteci koju navodimo pod `-inkey`:
 
 ``` shell
-$ openssl rsautl -encrypt -in datoteka.txt -inkey javnikljuc.pem -pubin -out datoteka.txt.enc
+openssl rsautl -encrypt -in datoteka.txt -inkey javnikljuc.pem -pubin -out datoteka.txt.enc
 ```
 
 Dešifriranje vršimo parametrom `-decrypt` i korištenjem tajnog ključa pod `-inkey`:
 
 ``` shell
-$ openssl rsautl -decrypt -in datoteka.txt.enc -inkey mojkljuc.pem -out desifrirana-datoteka.txt
+openssl rsautl -decrypt -in datoteka.txt.enc -inkey mojkljuc.pem -out desifrirana-datoteka.txt
 ```
 
 Uočimo kako sad nema ni opcije `-pubin` jer je korišteni ključ tajni.

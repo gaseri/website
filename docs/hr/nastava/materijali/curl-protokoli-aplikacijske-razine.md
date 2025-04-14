@@ -42,7 +42,10 @@ cURL podržava SSL certifikate, HTTP naredbe POST i PUT, FTP upload, HTTP upload
 Preuzimanje se vrši navođenjem URL-a. Pristupimo HTTP poslužitelju na domeni `example.group.miletic.net` za primjer:
 
 ``` shell
-$ curl http://example.group.miletic.net/
+curl http://example.group.miletic.net/
+```
+
+``` shell-session
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
@@ -414,7 +417,10 @@ $ curl http://example.group.miletic.net/
 Ukoliko želimo spremiti izlaz u datoteku umjesto ispisati na standardni izlaz, koristimo parametar `-o` i navodimo ime datoteke:
 
 ``` shell
-$ curl -o example-index.html http://example.group.miletic.net/
+curl -o example-index.html http://example.group.miletic.net/
+```
+
+``` shell-session
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100  2033  100  2033    0     0  74324      0 --:--:-- --:--:-- --:--:-- 75296
@@ -423,11 +429,20 @@ $ curl -o example-index.html http://example.group.miletic.net/
 Parametrom `-O` izlaz možemo spremiti u lokalnu datoteku istog imena kao datoteka na poslužitelju:
 
 ``` shell
-$ curl -O http://example.group.miletic.net/index.html
+curl -O http://example.group.miletic.net/index.html
+```
+
+``` shell-session
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100  2033  100  2033    0     0   120k      0 --:--:-- --:--:-- --:--:--  124k
-$ ls
+```
+
+``` shell
+ls
+```
+
+``` shell-session
 index.html
 ```
 
@@ -436,7 +451,10 @@ index.html
 Parametrom `-r` moguće je specificirati raspon podataka datoteke koji će bit preuzet:
 
 ``` shell
-$ curl -r 0-350 http://example.group.miletic.net/index.html
+curl -r 0-350 http://example.group.miletic.net/index.html
+```
+
+``` shell-session
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
@@ -450,7 +468,10 @@ $ curl -r 0-350 http://example.group.miletic.net/index.html
 Kod većih datoteka može se uočiti da je mjerenje napretka interaktivno:
 
 ``` shell
-$ curl -O https://mirror.pkgbuild.com/images/latest/Arch-Linux-x86_64-basic-20220215.47946.qcow2
+curl -O https://mirror.pkgbuild.com/images/latest/Arch-Linux-x86_64-basic-20220215.47946.qcow2
+```
+
+``` shell-session
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
   5  459M    5 23.7M    0     0  1777k      0  0:04:24  0:00:13  0:04:11 2849k
@@ -479,7 +500,10 @@ Sa lijeva na desno stupci redom imaju sljedeće značenje.
 Jednostavniji prikaz napretka parametrom `-#` prikazuje samo postotak obavljenog prijenosa numerički i znakom `#`:
 
 ``` shell
-$ curl -O -# https://mirror.pkgbuild.com/images/latest/Arch-Linux-x86_64-cloudimg-20220215.47946.qcow2
+curl -O -# https://mirror.pkgbuild.com/images/latest/Arch-Linux-x86_64-cloudimg-20220215.47946.qcow2
+```
+
+``` shell-session
 #####################                                                                          23,0%
 ```
 
@@ -488,7 +512,7 @@ $ curl -O -# https://mirror.pkgbuild.com/images/latest/Arch-Linux-x86_64-cloudim
 Ograničavanje se vrši parametrom `-Y`. Pritom se brzina prijenosa navodi u bajtovima po sekundi.
 
 ``` shell
-$ curl -Y 3000 http://example.group.miletic.net/
+curl -Y 3000 http://example.group.miletic.net/
 ```
 
 U ovom primjeru smo brzinu prijenosa ograničili na približno 3 kilobajta po sekundi.
@@ -501,7 +525,10 @@ U ovom primjeru smo brzinu prijenosa ograničili na približno 3 kilobajta po se
 Parametrom `-v` moguće je dobiti više detalja kod prijenosa. Sami detalji variraju ovisno o protokolu:
 
 ``` shell
-$ curl -v http://example.group.miletic.net/
+curl -v http://example.group.miletic.net/
+```
+
+``` shell-session
 * Hostname was NOT found in DNS cache
 *   Trying 193.198.209.42...
 * Connected to example.group.miletic.net (193.198.209.42) port 80 (#0)
@@ -538,8 +565,8 @@ $ curl -v http://example.group.miletic.net/
 Korištenjem parametra `-X` moguće je specificirati tip zahtjeva koji će biti napravljen na poslužitelj. HTTP sa zadanim postavkama koristi GET, tako da su iduće dvije naredbe ekvivalentne:
 
 ``` shell
-$ curl http://example.group.miletic.net/
-$ curl -X GET http://example.group.miletic.net/
+curl http://example.group.miletic.net/
+curl -X GET http://example.group.miletic.net/
 ```
 
 ### HTTP metoda HEAD
@@ -547,7 +574,10 @@ $ curl -X GET http://example.group.miletic.net/
 HTTP metoda HEAD dohvaća metapodatke iz HTTP zaglavlja. Parametrom `-i` uključujemo prikaz dohvaćenog HTTP zaglavlja.
 
 ``` shell
-$ curl -X HEAD -i http://example.group.miletic.net/
+curl -X HEAD -i http://example.group.miletic.net/
+```
+
+``` shell-session
 HTTP/1.1 200 OK
 Date: Thu, 20 Mar 2014 13:18:14 GMT
 Server: Apache/2.4.7 (Debian)
@@ -564,7 +594,10 @@ curl: (18) transfer closed with 2033 bytes remaining to read
 Greška koju cURL javlja je očekivana i posljedica je činjenice da HEAD dohvaća samo zaglavlje HTTP odgovora, ne i tijelo. Ona se može izbjeći korištenjem parametra `-I` za dohvaćanje zaglavlja umjesto `-X HEAD`:
 
 ``` shell
-$ curl -I http://example.group.miletic.net/
+curl -I http://example.group.miletic.net/
+```
+
+``` shell-session
 HTTP/1.1 200 OK
 Date: Thu, 20 Mar 2014 13:19:30 GMT
 Server: Apache/2.4.7 (Debian)
@@ -581,7 +614,10 @@ Content-Type: text/html
 Kod metode POST potrebno je parametrom `-d` navesti podatke koji se šalju u obliku `varijabla=vrijednost`. Ukoliko se navodi više varijabli, parametar `-d` navodi se više puta:
 
 ``` shell
-$ curl -X POST -d "ime=Ivan" -d "prezime=Horvat" -d "dob=23" https://apps.group.miletic.net/request/
+curl -X POST -d "ime=Ivan" -d "prezime=Horvat" -d "dob=23" https://apps.group.miletic.net/request/
+```
+
+``` shell-session
 <!DOCTYPE html>
 <html lang="hr">
   <head>
@@ -602,7 +638,7 @@ $ curl -X POST -d "ime=Ivan" -d "prezime=Horvat" -d "dob=23" https://apps.group.
 Parametar `-d` implicira metodu POST, tako da je gornja naredba ekvivalentna naredbi:
 
 ``` shell
-$ curl -d "ime=Ivan" -d "prezime=Horvat" -d "dob=23" https://apps.group.miletic.net/request/
+curl -d "ime=Ivan" -d "prezime=Horvat" -d "dob=23" https://apps.group.miletic.net/request/
 ```
 
 ### HTTP metoda PUT
@@ -610,7 +646,10 @@ $ curl -d "ime=Ivan" -d "prezime=Horvat" -d "dob=23" https://apps.group.miletic.
 Za postavljanje datoteka na poslužitelj koristi se HTTP metoda PUT. Međutim, iz sigurnosnih razloga ona je većinom nedozvoljena na poslužiteljima:
 
 ``` shell
-$ curl -T lokalnadatoteka.txt http://example.group.miletic.net/podaci.txt
+curl -T lokalnadatoteka.txt http://example.group.miletic.net/podaci.txt
+```
+
+``` shell-session
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
 <html><head>
 <title>405 Method Not Allowed</title>
@@ -627,7 +666,10 @@ $ curl -T lokalnadatoteka.txt http://example.group.miletic.net/podaci.txt
 HTTP referer naveden u zahtjevu moguće je navesti parametrom `-e`. Da bi vidjeli promjenu, potrebno je uključiti rječiti način rada.
 
 ``` shell
-$ curl -v -e www.google.hr -I http://example.group.miletic.net/
+curl -v -e www.google.hr -I http://example.group.miletic.net/
+```
+
+``` shell-session
 * Hostname was NOT found in DNS cache
 *   Trying 193.198.209.42...
 * Connected to example.group.miletic.net (193.198.209.42) port 80 (#0)
@@ -666,7 +708,10 @@ Content-Type: text/html
 HTTP user agent koji cURL koristi u zadanim postavkama je `curl/7.35.0` (pri čemu je 7.35.0 verzija cURL-a) i moguće ga je promijeniti parametrom `-A`. Ponovno koristimo rječit način rada kako bi u zaglavlju vidjeli razliku:
 
 ``` shell
-$ curl -v -A 'Mozilla/5.0 (X11; Linux x86_64; rv:24.0) Gecko/20140205 Firefox/24.0 Iceweasel/24.3.0' -I http://example.group.miletic.net/
+curl -v -A 'Mozilla/5.0 (X11; Linux x86_64; rv:24.0) Gecko/20140205 Firefox/24.0 Iceweasel/24.3.0' -I http://example.group.miletic.net/
+```
+
+``` shell-session
 * Hostname was NOT found in DNS cache
 *   Trying 193.198.209.42...
 * Connected to example.group.miletic.net (193.198.209.42) port 80 (#0)
@@ -714,9 +759,18 @@ Više primjera moguće je naći na [WhatIsMyBrowser-ovim stranicama](https://dev
 HTTP kolačiće koje stranica nudi moguće je spremiti u datoteku korištenjem parametra `-c` i navođenjem imena datoteke.
 
 ``` shell
-$ curl -c cookies.txt http://www.google.hr/
+curl -c cookies.txt http://www.google.hr/
+```
+
+``` shell-session
 ...
-$ cat cookies.txt
+```
+
+``` shell
+cat cookies.txt
+```
+
+``` shell-session
 # Netscape HTTP Cookie File
 # https://curl.se/docs/http-cookies.html
 # This file was generated by libcurl! Edit at your own risk.
@@ -740,21 +794,30 @@ Uočimo u retku ispod još jedan, ali zakomentirani kolačić.
 Kolačiće je moguće iskoristiti kod ponovnog pristupa stranici navođenjem imena datoteke parametrom `-b`
 
 ``` shell
-$ curl -b cookies.txt http://www.google.hr/
+curl -b cookies.txt http://www.google.hr/
+```
+
+``` shell-session
 ...
 ```
 
 ili navođenjem kolačića u obliku:
 
 ``` shell
-$ curl -b "ID=66d2d46d264532f6; FF=0; TM=1395323398; LM=1395323398; S=AZv39tEXo7wyBIxv" http://www.google.hr/
+curl -b "ID=66d2d46d264532f6; FF=0; TM=1395323398; LM=1395323398; S=AZv39tEXo7wyBIxv" http://www.google.hr/
+```
+
+``` shell-session
 ...
 ```
 
 Parametrom `-v` vidimo koji kolačići se šalju:
 
 ``` shell
-$ curl -v -I -b "ID=66d2d46d264532f6; FF=0; TM=1395323398; LM=1395323398; S=AZv39tEXo7wyBIxv" http://www.google.hr/
+curl -v -I -b "ID=66d2d46d264532f6; FF=0; TM=1395323398; LM=1395323398; S=AZv39tEXo7wyBIxv" http://www.google.hr/
+```
+
+``` shell-session
 * Hostname was NOT found in DNS cache
 *   Trying 173.194.70.94...
 * Connected to www.google.hr (173.194.70.94) port 80 (#0)
@@ -803,7 +866,10 @@ Transfer-Encoding: chunked
 Uvjerimo se da imamo instaliran Curlie:
 
 ``` shell
-$ curlie -V
+curlie -V
+```
+
+``` shell-session
 curl 7.72.0 (x86_64-pc-linux-gnu) libcurl/7.72.0 OpenSSL/1.1.1h zlib/1.2.11 brotli/1.0.9 libidn2/2.3.0 libpsl/0.21.0 (+libidn2/2.3.0) libssh2/1.8.0 nghttp2/1.41.0 librtmp/2.3
 Release-Date: 2020-08-19
 Protocols: dict file ftp ftps gopher http https imap imaps ldap ldaps pop3 pop3s rtmp rtsp scp sftp smb smbs smtp smtps telnet tftp
@@ -815,7 +881,10 @@ Uočimo da se Curlie nama predstavlja kao cURL jer njega i koristi u pozadini. I
 Osnovno korištenje je identično kao i kod cURL-a:
 
 ``` shell
-$ curlie http://httpbin.org/headers
+curlie http://httpbin.org/headers
+```
+
+``` shell-session
 {
     "headers": {
         "Accept": "application/json, */*",
@@ -833,7 +902,13 @@ Server: gunicorn/19.9.0
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Credentials: true
 
-$ curlie https://httpbin.org/headers
+```
+
+``` shell
+curlie https://httpbin.org/headers
+```
+
+``` shell-session
 HTTP/2 200
 date: Sat, 21 Nov 2020 11:26:43 GMT
 content-type: application/json
@@ -855,7 +930,10 @@ access-control-allow-credentials: true
 Složenije korištenje, npr. HTTP metoda PUT s navođenjem sadržaja zaglavlja i tijela poruke je dostupna putem značajno jednostavnije sintakse nego što je to slučaj kad koristimo cURL:
 
 ``` shell
-$ curlie -v PUT httpbin.org/status/201 X-API-Token:123 name=John
+curlie -v PUT httpbin.org/status/201 X-API-Token:123 name=John
+```
+
+``` shell-session
 *   Trying 34.198.212.59:80...
 * Connected to httpbin.org (34.198.212.59) port 80 (#0)
 PUT /status/201 HTTP/1.1
@@ -892,21 +970,30 @@ Access-Control-Allow-Credentials: true
 Dohvaćanje FTP URL-a se izvodi slično kao kod HTTP-a:
 
 ``` shell
-$ curl ftp://example.group.miletic.net/
+curl ftp://example.group.miletic.net/
+```
+
+``` shell-session
 drwxr-xr-x    2 0        0            4096 Mar 30 23:21 pub
 ```
 
 U slučaju da u direktoriju postoje datoteke, one će biti ispisane:
 
 ``` shell
-$ curl ftp://example.group.miletic.net/pub/
+curl ftp://example.group.miletic.net/pub/
+```
+
+``` shell-session
 -rw-r--r--    1 0        0              18 Mar 30 23:21 cake.txt
 ```
 
 U slučaju da preuzimamo datoteku, na standardni izlaz ispisuje se njen sadržaj:
 
 ``` shell
-$ curl ftp://example.group.miletic.net/pub/cake.txt
+curl ftp://example.group.miletic.net/pub/cake.txt
+```
+
+``` shell-session
 THE CAKE IS A LIE
 ```
 
@@ -915,19 +1002,22 @@ THE CAKE IS A LIE
 Postavljanje datoteke na FTP poslužitelj vrši se parametrom `-T`:
 
 ``` shell
-$ curl -T lokalnadatoteka.txt ftp://example.group.miletic.net/datoteka.txt
+curl -T lokalnadatoteka.txt ftp://example.group.miletic.net/datoteka.txt
 ```
 
 Postavljanje datoteke uz prijavu vrši se parametrom `-u` i navođenjem korisničkog imena i zaporke:
 
 ``` shell
-$ curl -T lokalnadatoteka.txt -u vedranm:l33th4x0rp4ssw0rd ftp://example.group.miletic.net/datoteka.txt
+curl -T lokalnadatoteka.txt -u vedranm:l33th4x0rp4ssw0rd ftp://example.group.miletic.net/datoteka.txt
 ```
 
 Ukoliko je nakon `-u` navedeno samo korisničko ime, cURL će tražiti unos zaporke:
 
 ``` shell
-$ curl -T lokalnadatoteka.txt -u vedranm ftp://example.group.miletic.net/datoteka.txt
+curl -T lokalnadatoteka.txt -u vedranm ftp://example.group.miletic.net/datoteka.txt
+```
+
+``` shell-session
 Enter host password for user 'vedranm':
 ```
 
@@ -936,7 +1026,10 @@ Enter host password for user 'vedranm':
 U cURL-u se SCP i SFTP koriste slično kao FTP; razlika je da postoji mogućnost korištenja privatnog ključa umjesto lozinke. Ponovno parametrom `-u` navodimo korisničko ime kojim se prijavljujemo na poslužitelj. Primjer korištenja SCP-a je oblika:
 
 ``` shell
-$ curl -u vedranm scp://example.group.miletic.net/home/vedranm/epic-battle.txt
+curl -u vedranm scp://example.group.miletic.net/home/vedranm/epic-battle.txt
+```
+
+``` shell-session
 Enter host password for user 'vedranm':
 
 Tacgnol vs Longcat
@@ -946,7 +1039,10 @@ On a scale from 1 to epic, I'd probably say EPIC
 Primjer s korištenjem SFTP-a je oblika:
 
 ``` shell
-$ curl -u vedranm sftp://example.group.miletic.net/~/protip.txt
+curl -u vedranm sftp://example.group.miletic.net/~/protip.txt
+```
+
+``` shell-session
 Enter host password for user 'vedranm':
 
 Doom II protip: To defeat the Cyberdemon, shoot at it until it dies.

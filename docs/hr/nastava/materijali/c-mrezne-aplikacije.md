@@ -420,20 +420,20 @@ Srž programa je, kronološki poredano:
 Spremite li kod programa u datoteke `server.c` i `client.c` unutar kućnog direktorija, tada u terminalu možete naredbom:
 
 ``` shell
-$ gcc -o server server.c
-$ gcc -o client client.c
+gcc -o server server.c
+gcc -o client client.c
 ```
 
 izvesti prevođenje oba programa. Zatim ćemo pokrenuti poslužitelj i klijent u dva odvojena terminala i pritom odabrati TCP vrata preko kojih će komunicirati (u našem primjeru 5000). U prvom terminalu pokrećemo poslužitelj naredbom:
 
 ``` shell
-$ ./server 5000
+./server 5000
 ```
 
 U drugom terminalu pokrećemo klijent naredbom:
 
 ``` shell
-$ ./client localhost 5000
+./client localhost 5000
 ```
 
 Umjesto vrata 5000 možete koristiti bilo koja u rasponu 1024--65535 dostupna običnim korisnicima; vrata 0--1023 može otvoriti samo korisnik `root`.

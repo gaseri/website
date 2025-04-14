@@ -20,7 +20,10 @@ Generiranje samopotpisanog certifikata (engl. *self-signed certificate*) zbog sl
 Idući primjer pokazuje generiranje datoteke privatnog ključa `mojkljuc.pem` i datoteke `mojcertifikat.pem` u kojoj su sadržani javni ključ i certifikat javnog ključa. Generiranje zahtjeva za potpisivanjem i potpisivanje zahtjeva vršimo opcijom `req`, a parametar `-x509` znači da se radi o certifikatima koji slijede ITU-T standard X.509. Moguće je odrediti broj dana valjanosti certifikata (u ovom slučaju jedna godina, znači 365), te hoće li ključ biti šifriran (opcija `-nodes` isključuje šifriranje). Pri stvaranju certifikata potrebno je odgovoriti na nekoliko pitanja kojima se u certifikat unose informacije o vlasniku.
 
 ``` shell
-$ openssl req -x509 -nodes -days 365 -newkey rsa:4096 -keyout mojkljuc.pem -out mojcertifikat.pem
+openssl req -x509 -nodes -days 365 -newkey rsa:4096 -keyout mojkljuc.pem -out mojcertifikat.pem
+```
+
+``` shell-session
 Generating a RSA private key
 .............................................++++
 ...................................................++++
@@ -49,7 +52,10 @@ Mi ćemo se ograničiti samo na osnovno korištenje ove naredbe, a za dodatne op
 Stvoreni certifikat možemo pregledati opcijom `x509`:
 
 ``` shell
-$ openssl x509 -in mojcertifikat.pem -noout -text
+openssl x509 -in mojcertifikat.pem -noout -text
+```
+
+``` shell-session
 Certificate:
  Data:
      Version: 3 (0x2)
@@ -88,14 +94,20 @@ Certificate:
 Za provjeru valjanosti certifikata koristi se opcija `verify`. Ukoliko lokalna instalacija OpenSSL-a prepozna certifikat i on ima potpis izdavatelja kojem se vjeruje, vraća se povratna poruka `OK`.
 
 ``` shell
-$ openssl verify valjani-certifikat.pem
+openssl verify valjani-certifikat.pem
+```
+
+``` shell-session
 OK
 ```
 
 Ukoliko se pak pronađe problem sa certifikatom, javlja se obavijest o tome uz kratak opis problema, primjerice:
 
 ``` shell
-$ openssl verify sampotpisani-certifikat.pem
+openssl verify sampotpisani-certifikat.pem
+```
+
+``` shell-session
 error 18 at 0 depth lookup:self signed certificate
 ```
 
@@ -104,7 +116,10 @@ Ovdje certifikat nije valjan jer je samopotpisan. Ukoliko se ne napravi iznimka,
 Certifikati su najčešće predodređeni za konkretni vremenski period, te OpenSSL javlja grešku ukoliko je taj period istekao.
 
 ``` shell
-$ openssl verify istekli-certifikat.pem
+openssl verify istekli-certifikat.pem
+```
+
+``` shell-session
 error 10 at 0 depth lookup:certificate has expired
 ```
 
@@ -121,10 +136,19 @@ OpenSSL u zadanim postavkama već zapisuje privatne ključeve u formatu PKCS #8,
 Ako nismo odabrali šifrirati privatni ključ kod stvaranja, pretvorbu u šifrirani oblik vršimo naredbom:
 
 ``` shell
-$ openssl pkcs8 -topk8 -in mojkljuc.pem -out mojkljuc.pem.enc
+openssl pkcs8 -topk8 -in mojkljuc.pem -out mojkljuc.pem.enc
+```
+
+``` shell-session
 Enter Encryption Password:
 Verifying - Enter Encryption Password:
-$ cat mojkljuc.pem.enc
+```
+
+``` shell
+cat mojkljuc.pem.enc
+```
+
+``` shell-session
 -----BEGIN ENCRYPTED PRIVATE KEY-----
 MIIJrTBXBgkqhkiG9w0BBQ0wSjApBgkqhkiG9w0BBQwwHAQIoccR6wva0XgCAggA
 MAwGCCqGSIb3DQIJBQAwHQYJYIZIAWUDBAEqBBAnCHfoDUf1JdufN64FwLOnBIIJ
@@ -188,14 +212,17 @@ Ključevi koje smo stvorili zapisani su u zadanom formatu [Privacy-Enhanced Mail
 Pretvorbu ključeva iz formata PEM u format DER vršimo opcijom `rsa` na način:
 
 ``` shell
-$ openssl rsa -inform PEM -outform DER -in mojkljuc.pem -out mojkljuc.der
+openssl rsa -inform PEM -outform DER -in mojkljuc.pem -out mojkljuc.der
+```
+
+``` shell-session
 writing RSA key
 ```
 
 Pretvorbu certifikata iz formata PEM u format DER vršimo opcijom `x509` na način:
 
 ``` shell
-$ openssl x509 -inform PEM -outform DER -text -in mojcertifikat.pem -out mojcertifikat.der
+openssl x509 -inform PEM -outform DER -text -in mojcertifikat.pem -out mojcertifikat.der
 ```
 
 Za razliku od PEM-a koji je kodiran u formatu Base64, DER je binarni format pa dobivene zapise ključa i certifikata ne ispisujemo na ekran.
@@ -207,13 +234,16 @@ Za razliku od PEM-a koji je kodiran u formatu Base64, DER je binarni format pa d
 Pretvorbu certifikata iz formata PEM u format PKCS #7 vršimo opcijom `crl2pkcs7` na način:
 
 ``` shell
-$ openssl crl2pkcs7 -nocrl -certfile mojcertifikat.pem -out mojcertifikat.pem.p7b
+openssl crl2pkcs7 -nocrl -certfile mojcertifikat.pem -out mojcertifikat.pem.p7b
 ```
 
 Dobiveni certifikat je kodiran u formatu Base64 pa ga možemo ispisati:
 
 ``` shell
-$ cat mojcertifikat.pem.p7b
+cat mojcertifikat.pem.p7b
+```
+
+``` shell-session
 -----BEGIN PKCS7-----
 MIIFnAYJKoZIhvcNAQcCoIIFjTCCBYkCAQExADALBgkqhkiG9w0BBwGgggVvMIIF
 azCCA1OgAwIBAgIUW6yMgcfWNMkf+ZggBGYXLxcai+wwDQYJKoZIhvcNAQELBQAw
@@ -251,7 +281,10 @@ Lxnd4Be1X6IHPgMhxe4s00koDQgekZCqX3CeL4Zy4gOyiy5nVnXtRC1DcnmhADEA
 Opcijom `pkcs7` možemo ispisati podatke o certifikatu zapisanom u formatu PKCS #7 na način:
 
 ``` shell
-$ openssl pkcs7 -print_certs -in mojcertifikat.pem.p7b -noout
+openssl pkcs7 -print_certs -in mojcertifikat.pem.p7b -noout
+```
+
+``` shell-session
 subject=C = AU, ST = Some-State, O = Internet Widgits Pty Ltd
 issuer=C = AU, ST = Some-State, O = Internet Widgits Pty Ltd
 ```
@@ -259,7 +292,7 @@ issuer=C = AU, ST = Some-State, O = Internet Widgits Pty Ltd
 Istom opcijom moguća je i pretvorba natrag u format PEM:
 
 ``` shell
-$ openssl pkcs7 -print_certs -in mojcertifikat.pem.p7b -out novimojcertifikat.pem
+openssl pkcs7 -print_certs -in mojcertifikat.pem.p7b -out novimojcertifikat.pem
 ```
 
 Pritom će datoteka `novimojcertifikat.pem` imati isti sadržaj kao `mojcertifikat.pem`.
@@ -271,7 +304,10 @@ Pritom će datoteka `novimojcertifikat.pem` imati isti sadržaj kao `mojcertifik
 Pretvorbu iz formata PEM u format PKCS #12 vršimo opcijom `pkcs12` na način:
 
 ``` shell
-$ openssl pkcs12 -export -out kljuc-certifikat.pfx -inkey mojkljuc.pem -in mojcertifikat.pem
+openssl pkcs12 -export -out kljuc-certifikat.pfx -inkey mojkljuc.pem -in mojcertifikat.pem
+```
+
+``` shell-session
 Enter Export Password:
 Verifying - Enter Export Password:
 ```
@@ -279,7 +315,10 @@ Verifying - Enter Export Password:
 Starije verziju IIS-a često ne podržavaju moderne kriptografske algoritme. Ukoliko stvaramo PFX datoteku za stariju verziju, možemo eksplicitno navesti kriptografske algoritme koje želimo koristiti parametrima `-macalg`, `-keypbe` i `-certpbe`:
 
 ``` shell
-$ openssl pkcs12 -macalg SHA1 -keypbe PBE-SHA1-3DES -certpbe PBE-SHA1-3DES -export -out kljuc-certifikat.pfx -inkey mojkljuc.pem -in mojcertifikat.pem
+openssl pkcs12 -macalg SHA1 -keypbe PBE-SHA1-3DES -certpbe PBE-SHA1-3DES -export -out kljuc-certifikat.pfx -inkey mojkljuc.pem -in mojcertifikat.pem
+```
+
+``` shell-session
 Enter Export Password:
 Verifying - Enter Export Password:
 ```
@@ -289,7 +328,10 @@ Više detalja moguće je pronaći na [odgovoru na pitanje u uvozu certifikata na
 Ako imamo i certifikat autoriteta certifikata koji želimo uključiti u lanac certifikata, možemo ga dodati parametrom `-certfile` na način:
 
 ``` shell
-$ openssl pkcs12 -export -out kljuc-certifikat.pfx -inkey mojkljuc.pem -in mojcertifikat.pem -certfile DigiCertCA.crt
+openssl pkcs12 -export -out kljuc-certifikat.pfx -inkey mojkljuc.pem -in mojcertifikat.pem -certfile DigiCertCA.crt
+```
+
+``` shell-session
 Enter Export Password:
 Verifying - Enter Export Password:
 ```
@@ -306,7 +348,7 @@ Dodatne primjere naredbi za pretvobu certifikata između različitih formata mog
 Za korijenski ključ certifikacijskog tijela biramo 4096-bitni RSA:
 
 ``` shell
-$ openssl genrsa -out korijenskikljuc.pem 4096
+openssl genrsa -out korijenskikljuc.pem 4096
 ```
 
 ### Samopotpisivanje korijenskog certifikata
@@ -314,7 +356,7 @@ $ openssl genrsa -out korijenskikljuc.pem 4096
 Potpisujemo sami sebi korijenski certifikat:
 
 ``` shell
-$ openssl req -x509 -new -nodes -key korijenskikljuc.pem -sha256 -days 3650 -out korijenskicertifikat.pem
+openssl req -x509 -new -nodes -key korijenskikljuc.pem -sha256 -days 3650 -out korijenskicertifikat.pem
 ```
 
 Sada ovim certifikatom možemo potpisivati tuđe zahtjeve za potpisom certifikata. Ako bismo sada htjeli da naš certifikat i certifikati koje potpišemo bude valjani, organizacije kao Mozilla i Google bi ga morale dodati u popis izdavatelja kojima se vjeruje.
@@ -324,19 +366,19 @@ Sada ovim certifikatom možemo potpisivati tuđe zahtjeve za potpisom certifikat
 Kod primitka zahtjeva za potpisom certifikata, prvo provjeravamo zahtjev korištenjem opcije `req`:
 
 ``` shell
-$ openssl req -in zahtjev.pem -noout -text
+openssl req -in zahtjev.pem -noout -text
 ```
 
 Tuđe zahtjeve za potpisom certifikata možemo potpisati korištenjem opcije `ca`:
 
 ``` shell
-$ openssl ca -out potpisanicertifikat.pem -in zahtjev.pem
+openssl ca -out potpisanicertifikat.pem -in zahtjev.pem
 ```
 
 Potpuno ekvivalentno, za potpisivanje možemo koristiti korištenjem opcije `x509`:
 
 ``` shell
-$ openssl x509 -req -in zahtjev.pem -CA korijenskicertifikat.pem -CAkey korijenskikljuc.pem -CAcreateserial -out potpisanicertifikat.pem
+openssl x509 -req -in zahtjev.pem -CA korijenskicertifikat.pem -CAkey korijenskikljuc.pem -CAcreateserial -out potpisanicertifikat.pem
 ```
 
 ### Provjera potpisa
@@ -344,13 +386,13 @@ $ openssl x509 -req -in zahtjev.pem -CA korijenskicertifikat.pem -CAkey korijens
 Potpisani certifikat pregledati korištenjem opcije `x509`:
 
 ``` shell
-$ openssl x509 -in potpisanicertifikat.pem -noout -text
+openssl x509 -in potpisanicertifikat.pem -noout -text
 ```
 
 Valjanost certifikata sada možemo provjeriti korištenjem opcije `verify`:
 
 ``` shell
-$ openssl verify -CAfile korijenskicertifikat.pem potpisanicertifikat.pem
+openssl verify -CAfile korijenskicertifikat.pem potpisanicertifikat.pem
 ```
 
 ## Sigurni poslužitelj
@@ -372,31 +414,31 @@ Za ostvarivanje TLS/SSL veze s poslužiteljima i testiranje istih, koristimo opc
 Primjerice, za HTTP preko TLS-a/SSL-a:
 
 ``` shell
-$ openssl s_client -connect example.com:443
+openssl s_client -connect example.com:443
 ```
 
 Za SMTP preko TLS-a/SSL-a:
 
 ``` shell
-$ openssl s_client -connect example.com:465
+openssl s_client -connect example.com:465
 ```
 
 Za IMAP preko TLS-a/SSL-a:
 
 ``` shell
-$ openssl s_client -connect example.com:993
+openssl s_client -connect example.com:993
 ```
 
 Za POP-3 preko TLS-a/SSL-a:
 
 ``` shell
-$ openssl s_client -connect example.com:995
+openssl s_client -connect example.com:995
 ```
 
 Za LDAP preko TLS-a/SSL-a:
 
 ``` shell
-$ openssl s_client -connect example.com:636
+openssl s_client -connect example.com:636
 ```
 
 Nakon spajanja mougće je unositi naredbe. Konkretno, ukoliko smo ostvarili HTTPS vezu, moguće je unositi uobičajene HTTP naredbe (npr. GET i POST).
@@ -404,7 +446,10 @@ Nakon spajanja mougće je unositi naredbe. Konkretno, ukoliko smo ostvarili HTTP
 Za primjer se možemo spojiti na HTTPS poslužitelj na domeni `example.group.miletic.net` naredbom:
 
 ``` shell
-$ openssl s_client -connect example.group.miletic.net:443
+openssl s_client -connect example.group.miletic.net:443
+```
+
+``` shell-session
 CONNECTED(00000003)
 depth=2 C = US, O = Internet Security Research Group, CN = ISRG Root X1
 verify return:1
@@ -566,7 +611,10 @@ Više o opciji `s_client` i parametrima koje prima moguće je naći u pripadnoj 
 Informacije iz certifikata moguće je ispisati korištenjem već ranije spomenute naredbe `openssl x509` i parametra `-text`:
 
 ``` shell
-$ openssl s_client -connect example.group.miletic.net:443 | openssl x509 -noout -text
+openssl s_client -connect example.group.miletic.net:443 | openssl x509 -noout -text
+```
+
+``` shell-session
 depth=2 C = US, O = Internet Security Research Group, CN = ISRG Root X1
 verify return:1
 depth=1 C = US, O = Let's Encrypt, CN = R3
@@ -678,7 +726,10 @@ Parametrom `-noout` izbjegava se dodatno ispisivanje certifikata u formatu PEM.
 Iskoristimo parametar `-servername` da navedemo ime poslužitelja na koji se povezujemo. Za ilustraciju, usporedimo rezultat povezivanja na poslužitelj `mileticnet.github.io` bez navođenja parametra `-servername` s rezultatima izvođenja kad su navedene vrijednosti tog parametra `vedran.miletic.net`, odnosno `www.miletic.net`:
 
 ``` shell
-$ openssl s_client -connect mileticnet.github.io:443
+openssl s_client -connect mileticnet.github.io:443
+```
+
+``` shell-session
 CONNECTED(00000004)
 depth=2 C = US, O = DigiCert Inc, OU = www.digicert.com, CN = DigiCert Global Root CA
 verify return:1
@@ -690,7 +741,10 @@ verify return:1
 ```
 
 ``` shell
-$ openssl s_client -connect mileticnet.github.io:443 -servername www.miletic.net
+openssl s_client -connect mileticnet.github.io:443 -servername www.miletic.net
+```
+
+``` shell-session
 CONNECTED(00000004)
 depth=2 C = US, O = Internet Security Research Group, CN = ISRG Root X1
 verify return:1
@@ -702,7 +756,10 @@ verify return:1
 ```
 
 ``` shell
-$ openssl s_client -connect mileticnet.github.io:443 -servername vedran.miletic.net
+openssl s_client -connect mileticnet.github.io:443 -servername vedran.miletic.net
+```
+
+``` shell-session
 CONNECTED(00000004)
 depth=2 C = US, O = Internet Security Research Group, CN = ISRG Root X1
 verify return:1
@@ -725,7 +782,10 @@ Postoje i situacije u kojima više poslužitelja na jednoj adresi ima zajedničk
 Povežimo se na prvi poslužitelj:
 
 ``` shell
-$ openssl s_client -connect apps.group.miletic.net:443
+openssl s_client -connect apps.group.miletic.net:443
+```
+
+``` shell-session
 CONNECTED(00000004)
 depth=2 C = US, O = Internet Security Research Group, CN = ISRG Root X1
 verify return:1
@@ -739,7 +799,10 @@ verify return:1
 Uočimo da je ovo ekvivalentno dodatnom navođenju parametra `-servername` s vrijednošću `apps.group.miletic.net` jer se ta vrijednost implicitno postavlja iz imena poslužitelja koji smo naveli u parametru `-connect`.
 
 ``` shell
-$ openssl s_client -connect apps.group.miletic.net:443 -servername staging.group.miletic.net
+openssl s_client -connect apps.group.miletic.net:443 -servername staging.group.miletic.net
+```
+
+``` shell-session
 CONNECTED(00000004)
 depth=2 C = US, O = Internet Security Research Group, CN = ISRG Root X1
 verify return:1
@@ -753,7 +816,10 @@ verify return:1
 Uočimo kako smo dobili certifikat s istom vrijednosti zajedničkog imena na dubini 0. Kako bismo se uvjerili da je navedeni certifikat valjan i za ime domene `apps.group.miletic.net` i za ime domene `staging.group.miletic.net`, iskoristimo ponovno naredbu `openssl x509` na način:
 
 ``` shell
-$ openssl s_client -connect apps.group.miletic.net:443 -servername staging.group.miletic.net | openssl x509 -noout -text
+openssl s_client -connect apps.group.miletic.net:443 -servername staging.group.miletic.net | openssl x509 -noout -text
+```
+
+``` shell-session
 depth=2 C = US, O = Internet Security Research Group, CN = ISRG Root X1
 verify return:1
 depth=1 C = US, O = Let's Encrypt, CN = R3
@@ -825,16 +891,25 @@ Uočimo u dijelu `X509v3 Subject Alternative Name:` vrijednosti `DNS:apps.group.
 Za testiranje stvorenih certifikata možemo koristiti opciju `s_server` s parametrima `-key` i `-cert`. Da bi pokrenuli poslužitelj koji se ponaša kao web poslužitelj, koristimo opciju `-www`, a vrata na kojima radi navodimo parametrom `-port`.
 
 ``` shell
-$ openssl s_server -key mojkljuc.pem -cert mojcertifikat.pem -port 49152 -www
+openssl s_server -key mojkljuc.pem -cert mojcertifikat.pem -port 49152 -www
 ```
 
 Ovako pokrenuti web poslužitelj sluša dokle god ga ne zaustavimo. Naredbom `nestat -ln` možemo se uvjeriti da je pokrenut, a testiranje možemo vršiti cURL-om ili ranije spomenutom opcijom `s_client`. Ako koristimo `curl`, prvo se možemo uvjeriti da nismo pokrenuli poslužitelj koji odgovara na HTTP zahtjeve, već isključivo HTTPS:
 
 ``` shell
-$ curl http://localhost:49152/
+curl http://localhost:49152/
+```
+
+``` shell-session
 curl: (52) Empty reply from server
 
-$ curl https://localhost:49152/
+```
+
+``` shell
+curl https://localhost:49152/
+```
+
+``` shell-session
 curl: (60) SSL certificate problem: Invalid certificate chain
 More details here: https://curl.se/docs/sslcerts.html
 
@@ -853,7 +928,10 @@ If you'd like to turn off curl's verification of the certificate, use
 Parametrom `-k` cURL-u kažemo da prihvaćamo samopotpisani certifikat koji nije prošao provjeru treće strane. Dobivamo sadržaj stranice koju OpenSSL-ova naredba `s_server` generira:
 
 ``` shell
-$ curl -k https://localhost:49152/
+curl -k https://localhost:49152/
+```
+
+``` shell-session
 <HTML><BODY BGCOLOR="#ffffff">
 <pre>
 
@@ -911,7 +989,10 @@ no client certificate available
 Za usporedbu, povezivanje na tako pokrenuti poslužitelj opcijom `s_client` izveli bi na način:
 
 ``` shell
-$ openssl s_client -connect localhost:49152
+openssl s_client -connect localhost:49152
+```
+
+``` shell-session
 CONNECTED(00000003)
 Can't use SSL_get_servername
 depth=0 C = AU, ST = Some-State, O = Internet Widgits Pty Ltd
@@ -935,13 +1016,13 @@ GEludGVybmV0IFdpZGdpdHMgUHR5IEx0ZDAeFw0xOTA2MDgxNzEzNTdaFw0yMDA2
 Opcija `s_server` može se ponašati kao pravi web poslužitelj i posluživati HTML datoteke iz trenutnog direktorija korištenjem parametra `-WWW` umjesto `-www`. Tada OpenSSL neće sam generirati nikakav HTML.
 
 ``` shell
-$ openssl s_server -key mojkljuc.pem -cert mojcertifikat.pem -port 49152 -WWW
+openssl s_server -key mojkljuc.pem -cert mojcertifikat.pem -port 49152 -WWW
 ```
 
 Ako u direktoriju gdje je `s_server` pokrenut imamo datoteku `index.html`, zahtjev ćemo napraviti cURL-om na način:
 
 ``` shell
-$ curl -k https://localhost:49152/index.html
+curl -k https://localhost:49152/index.html
 ```
 
 Više o opciji `s_server` moguće je naći u pripadnoj stranici priručnika `s_server(1ssl)`.

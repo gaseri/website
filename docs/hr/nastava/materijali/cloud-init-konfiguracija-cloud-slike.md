@@ -27,14 +27,20 @@ Kako se naš virtualni stroj ne pokreće u oblaku koji bi mogao poslužiti kao i
 Kako bismo postavili zaporku korisnika na `fidit1234`, treba nam zaporka u hashiranom obliku. Iskoristit ćemo OpenSSL-ovu naredbu `passwd` ([dokumentacija](https://www.openssl.org/docs/man3.1/man1/openssl-passwd.html)) na način:
 
 ``` shell
-$ openssl passwd -6 -salt 0123456789abcdef fidit1234
+openssl passwd -6 -salt 0123456789abcdef fidit1234
+```
+
+``` shell-session
 $6$0123456789abcdef$dShpkpJZaM1mate.CGJEnCIUr5OnqlKLzqgErqxukBdgGMteNCAMRA/3WWVZBOwsX444nHdSAmYpJcq09V5SP1
 ```
 
 RSA ključ ćemo izgenerirati naredbom `ssh-keygen` ([dokumentacija](https://man.openbsd.org/ssh-keygen.1)) na način:
 
 ``` shell
-$ ssh-keygen
+ssh-keygen
+```
+
+``` shell-session
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/vedranm/.ssh/id_rsa): id_rsa_gaser
 ksshaskpass: Unable to parse phrase "Enter passphrase (empty for no passphrase): "
@@ -142,7 +148,10 @@ Alat `cloud-localds` iz paketa [cloud-utils](https://github.com/canonical/cloud-
 Taj alat služi za pripremu slike diska u odgovarajućem formatu za `cloud-init` izvor konfiguracijskih podataka (engl. *data source*, odakle dolazi `ds` u `localds`) `NoCloud` ([dokumentacija](https://cloudinit.readthedocs.io/en/latest/reference/datasources/nocloud.html)). Taj će se disk uključiti prilikom stvaranja virtualnog stroja u posljednjem koraku kao drugi disk i `cloud-init` će ga očitati prilikom prvog pokretanja. Alat `cloud-localds` kod pokretanja bez argumenata pokazuje pomoć pri korištenju:
 
 ``` shell
-$ cloud-localds
+cloud-localds
+```
+
+``` shell-session
 Usage: cloud-localds [ options ] output user-data [meta-data]
 
    Create a disk for cloud-init to utilize nocloud
@@ -183,7 +192,7 @@ must provide output, userdata
 Stvorimo sliku diska naredbom:
 
 ``` shell
-$ cloud-localds user-data.img user-data
+cloud-localds user-data.img user-data
 ```
 
 Preuzmimo `cloudimg` Arch Linuxa s [nekog od službenih izvora](https://geo.mirror.pkgbuild.com/images/latest/) i ponovimo stvaranje virtualnog stroja na temelju slike. U posljednjem koraku ćemo iskoristiti mogućnost prilagodbe konfiguracije uključivanjem kvačice pored `Customize configuration before install`. U dijalogu koji dobijemo odabrati ćemo `Add Hardware` pa u odjeljku `Storage` na kartici `Details` odabrati `Select or create custom storage`. Klikom na gumb `Manage...` dobivamo `Locate or create storage volume` gdje možemo iskoristiti gumb `Browse Local` kako bismo pronašli upravo stvoreni `user-data.img`. Dodatno, `Device type` postavit ćemo na `CDROM device`.

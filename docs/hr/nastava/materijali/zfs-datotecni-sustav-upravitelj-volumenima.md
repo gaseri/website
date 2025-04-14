@@ -24,7 +24,7 @@ Za dohvaćanje ključeva kojima su potpisane datoteke izvornog koda iskoristit �
 Koristit ćemo [zfs-dkms](https://aur.archlinux.org/packages/zfs-dkms), koji nije vezan za specifičnu verziju jezgre Linuxa i koristi [Dynamic Kernel Module Support (DKMS)](https://wiki.archlinux.org/title/Dynamic_Kernel_Module_Support) za izgradnju modula jezgre za verziju jezgre Linuxa koju imamo instaliranu na sustavu. Kako koristimo [stabilnu verziju jezgre Linuxa](https://wiki.archlinux.org/title/Kernel) (paket `linux`), potrebna su nam pripadna zaglavlja dostupna u paketu `linux-headers`:
 
 ``` shell
-$ sudo pacman -S linux-headers
+sudo pacman -S linux-headers
 ```
 
 Prvo ćemo preuzeti datoteku `PKGBUILD` za `zfs-dkms`, a zatim i sve datoteke izvornog koda navedene u dijelu `Sources`.
@@ -43,13 +43,13 @@ Potrebno je [particionirati diskove](https://wiki.archlinux.org/title/Partitioni
 Stvaranje ZFS bazena za pohranu podataka vršimo naredbom `zpool create`:
 
 ``` shell
-$ sudo zpool create -m /mojbazen /dev/vdb1 /dev/vdc1
+sudo zpool create -m /mojbazen /dev/vdb1 /dev/vdc1
 ```
 
 Ovime smo stvorili bazen za pohranu podataka bez redundancije gdje se podaci zapisuju na oba diska. Alternativno, moguće je iskoristiti argument `mirror` i dobiti bazen u kojem se isti podaci zapisuju na oba diska:
 
 ``` shell
-$ sudo zpool create -m /mojezrcaljenje mirror /dev/vdc1 /dev/vdd1
+sudo zpool create -m /mojezrcaljenje mirror /dev/vdc1 /dev/vdd1
 ```
 
 !!! example "Zadatak"
@@ -62,13 +62,13 @@ Dodatne uređaje moguće je dodati u postojeći bazen naredbom `zpool add`, kao 
 Naredbom `zfs get` moguće je dohvatiti postavke datotečnog sustava, a naredbom `zfs set` postaviti iste. Primjerice, za uključiti ZSTD kompresiju:
 
 ``` shell
-$ sudo zfs set compression=zstd
+sudo zfs set compression=zstd
 ```
 
 Da je kompresija uspješno uključena možemo se uvjeriti naredbom:
 
 ``` shell
-$ sudo zfs get compression
+sudo zfs get compression
 ```
 
 !!! example "Zadatak"

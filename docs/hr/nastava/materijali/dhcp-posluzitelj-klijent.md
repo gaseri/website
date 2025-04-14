@@ -60,19 +60,19 @@ Mi ćemo u nastavku koristiti [ISC DHCP](https://www.isc.org/dhcp/), DHCP poslu�
 ISC DHCP klijent naziva se `dhclient`. Korištenje klijenta je vrlo jednostavno, naredbom
 
 ``` shell
-# dhclient
+dhclient
 ```
 
 pokreće se proces konfiguracije korištenjem DHCP-a na svim mrežnim sučeljima, a naredbom
 
 ``` shell
-# dhclient eth0
+dhclient eth0
 ```
 
 samo na sučelju `eth0`. Ostali parametri naredbenog retka opisani su u man stranici `dhclient(8)` (naredba `man 8 dhclient`). Specijalno, parametar `-cf` omogućuje navođenje konfiguracijske datoteke na način
 
 ``` shell
-# dhclient -cf mydhclient.conf eth0
+dhclient -cf mydhclient.conf eth0
 ```
 
 unutar koje se mogu nalaziti konfiguracijske naredbe isteka vremena (`timeout`), vremena prije ponovnog pokušaja (`retry`) i druge. Opis pojedinih konfiguracijskih naredbi dan je u man stranici `dhclient.conf(5)` (naredba `man 5 dhclient.conf`).
@@ -96,7 +96,7 @@ unutar koje se mogu nalaziti konfiguracijske naredbe isteka vremena (`timeout`),
 ISC DHCP poslužitelj naziva se `dhcpd`; slovo `d` na kraju imena oznaka je da se radi o [daemonu](https://en.wikipedia.org/wiki/Daemon_(computing)). Poslužitelj se pokreće naredbom
 
 ``` shell
-# dhcpd -cf mydhcpd.conf
+dhcpd -cf mydhcpd.conf
 ```
 
 jer će, za razliku od klijenta, bez konfiguracije vrlo teško raditi ispravno. Ostale parametre naredbenog retka moguće je naći u man stranici `dhcpd(8)`. Tipična konfiguracijska datoteke `mydhcpd.conf` sadrži sljedeće konfiguracijske naredbe
@@ -170,13 +170,16 @@ subnet 172.16.25.0 netmask 255.255.255.0 {
 Kako bismo mogli pokrenuti `dhcpd`, treba nam i datoteka `/tmp/dhcpd.leases` pa ćemo je stvoriti (praznu) naredbom
 
 ``` shell
-# touch /tmp/dhcpd.leases
+touch /tmp/dhcpd.leases
 ```
 
 Poslužitelj se sada pokreće naredbom
 
 ``` shell
-# dhcpd -cf mydhcpd.conf
+dhcpd -cf mydhcpd.conf
+```
+
+``` shell-session
 Internet Systems Consortium DHCP Server 4.4.1
 Copyright 2004-2018 Internet Systems Consortium.
 All rights reserved.
@@ -195,13 +198,16 @@ Sending on   Socket/fallback/fallback-net
 U ljusci čvora n1 pokrenimo naredbu
 
 ``` shell
-# dhclient
+dhclient
 ```
 
 Uvjerimo se da je `dhclient` uspješno dobio IPv4 adresu
 
 ``` shell
-# ifconfig
+ifconfig
+```
+
+``` shell-session
 eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         inet 172.16.25.20  netmask 255.255.255.0  broadcast 172.16.25.255
         inet6 fe80::200:ff:feaa:0  prefixlen 64  scopeid 0x20<link>

@@ -57,7 +57,7 @@ TLS_CACERT       /etc/ssl/certs/ca-certificates.crt
 Nakon toga možemo pretražiti imenik naredbom
 
 ``` shell
-$ ldapsearch -x
+ldapsearch -x
 ```
 
 te ćemo vidjeti našu organizaciju.
@@ -79,7 +79,7 @@ objectClass: organizationalUnit
 Kako bi nadodali zapise u LDIF datoteci, moramo pokrenuti naredbu za dodavanje zapisa:
 
 ``` shell
-$ ldapadd -x -D "cn=admin,dc=local" -W -f ou.ldif
+ldapadd -x -D "cn=admin,dc=local" -W -f ou.ldif
 ```
 
 gdje kažemo koju akciju želimo napraviti (`add`), kojoj organiziciji radimo promjene, te koju LDIF datoteku koristimo.
@@ -112,7 +112,7 @@ Za grupu navodimo njezino ime i id grupe (`gidNumber`) između ostaloga, a za ko
 Također možemo dodati neku grupu (npr. grupu `UMS` sa id-om grupe `30000`) te korisnike koji pripadaju toj grupi (navedemo da imaju taj id grupe). Tada naredbom
 
 ``` shell
-$ ldapsearch -x gidNumber=30000
+ldapsearch -x gidNumber=30000
 ```
 
 možemo pretražiti koji korisnici pripadaju toj grupi te dobiti informacije o tim korisnicima kao i o samoj grupi. Izlaz naredbe `ldapsearch` je oblika:
@@ -172,7 +172,7 @@ sn: Toni Butkovic
 Korisnika tada mijenjamo naredbom:
 
 ``` shell
-$ ldapmodify -x -D "cn=admin,dc=local" -W -f userToniToUms.ldif
+ldapmodify -x -D "cn=admin,dc=local" -W -f userToniToUms.ldif
 ```
 
 iz čega vidimo da se mijenja samo naziv akcije.

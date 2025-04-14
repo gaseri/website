@@ -41,8 +41,8 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov, Anja Vrbanjac
 - znak `$` služi za dohvaćanje vrijednosti varijable; **primjer:**
 
     ``` shell
-    $ MOJA_VARIJABLA = 5 # pridruživanje vrijednosti varijabli MOJA_VARIJABLA
-    $ echo $MOJA_VARIJABLA # dohvaćanje vrijednosti varijable MOJA_VARIJABLA
+    MOJA_VARIJABLA = 5 # pridruživanje vrijednosti varijabli MOJA_VARIJABLA
+    echo $MOJA_VARIJABLA # dohvaćanje vrijednosti varijable MOJA_VARIJABLA
     ```
 
 !!! example "Zadatak"
@@ -58,8 +58,8 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov, Anja Vrbanjac
     - u promptu pišemo:
 
         ``` shell
-        $ VAR1=1
-        $ emacs pr1.sh
+        VAR1=1
+        emacs pr1.sh
         ```
 
     - unutar skripte `pr1.sh` pišemo:
@@ -74,8 +74,8 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov, Anja Vrbanjac
     - pokrećemo:
 
         ``` shell
-        $ chmod +x pr1.sh # označimo skriptu za pokretanje
-        $ ./pr1.sh # pokrećemo skriptu
+        chmod +x pr1.sh # označimo skriptu za pokretanje
+        ./pr1.sh # pokrećemo skriptu
         ```
 
 - da varijabla ljuske postane [varijabla okoline](https://en.wikipedia.org/wiki/Environment_variable) (engl. *environment variable*) potrebno je napraviti izvoz (engl. *export*)
@@ -83,8 +83,8 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov, Anja Vrbanjac
     - **sintaksa:** `export MOJA_VARIJABLA`; **primjer:**
 
         ``` shell
-        $ MOJA_VARIJABLA = 5 # varijabla ljuske poprima vrijednost
-        $ export MOJA_VARIJABLA # čini da varijabla postane dijelom okoline
+        MOJA_VARIJABLA = 5 # varijabla ljuske poprima vrijednost
+        export MOJA_VARIJABLA # čini da varijabla postane dijelom okoline
         ```
 
     - svaka varijabla okoline je varijabla ljuske, ali obrat ne vrijedi
@@ -93,8 +93,8 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov, Anja Vrbanjac
 - kada više nije potrebna može se napraviti brisanje varijable s `unset MOJA_VARIJABLA`; **primjer:**
 
     ``` shell
-    $ unset MOJA_VARIJABLA # brisanje varijable
-    $ echo $MOJA_VARIJABLA # ispisuje prazan redak jer varijabla nema vrijednost
+    unset MOJA_VARIJABLA # brisanje varijable
+    echo $MOJA_VARIJABLA # ispisuje prazan redak jer varijabla nema vrijednost
     ```
 
 !!! example "Zadatak"

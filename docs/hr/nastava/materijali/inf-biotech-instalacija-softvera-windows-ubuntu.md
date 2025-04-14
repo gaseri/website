@@ -29,15 +29,13 @@ Ako ste nehotice zatvorili Ubuntu prije unosa svih podataka i time prekinuli ins
 Pokrenite Windows Terminal pa [korištenjem dropdown izbornika u njemu otvorite Ubuntu](https://docs.microsoft.com/en-us/windows/terminal/panes) ili pokrenite Terminal na Ubuntuu. Upišite naredbu:
 
 ``` shell
-$ sudo apt update
-(...)
+sudo apt update
 ```
 
 i vašu zaporku kad vas upita. Zatim upišite naredbu:
 
 ``` shell
-$ sudo apt upgrade
-(...)
+sudo apt upgrade
 ```
 
 i prihvatite nadogradnje koje vam ponudi.
@@ -47,13 +45,11 @@ i prihvatite nadogradnje koje vam ponudi.
 Upišite redom naredbe:
 
 ``` shell
-$ sudo apt install python-is-python3 python3 python3-pip python3-ipykernel python3-autopep8 pylint
-(...)
+sudo apt install python-is-python3 python3 python3-pip python3-ipykernel python3-autopep8 pylint
 ```
 
 ``` shell
-$ sudo apt install python3-rdkit python3-sympy python3-numpy python3-scipy python3-matplotlib python3-pandas
-(...)
+sudo apt install python3-rdkit python3-sympy python3-numpy python3-scipy python3-matplotlib python3-pandas
 ```
 
 ## Računalna kemija, kemoinformatika i Bioinformatika
@@ -79,8 +75,7 @@ Preuzmite UGENE sa [službenih stranica](https://ugene.net/). Instalirajte ga sa
 U (Windows) Terminalu upišite redom naredbe:
 
 ``` shell
-$ sudo apt install avogadro openbabel openbabel-gui python3-openbabel pymol ugene
-(...)
+sudo apt install avogadro openbabel openbabel-gui python3-openbabel pymol ugene
 ```
 
 ### FastQC, Trim Galore!, Trinity RNA-Seq, Bowtie 2, Samtools, Integrative Genomics Viewer (IGV)
@@ -88,8 +83,7 @@ $ sudo apt install avogadro openbabel openbabel-gui python3-openbabel pymol ugen
 Upišite redom naredbe:
 
 ``` shell
-$ sudo apt install fastqc trim-galore trinityrnaseq bowtie2 igv samtools
-(...)
+sudo apt install fastqc trim-galore trinityrnaseq bowtie2 igv samtools
 ```
 
 ### FASTX-Toolkit
@@ -97,16 +91,14 @@ $ sudo apt install fastqc trim-galore trinityrnaseq bowtie2 igv samtools
 Prvo instalirajte cURL koji ćemo iskoristiti za preuzimanje paketa:
 
 ``` shell
-$ sudo apt install curl
-(...)
+sudo apt install curl
 ```
 
 Zatim upišite redom naredbe:
 
 ``` shell
-$ curl -O http://de.archive.ubuntu.com/ubuntu/pool/universe/f/fastx-toolkit/fastx-toolkit_0.0.14-5_amd64.deb
-$ sudo apt install ./fastx-toolkit_0.0.14-5_amd64.deb
-(...)
+curl -O http://de.archive.ubuntu.com/ubuntu/pool/universe/f/fastx-toolkit/fastx-toolkit_0.0.14-5_amd64.deb
+sudo apt install ./fastx-toolkit_0.0.14-5_amd64.deb
 ```
 
 ## Visual Studio Code
@@ -130,13 +122,11 @@ Kad ste se uvjerili da ste povezani na Ubuntu, instalirajte [proširenje za Pyth
 U (Windows) Terminalu upišite redom naredbe:
 
 ``` shell
-$ sudo apt install npm pandoc libreoffice
-(...)
+sudo apt install npm pandoc libreoffice
 ```
 
 ``` shell
-$ npm i @marp-team/marp-core @marp-team/marp-cli
-(...)
+npm i @marp-team/marp-core @marp-team/marp-cli
 ```
 
 ### Proširenje za VS Code: Marp

@@ -22,8 +22,10 @@ U prethodnom smo se dijelu bavili postavljanjem OpenVPN-a u načinu rada točka-
 Uvjerimo se da nam Easy-RSA radi i provjerimo koje naredbe ima:
 
 ``` shell
-$ easyrsa help
+easyrsa help
+```
 
+``` shell-session
 Easy-RSA 3 usage and overview
 
 USAGE: easyrsa [options] COMMAND [command-options]
@@ -79,8 +81,10 @@ Na FreeBSD-u se naredba `easyrsa` nakon instalacije [security/easy-rsa](https://
 Izradu certifikata i ključeva počinjemo naredbom `init-pki` koja će stvoriti potrebne datoteke direktorije:
 
 ``` shell
-$ easyrsa init-pki
+easyrsa init-pki
+```
 
+``` shell-session
 init-pki complete; you may now create a CA or requests.
 Your newly created PKI dir is: /home/vedranm/pki
 ```
@@ -118,8 +122,10 @@ Uočimo da smo postavili CN kao da se radi o domeni, što je dakako opcionalno. 
 Izgradimo sad autoritet certifikata naredbom `build-ca` i pritom zaporku postavimo po želji:
 
 ``` shell
-$ easyrsa build-ca
+easyrsa build-ca
+```
 
+``` shell-session
 Note: using Easy-RSA configuration from: /home/vedranm/pki/vars
 
 Using SSL: openssl OpenSSL 1.1.1f  31 Mar 2020
@@ -149,7 +155,10 @@ Your new CA certificate file for publishing is at:
 Pogledajmo što smo upravo stvorili:
 
 ``` shell
-$ ls -1 pki pki/private
+ls -1 pki pki/private
+```
+
+``` shell-session
 pki:
 ca.crt
 certs_by_serial
@@ -171,8 +180,10 @@ ca.key
 U direktoriju `pki` vidimo certifikat `ca.crt`, a u direktoriju `pki/private` njegov pripadni privatni ključ. Naredbom `show-ca` možemo pregledati stvoreni certifikat:
 
 ``` shell
-$ easyrsa show-ca
+easyrsa show-ca
+```
 
+``` shell-session
 Note: using Easy-RSA configuration from: /home/vedranm/pki/vars
 
 Using SSL: openssl OpenSSL 1.1.1f  31 Mar 2020
@@ -211,8 +222,10 @@ Certificate:
 Svako iduće pokretanje naredbe `build-ca` prvo će provjeriti imamo li već izgrađen autoritet certifikata i neće prepisati ključeve i ceritifikat novim:
 
 ``` shell
-$ easyrsa build-ca
+easyrsa build-ca
+```
 
+``` shell-session
 Note: using Easy-RSA configuration from: /home/vedranm/pki/vars
 
 Using SSL: openssl OpenSSL 1.1.1f  31 Mar 2020
@@ -230,8 +243,10 @@ Sad smo napravili autoritet certifikata. U stvarnosti ovaj autoritet certifikata
 Poslužiteljski certifikat generiramo naredbom `build-server-full`. Proučimo kako se ona koristi naredbom `help`:
 
 ``` shell
-$ easyrsa help build-server-full
+easyrsa help build-server-full
+```
 
+``` shell-session
 Note: using Easy-RSA configuration from: /home/vedranm/pki/vars
 
   build-client-full <filename_base> [ cmd-opts ]
@@ -249,8 +264,10 @@ Note: using Easy-RSA configuration from: /home/vedranm/pki/vars
 Uočimo opciju `nopass` koja će nam pomoći da kasnije ne moramo unositi zaporku ključa kod njegovog korištenja. Nazovimo naš poslužitelj jednostavno `mojposluzitelj`; za potpisivanje njegovog certifikata od strane autoriteta certifikata bit će potrebno unijeti zaporku autoriteta certifikata:
 
 ``` shell
-$ easyrsa build-server-full mojposluzitelj nopass
+easyrsa build-server-full mojposluzitelj nopass
+```
 
+``` shell-session
 Note: using Easy-RSA configuration from: /home/vedranm/pki/vars
 
 Using SSL: openssl OpenSSL 1.1.1f  31 Mar 2020
@@ -276,8 +293,10 @@ Dobili smo datoteke `pki/issued/mojposluzitelj.crt` i `pki/private/mojposluzitel
 Kao i kod `build-ca`, ponovno pokretanje naredbe `build-server-full` javit će da ključ već postoji. Naredbom `show-cert` možemo pregledati stvoreni certifikat:
 
 ``` shell
-$ easyrsa show-cert mojposluzitelj
+easyrsa show-cert mojposluzitelj
+```
 
+``` shell-session
 Note: using Easy-RSA configuration from: /home/vedranm/pki/vars
 
 Using SSL: openssl OpenSSL 1.1.1f  31 Mar 2020
@@ -322,8 +341,10 @@ Certificate:
 Poslužitelju trebaju i parametri za Diffie-Hellmanovu razmjenu ključeva. Naime, [OpenVPN koristi TLS](https://openvpn.net/faq/why-openvpn-uses-tls/) pa nakon povezivanja klijenta i poslužitelja dogovara ključeve koji će se koristiti unutar te komunikacije i pritom koristi Diffie-Hellmanovu razmjenu ključeva. Datoteku koja sadrži te parametre ćemo izraditi naredbom `gen-dh`:
 
 ``` shell
-$ easyrsa gen-dh
+easyrsa gen-dh
+```
 
+``` shell-session
 Note: using Easy-RSA configuration from: /home/vedranm/pki/vars
 
 Using SSL: openssl OpenSSL 1.1.1f  31 Mar 2020
@@ -341,8 +362,10 @@ Dobili smo datoteku `dh.pem` u direktoriju `pki`.
 Klijentski certifikat generiramo analogno poslužiteljskom, naredbom `build-client-full`; ponovno ćemo kod potpisivanja trebati zaporku privatnog ključa autoriteta certifikata:
 
 ``` shell
-$ easyrsa build-client-full mojklijent nopass
+easyrsa build-client-full mojklijent nopass
+```
 
+``` shell-session
 Note: using Easy-RSA configuration from: /home/vedranm/pki/vars
 
 Using SSL: openssl OpenSSL 1.1.1f  31 Mar 2020
@@ -389,7 +412,10 @@ Konfiguracijska naredba `server` označava da se radi o poslužitelju koji prima
 Pokrenimo poslužitelj na isti način kao i dosad:
 
 ``` shell
-$ sudo openvpn --config server.ovpn
+sudo openvpn --config server.ovpn
+```
+
+``` shell-session
 Fri May 29 00:03:10 2020 OpenVPN 2.4.7 x86_64-pc-linux-gnu [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [PKCS11] [MH/PKTINFO] [AEAD] built on Sep  5 2019
 Fri May 29 00:03:10 2020 library versions: OpenSSL 1.1.1f  31 Mar 2020, LZO 2.10
 Fri May 29 00:03:10 2020 WARNING: --keepalive option is missing from server config
@@ -421,7 +447,10 @@ Konfiguracijska naredba `client` označava da se radi o klijentu koji koristi au
 Bez zaustavljanja poslužitelja pokrenimo klijent:
 
 ``` shell
-$ sudo openvpn --config client.ovpn
+sudo openvpn --config client.ovpn
+```
+
+``` shell-session
 Fri May 29 00:03:15 2020 OpenVPN 2.4.7 x86_64-pc-linux-gnu [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [PKCS11] [MH/PKTINFO] [AEAD] built on Sep  5 2019
 Fri May 29 00:03:15 2020 library versions: OpenSSL 1.1.1f  31 Mar 2020, LZO 2.10
 Fri May 29 00:03:15 2020 WARNING: No server certificate verification method has been enabled.  See http://openvpn.net/howto.html#mitm for more info.

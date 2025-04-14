@@ -73,7 +73,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 - `cat` ispisuje sadržaj (tekstualne) datoteke na ekran; **primjer:**
 
     ``` shell
-    $ cat examples.desktop
+    cat examples.desktop
     ```
 
     - kad se pokrene bez argumeanata radi beskonačno dugo

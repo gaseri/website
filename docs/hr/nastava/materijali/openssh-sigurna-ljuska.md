@@ -21,7 +21,10 @@ Najpoznatija implementacija protokola SSH je [OpenSSH](https://www.openssh.com/)
 OpenSSH klijent je aplikacija naredbenog retka (naredba `ssh`) dostupna pod većinom operacijskih sustava sličnim Unixu u zadanoj instalaciji. Prvo ćemo provjeriti verziju parametrom `-V`:
 
 ``` shell
-$ ssh -V
+ssh -V
+```
+
+``` shell-session
 OpenSSH_8.2p1, OpenSSL 1.1.1e  17 Mar 2020
 ```
 
@@ -31,7 +34,10 @@ OpenSSH_8.2p1, OpenSSL 1.1.1e  17 Mar 2020
 Korištenjem OpenSSH klijenta možemo se povezati na udaljeni poslužitelj na kojem je pokrenut SSH poslužitelj, primjerice `example.group.miletic.net`:
 
 ``` shell
-$ ssh example.group.miletic.net
+ssh example.group.miletic.net
+```
+
+``` shell-session
 The authenticity of host 'example.group.miletic.net (135.181.105.39)' can't be established.
 ECDSA key fingerprint is SHA256:0ru7bD+izhNW+qTNFkxqHtDoiyDRNLUHHvvuF0O0I84.
 Are you sure you want to continue connecting (yes/no/[fingerprint])?
@@ -50,35 +56,50 @@ Naravno, kako bismo se mogli prijaviti na poslužitelj, na njemu moramo imati ot
 Prekid povezivanja izvodimo, kao i drugdje, kombinacijom tipki Control + C (`^C`). Za ilustraciju kako OpenSSH klijent radi, zamislimo da imamo otvoren korisnički račun imena `student` na `example.group.miletic.net`. Tada ćemo se povezati na način:
 
 ``` shell
-$ ssh student@example.group.miletic.net
+ssh student@example.group.miletic.net
+```
+
+``` shell-session
 student@example.group.miletic.net's password:
 ```
 
 Korisničko ime se može navesti i kao vrijednost parametra `-l` [uz obavezni samozadovoljni izraz na licu jer naredba u tom obliku postanje manje čitljiva laicima](https://web.archive.org/web/20230228143445/https://dilbert.com/strip/1995-06-24):
 
 ``` shell
-$ ssh -l student example.group.miletic.net
+ssh -l student example.group.miletic.net
+```
+
+``` shell-session
 student@example.group.miletic.net's password:
 ```
 
 SSH poslužitelj se obično izvodi na [TCP ili UDP vratima 22](https://www.iana.org/assignments/service-names-port-numbers). Ako je SSH poslužitelj pokrenut na nekim drugim vratima, parametrom `-p` možemo ih navesti:
 
 ``` shell
-$ ssh -p 2223 student@example.group.miletic.net
+ssh -p 2223 student@example.group.miletic.net
+```
+
+``` shell-session
 student@example.group.miletic.net's password:
 ```
 
 Navedemo li vrata na kojima nije pokrenut SSH poslužitelj, klijent će javiti grešku. Primjerice, pokušajmo se spojiti na vrata 443 na kojima je pokrenut HTTPS poslužitelj:
 
 ``` shell
-$ ssh -p 443 student@example.group.miletic.net
+ssh -p 443 student@example.group.miletic.net
+```
+
+``` shell-session
 kex_exchange_identification: Connection closed by remote host
 ```
 
 Parametrom `-v` (kratica od verbose) možemo saznati više detalja o uspješnom ili neuspješnom spajanju:
 
 ``` shell
-$ ssh -v -p 443 example.group.miletic.net
+ssh -v -p 443 example.group.miletic.net
+```
+
+``` shell-session
 OpenSSH_8.2p1, OpenSSL 1.1.1e  17 Mar 2020
 debug1: Reading configuration data /home/korisnik/.ssh/config
 debug1: Reading configuration data /etc/ssh/ssh_config
@@ -121,7 +142,10 @@ Ovdje vidimo da je HTTP poslužitelj [nginx](https://nginx.org/) odgovorio sa st
 Za usporedbu, kod uspješnog spajanja dobivamo nešto duži ispis, navode se algoritmi koji se koriste za različite postupke šifriranja i brojne druge informacije, a naposlijetku i upit za zaporkom kakav smo već vidjeli ranije:
 
 ``` shell
-$ ssh -v example.group.miletic.net
+ssh -v example.group.miletic.net
+```
+
+``` shell-session
 OpenSSH_8.2p1, OpenSSL 1.1.1e  17 Mar 2020
 debug1: Reading configuration data /home/vedranm/.ssh/config
 debug1: Reading configuration data /etc/ssh/ssh_config
@@ -160,7 +184,10 @@ OpenSSH naredba za sigurni prijenos datoteka `sftp` omogućuje prijenos datoteka
 OpenSSH poslužitelj možemo pokrenuti i najčešće pokrećemo kao uslugu operacijskog sustava. Provjeru je li pokrenut na modernijim distribucijama GNU/Linuxa koje koriste [systemd](https://www.freedesktop.org/wiki/Software/systemd/) izvest ćemo naredbom:
 
 ``` shell
-$ systemctl status sshd.service
+systemctl status sshd.service
+```
+
+``` shell-session
 ssh.service - OpenBSD Secure Shell server
 Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enabled)
 Active: active (running) since Fri 2020-04-03 22:43:45 CEST; 15h ago
@@ -184,14 +211,20 @@ tra 01 22:44:03 hephaestus sshd[2525]: pam_unix(sshd:session): session opened fo
 Za eksperimentiranje i učenje kakvo nas ovdje zanima možemo OpenSSH poslužitelj pokrenuti i neovisno o već pokrenutoj usluzi operacijskog sustava naredbom `sshd`:
 
 ``` shell
-$ sshd
+sshd
+```
+
+``` shell-session
 sshd re-exec requires execution with an absolute path
 ```
 
 Uočavamo da OpenSSH ima dodatnu sigurnosnu mjeru gdje očekuje da navedete čitavu putanju da točno znate što pokrećete. Naime, napadač može na nekom od mjesta gdje operacijski sustav traži naredbe (vrijednost varijable ljuske `PATH`) staviti vlastiti program i nazvati ga `sshd` ili pak instalirati njegovu stariju, nesigurnu verziju s poznatim napadima. Navedimo apsolutnu putanju:
 
 ``` shell
-$ /usr/sbin/sshd
+/usr/sbin/sshd
+```
+
+``` shell-session
 sshd: no hostkeys available -- exiting.
 ```
 
@@ -209,7 +242,10 @@ OpenSSH koristi [četiri algoritma javnog ključa](https://security.stackexchang
 OpenSSH alat `ssh-keygen` služi za generiranje domaćinskih (poslužiteljskih, engl. *[host](../../vrlo-vazne-informacije/cesto-postavljana-pitanja.md#nudite-li-pristup-vasim-posluziteljima-putem-ssh)*) i korisničkih (klijentskih, engl. *user*) ključeva; bez parametara `ssh-keygen` će generirati korisničke ključeve. Pozabavimo se prvo generiranje domaćinskih ključeva, što ćemo napraviti dodavanjem parametra `-A`:
 
 ``` shell
-$ ssh-keygen -A
+ssh-keygen -A
+```
+
+``` shell-session
 ssh-keygen: generating new host keys: RSA Could not save your public key in /etc/ssh/ssh_host_rsa_key.mYJvrepuWR: Permission denied
 ssh-keygen: generating new host keys: DSA Could not save your public key in /etc/ssh/ssh_host_dsa_key.zG3QFGy1zd: Permission denied
 ssh-keygen: generating new host keys: ECDSA Could not save your public key in /etc/ssh/ssh_host_ecdsa_key.JG7rzkXpNm: Permission denied
@@ -219,8 +255,11 @@ ssh-keygen: generating new host keys: ED25519 Could not save your public key in 
 Uočimo da bez administrativnih privilegija ne možemo spremiti generirane ključeve. Iskoristimo zato parametar `-f` da postavio ključeve u direktorij po želji koji ćemo prethodno stvoriti:
 
 ``` shell
-$ mkdir -p moj-ssh-server/etc/ssh
-$ ssh-keygen -A -f moj-ssh-server
+mkdir -p moj-ssh-server/etc/ssh
+ssh-keygen -A -f moj-ssh-server
+```
+
+``` shell-session
 ssh-keygen: generating new host keys: RSA DSA ECDSA ED25519
 ```
 
@@ -229,9 +268,18 @@ Ova naredba ima brojne druge parametara koji se mogu koristiti po potrebi, a nji
 Generirani ključevi nalaze se u direktoriju `moj-ssh-server/etc/ssh` (parametar `-f` domaćinske ključeve automatski smješta u poddirektorij `etc/ssh` unutar danog direktorija). Stvorit ćemo konfiguracijsku datoteku OpenSSH poslužitelja i za nju nam treba apsolutna putanja do ključeva, koju možemo dohvatiti naredbom `realpath`:
 
 ``` shell
-$ realpath moj-ssh-server/etc/ssh
+realpath moj-ssh-server/etc/ssh
+```
+
+``` shell-session
 /home/korisnik/moj-ssh-server/etc/ssh
-$ ls -1 moj-ssh-server/etc/ssh
+```
+
+``` shell
+ls -1 moj-ssh-server/etc/ssh
+```
+
+``` shell-session
 ssh_host_dsa_key
 ssh_host_dsa_key.pub
 ssh_host_ecdsa_key
@@ -247,7 +295,7 @@ ssh_host_rsa_key.pub
 Stvorimo konfiguracijsku datoteku OpenSSH poslužitelja imena `sshd_config`:
 
 ``` shell
-$ touch moj-ssh-server/etc/ssh/sshd_config
+touch moj-ssh-server/etc/ssh/sshd_config
 ```
 
 U proizvoljnom uređivaču teksta uredimo datoteku `moj-ssh-server/etc/ssh/sshd_config` tako da popišemo ključeve kao parametre konfiguracijske naredbe `HostKey` (DSA ključeve ne navodimo jer se smatraju nesigurnima):
@@ -261,7 +309,10 @@ HostKey /home/korisnik/moj-ssh-server/etc/ssh/ssh_host_ed25519_key
 Pokrenemo li sad `sshd` s parametrom `-f` u kojem navodimo ovu konfiguracijsku datoteku i s parametrom `-d` (debug mode) koji uključuje ispis poruka o radu OpenSSH poslužitelja, dobit ćemo izlaz oblika:
 
 ``` shell
-$ /usr/sbin/sshd -f moj-ssh-server/etc/ssh/sshd_config -d
+/usr/sbin/sshd -f moj-ssh-server/etc/ssh/sshd_config -d
+```
+
+``` shell-session
 debug1: sshd version OpenSSH_8.2p1, OpenSSL 1.1.1e  17 Mar 2020
 debug1: private host key #0: ssh-rsa SHA256:+TP+gmo09NPfA5gVKyktIC30nDoCcrejnbo8G8Cp5Nk
 debug1: private host key #1: ecdsa-sha2-nistp256 SHA256:fVro3huxlPLu9BgLgeDvQo2C7rVnvqc69E2dLsuAnRg
@@ -334,7 +385,10 @@ UsePAM yes
 Sad ćemo uspjeti pokrenuti `sshd`:
 
 ``` shell
-$ /usr/sbin/sshd -f moj-ssh-server/etc/ssh/sshd_config -d
+/usr/sbin/sshd -f moj-ssh-server/etc/ssh/sshd_config -d
+```
+
+``` shell-session
 debug1: sshd version OpenSSH_8.2p1, OpenSSL 1.1.1e  17 Mar 2020
 debug1: private host key #0: ssh-rsa SHA256:+TP+gmo09NPfA5gVKyktIC30nDoCcrejnbo8G8Cp5Nk
 debug1: private host key #1: ecdsa-sha2-nistp256 SHA256:fVro3huxlPLu9BgLgeDvQo2C7rVnvqc69E2dLsuAnRg
@@ -356,7 +410,10 @@ Kako je `sshd` [daemon](https://en.wikipedia.org/wiki/Daemon_(computing)) (zbog 
 Prijavimo se iz drugog terminala korištenjem OpenSSH klijenta naredbom:
 
 ``` shell
-$ ssh -p 4022 localhost
+ssh -p 4022 localhost
+```
+
+``` shell-session
 Password:
 Environment:
   USER=korisnik
@@ -375,7 +432,10 @@ Environment:
 Sada možemo koristiti naredbe po želji, a odjavu vršimo naredbom `logout`:
 
 ``` shell
-$ logout
+logout
+```
+
+``` shell-session
 Connection to localhost closed.
 ```
 
@@ -416,7 +476,10 @@ Ovo su zaista tek neke od naredbi. Čitav popis podržanih konfiguracijskih nare
 Osim prijave pomoću zaporki, moguće je koristiti i korisničke ključeve. Već spomenutom naredbom `ssh-keygen` to ćemo napraviti na način:
 
 ``` shell
-$ ssh-keygen
+ssh-keygen
+```
+
+``` shell-session
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/korisnik/.ssh/id_rsa):
 Created directory '/home/korisnik/.ssh'.
@@ -443,7 +506,10 @@ The key's randomart image is:
 Zadana vrsta ključa je RSA, a druge vrstu ključa možemo odabrati parametrom `-t`. Specijalno, ECDSA i Ed25519 ključeve stvoriti naredbama:
 
 ``` shell
-$ ssh-keygen -t ecdsa
+ssh-keygen -t ecdsa
+```
+
+``` shell-session
 Generating public/private ecdsa key pair.
 Enter file in which to save the key (/home/korisnik/.ssh/id_ecdsa):
 Enter passphrase (empty for no passphrase):
@@ -465,7 +531,13 @@ The key's randomart image is:
 |                 |
 +----[SHA256]-----+
 
-$ ssh-keygen -t ed25519
+```
+
+``` shell
+ssh-keygen -t ed25519
+```
+
+``` shell-session
 Generating public/private ed25519 key pair.
 Enter file in which to save the key (/home/korisnik/.ssh/id_ed25519):
 Enter passphrase (empty for no passphrase):
@@ -491,7 +563,10 @@ The key's randomart image is:
 Provjerimo generirane ključeve:
 
 ``` shell
-$ ls -1 .ssh/
+ls -1 .ssh/
+```
+
+``` shell-session
 id_ecdsa
 id_ecdsa.pub
 id_ed25519
@@ -504,7 +579,10 @@ known_hosts
 Tajni ključevi su slično zapisani kao što smo navikli kod OpenSSL-a:
 
 ``` shell
-$ cat .ssh/id_ecdsa
+cat .ssh/id_ecdsa
+```
+
+``` shell-session
 -----BEGIN OPENSSH PRIVATE KEY-----
 b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAaAAAABNlY2RzYS
 1zaGEyLW5pc3RwMjU2AAAACG5pc3RwMjU2AAAAQQTXtLTu++vPBysDp1ysheqBrBSUWKzl
@@ -519,22 +597,28 @@ ZXJzAQ==
 dok su javni ključevi nešto drugačijeg zapisa gdje se redom odvojeni razmakom navode tip, sam ključ kodiran u zapisu Base64 i njegov naziv:
 
 ``` shell
-$ cat .ssh/id_ecdsa.pub
+cat .ssh/id_ecdsa.pub
+```
+
+``` shell-session
 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBNe0tO77688HKwOnXKyF6oGsFJRYrOUINkkhh6EUEwIxhQWA/GIaD7H9Sp18z9Ho50oi02boOoDEDJOMnQpqH6o= vedranmiletic@example.group.miletic.net
 ```
 
 Kako bismo omogućili prijavu korištenjem nekog para ključeva umjesto zaporke, dodat ćemo njegov javni ključ u `.ssh/authorized_keys`, primjerice za gornji ECDSA ključ to možemo učiniti ručnim kopiranjem i ljepljenjem u nekom uređivaču teksta ili na način:
 
 ``` shell
-$ touch .ssh/authorized_keys
-$ chmod go-rwx .ssh/authorized_keys
-$ cat .ssh/id_ecdsa.pub >> .ssh/authorized_keys
+touch .ssh/authorized_keys
+chmod go-rwx .ssh/authorized_keys
+cat .ssh/id_ecdsa.pub >> .ssh/authorized_keys
 ```
 
 Uočite da smo ograničili čitanje datoteke s autoriziranim ključevima samo na korisnika koji je vlasnik datoteke. Nakon ovog koraka prijava će proći bez unošenja zaporke:
 
 ``` shell
-$ ssh -p 4022 localhost
+ssh -p 4022 localhost
+```
+
+``` shell-session
 Environment:
 (...)
 ```

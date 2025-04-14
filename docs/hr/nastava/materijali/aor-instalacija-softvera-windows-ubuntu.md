@@ -38,15 +38,13 @@ Pokrenite Ubuntu, pričekajte instalaciju i postavite ime korisnika i lozinku.
 Pokrenite Windows Terminal pa [korištenjem dropdown izbornika u njemu otvorite Ubuntu](https://docs.microsoft.com/en-us/windows/terminal/panes) ili pokrenite Terminal na Ubuntuu. Upišite naredbu:
 
 ``` shell
-$ sudo apt update
-(...)
+sudo apt update
 ```
 
 i vašu zaporku kad vas upita. Zatim upišite naredbu:
 
 ``` shell
-$ sudo apt upgrade
-(...)
+sudo apt upgrade
 ```
 
 i prihvatite nadogradnje koje vam ponudi.
@@ -56,14 +54,13 @@ i prihvatite nadogradnje koje vam ponudi.
 Za instalaciju [Clanga](https://clang.llvm.org/) i [LLVM-a](https://llvm.org/) upišite naredbu:
 
 ``` shell
-$ sudo apt install build-essential clang llvm
-(...)
+sudo apt install build-essential clang llvm
 ```
 
 ### Stvaranje direktorija projekta
 
 ``` shell
-$ mkdir mojprojekt
+mkdir mojprojekt
 ```
 
 ## Visual Studio Code

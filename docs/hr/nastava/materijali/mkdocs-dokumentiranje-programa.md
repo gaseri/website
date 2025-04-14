@@ -11,14 +11,17 @@ author: Vedran Miletić
 Naredbom `mkdocs` s argumentom `new` možemo stvoriti početnu konfiguraciju (datoteka `mkdocs.yml`) i primjer dokumentacije (datoteka `docs/index.md`):
 
 ``` shell
-$ mkdocs new moja-dokumentacija
-$ cd moja-dokumentacija
+mkdocs new moja-dokumentacija
+cd moja-dokumentacija
 ```
 
 Prevođenje izvornog koda u HTML za pregled vršimo naredbom `mkdocs` s argumentom `serve`:
 
 ``` shell
-$ mkdocs serve
+mkdocs serve
+```
+
+``` shell-session
 INFO    -  Building documentation...
 INFO    -  Cleaning site directory
 INFO    -  Documentation built in 0.22 seconds
@@ -50,7 +53,7 @@ nav:
 Pritom smo naslov `'Lorem Markdownum'` stavili pod navodnike zbog razmaka u riječi. Nakon spremanja MkDocs će sam uočiti da su datoteke izmijenjene i ponovno izgraditi HTML datoteke. Kad smo zadovoljni rezultatom, izgradnju web sjedišta pokrenut ćemo naredbom:
 
 ``` shell
-$ mkdocs build
+mkdocs build
 ```
 
 što će stvoriti direktorij `site` i u njemu HTML datoteke `index.html` i `lorem/index.html`, zbog čega ćemo moći imati lijepe URL-e `/` i `/lorem/` (respektivno). Ova naredba ima nekoliko parametara čiji je opis moguće dobiti parametrom `--help`, a istaknut ćemo samo parametar `--clean` koji će isprazniti direktorij `site` prije izgradnje sjedišta, što je korisno za brisanje datoteka pod starim imenima nakon preimenovanja.

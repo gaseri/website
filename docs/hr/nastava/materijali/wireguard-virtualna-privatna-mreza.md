@@ -25,7 +25,7 @@ U nastavku koristimo Docker sliku [linuxserver/wireguard](https://hub.docker.com
 U većini slučajeva nam nije naročito važno koje će adrese koristiti Docker kontejneri. Međutim, kod WireGuarda nam to je važno zato što postoji poslužiteljska strana koja mora imati predvidivu adresu kako bi se klijentska strana mogla na nju povezati. Stvorimo mrežu koju ćemo koristiti:
 
 ``` shell
-$ docker network create wg-net --subnet=172.28.0.0/16
+docker network create wg-net --subnet=172.28.0.0/16
 ```
 
 U ovoj podmreži je 172.28.0.1 gateway prema domaćinskom računalu na kojem radi Docker daemon, a prvi pokrenuti kontejner (u našem slučaju WireGuard poslužitelj) dobit će adresu 172.28.0.2.
@@ -35,13 +35,13 @@ U ovoj podmreži je 172.28.0.1 gateway prema domaćinskom računalu na kojem rad
 Podešavanje WireGuard poslužitelja i klijenta započet ćemo stvaranjem direktorija za konfiguraciju:
 
 ``` shell
-$ mkdir -p wireguard/server/config
+mkdir -p wireguard/server/config
 ```
 
 Pokretanje poslužitelja izvršit ćemo naredbom `docker run`:
 
-``` yaml
-$ docker run -d \
+``` shell
+docker run -d \
   --name=wireguard-server \
   --network=wg-net \
   --cap-add=NET_ADMIN \
@@ -85,7 +85,10 @@ Ova naredba je dosta složena pa je razmotrimo dio po dio:
 Za provjera ispravnosti postupka razmotrimo zapisnike pokretanja poslužitelja naredbom `docker logs`:
 
 ``` shell
-$ docker logs wireguard-server
+docker logs wireguard-server
+```
+
+``` shell-session
 [s6-init] making user provided files available at /var/run/s6/etc...exited 0.
 [s6-init] ensuring user provided files have correct perms...exited 0.
 [fix-attrs.d] applying ownership & permissions fixes...
@@ -231,7 +234,10 @@ linux/amd64, go1.17.8, 4b597f8ž
 Poslužitelj se ispravno pokrenuo. Iako ih nećemo koristiti, možemo u ispisu uočiti QR kodove pojedinih klijenata u kojima je zapisana njihova konfiguracija za lakše korištenje od strane mobilnih uređaja. Mi ćemo koristiti obične konfiguracijske datoteke pa provjerimo jesu li stvorene:
 
 ``` shell
-$ ls -la wireguard/server/config
+ls -la wireguard/server/config
+```
+
+``` shell-session
 sveukupno 8
 drwxr-xr-x 1 vedranm vedranm 186 ožu  28 12:28 .
 drwxr-xr-x 1 vedranm vedranm  12 ožu  28 12:27 ..
@@ -272,8 +278,8 @@ AllowedIPs = 10.31.31.3/32
 Stvorimo direktorij, a zatim u njega kopirajmo konfiguraciju prvog klijenta koju je poslužitelj stvorio:
 
 ``` shell
-$ mkdir -p wireguard/peer1/config
-$ cp wireguard/server/config/peer1/peer1.conf wireguard/peer1/config/wg0.conf
+mkdir -p wireguard/peer1/config
+cp wireguard/server/config/peer1/peer1.conf wireguard/peer1/config/wg0.conf
 ```
 
 Datoteka `wireguard/peer1/config/wg0.conf` ima sadržaj:
@@ -296,7 +302,10 @@ Uočimo kako je klijentu druga strana poslužitelj na adresi 172.28.0.2 i vratim
 Pokrenimo klijent naredbom `docker run`:
 
 ``` shell
-$ docker run -d \
+docker run -d \
+```
+
+``` shell-session
   --name=wireguard-peer1 \
   --network my-net \
   --cap-add=NET_ADMIN \
@@ -317,7 +326,10 @@ $ docker run -d \
 Ponovno možemo iskoristiti naredbu `docker logs` da se uvjerimo kako je pokretanje bilo uspješno:
 
 ``` shell
-$ docker logs wireguard-server
+docker logs wireguard-server
+```
+
+``` shell-session
 [s6-init] making user provided files available at /var/run/s6/etc...exited 0.
 [s6-init] ensuring user provided files have correct perms...exited 0.
 [fix-attrs.d] applying ownership & permissions fixes...

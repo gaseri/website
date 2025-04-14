@@ -96,8 +96,8 @@ Više detalja o mogućnostima jezika nalazi se u [dijelu Attributes u službenoj
 Spremimo li zapis grafa u datoteku `struktura-sustava.dot`, pretvorbu u SVG i PNG izvodimo naredbama:
 
 ``` shell
-$ dot -Tsvg -o struktura-sustava.svg struktura-sustava.dot
-$ dot -Tpng -o struktura-sustava.png struktura-sustava.dot
+dot -Tsvg -o struktura-sustava.svg struktura-sustava.dot
+dot -Tpng -o struktura-sustava.png struktura-sustava.dot
 ```
 
 Više detalja o korištenju naredbenog retka moguće je pronaći u [dijelu Command Line u službenoj dokumentaciji](https://graphviz.org/doc/info/command.html), a o podržanim izlaznim formatima u [dijelu Output Formats](https://graphviz.org/docs/outputs/).

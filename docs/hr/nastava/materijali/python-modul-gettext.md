@@ -43,8 +43,8 @@ author: Vedran Miletić
 - naredba ljuske `xgettext` parsira programski kod u brojnim programskim jezicima (uključujući Python) i generira [PO datoteku](https://www.gnu.org/software/gettext/manual/html_node/PO-Files.html) `messages.po`, primjerice:
 
     ``` shell
-    $ xgettext kalendar.py
-    $ cat messages.po
+    xgettext kalendar.py
+    cat messages.po
     ```
 
     ``` po
@@ -84,8 +84,11 @@ author: Vedran Miletić
 - naredba ljuske `msgfmt` omogućuje prevođenje PO datoteka u MO datoteke koje se mogu koristiti u programima i nisu namijenjene da ih ljudi čitaju i uređuju
 
     ``` shell
-    $ msgfmt messages.po
-    $ cat messages.mo
+    msgfmt messages.po
+    cat messages.mo
+    ```
+
+    ``` shell-session
     ,<PQb|Print a calendarProject-Id-Version: PACKAGE VERSION
     Report-Msgid-Bugs-To:
     PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE

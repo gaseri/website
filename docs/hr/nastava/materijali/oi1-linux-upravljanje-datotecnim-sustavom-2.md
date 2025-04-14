@@ -17,8 +17,8 @@ author: Luka Vretenar
     - ispisujemo sadržaj direktorija filtrirajući samo datoteke koje završavaju na `.txt`
 
     ``` shell
-    $ ls *.txt
-    $ rm *.txt
+    ls *.txt
+    rm *.txt
     ```
 
 - Takvi uzorci se nazivaju `globs` i sastoje se od teksta po kojem filtriramo i simbola:
@@ -37,7 +37,7 @@ author: Luka Vretenar
 - U najjednostavnijem obliku, pretražujemo po nazivu datoteke `naziv` u nekom direktoriju `direktorij` (`-name` je dio naredbe):
 
     ``` shell
-    $ find direktorij -name naziv
+    find direktorij -name naziv
     ```
 
 - Postoje različiti argumenti sa kojima možemo specificirati pretragu po veličini datoteke, vremenu izmjene itd. Za opise pojedinih argumenata konzultirati dokumentaciju naredbe.
@@ -101,7 +101,7 @@ author: Luka Vretenar
     - naziv datoteke ili direktorija čije pravo pristupa izmjenjujemo
 
     ``` shell
-    $ chmod XYZ datoteka
+    chmod XYZ datoteka
     ```
 
 - Modifikator `XYZ` se sastoji od tri dijela:
@@ -111,7 +111,7 @@ author: Luka Vretenar
     - `Z` -- pravo pristupa koje izmjenjujemo, `r`, `w` ili `x`
 
     ``` shell
-    $ chmod o-r primjer.txt
+    chmod o-r primjer.txt
     ```
 
 !!! example "Zadatak"
@@ -128,7 +128,7 @@ author: Luka Vretenar
 - Pokrećemo izmjenu ili izradu nove datoteke pozivom alata `nano` na slijedeći način:
 
     ``` shell
-    $ nano datoteka.txt
+    nano datoteka.txt
     ```
 
 - Nakon što smo završili unos ili izmjenu, datoteku možemo spremiti kombinacijom tipki ++control+x++ te pratiti upite na dnu ekrana.
@@ -149,8 +149,8 @@ author: Luka Vretenar
     - kao parametar `-n` se može zadati da ispisuje `n` brojeva linija
 
     ``` shell
-    $ head datoteka.txt
-    $ head -2 datoteka.txt
+    head datoteka.txt
+    head -2 datoteka.txt
     ```
 
 - Pregled `n` linija sa kraja tekstualne datoteke sa `tail`:
@@ -188,7 +188,7 @@ author: Luka Vretenar
     - datoteku koju pretražujemo
 
     ``` shell
-    $ grep "izraz" datoteka.txt
+    grep "izraz" datoteka.txt
     ```
 
 - Pretraga je osjetljiva na mala i velika slova, u slučaju da želimo zanemariti veličinu slova potrebno je kao argument dodati `-i`.
@@ -208,8 +208,8 @@ author: Luka Vretenar
     - `|`, preusmjeri izlaz jedne naredbe na ulaz druge
 
     ``` shell
-    $ sort datoteka.txt | head -2
-    $ cat dat1.txt dat2.txt > out.txt
+    sort datoteka.txt | head -2
+    cat dat1.txt dat2.txt > out.txt
     ```
 
 !!! example "Zadatak"

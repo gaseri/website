@@ -16,7 +16,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 - `grep`  služi za izdvajanje linija prema određenom uzorku iz tekstualnih datoteka, **primjer:**
 
     ``` shell
-    $ grep "x" datoteka.txt # izdvaja linije koje sadrže slovo x u tekstualnoj datoteci datoteka.txt
+    grep "x" datoteka.txt # izdvaja linije koje sadrže slovo x u tekstualnoj datoteci datoteka.txt
     ```
 
     - ime dolazi od naredbe `g/re/p` (global / regular expression / print) tradicionalnog Unix editora `ed`
@@ -121,7 +121,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 - `sed` za zamjenu (`s`); **primjer:**
 
     ``` shell
-    $ sed 's/dan/noć/' text1.txt # mijenja slijed dan za noć u datoteci text1.txt
+    sed 's/dan/noć/' text1.txt # mijenja slijed dan za noć u datoteci text1.txt
     ```
 
     - koristi se zajedno sa regularnim izrazima, kao i kod naredbe `grep`, za zamjenu traženog uzorka, zadanim uzorkom
@@ -130,7 +130,7 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 - `sed` za transformaciju (`y`); **primjer:**
 
     ``` shell
-    $ sed 'y/aeiou/AEIOU/' file1.txt # zamjenjuje svako od navedenih malih slova s odgovarajućim velikim slovom
+    sed 'y/aeiou/AEIOU/' file1.txt # zamjenjuje svako od navedenih malih slova s odgovarajućim velikim slovom
     ```
 
     - svaki se traženi znak zamjenjuje odgovarajućim zadanim znakom
@@ -299,7 +299,7 @@ Najčešće korišteni parametri naredbe `sed` su:
 - `tr` mijenja sve pojave jednog izraza ili znaka u neki drugi; **primjer:**
 
     ``` shell
-    $ cat file.txt | tr a-mA-Mn-zN-Z n-ZN-Za-mA-M # mijenja sva slova iz prvog intervala u odgovarajuća slova u drugom intervalu (šifrira tekst jednostavnom šifrom)
+    cat file.txt | tr a-mA-Mn-zN-Z n-ZN-Za-mA-M # mijenja sva slova iz prvog intervala u odgovarajuća slova u drugom intervalu (šifrira tekst jednostavnom šifrom)
     ```
 
     - primjerice, može mijenjati sva velika slova u mala i obrnuto, slaže riječi u stupac i sl.

@@ -89,16 +89,16 @@ service postgresql start
 Nakon instalacije, incijalno podešavanje vršimo naredbom
 
 ``` shell
-$ sudo -i -u postgresql
-$ /usr/lib/postgresql/10/bin/initdb -D /var/lib/postgresql
-$ /usr/lib/postgresql/10/bin/postmaster -D /var/lib/postgresql >logfile 2>&1 &
+sudo -i -u postgresql
+/usr/lib/postgresql/10/bin/initdb -D /var/lib/postgresql
+/usr/lib/postgresql/10/bin/postmaster -D /var/lib/postgresql >logfile 2>&1 &
 ```
 
 Naredbama `createdb` i `dropdb` možemo kreirati i brisati baze. Ukoliko je sve prošlo bez greške, moguće je stvoriti probnu bazu i ući u nju naredbama
 
 ``` shell
-$ createdb testnabaza
-$ psql testnabaza
+createdb testnabaza
+psql testnabaza
 ```
 
 Ukoliko je logiranje na bazu bilo uspješno, trebalo bi se prikazati:
@@ -161,13 +161,13 @@ PostgreSQLov program koji služi pokretanju servera naziva se postmaster. On mor
 gdje se nalaze potrebni podaci. Naredba za pokretanje je:
 
 ``` shell
-$ postmaster -D /usr/local/pgsql/data
+postmaster -D /usr/local/pgsql/data
 ```
 
 Ukoloko želimo da radi u pozadini koristimo naredbu:
 
 ``` shell
-$ postmaster -D /usr/local/pgsql/data >logfile 2>&1 &
+postmaster -D /usr/local/pgsql/data >logfile 2>&1 &
 ```
 
 Postoji mogućnosti javljanja grešaka prilikom pokretanja servera te prilikom spajanja klijenata.

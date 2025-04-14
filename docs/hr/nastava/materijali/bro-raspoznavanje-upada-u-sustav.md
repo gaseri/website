@@ -66,13 +66,13 @@ odnosno za build sa sourcea:
 Navedene biblioteke i alate instaliramo naredbom:
 
 ``` shell
-$ sudo yum install cmake make gcc gcc-c++ flex bison libpcap-devel openssl-devel python-devel swig zlib-devel file-devel
+sudo yum install cmake make gcc gcc-c++ flex bison libpcap-devel openssl-devel python-devel swig zlib-devel file-devel
 ```
 
 za RPM/RedHat-bazirani Linux odnosno naredbom
 
 ``` shell
-$ sudo apt-get install cmake make gcc g++ flex bison libpcap-dev libssl-dev python-dev swig zlib1g-dev libmagic-dev
+sudo apt-get install cmake make gcc g++ flex bison libpcap-dev libssl-dev python-dev swig zlib1g-dev libmagic-dev
 ```
 
 za DEB/Debian-bazirani Linux.
@@ -80,10 +80,10 @@ za DEB/Debian-bazirani Linux.
 Bro je moguće preuzeti u obliku unaprijed kompajliranog paketa ili u obliku [izvornog koda](https://zeek.org/get-zeek/). Naredbe za instalaciju paketa iz izvornog koda ili sa git repozitorija su sljedeće:
 
 ``` shell
-$ git clone --recursive https://github.com/zeek/zeek.git
-$ ./configure
-$ make
-$ make install
+git clone --recursive https://github.com/zeek/zeek.git
+./configure
+make
+make install
 ```
 
 Nakon instalacije, potrebno je postaviti putanju do Bro-a:
@@ -161,7 +161,7 @@ Bro sažima svaku TCP i UDP konekciju u jednu liniju u datoteku `conn.log`. Obzi
 Sve konekcije koje traju dulje od jedne minute:
 
 ``` shell
-$ awk 'NR > 4 && $9 > 60' conn.log
+awk 'NR > 4 && $9 > 60' conn.log
 ```
 
 !!! quote "ToDo"
@@ -170,7 +170,10 @@ $ awk 'NR > 4 && $9 > 60' conn.log
 IP adrese svih web servera koji šalju više od 1 MB podataka klijentu:
 
 ``` shell
-$ bro-cut service resp_bytes id.resp_h < conn.log | awk '$1 == "http" && $2 > 1000000 { print $3 }' | sort -u
+bro-cut service resp_bytes id.resp_h < conn.log | awk '$1 == "http" && $2 > 1000000 { print $3 }' | sort -u
+```
+
+``` shell-session
 130.59.10.36
 137.226.34.227
 151.207.243.129
@@ -190,7 +193,7 @@ Prvo izvlačimo relevantna polja iz datoteke `conn.log`, a to su `id.resp_h`, `s
 Postoje li web serveri na nestandardnim vratima (80, 8080)?
 
 ``` shell
-$ bro-cut service id.resp_p id.resp_h < conn.log | awk '$1 == "http" && ! ($2 == 80 || $2 == 8080) { print $3 }' | sort -u
+bro-cut service id.resp_p id.resp_h < conn.log | awk '$1 == "http" && ! ($2 == 80 || $2 == 8080) { print $3 }' | sort -u
 ```
 
 Ukoliko je izlaz prazan, Bro nije pronašao web servere na nestandardnim vratima.
@@ -198,7 +201,7 @@ Ukoliko je izlaz prazan, Bro nije pronašao web servere na nestandardnim vratima
 Korisnici na mreži koji stvaraju najviše prometa:
 
 ``` shell
-$ bro-cut id.orig_h orig_bytes < conn.log \
+bro-cut id.orig_h orig_bytes < conn.log \
   | sort \
   | awk '{ if (host != $1) {
     if (size != 0)
@@ -214,7 +217,9 @@ $ bro-cut id.orig_h orig_bytes < conn.log \
   }' \
   | sort -k 2 \
   | head -n 10
+```
 
+``` shell-session
 192.168.1.6 14100
 192.168.1.7 2406
 fe80::5dd:9f97:fe64:5cf2 2952
@@ -227,7 +232,10 @@ fe80::2ccf:1f9a:246:fbea 660
 Stranice prema kojima je poslan najveći broj zahtjeva:
 
 ``` shell
-$ bro-cut host < http.log | sort | uniq -c | sort -n | tail -n 3
+bro-cut host < http.log | sort | uniq -c | sort -n | tail -n 3
+```
+
+``` shell-session
 231 safebrowsing-cache.google.com
 259 scores.espn.go.com
 297 download.windowsupdate.com
@@ -260,7 +268,10 @@ HTTP protokol sadrži vlastite mehanizme za autentifikaciju korisnika:
 [Unaprijed definirana HTTP skripta Bro-a](https://old.zeek.org/current/solutions/incident-response/index.html) provjerava postojanje Authorization zaglavlja u HTTP zahtjevima, dekodira zaglavlje Basic autentifikacije i kopira vjerodajnice u datoteci `http.log` na mjesto polja username i password. Slijedi analiza prometa uhvaćenog alatom Wireshark s ciljem otkrivanja web servera koji koristi slabu autentifikaciju.
 
 ``` shell
-$ bro-cut id.orig_h id.resp_h username password < http.log | awk '$3 != "-"'
+bro-cut id.orig_h id.resp_h username password < http.log | awk '$3 != "-"'
+```
+
+``` shell-session
 192.168.121.175 192.168.121.176 hbdairye4 -
 192.168.121.175 192.168.121.176 hbdairye4 -
 ```
@@ -268,13 +279,16 @@ $ bro-cut id.orig_h id.resp_h username password < http.log | awk '$3 != "-"'
 Web server na adresi 192.168.121.176 koristi slabu autentifikaciju (korisničko ime je `hbdairye4`). Bro ne kopira lozinke u datoteku `http.log` sve dok to ne omogućimo naredbom:
 
 ``` shell
-$ bro -r illauth.pcap "HTTP::default_capture_password=T"
+bro -r illauth.pcap "HTTP::default_capture_password=T"
 ```
 
 Ponovno pokrećemo naredbu za "izvlačenje" vjerodajnica:
 
 ``` shell
-$ bro-cut id.orig_h id.resp_h username password < http.log | awk '$3 != "-"'
+bro-cut id.orig_h id.resp_h username password < http.log | awk '$3 != "-"'
+```
+
+``` shell-session
 192.168.121.175 192.168.121.176 hbdairye4 cheesecake
 192.168.121.175 192.168.121.176 hbdairye4 cheesecake
 ```

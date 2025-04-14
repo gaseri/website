@@ -14,7 +14,10 @@ Modul [mod_ssl](https://httpd.apache.org/docs/2.4/mod/mod_ssl.html) implementira
 Stvorimo samopotpisani certifikat `server.crt` koji traje 30 dana i njegov pripadni tajni ključ `server.key` (takva imena datoteka će nam trebati kasnije):
 
 ``` shell
-$ openssl req -x509 -nodes -days 30 -newkey rsa:4096 -keyout server.key -out server.crt
+openssl req -x509 -nodes -days 30 -newkey rsa:4096 -keyout server.key -out server.crt
+```
+
+``` shell-session
 Generating a RSA private key
 ................................................................................................................................................................++++
 ......................................................................................................................................................................................................++++
@@ -63,7 +66,10 @@ Modul mod_ssl za svoj rad zahtijeva modul [mod_socache_shmcb](https://httpd.apac
 Izgradimo sliku i pokrenimo kontejner:
 
 ``` shell
-$ docker build -t "my-httpd:2.4-4" .
+docker build -t "my-httpd:2.4-4" .
+```
+
+``` shell-session
 Sending build context to Docker daemon  32.26kB
 Step 1/5 : FROM httpd:2.4
 ---> b2c2ab6dcf2e
@@ -77,7 +83,13 @@ Step 5/5 : COPY server.crt /usr/local/apache2/conf
 ---> d5b1f004015f
 Successfully built d5b1f004015f
 Successfully tagged my-httpd:2.4-4
-$ docker run my-httpd:2.4-4
+```
+
+``` shell
+docker run my-httpd:2.4-4
+```
+
+``` shell-session
 [Sun May 10 17:02:53.475776 2020] [ssl:warn] [pid 1:tid 140698297431168] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
 [Sun May 10 17:02:53.476093 2020] [ssl:warn] [pid 1:tid 140698297431168] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
 [Sun May 10 17:02:53.478932 2020] [ssl:warn] [pid 1:tid 140698297431168] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
@@ -89,7 +101,10 @@ $ docker run my-httpd:2.4-4
 Ukoliko se kod izdavanja certifikata pod `Common Name` unese `apache-primjer.rm.miletic.net`, upozorenja `server certificate does NOT include an ID which matches the server name` ne bi trebalo biti. Ovo drugo upozorenje, `server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)`, Apache daje zato što je certifikat samopotpisan. Zbog toga kod testiranja naredba `curl` treba parametar `-k` i imamo:
 
 ``` shell
-$ curl -k https://172.17.0.2/
+curl -k https://172.17.0.2/
+```
+
+``` shell-session
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
 <html><head>
 <title>403 Forbidden</title>
@@ -111,7 +126,7 @@ Vidimo da HTTPS poslužitelj odgovara na upit, ali ne sadržajem datoteke `index
 Morat ćemo konfigurirati `DocumentRoot` i za HTTPS poslužitelj. Dohvatimo konfiguracijsku datoteku:
 
 ``` shell
-$ docker run --rm httpd:2.4 cat /usr/local/apache2/conf/extra/httpd-ssl.conf > my-httpd-ssl.conf
+docker run --rm httpd:2.4 cat /usr/local/apache2/conf/extra/httpd-ssl.conf > my-httpd-ssl.conf
 ```
 
 !!! quote "ToDo"
@@ -138,7 +153,10 @@ Prve dvije vrste algoritma se u nekim podjelama šifrirarnika navode zajedno pa 
 Naredbom `openssl ciphers` možemo provjeriti o kojim se točno šifrarnicima radi:
 
 ``` shell
-$ openssl ciphers -v 'HIGH:MEDIUM:!MD5:!RC4:!3DES'
+openssl ciphers -v 'HIGH:MEDIUM:!MD5:!RC4:!3DES'
+```
+
+``` shell-session
 TLS_AES_256_GCM_SHA384  TLSv1.3 Kx=any      Au=any  Enc=AESGCM(256) Mac=AEAD
 TLS_CHACHA20_POLY1305_SHA256 TLSv1.3 Kx=any      Au=any  Enc=CHACHA20/POLY1305(256) Mac=AEAD
 TLS_AES_128_GCM_SHA256  TLSv1.3 Kx=any      Au=any  Enc=AESGCM(128) Mac=AEAD
@@ -190,7 +208,10 @@ COPY ./my-httpd-ssl.conf /usr/local/apache2/conf/extra/httpd-ssl.conf
 Izgradimo sliku i pokrenimo Docker kontejner:
 
 ``` shell
-$ docker build -t "my-httpd:2.4-5" .
+docker build -t "my-httpd:2.4-5" .
+```
+
+``` shell-session
 Sending build context to Docker daemon  72.19kB
 Step 1/6 : FROM httpd:2.4
 ---> b2c2ab6dcf2e
@@ -208,7 +229,13 @@ Step 6/6 : COPY ./my-httpd-ssl.conf /usr/local/apache2/conf/extra/httpd-ssl.conf
 ---> 0514261bb6fe
 Successfully built 0514261bb6fe
 Successfully tagged my-httpd:2.4-5
-$ docker run my-httpd:2.4-5
+```
+
+``` shell
+docker run my-httpd:2.4-5
+```
+
+``` shell-session
 [Sun May 10 18:57:41.346009 2020] [ssl:warn] [pid 1:tid 139678405715072] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
 [Sun May 10 18:57:41.346345 2020] [ssl:warn] [pid 1:tid 139678405715072] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
 [Sun May 10 18:57:41.349298 2020] [ssl:warn] [pid 1:tid 139678405715072] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
@@ -220,7 +247,10 @@ $ docker run my-httpd:2.4-5
 Uvjerimo se da sada radi ispravno:
 
 ``` shell
-$ curl -k https://172.17.0.2/
+curl -k https://172.17.0.2/
+```
+
+``` shell-session
 <html><body><h1>Radi!</h1></body></html>
 ```
 
@@ -232,7 +262,10 @@ $ curl -k https://172.17.0.2/
 Ranije prikazani način dohvaćanja domaćina kojeg želimo navođenjem njegovog imena u zaglavlju `Host` neće raditi kad se koristi HTTPS:
 
 ``` shell
-$ curl --header "Host: www.math.uniri.hr" https://www.biotech.uniri.hr/hr/
+curl --header "Host: www.math.uniri.hr" https://www.biotech.uniri.hr/hr/
+```
+
+``` shell-session
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
 <html><head>
 <title>400 Bad Request</title>
@@ -282,12 +315,20 @@ Razlog je da više HTTPS poslužitelja na jednoj IP adresi zahtijeva [Server Nam
 Vidimo da opet imamo zadani blok i onda po jedan blok za svako web sjedište. Ovi blokovi imaju dodatne konfiguracijske naredbe `SSLCertificateFile` i `SSLCertificateKeyFile`. Certifikate i privatne ključeve ćemo kao i ranije generirati OpenSSL-om i paziti da pod `Common Name` navedemo imena domena:
 
 ``` shell
-$ openssl req -x509 -nodes -days 30 -newkey rsa:4096 -keyout epimetej.key -out epimetej.crt
+openssl req -x509 -nodes -days 30 -newkey rsa:4096 -keyout epimetej.key -out epimetej.crt
+```
+
+``` shell-session
 (...)
 Common Name (e.g. server FQDN or YOUR name) []:epimetej.rm.miletic.net
 (...)
+```
 
-$ openssl req -x509 -nodes -days 30 -newkey rsa:4096 -keyout prometej.key -out prometej.crt
+``` shell
+openssl req -x509 -nodes -days 30 -newkey rsa:4096 -keyout prometej.key -out prometej.crt
+```
+
+``` shell-session
 (...)
 Common Name (e.g. server FQDN or YOUR name) []:prometej.rm.miletic.net
 (...)
@@ -312,7 +353,10 @@ COPY prometej.key /usr/local/apache2/conf
 Izgradit ćemo sliku i pokrenut Docker kontejner:
 
 ``` shell
-$ docker build -t "my-httpd:2.4-6" .
+docker build -t "my-httpd:2.4-6" .
+```
+
+``` shell-session
 Sending build context to Docker daemon   72.7kB
 Step 1/11 : FROM httpd:2.4
 ---> b2c2ab6dcf2e
@@ -342,8 +386,13 @@ Step 10/11 : COPY prometej.crt /usr/local/apache2/conf
 Step 11/11 : COPY prometej.key /usr/local/apache2/conf
 ---> 3b4c03a5e682
 Successfully built 3b4c03a5e682
+```
 
-$ docker run my-httpd:2.4-6
+``` shell
+docker run my-httpd:2.4-6
+```
+
+``` shell-session
 [Sun May 10 22:49:09.438791 2020] [ssl:warn] [pid 1:tid 140677310489728] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
 [Sun May 10 22:49:09.439105 2020] [ssl:warn] [pid 1:tid 140677310489728] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
 [Sun May 10 22:49:09.439521 2020] [ssl:warn] [pid 1:tid 140677310489728] AH01906: prometej.rm.miletic.net:80:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
@@ -359,17 +408,35 @@ $ docker run my-httpd:2.4-6
 Sad možemo cURL-om isprobati da virtualni domaćini rade ispravno kad se koristi HTTPS (zbog SNI-ja nije dovoljno koristiti `--header Host: ...` pa koristimo `--resolve`):
 
 ``` shell
-$ curl -k --resolve prometej.rm.miletic.net:443:172.17.0.2 https://prometej.rm.miletic.net/
+curl -k --resolve prometej.rm.miletic.net:443:172.17.0.2 https://prometej.rm.miletic.net/
+```
+
+``` shell-session
 <html><body><h1>Prometej</h1></body></html>
-$ curl -k --resolve epimetej.rm.miletic.net:443:172.17.0.2 https://epimetej.rm.miletic.net/
+```
+
+``` shell
+curl -k --resolve epimetej.rm.miletic.net:443:172.17.0.2 https://epimetej.rm.miletic.net/
+```
+
+``` shell-session
 <html><body><h1>Epimetej</h1></body></html>
 ```
 
 Mi ovdje cURL-u parametrom `--resolve` kažemo da preskoči DNS pretragu i zatraži URL-ove `https://prometej.rm.miletic.net/` i `https://epimetej.rm.miletic.net/` na adresi 172.17.0.2 i vratima 443. Uvjerimo se da ostali zahtjevi završavaju na zadanom virtualnom domaćinu:
 
 ``` shell
-$ curl -k --resolve atlas.rm.miletic.net:443:172.17.0.2 https://atlas.rm.miletic.net/
+curl -k --resolve atlas.rm.miletic.net:443:172.17.0.2 https://atlas.rm.miletic.net/
+```
+
+``` shell-session
 <html><body><h1>Radi!</h1></body></html>
-$ curl -k https://172.17.0.2/
+```
+
+``` shell
+curl -k https://172.17.0.2/
+```
+
+``` shell-session
 <html><body><h1>Radi!</h1></body></html>
 ```

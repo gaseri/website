@@ -37,7 +37,10 @@ Spremimo taj kod u datoteku `kernel.cl`.
 Prvo se uvjerimo da imamo Clang instaliran i provjerimo njegovu verziju.
 
 ``` shell
-$ clang --version
+clang --version
+```
+
+``` shell-session
 Debian clang version 11.0.1-2
 Target: x86_64-pc-linux-gnu
 Thread model: posix
@@ -51,7 +54,7 @@ U nastavku nas zanima proces prevođenja zrna, a ne njegovo izvođenje. Clang mo
 Pokretanjem naredbe
 
 ``` shell
-$ clang -S kernel.cl
+clang -S kernel.cl
 ```
 
 dobivamo datoteku `kernel.s` sadržaja:
@@ -99,7 +102,7 @@ multiply_by_two:                        # @multiply_by_two
 Želimo li neku drugu arhitekturu, npr. MIPS, možemo je navesti parametrom `-target`:
 
 ``` shell
-$ clang -target mips -S kernel.cl
+clang -target mips -S kernel.cl
 ```
 
 Datoteka `kernel.s` je sada sadržaja:
@@ -169,7 +172,7 @@ Prevođenjem u asemblerski kod za grafičke procesore bavit ćemo se malo kasnij
 Clang možemo zaustaviti i prije nego proizvede asemblerski kod, odnosno reći mu da izvede samo prevođenje koda u [LLVM-ovu srednju reprezentaciju](https://llvm.org/docs/LangRef.html) dodavanjem parametra `-emit-llvm`.
 
 ``` shell
-$ clang -S -emit-llvm kernel.cl
+clang -S -emit-llvm kernel.cl
 ```
 
 Dobivamo datoteku `kernel.ll` sadržaja:

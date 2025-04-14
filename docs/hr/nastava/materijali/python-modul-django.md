@@ -16,29 +16,25 @@ Primjeri web sjedišta u Djangu:
 Stvaranje direktorija gdje ćemo stvoriti naš projekt:
 
 ``` shell
-$ mkdir moja_prva_stranica
-(...)
+mkdir moja_prva_stranica
 ```
 
 Zatim idemo u taj direktorij naredbom:
 
 ``` shell
-$ cd moja_prva_stranica
-(...)
+cd moja_prva_stranica
 ```
 
 U njemu stvaramo Django projekt naredbom:
 
 ``` shell
-$ django-admin startproject mysite
-(...)
+django-admin startproject mysite
 ```
 
 Ostale raspoložive naredbe možemo vidjeti s komandom `django-admin`, a za detaljnije o pojedinim naredbama koristite `django-admin help`, npr. za naredbu `startproject` na način:
 
 ``` shell
-$ django-admin help startproject
-(...)
+django-admin help startproject
 ```
 
 Naredba `startproject` kreira novi direktorij naziva kojega smo proslijedili, u našem slučaju to je `mysite`.
@@ -46,7 +42,10 @@ Naredba `startproject` kreira novi direktorij naziva kojega smo proslijedili, u 
 Prebacimo se u direktorij `mysite` pomoću naredbe `cd mysite` i ispišimo sadržaj direktorija u obiliku stabla s naredbom `tree mysite`, možete koristiti i naredbu `ls mysite`.
 
 ``` shell
-$ tree mysite
+tree mysite
+```
+
+``` shell-session
 mysite
 ├── manage.py
 └── mysite
@@ -103,8 +102,7 @@ Pokrenimo sada naš lokalni poslužitelj (*eng.server*) na kojemu ćemo razvijat
 U zasebnom terminalu za pokretanje poslužitelja koristi se naredba:
 
 ``` shell
-$ ./manage.py runserver
-(...)
+./manage.py runserver
 ```
 
 !!! example "Zadatak"
@@ -261,7 +259,10 @@ Run './manage.py migrate' to apply them`.
 Unesite naredbu kako biste pripremili migraciju.
 
 ``` shell
-$ ./manage.py makemigrations
+./manage.py makemigrations
+```
+
+``` shell-session
 No changes detected
 ```
 
@@ -290,7 +291,10 @@ INSTALLED_APPS = [
 Unesite ponovo naredbu `./manage.py makemigrations` da biste pripremili migraciju.
 
 ``` shell
-$ ./manage.py makemigrations
+./manage.py makemigrations
+```
+
+``` shell-session
 Migrations for 'main':
   main\migrations\0001_initial.py
     - Create model Predmet
@@ -306,7 +310,10 @@ Nakon svakog rada sa modelima, bile to izmjene ili stvaranje novih modela potreb
 Pogledajmo output u terminalu koji nam vraća naredba `./manage.py migrate`:
 
 ``` shell
-$ ./manage.py migrate
+./manage.py migrate
+```
+
+``` shell-session
 Operations to perform:
   Apply all migrations: admin, auth, contenttypes, sessions
 Running migrations:
@@ -372,7 +379,10 @@ for p in Predmet.objects.all():
 Administratora kreiramo naredbom:
 
 ``` shell
-$ ./manage.py createsuperuser
+./manage.py createsuperuser
+```
+
+``` shell-session
 Username (leave blank to use 'korisnik'):
 Email address:
 Password:
@@ -561,7 +571,10 @@ Korištenje naredbe `./manage.py`:
 Naredba za pokretanje Pythonove ljuske specifične za Django:
 
 ``` shell
-$ ./manage.py shell
+./manage.py shell
+```
+
+``` shell-session
 >>>
 ```
 
@@ -694,15 +707,13 @@ Potrebno je prvo stvoriti novi projekt i unutar njega aplikaciju koju ćemo pove
 Za kreiranje projekta koristi se naredba:
 
 ``` shell
-$ django-admin startproject <project_name>
-(...)
+django-admin startproject <project_name>
 ```
 
 Za kreiranje aplikacije unutar projekta koristi se naredba:
 
 ``` shell
-$ django-admin startapp <app_name>
-(...)
+django-admin startapp <app_name>
 ```
 
 Nakon što su projekt i aplikacija unutar njega kreirani, potrebno ih je povezati. Ovo se radi unutar datoteka `urls.py` koja se nalazi u projektnom direktoriju.
@@ -969,10 +980,8 @@ class Book(models.Model):
 Nakon što je model kreiran unutar `vj5/main/models.py` potrebno je provesti migraciju. Naredbe za migraciju su:
 
 ``` shell
-$ ./manage.py makemigrations
-(...)
-$ ./manage.py migrate
-(...)
+./manage.py makemigrations
+./manage.py migrate
 ```
 
 Napravite migraciju i zatim pokrenite server.
@@ -1131,8 +1140,7 @@ Kreirani model potrebno je popuniti podacima, za to će se koristiti naredba `./
 Instalacija potrebnih Python paketa:
 
 ``` shell
-$ pip3 install factory_boy
-(...)
+pip3 install factory_boy
 ```
 
 Kada je instaliran [paket factory_boy](https://pypi.org/project/factory-boy/), potrebno je kreirati klase koje će automatski popunjavati bazu sa tzv. *dummy data*, odnostno nasumično generiranim podacima koji će nam pojednostaviti proces popunjavanja baze nad kojom želimo izvršavati upite. Detaljnije o njegovoj funkcionalnosti možete pronaći u [službenoj dokumentaciji](https://factoryboy.readthedocs.io/).
@@ -1176,8 +1184,7 @@ class BookFactory(DjangoModelFactory):
     Nakon što su klase definirane unutar `factory.py`, isprobajte njihovu funkcionalnost. Prije pokretanja ljuske primjenite migraciju na bazu.
 
 ``` shell
-$ ./manage.py shell
-(...)
+./manage.py shell
 ```
 
 ``` python
@@ -1216,8 +1223,7 @@ Kada je kreiran i testiran `factory.py`, slijedi kreiranje naredbe koja će se p
 Za početak porenite naredbu:
 
 ``` shell
-$ ./manage.py
-(...)
+./manage.py
 ```
 
 Izlistao nam se trenutni popis opcija koje možemo izvršavati.
@@ -1225,16 +1231,14 @@ Izlistao nam se trenutni popis opcija koje možemo izvršavati.
 Kreirajte direktorij `commands`, unutar kojeg će se nalaziti skripta. Zatim se pozicionirajte u njega.
 
 ``` shell
-$ mkdir main/management/commands
-$ cd main/management/commands
-(...)
+mkdir main/management/commands
+cd main/management/commands
 ```
 
 A zatim, unutar direktorija `commands` kreirajte `setup_test_data.py`.
 
 ``` shell
-$ touch setup_test_data.py
-(...)
+touch setup_test_data.py
 ```
 
 Otvorite kreirani `setup_test_data.py` unutar kojeg će se kreirati vlastita upravljačka naredba ([detaljnije o upravljačkim naredbama koje su kreirane od strane korisnika](https://simpleisbetterthancomplex.com/tutorial/2018/08/27/how-to-create-custom-django-management-commands.html)).
@@ -1281,8 +1285,7 @@ Svojstvo funkcije `handle()` je postavljeno na  `transaction.atomic`, što ozna�
     Isprobajte funkcionalnost kreirane naredbe, a zatim provjerite ako su uneseni podaci unutar admin sučelja.
 
 ``` shell
-$ ./manage.py setup_test_data
-(...)
+./manage.py setup_test_data
 ```
 
 ## Predlošci obrazaca. Stvaranje obrazaca iz modela
@@ -1582,8 +1585,7 @@ li a {
 Naredbom `dumpdata` izvozimo vrijednosti iz baze ([detaljnije o naredbi dumpdata](https://docs.djangoproject.com/en/3.2/ref/django-admin/#dumpdata)). Pokrenimo je na način:
 
 ``` shell
-$ ./manage.py dumpdata main.Student --pk 1 --indent 4 > 0001_student.json
-(...)
+./manage.py dumpdata main.Student --pk 1 --indent 4 > 0001_student.json
 ```
 
 !!! example "Zadatak"
@@ -1606,8 +1608,7 @@ Fixture je zbirka podataka koje Django uvozi u bazu podataka. Najjednostavniji n
 #### Paket django-seed
 
 ``` shell
-$ pip3 install django-seed
-(...)
+pip3 install django-seed
 ```
 
 Python modul pomoću kojeg se mogu generirati podaci za bazu podataka. U pozadini koristi biblioteku [faker](https://github.com/joke2k/faker) ([dokumentacija](https://faker.readthedocs.io/)) za generiranje testnih podataka. Detaljnije o django-seed možete pronaći u [dokumentaciji](https://github.com/mstdokumaci/django-seed).
@@ -1666,8 +1667,7 @@ for fixture in fixtures:
 Skriptu pokrenite naredbom:
 
 ``` shell
-$ manage.py shell < revert_seed.py
-(...)
+manage.py shell < revert_seed.py
 ```
 
 ### Učitavanje podataka sijanja u testiranje
@@ -1690,8 +1690,7 @@ class MyTest(TestCase):
 Kreirani test pokrenite u terminalu s naredbom:
 
 ``` shell
-$ ./manage.py test test1
-(...)
+./manage.py test test1
 ```
 
 ``` python
@@ -1926,8 +1925,7 @@ Unutar direktorija `tests` nalaze se testovi kojima će se testirati `urls.py`, 
 Naredba koju koristite za pokretanje testova je:
 
 ``` shell
-$ ./manage.py test main.tests
-(...)
+./manage.py test main.tests
 ```
 
 !!! example "Zadatak"

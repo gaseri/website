@@ -174,7 +174,10 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && $_SERVER["REQUEST_URI"] == "/persons"
 Podsjetimo se da je HTTP metoda GET zadana pa isprobajmo dohvaćanje URI-ja `/persons` na način:
 
 ``` shell
-$ curl -v localhost:8000/persons
+curl -v localhost:8000/persons
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET /persons HTTP/1.1
@@ -193,7 +196,13 @@ $ curl -v localhost:8000/persons
 * Closing connection 0
 {"count":2,"results":[{"name":"Dennis MacAlistair Ritchie","birth_year":1941,"known_for":["http:\/\/localhost:8000\/technologies\/1","http:\/\/localhost:8000\/technologies\/2"],"created":"2020-12-09T14:50:32+0100","edited":"2020-12-20T21:14:07+0100","url":"http:\/\/localhost:8000\/persons\/1"},{"name":"Kenneth Lane Thompson","birth_year":1943,"known_for":["http:\/\/localhost:8000\/technologies\/2"],"created":"2020-12-10T15:10:41+0100","edited":"2020-12-20T21:17:55+0100","url":"http:\/\/localhost:8000\/persons\/2"}]}
 
-$ curl -v http://localhost:8000/scientists
+```
+
+``` shell
+curl -v http://localhost:8000/scientists
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET /scientists HTTP/1.1
@@ -282,7 +291,10 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && $_SERVER["REQUEST_URI"] == "/persons"
 Isprobajmo dohvaćanje nekoliko URI-ja:
 
 ``` shell
-$ curl -v http://localhost:8000/persons/1
+curl -v http://localhost:8000/persons/1
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET /persons/1 HTTP/1.1
@@ -301,7 +313,13 @@ $ curl -v http://localhost:8000/persons/1
 * Closing connection 0
 {"name":"Dennis MacAlistair Ritchie","birth_year":1941,"known_for":["http:\/\/localhost:8000\/technologies\/1","http:\/\/localhost:8000\/technologies\/2"],"created":"2020-12-09T14:50:32+0100","edited":"2020-12-20T21:14:07+0100","url":"http:\/\/localhost:8000\/persons\/1"}
 
-$ curl -v http://localhost:8000/persons/599
+```
+
+``` shell
+curl -v http://localhost:8000/persons/599
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET /persons/599 HTTP/1.1
@@ -319,7 +337,13 @@ $ curl -v http://localhost:8000/persons/599
 <
 * Closing connection 0
 
-$ curl -v http://localhost:8000/persons/007
+```
+
+``` shell
+curl -v http://localhost:8000/persons/007
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET /persons/007 HTTP/1.1
@@ -362,7 +386,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && $_SERVER["HTTP_CONTENT_TYPE"] == "te
 Napravimo zahtjev cURL-om metodom POST MIME tipa `text/plain` sa sadržajem tijela zahtjeva `"Kako ide?"`:
 
 ``` shell
-$ curl -v -X POST -H "Content-Type: text/plain" -d "Kako ide?" http://localhost:8000/
+curl -v -X POST -H "Content-Type: text/plain" -d "Kako ide?" http://localhost:8000/
+```
+
+``` shell-session
 Note: Unnecessary use of -X or --request, POST is already inferred.
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
@@ -587,7 +614,10 @@ file_put_contents($datoteka, $j);
 Isprobajmo stvaranje osobe na način koji smo upravo razvili. Za početak se uvjerimo da zahtjevi čiji sadržaj nije tipa application/json dobivaju odgovor sa statusnim kodom 415 Unsupported Media Type:
 
 ``` shell
-$ curl -v -X POST http://localhost:8000/persons
+curl -v -X POST http://localhost:8000/persons
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > POST /persons HTTP/1.1
@@ -609,7 +639,10 @@ $ curl -v -X POST http://localhost:8000/persons
 Zatim se uvjerimo da poslužitelj vraća statusni kod 400 Bad Request za sadržaj koji tvrdi da je JSON, a nije:
 
 ``` shell
-$ curl -v -X POST -H 'Content-Type: application/json' -d 'Ovaj sadržaj je 100% JSON' http://localhost:8000/persons
+curl -v -X POST -H 'Content-Type: application/json' -d 'Ovaj sadržaj je 100% JSON' http://localhost:8000/persons
+```
+
+``` shell-session
 Note: Unnecessary use of -X or --request, POST is already inferred.
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
@@ -635,7 +668,10 @@ Note: Unnecessary use of -X or --request, POST is already inferred.
 Rezultat je isti kad sadržaj poslanog zahtjeva nema odgovarajuće podatke:
 
 ``` shell
-$ curl -v -X POST -H 'Content-Type: application/json' -d '{"institution": "Odjel za informatiku", "address": "Radmile Matejčić 2"}' http://localhost:8000/persons
+curl -v -X POST -H 'Content-Type: application/json' -d '{"institution": "Odjel za informatiku", "address": "Radmile Matejčić 2"}' http://localhost:8000/persons
+```
+
+``` shell-session
 Note: Unnecessary use of -X or --request, POST is already inferred.
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
@@ -661,7 +697,10 @@ Note: Unnecessary use of -X or --request, POST is already inferred.
 Naposlijetku, ako su svi podaci navedeni, zahtjev je prihvaćen i stvara se nova osoba:
 
 ``` shell
-$ curl -v -X POST -H 'Content-Type: application/json' -d '{"name": "Donald Ervin Knuth", "birth_year": 1938, "known_for": ["http://localhost:8000/technologies/3", "http://localhost:8000/technologies/4"]}' http://localhost:8000/persons
+curl -v -X POST -H 'Content-Type: application/json' -d '{"name": "Donald Ervin Knuth", "birth_year": 1938, "known_for": ["http://localhost:8000/technologies/3", "http://localhost:8000/technologies/4"]}' http://localhost:8000/persons
+```
+
+``` shell-session
 Note: Unnecessary use of -X or --request, POST is already inferred.
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
@@ -753,7 +792,10 @@ file_put_contents($datoteka, $j);
 Isprobajmo stvaranje osobe pod rednim brojem 4 na način koji smo upravo razvili.
 
 ``` shell
-$ curl -v -X PUT -H 'Content-Type: application/json' -d '{"name": "Grace Brewster Murray Hopper", "birth_year": 1906, "known_for": ["http://localhost:8000/technologies/5"]}' http://localhost:8000/persons/4
+curl -v -X PUT -H 'Content-Type: application/json' -d '{"name": "Grace Brewster Murray Hopper", "birth_year": 1906, "known_for": ["http://localhost:8000/technologies/5"]}' http://localhost:8000/persons/4
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > PUT /persons/4 HTTP/1.1
@@ -905,7 +947,10 @@ file_put_contents($datoteka, $j);
 Isprobajmo osvježavanje osobe na način koji smo upravo razvili. Osvježimo popis tehnologija koje zbog koji je [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) poznat tako da dodamo tehnologiju 6, odnosno [Computer Modern](https://en.wikipedia.org/wiki/Computer_Modern):
 
 ``` shell
-$ curl -v -X PATCH -H 'Content-Type: application/json' -d '{"known_for": ["http://localhost:8000/technologies/3", "http://localhost:8000/technologies/4", "http://localhost:8000/technologies/6"]}' http://localhost:8000/persons/3
+curl -v -X PATCH -H 'Content-Type: application/json' -d '{"known_for": ["http://localhost:8000/technologies/3", "http://localhost:8000/technologies/4", "http://localhost:8000/technologies/6"]}' http://localhost:8000/persons/3
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > PATCH /persons/3 HTTP/1.1
@@ -965,7 +1010,10 @@ file_put_contents($datoteka, $j);
 Isprobajmo brisanje osobe na način koji smo upravo razvili, prvo tako da pokušamo izbrisati osobu koja ne postoji:
 
 ``` shell
-$ curl -v -X DELETE http://localhost:8000/persons/5
+curl -v -X DELETE http://localhost:8000/persons/5
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > DELETE /persons/5 HTTP/1.1
@@ -987,7 +1035,10 @@ $ curl -v -X DELETE http://localhost:8000/persons/5
 Izbrišimo sad osobu koju smo ranije dodali:
 
 ``` shell
-$ curl -v -X DELETE http://localhost:8000/persons/3
+curl -v -X DELETE http://localhost:8000/persons/3
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > DELETE /persons/3 HTTP/1.1

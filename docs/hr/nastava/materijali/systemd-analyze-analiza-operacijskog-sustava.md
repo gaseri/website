@@ -16,7 +16,10 @@ Pokretanje operacijskog sustava sastoji se od:
 Bez argumenata `systemd-analyze` daje podatke o vremenu pokretanja računala:
 
 ``` shell
-$ systemd-analyze
+systemd-analyze
+```
+
+``` shell-session
 Startup finished in 1.544s (kernel) + 1min 45.693s (userspace) = 1min 47.238s
 graphical.target reached after 1min 45.692s in userspace
 ```
@@ -33,7 +36,10 @@ Naredbe za detaljniju analizu i vizualizaciju vremena pokretanja su:
 Naredbom `systemd-analyze` uz korištenje argumenta `security` i imena usluge možemo saznati više informacija o sigurnosnim ograničenjima koja se postavljaju kod njenog pokretanja:
 
 ``` shell
-$ systemd-analyze security httpd.service
+systemd-analyze security httpd.service
+```
+
+``` shell-session
   NAME                                                        DESCRIPTION                                                             EXPOSURE
 ✗ RootDirectory=/RootImage=                                   Service runs within the host's root directory                                0.1
   SupplementaryGroups=                                        Service runs as root, option does not matter

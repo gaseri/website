@@ -49,10 +49,10 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 - `tee` istovremeno ispisuje na standardni izlaz i u datoteku; **primjer:**
 
     ``` shell
-    $ ls -a > zapis.txt
-    $ ls -a | tee zapis.txt | less # izlaz jedne naredbe (ls -a) se profiltrira u tee i zapisuje se u datoteku zapis.txt te se nakon toga ispisuje u lessu
-    $ ls -a | tee zapis.txt | grep Faks | less
-    $ ls -a | tee zapis.txt | grep Faks | less > zapis.txt
+    ls -a > zapis.txt
+    ls -a | tee zapis.txt | less # izlaz jedne naredbe (ls -a) se profiltrira u tee i zapisuje se u datoteku zapis.txt te se nakon toga ispisuje u lessu
+    ls -a | tee zapis.txt | grep Faks | less
+    ls -a | tee zapis.txt | grep Faks | less > zapis.txt
     ```
 
     - koristimo je za fleksibilniji rad s cijevima
@@ -72,10 +72,10 @@ Mnogi programi dobivaju input od standardnog ulaza (engl. *standard input*), a u
 - `>` vs `>>` -- prvi znak briše sadržaj, a drugi znak ga nadopisuje
 
     ``` shell
-    $ cat datoteka.txt > datoteka1.txt # rezultat naredbe cat se zapisuje u datoteku datoteka1.txt
-                                       # orginalni sadržaj datoteke se zamjenjuje sa sadržajem druge datoteke
-    $ cat datoteka1.txt # ispis na ekran
-    $ cat file1.txt >> file2.txt # dupli sadržaj; sadržaj prve datoteke se nadodaje na sadržaj druge datoteke
+    cat datoteka.txt > datoteka1.txt # rezultat naredbe cat se zapisuje u datoteku datoteka1.txt
+                                     # orginalni sadržaj datoteke se zamjenjuje sa sadržajem druge datoteke
+    cat datoteka1.txt # ispis na ekran
+    cat file1.txt >> file2.txt # dupli sadržaj; sadržaj prve datoteke se nadodaje na sadržaj druge datoteke
     ```
 
 - preusmjeravanja izlaza za greške, znakovi `2>` i `2>>`

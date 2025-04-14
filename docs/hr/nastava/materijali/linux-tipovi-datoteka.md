@@ -25,7 +25,7 @@ author: Vedran Miletić, Vanja Slavuj
     - datoteka korisničke aplikacije; **primjer:**
 
         ``` shell
-        $ ls -l /etc/hosts
+        ls -l /etc/hosts
         ```
 
 - direktorij (`d`)
@@ -33,7 +33,7 @@ author: Vedran Miletić, Vanja Slavuj
     - može sadržavati datoteke i poddirektorije; **primjer:**
 
         ``` shell
-        $ ls -l /home/miran
+        ls -l /home/miran
         ```
 
 - simbolička poveznica (`l`)
@@ -41,7 +41,7 @@ author: Vedran Miletić, Vanja Slavuj
     - njihov sadržaj je putanja do datoteke na koju pokazuju (može biti apsolutna i relativna); **primjer:**
 
         ``` shell
-        $ ls -l /usr/bin/python
+        ls -l /usr/bin/python
         ```
 
 - specijalna blok datoteka (`b`)
@@ -50,7 +50,7 @@ author: Vedran Miletić, Vanja Slavuj
     - omogućuje asinkrono zapisivanje (engl. *asynchronous write*); **primjer:**
 
         ``` shell
-        $ ls -l /dev/sda1
+        ls -l /dev/sda1
         ```
 
 - specijalna znakovna datoteka (`c`)
@@ -58,7 +58,7 @@ author: Vedran Miletić, Vanja Slavuj
     - unbuffered: podaci se čitaju direktno, nema međuspremnika; **primjer:**
 
         ``` shell
-        $ ls -l /dev/input/mice
+        ls -l /dev/input/mice
         ```
 
 - `mknod` stvara specijalne blok i specijalne znakovne datoteke (spominjemo radi potpunosti)
@@ -75,7 +75,7 @@ author: Vedran Miletić, Vanja Slavuj
     - radi isključivo lokalno na računalu; **primjer:**
 
         ``` shell
-        $ ls -l /home/vedran/python-samples/fifo1
+        ls -l /home/vedran/python-samples/fifo1
         ```
 
 - `mkfifo` stvara fifo datoteku danog imena
@@ -86,7 +86,7 @@ author: Vedran Miletić, Vanja Slavuj
     - npr. lokalna komunikacija dva procesa, otvorena HTTP veza prema nekom poslužitelju za vrijeme preuzimanja datoteke ili otvorena SSH veza s nekog drugog poslužitelja; **primjer:**
 
         ``` shell
-        $ ls -l /var/run/acpid.socket
+        ls -l /var/run/acpid.socket
         ```
 
     - time ćemo se više baviti kad budemo radili modul `socket` u Pythonu

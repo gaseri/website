@@ -15,8 +15,8 @@ Editing the website contents requires at least [the basic knowledge of writing M
 Clone the repository using [Git](https://git-scm.com/):
 
 ``` shell
-$ git clone https://github.com/gaseri/website.git
-$ cd website
+git clone https://github.com/gaseri/website.git
+cd website
 ```
 
 ## Editing the contents
@@ -30,7 +30,7 @@ The website is built using [MkDocs](https://www.mkdocs.org/) and [Material for M
 Once Python and pip are successfully set up, start by installing the required Python packages using the `pip` command:
 
 ``` shell
-$ pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 [By the way](https://www.urbandictionary.com/define.php?term=i%20use%20arch%20btw), if you are using [Arch Linux](https://archlinux.org/), you can alternatively use [mkdocs](https://aur.archlinux.org/packages/mkdocs) and [mkdocs-material](https://aur.archlinux.org/packages/mkdocs-material) from [Arch User Repository (AUR)](https://aur.archlinux.org/). Similarly, if you are using [FreeBSD](https://www.freebsd.org/), you can use [py-mkdocs](https://www.freshports.org/textproc/py-mkdocs/) and [py-mkdocs-material](https://www.freshports.org/textproc/py-mkdocs-material/) from [Ports](https://www.freebsd.org/ports/). These packages are mostly kept in sync with the upstream releases.
@@ -40,7 +40,7 @@ $ pip install -r requirements.txt
 To open a local web server that will serve the website contents for previewing, use the [MkDocs's serve command](https://www.mkdocs.org/getting-started/):
 
 ``` shell
-$ mkdocs serve
+mkdocs serve
 ```
 
 ## Building the website
@@ -48,7 +48,7 @@ $ mkdocs serve
 Build the website using [MkDocs's build command](https://www.mkdocs.org/getting-started/#building-the-site) (any remains of the previous build will be cleaned up automatically):
 
 ``` shell
-$ mkdocs build
+mkdocs build
 ```
 
 If the build was unsuccessful, fix the errors and repeat the building process.
@@ -58,8 +58,8 @@ If the build was unsuccessful, fix the errors and repeat the building process.
 Confirm that the website can be successfully built, add the changed files using Git, and commit the changes:
 
 ``` shell
-$ git add docs
-$ git commit
+git add docs
+git commit
 ```
 
 ## Publishing the changes
@@ -67,7 +67,7 @@ $ git commit
 To publish the changes, push them to GitHub:
 
 ``` shell
-$ git push
+git push
 ```
 
 Wait a few minutes until [GitHub Pages](https://pages.github.com/) finishes building the new site, including the changes you just pushed. Visit [group.miletic.net](https://group.miletic.net/) to make sure that your changes are visible.

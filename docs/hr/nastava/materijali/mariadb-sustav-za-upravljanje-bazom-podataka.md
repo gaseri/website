@@ -18,7 +18,10 @@ Ime MariaDB dao je autor MySQL-a [Michael "Monty" Widenius](https://en.wikipedia
 Sustav za upravljanje bazom podataka MariaDB koristit ćemo u obliku [Docker](https://www.docker.com/) [kontejnera](https://www.docker.com/resources/what-container/). Na [Docker Hubu](https://hub.docker.com/) moguće je pronaći sliku [mariadb](https://hub.docker.com/_/mariadb), koja je jedna od [službenih slika](https://hub.docker.com/search?type=image&image_filter=official). Koristit ćemo [verziju 10.11](https://mariadb.com/kb/en/changes-improvements-in-mariadb-1011/), koja je posljednja izdana stabilna verzija. Pokretanje kontejnera `maridab` izvodimo naredbom `docker run`:
 
 ``` shell
-$ docker run mariadb:10.11
+docker run mariadb:10.11
+```
+
+``` shell-session
 Unable to find image 'mariadb:10.11' locally
 10.11: Pulling from library/mariadb
 1bc677758ad7: Pull complete
@@ -41,14 +44,20 @@ Status: Downloaded newer image for mariadb:10.11
 Docker slika ne dozvoljava pokretanje bez navođenja zaporke korijenskog korisnika koja će se korstiti. Navedimo ju putem varijable okoline `MARIADB_ROOT_PASSWORD` parametrom `--env` i dodajmo parametar `--detach` kako bismo zadržali mogućnost daljnjeg rada u terminalu:
 
 ``` shell
-$ docker run --detach --env MARIADB_ROOT_PASSWORD=m0j4z4p0rk4 mariadb:10.11
+docker run --detach --env MARIADB_ROOT_PASSWORD=m0j4z4p0rk4 mariadb:10.11
+```
+
+``` shell-session
 b618846ff70c0012813dc62c02a3e262f29d0ac6e54d4504ff042914e7f6d9e9
 ```
 
 Naredbom `docker ps` možemo se uvjeriti da je kontejner pokrenut:
 
 ``` shell
-$ docker ps
+docker ps
+```
+
+``` shell-session
 CONTAINER ID   IMAGE           COMMAND                  CREATED         STATUS         PORTS      NAMES
 b618846ff70c   mariadb:10.11   "docker-entrypoint.s…"   4 seconds ago   Up 3 seconds   3306/tcp   sleepy_poincare
 ```
@@ -56,7 +65,10 @@ b618846ff70c   mariadb:10.11   "docker-entrypoint.s…"   4 seconds ago   Up 3 s
 Naredbom `docker logs` koja kao argument prima identifikator kontejnera možemo se uvjeriti da je pokretanje poslužitelja bilo uspješno:
 
 ``` shell
-$ docker logs b618846ff70c0012813dc62c02a3e262f29d0ac6e54d4504ff042914e7f6d9e9
+docker logs b618846ff70c0012813dc62c02a3e262f29d0ac6e54d4504ff042914e7f6d9e9
+```
+
+``` shell-session
 2023-05-10 16:12:56+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.11.2+maria~ubu2204 started.
 2023-05-10 16:12:56+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
 2023-05-10 16:12:56+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.11.2+maria~ubu2204 started.
@@ -143,35 +155,50 @@ Version: '10.11.2-MariaDB-1:10.11.2+maria~ubu2204'  socket: '/run/mysqld/mysqld.
 Poslužitelj zaustavljamo naredbom `docker kill`:
 
 ``` shell
-$ docker kill b618846ff70c0012813dc62c02a3e262f29d0ac6e54d4504ff042914e7f6d9e9
+docker kill b618846ff70c0012813dc62c02a3e262f29d0ac6e54d4504ff042914e7f6d9e9
+```
+
+``` shell-session
 b618846ff70c0012813dc62c02a3e262f29d0ac6e54d4504ff042914e7f6d9e9
 ```
 
 Naredba `docker ps` ukazuje da poslužitelj više nije pokrenut:
 
 ``` shell
-$ docker ps
+docker ps
+```
+
+``` shell-session
 CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 ```
 
 Uvjerili smo se da možemo pokrenuti i zaustaviti poslužitelj, ali [klijent](https://youtu.be/lMxDPYraXG4) se neće moći povezati na ovako pokrenut poslužitelj. Naime, kako bi se mogla ostvariti veza klijenta i poslužitelja, oni moraju biti u istoj mreži i poslužitelj mora biti imenovan. Stvorimo mrežu naredbom `docker network`:
 
 ``` shell
-$ docker network create db-network
+docker network create db-network
+```
+
+``` shell-session
 ef5139aa1ec739e9c5da903581328a537380095b9117b555d72a1b33678836b7
 ```
 
 Pokrenimo poslužitelj na toj mreži i nazovimo ga `fidit-mariadb` korištenjem parametra `--name`:
 
 ``` shell
-$ docker run --detach --network db-network --name fidit-mariadb --env MARIADB_ROOT_PASSWORD=m0j4z4p0rk4 mariadb:10.11
+docker run --detach --network db-network --name fidit-mariadb --env MARIADB_ROOT_PASSWORD=m0j4z4p0rk4 mariadb:10.11
+```
+
+``` shell-session
 39b77a3679fd4e5c8638d63d3d577464b46c3ee0b9cc34a965b100355b9bb6aa
 ```
 
 Pokrenimo klijent na istoj mreži i iskoristimo parametar `-h` naredbe `mariadb` za navođenje imena poslužitelja, parametar `-u` za navođenje imena korisnika i parametar `-p` za uključivanje upita za zaporkom. Uočimo pritom kako naredba `mariadb` ne očekuje razmak između parametra i njegove vrijednosti.
 
 ``` shell
-$ docker run -it --network db-network mariadb:10.11 mariadb -hfidit-mariadb -uroot -p
+docker run -it --network db-network mariadb:10.11 mariadb -hfidit-mariadb -uroot -p
+```
+
+``` shell-session
 Enter password:
 Welcome to the MariaDB monitor.  Commands end with ; or \g.
 Your MariaDB connection id is 3
@@ -258,16 +285,16 @@ MariaDB [podržava šifriranje](https://mariadb.com/kb/en/securing-mariadb-encry
 [Ključeve i X.509 certifikate](https://mariadb.com/docs/security/encryption/in-transit/create-self-signed-certificates-keys-openssl/#create-self-signed-certificates-keys-openssl) koje će MariaDB koristiti stvaramo korištenjem OpenSSL-a i Easy-RSA. Inicijalizirajmo infrastrukturu privatnog ključa i kopirajmo direktorij s informacijama o vrstama X.509 certifikata i datoteke s postavkama OpenSSL-a:
 
 ``` shell
-$ easyrsa init-pki
-$ cp -r /etc/easy-rsa/x509-types pki
-$ cp /etc/easy-rsa/openssl-easyrsa.cnf pki
-$ cp /etc/easy-rsa/vars pki
+easyrsa init-pki
+cp -r /etc/easy-rsa/x509-types pki
+cp /etc/easy-rsa/openssl-easyrsa.cnf pki
+cp /etc/easy-rsa/vars pki
 ```
 
 Izgradimo prvo ključ i certifikat autoriteta certifikata:
 
 ``` shell
-$ easyrsa build-ca
+easyrsa build-ca
 ```
 
 Naravno, ako smo već ranije koristili Easy-RSA pa imamo uspostavljenu infrastrukturu privatnog ključa, neke od naredbi će nam javiti da već postoje napravljeni certifikati i ključevi. U tom slučaju, obzirom da samo učimo kako radi infrastruktura privatnog ključa u MariaDB, možemo iskorstiti certifikate i ključeve koje smo već koristili u drugim sustavima; u praksi to ne smijemo napraviti jer time smanjujemo sigurnost i naše instance MariaDB i tih drugih sustava.
@@ -275,33 +302,33 @@ Naravno, ako smo već ranije koristili Easy-RSA pa imamo uspostavljenu infrastru
 Izgradimo ključ i certifikat za poslužitelj:
 
 ``` shell
-$ easyrsa build-server-full moj-mariadb-posluzitelj nopass
+easyrsa build-server-full moj-mariadb-posluzitelj nopass
 ```
 
 Izgradimo ključ i certifikat koji će klijent koristiti:
 
 ``` shell
-$ easyrsa build-client-full moj-mariadb-klijent nopass
+easyrsa build-client-full moj-mariadb-klijent nopass
 ```
 
 Pripremit ćemo direktorije s konfiguracijom i certifikatima za poslužiteljski i klijentski kontejner. Kopirajmo stvoreni certifikat autoriteta certifikata, poslužiteljski certifikat i ključ na mjesto s kojeh ćemo ih koristiti te dozvolimo ostalim korisnicima (među kojima je i korisnik `mysql` koji pokreće MariaDB poslužitelj) čitanje datoteka:
 
 ``` shell
-$ mkdir -p mariadb-server-conf/certs
-$ cp pki/ca.crt mariadb-server-conf/certs/ca-cert.pem
-$ cp pki/issued/moj-mariadb-posluzitelj.crt mariadb-server-conf/certs/server-cert.pem
-$ cp pki/private/moj-mariadb-posluzitelj.key mariadb-server-conf/certs/server-key.pem
-$ chmod a+r mariadb-server-conf/certs/*.pem
+mkdir -p mariadb-server-conf/certs
+cp pki/ca.crt mariadb-server-conf/certs/ca-cert.pem
+cp pki/issued/moj-mariadb-posluzitelj.crt mariadb-server-conf/certs/server-cert.pem
+cp pki/private/moj-mariadb-posluzitelj.key mariadb-server-conf/certs/server-key.pem
+chmod a+r mariadb-server-conf/certs/*.pem
 ```
 
 Analogno pripremimo certifikate i ključeve za klijentski kontejner:
 
 ``` shell
-$ mkdir -p mariadb-client-conf/certs
-$ cp pki/ca.crt mariadb-client-conf/certs/ca-cert.pem
-$ cp pki/issued/moj-mariadb-klijent.crt mariadb-client-conf/certs/client-cert.pem
-$ cp pki/private/moj-mariadb-klijent.key mariadb-client-conf/certs/client-key.pem
-$ chmod a+r mariadb-client-conf/certs/*.pem
+mkdir -p mariadb-client-conf/certs
+cp pki/ca.crt mariadb-client-conf/certs/ca-cert.pem
+cp pki/issued/moj-mariadb-klijent.crt mariadb-client-conf/certs/client-cert.pem
+cp pki/private/moj-mariadb-klijent.key mariadb-client-conf/certs/client-key.pem
+chmod a+r mariadb-client-conf/certs/*.pem
 ```
 
 #### Uključivanje ključeva u konfiguracijsku datoteku
@@ -317,7 +344,7 @@ Više informacija o ovim konfiguracijskim naredbama može se naći u [službenoj
 MariaDB ne preporuča modificiranje postojećih konfiguracijskih datoteka, već dodavanje novih. U direktoriju za konfiguraciju poslužitelja korištenjem uređivača teksta GNU nano ili bilo kojeg drugog stvorimo datoteku `ssl.cnf`:
 
 ``` shell
-$ nano mariadb-server-conf/ssl.cnf
+nano mariadb-server-conf/ssl.cnf
 ```
 
 Jako je važno da nastavak bude `.cnf`, a ne `.conf` ili neka treća jer konfiguracijska naredba `!includedir` koju MariaDB koristi učitava u danom direktoriju samo datoteke s nastavkom `.cnf`. U njoj postavimo putanje poslužiteljskih ključeva i certifikata:
@@ -333,7 +360,7 @@ ssl_ca = /etc/mysql/conf.d/certs/ca-cert.pem
 Analogno stvorimo konfiguracijsku datoteku klijenta i u njoj postavimo putanje za klijentske ključeve i certifikate:
 
 ``` shell
-$ nano mariadb-client-conf/ssl.cnf
+nano mariadb-client-conf/ssl.cnf
 ```
 
 ``` ini
@@ -350,14 +377,20 @@ ssl_ca = /etc/mysql/conf.d/certs/ca-cert.pem
 Pokrenimo ponovno poslužitelj tako da dodatno parametrom `-v` montiramo direktorij `/home/korisnik/mariadb-server-conf` na `/etc/mysql/conf.d`, iz kojeg će MariaDB poslužitelj čitati konfiguraciju:
 
 ``` shell
-$ docker run --detach --network db-network --name fidit-mariadb -v /home/korisnik/mariadb-server-conf:/etc/mysql/conf.d --env MARIADB_ROOT_PASSWORD=m0j4z4p0rk4 mariadb:10.11
+docker run --detach --network db-network --name fidit-mariadb -v /home/korisnik/mariadb-server-conf:/etc/mysql/conf.d --env MARIADB_ROOT_PASSWORD=m0j4z4p0rk4 mariadb:10.11
+```
+
+``` shell-session
 fd5bc31673cb7f87d632ef9d59bf515bafa944ba4c1058f5776f3d0dc74a402d
 ```
 
 Kako bismo se uvjerili da je TLS uključen, povežimo se klijentom tako da i na njegovoj strani montiramo direktorij s konfiguracijskim datotekama:
 
 ``` shell
-$ docker run -it --network db-network -v /home/korisnik/mariadb-client-conf:/etc/mysql/conf.d mariadb:10.11 mariadb -hfidit-mariadb -uroot -p
+docker run -it --network db-network -v /home/korisnik/mariadb-client-conf:/etc/mysql/conf.d mariadb:10.11 mariadb -hfidit-mariadb -uroot -p
+```
+
+``` shell-session
 Enter password:
 ```
 
@@ -407,14 +440,17 @@ plugin_load_add = file_key_management
 Korišteni algoritam za šifriranje je [Advanced Encryption Standard (AES)](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) i podržane veličine ključeva su 128, 192 i 256 bita. Ključeve je moguće navesti po želji ili generirati OpenSSL-om kao slučajne podatke određene duljine. Kako se duljina navodi u bajtovima, za stvaranje 256-bitnog ključa generirat ćemo 32-bajtni slučajni podatak naredbom `openssl rand`:
 
 ``` shell
-$ openssl rand -hex 32
+openssl rand -hex 32
+```
+
+``` shell-session
 1cece9bfd9e0263da50bcf02d088b12889cf1eddeb7f8ffdd719b9ab23359be2
 ```
 
 U slučaju da trebamo više ključeva, naredbu ćemo iskoristiti više puta. Dodatne informacije o ovoj naredbi i parametrima koje podržava moguće je pronaći u man stranici `rand(1ssl)` (naredba `man 1ssl rand`). Stvorimo direktorij za ključeve za šifriranje:
 
 ``` shell
-$ mkdir mariadb-server-conf/encryption
+mkdir mariadb-server-conf/encryption
 ```
 
 Stvorimo u tom direktoriju datoteku `keyfile` u kojoj su u svakom retku identifikator ključa (cijeli broj), znak točke sa zarezom i ključ:
@@ -637,10 +673,18 @@ Query OK, 0 rows affected (0.000 sec)
 Sada se možemo prijaviti kao taj korisnik, što ćemo i napraviti u drugom terminalu bez prekidanja postojeće sesije korijenskog korisnika. Parametrom `-u` navodimo korisničko ime korisnika koji se prijavljuje, a parametrom `-p` navodimo da ćemo izvršiti prijavu korištenjem zaporke:
 
 ``` shell
-$ docker run -it --network db-network mariadb:10.11 mariadb -hfidit-mariadb -u ivanzhegalkin
-ERROR 1045 (28000): Access denied for user 'ivanzhegalkin'@'localhost' (using password: NO)
+docker run -it --network db-network mariadb:10.11 mariadb -hfidit-mariadb -u ivanzhegalkin
+```
 
-$ docker run -it --network db-network mariadb:10.11 mariadb -hfidit-mariadb -u ivanzhegalkin -p
+``` shell-session
+ERROR 1045 (28000): Access denied for user 'ivanzhegalkin'@'localhost' (using password: NO)
+```
+
+``` shell
+docker run -it --network db-network mariadb:10.11 mariadb -hfidit-mariadb -u ivanzhegalkin -p
+```
+
+``` shell-session
 Enter password:
 Welcome to the MariaDB monitor.  Commands end with ; or \g.
 Your MariaDB connection id is 58

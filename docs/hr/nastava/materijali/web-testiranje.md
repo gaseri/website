@@ -76,7 +76,10 @@ def test_inc_3():
 ```
 
 ``` shell
-$ pytest
+pytest
+```
+
+``` shell-session
 ============================= test session starts =============================
 platform linux -- Python 3.9.2, pytest-6.0.2, py-1.10.0, pluggy-0.13.0
 rootdir: /home/vedranmiletic

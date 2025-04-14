@@ -75,7 +75,7 @@ Ova faza uključuje postavljanje admin čvora sa kojega zovemo ceph-deploy i 3 �
 Instaliramo ssh ako je potrebno:
 
 ``` shell
-$ sudo yum install openssh-server
+sudo yum install openssh-server
 ```
 
 Prvo moramo instalirati ceph repozitorij na admin čvor. To radimo tako da napravimo YUM entry:
@@ -93,7 +93,7 @@ gpgkey=https://download.ceph.com/keys/release.asc
 Zatim radimo update repozitorija i instaliramo ceph-deploy:
 
 ``` shell
-$ sudo yum update && sudo yum install ceph-deploy
+sudo yum update && sudo yum install ceph-deploy
 ```
 
 Sada moram za svaki čvor dodati hostname u `/etc/hosts`.
@@ -108,21 +108,24 @@ Sada moram za svaki čvor dodati hostname u `/etc/hosts`.
 Na sve čvorove dodajem ceph korisnike kojima moram staviti root ovlasti tako da se ceph-deploy može spojiti bez šifre i instalirati ceph:
 
 ``` shell
-$ sudo useradd -d /home/ceph -m ceph
-$ sudo passwd ceph
+sudo useradd -d /home/ceph -m ceph
+sudo passwd ceph
 ```
 
 Te im dododajem root ovlasti:
 
 ``` shell
-$ echo "ceph ALL = (root) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/ceph
-$ sudo chmod 0440 /etc/sudoers.d/ceph
+echo "ceph ALL = (root) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/ceph
+sudo chmod 0440 /etc/sudoers.d/ceph
 ```
 
 Idući korak je konfiguriati sve čvorove sa SSH pristupom bez šifre:
 
 ``` shell
-$ ssh-keygen
+ssh-keygen
+```
+
+``` shell-session
 Generating public/private key pair.
 Enter file in which to save the key (/ceph-client/.ssh/id_rsa):
 Enter passphrase (empty for no passphrase):
@@ -134,9 +137,9 @@ Your public key has been saved in /ceph-client/.ssh/id_rsa.pub.
 Za svaki čvor kopiram ssh key do svakog drugog čvora:
 
 ``` shell
-$ ssh-copy-id ceph@node1
-$ ssh-copy-id ceph@node2
-$ ssh-copy-id ceph@node3
+ssh-copy-id ceph@node1
+ssh-copy-id ceph@node2
+ssh-copy-id ceph@node3
 ```
 
 Te na kraju modificiram datoteku `~/.ssh/config` admin čvora tako da se logira na korisnike `ceph` ostalih čvorova:
@@ -155,20 +158,20 @@ Host node3
 U ovoj fazi postavljamo Monitor i dva OSD-a. Za početak možemo napravit direktorij na admin čvoru gdje će nam biti konfiguracijske datoteke koje kreira ceph-deploy prilikom generiranja klastera.
 
 ``` shell
-$ mkdir my-cluster
-$ cd my-cluster
+mkdir my-cluster
+cd my-cluster
 ```
 
 Stvaramo klaster:
 
 ``` shell
-$ ceph-deploy new node1
+ceph-deploy new node1
 ```
 
 Idući korak bi bio instaliranje Cepha na čvorove putem ceph-deploya:
 
 ``` shell
-$ ceph-deploy install node1 node2 node3
+ceph-deploy install node1 node2 node3
 ```
 
 Ovako bi izgledala uspješna instalacija, ali meni prilikom pokretanja naredbe javi grešku da ceph korisnik nema root ovlasti kada ceph-deploy treba pokrenuti naredbu za dohvaćanje cepha. Nije pomoglo ni dodavanje cepha kao roota u datoteci `/etc/sudoers`.
@@ -176,53 +179,53 @@ Ovako bi izgledala uspješna instalacija, ali meni prilikom pokretanja naredbe j
 Nakon toga slijedi dodavanje Monitora i dohvaćanje ključeva:
 
 ``` shell
-$ ceph-deploy mon create-initial
-$ ceph-deploy gatherkeys node1
+ceph-deploy mon create-initial
+ceph-deploy gatherkeys node1
 ```
 
 Dodajemo 2 OSD-a:
 
 ``` shell
-$ ssh node2
-$ sudo mkdir /var/local/osd0
-$ exit
-$ ssh node3
-$ sudo mkdir /var/local/osd1
-$ exit
+ssh node2
+sudo mkdir /var/local/osd0
+exit
+ssh node3
+sudo mkdir /var/local/osd1
+exit
 ```
 
 Pomoću ceph-deploya pripremimo OSD-ove:
 
 ``` shell
-$ ceph-deploy osd prepare node2:/var/local/osd0 node3:/var/local/osd1
+ceph-deploy osd prepare node2:/var/local/osd0 node3:/var/local/osd1
 ```
 
 Te ih aktiviramo:
 
 ``` shell
-$ ceph-deploy osd activate node2:/var/local/osd0 node3:/var/local/osd1
+ceph-deploy osd activate node2:/var/local/osd0 node3:/var/local/osd1
 ```
 
 Osiguramo da imamo pristup datoteci `ceph.client.admin.keyring`:
 
 ``` shell
-$ sudo chmod +r /etc/ceph/ceph.client.admin.keyring
+sudo chmod +r /etc/ceph/ceph.client.admin.keyring
 ```
 
 Zatim putem ceph-deploya kopiramo konfiguracijsku datoteku i admin ključ admin čvoru i ostalim čvorovima tako da možemo koristiti cephov CLI bez da moramo unositi adresu Monitora i ceph.client.admin.keyring prilikom izvođenja naredbi.
 
 ``` shell
-$ ceph-deploy admin node1 node2 node3 admin-node
+ceph-deploy admin node1 node2 node3 admin-node
 ```
 
 Naredbom:
 
 ``` shell
-$ ceph health
+ceph health
 ```
 
 provjerimo da li nam je klaster aktivan, a MDS (Metadata server) dodajemo pomoću naredbe:
 
 ``` shell
-$ ceph-deploy mds create node1
+ceph-deploy mds create node1
 ```

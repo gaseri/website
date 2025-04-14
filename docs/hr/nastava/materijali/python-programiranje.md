@@ -162,7 +162,7 @@ else:
 Ako već imate instaliran Python i [pip](https://pip.pypa.io/en/stable/getting-started/), tada je instalacija NumPyja vrlo jednostavna:
 
 ``` shell
-$ pip install numpy
+pip install numpy
 ```
 
 Da biste pristupili NumPy-u i njegovim funkcijama, potrebno ga je uvesti u svoj Python kod:

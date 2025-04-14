@@ -7,7 +7,10 @@ author: Vedran Miletić
 Apache HTTP Server uključuje ApacheBench, kraće ab, koji služi za mjerenje performansi web poslužitelja. Specijalno, unutar slike `httpd` na Docker Hubu, ab je dostupan kao naredba `ab` koju je moguće pokrenuti navođenjem te naredbe nakon imena i verzije slike:
 
 ``` shell
-$ docker run httpd:2.4 ab
+docker run httpd:2.4 ab
+```
+
+``` shell-session
 ab: wrong number of arguments
 Usage: ab [options] [http[s]://]hostname[:port]/path
 Options are:
@@ -59,7 +62,10 @@ Options are:
 [Službena dokumentacija ab-a](https://httpd.apache.org/docs/2.4/programs/ab.html) opisuje sve dostupne parametre i njihove uloge, a osnovni način korištenja je uz navođenje parametara `-n` s ukupnim brojem zahjteva koji će se izvesti i `-c` s ukupnim brojem istovremenih zahjeva:
 
 ``` shell
-$ docker run httpd:2.4 ab -n 1000 -c 100 http://172.17.0.2/
+docker run httpd:2.4 ab -n 1000 -c 100 http://172.17.0.2/
+```
+
+``` shell-session
 This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
 Licensed to The Apache Software Foundation, http://www.apache.org/

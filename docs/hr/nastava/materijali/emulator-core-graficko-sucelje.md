@@ -23,7 +23,7 @@ CORE ima [vrlo bogatu dokumentaciju](https://coreemu.github.io/core/) koja je do
 CORE pokrećemo naredbom `core-gui-legacy` u terminalu ili stavkom `CORE Network Emulator` u meniju.
 
 ``` shell
-$ core-gui-legacy
+core-gui-legacy
 ```
 
 Time dobivamo prazno platno na koje možemo dodavati čvorove i veze. U traci s alatima ([dokumentacija](https://coreemu.github.io/core/gui.html#toolbar)) koja se nalazi vertikalno na lijevoj strani grafičkog sučelja imamo redom
@@ -80,13 +80,13 @@ Scenarije za emulaciju koji smo složili moguće je spremiti kao `.imn` datoteku
 Da bi ilustrirali dostupne gotove scenarije, naredbom
 
 ``` shell
-$ core-gui-legacy .core/configs/sample2-ssh.imn
+core-gui-legacy .core/configs/sample2-ssh.imn
 ```
 
 otvorit ćemo jedan od jednostavnijih primjera. S druge strane, jedan od atraktivnijih primjera koji uključuje mobilne čvorove čije kretanje je prikazano na platnu u stvarnom vremenu, možemo otvoriti naredbom
 
 ``` shell
-$ core-gui-legacy .core/configs/sample1.imn
+core-gui-legacy .core/configs/sample1.imn
 ```
 
 Pokretanje emulacije vrši se kao i u situaciji kada slažemo vlastitu emulaciju.
@@ -121,7 +121,7 @@ Za generiranje prometa možemo se puslužiti i jednostavim trikom koji uključuj
 Na strani primatelja (servera) u ljusci upisujemo:
 
 ``` shell
-$ while true; do nc -lp PORT >/dev/null; done
+while true; do nc -lp PORT >/dev/null; done
 ```
 
 pri čemu je `PORT` je broj vrata na koje paket primamo.
@@ -129,7 +129,7 @@ pri čemu je `PORT` je broj vrata na koje paket primamo.
 Na strani pošiljatelja (klijenta) u ljusci upisujemo:
 
 ``` shell
-$ while true; do echo "foo" | nc -w 1 X.Y.Z.W PORT; sleep 1; done
+while true; do echo "foo" | nc -w 1 X.Y.Z.W PORT; sleep 1; done
 ```
 
 pri čemu je `X.Y.Z.W` IP adresa primatelja paketa, dok je `PORT` broj vrata na koje paket šaljemo.

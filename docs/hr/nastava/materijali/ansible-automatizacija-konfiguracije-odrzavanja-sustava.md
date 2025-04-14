@@ -24,13 +24,16 @@ U primjerima u nastavku pretpostavljamo da su računala imenovana `posluzitelj`,
 Instalirajmo [Ansible](https://www.ansible.com/) ([službena dokumentacija](https://docs.ansible.com/ansible/)) na poslužitelju i klijentima naredbom:
 
 ``` shell
-$ sudo pacman -S ansible
+sudo pacman -S ansible
 ```
 
 Uvjerimo se da je uspješno instaliran:
 
 ``` shell
-$ ansible --version
+ansible --version
+```
+
+``` shell-session
 ansible 2.7.5
 ```
 
@@ -50,7 +53,10 @@ radnastanica2
 Provjerimo možemo li doseći sva računala:
 
 ``` shell
-$ ansible all -m ping
+ansible all -m ping
+```
+
+``` shell-session
 posluzitelj | SUCCESS => {
     "changed": false,
     "ping": "pong"
@@ -68,7 +74,10 @@ radnastanica2 | SUCCESS => {
 Provjerimo možemo li pokrenuti naredbu na računalima:
 
 ``` shell
-$ ansible all -a "/usr/bin/hostname"
+ansible all -a "/usr/bin/hostname"
+```
+
+``` shell-session
 posluzitelj | CHANGED | rc=0 >>
 posluzitelj
 
@@ -101,7 +110,10 @@ Stvorimo [YAML](https://yaml.org/) datoteku `/etc/ansible/playbook.yml` koja će
 Pokrenimo Ansible playbook datoteku `playbook.yml` naredbom:
 
 ``` shell
-$ ansible-playbook -K /etc/ansible/playbook.yml
+ansible-playbook -K /etc/ansible/playbook.yml
+```
+
+``` shell-session
 SUDO password:
 
 PLAY [Update and Install packages] ********************************************************************************************************************************************************************************
@@ -132,7 +144,10 @@ Paket je instaliran, a usluga je već bila pokrenuta na svim računalima tako da
 Recimo da u nekom trenutku dodamo još jednu radnu stanicu imena `radnastanica3` koja ima zadovoljene iste preduvjete kao radne stanice koje smo ranije dodali. Provjerimo možemo li je doseći:
 
 ``` shell
-$ ansible all -m ping
+ansible all -m ping
+```
+
+``` shell-session
 posluzitelj | SUCCESS => {
     "changed": false,
     "ping": "pong"
@@ -154,7 +169,10 @@ radnastanica3 | SUCCESS => {
 Ponovimo pokretanje Ansible playbook `playbook.yml` naredbom:
 
 ``` shell
-$ ansible-playbook -K /etc/ansible/playbook.yml
+ansible-playbook -K /etc/ansible/playbook.yml
+```
+
+``` shell-session
 SUDO password:
 
 PLAY [Update and Install packages] *********************************************
@@ -239,7 +257,10 @@ Za upravljanje korisnicima koristi se ugrađeni modul `ansible.builtin.user` ([d
 [Hashirani zapis zaporke](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/user_module.html#return-password) naveden kao vrijednost ključa `password` je generiran prema [uputama iz Ansibleove dokumentacije](https://docs.ansible.com/ansible/latest/reference_appendices/faq.html#how-do-i-generate-encrypted-passwords-for-the-user-module) korištenjem [algoritma SHA-512](https://wiki.archlinux.org/title/SHA_password_hashes) i soli `CvycajZY8Z5mk0qC` naredbom
 
 ``` shell
-$ ansible all -i localhost, -m debug -a "msg={{ 'korisnik' | password_hash('sha512', 'CvycajZY8Z5mk0qC') }}"
+ansible all -i localhost, -m debug -a "msg={{ 'korisnik' | password_hash('sha512', 'CvycajZY8Z5mk0qC') }}"
+```
+
+``` shell-session
 [DEPRECATION WARNING]: Encryption using the Python crypt module is deprecated. The Python crypt module is deprecated and will be removed from Python 3.13. Install the passlib library for continued encryption functionality. This feature will be removed in version 2.17. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
 localhost | SUCCESS => {
     "msg": "$6$CvycajZY8Z5mk0qC$AdU3seLtogi4XJGXa1MwRuBZ7pHiuLrQaricpAJ2Id5sqV1.UBoUS//yKGPxrK9nzgvmiiIJI2isGamrtGBGD."

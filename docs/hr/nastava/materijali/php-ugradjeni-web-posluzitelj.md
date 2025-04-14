@@ -21,7 +21,10 @@ Bez obzira na sve brojniju konkurenciju, PHP se i danas široko koristi, a u nek
 Pokretanje datoteka s izvornim kodom iz naredbenog retka vršimo naredbom `php`. Za početak se uvjerimo da imamo instalirano sučelje naredbenog retka interpretera jezika PHP (naredba `php`) i saznajmo njegovu verziju parametrom `--version`, odnosno `-v`:
 
 ``` shell
-$ php -v
+php -v
+```
+
+``` shell-session
 PHP 7.4.11 (cli) (built: Oct  6 2020 10:34:39) ( NTS )
 Copyright (c) The PHP Group
 Zend Engine v3.4.0, Copyright (c) Zend Technologies
@@ -44,7 +47,10 @@ echo "Hello, world!\n";
 pa je pokrenimo korištenjem naredbe `php` na toj datoteci:
 
 ``` shell
-$ php hello.php
+php hello.php
+```
+
+``` shell-session
 Hello, world!
 ```
 
@@ -57,8 +63,8 @@ Sučelje naredbenog retka interpretera jezika PHP od [verzije 5.4.0](https://www
 Stvorimo direktorij `public` i u njemu datoteku `index.php`:
 
 ``` shell
-$ mkdir public
-$ touch public/index.php
+mkdir public
+touch public/index.php
 ```
 
 Korištenjem uređivača teksta po želji upišimo u datoteku `public/index.php` poziv funkcije `phpinfo()` ([dokumentacija](https://www.php.net/manual/en/function.phpinfo.php)) tako da sadržaj datoteke bude oblika:
@@ -72,7 +78,10 @@ phpinfo();
 Naredbom `php` vršimo pokretanje web poslužitelja na adresi lokalnog domaćina `localhost` i vratima `8000` (parametar `--server`, odnosno `-S`) koji će posluživati sadržaj direktorija `public` (parametar `--docroot`, odnosno `-t`) na način:
 
 ``` shell
-$ php -S localhost:8000 -t public
+php -S localhost:8000 -t public
+```
+
+``` shell-session
 [Mon Nov  2 11:17:46 2020] PHP 7.4.11 Development Server (http://localhost:8000) started
 ```
 
@@ -96,7 +105,10 @@ echo "<p>Hello, world!</p>\n";
 U drugom terminalu od onog u kojem je poslužitelj pokrenut možemo korištenjem naredbe `curl` saznati kako poslužitelj odgovara na klijentov HTTP zahtjev:
 
 ``` shell
-$ curl -v http://localhost:8000/
+curl -v http://localhost:8000/
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET / HTTP/1.1
@@ -137,7 +149,10 @@ koje nam redom kažu:
 Zatražimo na isti način neku datoteku koja ne postoji, npr. `moja-stranica.html`:
 
 ``` shell
-$ curl -v http://localhost:8000/moja-stranica.html
+curl -v http://localhost:8000/moja-stranica.html
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET /moja-stranica.html HTTP/1.1
@@ -181,7 +196,10 @@ Stvorimo datoteku `public/moja-stranica.html` sadržaja:
 Ponovimo isti zahtjev:
 
 ``` shell
-$ curl -v http://localhost:8000/moja-stranica.html
+curl -v http://localhost:8000/moja-stranica.html
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET /moja-stranica.html HTTP/1.1
@@ -213,13 +231,16 @@ Vidimo da smo uspješno primili statičnu datoteku s HTML-om. Na strani posluži
 Na sličan način možemo koristiti i datoteke drugih vrsta. Za ilustraciju, preuzmimo cURL-om s [Wikimedia Commons logotip Odjela za informatiku Sveučilišta u Rijeci u formatu SVG](https://commons.wikimedia.org/wiki/File:Inf-uniri-hr-logo.svg) i spremimo ga u datoteku `public/inf-logo.svg` (parametar `--output`, odnosno `-o`). To možemo učiniti naredbom:
 
 ``` shell
-$ curl -o public/inf-logo.svg https://upload.wikimedia.org/wikipedia/commons/5/59/Inf-uniri-hr-logo.svg
+curl -o public/inf-logo.svg https://upload.wikimedia.org/wikipedia/commons/5/59/Inf-uniri-hr-logo.svg
 ```
 
 Sad možemo i tu datoteku zatražiti od poslužitelja:
 
 ``` shell
-$ curl -v http://localhost:8000/inf-logo.svg
+curl -v http://localhost:8000/inf-logo.svg
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET /inf-logo.svg HTTP/1.1
@@ -308,7 +329,10 @@ SVG je tekstualni format pa njegov sadržaj možemo čitati slično kao što je 
 Za usporedbu isprobajmo dohvaćanje putanja `/proba` i `/proba/`:
 
 ``` shell
-$ curl -v http://localhost:8000/proba
+curl -v http://localhost:8000/proba
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET /proba HTTP/1.1
@@ -327,7 +351,13 @@ $ curl -v http://localhost:8000/proba
 <p>Hello, world!</p>
 * Closing connection 0
 
-$ curl -v http://localhost:8000/proba/
+```
+
+``` shell
+curl -v http://localhost:8000/proba/
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > GET /proba/ HTTP/1.1
@@ -350,7 +380,10 @@ $ curl -v http://localhost:8000/proba/
 Uočimo da web poslužitelj odgovara na istim sadržajem kao kad smo poslali zahtjev na putanju `/` metodom GET. Osim toga, kada ostavimo putanju istom, a promijenimo metodu GET u POST ([više detalja o HTTP metodi POST na MDN-u](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST)), poslužitelj ponovno odgovara istim sadržajem:
 
 ``` shell
-$ curl -v -X POST http://localhost:8000/
+curl -v -X POST http://localhost:8000/
+```
+
+``` shell-session
 *   Trying ::1:8000...
 * Connected to localhost (::1) port 8000 (#0)
 > POST / HTTP/1.1

@@ -653,7 +653,10 @@ Prema [Wikipediji](https://en.wikipedia.org/wiki/Object%E2%80%93relational_mappi
 ## Migracije u Djangu
 
 ``` shell
-$ ./manage.py makemigrations
+./manage.py makemigrations
+```
+
+``` shell-session
 Migrations for 'members':
   members/migrations/0002_auto.py:
     - Add field e-mail on member

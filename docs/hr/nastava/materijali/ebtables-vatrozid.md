@@ -24,16 +24,16 @@ Mi ćemo se fokusirati na [ebtables](https://ebtables.netfilter.org/), koji je, 
     Primjerice, ako su na usmjerivaču na kojem radimo mrežni adapteri `eth0` i `eth1` oni na kojima želimo uvesti filtriranje prometa ebtablesom i oni imaju dodijeljene IP adrese 10.0.0.1 i 10.0.0.2, tada ćemo stvoriti most `br0` s adresom 10.0.0.3 i maskom podmreže 255.255.255.0, odnosno /24 nizom naredbi:
 
     ``` shell
-    # brctl addbr br0
-    # brctl addif br0 eth0
-    # brctl addif br0 eth1
-    # ifconfig br0 10.0.0.3 255.255.255.0
+    brctl addbr br0
+    brctl addif br0 eth0
+    brctl addif br0 eth1
+    ifconfig br0 10.0.0.3 255.255.255.0
     ```
 
     Ukoliko posljednja naredba vrati grešku `SIOCSIFADDR: Invalid argument`, napišimo je u ekvivalentnom obliku:
 
     ``` shell
-    # ifconfig br0 10.0.0.3/24
+    ifconfig br0 10.0.0.3/24
     ```
 
     Već poznatom naredbom `netstat -ie` možemo se uvjeriti da smo dobro dodijelili adresu.
@@ -156,7 +156,10 @@ Za generiranje prometa koristit ćemo MGEN na isti način kao i do sada. Za svak
 Želimo da računalo n1 ima vatrozid koji odbacuje sve okvire koji imaju EtherType (tip) AppleTalk (vrijednost 0x809B). Vrijednosti različitih tipova možemo po potrebi pronaći na [IANA-inim stranicama o standardu IEEE 802](https://www.iana.org/assignments/ieee-802-numbers/ieee-802-numbers.xhtml#ieee-802-numbers-1) ili u datoteci `/etc/ethertypes`.
 
 ``` shell
-$ cat /etc/ethertypes
+cat /etc/ethertypes
+```
+
+``` shell-session
 #
 # Ethernet frame types
 #     This file describes some of the various Ethernet
@@ -176,13 +179,13 @@ X25         0805
 Pravilo odbacivanja dolaznih okvira dodat ćemo naredbom ljuske na n1:
 
 ``` shell
-# ebtables -A INPUT -p 0x809B -j DROP
+ebtables -A INPUT -p 0x809B -j DROP
 ```
 
 Alternativno mogli smo protokol navesti riječju. Naredba je tada:
 
 ``` shell
-# ebtables -A INPUT -p ATALK -j DROP
+ebtables -A INPUT -p ATALK -j DROP
 ```
 
 ### Primjer 2
@@ -190,13 +193,13 @@ Alternativno mogli smo protokol navesti riječju. Naredba je tada:
 Uvjerimo se da pravila uistinu rade. Stvorimo bilo kakav promet prema n1 od bilo kuda i uvjerimo se Wiresharkom da promet stiže do n1. Zatim uvedimo odbacivanje svih dolaznih okvira na n1 naredbom ljuske na n1:
 
 ``` shell
-# ebtables -P INPUT DROP
+ebtables -P INPUT DROP
 ```
 
 Provjerimo primljeni promet u Wiresharku. Zatim vratimo zadani cilj na prihvaćanje dolaznih okvira naredbom:
 
 ``` shell
-# ebtables -P INPUT ACCEPT
+ebtables -P INPUT ACCEPT
 ```
 
 Ponovno provjerimo primljeni promet u Wiresharku.
@@ -208,7 +211,7 @@ Ponovno provjerimo primljeni promet u Wiresharku.
 Pokrenemo ljusku na usmjerivaču n5 te upišemo:
 
 ``` shell
-# ebtables -A FORWARD -p IPv4 --ip-dst 10.0.0.20 -j DROP
+ebtables -A FORWARD -p IPv4 --ip-dst 10.0.0.20 -j DROP
 ```
 
 Provjerimo primljeni promet u Wiresharku. Stvorimo sad bilo kakav promet prema n2 od bilo kuda i uvjerimo se da, za razliku od prometa prema n1, taj promet zaista stiže do n2.
@@ -216,7 +219,7 @@ Provjerimo primljeni promet u Wiresharku. Stvorimo sad bilo kakav promet prema n
 Alternativno, promet prema n1 mogli smo blokirati prema njegovoj MAC adresi umjesto prema IPv4 adresi. Primjerice, ako je MAC adresa n1 00:11:22:33:44:55, naredba bi bila:
 
 ``` shell
-# ebtables -A FORWARD --dst 00:11:22:33:44:55 -j DROP
+ebtables -A FORWARD --dst 00:11:22:33:44:55 -j DROP
 ```
 
 Uočimo kako blokiranje prometa prema IPv4 adresi blokira samo promet koji koristi IPv4, dok blokiranje prometa prema MAC adresi blokira sav promet (npr. ARP i IPv6).
@@ -228,7 +231,7 @@ Uočimo kako blokiranje prometa prema IPv4 adresi blokira samo promet koji koris
 U ljusku na n5 upisujemo:
 
 ``` shell
-# ebtables -A FORWARD -p IPv4 --ip-src 10.0.0.22 --ip-dst 10.0.3.21 -j DROP
+ebtables -A FORWARD -p IPv4 --ip-src 10.0.0.22 --ip-dst 10.0.3.21 -j DROP
 ```
 
 Provjerimo primljeni promet u Wiresharku. Stvorimo sad bilo kakav promet od n3 do n10 i uvjerimo se da, za razliku od prometa prema n9, taj promet zaista stiže do n10.
@@ -238,7 +241,7 @@ Provjerimo primljeni promet u Wiresharku. Stvorimo sad bilo kakav promet od n3 d
 Vrlo stara računala koja implementiraju ranu verziju Etherneta koriste polje EtherType kao duljinu okvira. U modernim Ethernet mrežama takvih okvira ne bi trebalo biti te, ako se javljaju, uglavnom se radi o zlonamjernim okvirima. Blokirajmo ih na n1 naredbom ljuske:
 
 ``` shell
-# ebtables -A INPUT -p LENGTH -j DROP
+ebtables -A INPUT -p LENGTH -j DROP
 ```
 
 ### Primjer 6
@@ -246,11 +249,11 @@ Vrlo stara računala koja implementiraju ranu verziju Etherneta koriste polje Et
 Recimo da n1 ne želi primati ARP zahtjeve. Blokirat ćemo ih na n1 naredbom ljuske:
 
 ``` shell
-# ebtables -A INPUT -p ARP --arp-opcode 1 -j DROP
+ebtables -A INPUT -p ARP --arp-opcode 1 -j DROP
 ```
 
 Ako pak n1 ne želi slati odgovore na ARP zahtjeve, naredba ljuske je:
 
 ``` shell
-# ebtables -A OUTPUT -p ARP --arp-opcode 2 -j DROP
+ebtables -A OUTPUT -p ARP --arp-opcode 2 -j DROP
 ```

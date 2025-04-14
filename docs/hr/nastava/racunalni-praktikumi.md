@@ -51,21 +51,23 @@ Konfigurirat ćemo [GRUB](https://wiki.archlinux.org/title/GRUB). U datoteci `/e
 Dodatno ćemo instalirati [Avahi](https://wiki.archlinux.org/title/Avahi) i uključiti pokretanje njegovog daemona:
 
 ``` shell
-$ sudo pamac install avahi
-(...)
-$ sudo systemctl enable --now avahi-daemon.service
+sudo pamac install avahi
+sudo systemctl enable --now avahi-daemon.service
 ```
 
 Naposlijetku ćemo uključiti pokretanje [OpenSSH](https://wiki.archlinux.org/title/Secure_Shell) daemona:
 
 ``` shell
-$ sudo systemctl enable --now sshd.service
+sudo systemctl enable --now sshd.service
 ```
 
 i generirati novi SSH ključ sa zadanim postavkama i bez zaporke:
 
 ``` shell
-$ ssh-keygen
+ssh-keygen
+```
+
+``` shell-session
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/sensei/.ssh/id_rsa):
 Created directory '/home/sensei/.ssh'.
@@ -92,7 +94,10 @@ The key's randomart image is:
 Dodat ćemo novostvoreni ključ u `.ssh/authorized_keys` ručno ili naredbom:
 
 ``` shell
-$ ssh-copy-id localhost
+ssh-copy-id localhost
+```
+
+``` shell-session
 /usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/home/sensei/.ssh/id_rsa.pub"
 /usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
 /usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
@@ -113,7 +118,7 @@ Iskoristit ćemo [Clonezillu](https://clonezilla.org/) za stvaranje slike diska 
 Nakon kloniranja i uspješnog pokretanja operacijskog sustava Manjaro postavit ćemo ime domaćina naredbom:
 
 ``` shell
-$ sudo hostnamectl hostname odj-o359-101
+sudo hostnamectl hostname odj-o359-101
 ```
 
 te u datoteci `/etc/hosts` promijeniti liniju `127.0.1.1  odj-oxxx-yyy` u `127.0.1.1  odj-o359-101`. Varirat ćemo broj koji se odnosi na računalni praktikum i broj koji se odnosi na pojedino računalo po potrebi.
@@ -123,7 +128,7 @@ te u datoteci `/etc/hosts` promijeniti liniju `127.0.1.1  odj-oxxx-yyy` u `127.0
 Na nastavničkom računalu ćemo instalirati [Ansible](https://wiki.archlinux.org/title/Ansible) naredbom:
 
 ``` shell
-$ sudo pamac install ansible
+sudo pamac install ansible
 ```
 
 Stvorit ćemo datoteku `/etc/ansible/hosts` sadržaja:

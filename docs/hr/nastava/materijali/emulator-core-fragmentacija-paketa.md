@@ -29,7 +29,10 @@ Sastavljanje će izvesti domaćin na drugom kraju mreže.
 Na stvarnim i emuliranim čvorovima MTU mrežnog adaptera možemo provjeriti i postaviti već ranije spomenutim alatom `ifconfig`. Primjerice, ako se na čvoru na kojem radimo, mrežni adapter zove `em0`, MTU ćemo očitati naredbom
 
 ``` shell
-# ifconfig em0
+ifconfig em0
+```
+
+``` shell-session
 em0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500
         options=81249b<RXCSUM,TXCSUM,VLAN_MTU,VLAN_HWTAGGING,VLAN_HWCSUM,LRO,WOL_MAGIC,VLAN_HWFILTER>
         ether 64:00:6a:46:1f:4a
@@ -42,7 +45,7 @@ em0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500
 Uočimo da MTU iznosi 1500. Postavljanje MTU-a na neku drugu vrijednost, primjerice 1200, izvodimo naredbom
 
 ``` shell
-# ifconfig em0 mtu 1200
+ifconfig em0 mtu 1200
 ```
 
 nakon čega možemo ponovno pokrenuti `ifconfig` i uvjeriti se da je postavljanje uspjelo. U primjeru radimo na stvarnom čvoru, ali postupak je identičan kada se radi o mrežnim adapterima na emuliranom čvoru.

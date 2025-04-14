@@ -143,20 +143,20 @@ Izvor slike: [Wikimedia Commons File:Markdown-mark.svg](https://commons.wikimedi
 1. stvaranje novog web sjedišta
 
     ``` shell
-    $ mkdocs new .
+    mkdocs new .
     ```
 
 1. punjenje sjedišta sadržajem: dani, mjeseci, godine, desetljeća...
 1. lokalni pregled izrađenog web sjedišta
 
     ``` shell
-    $ mkdocs serve
+    mkdocs serve
     ```
 
 1. postavljanje sjedišta na web, odnosno osvježavanje verzije koja već postoji na webu novim sadržajem
 
     ``` shell
-    $ mkdocs gh-deploy
+    mkdocs gh-deploy
     ```
 
 ---

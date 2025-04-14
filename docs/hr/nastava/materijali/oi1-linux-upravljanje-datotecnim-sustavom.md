@@ -35,7 +35,7 @@ author: Luka Vretenar
 - Naredbe su oblika:
 
     ``` shell
-    $ naredba -parametar argument1 argument2 ...
+    naredba -parametar argument1 argument2 ...
     ```
 
 !!! tip
@@ -138,12 +138,12 @@ author: Luka Vretenar
     - putanju do nekog direktorija, govori naredbi `ls` da nam da ispis sadržaja nekog drugog direktorija koji joj specificiramo
 
     ``` shell
-    $ ls
-    $ ls -a
-    $ ls -l
-    $ ls -a -l
-    $ ls /apsolutna/putanja/
-    $ ls relativno/
+    ls
+    ls -a
+    ls -l
+    ls -a -l
+    ls /apsolutna/putanja/
+    ls relativno/
     ```
 
 !!! example "Zadatak"
@@ -158,11 +158,11 @@ author: Luka Vretenar
 - Naredba prima jedan argument koji je putanja u direktorij u koji želimo ući.
 
     ``` shell
-    $ cd direktorij
-    $ cd /putanja/
-    $ cd ..
-    $ cd ../..
-    $ cd ~
+    cd direktorij
+    cd /putanja/
+    cd ..
+    cd ../..
+    cd ~
     ```
 
 - Argument može biti putanja zadana:
@@ -192,9 +192,9 @@ author: Luka Vretenar
 - Putanja do direktorija može biti zadana relativno i apsolutno.
 
     ``` shell
-    $ mkdir novidirektorij
-    $ mkdir novidirektorij/drugidirektorij
-    $ mkdir /apsolutno/novidirektorij
+    mkdir novidirektorij
+    mkdir novidirektorij/drugidirektorij
+    mkdir /apsolutno/novidirektorij
     ```
 
 - Ukoliko se samo zada naziv direktorija, izraditi ćemo ga gdje se trenutno nalazimo u datotečnom sustavu.
@@ -210,8 +210,8 @@ author: Luka Vretenar
 - Naredbom `rmdir` brišemo pojedini direktorij iz datotečnog sustava, naziv direktorija zadajemo argumentom.
 
     ``` shell
-    $ rmdir direktorij
-    $ rmdir putanja/direktorij
+    rmdir direktorij
+    rmdir putanja/direktorij
     ```
 
 - Važno je da je direktorij kojeg brišemo prazan, inače ga ne možemo obrisati naredbom `rmdir`!
@@ -227,8 +227,8 @@ author: Luka Vretenar
 - Datoteke možemo izbrisati naredbom `rm`, na način da naziv datoteke ili putanju do nje specificiramo kao argument naredbi.
 
     ``` shell
-    $ rm datoteka
-    $ rm /put/do/datoteka
+    rm datoteka
+    rm /put/do/datoteka
     ```
 
 - U većini slučajeva nepovratno briše zadanu datoteku!
@@ -248,8 +248,8 @@ author: Luka Vretenar
 - Kao drugi argument možemo zadati i put do direktorija, u tom slučaju kopiramo datoteku pod istim imenom u taj direktorij.
 
     ``` shell
-    $ cp izvor destinacija
-    $ cp /put/do/izvor /put/do/destinacije/
+    cp izvor destinacija
+    cp /put/do/izvor /put/do/destinacije/
     ```
 
 !!! example "Zadatak"
@@ -262,8 +262,8 @@ author: Luka Vretenar
 - Naredba `mv` nam služi za pomicanje datoteke između direktorija, i kao `cp` prima dva argumenta.
 
     ``` shell
-    $ mv izvor destinacija
-    $ mv /put/do/izvor /put/do/destinacije/
+    mv izvor destinacija
+    mv /put/do/izvor /put/do/destinacije/
     ```
 
 - Naredbu `mv` koristimo i za preimenovanje datoteke ako radimo pomicanje u istom direktoriju pod drugo ime.

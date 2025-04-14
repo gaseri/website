@@ -17,7 +17,7 @@ U ovom dijelu izneseni su opisi instalacije te konfiguriranja nginx poslužitelj
 Na Ubuntu sustavima instalacija se vrši u jednoj naredbi:
 
 ``` shell
-$ sudo apt-get install nginx
+sudo apt-get install nginx
 ```
 
 Nakon potvrde i instaliranja, nginx poslužitelj se automatski pokrene na adresi `http://localhost`. Ako je instalacija bila uspješna, na toj adresi je dostupna demo nginx stranica.
@@ -25,7 +25,7 @@ Nakon potvrde i instaliranja, nginx poslužitelj se automatski pokrene na adresi
 Zbog potrebe za prikazom načina kako se nginx spaja sa PHP interpreterom potrebno je imati instaliran PHP FastCGI Process Manager (kraće, PHP FPM). Na Ubuntu sustavima to se radi sa:
 
 ``` shell
-$ sudo apt-get install php5-fpm
+sudo apt-get install php5-fpm
 ```
 
 ### Upravljanje
@@ -33,13 +33,13 @@ $ sudo apt-get install php5-fpm
 Pokretanje nginx poslužitelja vrši se naredbom
 
 ``` shell
-$ nginx
+nginx
 ```
 
 Signali se mogu davati nginx poslužitelju koristeći naredbu:
 
 ``` shell
-$ nginx -s signal
+nginx -s signal
 ```
 
 Parametar signal može biti:

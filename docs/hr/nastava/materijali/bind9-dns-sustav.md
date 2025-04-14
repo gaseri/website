@@ -219,8 +219,10 @@ Naredba `dig` dopušta izvođenje bilo kojeg valjanog DNS upita od kojih su naj�
 Provjerit ćemo ako server može 'razlagati' domenu imena i IP adrese na slijedeći način
 
 ``` shell
-$ dig dns.server.world
+dig dns.server.world
+```
 
+``` shell-session
 ; <<>> DiG 9.11.3-RedHat-9.11.3-6.fc28 <<>> dns.server.world
 ;; global options: +cmd
 ;; Got answer:
@@ -235,8 +237,13 @@ $ dig dns.server.world
 ;; WHEN: čet lip 28 18:32:10 CEST 2018
 ;; MSG SIZE  rcvd: 34
 
-$ dig -x 192.168.1.238
+```
 
+``` shell
+dig -x 192.168.1.238
+```
+
+``` shell-session
 ; <<>> DiG 9.11.3-RedHat-9.11.3-6.fc28 <<>> dns.server.world
 ;; global options: +cmd
 ;; Got answer:
@@ -258,8 +265,10 @@ $ dig -x 192.168.1.238
 Sljedeći primjer pokazuje upit na DNS server za određene zapise; u ovom primjeru to predstavlja zapis MX
 
 ``` shell
-$ dig MX wikimedia.org @ns0.wikimedia.org
+dig MX wikimedia.org @ns0.wikimedia.org
+```
 
+``` shell-session
 ; <<>> DiG 9.11.3-RedHat-9.11.3-6.fc28 <<>> MX wikimedia.org @ns0.wikimedia.org
 ;; global options: +cmd
 ;; Got answer:
@@ -291,8 +300,10 @@ mx2001.wikimedia.org.  3600  IN  AAAA  2620:0:860:2:208:80:153:45
 Sljedeći primjer prikazuje isključivanje pojedinih dijelova ispisa. U ovom slučaju isključili smo ispise o komentarima i o statistikama
 
 ``` shell
-$ dig redhat.com
+dig redhat.com
+```
 
+``` shell-session
 ; <<>> DiG 9.11.3-RedHat-9.11.3-6.fc28 <<>> redhat.com
 ;; global options: +cmd
 ;; Got answer:
@@ -313,8 +324,13 @@ redhat.com.    971  IN  A  209.132.183.105
 ;; WHEN: čet lip 28 18:49:49 CEST 2018
 ;; MSG SIZE  rcvd: 67
 
-$ dig redhat.com +nocomments +nostats
+```
 
+``` shell
+dig redhat.com +nocomments +nostats
+```
+
+``` shell-session
 ; <<>> DiG 9.11.3-RedHat-9.11.3-6.fc28 <<>> redhat.com +nocomments +nostats
 ;; global options: +cmd
 ;redhat.com.      IN  A
@@ -333,18 +349,30 @@ Dijelovi ispisa su:
 Naredba `host` je jednostavna naredba za obavljanje DNS dohvata. Obično se koristi za pretvaranje imena u IP adrese i obrnuto. Sljedeći primjer pokazuje korištenje naredbe host korištenjem imena, a zatim IP adrese
 
 ``` shell
-$ host example.group.miletic.net
+host example.group.miletic.net
+```
+
+``` shell-session
 example.group.miletic.net is an alias for reaction.miletic.net.
 reaction.miletic.net has address 108.61.208.98
 reaction.miletic.net has IPv6 address 2001:19f0:6801:4e:5400:ff:fe5d:b9a6
-$ host 108.61.208.98
+```
+
+``` shell
+host 108.61.208.98
+```
+
+``` shell-session
 98.208.61.108.in-addr.arpa domain name pointer reaction.miletic.net.
 ```
 
 Sljedeći primjer prikazuje otkrivanje mail servera domene
 
 ``` shell
-$ host -t mx apache.org
+host -t mx apache.org
+```
+
+``` shell-session
 apache.org mail is handled by 10 mx1-lw-us.apache.org.
 apache.org mail is handled by 10 mx1-lw-eu.apache.org.
 ```
@@ -352,7 +380,10 @@ apache.org mail is handled by 10 mx1-lw-eu.apache.org.
 Dobivanje TTL informacija
 
 ``` shell
-$ host -v -t a mesa3d.org
+host -v -t a mesa3d.org
+```
+
+``` shell-session
 Trying "mesa3d.org"
 ;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 6792
 ;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
@@ -387,10 +418,18 @@ nameserver 127.0.0.1
 Nakon toga rezolucija domene `example.group.miletic.net` postaje nemoguća, što možemo provjeriti naredbama `host` i `dig`
 
 ``` shell
-$ host example.group.miletic.net
-;; connection timed out; no servers could be reached
-$ dig example.group.miletic.net
+host example.group.miletic.net
+```
 
+``` shell-session
+;; connection timed out; no servers could be reached
+```
+
+``` shell
+dig example.group.miletic.net
+```
+
+``` shell-session
 ; <<>> DiG 9.11.3-RedHat-9.11.3-6.fc28 <<>> example.group.miletic.net
 ;; global options: +cmd
 ;; connection timed out; no servers could be reached

@@ -89,19 +89,19 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 - `mount` je naredba za montiranje datotečnih sustava; **primjer:**
 
     ``` shell
-    $ mount /dev/sda3 /home
+    mount /dev/sda3 /home
     ```
 
 - `umount` je naredba za odmontiranje datotečnih sustava; **primjer:**
 
     ``` shell
-    $ umount /dev/sda3
+    umount /dev/sda3
     ```
 
     ili
 
     ``` shell
-    $ umount /home
+    umount /home
     ```
 
 !!! example "Zadatak"
