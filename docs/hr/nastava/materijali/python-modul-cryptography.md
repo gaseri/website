@@ -74,9 +74,9 @@ S tako inicijaliziranim modulom šifriranje se izvodi na način:
 
 ``` python
 message = """\
-Jezik, čist materinji jezik poznavati je prva i najglavnija dužnost svakog\
-pisca. Tko ga ne poznaje, može biti uman, odličan, zanimljiv čovjek, ali\
-dobar, uspješan pisac ― nikada. Pokažite mi na jednog jedinog većeg pisca u\
+Jezik, čist materinji jezik poznavati je prva i najglavnija dužnost svakog \
+pisca. Tko ga ne poznaje, može biti uman, odličan, zanimljiv čovjek, ali \
+dobar, uspješan pisac ― nikada. Pokažite mi na jednog jedinog većeg pisca u \
 stranom svijetu što griješi proti pravilima svog jezika.\
 """
 encoded_message = message.encode()
