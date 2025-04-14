@@ -1,5 +1,5 @@
 ---
-autor: Patricia Hauswirth, Kristina Sobol, Matea Turalija
+author: Patricia Hauswirth, Kristina Sobol, Matea Turalija
 ---
 
 # Protočnost instrukcija

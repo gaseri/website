@@ -1,5 +1,5 @@
 ---
-autor: Petar Car, Goran Marković, Matea Turalija
+author: Petar Car, Goran Marković, Matea Turalija
 ---
 
 # MIPS: grananje i petlje
