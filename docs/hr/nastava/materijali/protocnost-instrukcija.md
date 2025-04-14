@@ -51,22 +51,22 @@ flowchart LR
 
 Izvođenje svake instrukcije započinje aktivnostima u fazi PRIBAVI, koje obuhvaćaju pribavljanje instrukcije iz memorije, inkrementiranje programskog brojila i dekodiranje operacijskog koda instrukcije. Nakon završetka tih aktivnosti, nastavlja se s izvršavanjem instrukcije u fazi IZVRŠI, koja uključuje dohvat operanada, izvođenje aritmetičkih ili logičkih operacija te pohranu rezultata.
 
-To znači da se zadatak izvođenja instrukcije može rastaviti na dva slijedna podzadatka: PRIBAVI i IZVRŠI. Ako se svakom od podzadataka dodjeli samostalan sklop - protočni segment, dobiva se instrukcijska protočna sturktura s M = 2 protočna segmenta
+To znači da se zadatak izvođenja instrukcije može rastaviti na dva slijedna podzadatka: PRIBAVI i IZVRŠI. Ako se svakom od podzadataka dodjeli samostalan sklop - protočni segment, dobiva se instrukcijska protočna struktura s M = 2 protočna segmenta
 
 ``` mermaid
 flowchart LR
-    A( ) --> id1(Pribavi) --> id2(Izvrši) --> B( )
+    A( ) --> id1(PRIBAVI) --> id2(IZVRŠI) --> B( )
 ```
 
 Izvođenje slijeda instrukcija u vremenu, tj. programa u instrukcijskoj protočnoj strukturi možemo prikazati pomoću Ganttovog dijagrama. Na osi $x$ imamo vrijeme izvođenja koje je u ovom slučaju za svaki segment jednako i to je jedna perioda izvođenja, a na osi $y$ je redni broj instrukcije:
 
 |  |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- |
-| instrukcija i-1 | pribavi | izvrši | | | | |
-| instrukcija i | | pribavi | izvrši | | | |
-| instrukcija i+1 | | | pribavi | izvrši | | |
-| instrukcija i+2 | | | | pribavi | izvrši | |
-| instrukcija i+3 | | | | | pribavi | izvrši |
+| instrukcija i-1 | PRIBAVI | IZVRŠI | | | | |
+| instrukcija i | | PRIBAVI | IZVRŠI | | | |
+| instrukcija i+1 | | | PRIBAVI | IZVRŠI | | |
+| instrukcija i+2 | | | | PRIBAVI | IZVRŠI | |
+| instrukcija i+3 | | | | | PRIBAVI | IZVRŠI |
 
 U takvoj instrukcijskoj protočnoj strukturi, jedna instrukcija se najprije dohvaća i dekodira, a zatim se to specifično sklopovlje koje je zaduženo za tu fazu zaustavlja i čeka dok se instrukcija izvršava. Nakon što se izvršavanje završi, sklopovlje ponovno prelazi na dohvaćanje i dekodiranje sljedeće instrukcije, dok sklopovi za izvršavanje instrukcija čekaju svoj red. Ovaj ciklus se nastavlja, omogućavajući protok instrukcija kroz različite faze i maksimizirajući iskorištenost resursa procesora.
 
