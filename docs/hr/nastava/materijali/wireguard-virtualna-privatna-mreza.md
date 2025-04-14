@@ -303,9 +303,6 @@ Pokrenimo klijent naredbom `docker run`:
 
 ``` shell
 docker run -d \
-```
-
-``` shell-session
   --name=wireguard-peer1 \
   --network my-net \
   --cap-add=NET_ADMIN \
@@ -408,6 +405,9 @@ Isprobajmo naredbu `ping` klijenta na poslužitelju:
 
 ``` shell
 docker exec wireguard-server ping 10.31.31.2
+```
+
+``` shell-session
 PING 10.31.31.2 (10.31.31.2) 56(84) bytes of data.
 64 bytes from 10.31.31.2: icmp_seq=1 ttl=64 time=0.187 ms
 64 bytes from 10.31.31.2: icmp_seq=2 ttl=64 time=0.546 ms
@@ -420,6 +420,9 @@ Isprobajmo naredbu `ping` poslužitelja na klijentu:
 
 ``` shell
 docker exec wireguard-peer1 ping 10.31.31.1
+```
+
+``` shell-session
 PING 10.31.31.1 (10.31.31.1) 56(84) bytes of data.
 64 bytes from 10.31.31.1: icmp_seq=1 ttl=64 time=0.325 ms
 64 bytes from 10.31.31.1: icmp_seq=2 ttl=64 time=0.268 ms
