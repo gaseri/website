@@ -19,6 +19,7 @@ author: Vedran Miletić
 - [Dr. Vanja Slavuj](https://portal.uniri.hr/Portfolio/1474), Assistant Professor
 - [Dr. Gordan Đurović](https://portal.uniri.hr/Portfolio/693), Assistant Professor
 - [Tomislav Slaviček-Car](https://www.linkedin.com/in/tomislav-slavi%C4%8Dek-car-mag-inf-66460440), Adjunct Research and Teaching Assistant
+- [Dr. Lara Saftić Martinović](https://portal.uniri.hr/Portfolio/2641), Assistant Professor
 - [Dr. Lado Kranjčević](https://portal.uniri.hr/Portfolio/1843), Full Professor, [Department of fluid mechanics and computational engineering](http://www.riteh.uniri.hr/ustroj/zavodi/zmfri/), [Faculty of Engineering](http://www.riteh.uniri.hr/), [University of Rijeka](https://uniri.hr/)
 - [Dr. Davide Mercadante](https://lab.mercadante.net/), Senior Lecturer, [School of Chemical Sciences](https://www.auckland.ac.nz/en/science/about-the-faculty/school-of-chemical-sciences.html), [University of Auckland](https://www.auckland.ac.nz/en.html)
 - [Patrik Nikolić](https://nikoli.ch/), Owner, [BioRX Partners LLC](https://www.biorxpartners.com/); former Translational Research Scientist, [RxTx Research](https://rxtxresearch.github.io/)
