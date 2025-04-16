@@ -543,7 +543,7 @@ class MembershipPayment(models.Model):
 
 ## Pretvorba Django modela u SQL (1/2)
 
-Django će na temelju definiranih modela generirati SQL. Oblik (tzv. dijalekt) SQL-a ovisit će o korištenom sustavu za upravljanju bazom podataka, a [podržani sustavi](https://docs.djangoproject.com/en/3.2/ref/databases/) su:
+Django će na temelju definiranih modela generirati SQL. Oblik (tzv. dijalekt) SQL-a ovisit će o korištenom sustavu za upravljanju bazom podataka, a [podržani sustavi](https://docs.djangoproject.com/en/5.2/ref/databases/) su:
 
 - MariaDB/MySQL (prvi primjer u nastavku)
 - PostgreSQL (ostali primjeri u nastavku)
@@ -644,7 +644,7 @@ Prema [Wikipediji](https://en.wikipedia.org/wiki/Object%E2%80%93relational_mappi
 - npr. [Hibernate](https://hibernate.org/) (Java), [PonyORM](https://ponyorm.org/) (Python), [Sequelize](https://sequelize.org/) (JavaScript) i [Doctrine](https://www.doctrine-project.org/projects/orm.html) (PHP)
 - čitavi okviri uglavnom integriraju ORM, primjerice:
     - [Django Model](https://opensource.com/article/17/11/django-orm)
-    - [Laravel Eloquent](https://laravel.com/docs/8.x/eloquent)
+    - [Laravel Eloquent](https://laravel.com/docs/12.x/eloquent)
     - [Ruby on Rails ActiveRecord](https://guides.rubyonrails.org/active_record_basics.html)
 - generira upite za dohvaćanje podataka i migracije (promjene sheme)
 
@@ -695,7 +695,7 @@ Prema [Wikipediji](https://en.wikipedia.org/wiki/NoSQL), dio [Yenove taksonomije
 
 - međuspremnik ključeva i vrijednosti (engl. *key–value cache*)
     - npr. [Memcached](https://www.memcached.org/), [Redis](https://redis.io/)
-    - često se koriste kao međuspremnik podataka dohvaćenih iz relacijskih baza, npr. [Memcached u Djangu](https://docs.djangoproject.com/en/3.2/topics/cache/), [Memcached ili Redis u Ruby on Railsu](https://guides.rubyonrails.org/caching_with_rails.html)
+    - često se koriste kao međuspremnik podataka dohvaćenih iz relacijskih baza, npr. [Memcached u Djangu](https://docs.djangoproject.com/en/5.2/topics/cache/), [Memcached ili Redis u Ruby on Railsu](https://guides.rubyonrails.org/caching_with_rails.html)
 - pohrana ključeva i vrijednosti (engl. *key–value store*)
     - npr. [ArangoDB](https://www.arangodb.com/), [Couchbase](https://www.couchbase.com/), [Redis](https://redis.io/)
 - pohrana dokumenata, npr. [ArangoDB](https://www.arangodb.com/), [Couchbase](https://www.couchbase.com/), [Firebase](https://firebase.google.com/), [MongoDB](https://www.mongodb.com/)

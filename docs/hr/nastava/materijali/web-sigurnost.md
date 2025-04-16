@@ -77,8 +77,8 @@ Ubrizganje u SQL upit (engl. *SQL injection*) događa se kada počinitelj korist
 
 ## Zaštita od ubrizganja u SQL upit
 
-- [Django](https://docs.djangoproject.com/en/3.2/topics/security/#sql-injection-protection)
-- [Laravel](https://laravel.com/docs/8.x/queries)
+- [Django](https://docs.djangoproject.com/en/5.2/topics/security/#sql-injection-protection)
+- [Laravel](https://laravel.com/docs/12.x/queries)
 - [Ruby on Rails](https://guides.rubyonrails.org/security.html#injection)
 
 ---
@@ -91,8 +91,8 @@ Skriptiranje na više web sjedišta (engl. *cross-site scripting*, kraće XSS) j
 
 ## Zaštita od XSS-a
 
-- [Django](https://docs.djangoproject.com/en/3.2/topics/security/#cross-site-scripting-xss-protection)
-- [Laravel](https://laravel.com/docs/8.x/blade)
+- [Django](https://docs.djangoproject.com/en/5.2/topics/security/#cross-site-scripting-xss-protection)
+- [Laravel](https://laravel.com/docs/12.x/blade)
 - [Ruby on Rails](https://guides.rubyonrails.org/security.html#cross-site-scripting-xss)
 
 ---
@@ -105,8 +105,8 @@ Krivotvorenje zahtjeva za više web sjedišta (engl. *Cross-site Request Forgery
 
 ## Zaštita od CSRF-a
 
-- [Django](https://docs.djangoproject.com/en/3.2/topics/security/#cross-site-request-forgery-csrf-protection)
-- [Laravel](https://laravel.com/docs/8.x/csrf)
+- [Django](https://docs.djangoproject.com/en/5.2/topics/security/#cross-site-request-forgery-csrf-protection)
+- [Laravel](https://laravel.com/docs/12.x/csrf)
 - [Ruby on Rails](https://guides.rubyonrails.org/security.html#csrf-countermeasures)
 
 ---

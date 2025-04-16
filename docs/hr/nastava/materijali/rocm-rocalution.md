@@ -8,7 +8,7 @@ U nastavku koristimo kod iz repozitorija [rocALUTION](https://github.com/ROCmSof
 
 rocALUTION je biblioteka rijetke linearne algebre koja ima istu ulogu za rijetke matrice koju rocSOLVER ima za obične matrice.
 
-Glavni načini vršenja računanja sa rocALUTION su (prema [službenoj dokumentaciji](https://rocm.docs.amd.com/projects/rocALUTION/en/latest/usermanual/usermanual.html)):
+Glavni načini vršenja računanja sa rocALUTION su (prema [službenoj dokumentaciji](https://rocm.docs.amd.com/projects/rocALUTION/en/latest/api-reference/basics.html)):
 
 - Single-node Computation (jednočvorno računanje)
 - Multi-node Computation (višečvorno računanje)
@@ -41,7 +41,7 @@ Glavni načini vršenja računanja sa rocALUTION su (prema [službenoj dokumenta
 
 ### Primjer `cg.cpp`
 
-Službeni primjer `clients/samples/cg.cpp` ([poveznica na kod](https://github.com/ROCmSoftwarePlatform/rocALUTION/blob/develop/clients/samples/cg.cpp)) koristi jednu od Krylovih potprostornih metoda CR (Conjugate Residual Method). To je iterativna metoda za riješavanje rijetkih simetričnih polu-pozitivnih određenih linearnih sustava Ax=b. (Za više informacija o ovoj metodi pogledajte [dio službene dokumentacije koji govori o solverima](https://rocm.docs.amd.com/projects/rocALUTION/en/latest/usermanual/solvers.html).)
+Službeni primjer `clients/samples/cg.cpp` ([poveznica na kod](https://github.com/ROCmSoftwarePlatform/rocALUTION/blob/develop/clients/samples/cg.cpp)) koristi jednu od Krylovih potprostornih metoda CR (Conjugate Residual Method). To je iterativna metoda za riješavanje rijetkih simetričnih polu-pozitivnih određenih linearnih sustava Ax=b. (Za više informacija o ovoj metodi pogledajte [dio službene dokumentacije koji govori o solverima](https://rocm.docs.amd.com/projects/rocALUTION/en/latest/api-reference/solvers.htmll).)
 
 Kod je oblika:
 
@@ -155,13 +155,13 @@ int main(int argc, char* argv[])
   }
 ```
 
-Poziva se funkcija `init_rocalution()`. Ova funkcija definira backend deskriptor sa informacijama o hardveru i njegovim specifikacijama. (Za više detalja pogledajte [službenu dokumentaciju](https://rocm.docs.amd.com/projects/rocALUTION/en/latest/usermanual/basics.html#backend-descriptor-and-user-control).)
+Poziva se funkcija `init_rocalution()`. Ova funkcija definira backend deskriptor sa informacijama o hardveru i njegovim specifikacijama. (Za više detalja pogledajte [službenu dokumentaciju](https://rocm.docs.amd.com/projects/rocALUTION/en/latest/api-reference/basics.html#backend-descriptor-and-user-control).)
 
 Slijedi uvjetovanje `if` gdje u slučaju da je `argc` veći od 2, poziva se funkcija `set_omp_threads_rocalution()`, kojom se postavlja broj niti koji će rocALUTION koristiti. To će se također postići pomoću funkcije `atoi()`, obzirom da je `argv` tipa char.
 
 Iza toga stoji poziv funkciji `info_rocalution()` koja ispisuje informacije o rocALUTION platformi.
 
-Za više informacija o funkciji za postavljanje broja niti pogledajte [API dokumentaciju](https://rocm.docs.amd.com/projects/rocALUTION/en/latest/api.html#group__backend__module_1ga83e2a7e27ef32854ba4a34ff83b3285f), a a više informacija o funkciji `atoi()` pogledajte [cppreference](https://en.cppreference.com/w/c/string/byte/atoi).
+Za više informacija o funkciji za postavljanje broja niti pogledajte [odjeljad Backend Manager u API dokumentaciji](https://rocm.docs.amd.com/projects/rocALUTION/en/latest/api-reference/api.html#backend-manager), a za više informacija o funkciji `atoi()` pogledajte [cppreference](https://en.cppreference.com/w/c/string/byte/atoi).
 
 ``` c++
 init_rocalution();
@@ -200,7 +200,7 @@ rhs.Allocate("rhs", mat.GetM());
 e.Allocate("e", mat.GetN());
 ```
 
-U CG slover učitavamo matricu na kojoj će biti vršene operacije, vektor i njegov tip i tip nove varijable. Jednako tako radimo za Jacobi preconditioner. Jacobi riješava linearni sustav u kojem dominiraju dijagonale (Za više informacija o ovoj metodi pogledajte [službenu dokumentaciju](https://rocm.docs.amd.com/projects/rocALUTION/en/latest/usermanual/precond.html#jacobi-method).
+U CG slover učitavamo matricu na kojoj će biti vršene operacije, vektor i njegov tip i tip nove varijable. Jednako tako radimo za Jacobi preconditioner. Jacobi riješava linearni sustav u kojem dominiraju dijagonale; za više informacija o ovoj metodi pogledajte [službenu dokumentaciju](https://rocm.docs.amd.com/projects/rocALUTION/en/latest/api-reference/precond.html#jacobi-method).
 
 ``` c++
 CG<LocalMatrix<double>, LocalVector<double>, double> ls;

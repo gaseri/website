@@ -23,7 +23,7 @@ Photo source: [Ray Hennessy (@rayhennessy) | Unsplash](https://unsplash.com/phot
 
 Last week in Rijeka we held [Science festival 2015](https://www.mojarijeka.hr/otvoren-13-festival-znanosti-s-temom-sunce/). This is the (hopefully not unlucky) 13th instance of the festival that started in 2003. Popular science events were organized in 18 cities in Croatia.
 
-I was invited to give a popular lecture at the [University departments open day](https://www.math.uniri.hr/hr/component/content/article/13-hr/novosti/404-otvornei-dan-2015.html), which is a part of the festival. This is the second time in a row that I got invited to give popular lecture at the open day. In 2014 I talked about The Perfect Storm in information technology caused by the fall of economy during [2008-2012 Great Recession](https://en.wikipedia.org/wiki/Great_Recession) and the simultaneous rise of low-cost, high-value open-source solutions. Open source completely changed the landscape of information technology in just a few years.
+I was invited to give a popular lecture at the [University departments open day](https://math.uniri.hr/dogadjanja/otvoreni-dan-sveucilisnih-odjela-2015/), which is a part of the festival. This is the second time in a row that I got invited to give popular lecture at the open day. In 2014 I talked about The Perfect Storm in information technology caused by the fall of economy during [2008-2012 Great Recession](https://en.wikipedia.org/wiki/Great_Recession) and the simultaneous rise of low-cost, high-value open-source solutions. Open source completely changed the landscape of information technology in just a few years.
 
 <!-- more -->
 
@@ -41,4 +41,4 @@ The talk has been recorded and will be^W^W [has been uploaded to YouTube](https:
 
 ## Article in the Universitas newspaper
 
-University of Split newspaper [Universitas](https://www.unist.hr/sveucilisni-list-universitas) published an article covering the talk in [issue 65](https://www.unist.hr/DesktopModules/Bring2mind/DMX/API/Entries/Download?language=hr-HR&EntryId=660&Command=Core_Download&PortalId=0&TabId=1569), pages 18 and 19. Tomislav Čizmić Marović helped me get the article in shape for publication, had no problem accepting drafts in [OpenDocument format](https://opendocumentformat.org/), and handled the typesetting very professionally. Thanks!
+University of Split newspaper [Universitas](https://www.unist.hr/universitas-17821/17821) published an article covering the talk in [issue 65](https://marjan.unist.hr/UserDocsImages/Portals/0/DMX/2017/11/Universitas%20-%20br.%2065_660.pdf), pages 18 and 19. Tomislav Čizmić Marović helped me get the article in shape for publication, had no problem accepting drafts in [OpenDocument format](https://opendocumentformat.org/), and handled the typesetting very professionally. Thanks!

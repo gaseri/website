@@ -119,7 +119,7 @@ U terminalu možemo vidjeti HTTP zahtjeve na poslužitelj i statusni kod odgovor
 
 > Tko radi taj i griješi, a iz grešaka se najbolje uči.
 
-Djangovu službenu dokumentaciju možete pronaći [ovdje](https://docs.djangoproject.com/en/3.2/).
+Djangovu službenu dokumentaciju možete pronaći [ovdje](https://docs.djangoproject.com/en/5.2/).
 
 [Stack Overflow](https://stackoverflow.com/) je mjesto za pitanja i odgovore za profesionalne programere i entuzijaste. Sadrži pitanja i odgovore na širok raspon tema u računalnom programiranju. Više na [Wikipediji](https://en.wikipedia.org/wiki/Stack_Overflow).
 
@@ -152,7 +152,7 @@ U nastavku ovog poglavlja prikazano je kako kreirati Django aplikaciju za teksta
 !!! example "Zadatak"
     Otvorite datoteku i provjerite što je zapisano u `mysite/mysite/url.py`.
 
-Za definiranje putanje na koju će Django primati HTTP zahtjeve iskoristit ćemo funkciju `django.urls.path()` ([dokumentacija](https://docs.djangoproject.com/en/3.2/ref/urls/#path)) i usmjerit ćemo na administratorsko sučelje ([dokumentacija](https://docs.djangoproject.com/en/3.2/ref/contrib/#admin)).
+Za definiranje putanje na koju će Django primati HTTP zahtjeve iskoristit ćemo funkciju `django.urls.path()` ([dokumentacija](https://docs.djangoproject.com/en/5.2/ref/urls/#path)) i usmjerit ćemo na administratorsko sučelje ([dokumentacija](https://docs.djangoproject.com/en/5.2/ref/contrib/#admin)).
 
 Datoteka `mysite/mysite/url.py` ima sadržaj
 
@@ -247,7 +247,7 @@ Ovime stvaramo novu tablicu u bazi podataka a zadana polja postaju stupci u toj 
         return self.predmet_naslov
     ```
 
-Službena [Django dokumentacija](https://docs.djangoproject.com/en/3.2/ref/models/fields/) o svim poljima unutar modela.
+Službena [Django dokumentacija](https://docs.djangoproject.com/en/5.2/ref/models/fields/) o svim poljima unutar modela.
 
 #### Objektno-relacijsko preslikavanje
 
@@ -413,11 +413,11 @@ admin.site.register(Predmet)
 
 ### Modeli: Relacije među modelima
 
-Relacije su detaljno opisane u [Djangovoj dokumnetaciji](https://docs.djangoproject.com/en/3.2/topics/db/examples/):
+Relacije su detaljno opisane u [Djangovoj dokumnetaciji](https://docs.djangoproject.com/en/5.2/topics/db/examples/):
 
-- [Many-to-many](https://docs.djangoproject.com/en/3.2/topics/db/examples/many_to_many/)
-- [One-to-one](https://docs.djangoproject.com/en/3.2/topics/db/examples/one_to_one/)
-- [Many-to-one](https://docs.djangoproject.com/en/3.2/topics/db/examples/many_to_one/)
+- [Many-to-many](https://docs.djangoproject.com/en/5.2/topics/db/examples/many_to_many/)
+- [One-to-one](https://docs.djangoproject.com/en/5.2/topics/db/examples/one_to_one/)
+- [Many-to-one](https://docs.djangoproject.com/en/5.2/topics/db/examples/many_to_one/)
 
 #### Many-to-many
 
@@ -1279,7 +1279,7 @@ class Command(BaseCommand):
             book = BookFactory()
 ```
 
-Svojstvo funkcije `handle()` je postavljeno na  `transaction.atomic`, što označava da ako je blok koda uspješno izvršen, promjene se pohranjuju u bazu podataka ([detaljnije objašnjenje o modulu transaction korištenom u prethodnom primjeru](https://docs.djangoproject.com/en/3.2/topics/db/transactions/)).
+Svojstvo funkcije `handle()` je postavljeno na  `transaction.atomic`, što označava da ako je blok koda uspješno izvršen, promjene se pohranjuju u bazu podataka ([detaljnije objašnjenje o modulu transaction korištenom u prethodnom primjeru](https://docs.djangoproject.com/en/5.2/topics/db/transactions/)).
 
 !!! example "Zadatak"
     Isprobajte funkcionalnost kreirane naredbe, a zatim provjerite ako su uneseni podaci unutar admin sučelja.
@@ -1582,7 +1582,7 @@ li a {
     - Provedite potrebne naredbe za migraciju.
     - Pokrenite `./manage.py shell` i kreirajte jednog studenta.
 
-Naredbom `dumpdata` izvozimo vrijednosti iz baze ([detaljnije o naredbi dumpdata](https://docs.djangoproject.com/en/3.2/ref/django-admin/#dumpdata)). Pokrenimo je na način:
+Naredbom `dumpdata` izvozimo vrijednosti iz baze ([detaljnije o naredbi dumpdata](https://docs.djangoproject.com/en/5.2/ref/django-admin/#dumpdata)). Pokrenimo je na način:
 
 ``` shell
 ./manage.py dumpdata main.Student --pk 1 --indent 4 > 0001_student.json
@@ -1596,7 +1596,7 @@ Naredbom `dumpdata` izvozimo vrijednosti iz baze ([detaljnije o naredbi dumpdata
     >>> Student.objects.filter(pk=1).delete()
     ```
 
-Za uvoz podataka u bazu koristimo naredbu `loaddata`. Detaljnije o naredbi [loaddata](https://docs.djangoproject.com/en/3.2/ref/django-admin/#loaddata).
+Za uvoz podataka u bazu koristimo naredbu `loaddata`. Detaljnije o naredbi [loaddata](https://docs.djangoproject.com/en/5.2/ref/django-admin/#loaddata).
 
 !!! example "Zadatak"
     Uvezite prethodno kreirani `0001_student.json` u bazu.
@@ -1804,7 +1804,7 @@ Posjetite `http://127.0.0.1:8000/accounts/` i `http://127.0.0.1:8000/accounts/lo
   </form>
 ```
 
-Detaljnije o [CSRF tokenu](https://docs.djangoproject.com/en/3.2/ref/csrf/)
+Detaljnije o [CSRF tokenu](https://docs.djangoproject.com/en/5.2/ref/csrf/)
 
 Postavljanje lokacije gdje želimo da korisnik bude usmjeren nakon uspješnog logina radimo unutar `settings.py`, tako da dodamo npr. `LOGIN_REDIRECT_URL = '/'` za usmjeravanje na `index.html`.
 
@@ -1900,7 +1900,7 @@ def test_zbroji():
 
 **Regresijsko testiranje** reproducira greške koje su se prethodno događale u programskom kodu. Svaki se test u početku pokreće kako bi se provjerilo ako je greška u kodu ispravljena, a zatim se ponovno pokreće kako bi se osiguralo da nije ponovno uveden nakon kasnijih promjena koda.
 
-Za testiranje projekta i programskog koda unutar Django-a koristiti ćemo osnovnu klasu za testiranje koja se zove [django.test.TestCase](https://docs.djangoproject.com/en/3.2/topics/testing/tools/#testcase). Najzastupljenija je klasa za testiranje, iako neke testove ne provodi "najbrže" (svaki test ne zahtjeva kreiranje baze podataka).
+Za testiranje projekta i programskog koda unutar Django-a koristiti ćemo osnovnu klasu za testiranje koja se zove [django.test.TestCase](https://docs.djangoproject.com/en/5.2/topics/testing/tools/#testcase). Najzastupljenija je klasa za testiranje, iako neke testove ne provodi "najbrže" (svaki test ne zahtjeva kreiranje baze podataka).
 
 ``` python
 class Author(models.Model):

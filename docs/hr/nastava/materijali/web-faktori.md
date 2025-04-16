@@ -88,7 +88,7 @@ Sustavi upravljanja zavisnostima:
 - [Moodle](https://moodle.org/) ([konfiguracija](https://docs.moodle.org/38/en/Configuration_file) i [primjer konfiguracijske datoteke](https://github.com/moodle/moodle/blob/master/config-dist.php))
 - [Odoo](https://www.odoo.com/) ([konfiguracija](https://www.odoo.com/documentation/14.0/reference/cmdline.html#configuration-file))
 - [Trac](https://trac.edgewall.org/) ([konfiguracija](https://trac.edgewall.org/wiki/TracIni))
-- [Django](https://www.djangoproject.com/) ([konfiguracija](https://docs.djangoproject.com/en/3.2/topics/settings/))
+- [Django](https://www.djangoproject.com/) ([konfiguracija](https://docs.djangoproject.com/en/5.2/topics/settings/))
 - [Laravel](https://laravel.com/) ([primjer konfiguracijske datoteke](https://github.com/laravel/laravel/blob/master/.env.example))
 - [Ruby on Rails](https://rubyonrails.org/) ([konfiguracija](https://guides.rubyonrails.org/configuring.html))
 - studentski projekti
@@ -102,7 +102,7 @@ Sustavi upravljanja zavisnostima:
 - [Moodle](https://moodle.org/) ([konfiguracija](https://docs.moodle.org/38/en/Configuration_file) i [primjer konfiguracijske datoteke](https://github.com/moodle/moodle/blob/master/config-dist.php))
 - [Odoo](https://www.odoo.com/) ([konfiguracija](https://www.odoo.com/documentation/14.0/reference/cmdline.html#configuration-file))
 - [Trac](https://trac.edgewall.org/) ([konfiguracija](https://trac.edgewall.org/wiki/TracIni))
-- [Django](https://www.djangoproject.com/) ([konfiguracija](https://docs.djangoproject.com/en/3.2/topics/settings/))
+- [Django](https://www.djangoproject.com/) ([konfiguracija](https://docs.djangoproject.com/en/5.2/topics/settings/))
 - [Laravel](https://laravel.com/) ([primjer konfiguracijske datoteke](https://github.com/laravel/laravel/blob/master/.env.example))
 - [Ruby on Rails](https://rubyonrails.org/) ([konfiguracija](https://guides.rubyonrails.org/configuring.html))
 - studentski projekti

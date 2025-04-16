@@ -29,9 +29,9 @@ author: Vedran Miletić
 ## Studenti
 
 - Dominik Kinkela
-- [Dorian Manjarić](https://manjaric.com/)
+- Dorian Manjarić
 - Marin Martuslović
-- [Luka Ljubojević](https://lukaljubojevic.online/)
+- Luka Ljubojević
 
 !!! tip
     Zainteresirani studenti [nam se mogu javiti](kako-se-ukljuciti.md).
@@ -49,10 +49,10 @@ author: Vedran Miletić
 ## Bivši studenti
 
 - [Erik Jermaniš](https://erikjermanis.me/)
-- [Valentin Kuharić](https://valentinkuharic.com/)
+- Valentin Kuharić
 - [Mia Doričić](https://miadoricic.github.io/)
 - [Kristijan Lenković](http://kristijan.lenkovic.com/)
-- [Edvin Močibob](https://edvin.me/)
+- [Edvin Močibob](https://www.edvin.me/)
 - [Tomislav Šubić](https://tsubic.info/)
 - [Ingrid Beloša](https://www.routerfreak.com/author/ingrid/)
 - Ivan Ivakić

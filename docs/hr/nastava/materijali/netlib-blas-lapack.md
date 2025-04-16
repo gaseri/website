@@ -28,7 +28,7 @@ Za svaki od nivoa podržana su četiri tipa podataka:
 - kompleksni brojevi jednostruke preciznosti (`COMPLEX`, kraće `C`)
 - kompleksni brojevi dvostruke preciznosti (`DOUBLE COMPLEX`, kraće `Z`)
 
-Objašnjenja svake od funkcija moguće je pronaći u [dijelu Reference BLAS službene dokumentacije](https://www.netlib.org/lapack/explore-html/modules.html). Za ilustraciju, spomenimo neke od njih:
+Objašnjenja svake od funkcija moguće je pronaći u [dijelu Reference BLAS službene dokumentacije](https://www.netlib.org/lapack/explore-html/topics.html). Za ilustraciju, spomenimo neke od njih:
 
 - Na nivou 1:
 

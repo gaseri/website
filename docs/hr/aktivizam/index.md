@@ -130,7 +130,7 @@ Prezentacije na konferencijama:
 
 **Vrijeme:** 21. travnja 2015. u 14:00
 
-**Događaj:** [Otvoreni dan sveučilišnih odjela 2015](https://web.archive.org/web/20150320153120/https://www.inf.uniri.hr/hr/student-info/589-otvoreni-dan-sveucilisnih-odjela-21-4-2015.html)
+**Događaj:** [Otvoreni dan sveučilišnih odjela 2015](https://math.uniri.hr/dogadjanja/otvoreni-dan-sveucilisnih-odjela-2015/)
 
 #### Sažetak predavanja "Ratovi web preglednika"
 

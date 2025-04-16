@@ -10,7 +10,7 @@ Boot proces računala počinje pritiskom na gumb (kako god on bio izveden) koji 
 
 ### BIOS boot
 
-Pokreće operacijski sustav s master boot recorda (MBR) ili bootabilnih particija odabranog diska na sustavu (optički mediji su također podržani kao mediji s kojih se može pokrenuti operacijski sustav, ali su [standardi drugačiji](https://en.wikipedia.org/wiki/El_Torito_(CD-ROM_standard))). Korištenje MBR-a ograničava veličinu diska na 2 TiB, ali moguće je [uvođenjem dodatne particije BIOS Boot zaobići to ograničenje i koristiti GUID Partition Table](https://www.anchor.com.au/blog/2012/10/the-difference-between-booting-mbr-and-gpt-with-grub/).
+Pokreće operacijski sustav s master boot recorda (MBR) ili bootabilnih particija odabranog diska na sustavu (optički mediji su također podržani kao mediji s kojih se može pokrenuti operacijski sustav, ali su [standardi drugačiji](https://en.wikipedia.org/wiki/El_Torito_(CD-ROM_standard))). Korištenje MBR-a ograničava veličinu diska na 2 TiB, ali moguće je uvođenjem dodatne particije [BIOS Boot](https://en.wikipedia.org/wiki/BIOS_boot_partition) zaobići to ograničenje i [koristiti GUID Partition Table](https://viktorbarzin.me/blog/11-booting-into-trouble/).
 
 ### UEFI boot
 

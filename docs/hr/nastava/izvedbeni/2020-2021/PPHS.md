@@ -63,7 +63,7 @@ Predavanja, vježbe, samostalni zadaci, konzultacije.
 
 1. Hwu, W. Heterogeneous system architecture: a new compute platform infrastructure. (Elsevier, 2015).
 1. Kirk, D. B. & Hwu, W. W. Programming Massively Parallel Processors: A Hands-on Approach. (Elsevier, 2016).
-1. ROCm documentation. (AMD, 2020). Dostupno na: [rocmdocs.amd.com](https://rocmdocs.amd.com/)
+1. ROCm documentation. (AMD, 2020). Dostupno na: [rocm.docs.amd.com](https://rocm.docs.amd.com/)
 1. CUDA C Programming Guide. (NVIDIA, 2020). Dostupno na: [docs.nvidia.com/cuda/cuda-c-programming-guide/](https://docs.nvidia.com/cuda/cuda-c-programming-guide/)
 1. Skripte, prezentacije i ostali materijali za učenje dostupni u e-kolegiju.
 

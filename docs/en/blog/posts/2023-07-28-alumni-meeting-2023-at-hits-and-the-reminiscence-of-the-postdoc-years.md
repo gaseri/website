@@ -58,7 +58,7 @@ During my time at HITS, I also started participating in GROMACS development by a
 
 ### AMD Radeon open-source compute
 
-I [got excited about AMD's efforts under the GPUOpen umbrella](2016-01-17-amd-and-the-open-source-community-are-writing-history.md) and helped make GROMACS run via OpenCL on AMD Radeon GPUs using open-source drive stack. Aside from GROMACS, there were changes to [Mesa](../../people/principal-investigator.md#mesa) and [various LLVM sub-projects](../../people/principal-investigator.md#llvm). While contributions to open-source software matter on its own, it is worth noting that AMD's [ROCm](https://www.amd.com/en/graphics/servers-solutions-rocm) uses the same Clang and LLVM that Mesa does.
+I [got excited about AMD's efforts under the GPUOpen umbrella](2016-01-17-amd-and-the-open-source-community-are-writing-history.md) and helped make GROMACS run via OpenCL on AMD Radeon GPUs using open-source drive stack. Aside from GROMACS, there were changes to [Mesa](../../people/principal-investigator.md#mesa) and [various LLVM sub-projects](../../people/principal-investigator.md#llvm). While contributions to open-source software matter on its own, it is worth noting that AMD's [ROCm](https://www.amd.com/en/products/software/rocm.html) uses the same Clang and LLVM that Mesa does.
 
 This work was presented in [two European LLVM Developers' Meetings](../../people/principal-investigator.md#abstracts-in-conference-proceedings). The second presentation in particular expanded the set of supported software much wider than just GROMACS by including other molecular dynamics simulators such as [LAMMPS](https://lammps.org/) and [OpenMM](https://openmm.org/), as well as other libraries such as [ASL](https://asl.org.il/).
 

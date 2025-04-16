@@ -39,9 +39,9 @@ Izvor slike: [Wikimedia Commons File:FIDIT-logo.svg](https://commons.wikimedia.o
     * razvoj znanstvenog softvera za superračunala i računalne oblake
     * simulacija molekulske dinamike biomolekula
 
-![MPCDF logo](https://www.mpcdf.mpg.de/assets/institutes/headers/mpcdf-desktop-en-bc7963e480b5b24ed4797d156e680a45658f3ec11384599af70c07eca1002285.svg)
+![MPCDF logo](https://www.mpcdf.mpg.de/assets/institutes/headers/mpcdf-desktop-en-bc2a89605e5cb6effc55ad732f103d71afb8c7060ecaa95c5fb93987e4c8acbd.svg)
 
-Izvor slike: [Max Planck Computing and Data Facility](https://www.mpcdf.mpg.de/assets/institutes/headers/mpcdf-desktop-en-bc7963e480b5b24ed4797d156e680a45658f3ec11384599af70c07eca1002285.svg)
+Izvor slike: [Max Planck Computing and Data Facility](https://www.mpcdf.mpg.de/assets/institutes/headers/mpcdf-desktop-en-bc2a89605e5cb6effc55ad732f103d71afb8c7060ecaa95c5fb93987e4c8acbd.svg)
 
 ---
 

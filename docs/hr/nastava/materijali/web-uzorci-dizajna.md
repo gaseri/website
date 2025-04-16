@@ -1071,8 +1071,8 @@ end
 
 🙋 **Pitanje:** Koje uzorke dizajna koriste navedeni programi, okviri i biblioteke?
 
-- [Eloquent Collections](https://laravel.com/docs/8.x/eloquent-collections)
-- [Laravel Mail](https://laravel.com/docs/8.x/mail#sending-mail)
+- [Eloquent Collections](https://laravel.com/docs/12.x/eloquent-collections)
+- [Laravel Mail](https://laravel.com/docs/12.x/mail#sending-mail)
 - [Django Generic Views Test](https://github.com/django/django/blob/main/tests/generic_views/test_edit.py)
 - Django Basic Tests: [models](https://github.com/django/django/blob/main/tests/basic/models.py), [tests](https://github.com/django/django/blob/main/tests/basic/tests.py)
 - [Magento `ListAction`](https://github.com/magento/magento2/blob/2.4-develop/app/code/Magento/Review/Controller/Product/ListAction.php)
@@ -1096,7 +1096,7 @@ Engl. *model-view-controller*, kraće MVC. Prema [Wikipediji](https://en.wikiped
 Koristi se kod razvoja:
 
 - web aplikacija, primjerice:
-    - [Djangov model-pogled-predložak](https://docs.djangoproject.com/en/3.2/faq/general/#django-appears-to-be-a-mvc-framework-but-you-call-the-controller-the-view-and-the-view-the-template-how-come-you-don-t-use-the-standard-names)
+    - [Djangov model-pogled-predložak](https://docs.djangoproject.com/en/5.2/faq/general/#django-appears-to-be-a-mvc-framework-but-you-call-the-controller-the-view-and-the-view-the-template-how-come-you-don-t-use-the-standard-names)
     - [ASP.NET-ov MVC](https://dotnet.microsoft.com/apps/aspnet/mvc)
     - [Laravelov MVC](https://laracasts.com/series/laravel-8-from-scratch/episodes/1)
 - mobilnih i stolnih aplikacija

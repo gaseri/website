@@ -36,13 +36,13 @@ Preostale tipove podataka moguće je pronaći u [službenoj dokumentaciji u dije
 
 ## Funkcije
 
-Podržana su sva tri nivoa BLAS-a i pojedina proširenja. Čitav popis funkcija i njihov opis moguće je naći u službenoj dokumentaciji u dijelu [rocBLAS API and Legacy BLAS Functions](https://rocm.docs.amd.com/projects/rocBLAS/en/latest/API_Reference_Guide.html#rocblas-api-and-legacy-blas-functions).
+Podržana su sva tri nivoa BLAS-a i pojedina proširenja. Čitav popis funkcija i njihov opis moguće je naći u službenoj dokumentaciji u dijelu [rocBLAS API Reference](https://rocm.docs.amd.com/projects/rocBLAS/en/latest/reference/API_Reference-Guide.html).
 
 ## Primjeri
 
 ### Primjer množenja vektora skalarom
 
-Službeni primjer `clients/samples/example_sscal.cpp` ([poveznica na kod](https://github.com/ROCmSoftwarePlatform/rocBLAS/blob/develop/clients/samples/example_sscal.cpp)) implementira primjer množenja vektora `x` skalarom `alpha`, što radi [BLAS-ova funkcija SSCAL](https://www.netlib.org/lapack/explore-html/df/d28/group__single__blas__level1_ga3252f1f70b29d59941e9bc65a6aefc0a.html#ga3252f1f70b29d59941e9bc65a6aefc0a) (Single-precision floating-point SCALar vector multiply; [pregled svih BLAS rutina](https://www.netlib.org/blas/#_blas_routines)).
+Službeni primjer `clients/samples/example_sscal.cpp` ([poveznica na kod](https://github.com/ROCmSoftwarePlatform/rocBLAS/blob/develop/clients/samples/example_sscal.cpp)) implementira primjer množenja vektora `x` skalarom `alpha`, što radi [BLAS-ova funkcija SSCAL](https://www.netlib.org/lapack/explore-html/d2/de8/group__scal.html) (Single-precision floating-point SCALar vector multiply; [pregled svih BLAS rutina](https://www.netlib.org/blas/#_blas_routines)).
 
 Program izgleda ovako:
 
@@ -238,7 +238,7 @@ return rocblas_status_success;
 
 ### Primjer množenja matrica
 
-Službeni primjer `clients/samples/example_sgemm.cpp` ([poveznica na kod](https://github.com/ROCmSoftwarePlatform/rocBLAS/blob/develop/clients/samples/example_sgemm.cpp)) prikazuje kako provesti množenje matrica čiji su elementi realni brojevi jednostruke preciznosti [BLAS-ovom funkcijom SGEMM](https://www.netlib.org/lapack/explore-html/db/dc9/group__single__blas__level3_gafe51bacb54592ff5de056acabd83c260.html#gafe51bacb54592ff5de056acabd83c260) (Single-precision floating-point GEneral Matrix Multiply; [pregled svih BLAS rutina](https://www.netlib.org/blas/#_blas_routines)).
+Službeni primjer `clients/samples/example_sgemm.cpp` ([poveznica na kod](https://github.com/ROCmSoftwarePlatform/rocBLAS/blob/develop/clients/samples/example_sgemm.cpp)) prikazuje kako provesti množenje matrica čiji su elementi realni brojevi jednostruke preciznosti [BLAS-ovom funkcijom SGEMM](https://www.netlib.org/lapack/explore-html/dd/d09/group__gemm.html) (Single-precision floating-point GEneral Matrix Multiply; [pregled svih BLAS rutina](https://www.netlib.org/blas/#_blas_routines)).
 
 Promotrimo funkciju `main()`:
 
@@ -376,7 +376,7 @@ int main()
 }
 ```
 
-Puno je pripreme prije i čišćenja nakon poziva funkcije `rocblas_sgemm()` ([dokumentacija](https://rocm.docs.amd.com/projects/rocBLAS/en/latest/API_Reference_Guide.html#rocblas-xgemm-batched-strided-batched)) koji čini srž programa pa analirajmo kod dio po dio.
+Puno je pripreme prije i čišćenja nakon poziva funkcije `rocblas_sgemm()` ([dokumentacija](https://rocm.docs.amd.com/projects/rocBLAS/en/latest/reference/level-3.html#rocblas-xgemm-batched-strided-batched)) koji čini srž programa pa analirajmo kod dio po dio.
 
 Program počinje deklaracijom dvije varijable tipa `rocblas_operation` imena `transa` i `transb` čije su vrijednosti postavljene na `rocblas_operation_none` (nepromijenjena matrica) i `rocblas_operation_transpose` (transponirana matrica).
 

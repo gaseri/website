@@ -29,9 +29,9 @@ author: Vedran Miletić
 ## Students
 
 - Dominik Kinkela
-- [Dorian Manjarić](https://manjaric.com/)
+- Dorian Manjarić
 - Marin Martuslović
-- [Luka Ljubojević](https://lukaljubojevic.online/)
+- Luka Ljubojević
 
 ## Former staff
 
@@ -46,10 +46,10 @@ author: Vedran Miletić
 ## Former students
 
 - [Erik Jermaniš](https://erikjermanis.me/)
-- [Valentin Kuharić](https://valentinkuharic.com/)
+- Valentin Kuharić
 - [Mia Doričić](https://miadoricic.github.io/)
 - [Kristijan Lenković](http://kristijan.lenkovic.com/)
-- [Edvin Močibob](https://edvin.me/):
+- [Edvin Močibob](https://www.edvin.me/):
 
     > Currently I'm employed at a Croatian software company as a Python Developer. Actually, I learned Python in one of Vedran's courses. For me, it was the first time I encountered a "fun" programming language that was so easy to write and so versatile. I obtained the experience needed while working as a student teaching assistant at the Department of Informatics at the University of Rijeka. This was an opportunity to catch a glimpse of what it means to be a professional educator; from the tedious grading of student home-works to the kick and energy you get in teaching a room full of students when a bunch of them come for the extra classes.
     >

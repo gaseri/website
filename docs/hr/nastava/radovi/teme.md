@@ -16,7 +16,7 @@ U nastavku je popis predloženih i odabranih tema završnih i diplomskih radova.
 
 **Literatura:**
 
-1. [Guidelines for LTE Backhaul Traffic Estimation](https://www.ngmn.org/publications/guidelines-for-lte-backhaul-traffic-estimation.html)
+1. [Guidelines for LTE Backhaul Traffic Estimation](https://ngmn.org/wp-content/uploads/NGMN_Whitepaper_Guideline_for_LTE_Backhaul_Traffic_Estimation.pdf)
 1. [Bojovic, B., & Lagen, S. Enabling NGMN Mixed Traffic Models for ns-3. In Proceedings of the 2022 Workshop on ns-3 (pp. 127-134). (2022, June).](https://dl.acm.org/doi/abs/10.1145/3532577.3532602)
 
 ### Primjena kompleta za razvoj softvera DOCA na jedinicama za obradu podataka NVIDIA BlueField {[PPHS](../kolegiji/PPHS.md)/[URS](../kolegiji/URS.md)}
@@ -871,7 +871,7 @@ Moderni grafički procesori imaju programabilni cjevovod koji koriste za prikaz 
 **Literatura:**
 
 1. [What's the Difference Between Ray Tracing and Rasterization? (NVIDIA Blog)](https://blogs.nvidia.com/blog/2018/03/19/whats-difference-between-ray-tracing-rasterization/)
-1. [ROCm](https://rocmdocs.amd.com/)
+1. [ROCm](https://rocm.docs.amd.com/)
 1. [NVIDIA CUDA](https://developer.nvidia.com/cuda-zone)
 
 ### Problem performansi računalne mreže Bufferbloat {[RM2](../kolegiji/RM2.md)} [Nikola Terihaj]
@@ -898,7 +898,7 @@ Porastom procesne moći računala, naročito zahvaljujući računanju na grafič
 **Literatura:**
 
 1. [NVIDIA CUDA](https://developer.nvidia.com/cuda-zone)
-1. [ROCm](https://rocmdocs.amd.com/)
+1. [ROCm](https://rocm.docs.amd.com/)
 1. Ballester, P. J. & Mitchell, J. B. O. [A machine learning approach to predicting protein--ligand binding affinity with applications to molecular docking](https://academic.oup.com/bioinformatics/article/26/9/1169/199938). Bioinformatics 26, 1169--1175 (2010).
 1. Kinnings, S. L. et al. [A Machine Learning-Based Method To Improve Docking Scoring Functions and Its Application to Drug Repurposing](https://pubs.acs.org/doi/abs/10.1021/ci100369f). J. Chem. Inf. Model. 51, 408--419 (2011).
 1. [Vina](https://vina.scripps.edu/)

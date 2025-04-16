@@ -94,7 +94,7 @@ def hello_world(user=None):
 Prema [Wikipediji](https://en.wikipedia.org/wiki/Multitier_architecture):
 
 - odvojeni su prezentacijski sloj (korisničko sučelje), poslovna logika (obrada podataka) i sučelje prema pohrani podataka (najčešće relacijskoj bazi)
-- programeri mogu dodavati ili mijenati funkcionalnost unutar određenog sloja umjesto rada odjednom na čitavoj aplikaciji, npr. [Djangov model-pogled-predložak](https://docs.djangoproject.com/en/3.2/faq/general/#django-appears-to-be-a-mvc-framework-but-you-call-the-controller-the-view-and-the-view-the-template-how-come-you-don-t-use-the-standard-names)
+- programeri mogu dodavati ili mijenati funkcionalnost unutar određenog sloja umjesto rada odjednom na čitavoj aplikaciji, npr. [Djangov model-pogled-predložak](https://docs.djangoproject.com/en/5.2/faq/general/#django-appears-to-be-a-mvc-framework-but-you-call-the-controller-the-view-and-the-view-the-template-how-come-you-don-t-use-the-standard-names)
 
 ![Overview of a three-tier application bg 95% right](https://upload.wikimedia.org/wikipedia/commons/5/51/Overview_of_a_three-tier_application_vectorVersion.svg)
 

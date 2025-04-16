@@ -53,7 +53,7 @@ Prema [Wikipediji](https://en.wikipedia.org/wiki/Software_documentation):
 
 ## Primjeri dokumentacije programskog koda
 
-- [Laravel API](https://laravel.com/api/9.x/)
+- [Laravel API](https://api.laravel.com/docs/12.x/)
 - [LLVM](https://llvm.org/doxygen/)
 - [Node.js](https://nodejs.org/dist/latest-v17.x/docs/api/)
 - [WordPress Code Reference](https://developer.wordpress.org/reference/)

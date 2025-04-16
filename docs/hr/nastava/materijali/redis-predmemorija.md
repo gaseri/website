@@ -4,7 +4,7 @@ author: Vedran Miletić
 
 # Konfiguracija sustava za predmemoriju Redis
 
-[Redis](https://redis.io/) je sustav za spremanje struktura podataka u memoriji koji se može koristiti kao baza podataka (alternativa: [MongoDB](https://www.mongodb.com/)), predmemorija (alternativa: [Memcached](https://www.memcached.org/)) i broker za poruke (alternativa: [RabbitMQ](https://rabbitmq.com/)). Mi u nastavku koristimo redis kao predmemoriju, slično kako to rade [Django](https://docs.djangoproject.com/en/4.0/topics/cache/#redis) i [Laravel](https://laravel.com/docs/8.x/redis).
+[Redis](https://redis.io/) je sustav za spremanje struktura podataka u memoriji koji se može koristiti kao baza podataka (alternativa: [MongoDB](https://www.mongodb.com/)), predmemorija (alternativa: [Memcached](https://www.memcached.org/)) i broker za poruke (alternativa: [RabbitMQ](https://rabbitmq.com/)). Mi u nastavku koristimo redis kao predmemoriju, slično kako to rade [Django](https://docs.djangoproject.com/en/5.2/topics/cache/#redis) i [Laravel](https://laravel.com/docs/12.x/redis).
 
 ## Instalacija i pokretanje
 

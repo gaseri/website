@@ -169,7 +169,7 @@ Popularni CDN-ovi:
 Web poslužitelji i web aplikacije izvode usmjeravanje na način:
 
 - potraži statičku datoteku (web poslužitelj izvodi usmjeravanje),
-- ako ne postoji datoteka, potraži dinamički resurs (web aplikacija izvodi usmjeravanje, npr. [Django URL dispatcher](https://docs.djangoproject.com/en/3.2/topics/http/urls/), [Rails router](https://guides.rubyonrails.org/routing.html), [Laravel router](https://laravel.com/docs/8.x/routing)),
+- ako ne postoji datoteka, potraži dinamički resurs (web aplikacija izvodi usmjeravanje, npr. [Django URL dispatcher](https://docs.djangoproject.com/en/5.2/topics/http/urls/), [Rails router](https://guides.rubyonrails.org/routing.html), [Laravel router](https://laravel.com/docs/12.x/routing)),
 - ako ne postoji putanja koju web aplikacija poznaje, vrati HTTP statusni kod 404 Not Found i pripadnu stranicu
     - web aplikacija nakon neuspjelog usmjeravanja izgrađuje stranicu pa su greške tipa 404 Not Found vrlo zahtjevne za resursima
     - dobro je periodički provjeravati stranicu za polomljenim poveznicama, naročito na statičke datoteke, npr. [BrokenLinkCheck.com](https://www.brokenlinkcheck.com/), [Ahrefs Broken Link Checker](https://ahrefs.com/broken-link-checker), [dead link checker](https://www.deadlinkchecker.com/) i [Dr. Link Check](https://www.drlinkcheck.com/)
@@ -221,7 +221,7 @@ Primjer u [Apache HTTP Serveru](https://httpd.apache.org/) s uključenim [mod_he
 </IfModule>
 ```
 
-Ilustrativan primjer u čistom PHP-u (Laravel ima klasu [`SetCacheHeaders`](https://laravel.com/api/8.x/Illuminate/Http/Middleware/SetCacheHeaders.html)):
+Ilustrativan primjer u čistom PHP-u (Laravel ima klasu [`SetCacheHeaders`](https://api.laravel.com/docs/12.x/Illuminate/Http/Middleware/SetCacheHeaders.html)):
 
 ``` php
 <?php
@@ -273,8 +273,8 @@ Kako vidimo na primjeru Wikipedije, aplikacija može i sama spremiti generirani 
 
 Popularni okviri za razvoj aplikacija imaju gotove implementacije sustava za keširanje koji onda umjesto programera brinu o spremanju i dohvaćanju sadržaja te postavljanju odgovarajućih zaglavlja u HTTP odgovorima. Primjeri takvih sustava su:
 
-- [Django's cache framework](https://docs.djangoproject.com/en/3.2/topics/cache/), koristi Memcached ili bazu podataka
-- [Laravel Cache](https://laravel.com/docs/8.x/cache), koristi Memcached ili Redis
+- [Django's cache framework](https://docs.djangoproject.com/en/5.2/topics/cache/), koristi Memcached ili bazu podataka
+- [Laravel Cache](https://laravel.com/docs/12.x/cache), koristi Memcached ili Redis
 - [Caching with Rails](https://guides.rubyonrails.org/caching_with_rails.html), koristi Memcached ili Redis
 
 ---
@@ -294,7 +294,7 @@ Just-in-time (JIT) prevoditelj unutar interpretera omogućuje prevođenje (dijel
 
 Implementacije JIT prevoditelja:
 
-- Pythonova službena implementacija [CPython](https://github.com/python/cpython) nema JIT prevoditelj i vjerojatno ga neće imati, implementacije [PyPy](https://www.pypy.org/), [Cinder](https://github.com/facebookincubator/cinder), [Pyston](https://www.pyston.org/) (fokus: web i druge aplikacije opće namjene) i [Numba](https://numba.pydata.org/) (fokus: numerički izračuni) imaju JIT prevoditelj
+- Pythonova službena implementacija [CPython](https://github.com/python/cpython) nema JIT prevoditelj i vjerojatno ga neće imati, implementacije [PyPy](https://www.pypy.org/), [Cinder](https://github.com/facebookincubator/cinder), [Pyston](https://github.com/pyston/pyston) (fokus: web i druge aplikacije opće namjene) i [Numba](https://numba.pydata.org/) (fokus: numerički izračuni) imaju JIT prevoditelj
 - PHP [sadrži JIT prevoditelj od verzije 8.0](https://www.php.net/releases/8.0/en.php)
 - Ruby [sadrži JIT prevoditelj od verzije 2.6 nadalje](https://blog.heroku.com/ruby-just-in-time-compilation)
 - V8 koji Node.js koristi za izvođenje JavaScripta [sadrži JIT prevoditelj](https://v8.dev/blog/jitless)
