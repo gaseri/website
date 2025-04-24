@@ -645,7 +645,7 @@ plugins:
   - rss:
       match_path: en/blog/posts/.*
       date_from_meta:
-        as_creation: date
+        as_creation: date.created
       categories:
         - tags
   - meta-descriptions
