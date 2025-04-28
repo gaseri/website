@@ -391,223 +391,223 @@ Additionally, interested M.Sc. and B.Sc. students will be selected help on the p
 
 ## References
 
-### ref1
+### \[ref1\]
 
 World Health Organization. Coronavirus disease 2019 (COVID-19) Situation Report - 79.
 
-### ref2
+### \[ref2\]
 
 Zhang, G., Pomplun, S., Loftis, A. R., Loas, A. & Pentelute, B. L. *The first-in-class peptide binder to the SARS-CoV-2 spike protein*. <https://biorxiv.org/lookup/doi/10.1101/2020.03.19.999318> (2020) doi:10.1101/2020.03.19.999318.
 
-### ref3
+### \[ref3\]
 
 Yang, H. *et al.* Design of Wide-Spectrum Inhibitors Targeting Coronavirus Main Proteases. *PLoS Biol.* **3**, e324 (2005).
 
-### ref4
+### \[ref4\]
 
 Xue, X. *et al.* Structures of Two Coronavirus Main Proteases: Implications for Substrate Binding and Antiviral Drug Design. *J. Virol.* **82**, 2515--2527 (2008).
 
-### ref5
+### \[ref5\]
 
 Ren, Z. *et al.* The newly emerged SARS-Like coronavirus HCoV-EMC also has an "Achilles' heel": current effective inhibitor targeting a 3C-like protease. *Protein Cell* **4**, 248--250 (2013).
 
-### ref6
+### \[ref6\]
 
 Wang, F. *et al.* Michael Acceptor-Based Peptidomimetic Inhibitor of Main Protease from Porcine Epidemic Diarrhea Virus. *J. Med. Chem.* **60**, 3212--3216 (2017).
 
-### ref7
+### \[ref7\]
 
 Jin, Z. *et al.* Structure of Mpro from COVID-19 virus and discovery of its inhibitors. *bioRxiv* 2020.02.26.964882 (2020) doi:10.1101/2020.02.26.964882.
 
-### ref8
+### \[ref8\]
 
 Bank, R. P. D. RCSB PDB - 6LU7: The crystal structure of COVID-19 main protease in complex with an inhibitor N3. <https://www.rcsb.org/structure/6LU7>.
 
-### ref9
+### \[ref9\]
 
 Anand, K., Ziebuhr, J., Wadhwani, P., Mesters, J. R. & Hilgenfeld, R. Coronavirus Main Proteinase (3CLpro) Structure: Basis for Design of Anti-SARS Drugs. *Science* **300**, 1763--1767 (2003).
 
-### ref10
+### \[ref10\]
 
 Yang, H. *et al.* The crystal structures of severe acute respiratory syndrome virus main protease and its complex with an inhibitor. *Proc. Natl. Acad. Sci.* **100**, 13190--13195 (2003).
 
-### ref11
+### \[ref11\]
 
 Zhao, Q. *et al.* Structure of the Main Protease from a Global Infectious Human Coronavirus, HCoV-HKU1. *J. Virol.* **82**, 8647--8655 (2008).
 
-### ref12
+### \[ref12\]
 
 Wrapp, D. *et al.* Cryo-EM structure of the 2019-nCoV spike in the prefusion conformation. *Science* **367**, 1260--1263 (2020).
 
-### ref13
+### \[ref13\]
 
 Yan, R. *et al.* Structural basis for the recognition of SARS-CoV-2 by full-length human ACE2. *Science* **367**, 1444--1448 (2020).
 
-### ref14
+### \[ref14\]
 
 Smith, M. C. & Gestwicki, J. E. Features of protein-protein interactions that translate into potent inhibitors: topology, surface area and affinity. *Expert Rev. Mol. Med.* **14**, e16 (2012).
 
-### ref15
+### \[ref15\]
 
 Josephson, K., Ricardo, A. & Szostak, J. W. mRNA display: from basic principles to macrocycle drug discovery. *Drug Discov. Today* **19**, 388--399 (2014).
 
-### ref16
+### \[ref16\]
 
 Pence, H. E. & Williams, A. ChemSpider: An Online Chemical Information Resource. *J. Chem. Educ.* **87**, 1123--1124 (2010).
 
-### ref17
+### \[ref17\]
 
 Kim, S. *et al.* PubChem Substance and Compound databases. *Nucleic Acids Res.* **44**, D1202--D1213 (2016).
 
-### ref18
+### \[ref18\]
 
 Morley, S. D. & Afshar, M. Validation of an empirical RNA-ligand scoring function for fast flexible docking using RiboDock®. *J. Comput. Aided Mol. Des.* **18**, 189--208 (2004).
 
-### ref19
+### \[ref19\]
 
 Ruiz-Carmona, S. *et al.* rDock: A Fast, Versatile and Open Source Program for Docking Ligands to Proteins and Nucleic Acids. *PLOS Comput. Biol.* **10**, e1003571 (2014).
 
-### ref20
+### \[ref20\]
 
 RxDock. *rxdock.gitlab.io* <https://rxdock.gitlab.io/>.
 
-### ref21
+### \[ref21\]
 
 Anton Nekrutenko *et al.* *galaxyproject/SARS-CoV-2: second biorxiv release*. (Zenodo, 2020). doi:10.5281/zenodo.3685264.
 
-### ref22
+### \[ref22\]
 
 Cheminformatics \| COVID-19 analysis on usegalaxy. <https://covid19.galaxyproject.org/cheminformatics/>.
 
-### ref23
+### \[ref23\]
 
 Skupnostna znanost in boj proti koronavirusu \| COVID.SI. *COVID.SI* <https://covid.si/>.
 
-### ref24
+### \[ref24\]
 
 Gorgulla, C. *et al.* An open-source drug discovery platform enables ultra-large virtual screens. *Nature* 1--8 (2020) doi:10.1038/s41586-020-2117-z.
 
-### ref25
+### \[ref25\]
 
 Yang, S.-Y. Pharmacophore modeling and applications in drug discovery: challenges and recent advances. *Drug Discov. Today* **15**, 444--450 (2010).
 
-### ref26
+### \[ref26\]
 
 Wermuth, C.-G., Robin Ganellin, C., Lindberg, P. & Mitscher, L. A. Chapter 36 - Glossary of Terms Used in Medicinal Chemistry (IUPAC Recommendations 1997). in *Annual Reports in Medicinal Chemistry* (ed. Bristol, J. A.) vol. 33 385--395 (Academic Press, 1998).
 
-### ref27
+### \[ref27\]
 
 Robustelli, P., Piana, S. & Shaw, D. E. Developing a molecular dynamics force field for both folded and disordered protein states. *Proc. Natl. Acad. Sci.* **115**, E4758--E4766 (2018).
 
-### ref28
+### \[ref28\]
 
 Huang, J. *et al.* CHARMM36m: an improved force field for folded and intrinsically disordered proteins. *Nat. Methods* **14**, 71--73 (2017).
 
-### ref29
+### \[ref29\]
 
 Miletić, V., Odorčić, I., Nikolić, P. & Svedružić, Ž. M. In silico design of the first DNA-independent mechanism-based inhibitor of mammalian DNA methyltransferase Dnmt1. *PLOS ONE* **12**, e0174410 (2017).
 
-### ref30
+### \[ref30\]
 
 Svedruzic, Z. M. Mammalian Cytosine DNA Methyltransferase Dnmt1: Enzymatic Mechanism, Novel Mechanism-Based Inhibitors, and RNA-directed DNA Methylation. <https://www.ingentaconnect.com/content/ben/cmc/2008/00000015/00000001/art00007> (2008) doi:info:doi/10.2174/092986708783330700.
 
-### ref31
+### \[ref31\]
 
 Svedružić, Ž. M., Odorčić, I., Chang, C. H. & Svedružić, D. Substrate Channeling via a Transient Protein-Protein Complex: The case of D-Glyceraldehyde-3-Phosphate Dehydrogenase and L-Lactate Dehydrogenase. *bioRxiv* 2020.01.22.916023 (2020) doi:10.1101/2020.01.22.916023.
 
-### ref32
+### \[ref32\]
 
 Svedružić, Ž. M., Popović, K. & Šendula-Jengić, V. Modulators of γ-Secretase Activity Can Facilitate the Toxic Side-Effects and Pathogenesis of Alzheimer's Disease. *PLoS ONE* **8**, (2013).
 
-### ref33
+### \[ref33\]
 
 Svedružić, Ž. M., Popović, K. & Šendula-Jengić, V. Decrease in catalytic capacity of γ-secretase can facilitate pathogenesis in sporadic and Familial Alzheimer's disease. *Mol. Cell. Neurosci.* **67**, 55--65 (2015).
 
-### ref34
+### \[ref34\]
 
 Advances and Challenges in Biomolecular Simulations. <https://meetings.embo.org/event/20-biomolecular-simulations>.
 
-### ref35
+### \[ref35\]
 
 POSTPONED : Current and future challenges in modeling protein interactions. *CECAM - workshop details* <https://www.cecam.org/workshop-details/32>.
 
-### ref36
+### \[ref36\]
 
 SCI-RSC Workshop on Computational Tools for Drug Discovery. <https://www.soci.org/events/scirsc-workshop-on-computational-tools-for-drug-discovery>.
 
-### ref37
+### \[ref37\]
 
 CCG \| UGM and Conference 2020 \| Europe. <https://www.chemcomp.com/UGM-2020-Europe.htm>.
 
-### ref38
+### \[ref38\]
 
 Nikolić, P., Miletić, V., Odorcić, I. & Svedružić, Ž. M. Chapter 5 - In Silico Optimization of the First DNA-Independent Mechanism-Based Inhibitor of Mammalian DNA Methyltransferase DNMT1. in *Epi-Informatics* (ed. Medina-Franco, J. L.) 113--153 (Academic Press, 2016). doi:10.1016/B978-0-12-802808-7.00005-8.
 
-### ref39
+### \[ref39\]
 
 HPC Bura -- Center for Advanced Computing and Modelling. <https://cnrm.uniri.hr/hpc-bura/>.
 
-### ref40
+### \[ref40\]
 
 Computing resources -- Center for Advanced Computing and Modelling. <https://cnrm.uniri.hr/bura/>.
 
-### ref41
+### \[ref41\]
 
 Kutzner, C. *et al.* Best bang for your buck: GPU nodes for GROMACS biomolecular simulations. *J. Comput. Chem.* **36**, 1990--2008 (2015).
 
-### ref42
+### \[ref42\]
 
 Kutzner, C. *et al.* More bang for your buck: Improved use of GPU nodes for GROMACS 2018. *J. Comput. Chem.* **40**, 2418--2431 (2019).
 
-### ref43
+### \[ref43\]
 
 License for Customer use of NVIDIA GeForce Software. <https://www.nvidia.com/en-us/drivers/geforce-license/>.
 
-### ref44
+### \[ref44\]
 
 Nvidia updates GeForce EULA to prohibit data center use. <https://www.datacenterdynamics.com/en/news/nvidia-updates-geforce-eula-to-prohibit-data-center-use/>.
 
-### ref45
+### \[ref45\]
 
 *cp2k/cp2k*. (CP2K, 2020). <https://github.com/cp2k/cp2k>
 
-### ref46
+### \[ref46\]
 
 *gromacs/gromacs*. (Gromacs, 2020). <https://gitlab.com/gromacs/gromacs>
 
-### ref47
+### \[ref47\]
 
 Franz, F., Aponte-Santamaría, C., Daday, C., Miletić, V. & Gräter, F. Stability of Biological Membranes upon Mechanical Indentation. *J. Phys. Chem. B* **122**, 7073--7079 (2018).
 
-### ref48
+### \[ref48\]
 
 Herrera-Rodríguez, A. M., Miletić, V., Aponte-Santamaría, C. & Gräter, F. Molecular Dynamics Simulations of Molecules in Uniform Flow. *Biophys. J.* **116**, 1579--1585 (2019).
 
-### ref49
+### \[ref49\]
 
 *rxdock/rxdock*. (RxDock, 2020). <https://gitlab.com/rxdock/rxdock>.
 
-### ref50
+### \[ref50\]
 
 Mesa / mesa. *GitLab* <https://gitlab.freedesktop.org/mesa/mesa>.
 
-### ref51
+### \[ref51\]
 
 Lattner, C. & Adve, V. LLVM: a compilation framework for lifelong program analysis transformation. in *International Symposium on Code Generation and Optimization, 2004. CGO 2004.* 75--86 (2004). doi:10.1109/CGO.2004.1281665.
 
-### ref52
+### \[ref52\]
 
 *llvm/llvm-project*. (LLVM, 2020). <https://github.com/llvm/llvm-project>
 
-### ref53
+### \[ref53\]
 
 Mercadante, D. *et al.* Bovine β-lactoglobulin is dimeric under imitative physiological conditions: dissociation equilibrium and rate constants over the pH range of 2.5--7.5. *Biophys. J.* **103**, 303--312 (2012).
 
-### ref54
+### \[ref54\]
 
 Mercadante, D., Melton, L. D., Jameson, G. B., Williams, M. A. & De Simone, A. Substrate dynamics in enzyme action: rotations of monosaccharide subunits in the binding groove are essential for pectin methylesterase processivity. *Biophys. J.* **104**, 1731--1739 (2013).
 
-### ref55
+### \[ref55\]
 
 Mercadante, D., Melton, L. D., Jameson, G. B. & Williams, M. A. Processive pectin methylesterases: the role of electrostatic potential, breathing motions and bond cleavage in the rectification of Brownian motions. *PLoS One* **9**, (2014).
 
