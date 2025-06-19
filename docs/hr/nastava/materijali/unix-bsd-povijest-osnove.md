@@ -36,7 +36,7 @@ author: Vedran Miletić
     - [PlayStation 3](https://en.wikipedia.org/wiki/PlayStation_3), [PlayStation 4](https://www.playstation.com/ps4/) i [PlayStation Vita](https://en.wikipedia.org/wiki/PlayStation_Vita)
     - [Nintendo Switch](https://www.nintendo.com/switch/)
     - [Darwin](https://en.wikipedia.org/wiki/Darwin_(operating_system)), koji je srž otvorenog koda [na kojoj je izgrađen](https://thenewstack.io/apples-open-source-roots-the-bsd-heritage-behind-macos-and-ios/) vlasnički operacijski sustav [Apple macOS](https://www.apple.com/macos/)
-    - [Whatsapp](https://blog.whatsapp.com/1-million-is-so-2011) ([prije](https://blog.whatsapp.com/on-e-millio-n) [kupnje od strane Facebooka](https://investor.fb.com/investor-news/press-release-details/2014/Facebook-to-Acquire-WhatsApp/default.aspx))
+    - [Whatsapp](https://blog.whatsapp.com/1-million-is-so-2011) ([prije](https://blog.whatsapp.com/on-e-millio-n) [kupnje od strane Facebooka](https://investor.atmeta.com/investor-news/press-release-details/2014/Facebook-to-Acquire-WhatsApp/default.aspx))
 
 - ukupno je manje popularan od Linuxa i Apple macOS-a, ali je vrlo korišten u pojedinim nišama
 

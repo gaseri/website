@@ -85,7 +85,7 @@ curriculum-vitae: |
 
 ## ChatGPT
 
-- u studenom 2022. godine [OpenAI](https://openai.com/) izbacuje [ChatGPT](https://openai.com/blog/chatgpt/)
+- u studenom 2022. godine [OpenAI](https://openai.com/) izbacuje [ChatGPT](https://openai.com/index/chatgpt/)
     - jezični model za razgovor; [nije prvi takav](https://gpt3demo.com/apps/instructgpt)
     - *Reinforcement Learning from Human Feedback*
     - [treniranje značajnim dijelom ručni rad](https://time.com/6247678/openai-chatgpt-kenya-workers/)
@@ -104,16 +104,16 @@ ChatGPT "zna":
 - pisati programski kod jednostavnih aplikacija i usluga
 - pisati eseje na tipične teme bez činjeničnih pogrešaka
 - pisati sažetke članaka
-- [i još mnogo toga](https://chatgpt.pro/prompts/) na [95 jezika](https://knowinsiders.com/how-many-languages-chatgpt-supports-updated-36845.html)
+- [i još mnogo toga](https://platform.openai.com/docs/examples) na [95 jezika](https://knowinsiders.com/how-many-languages-chatgpt-supports-updated-36845.html)
 
 ---
 
 ## Demo
 
-[Službeno web sjedište](https://chat.openai.com/) često kaže `ChatGPT is at capacity right now`; primjeri:
+[Službeno web sjedište](https://chatgpt.com/) često kaže `ChatGPT is at capacity right now`; primjeri:
 
 - [List of ChatGPT Examples](https://www.followchain.org/chatgpt-examples/)
-- [11 Amazing ChatGPT Demos and Examples that will Blow Your Mind](https://machinelearningknowledge.ai/chatgpt-demos-and-examples/)
+- [22 Interesting ChatGPT Examples](https://builtin.com/artificial-intelligence/chatgpt-examples)
 - [12 Cool Things You Can Do with ChatGPT](https://beebom.com/cool-things-chatgpt/)
 - Rubni slučajevi: [ChatGPT Examples: 22 Interesting Questions Answered By ChatGPT](https://finlightened.com/chatgpt-examples/)
 
@@ -251,7 +251,7 @@ dan je kod Laravelove komponente testa. Linije 150-153 čine primjer
 
 - predviđanje zamotavanja proteina: [AlphaFold](https://www.deepmind.com/research/highlighted-research/alphafold), [ESMFold](https://www.nature.com/articles/d41586-022-03539-1)
 - sinteza govora: [WaveNet](https://www.deepmind.com/research/highlighted-research/wavenet)
-- igranje igre diplomacije: [Cicero](https://ai.facebook.com/research/cicero/)
+- igranje igre diplomacije: [Cicero](https://ai.meta.com/research/cicero/)
 - pomoć u kući: [AI Habitat](https://aihabitat.org/)
 
 ---
@@ -268,4 +268,4 @@ dan je kod Laravelove komponente testa. Linije 150-153 čine primjer
 
 ## Idući koraci
 
-Posjetite [chat.openai.com](https://chat.openai.com/), nedajte da vas obeshrabri `ChatGPT is at capacity right now`, registrirajte se i krenite.
+Posjetite [chatgpt.com](https://chatgpt.com/), nedajte da vas obeshrabri `ChatGPT is at capacity right now`, registrirajte se i krenite.

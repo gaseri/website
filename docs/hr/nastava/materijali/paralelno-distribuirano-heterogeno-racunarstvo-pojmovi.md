@@ -56,7 +56,7 @@ Evolucija računalnih sustava prema [AMD-u](https://en.wikipedia.org/wiki/Advanc
     - **razvoj ograničavaju:** potošnja energije, (ne)paralelnost softvera, skalabilnost
     - **programski alati:** [pthreads](https://en.wikipedia.org/wiki/POSIX_Threads) -> [OpenMP](https://en.wikipedia.org/wiki/OpenMP) -> [MPI](https://en.wikipedia.org/wiki/Message_Passing_Interface)
 
-- **era heterogenih sustava** je [trenutno](https://gpuopen.com/professional-compute/) [hit](https://www.slideshare.net/npinto/cs264-01-introduction) [tema](https://code.google.com/p/stanford-cs193g-sp2010/) u [akademskom](https://people.maths.ox.ac.uk/gilesm/cuda/) [istraživačkom](https://research.nvidia.com/) i [nastavnom](https://www.coursera.org/learn/opencl-fpga-introduction) [okruženju](https://www.pmf.unizg.hr/math/predmet/uupr)
+- **era heterogenih sustava** je [trenutno](https://gpuopen.com/professional-compute/) [hit](https://www.slideshare.net/npinto/cs264-01-introduction) [tema](https://github.com/jaredhoberock/stanford-cs193g-sp2010) u [akademskom](https://people.maths.ox.ac.uk/gilesm/cuda/) [istraživačkom](https://research.nvidia.com/) i [nastavnom](https://hpc.mediawiki.hull.ac.uk/Programming/OpenCL) [okruženju](https://www.pmf.unizg.hr/math/predmet/uupr)
 
     - **primjeri:** AMD Llano i Trinity (A, E i C serije), Intel Sandy Bridge i Ivy Bridge (Core i3/i5/i7-2000 i 3000 serije), NVIDIA Tegra
     - **razvoj omogućuju:** [programabilni Shaderi](https://en.wikipedia.org/wiki/Shader), masivna paralelizacija softvera, energetski efikasni GPU-i, [GPGPU](https://en.wikipedia.org/wiki/GPGPU)

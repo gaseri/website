@@ -46,7 +46,7 @@ Izvor: [Everyday Excuses](https://www.monkeyuser.com/2019/everyday-excuses/) (Mo
 - [SofaScore](https://www.sofascore.com/)
 - [IonicaBizau/react-todo-app](https://github.com/IonicaBizau/react-todo-app)
 - [Turris OS](https://www.turris.com/en/turris-os/) ([How to try future releases of Turris OS?](https://docs.turris.cz/geek/testing/))
-- [Facebook](https://developers.facebook.com/products/) ([Facebook](https://www.facebook.com/), [Facebook Beta](https://www.beta.facebook.com/))
+- [Facebook](https://developers.facebook.com/) ([Facebook](https://www.facebook.com/), [Facebook Beta](https://www.beta.facebook.com/))
 - studentski projekti
 
 ---

@@ -24,7 +24,7 @@ Kako se naš virtualni stroj ne pokreće u oblaku koji bi mogao poslužiti kao i
 
 ## Datoteka `user-data`
 
-Kako bismo postavili zaporku korisnika na `fidit1234`, treba nam zaporka u hashiranom obliku. Iskoristit ćemo OpenSSL-ovu naredbu `passwd` ([dokumentacija](https://www.openssl.org/docs/man3.1/man1/openssl-passwd.html)) na način:
+Kako bismo postavili zaporku korisnika na `fidit1234`, treba nam zaporka u hashiranom obliku. Iskoristit ćemo OpenSSL-ovu naredbu `passwd` ([dokumentacija](https://docs.openssl.org/3.1/man1/openssl-passwd/)) na način:
 
 ``` shell
 openssl passwd -6 -salt 0123456789abcdef fidit1234

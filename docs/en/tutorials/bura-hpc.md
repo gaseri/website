@@ -72,7 +72,7 @@ keywords: supercomputer, hpc
 ## GROMACS molecular dynamics simulation software
 
 - [popular](https://scholar.google.com/scholar?q=gromacs) open-source [molecular dynamics](https://en.wikipedia.org/wiki/Molecular_dynamics) simulation [software](https://en.wikipedia.org/wiki/Category:Molecular_dynamics_software) focused on supercomputer usage
-- examples: [freezing of ice](https://www.youtube.com/watch?v=ZAsUIqv3xb8), [bacterial cytoplasm](https://www.youtube.com/watch?v=5JcFgj2gHx8)
+- examples: [freezing of ice](https://youtu.be/ZAsUIqv3xb8), [bacterial cytoplasm](https://youtu.be/5JcFgj2gHx8)
 - [paralelization techniques](https://manual.gromacs.org/current/reference-manual/algorithms/parallelization-domain-decomp.html)
 
 ---

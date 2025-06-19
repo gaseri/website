@@ -35,7 +35,7 @@ As I [started blogging](2015-05-01-browser-wars.md) at [the end](2015-06-18-the-
 
 Note that my motivation was largely intrinsic and there were few considerations in terms of monetary compensation. Therefore, I will not discuss whether getting a Ph.D. has made me richer than I would be if I hadn't embarked on it (it probably hasn't).
 
-People tend to differ in intrinsic motivation quite a bit. To illustrate my point, my colleague [Arian](http://www.riteh.uniri.hr/osoba/arian-skoki) [Skoki](https://scholar.google.com/citations?user=n-k-YmgAAAAJ) usually mentions how he enjoys transforming scientific results into papers and choosing the right words to describe the observed phenomena. While [my track record](../../people/principal-investigator.md#publications-and-presentations) demonstrates I don't hate writing papers, that isn't my primary driving force either.
+People tend to differ in intrinsic motivation quite a bit. To illustrate my point, my colleague [Arian](https://www.linkedin.com/in/arian-skoki/) [Skoki](https://scholar.google.com/citations?user=n-k-YmgAAAAJ) usually mentions how he enjoys transforming scientific results into papers and choosing the right words to describe the observed phenomena. While [my track record](../../people/principal-investigator.md#publications-and-presentations) demonstrates I don't hate writing papers, that isn't my primary driving force either.
 
 So, what exactly was my intrinsic motivation?
 

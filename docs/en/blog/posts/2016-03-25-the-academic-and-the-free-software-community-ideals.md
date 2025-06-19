@@ -81,7 +81,7 @@ While it would certainly be nice if open source was protected from patent lawsui
 
 The first possible solution is not to patent at all.
 
-The second possible solution is to license the patent differently. Instead of being picky about the applications of the patent to decide whether royalties ought to be paid, which is the classical academic approach and also used above, one can simply license it royalty-free to everyone. This way, one **prevents innovations from being patented and licensed in a classical way**. This is what [Tesla Motors does](https://www.tesla.com/blog/all-our-patent-are-belong-you).
+The second possible solution is to license the patent differently. Instead of being picky about the applications of the patent to decide whether royalties ought to be paid, which is the classical academic approach and also used above, one can simply license it royalty-free to everyone. This way, one **prevents innovations from being patented and licensed in a classical way**. This is what [Tesla Motors does](https://techcrunch.com/2016/05/26/teslas-patent-strategy-opens-the-road-to-sustainability-for-transport-and-for-itself/).
 
 The third possible solution is to use [the copyleft-style patent license](https://en.wikipedia.org/wiki/Patentleft), which allows royalty-free use of knowledge given that you license your developments under the same terms. The approach uses the existing patent system in a reverse way, just like the copyleft licenses use the copyright system in a reverse way. This can be seen as an evolution of what [Open Invention Network](https://openinventionnetwork.com/) and [Biological Open Source (BiOS)](https://cambia.org/bios-landing/) already do.
 

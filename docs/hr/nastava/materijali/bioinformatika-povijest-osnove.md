@@ -7,8 +7,8 @@ author: Vedran Miletić
 Motivacija:
 
 - [National Human Genome Research Institute](https://www.genome.gov/)
-- [Sylvia Plevritis: Better cancer treatment through data](https://engineering.stanford.edu/magazine/article/ash-alizadeh-new-age-oncology)
-- [Ash Alizadeh: A New Age in Oncology](https://engineering.stanford.edu/magazine/article/sylvia-plevritis-better-cancer-treatment-through-data)
+- [Sylvia Plevritis: Better cancer treatment through data](https://engineering.stanford.edu/news/ash-alizadeh-new-age-oncology)
+- [Ash Alizadeh: A New Age in Oncology](https://engineering.stanford.edu/news/sylvia-plevritis-better-cancer-treatment-through-data)
 
 Prema [Wikipediji](https://en.wikipedia.org/wiki/Bioinformatics):
 

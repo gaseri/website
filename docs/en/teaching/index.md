@@ -7,7 +7,7 @@ author: Vedran Miletić
 !!! info
     This page is also available [in Croatian](../../hr/nastava/index.md).
 
-Teaching materials are in Croatian, except [Code Optimization](courses/CO.md) for [YUFE](https://uniri.hr/en/about-university/yufe-young-universities-for-the-future-of-europe/) students in English. We plan to provide other teaching materials in English in the future, primarily for [incoming Erasmus+ students](https://uniri.hr/en/about-university/international-relations-and-erasmus/incoming-erasmus-students/).
+Teaching materials are in Croatian, except [Code Optimization](courses/CO.md) for [YUFE](https://uniri.hr/en/yufe/yufe-young-universities-for-the-future-of-europe/) students in English. We plan to provide other teaching materials in English in the future, primarily for [incoming Erasmus+ students](https://uniri.hr/en/about-university/international-relations-and-erasmus/incoming-erasmus-students/).
 
 ## Courses
 

@@ -40,7 +40,7 @@ result_gpu = a_gpu + b_gpu
 
 ## Modul pycuda.cumath: funkcije koje rade element-po-element na poljima tipa GPUArray
 
-CUDA Math API ima predefinirane funkcije uređaja s [jednostrukom preciznošću](https://docs.nvidia.com/cuda/cuda-math-api/group__CUDA__MATH__SINGLE.html) i [dvostrukom preciznošću](https://docs.nvidia.com/cuda/cuda-math-api/group__CUDA__MATH__DOUBLE.html). Kada se koristi PyCUDA, navedene funkcije su dostupne putem modula `pycuda.cumath` koji opisujemo u nastavku.
+CUDA Math API ima predefinirane funkcije uređaja s [jednostrukom preciznošću](https://docs.nvidia.com/cuda/cuda-math-api/cuda_math_api/group__CUDA__MATH__SINGLE.html) i [dvostrukom preciznošću](https://docs.nvidia.com/cuda/cuda-math-api/cuda_math_api/group__CUDA__MATH__DOUBLE.html). Kada se koristi PyCUDA, navedene funkcije su dostupne putem modula `pycuda.cumath` koji opisujemo u nastavku.
 
 Zaokruživanje i apsolutna vrijednost:
 

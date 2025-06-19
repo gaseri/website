@@ -24,7 +24,7 @@ abstract: |
 
 ![MPG logo h:250px](https://upload.wikimedia.org/wikipedia/en/9/9a/Max_Planck_Society_logo.svg)
 
-Izvor slike: [Wikimedia Commons: File:Max Planck Society logo.svg](https://commons.wikimedia.org/wiki/File:Max_Planck_Society_logo.svg)
+Izvor slike: [Wikimedia Commons: File:Max Planck Society logo.svg](https://en.wikipedia.org/wiki/File:Max_Planck_Society_logo.svg)
 
 ![FIDIT logo h:250px](https://upload.wikimedia.org/wikipedia/commons/1/14/FIDIT-logo.svg)
 

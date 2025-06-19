@@ -192,7 +192,7 @@ abstract: |
 
 - Co-author [Matea Turalija](https://mateaturalija.github.io/) from GASERI at [FIDIT](https://www.inf.uniri.hr/), [Uni Rijeka](https://uniri.hr/)
 
-![Matea Turalija bg 95% right:30%](https://www.inf.uniri.hr/images/djelatnici/turalija.jpg)
+![Matea Turalija bg 95% right:30%](https://mateaturalija.github.io/images/profile.jpg)
 
 - Flow-specific approach co-authors Ana Herrera-Rodríguez, Camilo Aponte-Santamaría, and [Frauke Gräter](https://www.h-its.org/people/prof-dr-frauke-grater/) from [Molecular Biomechanics (MBM) group](https://www.h-its.org/research/mbm/), [Heidelberg Institute for Theoretical Studies (HITS)](https://www.h-its.org/)
 

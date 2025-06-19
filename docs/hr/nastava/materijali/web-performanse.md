@@ -307,13 +307,13 @@ Implementacije JIT prevoditelja:
 
 Izvor: [Laurence Tratt](https://tratt.net/laurie/), [What Challenges and Trade-Offs do Optimising Compilers Face?](https://tratt.net/laurie/blog/entries/what_challenges_and_trade_offs_do_optimising_compilers_face.html)
 
-- [PHP vs JavaScript](https://benchmarksgame-team.pages.debian.net/benchmarksgame/fastest/php.html)
-- [PHP vs Python](https://benchmarksgame-team.pages.debian.net/benchmarksgame/fastest/php-python3.html)
-- [PHP vs Ruby](https://benchmarksgame-team.pages.debian.net/benchmarksgame/fastest/php-ruby.html)
+- [JavaScript vs C](https://benchmarksgame-team.pages.debian.net/benchmarksgame/fastest/node-gcc.html)
+- [Python vs PHP](https://benchmarksgame-team.pages.debian.net/benchmarksgame/fastest/python3-php.html)
+- [Ruby vs Perl](https://benchmarksgame-team.pages.debian.net/benchmarksgame/fastest/ruby-perl.html)
 
 [Django overview](https://www.djangoproject.com/start/overview/): "Ridiculously fast. Django was designed to help developers take applications from concept to completion as quickly as possible."
 
-[The Rails Doctrine](https://rubyonrails.org/doctrine/): 'One of the early productivity mottos of Rails went: "You're not a beautiful and unique snowflake". It postulated that by giving up vain individuality, you can leapfrog the toils of mundane decisions, and make faster progress in areas that really matter.'
+[The Rails Doctrine](https://rubyonrails.org/doctrine): 'One of the early productivity mottos of Rails went: "You're not a beautiful and unique snowflake". It postulated that by giving up vain individuality, you can leapfrog the toils of mundane decisions, and make faster progress in areas that really matter.'
 
 ---
 

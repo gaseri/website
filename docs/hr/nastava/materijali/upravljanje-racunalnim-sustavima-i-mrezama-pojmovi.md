@@ -94,7 +94,7 @@ Upravitelj računalnih sustava i mreža, popularno zvan sistem admistrator, od m
 
 ### Softver i tehnologija općenito
 
-- [AdoredTV](https://adoredtv.com/)
+- [AdoredTV](https://www.youtube.com/@adoredtv)
 - [AnandTech](https://www.anandtech.com/)
 - [Coreteks](https://www.youtube.com/@Coreteks)
 - [ExtremeTech](https://www.extremetech.com/)

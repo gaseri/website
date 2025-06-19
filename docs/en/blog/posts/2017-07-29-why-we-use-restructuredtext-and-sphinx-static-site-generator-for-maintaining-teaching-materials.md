@@ -61,7 +61,7 @@ Therefore, we opted to use [Sphinx](https://www.sphinx-doc.org/) and reStructure
 
 - [Git](https://git-scm.com/)-based diff,
 - reduced attack surface: no web application, no PHP interpreter, no database,
-- very low amount of server maintenance required, can even be outsourced by dumping your content on e.g. [GitLab pages](https://docs.gitlab.com/ee/user/project/pages/index.html),
+- very low amount of server maintenance required, can even be outsourced by dumping your content on e.g. [GitLab Pages](https://docs.gitlab.com/user/project/pages/),
 - one can still have social share links by including e.g. [AddToAny](https://www.addtoany.com/) in a post-processing script after the compilation,
 - one can still have comments (our teaching materials will not) by including e.g. [Disqus](https://disqus.com/),
 - super easy deployment: choose whether you want your URLs to end in `.html` or `/`, compile accordingly, and dump the generated HTML files,

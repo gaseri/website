@@ -20,7 +20,7 @@ author: Vedran Miletić
 
 [GROMACS](https://www.gromacs.org/) is the leading open-source molecular dynamics software package. Thanks to [Szilard Pall (KTH)](https://www.kth.se/profile/pszilard) and other developers, it has been providing an option to use CUDA for the offload of force calculation on GPUs for a decade now. Specialized supercomputers for molecular dynamics use custom network cards with accelerators for force calculations. The goal is to use commercial off-the-shelf components, specifically [BlueField](https://www.nvidia.com/en-us/networking/products/data-processing-unit/) to enable wide industry and academic use of DPUs for force reduction calculations in GROMACS. We see an in-network acceleration to have significant potential in the identification of packets that do not need to be delivered to all receivers and force reductions; a similar approach is used by Anton 2 ([doi:10.1109/IPDPS.2015.42](https://doi.org/10.1109/IPDPS.2015.42)). Potentially, DPUs could also accelerate 3D FFTs. Our research would be a proof-of-concept for the next generation of DPUs as it would greatly benefit from lower latency, specifically when using [GPUDirect RDMA](https://network.nvidia.com/products/GPUDirect-RDMA/) on DPUs to obtain data from GPUs.
 
-**Hardware Grant:** 2 x [NVIDIA BlueField-2 E-Series 100GbE Crypto Enabled](https://store.nvidia.com/en-us/networking/store/product/MBF2M516A-CEEOT/NVIDIAMBF2M516ACEEOTBlueField2ESeriesDPU100GbECryptoEnabled/)
+**Hardware Grant:** 2 x [NVIDIA BlueField-2 E-Series 100GbE Crypto Enabled](https://www.exxactcorp.com/NVIDIA-MBF2M516A-CEEOT-E5019690)
 
 ## National Competence Centres in the framework of EuroHPC (EuroCC)
 

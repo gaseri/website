@@ -140,12 +140,15 @@ Detaljne informacije o načinu korištenja moguće je pronaći na [stranici pacm
 
 Osim službenih repozitorija, Arch Linux sadrži [gotovo 90 000 opisa paketa](https://aur.archlinux.org/packages) u [Arch User Repositoryju (AUR-u)](https://aur.archlinux.org/). Detalji oko oblika opisa paketa mogu se pronaći na [stranici PKGBUILD na ArchWikiju](https://wiki.archlinux.org/title/PKGBUILD), a detalji oko instalacije paketa na [stranici Arch User Repository](https://wiki.archlinux.org/title/Arch_User_Repository).
 
-Za primjer, izgradit ćemo i instalirati paket [mkdocs](https://aur.archlinux.org/packages/mkdocs). Klikom na poveznicu `View PKGBUILD` na toj stranici i zatim na poveznicu `plain` otkrivamo URL `https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=mkdocs` s kojeg možemo preuzeti PKGBUILD.
+!!! quote "ToDo"
+    Tekst treba osvježiti jer [MkDocs](https://www.mkdocs.org/) više nije u AUR-u.
+
+Za primjer, izgradit ćemo i instalirati paket [mkdocs](https://archlinux.org/packages/extra/any/mkdocs/). Klikom na poveznicu `Source Files` na toj stranici i zatim na poveznicu `PKGBUILD` otkrivamo URL `https://gitlab.archlinux.org/archlinux/packaging/packages/mkdocs/-/raw/main/PKGBUILD?ref_type=heads` s kojeg možemo preuzeti PKGBUILD.
 
 ``` shell
 mkdir mkdocs
 cd mkdocs
-curl -o PKGBUILD "https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=mkdocs"
+curl -o PKGBUILD 'https://gitlab.archlinux.org/archlinux/packaging/packages/mkdocs/-/raw/main/PKGBUILD?ref_type=heads'
 ```
 
 Pakete izgrađujemo korištenjem naredbe `makepkg` na način:
@@ -165,7 +168,6 @@ makepkg
   -> python-livereload
   -> python-markupsafe
   -> python-mergedeep
-  -> python-mdx-gh-links
   -> python-pyyaml-env-tag
   -> python-watchdog
 ==> Checking buildtime dependencies...
@@ -187,12 +189,12 @@ sudo pacman -S python-babel python-ghp-import python-importlib-metadata python-j
 sudo pacman -S python-hatchling python-pathspec python-build python-installer python-wheel
 ```
 
-Za preostala tri paketa [python-mergedeep](https://aur.archlinux.org/packages/python-mergedeep), [python-mdx-gh-links](https://aur.archlinux.org/packages/python-mdx-gh-links) i [python-pyyaml-env-tag](https://aur.archlinux.org/packages/python-pyyaml-env-tag), preuzet ćemo PKGBUILD-ove iz AUR-a i na temelju njih:
+Za preostala dva paketa [python-mergedeep](https://archlinux.org/packages/extra/any/python-mergedeep/) i [python-pyyaml-env-tag](https://archlinux.org/packages/extra/any/python-pyyaml-env-tag/), preuzet ćemo PKGBUILD-ove iz AUR-a i na temelju njih:
 
 ``` shell
 mkdir python-mergedeep
 cd python-mergedeep
-curl -o PKGBUILD "https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=python-mergedeep"
+curl -o PKGBUILD 'https://gitlab.archlinux.org/archlinux/packaging/packages/python-mergedeep/-/raw/main/PKGBUILD?ref_type=heads'
 makepkg
 ```
 
@@ -206,25 +208,13 @@ cd ..
 ```
 
 ``` shell
-mkdir python-mdx-gh-links
-cd python-mdx-gh-links
-curl -o PKGBUILD "https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=python-mdx-gh-links"
-makepkg
-```
-
-``` shell-session
-(...)
-==> Finished making: python-mdx-gh-links 0.2-1
-```
-
-``` shell
 cd ..
 ```
 
 ``` shell
 mkdir python-pyyaml-env-tag
 cd python-pyyaml-env-tag
-curl -o PKGBUILD "https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=python-pyyaml-env-tag"
+curl -o PKGBUILD 'https://gitlab.archlinux.org/archlinux/packaging/packages/python-pyyaml-env-tag/-/raw/main/PKGBUILD?ref_type=heads'
 makepkg
 ```
 

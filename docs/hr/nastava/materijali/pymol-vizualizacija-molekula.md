@@ -6,7 +6,7 @@ author: Matea Turalija, Vedran Miletić
 
 [PyMOL](https://pymol.org/) je sustav za molekulsku vizualizaciju otvorenog koda. Omogućuje generiranje visokokvalitetnih 3D slika malih molekula i bioloških makromolekula, kao što su proteini. Prema izvornom autoru, do 2009. godine gotovo četvrtina svih objavljenih 3D slika proteinskih struktura u znanstvenoj literaturi stvorena je pomoću PyMOL-a.
 
-Alat je moguće preuzeti sa službene stranice [PyMOL-a](https://pymol.org/), a detaljne upute za rad s programom mogu se pronaći u [PyMOL tutorialu](https://edisciplinas.usp.br/pluginfile.php/7380340/mod_resource/content/1/PyMOL_tutorial_2022.pdf).
+Alat je moguće preuzeti sa službene stranice [PyMOL-a](https://pymol.org/), a detaljne upute za rad s programom mogu se pronaći u [brojnim](https://pymolwiki.org/index.php/Practical_Pymol_for_Beginners) [tutorialima](https://dasher.wustl.edu/bio5357/software/pymol/simple-tutorial.pdf).
 
 ## Sučelje alata PyMOL
 

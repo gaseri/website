@@ -93,21 +93,21 @@ Image source: [Wikimedia Commons File:OpenAI Logo.svg](https://commons.wikimedia
 
 ## What really is ChatGPT, aside from the hype?
 
-- released in [November 2022](https://openai.com/blog/chatgpt) by [OpenAI](https://openai.com/)
+- released in [November 2022](https://openai.com/index/chatgpt/) by [OpenAI](https://openai.com/)
 - chat based on a large language model; [not the first](https://gpt3demo.com/apps/instructgpt)
 - uses *Reinforcement Learning from Human Feedback*
 - significant part of model training is [performed manually by people](https://time.com/6247678/openai-chatgpt-kenya-workers/)
 - [growth exceeded all expectations](https://www.statista.com/chart/29174/time-to-one-million-users/)
-- [top 100 prompts](https://chatgpt.pro/prompts/)
+- [prompt examples](https://platform.openai.com/docs/examples)
 
 ---
 
 ## Demo
 
-[Official website](https://chat.openai.com/) can say `ChatGPT is at capacity right now`; static examples:
+[Official website](https://chatgpt.com/) can say `ChatGPT is at capacity right now`; static examples:
 
 - [List of ChatGPT Examples](https://www.followchain.org/chatgpt-examples/)
-- [41 Amazing ChatGPT Demos and Examples that will Blow Your Mind](https://machinelearningknowledge.ai/chatgpt-demos-and-examples/)
+- [22 Interesting ChatGPT Examples](https://builtin.com/artificial-intelligence/chatgpt-examples)
 - [12 Cool Things You Can Do with ChatGPT](https://beebom.com/cool-things-chatgpt/)
 - Extra: [ChatGPT Examples: 25 Interesting Questions Answered By ChatGPT](https://finlightened.com/chatgpt-examples/)
 
@@ -174,4 +174,4 @@ Image source: [Wikimedia Commons File:OpenAI Logo.svg](https://commons.wikimedia
 - non-English language models likely to improve soon
     - within months, maybe a year or two
     - remember how well Google Translate performed 10 years ago and compare that to how it performs now
-- make sure to visit [chat.openai.com](https://chat.openai.com/) and try it
+- make sure to visit [chatgpt.com](https://chatgpt.com/) and try it

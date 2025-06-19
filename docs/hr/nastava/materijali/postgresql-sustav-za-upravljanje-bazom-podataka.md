@@ -347,12 +347,9 @@ Obnavljanje se vrši u 9 koraka:
 1. <https://tecadmin.net/install-postgresql-on-centos-rhel-and-fedora/>
 1. <https://www.if-not-true-then-false.com/2012/install-postgresql-on-fedora-centos-red-hat-rhel/>
 1. <https://www.postgresql.org/download/linux/redhat/>
-1. <https://admin.fedoraproject.org/pkgdb/acls/name/postgresql>
+1. <https://packages.fedoraproject.org/pkgs/postgresql/>
 1. <https://wiki.postgresql.org/wiki/SEPostgreSQL_Administration>
-1. <http://www.cert.hr/sites/default/files/CCERT-PUBDOC-2006-10-171.pdf>
-1. <http://www.vtsnis.edu.rs/Predmeti/baze_podataka/BAZE%20PREDAVANJA%202%20-%20SUBP.pdf>
-1. <http://www.vps.ns.ac.rs/nastavnici/Materijal/mat50.pdf>
-1. <https://www.fer.unizg.hr/_download/repository/BazePodataka_SQLPredavanja.pdf>
-1. <http://media.lukaperkov.net/lukaperkov.net/files/papers/Seminar[2009]Perkov_Luka.pdf>
+1. <https://www.postgresql.org/support/security/>
+1. <https://www.postgresql.org/docs/online-resources/>
+1. <https://www.postgresql.org/docs/books/>
 1. <https://en.wikipedia.org/wiki/PostgreSQL>
-1. <http://marjan.fesb.hr/~emudnic/Download/BazePodataka2/56315396-BP-VEST-Skripta.pdf>

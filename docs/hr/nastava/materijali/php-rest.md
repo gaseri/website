@@ -8,7 +8,7 @@ author: Vedran Miletić
 
 REST je razvio Roy Fielding 2000. godine u [svom doktoratu](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm) i pritom kaže da se njegov razvoj temelji na HTTP-ovom modelu objekta iz 1994. godine (više detalja se može naći u [poglavlju 5 pod naslovom Representational State Transfer (REST)](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm) i [poglavlju 6 pod naslovom Experience and Evaluation](https://www.ics.uci.edu/~fielding/pubs/dissertation/evaluation.htm)).
 
-Podsjetimo se da HTTP odredište zahtjeva naziva resursom i pritom ne definira detaljnije što resurs može biti ([više detalja o identificiranju resursa na webu može se pronaći na MDN-u](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Identifying_resources_on_the_Web)). Kako REST koristi HTTP, on specijalno koristi i pojam resursa iz HTTP-a.
+Podsjetimo se da HTTP odredište zahtjeva naziva resursom i pritom ne definira detaljnije što resurs može biti ([više detalja o identificiranju resursa na webu može se pronaći na MDN-u](https://developer.mozilla.org/en-US/docs/Web/URI)). Kako REST koristi HTTP, on specijalno koristi i pojam resursa iz HTTP-a.
 
 Ključna apstrakcija podataka u REST-u je resurs; on može biti slika, dokument, zvuk, reprezentacija objekta iz stvarnosti (npr. osobe ili institucije), zbirka drugih resursa i slično. Stanje resursa u bilo kojem trenutku naziva se reprezentacija; ona sadrži podatke, metapodatke i poveznice prema drugim resursima. Za navođenje oblika reprezentacije koristi se već ranije spomenuti MIME tip.
 

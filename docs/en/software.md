@@ -23,4 +23,4 @@ The group is actively co-maintaining several computational biochemisty packages 
 - [MDAnalysis](https://www.mdanalysis.org/) -> [python-mdanalysis](https://aur.archlinux.org/packages/python-mdanalysis)
 - [MDTraj](https://www.mdtraj.org/) -> [python-mdtraj](https://aur.archlinux.org/packages/python-mdtraj)
 - [MMTF](https://mmtf.rcsb.org/) -> [python-mmtf](https://aur.archlinux.org/packages/python-mmtf)
-- [RDKit](https://rdkit.org/) -> [rdkit](https://aur.archlinux.org/packages/rdkit)
+- [OpenMM](https://openmm.org/) -> [openmm](https://aur.archlinux.org/packages/openmm)

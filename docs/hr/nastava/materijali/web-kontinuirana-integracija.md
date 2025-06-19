@@ -93,13 +93,13 @@ Uz lokalno izvođenje testova, moguće je i korištenje poslužitelja za CI koji
 * izgrađuje softver i **izvodi testove**
 * izgrađuje softver, izvodi testove i **vrši isporuku, odnosno postavljanje** softvera ako su testovi uspješno prošli
     - kontinuirana isporuka i kontinuirano postavljanje
-* primjer: [CI/CD Concepts (GitLab)](https://docs.gitlab.com/ee/ci/introduction/)
+* primjer: [CI/CD Concepts (GitLab)](https://docs.gitlab.com/ci/)
 
 ---
 
-![GitLab workflow example extended](https://docs.gitlab.com/ee/ci/pipelines/img/pipelines_graph_dependency_view_links_v13_12.png)
+![GitLab workflow example extended](https://docs.gitlab.com/ci/pipelines/img/pipeline_dependency_view_on_hover_v17_9.png)
 
-Izvor slike: [CI/CD pipelines (GitLab)](https://docs.gitlab.com/ee/ci/pipelines/)
+Izvor slike: [CI/CD pipelines (GitLab)](https://docs.gitlab.com/ci/pipelines/)
 
 ---
 
@@ -108,7 +108,7 @@ Izvor slike: [CI/CD pipelines (GitLab)](https://docs.gitlab.com/ee/ci/pipelines/
 Platforme u oblaku:
 
 * [GitHub Actions](https://github.com/features/actions) ([prezentacija CI/CD značajki](https://resources.github.com/ci-cd/))
-* [GitLab CI/CD](https://docs.gitlab.com/ee/ci/) ([primjeri korištenja](https://docs.gitlab.com/ee/ci/examples/))
+* [GitLab CI/CD](https://docs.gitlab.com/ci/) ([primjeri korištenja](https://docs.gitlab.com/ci/examples/))
 * [Atlassian Bitbucket Pipelines](https://www.atlassian.com/software/bitbucket/features/pipelines)
 * [CircleCI](https://circleci.com/)
 * [JetBrains TeamCity](https://www.jetbrains.com/teamcity/)
@@ -142,7 +142,7 @@ Softveri otvorenog koda za samostalno postavljanje i održavanje:
 * PHP (interpreter) [koristi](https://github.com/php/php-src/commits/master) [Cirrus CI](https://cirrus-ci.com/github/php/php-src), [AppVeyor](https://ci.appveyor.com/project/php/php-src), [Azure Pipelines](https://dev.azure.com/phpazuredevops/PHP/_build) i [Travis CI](https://app.travis-ci.com/github/php/php-src)
 * LLVM [koristi](https://github.com/llvm/llvm-project/commits/main) [vlastitu instancu Buildbota](https://lab.llvm.org/buildbot/#/console)
 * (primjer van weba) ns-3 [koristi](https://gitlab.com/nsnam/ns-3-dev/-/commits/master) [GitLab CI/CD](https://gitlab.com/nsnam/ns-3-dev/-/pipelines)
-    - [konfiguracija](https://docs.gitlab.com/ee/ci/yaml/gitlab_ci_yaml.html) se piše u [obliku YAML](https://yaml.org/)
+    - [konfiguracija](hhttps://docs.gitlab.com/ci/yaml/) se piše u [obliku YAML](https://yaml.org/)
 
 ---
 

@@ -164,10 +164,10 @@ Primjeri alata za testiranje softvera na opisan način su:
 
 - [WordPressovi (koristi PHPUnit)](https://github.com/WordPress/wordpress-develop/tree/trunk/tests/phpunit)
 - [Collabora Online (koristi CppUnit)](https://github.com/CollaboraOnline/online/tree/master/test)
-- [PeerTube (koristi Mochu)](https://github.com/Chocobozzz/PeerTube/tree/develop/server/tests)
+- [PeerTube (koristi Mochu)](https://github.com/Chocobozzz/PeerTube/tree/develop/packages/tests)
 - [Trac (koristi Pythonov modul unittest)](https://github.com/edgewall/trac/tree/trunk/trac/tests)
 - [Redmine (koristi Railsov sustav za testiranje)](https://github.com/redmine/redmine/tree/master/test)
-- [Mattermost (koristi Golangov modul testing)](https://github.com/mattermost/mattermost-server/tree/master/web)
+- [Mattermost (koristi Golangov modul testing)](https://github.com/mattermost/mattermost-server/tree/master/server)
 - [pump.io (koristi vows)](https://github.com/pump-io/pump.io/tree/master/test)
 
 ---

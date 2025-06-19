@@ -6,13 +6,13 @@ author: Domagoj Margan, Vedran Miletić
 
 ## Skup alata OpenSSL
 
-[OpenSSL](https://www.openssl.org/) je skup alata za baratanje protokolima [Transport Layer Security (TLS) i Secure Sockets Layer (SSL)](https://httpd.apache.org/docs/current/ssl/ssl_intro.html). Koristi se za kodiranje i dekodiranje teksta, šifriranje datoteka, hashiranje, kriptografiju s javnim ključem, digitalno potpisivanje, stvaranje i povlačenje certifikata, testiranje TLS/SSL veza te brojne druge kriptografske funkcije. Slobodni je softver otvorenog koda [inicijalno izdan pod vlastitom licencom sličnom Apachevoj, a verzije od 3.0.0 nadalje izdane su upravo pod licencom Apache 2.0](https://www.openssl.org/source/license.html). Podržava velik broj operacijskih sustava: [primarna platforma koju autori koriste je Linux](https://www.openssl.org/policies/platformpolicy.html), ali podržani su i drugi operacijski sustavi slični Unixu (uključujući FreeBSD, OpenBSD, NetBSD, DragonFly BSD, macOS, Solaris i QNX) te OpenVMS i Microsoft Windows. Krajem 2018. godine OpenSSL je proslavio [dvadeset godina postojanja](https://www.openssl.org/blog/blog/2018/12/20/20years/).
+[OpenSSL](https://www.openssl.org/) je skup alata za baratanje protokolima [Transport Layer Security (TLS) i Secure Sockets Layer (SSL)](https://httpd.apache.org/docs/current/ssl/ssl_intro.html). Koristi se za kodiranje i dekodiranje teksta, šifriranje datoteka, hashiranje, kriptografiju s javnim ključem, digitalno potpisivanje, stvaranje i povlačenje certifikata, testiranje TLS/SSL veza te brojne druge kriptografske funkcije. Slobodni je softver otvorenog koda [inicijalno izdan pod vlastitom licencom sličnom Apachevoj, a verzije od 3.0.0 nadalje izdane su upravo pod licencom Apache 2.0](https://openssl-library.org/source/license/). Podržava velik broj operacijskih sustava: [primarna platforma koju autori koriste je Linux](https://openssl-library.org/policies/general/platform-policy/), ali podržani su i drugi operacijski sustavi slični Unixu (uključujući FreeBSD, OpenBSD, NetBSD, DragonFly BSD, macOS, Solaris i QNX) te OpenVMS i Microsoft Windows. Krajem 2018. godine OpenSSL je proslavio [dvadeset godina postojanja](https://openssl-library.org/post/2018-12-20-20years/).
 
-OpenSSL ima četiri komponente koje implementiraju pojedine značajke: aplikacije, TLS, kriptografija i pogoni; svaka od njih je dodatno podijeljena u module. OpenSSL se može koristiti i kao [aplikacija naredbenog retka](https://www.openssl.org/docs/man1.1.1/man1/) i kao [biblioteka, putem aplikacijskog programskog sučelja](https://www.openssl.org/docs/man1.1.1/man3/). Pored toga, moguće je i programirati [vlastite](https://www.openssl.org/blog/blog/2015/10/08/engine-building-lesson-1-a-minimum-useless-engine/) [pogone](https://www.openssl.org/blog/blog/2015/11/23/engine-building-lesson-2-an-example-md5-engine/) koji služe za korištenje akceleratora kriptografskih algoritama, bili ti akceleratori specifični za kriptografiju ili općeniti grafički procesori koji između ostalog mogu izvoditi i kriptografiju.
+OpenSSL ima četiri komponente koje implementiraju pojedine značajke: aplikacije, TLS, kriptografija i pogoni; svaka od njih je dodatno podijeljena u module. OpenSSL se može koristiti i kao [aplikacija naredbenog retka](https://docs.openssl.org/master/man1/) i kao [biblioteka, putem aplikacijskog programskog sučelja](https://docs.openssl.org/master/man3/). Pored toga, moguće je i programirati [vlastite](https://openssl-library.org/post/2015-10-08-engine-building-lesson-1-a-minimum-useless-engine/) [pogone](https://openssl-library.org/post/2015-11-23-engine-building-lesson-2-an-example-md5-engine/) koji služe za korištenje akceleratora kriptografskih algoritama, bili ti akceleratori specifični za kriptografiju ili općeniti grafički procesori koji između ostalog mogu izvoditi i kriptografiju.
 
 ![OpenSSL conceptual components](../../../images/openssl-conceptual-component.png)
 
-**Slika:** Konceptualne komponente OpenSSL-a. (Slika preuzeta iz [OpenSSL Strategic Architecture](https://www.openssl.org/docs/OpenSSLStrategicArchitecture.html).)
+**Slika:** Konceptualne komponente OpenSSL-a. (Slika preuzeta iz [OpenSSL Strategic Architecture](https://docs.openssl.org/master/OpenSSLStrategicArchitecture/).)
 
 ### Kriptografski algoritmi
 
@@ -75,7 +75,7 @@ OpenSSL je na većini distribucija Linuxa i drugih operacijskih sustava sličnih
 
 ![OpenSSL packaging](../../../images//openssl-packaging.png)
 
-**Slika:** Pakiranje OpenSSL-a. (Slika preuzeta iz [OpenSSL Strategic Architecture](https://www.openssl.org/docs/OpenSSLStrategicArchitecture.html).)
+**Slika:** Pakiranje OpenSSL-a. (Slika preuzeta iz [OpenSSL Strategic Architecture](https://docs.openssl.org/master/OpenSSLStrategicArchitecture/).)
 
 ### Aplikacija naredbenog retka
 
@@ -90,7 +90,7 @@ OpenSSL 1.1.1a FIPS  20 Nov 2018
 ```
 
 !!! warning
-    Za verziju koju imamo svakako treba provjeriti [popis poznatih ranjivosti](https://www.openssl.org/news/vulnerabilities.html). Poznate ranjivosti uglavnom postoje u [svim verzijama](https://www.openssl.org/source/old/) osim [zadnjih izdanih](https://www.openssl.org/source/).
+    Za verziju koju imamo svakako treba provjeriti [popis poznatih ranjivosti](https://openssl-library.org/news/vulnerabilities/). Poznate ranjivosti uglavnom postoje u [svim verzijama](https://openssl-library.org/source/old/) osim [zadnjih izdanih](https://openssl-library.org/source/).
 
     Kada smo svjesni da imamo verziju OpenSSL-a za koju znamo da je ranjiva i na koji način, na nama je da odlučimo hoćemo li je nastaviti koristiti ili ne; može se dogoditi, primjerice, da nam ta ranjivost ne predstavlja problem jer se ona nalazi u implementaciji algoritma koji ne koristimo ili može biti slučaj da se kriptografijom na računalu bavimo isključivo u edukativne svrhe.
 

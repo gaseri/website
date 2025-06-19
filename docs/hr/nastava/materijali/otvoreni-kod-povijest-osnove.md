@@ -217,7 +217,7 @@ author: Vedran Miletić, Vanja Slavuj
     > 5) ODF ima nekoliko (skoro pa) kompletnih implementacija (multiplatformskih!)  
     > 6) ODF je prošao mnogo godina standardizacije i ima utakmica u nogama
 
-    -- Vlatko Košturjak (kost), komentar na objavu [Hrvatska Udruga Linux Korisnika : OpenDocument format (ODF) postaje nacionalna norma](http://www.linux.hr/modules/news/article.php?storyid=2391), 2008.
+    -- Vlatko Košturjak (kost), komentar na objavu [Hrvatska Udruga Linux Korisnika : OpenDocument format (ODF) postaje nacionalna norma](https://arhiva.linux.hr/modules/news/article.php%3Fstoryid=2391.html), 2008.
 
 - Novell, Red Hat (Liberation fonts), Canonical, Google (SoC projekti)
 - The Document Foundation, LibreOffice, čišćenje ovisnosti o Javi, modernizacija korisničkog sučelja;

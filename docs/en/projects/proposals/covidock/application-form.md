@@ -397,7 +397,7 @@ World Health Organization. Coronavirus disease 2019 (COVID-19) Situation Report 
 
 ### \[ref2\]
 
-Zhang, G., Pomplun, S., Loftis, A. R., Loas, A. & Pentelute, B. L. *The first-in-class peptide binder to the SARS-CoV-2 spike protein*. <https://biorxiv.org/lookup/doi/10.1101/2020.03.19.999318> (2020) doi:10.1101/2020.03.19.999318.
+Zhang, G., Pomplun, S., Loftis, A. R., Loas, A. & Pentelute, B. L. *The first-in-class peptide binder to the SARS-CoV-2 spike protein*. <https://www.biorxiv.org/content/early/2020/03/20/2020.03.19.999318> (2020) doi:10.1101/2020.03.19.999318.
 
 ### \[ref3\]
 
@@ -537,7 +537,7 @@ SCI-RSC Workshop on Computational Tools for Drug Discovery. <https://www.soci.or
 
 ### \[ref37\]
 
-CCG \| UGM and Conference 2020 \| Europe. <https://www.chemcomp.com/UGM-2020-Europe.htm>.
+CCG \| UGM and Conferences \| Europe. <https://www.chemcomp.com/en/Events.htm>.
 
 ### \[ref38\]
 
@@ -545,7 +545,7 @@ Nikolić, P., Miletić, V., Odorcić, I. & Svedružić, Ž. M. Chapter 5 - In Si
 
 ### \[ref39\]
 
-HPC Bura -- Center for Advanced Computing and Modelling. <https://cnrm.uniri.hr/hpc-bura/>.
+HPC Bura -- Center for Advanced Computing and Modelling. <https://cnrm.uniri.hr/bura/>.
 
 ### \[ref40\]
 

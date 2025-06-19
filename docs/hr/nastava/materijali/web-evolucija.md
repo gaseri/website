@@ -101,7 +101,7 @@ keywords: razvoj web aplikacija usluga
 - [LBRY](https://lbry.com/); implementacija: [odysee](https://odysee.com/)
 - [Invidious](https://invidious.io/)
 - [CryptoTask](https://www.cryptotask.org/)
-- [Atlas.Work](https://www.atlas.work/)
+- [ATLAS](https://www.atlasweb3.io/)
 - [Sapien](https://www.sapien.network/)
 - [Brave](https://brave.com/)
 - [Beaker Browser](https://beakerbrowser.com/)

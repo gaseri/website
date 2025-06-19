@@ -280,7 +280,7 @@ MariaDB [podržava šifriranje](https://mariadb.com/kb/en/securing-mariadb-encry
 #### Stvaranje asimetričnih ključeva
 
 !!! note
-    U nastavku stvaramo ključeve korištenjem [Easy-RSA](https://community.openvpn.net/openvpn/wiki/EasyRSA), koji je skup skripti za olakšavanje stvaranja RSA ključeva korištenjem OpenSSL-a. Alternativno, moguće je certifikate napraviti i ručnim korištenjem OpenSSL-a, kako je to opisano u koracima 3, 4, 5 i 6 u [članku How to set up MariaDB SSL and secure connections from clients na nixCraftu](https://www.cyberciti.biz/faq/how-to-setup-mariadb-ssl-and-secure-connections-from-clients/).
+    U nastavku stvaramo ključeve korištenjem [Easy-RSA](https://community.openvpn.net/Pages/EasyRSA3-OpenVPN-Howto), koji je skup skripti za olakšavanje stvaranja RSA ključeva korištenjem OpenSSL-a. Alternativno, moguće je certifikate napraviti i ručnim korištenjem OpenSSL-a, kako je to opisano u koracima 3, 4, 5 i 6 u [članku How to set up MariaDB SSL and secure connections from clients na nixCraftu](https://www.cyberciti.biz/faq/how-to-setup-mariadb-ssl-and-secure-connections-from-clients/).
 
 [Ključeve i X.509 certifikate](https://mariadb.com/docs/security/encryption/in-transit/create-self-signed-certificates-keys-openssl/#create-self-signed-certificates-keys-openssl) koje će MariaDB koristiti stvaramo korištenjem OpenSSL-a i Easy-RSA. Inicijalizirajmo infrastrukturu privatnog ključa i kopirajmo direktorij s informacijama o vrstama X.509 certifikata i datoteke s postavkama OpenSSL-a:
 

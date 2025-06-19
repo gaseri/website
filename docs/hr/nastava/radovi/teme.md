@@ -165,7 +165,7 @@ Tijekom 80-ih godina na Kalifornijskom sveučilištu u Berkeleyu Keith Bostic, B
 1. [Computer Systems Research Group](https://en.wikipedia.org/wiki/Computer_Systems_Research_Group)
 1. [KAME](https://www.kame.net/)
 1. [IMUNES](http://imunes.net/)
-1. [Jones, T. FreeBSD in Network Research and Standardization (FreeBSD in Research). FreeBSD Journal, January/February 2020.](https://freebsdfoundation.org/past-issues/freebsd-in-research/)
+1. [Jones, T. FreeBSD in Network Research and Standardization (FreeBSD in Research). FreeBSD Journal, January/February 2020.](https://freebsdfoundation.org/our-work/journal/browser-based-edition/freebsd-in-research/)
 1. [Leffler, S. J., Joy, W. N., Fabry, R. S. & Karels, M. J. Networking Implementation Notes 4.3 BSD Edition. Unix System Manager's Manual, 1986.](https://docs.freebsd.org/44doc/smm/18.net/paper.pdf)
 
 ### Interaktivni interpreter Cling za programski jezik C++ {[PPHS](../kolegiji/PPHS.md)}
@@ -246,7 +246,7 @@ GPL violations: Linksys WRT54G, Linux devices, SF Conservancy, SF Law Center
 
 **Literatura:**
 
-1. [\[Ksummit-discuss\] \[CORE TOPIC\] GPL defense issues](https://lists.linuxfoundation.org/pipermail/ksummit-discuss/2016-August/003578.html)
+1. [\[Ksummit-discuss\] \[CORE TOPIC\] GPL defense issues](https://lore.kernel.org/ksummit/e315013e77cc851b040b5b5f4fe9f0bf@motives.com/)
 1. [GPL violations](https://gpl-violations.org/)
 1. [Software Freedom Law Center](https://softwarefreedom.org/)
 1. [Software Freedom Conservancy](https://sfconservancy.org/)
@@ -557,7 +557,7 @@ Razvoj igara je jedna od propulzivnih grana suvremenog razvoja softvera. S cilje
 **Literatura:**
 
 1. [Unity Documentation](https://docs.unity.com/)
-1. [Unreal Engine Documentation](https://docs.unrealengine.com/)
+1. [Unreal Engine Documentation](https://dev.epicgames.com/documentation/en-us/unreal-engine)
 1. [Godot Engine Documentation](https://docs.godotengine.org/)
 
 ## Odabrane teme završnih radova akademske godine 2021./2022.
@@ -765,7 +765,7 @@ Posljednjih desetljeća industrija igara je u kontinuiranom porastu te je jedan 
 **Literatura:**
 
 1. [3D Game Shaders For Beginners](https://lettier.github.io/3d-game-shaders-for-beginners/)
-1. [Shader Development (Unreal Engine Documentation)](https://docs.unrealengine.com/en-US/ProgrammingAndScripting/Rendering/ShaderDevelopment/)
+1. [Shader Development (Unreal Engine Documentation)](https://dev.epicgames.com/documentation/en-us/unreal-engine/shader-debugging-workflows-unreal-engine)
 
 **Literatura:**
 
@@ -1106,7 +1106,7 @@ Dok se aplikacija izvodi u heterogenom računalnom sustavu, grafički i središn
 
 1. [Half the Web Is Now Encrypted. That Makes Everyone Safer (Wired)](https://www.wired.com/2017/01/half-web-now-encrypted-makes-everyone-safer/)
 1. Durumeric, Zakir, et al. "The Security Impact of HTTPS Interception." Network and Distributed Systems Symposium (NDSS'17). 2017. Rad dostupan putem [mrežnih stranica J. Alexa Hanldermana](https://jhalderm.com/pub/papers/interception-ndss17.pdf).
-1. [Detecting HTTPS Interception (Caddy web server)](https://caddyserver.com/docs/mitm-detection)
+1. [Detecting HTTPS Interception (Caddy web server)](https://caddy.its-em.ma/v1/docs/mitm-detection)
 
 ### Nomulus: softver otvorenog koda za upravljanje registrom domena (Nomulus: open source domain registry management software) {[RM2](../kolegiji/RM2.md)} [Sanja Ivić, preneseno iz 2016./2017.]
 
@@ -1166,7 +1166,7 @@ Godot je pogon otvorenog koda za izradu 2D i 3D igara dostupand pod licencom MIT
 1. [Službena dokumentacija pogona Godot](https://docs.godotengine.org/)
 1. [GDScript](https://docs.godotengine.org/en/stable/getting_started/scripting/gdscript/index.html)
 1. [Godot 3.0 Open-Source Game Engine Released (Phoronix)](https://www.phoronix.com/scan.php?page=news_item&px=Godot-3.0-Released)
-1. [Godot Engine, the open source game engine has evolved with the big 3.0 release (GamingOnLinux)](https://www.gamingonlinux.com/articles/godot-engine-the-open-source-game-engine-has-evolved-with-the-big-30-release.11135)
+1. [Godot Engine, the open source game engine has evolved with the big 3.0 release (GamingOnLinux)](https://www.gamingonlinux.com/2018/01/open-source-game-engine-godot-engine-has-the-first-30-release-candidate-available/)
 
 ## Odabrane teme završnih radova akademske godine 2016./2017.
 

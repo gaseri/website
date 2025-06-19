@@ -109,7 +109,7 @@ A detailed scoring system for the course and passing scores for individual activ
 1. Raman, A., Hoder, C., Bisson, S. & Branscombe, M. *Azure AI Services at Scale for Cloud, Mobile, and Edge: Building Intelligent Apps with Azure Cognitive Services and Machine Learning*. (O'Reilly Media, 2022).
 2. Fregly, C. & Barth, A. *Data Science on AWS: Implementing End-to-End, Continuous AI and Machine Learning Pipelines*. (O'Reilly Media, 2021).
 3. Winder, P. *Reinforcement Learning: Industrial Applications of Intelligent Agents*. (O'Reilly Media, 2020).
-4. Adkins, H., Beyer, B., Blankinship, P., Oprea, A., Lewandowski, P. & Stubblefield, A. *Building Secure and Reliable Systems: Best Practices for Designing, Implementing, and Maintaining Systems*. (O'Reilly Media, 2020). Available online: [sre.google/static/pdf/building_secure_and_reliable_systems.pdf](https://sre.google/static/pdf/building_secure_and_reliable_systems.pdf)
+4. Adkins, H., Beyer, B., Blankinship, P., Oprea, A., Lewandowski, P. & Stubblefield, A. *Building Secure and Reliable Systems: Best Practices for Designing, Implementing, and Maintaining Systems*. (O'Reilly Media, 2020). Available online: [google.github.io/building-secure-and-reliable-systems/](https://google.github.io/building-secure-and-reliable-systems/)
 5. Reznik, P., Dobson, J. & Glenow, M. *Cloud Native Transformation: Practical Patterns for Innovation*. (O'Reilly Media, 2019).
 6. Arundel, J. & Domingus, J. *Cloud Native DevOps with Kubernetes: Building, Deploying, and Scaling Modern Applications in the Cloud*. (O'Reilly Media, 2019).
 7. Newman, S. *Monolith to Microservices: Evolutionary Patterns to Transform Your Monolith*. (O'Reilly Media, 2019).

@@ -19,7 +19,7 @@ Nositelj: **doc. dr. sc. Vedran Miletić**, <vmiletic@inf.uniri.hr>, vedran.mile
 
 Asistent: **Milan Petrović, mag. inf.**, <milan.petrovic@inf.uniri.hr>
 
-Fiksni termin za konzultacije: nakon predavanja, odnosno prije vježbi uživo u učionici ili na [sveučilišnom BBB-u: bigbluebutton.uniri.hr/b/ved-h7x-6vq](https://bbb.uniri.hr/b/ved-h7x-6vq)
+Fiksni termin za konzultacije: nakon predavanja, odnosno prije vježbi uživo u učionici ili na sveučilišnom BBB-u: ved-h7x-6vq
 
 Naziv predmeta na starom jednopredmetnom i dvopredmetnom studiju informatike: *Dinamičke web aplikacije 2*, 3. godina, 6. semestar  
 📝 **Napomena:** Dio studenata polaže predmet u okviru [Veleri-OI IoT School](https://iot-school.veleri.hr/)
@@ -48,7 +48,7 @@ Izvor: [Who Killed the Desktop Application?](https://blog.codinghorror.com/who-k
 ## Opće informacije o predmetu
 
 - Usvajanje složenijih koncepta iz područja razvoja web aplikacija i usluga
-- Otvara vrata za rad na razvoju web (i mobilnih) aplikacija i usluga u Hrvatskoj i šire: [FIVE](https://five.agency/our-work/), [Infobip](https://www.infobip.com/), [Mono](https://mono.software/products/), [Infinum](https://infinum.com/work), [Factory](https://factory.hr/our-work), [Hexis](https://hexis.hr/our-work), [Bornfight](https://bornfight.com/work/), [Neuralab](https://www.neuralab.net/portfolio-work/), [Aplitap](https://www.aplitap.hr/radovi), [Lumos](https://lumos.hr/portfolio/), [Perpetuum](https://www.perpetuum.hr/projekti), [Init](https://init.hr/#ourwork), [Q agency](https://q.agency/projects), [Own.Solutions](https://own.solutions/), [Papar](https://papar.hr/portfolio/), [Async Labs](https://www.asynclabs.co/work) itd.
+- Otvara vrata za rad na razvoju web (i mobilnih) aplikacija i usluga u Hrvatskoj i šire: [FIVE](https://five.agency/our-work/), [Infobip](https://www.infobip.com/), [Mono](https://mono.software/products/), [Infinum](https://infinum.com/work), [Factory](https://factory.dev/projects), [Hexis](https://hexis.hr/our-work), [Bornfight](https://bornfight.com/work/), [Neuralab](https://www.neuralab.net/portfolio-work/), [Aplitap](https://www.aplitap.hr/radovi), [Lumos](https://lumos.hr/portfolio/), [Perpetuum](https://www.perpetuum.hr/projekti), [Init](https://init.hr/#ourwork), [Q agency](https://q.agency/case-studies/), [Own.Solutions](https://own.solutions/), [Papar](https://papar.hr/portfolio/), [Async Labs](https://www.asynclabs.co/work) itd.
     - Primjeri poslova: [Web Developer (Indeed)](https://www.indeed.com/q-Web-Developer-jobs.html)
 - Znanja primjenjiva na brojnim predmetima diplomskog studija informatike: *Elektroničko gospodarstvo*, *Programsko inženjerstvo*, *Multimedijski i hipermedijski sustavi*, *Upravljanje mrežnim sustavima* te *Informacijska tehnologija i društvo*
 
@@ -156,7 +156,7 @@ Izvor: [Cool URIs don't change.](https://www.w3.org/Provider/Style/URI) ([W3C](h
 
 ---
 
-![Grgo Šipek bg 95% left:55%](https://upload.wikimedia.org/wikipedia/commons/9/94/Grgo_%C5%A0ipek_-_Gr%C5%A1e.jpg)
+![Grgo Šipek bg 95% left:55%](https://www.flickr.com/photo_download.gne?id=54042545095&secret=22e7183a33&size=c&source=photoPageEngagement)
 
 ## Službena PW/DWA2 glazbena tema za vježbe
 
@@ -330,7 +330,7 @@ Korišteni programski jezik i okvir ne određuje izgled stranice.
 Primjerice, u Ruby on Railsu su razvijene (prema [BuiltWith](https://builtwith.com/)):
 
 - [gitlab.com](https://about.gitlab.com/), [github.com](https://github.com/)
-- [www.ssmb.hr](http://www.ssmb.hr/), [bbb.uniri.hr](https://bbb.uniri.hr/)
+- [www.ssmb.hr](http://www.ssmb.hr/), [demo.bigbluebutton.org](https://demo.bigbluebutton.org/)
 - [rabljenavozila.dacia.hr](https://rabljenavozila.dacia.hr/), [rabljenavozila.renault.hr](https://rabljenavozila.renault.hr/)
 
 ![Cat reading web page bg 95% right:55%](https://live.staticflickr.com/3160/3092987032_fe2f2d5fda_b.jpg)
@@ -339,7 +339,7 @@ Primjerice, u Ruby on Railsu su razvijene (prema [BuiltWith](https://builtwith.c
 
 ## Izgled i korisničko iskustvo web sjedišta
 
-Izgled web sjedišta i korisničko iskustvo određuju HTML, CSS i JS, danas uglavnom na prednjem dijelu web aplikacija: [Bootstrap](https://getbootstrap.com/) (MMS), [Vue.js](https://vuejs.org/) i [Quasar](https://quasar.dev/) (UPW/DWA1), [Headless UI](https://headlessui.dev/) i [Tailwind CSS](https://tailwindcss.com/) (PW/DWA2) ([ostale](https://www.keycdn.com/blog/frontend-frameworks) [mogućnosti](https://athemes.com/collections/best-css-frameworks/)).
+Izgled web sjedišta i korisničko iskustvo određuju HTML, CSS i JS, danas uglavnom na prednjem dijelu web aplikacija: [Bootstrap](https://getbootstrap.com/) (MMS), [Vue.js](https://vuejs.org/) i [Quasar](https://quasar.dev/) (UPW/DWA1), [Headless UI](https://headlessui.dev/) i [Tailwind CSS](https://tailwindcss.com/) (PW/DWA2) ([ostale](https://www.keycdn.com/blog/frontend-frameworks) [mogućnosti](https://www.contentful.com/blog/css-frameworks/)).
 
 > To me it's obvious that the days of low level JavaScript for front end applications for the average developer are numbered and **baseline frameworks [React, Vue.js, Angular, Svelte etc.] are going to be the future for the majority of Web developers** that need to get stuff done. **The productivity gain** and the fact that the frameworks encapsulate hard-won knowledge and experience about quirks and performance in the DOM and JavaScript, **make it impractical to ‘roll your own' any longer** and stay competitive in the process.
 

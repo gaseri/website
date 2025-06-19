@@ -8,15 +8,15 @@ author: Vito Weiner, Betty Žigo, Matea Turalija
 
 Važno je poznavanje MIPS jezika jer se mnoga ugrađena sklopovlja i softveri izvode na MIPS procesoru. Poznavanje ovog jezika omogućuje bolje razumijevanje rada ovih sustava na niskoj razini. Pored toga, MIPS se često koristi u akademskom okruženju kako bi se studentima omogućilo razumijevanje koncepta niskorazinske programske izvedbe. Korištenje simulatora u tu svrhu omogućava praktičnu primjenu znanja i testiranje različitih programa napisanih u asemblerskom jeziku MIPS.
 
-Prije početka izrade koda u MIPS jeziku, važno je nabaviti dobro integrirano razvojno okruženje koje olakšava kompajliranje i izvršavanje koda. Preporučuje se korištenje softvera [MARS](https://courses.missouristate.edu/kenvollmar/mars/) (engl. *MIPS Assembler i Runtime Simulator*). U nastavku se fokusiramo na primjenu asemblerskog jezika MIPS i upotrebu simulacijskog programa MARS za istraživanje načina pokretanja i izvođenja programa napisanih u MIPS asembleru.
+Prije početka izrade koda u MIPS jeziku, važno je nabaviti dobro integrirano razvojno okruženje koje olakšava kompajliranje i izvršavanje koda. Preporučuje se korištenje softvera [MARS](https://computerscience.missouristate.edu/mars-mips-simulator.htm) (engl. *MIPS Assembler i Runtime Simulator*). U nastavku se fokusiramo na primjenu asemblerskog jezika MIPS i upotrebu simulacijskog programa MARS za istraživanje načina pokretanja i izvođenja programa napisanih u MIPS asembleru.
 
 ## Uspostava razvojnog okruženja
 
-[MARS](https://courses.missouristate.edu/kenvollmar/mars/) simulator je softver koji simulira izvođenje programa napisanih u programskom jeziku MIPS. Omogućuje izradu i testiranje programa te sadrži program za ispravljanje pogrešaka (engl. *Debugger*) koji omogućuje korisnicima da detaljno prate izvođenje programa, otklanjaju greške i optimiziraju izvedbu. U nastavku ćemo dati upute za njegovu instalaciju i pojasniti njegovo korištenje.
+[MARS](https://dpetersanderson.github.io/) simulator je softver koji simulira izvođenje programa napisanih u programskom jeziku MIPS. Omogućuje izradu i testiranje programa te sadrži program za ispravljanje pogrešaka (engl. *Debugger*) koji omogućuje korisnicima da detaljno prate izvođenje programa, otklanjaju greške i optimiziraju izvedbu. U nastavku ćemo dati upute za njegovu instalaciju i pojasniti njegovo korištenje.
 
 ### Instalacija i konfiguracija softvera MARS
 
-Na stranici [MARS download](https://courses.missouristate.edu/KenVollmar/mars/download.htm) preuzmite simulator klikom na gumb `Download MARS` i pričekaje dok se program instalira.
+Na stranici [MARS download](https://github.com/dpetersanderson/MARS) preuzmite simulator klikom na gumb `Download MARS` i pričekaje dok se program instalira.
 
 MARS zahtijeva Java SDK instaliran na vašem računalu. Na istoj stranici kliknite na gumb `Download Java` koja će vas preusmjeriti na službenu stranicu [Oracle](https://www.oracle.com/java/technologies/downloads/), gdje ćete izabrati operacijski sustav koji koristite (Linux, macOS i Windows) i preuzeti najnovije izdanje Jave.
 

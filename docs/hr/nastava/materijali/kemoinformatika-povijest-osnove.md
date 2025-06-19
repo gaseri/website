@@ -8,7 +8,7 @@ Motivacija:
 
 - [Xkcd 435: Purity](https://xkcd.com/435/)
 - [AlphaFold](https://alphafold.com/) ([detaljan opis](https://www.deepmind.com/research/highlighted-research/alphafold))
-- [Tom Abate and Andrew Myers: What if we could design powerful drugs without unwanted side effects?](https://engineering.stanford.edu/magazine/article/what-if-we-could-design-powerful-drugs-without-unwanted-side-effects)
+- [Tom Abate and Andrew Myers: What if we could design powerful drugs without unwanted side effects?](https://engineering.stanford.edu/news/what-if-we-could-design-powerful-drugs-without-unwanted-side-effects)
 
 ## Modeliranje
 

@@ -4,7 +4,7 @@ author: Vedran Miletić
 
 # Kontinuirana integracija korištenjem GitLaba
 
-Pored [posluživanja Git repozitorija i povezanih usluga](https://docs.gitlab.com/ee/user/project/), [GitLab nudi i funkcionalnost](https://en.wikipedia.org/wiki/CI/CD) [kontinuirane integracije, isporuke i implementacije](https://en.wikipedia.org/wiki/CI/CD) (engl. *continuous integration, delivery and deployment*, kraće CI/CD).
+Pored [posluživanja Git repozitorija i povezanih usluga](https://docs.gitlab.com/user/project/), [GitLab nudi i funkcionalnost](https://en.wikipedia.org/wiki/CI/CD) [kontinuirane integracije, isporuke i implementacije](https://en.wikipedia.org/wiki/CI/CD) (engl. *continuous integration, delivery and deployment*, kraće CI/CD).
 
 Kontinuirana integracija omogućuje nam izgradnju, testiranje i pokretanje softvera u čistoj okolini, što nam pomaže pronaći probleme kod integracije promjena koji developeru možda promaknu dok radi u razvojnoj okolini. GitLab omogućuje korištenje [Docker](https://www.docker.com/) kontejnera ili vlastitih (virtualnih) računala u kojima se izvodi [GitLab Runner](https://docs.gitlab.com/runner/).
 
