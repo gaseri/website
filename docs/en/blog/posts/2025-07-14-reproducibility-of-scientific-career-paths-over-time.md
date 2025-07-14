@@ -1,0 +1,55 @@
+---
+author: Vedran Miletić
+authors:
+  - vedranmiletic
+date: 2025-07-14
+tags:
+  - academia
+  - free and open-source software
+  - scientific software
+  - cp2k
+  - phd
+  - linux
+  - freebsd
+---
+
+# Reproducibility of scientific career paths over time
+
+![brown tower clock](https://unsplash.com/photos/B_TdfGFuGwA/download?w=1920)
+
+Photo source: [Murray Campbell (@murrayc) | Unsplash](https://unsplash.com/photos/brown-tower-clock-B_TdfGFuGwA)
+
+[Klara Filek](https://www.linkedin.com/in/filek-klara/), a postdoctoral researcher at [the Medical University of Graz](https://www.medunigraz.at/), recently wrote [an article about career orientation for young scientists](https://udruga-penkala.hr/karijerna-orijentacija-za-mlade-znanstvenike-snalazenje-u-labirintu-opcija/2025/) for [the Penkala](https://udruga-penkala.hr/) [Association](https://udruga-penkala.hr/udruga-penkala/) [blog](https://udruga-penkala.hr/category/penkalin-blog/). She makes many great points through the article, and I heartily recommend reading it, especially to current PhD students seeking future opportunities.
+
+I would like to emphasize the two reasons that she mentioned why career guidance is so difficult in Croatian academia (translation mine):
+
+> - **Limited experience of the mentors:** Many mentors rely on their own experience in a system they are part of and know very well, and outside of which they often cannot help us much (depending, of course, on the field and personal affinities).
+> - **The “academia-only” narrative:** Continuing higher education and a doctorate seem to presuppose a postdoc position and a teaching career. In addition, a good number of academics I was (and still am) surrounded by are convinced that academia is the only place where you can be creative and flexible, which is not true and makes it difficult to explore other possibilities.
+
+I thought quite a bit about both of these points, given that I am guiding [Matea Turalija](https://mateaturalija.github.io/) through her PhD journey and I am eager to help her with my acquired experience as much as I can. However, as Klara explained above, this is far from a trivial endeavor.
+
+<!-- more -->
+
+Furthermore, [Patrik](https://www.linkedin.com/in/patriknikolic/) [Nikolić](https://nikoli.ch/), [a former collaborator](../../people/index.md#collaborators) and a longtime friend of mine, recently told me that, given the rate of change in the world, people's career paths in science are becoming irreproducible from generation to generation. The implication of this irreproducibility, from the perspective of a PhD student, is that the mentor's experience is rarely directly applicable. To put it scientifically, this would be an extension of Klara's point regarding the limited experience of the mentors to the dimension of time. As an example, he reminded me of the advice we got from our late mentor, [Željko](https://svedruziclab.github.io/principal-investigator.html) [Svedružić](https://svedruziclab.github.io/), which was often very useful, but only because we followed it selectively. As a consequence, while Patrik could provide career advice to his younger colleagues, current students of biotech or pharmacy at the University of Rijeka, he doesn't believe they would be able to follow it and end up in a similar position as he did.
+
+Finally, he wondered whether this applies to computer science and information technology careers. What can a professor of those disciplines at a university, like I used to be not so long ago, recommend to students? Could it be that his career path and the career paths of his industry colleagues also can't be replicated, just like in biotech/pharma? I stopped to think for a minute, wondering if that could be the case. I pushed back a bit, saying that career paths of academics and industry professionals can differ from generation to generation, but there used to be a common thread among them. He insisted, asking me to think of my path; for example, could I be able to get to the same place starting five, ten, fifteen, or twenty years later?
+
+When I thought about it deeply enough, I would say that the answer is very likely going to be no, I couldn't, even if I wanted to. Assuming a student with an affinity for mathematics, specifically computer simulation, and an attitude that is pro-free and open-source software (which implies the usage of [GNU/](https://stallman-copypasta.github.io/)[Linux](https://www.kernel.org/) and/or [FreeBSD](https://www.freebsd.org/)), several changes in the following years complicate replicating my career path:
+
+- Linux is no longer a new and cool thing for enthusiasts; it's just [mainstream](https://en.wikipedia.org/wiki/Linux_adoption), thanks mostly to [the economic crisis of 2008](https://en.wikipedia.org/wiki/2008_financial_crisis) and [the subsequent capture of the server market by Red Hat](https://www.theregister.com/2011/11/08/opening_up_the_cloud/). Furthermore, various forms of virtualization/containerization, including [Linux](https://docs.kernel.org/admin-guide/namespaces/index.html) [kernel](https://www.nsnam.org/docs/models/html/emulation-overview.html) [network](https://www.nsnam.org/docs/models/html/internet-models.html) [namespaces](https://www.nsnam.org/wiki/HOWTO_use_Linux_namespaces_with_ns-3) (which was a major factor that sparked my initial interest in exploring the usage and the development of [ns-3](https://www.nsnam.org/) and [its](https://ndnsim.net/) [many](https://www.bufferbloat.net/projects/codel/wiki/Reconciling_codel_variants/#current-ns3-model) [modifications](https://www.itu.int/rec/T-REC-G.1050-201607-I/en)), are stable, working well, and widely used. [Gaming on Linux](https://www.gamingonlinux.com/) is no longer a big deal either; with [Proton](https://en.wikipedia.org/wiki/Proton_(software)) and Steam Deck, it often [just works](https://www.steamdeck.com/en/software).
+- JavaScript/TypeScript/Rust/Nim/Zig and the web/blockchain/AI are (were?) the new and cool things, which would suggest that something along those lines is what one should work on if one is just starting and wants a shot at doing something interesting and important. While I have a broad set of interests and would gladly listen to a talk on any of these topics, I can't claim that I'm deeply familiar with any of them.
+- While FER is still [the top research institution in Croatia](https://www.akademski.hr/fer-vodeca-institucija-u-hrvatskoj-po-broju-aktivnih-projekata/), it is following [the](https://www.akademski.hr/fer-ovi-istrazivaci-sudjeluju-u-izradi-europskog-superracunala/) [trends](https://www.akademski.hr/30086-2/), and my particular area of research during [the PhD times](2015-06-18-the-follow-up.md#phd-done) (optical transport network resilience) is no longer pursued as actively (or maybe even at all) under its umbrella.
+
+People who helped me with the jump into computational (bio)chemistry during my postdoc are no longer in the same place, namely:
+
+- [Željko Svedružić](https://svedruziclab.github.io/principal-investigator.html), who Patrik (during his MSc) and I (during the late stage of my PhD and after it) [worked](2015-07-28-joys-and-pains-of-interdisciplinary-research.md) [with](2025-03-07-the-unfortunate-state-of-early-career-scientist-funding-in-croatia.md#full-disclosure) [quite](../../projects/proposals/covidock/application-form.md) [a](../../projects/proposals/covidock/financial-plan.md) [bit](2025-03-16-cross-building-and-cross-testing-gromacs-for-windows-on-linux-with-mingw-and-wine.md#compiling-and-running-a-windows-version-of-gromacs), [passed](https://svedruziclab.github.io/news/2023/04/21/obituary-dr-%C5%BEeljko-svedru%C5%BEi%C4%87.html) [away](https://svedruziclab.github.io/news/2023/05/17/posljednji-intervju-sa-izv-prof-dr-sc-%C5%BEeljkom-svedru%C5%BEi%C4%87em.html) in 2023.
+- My former colleagues from [the ETHZ](https://ethz.ch/) [Nanoscale Simulations Group](https://www.nanosim.mat.ethz.ch/) and [the CP2K project](https://www.cp2k.org/), who I [visited in 2015](2015-12-13-on-having-leverage-and-using-it-for-pushing-open-source-software-adoption.md), are no longer there.[^1] [Ole Schütt](https://www.linkedin.com/in/oleschuett) recently started his own company after leaving Google. [Joost VandeVondele](https://www.linkedin.com/in/joost-vandevondele) is [the Deputy Director](https://www.cscs.ch/about/staff) of [the Swiss National Supercomputing Center](https://www.cscs.ch/about/about-cscs).
+- [Frauke](https://www.mpg.de/21990169/polymer-research-graeter) [Gräter](https://www.mpip-mainz.mpg.de/en/graeter), who I worked with during [my postdoc time at HITS](2023-07-28-alumni-meeting-2023-at-hits-and-the-reminiscence-of-the-postdoc-years.md), was [appointed as](https://www.mpip-mainz.mpg.de/en/press/pr-2024-05) [the Director](https://www.mpg.de/24149165/more-women-directors-than-ever-max-planck) of [the Max Planck Institute for Polymer Research](https://www.mpip-mainz.mpg.de/).
+
+I could go on, but the fundamental idea should be clear by now: not only are the people, the groups, and the projects they work on different, but also are the research areas and the perspectives on what we're doing and where we're going. While I could point to my track record and offer my career insight from a position of authority to the new generation of PhD students, for the advice to be useful, they would have to follow it selectively, just like Patrik and I followed Professor Svedružić's.
+
+Additionally, the introduction of research-oriented large language models as [research assistants]((https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/web-of-science-research-assistant/)), available to everyone as a part of academic tools such as [the Web of Science platform](https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/), complicates things further: any PhD project idea takes only several seconds from conception to a (rough, but usable) overview of the work in the field, something that used to take weeks (or months) to write back in the day when I was starting. Not only that, but a student is under severe dread of the possibility that his or her PhD topic will be irrelevant before the thesis defense date, as it could be solved by [prompting the next version of AI tools](https://ai-2027.com/), and these might or might not be out in the wild soon enough for that.
+
+It is tough, but, in the end, it is what it is. If there is no other way and our insight can't serve us as well anymore as it used to for the previous generations, we will just have to figure out the changes that have occurred since as we go along the journey again with our students. It is, at the very least, good to be aware that there are changes and that they are far from trivial.
+
+[^1]: Regardless, the text of [What is the price of open-source fear, uncertainty, and doubt?](2015-09-14-what-is-the-price-of-open-source-fear-uncertainty-and-doubt.md), that I wrote shortly after coming back from the visit, is timeless.
