@@ -504,6 +504,14 @@ Snimka predavanja na temu: [Becoming a better developer by using the SOLID desig
 
 ---
 
+![SOLID principles in PHP bg 90% left:45%](https://nophpunintended.com/comics/solid-principles-in-php.png)
+
+## SOLID načela u PHP-u?
+
+Izvor: [SOLID principles in PHP](https://nophpunintended.com/solid-principles-in-php/) (No PHPun Intended)
+
+---
+
 ## Relacijski model
 
 Recimo da je [neka teretana](https://youtu.be/7d9HZ9G2iuQ) predstavljena relacijskim modelom (stil označavanja: ***primarni ključ***, *vanjski ključ*):
