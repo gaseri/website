@@ -120,6 +120,20 @@ Varijabla okoline `LD_LIBRARY_PATH` navodi dodatne putanje (pored onih predefini
     - Razmotrite veličinu datoteke i objasnite uzrok razlikama koje vidite.
     - Usporedite izlaz naredbe `file`.
 
+### Mogućnost izvršavanja stoga
+
+!!! info
+    Za više informacija proučite:
+
+    - [Infectious Executable Stacks (null program)](https://nullprogram.com/blog/2019/11/15/),
+    - [The linker’s warnings about executable stacks and segments (Red Hat Blog)](https://www.redhat.com/en/blog/linkers-warnings-about-executable-stacks-and-segments),
+    - [Passing a contain'ed subroutine marks the stack as executable? (Intel Community)](https://community.intel.com/t5/Intel-Fortran-Compiler/Passing-a-contain-ed-subroutine-marks-the-stack-as-executable/m-p/1176384),
+    - [Controlling stack execution protection (IBM Documentation)](https://www.ibm.com/docs/en/linux-on-systems?topic=protection-control-execution),
+    - [MATLAB: executable stack error with MATLAB versions at or before R2024b (ArchWiki)](https://wiki.archlinux.org/title/MATLAB#executable_stack_error_with_MATLAB_versions_at_or_before_R2024b).
+
+!!! tip
+    Zaštita od mogućnosti izvršavanja stoga je uključena u zadanim postavkama suvremenih distribucija Linuxa (ali i [FreeBSD](https://forums.freebsd.org/threads/stack-protector-pax-for-freebsd.36927/)-u, [macOS](https://craftware.xyz/tips/Stack-exec.html)-u i [brojnim drugim operacijskim sustavima](https://en.wikipedia.org/wiki/Executable-space_protection)), što znači da će programi koji zahtijevaju tu mogućnost vjerojatno imati problema s pokretanjem. Ta se zaštita može isključiti za pojedine ELF datoteke (biblioteke ili izvršne datoteke) korištenjem naredbe `execstack`, koja je dio alata [prelink](https://people.redhat.com/jakub/prelink/) (za više detalja proučite [rad](https://people.redhat.com/jakub/prelink.pdf) koji je pripremio njegov autor [Jakub](https://fedoraproject.org/wiki/JakubJelinek) [Jelínek](https://developers.redhat.com/author/jakub-jelinek)).
+
 ## Alat `make`
 
 Alat `make` "automatski" izgrađuje izvršne programe i bibliotečne datoteke iz izvornog koda.
