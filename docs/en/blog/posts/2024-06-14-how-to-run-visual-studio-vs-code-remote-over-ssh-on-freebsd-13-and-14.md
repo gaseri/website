@@ -28,15 +28,27 @@ Until recently, it was possible to use [Linuxulator](https://wiki.freebsd.org/Li
 
 Recent [effort by Gleb Popov and Dima Panov](https://cgit.freebsd.org/ports/commit/?id=5aa75e1ca0fca26372479bd36773428e2c24f1e4) (sponsored by Serenity Cybersecurity, LLC) brought [Rocky Linux](https://rockylinux.org/) [9](https://rockylinux.org/news/rocky-linux-9-0-ga-release) to Linuxulator. It is now again possible (and quite simple) to run Visual Studio Code Remote - SSH on FreeBSD's currently [supported releases](https://www.freebsd.org/security/#sup) [13.2-RELEASE](https://www.freebsd.org/releases/13.2R/), [13.3-RELEASE](https://www.freebsd.org/releases/13.3R/), [14.0-RELEASE](https://www.freebsd.org/releases/14.0R/), and [14.1-RELEASE](https://www.freebsd.org/releases/14.1R/).
 
+Before we start, make sure that your user has `/bin/csh` or `/bin/tcsh` (same thing) as the default shell. Other shells (e.g. `zsh`, `fish`) might or might not work, but experience shows that `/bin/sh` doesn't. The default can be checked with the `finger` command:
+
+``` tcsh
+finger `whoami` | grep Shell:
+```
+
+``` tcsh
+Directory: /home/vmtest                Shell: /bin/csh
+```
+
 Let's start with enabling Linuxulator and installing the required packages:
 
 ``` tcsh
 doas sysrc linux_enable="YES"
 doas service linux start
-doas pkg install linux-rl9-libsigsegv
+doas pkg install linux_base-rl9
 ```
 
-Note that installing [devel/linux-rl9-libsigsegv](https://www.freshports.org/devel/linux-rl9-libsigsegv/) will automatically pull [emulators/linux_base-rl9](https://www.freshports.org/emulators/linux_base-rl9/) as a dependancy. After installing it, we should make sure that Linuxulator works correctly (using `uname`):
+Note that installing the full [emulators/linux-rl9](https://www.freshports.org/emulators/linux-rl9/) package is also an option (if you have storage space and/or interest in exploring other Linux tools and libraries), as it will automatically pull the above mentioned [emulators/linux_base-rl9](https://www.freshports.org/emulators/linux_base-rl9/) as a dependancy. However, the full packages is not required for running VS Code Remote server, i.e. the base package is sufficient for that use case.
+
+After installing it, we should make sure that Linuxulator works correctly (using `uname`):
 
 ``` tcsh
 /compat/linux/usr/bin/uname -a
@@ -73,3 +85,5 @@ Host example.group.miletic.net
 ```
 
 And that's it! Upon the first connection, the VS Code Remote server will be installed. Afterward, you can add your favorite extensions, as you would do it on Linux, Windows, or macOS.
+
+**Updated on 2025-08-23:** the `devel/linux-rl9-libsigsegv` package got integrated into the `emulators/linux_base-rl9` package, elaborated on the `emulators/linux-rl9` packge, and noted the issues with `/bin/sh`.
