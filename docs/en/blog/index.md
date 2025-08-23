@@ -20,5 +20,6 @@
     - [Louwrentius](https://louwrentius.com/)
     - [Tagebuch eines Interplanetaren Botschafters (Nicolai Hähnle)](https://nhaehnle.blogspot.com/)
     - [Yet Another Me (Sergio Durigan Junior)](https://blog.sergiodj.net/)
+    - [Samuel Tulach](https://tulach.cc/)
     - [CSpace blog (Chris Siebenmann)](https://utcc.utoronto.ca/~cks/space/blog/)
     - [The Great Refactoring (Jehferson Mello)](https://vilelasagna.ddns.net/)
