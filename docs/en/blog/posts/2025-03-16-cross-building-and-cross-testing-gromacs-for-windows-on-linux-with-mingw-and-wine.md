@@ -205,6 +205,12 @@ For help on a command, use 'gmx help <command>'.
 GROMACS reminds you: "I didn't know what MD was. I think I've managed to catch up." (Berk Hess)
 ```
 
+Alternatively, the `WINEPATH` [environment](https://gitlab.winehq.org/wine/wine/-/wikis/Man-Pages/wine#environment) environment variable can aso be used as a temporary measure, like:
+
+``` shell
+WINEPATH='/usr/lib/gcc/x86_64-w64-mingw32/14-win32;/usr/x86_64-w64-mingw32/lib' wine bin/gmx.exe
+```
+
 Great, this looks promising!
 
 ## Cross-testing GROMACS with Wine and binfmt_misc
