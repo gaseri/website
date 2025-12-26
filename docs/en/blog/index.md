@@ -11,7 +11,6 @@
 
 ??? note "Blogroll"
     - [brr](https://brr.fyi/)
-    - [CrysSITE Blog (Michał Sapka)](https://crys.site/blog/)
     - [Daemonic Dispatches (Colin Percival)](https://www.daemonology.net/blog/)
     - [delroth's homepage (Pierre Bourdon)](https://delroth.net/)
     - [IT Notes (Stefano Marinelli)](https://it-notes.dragas.net/)
@@ -19,6 +18,7 @@
     - [GabMus's Dev Log (Gabriele Musco)](https://gabmus.org/)
     - [Louwrentius](https://louwrentius.com/)
     - [Tagebuch eines Interplanetaren Botschafters (Nicolai Hähnle)](https://nhaehnle.blogspot.com/)
+    - [weblog from the keyboard of michał m. sapka](https://michal.sapka.pl/weblog/)
     - [Yet Another Me (Sergio Durigan Junior)](https://blog.sergiodj.net/)
     - [Samuel Tulach](https://tulach.cc/)
     - [CSpace blog (Chris Siebenmann)](https://utcc.utoronto.ca/~cks/space/blog/)
