@@ -542,13 +542,6 @@ theme:
     code: Fira Mono
 
 extra:
-  alternate:
-    - name: Croatian
-      link: /hr/
-      lang: hr
-    - name: English
-      link: /en/
-      lang: en
   analytics:
     feedback:
       title: Was this page helpful?
