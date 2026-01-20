@@ -45,7 +45,7 @@ It turns out that there was [a missing `#include <cstdint>` directive and wrong 
 
 ## Cross-building GROMACS with MinGW GCC
 
-I have a [Debian](https://www.debian.org/devel/testing.html) [testing](https://www.debian.org/devel/testing.html) (*[trixie](https://www.debian.org/releases/trixie/)*) installation at hand this time, but I would expect Fedora to be similar. [MinGW GCC](https://tracker.debian.org/pkg/gcc-mingw-w64) C++ compiler can be installed using the command:
+I have a [Debian](https://www.debian.org/intro/about#what) [testing](https://www.debian.org/devel/testing/) (codename *[trixie](https://www.debian.org/releases/trixie/)*) installation at hand this time, but I would expect Fedora to be similar. [MinGW GCC](https://tracker.debian.org/pkg/gcc-mingw-w64) C++ compiler can be installed using the command:
 
 ``` shell
 apt install g++-mingw-w64
