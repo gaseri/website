@@ -162,9 +162,9 @@ keywords: code optimization
 
 ## Required software for project development on Windows
 
-- Windows Subsystem for Linux (WSL) ([docs.microsoft.com/en-us/windows/wsl/install](https://docs.microsoft.com/en-us/windows/wsl/install))
+- Windows Subsystem for Linux (WSL) ([learn.microsoft.com/windows/wsl/install](https://learn.microsoft.com/windows/wsl/install))
     - distribution: [AlmaLinux OS 9](https://apps.microsoft.com/detail/9p5rwlm70sn9) or [CentOS Stream 9](https://sigs.centos.org/altimages/wsl-images/)
-- Windows Terminal ([learn.microsoft.com/en-us/windows/terminal/](https://learn.microsoft.com/en-us/windows/terminal/))
+- Windows Terminal ([learn.microsoft.com/windows/terminal/](https://learn.microsoft.com/windows/terminal/))
 - VS Code [Remote Development](https://code.visualstudio.com/docs/remote/remote-overview) WSL extension `ms-vscode-remote.remote-wsl`
 
 ---

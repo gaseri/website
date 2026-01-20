@@ -150,7 +150,7 @@ Rad CDN-ova omogućen je korištenjem [Cross-Origin Resource Sharinga (CORS-a)](
 Popularni CDN-ovi:
 
 - [Cloudflare](https://www.cloudflare.com/learning/cdn/what-is-a-cdn/)
-- [Microsoft Azure CDN](https://docs.microsoft.com/en-us/azure/cdn/cdn-overview), [Amazon CloudFront](https://aws.amazon.com/cloudfront/)
+- [Microsoft Azure CDN](https://learn.microsoft.com/azure/cdn/cdn-overview), [Amazon CloudFront](https://aws.amazon.com/cloudfront/)
 - [Akamai](https://www.akamai.com/us/en/cdn/what-is-a-cdn.jsp#what-is-a-cdn), [KeyCDN](https://www.keycdn.com/what-is-a-cdn), [Imperva CDN](https://www.imperva.com/learn/performance/what-is-cdn-how-it-works/)
 - specifične namjene: [jsDelivr](https://www.jsdelivr.com/about), [cdnjs](https://cdnjs.com/about)
 
@@ -322,7 +322,7 @@ Izvor: [Laurence Tratt](https://tratt.net/laurie/), [What Challenges and Trade-O
 > Our results show that real web applications behave very differently from the benchmarks and that there are definite ways in which the benchmark behavior might mislead a designer.
 
 Izvor: Paruj Ratanaworabhan, Benjamin Livshits, Benjamin G. Zorn: [JSMeter: Comparing the Behavior of JavaScript Benchmark swith Real Web Applications](https://dl.acm.org/doi/10.5555/1863166.1863169) (2010 USENIX conference on Web application development)
-Više informacija: [JSMeter: Measuring JavaScript Web Applications (Microsoft Research)](https://www.microsoft.com/en-us/research/project/jsmeter-measuring-javascript-web-applications/)
+Više informacija: [JSMeter: Measuring JavaScript Web Applications (Microsoft Research)](https://www.microsoft.com/research/project/jsmeter-measuring-javascript-web-applications/)
 
 ---
 

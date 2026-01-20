@@ -464,7 +464,7 @@ Izvor: [Qt Quick Demo - Clocks](https://doc.qt.io/qt-6/qtdoc-demos-clocks-exampl
 ## Infrastruktura
 
 - upravitelj paketa: [Conan](https://conan.io/)
-- sustavi za izgradnju softvera: [CMake](https://cmake.org/), [Meson](https://mesonbuild.com/), [Bazel](https://bazel.build/); [Ninja](https://ninja-build.org/), [MSBuild](https://learn.microsoft.com/en-us/visualstudio/msbuild/msbuild)
+- sustavi za izgradnju softvera: [CMake](https://cmake.org/), [Meson](https://mesonbuild.com/), [Bazel](https://bazel.build/); [Ninja](https://ninja-build.org/), [MSBuild](https://learn.microsoft.com/visualstudio/msbuild/msbuild)
 
 ---
 

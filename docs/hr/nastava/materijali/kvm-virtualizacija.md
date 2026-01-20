@@ -66,7 +66,7 @@ Potpuna virtualizacija podrazumijeva simulaciju hardvera fizičkog stroja što o
 
 Neka od rješenja za potpunu virtualizaciju su:
 
-- Microsoft [Hyper-V](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/), nasljednik [Windows Virtual PC](https://support.microsoft.com/en-us/topic/description-of-windows-virtual-pc-262c8961-90e5-1125-654f-d87cd5ba16f8),
+- Microsoft [Hyper-V](https://learn.microsoft.com/virtualization/hyper-v-on-windows/about/), nasljednik [Windows Virtual PC](https://support.microsoft.com/topic/description-of-windows-virtual-pc-262c8961-90e5-1125-654f-d87cd5ba16f8),
 - Oracle (nekad Sun, InnoTek) [VirtualBox](https://www.virtualbox.org/),
 - Parallels [Desktop](https://www.parallels.com/products/desktop/), nekad i [Workstation](https://en.wikipedia.org/wiki/Parallels_Workstation),
 - [QEMU](https://www.qemu.org/), [KVM](https://www.linux-kvm.org/) i [Virtual Machine Manager](https://virt-manager.org/),
@@ -223,7 +223,7 @@ Virtualna primjena je slika virtualnog stroja namijenjena pokretanju na određen
 [Open Virtualization Format (OVF)](https://www.dmtf.org/standards/ovf) je otvoreni standard za pakiranje i distribuciju virtualnih primjena i općenitog softvera za virtualne strojeve.
 
 !!! example "Zadatak"
-    - Preuzmite [virtualnu primjenu Windows 11 razvojnog okruženja](https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/) za VirtualBox.
+    - Preuzmite [virtualnu primjenu Windows 11 razvojnog okruženja](https://developer.microsoft.com/windows/downloads/virtual-machines/) za VirtualBox.
     - Pokrenite virtualnu primjenu u VirtualBoxu.
 
 ### Vagrant

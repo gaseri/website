@@ -171,7 +171,7 @@ Mikrousluge u suštini slijede [Unixovu filozofiju](https://en.wikipedia.org/wik
 - oblaku urođene aplikacije (engl. *cloud-native applications*), odnosno [softver kao usluga](https://en.wikipedia.org/wiki/Software_as_a_service) (engl. *software as a service*)
     - npr. [Amazon, Netflix, Etsy](https://divante.com/blog/10-companies-that-implemented-the-microservice-architecture-and-paved-the-way-for-others/) i [fiktivna e-prodaja](https://microservices.io/patterns/microservices.html)
 - neke (web) aplikacije razvijene za tzv. [bezposlužiteljsko računarstvo](https://en.wikipedia.org/wiki/Serverless_computing) (engl. *serverless computing*) (koriste poslužitelje, ali ih vi ne konfigurirate)
-    - npr. [Šahovski klub Rječina](https://skrjecina.hr/) (diplomski rad [Antonija Bana](https://www.linkedin.com/in/antonio-ban-ba97b689/)) koji se izvodi na [AWS Lambda](https://aws.amazon.com/lambda/) (slične usluge: [Google Cloud Functions](https://cloud.google.com/functions/) i [Azure Functions](https://azure.microsoft.com/en-us/services/functions/))
+    - npr. [Šahovski klub Rječina](https://skrjecina.hr/) (diplomski rad [Antonija Bana](https://www.linkedin.com/in/antonio-ban-ba97b689/)) koji se izvodi na [AWS Lambda](https://aws.amazon.com/lambda/) (slične usluge: [Google Cloud Functions](https://cloud.google.com/functions/) i [Azure Functions](https://azure.microsoft.com/services/functions/))
 - neke (web) aplikacije koje se isporučuju u [kontejnerima](https://en.wikipedia.org/wiki/OS-level_virtualization)
     - npr. [Jenkins](https://www.jenkins.io/doc/book/installing/) (dva kontejnera) i [Alfresco](https://docs.alfresco.com/content-services/6.0/install/containers/) (nekoliko nužnih, deseci opcionalnih kontejnera), ali ne i [Discourse](https://github.com/discourse/discourse/blob/master/docs/INSTALL.md) (monolitna aplikacija u kontejneru)
 - velik broj (web) aplikacija koje se danas razvijaju po narudžbi
@@ -197,8 +197,8 @@ Izvor: [Introduction to Serverless Computing](https://www.instana.com/blog/intro
 
 ## Bezposlužiteljsko računarstvo
 
-- komercijalno se sreće pod nazivom funkcija kao usluga (engl. *function as a service*): [AWS Lambda](https://aws.amazon.com/lambda/), [Azure Functions](https://azure.microsoft.com/en-us/services/functions/), [Google Cloud Functions](https://cloud.google.com/functions) itd.
-- bezposlužiteljska baza podataka (engl. *serverless database*): [Nutanix Era](https://www.nutanix.com/products/era), [Amazon Aurora](https://aws.amazon.com/rds/aurora/), [Azure Data Lake](https://azure.microsoft.com/en-us/solutions/data-lake/), [Google Firebase](https://firebase.google.com/) itd.
+- komercijalno se sreće pod nazivom funkcija kao usluga (engl. *function as a service*): [AWS Lambda](https://aws.amazon.com/lambda/), [Azure Functions](https://azure.microsoft.com/services/functions/), [Google Cloud Functions](https://cloud.google.com/functions) itd.
+- bezposlužiteljska baza podataka (engl. *serverless database*): [Nutanix Era](https://www.nutanix.com/products/era), [Amazon Aurora](https://aws.amazon.com/rds/aurora/), [Azure Data Lake](https://azure.microsoft.com/solutions/data-lake/), [Google Firebase](https://firebase.google.com/) itd.
 - [elastično](https://en.wikipedia.org/wiki/Elasticity_(cloud_computing)), a ne samo [skalabilno](https://en.wikipedia.org/wiki/Scalability): pružatelj usluga u oblaku skalira broj poslužitelja dodijeljenih aplikaciji i njenoj bazi podataka po potrebi
 - gotova rješenja za popularne okvire za razvoj aplikacija, npr.
     - [Laravel Vapor](https://vapor.laravel.com/) za pokretanje Laravela na AWS Lambda

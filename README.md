@@ -25,7 +25,7 @@ Make the changes you want using any text editor you like. Popular choices includ
 
 ## Preparing the build environment
 
-The website is built using [MkDocs](https://www.mkdocs.org/) and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/). Make sure that you have [Python](https://www.python.org/) and [pip](https://pip.pypa.io/) installed on your system; these two packages can usually be obtained via the operating system's package manager (e.g. [APT](https://wiki.debian.org/Apt), [DNF](https://dnf.readthedocs.io/), [Pacman](https://wiki.archlinux.org/title/Pacman), [Zypper](https://en.opensuse.org/SDB:Zypper_usage), [FreeBSD pkg](https://docs.freebsd.org/en/books/handbook/ports/#pkgng-intro), [Homebrew](https://brew.sh/), or [Windows Package Manager](https://docs.microsoft.com/en-us/windows/package-manager/)).
+The website is built using [MkDocs](https://www.mkdocs.org/) and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/). Make sure that you have [Python](https://www.python.org/) and [pip](https://pip.pypa.io/) installed on your system; these two packages can usually be obtained via the operating system's package manager (e.g. [APT](https://wiki.debian.org/Apt), [DNF](https://dnf.readthedocs.io/), [Pacman](https://wiki.archlinux.org/title/Pacman), [Zypper](https://en.opensuse.org/SDB:Zypper_usage), [FreeBSD pkg](https://docs.freebsd.org/en/books/handbook/ports/#pkgng-intro), [Homebrew](https://brew.sh/), or [Windows Package Manager](https://learn.microsoft.com/windows/package-manager/)).
 
 Once Python and pip are successfully set up, start by installing the required Python packages using the `pip` command:
 

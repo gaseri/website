@@ -87,8 +87,8 @@ Potrebno je registrirati korisnički račun na [GitHubu](https://github.com/).
 
 ### Potrebni softveri
 
-- [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/) (samo na Windowsima)
-- [Microsoft PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/) (samo na Windowsima)
+- [Windows Terminal](https://learn.microsoft.com/windows/terminal/) (samo na Windowsima)
+- [Microsoft PowerToys](https://learn.microsoft.com/windows/powertoys/) (samo na Windowsima)
 - [Visual Studio Code](https://code.visualstudio.com/)
     - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint), [Markdown Theme Kit](https://marketplace.visualstudio.com/items?itemName=ms-vscode.Theme-MarkdownKit) i [Word Count](https://marketplace.visualstudio.com/items?itemName=ms-vscode.wordcount)
 - [Python](https://www.python.org/)
@@ -103,7 +103,7 @@ Potrebno je registrirati korisnički račun na [GitHubu](https://github.com/).
 
 === "🪟 Windows"
 
-    1. Instalirajte sve dostupne nadogradnje putem sustava [Windows Update](https://support.microsoft.com/en-us/windows/update-windows-3c5ae7fc-9fb6-9af1-1984-b5e0412c556a). To može potrajati i do nekoliko sati te može biti potrebno jedno ili više ponovnih pokretanja računala. Ovaj korak je nužan zato što softveri koje koristimo zahtijevaju relativno svježe podverzije Windowsa 10 ili 11.
+    1. Instalirajte sve dostupne nadogradnje putem sustava [Windows Update](https://support.microsoft.com/windows/update-windows-3c5ae7fc-9fb6-9af1-1984-b5e0412c556a). To može potrajati i do nekoliko sati te može biti potrebno jedno ili više ponovnih pokretanja računala. Ovaj korak je nužan zato što softveri koje koristimo zahtijevaju relativno svježe podverzije Windowsa 10 ili 11.
     1. Putem [Microsoft Storea](https://apps.microsoft.com/home) instalirajte [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701) (ako već nije instaliran).
 
 === "🐧 Linux"
@@ -125,9 +125,9 @@ Potrebno je registrirati korisnički račun na [GitHubu](https://github.com/).
 
 === "🪟 Windows"
 
-    Iskoristit ćemo [Windows Package Manager](https://learn.microsoft.com/en-us/windows/package-manager/), koji pokrećemo naredbom `winget` u Terminalu, za jednostavnu instalaciju svih potrebnih softvera. Pokrenite Windows Terminal (putem [izbornika Start](https://support.microsoft.com/en-us/windows/open-the-start-menu-4ed57ad7-ed1f-3cc9-c9e4-f329822f5aeb)) i upišite redom naredbe u nastavku.
+    Iskoristit ćemo [Windows Package Manager](https://learn.microsoft.com/windows/package-manager/), koji pokrećemo naredbom `winget` u Terminalu, za jednostavnu instalaciju svih potrebnih softvera. Pokrenite Windows Terminal (putem [izbornika Start](https://support.microsoft.com/windows/open-the-start-menu-4ed57ad7-ed1f-3cc9-c9e4-f329822f5aeb)) i upišite redom naredbe u nastavku.
 
-    Skup pomoćnih alata [Microsoft PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/):
+    Skup pomoćnih alata [Microsoft PowerToys](https://learn.microsoft.com/windows/powertoys/):
 
     ``` shell
     winget install --id Microsoft.PowerToys -e

@@ -29,13 +29,13 @@ Pokreće operacijski sustav s master boot recorda (MBR) ili bootabilnih particij
 #### Secure Boot
 
 - Ograničava pokretanje OS-a (ili bootloadera OS-a) samo na one u koje ima povjerenja
-- Standard razvijen na inicijativu Microsofta; [Microsoft opravdava postojanje takve vrste ograničenja](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-secure-boot-key-creation-and-management-guidance) s ciljem sprječavanja pre-bootloader [rootkita](https://en.wikipedia.org/wiki/Rootkit), od kojih su pojedini služili da sabotiraju mehanizam aktivacije Windowsa
+- Standard razvijen na inicijativu Microsofta; [Microsoft opravdava postojanje takve vrste ograničenja](https://learn.microsoft.com/windows-hardware/manufacture/desktop/windows-secure-boot-key-creation-and-management-guidance) s ciljem sprječavanja pre-bootloader [rootkita](https://en.wikipedia.org/wiki/Rootkit), od kojih su pojedini služili da sabotiraju mehanizam aktivacije Windowsa
 - Kod pokretanja provjerava potpis bootloadera
 
     - Ako je potpis dobar, firmware predaje bootloaderu kontrolu nad računalom
     - Ako potpis nije dobar ili ne postoji, pokretanje bootloadera se ne događa
 
-- Radi na temelju [četiri baze ključeva](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-secure-boot-key-creation-and-management-guidance)
+- Radi na temelju [četiri baze ključeva](https://learn.microsoft.com/windows-hardware/manufacture/desktop/windows-secure-boot-key-creation-and-management-guidance)
 
     - Baza potpisa (engl. signature database), db
 

@@ -7,7 +7,7 @@ author: Vedran Miletić
 - [BSD utičnice](https://en.wikipedia.org/wiki/Berkeley_sockets) ili [POSIX](https://en.wikipedia.org/wiki/POSIX) utičnice (engl. *sockets*), poznate i pod nazivima *Berkeley sockets* i *Unix sockets*, su *de facto* standardno sučelje za međuprocesnu komunikaciju lokalno i putem računalne mreže
 
     - koriste model komunikacije klijent-poslužitelj bez obzira izvodi li se komunikacija izvodi lokalno ili putem računalne mreže
-    - koriste se na operacijskim sustavima sličnim Unixu i [na Windowsima](https://docs.microsoft.com/en-us/windows/win32/winsock/windows-sockets-start-page-2)
+    - koriste se na operacijskim sustavima sličnim Unixu i [na Windowsima](https://learn.microsoft.com/windows/win32/winsock/windows-sockets-start-page-2)
     - nastaju kao aplikacijsko programsko sučelje za pristup TCP-u i IP-u 1983. godine kad [Bill Joy](https://engineering.berkeley.edu/bill-joy-co-founder-of-sun-microsystems/) i kolege iz [Computer Systems Research Group](https://en.wikipedia.org/wiki/Computer_Systems_Research_Group) s Kalifornijskog sveučilišta u Berkeleyu izbacuju [4.2BSD](https://en.wikipedia.org/wiki/History_of_the_Berkeley_Software_Distribution#4.2BSD); [BSD](https://en.wikipedia.org/wiki/Berkeley_Software_Distribution) je u to doba razvojna platforma za TCP/IP, o čemu detaljnije govori [Marshall Kirk McKusick](https://www.mckusick.com/) u svojim izlaganjima o povijesti razvoja Unixa na Berkeleyu:
 
         - u članku [Twenty Years of Berkeley Unix: From AT&T-Owned to Freely Redistributable (Open Sources: Voices from the Open Source Revolution)](https://www.oreilly.com/openbook/opensources/book/kirkmck.html)

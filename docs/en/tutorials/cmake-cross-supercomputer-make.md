@@ -530,7 +530,7 @@ gmx_option_multichoice(
 ### All major IDEs support CMake (many by default!)
 
 - [CLion](https://www.jetbrains.com/clion/) by JetBrains: [Create/open CMake projects](https://www.jetbrains.com/help/clion/creating-new-project-from-scratch.html)
-- Microsoft [Visual Studio](https://visualstudio.microsoft.com/): [CMake projects in Visual Studio](https://learn.microsoft.com/en-us/cpp/build/cmake-projects-in-visual-studio)
+- Microsoft [Visual Studio](https://visualstudio.microsoft.com/): [CMake projects in Visual Studio](https://learn.microsoft.com/cpp/build/cmake-projects-in-visual-studio)
 - Microsoft [Visual Studio Code](https://code.visualstudio.com/): [Get started with CMake Tools on Linux](https://code.visualstudio.com/docs/cpp/cmake-linux), [CMake Tools Extension for Visual Studio Code (C++ Team Blog)](https://devblogs.microsoft.com/cppblog/cmake-tools-extension-for-visual-studio-code/)
 - Qt [Creator](https://www.qt.io/product/development-tools): [Create projects](https://doc.qt.io/qtcreator/creator-project-creating.html)/[Open projects](https://doc.qt.io/qtcreator/creator-project-opening.html)
 

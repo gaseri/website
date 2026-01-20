@@ -115,7 +115,7 @@ author: Vedran Miletić, Vanja Slavuj
 
 - u svijetu Windowsa: korisnik sam nabavlja softver negdje na internetu i instalira ga
 
-    - [Microsoft Store](https://www.microsoft.com/en-us/store/apps) je vrlo malo promijenio ovu naviku
+    - [Microsoft Store](https://www.microsoft.com/store/apps) je vrlo malo promijenio ovu naviku
 
 - u svijetu operacijskih sustava sličnim Unixu: svaki distributer pakira softver za svoju distribuciju u takozvane pakete (slični zip arhivama), a korisnik zatraži instalaciju softvera koji želi, sve ostalo rješava upravitelj paketima
 

@@ -12,7 +12,7 @@ Specfično za Manjaro možete koristiti:
 - za instalaciju softvera `sudo pamac install` umjesto `sudo pacman -S`, a
 - za instalaciju softvera iz izvornog koda `pamac build` umjesto `paru -S`.
 
-Instalacija softvera na Arch Linuxu je centralizirana, slično kao što su na drugim platformama [Microsoftov Windows Store](https://www.microsoft.com/en-us/store/apps), [Appleov App Store](https://www.apple.com/app-store/), [Googleov Play](https://play.google.com/store/apps), [Sonyjev PlayStation Store](https://store.playstation.com/en-hr/latest) i drugi. Trgovina aplikacija se ovdje zove repozitorij paketa i, kao i druge trgovine aplikacija, dostupan je putem interneta. Stoga je za instalaciju paketa iz repozitorija koju provodimo u nastavku nužno da ste povezani na internet. Vrijedi spomenuti da će upravitelj paketima [Pacman](https://wiki.archlinux.org/title/Pacman) uz pakete čiju instalaciju zatražite preuzeti i dodatne pakete koji su potrebni za njihov rad.
+Instalacija softvera na Arch Linuxu je centralizirana, slično kao što su na drugim platformama [Microsoftov Windows Store](https://www.microsoft.com/store/apps), [Appleov App Store](https://www.apple.com/app-store/), [Googleov Play](https://play.google.com/store/apps), [Sonyjev PlayStation Store](https://store.playstation.com/en-hr/latest) i drugi. Trgovina aplikacija se ovdje zove repozitorij paketa i, kao i druge trgovine aplikacija, dostupan je putem interneta. Stoga je za instalaciju paketa iz repozitorija koju provodimo u nastavku nužno da ste povezani na internet. Vrijedi spomenuti da će upravitelj paketima [Pacman](https://wiki.archlinux.org/title/Pacman) uz pakete čiju instalaciju zatražite preuzeti i dodatne pakete koji su potrebni za njihov rad.
 
 ## Priprema operacijskog sustava
 

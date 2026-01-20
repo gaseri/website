@@ -511,7 +511,7 @@ Razvoj oblaku urođenih aplikacija omogućuje korištenje velikog broja usluga k
 
 1. [Understanding cloud-native apps (Red Hat)](https://www.redhat.com/en/topics/cloud-native-apps)
 1. [What is Cloud Native? (AWS)](https://aws.amazon.com/what-is/cloud-native/)
-1. [What is Big Data Analytics? (Azure)](https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-big-data-analytics)
+1. [What is Big Data Analytics? (Azure)](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-big-data-analytics)
 
 ### Skalabilnost mikroservisa {[UMS](../kolegiji/UMS.md)} [Kristian Nekić, preneseno iz 2020/2021.]
 
@@ -542,7 +542,7 @@ Suvremeni razvoj softvera karakterizira korištenje brojnih cjevovoda za testira
 **Literatura:**
 
 1. [DevSecOps (GitLab)](https://about.gitlab.com/topics/devsecops/)
-1. [DevSecOps with GitHub Security](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/devsecops-in-github)
+1. [DevSecOps with GitHub Security](https://learn.microsoft.com/azure/architecture/solution-ideas/articles/devsecops-in-github)
 
 ### Razvoj, mjerenje performansi i optimizacija višeplatformskih računalnih igara {[UMS](../kolegiji/UMS.md)} [Bruno Šavor]
 
@@ -633,7 +633,7 @@ Razvoj igara je jedna od propulzivnih grana suvremenog razvoja softvera. S cilje
 **Literatura:**
 
 1. [Microservices: High availability (Vaadin)](https://vaadin.com/blog/microservices-high-availability)
-1. [Resiliency and high availability in microservices (Microsoft Docs)](https://docs.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/resilient-high-availability-microservices)
+1. [Resiliency and high availability in microservices (Microsoft Docs)](https://learn.microsoft.com/dotnet/architecture/microservices/architect-microservice-container-applications/resilient-high-availability-microservices)
 1. [Prometheus](https://prometheus.io/)
 1. [Grafana](https://grafana.com/)
 
@@ -678,7 +678,7 @@ Razvoj igara je jedna od propulzivnih grana suvremenog razvoja softvera. S cilje
 
 1. [What is a serverless microservice? (Cloudflare)](https://www.cloudflare.com/learning/serverless/glossary/serverless-microservice/)
 1. [Serverless microservices (AWS Documentation)](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/serverless-microservices.html)
-1. [Serverless Microservices reference architecture (Microsoft Docs)](https://docs.microsoft.com/en-us/samples/azure-samples/serverless-microservices-reference-architecture/serverless-microservices-reference-architecture/)
+1. [Serverless Microservices reference architecture (Microsoft Docs)](https://learn.microsoft.com/samples/azure-samples/serverless-microservices-reference-architecture/serverless-microservices-reference-architecture/)
 
 ### Ponovljiva izgradnja programske podrške {[UMS](../kolegiji/UMS.md)} [Matija Banjan, preneseno iz 2020./2021.]
 
@@ -719,7 +719,7 @@ Suvremeni pristup razvoju web aplikacija podrazumijeva realizaciju aplikacije ko
 
 1. [Flask](https://flask.palletsprojects.com/)
 1. [Getting Started with AWS](https://aws.amazon.com/getting-started/)
-1. [Getting started with Azure](https://azure.microsoft.com/en-us/get-started/)
+1. [Getting started with Azure](https://azure.microsoft.com/get-started/)
 
 ### Paralelizacija izračuna dubokih neuralnih mreža na grafičkim procesorima {[PPHS](../kolegiji/PPHS.md)} [Andrija Poleksić]
 
@@ -1239,7 +1239,7 @@ S izlaskom operacijskog sustava Windows 10 zabrinutost kritičara raste, obzirom
 
 **Literatura:**
 
-1. [Secure Boot](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-8.1-and-8/dn486875(v=ws.11))
+1. [Secure Boot](https://learn.microsoft.com/previous-versions/windows/it-pro/windows-8.1-and-8/dn486875(v=ws.11))
 1. [UEFI Secure Boot](https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface#Secure_Boot)
 1. [UEFI Secure Boot Criticism](https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface#Secure_Boot_criticism)
 1. [Cory Doctorow: "The Coming Civil War over General-purpose Computing" | Talks at Google](https://youtu.be/gbYXBJOFgeI)

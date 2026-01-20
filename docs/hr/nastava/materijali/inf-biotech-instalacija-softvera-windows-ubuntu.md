@@ -4,15 +4,15 @@ author: Vedran Miletić
 
 # Instalacija i konfiguracija softvera za vježbe iz kolegija Informatika (BioTech)
 
-Upute u nastavku pisane su za korisnike Microsoftovih operacijskih sustava [Windows, verzije 10 i 11](https://www.microsoft.com/en-us/windows). Ako ste korisnik Ubuntua, možete preskočiti dio uputa koji je specifičan za operacijski sustav Windows i odmah početi s upisivanjem naredbi danih naredbi u terminalu.
+Upute u nastavku pisane su za korisnike Microsoftovih operacijskih sustava [Windows, verzije 10 i 11](https://www.microsoft.com/windows). Ako ste korisnik Ubuntua, možete preskočiti dio uputa koji je specifičan za operacijski sustav Windows i odmah početi s upisivanjem naredbi danih naredbi u terminalu.
 
 ## Priprema operacijskog sustava Windows
 
-Korištenjem sustava [Windows Update](https://support.microsoft.com/en-us/windows/update-windows-3c5ae7fc-9fb6-9af1-1984-b5e0412c556a) instalirajte sve dostupne nadogradnje. Po potrebi, ponovno pokrenite računalo kad Windows to zatraži. Ovaj korak je nužan preduvjet za instalaciju preostalog softvera i s njime ste gotovi tek kada vam Windowsi prestanu nuditi ikakve nadogradnje za instalaciju.
+Korištenjem sustava [Windows Update](https://support.microsoft.com/windows/update-windows-3c5ae7fc-9fb6-9af1-1984-b5e0412c556a) instalirajte sve dostupne nadogradnje. Po potrebi, ponovno pokrenite računalo kad Windows to zatraži. Ovaj korak je nužan preduvjet za instalaciju preostalog softvera i s njime ste gotovi tek kada vam Windowsi prestanu nuditi ikakve nadogradnje za instalaciju.
 
 ## Instalacija podsustava Windows Subsystem for Linux (WSL)
 
-Instalirajte Windows Subsystem for Linux (WSL) prema [Microsoftovim uputama](https://docs.microsoft.com/en-us/windows/wsl/install), specifično odjeljku [Install WSL command](https://docs.microsoft.com/en-us/windows/wsl/install#install-wsl-command). Nemojte zaboraviti pokrenuti PowerShell ili Windows Command Prompt kao administrator prije upisivanja navedene naredbe.
+Instalirajte Windows Subsystem for Linux (WSL) prema [Microsoftovim uputama](https://learn.microsoft.com/windows/wsl/install), specifično odjeljku [Install WSL command](https://learn.microsoft.com/windows/wsl/install#install-wsl-command). Nemojte zaboraviti pokrenuti PowerShell ili Windows Command Prompt kao administrator prije upisivanja navedene naredbe.
 
 ### Windows Terminal
 
@@ -22,11 +22,11 @@ Dok čekate da WSL odradi svoje, iz [Microsoftovog Storea](https://apps.microsof
 
 Nakon ponovnog pokretanja operacijskog sustava Ubuntu bi se trebao pokrenuti sam. Ako se to ne dogodi, pokrenite Ubuntu i pričekajte da se instalira; instalacija će trajati najviše nekoliko minuta. Nakon završetka instalacije postavite korisničko ime, postavite zaporku (nećete vidjeti znakove koje utipkate) i ponovite unos iste zaporke. Kad dobijete pozdravnu poruku, možete zatvoriti Ubuntu.
 
-Ako ste nehotice zatvorili Ubuntu prije unosa svih podataka i time prekinuli instalaciju, vratite instalirani Ubuntu u početno stanje prema [Microsoftovim uputama](https://support.microsoft.com/en-us/windows/repair-apps-and-programs-in-windows-e90eefe4-d0a2-7c1b-dd59-949a9030f317) pa ponovite postupak instalacije i postavljanja korisničkog imena i lozinke.
+Ako ste nehotice zatvorili Ubuntu prije unosa svih podataka i time prekinuli instalaciju, vratite instalirani Ubuntu u početno stanje prema [Microsoftovim uputama](https://support.microsoft.com/windows/repair-apps-and-programs-in-windows-e90eefe4-d0a2-7c1b-dd59-949a9030f317) pa ponovite postupak instalacije i postavljanja korisničkog imena i lozinke.
 
 ## Priprema operacijskog sustava Ubuntu
 
-Pokrenite Windows Terminal pa [korištenjem dropdown izbornika u njemu otvorite Ubuntu](https://docs.microsoft.com/en-us/windows/terminal/panes) ili pokrenite Terminal na Ubuntuu. Upišite naredbu:
+Pokrenite Windows Terminal pa [korištenjem dropdown izbornika u njemu otvorite Ubuntu](https://learn.microsoft.com/windows/terminal/panes) ili pokrenite Terminal na Ubuntuu. Upišite naredbu:
 
 ``` shell
 sudo apt update

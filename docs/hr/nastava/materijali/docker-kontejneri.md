@@ -50,7 +50,7 @@ Volumen
 !!! tip
     U nastavku koristimo službene Dockerove alate naredbenog retka, ali moguće je koristiti i Visual Studio Code koji nudi [službeno proširenje za Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) ([pregled značajki](https://code.visualstudio.com/docs/containers/overview)).
 
-    Dodatno, korištenjem [službenih proširenja za udaljeni rad](https://code.visualstudio.com/docs/remote/remote-overview) moguće je [razvijati softver unutar Docker kontejnera](https://code.visualstudio.com/docs/remote/containers). Za one koji žele znati više o razvoju softvera u kontejnerima, dobro mjesto za započeti je [Microsoftov službeni tečaj za Docker početnike](https://docs.microsoft.com/en-us/visualstudio/docker/tutorials/docker-tutorial).
+    Dodatno, korištenjem [službenih proširenja za udaljeni rad](https://code.visualstudio.com/docs/remote/remote-overview) moguće je [razvijati softver unutar Docker kontejnera](https://code.visualstudio.com/docs/remote/containers). Za one koji žele znati više o razvoju softvera u kontejnerima, dobro mjesto za započeti je [Microsoftov službeni tečaj za Docker početnike](https://learn.microsoft.com/visualstudio/docker/tutorials/docker-tutorial).
 
 ## Rad s kontejnerima aplikacija i usluga
 

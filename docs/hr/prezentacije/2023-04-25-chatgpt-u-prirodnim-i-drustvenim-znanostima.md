@@ -254,7 +254,7 @@ Upit: `cloud-config pod postavkom passwd može imati niz znakova oblika: a. $1$y
 ## Što još može ML? (2/2)
 
 - pomoć u uredskom radu: [Notion AI](https://www.notion.so/help/guides/using-notion-ai), [pregled značajki](https://www.notion.so/help/guides/notion-ai-for-docs)
-    - sličan [Office 365 Copilotu](https://www.microsoft.com/en-us/microsoft-365/blog/2023/03/16/introducing-microsoft-365-copilot-a-whole-new-way-to-work/), [Generative AI-u](https://workspace.google.com/blog/product-announcements/generative-ai) u Google Workspaceu (Docs/GMail)
+    - sličan [Office 365 Copilotu](https://www.microsoft.com/microsoft-365/blog/2023/03/16/introducing-microsoft-365-copilot-a-whole-new-way-to-work/), [Generative AI-u](https://workspace.google.com/blog/product-announcements/generative-ai) u Google Workspaceu (Docs/GMail)
 - sažimanje teksta: [Eightify](https://eightify.app/)/[summarize.tech](https://www.summarize.tech/)
 - pretvorba govora u tekst: [Whisper](https://openai.com/research/whisper)
 - predviđanje zamotavanja proteina: [AlphaFold](https://www.deepmind.com/research/highlighted-research/alphafold), [ESMFold](https://www.nature.com/articles/d41586-022-03539-1)

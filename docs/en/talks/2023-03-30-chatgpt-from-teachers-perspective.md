@@ -129,7 +129,7 @@ Image source: [Wikimedia Commons File:OpenAI Logo.svg](https://commons.wikimedia
 ## The AI wave (2/2)
 
 - [Notion AI](https://www.notion.so/help/guides/using-notion-ai), [several features](https://www.notion.so/help/guides/notion-ai-for-docs)
-    - similar to [Office 365 Copilot](https://www.microsoft.com/en-us/microsoft-365/blog/2023/03/16/introducing-microsoft-365-copilot-a-whole-new-way-to-work/), [Generative AI](https://workspace.google.com/blog/product-announcements/generative-ai) in Google Workspace (Docs/GMail)
+    - similar to [Office 365 Copilot](https://www.microsoft.com/microsoft-365/blog/2023/03/16/introducing-microsoft-365-copilot-a-whole-new-way-to-work/), [Generative AI](https://workspace.google.com/blog/product-announcements/generative-ai) in Google Workspace (Docs/GMail)
 - [Eightify](https://eightify.app/)/[summarize.tech](https://www.summarize.tech/)
 - [Whisper](https://openai.com/research/whisper) speech-to-text
 - specialized tools like [BioNeMo](https://www.nvidia.com/en-us/gpu-cloud/bionemo/), enhanced photo/audio/video editing, prompt-guided 3D modelling etc.

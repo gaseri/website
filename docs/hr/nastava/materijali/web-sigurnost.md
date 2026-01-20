@@ -140,7 +140,7 @@ Vatrozid web aplikacije (engl. *web application firewall*, kraće WAF) je vatroz
 Implementacije u oblaku:
 
 - [AWS Web Application Firewall](https://aws.amazon.com/waf/)
-- [Azure Web Application Firewall](https://azure.microsoft.com/en-us/services/web-application-firewall/)
+- [Azure Web Application Firewall](https://azure.microsoft.com/services/web-application-firewall/)
 - [Cloudflare Web Application Firewall](https://www.cloudflare.com/waf/)
 
 Implementacije otvorenog koda: [Shadow Daemon](https://shadowd.zecure.org/), [ModSecurity](https://www.modsecurity.org/) i druge.

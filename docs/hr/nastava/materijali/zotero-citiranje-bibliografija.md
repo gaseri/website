@@ -14,7 +14,7 @@ Alat Zotero se sastoji od tri dijela, to su:
 
 - samostalna aplikacija koja se također zove Zotero koja radi na macOS-u, Windowsima i Linuxu,
 - dodatak Zotero Connector za web preglednike Firefox, Chrome, Safari i Edge,
-- Zoterov dodatak za uređivače teksta [Microsoft Word](https://www.microsoft.com/en-us/microsoft-365/word) i [LibreOffice Writer](https://www.libreoffice.org/discover/writer/).
+- Zoterov dodatak za uređivače teksta [Microsoft Word](https://www.microsoft.com/microsoft-365/word) i [LibreOffice Writer](https://www.libreoffice.org/discover/writer/).
 
 Da bi započeli raditi sa alatom prvo nam je potrebno instalirati njegovu samostalnu aplikaciju koju je potrebno preuzeti sa [Zoterove web stranice](https://www.zotero.org/). Nakon što odaberemo poveznicu [Download](https://www.zotero.org/download/), potrebno je preuzeti pod Zotero instalacijsku datoteku za samu aplikaciju, te je instalirati. Kod instalacije aplikacije potrebno je prihvatiti sve ponuđene opcije i potvrdno odgovoriti na sve upite.
 

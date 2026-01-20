@@ -174,7 +174,7 @@ U popisu su *zakošeni jezici u kojima su primjeri koda na predavanjima*, **pode
 
 - **[Express.js](https://expressjs.com/)** (*[Node.js](https://nodejs.org/)*), [Laravel](https://laravel.com/) i [Lumen](https://lumen.laravel.com/) (*[PHP](https://www.php.net/)*)
 - **[Django](https://www.djangoproject.com/)** i [Flask](https://flask.palletsprojects.com/) (*[Python](https://www.python.org/)*), [Ruby on Rails](https://rubyonrails.org/) (*[Ruby](https://www.ruby-lang.org/)*)
-- [ASP.NET](https://dotnet.microsoft.com/apps/aspnet) ([C#](https://docs.microsoft.com/en-us/dotnet/csharp/)), [Spring](https://spring.io/) ([Java](https://www.java.com/))
+- [ASP.NET](https://dotnet.microsoft.com/apps/aspnet) ([C#](https://learn.microsoft.com/dotnet/csharp/)), [Spring](https://spring.io/) ([Java](https://www.java.com/))
 - brojni drugi; neki od popisa po popularnosti su [Statistics & Data](https://statisticsanddata.org/data/most-popular-backend-frameworks-2012-2021/), [Statista](https://www.statista.com/statistics/1124699/worldwide-developer-survey-most-used-frameworks-web/) i [StackOverflow Developer Survey](https://insights.stackoverflow.com/survey/2021), [dio Technology](https://insights.stackoverflow.com/survey/2021#technology)
 - zanimljivi primjeri: [Phoenix Framework](https://www.phoenixframework.org/) ([Elixir](https://elixir-lang.org/)), [Rocket](https://rocket.rs/) ([Rust](https://www.rust-lang.org/))
 

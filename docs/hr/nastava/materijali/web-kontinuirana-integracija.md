@@ -112,7 +112,7 @@ Platforme u oblaku:
 * [Atlassian Bitbucket Pipelines](https://www.atlassian.com/software/bitbucket/features/pipelines)
 * [CircleCI](https://circleci.com/)
 * [JetBrains TeamCity](https://www.jetbrains.com/teamcity/)
-* [Azure DevOps Server](https://azure.microsoft.com/en-us/services/devops/server/) ([shematski prikaz](https://docs.microsoft.com/en-us/azure/architecture/example-scenario/apps/devops-dotnet-webapp))
+* [Azure DevOps Server](https://azure.microsoft.com/services/devops/server/) ([shematski prikaz](https://learn.microsoft.com/azure/architecture/example-scenario/apps/devops-dotnet-webapp))
 * [AppVeyor](https://www.appveyor.com/)
 * [Travis CI](https://travis-ci.org/) (otvoreni kod [dostupan na GitHubu](https://github.com/travis-ci/travis-ci))
 * [Cirrus CI](https://cirrus-ci.org/)
