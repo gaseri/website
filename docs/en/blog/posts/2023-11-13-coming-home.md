@@ -7,7 +7,9 @@ tags:
   - freebsd
   - zfs
   - linux
+  - openssh
   - unix
+  - wireguard
 ---
 
 # Coming `/home`

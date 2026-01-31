@@ -6,6 +6,7 @@ date: 2024-06-14
 tags:
   - freebsd
   - linux
+  - openssh
   - red hat
   - free and open-source software
 ---
