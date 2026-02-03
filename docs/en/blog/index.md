@@ -24,5 +24,7 @@
     - [Yet Another Me (Sergio Durigan Junior)](https://blog.sergiodj.net/)
     - [Timur's blog | Engineer who prefers quality over quantity (Timur Kristóf)](https://timur.hu/)
     - [Samuel Tulach](https://tulach.cc/)
+    - [daisy chain with a floating static route (Piotr Boguszewski)](https://www.uni-koeln.de/~pbogusze/)
     - [CSpace blog (Chris Siebenmann)](https://utcc.utoronto.ca/~cks/space/blog/)
     - [The Great Refactoring (Jehferson Mello)](https://vilelasagna.ddns.net/)
+    - [The Mine of Information | Nuggets of Programming and Linux (Simon Kitching)](https://moi.vonos.net/)
