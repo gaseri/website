@@ -10,10 +10,12 @@
     Enjoy your stay.
 
 ??? note "Blogroll"
+    - [Bas Nieuwenhuizen | Open Source GPU Drivers](https://www.basnieuwenhuizen.nl/)
     - [brr](https://brr.fyi/)
     - [Daemonic Dispatches (Colin Percival)](https://www.daemonology.net/blog/)
     - [delroth's homepage (Pierre Bourdon)](https://delroth.net/)
     - [IT Notes (Stefano Marinelli)](https://it-notes.dragas.net/)
+    - [My.Blog | Code. Build. Test. Stream. Race. Run. Present. (Jan-Patrick Lehr)](https://jplehr.de/blog/)
     - [Dan Langille's Other Diary](https://dan.langille.org/)
     - [GabMus's Dev Log (Gabriele Musco)](https://gabmus.org/)
     - [Louwrentius](https://louwrentius.com/)
