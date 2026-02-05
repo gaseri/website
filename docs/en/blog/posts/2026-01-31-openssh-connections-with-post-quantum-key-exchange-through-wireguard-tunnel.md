@@ -25,7 +25,7 @@ When I tried to SSH from the Arch machine to the Fedora machine, the [OpenSSH](h
 
 ## Verbose post-quantum OpenSSH key exchange
 
-It was weird, but I thought, well, we used to teach [that stuff](../../../hr/nastava/materijali/openssh-sigurna-ljuska.md) [several years ago](2023-08-28-my-perspective-after-two-years-as-a-research-and-teaching-assistant-at-fidit.md) as part of [the Security of Information and Communication Systems course](../../../hr/nastava/kolegiji/SIKS.md), it should be possible to figure out what is going on.
+It was weird, but I thought, well, we used to teach [that](../../../hr/nastava/materijali/openssh-sigurna-ljuska.md) [stuff](../../../hr/nastava/materijali/wireguard-virtualna-privatna-mreza.md) [several years ago](2023-08-28-my-perspective-after-two-years-as-a-research-and-teaching-assistant-at-fidit.md) as part of [the Security of Information and Communication Systems course](../../../hr/nastava/kolegiji/SIKS.md), it should be possible to figure out what is going on.
 
 I started debugging the issue by enabling verbose mode:
 
