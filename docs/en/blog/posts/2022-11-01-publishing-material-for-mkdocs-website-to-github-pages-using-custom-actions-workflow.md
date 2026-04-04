@@ -4,7 +4,7 @@ authors:
   - vedranmiletic
 date:
   created: 2022-11-01
-  updated: 2024-05-12
+  updated: 2026-04-04
 tags:
   - git
   - web server
@@ -86,7 +86,7 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
 ```
 
 The highlighted lines are Jekyll-specific. We can easily replace these lines with:
@@ -132,11 +132,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.x'
       - name: Install yamllint
@@ -145,7 +145,7 @@ jobs:
         run: yamllint ./mkdocs.yml
         continue-on-error: true
       - name: Check Markdown files
-        uses: DavidAnson/markdownlint-cli2-action@v19
+        uses: DavidAnson/markdownlint-cli2-action@v23
         with:
           globs: '**/*.md'
         continue-on-error: true
@@ -156,7 +156,7 @@ jobs:
         env:
           CI: true
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
 
   # Deployment job
   deploy:
@@ -168,8 +168,10 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
 ```
+
+You can observe that the versions of some Actions were bumped to avoid [Node 20 deprecation warnings](https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/).
 
 Two linters are used:
 
@@ -220,3 +222,5 @@ Finally, if you want to use a custom domain, having the `CNAME` file in the repo
 **Updated on 2023-12-28:** bumped [Actions](https://github.com/actions) versions by rebasing our additions on top of [the latest version](https://github.com/actions/starter-workflows/blob/main/pages/jekyll-gh-pages.yml) of `jekyll-gh-pages.yml` from [Starter Workflows](https://github.com/actions/starter-workflows).
 
 **Updated on 2024-05-12:** added [yamllint](https://github.com/adrienverge/yamllint) and [markdownlint](https://github.com/DavidAnson/markdownlint) steps. Removed caching as (Material for) MkDocs version is not pinned and therefore the site builds are not reproducible.
+
+**Update on 2026-04-04:** bumped [Actions](https://github.com/actions) versions to avoid [Node 20 deprecation warnings](https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/).
