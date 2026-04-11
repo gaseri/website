@@ -46,12 +46,17 @@ jobs:
         continue-on-error: true
       - name: Install required packages
         run: pip install -r requirements.txt
+      - name: Setup caching
+        uses: actions/cache@v5
+        with:
+          key: ${{ github.sha }}
+          path: .cache
       - name: Build site (_site directory name is used for Jekyll compatiblity)
         run: mkdocs build --config-file ./mkdocs.yml --strict --site-dir ./_site
         env:
           CI: true
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
 
   # Deployment job
   deploy:

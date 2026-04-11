@@ -95,14 +95,15 @@ The highlighted lines are Jekyll-specific. We can easily replace these lines wit
 - the installation, using [pip](https://pip.pypa.io/) and the `requirements.txt` file, of
     - MkDocs with [extra internationalization support](https://www.mkdocs.org/user-guide/localizing-your-theme/#installation),
     - [the Material for MkDocs framework](https://squidfunk.github.io/mkdocs-material/getting-started/#installation),
-    - the optional dependencies required for [the generation of social cards](https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards/), that is, [CairoSVG](https://cairosvg.org/), which will pull [Pillow](https://python-pillow.org/) as a dependency, and, finally,
+    - the optional dependencies required for [the generation of social cards](https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards/), that is, [CairoSVG](https://cairosvg.org/), which will pull [Pillow](https://python-pillow.org/) as a dependency,
+- the optional caching setup for the downloaded fonts and the generated social cards, and, finally,
 - the MkDocs site build command.
 
 In this case, since we want a drop-in replacement for Jekyll so that the remaining commands work perfectly, we will perform the MkDocs build using the `mkdocs.yml` configuration file in the current directory and write the built site output files into the `_site` directory.
 
 The `.github/workflows/mkdocs-gh-pages.yml` file will look like:
 
-``` yaml hl_lines="1-2 7 33-52"
+``` yaml hl_lines="1-2 7 33-57"
 # Sample workflow for building and deploying a MkDocs site to GitHub Pages
 name: Deploy MkDocs with GitHub Pages dependencies preinstalled
 
@@ -151,12 +152,17 @@ jobs:
         continue-on-error: true
       - name: Install required packages
         run: pip install -r requirements.txt
+      - name: Setup caching
+        uses: actions/cache@v5
+        with:
+          key: ${{ github.sha }}
+          path: .cache
       - name: Build site (_site directory name is used for Jekyll compatiblity)
         run: mkdocs build --config-file ./mkdocs.yml --strict --site-dir ./_site
         env:
           CI: true
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
 
   # Deployment job
   deploy:
@@ -224,3 +230,5 @@ Finally, if you want to use a custom domain, having the `CNAME` file in the repo
 **Updated on 2024-05-12:** added [yamllint](https://github.com/adrienverge/yamllint) and [markdownlint](https://github.com/DavidAnson/markdownlint) steps. Removed caching as (Material for) MkDocs version is not pinned and therefore the site builds are not reproducible.
 
 **Update on 2026-04-04:** bumped [Actions](https://github.com/actions) versions to avoid [Node 20 deprecation warnings](https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/).
+
+**Update on 2026-04-11:** bumped one more [Action](https://github.com/actions) version to avoid [Node 20 deprecation warnings](https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/). Restored caching as (Material for) MkDocs version [is now](https://squidfunk.github.io/mkdocs-material/blog/2025/11/11/insiders-now-free-for-everyone/) [in maintenance mode](https://github.com/squidfunk/mkdocs-material/issues/8523) and should not change much from now on.
