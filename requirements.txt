@@ -1,2 +1,3 @@
+properdocs[i18n]
 mkdocs-material[recommended,imaging]
 mkdocs-meta-descriptions-plugin

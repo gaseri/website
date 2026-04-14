@@ -1,5 +1,5 @@
-# Sample workflow for building and deploying a MkDocs site to GitHub Pages
-name: Deploy MkDocs with GitHub Pages dependencies preinstalled
+# Sample workflow for building and deploying a ProperDocs site to GitHub Pages
+name: Deploy ProperDocs with GitHub Pages dependencies preinstalled
 
 on:
   # Runs on pushes targeting the default branch
@@ -36,8 +36,8 @@ jobs:
           python-version: '3.x'
       - name: Install yamllint
         run: pip install yamllint
-      - name: Check MkDocs YAML configuration
-        run: yamllint ./mkdocs.yml
+      - name: Check ProperDocs YAML configuration
+        run: yamllint ./properdocs.yml
         continue-on-error: true
       - name: Check Markdown files
         uses: DavidAnson/markdownlint-cli2-action@v23
@@ -52,7 +52,7 @@ jobs:
           key: ${{ github.sha }}
           path: .cache
       - name: Build site (_site directory name is used for Jekyll compatiblity)
-        run: mkdocs build --config-file ./mkdocs.yml --strict --site-dir ./_site
+        run: properdocs build --config-file ./properdocs.yml --strict --site-dir ./_site
         env:
           CI: true
       - name: Upload artifact
