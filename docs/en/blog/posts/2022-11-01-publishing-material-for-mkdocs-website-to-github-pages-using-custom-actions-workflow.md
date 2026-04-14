@@ -4,7 +4,7 @@ authors:
   - vedranmiletic
 date:
   created: 2022-11-01
-  updated: 2026-04-04
+  updated: 2026-04-11
 tags:
   - git
   - web server
@@ -229,6 +229,6 @@ Finally, if you want to use a custom domain, having the `CNAME` file in the repo
 
 **Updated on 2024-05-12:** added [yamllint](https://github.com/adrienverge/yamllint) and [markdownlint](https://github.com/DavidAnson/markdownlint) steps. Removed caching as (Material for) MkDocs version is not pinned and therefore the site builds are not reproducible.
 
-**Update on 2026-04-04:** bumped [Actions](https://github.com/actions) versions to avoid [Node 20 deprecation warnings](https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/).
+**Updated on 2026-04-04:** bumped [Actions](https://github.com/actions) versions to avoid [Node 20 deprecation warnings](https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/).
 
-**Update on 2026-04-11:** bumped one more [Action](https://github.com/actions) version to avoid [Node 20 deprecation warnings](https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/). Restored caching as (Material for) MkDocs [is now](https://squidfunk.github.io/mkdocs-material/blog/2025/11/11/insiders-now-free-for-everyone/) [in maintenance mode](https://github.com/squidfunk/mkdocs-material/issues/8523) and should not change much between versions from now on.
+**Updated on 2026-04-11:** bumped one more [Action](https://github.com/actions) version to avoid [Node 20 deprecation warnings](https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/). Restored caching as (Material for) MkDocs [is now](https://squidfunk.github.io/mkdocs-material/blog/2025/11/11/insiders-now-free-for-everyone/) [in maintenance mode](https://github.com/squidfunk/mkdocs-material/issues/8523) and should not change much between versions from now on.
