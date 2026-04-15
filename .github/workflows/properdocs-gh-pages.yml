@@ -51,12 +51,14 @@ jobs:
         with:
           key: ${{ github.sha }}
           path: .cache
-      - name: Build site (_site directory name is used for Jekyll compatiblity)
-        run: properdocs build --config-file ./properdocs.yml --strict --site-dir ./_site
+      - name: Build site
+        run: properdocs build --config-file ./properdocs.yml --strict
         env:
           CI: true
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
+        with:
+          path: site
 
   # Deployment job
   deploy:
