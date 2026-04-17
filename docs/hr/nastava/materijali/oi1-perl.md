@@ -145,7 +145,9 @@ author: Luka Vretenar
     print($linija);
     ```
 
-- Kada čitamo neki broj ili niz znakova iz jednog reda potrebno je prvo pročitanu liniju pročistiti od znaka za kraj linije sa `chomp()` naredbom:
+    Više o naredbi: [print](https://perldoc.perl.org/functions/print).
+
+- Kada čitamo neki broj ili niz znakova iz jednog reda potrebno je prvo pročitanu liniju pročistiti od znaka za kraj linije naredbom `chomp()`:
 
     ``` perl
     $broj = <STDIN>;
@@ -153,6 +155,8 @@ author: Luka Vretenar
     $dvostruko = $broj * 2;
     print("dvostruka vrijednost unesenog broja je ", $dvostruko);
     ```
+
+    Više o naredbi: [chomp](https://perldoc.perl.org/functions/print), uz naglasak da [nije isto](https://youtu.be/PsuWCnLX6LA) što i [chop](https://perldoc.perl.org/functions/chop).
 
 - Primjer programa za pretvaranje metara u kilometre i obrnuto:
 
