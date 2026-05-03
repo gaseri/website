@@ -26,7 +26,7 @@ Heterogena sustavska arhitektura (engl. *Heterogeneous System Architecture*, HSA
 
 ## Kratka povijest računanja na GPU-ima
 
-- počinje 2000-ih, GPU-i su tada vezani na CPU-e najčešće putem [PCI-a](https://en.wikipedia.org/wiki/Conventional_PCI) ili [AGP-a](https://en.wikipedia.org/wiki/Accelerated_Graphics_Port) [HSAANCPI, slika 2.1]
+- počinje 2000-ih, GPU-i su tada vezani na CPU-e najčešće putem [PCI-a](https://en.wikipedia.org/wiki/Conventional_PCI) ili [AGP-a](https://en.wikipedia.org/wiki/Accelerated_Graphics_Port) \[HSAANCPI, slika 2.1\]
 - CPU ima sustavsku (glavnu, radnu) memoriju, GPU ima vlastitu memoriju (uglavnom veće širine pojasa od sustavske memorije)
 
     - programer mora brinuti o kopiranju podataka iz jedne u drugu ovisno o tome koji uređaj želi koristiti za obradu podataka

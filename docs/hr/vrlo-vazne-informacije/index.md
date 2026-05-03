@@ -1091,7 +1091,7 @@ Verzija iz akademske godine 2009/2010. uz sitnije stilske ispravke; bonus primje
     "Profesore, zašto moramo učiti Emacs? Ja bih radije da učimo Vim."
 
 !!! tip
-    "Profesore, ja bih rado da učimo Vim [na Operacijskim sustavima 1], ali vrijeme na kolegiju je ograničeno i očito se ne može stići sve obraditi. Zbog toga ću, za one studente koje Vim zanima, održati dodatne radionice neovisno o vašim vježbama. Možete li mi pronaći termin u rasporedu u kojem bi to mogli izvesti?"
+    "Profesore, ja bih rado da učimo Vim \[na Operacijskim sustavima 1\], ali vrijeme na kolegiju je ograničeno i očito se ne može stići sve obraditi. Zbog toga ću, za one studente koje Vim zanima, održati dodatne radionice neovisno o vašim vježbama. Možete li mi pronaći termin u rasporedu u kojem bi to mogli izvesti?"
 
 ### Bonus primjer 8
 

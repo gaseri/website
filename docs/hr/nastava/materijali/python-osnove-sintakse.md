@@ -31,7 +31,7 @@ author: Vedran Miletić
 
     - Python at [Google](https://en.wikipedia.org/wiki/Google):
 
-        - 2004\. "Of *course* we use Python. Why wouldn't we?" Python caught on here [at Google] like a virus, moving from developer to developer.
+        - 2004\. "Of *course* we use Python. Why wouldn't we?" Python caught on here \[at Google\] like a virus, moving from developer to developer.
 
 - [Programski jezik Python](https://en.wikipedia.org/wiki/Python_(programming_language)):
 

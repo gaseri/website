@@ -23,23 +23,23 @@ Postoji par struktura podataka koje su implementirane u ovu biblioteku. Dvije od
 
 U plan računanja ulaze svi parametri potrebni za izvedbu transformacije. Parametri su:
 
-- [out] `plan` -- plan handle
-- [in] `placement` -- pohrana rezultata
-- [in] `transform_type` -- tip transformacije
-- [in] `precision` -- koji tip (single ili double) precision-a će koristiti
-- [in] `dimensions` -- dimenzije
-- [in] `lengths` -- dimenzije veličine polja duljina transformacije
-- [in] `number_of_transforms` -- broj transformacija
-- [in] `description` -- opis plana
+- (izlazni) `plan` -- plan handle
+- (ulazni) `placement` -- pohrana rezultata
+- (ulazni) `transform_type` -- tip transformacije
+- (ulazni) `precision` -- koji tip (single ili double) precision-a će koristiti
+- (ulazni) `dimensions` -- dimenzije
+- (ulazni) `lengths` -- dimenzije veličine polja duljina transformacije
+- (ulazni) `number_of_transforms` -- broj transformacija
+- (ulazni) `description` -- opis plana
 
 ### Izvođenje
 
 Nakon što je plan napravljen, izvođenje može biti korišteno da pokrene plan da računa transformaciju na zadanim podatcima. Njegovi parametri su:
 
-- [in] `plan` -- plan handle
-- [in] `in_buffer` -- polje (veličine 1 kod isprepletenih podataka, veličine 2 kod planarnih podataka) input buffer-a
-- [inout] `out_buffer` -- polje (veličine 1 kod isprepletenih podataka, veličine 2 kod planarnih podataka) output buffer-a, može biti i `nullptr` kod `inplace` postavljanja rezultata
-- [in] `info` -- pokretanje info handle-a stvorenog `rocfft_execution_info_create(...)` funkcijom
+- (ulazni) `plan` -- plan handle
+- (ulazni) `in_buffer` -- polje (veličine 1 kod isprepletenih podataka, veličine 2 kod planarnih podataka) input buffer-a
+- (ulazni i izlazni) `out_buffer` -- polje (veličine 1 kod isprepletenih podataka, veličine 2 kod planarnih podataka) output buffer-a, može biti i `nullptr` kod `inplace` postavljanja rezultata
+- (ulazni) `info` -- pokretanje info handle-a stvorenog `rocfft_execution_info_create(...)` funkcijom
 
 ### Primjer
 

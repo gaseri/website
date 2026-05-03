@@ -64,7 +64,7 @@ sudo apt install python3-django
 
 ## HTTPie
 
-Naredba za instalaciju [HTTPie]-a na Manjaru je:
+Naredba za instalaciju [HTTPie](https://httpie.io/)-a na Manjaru je:
 
 ``` shell
 pamac install httpie
