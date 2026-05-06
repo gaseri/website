@@ -1,0 +1,14 @@
+[project]
+name = "gaseri"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "properdocs[i18n]",
+    "mkdocs-material[recommended,imaging]",
+    "mkdocs-meta-descriptions-plugin",
+]
+
+[dependency-groups]
+dev = [
+    "yamllint",
+]
