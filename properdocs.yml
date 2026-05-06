@@ -624,6 +624,9 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.tilde
 
+hooks:
+  - hooks.py
+
 plugins:
   - blog:
       blog_dir: en/blog
