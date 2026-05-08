@@ -34,8 +34,8 @@ author: Vedran Miletić, Vanja Slavuj, Sanja Pavkov
 - poznajemo dvije vrste regularnih izraza: basic regular expressions (BRE) i extended regular expressions (ERE)
 
     - razlikuju se u interpretaciji posebnih znakova
-    - BRE: ^ $ . [ ] *
-    - ERE: ( ) { } ? + |
+    - BRE: `^ $ . [ ] *`
+    - ERE: `( ) { } ? + |`
     - grep je program koji koristi BRE
     - `grep -E '(xd|xy)' dat.txt`
 
