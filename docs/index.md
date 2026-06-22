@@ -41,7 +41,3 @@ hide:
     We are grateful to our collaborators for their support over the last twelve years, including both the last three years of GASERI and [the prior nine years of CNPSLab](hr/povijest.md#laboratorij-za-racunalne-mreze-paralelizaciju-i-simulaciju).
 
     This website will mostly be kept as-is for historical purposes and maintained just as much as necessary to keep up with the technology changes and link breakages. There are two notable exceptions that will get semi-regular updates: [blog](en/blog/index.md) and [GROMACS tutorials](en/tutorials/gromacs/index.md).
-
-## 👩😎😎📹👨 Intervju [Vedrana](https://vedran.miletic.net/) [Miletića](https://www.miletic.net/) i [Matee Turalija](https://mateaturalija.github.io/) od strane Lane Miličević i Darijana Jelušića iz [IEEE studentskog ogranka](https://www.ieee.hr/ieeesection/studentski_ogranci/rijeka) Sveučilišta u Rijeci na studentskom podcastu [RiThinking STEM](https://youtu.be/cI7_4eXsHjY?list=PL6xC_tdJMOhfYRHKrgyeD2cyaD4FXDYRc)
-
-<iframe src="https://www.youtube.com/embed/cI7_4eXsHjY" title="YouTube video player" style="border: 1px solid black; width: 100%; height: 25rem" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -25,3 +25,6 @@ Dodatno, pojedini kolegiji imaju mogućnost uključivanja demonstratora u nastav
 ## Uključivanje u aktivistički rad
 
 [Aktivistički rad](../aktivizam/index.md) se trenutno provodi u dvije skupine, [Archeri](../aktivizam/archeri.md) i [Mapapijri](../aktivizam/mapapijri.md). Na stranici svake od skupina možete pronaći informaciju kako kontaktirati članove.
+
+!!! tip
+    Za više informacija pogledajte [intervju]((https://youtu.be/cI7_4eXsHjY)) [Vedrana](https://vedran.miletic.net/) [Miletića](https://www.miletic.net/) i [Matee Turalija](https://mateaturalija.github.io/) od strane Lane Miličević i Darijana Jelušića pod naslovom [GASERI - znanost i industrija, eksaskalarna računala, trendovi u IT-u](https://youtu.be/cI7_4eXsHjY) iz [IEEE studentskog ogranka](https://www.ieee.hr/ieeesection/studentski_ogranci/rijeka) Sveučilišta u Rijeci na studentskom podcastu [RiThinking STEM](https://youtu.be/cI7_4eXsHjY?list=PL6xC_tdJMOhfYRHKrgyeD2cyaD4FXDYRc).
