@@ -7,6 +7,11 @@ author: Vedran Miletić
 !!! info
     Ova je stranica također dostupna [na engleskom jeziku](../en/index.md).
 
+!!! quote
+    > Nekad smo stajali u krugu. Dim se dizao sporo. Mešao sa pričama koje su kružile iz ruke u ruku. Pogledi su se razumeli bez reči. Imena su se izgovarala glasno. Sa sigurnošću da sutra postoji. Krug je bio zatvoren. Čvrst. Naš. Verovalo se da nas je baš to držalo na okupu. Danas kruga nema. Ili ima, ali ne prepoznajem njegov oblik. Neka imena se više ne pominju. Ne zato što su zaboravljena, nego zato što bole. Neka su ostala zaključana u tišini. Neka su promenila jezik. Neka gledaju svet kroz rešetke, a neka guraju kolica po parku i prave se da nikad nisu stajala ovde gde mi sada stojimo. Krug se širi. I puca. Menja lice. Nije više to to. Nikad i neće biti. Sećanja su kao taj sneg. Padnu ti na rame pa ne znaš da l' da ih otreseš ili poneseš sa sobom. Vetar ih raznosi po mislima, vraća slike koje nisi zvao. Smeh koji je trajao prekratko. Uverenje da kontrola pripada onome ko se ne boji, a niko tada nije hteo da prizna strah. Crni sneg i dalje pada. Metar po metar. I svaki put kad pomisliš da si se izvukao, vetar dune i podseti te gde si rastao, ko si bio. I koliko toga si ostavio iza sebe
+
+    -- [Faberge](https://www.instagram.com/faberze_/) i [Jovan Jovanović](https://www.instagram.com/reel/DX1SKSlIhKI/) -- [Krug - Skit](https://genius.com/Faberge-and-jovan-jovanovic-krug-skit-lyrics), album [Crni Sneg](https://youtu.be/wORaj9jMUsY?list=PL78w5GiH56nFnHOoHopvht4-nTWxcJcdw), [Bassivity Digital](https://www.bassivitygroup.com/#digital), 2026.
+
 **Grupa za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi** (engl. *Group for Applications and Services on Exascale Research Infrastructure*, kraće GASERI) je istraživačka, razvojna i nastavna jedinica na [Fakultetu informatike i digitalnih tehnologija](https://www.inf.uniri.hr/) i [Medicinskom fakultetu](https://medri.uniri.hr/) [Sveučilišta u Rijeci](https://uniri.hr/).
 
 ![Rev1 Ternary Complex with dTTP and Ca2+ (7T18) binding site](../images/7t18-binding-site.webp)

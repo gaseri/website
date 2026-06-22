@@ -7,6 +7,18 @@ author: Vedran Miletić
 !!! info
     This page is also available [in Croatian](../hr/index.md).
 
+!!! success
+    GASERI completed its mission in 2024, as described in [Molecular dynamics simulation for exascale supercomputing era -- scientific research and software engineering challenges](talks/2023-09-16-molecular-dynamics-simulation-for-exascale-supercomputing-era-scientific-research-and-software-engineering-challenges.md).
+
+    - [Dr. Vedran](https://vedran.miletic.net/) [Miletić](https://www.miletic.net/), our [Principal Investigator](people/principal-investigator.md), is now working as an HPC Application Expert at [Max Planck](https://www.mpg.de/) [Computing and Data Facility](https://www.mpcdf.mpg.de/).
+    - [Milan Petrović](https://milanxpetrovic.github.io/) remained a Research and Teaching Assistant at [Faculty of Informatics and Digital Technologies](https://www.inf.uniri.hr/), where he is a part of [SemTechLab](https://www.inf.uniri.hr/znanstveni-i-strucni-rad/laboratoriji/semtechlab).
+    - [Matea Turalija](https://mateaturalija.github.io/), our [PhD Student](people/phd-students.md#matea-turalija), moved to [Faculty of Medicine](https://medri.uniri.hr/), where she is working as a Research and Teaching Assistant at [Department of Biomedical Informatics](https://medri.uniri.hr/fakultet/ustroj/zavodi-i-katedre/medicinska-informatika/).
+    - [Students](people/index.md#former-students) defended [their theses](../hr/nastava/radovi/teme.md), finished their studies, and now work in various companies in Croatia and abroad.
+
+    We are grateful to our collaborators for their support over the last twelve years, including both the last three years of GASERI and [the prior nine years of CNPSLab](../hr/povijest.md#laboratorij-za-racunalne-mreze-paralelizaciju-i-simulaciju).
+
+    This website will mostly be kept as-is for historical purposes and maintained just as much as necessary to keep up with the technology changes and link breakages. There are two notable exceptions that will get semi-regular updates: [blog](blog/index.md) and [GROMACS tutorials](tutorials/gromacs/index.md).
+
 **Group for Applications and Services on Exascale Research Infrastructure** (hrv. *Grupa za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi*, abbr. GASERI) is a research, development, and teaching unit at [University of Rijeka](https://uniri.hr/) [Faculty of Informatics and Digital Technologies](https://www.inf.uniri.hr/) and [Faculty of Medicine](https://medri.uniri.hr/).
 
 ![Rev1 Ternary Complex with dTTP and Ca2+ (7T18) binding site](../images/7t18-binding-site.webp)
