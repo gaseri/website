@@ -186,7 +186,7 @@ std::vector<T> host_expected_output = get_expected_output<T>(host_input, block_s
 std::vector<T> host_output(size);
 ```
 
-Slijedi alokacija memorije uređaja. Potrebno je alocirati memoriju i za unos i za ispis. Putem `HIP_CHECK` provjeravamo hoće li alokacija biti uspješna. Alokaciju memorije za unos i ispis vršimo putem funkcije hipMalloc na sljedeći način (za više informacija o `hipMalloc()` možete pogledati [službenu dokumentaciju](https://docs.amd.com/projects/HIP/en/latest/.doxygen/docBin/html/group___memory.html)):
+Slijedi alokacija memorije uređaja. Potrebno je alocirati memoriju i za unos i za ispis. Putem `HIP_CHECK` provjeravamo hoće li alokacija biti uspješna. Alokaciju memorije za unos i ispis vršimo putem funkcije hipMalloc na sljedeći način (za više informacija o `hipMalloc()` možete pogledati [službenu dokumentaciju](https://rocm.docs.amd.com/projects/HIP/en/latest/doxygen/html/group___memory.html)):
 
 ``` c++
 T * device_input;
@@ -207,7 +207,7 @@ HIP_CHECK(hipMalloc(&global_storage, (grid_size * sizeof(storage_type))));
 
 Ovdje se javlja prethodno definirana funkcija rocPRIM-a, `block_scan()`. Za više informacija pogledajte podnaslov *Block-wide*. Ponovno se, slično prethodnim koracima, putem `HIP_CHECK` traži provjera uspješne alokacije memorije hipMalloc.
 
-Pokreće se zrno koje koristi globalnu memoriju za pohranu (više informacija o funkciji `hipLaunchKernellGGL()` koja se koristi u ovom primjeru možete saznati u [službenoj dokumentaciji](https://docs.amd.com/projects/HIP/en/latest/user_guide/hip_porting_guide.html)):
+Pokreće se zrno koje koristi globalnu memoriju za pohranu (više informacija o funkciji `hipLaunchKernellGGL()` koja se koristi u ovom primjeru možete saznati u [službenoj dokumentaciji](https://rocm.docs.amd.com/projects/HIP/en/latest/how-to/hip_porting_guide.html)):
 
 ``` c++
 hipLaunchKernelGGL(

@@ -81,7 +81,7 @@ Hardverski potpomognuta virtualizacija, ponekad nazvana i izvorna virtualizacija
 Podrška za hardverski potpomognutu virtualizaciju dodana je u obliku procesorskih ekstenzija za x86 procesore koje su neovisno implementirali Intel i AMD. Tako su nastale dvije tehnologije:
 
 - [Intel Virtualization Technology for x86 (Intel VT-x)](https://www.intel.com/content/www/us/en/virtualization/virtualization-technology/intel-virtualization-technology.html) (jedna od [komponenata Intel VT](https://www.thomas-krenn.com/en/wiki/Overview_of_the_Intel_VT_Virtualization_Features)),
-- [AMD Virtualization (AMD-V)](https://www.amd.com/en/technologies/virtualization-solutions).
+- [AMD Virtualization (AMD-V)](https://www.amd.com/en/solutions/hci-and-virtualization.html).
 
 Iako su one po specifikacijama različite, obje postižu isti cilj: omogućuju izvođenje virtualnih mašina s nepromijenjenim OS-ovima brzinom koja je vrlo slična situaciji kada se OS pokreće direktno na računalu. Prije uvođenja tih ekstenzija za virtualnu mašinu procesor je bilo potrebno emulirati, što je činilo da je virtualizirani OS u izvođenju bio bitno sporiji od onoga koji se izravno pokretao na računalu.
 

@@ -15,7 +15,7 @@ author: Vedran Miletić
 U nastavku je opisan način instalacije i konfiguracije računala u računalnim praktikumima. Pritom pretpostavljamo da je operacijski sustav Windows, bez obzira radi li se o verziji 10 ili 11, instaliran na računalima u konfiguraciji pokretanja putem UEFI-ja te da su instalirane sve dostupne nadogradnje. Nadalje pretpostavljamo da računala u sebi imaju SSD i HDD, da je sav hardver ispravan, da je UEFI firmware ("BIOS") osvježen na zadnju dostupnu verziju i da je u konfiguraciji firmwarea:
 
 - isključen Secure Boot[^1] i
-- uključena podrška za [hardverski potpomognutu virtualizaciju](https://en.wikipedia.org/wiki/Hardware-assisted_virtualization)[^2] ([Intel VT-x](https://www.intel.com/content/www/us/en/virtualization/virtualization-technology/intel-virtualization-technology.html)/[AMD-V](https://www.amd.com/en/solutions/hci-and-virtualization)).
+- uključena podrška za [hardverski potpomognutu virtualizaciju](https://en.wikipedia.org/wiki/Hardware-assisted_virtualization)[^2] ([Intel VT-x](https://www.intel.com/content/www/us/en/virtualization/virtualization-technology/intel-virtualization-technology.html)/[AMD-V](https://www.amd.com/en/solutions/hci-and-virtualization.html)).
 
 [^1]: Distribucije temeljene na Arch Linuxu moguće je [konfigurirati tako da se pokreću kad je Secure Boot uključen](https://wiki.archlinux.org/title/Unified_Extensible_Firmware_Interface/Secure_Boot), ali to komplicira održavanje i nepotrebno je na računalima koja se koriste samo u nastavne svrhe.
 
