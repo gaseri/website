@@ -12,7 +12,7 @@ keywords: studij informatike
 
 ## v. pred. dr. sc. [Vedran](https://vedran.miletic.net/) [Miletić](https://www.miletic.net/), <vmiletic@inf.uniri.hr>
 
-### [vedran.miletic.net](https://vedran.miletic.net/) | [group.miletic.net](https://group.miletic.net/hr/)
+### [vedran.miletic.net](https://vedran.miletic.net/) | [gaseri.org](https://gaseri.org/hr/)
 
 #### IT Zajednica Rijeka, 20. kolovoza 2021. godine
 

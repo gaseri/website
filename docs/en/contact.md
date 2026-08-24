@@ -9,7 +9,7 @@ author: Vedran Miletić
 
 ## E-mail
 
-E-mail addresses of [the staff members](people/index.md#staff) have the following format: `firstname.lastname@group.miletic.net`
+E-mail addresses of [the staff members](people/index.md#staff) have the following format: `firstname.lastname@gaseri.org`
 
 ## Social networks
 

@@ -192,7 +192,7 @@ Izvor slike: [Material for MkDocs Documentation](https://squidfunk.github.io/mkd
 
 ![GASERI Logo](../../images/gaseri-logo-animated.webp)
 
-GASERI website: [group.miletic.net](../../index.md) ([SimilarWeb za miletic.net](https://www.similarweb.com/website/miletic.net/))
+GASERI website: [gaseri.org](../../index.md) ([SimilarWeb za gaseri.org](https://www.similarweb.com/website/gaseri.org/))
 
 ![Vedran bg left](https://vedran.miletic.net/images/vm.jpg)
 

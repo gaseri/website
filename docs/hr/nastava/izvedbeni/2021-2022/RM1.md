@@ -11,7 +11,7 @@ Godina i semestar: 2. godina, 3. semestar
 Studij: Preddiplomski dvopredmetni studij informatike  
 Godina i semestar: 3. godina, 5. semestar
 
-Web stranice predmeta: [group.miletic.net/hr/nastava/kolegiji/RM1/](https://group.miletic.net/hr/nastava/kolegiji/RM1/) [moodle.srce.hr/2021-2022/](https://moodle.srce.hr/2021-2022/)
+Web stranice predmeta: [gaseri.org/hr/nastava/kolegiji/RM1/](https://gaseri.org/hr/nastava/kolegiji/RM1/) [moodle.srce.hr/2021-2022/](https://moodle.srce.hr/2021-2022/)
 
 ECTS bodovi: 5 (4)
 

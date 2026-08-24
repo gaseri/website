@@ -72,10 +72,10 @@ In this **NVIDIA-supported project**, our goal is to use the commercial off-the-
 
 ## Contact
 
-[**Dr. Vedran Miletić**](https://vedran.miletic.net/), [*Principal Investigator*](https://group.miletic.net/en/people/principal-investigator/)
+[**Dr. Vedran Miletić**](https://vedran.miletic.net/), [*Principal Investigator*](https://gaseri.org/en/people/principal-investigator/)
 
 - [Twitter](https://twitter.com/vedranmiletic), [LinkedIn](https://www.linkedin.com/in/vedranmiletic/), [GitHub](https://github.com/vedranmiletic), [GitLab](https://gitlab.com/vedranmiletic)
 
-[**G**roup for **A**pplications and **S**ervices on **E**xascale **R**esearch **I**nfrastructure](https://group.miletic.net/en/)
+[**G**roup for **A**pplications and **S**ervices on **E**xascale **R**esearch **I**nfrastructure](https://gaseri.org/en/)
 
 - [LinkedIn](https://www.linkedin.com/company/gaseri), [GitHub](https://github.com/gaseri), [GitLab](https://gitlab.com/gaseri)

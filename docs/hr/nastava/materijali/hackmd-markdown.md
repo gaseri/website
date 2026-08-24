@@ -167,7 +167,7 @@ Ukoliko ne želimo koristiti posebni tekst kao link onda je dovoljno unijeti adr
 
 Za umetanje slike s računala dovoljno je kliknuti na *Insert image* ikonicu na alatnoj traci. Takvo ubacivanje slike u nekim markdown uređivačima napravit će gomilu ružnog koda. Zato se preporučuje korištenje online slika.
 
-Za umetanje online slika, dovoljno je u zagradu staviti link na sliku: `![Naziv slike](https://group.miletic.net/images/gaseri-logo-animated.webp)`.
+Za umetanje online slika, dovoljno je u zagradu staviti link na sliku: `![Naziv slike](https://gaseri.org/images/gaseri-logo-animated.webp)`.
 
 ### Escape znak
 

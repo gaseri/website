@@ -53,7 +53,7 @@ GitHub Pages itself doesn't offer a proper HTTP redirection service, but there i
     <script>
         window.onload = function () {
             const currentLocation = window.location.href;
-            var redirectLocation = 'https://noc.miletic.net/';
+            var redirectLocation = 'https://gaseri.org/hr/';
             if (currentLocation.startsWith('https://inf2.uniri.hr/elarsportal')) {
                 redirectLocation = currentLocation.replace(
                     'https://inf2.uniri.hr/elarsportal',
@@ -62,20 +62,20 @@ GitHub Pages itself doesn't offer a proper HTTP redirection service, but there i
             } else if (currentLocation.startsWith('https://inf2.uniri.hr/reStructuredHgWiki')) {
                 redirectLocation = currentLocation.replace(
                     'https://inf2.uniri.hr/reStructuredHgWiki',
-                    'https://group.miletic.net/hr/nastava'
+                    'https://gaseri.org/hr/nastava'
                 );
             } else if (currentLocation.startsWith('https://inf2.uniri.hr/hgwiki') ||
                 currentLocation.startsWith('https://inf2.uniri.hr/heterogeneouswiki') ||
                 currentLocation.startsWith('https://inf2.uniri.hr/redwiki')) {
                 redirectLocation = currentLocation.replace(
                     'https://inf2.uniri.hr/hgwiki',
-                    'https://group.miletic.net/hr/nastava/kolegiji'
+                    'https://gaseri.org/hr/nastava/kolegiji'
                 ).replace(
                     'https://inf2.uniri.hr/heterogeneouswiki',
-                    'https://group.miletic.net/hr/nastava/kolegiji'
+                    'https://gaseri.org/hr/nastava/kolegiji'
                 ).replace(
                     'https://inf2.uniri.hr/redwiki',
-                    'https://group.miletic.net/hr/nastava/kolegiji'
+                    'https://gaseri.org/hr/nastava/kolegiji'
                 );
             } else if (currentLocation.startsWith('https://inf2.uniri.hr/bluewiki')) {
                 redirectLocation = 'https://www.inf.uniri.hr/~amestrovic/';
@@ -95,7 +95,7 @@ GitHub Pages itself doesn't offer a proper HTTP redirection service, but there i
 </head>
 
 <body>
-    <p>Please follow <a href="https://noc.miletic.net/">this link</a>.</p>
+    <p>Please follow <a href="https://gaseri.org/hr/">this link</a>.</p>
 </body>
 
 </html>
@@ -108,6 +108,6 @@ Let's go briefly over the contents and redirect options:
 - lines 22--36 handle [MoinMoin-powered wiki](../../../hr/povijest.md#moinmoin) link hierarchy, with all historical name changes taken into account,
 - lines 37--42 handle two applications used in teaching [Computer Networks](../../../hr/nastava/kolegiji/RM.md), [Computer Networks (RiTeh)](../../../hr/nastava/kolegiji/RM-RiTeh.md), and [Computer Networks 2](../../../hr/nastava/kolegiji/RM2.md) (obviously, JavaScript will not be executed when accesed via [cURL command-line interface](../../../hr/nastava/materijali/curl-protokoli-aplikacijske-razine.md), but the hint about the correct URI in the output should be fairly obvious),
 - lines 43--44 handle our internal instance of [Moodle](https://moodle.org/) that got replaced by [Srce](https://www.srce.unizg.hr/)'s, and
-- lines 11 and 47 ensure that all other requests, i.e. not matched by any of the rules above, get redirected to [the network operations center](https://noc.miletic.net/).
+- lines 11 and 47 ensure that all other requests, i.e. not matched by any of the rules above, get redirected to [the Croatian home page](https://gaseri.org/hr/).
 
 And that's it! Sure, we can extend it further to also handle renamed pages and moved files by adding nested `if`s, but this is working well enough for the most of the URIs that we care about. It is also interesting to note that [Google recognizes the redirects](https://www.google.com/search?q=site%3Ainf2.uniri.hr), despite the HTTP 404 status code returned by the `GitHub.com` server and the need to execute JavaScript while crawling to figure out the destination URI.

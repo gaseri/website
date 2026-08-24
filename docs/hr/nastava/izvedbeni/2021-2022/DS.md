@@ -11,7 +11,7 @@ Godina i semestar: 1. godina, 1. semestar
 Studij: Diplomski studij informatike, smjer nastavnički  
 Godina i semestar: 1. godina, 3. semestar
 
-Web stranice predmeta: [group.miletic.net/hr/nastava/kolegiji/DS/](https://group.miletic.net/hr/nastava/kolegiji/DS/) [moodle.srce.hr/2021-2022/](https://moodle.srce.hr/2021-2022/)
+Web stranice predmeta: [gaseri.org/hr/nastava/kolegiji/DS/](https://gaseri.org/hr/nastava/kolegiji/DS/) [moodle.srce.hr/2021-2022/](https://moodle.srce.hr/2021-2022/)
 
 ECTS bodovi: 6 (5)
 

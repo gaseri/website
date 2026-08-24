@@ -274,7 +274,7 @@ Image source: [Wikimedia Commons File:110716031-TUM.JPG](https://commons.wikimed
 
 ![GASERI Logo](../../images/gaseri-logo-animated.webp)
 
-GASERI website: [group.miletic.net](../../index.md)
+GASERI website: [gaseri.org](../../index.md)
 
 ![Vedran bg left](https://vedran.miletic.net/images/vm.jpg)
 

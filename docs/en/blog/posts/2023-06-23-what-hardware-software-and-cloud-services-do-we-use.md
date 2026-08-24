@@ -56,7 +56,7 @@ We plan to switch the storage server to [TrueNAS SCALE](https://www.truenas.com/
 ## Cloud services
 
 - ~~[Hetzner Cloud x86 VPS](https://www.hetzner.com/cloud) running [Arch Linux](https://archlinux.org/)~~
-- [GitHub Actions](https://github.com/features/actions), used for building, and [GitHub Pages](https://pages.github.com/), used for hosting [group.miletic.net](../../../index.md) (web site)
+- [GitHub Actions](https://github.com/features/actions), used for building, and [GitHub Pages](https://pages.github.com/), used for hosting [gaseri.org](../../../index.md) (web site)
 - [HackMD](https://hackmd.io/), used for collaborative drafting of Markdown documents
 - [Overleaf](https://www.overleaf.com/), used for collaborative drafting of LaTeX documents
 

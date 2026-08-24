@@ -8,7 +8,7 @@ Akademska godina 2021./2022.
 Studij: Diplomski studij informatike, smjer informacijski i komunikacijski sustavi i smjer poslovna informatika  
 Godina i semestar: 2. godina, 3. semestar
 
-Web stranice predmeta: [group.miletic.net/hr/nastava/kolegiji/UMS/](https://group.miletic.net/hr/nastava/kolegiji/UMS/) [moodle.srce.hr/2021-2022/](https://moodle.srce.hr/2021-2022/)
+Web stranice predmeta: [gaseri.org/hr/nastava/kolegiji/UMS/](https://gaseri.org/hr/nastava/kolegiji/UMS/) [moodle.srce.hr/2021-2022/](https://moodle.srce.hr/2021-2022/)
 
 ECTS bodovi: 6
 

@@ -14,7 +14,7 @@ abstract: |
 
 # The challenges of the upcoming exascale supercomputing era in computational biochemistry
 
-## Dr. [Vedran](https://vedran.miletic.net/) [Miletić](https://www.miletic.net/) ([group.miletic.net](https://group.miletic.net/))
+## Dr. [Vedran](https://vedran.miletic.net/) [Miletić](https://www.miletic.net/) ([gaseri.org](https://gaseri.org/))
 
 ### 😎 Group for Applications and Services on Exascale Research Infrastructure, Faculty of Informatics and Digital Technologies, University of Rijeka
 

@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: https://group.miletic.net/sitemap.xml
+Sitemap: https://gaseri.org/sitemap.xml
