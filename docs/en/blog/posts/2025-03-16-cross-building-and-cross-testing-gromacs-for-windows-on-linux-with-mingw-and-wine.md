@@ -2,7 +2,8 @@
 author: Vedran Miletić
 authors:
   - vedranmiletic
-date: 2025-03-16
+date:
+  created: 2025-03-16
 tags:
   - scientific software
   - gromacs

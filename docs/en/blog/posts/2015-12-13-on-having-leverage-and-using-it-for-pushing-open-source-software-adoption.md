@@ -2,7 +2,8 @@
 author: Vedran Miletić
 authors:
   - vedranmiletic
-date: 2015-12-13
+date:
+  created: 2015-12-13
 tags:
   - cp2k
   - ethz

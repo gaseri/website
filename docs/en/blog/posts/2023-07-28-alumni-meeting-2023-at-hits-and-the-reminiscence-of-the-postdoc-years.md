@@ -2,7 +2,8 @@
 author: Vedran Miletić
 authors:
   - vedranmiletic
-date: 2023-07-28
+date:
+  created: 2023-07-28
 tags:
   - academia
   - scientific software

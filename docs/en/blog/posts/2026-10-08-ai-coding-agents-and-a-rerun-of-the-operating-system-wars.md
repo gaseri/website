@@ -2,7 +2,8 @@
 author: Vedran Miletić
 authors:
   - vedranmiletic
-date: 2026-10-08
+date:
+  created: 2026-10-08
 tags:
   - artificial intelligence
   - decentralization

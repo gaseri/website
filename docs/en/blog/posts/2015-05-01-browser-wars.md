@@ -2,7 +2,8 @@
 author: Vedran Miletić
 authors:
   - vedranmiletic
-date: 2015-05-01
+date:
+  created: 2015-05-01
 tags:
   - free and open-source software
   - mozilla

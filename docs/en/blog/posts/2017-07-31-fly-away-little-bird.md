@@ -2,7 +2,8 @@
 author: Vedran Miletić
 authors:
   - vedranmiletic
-date: 2017-07-31
+date:
+  created: 2017-07-31
 tags:
   - web server
   - mozilla

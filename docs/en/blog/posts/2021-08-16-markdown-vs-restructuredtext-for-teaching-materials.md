@@ -2,7 +2,8 @@
 author: Vedran Miletić
 authors:
   - vedranmiletic
-date: 2021-08-16
+date:
+  created: 2021-08-16
 tags:
   - restructuredtext
   - sphinx

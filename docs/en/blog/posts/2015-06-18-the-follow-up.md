@@ -2,7 +2,8 @@
 author: Vedran Miletić
 authors:
   - vedranmiletic
-date: 2015-06-18
+date:
+  created: 2015-06-18
 tags:
   - elon musk
   - fer

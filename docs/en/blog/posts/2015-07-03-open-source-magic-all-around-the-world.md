@@ -2,7 +2,8 @@
 author: Vedran Miletić
 authors:
   - vedranmiletic
-date: 2015-07-03
+date:
+  created: 2015-07-03
 tags:
   - free and open-source software
   - popular science

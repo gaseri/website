@@ -2,7 +2,8 @@
 author: Matea Turalija
 authors:
   - mateaturalija
-date: 2023-08-28
+date:
+  created: 2023-08-28
 tags:
   - phd
   - academia

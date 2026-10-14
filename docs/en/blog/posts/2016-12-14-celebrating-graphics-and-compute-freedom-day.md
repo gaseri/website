@@ -1,6 +1,7 @@
 ---
 author: Jovan Jokić
-date: 2016-12-14
+date:
+  created: 2016-12-14
 tags:
   - amd
   - free and open-source software

@@ -1,6 +1,7 @@
 ---
 author: Marko Luka Zubčić
-date: 2016-02-23
+date:
+  created: 2016-02-23
 tags:
   - docker
   - open access

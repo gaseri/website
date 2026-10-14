@@ -2,7 +2,8 @@
 author: Vedran Miletić
 authors:
   - vedranmiletic
-date: 2016-01-30
+date:
+  created: 2016-01-30
 tags:
   - microsoft
   - opendocument

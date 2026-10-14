@@ -2,7 +2,8 @@
 author: Vedran Miletić
 authors:
  - vedranmiletic
-date: 2026-01-31
+date:
+  created: 2026-01-31
 tags:
  - free and open-source software
  - freebsd

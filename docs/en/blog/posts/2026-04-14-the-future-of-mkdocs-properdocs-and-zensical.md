@@ -4,6 +4,7 @@ authors:
   - vedranmiletic
 date:
   created: 2026-04-14
+  updated: 2026-10-14
 tags:
   - git
   - markdown
@@ -115,7 +116,7 @@ jobs:
         uses: actions/deploy-pages@v5
 ```
 
-For example, [this website](../../../index.md) uses it.
+For example, [this website](../../../index.md) used it in the past, but it uses Zensical now.
 
 ## Zensical
 
@@ -206,3 +207,5 @@ jobs:
 ```
 
 For example, the [core domain website](https://www.miletic.net/) uses it.
+
+**Updated on 2026-10-14:** stated that the website uses Zensical now.

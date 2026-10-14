@@ -2,7 +2,8 @@
 author: Vedran Miletić
 authors:
   - vedranmiletic
-date: 2025-03-07
+date:
+  created: 2025-03-07
 tags:
   - academia
   - research funding

@@ -2,7 +2,8 @@
 author: Vedran Miletić
 authors:
   - vedranmiletic
-date: 2017-07-22
+date:
+  created: 2017-07-22
 tags:
   - web server
   - sphinx

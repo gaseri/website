@@ -2,7 +2,8 @@
 author: Vedran Miletić
 authors:
   - vedranmiletic
-date: 2015-07-28
+date:
+  created: 2015-07-28
 tags:
   - academia
   - researchers night

@@ -2,7 +2,8 @@
 author: Vedran Miletić
 authors:
   - vedranmiletic
-date: 2023-06-10
+date:
+  created: 2023-06-10
 tags:
   - phd
   - academia

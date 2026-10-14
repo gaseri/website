@@ -2,7 +2,8 @@
 author: Vedran Miletić
 authors:
   - vedranmiletic
-date: 2016-01-17
+date:
+  created: 2016-01-17
 tags:
   - amd
   - free and open-source software
