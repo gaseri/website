@@ -640,6 +640,8 @@ plugins:
   - tags
   - minify:
       minify_html: !ENV [CI, false]
+      htmlmin_opts:
+        remove_optional_attribute_quotes: false
   - rss:
       match_path: en/blog/posts/.*
       date_from_meta:
