@@ -1,0 +1,93 @@
+---
+author: Vedran Miletić
+authors:
+  - vedranmiletic
+date:
+  created: 2026-10-18
+tags:
+  - academia
+  - research funding
+  - free and open-source software
+  - scientific software
+  - gromacs
+---
+
+# This is academia; everybody has to get something
+
+---
+
+![A tree in the middle of a snowy field](https://images.unsplash.com/photo-1704664265297-b1410ae6c6f3?q=80&w=1920&auto=format&fit=crop)
+
+Photo source: [Lukas Seitz (@lukasseitz) | Unsplash](https://unsplash.com/photos/a-tree-in-the-middle-of-a-snowy-field-DrbgPRC4xyA)
+
+---
+
+It has been three months since we published [our preprint](https://chemrxiv.org/doi/abs/10.26434/chemrxiv.15006112/v1), and it has now passed 500 downloads. That seems like a good occasion to write about how I ended up doing this work after leaving a promising assistant professorship.
+
+I have tried to write about that decision several times, but the drafts kept growing and none reached publication. There was always more to explain. This time, I will focus on what led to the decision and what came of it.
+
+<!-- more -->
+
+## Initial conditions, real-world dynamics
+
+One moment that stayed with me came at the [Third Infinity conference](https://thirdinfinity.mpg.de/) in September 2022, held at the [Max Planck Institute for Multidisciplinary Sciences (MPI-NAT)](https://www.mpinat.mpg.de/) in Göttingen.[^1] I [presented](../../talks/2022-09-23-extending-non-equilibrium-pulling-method-in-gromacs-with-arbitrary-user-defined-atom-weight-factor-expressions.md) right after [Anđela Šarić](https://andelasaric.com/), whose [group](https://andelasaric.com/our-group/) I [follow](https://andelasaric.com/news/) and whose [research](https://andelasaric.com/our-research/) I deeply admire. My presentation went fine, but it felt modest by comparison. I was struck by the scientific depth and scope of her work and the stunning molecular visualizations she used to present it. It made me ask what it would take for our group to produce work on that level and communicate it so effectively.
+
+By then, we had already tried to find another way to do our research. Through [RxTx Research](https://rxtx.one/research/), [Patrik](https://www.linkedin.com/in/patriknikolic/) [Nikolić](https://nikoli.ch/) and I tried to bootstrap a business around free and open-source scientific software for drug discovery. Our work centered on [RxDock](https://rxdock.gitlab.io/), which we modernized and maintained for molecular docking and high-throughput virtual screening.[^2] The startup did not, in the end, work out the way we had imagined. There were several reasons, but, for now, I will simply say that too many of our assumptions proved wrong, both about the science and about building a business from Rijeka, Croatia, with limited access to the connections and capital we needed. Still, we learned quite a bit from the experience.
+
+On the academic side, I did not secure the Croatian Science Foundation funding I had sought, as I described in [The unfortunate state of early-career scientist funding in Croatia](2025-03-07-the-unfortunate-state-of-early-career-scientist-funding-in-croatia.md#full-disclosure). I could continue building the group with only basic funding, but that seemed unlikely to give us the resources and freedom to do work on the scale I had admired in Anđela’s presentation. I could also join an existing group at the University of Rijeka, but that was not what I had returned to Rijeka to do. I wanted to find a way to get back to doing the kind of science that had brought me to computational biochemistry in the first place.
+
+Then, in April 2023, my mentor and longtime collaborator [Željko Svedružić](https://svedruziclab.github.io/principal-investigator.html) [passed away unexpectedly](https://svedruziclab.github.io/news/2023/04/21/obituary-dr-%C5%BEeljko-svedru%C5%BEi%C4%87.html), far too soon. His work combined molecular simulations and experiments to understand enzyme mechanisms and develop drug candidates, interests he discusses in [his last interview](https://svedruziclab.github.io/news/2023/05/17/posljednji-intervju-sa-izv-prof-dr-sc-%C5%BEeljkom-svedru%C5%BEi%C4%87em.html#podcast-03-superracunalo-bura-gost-prof-dr-sc-zeljko-svedruzic-kisobran-uniri). I remain grateful for his support when I was looking for my first postdoc, which eventually took me to [Frauke](https://www.h-its.org/people/prof-dr-frauke-grater/) [Gräter’s](https://www.mpip-mainz.mpg.de/1001480/01_Direktor) group at the [Heidelberg Institute for Theoretical Studies (HITS)](https://www.h-its.org/).
+
+His death also brought [our years of scientific collaboration](2015-07-28-joys-and-pains-of-interdisciplinary-research.md) to an end. The startup had not worked out, my attempt to establish an independently funded research group had not succeeded, and now I had lost the mentor with whom I had found my way into computational biochemistry. Little remained of the research setting I had hoped to build in Rijeka.
+
+I began applying for positions elsewhere, hoping to make computational biochemistry and scientific software development the main focus of my work again. These were fixed-term roles below the assistant professor level, so leaving meant giving up both rank and security. Of the offers I received, I chose a position at the [Max Planck Computing and Data Facility (MPCDF)](https://www.mpcdf.mpg.de/) in Garching, where I work as part of [BioExcel](https://bioexcel.eu/) in close collaboration with MPI-NAT. In that role, I could pick up almost exactly [where I had left off in Heidelberg](2023-07-28-alumni-meeting-2023-at-hits-and-the-reminiscence-of-the-postdoc-years.md): as a computational biochemist and a member of the GROMACS developer community, working again with colleagues from MPI-BPC.[^3]
+
+By the time I left for MPCDF in September 2023, I had spent twelve years at the University of Rijeka, [teaching countless classes](../../teaching/index.md), [mentoring students](../../people/index.md#former-students) through [their theses](../../../hr/nastava/radovi/teme.md), and working to [build](../../../hr/povijest.md#nastanak-i-razvoj-ustrojbenih-jedinica) a [research group](../../index.md). I was leaving colleagues and students I had worked with for years, along with courses I had helped develop.
+
+I was not the only one to move on. Some colleagues left before I did; others have left since. [Igor](https://www.linkedin.com/in/igorjugo/) [Jugo](https://intellego.hr/) moved into IT at [KBC Rijeka](https://kbc-rijeka.hr/) and later into entrepreneurship. [Luka Vretenar](https://www.linkedin.com/in/luka-vretenar-5137473b) moved into industry, as did [Katerina Černjeka](https://www.linkedin.com/in/katerina-cernjeka), who now works in Copenhagen, Denmark. [Maja](https://maja.vrancich.com/) [Vrancich](https://vrancich.com/) returned to school teaching, and [Tomislav](https://www.linkedin.com/in/tomislav-slavi%C4%8Dek-car-mag-inf-66460440/) [Slaviček-Car](https://adventure-imminent.com/) moved into entrepreneurship.
+
+Others continued in research: [Dino](https://www.linkedin.com/in/dinopitoski/) [Pitoski](https://peoplet.com/) took a postdoctoral position at the University of Rijeka's [Centre for Artificial Intelligence and Cybersecurity](https://airi.uniri.hr/), [Draško Tomić](https://www.irb.hr/eng/About-RBI/People/Drasko-Tomic) joined the [Ruđer Bošković Institute](https://www.irb.hr/), and [Ema](https://www.linkedin.com/in/emakusen) [Kušen](https://research.wu.ac.at/de/persons/ema-kahr/) [(](https://mortalkombat.fandom.com/wiki/Shang_Tsung)[now Kahr](https://research.wu.ac.at/en/persons/ema-kahr/)[)](https://mortalkombat.fandom.com/wiki/Quan_Chi) works at the [Institute for Complex Networks](https://nm.wu-wien.ac.at/nm/) at [WU Vienna](https://www.wu.ac.at/en/) in Austria. Each of these colleagues had [their own circumstances](2025-07-14-reproducibility-of-scientific-career-paths-over-time.md) and reasons for moving on.
+
+## Back in the game with room to move
+
+At MPCDF, I finally had room to focus on that work again. The preprint I mentioned at the beginning describes porting the [Amber](https://ambermd.org/) [ff14SB and ff19SB protein](https://ambermd.org/AmberModels_proteins.php) [force fields](https://ambermd.org/AmberModels.php) to GROMACS. A [force field](https://en.wikipedia.org/wiki/Force_field_(chemistry)) specifies how the atoms in a simulation interact. The work also included the accompanying [ion parameters](https://ambermd.org/AmberModels_ions.php) and water models. Making these available in another simulation package might sound like a matter of translating parameter files, but reproducing their behavior requires more than copying the numbers.
+
+For ff19SB, we needed to [extend GROMACS to support amino-acid-specific corrections](https://gitlab.com/gromacs/gromacs/-/merge_requests/4441) to the protein backbone's conformational energy. We also had to account for differences between Amber and GROMACS in fundamental constants, parameter precision, and even [the ordering of atoms in improper dihedral interactions](https://gitlab.com/gromacs/gromacs/-/merge_requests/5566). My coauthors and I validated the converted force fields against Amber, comparing both individual interaction energies and the conformational behavior of ubiquitin in long simulations. The resulting [force-field ports](https://gitlab.com/gromacs/gromacs/-/merge_requests/5106) are now part of GROMACS, rather than a separate download that users have to find and assess themselves.
+
+Alongside the force-field work, I have been helping keep GROMACS reliable as it evolves, from [testing compatibility with newer C++ standards](https://gitlab.com/gromacs/gromacs/-/merge_requests/4447) to enabling [additional runtime checks](https://gitlab.com/gromacs/gromacs/-/merge_requests/4690) and making [compiler warnings more useful](https://gitlab.com/gromacs/gromacs/-/merge_requests/3410). I also worked on scientific validation, making sure that tests of [argon](https://gitlab.com/gromacs/gromacs/-/merge_requests/4726) and [water](https://gitlab.com/gromacs/gromacs/-/merge_requests/4768) still ran under their intended conditions when simulation defaults changed. I want us to catch these problems before users do.
+
+Testing on different platforms is useful for the same reason. I first tried [building GROMACS for Windows](2025-03-16-cross-building-and-cross-testing-gromacs-for-windows-on-linux-with-mingw-and-wine.md) using [MinGW](https://fedoraproject.org/wiki/MinGW) on [Fedora](https://fedoraproject.org/) in 2019; years later, I got it working on [Debian](https://www.debian.org/) and used Wine to run the tests. That work exposed assumptions that were easy to miss elsewhere: [trajectory-reading code could produce zero coordinates](https://gitlab.com/gromacs/gromacs/-/merge_requests/5995), while [time-selection settings could leak between analysis-tool invocations within the same process](https://gitlab.com/gromacs/gromacs/-/merge_requests/6003). Both bugs were in code shared by all platforms; testing the Windows builds happened to expose them.
+
+I also helped [improve simplified protein models using nuclear magnetic resonance measurements](https://pubs.acs.org/jacsat/article-abstract/148/12/13160/5139442) and [scale GROMACS simulations to 65,536 CPU cores](https://onlinelibrary.wiley.com/doi/full/10.1002/jcc.70059). This combination of scientific questions and software development is what I had been looking for. I work on molecular models and the software that other researchers use to run them. I enjoy the day-to-day work, even when a paper is still a long way off.
+
+## Academic conservation laws
+
+My departure also meant a change for [Matea Turalija](https://mateaturalija.github.io/), whose [PhD I continue to supervise](../../people/phd-students.md#matea-turalija). [Staying on as a teaching assistant](2023-08-28-my-perspective-after-two-years-as-a-research-and-teaching-assistant-at-fidit.md) at the [Faculty of Informatics and Digital Technologies](https://www.inf.uniri.hr/) would, in practice, have meant finding another group willing to take her on and likely changing her PhD topic to fit its research. Instead, she moved to the [Faculty of Medicine](https://medri.uniri.hr/) at the [University of Rijeka](https://uniri.hr/), where she has more opportunities to deepen her understanding of pharmaceutical research and the computational methods and software used in it.
+
+Her teaching now includes [Informatics for Pharmacists](../../../hr/nastava/kolegiji/INF-Pharma.md), giving her another way to connect our computational biochemical work with pharmaceutical education. She is also part of a growing [pharmacy programme](https://medri.uniri.hr/obrazovanje/studiji/integrirani-preddiplomski-i-diplomski-sveucilisni-studij/farmacija/), which has recently [seen its first cohort of students graduate and announced plans for an eventual independent faculty](https://www.novilist.hr/rijeka-regija/rijeka/stasala-prva-generacija-magistara-farmacije-studij-u-buducnosti-postaje-samostalni-fakultet/).
+
+There were also different views of what the [Faculty of Informatics and Digital Technologies](https://www.inf.uniri.hr/) should become. Some colleagues wanted the faculty to focus on how digital technologies are used in organizations and society, while Matea and I wanted computational biochemistry and other interdisciplinary research to have a larger place. Both were reasonable visions, though we sometimes disagreed about where the faculty should go. Moving to other institutions gave us space to pursue computational biochemistry and gave them more room to develop the faculty as they saw fit.
+
+Leaving did not mean taking the teaching materials with me. The colleagues who took over my courses have access to all the [teaching and supporting materials](2021-08-16-markdown-vs-restructuredtext-for-teaching-materials.md) [we](../../people/index.md) created, including those for [Web Programming](../../../hr/nastava/kolegiji/PW.md), [Computer Systems Administration](../../../hr/nastava/kolegiji/URS.md), [Code Optimization](../../teaching/courses/CO.md), [Computer Networks](../../../hr/nastava/kolegiji/RM.md), and [Informatics for Biotechnology](../../../hr/nastava/kolegiji/INF-BioTech.md). Much of that teaching used free and open-source software, with [Fedora](https://fedoraproject.org/)/[CentOS](https://www.centos.org/) and [Arch Linux](https://archlinux.org/) serving as teaching environments over the years. Colleagues can readily set up these environments again.
+
+I know how much work it takes to build a course from scratch, and having something to start from can help tremendously. The materials remain [openly available](https://creativecommons.org/licenses/by-sa/4.0/) on this website for colleagues to adapt to their own expertise and interests. [AI agents](2026-10-08-ai-coding-agents-and-a-rerun-of-the-operating-system-wars.md) can help with that adaptation, too.
+
+I also hope my move encouraged some of the teaching assistants I worked with to spend time elsewhere. That need not mean leaving permanently: [Milan Petrović](https://milanxpetrovic.github.io/), for example, has undertaken [research](https://hrzz.hr/mobdok-2023-asistent-milan-petrovic-zavrsio-studijski-boravak-na-eth-zurich/) [stays](https://www.satislab.eu/news/s%CE%BBtis-welcomes-milan-petrovi%C4%87-exploring-shared-research-directions-1) at [ETH Zürich](https://ethz.ch/) and [Masaryk University](https://www.muni.cz/), building collaborations around his research on social networks while continuing his PhD in Rijeka. Whether my example had anything to do with it is a question for Milan, but I will gladly take a little credit anyway.
+
+I am glad to stay in touch with former colleagues and other scientists in Croatia working in related fields, exchanging ideas and, when useful, offering advice based on my experience in Germany. My time in Heidelberg[^4] and Garching now adds up to more than five years of post-PhD research experience abroad. As a bonus, that experience also exceeds the four-year threshold in the [Ministry's criteria for hiring returning scientists](https://mzom.gov.hr/vijesti/projekt-povratka-hrvatskih-znanstvenika-u-domovinu/924). Who knows whether that will ever come into play, but it leaves another possibility open for the future.
+
+Looking back, I would say that everyone got something out of the change, even if it was not quite what we had originally planned. To adapt a line from [Dragoslav “Car”](https://www.krug.rs/3866-aplauzi-za-bikovica-i-ekipu-filma-juzni-vetar-video/) in [South Wind (srb. *Južni vetar*)](https://rezim.rs/juzni-vetar-film):
+
+> This is the world of academia; everyone in it has to get something: some a fresh restart[^5] and a new scientific home, others more room in the old one.
+
+Much of what we built in Rijeka continues, and I get to do the scientific work I wanted to do, the way I wanted to do it. Giving up rank and security was a real cost, but I would make the same choice again.
+
+[^1]: For a bird’s-eye view of the scenic [Faßberg campus](https://www.mpinat.mpg.de/anfahrt-fassbergcampus), [see](https://youtu.be/4nVm1CDwtkQ) [the](https://youtu.be/7yJ9fS4l-sQ) [drone](https://youtu.be/9ECB3V2wbuU) [videos](https://youtu.be/9eCD8i9foxo) [on](https://youtu.be/AURdIMEjS_E) [the](https://youtu.be/C5S5Axf9AiY) [Horizons](https://youtu.be/KqABsiK8108) [in](https://youtu.be/L613Ta1otYs) [Molecular](https://youtu.be/MB0XB5DKxY0) [Biology](https://youtu.be/V8VkKDx6Pg4) [channel](https://youtu.be/VZf4aXkThnE) [on](https://youtu.be/vOilSElEiCw) [YouTube](https://youtu.be/xa8n6kVvOmw).
+
+[^2]: Development of [rDock](https://rdock.github.io/) has since [resumed](https://github.com/CBDD/rDock), although it has taken a different modernization path: our switch to [Meson](https://mesonbuild.com/) and [Eigen](https://libeigen.gitlab.io/), for example, was not adopted. I like to think we at least provided some encouragement.
+
+[^3]: [The Max Planck Institute for Biophysical Chemistry (MPI-BPC)](https://en.wikipedia.org/wiki/Max_Planck_Institute_for_Biophysical_Chemistry) merged with the Max Planck Institute for Experimental Medicine in 2022 to form MPI-NAT.
+
+[^4]: My two-plus years at HITS also helped the faculty's mobility figures. Averaged across twenty-something staff members, that amounted to about a month abroad each. Statistically, we had all been quite mobile.
+
+[^5]: Normally, “a fresh start,” but this was my second stint in German academia.
