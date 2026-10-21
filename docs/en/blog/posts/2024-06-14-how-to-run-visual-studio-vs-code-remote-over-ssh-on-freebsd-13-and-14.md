@@ -75,7 +75,7 @@ This is free software; you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
 ```
 
-On the client side, you should adjust OpenSSH's config file to use Linuxulator's `bash`, for example:
+On the client side, you should adjust [OpenSSH's config file](../../../hr/nastava/materijali/openssh-sigurna-ljuska.md) to use Linuxulator's `bash`, for example:
 
 ``` shell
 cat ~/.ssh/config

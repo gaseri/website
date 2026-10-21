@@ -40,4 +40,4 @@ I would also like to add that this post is my second one on this blog. Bloggers,
 
 ## Ph.D. done
 
-In other news, I defended my Ph.D. in computer science on June 8th, at [Faculty of Electrical Engineering and Computing](https://www.fer.unizg.hr/), [University of Zagreb](http://www.unizg.hr/). The defense itself had just the right amount of epic and stress from my point of view, while the rest of the story went [like PHD Comics predicted](https://www.phdcomics.com/comics/archive.php?comicid=1000).
+In other news, I defended [my Ph.D. thesis](../../people/principal-investigator.md#books-and-theses) in computer science on June 8th, at [Faculty of Electrical Engineering and Computing](https://www.fer.unizg.hr/), [University of Zagreb](http://www.unizg.hr/). The defense itself had just the right amount of epic and stress from my point of view, while the rest of the story went [like PHD Comics predicted](https://www.phdcomics.com/comics/archive.php?comicid=1000).

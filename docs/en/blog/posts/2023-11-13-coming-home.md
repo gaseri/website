@@ -75,7 +75,7 @@ ls -ld /home
 lrwxr-xr-x  1 root wheel 11  7 tra   2023 /home -> usr/home
 ```
 
-Since I made sure to keep the pre-upgrade ZFS snapshot (that's fairly easy when you normally run [zfs-destroy(8)](https://openzfs.github.io/openzfs-docs/man/master/8/zfs-destroy.8.html) on old snapshots only when disk usage becomes a problem), there was little worry that the machine would be put in a nonrecoverable state. Let's see if `/usr/home` can simply be moved to `/home`.
+Since I made sure to keep the [pre-upgrade ZFS snapshot](../../../hr/nastava/materijali/zfs-datotecni-sustav-upravitelj-volumenima.md) (that's fairly easy when you normally run [zfs-destroy(8)](https://openzfs.github.io/openzfs-docs/man/master/8/zfs-destroy.8.html) on old snapshots only when disk usage becomes a problem), there was little worry that the machine would be put in a nonrecoverable state. Let's see if `/usr/home` can simply be moved to `/home`.
 
 ``` tcsh
 doas zfs rename zroot/usr/home zroot/home
@@ -114,7 +114,7 @@ Stopping syncthing.
 Waiting for PIDS: 34480.
 ```
 
-One can now log out as a regular user and log in as `root` on the display and the keyboard attached to the system, if any. As this particular machine is headless and without an input device, I opted to log in as `root` via SSH. To do this, one has to replace the line in the OpenSSH daemon configuration file `/etc/ssh/sshd_config`. Instead of
+One can now log out as a regular user and log in as `root` on the display and the keyboard attached to the system, if any. As this particular machine is headless and without an input device, I opted to log in as `root` via [SSH](../../../hr/nastava/materijali/openssh-sigurna-ljuska.md). To do this, one has to replace the line in the OpenSSH daemon configuration file `/etc/ssh/sshd_config`. Instead of
 
 ``` apacheconf
 #PermitRootLogin no

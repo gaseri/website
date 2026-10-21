@@ -22,7 +22,7 @@ Photo source: [Vincent van Zalinge (@vincentvanzalinge) | Unsplash](https://unsp
 
 ---
 
-The last day of July happened to be the day that [Domagoj Margan](https://domargan.net/), a former student teaching assistant and a great friend of mine, set up his own [DigitalOcean](https://www.digitalocean.com/) [droplet](https://www.digitalocean.com/products/droplets/) running a web server and serving his professional website on his own domain `domargan.net`. For a few years, I was helping him by providing space on the server I owned and maintained, and I was always glad to do so. Let me explain why.
+The last day of July happened to be the day that [Domagoj Margan](https://domargan.net/), [a former student teaching assistant](../../people/index.md#former-students) and a great friend of mine, set up his own [DigitalOcean](https://www.digitalocean.com/) [droplet](https://www.digitalocean.com/products/droplets/) running a web server and serving his professional website on his own domain `domargan.net`. For a few years, I was helping him by providing space on the server I owned and maintained, and I was always glad to do so. Let me explain why.
 
 <!-- more -->
 

@@ -34,7 +34,7 @@ Configuring [nginx to redirect to HTTPS](https://serverfault.com/questions/25047
 
 Sphinx-produced static content does not hardcode local URLs, and the resources loaded from CDNs in [Sphinx Bootstrap Theme](https://ryan-roemer.github.io/sphinx-bootstrap-theme/) are already loaded via HTTPS. No changes were needed.
 
-WordPress requires you to set the HTTPS URL in Admin, Settings/General. If you forget to do so before you go HTTPS only, you can [still use the config file to adjust the URL](https://codex.wordpress.org/Changing_The_Site_URL).
+[WordPress](../../../hr/nastava/materijali/wordpress-instalacija-web-aplikacije.md) requires you to set the HTTPS URL in Admin, Settings/General. If you forget to do so before you go HTTPS only, you can [still use the config file to adjust the URL](https://codex.wordpress.org/Changing_The_Site_URL).
 
 Moodle requires you to [set $CFG->wwwroot in the config file](https://docs.moodle.org/33/en/Configuration_file) to the HTTPS URL of your website.
 
