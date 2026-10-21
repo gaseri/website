@@ -21,6 +21,8 @@ Photo source: [Roman Synkevych (@synkevych) | Unsplash](https://unsplash.com/pho
 
 ---
 
+We have [relied on MkDocs](2021-08-16-markdown-vs-restructuredtext-for-teaching-materials.md) for our teaching materials and this website for several years, so its future is more than a passing interest for us.
+
 [The slow collapse of MkDocs](https://fpgmaas.com/blog/collapse-of-mkdocs/) is, by now, well documented and worth reading if you are interested in the details of it.
 
 In summary, MkDocs is unlikely to get future releases compatible with its current version, which makes [the instructions for setting up a GitHub Action for MkDocs deployment](2022-11-01-publishing-material-for-mkdocs-website-to-github-pages-using-custom-actions-workflow.md) in need of an update. Without further ado, here are two good options to move forward.

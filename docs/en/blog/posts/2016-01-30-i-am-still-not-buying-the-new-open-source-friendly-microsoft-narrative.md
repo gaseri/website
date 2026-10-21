@@ -34,7 +34,7 @@ Put simply, I think all the projects Microsoft has opened up so far are a nice s
 
 ## Step 1: fully support OpenDocument and make it the default format in Office applications
 
-Microsoft has accepted the web standards defined by [W3C](https://www.w3.org/). Making [OpenDocument](https://opendocumentformat.org/) the default format in Office would be the equivalent of accepting independently standardized HTML and CSS. Even after accepting the format, Microsoft could still compete with free and open-source office suites. They could offer more features, a more beautiful user interface, better performance, or better quality support. They would, however, lose the vendor lock-in ability.
+[Microsoft has accepted the web standards](2015-05-01-browser-wars.md) defined by [W3C](https://www.w3.org/). Making [OpenDocument](https://opendocumentformat.org/) the default format in Office would be the equivalent of accepting independently standardized HTML and CSS. Even after accepting the format, Microsoft could still compete with free and open-source office suites. They could offer more features, a more beautiful user interface, better performance, or better quality support. They would, however, lose the vendor lock-in ability.
 
 ## Step 2: Open source large parts of Windows and the tools required to build custom versions
 

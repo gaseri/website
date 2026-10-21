@@ -38,7 +38,7 @@ Our everyday [scientific](../../projects/index.md) and [educational](../../teach
 
 We use [Mozilla](https://www.mozilla.org/) [Firefox](https://www.mozilla.org/firefox/), [FireDragon](https://forum.garudalinux.org/t/firedragon-librewolf-fork/5018), and [Brave](https://brave.com/) for web browing and development.
 
-We use [Visual Studio Code](https://code.visualstudio.com/) for writing and editing [Markdown](https://code.visualstudio.com/docs/languages/markdown) (to be processed by [MkDocs](https://www.mkdocs.org/) or [Pandoc](https://pandoc.org/)) and [LaTeX](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop), [C++ development](https://code.visualstudio.com/docs/languages/cpp), and [Python development](https://code.visualstudio.com/docs/languages/python).
+We use [Visual Studio Code](https://code.visualstudio.com/) for [writing and editing](2021-08-16-markdown-vs-restructuredtext-for-teaching-materials.md) [Markdown](https://code.visualstudio.com/docs/languages/markdown) (to be processed by [MkDocs](https://www.mkdocs.org/) or [Pandoc](https://pandoc.org/)) and [LaTeX](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop), [C++ development](https://code.visualstudio.com/docs/languages/cpp), and [Python development](https://code.visualstudio.com/docs/languages/python).
 
 We use [Syncthing](https://syncthing.net/) for file synchronization and sharing.
 
@@ -56,7 +56,7 @@ We plan to switch the storage server to [TrueNAS SCALE](https://www.truenas.com/
 ## Cloud services
 
 - ~~[Hetzner Cloud x86 VPS](https://www.hetzner.com/cloud) running [Arch Linux](https://archlinux.org/)~~
-- [GitHub Actions](https://github.com/features/actions), used for building, and [GitHub Pages](https://pages.github.com/), used for hosting [gaseri.org](../../../index.md) (web site)
+- [GitHub Actions](https://github.com/features/actions), used for [building](2022-11-01-publishing-material-for-mkdocs-website-to-github-pages-using-custom-actions-workflow.md), and [GitHub Pages](https://pages.github.com/), used for hosting [gaseri.org](../../../index.md) (web site)
 - [HackMD](https://hackmd.io/), used for collaborative drafting of Markdown documents
 - [Overleaf](https://www.overleaf.com/), used for collaborative drafting of LaTeX documents
 

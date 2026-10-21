@@ -36,7 +36,7 @@ Tea talked a lot about her experience while writing poetry, the random spurs of 
 
 Once you make a name for yourself, living up to the standards that come with it is not easy or simple. Take, for example, [Wait But Why](https://waitbutwhy.com/). I recently read two of their articles about [Elon Musk](https://waitbutwhy.com/2015/05/elon-musk-the-worlds-raddest-man.html) and [Tesla Motors](https://waitbutwhy.com/2015/06/how-tesla-will-change-your-life.html), and I highly recommend both of them. Wait But Why will have a hard time following up on that, pretty much like anyone who does the quality work.
 
-I would also like to add that this post is my second one on this blog. Bloggers, just like the musicians and the poetry writers, also have an entire lifetime to come up with the first post, and only a short time afterward for a follow-up.
+I would also like to add that this post is my second one on this blog. Bloggers, just like the musicians and the poetry writers, also have an entire lifetime to come up with [the first post](2015-05-01-browser-wars.md), and only a short time afterward for a follow-up.
 
 ## Ph.D. done
 

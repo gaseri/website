@@ -27,7 +27,7 @@ I would like to emphasize the two reasons that she mentioned why career guidance
 > - **Limited experience of the mentors:** Many mentors rely on their own experience in a system they are part of and know very well, and outside of which they often cannot help us much (depending, of course, on the field and personal affinities).
 > - **The “academia-only” narrative:** Continuing higher education and a doctorate seem to presuppose a postdoc position and a teaching career. In addition, a good number of academics I was (and still am) surrounded by are convinced that academia is the only place where you can be creative and flexible, which is not true and makes it difficult to explore other possibilities.
 
-I thought quite a bit about both of these points, given that I am guiding [Matea Turalija](https://mateaturalija.github.io/) through her PhD journey and I am eager to help her with my acquired experience as much as I can. However, as Klara explained above, this is far from a trivial endeavor.
+I thought quite a bit about both of these points, given that I am guiding [Matea Turalija](https://mateaturalija.github.io/) through [her PhD journey](2023-08-28-my-perspective-after-two-years-as-a-research-and-teaching-assistant-at-fidit.md) and I am eager to help her with my acquired experience as much as I can. However, as Klara explained above, this is far from a trivial endeavor.
 
 <!-- more -->
 

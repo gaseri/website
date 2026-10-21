@@ -30,7 +30,7 @@ Today I vaguely remembered there was one occasion in 2006 or 2007 when some guy 
 
 Google is a powerful tool. [The original thread](https://www.mail-archive.com/linux-utf8@nl.linux.org/msg05444.html) from March 2007 on (now defunct) linux-utf8 mailing list can be found on [The Mail Archive](https://www.mail-archive.com/). [The software website](http://u8u16.costar.sfu.ca/) is still up. [The patent](https://www.google.com/patents/US7783862) is out there as well.
 
-Back in 2007 I was in my 3rd year of undergraduate study of mathematics (major) and computer science (minor), used to do Linux workshops in my spare time, and was aiming to do a Ph.D. in mathematics. I disliked the usage and development of proprietary research software which was quite common in much of the computer science research I saw back then. Unlike these researchers, I believed that that **academia and free software community agreed that knowledge should be free as in freedom**, and I wanted to be a part of such a community.
+Back in 2007 I was in my 3rd year of undergraduate study of mathematics (major) and computer science (minor), used to do Linux workshops in my spare time, and was aiming to do a Ph.D. in mathematics. I disliked the usage and development of [proprietary research software](2015-09-14-what-is-the-price-of-open-source-fear-uncertainty-and-doubt.md) which was quite common in much of the computer science research I saw back then. Unlike these researchers, I believed that that **academia and free software community agreed that knowledge should be free as in freedom**, and I wanted to be a part of such a community.
 
 ## Academic ideals
 
