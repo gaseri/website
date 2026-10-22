@@ -10,7 +10,7 @@ author: Vedran Miletić
 
 -- [A Hero of Our Time](https://www.gutenberg.org/ebooks/913) by [Mikhail Iurevich Lermontov](https://novaonline.nvcc.edu/eli/evans/his241/notes/lermontov.html)
 
-[Dr. Vedran](https://vedran.miletic.net/) [Miletić](https://www.miletic.net/) is the principal investigator of the [Group for Applications and Services on Exascale Research Infrastructure (GASERI)](../index.md) and works at the [Max Planck Computing and Data Facility (MPCDF)](https://www.mpcdf.mpg.de/) in Garching as part of [BioExcel](https://bioexcel.eu/). He was previously an assistant professor of computer science at the [Faculty of Informatics and Digital Technologies](https://www.inf.uniri.hr/), [University of Rijeka](https://uniri.hr/). More information is available in his [curriculum vitae](https://vedran.miletic.net/files/cv-vedran-miletic.pdf).
+[Dr. Vedran](https://vedran.miletic.net/) [Miletić](https://www.miletic.net/) is the principal investigator (PI) of the [Group for Applications and Services on Exascale Research Infrastructure (GASERI)](../index.md) and works at the [Max Planck Computing and Data Facility (MPCDF)](https://www.mpcdf.mpg.de/) in Garching as part of [BioExcel](https://bioexcel.eu/). He was previously an assistant professor of computer science at the [Faculty of Informatics and Digital Technologies](https://www.inf.uniri.hr/), [University of Rijeka](https://uniri.hr/). More information is available in his [curriculum vitae](https://vedran.miletic.net/files/cv-vedran-miletic.pdf).
 
 ## Research
 
