@@ -441,9 +441,6 @@ nav:
   - 🇺🇸 Contents in English:
       - About the group: en/index.md
       - Introductory presentation: en/introductory-presentation.md
-      - Blog:
-          - Latest posts: en/blog/index.md
-          - Tags: en/blog/tags.md
       - People:
           - People index: en/people/index.md
           - Principal investigator: en/people/principal-investigator.md
@@ -501,7 +498,9 @@ nav:
           - Molecular dynamics simulation for exascale supercomputing era -- scientific research and software engineering challenges: en/talks/2023-09-16-molecular-dynamics-simulation-for-exascale-supercomputing-era-scientific-research-and-software-engineering-challenges.md
           - LLVM in HPC - language frontends, GPU backends, and vendor compilers: en/talks/2025-10-28-llvm-in-hpc-language-frontends-gpu-backends-and-vendor-compilers.md
       - Very important information: en/very-important-information.md
-  - GASERI Blog: https://gaseri.org/en/blog/
+  - GASERI Blog:
+      - Latest posts: en/blog/index.md
+      - Tags: en/blog/tags.md
   - RxTx: https://rxtx.one/
   - RxTx Research: https://rxtx.one/research/
 
