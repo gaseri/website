@@ -2,6 +2,7 @@
 hide:
   - navigation
   - toc
+icon: fontawesome/solid/house
 ---
 
 # 😎 GASERI – Grupa za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi / **G**roup for **A**pplications and **S**ervices on **E**xascale **R**esearch **I**nfrastructure

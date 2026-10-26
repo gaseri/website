@@ -1,4 +1,8 @@
-# Latest blog posts
+---
+icon: fontawesome/solid/newspaper
+---
+
+# Latest posts on the GASERI Blog
 
 ![GASERI logo with text](../../images/gaseri-logo-text.png)
 

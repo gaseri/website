@@ -1,5 +1,6 @@
 ---
 author: Vedran Miletić
+icon: fontawesome/solid/flag-checkered
 ---
 
 # O grupi
