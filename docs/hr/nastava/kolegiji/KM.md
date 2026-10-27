@@ -1,6 +1,1 @@
----
-tags:
-  - (kolegij) km
----
-
-# Komunikacijske mreže
+# Komunikacijske mreže (KM)

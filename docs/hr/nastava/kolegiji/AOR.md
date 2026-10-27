@@ -1,9 +1,4 @@
----
-tags:
-  - (kolegij) aor
----
-
-# Arhitektura i organizacija računala
+# Arhitektura i organizacija računala (AOR)
 
 ## Predavanja i vježbe
 

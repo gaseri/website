@@ -1,6 +1,1 @@
----
-tags:
-  - (kolegij) srs
----
-
-# Superračunalni sustavi
+# Superračunalni sustavi (SRS)

@@ -1,9 +1,4 @@
----
-tags:
-  - (kolegij) ds
----
-
-# Distribuirani sustavi
+# Distribuirani sustavi (DS)
 
 ## Vježbe
 

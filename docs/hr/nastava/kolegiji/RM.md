@@ -1,9 +1,4 @@
----
-tags:
-  - (kolegij) rm
----
-
-# Računalne mreže
+# Računalne mreže (RM)
 
 ## Auditorne vježbe
 

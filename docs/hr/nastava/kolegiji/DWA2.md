@@ -1,9 +1,4 @@
----
-tags:
-  - (kolegij) dwa2
----
-
-# Dinamičke web aplikacije 2
+# Dinamičke web aplikacije 2 (DWA2)
 
 ## Vježbe
 

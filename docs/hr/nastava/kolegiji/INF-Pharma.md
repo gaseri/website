@@ -1,9 +1,4 @@
----
-tags:
-  - (kolegij) inf-pharma
----
-
-# Informatika za farmaceute
+# Informatika za farmaceute (INF-Pharma)
 
 ## Predavanja
 

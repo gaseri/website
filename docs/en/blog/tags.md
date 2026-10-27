@@ -1,6 +1,5 @@
 # Tags
 
-!!! tip
-    Blog tags describe specific subjects. Prefixed tags of the form `(category) tag` are from non-blog pages.
+Tags connect blog posts and tutorials about the same subjects.
 
 <!-- material/tags -->

@@ -1,9 +1,4 @@
----
-tags:
-  - (kolegij) ipvo
----
-
-# Infrastruktura za podatke velikog obujma
+# Infrastruktura za podatke velikog obujma (IPVO)
 
 ## Vježbe
 

@@ -1,9 +1,4 @@
----
-tags:
-  - (kolegij) urs
----
-
-# Upravljanje računalnim sustavima
+# Upravljanje računalnim sustavima (URS)
 
 ## Vježbe
 

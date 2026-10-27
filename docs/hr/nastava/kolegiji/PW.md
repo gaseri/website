@@ -1,9 +1,4 @@
----
-tags:
-  - (kolegij) pw
----
-
-# Programiranje za web
+# Programiranje za web (PW)
 
 ## Predavanja
 

@@ -1,9 +1,4 @@
----
-tags:
-  - (course) co
----
-
-# Code optimization
+# Code optimization (CO)
 
 !!! info
     This page is also available [in Croatian](../../../hr/nastava/kolegiji/OPK.md).

@@ -1,9 +1,4 @@
----
-tags:
-  - (kolegij) opk
----
-
-# Optimizacija programskog koda
+# Optimizacija programskog koda (OPK)
 
 !!! info
     Ova je stranica također dostupna [na engleskom jeziku](../../../en/teaching/courses/CO.md).

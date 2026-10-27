@@ -1,9 +1,4 @@
----
-tags:
-  - (kolegij) oi1
----
-
-# Osnove informatike 1
+# Osnove informatike 1 (OI1)
 
 ## Vježbe
 

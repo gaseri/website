@@ -1,7 +1,7 @@
 ---
 author: Wes Barnett, Vedran Miletić
 tags:
-  - (tutorial) gromacs
+  - GROMACS
 ---
 
 # GROMACS tutorials: overview
