@@ -4,12 +4,10 @@ authors:
   - vedranmiletic
 date:
   created: 2015-07-03
+categories:
+  - Openness
 tags:
-  - free and open-source software
-  - popular science
-  - information revolution
-  - red hat
-  - systemd
+  - open-source business models
 ---
 
 # Open-source magic all around the world

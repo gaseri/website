@@ -5,10 +5,12 @@ authors:
 date:
   created: 2026-04-14
   updated: 2026-10-14
+categories:
+  - Publishing
 tags:
-  - git
-  - markdown
-  - mkdocs
+  - MkDocs
+  - GitHub Pages
+  - GitHub Actions
 ---
 
 # The future of MkDocs: ProperDocs and Zensical

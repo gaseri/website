@@ -5,14 +5,11 @@ authors:
 date:
   created: 2023-06-23
   updated: 2024-05-28
+categories:
+  - Computing
 tags:
-  - academia
-  - free and open-source software
-  - scientific software
-  - mozilla
-  - web server
-  - amd
-  - c++
+  - self-hosting
+  - system administration
 ---
 
 # What hardware, software, and cloud services do we use?

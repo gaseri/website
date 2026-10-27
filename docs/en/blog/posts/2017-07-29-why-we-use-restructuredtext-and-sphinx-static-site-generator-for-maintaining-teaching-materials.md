@@ -4,14 +4,11 @@ authors:
   - vedranmiletic
 date:
   created: 2017-07-29
+categories:
+  - Publishing
 tags:
-  - restructuredtext
-  - sphinx
-  - markdown
-  - mkdocs
-  - git
-  - mediawiki
-  - php
+  - reStructuredText
+  - teaching
 ---
 
 # Why we use reStructuredText and Sphinx static site generator for maintaining teaching materials

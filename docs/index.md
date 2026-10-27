@@ -23,7 +23,7 @@ icon: fontawesome/solid/house
 
     ---
 
-    - [Latest blog posts](en/blog/index.md) and [posts grouped by tags](en/blog/tags.md#tag:academia)
+    - [Latest blog posts](en/blog/index.md) and [posts grouped by tags](en/blog/tags.md)
     - [Principal investigator](en/people/principal-investigator.md) and [PhD students](en/people/phd-students.md)
     - [Introductory presentation](en/introductory-presentation.md)
     - [Code optimization](en/teaching/courses/CO.md) course ([YUFE](https://www.yufe.eu/), [FIDIT](https://www.inf.uniri.hr/))

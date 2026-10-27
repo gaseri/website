@@ -4,12 +4,11 @@ authors:
   - vedranmiletic
 date:
   created: 2016-01-30
+categories:
+  - Openness
 tags:
-  - microsoft
-  - opendocument
-  - free and open-source software
-  - secure boot
-  - web standards
+  - open standards
+  - vendor lock-in
 ---
 
 # I am still not buying the new-open-source-friendly-Microsoft narrative

@@ -2,11 +2,11 @@
 author: Jovan Jokić
 date:
   created: 2016-12-14
+categories:
+  - Openness
 tags:
-  - amd
-  - free and open-source software
-  - gpu computing
-  - firmware
+  - AMD
+  - GPU computing
 ---
 
 # Celebrating Graphics and Compute Freedom Day

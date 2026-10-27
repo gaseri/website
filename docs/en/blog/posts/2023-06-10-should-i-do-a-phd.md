@@ -4,16 +4,13 @@ authors:
   - vedranmiletic
 date:
   created: 2023-06-10
+categories:
+  - Academia
+  - Openness
 tags:
-  - phd
-  - academia
-  - free and open-source software
+  - PhD
+  - academic careers
   - scientific software
-  - cp2k
-  - gromacs
-  - amd
-  - intel
-  - firmware
 ---
 
 # Should I do a Ph.D.?

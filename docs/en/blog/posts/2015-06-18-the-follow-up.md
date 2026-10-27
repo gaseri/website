@@ -4,12 +4,10 @@ authors:
   - vedranmiletic
 date:
   created: 2015-06-18
+categories:
+  - Academia
 tags:
-  - elon musk
-  - fer
-  - phd
-  - poetry
-  - tesla
+  - PhD
 ---
 
 # The follow-up

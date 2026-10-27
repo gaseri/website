@@ -4,12 +4,14 @@ authors:
   - vedranmiletic
 date:
   created: 2026-10-18
+categories:
+  - Academia
+  - Computing
 tags:
-  - academia
-  - research funding
-  - free and open-source software
+  - academic careers
+  - GROMACS
   - scientific software
-  - gromacs
+  - teaching
 ---
 
 # This is academia; everybody has to get something

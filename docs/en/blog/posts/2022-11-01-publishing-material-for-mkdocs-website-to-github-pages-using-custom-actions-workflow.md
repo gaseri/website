@@ -5,12 +5,12 @@ authors:
 date:
   created: 2022-11-01
   updated: 2026-04-11
+categories:
+  - Publishing
 tags:
-  - git
-  - web server
-  - letsencrypt
-  - markdown
-  - mkdocs
+  - MkDocs
+  - GitHub Pages
+  - GitHub Actions
 ---
 
 # Publishing (Material for) MkDocs website to GitHub Pages using custom Actions workflow

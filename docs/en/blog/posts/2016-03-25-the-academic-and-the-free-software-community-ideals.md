@@ -4,12 +4,12 @@ authors:
   - vedranmiletic
 date:
   created: 2016-03-25
+categories:
+  - Openness
+  - Academia
 tags:
-  - academia
-  - free and open-source software
-  - software licensing
   - software patents
-  - unicode
+  - software licensing
 ---
 
 # The academic and the free software community ideals

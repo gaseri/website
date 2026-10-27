@@ -2,14 +2,12 @@
 author: Marko Luka Zubčić
 date:
   created: 2016-02-23
+categories:
+  - Openness
 tags:
-  - docker
   - open access
-  - free and open-source software
-  - peerj
-  - plos
-  - postgresql
-  - tesla
+  - open-source business models
+  - vendor lock-in
 ---
 
 # Free to know: Open access and open source

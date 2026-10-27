@@ -4,14 +4,12 @@ authors:
   - vedranmiletic
 date:
   created: 2026-10-08
+categories:
+  - Openness
 tags:
-  - artificial intelligence
-  - decentralization
-  - free and open-source software
-  - information revolution
-  - linux
-  - freebsd
-  - microsoft
+  - AI coding agents
+  - vendor lock-in
+  - open standards
 ---
 
 # AI coding agents and a rerun of the operating-system wars

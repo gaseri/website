@@ -4,14 +4,13 @@ authors:
   - vedranmiletic
 date:
   created: 2015-07-28
+categories:
+  - Academia
 tags:
-  - academia
-  - researchers night
-  - cp2k
-  - nwchem
-  - gromacs
-  - nvidia
-  - gpu computing
+  - computational chemistry
+  - academic careers
+  - Croatia
+  - interdisciplinary research
 ---
 
 # Joys and pains of interdisciplinary research

@@ -4,18 +4,15 @@ authors:
   - vedranmiletic
 date:
   created: 2015-09-14
+categories:
+  - Openness
+  - Academia
 tags:
-  - american chemical society
-  - cp2k
-  - ethz
-  - nwchem
-  - q-chem
-  - free and open-source software
   - scientific software
   - software licensing
-  - linux
-  - debian
-  - red hat
+  - vendor lock-in
+  - computational chemistry
+  - open-source business models
 ---
 
 # What is the price of open-source fear, uncertainty, and doubt?

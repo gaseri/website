@@ -4,14 +4,11 @@ authors:
   - vedranmiletic
 date:
   created: 2016-01-17
+categories:
+  - Openness
 tags:
-  - amd
-  - free and open-source software
-  - firmware
-  - intel
-  - nvidia
-  - gpu computing
-  - linux
+  - AMD
+  - GPU computing
 ---
 
 # AMD and the open-source community are writing history

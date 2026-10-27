@@ -4,10 +4,10 @@ authors:
   - vedranmiletic
 date:
   created: 2017-07-22
+categories:
+  - Computing
 tags:
-  - web server
-  - sphinx
-  - letsencrypt
+  - system administration
 ---
 
 # Enabling HTTP/2, HTTPS, and going HTTPS-only on inf2

@@ -4,14 +4,12 @@ authors:
   - vedranmiletic
 date:
   created: 2025-03-16
+categories:
+  - Computing
 tags:
+  - GROMACS
+  - cross-compilation
   - scientific software
-  - gromacs
-  - linux
-  - debian
-  - red hat
-  - free and open-source software
-  - c++
 ---
 
 # Cross-building and cross-testing GROMACS for Windows on Linux with MinGW and Wine

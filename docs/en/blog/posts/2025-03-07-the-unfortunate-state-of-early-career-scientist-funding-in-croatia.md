@@ -4,9 +4,12 @@ authors:
   - vedranmiletic
 date:
   created: 2025-03-07
+categories:
+  - Academia
 tags:
-  - academia
   - research funding
+  - academic careers
+  - Croatia
 ---
 
 # The unfortunate state of early-career scientist funding in Croatia

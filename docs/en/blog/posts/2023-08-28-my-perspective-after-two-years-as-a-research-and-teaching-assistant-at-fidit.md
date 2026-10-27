@@ -4,14 +4,13 @@ authors:
   - mateaturalija
 date:
   created: 2023-08-28
+categories:
+  - Academia
 tags:
-  - phd
-  - academia
-  - gromacs
-  - markdown
-  - mkdocs
-  - systemd
-  - red hat
+  - PhD
+  - academic careers
+  - computational chemistry
+  - teaching
 ---
 
 # My perspective after two years as a research and teaching assistant at FIDIT

@@ -633,7 +633,12 @@ plugins:
       blog_toc: true
       post_url_date_format: yyyy-MM-dd
       post_url_format: "{date}-{slug}"
-      categories: false
+      categories: true
+      categories_allowed:
+        - Academia
+        - Openness
+        - Computing
+        - Publishing
   - search
   - social:
       enabled: !ENV [CI, false]
@@ -648,5 +653,6 @@ plugins:
         as_creation: date.created
         as_update: date.updated
       categories:
+        - categories
         - tags
   - meta-descriptions

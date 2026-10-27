@@ -4,12 +4,10 @@ authors:
   - vedranmiletic
 date:
   created: 2015-05-01
+categories:
+  - Openness
 tags:
-  - free and open-source software
-  - mozilla
-  - web standards
-  - opendocument
-  - popular science
+  - open standards
 ---
 
 # Browser wars

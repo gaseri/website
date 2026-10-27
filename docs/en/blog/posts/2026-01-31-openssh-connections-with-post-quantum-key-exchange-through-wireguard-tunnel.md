@@ -4,12 +4,11 @@ authors:
  - vedranmiletic
 date:
   created: 2026-01-31
+categories:
+  - Computing
 tags:
- - free and open-source software
- - freebsd
- - linux
- - openssh
- - wireguard
+  - OpenSSH
+  - WireGuard
 ---
 
 # OpenSSH connections with post-quantum key exchange through WireGuard tunnel

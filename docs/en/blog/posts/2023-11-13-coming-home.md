@@ -4,13 +4,12 @@ authors:
   - vedranmiletic
 date:
   created: 2023-11-13
+categories:
+  - Computing
 tags:
-  - freebsd
-  - zfs
-  - linux
-  - openssh
-  - unix
-  - wireguard
+  - FreeBSD
+  - ZFS
+  - system administration
 ---
 
 # Coming `/home`

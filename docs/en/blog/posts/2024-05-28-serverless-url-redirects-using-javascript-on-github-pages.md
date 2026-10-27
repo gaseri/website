@@ -4,12 +4,11 @@ authors:
   - vedranmiletic
 date:
   created: 2024-05-28
+categories:
+  - Publishing
 tags:
-  - git
-  - web server
-  - web standards
-  - javascript
-  - mkdocs
+  - GitHub Pages
+  - URL redirects
 ---
 
 # Serverless URL redirects using JavaScript on GitHub Pages

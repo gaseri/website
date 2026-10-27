@@ -4,14 +4,12 @@ authors:
   - vedranmiletic
 date:
   created: 2025-07-14
+categories:
+  - Academia
 tags:
-  - academia
-  - free and open-source software
-  - scientific software
-  - cp2k
-  - phd
-  - linux
-  - freebsd
+  - academic careers
+  - PhD
+  - Croatia
 ---
 
 # Reproducibility of scientific career paths over time

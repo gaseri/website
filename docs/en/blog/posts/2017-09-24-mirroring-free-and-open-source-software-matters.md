@@ -4,14 +4,11 @@ authors:
   - vedranmiletic
 date:
   created: 2017-09-24
+categories:
+  - Openness
 tags:
-  - web server
-  - free and open-source software
-  - academia
+  - software mirrors
   - decentralization
-  - linux
-  - debian
-  - red hat
 ---
 
 # Mirroring free and open-source software matters

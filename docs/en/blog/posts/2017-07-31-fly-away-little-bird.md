@@ -4,12 +4,11 @@ authors:
   - vedranmiletic
 date:
   created: 2017-07-31
+categories:
+  - Openness
 tags:
-  - web server
-  - mozilla
-  - domain name
   - decentralization
-  - php
+  - self-hosting
 ---
 
 # Fly away, little bird

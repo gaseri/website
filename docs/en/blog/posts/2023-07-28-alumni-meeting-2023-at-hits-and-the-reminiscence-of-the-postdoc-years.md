@@ -4,14 +4,14 @@ authors:
   - vedranmiletic
 date:
   created: 2023-07-28
+categories:
+  - Academia
+  - Computing
 tags:
-  - academia
-  - scientific software
-  - gromacs
-  - amd
-  - gpu computing
-  - systemd
-  - red hat
+  - academic careers
+  - GROMACS
+  - GPU computing
+  - interdisciplinary research
 ---
 
 # Alumni Meeting 2023 at HITS and the reminiscence of the postdoc years

@@ -4,11 +4,12 @@ authors:
   - vedranmiletic
 date:
   created: 2022-02-24
+categories:
+  - Openness
+  - Computing
 tags:
   - archiving and compression
-  - free and open-source software
   - software licensing
-  - web standards
 ---
 
 # Don't use RAR

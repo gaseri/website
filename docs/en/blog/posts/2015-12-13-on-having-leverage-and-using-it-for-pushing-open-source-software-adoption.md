@@ -4,12 +4,13 @@ authors:
   - vedranmiletic
 date:
   created: 2015-12-13
+categories:
+  - Openness
+  - Academia
 tags:
-  - cp2k
-  - ethz
-  - mit
-  - free and open-source software
-  - q-chem
+  - computational chemistry
+  - scientific software
+  - academic careers
 ---
 
 # On having leverage and using it for pushing open-source software adoption

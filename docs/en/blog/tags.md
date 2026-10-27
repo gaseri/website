@@ -1,6 +1,6 @@
 # Tags
 
 !!! tip
-    Prefixed tags of the form `(category) tag` are from non-blog pages. [See below](#tag:academia) for tags from blog posts.
+    Blog tags describe specific subjects. Prefixed tags of the form `(category) tag` are from non-blog pages.
 
 <!-- material/tags -->

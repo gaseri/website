@@ -4,12 +4,12 @@ authors:
   - vedranmiletic
 date:
   created: 2024-06-14
+categories:
+  - Computing
 tags:
-  - freebsd
-  - linux
-  - openssh
-  - red hat
-  - free and open-source software
+  - FreeBSD
+  - Visual Studio Code
+  - OpenSSH
 ---
 
 # How to run Visual Studio (VS) Code Remote over SSH on FreeBSD 13 and 14

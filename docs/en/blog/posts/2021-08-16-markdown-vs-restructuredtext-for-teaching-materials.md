@@ -4,12 +4,13 @@ authors:
   - vedranmiletic
 date:
   created: 2021-08-16
+categories:
+  - Publishing
 tags:
-  - restructuredtext
-  - sphinx
-  - markdown
-  - mkdocs
-  - git
+  - Markdown
+  - reStructuredText
+  - teaching
+  - MkDocs
 ---
 
 # Markdown vs reStructuredText for teaching materials
