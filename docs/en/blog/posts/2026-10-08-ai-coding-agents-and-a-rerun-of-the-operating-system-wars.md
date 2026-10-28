@@ -7,7 +7,7 @@ date:
 categories:
   - Openness
 tags:
-  - AI coding agents
+  - agentic engineering
   - vendor lock-in
   - open standards
 ---
@@ -24,7 +24,9 @@ Photo source: [Rod Long (@rodlong) | Unsplash](https://unsplash.com/photos/brown
 
 Attending the [Agentic AI for Science workshop](https://www.mpcdf.mpg.de/events/46569/14192) at MPCDF in Garching got me thinking about the platforms we are starting to build our scientific workflows around. The [workshop programme](https://plan.events.mpg.de/e/ai-agents-for-science) brings together hands-on work with agents, examples from scientific software development and materials simulations, and perspectives from industry. For someone interested in free and open-source software, this raises some familiar questions: who controls those platforms, what can we change ourselves, and how much of our work can we take elsewhere?
 
-What interests me here is the software around the model. An *agent harness* gives the model tools, supplies context, and controls what it can do. The flagship GPT, Claude, and Gemini models are proprietary, but the software using them does not have to be (and often isn't). We can use the same model through different harnesses, with different licenses, tools, and restrictions. Choosing the model, deciding where it runs, and choosing the harness are separate decisions, even when a product offering bundles them together.
+The software development work discussed at the workshop is an example of [agentic engineering](https://simonwillison.net/guides/agentic-engineering-patterns/what-is-agentic-engineering/), a term used by [Simon](https://simonwillison.net/) [Willison](https://simonwillison.net/about/) in [his guide](https://simonwillison.net/guides/agentic-engineering-patterns/), [Martin Fowler](https://martinfowler.com/bliki/AgenticEngineering.html), and [Andrej Karpathy](https://karpathy.bearblog.dev/sequoia-ascent-2026/#:~:text=7.%20Vibe%20Coding%20vs.%20Agentic%20Engineering). [IBM also uses the term](https://www.ibm.com/think/topics/agentic-engineering), as does the [Linux Foundation's AGNTCon + MCPCon programme](https://events.linuxfoundation.org/agntcon-mcpcon-europe/program/cfp/).
+
+Coding agents use language models to generate code and tools to execute it, while engineers define the problems, guide the work, and verify the results. What interests me here is the software around the model. An [agent](https://learn.microsoft.com/agent-framework/concepts/harness) [harness](https://martinfowler.com/articles/harness-engineering.html) supplies context, exposes tools to the model, and manages their execution. The flagship GPT, Claude, and Gemini models are proprietary, but the software using them does not have to be (and often isn't, as we will discuss below). We can use the same model through different harnesses, with different licenses, tools, and restrictions. Choosing the model, deciding where it runs, and choosing the harness are separate decisions, even when a product offering bundles them together.
 
 A few harnesses and development environments for programming, scientific workflows, and other tasks illustrate these differences. This is only part of the picture: agents embedded in enterprise applications bring their own integrations and dependencies.
 
