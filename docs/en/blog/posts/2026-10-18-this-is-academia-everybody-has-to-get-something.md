@@ -82,6 +82,8 @@ Looking back, I would say that everyone got something out of the change, even if
 
 > This is the world of academia; everyone in it has to get something: some a fresh restart[^5] and a new scientific home, others more room in the old one.
 
+(Watch the original scene on [Facebook](https://www.facebook.com/rtsplaneta/videos/1296446405355650/) or [Instagram](https://www.instagram.com/reel/DMnSHhGsDUt/).)
+
 Much of what we built in Rijeka continues, and I get to do the scientific work I wanted to do, the way I wanted to do it. Giving up rank and security was a real cost, but I would make the same choice again.
 
 [^1]: For a bird’s-eye view of the scenic [Faßberg campus](https://www.mpinat.mpg.de/anfahrt-fassbergcampus), [see](https://youtu.be/4nVm1CDwtkQ) [the](https://youtu.be/7yJ9fS4l-sQ) [drone](https://youtu.be/9ECB3V2wbuU) [videos](https://youtu.be/9eCD8i9foxo) [on](https://youtu.be/AURdIMEjS_E) [the](https://youtu.be/C5S5Axf9AiY) [Horizons](https://youtu.be/KqABsiK8108) [in](https://youtu.be/L613Ta1otYs) [Molecular](https://youtu.be/MB0XB5DKxY0) [Biology](https://youtu.be/V8VkKDx6Pg4) [channel](https://youtu.be/VZf4aXkThnE) [on](https://youtu.be/vOilSElEiCw) [YouTube](https://youtu.be/xa8n6kVvOmw).
