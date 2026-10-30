@@ -13,6 +13,13 @@ icon: fontawesome/solid/newspaper
 
     Enjoy your stay.
 
+???+ example "Highlights"
+    - [This is academia; everybody has to get something](posts/2026-10-18-this-is-academia-everybody-has-to-get-something.md): leaving an assistant professorship to return to computational biochemistry and scientific software development.
+    - [My perspective after two years as a research and teaching assistant at FIDIT](posts/2023-08-28-my-perspective-after-two-years-as-a-research-and-teaching-assistant-at-fidit.md): Matea's perspective on finding a research direction and balancing doctoral work with teaching.
+    - [What is the price of open-source fear, uncertainty, and doubt?](posts/2015-09-14-what-is-the-price-of-open-source-fear-uncertainty-and-doubt.md) A response to arguments against open-source software in computational chemistry.
+    - [Cross-building and cross-testing GROMACS for Windows on Linux with MinGW and Wine](posts/2025-03-16-cross-building-and-cross-testing-gromacs-for-windows-on-linux-with-mingw-and-wine.md): using cross-platform builds and tests to uncover bugs in scientific software.
+    - [AI coding agents and a rerun of the operating-system wars](posts/2026-10-08-ai-coding-agents-and-a-rerun-of-the-operating-system-wars.md): how openness, compatibility, and platform control shape agentic engineering.
+
 ??? note "Blogroll"
     - [Bas Nieuwenhuizen | Open Source GPU Drivers](https://www.basnieuwenhuizen.nl/)
     - [brr](https://brr.fyi/)

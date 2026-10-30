@@ -23,7 +23,10 @@ icon: fontawesome/solid/house
 
     ---
 
-    - [Latest blog posts](en/blog/index.md) and [posts grouped by tags](en/blog/tags.md)
+    - :fontawesome-solid-newspaper: **Blog**: [latest posts](en/blog/index.md), [tags](en/blog/tags.md), and highlights:
+        - [Everybody has to get something in academia](en/blog/posts/2026-10-18-this-is-academia-everybody-has-to-get-something.md)
+        - [Matea's research and teaching retrospective](en/blog/posts/2023-08-28-my-perspective-after-two-years-as-a-research-and-teaching-assistant-at-fidit.md)
+        - [Open-source fear, uncertainty, and doubt](en/blog/posts/2015-09-14-what-is-the-price-of-open-source-fear-uncertainty-and-doubt.md)
     - [Principal investigator](en/people/principal-investigator.md) and [PhD students](en/people/phd-students.md)
     - [Introductory presentation](en/introductory-presentation.md)
     - [Code optimization](en/teaching/courses/CO.md) course ([YUFE](https://www.yufe.eu/), [FIDIT](https://www.inf.uniri.hr/))
