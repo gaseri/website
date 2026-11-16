@@ -200,6 +200,7 @@ Testiranje s kraja na kraj (engl. *end-to-end testing*) je suvremeni naziv za pr
 
 - [Cypress](https://www.cypress.io/)
 - [Nightwatch.js](https://nightwatchjs.org/)
+- [Playwright](https://playwright.dev/)
 - [Selenium](https://www.selenium.dev/) (nije samo za testiranje, često se koristi i za struganje sadržaja s weba, engl. *web scraping*)
 
 Kolokvijalno rečeno, ovi alati imitiraju korištenje web aplikacije od strane korisnika.
