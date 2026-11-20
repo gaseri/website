@@ -19,6 +19,8 @@ First, install the [C/C++ Extension Pack](https://marketplace.visualstudio.com/i
 
     To get a Unix-like environment on Windows 10 and newer, it is recommended to use the [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/windows/wsl/install) together with [Windows Terminal](https://learn.microsoft.com/windows/terminal/install) and [Visual Studio Code Remote - WSL](https://code.visualstudio.com/docs/remote/wsl) extension. While almost any distribution supported by WSL will support building LLVM, we recommend using RHEL-compatible [AlmaLinux OS 9](https://almalinux.org/blog/almalinux-9-now-available/) that is [available in the Microsoft Store](https://wiki.almalinux.org/documentation/wsl.html) or, if you are feeling adventurous, [CentOS Stream 9](https://www.centos.org/stream9/) that [requires manual image download](https://sigs.centos.org/altimages/wsl-images/) from one of [its official mirrors](https://www.centos.org/download/mirrors/).
 
+    If you are feeling really adventorous, it is also possible to use [MSYS2](https://www.msys2.org/) to get Unix-like environment on Windows and even [build LLVM using Visual Studio](https://llvm.org/docs/GettingStartedVS.html) (the [real one](https://visualstudio.microsoft.com/), not Visual Studio Code).
+
 === "🎩 Fedora/CentOS/RHEL"
 
     Assuming [Red Hat Enterprise Linux 9](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/packaging_and_distributing_software/assembly_new-features-in-rhel-9_packaging-and-distributing-software#con_dynamic-build-dependencies_assembly_new-features-in-rhel-9), [CentOS Stream 9](https://www.centos.org/stream9/), [Fedora 34](https://docs.fedoraproject.org/en-US/quick-docs/fedora-and-red-hat-enterprise-linux/), or newer:
