@@ -567,11 +567,17 @@ extra:
       We use cookies to recognize your repeated visits and preferences, as well
       as to measure the effectiveness of our documentation and whether users
       find what they're searching for. With your consent, you're helping us to
-      make our documentation better. If you enable YouTube videos, embedded
-      players will connect to YouTube.
+      make our documentation better. If you enable YouTube, TikTok, or
+      Instagram embeds, your browser will connect to the selected services.
     cookies:
       youtube:
         name: YouTube videos
+        checked: false
+      tiktok:
+        name: TikTok videos
+        checked: false
+      instagram:
+        name: Instagram posts
         checked: false
   social:
     - icon: fontawesome/brands/telegram
@@ -597,7 +603,7 @@ extra:
       name: GASERI on Bitbucket
 
 extra_javascript:
-  - javascripts/youtube-consent.js
+  - javascripts/embed-consent.js
   - javascripts/openstreetmap.js
   - javascripts/katex.js
   - https://unpkg.com/katex@0/dist/katex.min.js

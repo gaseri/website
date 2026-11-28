@@ -123,7 +123,16 @@ U svom [poznatom govoru](https://hr.wikisource.org/wiki/Govor_Franje_Tu%C4%91man
 
 ## Kako se zovu predstavnici novih generacija okrenuti exaskalarnim superračunalima i isključivo firmiranom hardveru?
 
-<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@nikola_replay/video/7090912972452711686" data-video-id="7090912972452711686" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@nikola_replay" href="https://www.tiktok.com/@nikola_replay">@nikola_replay</a> 🤣 <a title="foryou" target="_blank" href="https://www.tiktok.com/tag/foryou">#foryou</a> <a title="foryoupage" target="_blank" href="https://www.tiktok.com/tag/foryoupage">#foryoupage</a> <a target="_blank" title="♬ original sound - @nikola_replay" href="https://www.tiktok.com/music/original-sound-7090912949518338821">♬ original sound - @nikola_replay</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+<div data-embed-consent="tiktok">
+  <p data-embed-placeholder>
+    Za prikaz videa ovdje omogućite TikTok videozapise u postavkama kolačića.
+    <button type="button" class="md-button embed-cookie-settings">Postavke kolačića</button> ·
+    <a href="https://www.tiktok.com/@nikola_replay/video/7090912972452711686">Pogledaj na TikToku</a>
+  </p>
+  <iframe hidden data-src="https://www.tiktok.com/player/v1/7090912972452711686?description=1&amp;music_info=1"
+    title="Video korisnika @nikola_replay na TikToku" style="border: 0; width: 100%; max-width: 325px; aspect-ratio: 9 / 16"
+    allow="fullscreen"></iframe>
+</div>
 
 ## Ima li Grupa za aplikacije i usluge na eksaskalarnoj istraživačkoj infrastrukturi više teleskopa nego Ruđer Bošković?
 
