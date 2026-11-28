@@ -24,4 +24,12 @@ Radmile Matejčić 2
 HR-51000 Rijeka  
 Croatia
 
-<iframe src="https://www.openstreetmap.org/export/embed.html?bbox=14.465005695819857%2C45.32756626493193%2C14.46918457746506%2C45.32927471428796&amp;layer=mapnik&amp;marker=45.32842049605121%2C14.467095136642456" style="border: 1px solid black; width: 100%; height: 25rem"></iframe>
+<div class="openstreetmap-embed">
+  <p>Loading the map connects your browser to OpenStreetMap.</p>
+  <p>
+    <button type="button" class="md-button openstreetmap-load">Load map</button>
+    <a href="https://www.openstreetmap.org/?mlat=45.32842049605121&amp;mlon=14.467095136642456#map=18/45.32842049605121/14.467095136642456">Open in OpenStreetMap</a>
+  </p>
+  <iframe hidden data-src="https://www.openstreetmap.org/export/embed.html?bbox=14.465005695819857%2C45.32756626493193%2C14.46918457746506%2C45.32927471428796&amp;layer=mapnik&amp;marker=45.32842049605121%2C14.467095136642456"
+    title="Map showing the GASERI location" style="border: 1px solid black; width: 100%; height: 25rem"></iframe>
+</div>
