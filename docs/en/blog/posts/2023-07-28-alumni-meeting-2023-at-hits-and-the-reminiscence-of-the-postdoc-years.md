@@ -69,7 +69,17 @@ I was also a system administrator for our group supercomputer, which included te
 
 Finally, we also had some time for fun activities which you could barely count as work. The one that comes to mind is when our group participated in recording of this Floppy Keys video, narrated by [group](https://www.biophysics.org/profiles/frauke-graeter) [leaders](https://lemkelab.com/the-team/about-edward-lemke/) and [Davide Mercadante](https://lab.mercadante.net/):
 
-<iframe src="https://www.youtube.com/embed/XyiN1BpXimk" title="YouTube video player" style="border: 1px solid black; width: 100%; height: 25rem" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div class="youtube-embed">
+  <p>
+    Enable YouTube videos in cookie settings to play this video here.
+    <button type="button" class="md-button youtube-cookie-settings">Cookie settings</button> ·
+    <a href="https://www.youtube.com/watch?v=XyiN1BpXimk">Watch on YouTube</a>
+  </p>
+  <iframe hidden data-src="https://www.youtube-nocookie.com/embed/XyiN1BpXimk"
+    title="Floppy Keys" style="border: 1px solid black; width: 100%; height: 25rem"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen></iframe>
+</div>
 
 ## Long-term impact of postdoctoral choices
 
